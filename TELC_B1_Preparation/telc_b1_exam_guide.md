@@ -1,31 +1,120 @@
-# TELC A2/B1 (DTZ) Exam Guide & Strategy
+# TELC A2/B1 (DTZ) — Exam Guide & Strategy
 
 ## Exam Overview
-The **Deutsch-Test für Zuwanderer (DTZ)** is an A2/B1 dual-level exam. Depending on your score, you will receive an A2 or a B1 certificate. Your goal is to achieve the **B1 certificate**. 
+The **Deutsch-Test für Zuwanderer (DTZ)** is an A2/B1 dual-level exam developed by the Goethe-Institut and telc gGmbH. Based on your performance, you receive either an A2 or a **B1 certificate**. Your goal: **B1**.
 
-The exam focuses heavily on everyday communication (work, housing, shopping, authorities, health, etc.). 
+The exam tests everyday communication — work, housing, shopping, authorities, health, education, transport, etc.
 
-## How to Pass B1
-To obtain the **B1 certificate**, you need to achieve at least **60% of the total points** (typically 60 out of 100), and you must show a B1 performance level in both the written and oral sections. Specifically, getting confident in oral communication and email writing gives you a massive advantage.
+---
 
-### Exam Structure
-**1. Written Exam (100 minutes total)**
-- **Hören (Listening) - ~25 minutes:** Everyday dialogues, announcements. *Strategy:* Read questions before audio starts. Part 1 is played once; Parts 2 & 3 are played twice. Don't get stuck if you miss a word.
-- **Lesen (Reading) & Sprachbausteine (Language Elements) - 45 minutes:** 
-  - *Reading:* Advertisements, emails, notices. *Strategy:* Skim the text first, then scan for keywords.
-  - *Sprachbausteine:* Fill-in-the-blank grammar and vocabulary questions. Tests your structural knowledge of German.
-- **Schreiben (Writing/Letter) - 20 minutes:** Write a short semi-formal letter/email (100-120 words). *Strategy:* Memorize standard greetings (`Sehr geehrte Damen und Herren`), closings (`Mit freundlichen Grüßen`), and standard structural connectors. Focus on clear, simple sentences and address ALL bullet points given in the prompt.
+## Scoring & How to Get B1
 
-**2. Oral Exam (~15 mins paired speaking + 20 mins preparation)**
-- **Teil 1 (Introduction):** Introduce yourself (Name, origin, family, work, hobbies, languages). *Strategy:* Have an introduction well-rehearsed in advance.
-- **Teil 2 (Discussing a topic/picture):** Express your opinion on a given topic. *Strategy:* State your opinion clearly and provide 1-2 reasons.
-- **Teil 3 (Planning something together):** E.g., planning a party, buying a gift, organizing a trip. *Strategy:* Treat it like a ping-pong match. Don't just monologue. Ask your partner questions (`Was denkst du?`, `Wann hast du Zeit?`).
+| Section | Max Points | B1 Threshold |
+|---|---|---|
+| **Hören** (Listening) | 25 | ~15 (60%) |
+| **Lesen** (Reading) | 25 | ~15 (60%) |
+| **Sprachbausteine** (Grammar/Vocab) | 30 | ~18 (60%) |
+| **Schreiben** (Writing) | 20 | ~12 (60%) |
+| **Sprechen** (Speaking) | separate | B1-level performance |
+| **Total Written** | 100 | **≥ 60** |
 
-## Key Subjects & Grammar to Know Well (High Yield for B1)
-1. **Verbs & Tenses:** Perfekt (spoken past), Präteritum (for modal verbs & *haben/sein*), Futur I (basic future).
-2. **Word Order (Satzbau):** Main clauses (V2) vs. Subordinate clauses (Verb at the end with `weil, dass, wenn, obwohl`).
-3. **Connectors:** `und, oder, aber, denn, sondern` (position 0), and Adverbs `deshalb, trotzdem, außerdem` (position 1).
-4. **Prepositions:** Two-way prepositions (Wechselpräpositionen) with Dativ vs. Akkusativ.
-5. **Adjective Endings:** Basic declension rules after definite (der/die/das) and indefinite (ein/eine) articles.
+**Critical:** You must achieve B1-level performance in **both** the written and oral sections. Getting 90% on writing but A2 on speaking still results in A2 overall. Train all four skills!
 
-We will focus our concise review materials on these high-yield topics over the next month.
+---
+
+## Exam Structure (Detailed)
+
+### 1. Written Exam (~100 minutes)
+
+#### Hören (Listening) — ~25 min
+| Part | What You Hear | Task | Plays |
+|---|---|---|---|
+| Teil 1 | 4 short dialogues | True/False | **1x only** |
+| Teil 2 | 1 radio report or interview | Multiple choice | 2x |
+| Teil 3 | 4 short announcements | Matching (assign to correct situation) | 2x |
+
+**Strategies:**
+- Read ALL questions/options **before** the audio starts
+- If you miss an answer, immediately move on — don't lose the next one
+- Audio often uses **synonyms** (e.g., *Urlaub* → *Ferien*, *Arzt* → *Doktor*, *billig* → *günstig*)
+- Part 1 plays only ONCE. Focus extra hard.
+
+#### Lesen (Reading) — ~45 min
+| Part | Text Type | Task |
+|---|---|---|
+| Teil 1 | Notices, ads, signs | Match to situations |
+| Teil 2 | Newspaper or magazine article | Multiple choice |
+| Teil 3 | Short everyday texts | True/False |
+
+**Strategies:**
+- Read the **question first**, then scan the text for keywords
+- Cross out obviously wrong answers immediately in matching exercises
+- Unknown words? Use context clues — don't panic
+
+#### Sprachbausteine (Language Elements) — within Reading time
+| Part | Task |
+|---|---|
+| Teil 1 | Fill blanks in a letter (choose from 3 options per blank) |
+| Teil 2 | Fill blanks in a text (choose from a word bank of ~15 words) |
+
+**Strategies:**
+- This section is pure grammar pattern recognition — learn the patterns, not individual answers
+- Save reading time for Sprachbausteine; most people run out here
+
+#### Schreiben (Writing) — ~20 min
+Write a **semi-formal email/letter** (~100-120 words). You receive a situation with **4 bullet points** you MUST address.
+
+**Strategies:**
+- Address ALL 4 points — missing even one costs significant points
+- Use memorized templates for greeting, connectors, and closing
+- Short, clear sentences > long, complex ones with errors
+- Aim for 100-120 words. Under 80 = point deduction
+
+### 2. Oral Exam (~15 min + 20 min prep)
+Done in pairs with another candidate. An examiner observes.
+
+| Part | Task | Duration |
+|---|---|---|
+| Teil 1 | Self-introduction | ~2 min |
+| Teil 2 | Discuss a topic/picture | ~4 min |
+| Teil 3 | Plan something with partner | ~5 min |
+
+**Strategies:**
+- **Ping-pong!** Always react to your partner, ask follow-up questions
+- Smile, be friendly — examiners assess communication willingness
+- Clarity > Complexity. Simple correct sentences beat complex broken ones
+- Use the 20 min prep time wisely — write notes for Part 2 and Part 3
+
+---
+
+## Top 10 Grammar Topics for B1 (Priority Order)
+
+| # | Topic | Why It Matters |
+|---|---|---|
+| 1 | **Nebensätze** (weil, dass, wenn, obwohl, damit, als, ob) | Verb goes to end — tested constantly in Sprachbausteine |
+| 2 | **Konnektoren** (deshalb, trotzdem, außerdem, dann) | Position 1 adverbs — key for B1 writing |
+| 3 | **Perfekt** (haben/sein + Partizip II) | The main past tense used in daily speech |
+| 4 | **Präteritum** (war, hatte, konnte, musste, wollte, sollte, durfte) | Only for sein, haben, and modal verbs |
+| 5 | **Wechselpräpositionen** (in, an, auf, vor, hinter, neben, über, unter, zwischen) | Akk (Wohin?) vs Dat (Wo?) |
+| 6 | **Fixed prepositions** (mit+Dat, für+Akk, seit+Dat, etc.) | Tested in every Sprachbausteine section |
+| 7 | **Adjective endings** (-e, -en, -er, -es, -em) | After definite/indefinite articles |
+| 8 | **Reflexive verbs** (sich freuen, sich anmelden, sich bewerben) | Common in daily life topics |
+| 9 | **Konjunktiv II** (wäre, hätte, könnte, würde + Infinitiv) | Polite requests in writing/speaking |
+| 10 | **Relativsätze** (der Mann, der... / die Frau, die...) | Bonus B1 points in writing |
+
+---
+
+## Essential Vocabulary Themes
+
+These are the themes that appear in **every DTZ exam**:
+
+| Theme | Key Words to Know |
+|---|---|
+| **Arbeit & Beruf** | Bewerbung, Lebenslauf, Gehalt, Kollege, Arbeitsvertrag, kündigen, Teilzeit/Vollzeit |
+| **Wohnung** | Miete, Nebenkosten, Kaution, Vermieter, Mietvertrag, einziehen, kündigen |
+| **Gesundheit** | Termin, Rezept, Krankschreibung, Apotheke, Versicherung, Sprechstunde |
+| **Schule & Bildung** | Elternabend, Zeugnis, Hausaufgaben, Nachhilfe, Schulausflug, Klassenlehrerin |
+| **Behörden** | Anmeldung, Personalausweis, Aufenthaltstitel, Formular, Termin vereinbaren |
+| **Einkaufen** | Angebot, Rabatt, Garantie, umtauschen, Kassenbon, Beschwerde |
+| **Freizeit** | Verein, Kurs, Veranstaltung, Ausflug, Eintrittskarte |
+| **Verkehr** | Fahrplan, Verspätung, Umleitung, Gleis, Fahrkarte, Ermäßigung |

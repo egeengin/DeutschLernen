@@ -1,44 +1,102 @@
 # 1-Month Intensive TELC B1 Learning Plan
 
-This plan is intense and optimized for speed. Since you have exactly one month, the focus will purely be on **exam-specific skills**, high-frequency grammar, and mock exam practice. 
+**Daily Time:** 2-3 hours | **Start Date:** Today | **Exam Date:** ~30 days
 
-**Daily Time Commitment Needed:** 2 to 3 hours.
+---
 
-## Week 1: Foundation & "Sprachbausteine" (Grammar/Vocab)
-*Goal: Solidify the core grammar and vocabulary heavily tested in the Reading and Language Elements section.*
-- **Day 1-2:** Sentence Structure (Hauptsatz & Nebensatz). Learn `weil`, `dass`, `wenn`, `obwohl`. Do practice exercises.
-- **Day 3:** Connectors & Adverbs (`deshalb`, `trotzdem`, `außerdem`). Practice combining sentences.
-- **Day 4:** Prepositions with Dativ and Akkusativ. 
-- **Day 5:** Adjective Declension and Perfekt vs. Präteritum.
-- **Day 6:** Vocabulary Theme: Work and Authorities (Arbeit und Ämter).
-- **Day 7:** **Diagnostic Mock Exam #1 (Sprachbausteine & Lesen only).** Analyze what grammar concepts you missed.
+## Week 1: Grammar Foundation & Sprachbausteine
+*Goal: Master the grammar patterns that make up 30% of the written exam.*
 
-## Week 2: Input Mastery (Reading & Listening)
-*Goal: Learn strategies to pass the input-based sections quickly.*
-- **Day 8-9:** Reading Comprehension Strategies. Practice scanning texts for keywords. Do 2 Reading mock sections.
-- **Day 10-11:** Listening Comprehension. Practice active listening for key information (numbers, dates, names, main idea). Listen to German podcasts or A2/B1 level news (e.g., Deutsche Welle "Top-Thema").
-- **Day 12:** Vocabulary Theme: Housing, Shopping, Health.
-- **Day 13:** Full Reading & Listening section practice under strict time limits.
-- **Day 14:** Review weak points from the practice test.
+| Day | Focus | Activities | Time |
+|---|---|---|---|
+| 1 | **Diagnostic Test** | Take `mock_exam_diagnostic.md`. Identify weak spots. | 1h |
+| 1 | **Nebensätze** | Learn weil/dass/wenn/obwohl + verb-final rule | 1h |
+| 2 | **Nebensätze Practice** | Do exercises in `review_grammar_vocab.md` Section 1-2 | 2h |
+| 3 | **Konnektoren** | deshalb/trotzdem/außerdem + word order (V2) | 1.5h |
+| 3 | **Perfekt** | haben/sein + Partizip II — regular & irregular verbs | 1h |
+| 4 | **Präteritum** | Only for: war, hatte, konnte, musste, wollte, sollte, durfte | 1h |
+| 4 | **Prepositions** | Wechselpräpositionen (Akk vs. Dat) + fixed prepositions | 1.5h |
+| 5 | **Adjective Endings** | Rules after der/ein/kein + practice | 1.5h |
+| 5 | **Reflexive Verbs** | sich freuen, sich anmelden, sich bewerben, sich fühlen | 1h |
+| 6 | **Vocab: Arbeit & Behörden** | Flashcards for work/authority vocabulary (see exam guide) | 1h |
+| 6 | **Sprachbausteine Practice** | Do all exercises in `review_grammar_vocab.md` | 1.5h |
+| 7 | **Review & Re-test** | Redo diagnostic. Compare scores. Focus on remaining gaps. | 2h |
 
-## Week 3: Output Mastery (Writing)
-*Goal: Consistently write 100+ word letters that score full points in structure and communication.*
-- **Day 15:** Memorize Letter/Email formulas. Standard formal, semi-formal, and informal greetings and sign-offs. 
-- **Day 16:** Writing Practice 1: Information/Inquiry Letter (e.g., asking for information about a language course or renting an apartment).
-- **Day 17:** Writing Practice 2: Complaint Letter (e.g., broken item, noisy neighbor).
-- **Day 18:** Writing Practice 3: Apology/Excuse Letter (e.g., sick child missing school, missing an appointment).
-- **Day 19:** Writing Practice 4: Invitation/Acceptance.
-- **Day 20:** Vocabulary Theme: Free Time, Travel, and Education.
-- **Day 21:** Take a timed Writing Section mock exam (20 minutes). 
+**Week 1 Checkpoint:** Can you fill Sprachbausteine blanks with 70%+ accuracy?
 
-## Week 4: Speaking Mastery & Full Mock Exams
-*Goal: Build confidence for the oral exam and simulate test day conditions.*
-- **Day 22:** Speaking Part 1 (Self-Introduction). Write down your 2-minute intro, memorize it, and practice presenting it smoothly.
-- **Day 23:** Speaking Part 2 (Expressing Opinion). Learn template phrases: `Ich bin der Meinung, dass...`, `Meiner Erfahrung nach...`. Practice with 3 pictures/topics.
-- **Day 24:** Speaking Part 3 (Planning). Learn interactive phrases: `Was hältst du davon?`, `Das ist eine gute Idee, aber...`, `Wann treffen wir uns?`.
-- **Day 25:** **Full Mock Exam #1** (Listening, Reading, Writing). Strict timing.
-- **Day 26:** Review Mock Exam #1 deeply. Polish speaking templates.
-- **Day 27:** **Full Mock Exam #2** (Listening, Reading, Writing). Strict timing. 
-- **Day 28:** Review Mock Exam #2. Do a simulated oral exam (record yourself or practice with a partner/AI).
-- **Day 29:** Final review of vocabulary and letter templates. Relax.
-- **Day 30:** Exam Day.
+---
+
+## Week 2: Reading & Listening Mastery
+*Goal: Build speed and accuracy for input-based sections.*
+
+| Day | Focus | Activities | Time |
+|---|---|---|---|
+| 8 | **Reading Strategies** | Learn scan/skim techniques in `review_reading_listening.md` | 1h |
+| 8 | **Reading Practice** | Do all reading exercises (ads, articles, notices) | 1.5h |
+| 9 | **Listening Strategies** | Learn synonym awareness, pre-reading questions | 1h |
+| 9 | **Listening Practice** | Deutsche Welle "Top-Thema" (free B1 audio + transcript) | 1.5h |
+| 10 | **Vocab: Wohnung & Gesundheit** | Flashcards for housing and health vocabulary | 1h |
+| 10 | **Mixed Practice** | Timed: 20 min reading + 15 min listening exercises | 1.5h |
+| 11 | **Vocab: Einkaufen & Verkehr** | Flashcards for shopping and transport vocabulary | 1h |
+| 11 | **Listening Immersion** | Watch a German YouTube video (with subtitles), note new words | 1.5h |
+| 12 | **Full Reading Section** | Complete all reading exercises under strict 45 min time limit | 1h |
+| 12 | **Full Listening Section** | Complete listening exercises under strict 25 min time limit | 1h |
+| 13 | **Weak Point Review** | Re-study any grammar/vocab that caused errors | 2h |
+| 14 | **Spaced Repetition** | Review Week 1 grammar flashcards + Week 2 vocab flashcards | 1.5h |
+
+**Week 2 Checkpoint:** Can you finish Reading in 45 min with 60%+ accuracy?
+
+**Recommended Free Resources:**
+- Deutsche Welle "Top-Thema": https://www.dw.com/de/top-thema/s-8031
+- Deutsche Welle "Langsam gesprochene Nachrichten": slow-speed news
+- telc official model tests (free PDF): https://www.telc.net/
+
+---
+
+## Week 3: Writing & Speaking Templates
+*Goal: Memorize letter templates and speaking phrases to guarantee points.*
+
+| Day | Focus | Activities | Time |
+|---|---|---|---|
+| 15 | **Letter Templates** | Memorize formal/informal greetings, closings, connectors | 1.5h |
+| 15 | **Model Answer Study** | Study the model answer in `review_writing_speaking.md` | 1h |
+| 16 | **Write: Inquiry Letter** | Practice writing an information request (20 min timed) | 1h |
+| 16 | **Write: Complaint Letter** | Practice writing a complaint (20 min timed) | 1h |
+| 17 | **Write: Apology/Excuse** | Practice sick note / missed appointment letter | 1h |
+| 17 | **Write: Invitation** | Practice accepting/declining an invitation | 1h |
+| 18 | **Vocab: Freizeit & Bildung** | Flashcards + write 5 sentences using each theme | 1.5h |
+| 18 | **Konjunktiv II** | Practice: könnte, würde, hätte, wäre for polite requests | 1h |
+| 19 | **Speaking Part 1** | Write + memorize your self-introduction (2 min) | 1h |
+| 19 | **Speaking Part 2** | Practice expressing opinions on 5 topics (record yourself) | 1.5h |
+| 20 | **Speaking Part 3** | Practice planning dialogues — use ping-pong phrases | 1.5h |
+| 20 | **Timed Writing Exam** | Full writing section: 20 min, new prompt | 0.5h |
+| 21 | **Review & Record** | Record yourself doing entire speaking exam. Listen back. | 2h |
+
+**Week 3 Checkpoint:** Can you write a complete letter in 20 min hitting all 4 points?
+
+---
+
+## Week 4: Full Mock Exams & Final Polish
+*Goal: Simulate real exam conditions. Build confidence and time management.*
+
+| Day | Focus | Activities | Time |
+|---|---|---|---|
+| 22 | **Full Mock Exam #1** | Take `mock_exam_final.md` under strict timing | 2h |
+| 23 | **Deep Review** | Analyze every error. Re-study relevant grammar/vocab | 2h |
+| 24 | **Speaking Simulation** | Full oral exam practice (record or practice with partner/AI) | 1.5h |
+| 25 | **Full Mock Exam #2** | Create your own mock or use official telc practice test PDF | 2h |
+| 26 | **Deep Review** | Focus only on recurring error patterns | 1.5h |
+| 27 | **Final Grammar Drill** | Rapid-fire Sprachbausteine: redo all grammar exercises | 1.5h |
+| 28 | **Final Speaking Drill** | Practice all 3 speaking parts back-to-back | 1h |
+| 29 | **Light Review** | Re-read letter templates, vocab lists. Relax. Sleep well. | 1h |
+| 30 | **Exam Day** | You've got this! 💪 | — |
+
+---
+
+## Speed Learning Tips
+
+1. **Spaced Repetition:** Review Week 1 material on Day 14, Week 2 on Day 21, etc.
+2. **Active Recall:** Don't just re-read. Cover answers and test yourself.
+3. **80/20 Rule:** Sprachbausteine + Writing = 50% of written points. Master these first.
+4. **Immersion:** Change your phone language to German. Listen to German radio while commuting.
+5. **Error Journal:** Keep a notebook of every mistake. Review it before bed.

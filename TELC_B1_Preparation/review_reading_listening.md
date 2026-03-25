@@ -1,34 +1,144 @@
 # Review: Lesen & Hören (Reading & Listening)
 
-These are the two **passive input** skills on your exam. The key to finishing the reading in 45 minutes and listening accurately is strategy.
+---
 
-## 1. Lesen (Reading) - 45 Min
-*   **Strategy 1:** _Do not read the text first!_ Read the question or statement first, then scan the text for keywords.
-*   **Strategy 2:** Do the "Matching" exercises (Part 2 or 3) by crossing out options you know are incorrect immediately.
-*   **Strategy 3:** Don't stress over words you don't know. Understand the context.
+## 1. Lesen (Reading) — 45 Min, 3 Parts
 
-### Sample Question [Lesen]
-**Read the advertisement:**
-"Wohnung zu vermieten! 2 Zimmer, Küche, Bad. 60 qm. Kaltmiete 650 €, Nebenkosten 150 €. Kaution: 3 Monatskaltmieten. Ab 1. September frei. Haustiere nach Absprache."
+### Strategies
+1. **Read the question FIRST**, then scan the text for keywords
+2. For matching: cross out used answers immediately
+3. Don't translate word-for-word — understand the **general meaning**
+4. Unknown words? Look at prefixes/suffixes and context
 
-**Statement (True/False):** 
-1. Sie müssen für die Wohnung jeden Monat insgesamt 800 € bezahlen.
-2. Sie können am 15. August einziehen.
-3. Hunde und Katzen sind grundsätzlich verboten.
+### Key Skill: Synonym Recognition
+The text and the question often use DIFFERENT words for the same thing:
 
-## 2. Hören (Listening) - 25 Min
-*   **Strategy 1:** Before the audio begins, you have time to read the multiple-choice options. Underline the main noun or verb in each option.
-*   **Strategy 2:** The audio will often use synonyms. If the question says "Urlaub machen", the audio might say "in die Ferien fahren". 
-*   **Strategy 3:** For true/false announcements, listen out for absolute words (`nur`, `immer`, `nie`, `alle`), as they often make a statement false.
-
-### Sample Question [Hören]
-**Scenario:** You hear an announcement at a train station.
-*Audio Script (for practice):* "Achtung Fahrgäste am Gleis 3. Der ICE 594 nach München Hauptbahnhof, planmäßige Abfahrt 14:30 Uhr, hat heute voraussichtlich 20 Minuten Verspätung. Grund dafür ist eine Stellwerksstörung. Wir bitten um Entschuldigung."
-
-**True/False:**
-1. Der Zug fährt pünktlich.
-2. Der Zug fährt nach München.
+| Text says... | Question/answer says... |
+|---|---|
+| kostenlos | gratis / umsonst |
+| Kinder | Nachwuchs / die Kleinen |
+| Arzt | Doktor / Mediziner |
+| kaufen | erwerben / besorgen |
+| Rabatt | Ermäßigung / Nachlass |
+| Wohnung | Unterkunft |
+| anrufen | telefonieren / sich melden |
 
 ---
-*Answers (Lesen): 1. True (650+150=800), 2. False (Ab 1. September), 3. False (nach Absprache means it can be allowed depending on agreement).*
-*Answers (Hören): 1. False (20 Minuten Verspätung), 2. True.*
+
+### Exercise 1: Advertisement Matching
+**Match each person (A-D) with the correct advertisement (1-5). One ad has no match.**
+
+**People looking for something:**
+- **A.** Frau Yilmaz sucht eine günstige 2-Zimmer-Wohnung im Zentrum.
+- **B.** Herr Schmidt möchte am Samstag mit seinen Kindern etwas unternehmen.
+- **C.** Maria braucht einen Deutschkurs am Abend, weil sie tagsüber arbeitet.
+- **D.** Tom sucht einen Nebenjob am Wochenende.
+
+**Advertisements:**
+
+**1.** "Deutsch lernen bei der VHS! Abendkurse Mo-Mi, 18:30-20:00 Uhr. A2-B1 Niveau. Anmeldung ab sofort online."
+
+**2.** "2-Zi-Whg, Stadtmitte, 55 qm, Kaltmiete 480 €, ab 1.4. frei. Kontakt: wohnung@gmx.de"
+
+**3.** "Familienfest im Stadtpark! Samstag, 14-18 Uhr. Spiele, Musik und Essen für Groß und Klein. Eintritt frei!"
+
+**4.** "Pizzeria Roma sucht Kellner/in für Fr + Sa, 17-23 Uhr. Erfahrung nicht nötig. Bewerbung an info@roma.de"
+
+**5.** "Yoga für Anfänger. Jeden Mittwoch 10-11 Uhr. Im Bürgerhaus. 8 € pro Stunde."
+
+---
+
+### Exercise 2: Article — True/False
+**Read the article:**
+
+"Immer mehr Deutsche arbeiten im Homeoffice. Seit der Pandemie hat sich die Zahl der Heimarbeiter verdoppelt. Viele Unternehmen bieten ihren Mitarbeitern jetzt flexible Arbeitsmodelle an: Manche arbeiten drei Tage im Büro und zwei Tage zu Hause. Eine aktuelle Studie zeigt, dass 65% der Arbeitnehmer im Homeoffice produktiver sind. Allerdings klagen einige über Einsamkeit und berichten, dass ihnen der Kontakt zu Kollegen fehlt. Experten empfehlen deshalb eine Mischung aus Büro- und Heimarbeit."
+
+**True or False?**
+
+1. Vor der Pandemie haben weniger Menschen von zu Hause gearbeitet.
+2. Alle Firmen in Deutschland bieten Homeoffice an.
+3. Die meisten Heimarbeiter fühlen sich weniger produktiv als im Büro.
+4. Manche Heimarbeiter vermissen ihre Kollegen.
+5. Experten sagen, man sollte nur von zu Hause arbeiten.
+
+---
+
+### Exercise 3: Notice — Multiple Choice
+**Read the notice at a Bürgeramt:**
+
+"Sehr geehrte Bürgerinnen und Bürger, bitte beachten Sie, dass Sie für die Beantragung eines neuen Personalausweises folgende Unterlagen mitbringen müssen: ein aktuelles biometrisches Passfoto, Ihre Meldebescheinigung und den alten Personalausweis. Die Bearbeitungsgebühr beträgt 37 €. Termine können Sie telefonisch oder online vereinbaren. Ohne Termin müssen Sie mit Wartezeiten von bis zu 2 Stunden rechnen."
+
+6. Was brauchen Sie für einen neuen Personalausweis?
+   - a) Nur Ihren alten Ausweis
+   - b) Ein Foto, Meldebescheinigung und alten Ausweis
+   - c) Nur ein Foto und Geld
+
+7. Was passiert ohne Termin?
+   - a) Man darf nicht reinkommen
+   - b) Man muss möglicherweise lange warten
+   - c) Man bezahlt mehr
+
+---
+
+## 2. Hören (Listening) — 25 Min, 3 Parts
+
+### Strategies
+1. **Pre-read** all questions/options before the audio starts
+2. Part 1 plays **only once** — maximal concentration!
+3. Listen for **keywords**, not every word
+4. Watch out for **negation** (nicht, kein, nie, nur)
+5. If you miss an answer → move on immediately
+
+### Key: Common Listening Situations
+
+| Situation | What to Listen For |
+|---|---|
+| Train station announcement | Gleis, Verspätung, Abfahrt, Ankunft, Umsteigen |
+| Doctor's office phone | Termin, Sprechstunde, Uhrzeit, Rezept abholen |
+| School/Kindergarten | Elternabend, Ausflug, Datum, was mitbringen |
+| Store announcement | Angebot, Rabatt, Öffnungszeiten, geschlossen |
+| Job-related call | Vorstellungsgespräch, Arbeitszeit, Unterlagen |
+
+---
+
+### Exercise 4: Announcement (Read once, then answer)
+**Transcript:** "Achtung Fahrgäste am Gleis 3. Der ICE 594 nach München Hauptbahnhof, planmäßige Abfahrt 14:30 Uhr, hat heute voraussichtlich 20 Minuten Verspätung. Grund dafür ist eine Stellwerksstörung. Der Zug hält zusätzlich in Augsburg. Wir bitten um Entschuldigung."
+
+8. Der Zug fährt pünktlich ab. (True / False)
+9. Der Zug fährt nach München. (True / False)
+10. Der Zug hält nicht in Augsburg. (True / False)
+
+### Exercise 5: Phone Message (Read once, then answer)
+**Transcript:** "Hallo Frau Meier, hier ist die Praxis Dr. Schneider. Leider müssen wir Ihren Termin am Donnerstag um 10 Uhr verschieben. Dr. Schneider ist an dem Tag auf einer Fortbildung. Können wir den Termin auf Freitag, 11 Uhr verlegen? Bitte rufen Sie uns zurück unter 030-445566. Vielen Dank!"
+
+11. Der Termin am Donnerstag findet statt. (True / False)
+12. Der neue Termin soll am Freitag um 11 Uhr sein. (True / False)
+13. Frau Meier soll eine E-Mail schreiben. (True / False)
+
+### Exercise 6: Radio Report (Read once, then answer)
+**Transcript:** "In den nächsten Tagen wird es in ganz Deutschland deutlich kälter. Im Norden erwarten wir Temperaturen um den Gefrierpunkt, im Süden kann es sogar schneien. Am Wochenende wird es dann wieder milder, bis zu 10 Grad im Westen. Vergessen Sie Ihre warme Jacke nicht!"
+
+14. Es wird in den nächsten Tagen wärmer. (True / False)
+15. Im Süden kann es schneien. (True / False)
+16. Am Wochenende bleibt es kalt. (True / False)
+
+---
+
+## Answers
+
+**Exercise 1 (Matching):** A→2, B→3, C→1, D→4. (Ad 5 has no match)
+
+**Exercise 2 (True/False):**
+1. True (Die Zahl hat sich verdoppelt = before was less)
+2. False ("Viele Unternehmen" ≠ alle)
+3. False (65% sind produktiver = MORE productive)
+4. True (einige klagen über Einsamkeit, fehlt Kontakt)
+5. False (Experten empfehlen eine Mischung = mix, not only home)
+
+**Exercise 3 (Multiple Choice):** 6→b, 7→b
+
+**Exercise 4:** 8→False, 9→True, 10→False (hält zusätzlich = stops additionally)
+
+**Exercise 5:** 11→False (wird verschoben), 12→True, 13→False (soll zurückrufen)
+
+**Exercise 6:** 14→False (deutlich kälter), 15→True, 16→False (wird milder)
