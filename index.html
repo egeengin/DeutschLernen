@@ -880,7 +880,9 @@ function prevCard() { currentCard = currentCard <= 0 ? vocabList.length - 1 : cu
 let currentLang = 'en';
 
 // Markdown Reader Logic
+let currentMdUrl = null;
 function openMarkdown(url) {
+  currentMdUrl = url;
   const mdView = document.getElementById('md-view');
   const mdContent = document.getElementById('md-content');
   mdView.classList.add('open');
@@ -937,6 +939,11 @@ function toggleTheme() {
   document.documentElement.setAttribute('data-theme', currentTheme);
   localStorage.setItem('dtz_theme', currentTheme);
   updateThemeIcon();
+  
+  // Re-render markdown to fix Mermaid diagram themes dynamically
+  if (document.getElementById('md-view').classList.contains('open') && currentMdUrl) {
+    openMarkdown(currentMdUrl);
+  }
 }
 function updateThemeIcon() {
   document.getElementById('theme-btn').textContent = currentTheme === 'dark' ? '☀️' : '🌙';
