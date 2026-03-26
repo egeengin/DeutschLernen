@@ -31,7 +31,7 @@ Vielen Dank im Voraus.
 
 Mit freundlichen Grüßen
 [Adınız]
-```
+```text
 
 #### Yarı Resmi (bilinen ilgili kişi adı)
 
@@ -44,7 +44,7 @@ Ich schreibe Ihnen, weil...
 
 Mit freundlichen Grüßen
 [Adınız]
-```
+```text
 
 #### Gayri Resmi (arkadaş / aile)
 
@@ -57,7 +57,7 @@ Ich schreibe dir, weil...
 
 Liebe Grüße / Viele Grüße
 [Adınız]
-```
+```text
 
 ______________________________________________________________________
 
