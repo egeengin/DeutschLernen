@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TELC B1 in 30 Tagen — Study Portal</title>
+<meta name="description" content="Interactive study portal for TELC A2/B1 (DTZ) exam preparation. Grammar, vocabulary, mock exams, and strategies in English and Turkish.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #0a0e17;
+  --bg-secondary: #111827;
+  --bg-card: #1a2235;
+  --bg-card-hover: #1f2a40;
+  --border: #2a3550;
+  --text-primary: #f0f4fc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --accent-gold: #f59e0b;
+  --accent-gold-dim: #b45309;
+  --accent-red: #ef4444;
+  --accent-green: #22c55e;
+  --accent-blue: #3b82f6;
+  --accent-purple: #a855f7;
+  --de-black: #1a1a1a;
+  --de-red: #dd0000;
+  --de-gold: #ffcc00;
+  --sidebar-w: 280px;
+  --radius: 12px;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+a { color: var(--accent-gold); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--de-gold); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* Sidebar */
+.sidebar {
+  position: fixed; top: 0; left: 0; width: var(--sidebar-w); height: 100vh;
+  background: var(--bg-secondary); border-right: 1px solid var(--border);
+  display: flex; flex-direction: column; z-index: 100;
+  transition: transform var(--transition);
+}
+.sidebar-header {
+  padding: 24px 20px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.sidebar-header .top-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 4px; }
+.sidebar-header .flag { font-size: 28px; }
+.theme-toggle {
+  background: transparent; border: 1px solid var(--border); border-radius: 8px;
+  width: 32px; height: 32px; font-size: 16px; cursor: pointer; color: var(--text-primary);
+  display: flex; align-items: center; justify-content: center; transition: all var(--transition);
+}
+.theme-toggle:hover { background: var(--bg-card); border-color: var(--accent-gold); }
+.search-box {
+  width: 100%; margin-top: 12px; padding: 8px 12px;
+  background: var(--bg-primary); border: 1px solid var(--border); border-radius: 8px;
+  color: var(--text-primary); font-size: 13px; font-family: inherit; transition: all var(--transition);
+}
+.search-box:focus { outline: none; border-color: var(--accent-gold); }
+.sidebar-header h2 { font-size: 16px; font-weight: 700; letter-spacing: -0.02em; }
+.sidebar-header p { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.sidebar-nav { flex: 1; overflow-y: auto; padding: 12px 0; }
+.sidebar-nav a {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 20px; font-size: 13px; font-weight: 500;
+  color: var(--text-secondary); transition: all var(--transition);
+  border-left: 3px solid transparent;
+}
+.sidebar-nav a:hover, .sidebar-nav a.active {
+  color: var(--text-primary); background: rgba(245,158,11,0.06);
+  border-left-color: var(--accent-gold);
+}
+.sidebar-nav a .icon { font-size: 18px; width: 24px; text-align: center; }
+.sidebar-nav a .num {
+  margin-left: auto; font-size: 11px; font-weight: 600;
+  background: var(--bg-card); padding: 2px 8px; border-radius: 10px;
+  color: var(--text-muted);
+}
+/* Progress bar */
+.progress-wrap {
+  padding: 12px 20px; border-top: 1px solid var(--border);
+}
+.progress-label {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 11px; color: var(--text-muted); margin-bottom: 6px;
+}
+.progress-label span:last-child { color: var(--accent-gold); font-weight: 700; }
+.progress-bar {
+  height: 6px; background: var(--bg-primary); border: 1px solid var(--border); border-radius: 3px; overflow: hidden;
+}
+.progress-fill {
+  height: 100%; background: linear-gradient(90deg, var(--accent-gold), var(--de-gold));
+  border-radius: 3px; transition: width 0.5s ease; width: 0%;
+}
+.day-tracker {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 11px; color: var(--text-muted); margin-bottom: 2px; margin-top: 8px;
+}
+.day-tracker span:last-child { color: var(--accent-blue); font-weight: 700; }
+.quiz-score {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 16px; padding: 12px 16px;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+}
+.quiz-score .score-text { font-size: 14px; font-weight: 600; }
+.quiz-score .score-num { color: var(--accent-gold); font-size: 20px; font-weight: 800; }
+.reset-btn {
+  font-size: 11px; padding: 4px 10px; border-radius: 6px;
+  border: 1px solid var(--border); background: transparent;
+  color: var(--text-muted); cursor: pointer; font-family: inherit;
+  transition: all var(--transition);
+}
+.reset-btn:hover { border-color: var(--accent-red); color: var(--accent-red); }
+.sidebar-footer {
+  padding: 16px 20px; border-top: 1px solid var(--border);
+  display: flex; gap: 8px;
+}
+.lang-btn {
+  flex: 1; padding: 8px; border: 1px solid var(--border); border-radius: 8px;
+  background: transparent; color: var(--text-secondary); font-size: 12px;
+  font-weight: 600; cursor: pointer; transition: all var(--transition);
+  font-family: inherit;
+}
+.lang-btn.active { background: var(--accent-gold); color: var(--bg-primary); border-color: var(--accent-gold); }
+.lang-btn:hover:not(.active) { border-color: var(--accent-gold); color: var(--text-primary); }
+
+/* Mobile toggle */
+.menu-toggle {
+  display: none; position: fixed; top: 16px; left: 16px; z-index: 200;
+  width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--border);
+  background: var(--bg-secondary); color: var(--text-primary); font-size: 20px;
+  cursor: pointer; align-items: center; justify-content: center;
+}
+
+/* Main */
+.main { margin-left: var(--sidebar-w); min-height: 100vh; }
+
+/* Hero */
+.hero {
+  padding: 80px 48px 60px;
+  background: linear-gradient(135deg, rgba(245,158,11,0.08) 0%, rgba(59,130,246,0.05) 100%);
+  border-bottom: 1px solid var(--border);
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; top: -80px; right: -80px;
+  width: 300px; height: 300px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(245,158,11,0.12) 0%, transparent 70%);
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.2);
+  padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;
+  color: var(--accent-gold); margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: 40px; font-weight: 800; letter-spacing: -0.03em;
+  line-height: 1.2; margin-bottom: 12px;
+  background: linear-gradient(135deg, var(--text-primary), var(--accent-gold));
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero p { font-size: 16px; color: var(--text-secondary); max-width: 560px; }
+.hero-stats {
+  display: flex; gap: 32px; margin-top: 32px; flex-wrap: wrap;
+}
+.hero-stat { text-align: center; }
+.hero-stat .val { font-size: 28px; font-weight: 800; color: var(--accent-gold); }
+.hero-stat .label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px; }
+
+/* Content */
+.content { padding: 40px 48px 80px; max-width: 960px; }
+.section { margin-bottom: 64px; scroll-margin-top: 24px; }
+.section-label {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--accent-gold); margin-bottom: 12px;
+}
+.section h2 {
+  font-size: 28px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px;
+}
+.section > p { color: var(--text-secondary); margin-bottom: 24px; font-size: 15px; }
+
+/* Cards grid */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.card {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 24px; transition: all var(--transition); cursor: pointer;
+  position: relative; overflow: hidden;
+}
+.card:hover { border-color: var(--accent-gold); transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(245,158,11,0.08); }
+.card .card-icon { font-size: 28px; margin-bottom: 12px; }
+.card h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+.card p { font-size: 13px; color: var(--text-secondary); }
+.card .card-tag {
+  position: absolute; top: 16px; right: 16px; font-size: 10px; font-weight: 700;
+  padding: 3px 10px; border-radius: 10px; text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.card .card-tag.en { background: rgba(59,130,246,0.15); color: var(--accent-blue); }
+.card .card-tag.tr { background: rgba(239,68,68,0.15); color: var(--accent-red); }
+.card-links { display: flex; gap: 8px; margin-top: 16px; }
+.card-link {
+  font-size: 12px; font-weight: 600; padding: 6px 14px; border-radius: 8px;
+  border: 1px solid var(--border); color: var(--text-secondary);
+  transition: all var(--transition);
+}
+.card-link:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
+.card-link.primary { background: var(--accent-gold); color: var(--bg-primary); border-color: var(--accent-gold); }
+
+/* Tables */
+.table-wrap { overflow-x: auto; margin: 16px 0; border-radius: var(--radius); border: 1px solid var(--border); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: var(--bg-card); padding: 12px 16px; text-align: left;
+  font-weight: 600; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+td { padding: 10px 16px; border-bottom: 1px solid rgba(42,53,80,0.5); color: var(--text-secondary); }
+tr:hover td { background: rgba(245,158,11,0.03); }
+td strong, td b { color: var(--text-primary); }
+
+/* Quiz */
+.quiz-item {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 20px 24px; margin-bottom: 12px;
+}
+.quiz-q { font-size: 14px; font-weight: 500; margin-bottom: 12px; }
+.quiz-options { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.quiz-opt {
+  padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px;
+  font-size: 13px; cursor: pointer; transition: all var(--transition);
+  background: transparent; color: var(--text-secondary); font-family: inherit;
+}
+.quiz-opt:hover { border-color: var(--accent-gold); color: var(--text-primary); }
+.quiz-opt.correct { background: rgba(34,197,94,0.15); border-color: var(--accent-green); color: var(--accent-green); }
+.quiz-opt.wrong { background: rgba(239,68,68,0.1); border-color: var(--accent-red); color: var(--accent-red); }
+.quiz-opt.disabled { pointer-events: none; opacity: 0.6; }
+.quiz-explain {
+  display: none; font-size: 13px; color: var(--text-muted);
+  padding: 12px; background: rgba(34,197,94,0.05); border-radius: 8px;
+  border-left: 3px solid var(--accent-green);
+}
+.quiz-explain.show { display: block; }
+
+/* Quick start steps */
+.steps { counter-reset: step; }
+.step {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 16px 0; border-bottom: 1px solid rgba(42,53,80,0.4);
+}
+.step::before {
+  counter-increment: step; content: counter(step);
+  flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%;
+  background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700; color: var(--accent-gold);
+}
+.step-text h4 { font-size: 14px; font-weight: 600; }
+.step-text p { font-size: 13px; color: var(--text-secondary); margin-top: 2px; }
+
+/* Scoring */
+.score-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.score-card {
+  padding: 16px 20px; border-radius: var(--radius); border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+.score-card h4 { font-size: 20px; font-weight: 700; }
+.score-card p { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+
+/* Grammar highlight box */
+.grammar-box {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 20px 24px; margin-bottom: 16px;
+}
+.grammar-box h4 { font-size: 15px; font-weight: 600; color: var(--accent-gold); margin-bottom: 8px; }
+.grammar-box code {
+  background: rgba(245,158,11,0.1); padding: 2px 8px; border-radius: 4px;
+  font-size: 13px; color: var(--accent-gold);
+}
+.grammar-box .example {
+  margin-top: 8px; padding: 10px; background: rgba(255,255,255,0.03);
+  border-radius: 8px; font-size: 13px; color: var(--text-secondary);
+  border-left: 3px solid var(--accent-gold);
+}
+
+/* Flashcards */
+.flashcard-container {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  margin: 32px 0; perspective: 1000px;
+}
+.flashcard {
+  width: 100%; max-width: 440px; height: 240px;
+  position: relative; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d;
+  cursor: pointer;
+}
+.flashcard.flipped { transform: rotateY(180deg); }
+.fc-face {
+  position: absolute; width: 100%; height: 100%; backface-visibility: hidden;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  border-radius: var(--radius); padding: 24px; text-align: center;
+  background: var(--bg-card); border: 2px solid var(--border);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.fc-front { background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-card-hover) 100%); }
+.fc-back {
+  background: linear-gradient(135deg, rgba(245,158,11,0.1) 0%, rgba(245,158,11,0.02) 100%);
+  transform: rotateY(180deg); border-color: var(--accent-gold);
+}
+.fc-word { font-size: 32px; font-weight: 800; color: var(--text-primary); margin-bottom: 8px; }
+.fc-hint { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700; }
+.fc-example { font-size: 14px; color: var(--text-secondary); margin-top: 16px; font-style: italic; }
+.fc-controls { display: flex; gap: 12px; margin-top: 24px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar { transform: translateX(-100%); }
+  .sidebar.open { transform: translateX(0); }
+  .menu-toggle { display: flex; }
+  .main { margin-left: 0; }
+  .hero { padding: 80px 20px 40px; }
+  .hero h1 { font-size: 28px; }
+  .content { padding: 24px 20px 60px; }
+  .cards { grid-template-columns: 1fr; }
+}
+
+/* Animations */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.animate { animation: fadeUp 0.5s ease forwards; }
+.section { opacity: 0; animation: fadeUp 0.6s ease forwards; }
+.section:nth-child(2) { animation-delay: 0.1s; }
+.section:nth-child(3) { animation-delay: 0.2s; }
+</style>
+</head>
+<body>
+
+<!-- Mobile Menu Toggle -->
+<button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+
+<!-- Sidebar -->
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="top-row">
+      <div class="flag">🇩🇪</div>
+      <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn" aria-label="Toggle dark mode">☀️</button>
+    </div>
+    <h2>TELC B1 Portal</h2>
+    <p>30-Day Study Plan</p>
+    <input type="text" id="search-input" class="search-box" data-en="Search materials..." data-tr="Materyal ara..." placeholder="Search materials..." onkeyup="filterCards()">
+  </div>
+  <div class="sidebar-nav">
+    <a href="#home" class="active" onclick="showSection('home')"><span class="icon">🏠</span> Home</a>
+    <a href="#exam-guide" onclick="showSection('exam-guide')"><span class="icon">📋</span> Exam Guide <span class="num">1</span></a>
+    <a href="#study-plan" onclick="showSection('study-plan')"><span class="icon">📅</span> 1-Month Plan <span class="num">2</span></a>
+    <a href="#grammar" onclick="showSection('grammar')"><span class="icon">📝</span> Grammar & Vocab <span class="num">3</span></a>
+    <a href="#reading" onclick="showSection('reading')"><span class="icon">📖</span> Reading & Listening <span class="num">4</span></a>
+    <a href="#writing" onclick="showSection('writing')"><span class="icon">✍️</span> Writing & Speaking <span class="num">5</span></a>
+    <a href="#diagnostic" onclick="showSection('diagnostic')"><span class="icon">🔍</span> Diagnostic Exam <span class="num">6</span></a>
+    <a href="#final-exam" onclick="showSection('final-exam')"><span class="icon">🎯</span> Final Exam <span class="num">7</span></a>
+    <a href="#resources" onclick="showSection('resources')"><span class="icon">🌐</span> Resources <span class="num">8</span></a>
+    <a href="#vocab1" onclick="showSection('vocab1')"><span class="icon">📚</span> Vocab: Verbs <span class="num">9</span></a>
+    <a href="#vocab2" onclick="showSection('vocab2')"><span class="icon">📚</span> Vocab: Nouns <span class="num">10</span></a>
+    <a href="#flashcards" onclick="showSection('flashcards')"><span class="icon">🗂️</span> Flashcards <span class="num">Bonus</span></a>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-label"><span data-en="Progress" data-tr="İlerleme">Progress</span><span id="progress-pct">0%</span></div>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+    <div class="day-tracker"><span data-en="Study Plan" data-tr="Çalışma Planı">Study Plan</span><span id="day-counter">Day 1 of 30</span></div>
+  </div>
+  <div class="sidebar-footer">
+    <button class="lang-btn active" onclick="setLang('en')">🇬🇧 English</button>
+    <button class="lang-btn" onclick="setLang('tr')">🇹🇷 Türkçe</button>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="main">
+
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div class="hero-badge">📚 TELC A2/B1 (DTZ) Preparation</div>
+    <h1>Master German B1<br>in 30 Days</h1>
+    <p>A complete, structured study portal for the Deutsch-Test für Zuwanderer. Grammar, vocabulary, mock exams, strategies — everything you need to pass with B1.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="val">10</div><div class="label">Study Modules</div></div>
+      <div class="hero-stat"><div class="val">30</div><div class="label">Day Plan</div></div>
+      <div class="hero-stat"><div class="val">1000+</div><div class="label">Vocab Words</div></div>
+      <div class="hero-stat"><div class="val">2</div><div class="label">Mock Exams</div></div>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <!-- Quick Start -->
+    <div class="section" id="quickstart" style="animation-delay:0s">
+      <div class="section-label">🚀 Getting Started</div>
+      <h2 data-en="Quick Start Guide" data-tr="Hızlı Başlangıç Rehberi">Quick Start Guide</h2>
+      <div class="steps">
+        <div class="step"><div class="step-text">
+          <h4 data-en="Read the Exam Guide" data-tr="Sınav Rehberini Okuyun">Read the Exam Guide</h4>
+          <p data-en="Understand the exam structure, scoring, and what B1 requires." data-tr="Sınav yapısını, puanlamayı ve B1 gereksinimlerini anlayın.">Understand the exam structure, scoring, and what B1 requires.</p>
+        </div></div>
+        <div class="step"><div class="step-text">
+          <h4 data-en="Take the Diagnostic Exam" data-tr="Tanılama Sınavını Çözün">Take the Diagnostic Exam</h4>
+          <p data-en="Identify your weak areas on Day 1." data-tr="İlk gün zayıf noktalarınızı belirleyin.">Identify your weak areas on Day 1.</p>
+        </div></div>
+        <div class="step"><div class="step-text">
+          <h4 data-en="Follow the 1-Month Plan" data-tr="1 Aylık Planı Takip Edin">Follow the 1-Month Plan</h4>
+          <p data-en="Day-by-day structured learning for all 4 skills." data-tr="4 yetenek için gün gün yapılandırılmış öğrenme.">Day-by-day structured learning for all 4 skills.</p>
+        </div></div>
+        <div class="step"><div class="step-text">
+          <h4 data-en="Use Review Materials" data-tr="Tekrar Materyallerini Kullanın">Use Review Materials</h4>
+          <p data-en="Grammar, reading, writing, and speaking guides with practice exercises." data-tr="Pratik alıştırmalarla dilbilgisi, okuma, yazma ve konuşma rehberleri.">Grammar, reading, writing, and speaking guides with practice exercises.</p>
+        </div></div>
+        <div class="step"><div class="step-text">
+          <h4 data-en="Take the Final Mock Exam" data-tr="Final Sınavını Çözün">Take the Final Mock Exam</h4>
+          <p data-en="Week 4: Full exam simulation under real conditions." data-tr="4. Hafta: Gerçek koşullarda tam sınav simülasyonu.">Week 4: Full exam simulation under real conditions.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- Study Materials -->
+    <div class="section" id="materials" style="animation-delay:0.15s">
+      <div class="section-label">📂 All Materials</div>
+      <h2 data-en="Study Materials" data-tr="Çalışma Materyalleri">Study Materials</h2>
+      <p data-en="Click any card to open the full study material." data-tr="Tam çalışma materyalini açmak için herhangi bir karta tıklayın.">Click any card to open the full study material.</p>
+      <div class="cards" id="material-cards">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+
+    <!-- Exam Scoring Overview -->
+    <div class="section" id="exam-guide" style="animation-delay:0.2s">
+      <div class="section-label">📋 Module 1</div>
+      <h2 data-en="Exam Structure & Scoring" data-tr="Sınav Yapısı ve Puanlama">Exam Structure & Scoring</h2>
+      <p data-en="You need B1 in BOTH written and oral sections." data-tr="Hem yazılı hem sözlü bölümlerde B1 almanız gerekiyor.">You need B1 in BOTH written and oral sections.</p>
+
+      <div class="score-grid">
+        <div class="score-card"><h4>Hören</h4><p data-en="Listening — 25 pts, need ~15 (60%)" data-tr="Dinleme — 25 puan, ~15 gerekli (60%)">Listening — 25 pts, need ~15 (60%)</p></div>
+        <div class="score-card"><h4>Lesen</h4><p data-en="Reading — 25 pts, need ~15 (60%)" data-tr="Okuma — 25 puan, ~15 gerekli (60%)">Reading — 25 pts, need ~15 (60%)</p></div>
+        <div class="score-card"><h4>Sprachbausteine</h4><p data-en="Grammar/Vocab — 30 pts, need ~18 (60%)" data-tr="Dilbilgisi — 30 puan, ~18 gerekli (60%)">Grammar/Vocab — 30 pts, need ~18 (60%)</p></div>
+        <div class="score-card"><h4>Schreiben</h4><p data-en="Writing — 20 pts, need ~12 (60%)" data-tr="Yazma — 20 puan, ~12 gerekli (60%)">Writing — 20 pts, need ~12 (60%)</p></div>
+        <div class="score-card"><h4>Sprechen</h4><p data-en="Speaking — B1-level performance required" data-tr="Konuşma — B1 seviyesi performansı gerekli">Speaking — B1-level performance required</p></div>
+        <div class="score-card" style="border-color: var(--accent-gold);"><h4 style="color:var(--accent-gold)">Total ≥ 60/100</h4><p data-en="Written total must be ≥ 60 points" data-tr="Yazılı toplam ≥ 60 puan olmalı">Written total must be ≥ 60 points</p></div>
+      </div>
+      <p style="margin-top:16px"><a href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/telc_b1_exam_guide.md">📄 Read full Exam Guide →</a></p>
+    </div>
+
+    <!-- Top 10 Grammar -->
+    <div class="section" id="grammar" style="animation-delay:0.25s">
+      <div class="section-label">📝 Module 3</div>
+      <h2 data-en="Top 10 Grammar Topics" data-tr="En Önemli 10 Dilbilgisi Konusu">Top 10 Grammar Topics</h2>
+
+      <div class="grammar-box">
+        <h4>1. Nebensätze <span style="color:var(--text-muted);font-weight:400">(weil, dass, wenn, obwohl, damit, als, ob)</span></h4>
+        <p style="font-size:13px;color:var(--text-secondary)">Verb goes to END of subordinate clause. Most tested topic!</p>
+        <div class="example">Ich bleibe zu Hause, <b>weil</b> ich krank <b>bin</b>.</div>
+      </div>
+      <div class="grammar-box">
+        <h4>2. Konnektoren <span style="color:var(--text-muted);font-weight:400">(deshalb, trotzdem, außerdem)</span></h4>
+        <p style="font-size:13px;color:var(--text-secondary)">Position 1 adverbs cause verb-subject inversion.</p>
+        <div class="example">Ich bin müde. <b>Deshalb</b> <b>bleibe</b> ich zu Hause.</div>
+      </div>
+      <div class="grammar-box">
+        <h4>3. Perfekt <span style="color:var(--text-muted);font-weight:400">(haben/sein + Partizip II)</span></h4>
+        <p style="font-size:13px;color:var(--text-secondary)">Main past tense. Use <code>sein</code> for movement/change-of-state verbs.</p>
+        <div class="example">Sie <b>ist</b> nach Berlin <b>gefahren</b>. / Ich <b>habe</b> Deutsch <b>gelernt</b>.</div>
+      </div>
+      <div class="grammar-box">
+        <h4>4. Wechselpräpositionen <span style="color:var(--text-muted);font-weight:400">(in, an, auf, vor, hinter...)</span></h4>
+        <p style="font-size:13px;color:var(--text-secondary)"><b>Wohin?</b> → Akkusativ | <b>Wo?</b> → Dativ</p>
+        <div class="example"><b>Wohin?</b> Ich gehe <b>in den</b> Supermarkt. <br><b>Wo?</b> Ich bin <b>im</b> Supermarkt.</div>
+      </div>
+      <div class="grammar-box">
+        <h4>5. Konjunktiv II <span style="color:var(--text-muted);font-weight:400">(wäre, hätte, könnte, würde)</span></h4>
+        <p style="font-size:13px;color:var(--text-secondary)">Polite requests in writing and speaking.</p>
+        <div class="example"><b>Könnten</b> Sie mir bitte helfen? / Ich <b>würde</b> gerne einen Termin <b>machen</b>.</div>
+      </div>
+      <p><a href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/review_grammar_vocab.md">📄 Full Grammar Review with 30 practice questions →</a></p>
+    </div>
+
+    <!-- Interactive Quiz -->
+    <div class="section" id="diagnostic" style="animation-delay:0.3s">
+      <div class="section-label">🔍 Quick Practice</div>
+      <h2 data-en="Sprachbausteine Quiz" data-tr="Dil Yapıları Testi">Sprachbausteine Quiz</h2>
+      <p data-en="Test yourself — click the correct answer!" data-tr="Kendinizi test edin — doğru cevaba tıklayın!">Test yourself — click the correct answer!</p>
+
+      <div class="quiz-score">
+        <div><div class="score-text" data-en="Your Score" data-tr="Puanınız">Your Score</div></div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <div class="score-num" id="quiz-score-display">0/8</div>
+          <button class="reset-btn" onclick="resetQuiz()" data-en="Reset" data-tr="Sıfırla">Reset</button>
+        </div>
+      </div>
+      <div id="quiz-container">
+        <!-- Quiz items injected by JS -->
+      </div>
+      <p style="margin-top:20px"><a href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/mock_exam_diagnostic.md">📄 Full Diagnostic Mock Exam →</a> · <a href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/mock_exam_final.md">📄 Final Mock Exam →</a></p>
+    </div>
+
+    <!-- Study Plan Preview -->
+    <div class="section" id="study-plan" style="animation-delay:0.1s">
+      <div class="section-label">📅 Module 2</div>
+      <h2 data-en="1-Month Study Plan" data-tr="1 Aylık Çalışma Planı">1-Month Study Plan</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Week</th><th data-en="Focus" data-tr="Odak">Focus</th><th data-en="Goal" data-tr="Hedef">Goal</th><th data-en="Checkpoint" data-tr="Kontrol Noktası">Checkpoint</th></tr></thead>
+          <tbody>
+            <tr><td><b>Week 1</b></td><td>Grammar & Sprachbausteine</td><td data-en="Master grammar patterns (30% of exam)" data-tr="Dilbilgisi kalıplarını öğrenin (sınavın %30'u)">Master grammar patterns (30% of exam)</td><td data-en="70%+ Sprachbausteine accuracy" data-tr="%70+ Sprachbausteine doğruluğu">70%+ Sprachbausteine accuracy</td></tr>
+            <tr><td><b>Week 2</b></td><td>Reading & Listening</td><td data-en="Build speed & accuracy for input sections" data-tr="Girdi bölümleri için hız ve doğruluk oluşturun">Build speed & accuracy for input sections</td><td data-en="Reading in 45 min, 60%+ accuracy" data-tr="45 dk'da okuma, %60+ doğruluk">Reading in 45 min, 60%+ accuracy</td></tr>
+            <tr><td><b>Week 3</b></td><td>Writing & Speaking</td><td data-en="Memorize templates, practice speaking" data-tr="Şablonları ezberleyin, konuşma pratiği yapın">Memorize templates, practice speaking</td><td data-en="Complete letter in 20 min" data-tr="20 dk'da mektup tamamlama">Complete letter in 20 min</td></tr>
+            <tr><td><b>Week 4</b></td><td>Mock Exams & Polish</td><td data-en="Full exam simulations, fix weak points" data-tr="Tam sınav simülasyonları, zayıf noktaları düzeltin">Full exam simulations, fix weak points</td><td data-en="Pass final mock with B1 score" data-tr="Final sınavını B1 puanıyla geçin">Pass final mock with B1 score</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><a href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/1_month_study_plan.md">📄 Full day-by-day study plan →</a></p>
+    </div>
+
+    <!-- Links to remaining sections -->
+    <div class="section" id="reading" style="animation-delay:0.1s">
+      <div class="section-label">📖 Module 4</div>
+      <h2>Reading & Listening</h2>
+      <p>Synonym recognition, time management, and practice exercises.</p>
+      <div class="card-links"><a class="card-link primary" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/review_reading_listening.md">📄 Open Full Review →</a></div>
+    </div>
+    <div class="section" id="writing" style="animation-delay:0.15s">
+      <div class="section-label">✍️ Module 5</div>
+      <h2>Writing & Speaking</h2>
+      <p>Letter templates, model answers, speaking phrase banks, and 4 practice prompts.</p>
+      <div class="card-links"><a class="card-link primary" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/review_writing_speaking.md">📄 Open Full Review →</a></div>
+    </div>
+    <div class="section" id="final-exam" style="animation-delay:0.2s">
+      <div class="section-label">🎯 Module 7</div>
+      <h2>Final Mock Exam</h2>
+      <p>Full exam with Hören, Lesen, Sprachbausteine, Schreiben, and Sprechen sections.</p>
+      <div class="card-links"><a class="card-link primary" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/mock_exam_final.md">📄 Open Final Exam →</a></div>
+    </div>
+    <div class="section" id="resources" style="animation-delay:0.25s">
+      <div class="section-label">🌐 Module 8</div>
+      <h2>Free Resources</h2>
+      <p>Official practice tests, YouTube channels, DW courses, and grammar websites.</p>
+      <div class="card-links"><a class="card-link primary" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/example_exams_resources.md">📄 Open Resources List →</a></div>
+    </div>
+    <div class="section" id="vocab1" style="animation-delay:0.3s">
+      <div class="section-label">📚 Module 9</div>
+      <h2>Vocabulary: Verbs & Adjectives</h2>
+      <p>~500 most-used German verbs and adjectives with Turkish translations and examples.</p>
+      <div class="card-links">
+        <a class="card-link primary" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/vocab_part1_verbs_adjectives.md">🇬🇧 English Version →</a>
+        <a class="card-link" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part1_fiiller_sifatlar.md">🇹🇷 Türkçe Versiyon →</a>
+      </div>
+    </div>
+    <div class="section" id="vocab2" style="animation-delay:0.35s">
+      <div class="section-label">📚 Module 10</div>
+      <h2>Vocabulary: Nouns by Theme</h2>
+      <p>~550 most-used German nouns organized by DTZ exam themes with Turkish translations.</p>
+      <div class="card-links">
+        <a class="card-link primary" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/vocab_part2_nouns_themes.md">🇬🇧 English Version →</a>
+        <a class="card-link" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part2_isimler_temalar.md">🇹🇷 Türkçe Versiyon →</a>
+      </div>
+    </div>
+
+    <!-- Flashcards Widget -->
+    <div class="section" id="flashcards" style="animation-delay:0.4s">
+      <div class="section-label">🗂️ Bonus</div>
+      <h2 data-en="Quick Vocab Practice" data-tr="Hızlı Kelime Pratiği">Quick Vocab Practice</h2>
+      <p data-en="Test your memory with 20 essential B1 verbs. Click the card to flip!" data-tr="20 temel B1 fiiliyle hafızanızı test edin. Çevirmek için karta tıklayın!">Test your memory with 20 essential B1 verbs. Click the card to flip!</p>
+
+      <div class="flashcard-container">
+        <div class="flashcard" id="flashcard" onclick="flipCard()">
+          <div class="fc-face fc-front">
+            <div class="fc-hint" data-en="German" data-tr="Almanca">German</div>
+            <div class="fc-word" id="fc-de">arbeiten</div>
+            <div style="font-size:11px; color:var(--text-muted); position:absolute; bottom:16px;">(Click to flip / Çevirmek için tıklayın)</div>
+          </div>
+          <div class="fc-face fc-back">
+            <div class="fc-hint" data-en="Translation" data-tr="Çeviri">Translation</div>
+            <div class="fc-word" id="fc-tr">çalışmak</div>
+            <div class="fc-example" id="fc-ex">Ich arbeite jeden Tag von 8 bis 17 Uhr.</div>
+          </div>
+        </div>
+        <div class="fc-controls">
+          <button class="card-link" onclick="prevCard()">&larr; <span data-en="Prev" data-tr="Önceki">Prev</span></button>
+          <button class="card-link primary" onclick="nextCard()"><span data-en="Next Word" data-tr="Sonraki Kelime">Next Word</span> &rarr;</button>
+        </div>
+        <div style="margin-top:12px; font-size:12px; color:var(--text-muted); font-weight: 600;" id="fc-count">1 / 20</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align:center;padding:40px 0 20px;border-top:1px solid var(--border);margin-top:40px">
+      <p style="font-size:24px;margin-bottom:8px">🇩🇪</p>
+      <p style="font-size:14px;color:var(--text-muted)">Viel Erfolg! Başarılar! 💪</p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// Material cards data
+const materials = [
+  { icon:'📋', title:'Exam Guide', titleTr:'Sınav Rehberi', desc:'Structure, scoring, strategies', descTr:'Yapı, puanlama, stratejiler', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/telc_b1_exam_guide.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/telc_b1_exam_guide.md' },
+  { icon:'📅', title:'1-Month Plan', titleTr:'1 Aylık Plan', desc:'Day-by-day study schedule', descTr:'Gün gün çalışma programı', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/1_month_study_plan.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/1_month_study_plan.md' },
+  { icon:'📝', title:'Grammar & Vocab', titleTr:'Dil Bilgisi ve Kelime', desc:'Nebensätze, Perfekt, prepositions + 30 exercises', descTr:'Nebensätze, Perfekt, edatlar + 30 alıştırma', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/review_grammar_vocab.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/review_grammar_vocab.md' },
+  { icon:'📖', title:'Reading & Listening', titleTr:'Okuma ve Dinleme', desc:'Synonym recognition, strategies, 6 exercises', descTr:'Eşanlamlı tanıma, stratejiler, 6 alıştırma', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/review_reading_listening.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/review_reading_listening.md' },
+  { icon:'✍️', title:'Writing & Speaking', titleTr:'Yazma ve Konuşma', desc:'Letter templates, model answer, speaking phrases', descTr:'Mektup şablonları, model cevap, konuşma ifadeleri', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/review_writing_speaking.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/review_writing_speaking.md' },
+  { icon:'🔍', title:'Diagnostic Exam', titleTr:'Tanılama Sınavı', desc:'Day 1 assessment — find your weak spots', descTr:'1. gün değerlendirmesi — zayıf noktalarınızı bulun', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/mock_exam_diagnostic.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_diagnostic.md' },
+  { icon:'🎯', title:'Final Mock Exam', titleTr:'Final Sınavı', desc:'Week 4 full simulation under exam conditions', descTr:'4. hafta sınav koşullarında tam simülasyon', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/mock_exam_final.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_final.md' },
+  { icon:'🌐', title:'Free Resources', titleTr:'Ücretsiz Kaynaklar', desc:'Official tests, YouTube, DW courses, websites', descTr:'Resmi testler, YouTube, DW kursları, web siteleri', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/example_exams_resources.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/example_exams_resources.md' },
+  { icon:'📚', title:'Vocab: Verbs', titleTr:'Kelime: Fiiller', desc:'~500 verbs & adjectives with examples', descTr:'~500 fiil ve sıfat, örneklerle', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/vocab_part1_verbs_adjectives.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part1_fiiller_sifatlar.md' },
+  { icon:'📚', title:'Vocab: Nouns', titleTr:'Kelime: İsimler', desc:'~550 nouns by exam theme', descTr:'~550 isim, sınav temalarına göre', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/vocab_part2_nouns_themes.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part2_isimler_temalar.md' },
+];
+
+// Render material cards
+const cardsEl = document.getElementById('material-cards');
+materials.forEach((m, i) => {
+  cardsEl.innerHTML += `<div class="card" onclick="window.open('${m.en}','_self')">
+    <div class="card-icon">${m.icon}</div>
+    <h3 data-en="${m.title}" data-tr="${m.titleTr}">${m.title}</h3>
+    <p data-en="${m.desc}" data-tr="${m.descTr}">${m.desc}</p>
+    <div class="card-links">
+      <a class="card-link primary" href="${m.en}" onclick="event.stopPropagation()">🇬🇧 EN</a>
+      <a class="card-link" href="${m.tr}" onclick="event.stopPropagation()">🇹🇷 TR</a>
+    </div>
+  </div>`;
+});
+
+// Quiz data
+const quizData = [
+  { q: 'Ich bleibe zu Hause, ___ ich krank bin.', opts: ['dass','weil','wenn'], correct: 1, explain: 'weil = because. Reason clause → verb to end.' },
+  { q: 'Ich bin müde. ___ bleibe ich zu Hause.', opts: ['Trotzdem','Außerdem','Deshalb'], correct: 2, explain: 'Deshalb = therefore. Position 1 → verb inversion.' },
+  { q: 'Gestern ___ ich den ganzen Tag zu Hause ___.', opts: ['habe...geblieben','bin...geblieben','habe...gebleibt'], correct: 1, explain: 'bleiben = change of state → use sein. Irregular: geblieben.' },
+  { q: '___ Sie mir bitte helfen?', opts: ['Können','Konnten','Könnten'], correct: 2, explain: 'Könnten = Konjunktiv II. Polite request form.' },
+  { q: 'Das ist der Mann, ___ gestern bei uns war.', opts: ['der','den','dem'], correct: 0, explain: 'Relativpronomen Nominativ maskulin — der Mann ist Subjekt.' },
+  { q: 'Ich warte ___ den Bus.', opts: ['auf dem','auf den','auf der'], correct: 1, explain: 'warten auf + Akkusativ. den Bus = Akk maskulin.' },
+  { q: 'Sie hat sich ___ die Verspätung entschuldigt.', opts: ['über','für','um'], correct: 1, explain: 'sich entschuldigen für + Akkusativ.' },
+  { q: 'Ich interessiere mich ___ den Deutschkurs.', opts: ['für','um','an'], correct: 0, explain: 'sich interessieren für + Akkusativ.' },
+];
+
+// Render quiz
+const quizEl = document.getElementById('quiz-container');
+quizData.forEach((q, qi) => {
+  let optsHtml = q.opts.map((o, oi) =>
+    `<button class="quiz-opt" onclick="checkAnswer(${qi},${oi})">${String.fromCharCode(97+oi)}) ${o}</button>`
+  ).join('');
+  quizEl.innerHTML += `<div class="quiz-item" id="quiz-${qi}">
+    <div class="quiz-q"><b>${qi+1}.</b> ${q.q}</div>
+    <div class="quiz-options">${optsHtml}</div>
+    <div class="quiz-explain" id="explain-${qi}">✅ ${q.explain}</div>
+  </div>`;
+});
+
+let quizAnswered = JSON.parse(localStorage.getItem('dtz_quiz') || '{}');
+let sectionsVisited = JSON.parse(localStorage.getItem('dtz_sections') || '{}');
+
+function checkAnswer(qi, oi) {
+  if (quizAnswered[qi] !== undefined) return;
+  const item = document.getElementById(`quiz-${qi}`);
+  const btns = item.querySelectorAll('.quiz-opt');
+  const correct = quizData[qi].correct;
+  btns.forEach((b, i) => {
+    b.classList.add('disabled');
+    if (i === correct) b.classList.add('correct');
+    else if (i === oi && oi !== correct) b.classList.add('wrong');
+  });
+  document.getElementById(`explain-${qi}`).classList.add('show');
+  quizAnswered[qi] = (oi === correct);
+  localStorage.setItem('dtz_quiz', JSON.stringify(quizAnswered));
+  updateQuizScore();
+  updateProgress();
+}
+
+function updateQuizScore() {
+  const total = quizData.length;
+  const answered = Object.keys(quizAnswered).length;
+  const correctCount = Object.values(quizAnswered).filter(v => v).length;
+  document.getElementById('quiz-score-display').textContent = `${correctCount}/${total}`;
+}
+
+function resetQuiz() {
+  quizAnswered = {};
+  localStorage.removeItem('dtz_quiz');
+  document.getElementById('quiz-container').innerHTML = '';
+  quizData.forEach((q, qi) => {
+    let optsHtml = q.opts.map((o, oi) =>
+      `<button class="quiz-opt" onclick="checkAnswer(${qi},${oi})">${String.fromCharCode(97+oi)}) ${o}</button>`
+    ).join('');
+    document.getElementById('quiz-container').innerHTML += `<div class="quiz-item" id="quiz-${qi}">
+      <div class="quiz-q"><b>${qi+1}.</b> ${q.q}</div>
+      <div class="quiz-options">${optsHtml}</div>
+      <div class="quiz-explain" id="explain-${qi}">✅ ${q.explain}</div>
+    </div>`;
+  });
+  updateQuizScore();
+  updateProgress();
+}
+
+function trackSection(id) {
+  if (id && !sectionsVisited[id]) {
+    sectionsVisited[id] = true;
+    localStorage.setItem('dtz_sections', JSON.stringify(sectionsVisited));
+    updateProgress();
+  }
+}
+
+function updateProgress() {
+  const totalSections = 10;
+  const totalQuiz = quizData.length;
+  const visitedCount = Object.keys(sectionsVisited).length;
+  const quizCount = Object.keys(quizAnswered).length;
+  const pct = Math.round(((visitedCount / totalSections) * 60 + (quizCount / totalQuiz) * 40));
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('progress-pct').textContent = pct + '%';
+}
+
+// Restore saved quiz state
+function restoreQuiz() {
+  Object.keys(quizAnswered).forEach(qi => {
+    const item = document.getElementById(`quiz-${qi}`);
+    if (!item) return;
+    const btns = item.querySelectorAll('.quiz-opt');
+    const correct = quizData[qi].correct;
+    btns.forEach((b, i) => {
+      b.classList.add('disabled');
+      if (i === correct) b.classList.add('correct');
+    });
+    document.getElementById(`explain-${qi}`).classList.add('show');
+  });
+  updateQuizScore();
+  updateProgress();
+}
+restoreQuiz();
+
+// Flashcards
+const vocabList = [
+  { de: 'arbeiten', tr: 'çalışmak', en: 'to work', ex: 'Ich arbeite jeden Tag von 8 bis 17 Uhr.' },
+  { de: 'wohnen', tr: 'yaşamak / oturmak', en: 'to live / reside', ex: 'Wir wohnen seit drei Jahren in Berlin.' },
+  { de: 'kommen', tr: 'gelmek', en: 'to come', ex: 'Woher kommen Sie? – Ich komme aus der Türkei.' },
+  { de: 'gehen', tr: 'gitmek', en: 'to go', ex: 'Ich gehe jeden Morgen zu Fuß zur Arbeit.' },
+  { de: 'fahren', tr: 'sürmek / gitmek', en: 'to drive / ride', ex: 'Ich fahre mit dem Bus zur Schule.' },
+  { de: 'machen', tr: 'yapmak', en: 'to do / make', ex: 'Was machst du am Wochenende?' },
+  { de: 'haben', tr: 'sahip olmak', en: 'to have', ex: 'Ich habe drei Kinder.' },
+  { de: 'sein', tr: 'olmak', en: 'to be', ex: 'Sie ist Ärztin von Beruf.' },
+  { de: 'werden', tr: 'olmak (gelecek)', en: 'to become', ex: 'Ich möchte Lehrerin werden.' },
+  { de: 'brauchen', tr: 'ihtiyaç duymak', en: 'to need', ex: 'Wir brauchen einen neuen Kühlschrank.' },
+  { de: 'kaufen', tr: 'satın almak', en: 'to buy', ex: 'Ich kaufe jeden Tag frisches Gemüse.' },
+  { de: 'kochen', tr: 'yemek pişirmek', en: 'to cook', ex: 'Meine Mutter kocht sehr lecker.' },
+  { de: 'essen', tr: 'yemek (fiil)', en: 'to eat', ex: 'Was isst du gern?' },
+  { de: 'trinken', tr: 'içmek', en: 'to drink', ex: 'Ich trinke jeden Morgen Kaffee.' },
+  { de: 'schlafen', tr: 'uyumak', en: 'to sleep', ex: 'Ich schlafe immer acht Stunden.' },
+  { de: 'lernen', tr: 'öğrenmek', en: 'to learn', ex: 'Ich lerne seit sechs Monaten Deutsch.' },
+  { de: 'schreiben', tr: 'yazmak', en: 'to write', ex: 'Kannst du mir eine E-Mail schreiben?' },
+  { de: 'lesen', tr: 'okumak', en: 'to read', ex: 'Ich lese gern Bücher.' },
+  { de: 'sprechen', tr: 'konuşmak', en: 'to speak', ex: 'Sprechen Sie Deutsch?' },
+  { de: 'hören', tr: 'duymak / dinlemek', en: 'to hear / listen', ex: 'Ich höre gern Musik.' }
+];
+
+let currentCard = 0;
+function updateCard(immediate = false) {
+  const card = document.getElementById('flashcard');
+  card.classList.remove('flipped');
+  setTimeout(() => {
+    document.getElementById('fc-de').textContent = vocabList[currentCard].de;
+    document.getElementById('fc-tr').textContent = currentLang === 'en' ? vocabList[currentCard].en : vocabList[currentCard].tr;
+    document.getElementById('fc-ex').textContent = vocabList[currentCard].ex;
+    document.getElementById('fc-count').textContent = `${currentCard + 1} / ${vocabList.length}`;
+  }, immediate ? 0 : 150);
+}
+function flipCard() { document.getElementById('flashcard').classList.toggle('flipped'); }
+function nextCard() { currentCard = (currentCard + 1) % vocabList.length; updateCard(); }
+function prevCard() { currentCard = currentCard <= 0 ? vocabList.length - 1 : currentCard - 1; updateCard(); }
+
+// Language toggle
+let currentLang = 'en';
+
+// Theme Toggle
+let currentTheme = localStorage.getItem('dtz_theme') || 'dark';
+if (currentTheme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+function toggleTheme() {
+  currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  localStorage.setItem('dtz_theme', currentTheme);
+  updateThemeIcon();
+}
+function updateThemeIcon() {
+  document.getElementById('theme-btn').textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+}
+updateThemeIcon();
+
+// Day Tracker
+let startDate = localStorage.getItem('dtz_start_date');
+if (!startDate) {
+  startDate = new Date().toISOString();
+  localStorage.setItem('dtz_start_date', startDate);
+}
+function updateDayTracker() {
+  const diffTime = Math.abs(new Date() - new Date(startDate));
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
+  const dayText = currentLang === 'en' ? `Day ${Math.min(diffDays, 30)} of 30` : `30'un ${Math.min(diffDays, 30)}. Günü`;
+  document.getElementById('day-counter').textContent = dayText;
+}
+
+// Search Filter
+function filterCards() {
+  const query = document.getElementById('search-input').value.toLowerCase();
+  const cards = document.querySelectorAll('#material-cards .card');
+  cards.forEach(card => {
+    // Check text of both data-en and data-tr attributes for all elements inside card
+    const allTextNode = card.querySelectorAll('[data-en], [data-tr]');
+    let fullText = card.textContent.toLowerCase();
+    allTextNode.forEach(el => { fullText += ' ' + el.getAttribute('data-en').toLowerCase() + ' ' + el.getAttribute('data-tr').toLowerCase() });
+    card.style.display = fullText.includes(query) ? '' : 'none';
+  });
+}
+
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`.lang-btn:${lang === 'en' ? 'first-child' : 'last-child'}`).classList.add('active');
+  document.querySelectorAll('[data-en]').forEach(el => {
+    if (el.tagName === 'INPUT' && el.placeholder) {
+      el.placeholder = el.getAttribute(`data-${lang}`);
+    } else {
+      el.textContent = el.getAttribute(`data-${lang}`);
+    }
+  });
+  updateDayTracker();
+  updateCard(true); // Redraw flashcard to match language instantly
+}
+setLang('en');
+
+// Active nav tracking
+function showSection(id) {
+  document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+  const active = document.querySelector(`.sidebar-nav a[href="#${id}"]`);
+  if (active) active.classList.add('active');
+  // Close mobile sidebar
+  document.querySelector('.sidebar').classList.remove('open');
+}
+
+// Intersection observer for active nav
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const id = e.target.id;
+      document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+      const match = document.querySelector(`.sidebar-nav a[href="#${id}"]`);
+      if (match) match.classList.add('active');
+      trackSection(id);
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('.section[id]').forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
