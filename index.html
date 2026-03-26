@@ -8,6 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  // Initialize mermaid
+  if (typeof mermaid !== 'undefined') {
+    mermaid.initialize({ startOnLoad: false, theme: 'dark' });
+  }
+</script>
 <style>
 :root {
   --bg-primary: #0a0e17;
@@ -891,6 +898,26 @@ function openMarkdown(url) {
       marked.setOptions({ breaks: true, gfm: true });
       mdContent.innerHTML = marked.parse(text);
       mdView.scrollTop = 0; // scroll to top when opened
+      
+      // Handle Mermaid charts explicitly
+      const mermaidElements = mdContent.querySelectorAll('code.language-mermaid');
+      if (mermaidElements.length > 0) {
+        // Switch mermaid theme based on current mode
+        mermaid.initialize({ startOnLoad: false, theme: currentTheme === 'dark' ? 'dark' : 'default' });
+        
+        mermaidElements.forEach((el, index) => {
+          const pre = el.parentElement;
+          const mermaidDiv = document.createElement('div');
+          mermaidDiv.className = 'mermaid';
+          mermaidDiv.textContent = el.textContent;
+          // Replace <pre> with new mermaid div
+          pre.replaceWith(mermaidDiv);
+        });
+        
+        mermaid.run({
+          nodes: document.querySelectorAll('.mermaid')
+        });
+      }
     })
     .catch(err => {
       mdContent.innerHTML = `<div class="md-loader" style="color:var(--accent-red)">Error loading study material.<br>Make sure you are viewing this via the live GitHub Pages link and not locally.</div>`;
