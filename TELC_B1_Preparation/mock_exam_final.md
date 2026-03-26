@@ -1,4 +1,4 @@
-# Final Mock Exam (TELC B1 — DTZ)
+# Final Mock Exam (TELC B1 — telc Deutsch A2-B1)
 
 *Take this at the end of Week 4 under strict exam conditions.*
 *Total Time: ~100 minutes written + speaking practice*

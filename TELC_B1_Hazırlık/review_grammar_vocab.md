@@ -5,7 +5,7 @@ ______________________________________________________________________
 ## 1. Nebensätze (Yan Cümleler) — EN ÇOK TEST EDİLEN KONU
 
 Çekimli(zaman ve kişiye göre değişen) fiil yan cümlenin **EN SONUNA** gider. 
-**PRO İPUCU:** DTZ sınavı *Sprachbausteine* (Bölüm 1) kısmında, virgülden hemen sonra bir boşluk görürseniz, cümlenin geri kalanına bakın. Eğer çekimli fiil cümlenin en sonunda yer alıyorsa, boşluğa kesinlikle *dass, weil, wenn,* veya *ob* gibi yan cümle bağlaçlarından biri gelmelidir!
+**PRO İPUCU:** telc Deutsch A2-B1 sınavı *Sprachbausteine* (Bölüm 1) kısmında, virgülden hemen sonra bir boşluk görürseniz, cümlenin geri kalanına bakın. Eğer çekimli fiil cümlenin en sonunda yer alıyorsa, boşluğa kesinlikle *dass, weil, wenn,* veya *ob* gibi yan cümle bağlaçlarından biri gelmelidir!
 
 | Bağlaç | Anlamı | Örnek |
 | --- | --- | --- |
@@ -156,7 +156,7 @@ ______________________________________________________________________
 
 ## 6. Gerçek Sınav Pratiği: Karışık Sprachbausteine
 
-Yukarıdaki tüm kuralları kapsayan DTZ tarzı karma alıştırmalarla kendinizi test edin:
+Yukarıdaki tüm kuralları kapsayan telc Deutsch A2-B1 tarzı karma alıştırmalarla kendinizi test edin:
 
 <div class="md-quiz" 
   data-question="Ich habe eine Katze, ___ sehr gerne schläft." 
@@ -187,3 +187,10 @@ Yukarıdaki tüm kuralları kapsayan DTZ tarzı karma alıştırmalarla kendiniz
   data-options="lebe|lebte|habe gelebt" 
   data-answer="0" 
   data-explain="HİLE: 'Seit' (-den beri), geçmişte başlamış VE HALA DEVAM EDEN eylemleri anlatır. İngilizce veya Türkçenin aksine, Almancada bu durumda geçmiş zaman değil, Şimdiki Zaman (Präsens) kullanılmak zorundadır!"></div>
+
+______________________________________________________________________
+
+## Kaynaklar (References)
+* **telc Deutsch A2-B1 Sınav Yapısı:** [telc.net/sprachpruefungen/a2b1](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
+* **Gramer Pratikleri:** Genel TELC müfredatı, DW Learn German ve YouTube Almanca eğitmenlerinden derlenmiştir.
+* **Sınav Örnekleri:** [Goethe B1 Modellsatz](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html).

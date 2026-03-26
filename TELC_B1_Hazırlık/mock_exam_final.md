@@ -1,4 +1,4 @@
-# Final Deneme Sınavı (TELC B1 — DTZ)
+# Final Deneme Sınavı (TELC B1 — telc Deutsch A2-B1)
 
 *Bunu 4. Haftanın sonunda sıkı sınav koşullarında çözün.*
 *Toplam Süre: ~100 dakika yazılı + konuşma pratiği*

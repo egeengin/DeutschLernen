@@ -1,4 +1,4 @@
-# 🇩🇪 TELC A2/B1 (DTZ) — B1 in 30 Days / 30 Günde B1
+# 🇩🇪 TELC A2/B1 (telc Deutsch A2-B1) — B1 in 30 Days / 30 Günde B1
 
 > **🎓 [Access the Interactive Study Portal Here](https://egeengin.github.io/DeutschLernen/)**
 

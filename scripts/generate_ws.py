@@ -21,7 +21,26 @@ ______________________________________________________________________
 
 You must memorize these skeletons. In the exam, you just slot your 4 points into the middle.
 
-#### 1. Formal Complaint / Unknown Person (Die Beschwerde)
+#### 1. Job Application (Die Bewerbung) - *Sehr Wichtig!*
+Replying to a job ad is extremely common in telc Deutsch A2-B1.
+
+```text
+Sehr geehrte Damen und Herren,
+
+mit großem Interesse habe ich Ihre Anzeige im Internet gelesen.
+Ich schreibe Ihnen diese E-Mail, weil ich mich um die Stelle als [Job Title] bewerben möchte.
+... [Point 1: Describe your experience]
+Außerdem möchte ich Sie fragen, wie die Arbeitszeiten sind. [Point 2]
+Ich habe Erfahrung in diesem Bereich, weil ich in meiner Heimat als [Job Title] gearbeitet habe. [Point 3]
+Über eine Einladung zu einem persönlichen Gespräch würde ich mich sehr freuen. [Point 4]
+
+Vielen Dank im Voraus für Ihre Antwort.
+
+Mit freundlichen Grüßen
+[Your First Last Name]
+```
+
+#### 2. Formal Complaint / Unknown Person (Die Beschwerde)
 Use this if you ordered something broken, or you are angry at a company.
 ```text
 Sehr geehrte Damen und Herren,
@@ -38,7 +57,7 @@ Mit freundlichen Grüßen
 [Your First Last Name]
 ```
 
-#### 2. Semi-Formal Apology (Entschuldigung)
+#### 3. Semi-Formal Apology (Entschuldigung)
 Use this if you can't attend an appointment, a course, or work.
 ```text
 Sehr geehrte(r) Frau/Herr [Name],
@@ -56,7 +75,7 @@ Mit freundlichen Grüßen
 [Your First Last Name]
 ```
 
-#### 3. Informal Invitation (Einladung)
+#### 4. Informal Invitation (Einladung)
 Use this when writing to a friend to organize a party or trip.
 ```text
 Liebe(r) [Name],
@@ -101,19 +120,23 @@ ______________________________________________________________________
 ## 3. Sprechen (Speaking) — 15 min, Partners
 
 The speaking exam is done with a partner and has 3 parts:
-1. **Part 1:** Introduce yourself (Name, Age, Country, Job, Hobbies, Languages). 
-2. **Part 2:** Talk about a picture (Describe it, then relate it to your life).
-3. **Part 3:** Plan something together with your partner (A party, a gift, a trip).
 
-### Part 2: Picture Description Phrases
-Always go from the **general** to the **specific**.
-* **General:** *Auf dem Bild sehe ich [Akk]... / Das Bild zeigt [Akk]...*
-* **Location:** *Im Vordergrund / Im Hintergrund / In der Mitte gibt es...*
-* **Action:** *Die Leute scheinen glücklich zu sein. / Ich glaube, sie feiern einen Geburtstag, weil...*
-* **Personal Experience:** *In meinem Heimatland machen wir das genauso. / Bei uns ist das anders, wir...*
+### Part 1: Sich vorstellen (Introduce yourself)
+You must talk about Name, Age, Country, Residence, Job, Languages.
+**🛑 YOUTUBE EXAMINER TIP:** Do NOT just say simple sentences. You must add detail to prove B1 fluency.
+- **Fail:** "Ich heiße Ali. Ich bin 30 Jahre alt."
+- **Pass (B1):** "Ich heiße Ali und ich komme aus der Türkei, aber **seit drei Jahren lebe ich** mit meiner Familie in Berlin."
 
-### Part 3: Planning Together (The Most Important Part!)
-The examiners want to see you **react** to your partner. Do not just read a monolog!
+### Part 2: Bildbeschreibung (Talk about a picture)
+Describe the picture, then relate it to your life.
+**🛑 YOUTUBE EXAMINER TIP:** To buy time and show off your vocabulary, always use directional phrases!
+* **Locations:** *Oben* (Top), *Unten* (Bottom), *Rechts* (Right), *Links* (Left), *Im Vordergrund* (Foreground), *Im Hintergrund* (Background).
+* **General:** *Auf dem Bild sehe ich [Akk]...*
+* **Action:** *Die Leute scheinen glücklich zu sein. Ich glaube, sie feiern einen Geburtstag, weil...*
+* **Personal Experience:** *In meinem Heimatland machen wir das genauso.*
+
+### Part 3: Gemeinsam Planen (Planning Together)
+The examiners want to see you **react** to your partner. Do not read a monolog!
 
 | Function | Phrases (Redemittel) |
 | --- | --- |
@@ -129,10 +152,17 @@ The examiners want to see you **react** to your partner. Do not just read a mono
   data-explain="Option B uses polite disagreement and the Konjunktiv II ('wäre'). Giving a reason ('weil') is also required for high B1 marks."></div>
 
 <div class="md-quiz" 
-  data-question="You need to suggest a meeting time. Which is the best B1 formulation?" 
+  data-question="You need to suggest a meeting time. Which is the best formulation?" 
   data-options="Wir treffen uns um 8.|Wann treffen wir uns?|Wie wäre es, wenn wir uns am Samstag um 14 Uhr treffen?" 
   data-answer="2" 
   data-explain="'Wie wäre es, wenn...' is a classic B1 suggestion construct. It shows high grammatical competence."></div>
+
+______________________________________________________________________
+
+## References
+* **telc Deutsch A2-B1 Official Portal:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
+* **Goethe-Institut Preparation:** [goethe.de B1 exams](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html)
+* **YouTube B1 Speaking Tips:** [Deutsch Lernen mit der DW](https://learngerman.dw.com/) and specific "telc B1 Sprechen" exam walkthroughs.
 """
 
 tr_content = """# İnceleme: Yazma ve Konuşma (Schreiben & Sprechen)
@@ -152,7 +182,25 @@ ______________________________________________________________________
 
 Bu iskeletleri ezberlemelisiniz. Sınavda beyninizi yormadan, sadece 4 maddenizi bu şablonların ortasına yerleştireceksiniz.
 
-#### 1. Resmi Şikayet / Tanınmayan Kişi (Die Beschwerde)
+#### 1. İş Başvurusu (Die Bewerbung) - *Çok Önemli!*
+telc Deutsch A2-B1 sınavında bir iş ilanına e-posta ile başvurmak çok yaygındır.
+```text
+Sehr geehrte Damen und Herren,
+
+mit großem Interesse habe ich Ihre Anzeige im Internet gelesen.
+Ich schreibe Ihnen diese E-Mail, weil ich mich um die Stelle als [Meslek Adı] bewerben möchte.
+... [Madde 1: Tecrübenizi anlatın]
+Außerdem möchte ich Sie fragen, wie die Arbeitszeiten sind. [Madde 2]
+Ich habe Erfahrung in diesem Bereich, weil ich in meiner Heimat als [Meslek Adı] gearbeitet habe. [Madde 3]
+Über eine Einladung zu einem persönlichen Gespräch würde ich mich sehr freuen. [Madde 4]
+
+Vielen Dank im Voraus für Ihre Antwort.
+
+Mit freundlichen Grüßen
+[Adınız Soyadınız]
+```
+
+#### 2. Resmi Şikayet / Tanınmayan Kişi (Die Beschwerde)
 Bozuk bir ürün geldiğinde veya bir şirkete kızdığınızda bunu kullanın.
 ```text
 Sehr geehrte Damen und Herren,
@@ -169,7 +217,7 @@ Mit freundlichen Grüßen
 [Adınız Soyadınız]
 ```
 
-#### 2. Yarı Resmi Özür (Entschuldigung)
+#### 3. Yarı Resmi Özür (Entschuldigung)
 Bir kursa, işe veya randevuya gidemeyeceğiniz durumlarda bunu kullanın.
 ```text
 Sehr geehrte(r) Frau/Herr [İsim],
@@ -187,7 +235,7 @@ Mit freundlichen Grüßen
 [Adınız Soyadınız]
 ```
 
-#### 3. Samimi Davet (Einladung)
+#### 4. Samimi Davet (Einladung)
 Bir arkadaşınıza parti veya gezi düzenlemek için yazdığınızda kullanın.
 ```text
 Liebe(r) [İsim],
@@ -232,19 +280,23 @@ ______________________________________________________________________
 ## 3. Konuşma (Sprechen) — 15 Dk, Partnerli
 
 Konuşma sınavı bir partnerle birlikte yapılır ve 3 bölümden oluşur:
-1. **Bölüm 1:** Kendinizi tanıtın (Ad, Yaş, Ülke, Meslek, Hobiler, Diller). Sınav gözetmeni size ekstra bir soru soracaktır.
-2. **Bölüm 2:** Bir resim hakkında konuşun (Resmi tarif edin, ardından kendi hayatınızla ilişkilendirin).
-3. **Bölüm 3:** Partnerinizle birlikte bir şey planlayın (Tatilde gezi, öğretmen için hediye vb.).
 
-### Bölüm 2: Resim Tarif Etme Kalıpları
-Her zaman **genelden özele** doğru gidin.
-* **Genel:** *Auf dem Bild sehe ich [Akk]... / Das Bild zeigt [Akk]...* (Resimde ... görüyorum / Resim ... gösteriyor)
-* **Konum:** *Im Vordergrund / Im Hintergrund / In der Mitte gibt es...* (Ön planda / Arka planda / Ortada ... var)
-* **Eylem:** *Die Leute scheinen glücklich zu sein. / Ich glaube, sie feiern einen Geburtstag, weil...* (İnsanlar mutlu görünüyor. / Sanırım doğum günü kutluyorlar çünkü...)
-* **Kişisel Deneyim (Zorunlu!):** *In meinem Heimatland machen wir das genauso. / Bei uns ist das anders, wir...* (Benim ülkemde biz de aynısını yaparız. / Bizde bu farklıdır, biz...)
+### Bölüm 1: Kendini Tanıtma (Sich vorstellen)
+Ad, Yaş, Ülke, Şehir, Meslek, Diller hakkında konuşmalısınız.
+**🛑 YOUTUBE SINAV İPUCU:** Sınav görevlileri arka arkaya robot gibi basit cümleler kuranlardan nefret eder! B1 olduğunuzu kanıtlamak için cümleleri detaylandırmalısınız!
+- **Kötü:** "Ich heiße Ali. Ich bin 30 Jahre alt."
+- **İyi (B1):** "Ich heiße Ali und ich komme aus der Türkei, aber **seit drei Jahren lebe ich** mit meiner Familie in Berlin." (Bağlaç kullanarak ve bir tık detay vererek)
 
-### Bölüm 3: Birlikte Plan Yapma (Sınavın En Önemli Kısmı!)
-Sınav görevlilerinin görmek istedikleri en önemli şey **partnerinize TEPKİ vermenizdir**. Sakın ezberlediğiniz uzun cümleleri bir monolog gibi okumayın! Dinleyin, tepki verin, kendi fikrinizi ekleyin.
+### Bölüm 2: Resim Tarifi (Bildbeschreibung)
+Resmi tarif edin, ardından kendi hayatınızla ilişkilendirin.
+**🛑 YOUTUBE SINAV İPUCU:** Kelime dağarcığınızı zengin göstermek ve düşünmek için zaman kazanmak için DAİMA YÖN kelimelerini kullanın!
+* **Yönler:** *Oben* (Üstte), *Unten* (Altta), *Rechts* (Sağda), *Links* (Solda), *Im Vordergrund* (Ön planda), *Im Hintergrund* (Arka planda).
+* **Genel:** *Auf dem Bild sehe ich [Akk]...* (Resimde ... görüyorum)
+* **Eylem:** *Die Leute scheinen glücklich zu sein. Ich glaube, sie feiern einen Geburtstag, weil...* (Sanırım parti yapıyorlar ÇÜNKÜ...)
+* **Kişisel Deneyim (Zorunlu):** *In meinem Heimatland machen wir das genauso.* (Bizim ülkemizde de aynı böyle yaparız.)
+
+### Bölüm 3: Birlikte Plan Yapma (Gemeinsam Planen)
+Sınav görevlilerinin görmek istedikleri en önemli şey **partnerinize TEPKİ vermenizdir**. Sakın ezberlediğiniz uzun cümleleri bir monolog gibi okumayın!
 
 | İşlev | İfadeler (Redemittel) |
 | --- | --- |
@@ -260,10 +312,17 @@ Sınav görevlilerinin görmek istedikleri en önemli şey **partnerinize TEPKİ
   data-explain="B Seçeneği kibarca aynı fikirde olmamayı (Disagreement) ve Konjunktiv II ('wäre') kullanımını harmanlıyor. Üstelik 'weil' ile sebep belirtmeniz B1 sınavından çok yüksek puan almanızı sağlar."></div>
 
 <div class="md-quiz" 
-  data-question="Bir buluşma saati önermeniz gerekiyor. En iyi B1 dil bilgisi seviyesi hangisidir?" 
+  data-question="Bir buluşma saati önermeniz gerekiyor. En iyi dil bilgisi seviyesi hangisidir?" 
   data-options="Wir treffen uns um 8. (8'de buluşuyoruz.)|Wann treffen wir uns? (Ne zaman buluşuruz?)|Wie wäre es, wenn wir uns am Samstag um 14 Uhr treffen? (Cumartesi 14:00'da buluşmaya ne dersin?)" 
   data-answer="2" 
   data-explain="'Wie wäre es, wenn...' (Aşağıdaki durumu yapsaydık nasıl olurdu...) klasik ve çok havalı bir B1 öneri kalıbıdır. Sınav görevlilerini anında etkiler."></div>
+
+______________________________________________________________________
+
+## Kaynaklar (References)
+* **telc Deutsch A2-B1 Resmi Portal:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
+* **Goethe-Institut Hazırlık:** [goethe.de B1 exams](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html)
+* **YouTube B1 Konuşma Tüyoları:** [Deutsch Lernen mit der DW](https://learngerman.dw.com/) ve YouTube üzerinden aratılabilecek "telc B1 Sprechen" popüler kanalları (örn: Marija, DeutschLera).
 """
 
 with open(EN_FILE, "w", encoding="utf-8") as f:

@@ -1,8 +1,8 @@
-# TELC A2/B1 (DTZ) 1-Month Learning Plan
+# TELC A2/B1 (telc Deutsch A2-B1) 1-Month Learning Plan
 
 ## 1. Exam Research & Strategy
 
-- [x] Research the structure of TELC A2/B1 (Deutsch-Test für Zuwanderer - DTZ).
+- [x] Research the structure of TELC A2/B1 (Deutsch-Test für Zuwanderer - telc Deutsch A2-B1).
 - [x] Understand the point system, passing criteria for obtaining B1 (what sections are most critical).
 - [x] Identify key grammar topics and vocabulary themes required for B1 level.
 - [x] Formulate an optimized exam strategy to pass within 1 month.

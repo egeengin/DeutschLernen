@@ -15,7 +15,26 @@ ______________________________________________________________________
 
 You must memorize these skeletons. In the exam, you just slot your 4 points into the middle.
 
-#### 1. Formal Complaint / Unknown Person (Die Beschwerde)
+#### 1. Job Application (Die Bewerbung) - *Sehr Wichtig!*
+Replying to a job ad is extremely common in telc Deutsch A2-B1.
+
+```text
+Sehr geehrte Damen und Herren,
+
+mit großem Interesse habe ich Ihre Anzeige im Internet gelesen.
+Ich schreibe Ihnen diese E-Mail, weil ich mich um die Stelle als [Job Title] bewerben möchte.
+... [Point 1: Describe your experience]
+Außerdem möchte ich Sie fragen, wie die Arbeitszeiten sind. [Point 2]
+Ich habe Erfahrung in diesem Bereich, weil ich in meiner Heimat als [Job Title] gearbeitet habe. [Point 3]
+Über eine Einladung zu einem persönlichen Gespräch würde ich mich sehr freuen. [Point 4]
+
+Vielen Dank im Voraus für Ihre Antwort.
+
+Mit freundlichen Grüßen
+[Your First Last Name]
+```
+
+#### 2. Formal Complaint / Unknown Person (Die Beschwerde)
 Use this if you ordered something broken, or you are angry at a company.
 ```text
 Sehr geehrte Damen und Herren,
@@ -32,7 +51,7 @@ Mit freundlichen Grüßen
 [Your First Last Name]
 ```
 
-#### 2. Semi-Formal Apology (Entschuldigung)
+#### 3. Semi-Formal Apology (Entschuldigung)
 Use this if you can't attend an appointment, a course, or work.
 ```text
 Sehr geehrte(r) Frau/Herr [Name],
@@ -50,7 +69,7 @@ Mit freundlichen Grüßen
 [Your First Last Name]
 ```
 
-#### 3. Informal Invitation (Einladung)
+#### 4. Informal Invitation (Einladung)
 Use this when writing to a friend to organize a party or trip.
 ```text
 Liebe(r) [Name],
@@ -95,19 +114,23 @@ ______________________________________________________________________
 ## 3. Sprechen (Speaking) — 15 min, Partners
 
 The speaking exam is done with a partner and has 3 parts:
-1. **Part 1:** Introduce yourself (Name, Age, Country, Job, Hobbies, Languages). 
-2. **Part 2:** Talk about a picture (Describe it, then relate it to your life).
-3. **Part 3:** Plan something together with your partner (A party, a gift, a trip).
 
-### Part 2: Picture Description Phrases
-Always go from the **general** to the **specific**.
-* **General:** *Auf dem Bild sehe ich [Akk]... / Das Bild zeigt [Akk]...*
-* **Location:** *Im Vordergrund / Im Hintergrund / In der Mitte gibt es...*
-* **Action:** *Die Leute scheinen glücklich zu sein. / Ich glaube, sie feiern einen Geburtstag, weil...*
-* **Personal Experience:** *In meinem Heimatland machen wir das genauso. / Bei uns ist das anders, wir...*
+### Part 1: Sich vorstellen (Introduce yourself)
+You must talk about Name, Age, Country, Residence, Job, Languages.
+**🛑 YOUTUBE EXAMINER TIP:** Do NOT just say simple sentences. You must add detail to prove B1 fluency.
+- **Fail:** "Ich heiße Ali. Ich bin 30 Jahre alt."
+- **Pass (B1):** "Ich heiße Ali und ich komme aus der Türkei, aber **seit drei Jahren lebe ich** mit meiner Familie in Berlin."
 
-### Part 3: Planning Together (The Most Important Part!)
-The examiners want to see you **react** to your partner. Do not just read a monolog!
+### Part 2: Bildbeschreibung (Talk about a picture)
+Describe the picture, then relate it to your life.
+**🛑 YOUTUBE EXAMINER TIP:** To buy time and show off your vocabulary, always use directional phrases!
+* **Locations:** *Oben* (Top), *Unten* (Bottom), *Rechts* (Right), *Links* (Left), *Im Vordergrund* (Foreground), *Im Hintergrund* (Background).
+* **General:** *Auf dem Bild sehe ich [Akk]...*
+* **Action:** *Die Leute scheinen glücklich zu sein. Ich glaube, sie feiern einen Geburtstag, weil...*
+* **Personal Experience:** *In meinem Heimatland machen wir das genauso.*
+
+### Part 3: Gemeinsam Planen (Planning Together)
+The examiners want to see you **react** to your partner. Do not read a monolog!
 
 | Function | Phrases (Redemittel) |
 | --- | --- |
@@ -123,7 +146,14 @@ The examiners want to see you **react** to your partner. Do not just read a mono
   data-explain="Option B uses polite disagreement and the Konjunktiv II ('wäre'). Giving a reason ('weil') is also required for high B1 marks."></div>
 
 <div class="md-quiz" 
-  data-question="You need to suggest a meeting time. Which is the best B1 formulation?" 
+  data-question="You need to suggest a meeting time. Which is the best formulation?" 
   data-options="Wir treffen uns um 8.|Wann treffen wir uns?|Wie wäre es, wenn wir uns am Samstag um 14 Uhr treffen?" 
   data-answer="2" 
   data-explain="'Wie wäre es, wenn...' is a classic B1 suggestion construct. It shows high grammatical competence."></div>
+
+______________________________________________________________________
+
+## References
+* **telc Deutsch A2-B1 Official Portal:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
+* **Goethe-Institut Preparation:** [goethe.de B1 exams](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html)
+* **YouTube B1 Speaking Tips:** [Deutsch Lernen mit der DW](https://learngerman.dw.com/) and specific "telc B1 Sprechen" exam walkthroughs.

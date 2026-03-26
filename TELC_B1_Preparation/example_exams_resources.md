@@ -1,4 +1,4 @@
-# Free TELC B1 / DTZ Example Exams & Resources
+# Free TELC B1 / telc Deutsch A2-B1 Example Exams & Resources
 
 *All resources listed here are free. Verified March 2026.*
 
@@ -8,9 +8,9 @@ ______________________________________________________________________
 
 | Source                    | Description                                                                       | Link                                                                                                                    |
 | ------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **telc gGmbH**            | Official model test (Modelltest) for DTZ A2/B1 — includes all sections with audio | [telc.net/shop](https://www.telc.net/kandidaten/pruefungen/pruefung/detail/deutsch-test-fuer-zuwanderer-a2-b1-dtz.html) |
-| **Goethe-Institut**       | Official Modellsatz DTZ — free PDF with audio files                               | [goethe.de/DTZ-Modelltest](https://www.goethe.de/de/spr/ueb/dtz.html)                                                   |
-| **G.A.S.T. Übungssatz 1** | Free full practice set: Hören + Lesen + Schreiben with answer key                 | [gast.de/DTZ-Übungssatz](https://www.gast.de/de/pruefungsvorbereitung/deutsch-test-fuer-zuwanderer-a2-b1.html)          |
+| **telc gGmbH**            | Official model test (Modelltest) for telc Deutsch A2-B1 A2/B1 — includes all sections with audio | [telc.net/shop](https://www.telc.net/kandidaten/pruefungen/pruefung/detail/deutsch-test-fuer-zuwanderer-a2-b1-dtz.html) |
+| **Goethe-Institut**       | Official Modellsatz telc Deutsch A2-B1 — free PDF with audio files                               | [goethe.de/telc Deutsch A2-B1-Modelltest](https://www.goethe.de/de/spr/ueb/dtz.html)                                                   |
+| **G.A.S.T. Übungssatz 1** | Free full practice set: Hören + Lesen + Schreiben with answer key                 | [gast.de/telc Deutsch A2-B1-Übungssatz](https://www.gast.de/de/pruefungsvorbereitung/deutsch-test-fuer-zuwanderer-a2-b1.html)          |
 
 ______________________________________________________________________
 
@@ -18,7 +18,7 @@ ______________________________________________________________________
 
 | Source                 | Description                                                                         | Link                                                                          |
 | ---------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| **Ausbildungspark**    | Interactive online DTZ A2/B1 test with practice mode, test mode, and score analysis | [ausbildungspark.com/DTZ](https://www.ausbildungspark.com/sprachtest/dtz/)    |
+| **Ausbildungspark**    | Interactive online telc Deutsch A2-B1 A2/B1 test with practice mode, test mode, and score analysis | [ausbildungspark.com/telc Deutsch A2-B1](https://www.ausbildungspark.com/sprachtest/dtz/)    |
 | **Telc Official Shop** | Free downloadable teaching materials A1–C1                                          | [telc.net/materialien](https://www.telc.net/lehrende/unterrichtsmaterialien/) |
 
 ______________________________________________________________________
@@ -28,11 +28,11 @@ ______________________________________________________________________
 | Channel / Title                                      | What You Get                                                 | Link                                                                                                    |
 | ---------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
 | **TELC B1 HÖREN — Übungstest 1**                     | Full practice listening test with solutions at the end       | [youtube.com](https://www.youtube.com/watch?v=TELC_B1_Horen_T1)                                         |
-| **DTZ B1 Hören / B1 Hörverstehen Test mit Lösungen** | Full Hören section with all 3 parts and solutions            | [YouTube Search](https://www.youtube.com/results?search_query=TELC+DTZ+B1+H%C3%B6ren+L%C3%B6sungen)     |
+| **telc Deutsch A2-B1 B1 Hören / B1 Hörverstehen Test mit Lösungen** | Full Hören section with all 3 parts and solutions            | [YouTube Search](https://www.youtube.com/results?search_query=TELC+telc Deutsch A2-B1+B1+H%C3%B6ren+L%C3%B6sungen)     |
 | **TELC B1 Hören 2022 — Neu Modell 1**                | Updated 2022 model test listening section                    | [YouTube Search](https://www.youtube.com/results?search_query=TELC+B1+H%C3%B6ren+2022+Modell+1)         |
 | **TELC B1 Listening 2023 — New Model 3**             | 2023 model listening with solutions                          | [YouTube Search](https://www.youtube.com/results?search_query=TELC+B1+Listening+2023+New+Model+3)       |
-| **DTZ B1 Listening 2026 — Sample Test**              | Most recent 2026 model, all 4 listening parts with solutions | [YouTube Search](https://www.youtube.com/results?search_query=DTZ+B1+Listening+2026+sample+test)        |
-| **DTZ B1 Intensive Listening Practice (Parts 1–4)**  | Intensive drill of all 4 Hören parts using 2026 model        | [YouTube Search](https://www.youtube.com/results?search_query=DTZ+B1+intensive+listening+practice+2026) |
+| **telc Deutsch A2-B1 B1 Listening 2026 — Sample Test**              | Most recent 2026 model, all 4 listening parts with solutions | [YouTube Search](https://www.youtube.com/results?search_query=telc Deutsch A2-B1+B1+Listening+2026+sample+test)        |
+| **telc Deutsch A2-B1 B1 Intensive Listening Practice (Parts 1–4)**  | Intensive drill of all 4 Hören parts using 2026 model        | [YouTube Search](https://www.youtube.com/results?search_query=telc Deutsch A2-B1+B1+intensive+listening+practice+2026) |
 
 ______________________________________________________________________
 
@@ -40,8 +40,8 @@ ______________________________________________________________________
 
 | Channel / Title                               | What You Get                                                                   | Link                                                                                                                |
 | --------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
-| **Lesen B1 Prüfung 2026 — DTZ TELC Übung 16** | Reading comprehension with solutions                                           | [YouTube Search](https://www.youtube.com/results?search_query=Lesen+B1+Pr%C3%BCfung+2026+DTZ+TELC)                  |
-| **TELC B1 DTZ Hören, Lesen & Schreiben**      | Full exam simulation: Hören + Lesen + Schreiben with solutions after each task | [YouTube Search](https://www.youtube.com/results?search_query=TELC+B1+DTZ+H%C3%B6ren+Lesen+Schreiben+L%C3%B6sungen) |
+| **Lesen B1 Prüfung 2026 — telc Deutsch A2-B1 TELC Übung 16** | Reading comprehension with solutions                                           | [YouTube Search](https://www.youtube.com/results?search_query=Lesen+B1+Pr%C3%BCfung+2026+telc Deutsch A2-B1+TELC)                  |
+| **TELC B1 telc Deutsch A2-B1 Hören, Lesen & Schreiben**      | Full exam simulation: Hören + Lesen + Schreiben with solutions after each task | [YouTube Search](https://www.youtube.com/results?search_query=TELC+B1+telc Deutsch A2-B1+H%C3%B6ren+Lesen+Schreiben+L%C3%B6sungen) |
 
 ______________________________________________________________________
 

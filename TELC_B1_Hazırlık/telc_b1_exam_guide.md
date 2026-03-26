@@ -1,8 +1,8 @@
-# TELC A2/B1 (DTZ) — Sınav Rehberi ve Strateji
+# TELC A2/B1 (telc Deutsch A2-B1) — Sınav Rehberi ve Strateji
 
 ## Sınava Genel Bakış
 
-**Deutsch-Test für Zuwanderer (DTZ)**, Goethe-Institut ve telc gGmbH tarafından geliştirilen A2/B1 çift seviyeli bir sınavdır. Performansınıza göre A2 veya **B1 sertifikası** alırsınız. Hedefiniz: **B1**.
+**Deutsch-Test für Zuwanderer (telc Deutsch A2-B1)**, Goethe-Institut ve telc gGmbH tarafından geliştirilen A2/B1 çift seviyeli bir sınavdır. Performansınıza göre A2 veya **B1 sertifikası** alırsınız. Hedefiniz: **B1**.
 
 Sınav günlük iletişimi test eder — iş, ev, alışveriş, resmi kurumlar, sağlık, eğitim, ulaşım vb.
 
@@ -25,7 +25,7 @@ ______________________________________________________________________
 
 ```mermaid
 flowchart TD
-    A["DTZ Sınavına Gir"] --> B["Yazılı Bölüm\n(Hören + Lesen + Sprachbausteine + Schreiben)\nMaks: 100 puan"]
+    A["telc Deutsch A2-B1 Sınavına Gir"] --> B["Yazılı Bölüm\n(Hören + Lesen + Sprachbausteine + Schreiben)\nMaks: 100 puan"]
     A --> C["Sözlü Bölüm\n(Sprechen)\nBölüm 1 + 2 + 3"]
     B --> D{"Yazılı puan\n≥ 60?"}
     C --> E{"Konuşma\nB1 seviyesinde mi?"}
@@ -135,7 +135,7 @@ ______________________________________________________________________
 
 ## Temel Kelime Temaları
 
-Bunlar **her DTZ sınavında** çıkan temalardır:
+Bunlar **her telc Deutsch A2-B1 sınavında** çıkan temalardır:
 
 | Tema                 | Bilinmesi Gereken Kilit Kelimeler                                                   |
 | -------------------- | ----------------------------------------------------------------------------------- |

@@ -44,7 +44,7 @@ ______________________________________________________________________
 
 ## 2. Interactive Reading Practice
 
-Test your synonym and logic recognition with these DTZ-style reading questions.
+Test your synonym and logic recognition with these telc Deutsch A2-B1 style reading questions.
 
 ### Reading 1: True / False (Richtig/Falsch)
 
@@ -90,6 +90,8 @@ ______________________________________________________________________
 3. **Beware of distractors:** Often, all three options (A, B, C) will be mentioned in the audio! You must listen for the *context*, not just the word.
 4. **Second chance:** Audio pieces in Parts 1 and 3 are played TWICE. Parts 2 and 4 are played ONLY ONCE.
 
+**🛑 YOUTUBE EXAMINER TIP (Part 3 True/False):** Do not over-think! If you read "The washing machine costs 300€" and the audio says "It costs 200€ but used to be 300€," the statement is False. Listen for exactly what the question asks. Look out for "oder", "aber", and "leider".
+
 ### Listening Distractor Example
 
 **You read:** Wann kommt Frau Müller? 
@@ -115,3 +117,9 @@ Imagine listening to a train station announcement:
   data-options="Punkt 14:30 Uhr|Um 15:10 Uhr|In 40 Minuten fährt der nächste Zug." 
   data-answer="1" 
   data-explain="The normal departure is 14:30. The delay (Verspätung) is 40 minutes. 14:30 + 40 mins = 15:10. You must sometimes do simple math in listening parts!"></div>
+
+______________________________________________________________________
+
+## References
+* **telc Deutsch A2·B1 Official Details & Scoring:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
+* **YouTube telc A2-B1 Listening Tracks:** [telc gGmbH YouTube](https://www.youtube.com/c/telc_gGmbH) and mock exam audio tracks.
