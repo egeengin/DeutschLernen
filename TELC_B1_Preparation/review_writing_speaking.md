@@ -1,188 +1,71 @@
-# Review: Schreiben & Sprechen (Writing & Speaking)
+# Review: Writing & Speaking
 
-______________________________________________________________________
+---
 
-## 1. Schreiben (Writing) — 30 min, 2 Parts
+## 1. Writing (Schreiben) — 30 min, 2 Tasks
 
-The official **telc Deutsch A2-B1** Writing Exam ALWAYS consists of two parts:
-* **Teil 1:** A short, informal "Chat" or "Kurznachricht" (30-40 words).
-* **Teil 2:** A formal or semi-formal E-Mail (70-80 words).
+The writing part tests your ability to communicate in daily situations via text/email.
 
-### The 4 Rules for Full Points
-1. ✅ Address **ALL bullet points** from the prompt (usually 3 per task). If you miss one, you lose severe points.
-2. ✅ Use correct **greeting** and **closing** based on the relationship (Informal for Chat, Formal for E-Mail).
-3. ✅ Use at least 2-3 **connectors** (deshalb, außerdem, weil, dass).
-4. ✅ Respect word limits. Writing too little guarantees a penalty.
+### Key Rules for Full Points
+1. **Task Fulfillment:** You must address **ALL** 3-4 bullet points given in the prompt. Missing one lead to heavy point deduction.
+2. **Format:** Use correct Greetings and Closings (Formal vs. Informal).
+3. **Connectors:** Use at least 2-3 connectors (*weil, dass, deshalb, aber*) to show B1 level.
 
-### Letter & Chat Templates
+### Templates
 
-#### 1. Part 1: Informal Chat (Die Kurznachricht) - *New in telc A2-B1!*
-You usually write to a friend on WhatsApp about an upcoming meeting or apologizing.
+#### Part 1: Informal Chat (30-40 words)
 ```text
 Hallo [Name],
-wie geht es dir? 
-Es tut mir leid, aber ich kann morgen leider nicht kommen, weil [Reason/Point 1].
-Können wir uns am [New Day/Time] treffen? [Point 2]
-Bitte melde dich!
-Liebe Grüße
-[Your First Name]
+wie geht es dir?
+Mir geht es gut. Ich schreibe dir, weil [Reason].
+Können wir uns am [Day] um [Time] treffen?
+Melde dich bitte!
+Liebe Grüße, [Your Name]
 ```
 
-#### 2. Part 2: Job Application (Die Bewerbung) - *Sehr Wichtig!*
-Replying to a job ad is extremely common in telc Deutsch A2-B1.
-
+#### Part 2: Formal Email (70-80 words)
 ```text
-Sehr geehrte Damen und Herren,
+Sehr geehrte Damen und Herren, (or Sehr geehrte Frau X / Sehr geehrter Herr Y)
 
-mit großem Interesse habe ich Ihre Anzeige im Internet gelesen.
-Ich schreibe Ihnen diese E-Mail, weil ich mich um die Stelle als [Job Title] bewerben möchte.
-... [Point 1: Describe your experience]
-Außerdem möchte ich Sie fragen, wie die Arbeitszeiten sind. [Point 2]
-Ich habe Erfahrung in diesem Bereich, weil ich in meiner Heimat als [Job Title] gearbeitet habe. [Point 3]
-Über eine Einladung zu einem persönlichen Gespräch würde ich mich sehr freuen. [Point 4]
-
-Vielen Dank im Voraus für Ihre Antwort.
+ich schreibe Ihnen, weil...
+Außerdem möchte ich fragen, ob...
+Ich danke Ihnen im Voraus für Ihre Hilfe.
 
 Mit freundlichen Grüßen
-[Your First Last Name]
+[Full Name]
 ```
 
-#### 2. Formal Complaint / Unknown Person (Die Beschwerde)
-Use this if you ordered something broken, or you are angry at a company.
-```text
-Sehr geehrte Damen und Herren,
+---
 
-ich schreibe Ihnen, weil ich am [Date] [Item] bei Ihnen gekauft habe und es leider ein großes Problem gibt.
-... [Point 1 & 2]
-Außerdem möchte ich Sie darauf hinweisen, dass... [Point 3]
-Deshalb erwarte ich, dass Sie mir mein Geld zurückgeben oder mir einen Ersatz schicken. [Point 4]
+## 2. Speaking (Sprechen) — ~15 min
 
-Ich hoffe auf eine schnelle und positive Antwort.
-Vielen Dank im Voraus.
+Conducted in pairs (two candidates).
 
-Mit freundlichen Grüßen
-[Your First Last Name]
-```
+### Part 1: Introduce Yourself (Sich vorstellen)
+Standard topics: Name, Age, Country, Job, Family, Languages.
+**B1 Tip:** Don't just list facts. Use "seit" (since) and "weil".
+- *Ex:* "Ich lebe seit zwei Jahren in Berlin, weil ich hier arbeiten möchte."
 
-#### 3. Semi-Formal Apology (Entschuldigung)
-Use this if you can't attend an appointment, a course, or work.
-```text
-Sehr geehrte(r) Frau/Herr [Name],
+### Part 2: Take a Position / Picture Description (Meinung äußern)
+You get a picture or a text. Describe it, give your opinion, and relate it to your country/experience.
+**Useful phrases:**
+- "Auf dem Bild sehe ich..."
+- "Ich finde das Thema wichtig, weil..."
+- "In meinem Heimatland ist das anders/ähnlich."
 
-ich hoffe, es geht Ihnen gut.
-Ich schreibe Ihnen diese E-Mail, um mich zu entschuldigen.
-Leider kann ich am [Date] nicht zu unserem Termin kommen, weil ich plötzlich krank geworden bin.
-... [Details for Point 1 & 2]
-Könnten wir den Termin vielleicht auf nächste Woche verschieben? [Point 3]
-Es wäre toll, wenn Sie mir kurz Bescheid geben könnten. [Point 4]
+### Part 3: Plan Something Together (Gemeinsam etwas planen)
+Organize an event, trip, or gift with your partner.
+**The examiners want to see you REACT to each other.**
+- "Was meinst du dazu?" (What do you think?)
+- "Das ist eine gute Idee, aber..."
+- "Sollen wir vielleicht...?"
 
-Vielen Dank für Ihr Verständnis.
+---
 
-Mit freundlichen Grüßen
-[Your First Last Name]
-```
-
-#### 4. Informal Invitation (Einladung)
-Use this when writing to a friend to organize a party or trip.
-```text
-Liebe(r) [Name],
-
-wie geht es dir? Mir geht es super!
-Ich schreibe dir heute, weil ich am Wochenende eine große Party feiere und dich herzlich einladen möchte!
-... [Point 1 & 2]
-Wir könnten auch zusammen etwas kochen, wenn du Lust hast. [Point 3]
-Bitte gib mir bis Freitag Bescheid, ob du kommen kannst. [Point 4]
-
-Ich freue mich sehr auf dich!
-Liebe Grüße
-[Your First Name]
-```
-
-______________________________________________________________________
-
-## 2. Interactive Letter Practice
-
-Let's test if you can choose the correct formal/informal phrases.
+## Interactive Practice
 
 <div class="md-quiz" 
-  data-question="You are writing an email to 'Herr Müller', your child's teacher. Which greeting is correct?" 
-  data-options="Lieber Herr Müller,|Sehr geehrter Herr Müller,|Hallo Müller," 
+  data-question="You are writing a formal email to a company. Which closing is correct?" 
+  data-options="Liebe Grüße|Mit freundlichen Grüßen|Tschüss" 
   data-answer="1" 
-  data-explain="Teachers require semi-formal respect. 'Sehr geehrter Herr Müller,' is the perfect opening. 'Lieber' is too informal, and 'Hallo Müller' is outright offensive in German business culture!"></div>
-
-<div class="md-quiz" 
-  data-question="You want to end a formal letter to a company. Which closing is correct?" 
-  data-options="Liebe Grüße,|Mit freundlichen Grüßen|Dein Tom" 
-  data-answer="1" 
-  data-explain="Formal letters always end with 'Mit freundlichen Grüßen'. Note that there is historically NO COMMA after 'Grüßen'."></div>
-
-<div class="md-quiz" 
-  data-question="You are asking a company for a refund. What is the best B1 phrasing?" 
-  data-options="Ich will mein Geld.|Könnten Sie mir bitte mein Geld zurückerstatten?|Geben Sie mir Geld sofort." 
-  data-answer="1" 
-  data-explain="'Könnten Sie' uses the polite Konjunktiv II. The other two sound exceptionally aggressive and uneducated, which loses you points."></div>
-
-______________________________________________________________________
-
-## 3. Sprechen (Speaking) — 15 min, Partners
-
-The speaking exam is done with a partner and has 3 parts:
-
-### Part 1: Sich vorstellen (Introduce yourself)
-You must talk about Name, Age, Country, Residence, Job, Languages.
-**🛑 YOUTUBE EXAMINER TIP:** Do NOT just say simple sentences. You must add detail to prove B1 fluency.
-- **Fail:** "Ich heiße Ali. Ich bin 30 Jahre alt."
-- **Pass (B1):** "Ich heiße Ali und ich komme aus der Türkei, aber **seit drei Jahren lebe ich** mit meiner Familie in Berlin."
-
-### Part 2: Über ein Thema sprechen / Bildbeschreibung (Topic / Picture)
-You are given a photo or topic. Describe what you see, give your opinion, and relate to your experience.
-**🛑 YOUTUBE EXAMINER TIP:** Do NOT just list things. Use the structure below for B1 points.
-
-**Phrase Bank for Bildbeschreibung:**
-
-| Function | Phrases (Redemittel) |
-| --- | --- |
-| **Location** | *Im Vordergrund sieht man... / Im Hintergrund... / Rechts/Links... / In der Mitte...* |
-| **People** | *Man kann sehen, dass... / Die Personen scheinen... / Es sieht so aus, als ob...* |
-| **Your Opinion** | *Ich finde, dass... / Meiner Meinung nach... / Ich bin der Meinung, dass...* |
-| **Experience** | *In meinem Heimatland ist das anders... / Bei uns macht man das so...* |
-| **Comparison** | *Im Vergleich zu meinem Heimatland... / Der Unterschied ist, dass...* |
-
-**Model Answer Structure (B1):**
-
-> 1. Beschreibung: "Auf dem Bild sehe ich [was]. Im Vordergrund ist X, im Hintergrund Y."
-> 2. Interpretation: "Ich denke, die Personen sind [Situation]. Es sieht so aus, als ob..."
-> 3. Erfahrung: "In meinem Leben ist das auch wichtig, weil..."
-> 4. Vergleich: "In meinem Heimatland ist das anders/ähnlich. Bei uns..."
-> 5. Meinung: "Ich finde dieses Thema wichtig, weil..."
-
-### Part 3: Gemeinsam etwas planen (Planning Together)
-You and your partner must plan a party, trip, or gift. You get bullet points to decide.
-**🛑 YOUTUBE EXAMINER TIP:** The examiners want to see you **react** to your partner!
-
-| Function | Phrases (Redemittel) |
-| --- | --- |
-| **Suggesting** | *Ich schlage vor, dass... / Wie wäre es, wenn wir...? / Wollen wir vielleicht...? / Hast du eine Idee?* |
-| **Agreeing** | *Das ist eine tolle Idee! / Ja, damit bin ich einverstanden. / Genau! / Das finde ich gut.* |
-| **Disagreeing** | *Das finde ich nicht so gut... / Vielleicht wäre es besser, wenn... / Ich sehe das ein bisschen anders.* |
-| **Asking opinion** | *Was meinst du dazu? / Was hältst du davon? / Bist du damit einverstanden?* |
-| **Compromising** | *Okay, dann machen wir es so: ... / Können wir uns darauf einigen, dass...?* |
-
-<div class="md-quiz" 
-  data-question="Your partner suggests buying flowers for the teacher, but you think a book is better. How do you respond?" 
-  data-options="Nein, Blumen sind dumm.|Blumen sind schön, aber ein Buch wäre vielleicht noch besser, weil...|Ich will ein Buch kaufen." 
-  data-answer="1" 
-  data-explain="Option B uses polite disagreement and the Konjunktiv II ('wäre'). Giving a reason ('weil') is also required for high B1 marks."></div>
-
-<div class="md-quiz" 
-  data-question="You need to suggest a meeting time. Which is the best formulation?" 
-  data-options="Wir treffen uns um 8.|Wann treffen wir uns?|Wie wäre es, wenn wir uns am Samstag um 14 Uhr treffen?" 
-  data-answer="2" 
-  data-explain="'Wie wäre es, wenn...' is a classic B1 suggestion construct. It shows high grammatical competence."></div>
-
-______________________________________________________________________
-
-## References
-* **telc Deutsch A2-B1 Official Portal:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
-* **Goethe-Institut Preparation:** [goethe.de B1 exams](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html)
-* **YouTube B1 Speaking Tips:** [Deutsch Lernen mit der DW](https://learngerman.dw.com/) and specific "telc B1 Sprechen" exam walkthroughs.
+  data-explain="Correct: 'Mit freundlichen Grüßen' is the standard formal closing. Note that German does NOT use a comma after the closing in formal writing."></div>

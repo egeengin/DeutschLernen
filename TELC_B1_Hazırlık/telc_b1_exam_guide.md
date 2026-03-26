@@ -84,7 +84,7 @@ Bunu genellikle ikinci bir aday partnerle birlikte yapacaksınız.
 Kısa cümlelerle hayatınız hakkında konuşursunuz: ad, yaş, yaşanılan yer, eğitim, meslek, aile ve dil öğrenimi. 
 **Hedef:** Akıcı olmak ve cümleleri sadece alt alta sıralamak yerine birbirine bağlamak. (Örn: "Ich lerne Deutsch, *weil* ich in Deutschland arbeiten möchte.")
 
-#### Teil 2: Über Erfahrungen sprechen / Bildbeschreibung (Deneyimler Üzerine Konuşma / Resim Tarifi)
+#### Teil 2: Über Erfahrungen sprechen / Bildbeschreibung (Resim Tarifi)
 Size bir konu veya resim verilir. Gördüğünüzü tarif etmeli ve ardından konuyu kendi ülkenizdeki veya hayatınızdaki deneyimlerinizle ilişkilendirmelisiniz.
 **Hedef:** Yön bildiren kelimeler (*im Hintergrund, rechts*) kullanın ve "Benim ülkemde/hayatımda bu durum böyle..." gibi kıyaslamalar yapın.
 

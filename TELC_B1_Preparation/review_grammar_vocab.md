@@ -8,30 +8,27 @@ In subordinate clauses (Nebensatz), the conjugated verb always goes to the **VER
 
 **EXAM TRICK:** In the telc Deutsch A2-B1 "Sprachbausteine" section, if you see a blank right after a comma, look at the rest of the sentence. If the conjugated verb is sitting at the absolute end, the blank is likely a subordinating conjunction like *dass, weil, wenn,* or *ob*.
 
-### Most Important Subordinating Conjunctions (Verb at END)
+### Common Subordinating Conjunctions (Verb at END)
 
-| Conjunction | Meaning | Usage / Example |
+| Conjunction | Meaning | Example |
 | --- | --- | --- |
-| **weil** | because | Gives a reason. *Ich bleibe zu Hause, **weil** ich krank **bin**.* |
-| **dass** | that | Connects thoughts. *Ich hoffe, **dass** du morgen **kommst**.* |
-| **wenn** | if / when | Condition or repeated event. ***Wenn** es regnet, **bleibe** ich zu Hause.* |
-| **obwohl** | although | Contrast. *Er arbeitet viel, **obwohl** er müde **ist**.* |
-| **damit** | so that | Purpose/Goal. *Ich lerne Deutsch, **damit** ich Arbeit **finde**.* |
-| **als** | when (past) | Single event in the past. ***Als** ich klein **war**, spielte ich oft.* |
-| **ob** | whether / if | Yes/No question. *Ich weiß nicht, **ob** er **kommt**.* |
+| **weil** | because | Ich bleibe zu Hause, **weil** ich krank **bin**. |
+| **dass** | that | Ich hoffe, **dass** du morgen **kommst**. |
+| **wenn** | if / when | **Wenn** es regnet, **bleibe** ich zu Hause. |
+| **obwohl** | although | Er arbeitet viel, **obwohl** er müde **ist**. |
+| **damit** | so that | Ich lerne Deutsch, **damit** ich Arbeit **finde**. |
+| **als** | when (past) | **Als** ich ein Kind **war**, spielte ich oft draußen. |
+| **ob** | whether / if | Ich weiß nicht, **ob** er morgen **kommt**. |
 
-**Watch out:** When the subordinate clause comes first, it acts as "Position 1", so the main clause verb follows immediately after the comma:
-> **Weil** ich krank **bin**, **bleibe** ich zu Hause. *(Verb-Verb at the comma!)*
+**Important:** When the Nebensatz starts the sentence, the main clause begins with the verb (Verb-Verb rule):
+> **Weil** ich krank **bin**, **bleibe** ich heute zu Hause.
 
 ---
 
-## 2. Konnektoren (Connectors) — Word Order Tricks
+## 2. Konnektoren (Connectors) & Word Order
 
-**EXAM TRICK:** Knowing which connectors don't change word order (Position 0) vs those that force inversion (Position 1) is a guaranteed point-winner!
-
-### Position 0 (ADUSO) — No Word Order Change
-
-The connector is in "Position 0", followed by Subject (Pos 1) + Verb (Pos 2).
+### Position 0 (ADUSO) — No word order change
+The subject comes immediately after these connectors.
 
 | Connector | Meaning | Example |
 | --- | --- | --- |
@@ -42,50 +39,37 @@ The connector is in "Position 0", followed by Subject (Pos 1) + Verb (Pos 2).
 | **O**der | or | Gehen wir ins Kino **oder** bleiben wir zu Hause? |
 
 ### Position 1 (Adverbs) — Verb-Subject Inversion
-
-The connector takes "Position 1", followed immediately by the Verb (Pos 2) then Subject.
+These "force" the verb to come second (Inversion).
 
 | Connector | Meaning | Example |
 | --- | --- | --- |
 | **deshalb** | therefore | Ich bin müde. **Deshalb** *bleibe* ich zu Hause. |
 | **trotzdem** | anyway | Es regnet. **Trotzdem** *gehe* ich spazieren. |
-| **außerdem** | furthermore | Er ist nett. **Außerdem** *hilft* er mir immer. |
-| **darum** | that's why | Ich habe Zeit. **Darum** *komme* ich zu dir. |
+| **außerdem** | furthermore | Er ist nett. **Außerdem** *hilft* er mir oft. |
 | **danach** | after that | Erst essen wir, **danach** *gehen* wir ins Kino. |
 
 ---
 
-## 3. Perfekt (Past Tense) — The Main Past Tense for Speaking
+## 3. Perfekt (Past Tense)
 
-In the B1 exam, you use **Perfekt** for 90% of your writing and speaking.
+The most important tense for the oral exam.
 
-**Formula:** **haben** or **sein** (conjugated) ... **Partizip II** (past participle)
+**Formula:** **haben/sein** (Position 2) + ... + **Partizip II** (End)
 
 ### Sein or Haben?
+*   **sein:** Movement (A to B) or change of state (*gehen, fahren, kommen, sterben*).
+*   **haben:** Most other verbs.
 
-| Auxiliary | When to Use? | Examples |
-| --- | --- | --- |
-| **sein** | Movement (A to B) or change of state. | *fahren, gehen, kommen, sterben, wachsen* |
-| **haben** | All other verbs and verbs with an object. | *kaufen, essen, trinken, machen* |
-
-*Special Case:* The verbs 'sein', 'werden', and 'bleiben' also take **sein**.
+*Special: 'sein', 'werden', and 'bleiben' always take **sein**.*
 
 ---
 
-## 4. Wechselpräpositionen (Two-Way Prepositions)
+## 4. Wechselpräpositionen (Akkusativ vs. Dativ)
 
-These prepositions can take either **Akkusativ** or **Dativ**.
+*   **Wohin? (Movement/Target) → Akkusativ**
+*   **Wo? (Location/Static) → Dativ**
 
-**RULE:** If the action suggests movement to a target (**Wohin?** / Where to?), use **Akkusativ**. If the action suggests a static location (**Wo?** / Where at?), use **Dativ**.
-
-### Direction vs. Location Table
-
-| Question | Case | Common Verbs | Example |
-| --- | --- | --- | --- |
-| **Wohin?** | Akkusativ | gehen, stellen, legen, setzen | Ich gehe **in den** Supermarkt. |
-| **Wo?** | Dativ | bleiben, stehen, liegen, sitzen | Ich bin **im** (in dem) Supermarkt. |
-
-### Dativ Articles Reminder
+### Dativ Case Reference Table
 
 | Gender | Nominativ | Dativ |
 | --- | --- | --- |
@@ -94,103 +78,75 @@ These prepositions can take either **Akkusativ** or **Dativ**.
 | **Neutrum** | das / ein | **dem / einem** |
 | **Plural** | die | **den (+ n)** |
 
+*Example:* 
+- Ich gehe **in den** Park (Akk). 
+- Ich bin **im (in dem)** Park (Dat).
+
 ---
 
 ## 5. Konjunktiv II (Polite Requests & Wishes)
 
-For B1 speaking and letter-writing, you MUST use Konjunktiv II to sound polite. Instead of "Ich will einen Termin", use these patterns.
+Used for asking things politely in the oral exam.
 
-| Pattern | Example | Purpose |
+| Form | Example | Use Case |
 | --- | --- | --- |
-| **könnte** | **Könnten** Sie mir bitte helfen? | Polite questions / requests |
-| **würde + Infinitive** | Ich **würde** mich über eine Antwort **freuen**. | Expressing wishes / desires |
-| **hätte** | Ich **hätte** gerne einen Kaffee. | Ordering / Desiring |
-| **wäre** | Es **wäre** schön, wenn... | Suggestions / Dreams |
+| **könnte** | **Könnten** Sie mir bitte helfen? | Polite request |
+| **würde** | Ich **würde** mich sehr freuen. | Wish / Hypothetical |
+| **hätte** | Ich **hätte** gern einen Kaffee. | Ordering / Desire |
+| **wäre** | Es **wäre** toll, wenn... | Suggestion |
 
 ---
 
 ## 6. Adjektivdeklination (Adjective Endings)
 
-The ending of an adjective changes depending on the **article** preceding it.
-
-### After Definite Articles (der/die/das)
-
-| Case | Maskulin | Feminin | Neutrum | Plural |
+### After Definite Article (der, die, das)
+| Case | Masc | Fem | Neut | Plur |
 | --- | --- | --- | --- | --- |
-| **Nom** | der alt**e** Mann | die alt**e** Frau | das alt**e** Kind | die alt**en** Leute |
-| **Akk** | den alt**en** Mann | die alt**e** Frau | das alt**e** Kind | die alt**en** Leute |
-| **Dat** | dem alt**en** Mann | der alt**en** Frau | dem alt**en** Kind | den alt**en** Leuten |
-
-### After Indefinite Articles (ein/eine)
-
-| Case | Maskulin | Feminin | Neutrum |
-| --- | --- | --- | --- |
-| **Nom** | ein alt**er** Mann | eine alt**e** Frau | ein alt**es** Kind |
-| **Akk** | einen alt**en** Mann | eine alt**e** Frau | ein alt**es** Kind |
-| **Dat** | einem alt**en** Mann | einer alt**en** Frau | einem alt**en** Kind |
+| **Nom** | -e | -e | -e | -en |
+| **Akk** | -en | -e | -e | -en |
+| **Dat** | -en | -en | -en | -en |
 
 ---
 
-## 7. Relativsätze (Relative Clauses) — Verb at the END
+## 7. Passiv (Passive Voice)
 
-Used to give more information about a noun. The relative pronoun is chosen based on the **gender** of the noun and its **role** in the relative clause.
+**Formula:** **werden** (conjugated) + ... + **Partizip II**
 
-* **Akkusativ Example:** Das ist der Mann, **den** ich gestern gesehen habe. (The man I saw yesterday.)
-* **Dativ Example:** Das sind die Leute, **denen** ich geholfen habe. (The people I helped.)
-
----
-
-## 8. Passiv Präsens (Passive Voice)
-
-Focuses on **what is being done** rather than who is doing it.
-
-**Formula:** **werden** (conjugated) + … + **Partizip II** (at the end)
-
-*   *Hier **wird** nicht geraucht.* (No smoking here.)
-*   *Die Hausaufgaben **werden** vom Schüler gemacht.* (The homework is done by the student.)
+*Example:* "Die Hausaufgaben **werden** gemacht." (The homework is being done.)
 
 ---
 
-## 9. Verben mit festen Präpositionen (Fixed Prepositions)
-
-Some verbs always take a specific preposition and a specific case.
+## 8. Verbs with Fixed Prepositions
 
 | Verb | Preposition | Case | Example |
 | --- | --- | --- | --- |
-| **warten** | auf | Akkusativ | *Ich warte **auf den** Bus.* |
-| **denken** | an | Akkusativ | *Ich denke **an** dich.* |
-| **sich freuen** | auf/über | Akkusativ | *Ich freue mich **auf** dich.* |
-| **sprechen** | mit/über | Dat/Akk | *Ich spreche **mit** dem Chef.* |
+| **warten** | auf | Akkusativ | Ich warte **auf den** Bus. |
+| **denken** | an | Akkusativ | Ich denke **an** dich. |
+| **sich freuen** | auf/über | Akkusativ | Ich freue mich **auf** den Urlaub. |
+| **träumen** | von | Dativ | Ich träume **von** einem Haus. |
 
 ---
 
-## 10. Modalverben im Präteritum (Past Modal Verbs)
+## 9. Modal Verbs in Präteritum (Past)
 
-In written German (letters, etc.), the Präteritum form is always used for the past of modal verbs.
-
-| Tense / Person | ich / er / sie / es | du | wir / sie / Sie | ihr |
-| --- | --- | --- | --- | --- |
-| **konnte** | konnte | konntest | konnten | konntet |
-| **musste** | musste | musstest | mussten | musstet |
-| **wollte** | wollte | wolltest | wollten | wolltet |
-| **sollte** | sollte | solltest | sollten | solltet |
-| **durfte** | durfte | durftest | durften | durftet |
+| Person | konnte (can) | musste (must) | wollte (want) |
+| --- | --- | --- | --- |
+| **ich / er / sie** | konnte | musste | wollte |
+| **du** | konntest | musstest | wolltest |
+| **wir / sie** | konnten | mussten | wollten |
 
 ---
 
-## Bonus Sections (B1 Level)
+## Interactive Practice
 
-### Genitiv (Possessive Case)
-*   *Maskulin/Neutrum:* **des** Vater**s**
-*   *Feminin/Plural:* **der** Mutter
+<div class="md-quiz" 
+  data-question="Ich bleibe heute zu Hause, ___ es stark regnet." 
+  data-options="dass|weil|wenn" 
+  data-answer="1" 
+  data-explain="Correct: 'weil' is the conjunction for reason. The verb 'regnet' is at the end."></div>
 
-### Infinitiv mit "zu"
-*   *Ich versuche, Deutsch **zu** lernen.*
-*   *Ich habe keine Zeit, ins Kino **zu** gehen.*
-
----
-
-## References
-
-*   **telc Deutsch A2-B1 Official Exam:** [telc.net](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2-b1/)
-*   **German Grammar:** [Lingolia](https://deutsch.lingolia.com/en/grammar)
+<div class="md-quiz" 
+  data-question="Könnten Sie das bitte noch einmal ___?" 
+  data-options="erklärt|erklären|erkläre" 
+  data-answer="1" 
+  data-explain="After 'Könnten', the main verb goes to the end in Infinitiv form."></div>

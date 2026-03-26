@@ -1123,6 +1123,12 @@ function setLang(lang) {
   });
   updateDayTracker();
   updateCard(true); // Redraw flashcard to match language instantly
+
+  // NEW: Reload open markdown if user switches language while reading
+  if (document.getElementById('md-view').classList.contains('open') && currentActiveMaterial) {
+    const newUrl = lang === 'en' ? currentActiveMaterial.en : currentActiveMaterial.tr;
+    openMarkdown(newUrl, true); // true = skip pushState
+  }
 }
 setLang('en');
 
