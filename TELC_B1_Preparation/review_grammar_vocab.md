@@ -2,346 +2,190 @@
 
 ______________________________________________________________________
 
-## 1. Nebensätze (Subordinate Clauses) — MOST TESTED TOPIC
+## 1. Nebensätze (Subordinate Clauses) — MOST TESTED CONSTRUCT
 
-The conjugated verb goes to the **END** of the subordinate clause.
+The conjugated verb goes to the **END** of the subordinate clause. 
+**PRO TRICK:** In the DTZ exam *Sprachbausteine*, if you see a blank right after a comma, look at the rest of the sentence. If the conjugated verb is sitting at the absolute end, the blank MUST be a subordinating conjunction like *dass, weil, wenn,* or *ob*.
 
-| Conjunction | Meaning               | Example                                             |
-| ----------- | --------------------- | --------------------------------------------------- |
-| **weil**    | because               | Ich bleibe zu Hause, **weil** ich krank **bin**.    |
-| **dass**    | that                  | Ich hoffe, **dass** du morgen **kommst**.           |
-| **wenn**    | if / when             | **Wenn** es morgen **regnet**, bleibe ich zu Hause. |
-| **obwohl**  | although              | Er geht arbeiten, **obwohl** er krank **ist**.      |
-| **damit**   | so that               | Ich lerne Deutsch, **damit** ich Arbeit **finde**.  |
-| **als**     | when (past, one-time) | **Als** ich klein **war**, habe ich viel gespielt.  |
-| **ob**      | whether               | Ich weiß nicht, **ob** er morgen **kommt**.         |
+| Conjunction | Meaning | Example |
+| --- | --- | --- |
+| **weil** | because | Ich bleibe zu Hause, **weil** ich heute krank **bin**. |
+| **dass** | that | Ich hoffe, **dass** du morgen **kommst**. |
+| **wenn** | if / when | **Wenn** es morgen **regnet**, bleibe ich zu Hause. |
+| **obwohl** | although | Er arbeitet viel, **obwohl** er sehr müde **ist**. |
+| **damit** | so that | Ich lerne Deutsch, **damit** ich bessere Arbeit **finde**. |
+| **als** | when (in the past, once) | **Als** ich klein **war**, spielte ich oft draußen. |
+| **ob** | whether | Ich weiß nicht, **ob** er zur Party **kommt**. |
 
-**Watch out:** When the Nebensatz comes FIRST, the main clause verb follows immediately:
-
+**Watch out:** When the Nebensatz comes FIRST, it acts as "Position 1" for the whole sentence, so the main clause verb follows immediately after the comma:
 > **Weil** ich krank **bin**, **bleibe** ich zu Hause. *(Verb-Verb at the comma!)*
-
-**Word Order Visualized:**
 
 ```mermaid
 flowchart LR
-    A["Main clause\n(Hauptsatz)\n Subj → Verb → ..."] -->|comma| B["Conjunction\n(weil/dass/wenn/ob...)"] --> C["Subordinate clause\n(Nebensatz)\n Subj → ... → VERB"]
+    A["Main clause\n(Hauptsatz)\n Subj → Verb → ..."] -->|comma| B["Conjunction\n(weil/dass/wenn...)"] --> C["Subordinate clause\n(Nebensatz)\n Subj → ... → VERB"]
     style B fill:#f5a623,color:#000
     style C fill:#4a90d9,color:#fff
 ```
 
-______________________________________________________________________
+<div class="md-quiz" 
+  data-question="Lieber Tom, ich schreibe dir, ___ ich am Wochenende meinen Geburtstag feiere." 
+  data-options="dass|weil|wenn" 
+  data-answer="1" 
+  data-explain="The sentence provides a reason for writing (I am writing TO YOU BECAUSE...). Therefore 'weil' is correct. The verb 'feiere' correctly sits at the end."></div>
 
-## 2. Konnektoren (Connectors) — Position in Sentence
-
-| Type                              | Words                                     | Position       | Example                                          |
-| --------------------------------- | ----------------------------------------- | -------------- | ------------------------------------------------ |
-| **Position 0** (no inversion)     | und, oder, aber, denn, sondern            | Before subject | Ich bin müde, **aber** ich gehe trotzdem.        |
-| **Position 1** (causes inversion) | deshalb, trotzdem, außerdem, dann, danach | Before verb    | Ich bin müde. **Deshalb** *bleibe* ich zu Hause. |
-
-______________________________________________________________________
-
-## 3. Perfekt (Spoken Past Tense)
-
-**Formula:** haben/sein (conjugated) + ... + Partizip II (at the end)
-
-| Type                                      | Example                               | Partizip II          |
-| ----------------------------------------- | ------------------------------------- | -------------------- |
-| Regular (-t)                              | Ich **habe** Deutsch **gelernt**.     | ge-**lern**-t        |
-| Irregular (-en)                           | Er **hat** ein Buch **gelesen**.      | ge-**les**-en        |
-| With *sein* (movement/change)             | Sie **ist** nach Berlin **gefahren**. | ge-**fahr**-en       |
-| Separable prefix                          | Ich **habe** um 7 Uhr **angefangen**. | **an**-ge-fang-en    |
-| Inseparable prefix (be-, ver-, er-, ent-) | Er **hat** das Buch **verstanden**.   | verstanden (no ge-!) |
-
-**Key irregular Partizip II to memorize:**
-gehen→gegangen, fahren→gefahren, kommen→gekommen, schreiben→geschrieben, sprechen→gesprochen, essen→gegessen, trinken→getrunken, nehmen→genommen, geben→gegeben, lesen→gelesen, sehen→gesehen, finden→gefunden, helfen→geholfen, beginnen→begonnen
-
-**Decision Tree: haben or sein?**
-
-```mermaid
-flowchart TD
-    A["Choose Partizip II verb"] --> B{"Is it a movement verb\nor change-of-state?\n(gehen, fahren, kommen,\naufstehen, einschlafen...)"}
-    B -- Yes --> C{"Does it have\na direct object?"}
-    C -- No --> D["Use SEIN\n\nSie IST nach Berlin gefahren."]
-    C -- Yes --> E["Use HABEN\n\nEr HAT das Auto gefahren."]
-    B -- No --> F{"Is it sein, bleiben,\nor werden?"}
-    F -- Yes --> D
-    F -- No --> G["Use HABEN\n\nIch HABE gegessen.\\ Er HAT geschlafen."]
-    style D fill:#27ae60,color:#fff
-    style E fill:#e67e22,color:#fff
-    style G fill:#27ae60,color:#fff
-```
+<div class="md-quiz" 
+  data-question="Ich bin nicht sicher, ___ der Arzt heute Nachmittag Sprechstunde hat." 
+  data-options="obwohl|dass|ob" 
+  data-answer="2" 
+  data-explain="'ob' means 'whether'. 'I am not sure WHETHER the doctor has office hours today'. 'dass' (that) doesn't make logical sense when expressing uncertainty."></div>
 
 ______________________________________________________________________
 
-## 4. Präteritum (Only for These Verbs!)
+## 2. Konnektoren (Connectors) — Word Order Tricks
 
-For B1, you only need Präteritum for *sein*, *haben*, and modal verbs:
+**PRO TRICK:** Knowing which connectors don't change word order (Position 0) vs those that force inversion (Position 1) is a guaranteed 2-3 points on the exam!
 
-| Verb   | ich    | du       | er/sie/es | wir     | ihr     | sie/Sie |
-| ------ | ------ | -------- | --------- | ------- | ------- | ------- |
-| sein   | war    | warst    | war       | waren   | wart    | waren   |
-| haben  | hatte  | hattest  | hatte     | hatten  | hattet  | hatten  |
-| können | konnte | konntest | konnte    | konnten | konntet | konnten |
-| müssen | musste | musstest | musste    | mussten | musstet | mussten |
-| wollen | wollte | wolltest | wollte    | wollten | wolltet | wollten |
-| sollen | sollte | solltest | sollte    | sollten | solltet | sollten |
-| dürfen | durfte | durftest | durfte    | durften | durftet | durften |
+| Type | Words | Position | Example |
+| --- | --- | --- | --- |
+| **Position 0** (No Change) | **ADUSO**: Aber, Denn, Und, Sondern, Oder | Before subject | Ich bin müde, **aber** ich gehe *(Subj+Verb)* trotzdem. |
+| **Position 1** (Inversion) | deshalb, trotzdem, außerdem, dann, danach | Before verb | Ich bin müde. **Deshalb** *bleibe* *(Verb+Subj)* ich zu Hause. |
+
+<div class="md-quiz" 
+  data-question="Ich habe eine neue Wohnung. ___ möchte ich eine große Party machen." 
+  data-options="Trotzdem|Außerdem|Deshalb" 
+  data-answer="2" 
+  data-explain="'Deshalb' means 'therefore/that is why'. Because I have a new apartment, I THEREFORE want to throw a party. Notice the inversion: Deshalb MÖCHTE ICH (Verb+Subj)."></div>
+
+<div class="md-quiz" 
+  data-question="Er ist krank, ___ er geht zur Arbeit." 
+  data-options="aber|denn|deshalb" 
+  data-answer="0" 
+  data-explain="ADUSO rule! 'aber' (but) takes Position 0, resulting in normal 'er geht' order."></div>
 
 ______________________________________________________________________
 
-## 5. Prepositions
+## 3. Perfekt vs. Präteritum
 
-### Wechselpräpositionen (Two-Way: Akk vs. Dat)
+In colloquial German (and for emails/letters in B1), you almost exclusively use **Perfekt**. 
+**Formula:** haben/sein (Position 2) + ... + Partizip II (at the very end)
 
+| Type | Example | Partizip II |
+| --- | --- | --- |
+| Regular (-t) | Ich **habe** Deutsch **gelernt**. | ge-**lern**-t |
+| Irregular (-en) | Er **hat** ein Buch **gelesen**. | ge-**les**-en |
+| With *sein* (movement) | Sie **ist** nach Berlin **gefahren**. | ge-**fahr**-en |
+| Separable prefix | Ich **habe** um 7 Uhr **angefangen**. | **an**-ge-fang-en |
+| Inseparable (be-, ver-, er-) | Er **hat** das Buch **verstanden**. | verstanden (no ge-!) |
+
+**Decision Tree: haben or sein?** Use *sein* ONLY for physical movement from A to B (gehen, fahren, fliegen, kommen) or change of state (einschlafen, aufwachen, sterben). For everything else (including static verbs like stehen or sitzen), use *haben*.
+*Exception:* The verbs 'sein', 'werden', and 'bleiben' also take *sein*.
+
+For **Präteritum** in the B1 exam, you strictly only need to memorize *sein*, *haben*, and the modal verbs (können, müssen, wollen, sollen, dürfen). Do not use Präteritum for normal verbs in your B1 writing!
+
+| Verb | ich | du | er/sie/es | wir | ihr | sie/Sie |
+| --- | --- | --- | --- | --- | --- | --- |
+| sein | war | warst | war | waren | wart | waren |
+| haben | hatte | hattest | hatte | hatten | hattet | hatten |
+| können | konnte | konntest | konnte | konnten | konntet | konnten |
+
+<div class="md-quiz" 
+  data-question="Gestern ___ ich den ganzen Tag zu Hause ___." 
+  data-options="habe...geblieben|bin...geblieben|habe...gebleibt" 
+  data-answer="1" 
+  data-explain="'bleiben' is a major exception—it takes 'sein' in the Perfekt despite being a static verb. Its Partizip II is irregular: 'geblieben'."></div>
+
+<div class="md-quiz" 
+  data-question="Als Kind ___ ich oft im Garten spielen." 
+  data-options="wollte|will|gewollt" 
+  data-answer="0" 
+  data-explain="'Als' signals past tense. For modal verbs, always use Präteritum in the past: 'wollte'."></div>
+
+______________________________________________________________________
+
+## 4. Preposition Tricks & Cases
+
+### Wechselpräpositionen (Two-Way Prepositions)
 in, an, auf, neben, hinter, über, unter, vor, zwischen
 
-| Question               | Case      | Example                             |
-| ---------------------- | --------- | ----------------------------------- |
-| **Wohin?** (direction) | Akkusativ | Ich gehe **in den** Supermarkt.     |
-| **Wo?** (location)     | Dativ     | Ich bin **im** (in dem) Supermarkt. |
+**PRO TRICK:** If the action suggests movement to a target (**Wohin?** / Where to?), use **Akkusativ**. If the action suggests a static location (**Wo?** / Where at?), use **Dativ**. 
+* Gehen, stellen, legen, setzen → Akkusativ (Wohin?)
+* Bleiben, stehen, liegen, sitzen → Dativ (Wo?)
 
-### Fixed Prepositions
+| Question | Case | Example |
+| --- | --- | --- |
+| **Wohin?** (direction) | Akkusativ | Ich gehe **in den** Supermarkt. |
+| **Wo?** (location) | Dativ | Ich bin **im** (in dem) Supermarkt. |
 
-| Always Dativ                       | Always Akkusativ                 |
-| ---------------------------------- | -------------------------------- |
-| aus, bei, mit, nach, seit, von, zu | durch, für, gegen, ohne, um      |
-| *Ich fahre **mit dem** Bus.*       | *Das Geschenk ist **für dich**.* |
+### Fixed Prepositions (Memorize these!)
 
-**Mnemonic for Dativ:** **A**us **B**ei **M**it **N**ach **S**eit **V**on **Z**u → Think "**AB MN SVZ**"
+| Always Dativ | Always Akkusativ |
+| --- | --- |
+| aus, bei, mit, nach, seit, von, zu | durch, für, gegen, ohne, um |
+| *Ich fahre **mit dem** Bus.* | *Das Geschenk ist **für dich**.* |
 
-______________________________________________________________________
+<div class="md-quiz" 
+  data-question="Ich warte ___ Bus." 
+  data-options="auf dem|auf den|auf der" 
+  data-answer="1" 
+  data-explain="'warten' is followed by 'auf' + Akkusativ. 'Bus' is masculine (der), so it becomes 'auf den Bus'."></div>
 
-## 6. Adjective Endings (Simplified)
-
-|                       | Masculine          | Feminine           | Neuter             | Plural                |
-| --------------------- | ------------------ | ------------------ | ------------------ | --------------------- |
-| **Nom (der/die/das)** | der gut**e** Mann  | die gut**e** Frau  | das gut**e** Kind  | die gut**en** Kinder  |
-| **Akk**               | den gut**en** Mann | die gut**e** Frau  | das gut**e** Kind  | die gut**en** Kinder  |
-| **Dat**               | dem gut**en** Mann | der gut**en** Frau | dem gut**en** Kind | den gut**en** Kindern |
-
-**Quick Rule:** After definite articles → mostly **-e** (Nominativ) or **-en** (everywhere else).
-
-### Adjective Endings After *ein/kein* (Indefinite Articles)
-
-|         | Masculine       | Feminine        | Neuter          | Plural           |
-| ------- | --------------- | --------------- | --------------- | ---------------- |
-| **Nom** | ein gut**er**   | eine gut**e**   | ein gut**es**   | keine gut**en**  |
-| **Akk** | einen gut**en** | eine gut**e**   | ein gut**es**   | keine gut**en**  |
-| **Dat** | einem gut**en** | einer gut**en** | einem gut**en** | keinen gut**en** |
-
-**Key difference:** After *ein*, the adjective shows the gender (-er/-e/-es) in Nominativ/Akk neuter/Akk fem — because *ein* itself doesn't show gender there.
+<div class="md-quiz" 
+  data-question="Er wohnt schon seit zwei Jahren ___ seiner Mutter." 
+  data-options="bei seiner|bei seine|bei seinen" 
+  data-answer="0" 
+  data-explain="'bei' ALWAYS forces Dativ. Feminine Dativ changes 'die' to 'der', so 'seine' becomes 'seiner'."></div>
 
 ______________________________________________________________________
 
-## 9. Relativsätze (Relative Clauses)
+## 5. Konjunktiv II (Polite Requests & Wishes)
 
-A Relativsatz adds information about a noun. The **relative pronoun** agrees with the noun's gender and the case it plays in the clause. **Verb goes to the end.**
+For B1 speaking and letter-writing, you MUST use Konjunktiv II to sound polite. Simply saying "Ich will einen Termin" is considered rude and will lower your score.
 
-| Case of relative pronoun         | Masculine | Feminine | Neuter | Plural |
-| -------------------------------- | --------- | -------- | ------ | ------ |
-| **Nom** (subject)                | der       | die      | das    | die    |
-| **Akk** (object)                 | den       | die      | das    | die    |
-| **Dat** (after dat. preposition) | dem       | der      | dem    | denen  |
+| Form | Example | Best Used For |
+| --- | --- | --- |
+| **könnte** | **Könnten** Sie mir bitte helfen? | Polite questions/requests |
+| **würde + Infinitiv** | Ich **würde** mich über eine Antwort **freuen**. | Describing actions you'd like to do |
+| **hätte** | Ich **hätte** gerne einen Kaffee. | Polite ordering |
+| **wäre** | Es **wäre** schön, wenn... | Making suggestions |
 
-**Examples:**
-
-- Das ist der Mann, **der** Arzt ist. *(Nom — er ist Arzt)*
-- Das ist der Mann, **den** ich kenne. *(Akk — ich kenne ihn)*
-- Das ist die Frau, **die** neben mir wohnt. *(Nom, fem)*
-- Das ist das Kind, **dem** ich helfe. *(Dat — ich helfe ihm)*
-- Das sind die Leute, **mit denen** ich arbeite. *(Dat after mit)*
-
-______________________________________________________________________
-
-## 10. Top 50 DTZ Vocabulary (German → Turkish)
-
-| German                   | Turkish                | German              | Turkish                       |
-| ------------------------ | ---------------------- | ------------------- | ----------------------------- |
-| die Bewerbung            | başvuru                | der Lebenslauf      | özgeçmiş                      |
-| das Gehalt               | maaş                   | kündigen            | istifa etmek / işten çıkarmak |
-| der Arbeitsvertrag       | iş sözleşmesi          | die Teilzeit        | yarı zamanlı                  |
-| die Miete                | kira                   | die Nebenkosten     | yan giderler                  |
-| die Kaution              | depozito               | der Vermieter       | ev sahibi                     |
-| der Mietvertrag          | kira sözleşmesi        | einziehen           | taşınmak (içeri)              |
-| der Termin               | randevu                | das Rezept          | reçete                        |
-| die Krankschreibung      | hastalık raporu        | die Apotheke        | eczane                        |
-| die Versicherung         | sigorta                | die Sprechstunde    | muayene saati                 |
-| das Zeugnis              | okul karnesi / diploma | die Nachhilfe       | özel ders                     |
-| der Elternabend          | veli toplantısı        | der Schulausflug    | okul gezisi                   |
-| die Anmeldung            | kayıt / tescil         | der Personalausweis | kimlik kartı                  |
-| der Aufenthaltstitel     | oturma izni            | das Formular        | form                          |
-| das Angebot              | teklif / fırsat        | der Rabatt          | indirim                       |
-| die Garantie             | garanti                | umtauschen          | değiştirmek                   |
-| der Kassenbon            | fiş                    | die Beschwerde      | şikayet                       |
-| der Fahrplan             | zaman çizelgesi        | die Verspätung      | gecikme                       |
-| das Gleis                | peron                  | die Fahrkarte       | bilet                         |
-| die Ermäßigung           | indirim                | der Ausflug         | gezi                          |
-| die Veranstaltung        | etkinlik               | der Verein          | dernek / kulüp                |
-| das Vorstellungsgespräch | iş görüşmesi           | die Fortbildung     | mesleki gelişim kursu         |
-| die Überweisung          | havale / sevk          | der Antrag          | başvuru / dilekçe             |
-| kostenlos                | ücretsiz               | die Unterlagen      | belgeler                      |
-| pünktlich                | dakik / zamanında      | krank schreiben     | hastalık raporu vermek        |
-| sich anmelden            | kayıt olmak            | sich bewerben       | başvurmak                     |
+<div class="md-quiz" 
+  data-question="___ Sie mir bitte erklären, wie der Fahrkartenautomat funktioniert?" 
+  data-options="Können|Konnten|Könnten" 
+  data-answer="2" 
+  data-explain="'Könnten' is Konjunktiv II (polite). 'Konnten' (without umlaut) is strictly past tense (could you yesterday?)."></div>
 
 ______________________________________________________________________
 
-| Verb                         | Meaning             | Example                                        |
-| ---------------------------- | ------------------- | ---------------------------------------------- |
-| sich freuen (über+Akk)       | to be happy about   | Ich **freue mich** über das Geschenk.          |
-| sich anmelden (für+Akk)      | to register for     | Ich möchte **mich** für den Kurs **anmelden**. |
-| sich bewerben (um+Akk)       | to apply for        | Er **bewirbt sich** um die Stelle.             |
-| sich fühlen                  | to feel             | Ich **fühle mich** nicht gut.                  |
-| sich entschuldigen (für+Akk) | to apologize for    | Ich **entschuldige mich** für die Verspätung.  |
-| sich interessieren (für+Akk) | to be interested in | Sie **interessiert sich** für Musik.           |
-
-______________________________________________________________________
-
-## 8. Konjunktiv II (Polite Requests)
-
-| Form                  | Example                                      |
-| --------------------- | -------------------------------------------- |
-| **könnte**            | **Könnten** Sie mir bitte helfen?            |
-| **würde + Infinitiv** | Ich **würde** gerne einen Termin **machen**. |
-| **hätte**             | Ich **hätte** gerne eine Frage.              |
-| **wäre**              | Es **wäre** schön, wenn Sie kommen könnten.  |
-
-______________________________________________________________________
-
-## Practice Questions
-
-### Set A: Sprachbausteine (Fill in the Blank)
-
-**Text 1:**
-Lieber Tom,
-ich schreibe dir, `__(1)__` ich am Wochenende meinen Geburtstag feiere. Ich habe eine neue Wohnung. `__(2)__` möchte ich eine große Party machen. Kommst du? Bring bitte auch `__(3)__` Freundin mit!
-
-<!-- markdownlint-disable MD029 -->
-
-1. a) dass / b) weil / c) wenn
-1. a) Trotzdem / b) Außerdem / c) Deshalb
-1. a) deine / b) deiner / c) deinen
-
-**Text 2:**
-Sehr geehrte Frau Braun,
-ich habe `__(4)__` bei Ihnen für einen Sprachkurs angemeldet. `__(5)__` möchte ich Sie fragen, `__(6)__` der Kurs auch am Abend stattfindet. Ich arbeite tagsüber und `__(7)__` kann ich nur abends kommen.
-
-4. a) mir / b) mich / c) sich
-1. a) Deshalb / b) Außerdem / c) Trotzdem
-1. a) dass / b) weil / c) ob
-1. a) trotzdem / b) deshalb / c) obwohl
-
-### Set B: Verb Tenses
-
-Fill in the correct form:
-
-8. Gestern `_____` ich den ganzen Tag zu Hause `_____`. (bleiben, Perfekt)
-
-   → a) habe...geblieben / b) bin...geblieben / c) habe...gebleibt
-
-1. Als Kind `_____` ich immer Fußball spielen. (wollen, Präteritum)
-
-   → a) wollte / b) will / c) gewollt
-
-1. `_____` Sie mir bitte erklären, wie ich zum Bahnhof komme? (können, Konjunktiv II)
-
-   → a) Können / b) Konnten / c) Könnten
-
-### Set C: Prepositions
-
-11. Ich warte `_____` den Bus. (auf+?)
-
-    → a) auf dem / b) auf den / c) auf der
-
-01. Er wohnt `_____` seiner Mutter. (bei+?)
-
-    → a) bei seiner / b) bei seine / c) bei seinen
-
-01. Wir fahren `_____` Wochenende `_____` München.
-
-    → a) am...nach / b) im...in / c) um...zu
-
-### Set D: Mixed Grammar
-
-14. Das ist der Mann, `_____` gestern bei uns war.
-
-    → a) der / b) den / c) dem
-
-01. Sie hat sich `_____` die Verspätung entschuldigt.
-
-    → a) über / b) für / c) um
-
-### Set E: Adjective Endings & Relativsätze
-
-<!-- markdownlint-disable MD029 -->
-
-16. Das ist `_____` nette Mann, der neben mir wohnt.
-
-    → a) ein / b) der / c) einen
-
-01. Ich suche `_____` günstigen Kurs für mein Kind.
-
-    → a) einen / b) ein / c) einem
-
-01. Sie hat `_____` neuen Job bekommen.
-
-    → a) ein / b) einen / c) einem
-
-01. Das ist die Frau, `_____` ich jeden Tag sehe.
-
-    → a) die / b) der / c) das
-
-01. Der Mann, `_____` ich das Buch gegeben habe, ist mein Nachbar.
-
-    → a) den / b) dem / c) der
-
-01. Das Haus, `_____` wir kaufen möchten, ist sehr teuer.
-
-    → a) das / b) dem / c) den
-
-01. Die Kinder, `_____` ich helfe, lernen sehr schnell.
-
-    → a) die / b) denen / c) deren
-
-### Set F: Mixed Vocabulary & Grammar
-
-23. Ich muss den Arzt `_____` Bescheid geben.
-
-    → a) von / b) mit / c) über
-
-01. Seit drei Jahren `_____` ich in Deutschland.
-
-    → a) lebe / b) lebte / c) habe gelebt
-
-01. `_____` Sie mir bitte Ihre Meldebescheinigung mitbringen?
-
-    → a) Könnten / b) Konnten / c) Können
-
-01. Er hat sich `_____` eine neue Stelle beworben.
-
-    → a) um / b) für / c) über
-
-01. Die Veranstaltung `_____` wegen schlechten Wetters abgesagt.
-
-    → a) wurde / b) wird / c) hat
-
-01. Ich interessiere mich `_____` den Deutschkurs am Abend.
-
-    → a) für / b) um / c) an
-
-01. Das Formular `_____` ich gestern `_____`. (ausfüllen, Perfekt)
-
-    → a) hatte...ausgefüllt / b) habe...ausgefüllt / c) bin...ausgefüllt
-
-01. Sie können den Termin `_____` telefonisch `_____` online vereinbaren.
-
-    → a) entweder...oder / b) weder...noch / c) sowohl...als auch
-
-<!-- markdownlint-enable MD029 -->
-
-______________________________________________________________________
-
-**Answers (1–15):**
-1.b (weil) | 2.c (Deshalb) | 3.a (deine — Akk feminine) | 4.b (mich — sich anmelden) | 5.b (Außerdem) | 6.c (ob — indirect question) | 7.b (deshalb) | 8.b (bin geblieben — sein + movement) | 9.a (wollte) | 10.c (Könnten — Konjunktiv II polite) | 11.b (auf den — warten auf+Akk) | 12.a (bei seiner — bei+Dat) | 13.a (am Wochenende nach München) | 14.a (der — Relativpronomen Nom masc) | 15.b (für — sich entschuldigen für+Akk)
-
-**Answers (16–30):**
-16.b (der — definite, male Nominativ) | 17.a (einen — indefinite Akk masc) | 18.b (einen — Akk masc Job) | 19.a (die — Relativ Nom, feminine) | 20.b (dem — Dativ, ich habe ihm gegeben) | 21.a (das — Relativ, neuter das Haus) | 22.b (denen — Dativ plural, ich helfe ihnen) | 23.c (über — Bescheid geben über+Akk) | 24.a (lebe — seit + Präsens for ongoing action) | 25.a (Könnten — polite request) | 26.a (um — sich bewerben um+Akk) | 27.a (wurde — Passiv Präteritum) | 28.a (für — sich interessieren für+Akk) | 29.b (habe ausgefüllt — trennbares Verb Perfekt) | 30.a (entweder...oder — either...or)
+## 6. Real Exam Practice: Sprachbausteine Mix
+
+Test yourself on mixed DTZ-style exercises covering everything above.
+
+<div class="md-quiz" 
+  data-question="Ich habe eine Katze, ___ sehr gerne schläft." 
+  data-options="die|der|das" 
+  data-answer="0" 
+  data-explain="Relative pronoun! 'Katze' is feminine (die). It is the subject of the relative clause, so it remains 'die'."></div>
+
+<div class="md-quiz" 
+  data-question="Das sind die Leute, ___ ich gestern geholfen habe." 
+  data-options="die|denen|deren" 
+  data-answer="1" 
+  data-explain="Relative pronoun! 'helfen' forces Dativ. The plural Dativ relative pronoun is 'denen' (not 'den')."></div>
+
+<div class="md-quiz" 
+  data-question="Sie hat sich ___ die Verspätung entschuldigt." 
+  data-options="über|für|um" 
+  data-answer="1" 
+  data-explain="Fixed reflexive verb: 'sich entschuldigen für' (to apologize for) + Akkusativ."></div>
+
+<div class="md-quiz" 
+  data-question="Das Formular ___ ich gestern ___. (Perfekt)" 
+  data-options="hatte...ausgefüllt|habe...ausgefüllt|bin...ausgefüllt" 
+  data-answer="1" 
+  data-explain="'ausfüllen' is a separable verb taking 'haben'. The Perfekt is 'habe...ausgefüllt'."></div>
+
+<div class="md-quiz" 
+  data-question="Seit drei Jahren ___ ich in Deutschland." 
+  data-options="lebe|lebte|habe gelebt" 
+  data-answer="0" 
+  data-explain="TRICK: 'Seit' (since/for) describes an action that started in the past AND IS STILL ONGOING. In German, you must use Präsens (Present Tense) for this, unlike English!"></div>

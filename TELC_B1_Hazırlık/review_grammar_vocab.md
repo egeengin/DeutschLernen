@@ -1,218 +1,189 @@
-# Tekrar: Dil Bilgisi ve Kelime Bilgisi (Sprachbausteine)
+# İnceleme: Dil Bilgisi ve Kelime Bilgisi (Sprachbausteine)
 
 ______________________________________________________________________
 
 ## 1. Nebensätze (Yan Cümleler) — EN ÇOK TEST EDİLEN KONU
 
-Çekimli fiil yan cümlenin **SONUNA** gider.
+Çekimli(zaman ve kişiye göre değişen) fiil yan cümlenin **EN SONUNA** gider. 
+**PRO İPUCU:** DTZ sınavı *Sprachbausteine* (Bölüm 1) kısmında, virgülden hemen sonra bir boşluk görürseniz, cümlenin geri kalanına bakın. Eğer çekimli fiil cümlenin en sonunda yer alıyorsa, boşluğa kesinlikle *dass, weil, wenn,* veya *ob* gibi yan cümle bağlaçlarından biri gelmelidir!
 
-| Bağlaç     | Anlamı                            | Örnek                                               |
-| ---------- | --------------------------------- | --------------------------------------------------- |
-| **weil**   | çünkü                             | Ich bleibe zu Hause, **weil** ich krank **bin**.    |
-| **dass**   | -dığını / -eceğini                | Ich hoffe, **dass** du morgen **kommst**.           |
-| **wenn**   | eğer / -dığında                   | **Wenn** es morgen **regnet**, bleibe ich zu Hause. |
-| **obwohl** | -e rağmen                         | Er geht arbeiten, **obwohl** er krank **ist**.      |
-| **damit**  | -sın diye / amacıyla              | Ich lerne Deutsch, **damit** ich Arbeit **finde**.  |
-| **als**    | -dığında (geçmişte, tek seferlik) | **Als** ich klein **war**, habe ich viel gespielt.  |
-| **ob**     | -ıp -ımadığını (olup olmadığını)  | Ich weiß nicht, **ob** er morgen **kommt**.         |
+| Bağlaç | Anlamı | Örnek |
+| --- | --- | --- |
+| **weil** | çünkü | Ich bleibe zu Hause, **weil** ich heute krank **bin**. |
+| **dass** | -dığı / ki | Ich hoffe, **dass** du morgen **kommst**. |
+| **wenn** | eğer / -dığında | **Wenn** es morgen **regnet**, bleibe ich zu Hause. |
+| **obwohl** | -e rağmen | Er arbeitet viel, **obwohl** er sehr müde **ist**. |
+| **damit** | -sın diye / amacıyla | Ich lerne Deutsch, **damit** ich bessere Arbeit **finde**. |
+| **als** | -dığında (geçmişte tek sefer) | **Als** ich klein **war**, spielte ich oft draußen. |
+| **ob** | -ıp -madığını | Ich weiß nicht, **ob** er zur Party **kommt**. |
 
-**Dikkat:** Yan cümle (Nebensatz) BAŞA geldiğinde, ana cümlenin fiili hemen ardından gelir:
-
-> **Weil** ich krank **bin**, **bleibe** ich zu Hause. *(Virgülde Fiil-Fiil yan yana!)*
-
-**Cümle Sıralaması Diagramı:**
+**Dikkat:** Yan cümle (Nebensatz) cümlenin BAŞINA gelirse, ana cümlenin (Hauptsatz) "1. pozisyonunu" işgal etmiş olur. Bu nedenle virgülden hemen sonra ana cümlenin fiili gelmek zorundadır:
+> **Weil** ich krank **bin**, **bleibe** ich zu Hause. *(Virgülün iki yanında FİİL-FİİL yan yana!)*
 
 ```mermaid
 flowchart LR
-    A["Ana cümle\n(Hauptsatz)\nÖzne → Fiil → ..."] -->|virgül| B["Bağlaç\n(weil/dass/wenn/ob...)"] --> C["Yan cümle\n(Nebensatz)\nÖzne → ... → FİİL"]
+    A["Ana cümle\n(Hauptsatz)\n Özne → Fiil → ..."] -->|virgül| B["Bağlaç\n(weil/dass/wenn...)"] --> C["Yan cümle\n(Nebensatz)\n Özne → ... → FİİL"]
     style B fill:#f5a623,color:#000
     style C fill:#4a90d9,color:#fff
 ```
 
-______________________________________________________________________
+<div class="md-quiz" 
+  data-question="Lieber Tom, ich schreibe dir, ___ ich am Wochenende meinen Geburtstag feiere." 
+  data-options="dass|weil|wenn" 
+  data-answer="1" 
+  data-explain="Cümle yazma sebebini açıklıyor (Sana yazıyorum ÇÜNKÜ...). Bu yüzden 'weil' doğrudur. 'feiere' fiili kurala uygun olarak sona gitmiştir."></div>
 
-## 2. Konnektoren (Bağlaçlar) — Cümledeki Konumları
-
-| Tür                                   | Kelimeler                                 | Konum        | Örnek                                            |
-| ------------------------------------- | ----------------------------------------- | ------------ | ------------------------------------------------ |
-| **0. Pozisyon** (devrik cümle yapmaz) | und, oder, aber, denn, sondern            | Özneden önce | Ich bin müde, **aber** ich gehe trotzdem.        |
-| **1. Pozisyon** (devrik cümle yapar)  | deshalb, trotzdem, außerdem, dann, danach | Fiilden önce | Ich bin müde. **Deshalb** *bleibe* ich zu Hause. |
-
-______________________________________________________________________
-
-## 3. Perfekt (Konuşma Dili Geçmiş Zamanı)
-
-**Formül:** haben/sein (çekimli) + ... + Partizip II (cümle sonunda)
-
-| Tür                                      | Örnek                                 | Partizip II           |
-| ---------------------------------------- | ------------------------------------- | --------------------- |
-| Düzenli (-t)                             | Ich **habe** Deutsch **gelernt**.     | ge-**lern**-t         |
-| Düzensiz (-en)                           | Er **hat** ein Buch **gelesen**.      | ge-**les**-en         |
-| *sein* ile (hareket/durum değişimi)      | Sie **ist** nach Berlin **gefahren**. | ge-**fahr**-en        |
-| Ayrılabilen ön ek                        | Ich **habe** um 7 Uhr **angefangen**. | **an**-ge-fang-en     |
-| Ayrılamayan ön ek (be-, ver-, er-, ent-) | Er **hat** das Buch **verstanden**.   | verstanden (ge- yok!) |
-
-**Ezberlenmesi gereken önemli düzensiz Partizip II fiilleri:**
-gehen→gegangen, fahren→gefahren, kommen→gekommen, schreiben→geschrieben, sprechen→gesprochen, essen→gegessen, trinken→getrunken, nehmen→genommen, geben→gegeben, lesen→gelesen, sehen→gesehen, finden→gefunden, helfen→geholfen, beginnen→begonnen
-
-**Karar Ağacı: haben mı sein mi?**
-
-```mermaid
-flowchart TD
-    A["Partizip II fiiline bak"] --> B{"Hareket veya\ndurum değişimi fiili mi?\n(gehen, fahren, kommen,\naufstehen, einschlafen...)"}
-    B -- Evet --> C{"Doğrudan nesne\nvar mı?"}
-    C -- Hayır --> D["SEIN kullan\n\nSie IST nach Berlin gefahren."]
-    C -- Evet --> E["HABEN kullan\n\nEr HAT das Auto gefahren."]
-    B -- Hayır --> F{"sein, bleiben\nveya werden mi?"}
-    F -- Evet --> D
-    F -- Hayır --> G["HABEN kullan\n\nIch HABE gegessen. Er HAT geschlafen."]
-    style D fill:#27ae60,color:#fff
-    style E fill:#e67e22,color:#fff
-    style G fill:#27ae60,color:#fff
-```
+<div class="md-quiz" 
+  data-question="Ich bin nicht sicher, ___ der Arzt heute Nachmittag Sprechstunde hat." 
+  data-options="obwohl|dass|ob" 
+  data-answer="2" 
+  data-explain="'ob', '-ıp -madığını' anlamına gelir. 'Doktorun bugün muayenesi olup OLMADIĞINDAN emin değilim'. Belirsizlik durumlarında her zaman 'ob' kullanılır, 'dass' mantıksız olur."></div>
 
 ______________________________________________________________________
 
-## 4. Präteritum (Sadece Bu Fiiller İçin!)
+## 2. Konnektoren (Bağlaçlar) — Kelime Dizilimi Hileleri
 
-B1 seviyesi için sadece *sein*, *haben* ve modal fiillerin Präteritum çekimlerini bilmeniz yeterlidir:
+**PRO İPUCU:** Hangi bağlaçların kelime dizilimini değiştirmediğini (0. Pozisyon) ve hangilerinin devrik cümle yaptığını (1. Pozisyon) bilmek size sınavda garanti 2-3 puan kazandıracaktır!
 
-| Fiil   | ich    | du       | er/sie/es | wir     | ihr     | sie/Sie |
-| ------ | ------ | -------- | --------- | ------- | ------- | ------- |
-| sein   | war    | warst    | war       | waren   | wart    | waren   |
-| haben  | hatte  | hattest  | hatte     | hatten  | hattet  | hatten  |
-| können | konnte | konntest | konnte    | konnten | konntet | konnten |
-| müssen | musste | musstest | musste    | mussten | musstet | mussten |
-| wollen | wollte | wolltest | wollte    | wollten | wolltet | wollten |
-| sollen | sollte | solltest | sollte    | sollten | solltet | sollten |
-| dürfen | durfte | durftest | durfte    | durften | durftet | durften |
+| Tür | Kelimeler | Pozisyon | Örnek |
+| --- | --- | --- | --- |
+| **Pozisyon 0** (Değişim yok) | **ADUSO**: Aber, Denn, Und, Sondern, Oder | Özneden önce | Ich bin müde, **aber** ich gehe *(Özne+Fiil)* trotzdem. |
+| **Pozisyon 1** (Devrik cümle) | deshalb, trotzdem, außerdem, dann, danach | Fiilden önce | Ich bin müde. **Deshalb** *bleibe* *(Fiil+Özne)* ich zu Hause. |
+
+<div class="md-quiz" 
+  data-question="Ich habe eine neue Wohnung. ___ möchte ich eine große Party machen." 
+  data-options="Trotzdem|Außerdem|Deshalb" 
+  data-answer="2" 
+  data-explain="'Deshalb', 'bu yüzden / bu nedenle' anlamına gelir. Yeni bir evim var, BU YÜZDEN parti yapmak istiyorum. Devrik cümleye dikkat edin: Deshalb MÖCHTE ICH (Fiil+Özne)."></div>
+
+<div class="md-quiz" 
+  data-question="Er ist krank, ___ er geht zur Arbeit." 
+  data-options="aber|denn|deshalb" 
+  data-answer="0" 
+  data-explain="ADUSO kuralı! 'aber' (ama) 0. pozisyonda yer alır, yani kendisinden sonra normal 'Özne + Fiil' (er geht) sıralaması gelir."></div>
 
 ______________________________________________________________________
 
-## 5. Edatlar (Präpositionen)
+## 3. Perfekt vs. Präteritum
 
-### Wechselpräpositionen (Çift Yönlü Edatlar: Akkusativ vs. Dativ)
+Günlük konuşma dilinde (ve B1 sınavındaki e-posta/mektupların çoğunda) geçmiş zaman için neredeyse her zaman **Perfekt** kullanmalısınız. 
+**Formül:** haben/sein (Cümlenin 2. sırasında) + ... + Partizip II (Cümlenin en sonunda)
 
+| Tür | Örnek | Partizip II |
+| --- | --- | --- |
+| Düzenli (-t) | Ich **habe** Deutsch **gelernt**. | ge-**lern**-t |
+| Düzensiz (-en) | Er **hat** ein Buch **gelesen**. | ge-**les**-en |
+| *sein* ile (hareket) | Sie **ist** nach Berlin **gefahren**. | ge-**fahr**-en |
+| Ayrılabilen ön ek | Ich **habe** um 7 Uhr **angefangen**. | **an**-ge-fang-en |
+| Ayrılamayan (be-, ver-, er-) | Er **hat** das Buch **verstanden**. | verstanden (başında ge- yok!) |
+
+**haben mi sein mi? Karar Ağacı:** A noktasından B noktasına fiziksel hareket (gehen, fahren, fliegen, kommen) veya durum değişikliği (einschlafen-uykuya dalmak, aufwachen-uyanmak, sterben-ölmek) varsa **sein** kullanın. Diğer her şey için (stehen, sitzen gibi sabit durumlar dahil) **haben** kullanın. 
+*İstisna:* 'sein', 'werden' ve 'bleiben' fiilleri hareket içermese de *sein* yardımcı fiilini alır.
+
+B1 sınavı için **Präteritum** (Yazı dili geçmiş zamanı) kuralı çok basittir: Sadece *sein*, *haben* ve modal fiillerin (können, müssen, wollen, sollen, dürfen) Präteritum hallerini ezberleyin! Normal fiiller için yazma bölümünde Präteritum DALLANDIRMAYIN!
+
+| Fiil | ich | du | er/sie/es | wir | ihr | sie/Sie |
+| --- | --- | --- | --- | --- | --- | --- |
+| sein (olmak) | war | warst | war | waren | wart | waren |
+| haben (sahip olmak) | hatte | hattest | hatte | hatten | hattet | hatten |
+| können (yapabilmek)| konnte | konntest | konnte | konnten | konntet | konnten |
+
+<div class="md-quiz" 
+  data-question="Gestern ___ ich den ganzen Tag zu Hause ___." 
+  data-options="habe...geblieben|bin...geblieben|habe...gebleibt" 
+  data-answer="1" 
+  data-explain="'bleiben' (kalmak) en büyük istisnadır—hareket içermemesine rağmen Perfekt halinde her zaman 'sein' alır. Partizip II hali düzensizdir: 'geblieben'."></div>
+
+<div class="md-quiz" 
+  data-question="Als Kind ___ ich oft im Garten spielen." 
+  data-options="wollte|will|gewollt" 
+  data-answer="0" 
+  data-explain="'Als', geçmiş zamanı işaret eder. Geçmişten bahsederken modal fiiller (istemek, yapabilmek vb.) her zaman Präteritum halinde kullanılır: 'wollte'."></div>
+
+______________________________________________________________________
+
+## 4. Edatlar (Prepositions) ve İsmin Halleri
+
+### Wechselpräpositionen (Çift Yönlü Edatlar)
 in, an, auf, neben, hinter, über, unter, vor, zwischen
 
-| Soru                           | Hal       | Örnek                               |
-| ------------------------------ | --------- | ----------------------------------- |
-| **Wohin?** (Nereye? - yönelim) | Akkusativ | Ich gehe **in den** Supermarkt.     |
-| **Wo?** (Nerede? - konum)      | Dativ     | Ich bin **im** (in dem) Supermarkt. |
+**PRO İPUCU:** Eğer eylem bir hedefe yöneliyorsa (**Wohin?** / Nereye?), **Akkusativ** (İsmin -i hali) kullanın. Eğer eylem sabit bir konumu belirtiyorsa (**Wo?** / Nerede?), **Dativ** (İsmin -e hali) kullanın.
 
-### Sabit Edatlar (Her Zaman Aynı Hali Alanlar)
+| Soru | Hal (Case) | Örnek |
+| --- | --- | --- |
+| **Wohin?** (Yönelim) | Akkusativ | Ich gehe **in den** Supermarkt. |
+| **Wo?** (Konum/Durum) | Dativ | Ich bin **im** (in dem) Supermarkt. |
 
-| Her Zaman Dativ                    | Her Zaman Akkusativ              |
-| ---------------------------------- | -------------------------------- |
-| aus, bei, mit, nach, seit, von, zu | durch, für, gegen, ohne, um      |
-| *Ich fahre **mit dem** Bus.*       | *Das Geschenk ist **für dich**.* |
+### Sabit Edatlar (Bunları Ezberleyin!)
 
-**Dativ için Şifre:** **A**us **B**ei **M**it **N**ach **S**eit **V**on **Z**u → Şifre: "**AB MN SVZ**"
+| Her Zaman Dativ Alanlar | Her Zaman Akkusativ Alanlar |
+| --- | --- |
+| aus, bei, mit, nach, seit, von, zu | durch, für, gegen, ohne, um |
+| *Ich fahre **mit dem** Bus.* | *Das Geschenk ist **für dich**.* |
 
-______________________________________________________________________
+<div class="md-quiz" 
+  data-question="Ich warte ___ Bus." 
+  data-options="auf dem|auf den|auf der" 
+  data-answer="1" 
+  data-explain="'warten' fiili her zaman 'auf' + Akkusativ ile kullanılır. 'Bus' eril (der) kelimedir, bu yüzden Akkusativ'de 'auf den Bus' olur."></div>
 
-## 6. Sıfat Çekimleri (Basitleştirilmiş)
-
-|                       | Eril (Masculine)   | Dişil (Feminine)   | Nötr (Neuter)      | Çoğul (Plural)        |
-| --------------------- | ------------------ | ------------------ | ------------------ | --------------------- |
-| **Nom (der/die/das)** | der gut**e** Mann  | die gut**e** Frau  | das gut**e** Kind  | die gut**en** Kinder  |
-| **Akk**               | den gut**en** Mann | die gut**e** Frau  | das gut**e** Kind  | die gut**en** Kinder  |
-| **Dat**               | dem gut**en** Mann | der gut**en** Frau | dem gut**en** Kind | den gut**en** Kindern |
-
-**Hızlı Kural:** Belirli artikellerden (der/die/das vb.) sonra → çoğunlukla **-e** (Nominativ) veya **-en** (diğer tüm durumlarda) gelir.
-
-______________________________________________________________________
-
-## 7. Dönüşlü Fiiller (Reflexive Verbs)
-
-| Fiil                         | Anlamı                   | Örnek                                          |
-| ---------------------------- | ------------------------ | ---------------------------------------------- |
-| sich freuen (über+Akk)       | -e sevinmek              | Ich **freue mich** über das Geschenk.          |
-| sich anmelden (für+Akk)      | -e kaydolmak             | Ich möchte **mich** für den Kurs **anmelden**. |
-| sich bewerben (um+Akk)       | -e başvurmak             | Er **bewirbt sich** um die Stelle.             |
-| sich fühlen                  | hissetmek                | Ich **fühle mich** nicht gut.                  |
-| sich entschuldigen (für+Akk) | -den dolayı özür dilemek | Ich **entschuldige mich** für die Verspätung.  |
-| sich interessieren (für+Akk) | -e ilgi duymak           | Sie **interessiert sich** für Musik.           |
+<div class="md-quiz" 
+  data-question="Er wohnt schon seit zwei Jahren ___ seiner Mutter." 
+  data-options="bei seiner|bei seine|bei seinen" 
+  data-answer="0" 
+  data-explain="'bei' edatı HER ZAMAN Dativ almayı zorunlu kılar. Dativ'de dişil 'die' artikeli 'der' olur, yani 'seine' → 'seiner' haline gelir."></div>
 
 ______________________________________________________________________
 
-## 8. Konjunktiv II (Kibar Ricalar)
+## 5. Konjunktiv II (Kibar Ricalar)
 
-| Kalıp                                     | Örnek                                        |
-| ----------------------------------------- | -------------------------------------------- |
-| **könnte** (yapabilir misiniz?)           | **Könnten** Sie mir bitte helfen?            |
-| **würde + Infinitiv** (yapmak isterim)    | Ich **würde** gerne einen Termin **machen**. |
-| **hätte** (isterdim/sahip olmak isterdim) | Ich **hätte** gerne eine Frage.              |
-| **wäre** (iyi/güzel olurdu)               | Es **wäre** schön, wenn Sie kommen könnten.  |
+B1 sözlü sınavında (Sprechen) ve mektup yazımında kibar görünmek için Konjunktiv II kullanmanız ŞARTTIR. Sadece "Ich will einen Termin" (Randevu istiyorum) demek kaba kabul edilir ve puanınızı düşürür!
 
-______________________________________________________________________
+| Kalıp | Örnek | En İyi Kullanım Yeri |
+| --- | --- | --- |
+| **könnte** | **Könnten** Sie mir bitte helfen? | Kibar sorular ve talepler |
+| **würde + Infinitiv** | Ich **würde** mich über eine Antwort **freuen**. | Ne yapmak istediğinizi anlatırken |
+| **hätte** | Ich **hätte** gerne einen Kaffee. | Bir şey sipariş ederken / isterken |
+| **wäre** | Es **wäre** schön, wenn... | Fikir ve öneri sunarken |
 
-## Alıştırma Soruları
-
-### Bölüm A: Sprachbausteine (Boşluk Doldurma)
-
-**Metin 1:**
-Lieber Tom,
-ich schreibe dir, `__(1)__` ich am Wochenende meinen Geburtstag feiere. Ich habe eine neue Wohnung. `__(2)__` möchte ich eine große Party machen. Kommst du? Bring bitte auch `__(3)__` Freundin mit!
-
-<!-- markdownlint-disable MD029 -->
-
-1. a) dass / b) weil / c) wenn
-1. a) Trotzdem / b) Außerdem / c) Deshalb
-1. a) deine / b) deiner / c) deinen
-
-**Metin 2:**
-Sehr geehrte Frau Braun,
-ich habe `__(4)__` bei Ihnen für einen Sprachkurs angemeldet. `__(5)__` möchte ich Sie fragen, `__(6)__` der Kurs auch am Abend stattfindet. Ich arbeite tagsüber und `__(7)__` kann ich nur abends kommen.
-
-4. a) mir / b) mich / c) sich
-1. a) Deshalb / b) Außerdem / c) Trotzdem
-1. a) dass / b) weil / c) ob
-1. a) trotzdem / b) deshalb / c) obwohl
-
-### Bölüm B: Fiil Çekimleri
-
-Doğru formu doldurun:
-
-8. Gestern `_____` ich den ganzen Tag zu Hause `_____`. (bleiben, Perfekt)
-
-   → a) habe...geblieben / b) bin...geblieben / c) habe...gebleibt
-
-1. Als Kind `_____` ich immer Fußball spielen. (wollen, Präteritum)
-
-   → a) wollte / b) will / c) gewollt
-
-1. `_____` Sie mir bitte erklären, wie ich zum Bahnhof komme? (können, Konjunktiv II)
-
-   → a) Können / b) Konnten / c) Könnten
-
-### Bölüm C: Edatlar
-
-11. Ich warte `_____` den Bus. (auf+?)
-
-    → a) auf dem / b) auf den / c) auf der
-
-01. Er wohnt `_____` seiner Mutter. (bei+?)
-
-    → a) bei seiner / b) bei seine / c) bei seinen
-
-01. Wir fahren `_____` Wochenende `_____` München.
-
-    → a) am...nach / b) im...in / c) um...zu
-
-### Bölüm D: Karma Dil Bilgisi
-
-14. Das ist der Mann, `_____` gestern bei uns war.
-
-    → a) der / b) den / c) dem
-
-01. Sie hat sich `_____` die Verspätung entschuldigt.
-
-    → a) über / b) für / c) um
-
-<!-- markdownlint-enable MD029 -->
+<div class="md-quiz" 
+  data-question="___ Sie mir bitte erklären, wie der Fahrkartenautomat funktioniert?" 
+  data-options="Können|Konnten|Könnten" 
+  data-answer="2" 
+  data-explain="'Könnten', Konjunktiv II (Çok kibar rica) formudur. Noktasız 'Konnten' Präteritum'dur ve sadece 'Dün anlatabildiniz mi?' gibi geçmiş zaman için kullanılır."></div>
 
 ______________________________________________________________________
 
-**Cevaplar:**
-1.b (weil) | 2.c (Deshalb) | 3.a (deine — Akk dişil) | 4.b (mich — sich anmelden) | 5.b (Außerdem) | 6.c (ob — dolaylı soru) | 7.b (deshalb) | 8.b (bin geblieben — durum/hareket değişimi sein alır) | 9.a (wollte) | 10.c (Könnten — kibar) | 11.b (auf den — warten auf+Akk) | 12.a (bei seiner — bei+Dat) | 13.a (am Wochenende nach München) | 14.a (der — İlgi zamiri Nom eril) | 15.b (für — sich entschuldigen für+Akk)
+## 6. Gerçek Sınav Pratiği: Karışık Sprachbausteine
+
+Yukarıdaki tüm kuralları kapsayan DTZ tarzı karma alıştırmalarla kendinizi test edin:
+
+<div class="md-quiz" 
+  data-question="Ich habe eine Katze, ___ sehr gerne schläft." 
+  data-options="die|der|das" 
+  data-answer="0" 
+  data-explain="İlgi zamiri (Relativsatz)! 'Katze' dişil (die) bir isimdir. Yan cümlede özne konumunda (uyuyan kedi) olduğu için yine Nominativ 'die' olarak kalır."></div>
+
+<div class="md-quiz" 
+  data-question="Das sind die Leute, ___ ich gestern geholfen habe." 
+  data-options="die|denen|deren" 
+  data-answer="1" 
+  data-explain="'helfen' fiili her zaman Dativ gerektirir. Çoğul Dativ ilgi zamiri 'denen'dir (dikkat: 'den' değil!)."></div>
+
+<div class="md-quiz" 
+  data-question="Sie hat sich ___ die Verspätung entschuldigt." 
+  data-options="über|für|um" 
+  data-answer="1" 
+  data-explain="Sabit dönüşlü fiil edatı: Bir şey İÇİN özür dilemek 'sich entschuldigen FÜR' + Akkusativ kalıbıdır."></div>
+
+<div class="md-quiz" 
+  data-question="Das Formular ___ ich gestern ___. (Perfekt)" 
+  data-options="hatte...ausgefüllt|habe...ausgefüllt|bin...ausgefüllt" 
+  data-answer="1" 
+  data-explain="'ausfüllen' (doldurmak) ayrılabilen bir fiildir ve hareket olmadığı için 'haben' ile çekimlenir. Bu yüzden Perfekt hali: 'habe...ausgefüllt'."></div>
+
+<div class="md-quiz" 
+  data-question="Seit drei Jahren ___ ich in Deutschland." 
+  data-options="lebe|lebte|habe gelebt" 
+  data-answer="0" 
+  data-explain="HİLE: 'Seit' (-den beri), geçmişte başlamış VE HALA DEVAM EDEN eylemleri anlatır. İngilizce veya Türkçenin aksine, Almancada bu durumda geçmiş zaman değil, Şimdiki Zaman (Präsens) kullanılmak zorundadır!"></div>

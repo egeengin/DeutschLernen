@@ -1,211 +1,129 @@
-# Tekrar: Yazma ve Konuşma (Schreiben & Sprechen)
+# İnceleme: Yazma ve Konuşma (Schreiben & Sprechen)
 
 ______________________________________________________________________
 
-## 1. Schreiben (Mektup / E-posta) — 20 dk, ~100-120 kelime
+## 1. Yazma (Mektup / E-posta) — 30 dk, ~100-120 kelime
 
-### Tam Puan İçin 4 Kural
+### Tam Puan Almak İçin 4 Altın Kural
 
-1. ✅ Sorudaki **4 maddenin TÜMÜNE** değinin
-1. ✅ Doğru **selamlama** ve **kapanış** kullanın
-1. ✅ En az 2-3 **bağlaç** kullanın (deshalb, außerdem, weil, dass)
-1. ✅ 100-120 kelime yazın (80'in altı = puan kesintisi)
-
-______________________________________________________________________
+1. ✅ Soruda verilen **4 maddenin (bullet points) TAMAMINA** değinin. Birini bile atlarsanız ciddi puan kaybedersiniz.
+2. ✅ Muhatabınıza uygun doğru bir **selamlama** ve **kapanış** kullanın.
+3. ✅ En az 2-3 tane **bağlaç** (deshalb, außerdem, weil, dass) kullanın. Kısa, basit cümleleri art arda sıralamayın.
+4. ✅ 100-120 kelime arası yazın. 80 kelimenin altında yazmak kesin puan cezası demektir.
 
 ### Mektup Şablonları
 
-#### Resmi (bilinmeyen kişi veya şirket)
+Bu iskeletleri ezberlemelisiniz. Sınavda beyninizi yormadan, sadece 4 maddenizi bu şablonların ortasına yerleştireceksiniz.
 
+#### 1. Resmi Şikayet / Tanınmayan Kişi (Die Beschwerde)
+Bozuk bir ürün geldiğinde veya bir şirkete kızdığınızda bunu kullanın.
 ```text
 Sehr geehrte Damen und Herren,
 
-ich schreibe Ihnen, weil...
-[Madde 1]
-Außerdem möchte ich Sie fragen, ob... [Madde 2]
-[Madde 3]
-Deshalb bitte ich Sie, ... [Madde 4]
+ich schreibe Ihnen, weil ich am [Tarih] [Ürün] bei Ihnen gekauft habe und es leider ein großes Problem gibt.
+... [Madde 1 & 2]
+Außerdem möchte ich Sie darauf hinweisen, dass... [Madde 3]
+Deshalb erwarte ich, dass Sie mir mein Geld zurückgeben oder mir einen Ersatz schicken. [Madde 4]
 
-Ich freue mich auf Ihre Antwort.
+Ich hoffe auf eine schnelle und positive Antwort.
 Vielen Dank im Voraus.
 
 Mit freundlichen Grüßen
-[Adınız]
+[Adınız Soyadınız]
+```
+
+#### 2. Yarı Resmi Özür (Entschuldigung)
+Bir kursa, işe veya randevuya gidemeyeceğiniz durumlarda bunu kullanın.
 ```text
+Sehr geehrte(r) Frau/Herr [İsim],
 
-#### Yarı Resmi (bilinen ilgili kişi adı)
+ich hoffe, es geht Ihnen gut.
+Ich schreibe Ihnen diese E-Mail, um mich zu entschuldigen.
+Leider kann ich am [Tarih] nicht zu unserem Termin kommen, weil ich plötzlich krank geworden bin.
+... [Madde 1 & 2 için detaylar]
+Könnten wir den Termin vielleicht auf nächste Woche verschieben? [Madde 3]
+Es wäre toll, wenn Sie mir kurz Bescheid geben könnten. [Madde 4]
 
-```text
-Sehr geehrte Frau [Müller], / Sehr geehrter Herr [Schmidt],
-
-vielen Dank für Ihre E-Mail / Ihren Brief.
-Ich schreibe Ihnen, weil...
-...
+Vielen Dank für Ihr Verständnis.
 
 Mit freundlichen Grüßen
-[Adınız]
+[Adınız Soyadınız]
+```
+
+#### 3. Samimi Davet (Einladung)
+Bir arkadaşınıza parti veya gezi düzenlemek için yazdığınızda kullanın.
 ```text
+Liebe(r) [İsim],
 
-#### Gayri Resmi (arkadaş / aile)
+wie geht es dir? Mir geht es super!
+Ich schreibe dir heute, weil ich am Wochenende eine große Party feiere und dich herzlich einladen möchte!
+... [Madde 1 & 2]
+Wir könnten auch zusammen etwas kochen, wenn du Lust hast. [Madde 3]
+Bitte gib mir bis Freitag Bescheid, ob du kommen kannst. [Madde 4]
 
-```text
-Liebe [Maria], / Lieber [Tom],
-
-wie geht es dir? Mir geht es gut.
-Ich schreibe dir, weil...
-...
-
-Liebe Grüße / Viele Grüße
-[Adınız]
-```text
-
-______________________________________________________________________
-
-### B1 Mektupları İçin Faydalı Bağlaç Kalıpları
-
-| Amaç           | İfade (Kalıp)                                                          |
-| -------------- | ---------------------------------------------------------------------- |
-| Yazma nedeni   | Ich schreibe Ihnen, weil... / Hiermit möchte ich...                    |
-| Madde ekleme   | Außerdem möchte ich fragen, ob... / Darüber hinaus...                  |
-| Sebep belirtme | Der Grund dafür ist, dass... / Deshalb...                              |
-| Rica etme      | Ich bitte Sie, ... / Könnten Sie bitte...? / Wäre es möglich, dass...? |
-| Özür dileme    | Ich möchte mich entschuldigen, dass... / Es tut mir leid, dass...      |
-| Umut etme      | Ich hoffe, dass... / Ich würde mich freuen, wenn...                    |
-| Cevap isteme   | Ich freue mich auf Ihre Antwort. / Bitte geben Sie mir Bescheid.       |
-| Teşekkür etme  | Vielen Dank im Voraus. / Herzlichen Dank für Ihre Hilfe.               |
+Ich freue mich sehr auf dich!
+Liebe Grüße
+[Sadece Adınız]
+```
 
 ______________________________________________________________________
 
-### ÖRNEK CEVAP (Bunu Çalışın!)
+## 2. İnteraktif Mektup Pratiği
 
-**Soru:** İki hafta önce internetten bir kahve makinesi sipariş ettiniz. Paket geldi, ancak kahve makinesi bozuk. Müşteri hizmetlerine bir e-posta yazın.
+Resmi ve samimi kalıpları ne kadar iyi ayırt edebildiğinizi test edelim.
 
-1. Yazma nedeniniz
-1. Tam olarak ne bozuk?
-1. Ne istiyorsunuz? (Para iadesi veya yeni makine)
-1. Hızlı bir cevap rica edin.
+<div class="md-quiz" 
+  data-question="Çocuğunuzun öğretmeni 'Herr Müller'e bir e-posta yazıyorsunuz. Doğru selamlama hangisidir?" 
+  data-options="Lieber Herr Müller,|Sehr geehrter Herr Müller,|Hallo Müller," 
+  data-answer="1" 
+  data-explain="Öğretmenler yarı resmi bir saygı gerektirir. 'Sehr geehrter Herr Müller,' mükemmel bir açılıştır. 'Lieber' fazla samimidir, ve 'Hallo Müller' Alman kültüründe son derece kabadır!"></div>
 
-**Örnek Cevap (112 kelime):**
+<div class="md-quiz" 
+  data-question="Bir şirkete yazdığınız resmi bir mektubu bitirmek istiyorsunuz. Hangi kapanış doğrudur?" 
+  data-options="Liebe Grüße,|Mit freundlichen Grüßen|Dein Tom" 
+  data-answer="1" 
+  data-explain="Resmi mektuplar DAİMA 'Mit freundlichen Grüßen' ile biter. Dikkat: Almanca'da bu cümlenin sonuna İngilizcedeki gibi VİRGÜL KONMAZ!"></div>
 
-> Sehr geehrte Damen und Herren,
->
-> ich schreibe Ihnen, **weil** ich vor zwei Wochen eine Kaffeemaschine in Ihrem Online-Shop bestellt habe und es ein Problem gibt. *(Madde 1)*
->
-> Die Kaffeemaschine ist leider kaputt angekommen. Der Wassertank hat einen Riss und **außerdem** funktioniert der Ein-/Aus-Schalter nicht. *(Madde 2)*
->
-> **Deshalb** möchte ich Sie bitten, mir eine neue Kaffeemaschine zu schicken. Ich **würde** die kaputte Maschine natürlich zurücksenden. *(Madde 3)*
->
-> **Könnten** Sie mir bitte so schnell wie möglich antworten? Ich **hoffe**, **dass** wir eine Lösung finden. *(Madde 4)*
->
-> Vielen Dank im Voraus.
->
-> Mit freundlichen Grüßen
-> Ege Engin
-
-**Bu neden B1 alır:** *weil*, *außerdem*, *deshalb*, *Konjunktiv II* (würde, könnten), *Nebensatz* (dass) kullanır, 4 maddenin tümüne değinir, doğru formattadır.
+<div class="md-quiz" 
+  data-question="Bir şirketten para iadesi istiyorsunuz. En iyi B1 seviyesi ifade hangisidir?" 
+  data-options="Ich will mein Geld. (Paramı istiyorum.)|Könnten Sie mir bitte mein Geld zurückerstatten? (Acaba paramı iade etmeniz mümkün müdür?)|Geben Sie mir Geld sofort. (Bana hemen para verin.)" 
+  data-answer="1" 
+  data-explain="'Könnten Sie' kalıbı kibar Konjunktiv II formunu kullanır. Diğer ikisi inanılmaz derecede agresif ve düşük eğitimli görünür, sınavda puan kaybettirir."></div>
 
 ______________________________________________________________________
 
-### Yazma Pratiği Soruları
+## 3. Konuşma (Sprechen) — 15 Dk, Partnerli
 
-**Soru 1 — Bilgi Talebi:**
-VHS'de bir Almanca kursuna katılmak istiyorsunuz. Bir e-posta yazın.
+Konuşma sınavı bir partnerle birlikte yapılır ve 3 bölümden oluşur:
+1. **Bölüm 1:** Kendinizi tanıtın (Ad, Yaş, Ülke, Meslek, Hobiler, Diller). Sınav gözetmeni size ekstra bir soru soracaktır.
+2. **Bölüm 2:** Bir resim hakkında konuşun (Resmi tarif edin, ardından kendi hayatınızla ilişkilendirin).
+3. **Bölüm 3:** Partnerinizle birlikte bir şey planlayın (Tatilde gezi, öğretmen için hediye vb.).
 
-1. Hangi kursu arıyorsunuz? (Seviye, saat)
-1. Kurs ne kadar tutuyor?
-1. Bir sonraki kurs ne zaman başlıyor?
-1. İnternet üzerinden kayıt olunabiliyor mu?
+### Bölüm 2: Resim Tarif Etme Kalıpları
+Her zaman **genelden özele** doğru gidin.
+* **Genel:** *Auf dem Bild sehe ich [Akk]... / Das Bild zeigt [Akk]...* (Resimde ... görüyorum / Resim ... gösteriyor)
+* **Konum:** *Im Vordergrund / Im Hintergrund / In der Mitte gibt es...* (Ön planda / Arka planda / Ortada ... var)
+* **Eylem:** *Die Leute scheinen glücklich zu sein. / Ich glaube, sie feiern einen Geburtstag, weil...* (İnsanlar mutlu görünüyor. / Sanırım doğum günü kutluyorlar çünkü...)
+* **Kişisel Deneyim (Zorunlu!):** *In meinem Heimatland machen wir das genauso. / Bei uns ist das anders, wir...* (Benim ülkemde biz de aynısını yaparız. / Bizde bu farklıdır, biz...)
 
-**Soru 2 — Şikayet:**
-Bir aydır yeni bir dairede oturuyorsunuz. Kalorifer çalışmıyor. Ev sahibinize (Herr Klein) yazın.
+### Bölüm 3: Birlikte Plan Yapma (Sınavın En Önemli Kısmı!)
+Sınav görevlilerinin görmek istedikleri en önemli şey **partnerinize TEPKİ vermenizdir**. Sakın ezberlediğiniz uzun cümleleri bir monolog gibi okumayın! Dinleyin, tepki verin, kendi fikrinizi ekleyin.
 
-1. Sorunu açıklayın.
-1. Sorun ne zamandan beri var?
-1. Şimdiden neleri denediniz?
-1. Hızlı bir onarım rica edin.
+| İşlev | İfadeler (Redemittel) |
+| --- | --- |
+| **Bir öneride bulunurken** | *Ich schlage vor, dass... / Wie wäre es, wenn wir...? / Wollen wir vielleicht...?* |
+| **Aynı fikirdeyken** | *Das ist eine tolle Idee! / Ja, damit bin ich einverstanden. / Genau!* |
+| **Kibarca reddederken** | *Das finde ich nicht so gut, weil... / Vielleicht wäre es besser, wenn...* |
+| **Fikir sorarken** | *Was denkst du darüber? / Bist du damit einverstanden?* |
 
-**Soru 3 — Özür/Mazeret:**
-Çocuğunuz (Sophie) geçen hafta hastaydı ve okula gidemedi. Sınıf öğretmenine (Frau Berg) yazın.
+<div class="md-quiz" 
+  data-question="Partneriniz öğretmene çiçek almayı öneriyor, ancak siz kitap almanın daha iyi olduğunu düşünüyorsunuz. Nasıl yanıt verirsiniz?" 
+  data-options="Nein, Blumen sind dumm. (Hayır, çiçekler aptalca.)|Blumen sind schön, aber ein Buch wäre vielleicht noch besser, weil... (Çiçekler güzel, ama bir kitap belki daha iyi OLURDU çünkü...)|Ich will ein Buch kaufen. (Ben kitap almak istiyorum.)" 
+  data-answer="1" 
+  data-explain="B Seçeneği kibarca aynı fikirde olmamayı (Disagreement) ve Konjunktiv II ('wäre') kullanımını harmanlıyor. Üstelik 'weil' ile sebep belirtmeniz B1 sınavından çok yüksek puan almanızı sağlar."></div>
 
-1. Kızınız için mazeret bildirin.
-1. Nesi vardı? (Soğuk algınlığı / Ateş)
-1. Ödevleri sorun.
-1. Sophie ne zamandan itibaren tekrar gelecek?
-
-**Soru 4 — Daveti Reddetme:**
-Arkadaşınız Thomas sizi Cumartesi günkü doğum gününe davet etti. Ne yazık ki gidemiyorsunuz. Ona yazın.
-
-1. Davet için teşekkür edin.
-1. Neden gidemiyorsunuz?
-1. Başka bir buluşma önerin.
-1. Ona en iyi dileklerinizi sunun (alles Gute dileyin).
-
-______________________________________________________________________
-
-## 2. Sprechen (Sözlü Sınav) — 15 dk, 3 Bölüm
-
-### Bölüm 1: Kendini Tanıtma (~2 dk)
-
-**Şu şablonu ezberleyin ve kendinize uyarlayın:**
-
-> "Guten Tag, mein Name ist \_\_\_\_\_\_. Ich komme aus \_\_\_\_\_\_ und ich lebe seit \_\_\_\_\_\_ in \_\_\_\_\_\_. Von Beruf bin ich \_\_\_\_\_\_ / Ich arbeite als \_\_\_\_\_\_. Ich bin verheiratet/ledig und habe \_\_\_\_\_\_ Kinder. In meiner Freizeit \_\_\_\_\_\_ ich gerne. Ich lerne Deutsch, weil \_\_\_\_\_\_. Ich spreche auch \_\_\_\_\_\_."
-
-**İpuçları:** Yavaş ve net konuşun. Gülümseyin. Bu en kolay kısımdır — bedava puanlar!
-
-______________________________________________________________________
-
-### Bölüm 2: Bir Konuyu/Resmi Tartışma (~4 dk)
-
-**Şablon Yapısı:**
-
-1. Ne gördüğünüzü / konunun ne olduğunu açıklayın
-1. Bir sebeple birlikte kendi fikrinizi belirtin
-1. Kendi kişisel deneyiminizle bağ kurun
-1. Kendi ülkenizle (anavatanınızla) karşılaştırın
-
-**Faydalı İfadeler:**
-
-| İşlev        | İfade                                                                      |
-| ------------ | -------------------------------------------------------------------------- |
-| Tasvir etme  | Auf dem Bild sehe ich... / Das Thema ist...                                |
-| Fikir        | Meiner Meinung nach... / Ich finde, dass... / Ich bin der Meinung, dass... |
-| Sebep        | ...weil... / Der Grund dafür ist...                                        |
-| Deneyim      | In meiner Erfahrung... / Ich habe die Erfahrung gemacht, dass...           |
-| Kendi Ülkesi | In meiner Heimat ist das ähnlich/anders. Bei uns...                        |
-| Sonuç        | Zusammenfassend denke ich, dass...                                         |
-
-**Pratik Konuları (genellikle çıkanlar):**
-
-1. Çocuklar ve medya / Çocuklarda cep telefonu kullanımı
-1. Online alışverişe karşı mağazada alışveriş
-1. Sağlıklı beslenme ve yemek yapma
-1. Spor ve fitness
-1. Çevre koruma ve geri dönüşüm
-1. Evcil hayvanlar: evet mi hayır mı?
-1. Şehirde vs. köyde: Nerede daha iyi yaşanır?
-1. Sosyal medya: Avantajları ve dezavantajları
-
-______________________________________________________________________
-
-### Bölüm 3: Birlikte Bir Şey Planlama (~5 dk)
-
-**Anahtar Nokta:** Bu bir monolog değil, bir DİYALOGDUR! Her zaman partnerinize tepki verin.
-
-**İfade Havuzu:**
-
-| İşlev             | İfadeler                                                                                                           |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Başlama           | Wir müssen also... planen. Hastaus du schon eine Idee?                                                             |
-| Öneri yapma       | Was hältst du davon, wenn wir...? / Wie wäre es mit...? / Sollen wir vielleicht...?                                |
-| Katılma           | Das finde ich eine gute Idee! / Ja, das klingt gut! / Einverstanden!                                               |
-| Kibarca reddetme  | Das ist eine Idee, aber ich finde es besser, wenn... / Ich bin nicht sicher. Vielleicht könnten wir stattdessen... |
-| Geri sorma        | Was denkst du? / Und du? Was meinst du? / Hast du einen Vorschlag?                                                 |
-| Detay netleştirme | Wann genau? / Wo treffen wir uns? / Wer bringt was mit? / Wie viel kostet das?                                     |
-| Sonuçlandırma     | Dann machen wir das so! / Gut, dann ist alles klar!                                                                |
-
-**Pratik Senaryoları:**
-
-1. İş arkadaşı ayrılıyor → bir veda partisi planlayın (hediye, yemek, saat, mekan)
-1. Arkadaşın doğum günü → bir sürpriz planlayın (hediye, nerede kutlanacak, kimler davet edilecek)
-1. Hafta sonu gezisi → günübirlik bir gezi planlayın (nereye, ulaşım, yemek, hava durumu için B planı)
-1. Mahalle festivali → katkınızı planlayın (ne getirilecek, ne zaman gelinecek, kimler yardım edecek)
+<div class="md-quiz" 
+  data-question="Bir buluşma saati önermeniz gerekiyor. En iyi B1 dil bilgisi seviyesi hangisidir?" 
+  data-options="Wir treffen uns um 8. (8'de buluşuyoruz.)|Wann treffen wir uns? (Ne zaman buluşuruz?)|Wie wäre es, wenn wir uns am Samstag um 14 Uhr treffen? (Cumartesi 14:00'da buluşmaya ne dersin?)" 
+  data-answer="2" 
+  data-explain="'Wie wäre es, wenn...' (Aşağıdaki durumu yapsaydık nasıl olurdu...) klasik ve çok havalı bir B1 öneri kalıbıdır. Sınav görevlilerini anında etkiler."></div>
