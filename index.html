@@ -425,8 +425,8 @@ td strong, td b { color: var(--text-primary); }
 
 <!-- Global Language Toggle -->
 <div class="global-lang-toggle">
-  <button class="lang-btn active" onclick="setLang('en')">🇺🇸 EN</button>
-  <button class="lang-btn" onclick="setLang('tr')">🇹🇷 TR</button>
+  <button class="lang-btn active" onclick="setLang('en')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/us.png" width="16" alt="US" style="border-radius:2px;"> EN</button>
+  <button class="lang-btn" onclick="setLang('tr')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/tr.png" width="16" alt="TR" style="border-radius:2px;"> TR</button>
 </div>
 
 <!-- Mobile Menu Toggle -->
@@ -670,8 +670,8 @@ td strong, td b { color: var(--text-primary); }
         <div class="fc-controls" style="align-items: center;">
           <button class="card-link" onclick="prevCard()">&larr; <span data-en="Prev" data-tr="Önceki">Prev</span></button>
           <div style="display:flex; gap:8px; margin:0 8px;">
-            <button class="card-link" id="fc-btn-en" onclick="setLang('en')" style="padding:6px 12px; font-size:12px;">🇺🇸 EN</button>
-            <button class="card-link" id="fc-btn-tr" onclick="setLang('tr')" style="padding:6px 12px; font-size:12px;">🇹🇷 TR</button>
+            <button class="card-link" id="fc-btn-en" onclick="setLang('en')" style="padding:6px 12px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/us.png" width="14" alt="US" style="border-radius:2px;"> EN</button>
+            <button class="card-link" id="fc-btn-tr" onclick="setLang('tr')" style="padding:6px 12px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/tr.png" width="14" alt="TR" style="border-radius:2px;"> TR</button>
           </div>
           <button class="card-link primary" onclick="nextCard()"><span data-en="Next Word" data-tr="Sonraki Kelime">Next Word</span> &rarr;</button>
         </div>
@@ -1009,7 +1009,7 @@ function setLang(lang) {
     if (el.tagName === 'INPUT' && el.placeholder) {
       el.placeholder = el.getAttribute(`data-${lang}`);
     } else {
-      el.textContent = el.getAttribute(`data-${lang}`);
+      el.innerHTML = el.getAttribute(`data-${lang}`);
     }
   });
   updateDayTracker();
