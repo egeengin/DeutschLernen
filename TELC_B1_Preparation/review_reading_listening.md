@@ -1,31 +1,31 @@
 # Review: Lesen & Hören (Reading & Listening)
 
----
+______________________________________________________________________
 
 ## 1. Lesen (Reading) — 45 Min, 3 Parts
 
 ### Strategies
 
 1. **Read the question FIRST**, then scan the text for keywords
-2. For matching: cross out used answers immediately
-3. Don't translate word-for-word — understand the **general meaning**
-4. Unknown words? Look at prefixes/suffixes and context
+1. For matching: cross out used answers immediately
+1. Don't translate word-for-word — understand the **general meaning**
+1. Unknown words? Look at prefixes/suffixes and context
 
 ### Key Skill: Synonym Recognition
 
 The text and the question often use DIFFERENT words for the same thing:
 
-| Text says... | Question/answer says... |
-| --- | --- |
-| kostenlos | gratis / umsonst |
-| Kinder | Nachwuchs / die Kleinen |
-| Arzt | Doktor / Mediziner |
-| kaufen | erwerben / besorgen |
-| Rabatt | Ermäßigung / Nachlass |
-| Wohnung | Unterkunft |
-| anrufen | telefonieren / sich melden |
+| Text says... | Question/answer says...    |
+| ------------ | -------------------------- |
+| kostenlos    | gratis / umsonst           |
+| Kinder       | Nachwuchs / die Kleinen    |
+| Arzt         | Doktor / Mediziner         |
+| kaufen       | erwerben / besorgen        |
+| Rabatt       | Ermäßigung / Nachlass      |
+| Wohnung      | Unterkunft                 |
+| anrufen      | telefonieren / sich melden |
 
----
+______________________________________________________________________
 
 ### Exercise 1: Advertisement Matching
 
@@ -50,7 +50,7 @@ The text and the question often use DIFFERENT words for the same thing:
 
 **5.** "Yoga für Anfänger. Jeden Mittwoch 10-11 Uhr. Im Bürgerhaus. 8 € pro Stunde."
 
----
+______________________________________________________________________
 
 ### Exercise 2: Article — True/False
 
@@ -61,12 +61,12 @@ The text and the question often use DIFFERENT words for the same thing:
 **True or False?**
 
 1. Vor der Pandemie haben weniger Menschen von zu Hause gearbeitet.
-2. Alle Firmen in Deutschland bieten Homeoffice an.
-3. Die meisten Heimarbeiter fühlen sich weniger produktiv als im Büro.
-4. Manche Heimarbeiter vermissen ihre Kollegen.
-5. Experten sagen, man sollte nur von zu Hause arbeiten.
+1. Alle Firmen in Deutschland bieten Homeoffice an.
+1. Die meisten Heimarbeiter fühlen sich weniger produktiv als im Büro.
+1. Manche Heimarbeiter vermissen ihre Kollegen.
+1. Experten sagen, man sollte nur von zu Hause arbeiten.
 
----
+______________________________________________________________________
 
 ### Exercise 3: Notice — Multiple Choice
 
@@ -75,64 +75,66 @@ The text and the question often use DIFFERENT words for the same thing:
 "Sehr geehrte Bürgerinnen und Bürger, bitte beachten Sie, dass Sie für die Beantragung eines neuen Personalausweises folgende Unterlagen mitbringen müssen: ein aktuelles biometrisches Passfoto, Ihre Meldebescheinigung und den alten Personalausweis. Die Bearbeitungsgebühr beträgt 37 €. Termine können Sie telefonisch oder online vereinbaren. Ohne Termin müssen Sie mit Wartezeiten von bis zu 2 Stunden rechnen."
 
 6. Was brauchen Sie für einen neuen Personalausweis?
+
    - a) Nur Ihren alten Ausweis
    - b) Ein Foto, Meldebescheinigung und alten Ausweis
    - c) Nur ein Foto und Geld
 
-7. Was passiert ohne Termin?
+1. Was passiert ohne Termin?
+
    - a) Man darf nicht reinkommen
    - b) Man muss möglicherweise lange warten
    - c) Man bezahlt mehr
 
----
+______________________________________________________________________
 
 ## 2. Hören (Listening) — 25 Min, 3 Parts
 
 ### Strategies
 
 1. **Pre-read** all questions/options before the audio starts
-2. Part 1 plays **only once** — maximal concentration!
-3. Listen for **keywords**, not every word
-4. Watch out for **negation** (nicht, kein, nie, nur)
-5. If you miss an answer → move on immediately
+1. Part 1 plays **only once** — maximal concentration!
+1. Listen for **keywords**, not every word
+1. Watch out for **negation** (nicht, kein, nie, nur)
+1. If you miss an answer → move on immediately
 
 ### Key: Common Listening Situations
 
-| Situation | What to Listen For |
-| --- | --- |
+| Situation                  | What to Listen For                             |
+| -------------------------- | ---------------------------------------------- |
 | Train station announcement | Gleis, Verspätung, Abfahrt, Ankunft, Umsteigen |
-| Doctor's office phone | Termin, Sprechstunde, Uhrzeit, Rezept abholen |
-| School/Kindergarten | Elternabend, Ausflug, Datum, was mitbringen |
-| Store announcement | Angebot, Rabatt, Öffnungszeiten, geschlossen |
-| Job-related call | Vorstellungsgespräch, Arbeitszeit, Unterlagen |
+| Doctor's office phone      | Termin, Sprechstunde, Uhrzeit, Rezept abholen  |
+| School/Kindergarten        | Elternabend, Ausflug, Datum, was mitbringen    |
+| Store announcement         | Angebot, Rabatt, Öffnungszeiten, geschlossen   |
+| Job-related call           | Vorstellungsgespräch, Arbeitszeit, Unterlagen  |
 
----
+______________________________________________________________________
 
 ### Exercise 4: Announcement (Read once, then answer)
 
 **Transcript:** "Achtung Fahrgäste am Gleis 3. Der ICE 594 nach München Hauptbahnhof, planmäßige Abfahrt 14:30 Uhr, hat heute voraussichtlich 20 Minuten Verspätung. Grund dafür ist eine Stellwerksstörung. Der Zug hält zusätzlich in Augsburg. Wir bitten um Entschuldigung."
 
 8. Der Zug fährt pünktlich ab. (True / False)
-9. Der Zug fährt nach München. (True / False)
-10. Der Zug hält nicht in Augsburg. (True / False)
+1. Der Zug fährt nach München. (True / False)
+1. Der Zug hält nicht in Augsburg. (True / False)
 
 ### Exercise 5: Phone Message (Read once, then answer)
 
 **Transcript:** "Hallo Frau Meier, hier ist die Praxis Dr. Schneider. Leider müssen wir Ihren Termin am Donnerstag um 10 Uhr verschieben. Dr. Schneider ist an dem Tag auf einer Fortbildung. Können wir den Termin auf Freitag, 11 Uhr verlegen? Bitte rufen Sie uns zurück unter 030-445566. Vielen Dank!"
 
 11. Der Termin am Donnerstag findet statt. (True / False)
-12. Der neue Termin soll am Freitag um 11 Uhr sein. (True / False)
-13. Frau Meier soll eine E-Mail schreiben. (True / False)
+01. Der neue Termin soll am Freitag um 11 Uhr sein. (True / False)
+01. Frau Meier soll eine E-Mail schreiben. (True / False)
 
 ### Exercise 6: Radio Report (Read once, then answer)
 
 **Transcript:** "In den nächsten Tagen wird es in ganz Deutschland deutlich kälter. Im Norden erwarten wir Temperaturen um den Gefrierpunkt, im Süden kann es sogar schneien. Am Wochenende wird es dann wieder milder, bis zu 10 Grad im Westen. Vergessen Sie Ihre warme Jacke nicht!"
 
 14. Es wird in den nächsten Tagen wärmer. (True / False)
-15. Im Süden kann es schneien. (True / False)
-16. Am Wochenende bleibt es kalt. (True / False)
+01. Im Süden kann es schneien. (True / False)
+01. Am Wochenende bleibt es kalt. (True / False)
 
----
+______________________________________________________________________
 
 ## Answers
 
@@ -141,10 +143,10 @@ The text and the question often use DIFFERENT words for the same thing:
 **Exercise 2 (True/False):**
 
 1. True (Die Zahl hat sich verdoppelt = before was less)
-2. False ("Viele Unternehmen" ≠ alle)
-3. False (65% sind produktiver = MORE productive)
-4. True (einige klagen über Einsamkeit, fehlt Kontakt)
-5. False (Experten empfehlen eine Mischung = mix, not only home)
+1. False ("Viele Unternehmen" ≠ alle)
+1. False (65% sind produktiver = MORE productive)
+1. True (einige klagen über Einsamkeit, fehlt Kontakt)
+1. False (Experten empfehlen eine Mischung = mix, not only home)
 
 **Exercise 3 (Multiple Choice):** 6→b, 7→b
 
