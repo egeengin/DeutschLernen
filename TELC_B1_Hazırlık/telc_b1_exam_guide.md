@@ -6,22 +6,22 @@
 
 Sınav günlük iletişimi test eder — iş, ev, alışveriş, resmi kurumlar, sağlık, eğitim, ulaşım vb.
 
----
+______________________________________________________________________
 
 ## Puanlama ve B1 Alma
 
-| Bölüm | Maks Puan | B1 Barajı |
-| --- | --- | --- |
-| **Hören** (Dinleme) | 25 | ~15 (%60) |
-| **Lesen** (Okuma) | 25 | ~15 (%60) |
-| **Sprachbausteine** (Dil Bilgisi/Kelime) | 30 | ~18 (%60) |
-| **Schreiben** (Yazma) | 20 | ~12 (%60) |
-| **Sprechen** (Konuşma) | ayrı | B1 seviyesi performans |
-| **Toplam Yazılı** | 100 | **≥ 60** |
+| Bölüm                                    | Maks Puan | B1 Barajı              |
+| ---------------------------------------- | --------- | ---------------------- |
+| **Hören** (Dinleme)                      | 25        | ~15 (%60)              |
+| **Lesen** (Okuma)                        | 25        | ~15 (%60)              |
+| **Sprachbausteine** (Dil Bilgisi/Kelime) | 30        | ~18 (%60)              |
+| **Schreiben** (Yazma)                    | 20        | ~12 (%60)              |
+| **Sprechen** (Konuşma)                   | ayrı      | B1 seviyesi performans |
+| **Toplam Yazılı**                        | 100       | **≥ 60**               |
 
 **Kritik:** Hem yazılı hem de sözlü bölümlerden B1 seviyesinde performans göstermelisiniz. Yazmadan %90 alıp konuşmadan A2 alırsanız sonuç genel olarak A2 olur. Dört beceriyi de geliştirin!
 
----
+______________________________________________________________________
 
 ## Sınav Yapısı (Detaylı)
 
@@ -29,11 +29,11 @@ Sınav günlük iletişimi test eder — iş, ev, alışveriş, resmi kurumlar, 
 
 #### Hören (Dinleme) — ~25 dk
 
-| Bölüm | Dinlenecek Yapı | Görev | Çalma |
-| --- | --- | --- | --- |
-| Teil 1 | 4 kısa diyalog | Doğru/Yanlış | **Sadece 1 kez** |
-| Teil 2 | 1 radyo haberi veya röportaj | Çoktan seçmeli | 2 kez |
-| Teil 3 | 4 kısa anons | Eşleştirme (Doğru duruma eşleştirin) | 2 kez |
+| Bölüm  | Dinlenecek Yapı              | Görev                                | Çalma            |
+| ------ | ---------------------------- | ------------------------------------ | ---------------- |
+| Teil 1 | 4 kısa diyalog               | Doğru/Yanlış                         | **Sadece 1 kez** |
+| Teil 2 | 1 radyo haberi veya röportaj | Çoktan seçmeli                       | 2 kez            |
+| Teil 3 | 4 kısa anons                 | Eşleştirme (Doğru duruma eşleştirin) | 2 kez            |
 
 **Stratejiler:**
 
@@ -44,11 +44,11 @@ Sınav günlük iletişimi test eder — iş, ev, alışveriş, resmi kurumlar, 
 
 #### Lesen (Okuma) — ~45 dk
 
-| Bölüm | Metin Türü | Görev |
-| --- | --- | --- |
+| Bölüm  | Metin Türü                    | Görev                 |
+| ------ | ----------------------------- | --------------------- |
 | Teil 1 | İlanlar, reklamlar, tabelalar | Durumlarla eşleştirme |
-| Teil 2 | Gazete veya dergi makalesi | Çoktan seçmeli |
-| Teil 3 | Kısa günlük metinler | Doğru/Yanlış |
+| Teil 2 | Gazete veya dergi makalesi    | Çoktan seçmeli        |
+| Teil 3 | Kısa günlük metinler          | Doğru/Yanlış          |
 
 **Stratejiler:**
 
@@ -58,9 +58,9 @@ Sınav günlük iletişimi test eder — iş, ev, alışveriş, resmi kurumlar, 
 
 #### Sprachbausteine (Dil Bilgisi) — Okuma süresi içinde
 
-| Bölüm | Görev |
-| --- | --- |
-| Teil 1 | Bir mektuptaki boşlukları doldurma (her boşluk için 3 seçenekten birini seçin) |
+| Bölüm  | Görev                                                                           |
+| ------ | ------------------------------------------------------------------------------- |
+| Teil 1 | Bir mektuptaki boşlukları doldurma (her boşluk için 3 seçenekten birini seçin)  |
 | Teil 2 | Bir metindeki boşlukları doldurma (~15 kelimelik bir kelime havuzundan seçerek) |
 
 **Stratejiler:**
@@ -83,11 +83,11 @@ Sınav günlük iletişimi test eder — iş, ev, alışveriş, resmi kurumlar, 
 
 Başka bir adayla ikili olarak yapılır. Bir gözetmen değerlendirir.
 
-| Bölüm | Görev | Süre |
-| --- | --- | --- |
-| Teil 1 | Kendini tanıtma | ~2 dk |
+| Bölüm  | Görev                            | Süre  |
+| ------ | -------------------------------- | ----- |
+| Teil 1 | Kendini tanıtma                  | ~2 dk |
 | Teil 2 | Bir konu/resim hakkında tartışma | ~4 dk |
-| Teil 3 | Partnerle bir şey planlama | ~5 dk |
+| Teil 3 | Partnerle bir şey planlama       | ~5 dk |
 
 **Stratejiler:**
 
@@ -96,36 +96,36 @@ Başka bir adayla ikili olarak yapılır. Bir gözetmen değerlendirir.
 - Netlik, karmaşıklıktan iyidir. Basit doğru cümleler, karmaşık bozuk cümlelerden iyidir
 - 20 dakikalık hazırlık süresini akıllıca kullanın — Bölüm 2 ve 3 için notlar alın
 
----
+______________________________________________________________________
 
 ## B1 İçin En Önemli 10 Dil Bilgisi Konusu (Önem Sırasına Göre)
 
-| # | Konu | Neden Önemli |
-| --- | --- | --- |
-| 1 | **Nebensätze** (weil, dass, wenn, obwohl, damit, als, ob) | Fiil sona gider — Sprachbausteine'de sürekli test edilir |
-| 2 | **Konnektoren** (deshalb, trotzdem, außerdem, dann) | Pozisyon 1 zarfları — B1 yazma için anahtardır |
-| 3 | **Perfekt** (haben/sein + Partizip II) | Günlük konuşmada kullanılan ana geçmiş zaman |
-| 4 | **Präteritum** (war, hatte, konnte, musste, wollte, sollte, durfte) | Yalnızca sein, haben ve modal fiiller için |
-| 5 | **Wechselpräpositionen** (in, an, auf, vor, hinter, neben, über, unter, zwischen) | Akk (Nereye?) vs Dat (Nerede?) |
-| 6 | **Sabit edatlar** (mit+Dat, für+Akk, seit+Dat, vb.) | Her Sprachbausteine bölümünde test edilir |
-| 7 | **Sıfat çekimleri** (-e, -en, -er, -es, -em) | Belirli/belirsiz artikellerden sonra |
-| 8 | **Dönüşlü fiiller** (sich freuen, sich anmelden, sich bewerben) | Günlük hayat konularında yaygındır |
-| 9 | **Konjunktiv II** (wäre, hätte, könnte, würde + Infinitiv) | Yazma/konuşmada kibar ricalar |
-| 10 | **Relativsätze** (der Mann, der... / die Frau, die...) | Yazmada ekstra B1 puanları |
+| #   | Konu                                                                              | Neden Önemli                                             |
+| --- | --------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| 1   | **Nebensätze** (weil, dass, wenn, obwohl, damit, als, ob)                         | Fiil sona gider — Sprachbausteine'de sürekli test edilir |
+| 2   | **Konnektoren** (deshalb, trotzdem, außerdem, dann)                               | Pozisyon 1 zarfları — B1 yazma için anahtardır           |
+| 3   | **Perfekt** (haben/sein + Partizip II)                                            | Günlük konuşmada kullanılan ana geçmiş zaman             |
+| 4   | **Präteritum** (war, hatte, konnte, musste, wollte, sollte, durfte)               | Yalnızca sein, haben ve modal fiiller için               |
+| 5   | **Wechselpräpositionen** (in, an, auf, vor, hinter, neben, über, unter, zwischen) | Akk (Nereye?) vs Dat (Nerede?)                           |
+| 6   | **Sabit edatlar** (mit+Dat, für+Akk, seit+Dat, vb.)                               | Her Sprachbausteine bölümünde test edilir                |
+| 7   | **Sıfat çekimleri** (-e, -en, -er, -es, -em)                                      | Belirli/belirsiz artikellerden sonra                     |
+| 8   | **Dönüşlü fiiller** (sich freuen, sich anmelden, sich bewerben)                   | Günlük hayat konularında yaygındır                       |
+| 9   | **Konjunktiv II** (wäre, hätte, könnte, würde + Infinitiv)                        | Yazma/konuşmada kibar ricalar                            |
+| 10  | **Relativsätze** (der Mann, der... / die Frau, die...)                            | Yazmada ekstra B1 puanları                               |
 
----
+______________________________________________________________________
 
 ## Temel Kelime Temaları
 
 Bunlar **her DTZ sınavında** çıkan temalardır:
 
-| Tema | Bilinmesi Gereken Kilit Kelimeler |
-| --- | --- |
-| **Arbeit & Beruf** | Bewerbung, Lebenslauf, Gehalt, Kollege, Arbeitsvertrag, kündigen, Teilzeit/Vollzeit |
-| **Wohnung** | Miete, Nebenkosten, Kaution, Vermieter, Mietvertrag, einziehen, kündigen |
-| **Gesundheit** | Termin, Rezept, Krankschreibung, Apotheke, Versicherung, Sprechstunde |
-| **Schule & Bildung** | Elternabend, Zeugnis, Hausaufgaben, Nachhilfe, Schulausflug, Klassenlehrerin |
-| **Behörden** | Anmeldung, Personalausweis, Aufenthaltstitel, Formular, Termin vereinbaren |
-| **Einkaufen** | Angebot, Rabatt, Garantie, umtauschen, Kassenbon, Beschwerde |
-| **Freizeit** | Verein, Kurs, Veranstaltung, Ausflug, Eintrittskarte |
-| **Verkehr** | Fahrplan, Verspätung, Umleitung, Gleis, Fahrkarte, Ermäßigung |
+| Tema                 | Bilinmesi Gereken Kilit Kelimeler                                                   |
+| -------------------- | ----------------------------------------------------------------------------------- |
+| **Arbeit & Beruf**   | Bewerbung, Lebenslauf, Gehalt, Kollege, Arbeitsvertrag, kündigen, Teilzeit/Vollzeit |
+| **Wohnung**          | Miete, Nebenkosten, Kaution, Vermieter, Mietvertrag, einziehen, kündigen            |
+| **Gesundheit**       | Termin, Rezept, Krankschreibung, Apotheke, Versicherung, Sprechstunde               |
+| **Schule & Bildung** | Elternabend, Zeugnis, Hausaufgaben, Nachhilfe, Schulausflug, Klassenlehrerin        |
+| **Behörden**         | Anmeldung, Personalausweis, Aufenthaltstitel, Formular, Termin vereinbaren          |
+| **Einkaufen**        | Angebot, Rabatt, Garantie, umtauschen, Kassenbon, Beschwerde                        |
+| **Freizeit**         | Verein, Kurs, Veranstaltung, Ausflug, Eintrittskarte                                |
+| **Verkehr**          | Fahrplan, Verspätung, Umleitung, Gleis, Fahrkarte, Ermäßigung                       |
