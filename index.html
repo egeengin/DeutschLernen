@@ -7,6 +7,7 @@
 <meta name="description" content="Interactive study portal for TELC A2/B1 (DTZ) exam preparation. Grammar, vocabulary, mock exams, and strategies in English and Turkish.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <style>
 :root {
   --bg-primary: #0a0e17;
@@ -56,6 +57,49 @@ a:hover { color: var(--de-gold); }
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-primary); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* Markdown Reader View */
+.markdown-view {
+  position: fixed; top: 0; left: var(--sidebar-w); right: 0; bottom: 0;
+  background: var(--bg-primary); z-index: 150;
+  transform: translateX(100%); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow-y: auto; overflow-x: hidden;
+}
+.markdown-view.open { transform: translateX(0); }
+.md-header {
+  position: sticky; top: 0; background: rgba(10, 14, 23, 0.9);
+  backdrop-filter: blur(8px); padding: 16px 48px;
+  border-bottom: 1px solid var(--border); display: flex;
+  justify-content: space-between; align-items: center; z-index: 160;
+}
+[data-theme="light"] .md-header { background: rgba(248, 250, 252, 0.9); }
+.back-btn {
+  display: flex; align-items: center; gap: 8px; font-weight: 600;
+  background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border);
+  padding: 8px 16px; border-radius: 8px; cursor: pointer; transition: all var(--transition);
+}
+.back-btn:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
+.md-content {
+  padding: 48px; max-width: 800px; margin: 0 auto; min-height: calc(100vh - 80px);
+}
+.md-content h1 { font-size: 36px; margin-bottom: 24px; color: var(--text-primary); }
+.md-content h2 { font-size: 24px; margin-top: 40px; margin-bottom: 16px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+.md-content h3 { font-size: 18px; margin-top: 24px; margin-bottom: 12px; color: var(--text-primary); }
+.md-content p { margin-bottom: 16px; line-height: 1.7; color: var(--text-secondary); }
+.md-content ul, .md-content ol { margin-bottom: 16px; padding-left: 24px; color: var(--text-secondary); }
+.md-content li { margin-bottom: 8px; }
+.md-content pre { background: var(--bg-card); padding: 16px; border-radius: var(--radius); border: 1px solid var(--border); overflow-x: auto; margin-bottom: 16px; }
+.md-content code { background: rgba(245,158,11,0.1); padding: 2px 6px; border-radius: 4px; color: var(--accent-gold); font-size: 13px; }
+.md-content pre code { background: transparent; padding: 0; color: var(--text-secondary); }
+.md-content table { width: 100%; border-collapse: collapse; margin-bottom: 24px; font-size: 14px; }
+.md-content th, .md-content td { padding: 12px; border: 1px solid var(--border); text-align: left; }
+.md-content th { background: var(--bg-card); font-weight: 600; }
+.md-content blockquote {
+  border-left: 4px solid var(--accent-gold); padding-left: 16px;
+  background: rgba(245,158,11,0.05); padding: 12px 16px; border-radius: 0 8px 8px 0;
+  margin-bottom: 16px; font-style: italic;
+}
+.md-loader { text-align: center; padding: 100px 0; font-size: 18px; color: var(--text-muted); }
 
 /* Sidebar */
 .sidebar {
@@ -341,6 +385,8 @@ td strong, td b { color: var(--text-primary); }
   .sidebar.open { transform: translateX(0); }
   .menu-toggle { display: flex; }
   .main { margin-left: 0; }
+  .markdown-view { left: 0; }
+  .md-header, .md-content { padding: 16px 20px; }
   .hero { padding: 80px 20px 40px; }
   .hero h1 { font-size: 28px; }
   .content { padding: 24px 20px 60px; }
@@ -401,14 +447,14 @@ td strong, td b { color: var(--text-primary); }
 
   <!-- Hero -->
   <header class="hero" id="home">
-    <div class="hero-badge">📚 TELC A2/B1 (DTZ) Preparation</div>
-    <h1>Master German B1<br>in 30 Days</h1>
-    <p>A complete, structured study portal for the Deutsch-Test für Zuwanderer. Grammar, vocabulary, mock exams, strategies — everything you need to pass with B1.</p>
+    <div class="hero-badge" data-en="📚 TELC A2/B1 (DTZ) Preparation" data-tr="📚 TELC A2/B1 (DTZ) Hazırlık">📚 TELC A2/B1 (DTZ) Preparation</div>
+    <h1 data-en="Master German B1<br>in 30 Days" data-tr="30 Günde<br>B1 Almanca Başarısı">Master German B1<br>in 30 Days</h1>
+    <p data-en="A complete, structured study portal for the Deutsch-Test für Zuwanderer. Grammar, vocabulary, mock exams, strategies — everything you need to pass with B1." data-tr="Deutsch-Test für Zuwanderer için tam, yapılandırılmış çalışma portalı. B1 ile geçmek için ihtiyacınız olan her şey.">A complete, structured study portal for the Deutsch-Test für Zuwanderer. Grammar, vocabulary, mock exams, strategies — everything you need to pass with B1.</p>
     <div class="hero-stats">
-      <div class="hero-stat"><div class="val">10</div><div class="label">Study Modules</div></div>
-      <div class="hero-stat"><div class="val">30</div><div class="label">Day Plan</div></div>
-      <div class="hero-stat"><div class="val">1000+</div><div class="label">Vocab Words</div></div>
-      <div class="hero-stat"><div class="val">2</div><div class="label">Mock Exams</div></div>
+      <div class="hero-stat"><div class="val">10</div><div class="label" data-en="Study Modules" data-tr="Modül">Study Modules</div></div>
+      <div class="hero-stat"><div class="val">30</div><div class="label" data-en="Day Plan" data-tr="Günlük Plan">Day Plan</div></div>
+      <div class="hero-stat"><div class="val">1000+</div><div class="label" data-en="Vocab Words" data-tr="Kelime">Vocab Words</div></div>
+      <div class="hero-stat"><div class="val">2</div><div class="label" data-en="Mock Exams" data-tr="Deneme Sınavı">Mock Exams</div></div>
     </div>
   </header>
 
@@ -466,7 +512,7 @@ td strong, td b { color: var(--text-primary); }
         <div class="score-card"><h4>Sprechen</h4><p data-en="Speaking — B1-level performance required" data-tr="Konuşma — B1 seviyesi performansı gerekli">Speaking — B1-level performance required</p></div>
         <div class="score-card" style="border-color: var(--accent-gold);"><h4 style="color:var(--accent-gold)">Total ≥ 60/100</h4><p data-en="Written total must be ≥ 60 points" data-tr="Yazılı toplam ≥ 60 puan olmalı">Written total must be ≥ 60 points</p></div>
       </div>
-      <p style="margin-top:16px"><a href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/telc_b1_exam_guide.md">📄 Read full Exam Guide →</a></p>
+      <p style="margin-top:16px"><a href="#" onclick="openMarkdown('./TELC_B1_Preparation/telc_b1_exam_guide.md'); return false;">📄 Read full Exam Guide →</a></p>
     </div>
 
     <!-- Top 10 Grammar -->
@@ -499,7 +545,7 @@ td strong, td b { color: var(--text-primary); }
         <p style="font-size:13px;color:var(--text-secondary)">Polite requests in writing and speaking.</p>
         <div class="example"><b>Könnten</b> Sie mir bitte helfen? / Ich <b>würde</b> gerne einen Termin <b>machen</b>.</div>
       </div>
-      <p><a href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/review_grammar_vocab.md">📄 Full Grammar Review with 30 practice questions →</a></p>
+      <p><a href="#" onclick="openMarkdown('./TELC_B1_Preparation/review_grammar_vocab.md'); return false;">📄 Full Grammar Review with 30 practice questions →</a></p>
     </div>
 
     <!-- Interactive Quiz -->
@@ -518,7 +564,7 @@ td strong, td b { color: var(--text-primary); }
       <div id="quiz-container">
         <!-- Quiz items injected by JS -->
       </div>
-      <p style="margin-top:20px"><a href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/mock_exam_diagnostic.md">📄 Full Diagnostic Mock Exam →</a> · <a href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/mock_exam_final.md">📄 Final Mock Exam →</a></p>
+      <p style="margin-top:20px"><a href="#" onclick="openMarkdown('./TELC_B1_Preparation/mock_exam_diagnostic.md'); return false;">📄 Full Diagnostic Mock Exam →</a> · <a href="#" onclick="openMarkdown('./TELC_B1_Preparation/mock_exam_final.md'); return false;">📄 Final Mock Exam →</a></p>
     </div>
 
     <!-- Study Plan Preview -->
@@ -536,7 +582,7 @@ td strong, td b { color: var(--text-primary); }
           </tbody>
         </table>
       </div>
-      <p><a href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/1_month_study_plan.md">📄 Full day-by-day study plan →</a></p>
+      <p><a href="#" onclick="openMarkdown('./TELC_B1_Preparation/1_month_study_plan.md'); return false;">📄 Full day-by-day study plan →</a></p>
     </div>
 
     <!-- Links to remaining sections -->
@@ -544,33 +590,33 @@ td strong, td b { color: var(--text-primary); }
       <div class="section-label">📖 Module 4</div>
       <h2>Reading & Listening</h2>
       <p>Synonym recognition, time management, and practice exercises.</p>
-      <div class="card-links"><a class="card-link primary" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/review_reading_listening.md">📄 Open Full Review →</a></div>
+      <div class="card-links"><button class="card-link primary" onclick="openMarkdown('./TELC_B1_Preparation/review_reading_listening.md')">📄 Open Full Review →</button></div>
     </div>
     <div class="section" id="writing" style="animation-delay:0.15s">
       <div class="section-label">✍️ Module 5</div>
       <h2>Writing & Speaking</h2>
       <p>Letter templates, model answers, speaking phrase banks, and 4 practice prompts.</p>
-      <div class="card-links"><a class="card-link primary" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/review_writing_speaking.md">📄 Open Full Review →</a></div>
+      <div class="card-links"><button class="card-link primary" onclick="openMarkdown('./TELC_B1_Preparation/review_writing_speaking.md')">📄 Open Full Review →</button></div>
     </div>
     <div class="section" id="final-exam" style="animation-delay:0.2s">
       <div class="section-label">🎯 Module 7</div>
       <h2>Final Mock Exam</h2>
       <p>Full exam with Hören, Lesen, Sprachbausteine, Schreiben, and Sprechen sections.</p>
-      <div class="card-links"><a class="card-link primary" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/mock_exam_final.md">📄 Open Final Exam →</a></div>
+      <div class="card-links"><button class="card-link primary" onclick="openMarkdown('./TELC_B1_Preparation/mock_exam_final.md')">📄 Open Final Exam →</button></div>
     </div>
     <div class="section" id="resources" style="animation-delay:0.25s">
       <div class="section-label">🌐 Module 8</div>
       <h2>Free Resources</h2>
       <p>Official practice tests, YouTube channels, DW courses, and grammar websites.</p>
-      <div class="card-links"><a class="card-link primary" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/example_exams_resources.md">📄 Open Resources List →</a></div>
+      <div class="card-links"><button class="card-link primary" onclick="openMarkdown('./TELC_B1_Preparation/example_exams_resources.md')">📄 Open Resources List →</button></div>
     </div>
     <div class="section" id="vocab1" style="animation-delay:0.3s">
       <div class="section-label">📚 Module 9</div>
       <h2>Vocabulary: Verbs & Adjectives</h2>
       <p>~500 most-used German verbs and adjectives with Turkish translations and examples.</p>
       <div class="card-links">
-        <a class="card-link primary" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/vocab_part1_verbs_adjectives.md">🇬🇧 English Version →</a>
-        <a class="card-link" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part1_fiiller_sifatlar.md">🇹🇷 Türkçe Versiyon →</a>
+        <button class="card-link primary" onclick="openMarkdown('./TELC_B1_Preparation/vocab_part1_verbs_adjectives.md')">🇬🇧 English Version →</button>
+        <button class="card-link" onclick="openMarkdown('./TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part1_fiiller_sifatlar.md')">🇹🇷 Türkçe Versiyon →</button>
       </div>
     </div>
     <div class="section" id="vocab2" style="animation-delay:0.35s">
@@ -578,8 +624,8 @@ td strong, td b { color: var(--text-primary); }
       <h2>Vocabulary: Nouns by Theme</h2>
       <p>~550 most-used German nouns organized by DTZ exam themes with Turkish translations.</p>
       <div class="card-links">
-        <a class="card-link primary" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/vocab_part2_nouns_themes.md">🇬🇧 English Version →</a>
-        <a class="card-link" href="https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part2_isimler_temalar.md">🇹🇷 Türkçe Versiyon →</a>
+        <button class="card-link primary" onclick="openMarkdown('./TELC_B1_Preparation/vocab_part2_nouns_themes.md')">🇬🇧 English Version →</button>
+        <button class="card-link" onclick="openMarkdown('./TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part2_isimler_temalar.md')">🇹🇷 Türkçe Versiyon →</button>
       </div>
     </div>
 
@@ -619,31 +665,43 @@ td strong, td b { color: var(--text-primary); }
   </div>
 </div>
 
+<!-- Full Screen Markdown Reader Pane -->
+<div class="markdown-view" id="md-view">
+  <div class="md-header">
+    <button class="back-btn" onclick="closeMarkdown()">
+      <span style="font-size:18px">&larr;</span> <span data-en="Back to Dashboard" data-tr="Panoya Dön">Back to Dashboard</span>
+    </button>
+  </div>
+  <div class="md-content" id="md-content">
+    <!-- Rendered HTML goes here -->
+  </div>
+</div>
+
 <script>
 // Material cards data
 const materials = [
-  { icon:'📋', title:'Exam Guide', titleTr:'Sınav Rehberi', desc:'Structure, scoring, strategies', descTr:'Yapı, puanlama, stratejiler', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/telc_b1_exam_guide.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/telc_b1_exam_guide.md' },
-  { icon:'📅', title:'1-Month Plan', titleTr:'1 Aylık Plan', desc:'Day-by-day study schedule', descTr:'Gün gün çalışma programı', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/1_month_study_plan.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/1_month_study_plan.md' },
-  { icon:'📝', title:'Grammar & Vocab', titleTr:'Dil Bilgisi ve Kelime', desc:'Nebensätze, Perfekt, prepositions + 30 exercises', descTr:'Nebensätze, Perfekt, edatlar + 30 alıştırma', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/review_grammar_vocab.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/review_grammar_vocab.md' },
-  { icon:'📖', title:'Reading & Listening', titleTr:'Okuma ve Dinleme', desc:'Synonym recognition, strategies, 6 exercises', descTr:'Eşanlamlı tanıma, stratejiler, 6 alıştırma', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/review_reading_listening.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/review_reading_listening.md' },
-  { icon:'✍️', title:'Writing & Speaking', titleTr:'Yazma ve Konuşma', desc:'Letter templates, model answer, speaking phrases', descTr:'Mektup şablonları, model cevap, konuşma ifadeleri', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/review_writing_speaking.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/review_writing_speaking.md' },
-  { icon:'🔍', title:'Diagnostic Exam', titleTr:'Tanılama Sınavı', desc:'Day 1 assessment — find your weak spots', descTr:'1. gün değerlendirmesi — zayıf noktalarınızı bulun', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/mock_exam_diagnostic.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_diagnostic.md' },
-  { icon:'🎯', title:'Final Mock Exam', titleTr:'Final Sınavı', desc:'Week 4 full simulation under exam conditions', descTr:'4. hafta sınav koşullarında tam simülasyon', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/mock_exam_final.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_final.md' },
-  { icon:'🌐', title:'Free Resources', titleTr:'Ücretsiz Kaynaklar', desc:'Official tests, YouTube, DW courses, websites', descTr:'Resmi testler, YouTube, DW kursları, web siteleri', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/example_exams_resources.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/example_exams_resources.md' },
-  { icon:'📚', title:'Vocab: Verbs', titleTr:'Kelime: Fiiller', desc:'~500 verbs & adjectives with examples', descTr:'~500 fiil ve sıfat, örneklerle', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/vocab_part1_verbs_adjectives.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part1_fiiller_sifatlar.md' },
-  { icon:'📚', title:'Vocab: Nouns', titleTr:'Kelime: İsimler', desc:'~550 nouns by exam theme', descTr:'~550 isim, sınav temalarına göre', en:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Preparation/vocab_part2_nouns_themes.md', tr:'https://github.com/egeengin/DeutschLernen/blob/main/TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part2_isimler_temalar.md' },
+  { icon:'📋', title:'Exam Guide', titleTr:'Sınav Rehberi', desc:'Structure, scoring, strategies', descTr:'Yapı, puanlama, stratejiler', en:'./TELC_B1_Preparation/telc_b1_exam_guide.md', tr:'./TELC_B1_Haz%C4%B1rl%C4%B1k/telc_b1_exam_guide.md' },
+  { icon:'📅', title:'1-Month Plan', titleTr:'1 Aylık Plan', desc:'Day-by-day study schedule', descTr:'Gün gün çalışma programı', en:'./TELC_B1_Preparation/1_month_study_plan.md', tr:'./TELC_B1_Haz%C4%B1rl%C4%B1k/1_month_study_plan.md' },
+  { icon:'📝', title:'Grammar & Vocab', titleTr:'Dil Bilgisi ve Kelime', desc:'Nebensätze, Perfekt, prepositions + 30 exercises', descTr:'Nebensätze, Perfekt, edatlar + 30 alıştırma', en:'./TELC_B1_Preparation/review_grammar_vocab.md', tr:'./TELC_B1_Haz%C4%B1rl%C4%B1k/review_grammar_vocab.md' },
+  { icon:'📖', title:'Reading & Listening', titleTr:'Okuma ve Dinleme', desc:'Synonym recognition, strategies, 6 exercises', descTr:'Eşanlamlı tanıma, stratejiler, 6 alıştırma', en:'./TELC_B1_Preparation/review_reading_listening.md', tr:'./TELC_B1_Haz%C4%B1rl%C4%B1k/review_reading_listening.md' },
+  { icon:'✍️', title:'Writing & Speaking', titleTr:'Yazma ve Konuşma', desc:'Letter templates, model answer, speaking phrases', descTr:'Mektup şablonları, model cevap, konuşma ifadeleri', en:'./TELC_B1_Preparation/review_writing_speaking.md', tr:'./TELC_B1_Haz%C4%B1rl%C4%B1k/review_writing_speaking.md' },
+  { icon:'🔍', title:'Diagnostic Exam', titleTr:'Tanılama Sınavı', desc:'Day 1 assessment — find your weak spots', descTr:'1. gün değerlendirmesi — zayıf noktalarınızı bulun', en:'./TELC_B1_Preparation/mock_exam_diagnostic.md', tr:'./TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_diagnostic.md' },
+  { icon:'🎯', title:'Final Mock Exam', titleTr:'Final Sınavı', desc:'Week 4 full simulation under exam conditions', descTr:'4. hafta sınav koşullarında tam simülasyon', en:'./TELC_B1_Preparation/mock_exam_final.md', tr:'./TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_final.md' },
+  { icon:'🌐', title:'Free Resources', titleTr:'Ücretsiz Kaynaklar', desc:'Official tests, YouTube, DW courses, websites', descTr:'Resmi testler, YouTube, DW kursları, web siteleri', en:'./TELC_B1_Preparation/example_exams_resources.md', tr:'./TELC_B1_Haz%C4%B1rl%C4%B1k/example_exams_resources.md' },
+  { icon:'📚', title:'Vocab: Verbs', titleTr:'Kelime: Fiiller', desc:'~500 verbs & adjectives with examples', descTr:'~500 fiil ve sıfat, örneklerle', en:'./TELC_B1_Preparation/vocab_part1_verbs_adjectives.md', tr:'./TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part1_fiiller_sifatlar.md' },
+  { icon:'📚', title:'Vocab: Nouns', titleTr:'Kelime: İsimler', desc:'~550 nouns by exam theme', descTr:'~550 isim, sınav temalarına göre', en:'./TELC_B1_Preparation/vocab_part2_nouns_themes.md', tr:'./TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part2_isimler_temalar.md' },
 ];
 
 // Render material cards
 const cardsEl = document.getElementById('material-cards');
 materials.forEach((m, i) => {
-  cardsEl.innerHTML += `<div class="card" onclick="window.open('${m.en}','_self')">
+  cardsEl.innerHTML += `<div class="card" onclick="openMarkdown('${m.en}')">
     <div class="card-icon">${m.icon}</div>
     <h3 data-en="${m.title}" data-tr="${m.titleTr}">${m.title}</h3>
     <p data-en="${m.desc}" data-tr="${m.descTr}">${m.desc}</p>
     <div class="card-links">
-      <a class="card-link primary" href="${m.en}" onclick="event.stopPropagation()">🇬🇧 EN</a>
-      <a class="card-link" href="${m.tr}" onclick="event.stopPropagation()">🇹🇷 TR</a>
+      <button class="card-link primary" onclick="event.stopPropagation(); openMarkdown('${m.en}')">🇬🇧 EN</button>
+      <button class="card-link" onclick="event.stopPropagation(); openMarkdown('${m.tr}')">🇹🇷 TR</button>
     </div>
   </div>`;
 });
@@ -795,6 +853,36 @@ function prevCard() { currentCard = currentCard <= 0 ? vocabList.length - 1 : cu
 
 // Language toggle
 let currentLang = 'en';
+
+// Markdown Reader Logic
+function openMarkdown(url) {
+  const mdView = document.getElementById('md-view');
+  const mdContent = document.getElementById('md-content');
+  mdView.classList.add('open');
+  document.body.style.overflow = 'hidden'; // prevent background scrolling
+  
+  mdContent.innerHTML = `<div class="md-loader">Loading content...</div>`;
+  
+  fetch(url)
+    .then(response => {
+      if (!response.ok) throw new Error('File not found');
+      return response.text();
+    })
+    .then(text => {
+      // Set marked options for better standard rendering
+      marked.setOptions({ breaks: true, gfm: true });
+      mdContent.innerHTML = marked.parse(text);
+      mdView.scrollTop = 0; // scroll to top when opened
+    })
+    .catch(err => {
+      mdContent.innerHTML = `<div class="md-loader" style="color:var(--accent-red)">Error loading study material.<br>Make sure you are viewing this via the live GitHub Pages link and not locally.</div>`;
+    });
+}
+
+function closeMarkdown() {
+  document.getElementById('md-view').classList.remove('open');
+  document.body.style.overflow = '';
+}
 
 // Theme Toggle
 let currentTheme = localStorage.getItem('dtz_theme') || 'dark';
