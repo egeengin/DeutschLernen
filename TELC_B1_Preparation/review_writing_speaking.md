@@ -134,20 +134,39 @@ You must talk about Name, Age, Country, Residence, Job, Languages.
 - **Fail:** "Ich heiße Ali. Ich bin 30 Jahre alt."
 - **Pass (B1):** "Ich heiße Ali und ich komme aus der Türkei, aber **seit drei Jahren lebe ich** mit meiner Familie in Berlin."
 
-### Part 2: Gemeinsam etwas planen (Planning Together)
-You and your partner must plan a party, a trip, or buy a gift. You get bullet points on what to decide.
-**🛑 YOUTUBE EXAMINER TIP:** The examiners want to see you **react** to your partner. Do not read a monolog!
+### Part 2: Über ein Thema sprechen / Bildbeschreibung (Topic / Picture)
+You are given a photo or topic. Describe what you see, give your opinion, and relate to your experience.
+**🛑 YOUTUBE EXAMINER TIP:** Do NOT just list things. Use the structure below for B1 points.
+
+**Phrase Bank for Bildbeschreibung:**
 
 | Function | Phrases (Redemittel) |
 | --- | --- |
-| **Making a suggestion** | *Ich schlage vor, dass... / Wie wäre es, wenn wir...? / Wollen wir vielleicht...?* |
-| **Agreeing** | *Das ist eine tolle Idee! / Ja, damit bin ich einverstanden. / Genau!* |
-| **Disagreeing** | *Das finde ich nicht so gut... / Vielleicht wäre es besser, wenn...* |
+| **Location** | *Im Vordergrund sieht man... / Im Hintergrund... / Rechts/Links... / In der Mitte...* |
+| **People** | *Man kann sehen, dass... / Die Personen scheinen... / Es sieht so aus, als ob...* |
+| **Your Opinion** | *Ich finde, dass... / Meiner Meinung nach... / Ich bin der Meinung, dass...* |
+| **Experience** | *In meinem Heimatland ist das anders... / Bei uns macht man das so...* |
+| **Comparison** | *Im Vergleich zu meinem Heimatland... / Der Unterschied ist, dass...* |
 
-### Part 3: Meinung äußern / Diskutieren (Discussing a Topic)
-You discuss a topic or react to a statement/picture. 
-**🛑 YOUTUBE EXAMINER TIP:** Always relate the topic to your own home country!
-* *In meinem Heimatland ist das anders... Bei uns machen wir das so...*
+**Model Answer Structure (B1):**
+
+> 1. Beschreibung: "Auf dem Bild sehe ich [was]. Im Vordergrund ist X, im Hintergrund Y."
+> 2. Interpretation: "Ich denke, die Personen sind [Situation]. Es sieht so aus, als ob..."
+> 3. Erfahrung: "In meinem Leben ist das auch wichtig, weil..."
+> 4. Vergleich: "In meinem Heimatland ist das anders/ähnlich. Bei uns..."
+> 5. Meinung: "Ich finde dieses Thema wichtig, weil..."
+
+### Part 3: Gemeinsam etwas planen (Planning Together)
+You and your partner must plan a party, trip, or gift. You get bullet points to decide.
+**🛑 YOUTUBE EXAMINER TIP:** The examiners want to see you **react** to your partner!
+
+| Function | Phrases (Redemittel) |
+| --- | --- |
+| **Suggesting** | *Ich schlage vor, dass... / Wie wäre es, wenn wir...? / Wollen wir vielleicht...? / Hast du eine Idee?* |
+| **Agreeing** | *Das ist eine tolle Idee! / Ja, damit bin ich einverstanden. / Genau! / Das finde ich gut.* |
+| **Disagreeing** | *Das finde ich nicht so gut... / Vielleicht wäre es besser, wenn... / Ich sehe das ein bisschen anders.* |
+| **Asking opinion** | *Was meinst du dazu? / Was hältst du davon? / Bist du damit einverstanden?* |
+| **Compromising** | *Okay, dann machen wir es so: ... / Können wir uns darauf einigen, dass...?* |
 
 <div class="md-quiz" 
   data-question="Your partner suggests buying flowers for the teacher, but you think a book is better. How do you respond?" 

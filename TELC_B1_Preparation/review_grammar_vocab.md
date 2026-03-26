@@ -192,7 +192,136 @@ Test yourself on mixed telc Deutsch A2-B1-style exercises covering everything ab
 
 ______________________________________________________________________
 
+## 7. Adjektivdeklination (Adjective Endings) — GUARANTEED IN SPRACHBAUSTEINE
+
+The adjective ending changes depending on **which article** comes before it. This is one of the most tested topics in the telc Deutsch A2-B1 Sprachbausteine.
+
+**PRO TRICK:** Use the "Strong-Weak" system. The article itself carries strong inflection; the adjective then uses "weak" endings (-e or -en). If there's no article (no inflection signal), the adjective must be strong.
+
+### After Definite Articles (der/die/das)
+
+| Case | Maskulin | Feminin | Neutrum | Plural |
+| --- | --- | --- | --- | --- |
+| **Nom** | der alt**e** Mann | die alt**e** Frau | das alt**e** Kind | die alt**en** Leute |
+| **Akk** | den alt**en** Mann | die alt**e** Frau | das alt**e** Kind | die alt**en** Leute |
+| **Dat** | dem alt**en** Mann | der alt**en** Frau | dem alt**en** Kind | den alt**en** Leuten |
+
+> **Memory trick:** After definite articles, the adjective is almost always **-en** except for Nom/Akk Sg feminine and Nom/Akk Sg neuter → **-e**.
+
+### After Indefinite Articles (ein/eine)
+
+| Case | Maskulin | Feminin | Neutrum |
+| --- | --- | --- | --- |
+| **Nom** | ein alt**er** Mann | eine alt**e** Frau | ein alt**es** Kind |
+| **Akk** | einen alt**en** Mann | eine alt**e** Frau | ein alt**es** Kind |
+| **Dat** | einem alt**en** Mann | einer alt**en** Frau | einem alt**en** Kind |
+
+> **Memory trick:** After *ein*, the adjective must carry the gender signal where *ein* has no ending (Nom Masc: ein → no -r, so adjective gets -er; Nom Neut: ein → no -s, so adjective gets -es).
+
+<div class="md-quiz"
+  data-question="Das ist ___ guter Film."
+  data-options="ein|eine|einen"
+  data-answer="0"
+  data-explain="'Film' is masculine (der Film). Nominative masculine → 'ein guter Film'. 'eine' is feminine. 'einen' is accusative."></div>
+
+<div class="md-quiz"
+  data-question="Ich suche einen ___ Job."
+  data-options="gut|guten|guter"
+  data-answer="1"
+  data-explain="'Job' is masculine. After 'einen' (accusative indefinite article), the adjective ending is -en regardless of gender. → 'einen guten Job'."></div>
+
+<div class="md-quiz"
+  data-question="Sie kauft ein ___ Kleid für die Party."
+  data-options="schönes|schöne|schönen"
+  data-answer="0"
+  data-explain="'Kleid' is neuter (das Kleid). Accusative of neuter after 'ein' → the adjective must carry the neuter signal -es: 'ein schönes Kleid'."></div>
+
+______________________________________________________________________
+
+## 8. Relativsätze (Relative Clauses) — Verb Goes to the END
+
+A relative clause describes a noun. The relative pronoun matches the **gender and number** of the noun it refers to, but its **case** is determined by its role in the relative clause.
+
+| Noun gender | Nom | Akk | Dat |
+| --- | --- | --- | --- |
+| **der** (Maskulin) | der | den | dem |
+| **die** (Feminin) | die | die | der |
+| **das** (Neutrum) | das | das | dem |
+| **die** (Plural) | die | die | denen |
+
+**PRO TRICK for case:** Ask yourself how the relative pronoun functions *inside* its own clause.
+
+* Subject of clause → Nominativ: *Das ist der Mann, **der** mir geholfen hat.*
+* Object of clause → Akkusativ: *Das ist der Mann, **den** ich gestern gesehen habe.*
+* After Dativ verb/preposition → Dativ: *Das sind die Leute, **denen** ich gedankt habe.*
+
+<div class="md-quiz"
+  data-question="Das ist die Frau, ___ ich jeden Tag sehe."
+  data-options="die|der|den"
+  data-answer="0"
+  data-explain="'Frau' is feminine. 'sehen' takes Akkusativ. Feminine Akkusativ relative pronoun = 'die'. (Same form as Nominativ for feminine — watch out!)"></div>
+
+<div class="md-quiz"
+  data-question="Das ist das Buch, ___ mir am besten gefällt."
+  data-options="das|den|dem"
+  data-answer="0"
+  data-explain="'Buch' is neuter. The pronoun is the *subject* of 'gefällt', so it is Nominativ. Neuter Nominativ = 'das'."></div>
+
+<div class="md-quiz"
+  data-question="Wo ist der Freund, ___ du das Geld gegeben hast?"
+  data-options="der|den|dem"
+  data-answer="2"
+  data-explain="'geben' + Dativ person: 'du hast dem Freund Geld gegeben'. 'Freund' is masculine. Masculine Dativ relative pronoun = 'dem'."></div>
+
+______________________________________________________________________
+
+## 9. Passiv Präsens (Passive Voice) — Sprachbausteine + Writing
+
+The passive is used when you want to focus on **what happens** rather than *who* does it. In the B1 exam it appears in Sprachbausteine texts (rules, notices, instructions) and earns bonus points in writing.
+
+**Formula:** **werden** (conjugated, position 2) + … + **Partizip II** (at the end)
+
+| Person | Aktiv | Passiv |
+| --- | --- | --- |
+| ich | mache | werde gemacht |
+| du | machst | wirst gemacht |
+| er/sie/es | macht | wird gemacht |
+| wir | machen | werden gemacht |
+| ihr | macht | werdet gemacht |
+| sie/Sie | machen | werden gemacht |
+
+**Real exam examples:**
+
+| Context | Passive sentence |
+| --- | --- |
+| Rules / signs | *Hier **wird** nicht geraucht.* (No smoking here.) |
+| Notices | *Die Pakete **werden** täglich geliefert.* |
+| Passive with Dativ agent | *Das Formular **wird** vom Arzt ausgefüllt.* |
+
+**Agent (by whom):** Use *von + Dativ* to say who performs the action.
+> *Das Auto **wird von** meinem Bruder repariert.* (The car is being repaired by my brother.)
+
+<div class="md-quiz"
+  data-question="In dieser Bäckerei ___ das Brot täglich frisch ___."
+  data-options="wird...gebacken|ist...gebacken|hat...gebacken"
+  data-answer="0"
+  data-explain="Passive Präsens: werden (conjugated) + Partizip II at the end. 3rd person singular → 'wird...gebacken'. 'ist gebacken' would be a stative state, not an action. 'hat gebacken' is active Perfekt."></div>
+
+<div class="md-quiz"
+  data-question="Die neuen Regeln ___ ab Montag ___."
+  data-options="werden...eingeführt|sind...eingeführt|haben...eingeführt"
+  data-answer="0"
+  data-explain="Passive Präsens of 'einführen' (separable). The Partizip II of 'einführen' is 'eingeführt'. 'werden...eingeführt' is correct passive. The plural subject 'Regeln' requires 'werden' (not 'wird')."></div>
+
+______________________________________________________________________
+
 ## References
-* **telc Deutsch A2-B1 Rules:** [telc.net/sprachpruefungen/a2b1](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
-* **Grammar Explanations:** Adapted from common TELC guidelines and YouTube teachers like "Deutsch lernen durch Hören" and DW Learn German.
-* **Practice:** [Goethe-Institut B1 material](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html).
+
+* **telc Deutsch A2-B1 Official Exam:** [telc.net](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
+* **Adjective Endings:** [Lingolia — Adjektivdeklination](https://deutsch.lingolia.com/de/grammatik/adjektive/deklination)
+* **Passiv:** [Lingolia — Passiv](https://deutsch.lingolia.com/de/grammatik/verben/passiv)
+* **Relativsätze:** [Lingolia — Relativsätze](https://deutsch.lingolia.com/de/grammatik/satzverbindungen/relativsaetze)
+* **Practice:** [Goethe-Institut B1 material](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html)
+* **YouTube — JudiAegi Schule (Examiner Tips):** [youtube.com/@JudiAegi-Schule](https://www.youtube.com/@JudiAegi-Schule)
+
+

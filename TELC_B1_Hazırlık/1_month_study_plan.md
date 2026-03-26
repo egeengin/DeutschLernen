@@ -17,7 +17,7 @@ ______________________________________________________________________
 | 3   | **Perfekt (Geçmiş Zaman)**              | haben/sein + Partizip II — düzenli ve düzensiz fiiller                             | 1 sa   |
 | 4   | **Präteritum (Geçmiş Zaman)**           | Sadece şunlar için: war, hatte, konnte, musste, wollte, sollte, durfte             | 1 sa   |
 | 4   | **Edatlar (Prepositionen)**             | Wechselpräpositionen (Akkusativ vs. Dativ) + sabit edatlar                         | 1.5 sa |
-| 5   | **Sıfat Çekimleri**                     | der/ein/kein sonrası kurallar + pratik                                             | 1.5 sa |
+| 5   | **Sıfat Çekimleri & Passiv**            | der/ein/kein sonrası kurallar + Edilgen Yapı (Passiv)              | 2.5 sa |
 | 5   | **Dönüşlü Fiiller (Reflexive Verbs)**   | sich freuen, sich anmelden, sich bewerben, sich fühlen                             | 1 sa   |
 | 6   | **Kelime Bilgisi: İş & Resmi Kurumlar** | İş/resmi kurum kelimeleri için bilgi kartları (sınav rehberine bakın)              | 1 sa   |
 | 6   | **Sprachbausteine Pratiği**             | `review_grammar_vocab.md` dosyasındaki tüm alıştırmaları yapın                     | 1.5 sa |

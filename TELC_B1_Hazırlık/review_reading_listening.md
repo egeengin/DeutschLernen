@@ -120,6 +120,57 @@ Bir tren istasyonu anonsu dinlediğinizi hayal edin:
 
 ______________________________________________________________________
 
+## 4. Hören Teil 4 & Teil 5 — İleri Seviye Stratejiler
+
+### Teil 4: Röportajlar & Tartışmalar (SADECE BİR KEZ çalınır!)
+
+Uzun bir röportaj veya tartışma duyarsınız. Söylenen hakkında Doğru/Yanlış sorularını cevaplamanız gerekir. Bu bölüm **sadece 1 kez çalınır** ve en zor kısımdır.
+
+**Temel stratejiler:**
+
+* **Her ifadeyi giriş sırasında önceden okuyun.** Tetikleyici kelimelerin altını çizin: *nicht, nie, immer, nur, alle, jeder*.
+* **Çelişkilere dikkat:** Röportajcı genelde konuğun görüşünü yanlış özetler, konuk düzeltir. Düzeltme gerçek cevaptır.
+* **"Ja, aber..." kalıbı:** Konuşmacı kabul eder gibi görünür, sonra "aber" ile ters çevirir — "aber"'den SONRAKİ kısım gerçek cevaptır.
+* **"Leider" ve "eigentlich"** gerçekliğin beklentiden farklı olduğunu işaret eder.
+
+**Pratik örneği:**
+
+*Duyduğunuz:* "Frau Schmidt, stimmt es, dass Ihr Verein nur für Senioren ist?"
+*Cevabı:* "Nein, das ist ein häufiges Missverständnis. Wir haben Mitglieder jeden Alters, aber unsere Aktivitäten am Nachmittag sind besonders bei älteren Menschen beliebt."
+
+<div class="md-quiz"
+  data-question="Der Verein ist nur für ältere Menschen. (Richtig/Falsch) — Dernek sadece yaşlılar için midir?"
+  data-options="Richtig (Doğru)|Falsch (Yanlış)"
+  data-answer="1"
+  data-explain="Yanlış! 'Mitglieder jeden Alters' (her yaştan üye) diyor. Öğleden sonraki etkinlikler yaşlılarda popüler ama dernek herkese açık. Klasik çeldirici!"></div>
+
+### Teil 5: Kısa Görüşler — Konuşmacı Eşleştirme (SADECE BİR KEZ çalınır!)
+
+Farklı 5 kişiden kısa açıklamalar duyarsınız. Her konuşmacıyı listeden bir özet görüşle eşleştirmeniz gerekir. Her zaman **konuşmacılardan fazla özet** vardır.
+
+**Temel stratejiler:**
+
+* **Belirgin eşleştirmeleri hemen işaretleyin.** Eğer Konuşmacı 1 açıkça "Umweltschutz" (çevre) hakkında konuşuyorsa ve sadece bir özette bu varsa, hemen işaretleyin.
+* **ANA FIKRE odaklanın**, destekleyici detaylara değil. Bir konuşmacı yemek pişirmekten söz ediyor olabilir ama ana fikri para tasarrufu olabilir!
+* **Örtüşen konulara dikkat.** İki konuşmacı "Kinder" hakkında konuşabilir — biri eğitim, diğeri sağlık. Özetleri dikkatle okuyun.
+
+**Pratik örneği:**
+
+*Konuşmacı 1:* "Ich finde, man sollte weniger Auto fahren. Wenn alle mehr Fahrrad fahren würden, wäre die Luft viel sauberer."
+
+*Konuşmacı 2:* "Für mich ist Sport sehr wichtig. Ich fahre jeden Tag mit dem Fahrrad zur Arbeit. Das hält mich fit."
+
+<div class="md-quiz"
+  data-question="Konuşmacı 1 hangi özetle eşlenir?"
+  data-options="A: Sport ist wichtig für die Gesundheit. (Spor sağlık için önemli)|B: Fahrradfahren ist besser für die Umwelt. (Bisiklet çevre için daha iyi)|C: Autofahren macht Spaß. (Araba sürmek eğlenceli)"
+  data-answer="1"
+  data-explain="Konuşmacı 1'in ANA FİKRİ çevredir (Luft sauberer/hava temiz). Konuşmacı 2 sağlıktan bahsediyor. İkisi de 'Fahrrad' diyor diye karıştırmayın!"></div>
+
+______________________________________________________________________
+
 ## Kaynaklar (References)
-* **telc Deutsch A2-B1 Resmi Kuralları:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
-* **YouTube Ses Pratikleri (Hören):** Sınav formatına alışmak için YouTube'da "TELC A2-B1 Hören" veya "telc gGmbH" resmi kanalındaki model sınav ses kayıtlarını (Modelltest) haftalık olarak çözün.
+
+* **telc Deutsch A2·B1 Resmi Kuralları:** [telc.net](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2-b1/)
+* **YouTube telc A2-B1 Dinleme Pratiği:** [JudiAegi-Schule](https://www.youtube.com/@JudiAegi-Schule) ve [Grenzenlosci](https://www.youtube.com/@Grenzenlosci)
+* **DW Almanca Öğren (Dinleme):** [dw.com](https://learngerman.dw.com/)
+

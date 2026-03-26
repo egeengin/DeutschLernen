@@ -191,6 +191,11 @@ Yukarıdaki tüm kuralları kapsayan telc Deutsch A2-B1 tarzı karma alıştırm
 ______________________________________________________________________
 
 ## Kaynaklar (References)
-* **telc Deutsch A2-B1 Sınav Yapısı:** [telc.net/sprachpruefungen/a2b1](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
-* **Gramer Pratikleri:** Genel TELC müfredatı, DW Learn German ve YouTube Almanca eğitmenlerinden derlenmiştir.
-* **Sınav Örnekleri:** [Goethe B1 Modellsatz](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html).
+
+* **telc Deutsch A2-B1 Sınav Yapısı:** [telc.net](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2-b1/)
+* **Sıfat Çekimleri:** [Lingolia — Adjektivdeklination](https://deutsch.lingolia.com/de/grammatik/adjektive/deklination)
+* **Passiv:** [Lingolia — Passiv](https://deutsch.lingolia.com/de/grammatik/verben/passiv)
+* **Relativsätze:** [Lingolia — Relativsätze](https://deutsch.lingolia.com/de/grammatik/satzverbindungen/relativsaetze)
+* **Pratik:** [Goethe-Institut B1](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html)
+* **YouTube — JudiAegi Schule (Sınavcı İpuçları):** [youtube.com/@JudiAegi-Schule](https://www.youtube.com/@JudiAegi-Schule)
+

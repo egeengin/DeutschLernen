@@ -8,9 +8,9 @@ ______________________________________________________________________
 
 | Kaynak                    | Açıklama                                                                            | Bağlantı                                                                                                                |
 | ------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **telc gGmbH**            | telc Deutsch A2-B1 için resmi model sınav (Modelltest) — tüm bölümler ve ses dosyaları dahil | [telc.net/shop](https://www.telc.net/kandidaten/pruefungen/pruefung/detail/deutsch-test-fuer-zuwanderer-a2-b1-dtz.html) |
-| **Goethe-Institut**       | Resmi telc Deutsch A2-B1 Modellsatz — ses dosyalarıyla birlikte ücretsiz PDF                       | [goethe.de/telc Deutsch A2-B1-Modelltest](https://www.goethe.de/de/spr/ueb/dtz.html)                                                   |
-| **G.A.S.T. Übungssatz 1** | Ücretsiz tam deneme seti: Dinleme + Okuma + Yazma + cevap anahtarı                  | [gast.de/telc Deutsch A2-B1-Übungssatz](https://www.gast.de/de/pruefungsvorbereitung/deutsch-test-fuer-zuwanderer-a2-b1.html)          |
+| **telc gGmbH**            | telc Deutsch A2-B1 için resmi model sınav (Modelltest) — tüm bölümler ve ses dosyaları dahil | [telc.net/shop](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2-b1/) |
+| **Goethe-Institut**       | Resmi telc Deutsch A2-B1 Modellsatz — ses dosyalarıyla birlikte ücretsiz PDF                       | [goethe.de/telc Deutsch A2-B1](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html)                                                   |
+| **G.A.S.T. Übungssatz 1** | Ücretsiz tam deneme seti: Dinleme + Okuma + Yazma + cevap anahtarı                  | [telc.net/übungsmaterial](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2-b1/)          |
 
 ______________________________________________________________________
 
@@ -18,7 +18,7 @@ ______________________________________________________________________
 
 | Kaynak                  | Açıklama                                                                           | Bağlantı                                                                      |
 | ----------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| **Ausbildungspark**     | Pratik modu, sınav modu ve başarı analizi içeren interaktif telc Deutsch A2-B1 online testi | [ausbildungspark.com](https://www.ausbildungspark.com/sprachtest/dtz/)    |
+| **Ausbildungspark**     | Pratik modu, sınav modu ve başarı analizi içeren interaktif telc Deutsch A2-B1 online testi | [ausbildungspark.com](https://www.ausbildungspark.com/einstellungstest/deutsch-sprachtest/)    |
 | **Telc Resmi Materyal** | A1–C1 arası ücretsiz indirilebilir öğretim materyalleri                            | [telc.net/materialien](https://www.telc.net/lehrende/unterrichtsmaterialien/) |
 
 ______________________________________________________________________

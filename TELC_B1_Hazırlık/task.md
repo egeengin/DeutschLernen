@@ -2,7 +2,7 @@
 
 ## 1. Sınav Araştırması ve Strateji
 
-- [x] TELC A2/B1 (Deutsch-Test für Zuwanderer - telc Deutsch A2-B1) sınavının yapısını araştırın.
+- [x] TELC A2/B1 (telc Deutsch A2-B1) sınavının yapısını araştırın.
 - [x] Puanlama sistemini, B1 sertifikası almak için geçme kriterlerini anlayın (hangi bölümlerin en kritik olduğunu belirleyin).
 - [x] B1 seviyesi için gerekli olan temel dil bilgisi konularını ve kelime temalarını tespit edin.
 - [x] Sınavı 1 ay içinde geçmek için optimize edilmiş bir sınav stratejisi oluşturun.

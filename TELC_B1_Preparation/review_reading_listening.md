@@ -120,6 +120,57 @@ Imagine listening to a train station announcement:
 
 ______________________________________________________________________
 
+## 4. Hören Teil 4 & Teil 5 — Advanced Strategies
+
+### Teil 4: Interviews & Discussions (played ONCE!)
+
+You will hear a longer interview or discussion. You must answer True/False questions about what was said. This part is **played only once**, making it the hardest listening part.
+
+**Key strategies:**
+
+* **Pre-read every statement** during the introduction. Underline trigger words: *nicht, nie, immer, nur, alle, jeder*.
+* **Listen for contradictions:** The interviewer often summarizes incorrectly, and the guest corrects them. The correction is the truth.
+* **Watch for "Ja, aber...":** The speaker appears to agree, then reverses with "aber" — the part AFTER "aber" is the real answer.
+* **"Leider" and "eigentlich"** signal that reality differs from expectation.
+
+**Practice example:**
+
+*You hear:* "Frau Schmidt, stimmt es, dass Ihr Verein nur für Senioren ist?"
+*She replies:* "Nein, das ist ein häufiges Missverständnis. Wir haben Mitglieder jeden Alters, aber unsere Aktivitäten am Nachmittag sind besonders bei älteren Menschen beliebt."
+
+<div class="md-quiz"
+  data-question="Der Verein ist nur für ältere Menschen. (Richtig/Falsch)"
+  data-options="Richtig|Falsch"
+  data-answer="1"
+  data-explain="Falsch! She says 'Mitglieder jeden Alters' (members of all ages). The afternoon activities are popular with seniors, but the club is for everyone. Classic distractor!"></div>
+
+### Teil 5: Short Opinions — Matching Speakers (played ONCE!)
+
+You hear 5 short statements from different people. You must match each speaker to a summary opinion from a list. There are always **more summaries than speakers**, so some summaries have no match.
+
+**Key strategies:**
+
+* **Mark obvious matches first.** If Speaker 1 clearly talks about "Umweltschutz" (environment) and only one summary mentions it, mark it immediately.
+* **Listen for the MAIN POINT**, not supporting details. A speaker might mention cooking, but their main point could be about saving money.
+* **Beware of overlapping topics.** Two speakers might discuss "Kinder" — one about education, one about health. Read the summaries carefully to differentiate.
+
+**Practice example:**
+
+*Speaker 1:* "Ich finde, man sollte weniger Auto fahren. Wenn alle mehr Fahrrad fahren würden, wäre die Luft viel sauberer."
+
+*Speaker 2:* "Für mich ist Sport sehr wichtig. Ich fahre jeden Tag mit dem Fahrrad zur Arbeit. Das hält mich fit."
+
+<div class="md-quiz"
+  data-question="Which summary matches Speaker 1?"
+  data-options="A: Sport ist wichtig für die Gesundheit.|B: Fahrradfahren ist besser für die Umwelt.|C: Autofahren macht Spaß."
+  data-answer="1"
+  data-explain="Speaker 1's MAIN POINT is environment (Luft sauberer), not fitness. Speaker 2 talks about fitness. Don't confuse them just because both mention 'Fahrrad'!"></div>
+
+______________________________________________________________________
+
 ## References
-* **telc Deutsch A2·B1 Official Details & Scoring:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
-* **YouTube telc A2-B1 Listening Tracks:** [telc gGmbH YouTube](https://www.youtube.com/c/telc_gGmbH) and mock exam audio tracks.
+
+* **telc Deutsch A2·B1 Official Details & Scoring:** [telc.net](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2-b1/)
+* **YouTube telc A2-B1 Listening Practice:** [JudiAegi-Schule](https://www.youtube.com/@JudiAegi-Schule) and [Grenzenlosci](https://www.youtube.com/@Grenzenlosci)
+* **DW Learn German (Listening):** [dw.com](https://learngerman.dw.com/)
+
