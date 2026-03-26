@@ -648,8 +648,12 @@ td strong, td b { color: var(--text-primary); }
             <div class="fc-example" id="fc-ex">Ich arbeite jeden Tag von 8 bis 17 Uhr.</div>
           </div>
         </div>
-        <div class="fc-controls">
+        <div class="fc-controls" style="align-items: center;">
           <button class="card-link" onclick="prevCard()">&larr; <span data-en="Prev" data-tr="Önceki">Prev</span></button>
+          <div style="display:flex; gap:8px; margin:0 8px;">
+            <button class="card-link" id="fc-btn-en" onclick="setLang('en')" style="padding:6px 12px; font-size:12px;">🇬🇧 EN</button>
+            <button class="card-link" id="fc-btn-tr" onclick="setLang('tr')" style="padding:6px 12px; font-size:12px;">🇹🇷 TR</button>
+          </div>
           <button class="card-link primary" onclick="nextCard()"><span data-en="Next Word" data-tr="Sonraki Kelime">Next Word</span> &rarr;</button>
         </div>
         <div style="margin-top:12px; font-size:12px; color:var(--text-muted); font-weight: 600;" id="fc-count">1 / 20</div>
@@ -928,6 +932,17 @@ function setLang(lang) {
   currentLang = lang;
   document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
   document.querySelector(`.lang-btn:${lang === 'en' ? 'first-child' : 'last-child'}`).classList.add('active');
+  
+  if (document.getElementById('fc-btn-en')) {
+    if (lang === 'en') {
+      document.getElementById('fc-btn-en').classList.add('primary');
+      document.getElementById('fc-btn-tr').classList.remove('primary');
+    } else {
+      document.getElementById('fc-btn-tr').classList.add('primary');
+      document.getElementById('fc-btn-en').classList.remove('primary');
+    }
+  }
+
   document.querySelectorAll('[data-en]').forEach(el => {
     if (el.tagName === 'INPUT' && el.placeholder) {
       el.placeholder = el.getAttribute(`data-${lang}`);
