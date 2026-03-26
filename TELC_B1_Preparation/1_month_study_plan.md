@@ -17,7 +17,7 @@ ______________________________________________________________________
 | 3   | **Perfekt**                  | haben/sein + Partizip II — regular & irregular verbs         | 1h   |
 | 4   | **Präteritum**               | Only for: war, hatte, konnte, musste, wollte, sollte, durfte | 1h   |
 | 4   | **Prepositions**             | Wechselpräpositionen (Akk vs. Dat) + fixed prepositions      | 1.5h |
-| 5   | **Adjective Endings**        | Rules after der/ein/kein + practice                          | 1.5h |
+| 5   | **Adjektivdeklination & Passiv**| Rules after der/ein/kein + Passiv (werden + Partizip II)       | 2.5h |
 | 5   | **Reflexive Verbs**          | sich freuen, sich anmelden, sich bewerben, sich fühlen       | 1h   |
 | 6   | **Vocab: Arbeit & Behörden** | Flashcards for work/authority vocabulary (see exam guide)    | 1h   |
 | 6   | **Sprachbausteine Practice** | Do all exercises in `review_grammar_vocab.md`                | 1.5h |
@@ -50,9 +50,9 @@ ______________________________________________________________________
 
 **Recommended Free Resources:**
 
-- Deutsche Welle "Top-Thema": https://www.dw.com/de/top-thema/s-8031
+- Deutsche Welle "Top-Thema": <https://www.dw.com/de/top-thema/s-8031>
 - Deutsche Welle "Langsam gesprochene Nachrichten": slow-speed news
-- telc official model tests (free PDF): https://www.telc.net/
+- telc official model tests (free PDF): <https://www.telc.net/>
 
 ______________________________________________________________________
 
