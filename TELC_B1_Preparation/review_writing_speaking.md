@@ -148,7 +148,11 @@ ______________________________________________________________________
 
 **Memorize this template and personalize it:**
 
-> "Guten Tag, mein Name ist \_\_\_\_\_\_. Ich komme aus \_\_\_\_\_\_ und ich lebe seit \_\_\_\_\_\_ in \_\_\_\_\_\_. Von Beruf bin ich \_\_\_\_\_\_ / Ich arbeite als \_\_\_\_\_\_. Ich bin verheiratet/ledig und habe \_\_\_\_\_\_ Kinder. In meiner Freizeit \_\_\_\_\_\_ ich gerne. Ich lerne Deutsch, weil \_\_\_\_\_\_. Ich spreche auch \_\_\_\_\_\_."
+> "Guten Tag, mein Name ist \_\_\_\_\_. Ich komme aus \_\_\_\_\_ und ich lebe seit \_\_\_\_\_ in \_\_\_\_\_. Von Beruf bin ich \_\_\_\_\_ / Ich arbeite als \_\_\_\_\_. Ich bin verheiratet/ledig und habe \_\_\_\_\_ Kinder. In meiner Freizeit \_\_\_\_\_ ich gerne. Ich lerne Deutsch, weil \_\_\_\_\_. Ich spreche auch \_\_\_\_\_."
+
+**Sample personalized introduction (study and adapt!):**
+
+> "Guten Tag, mein Name ist Ege. Ich komme aus der Türkei und ich lebe seit zwei Jahren in Deutschland. Ich arbeite als Techniker. Ich bin verheiratet und habe ein Kind. In meiner Freizeit lese ich gerne und mache Sport. Ich lerne Deutsch, weil ich hier arbeite und mich besser verständigen möchte. Ich spreche auch Türkisch und etwas Englisch. Ich freue mich auf die Prüfung heute."
 
 **Tips:** Speak slowly and clearly. Smile. This is the easiest part — free points!
 

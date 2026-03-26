@@ -133,17 +133,17 @@ ich schreibe dir, `__(1)__` ich am Wochenende meinen Geburtstag feiere. Ich habe
 <!-- markdownlint-disable MD029 -->
 
 1. a) dass / b) weil / c) wenn
-2. a) Trotzdem / b) Außerdem / c) Deshalb
-3. a) deine / b) deiner / c) deinen
+1. a) Trotzdem / b) Außerdem / c) Deshalb
+1. a) deine / b) deiner / c) deinen
 
 **Metin 2:**
 Sehr geehrte Frau Braun,
 ich habe `__(4)__` bei Ihnen für einen Sprachkurs angemeldet. `__(5)__` möchte ich Sie fragen, `__(6)__` der Kurs auch am Abend stattfindet. Ich arbeite tagsüber und `__(7)__` kann ich nur abends kommen.
 
 4. a) mir / b) mich / c) sich
-5. a) Deshalb / b) Außerdem / c) Trotzdem
-6. a) dass / b) weil / c) ob
-7. a) trotzdem / b) deshalb / c) obwohl
+1. a) Deshalb / b) Außerdem / c) Trotzdem
+1. a) dass / b) weil / c) ob
+1. a) trotzdem / b) deshalb / c) obwohl
 
 ### Bölüm B: Fiil Çekimleri
 
@@ -153,13 +153,13 @@ Doğru formu doldurun:
 
    → a) habe...geblieben / b) bin...geblieben / c) habe...gebleibt
 
-9. Als Kind `_____` ich immer Fußball spielen. (wollen, Präteritum)
+1. Als Kind `_____` ich immer Fußball spielen. (wollen, Präteritum)
 
    → a) wollte / b) will / c) gewollt
 
-10. `_____` Sie mir bitte erklären, wie ich zum Bahnhof komme? (können, Konjunktiv II)
+1. `_____` Sie mir bitte erklären, wie ich zum Bahnhof komme? (können, Konjunktiv II)
 
-    → a) Können / b) Konnten / c) Könnten
+   → a) Können / b) Konnten / c) Könnten
 
 ### Bölüm C: Edatlar
 
@@ -167,11 +167,11 @@ Doğru formu doldurun:
 
     → a) auf dem / b) auf den / c) auf der
 
-12. Er wohnt `_____` seiner Mutter. (bei+?)
+01. Er wohnt `_____` seiner Mutter. (bei+?)
 
     → a) bei seiner / b) bei seine / c) bei seinen
 
-13. Wir fahren `_____` Wochenende `_____` München.
+01. Wir fahren `_____` Wochenende `_____` München.
 
     → a) am...nach / b) im...in / c) um...zu
 
@@ -181,7 +181,7 @@ Doğru formu doldurun:
 
     → a) der / b) den / c) dem
 
-15. Sie hat sich `_____` die Verspätung entschuldigt.
+01. Sie hat sich `_____` die Verspätung entschuldigt.
 
     → a) über / b) für / c) um
 
