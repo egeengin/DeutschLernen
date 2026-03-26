@@ -1,9 +1,11 @@
 # Diagnostic Mock Exam (TELC B1 — DTZ)
+
 *Take this on Day 1 to identify your weak areas. Time yourself!*
 
 ---
 
 ## Part 1: Sprachbausteine — Teil 1 (10 questions, ~10 min)
+
 **Choose the correct option (a, b, or c) for each blank.**
 
 **Text:**
@@ -17,6 +19,7 @@ Liebe Grüße,
 Lukas
 
 **Questions:**
+
 1. a) weil / b) obwohl / c) wenn
 2. a) am / b) im / c) um
 3. a) deshalb / b) dass / c) weil
@@ -31,6 +34,7 @@ Lukas
 ---
 
 ## Part 2: Lesen — Notices & Ads (5 questions, ~10 min)
+
 **Read the notices and answer True or False.**
 
 **Notice A:**
@@ -49,24 +53,29 @@ Lukas
 ---
 
 ## Part 3: Lesen — Article (4 questions, ~10 min)
+
 **Read the article and choose the correct answer.**
 
 "In Deutschland gibt es immer mehr Carsharing-Angebote. Besonders in Großstädten nutzen junge Menschen zwischen 20 und 35 Jahren dieses Angebot, weil sie kein eigenes Auto kaufen wollen. Eine Studie der Universität Köln hat gezeigt, dass ein Carsharing-Auto bis zu zehn private Autos ersetzen kann. Kritiker sagen allerdings, dass das Angebot auf dem Land kaum funktioniert, weil die Autos zu weit entfernt stehen. Die meisten Anbieter planen deshalb, ihr Angebot zunächst in Städten mit mehr als 100.000 Einwohnern auszubauen."
 
 16. Wer nutzt Carsharing am meisten?
+
     a) Ältere Menschen / b) Junge Stadtbewohner / c) Familien mit Kindern
 
 17. Was hat die Studie gezeigt?
+
     a) Carsharing ist teurer als ein eigenes Auto
     b) Ein geteiltes Auto kann viele private Autos ersetzen
     c) Niemand möchte Carsharing nutzen
 
 18. Was ist das Problem auf dem Land?
+
     a) Es gibt keine Straßen
     b) Die Autos stehen zu weit weg
     c) Die Preise sind zu hoch
 
 19. Was planen die Anbieter?
+
     a) Carsharing auch für Kinder anzubieten
     b) Erst größere Städte mit Angeboten zu versorgen
     c) Alle Angebote zu beenden
@@ -74,9 +83,11 @@ Lukas
 ---
 
 ## Part 4: Schreiben (20 min)
+
 **Write an email (~100-120 words).**
 
 Sie haben vor zwei Wochen eine Kaffeemaschine im Internet bestellt. Das Paket ist angekommen, aber die Kaffeemaschine ist kaputt. Schreiben Sie eine E-Mail an den Kundenservice.
+
 - Grund für Ihr Schreiben.
 - Was genau ist kaputt?
 - Was möchten Sie jetzt (Geld zurück oder neue Maschine)?
@@ -85,6 +96,7 @@ Sie haben vor zwei Wochen eine Kaffeemaschine im Internet bestellt. Das Paket is
 ---
 
 ## Part 5: Sprechen — Self-Introduction (2 min)
+
 Record yourself or practice aloud. Cover: Name, Herkunft, Wohnort, Beruf, Familie, Hobbys, Sprachen, warum Sie Deutsch lernen.
 
 ---
@@ -92,8 +104,9 @@ Record yourself or practice aloud. Cover: Name, Herkunft, Wohnort, Beruf, Famili
 ## Answers & Self-Assessment
 
 ### Answers:
+
 | # | Answer | Grammar Point Tested |
-|---|---|---|
+| --- | --- | --- |
 | 1 | b (obwohl) | Nebensatz — concessive |
 | 2 | a (am) | Temporal preposition (am Wochenende) |
 | 3 | c (weil) | Nebensatz — reason |
@@ -115,8 +128,9 @@ Record yourself or practice aloud. Cover: Name, Herkunft, Wohnort, Beruf, Famili
 | 19 | b | Städte mit mehr als 100.000 Einwohnern |
 
 ### Scoring Guide
+
 | Score (out of 19) | Assessment |
-|---|---|
+| --- | --- |
 | 16-19 | Excellent — ready for B1. Focus on polishing speed. |
 | 12-15 | Good — some gaps. Review the grammar points you missed. |
 | 8-11 | Fair — significant gaps. Follow Week 1 plan carefully. |

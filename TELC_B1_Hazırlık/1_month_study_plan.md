@@ -5,10 +5,11 @@
 ---
 
 ## Hafta 1: Dil Bilgisi Temeli ve Sprachbausteine (Yapı Taşları)
+
 *Hedef: Yazılı sınavın %30'unu oluşturan dil bilgisi kalıplarında ustalaşmak.*
 
 | Gün | Odak Noktası | Aktiviteler | Süre |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | **Tanılama Sınavı** | `mock_exam_diagnostic.md` sınavını çözün. Zayıf noktalarınızı belirleyin. | 1 sa |
 | 1 | **Nebensätze (Yan Cümleler)** | weil/dass/wenn/obwohl + fiilin sona gitmesi kuralını öğrenin | 1 sa |
 | 2 | **Nebensätze Pratiği** | `review_grammar_vocab.md` Bölüm 1-2'deki alıştırmaları yapın | 2 sa |
@@ -27,10 +28,11 @@
 ---
 
 ## Hafta 2: Okuma ve Dinleme Ustalığı
+
 *Hedef: Girdiye dayalı bölümler için hız ve doğruluk oluşturmak.*
 
 | Gün | Odak Noktası | Aktiviteler | Süre |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 8 | **Okuma Stratejileri** | `review_reading_listening.md` dosyasındaki tarama (scan/skim) tekniklerini öğrenin | 1 sa |
 | 8 | **Okuma Pratiği** | Tüm okuma egzersizlerini (ilanlar, makaleler, duyurular) yapın | 1.5 sa |
 | 9 | **Dinleme Stratejileri** | Eş anlamlılık farkındalığı öğrenin, metinleri dinlemeden önce sorularını okuyun | 1 sa |
@@ -47,6 +49,7 @@
 **2. Hafta Kontrol Noktası:** Okuma bölümünü 45 dakikada %60+ doğrulukla bitirebiliyor musunuz?
 
 **Önerilen Ücretsiz Kaynaklar:**
+
 - Deutsche Welle "Top-Thema": https://www.dw.com/de/top-thema/s-8031
 - Deutsche Welle "Langsam gesprochene Nachrichten": yavaşlatılmış haberler
 - telc resmi model testleri (ücretsiz PDF): https://www.telc.net/
@@ -54,10 +57,11 @@
 ---
 
 ## Hafta 3: Yazma ve Konuşma Şablonları
+
 *Hedef: Puan garantilemek için mektup şablonlarını ve konuşma cümlelerini ezberlemek.*
 
 | Gün | Odak | Aktiviteler | Süre |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 15 | **Mektup Şablonları** | Resmi/gayri resmi selamlama, kapanış, bağlaç kalıplarını ezberleyin | 1.5 sa |
 | 15 | **Örnek Cevap İncelemesi** | `review_writing_speaking.md` dosyasındaki örnek cevapları inceleyin | 1 sa |
 | 16 | **Yazma: Bilgi Talebi Mektubu** | Bilgi isteme mektubu yazma pratiği yapın (20 dk süreli) | 1 sa |
@@ -77,10 +81,11 @@
 ---
 
 ## Hafta 4: Tam Deneme Sınavları ve Son Rötuşlar
+
 *Hedef: Gerçek sınav koşullarını simüle etmek. Özgüven ve zaman yönetimi becerisi kazanmak.*
 
 | Gün | Odak | Aktiviteler | Süre |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 22 | **Tam Deneme Sınavı #1** | Katı kurallar ve süre eşliğinde `mock_exam_final.md` çözün | 2 sa |
 | 23 | **Derinlemesine İnceleme** | Her hatayı analiz edin. İlgili dil bilgisi/kelime konusunu tekrar çalışın | 2 sa |
 | 24 | **Konuşma Simülasyonu** | Tam sözlü sınav pratiği (ses kaydedin veya partner/Yapay Zeka ile çalışın) | 1.5 sa |

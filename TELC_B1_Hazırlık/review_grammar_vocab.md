@@ -7,7 +7,7 @@
 Çekimli fiil yan cümlenin **SONUNA** gider.
 
 | Bağlaç | Anlamı | Örnek |
-|---|---|---|
+| --- | --- | --- |
 | **weil** | çünkü | Ich bleibe zu Hause, **weil** ich krank **bin**. |
 | **dass** | -dığını / -eceğini | Ich hoffe, **dass** du morgen **kommst**. |
 | **wenn** | eğer / -dığında | **Wenn** es morgen **regnet**, bleibe ich zu Hause. |
@@ -24,7 +24,7 @@
 ## 2. Konnektoren (Bağlaçlar) — Cümledeki Konumları
 
 | Tür | Kelimeler | Konum | Örnek |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **0. Pozisyon** (devrik cümle yapmaz) | und, oder, aber, denn, sondern | Özneden önce | Ich bin müde, **aber** ich gehe trotzdem. |
 | **1. Pozisyon** (devrik cümle yapar) | deshalb, trotzdem, außerdem, dann, danach | Fiilden önce | Ich bin müde. **Deshalb** *bleibe* ich zu Hause. |
 
@@ -35,7 +35,7 @@
 **Formül:** haben/sein (çekimli) + ... + Partizip II (cümle sonunda)
 
 | Tür | Örnek | Partizip II |
-|---|---|---|
+| --- | --- | --- |
 | Düzenli (-t) | Ich **habe** Deutsch **gelernt**. | ge-**lern**-t |
 | Düzensiz (-en) | Er **hat** ein Buch **gelesen**. | ge-**les**-en |
 | *sein* ile (hareket/durum değişimi) | Sie **ist** nach Berlin **gefahren**. | ge-**fahr**-en |
@@ -52,7 +52,7 @@ gehen→gegangen, fahren→gefahren, kommen→gekommen, schreiben→geschrieben,
 B1 seviyesi için sadece *sein*, *haben* ve modal fiillerin Präteritum çekimlerini bilmeniz yeterlidir:
 
 | Fiil | ich | du | er/sie/es | wir | ihr | sie/Sie |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | sein | war | warst | war | waren | wart | waren |
 | haben | hatte | hattest | hatte | hatten | hattet | hatten |
 | können | konnte | konntest | konnte | konnten | konntet | konnten |
@@ -66,16 +66,18 @@ B1 seviyesi için sadece *sein*, *haben* ve modal fiillerin Präteritum çekimle
 ## 5. Edatlar (Präpositionen)
 
 ### Wechselpräpositionen (Çift Yönlü Edatlar: Akkusativ vs. Dativ)
+
 **in, an, auf, neben, hinter, über, unter, vor, zwischen**
 
 | Soru | Hal | Örnek |
-|---|---|---|
+| --- | --- | --- |
 | **Wohin?** (Nereye? - yönelim) | Akkusativ | Ich gehe **in den** Supermarkt. |
 | **Wo?** (Nerede? - konum) | Dativ | Ich bin **im** (in dem) Supermarkt. |
 
 ### Sabit Edatlar (Her Zaman Aynı Hali Alanlar)
+
 | Her Zaman Dativ | Her Zaman Akkusativ |
-|---|---|
+| --- | --- |
 | aus, bei, mit, nach, seit, von, zu | durch, für, gegen, ohne, um |
 | *Ich fahre **mit dem** Bus.* | *Das Geschenk ist **für dich**.* |
 
@@ -86,7 +88,7 @@ B1 seviyesi için sadece *sein*, *haben* ve modal fiillerin Präteritum çekimle
 ## 6. Sıfat Çekimleri (Basitleştirilmiş)
 
 | | Eril (Masculine) | Dişil (Feminine) | Nötr (Neuter) | Çoğul (Plural) |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **Nom (der/die/das)** | der gut**e** Mann | die gut**e** Frau | das gut**e** Kind | die gut**en** Kinder |
 | **Akk** | den gut**en** Mann | die gut**e** Frau | das gut**e** Kind | die gut**en** Kinder |
 | **Dat** | dem gut**en** Mann | der gut**en** Frau | dem gut**en** Kind | den gut**en** Kindern |
@@ -98,7 +100,7 @@ B1 seviyesi için sadece *sein*, *haben* ve modal fiillerin Präteritum çekimle
 ## 7. Dönüşlü Fiiller (Reflexive Verbs)
 
 | Fiil | Anlamı | Örnek |
-|---|---|---|
+| --- | --- | --- |
 | sich freuen (über+Akk) | -e sevinmek | Ich **freue mich** über das Geschenk. |
 | sich anmelden (für+Akk) | -e kaydolmak | Ich möchte **mich** für den Kurs **anmelden**. |
 | sich bewerben (um+Akk) | -e başvurmak | Er **bewirbt sich** um die Stelle. |
@@ -111,7 +113,7 @@ B1 seviyesi için sadece *sein*, *haben* ve modal fiillerin Präteritum çekimle
 ## 8. Konjunktiv II (Kibar Ricalar)
 
 | Kalıp | Örnek |
-|---|---|
+| --- | --- |
 | **könnte** (yapabilir misiniz?) | **Könnten** Sie mir bitte helfen? |
 | **würde + Infinitiv** (yapmak isterim) | Ich **würde** gerne einen Termin **machen**. |
 | **hätte** (isterdim/sahip olmak isterdim) | Ich **hätte** gerne eine Frage. |
@@ -145,31 +147,39 @@ ich habe __(4)__ bei Ihnen für einen Sprachkurs angemeldet. __(5)__ möchte ich
 Doğru formu doldurun:
 
 8. Gestern _____ ich den ganzen Tag zu Hause _____. (bleiben, Perfekt)
+
    → a) habe...geblieben / b) bin...geblieben / c) habe...gebleibt
 
 9. Als Kind _____ ich immer Fußball spielen. (wollen, Präteritum)
+
    → a) wollte / b) will / c) gewollt
 
 10. _____ Sie mir bitte erklären, wie ich zum Bahnhof komme? (können, Konjunktiv II)
+
     → a) Können / b) Konnten / c) Könnten
 
 ### Bölüm C: Edatlar
 
 11. Ich warte _____ den Bus. (auf+?)
+
     → a) auf dem / b) auf den / c) auf der
 
 12. Er wohnt _____ seiner Mutter. (bei+?)
+
     → a) bei seiner / b) bei seine / c) bei seinen
 
 13. Wir fahren _____ Wochenende _____ München.
+
     → a) am...nach / b) im...in / c) um...zu
 
 ### Bölüm D: Karma Dil Bilgisi
 
 14. Das ist der Mann, _____ gestern bei uns war.
+
     → a) der / b) den / c) dem
 
 15. Sie hat sich _____ die Verspätung entschuldigt.
+
     → a) über / b) für / c) um
 
 ---

@@ -7,7 +7,7 @@
 The conjugated verb goes to the **END** of the subordinate clause.
 
 | Conjunction | Meaning | Example |
-|---|---|---|
+| --- | --- | --- |
 | **weil** | because | Ich bleibe zu Hause, **weil** ich krank **bin**. |
 | **dass** | that | Ich hoffe, **dass** du morgen **kommst**. |
 | **wenn** | if / when | **Wenn** es morgen **regnet**, bleibe ich zu Hause. |
@@ -24,7 +24,7 @@ The conjugated verb goes to the **END** of the subordinate clause.
 ## 2. Konnektoren (Connectors) — Position in Sentence
 
 | Type | Words | Position | Example |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Position 0** (no inversion) | und, oder, aber, denn, sondern | Before subject | Ich bin müde, **aber** ich gehe trotzdem. |
 | **Position 1** (causes inversion) | deshalb, trotzdem, außerdem, dann, danach | Before verb | Ich bin müde. **Deshalb** *bleibe* ich zu Hause. |
 
@@ -35,7 +35,7 @@ The conjugated verb goes to the **END** of the subordinate clause.
 **Formula:** haben/sein (conjugated) + ... + Partizip II (at the end)
 
 | Type | Example | Partizip II |
-|---|---|---|
+| --- | --- | --- |
 | Regular (-t) | Ich **habe** Deutsch **gelernt**. | ge-**lern**-t |
 | Irregular (-en) | Er **hat** ein Buch **gelesen**. | ge-**les**-en |
 | With *sein* (movement/change) | Sie **ist** nach Berlin **gefahren**. | ge-**fahr**-en |
@@ -52,7 +52,7 @@ gehen→gegangen, fahren→gefahren, kommen→gekommen, schreiben→geschrieben,
 For B1, you only need Präteritum for *sein*, *haben*, and modal verbs:
 
 | Verb | ich | du | er/sie/es | wir | ihr | sie/Sie |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | sein | war | warst | war | waren | wart | waren |
 | haben | hatte | hattest | hatte | hatten | hattet | hatten |
 | können | konnte | konntest | konnte | konnten | konntet | konnten |
@@ -66,16 +66,18 @@ For B1, you only need Präteritum for *sein*, *haben*, and modal verbs:
 ## 5. Prepositions
 
 ### Wechselpräpositionen (Two-Way: Akk vs. Dat)
+
 **in, an, auf, neben, hinter, über, unter, vor, zwischen**
 
 | Question | Case | Example |
-|---|---|---|
+| --- | --- | --- |
 | **Wohin?** (direction) | Akkusativ | Ich gehe **in den** Supermarkt. |
 | **Wo?** (location) | Dativ | Ich bin **im** (in dem) Supermarkt. |
 
 ### Fixed Prepositions
+
 | Always Dativ | Always Akkusativ |
-|---|---|
+| --- | --- |
 | aus, bei, mit, nach, seit, von, zu | durch, für, gegen, ohne, um |
 | *Ich fahre **mit dem** Bus.* | *Das Geschenk ist **für dich**.* |
 
@@ -86,7 +88,7 @@ For B1, you only need Präteritum for *sein*, *haben*, and modal verbs:
 ## 6. Adjective Endings (Simplified)
 
 | | Masculine | Feminine | Neuter | Plural |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **Nom (der/die/das)** | der gut**e** Mann | die gut**e** Frau | das gut**e** Kind | die gut**en** Kinder |
 | **Akk** | den gut**en** Mann | die gut**e** Frau | das gut**e** Kind | die gut**en** Kinder |
 | **Dat** | dem gut**en** Mann | der gut**en** Frau | dem gut**en** Kind | den gut**en** Kindern |
@@ -98,7 +100,7 @@ For B1, you only need Präteritum for *sein*, *haben*, and modal verbs:
 ## 7. Reflexive Verbs
 
 | Verb | Meaning | Example |
-|---|---|---|
+| --- | --- | --- |
 | sich freuen (über+Akk) | to be happy about | Ich **freue mich** über das Geschenk. |
 | sich anmelden (für+Akk) | to register for | Ich möchte **mich** für den Kurs **anmelden**. |
 | sich bewerben (um+Akk) | to apply for | Er **bewirbt sich** um die Stelle. |
@@ -111,7 +113,7 @@ For B1, you only need Präteritum for *sein*, *haben*, and modal verbs:
 ## 8. Konjunktiv II (Polite Requests)
 
 | Form | Example |
-|---|---|
+| --- | --- |
 | **könnte** | **Könnten** Sie mir bitte helfen? |
 | **würde + Infinitiv** | Ich **würde** gerne einen Termin **machen**. |
 | **hätte** | Ich **hätte** gerne eine Frage. |
@@ -145,31 +147,39 @@ ich habe __(4)__ bei Ihnen für einen Sprachkurs angemeldet. __(5)__ möchte ich
 Fill in the correct form:
 
 8. Gestern _____ ich den ganzen Tag zu Hause _____. (bleiben, Perfekt)
+
    → a) habe...geblieben / b) bin...geblieben / c) habe...gebleibt
 
 9. Als Kind _____ ich immer Fußball spielen. (wollen, Präteritum)
+
    → a) wollte / b) will / c) gewollt
 
 10. _____ Sie mir bitte erklären, wie ich zum Bahnhof komme? (können, Konjunktiv II)
+
     → a) Können / b) Konnten / c) Könnten
 
 ### Set C: Prepositions
 
 11. Ich warte _____ den Bus. (auf+?)
+
     → a) auf dem / b) auf den / c) auf der
 
 12. Er wohnt _____ seiner Mutter. (bei+?)
+
     → a) bei seiner / b) bei seine / c) bei seinen
 
 13. Wir fahren _____ Wochenende _____ München.
+
     → a) am...nach / b) im...in / c) um...zu
 
 ### Set D: Mixed Grammar
 
 14. Das ist der Mann, _____ gestern bei uns war.
+
     → a) der / b) den / c) dem
 
 15. Sie hat sich _____ die Verspätung entschuldigt.
+
     → a) über / b) für / c) um
 
 ---

@@ -6,6 +6,7 @@
 ---
 
 ## Bölüm 1: Hören (Dinleme) — ~25 dk
+
 *Her bir transkripti NORMAL hızda SADECE BİR KERE okuyun (veya birinden size okumasını isteyin), ardından cevaplayın.*
 
 ### Kısım 1: Kısa Diyaloglar (bir kez oynatılır!)
@@ -39,6 +40,7 @@
 8. Vatandaşlara sonbaharda danışılacak. (True / False)
 
 ### Kısım 3: Anonslar ve Duyurular (iki kez oynatılır)
+
 **Hangi duyurunun (A-D) hangi durumla eşleştiğini bulun.**
 
 **Duyuru A:** "Liebe Fahrgäste, wegen eines Polizeieinsatzes kann die U-Bahn-Linie 7 momentan nicht zwischen Rathaus und Alexanderplatz fahren. Bitte nutzen Sie die Buslinie 245 als Alternative."
@@ -47,6 +49,7 @@
 **Duyuru D:** "Achtung: Die Schwimmhalle ist wegen Renovierungsarbeiten vom 1. bis 15. April geschlossen. Das Freibad öffnet voraussichtlich am 1. Mai."
 
 **Durumlar:**
+
 9. Biri kullanılmış eşyaları satmak için bir yer arıyor. → ___
 10. Biri önümüzdeki hafta yüzmeye gitmek istiyor. → ___
 11. Biri metro istasyonunda durmuş bekliyor. → ___
@@ -57,9 +60,11 @@
 ## Bölüm 2: Lesen (Okuma) — ~45 dk
 
 ### Kısım 1: Kişilerle İlanları Eşleştirme
+
 **Her bir kişiyi (A-E) doğru ilanla (1-6) eşleştirin. Bir ilan boşta kalır.**
 
 **Kişiler:**
+
 - **A.** Anna tezgahtar olarak yarı zamanlı bir iş arıyor.
 - **B.** Herr Park ehliyet almak istiyor.
 - **C.** Fatima kızının (5. sınıf) ev ödevleri için yardım arıyor.
@@ -134,6 +139,7 @@ Klaus Schmidt
 ## Bölüm 4: Schreiben (20 dk)
 
 Çocuğunuz (Paul) 3. sınıfa gidiyor. Okul önümüzdeki cuma günü bir yaz festivali düzenliyor. Sınıf öğretmeni (Frau Müller) hangi velilerin yardımcı olabileceğini soruyor. Bir e-posta yazın.
+
 - Yazma nedeniniz.
 - Ne getirebilirsiniz (Kek, içecek vb.)?
 - Şenlikte ne kadar süre yardımcı olabilirsiniz?
@@ -144,17 +150,22 @@ Klaus Schmidt
 ## Bölüm 5: Sprechen
 
 ### Kısım 1: Kendini Tanıtma (2 dk)
+
 Kendinizi tanıtın: İsim (Name), Nereden geliyorsunuz (Herkunft), Almanya'da ne kadardır bulunuyorsunuz, Meslek (Beruf), Aile (Familie), Hobiler (Hobbys), Bildiğiniz diller (Sprachen), Neden Almanya öğreniyorsunuz.
 
 ### Kısım 2: Bir Konu Hakkında Tartışmak (4 dk)
+
 **Konu:** "12 yaşından küçük çocukların kendine ait bir akıllı telefonu olmalı mı?" (Sollen Kinder unter 12 Jahren ein eigenes Smartphone haben?)
+
 - Durumu açıklayın
 - Nedenleriyle fikrinizi söyleyin
 - Kendi deneyiminizden bahsedin
 - Kendi ülkenizle kıyaslayın
 
 ### Kısım 3: Birlikte Plan Yapma (5 dk)
+
 **Durum:** Partnerinizle hafta sonu bisikletle bir geziye/tura çıkmak istiyorsunuz. Birlikte planlayın:
+
 - Nereye gidiyorsunuz?
 - Nerede ve ne zaman buluşacaksınız?
 - Yanınıza ne alacaksınız?
@@ -165,7 +176,7 @@ Kendinizi tanıtın: İsim (Name), Nereden geliyorsunuz (Herkunft), Almanya'da n
 ## Cevaplar
 
 | Soru | Cevap | Açıklama |
-|---|---|---|
+| --- | --- | --- |
 | 1 | False | Yanında (neben), sağında (rechts) değil |
 | 2 | False | Sadece 30 dakikası kaldı, acele etmesi gerek (sich beeilen) |
 | 3 | False | Ateşi var (Fieber), karın ağrısı yok (Bauchschmerzen) |
@@ -203,7 +214,7 @@ Kendinizi tanıtın: İsim (Name), Nereden geliyorsunuz (Herkunft), Almanya'da n
 ### Puanlama Rehberi
 
 | Puan (33 üzerinden) | Değerlendirme |
-|---|---|
+| --- | --- |
 | 27-33 | 🟢 Mükemmel — güçlü B1 seviyesi. Hazırsınız! |
 | 20-26 | 🟡 İyi — ufak tefek eksikler var. Belirli hatalarınızı gözden geçirin. |
 | 13-19 | 🟠 Orta — daha fazla pratik gerekiyor. İlgili tekrar materyallerine geri dönün. |
