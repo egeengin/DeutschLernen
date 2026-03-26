@@ -15,15 +15,48 @@ ______________________________________________________________________
 
 The text and the question often use DIFFERENT words for the same thing:
 
-| Text says... | Question/answer says...    |
-| ------------ | -------------------------- |
-| kostenlos    | gratis / umsonst           |
-| Kinder       | Nachwuchs / die Kleinen    |
-| Arzt         | Doktor / Mediziner         |
-| kaufen       | erwerben / besorgen        |
-| Rabatt       | Ermäßigung / Nachlass      |
-| Wohnung      | Unterkunft                 |
-| anrufen      | telefonieren / sich melden |
+| Text says...  | Question/answer says...      |
+| ------------- | ---------------------------- |
+| kostenlos     | gratis / umsonst             |
+| Kinder        | Nachwuchs / die Kleinen      |
+| Arzt          | Doktor / Mediziner           |
+| kaufen        | erwerben / besorgen          |
+| Rabatt        | Ermäßigung / Nachlass        |
+| Wohnung       | Unterkunft                   |
+| anrufen       | telefonieren / sich melden   |
+| anfangen      | beginnen / starten           |
+| Arbeit        | Beruf / Stelle / Job         |
+| Veranstaltung | Event / Feier / Fest         |
+| schließen     | zumachen / beenden           |
+| helfen        | unterstützen / assistieren   |
+| schnell       | rasch / zügig                |
+| notwendig     | nötig / erforderlich         |
+| trotzdem      | dennoch / jedoch             |
+| jährlich      | einmal pro Jahr              |
+| ungefähr      | etwa / circa / rund          |
+| mitteilen     | informieren / Bescheid geben |
+| Foto          | Bild / Aufnahme              |
+| kaputt        | defekt / beschädigt          |
+
+### ⚠️ Tricky Exam Phrasing
+
+These frequently catch people out:
+
+| Tricky phrase    | What it really means                   |
+| ---------------- | -------------------------------------- |
+| nicht alle       | some, but not all (NOT: none)          |
+| kaum             | barely / hardly (NOT: never)           |
+| nur manchmal     | only sometimes (NOT: often)            |
+| immer noch nicht | still not (emphasises ongoing absence) |
+| erst             | not until / only then                  |
+| außerdem         | in addition (adds, doesn't contrast)   |
+
+### ⏱️ Time Management Tips
+
+- Spend **max 90 seconds** per True/False item
+- Spend **max 2 minutes** per multiple-choice item
+- For matching (Teil 1): eliminate obviously wrong options first — saves time
+- If unsure: **always guess** — no penalty for wrong answers on DTZ
 
 ______________________________________________________________________
 
