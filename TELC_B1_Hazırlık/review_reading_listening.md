@@ -2,7 +2,7 @@
 
 ______________________________________________________________________
 
-## 1. Okuma (Lesen) — 45 Dk, 3 Bölüm
+## 1. Okuma (Lesen) — 45 Dk, 4 Bölüm
 
 ### Temel Stratejiler
 
@@ -81,7 +81,7 @@ Kişi için doğru ilanı bulun.
 
 ______________________________________________________________________
 
-## 3. Dinleme (Hören) — 20 Dk, 4 Bölüm
+## 3. Dinleme (Hören) — ~35 Dk, 5 Bölüm
 
 ### Temel Stratejiler
 

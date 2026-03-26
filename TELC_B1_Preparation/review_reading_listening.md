@@ -2,7 +2,7 @@
 
 ______________________________________________________________________
 
-## 1. Lesen (Reading) — 45 Min, 3 Parts
+## 1. Lesen (Reading) — 45 Min, 4 Parts
 
 ### Essential Strategies
 
@@ -81,7 +81,7 @@ Find the right advertisement for the person.
 
 ______________________________________________________________________
 
-## 3. Hören (Listening) — 20 Min, 4 Parts
+## 3. Hören (Listening) — ~35 Min, 5 Parts
 
 ### Essential Strategies
 

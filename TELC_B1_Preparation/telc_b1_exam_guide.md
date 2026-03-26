@@ -1,10 +1,10 @@
-# TELC A2/B1 (telc Deutsch A2-B1) — Exam Guide & Strategy
+# telc Deutsch A2-B1 — Exam Guide & Strategy
 
 ## Exam Overview
 
-The **Deutsch-Test für Zuwanderer (telc Deutsch A2-B1)** is an A2/B1 dual-level exam developed by the Goethe-Institut and telc gGmbH. Based on your performance, you receive either an A2 or a **B1 certificate**. Your goal: **B1**.
+The **telc Deutsch A2-B1** is an A2/B1 dual-level exam developed by telc gGmbH. Based on your performance, you receive either an A2 or a **B1 certificate**. Your goal: **B1**.
 
-The exam tests everyday communication — work, housing, shopping, authorities, health, education, transport, etc.
+The exam tests everyday communication across reading, listening, writing, and speaking. Unlike some older exam formats, you must write TWO pieces of text (a Chat and an Email), and there are more reading/listening parts.
 
 ______________________________________________________________________
 
@@ -43,107 +43,51 @@ ______________________________________________________________________
 
 ## Exam Structure (Detailed)
 
-### 1. Written Exam (~100 minutes)
-
-#### Hören (Listening) — ~25 min
-
-| Part   | What You Hear               | Task                                   | Plays       |
-| ------ | --------------------------- | -------------------------------------- | ----------- |
-| Teil 1 | 4 short dialogues           | True/False                             | **1x only** |
-| Teil 2 | 1 radio report or interview | Multiple choice                        | 2x          |
-| Teil 3 | 4 short announcements       | Matching (assign to correct situation) | 2x          |
-
-**Strategies:**
-
-- Read ALL questions/options **before** the audio starts
-- If you miss an answer, immediately move on — don't lose the next one
-- Audio often uses **synonyms** (e.g., *Urlaub* → *Ferien*, *Arzt* → *Doktor*, *billig* → *günstig*)
-- Part 1 plays only ONCE. Focus extra hard.
+### 1. Written Exam (~125 minutes)
 
 #### Lesen (Reading) — ~45 min
+| Part   | Task |
+| ------ | ---- |
+| **Teil 1** | Global reading: Matching titles or themes to texts. |
+| **Teil 2** | Detail reading: Multiple-choice questions based on an article. |
+| **Teil 3** | Selective reading: Matching advertisements to specific situations. |
+| **Teil 4** | True/False or matching missing words into a text logic flow. |
 
-| Part   | Text Type                     | Task                |
-| ------ | ----------------------------- | ------------------- |
-| Teil 1 | Notices, ads, signs           | Match to situations |
-| Teil 2 | Newspaper or magazine article | Multiple choice     |
-| Teil 3 | Short everyday texts          | True/False          |
+#### Sprachbausteine (Grammar/Vocab) — ~35 min (combined with Reading)
+| Part   | Task |
+| ------ | ---- |
+| **Teil 1** | Multiple choice (a, b, c) filling in grammar blanks in a formal letter. |
+| **Teil 2** | Multiple choice filling in grammar blanks in a semi-formal or informal text. |
 
-**Strategies:**
+#### Hören (Listening) — ~35 min
+| Part   | What You Hear               | Task                                   | Plays       |
+| ------ | --------------------------- | -------------------------------------- | ----------- |
+| **Teil 1** | Short announcements (radio, station). | True/False or Multiple Choice.         | **Twice**   |
+| **Teil 2** | Information from an answering machine or radio. | Understanding details.                 | **Once**    |
+| **Teil 3** | Conversations on everyday topics. | Matching statements to speakers.       | **Twice**   |
+| **Teil 4** | Interviews or discussions. | True/False questions.                  | **Once**    |
+| **Teil 5** | Short statements or opinions. | Matching opinions to specific people.  | **Once**    |
 
-- Read the **question first**, then scan the text for keywords
-- Cross out obviously wrong answers immediately in matching exercises
-- Unknown words? Use context clues — don't panic
-
-#### Sprachbausteine (Language Elements) — within Reading time
-
-| Part   | Task                                                         |
-| ------ | ------------------------------------------------------------ |
-| Teil 1 | Fill blanks in a letter (choose from 3 options per blank)    |
-| Teil 2 | Fill blanks in a text (choose from a word bank of ~15 words) |
-
-**Strategies:**
-
-- This section is pure grammar pattern recognition — learn the patterns, not individual answers
-- Save reading time for Sprachbausteine; most people run out here
-
-#### Schreiben (Writing) — ~20 min
-
-Write a **semi-formal email/letter** (~100-120 words). You receive a situation with **4 bullet points** you MUST address.
-
-**Strategies:**
-
-- Address ALL 4 points — missing even one costs significant points
-- Use memorized templates for greeting, connectors, and closing
-- Short, clear sentences > long, complex ones with errors
-- Aim for 100-120 words. Under 80 = point deduction
-
-### 2. Oral Exam (~15 min + 20 min prep)
-
-Done in pairs with another candidate. An examiner observes.
-
-| Part   | Task                        | Duration |
-| ------ | --------------------------- | -------- |
-| Teil 1 | Self-introduction           | ~2 min   |
-| Teil 2 | Discuss a topic/picture     | ~4 min   |
-| Teil 3 | Plan something with partner | ~5 min   |
-
-**Strategies:**
-
-- **Ping-pong!** Always react to your partner, ask follow-up questions
-- Smile, be friendly — examiners assess communication willingness
-- Clarity > Complexity. Simple correct sentences beat complex broken ones
-- Use the 20 min prep time wisely — write notes for Part 2 and Part 3
+#### Schreiben (Writing) — ~30 min
+| Part   | Task |
+| ------ | ---- |
+| **Teil 1** | **Kurznachricht / Chat:** You must reply to an informal WhatsApp/SMS message from a friend (around 30-40 words). |
+| **Teil 2** | **E-Mail:** You must write a formal or semi-formal email based on 3-4 bullet points (around 70-80 words). e.g., a Job Application or Complaint. |
 
 ______________________________________________________________________
 
-## Top 10 Grammar Topics for B1 (Priority Order)
+### 2. Oral Exam / Sprechen (~15 minutes)
 
-| #   | Topic                                                                             | Why It Matters                                          |
-| --- | --------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| 1   | **Nebensätze** (weil, dass, wenn, obwohl, damit, als, ob)                         | Verb goes to end — tested constantly in Sprachbausteine |
-| 2   | **Konnektoren** (deshalb, trotzdem, außerdem, dann)                               | Position 1 adverbs — key for B1 writing                 |
-| 3   | **Perfekt** (haben/sein + Partizip II)                                            | The main past tense used in daily speech                |
-| 4   | **Präteritum** (war, hatte, konnte, musste, wollte, sollte, durfte)               | Only for sein, haben, and modal verbs                   |
-| 5   | **Wechselpräpositionen** (in, an, auf, vor, hinter, neben, über, unter, zwischen) | Akk (Wohin?) vs Dat (Wo?)                               |
-| 6   | **Fixed prepositions** (mit+Dat, für+Akk, seit+Dat, etc.)                         | Tested in every Sprachbausteine section                 |
-| 7   | **Adjective endings** (-e, -en, -er, -es, -em)                                    | After definite/indefinite articles                      |
-| 8   | **Reflexive verbs** (sich freuen, sich anmelden, sich bewerben)                   | Common in daily life topics                             |
-| 9   | **Konjunktiv II** (wäre, hätte, könnte, würde + Infinitiv)                        | Polite requests in writing/speaking                     |
-| 10  | **Relativsätze** (der Mann, der... / die Frau, die...)                            | Bonus B1 points in writing                              |
+You will usually do this with a partner.
 
-______________________________________________________________________
+#### Teil 1: Sich vorstellen (Introduce Yourself)
+You briefly talk about your life: name, age, residence, education, profession, family, and language study. 
+**Goal:** Be fluent and connect your sentences. (e.g., "Ich lerne Deutsch, *weil* ich in Deutschland arbeiten möchte.")
 
-## Essential Vocabulary Themes
+#### Teil 2: Über Erfahrungen sprechen / Bildbeschreibung
+You are given a picture or a topic. You must describe what you see, and then relate the topic to your own experiences in your home country.
+**Goal:** Use directional words (*im Hintergrund, rechts*) and talk about your own life.
 
-These are the themes that appear in **every telc Deutsch A2-B1 exam**:
-
-| Theme                | Key Words to Know                                                                   |
-| -------------------- | ----------------------------------------------------------------------------------- |
-| **Arbeit & Beruf**   | Bewerbung, Lebenslauf, Gehalt, Kollege, Arbeitsvertrag, kündigen, Teilzeit/Vollzeit |
-| **Wohnung**          | Miete, Nebenkosten, Kaution, Vermieter, Mietvertrag, einziehen, kündigen            |
-| **Gesundheit**       | Termin, Rezept, Krankschreibung, Apotheke, Versicherung, Sprechstunde               |
-| **Schule & Bildung** | Elternabend, Zeugnis, Hausaufgaben, Nachhilfe, Schulausflug, Klassenlehrerin        |
-| **Behörden**         | Anmeldung, Personalausweis, Aufenthaltstitel, Formular, Termin vereinbaren          |
-| **Einkaufen**        | Angebot, Rabatt, Garantie, umtauschen, Kassenbon, Beschwerde                        |
-| **Freizeit**         | Verein, Kurs, Veranstaltung, Ausflug, Eintrittskarte                                |
-| **Verkehr**          | Fahrplan, Verspätung, Umleitung, Gleis, Fahrkarte, Ermäßigung                       |
+#### Teil 3: Gemeinsam etwas planen (Plan something together)
+You and your partner must plan a party, a trip, or buy a gift. You get bullet points on what to decide (When? Where? How much?).
+**Goal:** **REACT** to your partner. Agree (*Das ist eine gute Idee*), disagree politely (*Ich finde es besser, wenn...*), and make suggestions. Never just read a monolog!

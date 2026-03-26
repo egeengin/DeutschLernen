@@ -2,20 +2,33 @@
 
 ______________________________________________________________________
 
-## 1. Yazma (Mektup / E-posta) — 30 dk, ~100-120 kelime
+## 1. Yazma (Schreiben) — 30 Dk, 2 Bölüm
+
+Resmi **telc Deutsch A2-B1** Yazma Sınavı DAİMA iki bölümden oluşur:
+* **Teil 1:** Kısa ve gayri resmi bir "Chat" veya "Kurznachricht" (Kısa mesaj) (30-40 kelime).
+* **Teil 2:** Resmi veya yarı resmi bir E-posta (70-80 kelime).
 
 ### Tam Puan Almak İçin 4 Altın Kural
-
-1. ✅ Soruda verilen **4 maddenin (bullet points) TAMAMINA** değinin. Birini bile atlarsanız ciddi puan kaybedersiniz.
-2. ✅ Muhatabınıza uygun doğru bir **selamlama** ve **kapanış** kullanın.
+1. ✅ Soruda verilen **TÜM maddelere (genelde her görev için 3 madde)** değinin. Birini bile atlarsanız ciddi puan kaybedersiniz.
+2. ✅ Muhatabınıza uygun doğru bir **selamlama** ve **kapanış** kullanın (Chat için samimi, E-posta için resmi).
 3. ✅ En az 2-3 tane **bağlaç** (deshalb, außerdem, weil, dass) kullanın. Kısa, basit cümleleri art arda sıralamayın.
-4. ✅ 100-120 kelime arası yazın. 80 kelimenin altında yazmak kesin puan cezası demektir.
+4. ✅ Kelime sınırlarına uyun. Eksik kelime kesin puan cezası demektir.
 
-### Mektup Şablonları
+### Şablonlar: Chat ve E-Posta
 
-Bu iskeletleri ezberlemelisiniz. Sınavda beyninizi yormadan, sadece 4 maddenizi bu şablonların ortasına yerleştireceksiniz.
+#### 1. Bölüm 1: Samimi Chat (Die Kurznachricht) - *telc A2-B1'in Farkı!*
+Genellikle WhatsApp üzerinden bir arkadaşınıza buluşma veya özür mesajı yazarsınız.
+```text
+Hallo [İsim],
+wie geht es dir? 
+Es tut mir leid, aber ich kann morgen leider nicht kommen, weil [Mazeretiniz/Madde 1].
+Können wir uns am [Yeni Gün/Saat] treffen? [Madde 2]
+Bitte melde dich!
+Liebe Grüße
+[Sadece Adınız]
+```
 
-#### 1. İş Başvurusu (Die Bewerbung) - *Çok Önemli!*
+#### 2. Bölüm 2: İş Başvurusu (Die Bewerbung) - *Çok Önemli!*
 telc Deutsch A2-B1 sınavında bir iş ilanına e-posta ile başvurmak çok yaygındır.
 ```text
 Sehr geehrte Damen und Herren,
@@ -120,23 +133,21 @@ Ad, Yaş, Ülke, Şehir, Meslek, Diller hakkında konuşmalısınız.
 - **Kötü:** "Ich heiße Ali. Ich bin 30 Jahre alt."
 - **İyi (B1):** "Ich heiße Ali und ich komme aus der Türkei, aber **seit drei Jahren lebe ich** mit meiner Familie in Berlin." (Bağlaç kullanarak ve bir tık detay vererek)
 
-### Bölüm 2: Resim Tarifi (Bildbeschreibung)
-Resmi tarif edin, ardından kendi hayatınızla ilişkilendirin.
-**🛑 YOUTUBE SINAV İPUCU:** Kelime dağarcığınızı zengin göstermek ve düşünmek için zaman kazanmak için DAİMA YÖN kelimelerini kullanın!
-* **Yönler:** *Oben* (Üstte), *Unten* (Altta), *Rechts* (Sağda), *Links* (Solda), *Im Vordergrund* (Ön planda), *Im Hintergrund* (Arka planda).
-* **Genel:** *Auf dem Bild sehe ich [Akk]...* (Resimde ... görüyorum)
-* **Eylem:** *Die Leute scheinen glücklich zu sein. Ich glaube, sie feiern einen Geburtstag, weil...* (Sanırım parti yapıyorlar ÇÜNKÜ...)
-* **Kişisel Deneyim (Zorunlu):** *In meinem Heimatland machen wir das genauso.* (Bizim ülkemizde de aynı böyle yaparız.)
-
-### Bölüm 3: Birlikte Plan Yapma (Gemeinsam Planen)
-Sınav görevlilerinin görmek istedikleri en önemli şey **partnerinize TEPKİ vermenizdir**. Sakın ezberlediğiniz uzun cümleleri bir monolog gibi okumayın!
+### Bölüm 2: Gemeinsam etwas planen (Birlikte bir şey planlama)
+Partnerinizle birlikte bir parti, gezi veya hediye kararı vermelisiniz.
+**🛑 YOUTUBE SINAV İPUCU:** Sınav görevlilerinin görmek istedikleri en önemli şey **partnerinize TEPKİ vermenizdir**.
 
 | İşlev | İfadeler (Redemittel) |
 | --- | --- |
-| **Bir öneride bulunurken** | *Ich schlage vor, dass... / Wie wäre es, wenn wir...? / Wollen wir vielleicht...?* |
-| **Aynı fikirdeyken** | *Das ist eine tolle Idee! / Ja, damit bin ich einverstanden. / Genau!* |
-| **Kibarca reddederken** | *Das finde ich nicht so gut, weil... / Vielleicht wäre es besser, wenn...* |
-| **Fikir sorarken** | *Was denkst du darüber? / Bist du damit einverstanden?* |
+| **Öneri** | *Ich schlage vor, dass... / Wie wäre es, wenn wir...? / Wollen wir vielleicht...?* |
+| **Onaylama** | *Das ist eine tolle Idee! / Ja, damit bin ich einverstanden. / Genau!* |
+| **Reddetme** | *Das finde ich nicht so gut... / Vielleicht wäre es besser, wenn...* |
+
+### Bölüm 3: Meinung äußern / Diskutieren (Fikir Beyan Etme veya Konu Tartışma)
+Bir konu hakkında konuşur veya deneyimlerinizi paylaşırsınız.
+**🛑 YOUTUBE SINAV İPUCU:** Konuyu DAİMA kendi anavatanınızla kıyaslayın!
+* *In meinem Heimatland ist das anders...* (Benim ülkemde bu durum farklıdır...) 
+* *Bei uns machen wir das genauso...* (Biz de aynen böyle yaparız...)
 
 <div class="md-quiz" 
   data-question="Partneriniz öğretmene çiçek almayı öneriyor, ancak siz kitap almanın daha iyi olduğunu düşünüyorsunuz. Nasıl yanıt verirsiniz?" 
