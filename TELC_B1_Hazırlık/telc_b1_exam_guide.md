@@ -21,6 +21,24 @@ ______________________________________________________________________
 
 **Kritik:** Hem yazılı hem de sözlü bölümlerden B1 seviyesinde performans göstermelisiniz. Yazmadan %90 alıp konuşmadan A2 alırsanız sonuç genel olarak A2 olur. Dört beceriyi de geliştirin!
 
+**Sonucunuz nasıl belirlenir:**
+
+```mermaid
+flowchart TD
+    A["DTZ Sınavına Gir"] --> B["Yazılı Bölüm\n(Hören + Lesen + Sprachbausteine + Schreiben)\nMaks: 100 puan"]
+    A --> C["Sözlü Bölüm\n(Sprechen)\nBölüm 1 + 2 + 3"]
+    B --> D{"Yazılı puan\n≥ 60?"}
+    C --> E{"Konuşma\nB1 seviyesinde mi?"}
+    D -- Hayır --> F["❌ A2 Sertifikası"]
+    E -- Hayır --> F
+    D -- Evet --> G{"HER İKİ koşul\nda karşılandı mı?"}
+    E -- Evet --> G
+    G -- Evet --> H["✅ B1 Sertifikası"]
+    G -- Hayır --> F
+    style H fill:#27ae60,color:#fff
+    style F fill:#e74c3c,color:#fff
+```
+
 ______________________________________________________________________
 
 ## Sınav Yapısı (Detaylı)
