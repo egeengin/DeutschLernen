@@ -5,6 +5,7 @@
 ---
 
 ## Bölüm 1: Sprachbausteine — Kısım 1 (10 soru, ~10 dk)
+
 **Her boşluk için doğru seçeneği (a, b veya c) seçin.**
 
 **Metin:**
@@ -18,6 +19,7 @@ Liebe Grüße,
 Lukas
 
 **Sorular:**
+
 1. a) weil / b) obwohl / c) wenn
 2. a) am / b) im / c) um
 3. a) deshalb / b) dass / c) weil
@@ -32,6 +34,7 @@ Lukas
 ---
 
 ## Bölüm 2: Lesen — Duyurular ve İlanlar (5 soru, ~10 dk)
+
 **Duyuruları okuyun ve Doğru (True) veya Yanlış (False) olarak cevaplayın.**
 
 **Duyuru A:**
@@ -50,6 +53,7 @@ Lukas
 ---
 
 ## Bölüm 3: Lesen — Makale (4 soru, ~10 dk)
+
 **Makaleyi okuyun ve doğru cevabı seçin.**
 
 "In Deutschland gibt es immer mehr Carsharing-Angebote. Besonders in Großstädten nutzen junge Menschen zwischen 20 und 35 Jahren dieses Angebot, weil sie kein eigenes Auto kaufen wollen. Eine Studie der Universität Köln hat gezeigt, dass ein Carsharing-Auto bis zu zehn private Autos ersetzen kann. Kritiker sagen allerdings, dass das Angebot auf dem Land kaum funktioniert, weil die Autos zu weit entfernt stehen. Die meisten Anbieter planen deshalb, ihr Angebot zunächst in Städten mit mehr als 100.000 Einwohnern auszubauen."
@@ -77,9 +81,11 @@ Lukas
 ---
 
 ## Bölüm 4: Schreiben (20 dk)
+
 **Bir e-posta yazın (~100-120 kelime).**
 
 İki hafta önce internetten bir kahve makinesi sipariş ettiniz. Paket geldi, ancak kahve makinesi bozuk. Müşteri hizmetlerine bir e-posta yazın.
+
 - Yazma nedeniniz.
 - Tam olarak ne bozuk?
 - Şimdi ne istiyorsunuz (Para iadesi veya yeni makine)?
@@ -88,6 +94,7 @@ Lukas
 ---
 
 ## Bölüm 5: Sprechen — Kendini Tanıtma (2 dk)
+
 Kendinizi sesli olarak kaydedin veya pratik yapın. İçermesi gerekenler: Ad (Name), Memleket (Herkunft), Yaşadığı şehir (Wohnort), Meslek (Beruf), Aile (Familie), Hobiler (Hobbys), Diller (Sprachen), Neden Almanca öğreniyorsunuz (warum Sie Deutsch lernen).
 
 ---
@@ -97,7 +104,7 @@ Kendinizi sesli olarak kaydedin veya pratik yapın. İçermesi gerekenler: Ad (N
 ### Cevaplar:
 
 | Soru | Cevap | Test Edilen Dil Bilgisi Konusu |
-|---|---|---|
+| --- | --- | --- |
 | 1 | b (obwohl) | Yan cümle — zıtlık/taviz |
 | 2 | a (am) | Zaman edatı (am Wochenende) |
 | 3 | c (weil) | Yan cümle — sebep |
@@ -121,7 +128,7 @@ Kendinizi sesli olarak kaydedin veya pratik yapın. İçermesi gerekenler: Ad (N
 ### Puanlama Rehberi
 
 | Puan (19 üzerinden) | Değerlendirme |
-|---|---|
+| --- | --- |
 | 16-19 | Mükemmel — B1'e hazırsınız. Sadece hızlanmaya odaklanın. |
 | 12-15 | İyi — bazı boşluklar var. Kaçırdığınız dil bilgisi konularını tekrar edin. |
 | 8-11 | Orta — ciddi eksikler var. 1. Hafta planını dikkatlice uygulayın. |

@@ -1,10 +1,12 @@
 # Final Mock Exam (TELC B1 — DTZ)
+
 *Take this at the end of Week 4 under strict exam conditions.*
 *Total Time: ~100 minutes written + speaking practice*
 
 ---
 
 ## Part 1: Hören (Listening) — ~25 min
+
 *Read each transcript ONCE at normal speed (or have someone read it to you), then answer.*
 
 ### Teil 1: Short Dialogues (played once!)
@@ -38,6 +40,7 @@
 8. Die Bürger werden im Herbst befragt. (True / False)
 
 ### Teil 3: Announcements (played twice)
+
 **Match each announcement (A-D) with the correct situation.**
 
 **Announcement A:** "Liebe Fahrgäste, wegen eines Polizeieinsatzes kann die U-Bahn-Linie 7 momentan nicht zwischen Rathaus und Alexanderplatz fahren. Bitte nutzen Sie die Buslinie 245 als Alternative."
@@ -49,6 +52,7 @@
 **Announcement D:** "Achtung: Die Schwimmhalle ist wegen Renovierungsarbeiten vom 1. bis 15. April geschlossen. Das Freibad öffnet voraussichtlich am 1. Mai."
 
 **Situations:**
+
 - 9. Jemand sucht einen Ort, um gebrauchte Sachen zu verkaufen. → ___
 - 10. Jemand möchte nächste Woche schwimmen gehen. → ___
 - 11. Jemand steht an der U-Bahn-Station und wartet. → ___
@@ -59,9 +63,11 @@
 ## Part 2: Lesen (Reading) — ~45 min
 
 ### Teil 1: Match People to Ads
+
 **Match each person (A-E) with the correct ad (1-6). One ad has no match.**
 
 **People:**
+
 - **A.** Anna sucht einen Teilzeitjob als Verkäuferin.
 - **B.** Herr Park möchte seinen Führerschein machen.
 - **C.** Fatima braucht Hilfe bei den Hausaufgaben für ihre Tochter (Klasse 5).
@@ -87,14 +93,17 @@
 "Die Zahl der Fahrradfahrer in deutschen Städten wächst seit Jahren. Immer mehr Kommunen investieren deshalb in bessere Fahrradwege. In Münster, der fahrradfreundlichsten Stadt Deutschlands, nutzen bereits 40 Prozent der Einwohner das Fahrrad als Hauptverkehrsmittel. Doch nicht überall sieht es so gut aus: In vielen Städten fehlen sichere Radwege, und Radfahrer müssen sich die Straße mit Autos und Bussen teilen. Laut einer Umfrage des ADFC fühlen sich nur 28 Prozent der Radfahrer sicher im Straßenverkehr. Städte wie Hamburg und Berlin planen nun Millionen-Investitionen in neue Radwege und sichere Kreuzungen."
 
 18. Wie viele Einwohner in Münster fahren hauptsächlich Fahrrad?
+
     a) 28% / b) 40% / c) Alle
 
 19. Was ist das Problem in vielen Städten?
+
     a) Es gibt zu viele Fahrradwege
     b) Es gibt nicht genug sichere Radwege
     c) Niemand will Fahrrad fahren
 
 20. Was planen Hamburg und Berlin?
+
     a) Fahrräder zu verbieten
     b) Mehr Geld für Radwege auszugeben
     c) Weniger Busse einzusetzen
@@ -140,6 +149,7 @@ Klaus Schmidt
 ## Part 4: Schreiben (20 min)
 
 Ihr Kind (Paul) ist in der 3. Klasse. Die Schule organisiert am nächsten Freitag ein Sommerfest. Die Klassenlehrerin (Frau Müller) fragt, welche Eltern helfen können. Schreiben Sie eine E-Mail.
+
 - Grund für Ihr Schreiben.
 - Was können Sie mitbringen (Kuchen, Getränke...)?
 - Wie lange können Sie beim Fest helfen?
@@ -150,17 +160,22 @@ Ihr Kind (Paul) ist in der 3. Klasse. Die Schule organisiert am nächsten Freita
 ## Part 5: Sprechen
 
 ### Teil 1: Self-Introduction (2 min)
+
 Introduce yourself: Name, origin, how long in Germany, job, family, hobbies, languages, why you learn German.
 
 ### Teil 2: Discuss a Topic (4 min)
+
 **Topic:** "Sollen Kinder unter 12 Jahren ein eigenes Smartphone haben?"
+
 - Describe the situation
 - Give your opinion with reasons
 - Tell about your personal experience
 - Compare with your home country
 
 ### Teil 3: Plan Together (5 min)
+
 **Situation:** Sie und Ihr Partner möchten am Wochenende einen Ausflug mit dem Fahrrad machen. Planen Sie:
+
 - Wohin fahren Sie?
 - Wann und wo treffen Sie sich?
 - Was nehmen Sie mit?
@@ -171,7 +186,7 @@ Introduce yourself: Name, origin, how long in Germany, job, family, hobbies, lan
 ## Answers
 
 | # | Answer | Explanation |
-|---|---|---|
+| --- | --- | --- |
 | 1 | False | Neben, not rechts |
 | 2 | False | Only 30 min left, must hurry (sich beeilen) |
 | 3 | False | He has Fieber (fever), not Bauchschmerzen |
@@ -207,8 +222,9 @@ Introduce yourself: Name, origin, how long in Germany, job, family, hobbies, lan
 | 33 | c (würde) | Konjunktiv II — würde + freuen |
 
 ### Scoring Guide
+
 | Score (out of 33) | Assessment |
-|---|---|
+| --- | --- |
 | 27-33 | 🟢 Excellent — strong B1 level. You're ready! |
 | 20-26 | 🟡 Good — minor gaps. Review specific errors. |
 | 13-19 | 🟠 Fair — needs more practice. Redo review materials. |

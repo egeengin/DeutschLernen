@@ -5,16 +5,18 @@
 ## 1. Lesen (Reading) — 45 Min, 3 Parts
 
 ### Strategies
+
 1. **Read the question FIRST**, then scan the text for keywords
 2. For matching: cross out used answers immediately
 3. Don't translate word-for-word — understand the **general meaning**
 4. Unknown words? Look at prefixes/suffixes and context
 
 ### Key Skill: Synonym Recognition
+
 The text and the question often use DIFFERENT words for the same thing:
 
 | Text says... | Question/answer says... |
-|---|---|
+| --- | --- |
 | kostenlos | gratis / umsonst |
 | Kinder | Nachwuchs / die Kleinen |
 | Arzt | Doktor / Mediziner |
@@ -26,9 +28,11 @@ The text and the question often use DIFFERENT words for the same thing:
 ---
 
 ### Exercise 1: Advertisement Matching
+
 **Match each person (A-D) with the correct advertisement (1-5). One ad has no match.**
 
 **People looking for something:**
+
 - **A.** Frau Yilmaz sucht eine günstige 2-Zimmer-Wohnung im Zentrum.
 - **B.** Herr Schmidt möchte am Samstag mit seinen Kindern etwas unternehmen.
 - **C.** Maria braucht einen Deutschkurs am Abend, weil sie tagsüber arbeitet.
@@ -49,6 +53,7 @@ The text and the question often use DIFFERENT words for the same thing:
 ---
 
 ### Exercise 2: Article — True/False
+
 **Read the article:**
 
 "Immer mehr Deutsche arbeiten im Homeoffice. Seit der Pandemie hat sich die Zahl der Heimarbeiter verdoppelt. Viele Unternehmen bieten ihren Mitarbeitern jetzt flexible Arbeitsmodelle an: Manche arbeiten drei Tage im Büro und zwei Tage zu Hause. Eine aktuelle Studie zeigt, dass 65% der Arbeitnehmer im Homeoffice produktiver sind. Allerdings klagen einige über Einsamkeit und berichten, dass ihnen der Kontakt zu Kollegen fehlt. Experten empfehlen deshalb eine Mischung aus Büro- und Heimarbeit."
@@ -64,6 +69,7 @@ The text and the question often use DIFFERENT words for the same thing:
 ---
 
 ### Exercise 3: Notice — Multiple Choice
+
 **Read the notice at a Bürgeramt:**
 
 "Sehr geehrte Bürgerinnen und Bürger, bitte beachten Sie, dass Sie für die Beantragung eines neuen Personalausweises folgende Unterlagen mitbringen müssen: ein aktuelles biometrisches Passfoto, Ihre Meldebescheinigung und den alten Personalausweis. Die Bearbeitungsgebühr beträgt 37 €. Termine können Sie telefonisch oder online vereinbaren. Ohne Termin müssen Sie mit Wartezeiten von bis zu 2 Stunden rechnen."
@@ -83,6 +89,7 @@ The text and the question often use DIFFERENT words for the same thing:
 ## 2. Hören (Listening) — 25 Min, 3 Parts
 
 ### Strategies
+
 1. **Pre-read** all questions/options before the audio starts
 2. Part 1 plays **only once** — maximal concentration!
 3. Listen for **keywords**, not every word
@@ -92,7 +99,7 @@ The text and the question often use DIFFERENT words for the same thing:
 ### Key: Common Listening Situations
 
 | Situation | What to Listen For |
-|---|---|
+| --- | --- |
 | Train station announcement | Gleis, Verspätung, Abfahrt, Ankunft, Umsteigen |
 | Doctor's office phone | Termin, Sprechstunde, Uhrzeit, Rezept abholen |
 | School/Kindergarten | Elternabend, Ausflug, Datum, was mitbringen |
@@ -102,6 +109,7 @@ The text and the question often use DIFFERENT words for the same thing:
 ---
 
 ### Exercise 4: Announcement (Read once, then answer)
+
 **Transcript:** "Achtung Fahrgäste am Gleis 3. Der ICE 594 nach München Hauptbahnhof, planmäßige Abfahrt 14:30 Uhr, hat heute voraussichtlich 20 Minuten Verspätung. Grund dafür ist eine Stellwerksstörung. Der Zug hält zusätzlich in Augsburg. Wir bitten um Entschuldigung."
 
 8. Der Zug fährt pünktlich ab. (True / False)
@@ -109,6 +117,7 @@ The text and the question often use DIFFERENT words for the same thing:
 10. Der Zug hält nicht in Augsburg. (True / False)
 
 ### Exercise 5: Phone Message (Read once, then answer)
+
 **Transcript:** "Hallo Frau Meier, hier ist die Praxis Dr. Schneider. Leider müssen wir Ihren Termin am Donnerstag um 10 Uhr verschieben. Dr. Schneider ist an dem Tag auf einer Fortbildung. Können wir den Termin auf Freitag, 11 Uhr verlegen? Bitte rufen Sie uns zurück unter 030-445566. Vielen Dank!"
 
 11. Der Termin am Donnerstag findet statt. (True / False)
@@ -116,6 +125,7 @@ The text and the question often use DIFFERENT words for the same thing:
 13. Frau Meier soll eine E-Mail schreiben. (True / False)
 
 ### Exercise 6: Radio Report (Read once, then answer)
+
 **Transcript:** "In den nächsten Tagen wird es in ganz Deutschland deutlich kälter. Im Norden erwarten wir Temperaturen um den Gefrierpunkt, im Süden kann es sogar schneien. Am Wochenende wird es dann wieder milder, bis zu 10 Grad im Westen. Vergessen Sie Ihre warme Jacke nicht!"
 
 14. Es wird in den nächsten Tagen wärmer. (True / False)
@@ -129,6 +139,7 @@ The text and the question often use DIFFERENT words for the same thing:
 **Exercise 1 (Matching):** A→2, B→3, C→1, D→4. (Ad 5 has no match)
 
 **Exercise 2 (True/False):**
+
 1. True (Die Zahl hat sich verdoppelt = before was less)
 2. False ("Viele Unternehmen" ≠ alle)
 3. False (65% sind produktiver = MORE productive)

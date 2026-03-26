@@ -5,10 +5,11 @@
 ---
 
 ## Week 1: Grammar Foundation & Sprachbausteine
+
 *Goal: Master the grammar patterns that make up 30% of the written exam.*
 
 | Day | Focus | Activities | Time |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | **Diagnostic Test** | Take `mock_exam_diagnostic.md`. Identify weak spots. | 1h |
 | 1 | **Nebensätze** | Learn weil/dass/wenn/obwohl + verb-final rule | 1h |
 | 2 | **Nebensätze Practice** | Do exercises in `review_grammar_vocab.md` Section 1-2 | 2h |
@@ -27,10 +28,11 @@
 ---
 
 ## Week 2: Reading & Listening Mastery
+
 *Goal: Build speed and accuracy for input-based sections.*
 
 | Day | Focus | Activities | Time |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 8 | **Reading Strategies** | Learn scan/skim techniques in `review_reading_listening.md` | 1h |
 | 8 | **Reading Practice** | Do all reading exercises (ads, articles, notices) | 1.5h |
 | 9 | **Listening Strategies** | Learn synonym awareness, pre-reading questions | 1h |
@@ -47,6 +49,7 @@
 **Week 2 Checkpoint:** Can you finish Reading in 45 min with 60%+ accuracy?
 
 **Recommended Free Resources:**
+
 - Deutsche Welle "Top-Thema": https://www.dw.com/de/top-thema/s-8031
 - Deutsche Welle "Langsam gesprochene Nachrichten": slow-speed news
 - telc official model tests (free PDF): https://www.telc.net/
@@ -54,10 +57,11 @@
 ---
 
 ## Week 3: Writing & Speaking Templates
+
 *Goal: Memorize letter templates and speaking phrases to guarantee points.*
 
 | Day | Focus | Activities | Time |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 15 | **Letter Templates** | Memorize formal/informal greetings, closings, connectors | 1.5h |
 | 15 | **Model Answer Study** | Study the model answer in `review_writing_speaking.md` | 1h |
 | 16 | **Write: Inquiry Letter** | Practice writing an information request (20 min timed) | 1h |
@@ -77,10 +81,11 @@
 ---
 
 ## Week 4: Full Mock Exams & Final Polish
+
 *Goal: Simulate real exam conditions. Build confidence and time management.*
 
 | Day | Focus | Activities | Time |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 22 | **Full Mock Exam #1** | Take `mock_exam_final.md` under strict timing | 2h |
 | 23 | **Deep Review** | Analyze every error. Re-study relevant grammar/vocab | 2h |
 | 24 | **Speaking Simulation** | Full oral exam practice (record or practice with partner/AI) | 1.5h |

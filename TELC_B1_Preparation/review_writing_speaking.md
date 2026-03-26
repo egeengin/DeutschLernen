@@ -5,6 +5,7 @@
 ## 1. Schreiben (Letter / Email) — 20 min, ~100-120 words
 
 ### The 4 Rules for Full Points
+
 1. ✅ Address **ALL 4 bullet points** from the prompt
 2. ✅ Use correct **greeting** and **closing**
 3. ✅ Use at least 2-3 **connectors** (deshalb, außerdem, weil, dass)
@@ -15,6 +16,7 @@
 ### Letter Templates
 
 #### Formal (unknown person or company)
+
 ```
 Sehr geehrte Damen und Herren,
 
@@ -32,6 +34,7 @@ Mit freundlichen Grüßen
 ```
 
 #### Semi-Formal (known contact name)
+
 ```
 Sehr geehrte Frau [Müller], / Sehr geehrter Herr [Schmidt],
 
@@ -44,6 +47,7 @@ Mit freundlichen Grüßen
 ```
 
 #### Informal (friend / family)
+
 ```
 Liebe [Maria], / Lieber [Tom],
 
@@ -60,7 +64,7 @@ Liebe Grüße / Viele Grüße
 ### Useful Connector Phrases for B1 Letters
 
 | Purpose | Phrase |
-|---|---|
+| --- | --- |
 | Reason for writing | Ich schreibe Ihnen, weil... / Hiermit möchte ich... |
 | Adding a point | Außerdem möchte ich fragen, ob... / Darüber hinaus... |
 | Giving a reason | Der Grund dafür ist, dass... / Deshalb... |
@@ -75,6 +79,7 @@ Liebe Grüße / Viele Grüße
 ### MODEL ANSWER (Study This!)
 
 **Prompt:** Sie haben vor zwei Wochen eine Kaffeemaschine im Internet bestellt. Das Paket ist angekommen, aber die Kaffeemaschine ist kaputt. Schreiben Sie eine E-Mail an den Kundenservice.
+
 1. Grund für Ihr Schreiben
 2. Was ist kaputt?
 3. Was möchten Sie? (Geld zurück oder neue Maschine)
@@ -105,6 +110,7 @@ Liebe Grüße / Viele Grüße
 
 **Prompt 1 — Inquiry:**
 Sie möchten einen Deutschkurs bei der VHS machen. Schreiben Sie eine E-Mail.
+
 1. Welchen Kurs suchen Sie? (Niveau, Uhrzeit)
 2. Wie viel kostet der Kurs?
 3. Wann beginnt der nächste Kurs?
@@ -112,6 +118,7 @@ Sie möchten einen Deutschkurs bei der VHS machen. Schreiben Sie eine E-Mail.
 
 **Prompt 2 — Complaint:**
 Sie wohnen seit einem Monat in einer neuen Wohnung. Die Heizung funktioniert nicht. Schreiben Sie an den Vermieter (Herr Klein).
+
 1. Beschreiben Sie das Problem.
 2. Seit wann gibt es das Problem?
 3. Was haben Sie schon versucht?
@@ -119,6 +126,7 @@ Sie wohnen seit einem Monat in einer neuen Wohnung. Die Heizung funktioniert nic
 
 **Prompt 3 — Apology:**
 Ihr Kind (Sophie) war letzte Woche krank und konnte nicht zur Schule gehen. Schreiben Sie an die Klassenlehrerin (Frau Berg).
+
 1. Entschuldigen Sie Ihre Tochter.
 2. Was hatte sie? (Erkältung / Fieber)
 3. Fragen Sie nach den Hausaufgaben.
@@ -126,6 +134,7 @@ Ihr Kind (Sophie) war letzte Woche krank und konnte nicht zur Schule gehen. Schr
 
 **Prompt 4 — Declining an Invitation:**
 Ihr Freund Thomas hat Sie zu seinem Geburtstag am Samstag eingeladen. Leider können Sie nicht kommen. Schreiben Sie ihm.
+
 1. Bedanken Sie sich für die Einladung.
 2. Warum können Sie nicht kommen?
 3. Schlagen Sie ein anderes Treffen vor.
@@ -136,6 +145,7 @@ Ihr Freund Thomas hat Sie zu seinem Geburtstag am Samstag eingeladen. Leider kö
 ## 2. Sprechen (Oral Exam) — 15 min, 3 Parts
 
 ### Part 1: Self-Introduction (~2 min)
+
 **Memorize this template and personalize it:**
 
 > "Guten Tag, mein Name ist ______. Ich komme aus ______ und ich lebe seit ______ in ______. Von Beruf bin ich ______ / Ich arbeite als ______. Ich bin verheiratet/ledig und habe ______ Kinder. In meiner Freizeit ______ ich gerne. Ich lerne Deutsch, weil ______. Ich spreche auch ______."
@@ -147,6 +157,7 @@ Ihr Freund Thomas hat Sie zu seinem Geburtstag am Samstag eingeladen. Leider kö
 ### Part 2: Discuss a Topic/Picture (~4 min)
 
 **Template Structure:**
+
 1. Describe what you see / what the topic is
 2. Give your opinion with a reason
 3. Connect to your personal experience
@@ -155,7 +166,7 @@ Ihr Freund Thomas hat Sie zu seinem Geburtstag am Samstag eingeladen. Leider kö
 **Useful Phrases:**
 
 | Function | Phrase |
-|---|---|
+| --- | --- |
 | Describe | Auf dem Bild sehe ich... / Das Thema ist... |
 | Opinion | Meiner Meinung nach... / Ich finde, dass... / Ich bin der Meinung, dass... |
 | Reason | ...weil... / Der Grund dafür ist... |
@@ -164,6 +175,7 @@ Ihr Freund Thomas hat Sie zu seinem Geburtstag am Samstag eingeladen. Leider kö
 | Conclusion | Zusammenfassend denke ich, dass... |
 
 **Practice Topics (commonly tested):**
+
 1. Kinder und Medien / Handynutzung bei Kindern
 2. Online-Shopping vs. im Geschäft einkaufen
 3. Gesunde Ernährung und Kochen
@@ -182,7 +194,7 @@ Ihr Freund Thomas hat Sie zu seinem Geburtstag am Samstag eingeladen. Leider kö
 **Phrase Bank:**
 
 | Function | Phrases |
-|---|---|
+| --- | --- |
 | Start | Wir müssen also... planen. Hast du schon eine Idee? |
 | Suggest | Was hältst du davon, wenn wir...? / Wie wäre es mit...? / Sollen wir vielleicht...? |
 | Agree | Das finde ich eine gute Idee! / Ja, das klingt gut! / Einverstanden! |
@@ -192,6 +204,7 @@ Ihr Freund Thomas hat Sie zu seinem Geburtstag am Samstag eingeladen. Leider kö
 | Conclude | Dann machen wir das so! / Gut, dann ist alles klar! |
 
 **Practice Scenarios:**
+
 1. Colleague is leaving → plan a farewell party (gift, food, time, location)
 2. Friend's birthday → plan a surprise (gift, where to celebrate, who to invite)
 3. Weekend trip → plan a day trip (where, transportation, food, weather plan B)
