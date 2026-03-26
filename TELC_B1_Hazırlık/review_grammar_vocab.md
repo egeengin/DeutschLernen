@@ -68,7 +68,7 @@ ______________________________________________________________________
 
 ### Wechselpräpositionen (Çift Yönlü Edatlar: Akkusativ vs. Dativ)
 
-**in, an, auf, neben, hinter, über, unter, vor, zwischen**
+in, an, auf, neben, hinter, über, unter, vor, zwischen
 
 | Soru                           | Hal       | Örnek                               |
 | ------------------------------ | --------- | ----------------------------------- |
@@ -128,60 +128,64 @@ ______________________________________________________________________
 
 **Metin 1:**
 Lieber Tom,
-ich schreibe dir, __(1)__ ich am Wochenende meinen Geburtstag feiere. Ich habe eine neue Wohnung. __(2)__ möchte ich eine große Party machen. Kommst du? Bring bitte auch __(3)__ Freundin mit!
+ich schreibe dir, `__(1)__` ich am Wochenende meinen Geburtstag feiere. Ich habe eine neue Wohnung. `__(2)__` möchte ich eine große Party machen. Kommst du? Bring bitte auch `__(3)__` Freundin mit!
+
+<!-- markdownlint-disable MD029 -->
 
 1. a) dass / b) weil / c) wenn
-1. a) Trotzdem / b) Außerdem / c) Deshalb
-1. a) deine / b) deiner / c) deinen
+2. a) Trotzdem / b) Außerdem / c) Deshalb
+3. a) deine / b) deiner / c) deinen
 
 **Metin 2:**
 Sehr geehrte Frau Braun,
-ich habe __(4)__ bei Ihnen für einen Sprachkurs angemeldet. __(5)__ möchte ich Sie fragen, __(6)__ der Kurs auch am Abend stattfindet. Ich arbeite tagsüber und __(7)__ kann ich nur abends kommen.
+ich habe `__(4)__` bei Ihnen für einen Sprachkurs angemeldet. `__(5)__` möchte ich Sie fragen, `__(6)__` der Kurs auch am Abend stattfindet. Ich arbeite tagsüber und `__(7)__` kann ich nur abends kommen.
 
 4. a) mir / b) mich / c) sich
-1. a) Deshalb / b) Außerdem / c) Trotzdem
-1. a) dass / b) weil / c) ob
-1. a) trotzdem / b) deshalb / c) obwohl
+5. a) Deshalb / b) Außerdem / c) Trotzdem
+6. a) dass / b) weil / c) ob
+7. a) trotzdem / b) deshalb / c) obwohl
 
 ### Bölüm B: Fiil Çekimleri
 
 Doğru formu doldurun:
 
-8. Gestern \_\_\_\_\_ ich den ganzen Tag zu Hause \_\_\_\_\_. (bleiben, Perfekt)
+8. Gestern `_____` ich den ganzen Tag zu Hause `_____`. (bleiben, Perfekt)
 
    → a) habe...geblieben / b) bin...geblieben / c) habe...gebleibt
 
-1. Als Kind \_\_\_\_\_ ich immer Fußball spielen. (wollen, Präteritum)
+9. Als Kind `_____` ich immer Fußball spielen. (wollen, Präteritum)
 
    → a) wollte / b) will / c) gewollt
 
-1. \_\_\_\_\_ Sie mir bitte erklären, wie ich zum Bahnhof komme? (können, Konjunktiv II)
+10. `_____` Sie mir bitte erklären, wie ich zum Bahnhof komme? (können, Konjunktiv II)
 
-   → a) Können / b) Konnten / c) Könnten
+    → a) Können / b) Konnten / c) Könnten
 
 ### Bölüm C: Edatlar
 
-11. Ich warte \_\_\_\_\_ den Bus. (auf+?)
+11. Ich warte `_____` den Bus. (auf+?)
 
     → a) auf dem / b) auf den / c) auf der
 
-01. Er wohnt \_\_\_\_\_ seiner Mutter. (bei+?)
+12. Er wohnt `_____` seiner Mutter. (bei+?)
 
     → a) bei seiner / b) bei seine / c) bei seinen
 
-01. Wir fahren \_\_\_\_\_ Wochenende \_\_\_\_\_ München.
+13. Wir fahren `_____` Wochenende `_____` München.
 
     → a) am...nach / b) im...in / c) um...zu
 
 ### Bölüm D: Karma Dil Bilgisi
 
-14. Das ist der Mann, \_\_\_\_\_ gestern bei uns war.
+14. Das ist der Mann, `_____` gestern bei uns war.
 
     → a) der / b) den / c) dem
 
-01. Sie hat sich \_\_\_\_\_ die Verspätung entschuldigt.
+15. Sie hat sich `_____` die Verspätung entschuldigt.
 
     → a) über / b) für / c) um
+
+<!-- markdownlint-enable MD029 -->
 
 ______________________________________________________________________
 
