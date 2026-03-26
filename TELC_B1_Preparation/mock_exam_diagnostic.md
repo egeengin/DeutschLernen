@@ -1,4 +1,4 @@
-# Diagnostic Mock Exam (TELC B1 — DTZ)
+# Diagnostic Mock Exam (TELC B1 — telc Deutsch A2-B1)
 
 *Take this on Day 1 to identify your weak areas. Time yourself!*
 

@@ -1,6 +1,6 @@
-# Vocabulary Part 2: Nouns by DTZ Theme (A1–B1)
+# Vocabulary Part 2: Nouns by telc Deutsch A2-B1 Theme (A1–B1)
 
-*~550 most-used German nouns organized by TELC DTZ exam themes, with Turkish translations and example sentences.*
+*~550 most-used German nouns organized by TELC telc Deutsch A2-B1 exam themes, with Turkish translations and example sentences.*
 
 ______________________________________________________________________
 

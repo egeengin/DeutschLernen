@@ -11,7 +11,7 @@ ______________________________________________________________________
 ## 1. Nebensätze (Subordinate Clauses) — MOST TESTED CONSTRUCT
 
 The conjugated verb goes to the **END** of the subordinate clause. 
-**PRO TRICK:** In the DTZ exam *Sprachbausteine*, if you see a blank right after a comma, look at the rest of the sentence. If the conjugated verb is sitting at the absolute end, the blank MUST be a subordinating conjunction like *dass, weil, wenn,* or *ob*.
+**PRO TRICK:** In the telc Deutsch A2-B1 exam *Sprachbausteine*, if you see a blank right after a comma, look at the rest of the sentence. If the conjugated verb is sitting at the absolute end, the blank MUST be a subordinating conjunction like *dass, weil, wenn,* or *ob*.
 
 | Conjunction | Meaning | Example |
 | --- | --- | --- |
@@ -164,7 +164,7 @@ ______________________________________________________________________
 
 ## 6. Real Exam Practice: Sprachbausteine Mix
 
-Test yourself on mixed DTZ-style exercises covering everything above.
+Test yourself on mixed telc Deutsch A2-B1-style exercises covering everything above.
 
 <div class="md-quiz" 
   data-question="Ich habe eine Katze, ___ sehr gerne schläft." 
@@ -195,6 +195,13 @@ Test yourself on mixed DTZ-style exercises covering everything above.
   data-options="lebe|lebte|habe gelebt" 
   data-answer="0" 
   data-explain="TRICK: 'Seit' (since/for) describes an action that started in the past AND IS STILL ONGOING. In German, you must use Präsens (Present Tense) for this, unlike English!"></div>
+
+______________________________________________________________________
+
+## References
+* **telc Deutsch A2-B1 Rules:** [telc.net/sprachpruefungen/a2b1](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
+* **Grammar Explanations:** Adapted from common TELC guidelines and YouTube teachers like "Deutsch lernen durch Hören" and DW Learn German.
+* **Practice:** [Goethe-Institut B1 material](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html).
 """
 
 tr_content = """# İnceleme: Dil Bilgisi ve Kelime Bilgisi (Sprachbausteine)
@@ -204,7 +211,7 @@ ______________________________________________________________________
 ## 1. Nebensätze (Yan Cümleler) — EN ÇOK TEST EDİLEN KONU
 
 Çekimli(zaman ve kişiye göre değişen) fiil yan cümlenin **EN SONUNA** gider. 
-**PRO İPUCU:** DTZ sınavı *Sprachbausteine* (Bölüm 1) kısmında, virgülden hemen sonra bir boşluk görürseniz, cümlenin geri kalanına bakın. Eğer çekimli fiil cümlenin en sonunda yer alıyorsa, boşluğa kesinlikle *dass, weil, wenn,* veya *ob* gibi yan cümle bağlaçlarından biri gelmelidir!
+**PRO İPUCU:** telc Deutsch A2-B1 sınavı *Sprachbausteine* (Bölüm 1) kısmında, virgülden hemen sonra bir boşluk görürseniz, cümlenin geri kalanına bakın. Eğer çekimli fiil cümlenin en sonunda yer alıyorsa, boşluğa kesinlikle *dass, weil, wenn,* veya *ob* gibi yan cümle bağlaçlarından biri gelmelidir!
 
 | Bağlaç | Anlamı | Örnek |
 | --- | --- | --- |
@@ -355,7 +362,7 @@ ______________________________________________________________________
 
 ## 6. Gerçek Sınav Pratiği: Karışık Sprachbausteine
 
-Yukarıdaki tüm kuralları kapsayan DTZ tarzı karma alıştırmalarla kendinizi test edin:
+Yukarıdaki tüm kuralları kapsayan telc Deutsch A2-B1 tarzı karma alıştırmalarla kendinizi test edin:
 
 <div class="md-quiz" 
   data-question="Ich habe eine Katze, ___ sehr gerne schläft." 
@@ -386,6 +393,13 @@ Yukarıdaki tüm kuralları kapsayan DTZ tarzı karma alıştırmalarla kendiniz
   data-options="lebe|lebte|habe gelebt" 
   data-answer="0" 
   data-explain="HİLE: 'Seit' (-den beri), geçmişte başlamış VE HALA DEVAM EDEN eylemleri anlatır. İngilizce veya Türkçenin aksine, Almancada bu durumda geçmiş zaman değil, Şimdiki Zaman (Präsens) kullanılmak zorundadır!"></div>
+
+______________________________________________________________________
+
+## Kaynaklar (References)
+* **telc Deutsch A2-B1 Sınav Yapısı:** [telc.net/sprachpruefungen/a2b1](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
+* **Gramer Pratikleri:** Genel TELC müfredatı, DW Learn German ve YouTube Almanca eğitmenlerinden derlenmiştir.
+* **Sınav Örnekleri:** [Goethe B1 Modellsatz](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html).
 """
 
 with open(EN_FILE, "w", encoding="utf-8") as f:

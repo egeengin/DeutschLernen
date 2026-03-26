@@ -1,4 +1,4 @@
-# Tanılama Deneme Sınavı (TELC B1 — DTZ)
+# Tanılama Deneme Sınavı (TELC B1 — telc Deutsch A2-B1)
 
 *Zayıf alanlarınızı belirlemek için bunu 1. Günde yapın. Süre tutun!*
 

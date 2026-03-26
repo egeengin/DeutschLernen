@@ -44,7 +44,7 @@ ______________________________________________________________________
 
 ## 2. İnteraktif Okuma Pratiği
 
-Aşağıdaki DTZ tarzı sorularla eş anlamlı ve mantık okuma becerinizi test edin.
+Aşağıdaki telc Deutsch A2-B1 tarzı sorularla eş anlamlı ve mantık okuma becerinizi test edin.
 
 ### Okuma 1: Doğru / Yanlış (Richtig/Falsch)
 
@@ -90,6 +90,8 @@ ______________________________________________________________________
 3. **Çeldiricilere dikkat edin:** Çoğu zaman A, B ve C şıklarındaki kelimelerin ÜÇÜNÜ DE seste duyarsınız! Sadece kelimeyi duymak yetmez, bağlamı ve kimin ne dediğini anlamanız gerekir.
 4. **İkinci şans:** Bölüm 1 ve 3'teki ses kayıtları İKİ KERE çalınır. Bölüm 2 ve 4 SADECE BİR KERE çalınır.
 
+**🛑 YOUTUBE SINAV İPUCU (Dinleme Bölüm 3):** Asla gereğinden fazla düşünmeyin / kendi mantığınızı katmayın! Kağıtta "Çamaşır makinesi 300€'dur" yazıyorsa ve dinletilen seste "Eskiden 300€ idi ama şimdi indirimle 200€" diyorsa o cevap Yanlış'tır (Falsch). Özellikle "oder (veya)", "aber (ama)" ve "leider (maalesef)" gibi gidişatı tersine çeviren kelimelere DİKKAT edin.
+
 ### Dinleme Çeldirici (Tuzak) Örneği
 
 **Kağıtta yazan:** Wann kommt Frau Müller? (Frau Müller ne zaman geliyor?)
@@ -115,3 +117,9 @@ Bir tren istasyonu anonsu dinlediğinizi hayal edin:
   data-options="Punkt 14:30 Uhr (Tam 14:30)|Um 15:10 Uhr (15:10'da)|In 40 Minuten fährt der nächste Zug. (40 dk sonra sonraki tren kalkıyor)" 
   data-answer="1" 
   data-explain="Normal kalkış (planmäßige Abfahrt) 14:30. Gecikme (Verspätung) 40 dakika. 14:30 + 40 dakika = 15:10. Bazen dinleme bölümlerinde böyle basit bir saat matematiği yapmanız beklenir!"></div>
+
+______________________________________________________________________
+
+## Kaynaklar (References)
+* **telc Deutsch A2-B1 Resmi Kuralları:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
+* **YouTube Ses Pratikleri (Hören):** Sınav formatına alışmak için YouTube'da "TELC A2-B1 Hören" veya "telc gGmbH" resmi kanalındaki model sınav ses kayıtlarını (Modelltest) haftalık olarak çözün.

@@ -1,8 +1,8 @@
-# TELC A2/B1 (DTZ) — Exam Guide & Strategy
+# TELC A2/B1 (telc Deutsch A2-B1) — Exam Guide & Strategy
 
 ## Exam Overview
 
-The **Deutsch-Test für Zuwanderer (DTZ)** is an A2/B1 dual-level exam developed by the Goethe-Institut and telc gGmbH. Based on your performance, you receive either an A2 or a **B1 certificate**. Your goal: **B1**.
+The **Deutsch-Test für Zuwanderer (telc Deutsch A2-B1)** is an A2/B1 dual-level exam developed by the Goethe-Institut and telc gGmbH. Based on your performance, you receive either an A2 or a **B1 certificate**. Your goal: **B1**.
 
 The exam tests everyday communication — work, housing, shopping, authorities, health, education, transport, etc.
 
@@ -25,7 +25,7 @@ ______________________________________________________________________
 
 ```mermaid
 flowchart TD
-    A["Take DTZ Exam"] --> B["Written Section\n(Hören + Lesen + Sprachbausteine + Schreiben)\nMax: 100 points"]
+    A["Take telc Deutsch A2-B1 Exam"] --> B["Written Section\n(Hören + Lesen + Sprachbausteine + Schreiben)\nMax: 100 points"]
     A --> C["Oral Section\n(Sprechen)\nPart 1 + 2 + 3"]
     B --> D{"Written score\n≥ 60 points?"}
     C --> E{"Speaking\nat B1 level?"}
@@ -135,7 +135,7 @@ ______________________________________________________________________
 
 ## Essential Vocabulary Themes
 
-These are the themes that appear in **every DTZ exam**:
+These are the themes that appear in **every telc Deutsch A2-B1 exam**:
 
 | Theme                | Key Words to Know                                                                   |
 | -------------------- | ----------------------------------------------------------------------------------- |
