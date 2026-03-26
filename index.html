@@ -767,8 +767,8 @@ quizData.forEach((q, qi) => {
   </div>`;
 });
 
-let quizAnswered = JSON.parse(localStorage.getItem('dtz_quiz') || '{}');
-let sectionsVisited = JSON.parse(localStorage.getItem('dtz_sections') || '{}');
+  let quizAnswered = JSON.parse(localStorage.getItem('telc_quiz') || '{}');
+  let sectionsVisited = JSON.parse(localStorage.getItem('telc_sections') || '{}');
 
 function checkAnswer(qi, oi) {
   if (quizAnswered[qi] !== undefined) return;
@@ -782,7 +782,7 @@ function checkAnswer(qi, oi) {
   });
   document.getElementById(`explain-${qi}`).classList.add('show');
   quizAnswered[qi] = (oi === correct);
-  localStorage.setItem('dtz_quiz', JSON.stringify(quizAnswered));
+  localStorage.setItem('telc_quiz', JSON.stringify(quizAnswered));
   updateQuizScore();
   updateProgress();
 }
@@ -796,7 +796,7 @@ function updateQuizScore() {
 
 function resetQuiz() {
   quizAnswered = {};
-  localStorage.removeItem('dtz_quiz');
+  localStorage.removeItem('telc_quiz');
   document.getElementById('quiz-container').innerHTML = '';
   quizData.forEach((q, qi) => {
     let optsHtml = q.opts.map((o, oi) =>
@@ -815,7 +815,7 @@ function resetQuiz() {
 function trackSection(id) {
   if (id && !sectionsVisited[id]) {
     sectionsVisited[id] = true;
-    localStorage.setItem('dtz_sections', JSON.stringify(sectionsVisited));
+    localStorage.setItem('telc_sections', JSON.stringify(sectionsVisited));
     updateProgress();
   }
 }
@@ -1030,12 +1030,12 @@ function closeMarkdown(skipHistory = false) {
 }
 
 // Theme Toggle
-let currentTheme = localStorage.getItem('dtz_theme') || 'dark';
+let currentTheme = localStorage.getItem('telc_theme') || 'dark';
 if (currentTheme === 'light') document.documentElement.setAttribute('data-theme', 'light');
 function toggleTheme() {
   currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
   document.documentElement.setAttribute('data-theme', currentTheme);
-  localStorage.setItem('dtz_theme', currentTheme);
+  localStorage.setItem('telc_theme', currentTheme);
   updateThemeIcon();
   
   // Re-render markdown to fix Mermaid diagram themes dynamically
@@ -1049,10 +1049,10 @@ function updateThemeIcon() {
 updateThemeIcon();
 
 // Day Tracker
-let startDate = localStorage.getItem('dtz_start_date');
+let startDate = localStorage.getItem('telc_start_date');
 if (!startDate) {
   startDate = new Date().toISOString();
-  localStorage.setItem('dtz_start_date', startDate);
+  localStorage.setItem('telc_start_date', startDate);
 }
 function updateDayTracker() {
   const diffTime = Math.abs(new Date() - new Date(startDate));

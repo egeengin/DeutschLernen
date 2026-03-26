@@ -8,7 +8,7 @@ ______________________________________________________________________
 
 | Source                    | Description                                                                       | Link                                                                                                                    |
 | ------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **telc gGmbH**            | Official model test (Modelltest) for telc Deutsch A2-B1 A2/B1 — includes all sections with audio | [telc.net/shop](https://www.telc.net/kandidaten/pruefungen/pruefung/detail/deutsch-test-fuer-zuwanderer-a2-b1-dtz.html) |
+| **telc gGmbH**            | Official model test (Modelltest) for telc Deutsch A2-B1 — includes all sections with audio | [telc.net/shop](https://www.telc.net/kandidaten/pruefungen/pruefung/detail/deutsch-test-fuer-zuwanderer-a2-b1-dtz.html) |
 | **Goethe-Institut**       | Official Modellsatz telc Deutsch A2-B1 — free PDF with audio files                               | [goethe.de/telc Deutsch A2-B1-Modelltest](https://www.goethe.de/de/spr/ueb/dtz.html)                                                   |
 | **G.A.S.T. Übungssatz 1** | Free full practice set: Hören + Lesen + Schreiben with answer key                 | [gast.de/telc Deutsch A2-B1-Übungssatz](https://www.gast.de/de/pruefungsvorbereitung/deutsch-test-fuer-zuwanderer-a2-b1.html)          |
 
@@ -18,7 +18,7 @@ ______________________________________________________________________
 
 | Source                 | Description                                                                         | Link                                                                          |
 | ---------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| **Ausbildungspark**    | Interactive online telc Deutsch A2-B1 A2/B1 test with practice mode, test mode, and score analysis | [ausbildungspark.com/telc Deutsch A2-B1](https://www.ausbildungspark.com/sprachtest/dtz/)    |
+| **Ausbildungspark**    | Interactive online telc Deutsch A2-B1 test with practice mode, test mode, and score analysis | [ausbildungspark.com](https://www.ausbildungspark.com/sprachtest/dtz/)    |
 | **Telc Official Shop** | Free downloadable teaching materials A1–C1                                          | [telc.net/materialien](https://www.telc.net/lehrende/unterrichtsmaterialien/) |
 
 ______________________________________________________________________
