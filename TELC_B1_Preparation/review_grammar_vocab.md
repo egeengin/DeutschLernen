@@ -20,6 +20,15 @@ The conjugated verb goes to the **END** of the subordinate clause.
 
 > **Weil** ich krank **bin**, **bleibe** ich zu Hause. *(Verb-Verb at the comma!)*
 
+**Word Order Visualized:**
+
+```mermaid
+flowchart LR
+    A["Main clause\n(Hauptsatz)\n Subj → Verb → ..."] -->|comma| B["Conjunction\n(weil/dass/wenn/ob...)"] --> C["Subordinate clause\n(Nebensatz)\n Subj → ... → VERB"]
+    style B fill:#f5a623,color:#000
+    style C fill:#4a90d9,color:#fff
+```
+
 ______________________________________________________________________
 
 ## 2. Konnektoren (Connectors) — Position in Sentence
@@ -45,6 +54,22 @@ ______________________________________________________________________
 
 **Key irregular Partizip II to memorize:**
 gehen→gegangen, fahren→gefahren, kommen→gekommen, schreiben→geschrieben, sprechen→gesprochen, essen→gegessen, trinken→getrunken, nehmen→genommen, geben→gegeben, lesen→gelesen, sehen→gesehen, finden→gefunden, helfen→geholfen, beginnen→begonnen
+
+**Decision Tree: haben or sein?**
+
+```mermaid
+flowchart TD
+    A["Choose Partizip II verb"] --> B{"Is it a movement verb\nor change-of-state?\n(gehen, fahren, kommen,\naufstehen, einschlafen...)"}
+    B -- Yes --> C{"Does it have\na direct object?"}
+    C -- No --> D["Use SEIN\n\nSie IST nach Berlin gefahren."]
+    C -- Yes --> E["Use HABEN\n\nEr HAT das Auto gefahren."]
+    B -- No --> F{"Is it sein, bleiben,\nor werden?"}
+    F -- Yes --> D
+    F -- No --> G["Use HABEN\n\nIch HABE gegessen.\\ Er HAT geschlafen."]
+    style D fill:#27ae60,color:#fff
+    style E fill:#e67e22,color:#fff
+    style G fill:#27ae60,color:#fff
+```
 
 ______________________________________________________________________
 

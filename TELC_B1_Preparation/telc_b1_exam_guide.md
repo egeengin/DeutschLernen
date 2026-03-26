@@ -21,6 +21,24 @@ ______________________________________________________________________
 
 **Critical:** You must achieve B1-level performance in **both** the written and oral sections. Getting 90% on writing but A2 on speaking still results in A2 overall. Train all four skills!
 
+**How your result is determined:**
+
+```mermaid
+flowchart TD
+    A["Take DTZ Exam"] --> B["Written Section\n(Hören + Lesen + Sprachbausteine + Schreiben)\nMax: 100 points"]
+    A --> C["Oral Section\n(Sprechen)\nPart 1 + 2 + 3"]
+    B --> D{"Written score\n≥ 60 points?"}
+    C --> E{"Speaking\nat B1 level?"}
+    D -- No --> F["❌ A2 Certificate"]
+    E -- No --> F
+    D -- Yes --> G{"BOTH conditions\nmet?"}
+    E -- Yes --> G
+    G -- Yes --> H["✅ B1 Certificate"]
+    G -- No --> F
+    style H fill:#27ae60,color:#fff
+    style F fill:#e74c3c,color:#fff
+```
+
 ______________________________________________________________________
 
 ## Exam Structure (Detailed)

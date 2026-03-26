@@ -20,6 +20,15 @@ ______________________________________________________________________
 
 > **Weil** ich krank **bin**, **bleibe** ich zu Hause. *(Virgülde Fiil-Fiil yan yana!)*
 
+**Cümle Sıralaması Diagramı:**
+
+```mermaid
+flowchart LR
+    A["Ana cümle\n(Hauptsatz)\nÖzne → Fiil → ..."] -->|virgül| B["Bağlaç\n(weil/dass/wenn/ob...)"] --> C["Yan cümle\n(Nebensatz)\nÖzne → ... → FİİL"]
+    style B fill:#f5a623,color:#000
+    style C fill:#4a90d9,color:#fff
+```
+
 ______________________________________________________________________
 
 ## 2. Konnektoren (Bağlaçlar) — Cümledeki Konumları
@@ -45,6 +54,22 @@ ______________________________________________________________________
 
 **Ezberlenmesi gereken önemli düzensiz Partizip II fiilleri:**
 gehen→gegangen, fahren→gefahren, kommen→gekommen, schreiben→geschrieben, sprechen→gesprochen, essen→gegessen, trinken→getrunken, nehmen→genommen, geben→gegeben, lesen→gelesen, sehen→gesehen, finden→gefunden, helfen→geholfen, beginnen→begonnen
+
+**Karar Ağacı: haben mı sein mi?**
+
+```mermaid
+flowchart TD
+    A["Partizip II fiiline bak"] --> B{"Hareket veya\ndurum değişimi fiili mi?\n(gehen, fahren, kommen,\naufstehen, einschlafen...)"}
+    B -- Evet --> C{"Doğrudan nesne\nvar mı?"}
+    C -- Hayır --> D["SEIN kullan\n\nSie IST nach Berlin gefahren."]
+    C -- Evet --> E["HABEN kullan\n\nEr HAT das Auto gefahren."]
+    B -- Hayır --> F{"sein, bleiben\nveya werden mi?"}
+    F -- Evet --> D
+    F -- Hayır --> G["HABEN kullan\n\nIch HABE gegessen. Er HAT geschlafen."]
+    style D fill:#27ae60,color:#fff
+    style E fill:#e67e22,color:#fff
+    style G fill:#27ae60,color:#fff
+```
 
 ______________________________________________________________________
 
