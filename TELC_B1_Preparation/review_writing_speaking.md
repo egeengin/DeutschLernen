@@ -2,214 +2,128 @@
 
 ______________________________________________________________________
 
-## 1. Schreiben (Letter / Email) — 20 min, ~100-120 words
+## 1. Schreiben (Letter / Email) — 30 min, ~100-120 words
 
 ### The 4 Rules for Full Points
 
-1. ✅ Address **ALL 4 bullet points** from the prompt
-1. ✅ Use correct **greeting** and **closing**
-1. ✅ Use at least 2-3 **connectors** (deshalb, außerdem, weil, dass)
-1. ✅ Write 100-120 words (under 80 = point deduction)
-
-______________________________________________________________________
+1. ✅ Address **ALL 4 bullet points** from the prompt. If you miss one, you lose severe points.
+2. ✅ Use correct **greeting** and **closing** based on the relationship.
+3. ✅ Use at least 2-3 **connectors** (deshalb, außerdem, weil, dass).
+4. ✅ Write 100-120 words. Writing under 80 words guarantees a penalty.
 
 ### Letter Templates
 
-#### Formal (unknown person or company)
+You must memorize these skeletons. In the exam, you just slot your 4 points into the middle.
 
+#### 1. Formal Complaint / Unknown Person (Die Beschwerde)
+Use this if you ordered something broken, or you are angry at a company.
 ```text
 Sehr geehrte Damen und Herren,
 
-ich schreibe Ihnen, weil...
-[Point 1]
-Außerdem möchte ich Sie fragen, ob... [Point 2]
-[Point 3]
-Deshalb bitte ich Sie, ... [Point 4]
+ich schreibe Ihnen, weil ich am [Date] [Item] bei Ihnen gekauft habe und es leider ein großes Problem gibt.
+... [Point 1 & 2]
+Außerdem möchte ich Sie darauf hinweisen, dass... [Point 3]
+Deshalb erwarte ich, dass Sie mir mein Geld zurückgeben oder mir einen Ersatz schicken. [Point 4]
 
-Ich freue mich auf Ihre Antwort.
+Ich hoffe auf eine schnelle und positive Antwort.
 Vielen Dank im Voraus.
 
 Mit freundlichen Grüßen
-[Name]
+[Your First Last Name]
 ```
 
-#### Semi-Formal (known contact name)
-
+#### 2. Semi-Formal Apology (Entschuldigung)
+Use this if you can't attend an appointment, a course, or work.
 ```text
-Sehr geehrte Frau [Müller], / Sehr geehrter Herr [Schmidt],
+Sehr geehrte(r) Frau/Herr [Name],
 
-vielen Dank für Ihre E-Mail / Ihren Brief.
-Ich schreibe Ihnen, weil...
-...
+ich hoffe, es geht Ihnen gut.
+Ich schreibe Ihnen diese E-Mail, um mich zu entschuldigen.
+Leider kann ich am [Date] nicht zu unserem Termin kommen, weil ich plötzlich krank geworden bin.
+... [Details for Point 1 & 2]
+Könnten wir den Termin vielleicht auf nächste Woche verschieben? [Point 3]
+Es wäre toll, wenn Sie mir kurz Bescheid geben könnten. [Point 4]
+
+Vielen Dank für Ihr Verständnis.
 
 Mit freundlichen Grüßen
-[Name]
+[Your First Last Name]
 ```
 
-#### Informal (friend / family)
-
+#### 3. Informal Invitation (Einladung)
+Use this when writing to a friend to organize a party or trip.
 ```text
-Liebe [Maria], / Lieber [Tom],
+Liebe(r) [Name],
 
-wie geht es dir? Mir geht es gut.
-Ich schreibe dir, weil...
-...
+wie geht es dir? Mir geht es super!
+Ich schreibe dir heute, weil ich am Wochenende eine große Party feiere und dich herzlich einladen möchte!
+... [Point 1 & 2]
+Wir könnten auch zusammen etwas kochen, wenn du Lust hast. [Point 3]
+Bitte gib mir bis Freitag Bescheid, ob du kommen kannst. [Point 4]
 
-Liebe Grüße / Viele Grüße
-[Name]
+Ich freue mich sehr auf dich!
+Liebe Grüße
+[Your First Name]
 ```
 
 ______________________________________________________________________
 
-### Useful Connector Phrases for B1 Letters
+## 2. Interactive Letter Practice
 
-| Purpose            | Phrase                                                                 |
-| ------------------ | ---------------------------------------------------------------------- |
-| Reason for writing | Ich schreibe Ihnen, weil... / Hiermit möchte ich...                    |
-| Adding a point     | Außerdem möchte ich fragen, ob... / Darüber hinaus...                  |
-| Giving a reason    | Der Grund dafür ist, dass... / Deshalb...                              |
-| Making a request   | Ich bitte Sie, ... / Könnten Sie bitte...? / Wäre es möglich, dass...? |
-| Apologizing        | Ich möchte mich entschuldigen, dass... / Es tut mir leid, dass...      |
-| Expressing hope    | Ich hoffe, dass... / Ich würde mich freuen, wenn...                    |
-| Asking for reply   | Ich freue mich auf Ihre Antwort. / Bitte geben Sie mir Bescheid.       |
-| Thanking           | Vielen Dank im Voraus. / Herzlichen Dank für Ihre Hilfe.               |
+Let's test if you can choose the correct formal/informal phrases.
 
-______________________________________________________________________
+<div class="md-quiz" 
+  data-question="You are writing an email to 'Herr Müller', your child's teacher. Which greeting is correct?" 
+  data-options="Lieber Herr Müller,|Sehr geehrter Herr Müller,|Hallo Müller," 
+  data-answer="1" 
+  data-explain="Teachers require semi-formal respect. 'Sehr geehrter Herr Müller,' is the perfect opening. 'Lieber' is too informal, and 'Hallo Müller' is outright offensive in German business culture!"></div>
 
-### MODEL ANSWER (Study This!)
+<div class="md-quiz" 
+  data-question="You want to end a formal letter to a company. Which closing is correct?" 
+  data-options="Liebe Grüße,|Mit freundlichen Grüßen|Dein Tom" 
+  data-answer="1" 
+  data-explain="Formal letters always end with 'Mit freundlichen Grüßen'. Note that there is historically NO COMMA after 'Grüßen'."></div>
 
-**Prompt:** Sie haben vor zwei Wochen eine Kaffeemaschine im Internet bestellt. Das Paket ist angekommen, aber die Kaffeemaschine ist kaputt. Schreiben Sie eine E-Mail an den Kundenservice.
-
-1. Grund für Ihr Schreiben
-1. Was ist kaputt?
-1. Was möchten Sie? (Geld zurück oder neue Maschine)
-1. Bitten Sie um eine schnelle Antwort.
-
-**Model Answer (112 words):**
-
-> Sehr geehrte Damen und Herren,
->
-> ich schreibe Ihnen, **weil** ich vor zwei Wochen eine Kaffeemaschine in Ihrem Online-Shop bestellt habe und es ein Problem gibt. *(Point 1)*
->
-> Die Kaffeemaschine ist leider kaputt angekommen. Der Wassertank hat einen Riss und **außerdem** funktioniert der Ein-/Aus-Schalter nicht. *(Point 2)*
->
-> **Deshalb** möchte ich Sie bitten, mir eine neue Kaffeemaschine zu schicken. Ich **würde** die kaputte Maschine natürlich zurücksenden. *(Point 3)*
->
-> **Könnten** Sie mir bitte so schnell wie möglich antworten? Ich **hoffe**, **dass** wir eine Lösung finden. *(Point 4)*
->
-> Vielen Dank im Voraus.
->
-> Mit freundlichen Grüßen
-> Ege Engin
-
-**Why this scores B1:** Uses *weil*, *außerdem*, *deshalb*, *Konjunktiv II* (würde, könnten), *Nebensatz* (dass), addresses all 4 points, correct format.
+<div class="md-quiz" 
+  data-question="You are asking a company for a refund. What is the best B1 phrasing?" 
+  data-options="Ich will mein Geld.|Könnten Sie mir bitte mein Geld zurückerstatten?|Geben Sie mir Geld sofort." 
+  data-answer="1" 
+  data-explain="'Könnten Sie' uses the polite Konjunktiv II. The other two sound exceptionally aggressive and uneducated, which loses you points."></div>
 
 ______________________________________________________________________
 
-### Writing Practice Prompts
+## 3. Sprechen (Speaking) — 15 min, Partners
 
-**Prompt 1 — Inquiry:**
-Sie möchten einen Deutschkurs bei der VHS machen. Schreiben Sie eine E-Mail.
+The speaking exam is done with a partner and has 3 parts:
+1. **Part 1:** Introduce yourself (Name, Age, Country, Job, Hobbies, Languages). 
+2. **Part 2:** Talk about a picture (Describe it, then relate it to your life).
+3. **Part 3:** Plan something together with your partner (A party, a gift, a trip).
 
-1. Welchen Kurs suchen Sie? (Niveau, Uhrzeit)
-1. Wie viel kostet der Kurs?
-1. Wann beginnt der nächste Kurs?
-1. Kann man sich online anmelden?
+### Part 2: Picture Description Phrases
+Always go from the **general** to the **specific**.
+* **General:** *Auf dem Bild sehe ich [Akk]... / Das Bild zeigt [Akk]...*
+* **Location:** *Im Vordergrund / Im Hintergrund / In der Mitte gibt es...*
+* **Action:** *Die Leute scheinen glücklich zu sein. / Ich glaube, sie feiern einen Geburtstag, weil...*
+* **Personal Experience:** *In meinem Heimatland machen wir das genauso. / Bei uns ist das anders, wir...*
 
-**Prompt 2 — Complaint:**
-Sie wohnen seit einem Monat in einer neuen Wohnung. Die Heizung funktioniert nicht. Schreiben Sie an den Vermieter (Herr Klein).
+### Part 3: Planning Together (The Most Important Part!)
+The examiners want to see you **react** to your partner. Do not just read a monolog!
 
-1. Beschreiben Sie das Problem.
-1. Seit wann gibt es das Problem?
-1. Was haben Sie schon versucht?
-1. Bitten Sie um eine schnelle Reparatur.
+| Function | Phrases (Redemittel) |
+| --- | --- |
+| **Making a suggestion** | *Ich schlage vor, dass... / Wie wäre es, wenn wir...? / Wollen wir vielleicht...?* |
+| **Agreeing** | *Das ist eine tolle Idee! / Ja, damit bin ich einverstanden. / Genau!* |
+| **Disagreeing politely** | *Das finde ich nicht so gut, weil... / Vielleicht wäre es besser, wenn...* |
+| **Asking for opinion** | *Was denkst du darüber? / Bist du damit einverstanden?* |
 
-**Prompt 3 — Apology:**
-Ihr Kind (Sophie) war letzte Woche krank und konnte nicht zur Schule gehen. Schreiben Sie an die Klassenlehrerin (Frau Berg).
+<div class="md-quiz" 
+  data-question="Your partner suggests buying flowers for the teacher, but you think a book is better. How do you respond?" 
+  data-options="Nein, Blumen sind dumm.|Blumen sind schön, aber ein Buch wäre vielleicht noch besser, weil...|Ich will ein Buch kaufen." 
+  data-answer="1" 
+  data-explain="Option B uses polite disagreement and the Konjunktiv II ('wäre'). Giving a reason ('weil') is also required for high B1 marks."></div>
 
-1. Entschuldigen Sie Ihre Tochter.
-1. Was hatte sie? (Erkältung / Fieber)
-1. Fragen Sie nach den Hausaufgaben.
-1. Ab wann kommt Sophie wieder?
-
-**Prompt 4 — Declining an Invitation:**
-Ihr Freund Thomas hat Sie zu seinem Geburtstag am Samstag eingeladen. Leider können Sie nicht kommen. Schreiben Sie ihm.
-
-1. Bedanken Sie sich für die Einladung.
-1. Warum können Sie nicht kommen?
-1. Schlagen Sie ein anderes Treffen vor.
-1. Wünschen Sie ihm alles Gute.
-
-______________________________________________________________________
-
-## 2. Sprechen (Oral Exam) — 15 min, 3 Parts
-
-### Part 1: Self-Introduction (~2 min)
-
-**Memorize this template and personalize it:**
-
-> "Guten Tag, mein Name ist \_\_\_\_\_. Ich komme aus \_\_\_\_\_ und ich lebe seit \_\_\_\_\_ in \_\_\_\_\_. Von Beruf bin ich \_\_\_\_\_ / Ich arbeite als \_\_\_\_\_. Ich bin verheiratet/ledig und habe \_\_\_\_\_ Kinder. In meiner Freizeit \_\_\_\_\_ ich gerne. Ich lerne Deutsch, weil \_\_\_\_\_. Ich spreche auch \_\_\_\_\_."
-
-**Sample personalized introduction (study and adapt!):**
-
-> "Guten Tag, mein Name ist Ege. Ich komme aus der Türkei und ich lebe seit zwei Jahren in Deutschland. Ich arbeite als Techniker. Ich bin verheiratet und habe ein Kind. In meiner Freizeit lese ich gerne und mache Sport. Ich lerne Deutsch, weil ich hier arbeite und mich besser verständigen möchte. Ich spreche auch Türkisch und etwas Englisch. Ich freue mich auf die Prüfung heute."
-
-**Tips:** Speak slowly and clearly. Smile. This is the easiest part — free points!
-
-______________________________________________________________________
-
-### Part 2: Discuss a Topic/Picture (~4 min)
-
-**Template Structure:**
-
-1. Describe what you see / what the topic is
-1. Give your opinion with a reason
-1. Connect to your personal experience
-1. Compare with your home country
-
-**Useful Phrases:**
-
-| Function     | Phrase                                                                     |
-| ------------ | -------------------------------------------------------------------------- |
-| Describe     | Auf dem Bild sehe ich... / Das Thema ist...                                |
-| Opinion      | Meiner Meinung nach... / Ich finde, dass... / Ich bin der Meinung, dass... |
-| Reason       | ...weil... / Der Grund dafür ist...                                        |
-| Experience   | In meiner Erfahrung... / Ich habe die Erfahrung gemacht, dass...           |
-| Home country | In meiner Heimat ist das ähnlich/anders. Bei uns...                        |
-| Conclusion   | Zusammenfassend denke ich, dass...                                         |
-
-**Practice Topics (commonly tested):**
-
-1. Kinder und Medien / Handynutzung bei Kindern
-1. Online-Shopping vs. im Geschäft einkaufen
-1. Gesunde Ernährung und Kochen
-1. Sport und Fitness
-1. Umweltschutz und Recycling
-1. Haustiere: ja oder nein?
-1. Stadt vs. Land: Wo lebt man besser?
-1. Soziale Medien: Vorteile und Nachteile
-
-______________________________________________________________________
-
-### Part 3: Plan Something Together (~5 min)
-
-**The key:** This is a DIALOGUE, not a monologue! Always react to your partner.
-
-**Phrase Bank:**
-
-| Function          | Phrases                                                                                                            |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Start             | Wir müssen also... planen. Hast du schon eine Idee?                                                                |
-| Suggest           | Was hältst du davon, wenn wir...? / Wie wäre es mit...? / Sollen wir vielleicht...?                                |
-| Agree             | Das finde ich eine gute Idee! / Ja, das klingt gut! / Einverstanden!                                               |
-| Disagree politely | Das ist eine Idee, aber ich finde es besser, wenn... / Ich bin nicht sicher. Vielleicht könnten wir stattdessen... |
-| Ask back          | Was denkst du? / Und du? Was meinst du? / Hast du einen Vorschlag?                                                 |
-| Clarify details   | Wann genau? / Wo treffen wir uns? / Wer bringt was mit? / Wie viel kostet das?                                     |
-| Conclude          | Dann machen wir das so! / Gut, dann ist alles klar!                                                                |
-
-**Practice Scenarios:**
-
-1. Colleague is leaving → plan a farewell party (gift, food, time, location)
-1. Friend's birthday → plan a surprise (gift, where to celebrate, who to invite)
-1. Weekend trip → plan a day trip (where, transportation, food, weather plan B)
-1. Neighborhood festival → plan your contribution (what to bring, when to come, who helps)
+<div class="md-quiz" 
+  data-question="You need to suggest a meeting time. Which is the best B1 formulation?" 
+  data-options="Wir treffen uns um 8.|Wann treffen wir uns?|Wie wäre es, wenn wir uns am Samstag um 14 Uhr treffen?" 
+  data-answer="2" 
+  data-explain="'Wie wäre es, wenn...' is a classic B1 suggestion construct. It shows high grammatical competence."></div>

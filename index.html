@@ -705,7 +705,7 @@ td strong, td b { color: var(--text-primary); }
 <!-- Full Screen Markdown Reader Pane -->
 <div class="markdown-view" id="md-view">
   <div class="md-header">
-    <button class="back-btn" onclick="closeMarkdown()">
+    <button class="back-btn" onclick="goBackOrClose()">
       <span style="font-size:18px">&larr;</span> <span data-en="Back to Dashboard" data-tr="Panoya Dön">Back to Dashboard</span>
     </button>
   </div>
@@ -893,7 +893,31 @@ let currentLang = 'en';
 // Markdown Reader Logic
 let currentMdUrl = null;
 let currentActiveMaterial = null;
-function openMarkdown(url) {
+
+// History API for Android/Browser Back Button
+window.addEventListener('popstate', (e) => {
+  if (e.state && e.state.mdOpen) {
+    // If state says md is open, attempt to open it without pushing state again
+    openMarkdown(e.state.url, true);
+  } else {
+    // Otherwise close the md reader
+    closeMarkdown(true);
+  }
+});
+
+function goBackOrClose() {
+  if (history.state && history.state.mdOpen) {
+    history.back(); // Triggers popstate to close properly
+  } else {
+    closeMarkdown();
+  }
+}
+
+function openMarkdown(url, skipHistory = false) {
+  if (!skipHistory) {
+    history.pushState({ mdOpen: true, url: url }, '', '#study-module');
+  }
+
   currentMdUrl = url;
   currentActiveMaterial = materials.find(m => m.en === url || m.tr === url);
   
@@ -918,31 +942,91 @@ function openMarkdown(url) {
       // Handle Mermaid charts explicitly
       const mermaidElements = mdContent.querySelectorAll('code.language-mermaid');
       if (mermaidElements.length > 0) {
-        // Switch mermaid theme based on current mode
         mermaid.initialize({ startOnLoad: false, theme: currentTheme === 'dark' ? 'dark' : 'default' });
-        
         mermaidElements.forEach((el, index) => {
           const pre = el.parentElement;
           const mermaidDiv = document.createElement('div');
           mermaidDiv.className = 'mermaid';
           mermaidDiv.textContent = el.textContent;
-          // Replace <pre> with new mermaid div
           pre.replaceWith(mermaidDiv);
         });
-        
-        mermaid.run({
-          nodes: document.querySelectorAll('.mermaid')
-        });
+        mermaid.run({ nodes: document.querySelectorAll('.mermaid') });
       }
+
+      // Intercept internal MD links to prevent leaving the SPA
+      mdContent.querySelectorAll('a').forEach(a => {
+        const href = a.getAttribute('href');
+        if (href && href.endsWith('.md')) {
+          a.onclick = (e) => {
+            e.preventDefault();
+            let newTarget = href;
+            // Route seamlessly to correct language file
+            if (currentLang === 'tr') {
+              newTarget = href.replace('TELC_B1_Preparation', 'TELC_B1_Haz%C4%B1rl%C4%B1k').replace('TELC_B1_Hazırlık', 'TELC_B1_Haz%C4%B1rl%C4%B1k');
+            } else {
+              newTarget = href.replace('TELC_B1_Haz%C4%B1rl%C4%B1k', 'TELC_B1_Preparation').replace('TELC_B1_Hazırlık', 'TELC_B1_Preparation');
+            }
+            openMarkdown(newTarget);
+          };
+        }
+      });
+
+      // Inject Interactive Markdown Quizzes
+      mdContent.querySelectorAll('.md-quiz').forEach((el, index) => {
+        const qId = `mdq-${index}`;
+        const question = el.getAttribute('data-question');
+        const options = el.getAttribute('data-options').split('|');
+        const answer = parseInt(el.getAttribute('data-answer'));
+        const explain = el.getAttribute('data-explain');
+        
+        let optsHtml = options.map((opt, i) => 
+          `<button class="quiz-opt" onclick="checkMdQuiz('${qId}', ${i}, ${answer})">${String.fromCharCode(97+i)}) ${opt}</button>`
+        ).join('');
+
+        el.innerHTML = `
+          <div class="interactive-quiz-box" style="margin: 24px 0; padding: 20px; background: rgba(0,0,0,0.2); border-radius: 12px; border: 1px solid var(--border);">
+            <div style="font-weight:600; font-size:16px; margin-bottom:16px; color:var(--text-primary);">${question}</div>
+            <div class="quiz-options" style="display:flex; flex-direction:column; gap:8px;">${optsHtml}</div>
+            <div class="quiz-explain" id="exp-${qId}" style="display:none; margin-top:16px; padding:12px; border-radius:8px; background:rgba(245,158,11,0.05); border-left:4px solid var(--accent-gold); font-size:14px; color:var(--text-secondary);">
+              <b>Explanation:</b> ${explain}
+            </div>
+          </div>
+        `;
+      });
     })
     .catch(err => {
       mdContent.innerHTML = `<div class="md-loader" style="color:var(--accent-red)">Error loading study material.<br>Make sure you are viewing this via the live GitHub Pages link and not locally.</div>`;
     });
 }
 
-function closeMarkdown() {
+window.checkMdQuiz = function(qId, selectedIdx, correctIdx) {
+  const box = document.getElementById(qId);
+  if (!box) return;
+  const btns = box.querySelectorAll('.quiz-opt');
+  btns.forEach((b, i) => {
+    b.classList.add('disabled');
+    b.onclick = null;
+    if (i === correctIdx) b.classList.add('correct');
+    if (i === selectedIdx && i !== correctIdx) b.classList.add('wrong');
+  });
+  const exp = document.getElementById(`exp-${qId}`);
+  if (exp) {
+    exp.style.display = 'block';
+    exp.classList.add('animate');
+    
+    // Fix any potential data-tr elements inside explanation that need quick translation update
+    exp.querySelectorAll('[data-en]').forEach(el => {
+      el.innerHTML = el.getAttribute(`data-${currentLang}`);
+    });
+  }
+};
+
+function closeMarkdown(skipHistory = false) {
   document.getElementById('md-view').classList.remove('open');
   document.body.style.overflow = '';
+  if (!skipHistory && history.state && history.state.mdOpen) {
+    history.pushState({ mdOpen: false }, '', window.location.pathname);
+  }
 }
 
 // Theme Toggle

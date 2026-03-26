@@ -1,152 +1,117 @@
-# Tekrar: Okuma ve Dinleme (Lesen & Hören)
+# İnceleme: Okuma ve Dinleme (Lesen & Hören)
 
 ______________________________________________________________________
 
-## 1. Lesen (Okuma) — 45 Dk, 3 Bölüm
+## 1. Okuma (Lesen) — 45 Dk, 3 Bölüm
 
-### Stratejiler
+### Temel Stratejiler
 
-1. **ÖNCE soruyu okuyun**, ardından kilit kelimeler için metni tarayın.
-1. Eşleştirmelerde: kullanılmış cevapların üzerini hemen çizin.
-1. Kelimesi kelimesine çeviri yapmaya çalışmayın — metnin **genel anlamını** kavramaya çalışın.
-1. Bilinmeyen kelimeler mi var? Ön eklere/son eklere ve cümlenin genel bağlamına odaklanın.
+1. **Önce SORUYU okuyun**, sonra anahtar kelimeler için metne göz atın. Uzun metinleri asla en baştan okumaya başlamayın.
+2. Eşleştirme bölümünde (Teil 1): Bulduğunuz cevapların üstünü hemen çizin ki aklınız karışmasın.
+3. Bilmediğiniz kelimeler için paniğe kapılmayın. Bağlama odaklanın ve **genel anlamı** çıkarmaya çalışın. Kelimesi kelimesine çeviri yapmak vakit kaybıdır.
+4. Zaman Yönetimi: Doğru/Yanlış soruları için **en fazla 90 saniye**, çoktan seçmeli sorular için **en fazla 2 dakika** harcayın.
 
-### Anahtar Beceri: Eş Anlamlı Kelimeleri Tanıma
+### Kritik Yetenek: Eş Anlamlıları Tanıma
 
-Metin ve soru/cevap genellikle aynı şeyi ifade etmek için FARKLI kelimeler kullanır:
+Sınavı hazırlayanlar kelime dağarcığınızı ölçmek için metinde ve soruda/cevaplarda NEREDEYSE HER ZAMAN aynı şey için FARKLI kelimeler kullanır:
 
-| Metinde geçen...     | Soru/cevapta geçen...      |
-| -------------------- | -------------------------- |
-| kostenlos (ücretsiz) | gratis / umsonst           |
-| Kinder (çocuklar)    | Nachwuchs / die Kleinen    |
-| Arzt (doktor)        | Doktor / Mediziner         |
-| kaufen (satın almak) | erwerben / besorgen        |
-| Rabatt (indirim)     | Ermäßigung / Nachlass      |
-| Wohnung (daire)      | Unterkunft (konaklama)     |
-| anrufen (aramak)     | telefonieren / sich melden |
+| Metinde geçen... | Soruda/Cevapta geçen... |
+| --- | --- |
+| kostenlos / gratis (ücretsiz) | ohne Bezahlung / kostet nichts |
+| Kinder (çocuklar) | Nachwuchs / die Kleinen |
+| Arzt / Krankenhaus (doktor/hastane)| medizinische Hilfe (tıbbi yardım)|
+| kaufen / einkaufen (satın almak)| erwerben / besorgen |
+| Rabatt / billiger (indirim/daha ucuz)| Ermäßigung / Reduzierung |
+| Wohnung (daire) | Unterkunft (konaklama) |
+| anrufen (aramak) | telefonieren / sich melden |
+| Arbeit (iş) | Beruf / Stelle / Job |
+| Wochenende (hafta sonu) | Samstag und Sonntag |
+| täglich (günlük) | jeden Tag / von Mo bis So |
 
-______________________________________________________________________
+### Sınav Tuzak İfadeleri
+Sınav, sizi yanıltmak için olumsuzlukları ve miktar bildiren zarfları kullanmayı sever:
 
-### Alıştırma 1: İlan Eşleştirme
-
-**Her bir kişiyi (A-D) doğru ilanla (1-5) eşleştirin. Bir ilan boşta kalacaktır.**
-
-**Arayışta olan kişiler:**
-
-- **A.** Frau Yilmaz merkezde uygun fiyatlı 2 odalı bir daire arıyor.
-- **B.** Herr Schmidt cumartesi günü çocuklarıyla bir şeyler yapmak istiyor.
-- **C.** Maria gündüz çalıştığı için akşamları bir Almanca kursuna ihtiyaç duyuyor.
-- **D.** Tom hafta sonu için ek iş arıyor.
-
-**İlanlar:**
-**1.** "VHS'de Almanca öğrenin! Akşam kursları Pzt-Çar, 18:30-20:00. A2-B1 seviyesi. Kayıtlar hemen online olarak yapılabilir."
-**2.** "2 odalı daire, şehir merkezi, 55 m², kira 480 €, 1 Nisan'dan itibaren boş. İletişim: wohnung@gmx.de"
-**3.** "Şehir parkında aile festivali! Cumartesi, 14:00-18:00. Büyükler ve küçükler için oyunlar, müzik ve yemek. Giriş ücretsiz!"
-**4.** "Pizzeria Roma, Cuma + Cmt saat 17:00-23:00 arası garson arıyor. Deneyim şart değil. info@roma.de adresine başvurun."
-**5.** "Yeni başlayanlar için yoga. Her Çarşamba 10:00-11:00. Kültür merkezinde. Saati 8 €."
+| Tuzak İfade | Gerçek Anlamı |
+| --- | --- |
+| nicht alle (hepsi değil) | bazısı (HİÇBİRİ anlamı taşımaz!) |
+| kaum / fast nie (neredeyse hiç) | çok az (ASLA anlamı taşımaz!) |
+| nur manchmal (sadece bazen) | sık sık DEĞİL |
+| immer noch nicht (hala ... değil)| hala yokluğu/eksikliği vurgular |
+| erst (henüz / sadece) | erst morgen (ancak yarın) |
+| außerdem (ayrıca) | ekleme yapar, zıtlık (ama) bildirmez! |
 
 ______________________________________________________________________
 
-### Alıştırma 2: Makale — Doğru/Yanlış
+## 2. İnteraktif Okuma Pratiği
 
-**Makaleyi okuyun:**
+Aşağıdaki DTZ tarzı sorularla eş anlamlı ve mantık okuma becerinizi test edin.
 
-"Immer mehr Deutsche arbeiten im Homeoffice. Seit der Pandemie hat sich die Zahl der Heimarbeiter verdoppelt. Viele Unternehmen bieten ihren Mitarbeitern jetzt flexible Arbeitsmodelle an: Manche arbeiten drei Tage im Büro und zwei Tage zu Hause. Eine aktuelle Studie zeigt, dass 65% der Arbeitnehmer im Homeoffice produktiver sind. Allerdings klagen einige über Einsamkeit und berichten, dass ihnen der Kontakt zu Kollegen fehlt. Experten empfehlen deshalb eine Mischung aus Büro- und Heimarbeit."
+### Okuma 1: Doğru / Yanlış (Richtig/Falsch)
 
-**Doğru (True) mu Yanlış (False) mı?**
+**Metin:** "Immer mehr Erwachsene in Deutschland arbeiten im Homeoffice. Seit 2020 hat sich die Zahl der Heimarbeiter fast verdoppelt. Eine aktuelle Studie der Universität Köln zeigt, dass 65% der Arbeitnehmer im Homeoffice produktiver sind. Allerdings klagen einige über Einsamkeit und berichten, dass ihnen der direkte Kontakt zu Kollegen im Alltag fehlt."
 
-1. Pandemiden önce daha az insan evden çalışıyordu.
-1. Almanya'daki tüm şirketler evden çalışma imkanı sunuyor.
-1. Evden çalışanların çoğu ofise kıyasla kendilerini daha az üretken hissediyor.
-1. Bazı evden çalışanlar iş arkadaşlarını özlüyor.
-1. Uzmanlar sadece evden çalışılması gerektiğini söylüyor.
+<div class="md-quiz" 
+  data-question="Vor 2020 haben weniger Menschen von zu Hause gearbeitet. (2020'den önce evden çalışan insan sayısı daha azdı.)" 
+  data-options="Richtig (Doğru)|Falsch (Yanlış)" 
+  data-answer="0" 
+  data-explain="Doğru! Metin 'Seit 2020 hat sich die Zahl fast verdoppelt' (2020'den beri sayı neredeyse iki katına çıktı) diyor. Bu, mantıken 2020'den önce sayının daha az olduğu anlamına gelir."></div>
 
-______________________________________________________________________
+<div class="md-quiz" 
+  data-question="Die meisten Heimarbeiter fühlen sich zu Hause weniger produktiv. (Çoğu ev çalışanı evde daha az üretken hissediyor.)" 
+  data-options="Richtig (Doğru)|Falsch (Yanlış)" 
+  data-answer="1" 
+  data-explain="Yanlış! Metinde '%65'i ... daha üretkendir (produktiver)' deniyor. %65 bir çoğunluktur (die meisten - çoğu), ancak DAHA üretkendirler, DAHA AZ (weniger) değil. 'weniger' kelimesi metni tamamen zıttı yapıyor."></div>
 
-### Alıştırma 3: Duyuru — Çoktan Seçmeli
+<div class="md-quiz" 
+  data-question="Niemand vermisst die Arbeit im Büro. (Hiç kimse ofisteki çalışmayı özlemiyor.)" 
+  data-options="Richtig (Doğru)|Falsch (Yanlış)" 
+  data-answer="1" 
+  data-explain="Yanlış! Metinde 'einige klagen über Einsamkeit' (bazıları yalnızlıktan şikayet ediyor) ve iş arkadaşlarıyla iletişimi özlüyor deniyor. Sorudaki 'Niemand' (hiç kimse) kesin bir tuzak kelimedir!"></div>
 
-**Bürgeramt'teki (Nüfus Müdürlüğü) duyuruyu okuyun:**
+### Okuma 2: İlan Eşleştirme (Teil 1)
 
-"Sehr geehrte Bürgerinnen und Bürger, bitte beachten Sie, dass Sie für die Beantragung eines neuen Personalausweises folgende Unterlagen mitbringen müssen: ein aktuelles biometrisches Passfoto, Ihre Meldebescheinigung und den alten Personalausweis. Die Bearbeitungsgebühr beträgt 37 €. Termine können Sie telefonisch oder online vereinbaren. Ohne Termin müssen Sie mit Wartezeiten von bis zu 2 Stunden rechnen."
+Kişi için doğru ilanı bulun. 
+**Durum:** "Tom sucht einen Nebenjob für das Wochenende, weil er unter der Woche studiert." (Tom hafta içi okuduğu için hafta sonu için ek bir iş arıyor.)
 
-6. Yeni bir kimlik kartı için neye ihtiyacınız var?
-
-   - a) Sadece eski kimliğinize
-   - b) Fotoğraf, ikametgah belgesi ve eski kimliğe
-   - c) Sadece fotoğraf ve paraya
-
-1. Randevusuz giderseniz ne olur?
-
-   - a) İçeri alınmazsınız
-   - b) Muhtemelen uzun süre beklemeniz gerekir
-   - c) Daha fazla ödeme yaparsınız
-
-______________________________________________________________________
-
-## 2. Hören (Dinleme) — 25 Dk, 3 Bölüm
-
-### Stratejiler
-
-1. Ses kaydı başlamadan önce tüm soruları/seçenekleri **önceden okuyun**.
-1. 1. Bölüm **sadece bir kez** oynatılır — maksimum konsantrasyon şarttır!
-1. Her kelimeye değil, **kilit kelimelere (keywords)** odaklanın.
-1. **Olumsuzluk (negation)** ifadelerine çok dikkat edin (nicht, kein, nie, nur vb.).
-1. Bir cevabı kaçırırsanız → panik yapmayın, derhal bir sonraki soruya geçin.
-
-### Önemli: Yaygın Dinleme Sınavı Durumları
-
-| Durum                                   | Dikkat Edilmesi Gereken Kelimeler                                                                   |
-| --------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| Tren istasyonu anonsu                   | Gleis (peron), Verspätung (gecikme), Abfahrt (kalkış), Ankunft (varış), Umsteigen (aktarma yapma)   |
-| Doktor randevusu (telefon/telesekreter) | Termin (randevu), Sprechstunde (kabul saati), Uhrzeit (saat), Rezept abholen (reçete alma)          |
-| Okul/Kreş veli bilgilendirmesi          | Elternabend (veli toplantısı), Ausflug (gezi), Datum (tarih), was mitbringen (ne getirilecek)       |
-| Mağaza anonsları                        | Angebot (fırsat/indirim), Rabatt (indirim), Öffnungszeiten (çalışma saatleri), geschlossen (kapalı) |
-| İş ile ilgili telefonlar                | Vorstellungsgespräch (iş görüşmesi), Arbeitszeit (çalışma saatleri), Unterlagen (belgeler)          |
+<div class="md-quiz" 
+  data-question="Hangi ilan Tom'a uyar?" 
+  data-options="A: Pizzeria Roma sucht Kellner für Fr + Sa, 17-23 Uhr. Erfahrung nicht nötig.|B: Suchen dringend Verkäufer(in) für Bäckerei. Mo-Fr 06:00-14:00 Uhr.|C: Nachhilfelehrer gesucht: Mathe Klasse 8, jeden Mittwochnachmittag." 
+  data-answer="0" 
+  data-explain="Tom'un hafta sonu (Wochenende) işine ihtiyacı var. A ilanı 'Fr + Sa' (Cuma ve Cumartesi) yani hafta sonu. B ilanı Pzt-Cum hafta içi. C ilanı sadece Çarşamba. Bu yüzden A doğrudur."></div>
 
 ______________________________________________________________________
 
-### Alıştırma 4: Anons (Bir kez okuyun, sonra cevaplayın)
+## 3. Dinleme (Hören) — 20 Dk, 4 Bölüm
 
-**Dinleme Metni (Transkript):** "Achtung Fahrgäste am Gleis 3. Der ICE 594 nach München Hauptbahnhof, planmäßige Abfahrt 14:30 Uhr, hat heute voraussichtlich 20 Minuten Verspätung. Grund dafür ist eine Stellwerksstörung. Der Zug hält zusätzlich in Augsburg. Wir bitten um Entschuldigung."
+### Temel Stratejiler
 
-8. Tren zamanında (gecikmesiz) kalkıyor. (Doğru / Yanlış)
-1. Tren Münih'e gidiyor. (Doğru / Yanlış)
-1. Tren Augsburg'da durmuyor. (Doğru / Yanlış)
+1. **Okuma süresini değerlendirin:** CD'deki ses size kuralları ve örnekleri açıklarken onları DİNLEMEYİN! O değerli 1-2 dakikayı soruları ve cevap şıklarını okuyup anahtar kelimelerin altını çizmek için kullanın.
+2. **Eş anlamlılara odaklanın:** Okumada olduğu gibi, dinlemede de soruda yazan kelimenin tıpatıp aynısını duymazsınız, eş anlamlısını duyarsınız.
+3. **Çeldiricilere dikkat edin:** Çoğu zaman A, B ve C şıklarındaki kelimelerin ÜÇÜNÜ DE seste duyarsınız! Sadece kelimeyi duymak yetmez, bağlamı ve kimin ne dediğini anlamanız gerekir.
+4. **İkinci şans:** Bölüm 1 ve 3'teki ses kayıtları İKİ KERE çalınır. Bölüm 2 ve 4 SADECE BİR KERE çalınır.
 
-### Alıştırma 5: Telefon Mesajı (Bir kez okuyun, sonra cevaplayın)
+### Dinleme Çeldirici (Tuzak) Örneği
 
-**Dinleme Metni (Transkript):** "Hallo Frau Meier, hier ist die Praxis Dr. Schneider. Leider müssen wir Ihren Termin am Donnerstag um 10 Uhr verschieben. Dr. Schneider ist an dem Tag auf einer Fortbildung. Können wir den Termin auf Freitag, 11 Uhr verlegen? Bitte rufen Sie uns zurück unter 030-445566. Vielen Dank!"
+**Kağıtta yazan:** Wann kommt Frau Müller? (Frau Müller ne zaman geliyor?)
+A) Um 10 Uhr 
+B) Um 12 Uhr 
+C) Um 14 Uhr
 
-11. Perşembe günkü randevu sorunsuz gerçekleşecek. (Doğru / Yanlış)
-01. Yeni randevu Cuma saat 11'de olacak. (Doğru / Yanlış)
-01. Bayan Meier'den bir e-posta atması isteniyor. (Doğru / Yanlış)
+**Seste duyulan:** *"Guten Tag Herr Schmidt, hier ist Müller. Unser Termin war ja eigentlich für 12 Uhr geplant. Leider habe ich den Bus um 10 Uhr verpasst. Können wir uns stattdessen um 14 Uhr treffen?"* (Randevumuz 12'deydi. 10 otobüsünü kaçırdım. 14'te buluşabilir miyiz?)
 
-### Alıştırma 6: Radyo Haberi (Bir kez okuyun, sonra cevaplayın)
+<div class="md-quiz" 
+  data-question="Wann kommt Frau Müller?" 
+  data-options="10 Uhr|12 Uhr|14 Uhr" 
+  data-answer="2" 
+  data-explain="Üç saati de duyarsınız! 12 planlanan saatti, 10 kaçan otobüstü, ancak kadının asıl GELECEĞİ saat 14'tür. TELC sınavlarında duyduğunuz ilk saati işaretlemeyin!"></div>
 
-**Dinleme Metni (Transkript):** "In den nächsten Tagen wird es in ganz Deutschland deutlich kälter. Im Norden erwarten wir Temperaturen um den Gefrierpunkt, im Süden kann es sogar schneien. Am Wochenende wird es dann wieder milder, bis zu 10 Grad im Westen. Vergessen Sie Ihre warme Jacke nicht!"
+### Ses Algılama Pratiği
 
-14. Önümüzdeki günlerde havalar ısınacak. (Doğru / Yanlış)
-01. Güneyde kar yağabilir. (Doğru / Yanlış)
-01. Hafta sonu havalar yine soğuk kalacak. (Doğru / Yanlış)
+Bir tren istasyonu anonsu dinlediğinizi hayal edin: 
+*"Achtung an Gleis 3: Der ICE 544 nach Berlin, planmäßige Abfahrt 14:30 Uhr, hat heute voraussichtlich 40 Minuten Verspätung aufgrund einer Signalstörung. Wir bitten um Entschuldigung."* (Dikkat Peron 3: Normal kalkışı 14:30 olan Berlin treni sinyal arızasından dolayı 40 dakika gecikmelidir.)
 
-______________________________________________________________________
-
-## Cevaplar
-
-**Alıştırma 1 (Eşleştirme):** A→2, B→3, C→1, D→4. (5 numaralı ilan boşta kalıyor)
-
-**Alıştırma 2 (Doğru/Yanlış):**
-
-1. Doğru (Sayı pandemiden sonra ikiye katlandı = demek ki daha önce daha azdı)
-1. Yanlış ("Viele Unternehmen" = birçok şirket, hepsi değil)
-1. Yanlış (%65'i evde daha üretken = DAHA üretken)
-1. Doğru (Bazıları yalnızlıktan ve meslektaşlarla temassızlıktan şikayetçi)
-1. Yanlış (Uzmanlar ofis ve evden çalışmanın karışımını öneriyor)
-
-**Alıştırma 3 (Çoktan Seçmeli):** 6→b, 7→b
-
-**Alıştırma 4:** 8→Yanlış, 9→Doğru, 10→Yanlış (hâlâ zusätzlich = ek olarak duracak)
-
-**Alıştırma 5:** 11→Yanlış (wird verschoben = ertelendi), 12→Doğru, 13→Yanlış (soll zurückrufen = geri araması isteniyor)
-
-**Alıştırma 6:** 14→Yanlış (deutlich kälter = belirgin şekilde soğuyacak), 15→Doğru, 16→Yanlış (wird milder = tekrar ılımanlaşacak)
+<div class="md-quiz" 
+  data-question="Wann fährt der Zug voraussichtlich ab? (Tren tahminen ne zaman kalkıyor?)" 
+  data-options="Punkt 14:30 Uhr (Tam 14:30)|Um 15:10 Uhr (15:10'da)|In 40 Minuten fährt der nächste Zug. (40 dk sonra sonraki tren kalkıyor)" 
+  data-answer="1" 
+  data-explain="Normal kalkış (planmäßige Abfahrt) 14:30. Gecikme (Verspätung) 40 dakika. 14:30 + 40 dakika = 15:10. Bazen dinleme bölümlerinde böyle basit bir saat matematiği yapmanız beklenir!"></div>

@@ -4,187 +4,114 @@ ______________________________________________________________________
 
 ## 1. Lesen (Reading) — 45 Min, 3 Parts
 
-### Strategies
+### Essential Strategies
 
-1. **Read the question FIRST**, then scan the text for keywords
-1. For matching: cross out used answers immediately
-1. Don't translate word-for-word — understand the **general meaning**
-1. Unknown words? Look at prefixes/suffixes and context
+1. **Read the question FIRST**, then scan the text for keywords. Never read the long texts first.
+2. For the matching section: cross out used answers immediately.
+3. Don't panic over unknown words. Use the context and focus on the **general meaning**.
+4. Time Management: Spend **max 90 seconds** per True/False item, and **max 2 minutes** per multiple-choice item.
 
 ### Key Skill: Synonym Recognition
 
-The text and the question often use DIFFERENT words for the same thing:
+The text and the question will almost ALWAYs use DIFFERENT words for the same thing to test your vocabulary breadth:
 
-| Text says...  | Question/answer says...      |
-| ------------- | ---------------------------- |
-| kostenlos     | gratis / umsonst             |
-| Kinder        | Nachwuchs / die Kleinen      |
-| Arzt          | Doktor / Mediziner           |
-| kaufen        | erwerben / besorgen          |
-| Rabatt        | Ermäßigung / Nachlass        |
-| Wohnung       | Unterkunft                   |
-| anrufen       | telefonieren / sich melden   |
-| anfangen      | beginnen / starten           |
-| Arbeit        | Beruf / Stelle / Job         |
-| Veranstaltung | Event / Feier / Fest         |
-| schließen     | zumachen / beenden           |
-| helfen        | unterstützen / assistieren   |
-| schnell       | rasch / zügig                |
-| notwendig     | nötig / erforderlich         |
-| trotzdem      | dennoch / jedoch             |
-| jährlich      | einmal pro Jahr              |
-| ungefähr      | etwa / circa / rund          |
-| mitteilen     | informieren / Bescheid geben |
-| Foto          | Bild / Aufnahme              |
-| kaputt        | defekt / beschädigt          |
+| Text says... | Question/answer says... |
+| --- | --- |
+| kostenlos / gratis | ohne Bezahlung / kostet nichts |
+| Kinder | Nachwuchs / die Kleinen |
+| Arzt / Krankenhaus | medizinische Hilfe |
+| kaufen / einkaufen | erwerben / besorgen |
+| Rabatt / billiger | Ermäßigung / Reduzierung |
+| Wohnung | Unterkunft |
+| anrufen | telefonieren / sich melden |
+| Arbeit | Beruf / Stelle / Job |
+| Wochenende | Samstag und Sonntag |
+| täglich | jeden Tag / von Montag bis Sonntag |
 
-### ⚠️ Tricky Exam Phrasing
+### Tricky Exam Phrasing
+Test creators love to use negation and quantities to trick you:
 
-These frequently catch people out:
-
-| Tricky phrase    | What it really means                   |
-| ---------------- | -------------------------------------- |
-| nicht alle       | some, but not all (NOT: none)          |
-| kaum             | barely / hardly (NOT: never)           |
-| nur manchmal     | only sometimes (NOT: often)            |
-| immer noch nicht | still not (emphasises ongoing absence) |
-| erst             | not until / only then                  |
-| außerdem         | in addition (adds, doesn't contrast)   |
-
-### ⏱️ Time Management Tips
-
-- Spend **max 90 seconds** per True/False item
-- Spend **max 2 minutes** per multiple-choice item
-- For matching (Teil 1): eliminate obviously wrong options first — saves time
-- If unsure: **always guess** — no penalty for wrong answers on DTZ
+| Tricky phrase | What it really means |
+| --- | --- |
+| nicht alle | some, but not all (NOT: none) |
+| kaum / fast nie | barely / hardly (NOT: never) |
+| nur manchmal | only sometimes (NOT: often) |
+| immer noch nicht | still not (emphasizes ongoing absence) |
+| erst | not until / only then |
+| außerdem | in addition (adds, doesn't contrast) |
 
 ______________________________________________________________________
 
-### Exercise 1: Advertisement Matching
+## 2. Interactive Reading Practice
 
-**Match each person (A-D) with the correct advertisement (1-5). One ad has no match.**
+Test your synonym and logic recognition with these DTZ-style reading questions.
 
-**People looking for something:**
+### Reading 1: True / False (Richtig/Falsch)
 
-- **A.** Frau Yilmaz sucht eine günstige 2-Zimmer-Wohnung im Zentrum.
-- **B.** Herr Schmidt möchte am Samstag mit seinen Kindern etwas unternehmen.
-- **C.** Maria braucht einen Deutschkurs am Abend, weil sie tagsüber arbeitet.
-- **D.** Tom sucht einen Nebenjob am Wochenende.
+**Text:** "Immer mehr Erwachsene in Deutschland arbeiten im Homeoffice. Seit 2020 hat sich die Zahl der Heimarbeiter fast verdoppelt. Eine aktuelle Studie der Universität Köln zeigt, dass 65% der Arbeitnehmer im Homeoffice produktiver sind. Allerdings klagen einige über Einsamkeit und berichten, dass ihnen der direkte Kontakt zu Kollegen im Alltag fehlt."
 
-**Advertisements:**
+<div class="md-quiz" 
+  data-question="Vor 2020 haben weniger Menschen von zu Hause gearbeitet." 
+  data-options="Richtig|Falsch" 
+  data-answer="0" 
+  data-explain="Richtig! The text says 'Seit 2020 hat sich die Zahl fast verdoppelt' (since 2020 the number doubled). This logically means there were fewer before 2020."></div>
 
-**1.** "Deutsch lernen bei der VHS! Abendkurse Mo-Mi, 18:30-20:00 Uhr. A2-B1 Niveau. Anmeldung ab sofort online."
+<div class="md-quiz" 
+  data-question="Die meisten Heimarbeiter fühlen sich zu Hause weniger produktiv." 
+  data-options="Richtig|Falsch" 
+  data-answer="1" 
+  data-explain="Falsch! The text says '65% ... sind produktiver'. 65% is a majority (die meisten), but they are MORE productive, not less (weniger)."></div>
 
-**2.** "2-Zi-Whg, Stadtmitte, 55 qm, Kaltmiete 480 €, ab 1.4. frei. Kontakt: wohnung@gmx.de"
+<div class="md-quiz" 
+  data-question="Niemand vermisst die Arbeit im Büro." 
+  data-options="Richtig|Falsch" 
+  data-answer="1" 
+  data-explain="Falsch! The text says 'einige klagen über Einsamkeit' (some complain about loneliness) and miss contact with colleagues. 'Niemand' (no one) is a trap word!"></div>
 
-**3.** "Familienfest im Stadtpark! Samstag, 14-18 Uhr. Spiele, Musik und Essen für Groß und Klein. Eintritt frei!"
+### Reading 2: Matching Advertisements (Teil 1)
 
-**4.** "Pizzeria Roma sucht Kellner/in für Fr + Sa, 17-23 Uhr. Erfahrung nicht nötig. Bewerbung an info@roma.de"
+Find the right advertisement for the person. 
+**Situation:** "Tom sucht einen Nebenjob für das Wochenende, weil er unter der Woche studiert."
 
-**5.** "Yoga für Anfänger. Jeden Mittwoch 10-11 Uhr. Im Bürgerhaus. 8 € pro Stunde."
-
-______________________________________________________________________
-
-### Exercise 2: Article — True/False
-
-**Read the article:**
-
-"Immer mehr Deutsche arbeiten im Homeoffice. Seit der Pandemie hat sich die Zahl der Heimarbeiter verdoppelt. Viele Unternehmen bieten ihren Mitarbeitern jetzt flexible Arbeitsmodelle an: Manche arbeiten drei Tage im Büro und zwei Tage zu Hause. Eine aktuelle Studie zeigt, dass 65% der Arbeitnehmer im Homeoffice produktiver sind. Allerdings klagen einige über Einsamkeit und berichten, dass ihnen der Kontakt zu Kollegen fehlt. Experten empfehlen deshalb eine Mischung aus Büro- und Heimarbeit."
-
-**True or False?**
-
-1. Vor der Pandemie haben weniger Menschen von zu Hause gearbeitet.
-1. Alle Firmen in Deutschland bieten Homeoffice an.
-1. Die meisten Heimarbeiter fühlen sich weniger produktiv als im Büro.
-1. Manche Heimarbeiter vermissen ihre Kollegen.
-1. Experten sagen, man sollte nur von zu Hause arbeiten.
+<div class="md-quiz" 
+  data-question="Which advertisement fits Tom?" 
+  data-options="A: Pizzeria Roma sucht Kellner für Fr + Sa, 17-23 Uhr. Erfahrung nicht nötig.|B: Suchen dringend Verkäufer(in) für Bäckerei. Mo-Fr 06:00-14:00 Uhr.|C: Nachhilfelehrer gesucht: Mathe Klasse 8, jeden Mittwochnachmittag." 
+  data-answer="0" 
+  data-explain="Tom needs a weekend job (Wochenende). Ad A is 'Fr + Sa' (Friday and Saturday). Ad B is Mon-Fri. Ad C is Wednesday."></div>
 
 ______________________________________________________________________
 
-### Exercise 3: Notice — Multiple Choice
+## 3. Hören (Listening) — 20 Min, 4 Parts
 
-**Read the notice at a Bürgeramt:**
+### Essential Strategies
 
-"Sehr geehrte Bürgerinnen und Bürger, bitte beachten Sie, dass Sie für die Beantragung eines neuen Personalausweises folgende Unterlagen mitbringen müssen: ein aktuelles biometrisches Passfoto, Ihre Meldebescheinigung und den alten Personalausweis. Die Bearbeitungsgebühr beträgt 37 €. Termine können Sie telefonisch oder online vereinbaren. Ohne Termin müssen Sie mit Wartezeiten von bis zu 2 Stunden rechnen."
+1. **Use the reading time:** When the announcer is explaining the rules rules, ignore them! Use that time to quickly read the questions and underline keywords.
+2. **Listen for synonyms:** Just like reading, you will hear a synonym, not the exact word written on the test paper.
+3. **Beware of distractors:** Often, all three options (A, B, C) will be mentioned in the audio! You must listen for the *context*, not just the word.
+4. **Second chance:** Audio pieces in Parts 1 and 3 are played TWICE. Parts 2 and 4 are played ONLY ONCE.
 
-6. Was brauchen Sie für einen neuen Personalausweis?
+### Listening Distractor Example
 
-   - a) Nur Ihren alten Ausweis
-   - b) Ein Foto, Meldebescheinigung und alten Ausweis
-   - c) Nur ein Foto und Geld
+**You read:** Wann kommt Frau Müller? 
+A) Um 10 Uhr 
+B) Um 12 Uhr 
+C) Um 14 Uhr
 
-1. Was passiert ohne Termin?
+**You hear:** *"Guten Tag Herr Schmidt, hier ist Müller. Unser Termin war ja eigentlich für 12 Uhr geplant. Leider habe ich den Bus um 10 Uhr verpasst. Können wir uns stattdessen um 14 Uhr treffen?"*
 
-   - a) Man darf nicht reinkommen
-   - b) Man muss möglicherweise lange warten
-   - c) Man bezahlt mehr
+<div class="md-quiz" 
+  data-question="Wann kommt Frau Müller?" 
+  data-options="10 Uhr|12 Uhr|14 Uhr" 
+  data-answer="2" 
+  data-explain="She mentions all three times! 12 Uhr was the plan, 10 Uhr was the bus, but she is actually arriving at 14 Uhr. This is a classic TELC distractor trick."></div>
 
-______________________________________________________________________
+### Audio Recognition Practice
 
-## 2. Hören (Listening) — 25 Min, 3 Parts
+Imagine listening to a train station announcement: 
+*"Achtung an Gleis 3: Der ICE 544 nach Berlin, planmäßige Abfahrt 14:30 Uhr, hat heute voraussichtlich 40 Minuten Verspätung aufgrund einer Signalstörung. Wir bitten um Entschuldigung."*
 
-### Strategies
-
-1. **Pre-read** all questions/options before the audio starts
-1. Part 1 plays **only once** — maximal concentration!
-1. Listen for **keywords**, not every word
-1. Watch out for **negation** (nicht, kein, nie, nur)
-1. If you miss an answer → move on immediately
-
-### Key: Common Listening Situations
-
-| Situation                  | What to Listen For                             |
-| -------------------------- | ---------------------------------------------- |
-| Train station announcement | Gleis, Verspätung, Abfahrt, Ankunft, Umsteigen |
-| Doctor's office phone      | Termin, Sprechstunde, Uhrzeit, Rezept abholen  |
-| School/Kindergarten        | Elternabend, Ausflug, Datum, was mitbringen    |
-| Store announcement         | Angebot, Rabatt, Öffnungszeiten, geschlossen   |
-| Job-related call           | Vorstellungsgespräch, Arbeitszeit, Unterlagen  |
-
-______________________________________________________________________
-
-### Exercise 4: Announcement (Read once, then answer)
-
-**Transcript:** "Achtung Fahrgäste am Gleis 3. Der ICE 594 nach München Hauptbahnhof, planmäßige Abfahrt 14:30 Uhr, hat heute voraussichtlich 20 Minuten Verspätung. Grund dafür ist eine Stellwerksstörung. Der Zug hält zusätzlich in Augsburg. Wir bitten um Entschuldigung."
-
-8. Der Zug fährt pünktlich ab. (True / False)
-1. Der Zug fährt nach München. (True / False)
-1. Der Zug hält nicht in Augsburg. (True / False)
-
-### Exercise 5: Phone Message (Read once, then answer)
-
-**Transcript:** "Hallo Frau Meier, hier ist die Praxis Dr. Schneider. Leider müssen wir Ihren Termin am Donnerstag um 10 Uhr verschieben. Dr. Schneider ist an dem Tag auf einer Fortbildung. Können wir den Termin auf Freitag, 11 Uhr verlegen? Bitte rufen Sie uns zurück unter 030-445566. Vielen Dank!"
-
-11. Der Termin am Donnerstag findet statt. (True / False)
-01. Der neue Termin soll am Freitag um 11 Uhr sein. (True / False)
-01. Frau Meier soll eine E-Mail schreiben. (True / False)
-
-### Exercise 6: Radio Report (Read once, then answer)
-
-**Transcript:** "In den nächsten Tagen wird es in ganz Deutschland deutlich kälter. Im Norden erwarten wir Temperaturen um den Gefrierpunkt, im Süden kann es sogar schneien. Am Wochenende wird es dann wieder milder, bis zu 10 Grad im Westen. Vergessen Sie Ihre warme Jacke nicht!"
-
-14. Es wird in den nächsten Tagen wärmer. (True / False)
-01. Im Süden kann es schneien. (True / False)
-01. Am Wochenende bleibt es kalt. (True / False)
-
-______________________________________________________________________
-
-## Answers
-
-**Exercise 1 (Matching):** A→2, B→3, C→1, D→4. (Ad 5 has no match)
-
-**Exercise 2 (True/False):**
-
-1. True (Die Zahl hat sich verdoppelt = before was less)
-1. False ("Viele Unternehmen" ≠ alle)
-1. False (65% sind produktiver = MORE productive)
-1. True (einige klagen über Einsamkeit, fehlt Kontakt)
-1. False (Experten empfehlen eine Mischung = mix, not only home)
-
-**Exercise 3 (Multiple Choice):** 6→b, 7→b
-
-**Exercise 4:** 8→False, 9→True, 10→False (hält zusätzlich = stops additionally)
-
-**Exercise 5:** 11→False (wird verschoben), 12→True, 13→False (soll zurückrufen)
-
-**Exercise 6:** 14→False (deutlich kälter), 15→True, 16→False (wird milder)
+<div class="md-quiz" 
+  data-question="Wann fährt der Zug voraussichtlich ab?" 
+  data-options="Punkt 14:30 Uhr|Um 15:10 Uhr|In 40 Minuten fährt der nächste Zug." 
+  data-answer="1" 
+  data-explain="The normal departure is 14:30. The delay (Verspätung) is 40 minutes. 14:30 + 40 mins = 15:10. You must sometimes do simple math in listening parts!"></div>
