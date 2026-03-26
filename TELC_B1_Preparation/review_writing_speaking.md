@@ -17,7 +17,7 @@ ______________________________________________________________________
 
 #### Formal (unknown person or company)
 
-```
+```text
 Sehr geehrte Damen und Herren,
 
 ich schreibe Ihnen, weil...
@@ -35,7 +35,7 @@ Mit freundlichen Grüßen
 
 #### Semi-Formal (known contact name)
 
-```
+```text
 Sehr geehrte Frau [Müller], / Sehr geehrter Herr [Schmidt],
 
 vielen Dank für Ihre E-Mail / Ihren Brief.
@@ -48,7 +48,7 @@ Mit freundlichen Grüßen
 
 #### Informal (friend / family)
 
-```
+```text
 Liebe [Maria], / Lieber [Tom],
 
 wie geht es dir? Mir geht es gut.
