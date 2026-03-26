@@ -8,20 +8,33 @@ en_content = """# Review: Schreiben & Sprechen (Writing & Speaking)
 
 ______________________________________________________________________
 
-## 1. Schreiben (Letter / Email) — 30 min, ~100-120 words
+## 1. Schreiben (Writing) — 30 min, 2 Parts
+
+The official **telc Deutsch A2-B1** Writing Exam ALWAYS consists of two parts:
+* **Teil 1:** A short, informal "Chat" or "Kurznachricht" (30-40 words).
+* **Teil 2:** A formal or semi-formal E-Mail (70-80 words).
 
 ### The 4 Rules for Full Points
-
-1. ✅ Address **ALL 4 bullet points** from the prompt. If you miss one, you lose severe points.
-2. ✅ Use correct **greeting** and **closing** based on the relationship.
+1. ✅ Address **ALL bullet points** from the prompt (usually 3 per task). If you miss one, you lose severe points.
+2. ✅ Use correct **greeting** and **closing** based on the relationship (Informal for Chat, Formal for E-Mail).
 3. ✅ Use at least 2-3 **connectors** (deshalb, außerdem, weil, dass).
-4. ✅ Write 100-120 words. Writing under 80 words guarantees a penalty.
+4. ✅ Respect word limits. Writing too little guarantees a penalty.
 
-### Letter Templates
+### Letter & Chat Templates
 
-You must memorize these skeletons. In the exam, you just slot your 4 points into the middle.
+#### 1. Part 1: Informal Chat (Die Kurznachricht) - *New in telc A2-B1!*
+You usually write to a friend on WhatsApp about an upcoming meeting or apologizing.
+```text
+Hallo [Name],
+wie geht es dir? 
+Es tut mir leid, aber ich kann morgen leider nicht kommen, weil [Reason/Point 1].
+Können wir uns am [New Day/Time] treffen? [Point 2]
+Bitte melde dich!
+Liebe Grüße
+[Your First Name]
+```
 
-#### 1. Job Application (Die Bewerbung) - *Sehr Wichtig!*
+#### 2. Part 2: Job Application (Die Bewerbung) - *Sehr Wichtig!*
 Replying to a job ad is extremely common in telc Deutsch A2-B1.
 
 ```text
@@ -127,23 +140,20 @@ You must talk about Name, Age, Country, Residence, Job, Languages.
 - **Fail:** "Ich heiße Ali. Ich bin 30 Jahre alt."
 - **Pass (B1):** "Ich heiße Ali und ich komme aus der Türkei, aber **seit drei Jahren lebe ich** mit meiner Familie in Berlin."
 
-### Part 2: Bildbeschreibung (Talk about a picture)
-Describe the picture, then relate it to your life.
-**🛑 YOUTUBE EXAMINER TIP:** To buy time and show off your vocabulary, always use directional phrases!
-* **Locations:** *Oben* (Top), *Unten* (Bottom), *Rechts* (Right), *Links* (Left), *Im Vordergrund* (Foreground), *Im Hintergrund* (Background).
-* **General:** *Auf dem Bild sehe ich [Akk]...*
-* **Action:** *Die Leute scheinen glücklich zu sein. Ich glaube, sie feiern einen Geburtstag, weil...*
-* **Personal Experience:** *In meinem Heimatland machen wir das genauso.*
-
-### Part 3: Gemeinsam Planen (Planning Together)
-The examiners want to see you **react** to your partner. Do not read a monolog!
+### Part 2: Gemeinsam etwas planen (Planning Together)
+You and your partner must plan a party, a trip, or buy a gift. You get bullet points on what to decide.
+**🛑 YOUTUBE EXAMINER TIP:** The examiners want to see you **react** to your partner. Do not read a monolog!
 
 | Function | Phrases (Redemittel) |
 | --- | --- |
 | **Making a suggestion** | *Ich schlage vor, dass... / Wie wäre es, wenn wir...? / Wollen wir vielleicht...?* |
 | **Agreeing** | *Das ist eine tolle Idee! / Ja, damit bin ich einverstanden. / Genau!* |
-| **Disagreeing politely** | *Das finde ich nicht so gut, weil... / Vielleicht wäre es besser, wenn...* |
-| **Asking for opinion** | *Was denkst du darüber? / Bist du damit einverstanden?* |
+| **Disagreeing** | *Das finde ich nicht so gut... / Vielleicht wäre es besser, wenn...* |
+
+### Part 3: Meinung äußern / Diskutieren (Discussing a Topic)
+You discuss a topic or react to a statement/picture. 
+**🛑 YOUTUBE EXAMINER TIP:** Always relate the topic to your own home country!
+* *In meinem Heimatland ist das anders... Bei uns machen wir das so...*
 
 <div class="md-quiz" 
   data-question="Your partner suggests buying flowers for the teacher, but you think a book is better. How do you respond?" 
@@ -169,20 +179,33 @@ tr_content = """# İnceleme: Yazma ve Konuşma (Schreiben & Sprechen)
 
 ______________________________________________________________________
 
-## 1. Yazma (Mektup / E-posta) — 30 dk, ~100-120 kelime
+## 1. Yazma (Schreiben) — 30 Dk, 2 Bölüm
+
+Resmi **telc Deutsch A2-B1** Yazma Sınavı DAİMA iki bölümden oluşur:
+* **Teil 1:** Kısa ve gayri resmi bir "Chat" veya "Kurznachricht" (Kısa mesaj) (30-40 kelime).
+* **Teil 2:** Resmi veya yarı resmi bir E-posta (70-80 kelime).
 
 ### Tam Puan Almak İçin 4 Altın Kural
-
-1. ✅ Soruda verilen **4 maddenin (bullet points) TAMAMINA** değinin. Birini bile atlarsanız ciddi puan kaybedersiniz.
-2. ✅ Muhatabınıza uygun doğru bir **selamlama** ve **kapanış** kullanın.
+1. ✅ Soruda verilen **TÜM maddelere (genelde her görev için 3 madde)** değinin. Birini bile atlarsanız ciddi puan kaybedersiniz.
+2. ✅ Muhatabınıza uygun doğru bir **selamlama** ve **kapanış** kullanın (Chat için samimi, E-posta için resmi).
 3. ✅ En az 2-3 tane **bağlaç** (deshalb, außerdem, weil, dass) kullanın. Kısa, basit cümleleri art arda sıralamayın.
-4. ✅ 100-120 kelime arası yazın. 80 kelimenin altında yazmak kesin puan cezası demektir.
+4. ✅ Kelime sınırlarına uyun. Eksik kelime kesin puan cezası demektir.
 
-### Mektup Şablonları
+### Şablonlar: Chat ve E-Posta
 
-Bu iskeletleri ezberlemelisiniz. Sınavda beyninizi yormadan, sadece 4 maddenizi bu şablonların ortasına yerleştireceksiniz.
+#### 1. Bölüm 1: Samimi Chat (Die Kurznachricht) - *telc A2-B1'in Farkı!*
+Genellikle WhatsApp üzerinden bir arkadaşınıza buluşma veya özür mesajı yazarsınız.
+```text
+Hallo [İsim],
+wie geht es dir? 
+Es tut mir leid, aber ich kann morgen leider nicht kommen, weil [Mazeretiniz/Madde 1].
+Können wir uns am [Yeni Gün/Saat] treffen? [Madde 2]
+Bitte melde dich!
+Liebe Grüße
+[Sadece Adınız]
+```
 
-#### 1. İş Başvurusu (Die Bewerbung) - *Çok Önemli!*
+#### 2. Bölüm 2: İş Başvurusu (Die Bewerbung) - *Çok Önemli!*
 telc Deutsch A2-B1 sınavında bir iş ilanına e-posta ile başvurmak çok yaygındır.
 ```text
 Sehr geehrte Damen und Herren,
@@ -287,23 +310,21 @@ Ad, Yaş, Ülke, Şehir, Meslek, Diller hakkında konuşmalısınız.
 - **Kötü:** "Ich heiße Ali. Ich bin 30 Jahre alt."
 - **İyi (B1):** "Ich heiße Ali und ich komme aus der Türkei, aber **seit drei Jahren lebe ich** mit meiner Familie in Berlin." (Bağlaç kullanarak ve bir tık detay vererek)
 
-### Bölüm 2: Resim Tarifi (Bildbeschreibung)
-Resmi tarif edin, ardından kendi hayatınızla ilişkilendirin.
-**🛑 YOUTUBE SINAV İPUCU:** Kelime dağarcığınızı zengin göstermek ve düşünmek için zaman kazanmak için DAİMA YÖN kelimelerini kullanın!
-* **Yönler:** *Oben* (Üstte), *Unten* (Altta), *Rechts* (Sağda), *Links* (Solda), *Im Vordergrund* (Ön planda), *Im Hintergrund* (Arka planda).
-* **Genel:** *Auf dem Bild sehe ich [Akk]...* (Resimde ... görüyorum)
-* **Eylem:** *Die Leute scheinen glücklich zu sein. Ich glaube, sie feiern einen Geburtstag, weil...* (Sanırım parti yapıyorlar ÇÜNKÜ...)
-* **Kişisel Deneyim (Zorunlu):** *In meinem Heimatland machen wir das genauso.* (Bizim ülkemizde de aynı böyle yaparız.)
-
-### Bölüm 3: Birlikte Plan Yapma (Gemeinsam Planen)
-Sınav görevlilerinin görmek istedikleri en önemli şey **partnerinize TEPKİ vermenizdir**. Sakın ezberlediğiniz uzun cümleleri bir monolog gibi okumayın!
+### Bölüm 2: Gemeinsam etwas planen (Birlikte bir şey planlama)
+Partnerinizle birlikte bir parti, gezi veya hediye kararı vermelisiniz.
+**🛑 YOUTUBE SINAV İPUCU:** Sınav görevlilerinin görmek istedikleri en önemli şey **partnerinize TEPKİ vermenizdir**.
 
 | İşlev | İfadeler (Redemittel) |
 | --- | --- |
-| **Bir öneride bulunurken** | *Ich schlage vor, dass... / Wie wäre es, wenn wir...? / Wollen wir vielleicht...?* |
-| **Aynı fikirdeyken** | *Das ist eine tolle Idee! / Ja, damit bin ich einverstanden. / Genau!* |
-| **Kibarca reddederken** | *Das finde ich nicht so gut, weil... / Vielleicht wäre es besser, wenn...* |
-| **Fikir sorarken** | *Was denkst du darüber? / Bist du damit einverstanden?* |
+| **Öneri** | *Ich schlage vor, dass... / Wie wäre es, wenn wir...? / Wollen wir vielleicht...?* |
+| **Onaylama** | *Das ist eine tolle Idee! / Ja, damit bin ich einverstanden. / Genau!* |
+| **Reddetme** | *Das finde ich nicht so gut... / Vielleicht wäre es besser, wenn...* |
+
+### Bölüm 3: Meinung äußern / Diskutieren (Fikir Beyan Etme veya Konu Tartışma)
+Bir konu hakkında konuşur veya deneyimlerinizi paylaşırsınız.
+**🛑 YOUTUBE SINAV İPUCU:** Konuyu DAİMA kendi anavatanınızla kıyaslayın!
+* *In meinem Heimatland ist das anders...* (Benim ülkemde bu durum farklıdır...) 
+* *Bei uns machen wir das genauso...* (Biz de aynen böyle yaparız...)
 
 <div class="md-quiz" 
   data-question="Partneriniz öğretmene çiçek almayı öneriyor, ancak siz kitap almanın daha iyi olduğunu düşünüyorsunuz. Nasıl yanıt verirsiniz?" 

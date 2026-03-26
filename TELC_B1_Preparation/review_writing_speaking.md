@@ -2,20 +2,33 @@
 
 ______________________________________________________________________
 
-## 1. Schreiben (Letter / Email) — 30 min, ~100-120 words
+## 1. Schreiben (Writing) — 30 min, 2 Parts
+
+The official **telc Deutsch A2-B1** Writing Exam ALWAYS consists of two parts:
+* **Teil 1:** A short, informal "Chat" or "Kurznachricht" (30-40 words).
+* **Teil 2:** A formal or semi-formal E-Mail (70-80 words).
 
 ### The 4 Rules for Full Points
-
-1. ✅ Address **ALL 4 bullet points** from the prompt. If you miss one, you lose severe points.
-2. ✅ Use correct **greeting** and **closing** based on the relationship.
+1. ✅ Address **ALL bullet points** from the prompt (usually 3 per task). If you miss one, you lose severe points.
+2. ✅ Use correct **greeting** and **closing** based on the relationship (Informal for Chat, Formal for E-Mail).
 3. ✅ Use at least 2-3 **connectors** (deshalb, außerdem, weil, dass).
-4. ✅ Write 100-120 words. Writing under 80 words guarantees a penalty.
+4. ✅ Respect word limits. Writing too little guarantees a penalty.
 
-### Letter Templates
+### Letter & Chat Templates
 
-You must memorize these skeletons. In the exam, you just slot your 4 points into the middle.
+#### 1. Part 1: Informal Chat (Die Kurznachricht) - *New in telc A2-B1!*
+You usually write to a friend on WhatsApp about an upcoming meeting or apologizing.
+```text
+Hallo [Name],
+wie geht es dir? 
+Es tut mir leid, aber ich kann morgen leider nicht kommen, weil [Reason/Point 1].
+Können wir uns am [New Day/Time] treffen? [Point 2]
+Bitte melde dich!
+Liebe Grüße
+[Your First Name]
+```
 
-#### 1. Job Application (Die Bewerbung) - *Sehr Wichtig!*
+#### 2. Part 2: Job Application (Die Bewerbung) - *Sehr Wichtig!*
 Replying to a job ad is extremely common in telc Deutsch A2-B1.
 
 ```text
@@ -121,23 +134,20 @@ You must talk about Name, Age, Country, Residence, Job, Languages.
 - **Fail:** "Ich heiße Ali. Ich bin 30 Jahre alt."
 - **Pass (B1):** "Ich heiße Ali und ich komme aus der Türkei, aber **seit drei Jahren lebe ich** mit meiner Familie in Berlin."
 
-### Part 2: Bildbeschreibung (Talk about a picture)
-Describe the picture, then relate it to your life.
-**🛑 YOUTUBE EXAMINER TIP:** To buy time and show off your vocabulary, always use directional phrases!
-* **Locations:** *Oben* (Top), *Unten* (Bottom), *Rechts* (Right), *Links* (Left), *Im Vordergrund* (Foreground), *Im Hintergrund* (Background).
-* **General:** *Auf dem Bild sehe ich [Akk]...*
-* **Action:** *Die Leute scheinen glücklich zu sein. Ich glaube, sie feiern einen Geburtstag, weil...*
-* **Personal Experience:** *In meinem Heimatland machen wir das genauso.*
-
-### Part 3: Gemeinsam Planen (Planning Together)
-The examiners want to see you **react** to your partner. Do not read a monolog!
+### Part 2: Gemeinsam etwas planen (Planning Together)
+You and your partner must plan a party, a trip, or buy a gift. You get bullet points on what to decide.
+**🛑 YOUTUBE EXAMINER TIP:** The examiners want to see you **react** to your partner. Do not read a monolog!
 
 | Function | Phrases (Redemittel) |
 | --- | --- |
 | **Making a suggestion** | *Ich schlage vor, dass... / Wie wäre es, wenn wir...? / Wollen wir vielleicht...?* |
 | **Agreeing** | *Das ist eine tolle Idee! / Ja, damit bin ich einverstanden. / Genau!* |
-| **Disagreeing politely** | *Das finde ich nicht so gut, weil... / Vielleicht wäre es besser, wenn...* |
-| **Asking for opinion** | *Was denkst du darüber? / Bist du damit einverstanden?* |
+| **Disagreeing** | *Das finde ich nicht so gut... / Vielleicht wäre es besser, wenn...* |
+
+### Part 3: Meinung äußern / Diskutieren (Discussing a Topic)
+You discuss a topic or react to a statement/picture. 
+**🛑 YOUTUBE EXAMINER TIP:** Always relate the topic to your own home country!
+* *In meinem Heimatland ist das anders... Bei uns machen wir das so...*
 
 <div class="md-quiz" 
   data-question="Your partner suggests buying flowers for the teacher, but you think a book is better. How do you respond?" 

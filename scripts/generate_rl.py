@@ -8,7 +8,7 @@ en_content = """# Review: Lesen & Hören (Reading & Listening)
 
 ______________________________________________________________________
 
-## 1. Lesen (Reading) — 45 Min, 3 Parts
+## 1. Lesen (Reading) — 45 Min, 4 Parts
 
 ### Essential Strategies
 
@@ -87,7 +87,7 @@ Find the right advertisement for the person.
 
 ______________________________________________________________________
 
-## 3. Hören (Listening) — 20 Min, 4 Parts
+## 3. Hören (Listening) — ~35 Min, 5 Parts
 
 ### Essential Strategies
 
@@ -135,7 +135,7 @@ tr_content = """# İnceleme: Okuma ve Dinleme (Lesen & Hören)
 
 ______________________________________________________________________
 
-## 1. Okuma (Lesen) — 45 Dk, 3 Bölüm
+## 1. Okuma (Lesen) — 45 Dk, 4 Bölüm
 
 ### Temel Stratejiler
 
@@ -214,7 +214,7 @@ Kişi için doğru ilanı bulun.
 
 ______________________________________________________________________
 
-## 3. Dinleme (Hören) — 20 Dk, 4 Bölüm
+## 3. Dinleme (Hören) — ~35 Dk, 5 Bölüm
 
 ### Temel Stratejiler
 
