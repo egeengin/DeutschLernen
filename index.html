@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TELC B1 in 30 Tagen — Study Portal</title>
 <meta name="description" content="Interactive study portal for TELC A2/B1 (DTZ) exam preparation. Grammar, vocabulary, mock exams, and strategies in English and Turkish.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -107,6 +108,18 @@ a:hover { color: var(--de-gold); }
   margin-bottom: 16px; font-style: italic;
 }
 .md-loader { text-align: center; padding: 100px 0; font-size: 18px; color: var(--text-muted); }
+
+/* Global Web Toggle */
+.global-lang-toggle {
+  position: fixed; top: 16px; right: 24px; z-index: 200;
+  display: flex; gap: 8px; background: rgba(10, 14, 23, 0.7);
+  backdrop-filter: blur(8px); padding: 6px; border-radius: 12px;
+  border: 1px solid var(--border);
+}
+[data-theme="light"] .global-lang-toggle { background: rgba(248, 250, 252, 0.7); }
+.global-lang-toggle .lang-btn {
+  flex: none; width: auto; padding: 6px 12px; font-size: 12px; border-radius: 8px;
+}
 
 /* Sidebar */
 .sidebar {
@@ -410,42 +423,43 @@ td strong, td b { color: var(--text-primary); }
 </head>
 <body>
 
+<!-- Global Language Toggle -->
+<div class="global-lang-toggle">
+  <button class="lang-btn active" onclick="setLang('en')">🇬🇧 EN</button>
+  <button class="lang-btn" onclick="setLang('tr')">🇹🇷 TR</button>
+</div>
+
 <!-- Mobile Menu Toggle -->
 <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="Toggle menu">☰</button>
 
 <!-- Sidebar -->
 <nav class="sidebar" id="sidebar">
   <div class="sidebar-header">
-    <div class="top-row">
-      <div class="flag">🇩🇪</div>
+    <div class="top-row" style="justify-content: flex-end;">
       <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn" aria-label="Toggle dark mode">☀️</button>
     </div>
     <h2>TELC B1 Portal</h2>
-    <p>30-Day Study Plan</p>
+    <p data-en="30-Day Study Plan" data-tr="30 Günlük Çalışma Planı">30-Day Study Plan</p>
     <input type="text" id="search-input" class="search-box" data-en="Search materials..." data-tr="Materyal ara..." placeholder="Search materials..." onkeyup="filterCards()">
   </div>
   <div class="sidebar-nav">
-    <a href="#home" class="active" onclick="showSection('home')"><span class="icon">🏠</span> Home</a>
-    <a href="#exam-guide" onclick="showSection('exam-guide')"><span class="icon">📋</span> Exam Guide <span class="num">1</span></a>
-    <a href="#study-plan" onclick="showSection('study-plan')"><span class="icon">📅</span> 1-Month Plan <span class="num">2</span></a>
-    <a href="#grammar" onclick="showSection('grammar')"><span class="icon">📝</span> Grammar & Vocab <span class="num">3</span></a>
-    <a href="#reading" onclick="showSection('reading')"><span class="icon">📖</span> Reading & Listening <span class="num">4</span></a>
-    <a href="#writing" onclick="showSection('writing')"><span class="icon">✍️</span> Writing & Speaking <span class="num">5</span></a>
-    <a href="#diagnostic" onclick="showSection('diagnostic')"><span class="icon">🔍</span> Diagnostic Exam <span class="num">6</span></a>
-    <a href="#final-exam" onclick="showSection('final-exam')"><span class="icon">🎯</span> Final Exam <span class="num">7</span></a>
-    <a href="#resources" onclick="showSection('resources')"><span class="icon">🌐</span> Resources <span class="num">8</span></a>
-    <a href="#vocab1" onclick="showSection('vocab1')"><span class="icon">📚</span> Vocab: Verbs <span class="num">9</span></a>
-    <a href="#vocab2" onclick="showSection('vocab2')"><span class="icon">📚</span> Vocab: Nouns <span class="num">10</span></a>
-    <a href="#flashcards" onclick="showSection('flashcards')"><span class="icon">🗂️</span> Flashcards <span class="num">Bonus</span></a>
+    <a href="#home" class="active" onclick="showSection('home')"><span class="icon">🏠</span> <span data-en="Home" data-tr="Ana Sayfa">Home</span></a>
+    <a href="#exam-guide" onclick="showSection('exam-guide')"><span class="icon">📋</span> <span data-en="Exam Guide" data-tr="Sınav Rehberi">Exam Guide</span> <span class="num">1</span></a>
+    <a href="#study-plan" onclick="showSection('study-plan')"><span class="icon">📅</span> <span data-en="1-Month Plan" data-tr="1 Aylık Plan">1-Month Plan</span> <span class="num">2</span></a>
+    <a href="#grammar" onclick="showSection('grammar')"><span class="icon">📝</span> <span data-en="Grammar & Vocab" data-tr="Dilbilgisi ve Kelime">Grammar & Vocab</span> <span class="num">3</span></a>
+    <a href="#reading" onclick="showSection('reading')"><span class="icon">📖</span> <span data-en="Reading & Listening" data-tr="Okuma ve Dinleme">Reading & Listening</span> <span class="num">4</span></a>
+    <a href="#writing" onclick="showSection('writing')"><span class="icon">✍️</span> <span data-en="Writing & Speaking" data-tr="Yazma ve Konuşma">Writing & Speaking</span> <span class="num">5</span></a>
+    <a href="#diagnostic" onclick="showSection('diagnostic')"><span class="icon">🔍</span> <span data-en="Diagnostic Exam" data-tr="Teşhis Sınavı">Diagnostic Exam</span> <span class="num">6</span></a>
+    <a href="#final-exam" onclick="showSection('final-exam')"><span class="icon">🎯</span> <span data-en="Final Exam" data-tr="Final Sınavı">Final Exam</span> <span class="num">7</span></a>
+    <a href="#resources" onclick="showSection('resources')"><span class="icon">🌐</span> <span data-en="Resources" data-tr="Kaynaklar">Resources</span> <span class="num">8</span></a>
+    <a href="#vocab1" onclick="showSection('vocab1')"><span class="icon">📚</span> <span data-en="Vocab: Verbs" data-tr="Kelime: Fiiller">Vocab: Verbs</span> <span class="num">9</span></a>
+    <a href="#vocab2" onclick="showSection('vocab2')"><span class="icon">📚</span> <span data-en="Vocab: Nouns" data-tr="Kelime: İsimler">Vocab: Nouns</span> <span class="num">10</span></a>
+    <a href="#flashcards" onclick="showSection('flashcards')"><span class="icon">🗂️</span> <span data-en="Flashcards" data-tr="Bilgi Kartları">Flashcards</span> <span class="num">Bonus</span></a>
   </div>
   <div class="progress-wrap">
     <div class="progress-label"><span data-en="Progress" data-tr="İlerleme">Progress</span><span id="progress-pct">0%</span></div>
     <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
     <div class="day-tracker"><span data-en="Study Plan" data-tr="Çalışma Planı">Study Plan</span><span id="day-counter">Day 1 of 30</span></div>
-  </div>
-  <div class="sidebar-footer">
-    <button class="lang-btn active" onclick="setLang('en')">🇬🇧 English</button>
-    <button class="lang-btn" onclick="setLang('tr')">🇹🇷 Türkçe</button>
   </div>
 </nav>
 
@@ -552,7 +566,7 @@ td strong, td b { color: var(--text-primary); }
         <p style="font-size:13px;color:var(--text-secondary)">Polite requests in writing and speaking.</p>
         <div class="example"><b>Könnten</b> Sie mir bitte helfen? / Ich <b>würde</b> gerne einen Termin <b>machen</b>.</div>
       </div>
-      <p><a href="#" onclick="openMarkdown('./TELC_B1_Preparation/review_grammar_vocab.md'); return false;">📄 Full Grammar Review with 30 practice questions →</a></p>
+      <p><a href="#" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/review_grammar_vocab.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/review_grammar_vocab.md'); return false;"><span data-en="📄 Full Grammar Review with 30 practice questions →" data-tr="📄 30 pratik sorulu Tam Dilbilgisi İncelemesi →">📄 Full Grammar Review with 30 practice questions →</span></a></p>
     </div>
 
     <!-- Interactive Quiz -->
@@ -571,7 +585,7 @@ td strong, td b { color: var(--text-primary); }
       <div id="quiz-container">
         <!-- Quiz items injected by JS -->
       </div>
-      <p style="margin-top:20px"><a href="#" onclick="openMarkdown('./TELC_B1_Preparation/mock_exam_diagnostic.md'); return false;">📄 Full Diagnostic Mock Exam →</a> · <a href="#" onclick="openMarkdown('./TELC_B1_Preparation/mock_exam_final.md'); return false;">📄 Final Mock Exam →</a></p>
+      <p style="margin-top:20px"><a href="#" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/mock_exam_diagnostic.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_diagnostic.md'); return false;"><span data-en="📄 Full Diagnostic Mock Exam →" data-tr="📄 Tam Teşhis Deneme Sınavı →">📄 Full Diagnostic Mock Exam →</span></a> · <a href="#" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/mock_exam_final.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_final.md'); return false;"><span data-en="📄 Final Mock Exam →" data-tr="📄 Final Deneme Sınavı →">📄 Final Mock Exam →</span></a></p>
     </div>
 
     <!-- Study Plan Preview -->
@@ -589,50 +603,48 @@ td strong, td b { color: var(--text-primary); }
           </tbody>
         </table>
       </div>
-      <p><a href="#" onclick="openMarkdown('./TELC_B1_Preparation/1_month_study_plan.md'); return false;">📄 Full day-by-day study plan →</a></p>
+      <p><a href="#" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/1_month_study_plan.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/1_month_study_plan.md'); return false;"><span data-en="📄 Full day-by-day study plan →" data-tr="📄 Tam gün gün çalışma planı →">📄 Full day-by-day study plan →</span></a></p>
     </div>
 
     <!-- Links to remaining sections -->
     <div class="section" id="reading" style="animation-delay:0.1s">
       <div class="section-label">📖 Module 4</div>
-      <h2>Reading & Listening</h2>
-      <p>Synonym recognition, time management, and practice exercises.</p>
-      <div class="card-links"><button class="card-link primary" onclick="openMarkdown('./TELC_B1_Preparation/review_reading_listening.md')">📄 Open Full Review →</button></div>
+      <h2 data-en="Reading & Listening" data-tr="Okuma ve Dinleme">Reading & Listening</h2>
+      <p data-en="Synonym recognition, time management, and practice exercises." data-tr="Eş anlamlı kelime tanıma, zaman yönetimi ve pratik egzersizleri.">Synonym recognition, time management, and practice exercises.</p>
+      <div class="card-links"><button class="card-link primary" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/review_reading_listening.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/review_reading_listening.md')"><span data-en="📄 Open Full Review →" data-tr="📄 Tam İncelemeyi Aç →">📄 Open Full Review →</span></button></div>
     </div>
     <div class="section" id="writing" style="animation-delay:0.15s">
       <div class="section-label">✍️ Module 5</div>
-      <h2>Writing & Speaking</h2>
-      <p>Letter templates, model answers, speaking phrase banks, and 4 practice prompts.</p>
-      <div class="card-links"><button class="card-link primary" onclick="openMarkdown('./TELC_B1_Preparation/review_writing_speaking.md')">📄 Open Full Review →</button></div>
+      <h2 data-en="Writing & Speaking" data-tr="Yazma ve Konuşma">Writing & Speaking</h2>
+      <p data-en="Letter templates, model answers, speaking phrase banks, and 4 practice prompts." data-tr="Mektup şablonları, örnek cevaplar, konuşma kalıpları ve 4 pratik konusu.">Letter templates, model answers, speaking phrase banks, and 4 practice prompts.</p>
+      <div class="card-links"><button class="card-link primary" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/review_writing_speaking.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/review_writing_speaking.md')"><span data-en="📄 Open Full Review →" data-tr="📄 Tam İncelemeyi Aç →">📄 Open Full Review →</span></button></div>
     </div>
     <div class="section" id="final-exam" style="animation-delay:0.2s">
       <div class="section-label">🎯 Module 7</div>
-      <h2>Final Mock Exam</h2>
-      <p>Full exam with Hören, Lesen, Sprachbausteine, Schreiben, and Sprechen sections.</p>
-      <div class="card-links"><button class="card-link primary" onclick="openMarkdown('./TELC_B1_Preparation/mock_exam_final.md')">📄 Open Final Exam →</button></div>
+      <h2 data-en="Final Mock Exam" data-tr="Final Deneme Sınavı">Final Mock Exam</h2>
+      <p data-en="Full exam with Hören, Lesen, Sprachbausteine, Schreiben, and Sprechen sections." data-tr="Hören, Lesen, Sprachbausteine, Schreiben ve Sprechen bölümlerini içeren tam sınav.">Full exam with Hören, Lesen, Sprachbausteine, Schreiben, and Sprechen sections.</p>
+      <div class="card-links"><button class="card-link primary" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/mock_exam_final.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_final.md')"><span data-en="📄 Open Final Exam →" data-tr="📄 Sınavı Aç →">📄 Open Final Exam →</span></button></div>
     </div>
     <div class="section" id="resources" style="animation-delay:0.25s">
       <div class="section-label">🌐 Module 8</div>
-      <h2>Free Resources</h2>
-      <p>Official practice tests, YouTube channels, DW courses, and grammar websites.</p>
-      <div class="card-links"><button class="card-link primary" onclick="openMarkdown('./TELC_B1_Preparation/example_exams_resources.md')">📄 Open Resources List →</button></div>
+      <h2 data-en="Free Resources" data-tr="Ücretsiz Kaynaklar">Free Resources</h2>
+      <p data-en="Official practice tests, YouTube channels, DW courses, and grammar websites." data-tr="Resmi deneme sınavları, YouTube kanalları, DW kursları ve dilbilgisi siteleri.">Official practice tests, YouTube channels, DW courses, and grammar websites.</p>
+      <div class="card-links"><button class="card-link primary" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/example_exams_resources.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/example_exams_resources.md')"><span data-en="📄 Open Resources List →" data-tr="📄 Kaynaklar Listesini Aç →">📄 Open Resources List →</span></button></div>
     </div>
     <div class="section" id="vocab1" style="animation-delay:0.3s">
       <div class="section-label">📚 Module 9</div>
-      <h2>Vocabulary: Verbs & Adjectives</h2>
-      <p>~500 most-used German verbs and adjectives with Turkish translations and examples.</p>
+      <h2 data-en="Vocabulary: Verbs & Adjectives" data-tr="Kelime Bilgisi: Fiiller ve Sıfatlar">Vocabulary: Verbs & Adjectives</h2>
+      <p data-en="~500 most-used German verbs and adjectives with Turkish translations and examples." data-tr="Türkçe çevirileri ve örnekleriyle en çok kullanılan ~500 Almanca fiil ve sıfat.">~500 most-used German verbs and adjectives with Turkish translations and examples.</p>
       <div class="card-links">
-        <button class="card-link primary" onclick="openMarkdown('./TELC_B1_Preparation/vocab_part1_verbs_adjectives.md')">🇬🇧 English Version →</button>
-        <button class="card-link" onclick="openMarkdown('./TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part1_fiiller_sifatlar.md')">🇹🇷 Türkçe Versiyon →</button>
+        <button class="card-link primary" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/vocab_part1_verbs_adjectives.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part1_fiiller_sifatlar.md')"><span data-en="📄 Open Vocabulary →" data-tr="📄 Kelime Bilgisini Aç →">📄 Open Vocabulary →</span></button>
       </div>
     </div>
     <div class="section" id="vocab2" style="animation-delay:0.35s">
       <div class="section-label">📚 Module 10</div>
-      <h2>Vocabulary: Nouns by Theme</h2>
-      <p>~550 most-used German nouns organized by DTZ exam themes with Turkish translations.</p>
+      <h2 data-en="Vocabulary: Nouns by Theme" data-tr="Kelime Bilgisi: Temalara Göre İsimler">Vocabulary: Nouns by Theme</h2>
+      <p data-en="~550 most-used German nouns organized by DTZ exam themes with Turkish translations." data-tr="Türkçe çevirileriyle DTZ sınav temalarına göre düzenlenmiş en çok kullanılan ~550 isim.">~550 most-used German nouns organized by DTZ exam themes with Turkish translations.</p>
       <div class="card-links">
-        <button class="card-link primary" onclick="openMarkdown('./TELC_B1_Preparation/vocab_part2_nouns_themes.md')">🇬🇧 English Version →</button>
-        <button class="card-link" onclick="openMarkdown('./TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part2_isimler_temalar.md')">🇹🇷 Türkçe Versiyon →</button>
+        <button class="card-link primary" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/vocab_part2_nouns_themes.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part2_isimler_temalar.md')"><span data-en="📄 Open Vocabulary →" data-tr="📄 Kelime Bilgisini Aç →">📄 Open Vocabulary →</span></button>
       </div>
     </div>
 
@@ -669,8 +681,8 @@ td strong, td b { color: var(--text-primary); }
 
     <!-- Footer -->
     <div style="text-align:center;padding:40px 20px 20px;border-top:1px solid var(--border);margin-top:40px">
-      <p style="font-size:24px;margin-bottom:8px">🇩🇪</p>
-      <p style="font-size:14px;color:var(--text-muted)">Viel Erfolg! Başarılar! 💪</p>
+      <p style="font-size:24px;margin-bottom:8px">🎓</p>
+      <p style="font-size:14px;color:var(--text-muted)" data-en="Good luck with your exam preparation!" data-tr="Sınav hazırlığınızda başarılar dileriz!">Good luck with your exam preparation!</p>
       
       <div style="margin-top: 32px; font-size: 12px; color: var(--text-muted); opacity: 0.8; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
         <p style="margin-bottom: 8px;">
@@ -720,13 +732,12 @@ const materials = [
 // Render material cards
 const cardsEl = document.getElementById('material-cards');
 materials.forEach((m, i) => {
-  cardsEl.innerHTML += `<div class="card" onclick="openMarkdown('${m.en}')">
+  cardsEl.innerHTML += `<div class="card" onclick="openMarkdown(currentLang === 'en' ? '${m.en}' : '${m.tr}')">
     <div class="card-icon">${m.icon}</div>
     <h3 data-en="${m.title}" data-tr="${m.titleTr}">${m.title}</h3>
     <p data-en="${m.desc}" data-tr="${m.descTr}">${m.desc}</p>
     <div class="card-links">
-      <button class="card-link primary" onclick="event.stopPropagation(); openMarkdown('${m.en}')">🇬🇧 EN</button>
-      <button class="card-link" onclick="event.stopPropagation(); openMarkdown('${m.tr}')">🇹🇷 TR</button>
+      <button class="card-link primary"><span data-en="📄 Open Module &rarr;" data-tr="📄 Modülü Aç &rarr;">📄 Open Module &rarr;</span></button>
     </div>
   </div>`;
 });
@@ -881,8 +892,11 @@ let currentLang = 'en';
 
 // Markdown Reader Logic
 let currentMdUrl = null;
+let currentActiveMaterial = null;
 function openMarkdown(url) {
   currentMdUrl = url;
+  currentActiveMaterial = materials.find(m => m.en === url || m.tr === url);
+  
   const mdView = document.getElementById('md-view');
   const mdContent = document.getElementById('md-content');
   mdView.classList.add('open');
