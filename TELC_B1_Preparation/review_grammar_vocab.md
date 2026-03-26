@@ -3,19 +3,21 @@
 ______________________________________________________________________
 
 ## 1. Nebensätze (Subordinate Clauses) — MOST TESTED CONSTRUCT
-
 The conjugated verb goes to the **END** of the subordinate clause. 
 **PRO TRICK:** In the telc Deutsch A2-B1 exam *Sprachbausteine*, if you see a blank right after a comma, look at the rest of the sentence. If the conjugated verb is sitting at the absolute end, the blank MUST be a subordinating conjunction like *dass, weil, wenn,* or *ob*.
 
-| Conjunction | Meaning | Example |
+### Most Important Subordinating Conjunctions (Verb at END)
+
+| Conjunction | Meaning | Usage / Example |
 | --- | --- | --- |
-| **weil** | because | Ich bleibe zu Hause, **weil** ich heute krank **bin**. |
-| **dass** | that | Ich hoffe, **dass** du morgen **kommst**. |
-| **wenn** | if / when | **Wenn** es morgen **regnet**, bleibe ich zu Hause. |
-| **obwohl** | although | Er arbeitet viel, **obwohl** er sehr müde **ist**. |
-| **damit** | so that | Ich lerne Deutsch, **damit** ich bessere Arbeit **finde**. |
-| **als** | when (in the past, once) | **Als** ich klein **war**, spielte ich oft draußen. |
-| **ob** | whether | Ich weiß nicht, **ob** er zur Party **kommt**. |
+| **weil** | because | Gives a reason. *Ich bleibe zu Hause, **weil** ich krank **bin**.* |
+| **dass** | that | Connects thoughts/statements. *Ich hoffe, **dass** du morgen **kommst**.* |
+| **wenn** | if / when | Condition or repeated event. * **Wenn** es regnet, **bleibe** ich zu Hause.* |
+| **obwohl** | although | Contrast. *Er arbeitet viel, **obwohl** er müde **ist**.* |
+| **damit** | so that | Purpose/Goal. *I lerne Deutsch, **damit** ich Arbeit **finde**.* |
+| **als** | when (past) | Single event in the past. * **Als** ich klein **war**, spielte ich oft.* |
+| **ob** | whether / if | Yes/No question. *Ich weiß nicht, **ob** er **kommt**.* |
+| **da** | since / because | Similar to weil, often at start. * **Da** ich krank **bin**, bleibe ich hier.* |
 
 **Watch out:** When the Nebensatz comes FIRST, it acts as "Position 1" for the whole sentence, so the main clause verb follows immediately after the comma:
 > **Weil** ich krank **bin**, **bleibe** ich zu Hause. *(Verb-Verb at the comma!)*
@@ -45,10 +47,27 @@ ______________________________________________________________________
 
 **PRO TRICK:** Knowing which connectors don't change word order (Position 0) vs those that force inversion (Position 1) is a guaranteed 2-3 points on the exam!
 
-| Type | Words | Position | Example |
-| --- | --- | --- | --- |
-| **Position 0** (No Change) | **ADUSO**: Aber, Denn, Und, Sondern, Oder | Before subject | Ich bin müde, **aber** ich gehe *(Subj+Verb)* trotzdem. |
-| **Position 1** (Inversion) | deshalb, trotzdem, außerdem, dann, danach | Before verb | Ich bin müde. **Deshalb** *bleibe* *(Verb+Subj)* ich zu Hause. |
+### Position 0 (ADUSO) — No Word Order Change
+The connector is in "Position 0", followed by Subject (Pos 1) + Verb (Pos 2).
+
+| Connector | Meaning | Example |
+| --- | --- | --- |
+| **A**ber | but | Es ist teuer, **aber** ich kaufe *(Subj+Verb)* es. |
+| **D**enn | because | Ich esse, **denn** ich habe *(Subj+Verb)* Hunger. |
+| **U**nd | and | Ich gehe spazieren **und** ich höre *(Subj+Verb)* Musik. |
+| **S**ondern | but (rather) | Das ist nicht rot, **sondern** es ist blau. |
+| **O**der | or | Gehen wir ins Kino **oder** bleiben wir zu Hause? |
+
+### Position 1 (Adverbs) — Verb-Subject Inversion
+The connector takes "Position 1", followed immediately by the Verb (Pos 2) then Subject.
+
+| Connector | Meaning | Example |
+| --- | --- | --- |
+| **deshalb** | therefore | Ich bin müde. **Deshalb** *bleibe* ich zu Hause. |
+| **trotzdem** | anyway | Es regnet. **Trotzdem** *gehe* ich spazieren. |
+| **außerdem** | furthermore | Er ist nett. **Außerdem** *hilft* er mir immer. |
+| **darum** | that's why | Ich habe Zeit. **Darum** *komme* ich zu dir. |
+| **danach** | after that | Erst essen wir, **danach** *gehen* wir ins Kino. |
 
 <div class="md-quiz" 
   data-question="Ich habe eine neue Wohnung. ___ möchte ich eine große Party machen." 
@@ -312,6 +331,47 @@ The passive is used when you want to focus on **what happens** rather than *who*
   data-options="werden...eingeführt|sind...eingeführt|haben...eingeführt"
   data-answer="0"
   data-explain="Passive Präsens of 'einführen' (separable). The Partizip II of 'einführen' is 'eingeführt'. 'werden...eingeführt' is correct passive. The plural subject 'Regeln' requires 'werden' (not 'wird')."></div>
+
+______________________________________________________________________
+
+## 10. Genitiv (The Case of Possession)
+
+In the B1 exam, you mostly only need to recognize the Genitiv ending (**-s** or **-es** for masculine/neuter) and its articles. It is often a distractor in Sprachbausteine.
+
+| Gender | Article | Example |
+| --- | --- | --- |
+| **der** (Masc) | des | *Das Auto **des** Vater**s**.* |
+| **die** (Fem) | der | *Die Tasche **der** Mutter.* |
+| **das** (Neut) | des | *Das Haus **des** Kind**es**.* |
+| **die** (Plur) | der | *Die Stimmen **der** Leute.* |
+
+______________________________________________________________________
+
+## 11. Infinitiv mit "zu" (um...zu, ohne...zu, statt...zu)
+
+These constructs are high-level B1 markers. The second verb always goes to the very end in the **Infinitiv** form, preceded by **zu**.
+
+| Construct | Meaning | Example |
+| --- | --- | --- |
+| **um...zu** | in order to | *Ich lerne Deutsch, **um** Arbeit **zu finden**.* |
+| **ohne...zu** | without | *Er ging weg, **ohne** ein Wort **zu sagen**.* |
+| **statt...zu** | instead of | *Er schläft, **statt zu** lernen.* |
+| **Infinitiv mit zu** | (general) | *Ich habe vergessen, dich **anzurufen**.* |
+
+______________________________________________________________________
+
+## 12. Most Common Verbs with Fixed Prepositions (Memorize!)
+
+| Verb | Preposition | Case | Example |
+| --- | --- | --- | --- |
+| **warten** | auf | Akkusativ | *Ich warte **auf den** Bus.* |
+| **sich freuen** | auf (future) / über (past) | Akkusativ | *Ich freue mich **auf** den Urlaub.* |
+| **sich interessieren** | für | Akkusativ | *Ich interessiere mich **für** Kunst.* |
+| **denken** | an | Akkusativ | *Ich denke **an** dich.* |
+| **sprechen** | mit (person) / über (topic) | Dat / Akk | *Ich spreche **mit dem** Chef **über** das Projekt.* |
+| **danken** | für | Akkusativ | *Ich danke dir **für** deine Hilfe.* |
+| **träumen** | von | Dativ | *Ich träume **von einem** Haus.* |
+| **gratulieren** | zu | Dativ | *Ich gratuliere dir **zum** Geburtstag.* |
 
 ______________________________________________________________________
 

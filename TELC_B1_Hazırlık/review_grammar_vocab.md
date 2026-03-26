@@ -4,18 +4,21 @@ ______________________________________________________________________
 
 ## 1. Nebensätze (Yan Cümleler) — EN ÇOK TEST EDİLEN KONU
 
-Çekimli(zaman ve kişiye göre değişen) fiil yan cümlenin **EN SONUNA** gider. 
-**PRO İPUCU:** telc Deutsch A2-B1 sınavı *Sprachbausteine* (Bölüm 1) kısmında, virgülden hemen sonra bir boşluk görürseniz, cümlenin geri kalanına bakın. Eğer çekimli fiil cümlenin en sonunda yer alıyorsa, boşluğa kesinlikle *dass, weil, wenn,* veya *ob* gibi yan cümle bağlaçlarından biri gelmelidir!
+7. Çekimli(zaman ve kişiye göre değişen) fiil yan cümlenin **EN SONUNA** gider. 
+8. **PRO İPUCU:** telc Deutsch A2-B1 sınavı *Sprachbausteine* (Bölüm 1) kısmında, virgülden hemen sonra bir boşluk görürseniz, cümlenin geri kalanına bakın. Eğer çekimli fiil cümlenin en sonunda yer alıyorsa, boşluğa kesinlikle *dass, weil, wenn,* veya *ob* gibi yan cümle bağlaçlarından biri gelmelidir!
 
-| Bağlaç | Anlamı | Örnek |
+### En Önemli Yan Cümle Bağlaçları (Fiil SONDA)
+
+| Bağlaç | Anlamı | Kullanım / Örnek |
 | --- | --- | --- |
-| **weil** | çünkü | Ich bleibe zu Hause, **weil** ich heute krank **bin**. |
-| **dass** | -dığı / ki | Ich hoffe, **dass** du morgen **kommst**. |
-| **wenn** | eğer / -dığında | **Wenn** es morgen **regnet**, bleibe ich zu Hause. |
-| **obwohl** | -e rağmen | Er arbeitet viel, **obwohl** er sehr müde **ist**. |
-| **damit** | -sın diye / amacıyla | Ich lerne Deutsch, **damit** ich bessere Arbeit **finde**. |
-| **als** | -dığında (geçmişte tek sefer) | **Als** ich klein **war**, spielte ich oft draußen. |
-| **ob** | -ıp -madığını | Ich weiß nicht, **ob** er zur Party **kommt**. |
+| **weil** | çünkü | Sebep bildirir. *Ich bleibe zu Hause, **weil** ich krank **bin**.* |
+| **dass** | -dığı / ki | Düşünce/ifadeleri bağlar. *Ich hoffe, **dass** du morgen **kommst**.* |
+| **wenn** | eğer / -dığında | Şart veya tekrarlanan olay. * **Wenn** es regnet, **bleibe** ich zu Hause.* |
+| **obwohl** | -e rağmen | Zıtlık bildirir. *Er arbeitet viel, **obwohl** er müde **ist**.* |
+| **damit** | -sın diye | Amaç bildirir. *Ich lerne Deutsch, **damit** ich Arbeit **finde**.* |
+| **als** | -dığında (geçmiş) | Geçmişte tek bir olay. * **Als** ich klein **war**, spielte ich oft.* |
+| **ob** | -ıp -madığı | Evet/Hayır sorusu cevabı. *Ich weiß nicht, **ob** er **kommt**.* |
+| **da** | -dığı için | 'weil' ile benzerdir. * **Da** ich krank **bin**, bleibe ich hier.* |
 
 **Dikkat:** Yan cümle (Nebensatz) cümlenin BAŞINA gelirse, ana cümlenin (Hauptsatz) "1. pozisyonunu" işgal etmiş olur. Bu nedenle virgülden hemen sonra ana cümlenin fiili gelmek zorundadır:
 > **Weil** ich krank **bin**, **bleibe** ich zu Hause. *(Virgülün iki yanında FİİL-FİİL yan yana!)*
@@ -43,12 +46,29 @@ ______________________________________________________________________
 
 ## 2. Konnektoren (Bağlaçlar) — Kelime Dizilimi Hileleri
 
-**PRO İPUCU:** Hangi bağlaçların kelime dizilimini değiştirmediğini (0. Pozisyon) ve hangilerinin devrik cümle yaptığını (1. Pozisyon) bilmek size sınavda garanti 2-3 puan kazandıracaktır!
+46. **PRO İPUCU:** Hangi bağlaçların kelime dizilimini değiştirmediğini (0. Pozisyon) ve hangilerinin devrik cümle yaptığını (1. Pozisyon) bilmek size sınavda garanti 2-3 puan kazandıracaktır!
 
-| Tür | Kelimeler | Pozisyon | Örnek |
-| --- | --- | --- | --- |
-| **Pozisyon 0** (Değişim yok) | **ADUSO**: Aber, Denn, Und, Sondern, Oder | Özneden önce | Ich bin müde, **aber** ich gehe *(Özne+Fiil)* trotzdem. |
-| **Pozisyon 1** (Devrik cümle) | deshalb, trotzdem, außerdem, dann, danach | Fiilden önce | Ich bin müde. **Deshalb** *bleibe* *(Fiil+Özne)* ich zu Hause. |
+### Pozisyon 0 (ADUSO) — Kelime Dizilimi Değişmez
+Bağlaç "0. Pozisyon"dadır, ardından Özne (1. Poz) + Fiil (2. Poz) gelir.
+
+| Bağlaç | Anlamı | Örnek |
+| --- | --- | --- |
+| **A**ber | ama | Es ist teuer, **aber** ich kaufe *(Özne+Fiil)* es. |
+| **D**enn | çünkü | Ich esse, **denn** ich habe *(Özne+Fiil)* Hunger. |
+| **U**nd | ve | Ich gehe spazieren **und** ich höre *(Özne+Fiil)* Musik. |
+| **S**ondern | aksine | Das ist nicht rot, **sondern** es ist blau. |
+| **O**der | veya | Gehen wir ins Kino **oder** bleiben wir zu Hause? |
+
+### Pozisyon 1 (Zarflar) — Fiil-Özne Devrimi (Inversion)
+Bağlaç "1. Pozisyon"u alır, hemen ardından Fiil (2. Poz) ve sonra Özne gelir.
+
+| Bağlaç | Anlamı | Örnek |
+| --- | --- | --- |
+| **deshalb** | bu yüzden | Ich bin müde. **Deshalb** *bleibe* ich zu Hause. |
+| **trotzdem** | buna rağmen | Es regnet. **Trotzdem** *gehe* ich spazieren. |
+| **außerdem** | ayrıca | Er ist nett. **Außerdem** *hilft* er mir her zaman. |
+| **darum** | bu sebeple | Ich habe Zeit. **Darum** *komme* ich zu dir. |
+| **danach** | ondan sonra | Erst essen wir, **danach** *gehen* wir ins Kino. |
 
 <div class="md-quiz" 
   data-question="Ich habe eine neue Wohnung. ___ möchte ich eine große Party machen." 
@@ -187,6 +207,47 @@ Yukarıdaki tüm kuralları kapsayan telc Deutsch A2-B1 tarzı karma alıştırm
   data-options="lebe|lebte|habe gelebt" 
   data-answer="0" 
   data-explain="HİLE: 'Seit' (-den beri), geçmişte başlamış VE HALA DEVAM EDEN eylemleri anlatır. İngilizce veya Türkçenin aksine, Almancada bu durumda geçmiş zaman değil, Şimdiki Zaman (Präsens) kullanılmak zorundadır!"></div>
+
+______________________________________________________________________
+
+## 10. Genitiv (İsim Tamlaması / İyelik Hali)
+
+B1 sınavında genellikle sadece Genitiv artikellerini ve son eklerini (**-s** veya **-es**) tanımanız yeterlidir. Sprachbausteine kısmında kafa karıştırıcı bir seçenek olarak çıkabilir.
+
+| Cinsiyet | Artikel | Örnek |
+| --- | --- | --- |
+| **der** (Masc) | des | *Das Auto **des** Vater**s**.* (Babanın arabası) |
+| **die** (Fem) | der | *Die Tasche **der** Mutter.* (Annenin çantası) |
+| **das** (Neut) | des | *Das Haus **des** Kind**es**.* (Çocuğun evi) |
+| **die** (Plur) | der | *Die Stimmen **der** Leute.* (İnsanların sesleri) |
+
+______________________________________________________________________
+
+## 11. Infinitiv mit "zu" (um...zu, ohne...zu, statt...zu)
+
+Bu yapılar ileri seviye B1 göstergeleridir. İkinci fiil her zaman cümlenin en sonunda **Infinitiv** (mastar) formunda yer alır ve önünde **zu** bulunur.
+
+| Yapı | Anlamı | Örnek |
+| --- | --- | --- |
+| **um...zu** | -mak için | *Ich lerne Deutsch, **um** Arbeit **zu finden**.* |
+| **ohne...zu** | -madan / -meksizin | *Er ging weg, **ohne** ein Wort **zu sagen**.* |
+| **statt...zu** | -mak yerine | *Er schläft, **statt zu** lernen.* |
+| **Infinitiv mit zu** | (genel) | *Ich habe vergessen, dich **anzurufen**.* |
+
+______________________________________________________________________
+
+## 12. En Sık Kullanılan Edatlı Fiiller (Ezberleyin!)
+
+| Fiil | Edat | Hal (Case) | Örnek |
+| --- | --- | --- | --- |
+| **warten** | auf | Akkusativ | *Ich warte **auf den** Bus.* |
+| **sich freuen** | auf (gelecek) / über (geçmiş) | Akkusativ | *Ich freue mich **auf** den Urlaub.* |
+| **sich interessieren** | für | Akkusativ | *Ich interessiere mich **für** Kunst.* |
+| **denken** | an | Akkusativ | *Ich denke **an** dich.* |
+| **sprechen** | mit (kişi) / über (konu) | Dat / Akk | *Ich spreche **mit dem** Chef **über** das Projekt.* |
+| **danken** | für | Akkusativ | *Ich danke dir **für** deine Hilfe.* |
+| **träumen** | von | Dativ | *Ich träume **von einem** Haus.* |
+| **gratulieren** | zu | Dativ | *Ich gratuliere dir **zum** Geburtstag.* |
 
 ______________________________________________________________________
 
