@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD033 -->
 # Review: Grammar & Vocabulary (Sprachbausteine)
 
 ---
@@ -17,7 +18,7 @@ In subordinate clauses (Nebensatz), the conjugated verb always goes to the **VER
 | **wenn** | if / when | **Wenn** es regnet, **bleibe** ich zu Hause. |
 | **obwohl** | although | Er arbeitet viel, **obwohl** er müde **ist**. |
 | **damit** | so that | Ich lerne Deutsch, **damit** ich Arbeit **finde**. |
-| **als** | when (past) | **Als** ich ein Kind **war**, spielte ich oft draußen. |
+| **als** | when (past) | **Als** ich ein Kind **war**, spielte benı oft draußen. |
 | **ob** | whether / if | Ich weiß nicht, **ob** er morgen **kommt**. |
 
 **Important:** When the Nebensatz starts the sentence, the main clause begins with the verb (Verb-Verb rule):
@@ -28,7 +29,6 @@ In subordinate clauses (Nebensatz), the conjugated verb always goes to the **VER
 ## 2. Konnektoren (Connectors) & Word Order
 
 ### Position 0 (ADUSO) — No word order change
-The subject comes immediately after these connectors.
 
 | Connector | Meaning | Example |
 | --- | --- | --- |
@@ -39,7 +39,6 @@ The subject comes immediately after these connectors.
 | **O**der | or | Gehen wir ins Kino **oder** bleiben wir zu Hause? |
 
 ### Position 1 (Adverbs) — Verb-Subject Inversion
-These "force" the verb to come second (Inversion).
 
 | Connector | Meaning | Example |
 | --- | --- | --- |
@@ -57,8 +56,9 @@ The most important tense for the oral exam.
 **Formula:** **haben/sein** (Position 2) + ... + **Partizip II** (End)
 
 ### Sein or Haben?
-*   **sein:** Movement (A to B) or change of state (*gehen, fahren, kommen, sterben*).
-*   **haben:** Most other verbs.
+
+* **sein:** Movement (A to B) or change of state (*gehen, fahren, kommen, sterben*).
+* **haben:** Most other verbs.
 
 *Special: 'sein', 'werden', and 'bleiben' always take **sein**.*
 
@@ -66,8 +66,8 @@ The most important tense for the oral exam.
 
 ## 4. Wechselpräpositionen (Akkusativ vs. Dativ)
 
-*   **Wohin? (Movement/Target) → Akkusativ**
-*   **Wo? (Location/Static) → Dativ**
+* **Wohin? (Movement/Target) → Akkusativ**
+* **Wo? (Location/Static) → Dativ**
 
 ### Dativ Case Reference Table
 
@@ -78,9 +78,10 @@ The most important tense for the oral exam.
 | **Neutrum** | das / ein | **dem / einem** |
 | **Plural** | die | **den (+ n)** |
 
-*Example:* 
-- Ich gehe **in den** Park (Akk). 
-- Ich bin **im (in dem)** Park (Dat).
+*Example:*
+
+* Ich gehe **in den** Park (Akk).
+* Ich bin **im (in dem)** Park (Dat).
 
 ---
 
@@ -100,6 +101,7 @@ Used for asking things politely in the oral exam.
 ## 6. Adjektivdeklination (Adjective Endings)
 
 ### After Definite Article (der, die, das)
+
 | Case | Masc | Fem | Neut | Plur |
 | --- | --- | --- | --- | --- |
 | **Nom** | -e | -e | -e | -en |
@@ -139,14 +141,14 @@ Used for asking things politely in the oral exam.
 
 ## Interactive Practice
 
-<div class="md-quiz" 
-  data-question="Ich bleibe heute zu Hause, ___ es stark regnet." 
-  data-options="dass|weil|wenn" 
-  data-answer="1" 
+<div class="md-quiz"
+  data-question="Ich bleibe heute zu Hause, ___ es stark regnet."
+  data-options="dass|weil|wenn"
+  data-answer="1"
   data-explain="Correct: 'weil' is the conjunction for reason. The verb 'regnet' is at the end."></div>
 
-<div class="md-quiz" 
-  data-question="Könnten Sie das bitte noch einmal ___?" 
-  data-options="erklärt|erklären|erkläre" 
-  data-answer="1" 
+<div class="md-quiz"
+  data-question="Könnten Sie das bitte noch einmal ___?"
+  data-options="erklärt|erklären|erkläre"
+  data-answer="1"
   data-explain="After 'Könnten', the main verb goes to the end in Infinitiv form."></div>

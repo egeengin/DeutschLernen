@@ -1,9 +1,11 @@
 # 1-Month B1 Study Plan
 
 ## Overview
+
 This schedule is designed for 2-3 hours of study per day, 6 days a week, with a focus on the **telc Deutsch A2-B1** format.
 
 ### Week 1: Grammar Basics & Vocabulary
+
 **Goal:** Master the "Sprachbausteine" section (30% of written exam).
 
 | Day | Topic | Tasks |
@@ -17,6 +19,7 @@ This schedule is designed for 2-3 hours of study per day, 6 days a week, with a 
 | Day 7 | Final Push | Practice Adjective endings and Passiv basics. |
 
 ### Week 2: Reading & Listening Comprehension
+
 **Goal:** Build speed and learn to find synonyms (Keywords).
 
 | Day | Topic | Tasks |
@@ -30,6 +33,7 @@ This schedule is designed for 2-3 hours of study per day, 6 days a week, with a 
 | Day 14 | Review | Half Mock Exam: Reading & Listening parts only. |
 
 ### Week 3: Writing & Speaking Strategies
+
 **Goal:** Memorize letter templates and speaking "Redemittel".
 
 | Day | Topic | Tasks |
@@ -43,6 +47,7 @@ This schedule is designed for 2-3 hours of study per day, 6 days a week, with a 
 | Day 21 | Vocab Sprint | Focus on "Work/Jobs" and "Flat/Housing" vocab. |
 
 ### Week 4: Intensive Practice & Mock Exams
+
 **Goal:** Build exam stamina and polish weak points.
 
 | Day | Activity | Tasks |

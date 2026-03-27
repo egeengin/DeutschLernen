@@ -36,7 +36,6 @@ Welcome to the **DeutschLernen (TELC B1 Study Portal)** repository. All contribu
 - **Never** use "DTZ" or "Deutsch-Test für Zuwanderer" when referring to the target exam in any file.
 - When linking to telc resources, use the telc Deutsch A2-B1 product page: `https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2-b1/`
 
-
 ---
 
 ## 🚀 Guru Best Practices
@@ -275,6 +274,6 @@ CSS heatmap squares:
 | Language toggle (EN/TR) | ✅ Working | localStorage persists preference |
 | Day Tracker | ✅ Working | Persists across page refresh |
 | Mermaid diagrams | ✅ Working | Renders in index.html SPA |
-| PWA / Service Worker | ⏳ Planned | See Guru Rule A above |
-| Heatmap tracker | ⏳ Planned | See Guru Rule F above |
+| PWA / Service Worker | ✅ Working | See Guru Rule A above |
+| Heatmap tracker | ✅ Working | See Guru Rule F above |
 | GitHub Actions CI | ⏳ Planned | See Guru Rule C above |

@@ -1,9 +1,11 @@
 # 1 Aylık B1 Çalışma Planı
 
 ## Genel Bakış
+
 Bu program, günde 2-3 saatlik çalışma, haftada 6 gün ve **telc Deutsch A2-B1** formatına odaklanacak şekilde tasarlanmıştır.
 
 ### 1. Hafta: Temel Dilbilgisi ve Kelime Bilgisi
+
 **Hedef:** Yazılı sınavın %30'unu oluşturan "Sprachbausteine" bölümünde ustalaşın.
 
 | Gün | Konu | Görevler |
@@ -16,8 +18,9 @@ Bu program, günde 2-3 saatlik çalışma, haftada 6 gün ve **telc Deutsch A2-B
 | 6. Gün | Sıfatlar | Sıfat tamlamaları (Adjektivdeklination) ve Karşılaştırma. |
 | 7. Gün | Son Dokunuş | Sıfat ekleri ve genel Edat pratikleri. |
 
-### 2. Hafta: Okuma ve Dinleme Anlama
-**Hedef:** Hız kazanın ve anahtar kelimeleri (eş anlamlıları) bulmayı öğrenin.
+### 2. Hafta: Okuduğunu ve Dinlediğini Anlama
+
+**Hedef:** Hız kazanın ve eşanlamlıları (Anahtar Kelimeler) bulmayı öğrenin.
 
 | Gün | Konu | Görevler |
 | --- | --- | --- |
@@ -30,7 +33,8 @@ Bu program, günde 2-3 saatlik çalışma, haftada 6 gün ve **telc Deutsch A2-B
 | 14. Gün | Tekrar | Yarım Deneme Sınavı: Sadece Okuma ve Dinleme bölümleri. |
 
 ### 3. Hafta: Yazma ve Konuşma Stratejileri
-**Hedef:** Mektup şablonlarını ve konuşma kalıplarını (Redemittel) ezberleyin.
+
+**Hedef:** Mektup şablonlarını ve konuşma "Redemittel" (kalıplarını) ezberleyin.
 
 | Gün | Konu | Görevler |
 | --- | --- | --- |
@@ -43,6 +47,7 @@ Bu program, günde 2-3 saatlik çalışma, haftada 6 gün ve **telc Deutsch A2-B
 | 21. Gün | Kelime Atak | "İş/Meslekler" ve "Ev/Konut" kelimelerine odaklanın. |
 
 ### 4. Hafta: Yoğun Pratik ve Deneme Sınavları
+
 **Hedef:** Sınav kondisyonu kazanın ve zayıf noktaları pürüzsüzleştirin.
 
 | Gün | Aktivite | Görevler |
