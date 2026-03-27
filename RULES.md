@@ -36,6 +36,18 @@ Welcome to the **DeutschLernen (TELC B1 Study Portal)** repository. All contribu
 - **Never** use "DTZ" or "Deutsch-Test für Zuwanderer" when referring to the target exam in any file.
 - When linking to telc resources, use the telc Deutsch A2-B1 product page: `https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2-b1/`
 
+### 6. Conventional Commit Messages
+
+- All commit messages must follow the [Conventional Commits](https://www.conventionalcommits.org/) standard.
+- Use the following prefixes:
+  - `feat`: (New features, like a new PWA module or grammar topic)
+  - `fix`: (Bug fixes, like correcting a broken quiz or typo)
+  - `docs`: (Documentation-only changes, like updating this file)
+  - `style`: (Markup/formatting changes that do not affect logic, like fixing markdownlint errors)
+  - `refactor`: (Code changes that neither fix a bug nor add a feature)
+  - `chore`: (Maintenance tasks, like updating dependencies)
+- **Do not** use generic placeholder messages like "update", "fix", or "final cleanup". Be descriptive but concise.
+
 ---
 
 ## 🚀 Guru Best Practices
