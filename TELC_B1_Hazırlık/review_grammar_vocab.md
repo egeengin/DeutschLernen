@@ -1,8 +1,9 @@
+<!-- markdownlint-disable MD033 -->
 # B1 Almanca Dilbilgisi ve Kelime Bilgisi Özeti (Sprachbausteine)
 
 ---
 
-## 1. Nebensätze (Yan Cümleler) — EN ÇOK TEST EDİLEN KONU
+## 1. Nebensätze (Yan Cümleler) — EN ÇOK TEST EDİLEN YAPI
 
 Yan cümlelerde (Nebensatz), çekimli fiil daima **EN SONA** gider.
 
@@ -21,14 +22,14 @@ Yan cümlelerde (Nebensatz), çekimli fiil daima **EN SONA** gider.
 | **ob** | -ıp -madığı | Ich weiß nicht, **ob** er morgen **kommt**. |
 
 **Önemli:** Yan cümle cümlenin başında gelirse, ana cümle fiil ile başlar (Fiil-Fiil kuralı):
+
 > **Weil** ich krank **bin**, **bleibe** ich heute zu Hause.
 
 ---
 
-## 2. Konnektoren (Bağlaçlar) ve Cümle Dizilimi
+## 2. Konnektoren (Bağlaçlar: deshalb, trotzdem, außerdem)
 
 ### Pozisyon 0 (ADUSO) — Dizilim Değişmez
-Özne bu bağlaçlardan hemen sonra gelir.
 
 | Bağlaç | Anlamı | Örnek |
 | --- | --- | --- |
@@ -39,7 +40,6 @@ Yan cümlelerde (Nebensatz), çekimli fiil daima **EN SONA** gider.
 | **O**der | veya | Gehen wir ins Kino **oder** bleiben wir zu Hause? |
 
 ### Pozisyon 1 (Zarflar) — Fiil-Özne Devrik Yapısı
-Bu kelimeler fiili 2. sıraya zorlar, özne fiilden sonra gelir.
 
 | Bağlaç | Anlamı | Örnek |
 | --- | --- | --- |
@@ -57,8 +57,9 @@ Sözlü sınav (Sprechen) için en önemli zaman dilimidir.
 **Formül:** **haben/sein** (2. Sırada) + ... + **Partizip II** (En Sonda)
 
 ### Sein mı Haben mı?
-*   **sein:** Hareket (A'dan B'ye) veya durum değişikliği (*gehen, fahren, kommen, sterben*).
-*   **haben:** Diğer çoğu fiil.
+
+* **sein:** Hareket (A'dan B'ye) veya durum değişikliği (*gehen, fahren, kommen, sterben*).
+* **haben:** Diğer çoğu fiil.
 
 *İstisna: 'sein', 'werden' ve 'bleiben' daima **sein** ile kullanılır.*
 
@@ -66,8 +67,8 @@ Sözlü sınav (Sprechen) için en önemli zaman dilimidir.
 
 ## 4. Wechselpräpositionen (Akkusativ vs. Dativ)
 
-*   **Wohin? (Nereye/Yönelim) → Akkusativ**
-*   **Wo? (Nerede/Konum) → Dativ**
+* **Wohin? (Nereye/Yönelim) → Akkusativ**
+* **Wo? (Nerede/Konum) → Dativ**
 
 ### Dativ Artikelleri Tablosu
 
@@ -78,9 +79,10 @@ Sözlü sınav (Sprechen) için en önemli zaman dilimidir.
 | **Neutrum** | das / ein | **dem / einem** |
 | **Plural** | die | **den (+ n)** |
 
-*Örnek:* 
-- Ich gehe **in den** Park (Akk). 
-- Ich bin **im (in dem)** Park (Dat).
+* **Örnek:**
+
+* Ich gehe **in den** Park (Akk).
+* Ich bin **im (in dem)** Park (Dat).
 
 ---
 
@@ -99,8 +101,9 @@ Sözlü sınavda işleri kibar yoldan halletmek için kullanılır.
 
 ## 6. Adjektivdeklination (Sıfat Tamlamaları)
 
-### Belirli Artikellerden Sonra (der, die, das)
-| Hal | Masc | Fem | Neut | Plur |
+### Belirsiz Artikellerden Sonra (ein, eine, ein)
+
+| Durum | Maskulin | Feminin | Neutrum | Plural (keine) |
 | --- | --- | --- | --- | --- |
 | **Nom** | -e | -e | -e | -en |
 | **Akk** | -en | -e | -e | -en |
@@ -139,14 +142,14 @@ Sözlü sınavda işleri kibar yoldan halletmek için kullanılır.
 
 ## İnteraktif Pratik
 
-<div class="md-quiz" 
-  data-question="Ich bleibe heute zu Hause, ___ es stark regnet." 
-  data-options="dass|weil|wenn" 
-  data-answer="1" 
+<div class="md-quiz"
+  data-question="Ich bleibe heute zu Hause, ___ es stark regnet."
+  data-options="dass|weil|wenn"
+  data-answer="1"
   data-explain="Doğru: 'weil' neden belirtir. 'regnet' fiili en sondadır."></div>
 
-<div class="md-quiz" 
-  data-question="Könnten Sie das bitte noch einmal ___?" 
-  data-options="erklärt|erklären|erkläre" 
-  data-answer="1" 
+<div class="md-quiz"
+  data-question="Könnten Sie das bitte noch einmal ___?"
+  data-options="erklärt|erklären|erkläre"
+  data-answer="1"
   data-explain="'Könnten' kullanılan cümlelerde asıl fiil en sona mastar (Infinitiv) halde gelir."></div>

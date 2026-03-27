@@ -1,34 +1,37 @@
+<!-- markdownlint-disable MD033 -->
 # Tanılama Deneme Sınavı
 
 ---
 
 ## Talimatlar
-Bu, zayıf noktalarınızı belirlemeniz için bir başlangıç değerlendirmesidir.
-1. Süre tutun.
+
+Bu, zayıf noktalarınızı belirlemek için bir temel değerlendirmedir.
+
+1. Zamanlayıcı kullanın.
 2. Sözlük kullanmayın.
-3. Puanınızı kaydedin.
+3. Puanınızı not edin.
 
 ---
 
 ## 1. Sprachbausteine (Dilbilgisi)
 
-<div class="md-quiz" 
-  data-question="Ich bleibe zu Hause, ___ ich krank bin." 
-  data-options="dass|weil|wenn" 
-  data-answer="1" 
-  data-explain="Doğru: 'weil' neden belirtir ve fiili sona gönderir."></div>
+<div class="md-quiz"
+  data-question="Ich bleibe zu Hause, ___ ich krank bin."
+  data-options="dass|weil|wenn"
+  data-answer="1"
+  data-explain="Doğru: 'weil' neden bildirir ve fiil en sondadır."></div>
 
-<div class="md-quiz" 
-  data-question="Ich bin nicht sicher, ___ der Arzt heute Nachmittag Sprechstunde hat." 
-  data-options="obwohl|dass|ob" 
-  data-answer="2" 
-  data-explain="Doğru: 'ob' (-ıp -madığı) dolaylı sorular için kullanılır."></div>
+<div class="md-quiz"
+  data-question="Ich bin nicht sicher, ___ der Arzt bugün Nachmittag Sprechstunde hat."
+  data-options="obwohl|dass|ob"
+  data-answer="2"
+  data-explain="Doğru: Dolaylı sorular için 'ob' (-ip -mediği) kullanılır."></div>
 
-<div class="md-quiz" 
-  data-question="Ich warte ___ Bus." 
-  data-options="auf dem|auf den|auf der" 
-  data-answer="1" 
-  data-explain="Doğru: 'warten auf' her zaman Akkusativ alır. 'den Bus' maskulin Akkusativ'dir."></div>
+<div class="md-quiz"
+  data-question="Ich warte ___ Bus."
+  data-options="auf dem|auf den|auf der"
+  data-answer="1"
+  data-explain="Doğru: 'warten auf' her zaman Akkusativ alır. 'den Bus' eril Akkusativ'dir."></div>
 
 ---
 
@@ -36,13 +39,14 @@ Bu, zayıf noktalarınızı belirlemeniz için bir başlangıç değerlendirmesi
 
 > "In Berlin gibt es viele Möglichkeiten, Deutsch zu lernen. Viele Schulen bieten Abendkurse an."
 
-<div class="md-quiz" 
-  data-question="Metnin ana konusu nedir?" 
-  data-options="Berlin'de Yemek|Berlin'de Almanca Öğrenmek|İş Bulmak" 
-  data-answer="1" 
-  data-explain="Metin açıkça Almanca okullarından ve akşam kurslarından bahsediyor."></div>
+<div class="md-quiz"
+  data-question="Metnin ana konusu nedir?"
+  data-options="Berlin'de yemek|Berlin'de Almanca öğrenmek|İş bulmak"
+  data-answer="1"
+  data-explain="Metin açıkça Almanca kurslarından ve okullarından bahsediyor."></div>
 
 ---
 
 ## Sonuçlar
-Eğer %60'ın altında puan alırsanız, lütfen çalışma planınızdaki 1. Haftaya (Gramer) odaklanın.
+
+Eğer puanınız %60'ın altındaysa, lütfen çalışma planınızdaki 1. Haftaya (Dilbilgisi) odaklanın.
