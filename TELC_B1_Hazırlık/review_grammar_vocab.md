@@ -7,7 +7,7 @@
 
 Yan cümlelerde (Nebensatz), çekimli fiil daima **EN SONA** gider.
 
-**SINAV İPUCU:** telc Deutsch A2-B1 "Sprachbausteine" bölümünde, virgülden hemen sonra bir boşluk görürseniz cümlenin geri kalanına bakın. Eğer çekimli fiil en sonda duruyorsa, o boşluk muhtemelen *dass, weil, wenn* veya *ob* gibi bir yan cümle bağlacıdır.
+**SINAV İPUCU:** telc Deutsch B1 "Sprachbausteine" bölümünde, virgülden hemen sonra bir boşluk görürseniz cümlenin geri kalanına bakın. Eğer çekimli fiil en sonda duruyorsa, o boşluk muhtemelen *dass, weil, wenn* veya *ob* gibi bir yan cümle bağlacıdır.
 
 ### Sık Kullanılan Yan Cümle Bağlaçları (Fiil SONDA)
 
@@ -153,3 +153,8 @@ Sözlü sınavda işleri kibar yoldan halletmek için kullanılır.
   data-options="erklärt|erklären|erkläre"
   data-answer="1"
   data-explain="'Könnten' kullanılan cümlelerde asıl fiil en sona mastar (Infinitiv) halde gelir."></div>
+
+## Kaynaklar
+
+* [telc Deutsch B1 Resmi Sayfası](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+* [Lingolia Almanca Dilbilgisi](https://deutsch.lingolia.com/en/) — Kapsamlı dilbilgisi açıklamaları.

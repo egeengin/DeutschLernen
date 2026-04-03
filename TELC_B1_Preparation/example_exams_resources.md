@@ -2,8 +2,9 @@
 
 ## Official Sources
 
-- **telcer Official Practice Tests:** [telc.net/practice-exams](https://www.telc.net/en/candidates/language-examinations/tests/telc-deutsch-a2b1.html)
-- **A2/B1 Manual (Handbuch):** Detailed scoring rules from telc.
+- **telc Official Practice Tests:** [telc.net/practice-exams](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+- **Local Practice Exam (B1):** `file:///Users/ege/Downloads/telc_deutsch_b1` (Official telc Deutsch B1 Übungstest 1 — PDF + MP3)
+- **B1 Syllabus (Übungstest):** Detailed scoring rules from telc — see pages 39–42 of the Übungstest PDF.
 
 ## Video Courses
 
@@ -23,3 +24,9 @@
 - **Deutsche Welle App:** For listening practice.
 - **Babbel/Duolingo:** For daily vocabulary maintenance.
 - **HelloTalk / Tandem:** Language exchange apps for speaking practice with natives.
+
+## References
+
+- [telc Deutsch B1 Official Page](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+- [Deutsche Welle — Nicos Weg](https://learngerman.dw.com/en/nicos-weg/c-36519687)
+- [Lingolia German Grammar](https://deutsch.lingolia.com/en/)

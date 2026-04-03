@@ -2,8 +2,9 @@
 
 ## Resmi Kaynaklar
 
-- **telc Resmi Deneme Sınavları:** [telc.net/deneme-sinavlari](https://www.telc.net/en/candidates/language-examinations/tests/telc-deutsch-a2b1.html)
-- **A2/B1 El Kitabı (Handbuch):** telc'ten detaylı puanlama kuralları.
+- **telc Resmi Deneme Sınavları:** [telc.net/deneme-sinavlari](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+- **Yerel Deneme Sınavı (B1):** `file:///Users/ege/Downloads/telc_deutsch_b1` (Resmi telc Deutsch B1 Übungstest 1 — PDF + MP3)
+- **B1 Müfredatı (Übungstest):** telc'ten detaylı puanlama kuralları — Übungstest PDF'inin 39–42. sayfalarına bakın.
 
 ## Video Kurslar
 
@@ -25,3 +26,9 @@
 - **Deutsche Welle Uygulaması:** Dinleme pratiği için.
 - **Babbel/Duolingo:** Günlük kelime takibi için.
 - **HelloTalk / Tandem:** Anadili Almanca olanlarla konuşma pratiği için dil değişim uygulamaları.
+
+## Kaynaklar
+
+- [telc Deutsch B1 Resmi Sayfası](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+- [Deutsche Welle — Nicos Weg](https://learngerman.dw.com/en/nicos-weg/c-36519687)
+- [Lingolia Almanca Dilbilgisi](https://deutsch.lingolia.com/en/)

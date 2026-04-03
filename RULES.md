@@ -28,13 +28,12 @@ Welcome to the **DeutschLernen (TELC B1 Study Portal)** repository. All contribu
 - Any external data, exam structures, official TELC guidelines, or vocabulary lists must be explicitly referenced.
 - **At the bottom of every Markdown page**, include a `## References` section containing valid URL links to the original sources (e.g., Goethe-Institut, DW Learn German, official TELC mock exams).
 
-### 5. Exam Identity: telc Deutsch A2-B1 ≠ DTZ
+### 5. Exam Identity: telc Deutsch B1
 
-- 🛑 **CRITICAL:** This project targets the **telc Deutsch A2-B1** exam — NOT the DTZ (Deutsch-Test für Zuwanderer).
-- These are **two different exams** with different structures, different Schreiben tasks, and different target audiences.
-- The **DTZ** is specifically for immigrants applying for residence permits. The **telc Deutsch A2-B1** is the general dual-level certification.
-- **Never** use "DTZ" or "Deutsch-Test für Zuwanderer" when referring to the target exam in any file.
-- When linking to telc resources, use the telc Deutsch A2-B1 product page: `https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2-b1/`
+- 🛑 **CRITICAL:** This project targets the **telc Deutsch B1** exam — NOT the DTZ (Deutsch-Test für Zuwanderer) and NOT the dual-level A2-B1 exam.
+- The **telc Deutsch B1** is a single-level certification that requires passing both the written (135/225 points) and oral (45/75 points) sections. Total points are 300.
+- **Never** use "DTZ", "Deutsch-Test für Zuwanderer", "A2-B1", or "Zertifikat Deutsch" when referring to the target exam in any file. Always call it **telc Deutsch B1**.
+- When linking to telc resources, use the telc Deutsch B1 product page: `https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html`
 
 ### 6. Conventional Commit Messages
 

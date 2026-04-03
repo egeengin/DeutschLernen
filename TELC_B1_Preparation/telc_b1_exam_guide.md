@@ -1,103 +1,85 @@
-# telc Deutsch A2-B1 — Exam Guide & Strategy
+# telc Deutsch B1 — Exam Guide & Strategy
 
 ## Exam Overview
 
-The **telc Deutsch A2-B1** is an A2/B1 dual-level exam developed by telc gGmbH. Based on your performance, you receive either an A2 or a **B1 certificate**. Your goal: **B1**.
-
-The exam tests everyday communication across reading, listening, writing, and speaking. Unlike some older exam formats, you must write TWO pieces of text (a Chat and an Email), and there are more reading/listening parts.
+This portal targets the **telc Deutsch B1** exam — a single-level certification exam. You must score 60%+ in both the written and oral sections independently to pass and receive your B1 certificate.
 
 ______________________________________________________________________
 
 ## Scoring & How to Get B1
 
-| Section                             | Max Points | B1 Threshold         |
-| ----------------------------------- | ---------- | -------------------- |
-| **Hören** (Listening)               | 25         | ~15 (60%)            |
-| **Lesen** (Reading)                 | 25         | ~15 (60%)            |
-| **Sprachbausteine** (Grammar/Vocab) | 30         | ~18 (60%)            |
-| **Schreiben** (Writing)             | 20         | ~12 (60%)            |
-| **Sprechen** (Speaking)             | separate   | B1-level performance |
-| **Total Written**                   | 100        | **≥ 60**             |
+| Section | Max Points | B1 Pass Threshold |
+| --- | --- | --- |
+| **Leseverstehen** (Reading) | 75 | |
+| **Sprachbausteine** (Grammar) | 30 | |
+| **Hörverstehen** (Listening) | 75 | |
+| **Schreiben** (Writing) | 45 | |
+| **Total Written** | 225 | **≥ 135 (60%)** |
+| **Sprechen** (Speaking - Oral) | 75 | **≥ 45 (60%)** |
+| **Total Exam** | 300 | **≥ 180** |
 
-**Critical:** You must achieve B1-level performance in **both** the written and oral sections. Getting 90% on writing but A2 on speaking still results in A2 overall. Train all four skills!
+**Critical:** You must achieve at least 135 points in the Written Section AND at least 45 points in the Oral Section. If you fail one of them, you do not receive the certificate.
 
-**How your result is determined:**
+### Grading Scale
 
-```mermaid
-flowchart TD
-    A["Take telc Deutsch A2-B1 Exam"] --> B["Written Section\n(Hören + Lesen + Sprachbausteine + Schreiben)\nMax: 100 points"]
-    A --> C["Oral Section\n(Sprechen)\nPart 1 + 2 + 3"]
-    B --> D{"Written score\n≥ 60 points?"}
-    C --> E{"Speaking\nat B1 level?"}
-    D -- No --> F["❌ A2 Certificate"]
-    E -- No --> F
-    D -- Yes --> G{"BOTH conditions\nmet?"}
-    E -- Yes --> G
-    G -- Yes --> H["✅ B1 Certificate"]
-    G -- No --> F
-    style H fill:#27ae60,color:#fff
-    style F fill:#e74c3c,color:#fff
-```
+| Points | Grade |
+| --- | --- |
+| 270–300 | sehr gut (very good) |
+| 240–269.5 | gut (good) |
+| 210–239.5 | befriedigend (satisfactory) |
+| 180–209.5 | ausreichend (sufficient) |
+| 0–179.5 | nicht bestanden (failed) |
 
 ______________________________________________________________________
 
-## Exam Structure (Detailed)
+## Written Exam (~150 minutes)
 
-### 1. Written Exam (~125 minutes)
+### Leseverstehen & Sprachbausteine (90 min)
 
-#### Lesen (Reading) — ~45 min
+**Leseverstehen (Reading Comprehension) — 75 Points:**
 
-| Part | Task |
-| --- | --- |
-| **Teil 1** | Global reading: Matching titles or themes to texts. |
-| **Teil 2** | Detail reading: Multiple-choice questions based on an article. |
-| **Teil 3** | Selective reading: Matching advertisements to specific situations. |
-| **Teil 4** | True/False or matching missing words into a text logic flow. |
+- **Teil 1 — Globalverstehen (5 items):** Match 5 headlines/titles to 5 short texts (Zuordnungsaufgaben).
+- **Teil 2 — Detailverstehen (5 items):** Read one long text. Answer 5 multiple-choice questions (a, b, or c).
+- **Teil 3 — Selektives Verstehen (10 items):** Match 10 situations to advertisements. Some situations may have no match (mark "x").
 
-#### Sprachbausteine (Grammar/Vocab) — ~35 min (combined with Reading)
+**Sprachbausteine (Grammar & Vocabulary) — 30 Points:**
 
-| Part | Task |
-| --- | --- |
-| **Teil 1** | Multiple choice (a, b, c) filling in grammar blanks in a formal letter. |
-| **Teil 2** | Multiple choice filling in grammar blanks in a semi-formal or informal text. |
+- **Teil 1 — Grammatik (10 items):** Read a text (usually a letter/email) with 10 blanks. For each blank, choose the correct word from 3 options (a, b, or c). Tests grammar: conjunctions, articles, prepositions, verb forms.
+- **Teil 2 — Lexik (10 items):** Read a formal letter with 10 blanks. Choose the correct word from a word pool of 15 options (a–o). Tests vocabulary and text logic.
 
-#### Hören (Listening) — ~35 min
+### Hörverstehen (~30 min) — 75 Points
 
-| Part | What You Hear | Task | Plays |
-| --- | --- | --- | --- |
-| **Teil 1** | Short announcements (radio, station). | True/False or Multiple Choice. | **Twice** |
-| **Teil 2** | Information from an answering machine or radio. | Understanding details. | **Once** |
-| **Teil 3** | Conversations on everyday topics. | Matching statements to speakers. | **Twice** |
-| **Teil 4** | Interviews or discussions. | True/False questions. | **Once** |
-| **Teil 5** | Short statements or opinions. | Matching opinions to specific people. | **Once** |
+- **Teil 1 — Globalverstehen (5 items):** Listen to 5 short monologues. Decide if statements are richtig (+) or falsch (–). Played **once only**.
+- **Teil 2 — Detailverstehen (10 items):** Listen to one long conversation/interview. Decide if 10 statements are richtig (+) or falsch (–). Played **twice**.
+- **Teil 3 — Selektives Verstehen (5 items):** Listen to 5 short announcements (radio, train, shop). Decide if statements are richtig (+) or falsch (–). Played **twice**.
 
-#### Schreiben (Writing) — ~30 min
+### Schriftlicher Ausdruck (30 min) — 45 Points
 
-| Part | Task |
-| --- | --- |
-| **Teil 1** | **Kurznachricht / Chat:** You must reply to an informal WhatsApp/SMS message from a friend (around 30-40 words). |
-| **Teil 2** | **E-Mail:** You must write a formal or semi-formal email based on 3-4 bullet points (around 70-80 words). e.g., a Job Application or Complaint. |
+- **One Email:** You receive an email (usually from a friend or acquaintance) and must reply. You are given 4 bullet points (Leitpunkte) that you must address in your response. The email should be approximately 100–150 words with correct greeting and closing.
+- **Scoring:** 3 criteria (Aufgabenbewältigung, Kommunikative Gestaltung, Formale Richtigkeit), each rated A–D, multiplied by 3 for max 45 points.
 
 ______________________________________________________________________
 
-### 2. Oral Exam / Sprechen (~15 minutes)
+## Oral Exam / Sprechen (~15 minutes) — 75 Points
 
-You will usually do this with a partner.
+Conducted in pairs (two candidates) with two examiners. 20 minutes preparation time before the exam.
 
-#### Teil 1: Sich vorstellen (Introduce Yourself)
+- **Teil 1: Kontaktaufnahme (Einander kennenlernen):** Introduce yourself and find out information about your partner (Name, origin, housing, family, German learning, profession, languages). *15 points.*
+- **Teil 2: Über ein Thema Sprechen:** Each candidate reads a short quote from a person about a topic (e.g., "Gruppenreisen"). Report what they said, state your own opinion, and discuss with your partner. *30 points.*
+- **Teil 3: Gemeinsam eine Aufgabe lösen:** Plan an event together with your partner (e.g., a farewell party). Discuss details like when, where, food, drinks, who pays, etc. *30 points.*
 
-You briefly talk about your life: name, age, residence, education, profession, family, and language study.
+______________________________________________________________________
 
-**Goal:** Be fluent and connect your sentences. (e.g., "Ich lerne Deutsch, *weil* ich in Deutschland arbeiten möchte.")
+## Key Exam-Day Tips
 
-#### Teil 2: Über Erfahrungen sprechen / Bildbeschreibung
+1. **Time management:** Don't spend too long on one question. Move on and come back if time allows.
+2. **Sprachbausteine Teil 2:** Cross off words as you use them — each word can only be used once.
+3. **Hörverstehen Teil 1:** This part is played only ONCE. Read the statements before the audio starts.
+4. **Schriftlicher Ausdruck:** Plan your email structure before writing. Address ALL 4 bullet points.
+5. **Sprechen:** Don't just list facts. Use connectors (weil, deshalb, außerdem) and Konjunktiv II (könnte, würde) to demonstrate B1 level.
 
-You are given a picture or a topic. You must describe what you see, and then relate the topic to your own experiences in your home country.
+## References
 
-**Goal:** Use directional words (*im Hintergrund, rechts*) and talk about your own life.
-
-#### Teil 3: Gemeinsam etwas planen (Plan something together)
-
-You and your partner must plan a party, a trip, or buy a gift. You get bullet points on what to decide (When? Where? How much?).
-
-**Goal:** **REACT** to your partner. Agree (*Das ist eine gute Idee*), disagree politely (*Ich finde es besser, wenn...*), and make suggestions. Never just read a monolog!
+- [telc Deutsch B1 Official Page](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+- [telc Deutsch B1 Übungstest 1 (PDF)](file:///Users/ege/Downloads/telc_deutsch_b1/telc_deutsch_b1_zd_uebungstest_1.pdf) — Official practice test with answer key and scoring criteria.
+- [telc gGmbH](https://www.telc.net) — Publisher of all telc language examinations.

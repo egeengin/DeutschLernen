@@ -1,6 +1,6 @@
-# Kelime Bilgisi Bölüm 2: İsimler — telc Deutsch A2-B1 Konularına Göre (A1–B1)
+# Kelime Bilgisi Bölüm 2: İsimler — telc Deutsch B1 Konularına Göre (A1–B1)
 
-*11 telc Deutsch A2-B1 sınav temasına göre düzenlenmiş ~550 Almanca isim — Türkçe çeviriler ve örnek cümleler.*
+*11 telc Deutsch B1 sınav temasına göre düzenlenmiş ~550 Almanca isim — Türkçe çeviriler ve örnek cümleler.*
 
 ______________________________________________________________________
 

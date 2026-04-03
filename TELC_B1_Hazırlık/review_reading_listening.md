@@ -3,7 +3,7 @@
 
 ---
 
-## 1. Okuma (Lesen) — ~45 dk
+## 1. Okuma (Lesen / Leseverstehen) — 90 dk (Sprachbausteine dahil)
 
 ### Başarı Stratejileri
 
@@ -13,14 +13,13 @@
 
 ### Okuma Bölümleri Detayları
 
-* **Bölüm 1 (Genel):** 5 kısa metinle 5 başlığı eşleştirin.
-* **Bölüm 2 (Detay):** Uzun bir metni okuyun ve 5 çoktan seçmeli soruyu (A, B, C) cevaplayın.
-* **Bölüm 3 (Seçici):** 10 ilanı 7 durumla eşleştirin. **Dikkat: Bazı durumlara uyan hiçbir ilan olmayabilir.**
-* **Bölüm 4 (Detay):** Bir metin hakkındaki ifadelerin Doğru mu Yanlış mı olduğunu belirleyin.
+* **Teil 1 — Globalverstehen (5 soru):** 5 kısa metinle 5 başlığı eşleştirin. *25 puan.*
+* **Teil 2 — Detailverstehen (5 soru):** Uzun bir metni okuyun ve 5 çoktan seçmeli soruyu (a, b, c) cevaplayın. *25 puan.*
+* **Teil 3 — Selektives Verstehen (10 soru):** 10 durumu ilanlarla eşleştirin. **Dikkat: Bazı durumlara uyan hiçbir ilan olmayabilir — "x" işaretleyin.** *25 puan.*
 
 ---
 
-## 2. Dinleme (Hören) — ~35 dk
+## 2. Dinleme (Hören / Hörverstehen) — ~30 dk
 
 ### Dinleme Stratejileri
 
@@ -30,24 +29,29 @@
 
 ### Dinleme Bölümleri Detayları
 
-* **Bölüm 1 (Anonslar):** 5 kısa anons. **İki kez** dinletilir.
-* **Bölüm 2 (Mesajlar):** 5 kısa telesekreter mesajı. **Bir kez** dinletilir.
-* **Bölüm 3 (Diyaloglar):** 5 karşılıklı konuşma. **İki kez** dinletilir.
-* **Bölüm 4 (Mülakat):** 1 uzun mülakat/tartışma. **Bir kez** dinletilir.
-* **Bölüm 5 (Görüşler):** 5 kısa görüşü konuşmacılarla eşleştirin. **Bir kez** dinletilir.
+* **Teil 1 — Globalverstehen (5 soru):** Günlük hayattan 5 kısa monolog dinleyin. İfadelerin doğru (+) mu yanlış (–) mı olduğuna karar verin. **Sadece BİR KEZ** çalınır. *25 puan.*
+* **Teil 2 — Detailverstehen (10 soru):** Bir uzun konuşma/röportaj dinleyin. 10 ifadenin doğru (+) mu yanlış (–) mı olduğuna karar verin. **İki kez** çalınır. *25 puan.*
+* **Teil 3 — Selektives Verstehen (5 soru):** 5 kısa anons (radyo, tren, mağaza, hava durumu) dinleyin. İfadelerin doğru (+) mu yanlış (–) mı olduğuna karar verin. **İki kez** çalınır. *25 puan.*
+
+**⚠ KRİTİK:** Teil 1 sadece BİR KEZ çalınır! Yoğun şekilde odaklanmalı ve önceden ifadeleri okumalısınız.
 
 ---
 
 ## İnteraktif Pratik
 
 <div class="md-quiz"
-  data-question="'Hören Teil 2' (Mesajlar) bölümünde ses kaç kez çalınır?"
+  data-question="'Hören Teil 1' (Monologlar) bölümünde ses kaç kez çalınır?"
   data-options="Bir kez|İki kez"
   data-answer="0"
-  data-explain="Doğru: 2. Bölüm sadece BİR KEZ çalınır. Çok dikkatli olmalısınız."></div>
+  data-explain="Doğru: 1. Bölüm sadece BİR KEZ çalınır. Çok dikkatli olmalısınız."></div>
 
 <div class="md-quiz"
   data-question="Okuma 3. Bölümde (İlan Eşleştirme), hiçbir ilan bir duruma uymuyorsa ne yapmalısınız?"
-  data-options="En yakın olanı seçin|'Eşleşme yok' (x veya -) işaretini kullanın veya talimatı takip edin."
+  data-options="En yakın olanı seçin|Cevap kağıdında 'x' işaretleyin"
   data-answer="1"
-  data-explain="3. Bölümde genellikle sağlanan ilanların hiçbirinin çözemediği durumlar bulunur. O görev için verilen spesifik talimatı (genelde 'x' işareti) takip edin."></div>
+  data-explain="3. Bölümde sağlanan ilanların hiçbirinin çözemediği durumlar bulunur. Bunlar için 'x' işaretleyin."></div>
+
+## Kaynaklar
+
+* [telc Deutsch B1 Resmi Sayfası](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+* [telc Deutsch B1 Übungstest 1 (PDF)](file:///Users/ege/Downloads/telc_deutsch_b1/telc_deutsch_b1_zd_uebungstest_1.pdf) — Resmi deneme sınavı.
