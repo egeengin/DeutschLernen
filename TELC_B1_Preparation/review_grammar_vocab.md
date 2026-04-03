@@ -7,7 +7,7 @@
 
 In subordinate clauses (Nebensatz), the conjugated verb always goes to the **VERY END**.
 
-**EXAM TRICK:** In the telc Deutsch A2-B1 "Sprachbausteine" section, if you see a blank right after a comma, look at the rest of the sentence. If the conjugated verb is sitting at the absolute end, the blank is likely a subordinating conjunction like *dass, weil, wenn,* or *ob*.
+**EXAM TRICK:** In the telc Deutsch B1 "Sprachbausteine" section, if you see a blank right after a comma, look at the rest of the sentence. If the conjugated verb is sitting at the absolute end, the blank is likely a subordinating conjunction like *dass, weil, wenn,* or *ob*.
 
 ### Common Subordinating Conjunctions (Verb at END)
 
@@ -152,3 +152,8 @@ Used for asking things politely in the oral exam.
   data-options="erklärt|erklären|erkläre"
   data-answer="1"
   data-explain="After 'Könnten', the main verb goes to the end in Infinitiv form."></div>
+
+## References
+
+* [telc Deutsch B1 Official Page](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+* [Lingolia German Grammar](https://deutsch.lingolia.com/en/) — Comprehensive grammar explanations.

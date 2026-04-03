@@ -1,103 +1,85 @@
-# telc Deutsch A2-B1 — Sınav Rehberi ve Stratejiler
+# telc Deutsch B1 — Sınav Rehberi ve Stratejiler
 
 ## Sınava Genel Bakış
 
-**telc Deutsch A2-B1** sınavı, telc gGmbH tarafından geliştirilmiş A2/B1 çift seviyeli bir sınavdır. Performansınıza bağlı olarak A2 veya **B1 sertifikası** alırsınız. Temel hedefiniz: **B1**.
-
-Sınav okuma, dinleme, yazma ve konuşma alanlarındaki günlük iletişiminizi test eder. Bazı eski sınav formatlarından farklı olarak, yazma bölümünde İKİ farklı metin (Kısa mesaj ve E-Posta) yazmanız gerekir ve okuma/dinleme bölümlerinde daha fazla kısım (5 bölüme kadar) bulunur.
+Bu portal **telc Deutsch B1** sınavını hedefler — tek seviyeli bir sertifika sınavıdır. B1 sertifikasını almak için hem yazılı hem de sözlü bölümlerden ayrı ayrı en az %60 başarı elde etmelisiniz.
 
 ______________________________________________________________________
 
-## Puanlama ve B1 Alma
+## Puanlama ve Geçme Kriterleri
 
-| Bölüm | Maks Puan | B1 Barajı |
+| Bölüm | Maksimum Puan | Geçme Barajı |
 | :--- | :--- | :--- |
-| **Hören** (Dinleme) | 25 | ~15 (60%) |
-| **Lesen** (Okuma) | 25 | ~15 (60%) |
-| **Sprachbausteine** (Gramer/Kelime) | 30 | ~18 (60%) |
-| **Schreiben** (Yazma) | 20 | ~12 (60%) |
-| **Sprechen** (Konuşma) | ayrı hesaplanır | B1 seviyesi performansı |
-| **Yazılı Toplam** | 100 | **≥ 60** |
+| **Leseverstehen** (Okuma) | 75 | |
+| **Sprachbausteine** (Dil Yapıları) | 30 | |
+| **Hörverstehen** (Dinleme) | 75 | |
+| **Schreiben** (Yazma) | 45 | |
+| **Toplam Yazılı Puan** | 225 | **≥ 135 (%60)** |
+| **Sprechen** (Konuşma / Sözlü Sınav) | 75 | **≥ 45 (%60)** |
+| **Toplam Puan** | 300 | **≥ 180** |
 
-**Kritik Kural:** Hem yazılı hem de sözlü bölümlerde **ayrı ayrı** B1 seviyesinde performans göstermelisiniz. Yazılıdan %90 alıp konuşmadan A2 alırsanız, genel sonucunuz yine A2 olur. Dört beceriyi de mutlaka çalışın!
+**Kritik Kural:** Sertifikayı almak için **hem** yazılı bölümden en az 135 puan, **hem de** sözlü bölümden en az 45 puan almanız şarttır. Birinden kalırsanız sertifika alamazsınız.
 
-**Sonucunuz nasıl belirlenir:**
+### Not Skalası
 
-```mermaid
-flowchart TD
-    A["telc Deutsch A2-B1 Sınavına Gir"] --> B["Yazılı Bölüm\n(Hören + Lesen + Sprachbausteine + Schreiben)\nMaks: 100 puan"]
-    A --> C["Sözlü Bölüm\n(Sprechen)\nBölüm 1 + 2 + 3"]
-    B --> D{"Yazılı puan\n≥ 60?"}
-    C --> E{"Konuşma\nB1 seviyesinde mi?"}
-    D -- Hayır --> F["❌ A2 Sertifikası"]
-    E -- Hayır --> F
-    D -- Evet --> G{"HER İKİ koşul\nda karşılandı mı?"}
-    E -- Evet --> G
-    G -- Evet --> H["✅ B1 Sertifikası"]
-    G -- Hayır --> F
-    style H fill:#27ae60,color:#fff
-    style F fill:#e74c3c,color:#fff
-```
+| Puan | Not |
+| :--- | :--- |
+| 270–300 | sehr gut (pekiyi) |
+| 240–269,5 | gut (iyi) |
+| 210–239,5 | befriedigend (orta) |
+| 180–209,5 | ausreichend (yeterli) |
+| 0–179,5 | nicht bestanden (başarısız) |
 
 ______________________________________________________________________
 
-## Sınav Yapısı (Detaylı)
+## Yazılı Sınav (~150 dakika)
 
-### 1. Yazılı Sınav (~125 dakika)
+### Leseverstehen & Sprachbausteine (90 dk)
 
-#### Lesen (Okuma) — ~45 dk
+**Leseverstehen (Okuduğunu Anlama) — 75 Puan:**
 
-| Bölüm | Görev |
-| --- | --- |
-| **Teil 1** | Genel okuma: Metinlerle başlıkları veya temaları eşleştirme. |
-| **Teil 2** | Detaylı okuma: Bir makaleye dayanan çoktan seçmeli (A, B, C) sorular. |
-| **Teil 3** | Seçici okuma: Belirli durumlara göre (iş, ev, okul) ilanları eşleştirme. |
-| **Teil 4** | Doğru/Yanlış veya bir metne eksik mantıksal kelimeleri yerleştirme. |
+- **Teil 1 — Globalverstehen (5 soru):** 5 kısa metinle 5 başlığı eşleştirin (Zuordnungsaufgaben).
+- **Teil 2 — Detailverstehen (5 soru):** Uzun bir metni okuyun. 5 çoktan seçmeli soruyu cevaplayın (a, b veya c).
+- **Teil 3 — Selektives Verstehen (10 soru):** 10 durumu ilanlarla eşleştirin. Bazı durumlara uygun ilan bulunmayabilir ("x" işaretleyin).
 
-#### Sprachbausteine (Dil Bilgisi) — ~35 dk (Okuma ile birlikte çözülür)
+**Sprachbausteine (Dil Yapıları) — 30 Puan:**
 
-| Bölüm | Görev |
-| --- | --- |
-| **Teil 1** | Çoktan seçmeli (a, b, c): Resmi bir mektuptaki gramer boşluklarını doldurma. |
-| **Teil 2** | Çoktan seçmeli: Yarı resmi veya samimi bir metindeki gramer boşluklarını doldurma. |
+- **Teil 1 — Grammatik (10 soru):** Bir metin (genellikle mektup/e-posta) içindeki 10 boşluğu doldurun. Her boşluk için 3 seçenek (a, b veya c) arasından doğrusunu seçin. Bağlaçlar, artikeller, edatlar ve fiil formları test edilir.
+- **Teil 2 — Lexik (10 soru):** Resmi bir mektupta 10 boşluğu doldurun. 15 seçeneklik (a–o) bir kelime havuzundan doğru kelimeyi seçin. Kelime bilgisi ve metin mantığı test edilir.
 
-#### Hören (Dinleme) — ~35 dk
+### Hörverstehen (~30 dk) — 75 Puan
 
-| Bölüm | Ne Duyarsınız? | Görev | Çalma Sayısı |
-| --- | --- | --- | --- |
-| **Teil 1** | Kısa anonslar (radyo, istasyon). | Doğru/Yanlış veya Çoktan seçmeli. | **İki Kez** |
-| **Teil 2** | Telesekreter veya radyo haberleri. | Detaylı soruları anlama. | **Bir Kez** |
-| **Teil 3** | Günlük konularda sohbetler. | Hangi cümlenin kime ait olduğunu eşleştirme. | **İki Kez** |
-| **Teil 4** | Röportaj veya tartışmalar. | Doğru/Yanlış soruları. | **Bir Kez** |
-| **Teil 5** | Kısa fikir beyanları. | Kişilerin hangi fikri savunduğunu eşleştirme. | **Bir Kez** |
+- **Teil 1 — Globalverstehen (5 soru):** 5 kısa monolog dinleyin. İfadelerin doğru (+) mu yanlış (–) mı olduğuna karar verin. **Sadece bir kez** çalınır.
+- **Teil 2 — Detailverstehen (10 soru):** Bir uzun konuşma/röportaj dinleyin. 10 ifadenin doğru (+) mu yanlış (–) mı olduğuna karar verin. **İki kez** çalınır.
+- **Teil 3 — Selektives Verstehen (5 soru):** 5 kısa anons (radyo, tren, mağaza) dinleyin. İfadelerin doğru (+) mu yanlış (–) mı olduğuna karar verin. **İki kez** çalınır.
 
-#### Schreiben (Yazma) — ~30 dk
+### Schriftlicher Ausdruck (30 dk) — 45 Puan
 
-| Bölüm | Görev |
-| --- | --- |
-| **Teil 1** | **Kurznachricht / Chat (Kısa Mesaj):** Bir arkadaşınızdan gelen WhatsApp/SMS benzeri bir mesaja resmi olmayan bir dille cevap vermelisiniz (yaklaşık 30-40 kelime). |
-| **Teil 2** | **E-Mail:** Verilen 3-4 maddeye göre (Örn: İş Başvurusu veya Şikayet) resmi veya yarı resmi bir e-posta yazmalısınız (yaklaşık 70-80 kelime). |
+- **Bir E-Posta:** Size gelen bir e-postaya (genellikle bir arkadaş veya tanıdıktan) yanıt yazarsınız. Yanıtınızda ele almanız gereken 4 alt başlık (Leitpunkte) verilir. E-posta yaklaşık 100–150 kelime olmalı ve doğru selamlama ile kapanış içermelidir.
+- **Puanlama:** 3 kriter (Aufgabenbewältigung, Kommunikative Gestaltung, Formale Richtigkeit), her biri A–D arası puanlanır ve sonuç 3 ile çarpılarak maksimum 45 puan belirlenir.
 
 ______________________________________________________________________
 
-### 2. Sözlü Sınav / Sprechen (~15 dakika)
+## Sözlü Sınav / Sprechen (~15 dakika) — 75 Puan
 
-Bunu genellikle ikinci bir aday partnerle birlikte yapacaksınız.
+Çiftler halinde (iki aday) iki sınavcı eşliğinde yapılır. Sınav öncesi 20 dakika hazırlık süresi vardır.
 
-#### Teil 1: Sich vorstellen (Kendini Tanıtma)
+- **Teil 1: Kontaktaufnahme (Einander kennenlernen):** Kendinizi tanıtın ve partneriniz hakkında bilgi edinin (Ad, köken, barınma, aile, Almanca öğrenimi, meslek, diller). *15 puan.*
+- **Teil 2: Über ein Thema Sprechen:** Her aday bir konu hakkında (örn. "Gruppenreisen") kısa bir alıntı okur. Ne söylendiğini aktarın, kendi fikrinizi belirtin ve partnerinizle tartışın. *30 puan.*
+- **Teil 3: Gemeinsam eine Aufgabe lösen:** Partnerinizle birlikte bir etkinlik planlayın (örn. veda partisi). Ne zaman, nerede, yemek, içecek, masraflar gibi detayları tartışın. *30 puan.*
 
-Kısa cümlelerle hayatınız hakkında konuşursunuz: ad, yaş, yaşanılan yer, eğitim, meslek, aile ve dil öğrenimi.
+______________________________________________________________________
 
-**Hedef:** Akıcı olmak ve cümleleri sadece alt alta sıralamak yerine birbirine bağlamak. (Örn: "Ich lerne Deutsch, *weil* ich in Deutschland arbeiten möchte.")
+## Sınav Günü İpuçları
 
-#### Teil 2: Über Erfahrungen sprechen / Bildbeschreibung (Resim Tarifi)
+1. **Zaman yönetimi:** Tek bir soruda çok fazla zaman harcamayın. Devam edin, zaman kalırsa geri dönün.
+2. **Sprachbausteine Teil 2:** Kullandığınız kelimeleri çizin — her kelime yalnızca bir kez kullanılabilir.
+3. **Hörverstehen Teil 1:** Bu bölüm sadece BİR KEZ çalınır. Ses kaydı başlamadan önce ifadeleri okuyun.
+4. **Schriftlicher Ausdruck:** Yazmaya başlamadan önce e-posta yapınızı planlayın. 4 alt başlığın TÜMÜNE değinin.
+5. **Sprechen:** Sadece gerçekleri sıralamayın. Bağlaçlar (weil, deshalb, außerdem) ve Konjunktiv II (könnte, würde) kullanarak B1 seviyenizi gösterin.
 
-Size bir konu veya resim verilir. Gördüğünüzü tarif etmeli ve ardından konuyu kendi ülkenizdeki veya hayatınızdaki deneyimlerinizle ilişkilendirmelisiniz.
+## Kaynaklar
 
-**Hedef:** Yön bildiren kelimeler (*im Hintergrund, rechts*) kullanın ve "Benim ülkemde/hayatımda bu durum böyle..." gibi kıyaslamalar yapın.
-
-#### Teil 3: Gemeinsam etwas planen (Birlikte bir şey planlama)
-
-Partnerinizle birlikte bir parti, gezi veya hediye satın alma planı yapmalısınız. Neye karar vermeniz gerektiğine dair maddeler verilir (Ne zaman? Nerede? Ne kadar?).
-
-**Hedef:** Partnerinize **TEPKİ** gösterin. Onaylayın (*Das ist eine gute Idee*), kibarca reddedin (*Ich finde es besser, wenn...*) ve kendi önerilerinizi yapın. Ezberden asla uzun bir monolog (tek başına uzun konuşma) yapmayın!
+- [telc Deutsch B1 Resmi Sayfası](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+- [telc Deutsch B1 Übungstest 1 (PDF)](file:///Users/ege/Downloads/telc_deutsch_b1/telc_deutsch_b1_zd_uebungstest_1.pdf) — Cevap anahtarı ve puanlama kriterleri içeren resmi deneme sınavı.
+- [telc gGmbH](https://www.telc.net) — Tüm telc dil sınavlarının yayıncısı.

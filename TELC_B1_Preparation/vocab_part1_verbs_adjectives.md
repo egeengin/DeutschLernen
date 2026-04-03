@@ -296,3 +296,8 @@ ______________________________________________________________________
 ______________________________________________________________________
 
 *Continue to Part 2 for 500+ nouns organized by exam theme.*
+
+## References
+
+- [telc Deutsch B1 Official Page](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+- [DW — Wortschatz](https://learngerman.dw.com/en/vocabulary/s-60632451) — Deutsche Welle vocabulary resources.

@@ -3,7 +3,7 @@
 
 ---
 
-## 1. Reading (Lesen) — ~45 min
+## 1. Reading (Lesen / Leseverstehen) — 90 min (incl. Sprachbausteine)
 
 ### Strategies for Success
 
@@ -13,14 +13,13 @@
 
 ### Reading Parts Breakdown
 
-* **Teil 1 (Global):** Match 5 headlines to 5 short texts.
-* **Teil 2 (Detail):** Read a long text and answer 5 multiple-choice questions (A, B, C).
-* **Teil 3 (Selective):** Match 10 advertisements to 7 situations. **Careful: Some situations may have no matching ad.**
-* **Teil 4 (Detail):** Determine if statements about a text are True or False.
+* **Teil 1 — Globalverstehen (5 items):** Match 5 headlines to 5 short texts. *25 points.*
+* **Teil 2 — Detailverstehen (5 items):** Read one long text and answer 5 multiple-choice questions (a, b, c). *25 points.*
+* **Teil 3 — Selektives Verstehen (10 items):** Match 10 situations to advertisements. **Careful: Some situations may have no matching ad — mark "x".** *25 points.*
 
 ---
 
-## 2. Listening (Hören) — ~35 min
+## 2. Listening (Hören / Hörverstehen) — ~30 min
 
 ### Listening Strategies
 
@@ -30,24 +29,29 @@
 
 ### Listening Parts Breakdown
 
-* **Teil 1 (Announcements):** 5 short announcements. Played **twice**.
-* **Teil 2 (Messages):** 5 short messages (answering machine). Played **once**.
-* **Teil 3 (Dialogues):** 5 conversations. Played **twice**.
-* **Teil 4 (Interview):** 1 long interview/discussion. Played **once**.
-* **Teil 5 (Opinions):** Match 5 short opinions to speakers. Played **once**.
+* **Teil 1 — Globalverstehen (5 items):** Listen to 5 short monologues about daily life. Decide if statements are richtig (+) or falsch (–). Played **ONCE only**. *25 points.*
+* **Teil 2 — Detailverstehen (10 items):** Listen to one long conversation/interview. Decide if 10 statements are richtig (+) or falsch (–). Played **twice**. *25 points.*
+* **Teil 3 — Selektives Verstehen (5 items):** Listen to 5 short announcements (radio, train, shop, weather). Decide if statements are richtig (+) or falsch (–). Played **twice**. *25 points.*
+
+**⚠ CRITICAL:** Teil 1 is only played ONCE! You must focus intensely and read the statements beforehand.
 
 ---
 
 ## Interactive Practice
 
 <div class="md-quiz"
-  data-question="How many times do you hear the audio in 'Hören Teil 2' (Messages)?"
+  data-question="How many times do you hear the audio in 'Hören Teil 1' (Monologues)?"
   data-options="One time|Two times"
   data-answer="0"
-  data-explain="Correct: Part 2 is only played ONCE. You must be extremely focused."></div>
+  data-explain="Correct: Part 1 is only played ONCE. You must be extremely focused."></div>
 
 <div class="md-quiz"
   data-question="In Reading Part 3 (Matching Ads), what should you do if no advertisement fits a situation?"
-  data-options="Choose the closest one|Mark '+' or '-' (depending on the specific task variant) or follow the instructions for 'no match'."
+  data-options="Choose the closest one|Mark 'x' on the answer sheet"
   data-answer="1"
-  data-explain="In Part 3, there are often situations that cannot be solved by any of the provided ads. Follow the specific instruction for that task."></div>
+  data-explain="In Part 3, there are situations that cannot be solved by any of the provided ads. Mark 'x' for those."></div>
+
+## References
+
+* [telc Deutsch B1 Official Page](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+* [telc Deutsch B1 Übungstest 1 (PDF)](file:///Users/ege/Downloads/telc_deutsch_b1/telc_deutsch_b1_zd_uebungstest_1.pdf) — Official practice test.

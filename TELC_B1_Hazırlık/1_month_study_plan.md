@@ -2,11 +2,11 @@
 
 ## Genel Bakış
 
-Bu program, günde 2-3 saatlik çalışma, haftada 6 gün ve **telc Deutsch A2-B1** formatına odaklanacak şekilde tasarlanmıştır.
+Bu program, günde 2-3 saatlik çalışma, haftada 6 gün ve **telc Deutsch B1** sınavına odaklanacak şekilde tasarlanmıştır.
 
 ### 1. Hafta: Temel Dilbilgisi ve Kelime Bilgisi
 
-**Hedef:** Yazılı sınavın %30'unu oluşturan "Sprachbausteine" bölümünde ustalaşın.
+**Hedef:** "Sprachbausteine" bölümünde ustalaşın (toplam puanın %10'u, ancak okuma anlama için de temel).
 
 | Gün | Konu | Görevler |
 | --- | --- | --- |
@@ -16,7 +16,7 @@ Bu program, günde 2-3 saatlik çalışma, haftada 6 gün ve **telc Deutsch A2-B
 | 4. Gün | Geçmiş Zamanlar | Perfekt (haben vs. sein) ve Modal fiillerin Präteritum hali. |
 | 5. Gün | Edatlar | İki durumlu edatlar (Wechselpräpositionen): Dativ vs. Akkusativ. |
 | 6. Gün | Sıfatlar | Sıfat tamlamaları (Adjektivdeklination) ve Karşılaştırma. |
-| 7. Gün | Son Dokunuş | Sıfat ekleri ve genel Edat pratikleri. |
+| 7. Gün | Son Dokunuş | Sıfat ekleri ve Passiv temelleri pratiği. |
 
 ### 2. Hafta: Okuduğunu ve Dinlediğini Anlama
 
@@ -25,24 +25,24 @@ Bu program, günde 2-3 saatlik çalışma, haftada 6 gün ve **telc Deutsch A2-B
 | Gün | Konu | Görevler |
 | --- | --- | --- |
 | 8. Gün | Okuma 1 ve 2 | Genel eşleştirme (Başlıklar) ve Detaylı okuma (A/B/C) çalışmaları. |
-| 9. Gün | Okuma 3 | İlanları durumlarla eşleştirin. **Olumsuz kısıtlamalara dikkat edin.** |
-| 10. Gün | Dinleme 1 ve 2 | Radyo ilanları ve Telesekreter mesajları. |
-| 11. Gün | Dinleme 3 | Diyaloglar: Kim ne dedi? Konuşmacıları ayırt etme pratiği. |
-| 12. Gün | Dinleme 4 ve 5 | Röportajlar ve fikirler. 'Tek seferlik' dinleme pratiği yapın. |
+| 9. Gün | Okuma 3 | İlanları durumlarla eşleştirin. **"x" işaretli olumsuz kısıtlamalara dikkat edin.** |
+| 10. Gün | Dinleme 1 | Kısa monologlar — Doğru/Yanlış. Sadece BİR KEZ çalınır! |
+| 11. Gün | Dinleme 2 | Uzun konuşma — 10 Doğru/Yanlış sorusu. İki kez çalınır. |
+| 12. Gün | Dinleme 3 | Kısa anonslar — Doğru/Yanlış. İki kez çalınır. |
 | 13. Gün | Kelime Atak | "Sağlık" ve "Resmi Kurumlar/Formlar" kelimelerine odaklanın. |
 | 14. Gün | Tekrar | Yarım Deneme Sınavı: Sadece Okuma ve Dinleme bölümleri. |
 
 ### 3. Hafta: Yazma ve Konuşma Stratejileri
 
-**Hedef:** Mektup şablonlarını ve konuşma "Redemittel" (kalıplarını) ezberleyin.
+**Hedef:** E-posta şablonlarını ve konuşma "Redemittel" (kalıp ifadeler) ezberleyin.
 
 | Gün | Konu | Görevler |
 | --- | --- | --- |
-| 15. Gün | Yazma Bölüm 1 | Samimi Mesaj şablonları (WhatsApp tarzı). |
-| 16. Gün | Yazma Bölüm 2 | Resmi E-posta: İş Başvurusu ve Şikayet şablonları. |
-| 17. Gün | Yazma Bölüm 2 | Resmi E-posta: Özür/Rica şablonları. Süre tutun (20 dk). |
+| 15. Gün | Yazma | Resmi e-posta yapısını öğrenin: Anrede, 4 Leitpunkte, Schluss. |
+| 16. Gün | Yazma Pratiği | Resmi E-posta: İş Başvurusu, Davet Yanıtı ve Şikayet şablonları. |
+| 17. Gün | Yazma Drili | Resmi E-posta pratiği. Süre tutun (30 dk). |
 | 18. Gün | Konuşma Bölüm 1 | Kendini tanıtma metninizi mükemmelleştirin (Yaş, Ülke, İş vb.). |
-| 19. Gün | Konuşma Bölüm 2 | Resim betimleme teknikleri (Ön plan, Arka plan, Fikir). |
+| 19. Gün | Konuşma Bölüm 2 | Bir konu hakkında: Birinin söylediklerini aktarın, sonra kendi fikrinizi belirtin. |
 | 20. Gün | Konuşma Bölüm 3 | Birlikte Planlama: Öneri sunma, onaylama ve reddetme kalıpları. |
 | 21. Gün | Kelime Atak | "İş/Meslekler" ve "Ev/Konut" kelimelerine odaklanın. |
 
@@ -52,12 +52,16 @@ Bu program, günde 2-3 saatlik çalışma, haftada 6 gün ve **telc Deutsch A2-B
 
 | Gün | Aktivite | Görevler |
 | --- | --- | --- |
-| 22. Gün | Tam Simülasyon | Tam bir deneme sınavı yapın (kesintisiz, süre tutarak). |
+| 22. Gün | Tam Simülasyon | Tam bir deneme sınavı yapın (kesintisiz, süre tutarak — 150 dk yazılı). |
 | 23. Gün | İnceleme | Hataları analiz edin. Karmaşık bağlaçlara (Yan cümleler) odaklanın. |
 | 24. Gün | Konuşma Simülasyonu | 3 bölümün tamamı için kendinizi konuşurken kaydedin. Akıcılığı kontrol edin. |
-| 25. Gün | Yazma Drili | 30 dakika içinde 3 rastgele mektup (her tipten bir tane) yazın. |
-| 26. Gün | Final Deneme | Final Deneme Sınavı. Her bölümden >15 puan hedefleyin. |
+| 25. Gün | Yazma Drili | 30 dakika içinde 3 rastgele e-posta (her tipten bir tane) yazın. |
+| 26. Gün | Final Deneme | Final Deneme Sınavı. Her bölümden ≥%60 hedefleyin. |
 | 27. Gün | Parlatma | Dilbilgisi modülündeki "Sık Yapılan Hatalar" kılavuzunu gözden geçirin. |
 | 28. Gün | Kelime Tekrarı | Kart maratonu: Tüm A1-B1 Temel Fiiller ve İsimler. |
 | 29. Gün | Rahatlama | Selamlamalar/kapanışlar için hafif bir tekrar. Sınav çantanızı kontrol edin. |
 | 30. Gün | **SINAV GÜNÜ** | Sakin kalın. İyi hazırlandınız! |
+
+## Kaynaklar
+
+- [telc Deutsch B1 Resmi Sayfası](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
