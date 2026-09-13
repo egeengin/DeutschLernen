@@ -1,0 +1,25 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // User accounts & study progress: strictly private to the authenticated owner
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+
+      match /{subcollection=**} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+    }
+
+    // Community Feedback Collection:
+    // Writable by any user (authenticated or guest), with validation
+    match /feedback/{feedbackId} {
+      allow create: if request.resource.data.message is string
+                    && request.resource.data.message.size() > 0
+                    && request.resource.data.message.size() <= 4000;
+      // Read access restricted to project admins
+      allow read, update, delete: if request.auth != null && request.auth.token.admin == true;
+    }
+
+  }
+}

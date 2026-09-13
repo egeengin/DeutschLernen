@@ -40,8 +40,14 @@
         </div>
       </div>
 
-      <!-- Header Controls: Audio, Theme, Language, Dictionary -->
+      <!-- Header Controls: Audio, Theme, Language, Dictionary, Sync & Account -->
       <div class="header-controls">
+        <div class="stat-pill sync-status" id="sync-status-pill" title="Click to sync or sign in">
+          <span style="color:var(--text-muted,#94a3b8)">👤 Guest Mode</span>
+        </div>
+        <button class="btn-auth-trigger" id="btn-user-account" title="Account & Cloud Sync">
+          👤 <span data-i18n="accountBtn">Account</span>
+        </button>
         <button class="btn-icon" id="btn-open-search" title="Search all 2,000+ words">
           🔍 <span data-i18n="browserTitle">Dictionary</span>
         </button>
@@ -233,6 +239,135 @@
     </div>
   </div>
 
+  <!-- User Account & Cloud Sync Modal Dialog -->
+  <div class="modal-backdrop hidden" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+    <div class="modal-dialog" style="max-width: 440px;">
+      <div class="modal-header">
+        <h2 id="auth-modal-title">☁️ <span data-i18n="accountTitle">Account & Cloud Sync</span></h2>
+        <button class="modal-close-btn" id="btn-close-auth" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-scroll-area" style="padding: 20px;">
+        <div id="auth-notice-msg" class="auth-notice-msg" style="display:none;"></div>
+        
+        <!-- Auth View: When Logged In -->
+        <div id="auth-logged-in-view" style="display:none;">
+          <p style="margin-bottom: 12px; font-size: 14px; color: var(--text-secondary);">
+            <span data-i18n="loggedInAs">Signed in as:</span> <strong id="auth-user-email" style="color: var(--accent-gold);"></strong>
+          </p>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;" data-i18n="syncActiveDesc">
+            Your study progress, streak, and mistake reviews are automatically synced with Cloud Firestore across all your devices.
+          </p>
+          <button type="button" class="btn-auth-submit" id="btn-cloud-sync-now" style="margin-bottom: 10px;">
+            🔄 <span data-i18n="syncNowBtn">Sync Now</span>
+          </button>
+          <button type="button" class="btn-auth-submit" id="btn-sign-out" style="background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border);">
+            🚪 <span data-i18n="signOutBtn">Sign Out</span>
+          </button>
+        </div>
+
+        <!-- Auth View: When Guest / Logged Out -->
+        <div id="auth-logged-out-view">
+          <div class="auth-tabs">
+            <button type="button" class="auth-tab-btn active" id="tab-login" data-i18n="tabLogin">Sign In</button>
+            <button type="button" class="auth-tab-btn" id="tab-register" data-i18n="tabRegister">Create Account</button>
+          </div>
+
+          <form id="auth-form" onsubmit="return false;">
+            <div class="auth-form-group" id="group-display-name" style="display:none;">
+              <label for="auth-display-name" data-i18n="labelName">Full Name / Nickname</label>
+              <input type="text" id="auth-display-name" class="auth-input-field" placeholder="e.g. Alex M.">
+            </div>
+            <div class="auth-form-group">
+              <label for="auth-email" data-i18n="labelEmail">Email Address</label>
+              <input type="email" id="auth-email" class="auth-input-field" placeholder="name@example.com" required autocomplete="email">
+            </div>
+            <div class="auth-form-group">
+              <label for="auth-password" data-i18n="labelPassword">Password</label>
+              <input type="password" id="auth-password" class="auth-input-field" placeholder="Min 6 characters" required autocomplete="current-password">
+            </div>
+            <button type="submit" class="btn-auth-submit" id="btn-auth-submit">
+              <span id="auth-submit-text" data-i18n="signInAction">Sign In</span>
+            </button>
+          </form>
+
+          <div class="auth-divider">
+            <span data-i18n="orDivider">OR</span>
+          </div>
+
+          <button type="button" class="btn-google-auth" id="btn-google-auth">
+            <svg width="18" height="18" viewBox="0 0 18 18">
+              <path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.616z"/>
+              <path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18z"/>
+              <path fill="#FBBC05" d="M3.964 10.71A5.41 5.41 0 0 1 3.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 0 0 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332z"/>
+              <path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z"/>
+            </svg>
+            <span data-i18n="googleSignIn">Continue with Google</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Community Feedback Modal Dialog -->
+  <div class="modal-backdrop hidden" id="feedback-modal" role="dialog" aria-modal="true" aria-labelledby="feedback-modal-title">
+    <div class="modal-dialog" style="max-width: 480px;">
+      <div class="modal-header">
+        <h2 id="feedback-modal-title">💬 <span data-i18n="feedbackTitle">Send Feedback & Suggestions</span></h2>
+        <button class="modal-close-btn" id="btn-close-feedback" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-scroll-area" style="padding: 20px;">
+        <div id="feedback-notice-msg" class="auth-notice-msg" style="display:none;"></div>
+        
+        <form id="feedback-form" onsubmit="return false;">
+          <div class="auth-form-group">
+            <label for="feedback-username" data-i18n="feedbackUsername">Name / Nickname</label>
+            <input type="text" id="feedback-username" class="auth-input-field" placeholder="Anonymous or your name">
+          </div>
+
+          <div class="auth-form-group">
+            <label for="feedback-location" data-i18n="feedbackLocation">Location (Auto-detected)</label>
+            <input type="text" id="feedback-location" class="auth-input-field" placeholder="Detecting location..." readonly>
+          </div>
+
+          <div class="auth-form-group">
+            <label for="feedback-category" data-i18n="feedbackCategory">Category</label>
+            <select id="feedback-category" class="feedback-select-field">
+              <option value="General" data-i18n="catGeneral">💡 General Feedback / Suggestion</option>
+              <option value="VocabCorrection" data-i18n="catVocab">📝 Vocabulary / Translation Correction</option>
+              <option value="FeatureRequest" data-i18n="catFeature">✨ Feature Request</option>
+              <option value="BugReport" data-i18n="catBug">🐛 Bug Report</option>
+            </select>
+          </div>
+
+          <div class="auth-form-group">
+            <label data-i18n="feedbackRating">Your Rating</label>
+            <div class="star-rating-wrap" id="feedback-stars" data-rating="5">
+              <span data-star="1" class="selected">★</span>
+              <span data-star="2" class="selected">★</span>
+              <span data-star="3" class="selected">★</span>
+              <span data-star="4" class="selected">★</span>
+              <span data-star="5" class="selected">★</span>
+            </div>
+          </div>
+
+          <div class="auth-form-group">
+            <label for="feedback-message" data-i18n="feedbackMessage">Your Message</label>
+            <textarea id="feedback-message" class="feedback-textarea" rows="4" placeholder="Tell us what we can improve or report an issue..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-feedback-submit" id="btn-submit-feedback">
+            🚀 <span data-i18n="submitFeedbackBtn">Submit Feedback</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Feedback Button -->
+  <button class="btn-floating-feedback" id="btn-floating-feedback" title="Give Feedback / Geri Bildirim">
+    💬 <span data-i18n="feedbackBtn">Feedback</span>
+  </button>
+
   <!-- Commercial & Legal Footer -->
   <footer class="app-footer">
     <div class="footer-content">
@@ -241,6 +376,7 @@
         <a href="legal.html" data-i18n="impressumLink">🇩🇪 Impressum (§ 5 DDG)</a>
         <a href="legal.html#tab-datenschutz" data-i18n="privacyLink">🔒 Privacy Policy (GDPR)</a>
         <a href="legal.html#tab-terms" data-i18n="termsLink">📜 Terms & Trademarks</a>
+        <a href="javascript:void(0)" id="btn-footer-feedback" data-i18n="feedbackBtn">💬 Feedback</a>
         <button type="button" data-i18n="resetProgressBtn" onclick="if(confirm(window.VocabApp ? window.VocabApp.sessionManager.clearAllProgress : 'Reset?')){localStorage.removeItem('deutschlernen_vocab_progress');location.reload();}">
           🗑️ Reset Progress
         </button>
@@ -262,7 +398,9 @@
     </div>
   </footer>
 
-  <!-- Scripts: Datasets followed by Trainer Logic -->
+  <!-- Scripts: Firebase, Datasets followed by Trainer Logic -->
+  <script src="js/firebaseConfig.js"></script>
+  <script src="js/firebaseService.js"></script>
   <script src="data/vocab2000.js"></script>
   <script src="data/vocab_b2.js"></script>
   <script src="js/vocabTrainer.js"></script>
