@@ -51,7 +51,21 @@
       correctToast: "Correct! Excellent recall.",
       wrongToast: "Incorrect! Added to your Mistakes Queue for review.",
       disclaimer: "Independent educational preparation tool. telc is a registered trademark of telc gGmbH.",
-      privacyNotice: "100% Client-Side Privacy. Your study data is saved locally on your device."
+      privacyNotice: "100% Client-Side Privacy. Your study data is saved locally on your device.",
+      exampleUsage: "Example Sentence",
+      synonymsLabel: "Synonyms",
+      antonymsLabel: "Antonyms",
+      arenaSubhint: "Choose the correct meaning below or press keys 1–4",
+      cardLabel: "Card",
+      restartDeck: "Restart Drill",
+      resetProgressBtn: "Reset Progress",
+      levelA1: "A1 Level",
+      levelA2: "A2 Level",
+      levelB1: "B1 Level",
+      langSwitchBtn: "🇹🇷 Türkçe",
+      impressumLink: "🇩🇪 Impressum (§ 5 DDG)",
+      privacyLink: "🔒 Privacy Policy (GDPR)",
+      termsLink: "📜 Terms & Trademarks"
     },
     tr: {
       portalBack: "← Portala Dön",
@@ -88,7 +102,21 @@
       correctToast: "Tebrikler! Doğru cevap.",
       wrongToast: "Yanlış! Bu kelime tekrar edilmek üzere Hata Havuzunuza eklendi.",
       disclaimer: "Bağımsız eğitim ve çalışma aracıdır. telc, telc gGmbH şirketinin tescilli ticari markasıdır.",
-      privacyNotice: "%100 Cihaz İçi Gizlilik. Çalışma verileriniz yalnızca tarayıcınızda saklanır."
+      privacyNotice: "%100 Cihaz İçi Gizlilik. Çalışma verileriniz yalnızca tarayıcınızda saklanır.",
+      exampleUsage: "Örnek Cümle",
+      synonymsLabel: "Eş Anlamlılar",
+      antonymsLabel: "Zıt Anlamlılar",
+      arenaSubhint: "Aşağıdan doğru anlamı seçin veya 1–4 tuşlarına basın",
+      cardLabel: "Kart",
+      restartDeck: "Antrenmanı Yeniden Başlat",
+      resetProgressBtn: "İlerlemeyi Sıfırla",
+      levelA1: "A1 Seviyesi",
+      levelA2: "A2 Seviyesi",
+      levelB1: "B1 Seviyesi",
+      langSwitchBtn: "🇬🇧 English",
+      impressumLink: "🇩🇪 Yasal Künye (§ 5 DDG)",
+      privacyLink: "🔒 Gizlilik Politikası (KVKK/GDPR)",
+      termsLink: "📜 Kullanım Şartları ve Markalar"
     }
   };
 
@@ -102,18 +130,23 @@
     }
 
     getSettings() {
+      const siteLang = localStorage.getItem('site_lang') || localStorage.getItem('telc_lang');
       const def = {
-        lang: localStorage.getItem('site_lang') || 'en',
+        lang: siteLang || 'en',
         theme: localStorage.getItem('site_theme') || 'dark',
         deck: 'core', // 'core', 'b2', 'all'
-        mode: 'de_to_meaning',
+        mode: 'de_meaning',
         level: 'ALL',
         deckSize: 20,
         audio: true
       };
       try {
         const saved = JSON.parse(localStorage.getItem(this.STORAGE_KEY_SETTINGS) || '{}');
-        return { ...def, ...saved };
+        const settings = { ...def, ...saved };
+        if (siteLang) {
+          settings.lang = siteLang;
+        }
+        return settings;
       } catch (e) {
         return def;
       }
@@ -239,7 +272,7 @@
      *    - 20% learning reinforcement words
      */
     generateDeck(allWords, options = {}) {
-      const { mode = 'de_to_meaning', level = 'ALL', deckSize = 20 } = options;
+      const { mode = 'de_meaning', level = 'ALL', deckSize = 20 } = options;
       const progress = this.sessionManager.getProgressMap();
 
       // Filter by Level
@@ -376,6 +409,7 @@
       this.dom.langBtn.addEventListener('click', () => {
         this.settings.lang = this.settings.lang === 'en' ? 'tr' : 'en';
         localStorage.setItem('site_lang', this.settings.lang);
+        localStorage.setItem('telc_lang', this.settings.lang);
         this.sessionManager.saveSettings(this.settings);
         this.updateI18nLabels();
         this.renderCurrentQuestion();
@@ -552,14 +586,19 @@
       this.hasAnswered = false;
       this.dom.explanationCard.classList.add('hidden');
       this.dom.nextButton.classList.add('hidden');
+      this.dom.nextButton.disabled = true;
 
       const item = this.currentDeck[this.currentIndex];
       const total = this.currentDeck.length;
+      const texts = I18N[this.settings.lang];
 
       // Progress bar & counters
-      this.dom.cardCounter.textContent = `${this.currentIndex + 1} / ${total}`;
+      this.dom.cardCounter.textContent = `${texts.cardLabel || 'Card'} ${this.currentIndex + 1} / ${total}`;
       const pct = Math.round(((this.currentIndex) / total) * 100);
       this.dom.progressBar.style.width = `${pct}%`;
+
+      const subhintEl = document.getElementById('arena-subhint');
+      if (subhintEl) subhintEl.textContent = texts.arenaSubhint;
 
       // Word & Badges
       this.dom.arenaPosBadge.textContent = item.pos.toUpperCase();
@@ -570,7 +609,7 @@
       let promptTitle = "";
       let correctAnswerText = "";
 
-      if (this.settings.mode === 'de_to_meaning' || this.settings.mode === 'mistakes') {
+      if (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes') {
         promptTitle = item.de;
         correctAnswerText = isEn ? item.en : item.tr;
       } else if (this.settings.mode === 'meaning_de') {
@@ -578,16 +617,16 @@
         correctAnswerText = item.de;
       } else if (this.settings.mode === 'synonyms') {
         promptTitle = item.de;
-        correctAnswerText = item.synonyms[0];
+        correctAnswerText = (item.synonyms && item.synonyms.length > 0) ? item.synonyms[0] : (isEn ? item.en : item.tr);
       } else if (this.settings.mode === 'antonyms') {
         promptTitle = item.de;
-        correctAnswerText = item.antonyms[0];
+        correctAnswerText = (item.antonyms && item.antonyms.length > 0) ? item.antonyms[0] : (isEn ? item.en : item.tr);
       }
 
       this.dom.arenaWordDe.textContent = promptTitle;
 
       // Auto TTS if audio is on and prompt is German
-      if (this.settings.audio && (this.settings.mode === 'de_to_meaning' || this.settings.mode === 'synonyms' || this.settings.mode === 'antonyms' || this.settings.mode === 'mistakes')) {
+      if (this.settings.audio && (this.settings.mode === 'de_meaning' || this.settings.mode === 'synonyms' || this.settings.mode === 'antonyms' || this.settings.mode === 'mistakes')) {
         this.playSpeech(item.de);
       }
 
@@ -599,7 +638,7 @@
         const btn = document.createElement('button');
         btn.className = 'quiz-option-btn';
         btn.setAttribute('tabindex', '0');
-        btn.innerHTML = `<span class="opt-num">${i + 1}</span><span class="opt-label">${optText}</span>`;
+        btn.innerHTML = `<span class="opt-key">${i + 1}</span><span class="opt-text">${optText}</span>`;
         btn.addEventListener('click', () => this.handleAnswer(btn, optText, correctAnswerText, item));
         this.dom.optionsGrid.appendChild(btn);
       });
@@ -621,14 +660,14 @@
       for (const cand of shuffled) {
         if (distractors.size >= 4) break;
         let val = "";
-        if (this.settings.mode === 'de_to_meaning' || this.settings.mode === 'mistakes') {
+        if (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes') {
           val = isEn ? cand.en : cand.tr;
         } else if (this.settings.mode === 'meaning_de') {
           val = cand.de;
         } else if (this.settings.mode === 'synonyms') {
-          val = cand.synonyms && cand.synonyms.length > 0 ? cand.synonyms[0] : (isEn ? cand.en : cand.tr);
+          val = (cand.synonyms && cand.synonyms.length > 0) ? cand.synonyms[0] : (isEn ? cand.en : cand.tr);
         } else if (this.settings.mode === 'antonyms') {
-          val = cand.antonyms && cand.antonyms.length > 0 ? cand.antonyms[0] : (isEn ? cand.en : cand.tr);
+          val = (cand.antonyms && cand.antonyms.length > 0) ? cand.antonyms[0] : (isEn ? cand.en : cand.tr);
         }
         if (val && val !== correctAnswer) {
           distractors.add(val);
@@ -646,17 +685,19 @@
       const allBtns = this.dom.optionsGrid.querySelectorAll('.quiz-option-btn');
 
       allBtns.forEach(b => {
-        const label = b.querySelector('.opt-label').textContent.trim();
+        const labelEl = b.querySelector('.opt-text') || b.querySelector('.opt-label');
+        const label = labelEl ? labelEl.textContent.trim() : b.textContent.trim();
         if (label.toLowerCase() === correct.trim().toLowerCase()) {
-          b.classList.add('btn-correct');
+          b.classList.add('correct');
         }
+        b.classList.add('disabled');
       });
 
       if (isCorrect) {
-        btn.classList.add('btn-chosen-correct');
+        btn.classList.add('correct');
         this.sessionCorrect++;
       } else {
-        btn.classList.add('btn-chosen-wrong');
+        btn.classList.add('wrong');
         this.sessionWrong++;
       }
 
@@ -665,20 +706,22 @@
       this.refreshHeaderStats();
 
       // Show Rich Explanation Card
+      const texts = I18N[this.settings.lang];
       this.dom.explainExampleDe.textContent = item.example;
       this.dom.explainExampleTrans.textContent = this.settings.lang === 'en' ? item.example_en : item.example_tr;
 
       let synAntHtml = "";
       if (item.synonyms && item.synonyms.length > 0) {
-        synAntHtml += `<div class="tag-row"><strong>Synonyms:</strong> ${item.synonyms.map(s => `<span class="word-tag syn">${s}</span>`).join(' ')}</div>`;
+        synAntHtml += `<div class="tag-row"><strong>${texts.synonymsLabel}:</strong> ${item.synonyms.map(s => `<span class="word-tag syn">${s}</span>`).join(' ')}</div>`;
       }
       if (item.antonyms && item.antonyms.length > 0) {
-        synAntHtml += `<div class="tag-row"><strong>Antonyms:</strong> ${item.antonyms.map(a => `<span class="word-tag ant">${a}</span>`).join(' ')}</div>`;
+        synAntHtml += `<div class="tag-row"><strong>${texts.antonymsLabel}:</strong> ${item.antonyms.map(a => `<span class="word-tag ant">${a}</span>`).join(' ')}</div>`;
       }
       this.dom.explainSynAnt.innerHTML = synAntHtml;
 
       this.dom.explanationCard.classList.remove('hidden');
       this.dom.nextButton.classList.remove('hidden');
+      this.dom.nextButton.disabled = false;
       this.dom.nextButton.focus();
     }
 

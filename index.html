@@ -473,7 +473,7 @@ td strong, td b { color: var(--text-primary); }
   <div class="sidebar-footer">
     <div style="font-size: 11px; color: var(--text-muted); opacity: 0.7; padding: 16px 20px;">
       <div>DeutschLernen Suite v2.0</div>
-      <div style="margin-top:4px;"><a href="legal.html" style="color:var(--text-muted); text-decoration:underline;">Impressum & Privacy</a></div>
+      <div style="margin-top:4px;"><a href="legal.html" style="color:var(--text-muted); text-decoration:underline;" data-en="Impressum & Privacy" data-tr="Yasal Künye ve Gizlilik">Impressum & Privacy</a></div>
     </div>
   </div>
 </nav>
@@ -510,10 +510,10 @@ td strong, td b { color: var(--text-primary); }
             Drill essential A1–B1 vocabulary and Advanced B2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes.
           </p>
           <div style="display:flex; gap:16px; font-size:12px; color:var(--text-muted); font-weight:600; flex-wrap:wrap;">
-            <span>🎯 5 Quiz Modes</span>
-            <span>🔊 Native TTS Audio</span>
-            <span>🔥 Daily Streaks</span>
-            <span>🔒 100% Private (Local)</span>
+            <span data-en="🎯 5 Quiz Modes" data-tr="🎯 5 Test Modu">🎯 5 Quiz Modes</span>
+            <span data-en="🔊 Native TTS Audio" data-tr="🔊 Sesli Telaffuz">🔊 Native TTS Audio</span>
+            <span data-en="🔥 Daily Streaks" data-tr="🔥 Günlük Seri">🔥 Daily Streaks</span>
+            <span data-en="🔒 100% Private (Local)" data-tr="🔒 %100 Cihaz İçi Gizlilik">🔒 100% Private (Local)</span>
           </div>
         </div>
         <div>
@@ -578,7 +578,7 @@ td strong, td b { color: var(--text-primary); }
         <div class="score-card" style="border-color: var(--accent-gold);"><h4 style="color:var(--accent-gold)">Pass: 180 / 300 (60%)</h4><p data-en="Written ≥ 135 & Oral ≥ 45" data-tr="Yazılı ≥ 135 & Sözlü ≥ 45">Written ≥ 135 & Oral ≥ 45</p></div>
       </div>
 
-      <p style="margin-top:16px"><a href="#" onclick="openMarkdown('./TELC_B1_Preparation/telc_b1_exam_guide.md'); return false;">📄 Read full Exam Guide →</a></p>
+      <p style="margin-top:16px"><a href="#" onclick="openMaterial(0); return false;"><span data-en="📄 Read full Exam Guide →" data-tr="📄 Sınav Rehberinin Tamamını Oku →">📄 Read full Exam Guide →</span></a></p>
     </div>
 
     <!-- Top 10 Grammar -->
@@ -636,7 +636,7 @@ td strong, td b { color: var(--text-primary); }
         <p style="font-size:13px;color:var(--text-secondary)" data-en="Used to describe ability, desire, or obligation in the past." data-tr="Geçmişteki yetenek, istek veya zorunlulukları tanımlamak için kullanılır.">Used to describe ability, desire, or obligation in the past.</p>
         <div class="example">Als Kind <b>wollte</b> ich Pilot werden. <span style="font-size:11px;color:var(--text-muted)" data-en="(I wanted to be a pilot)" data-tr="(Çocukken pilot olmak istiyordum)">(I wanted to be a pilot)</span></div>
       </div>
-      <p><a href="#" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/review_grammar_vocab.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/review_grammar_vocab.md'); return false;"><span data-en="📄 Full Grammar Review with 30 practice questions →" data-tr="📄 30 pratik sorulu Tam Dilbilgisi İncelemesi →">📄 Full Grammar Review with 30 practice questions →</span></a></p>
+      <p><a href="#" onclick="openMaterial(2); return false;"><span data-en="📄 Full Grammar Review with 30 practice questions →" data-tr="📄 30 pratik sorulu Tam Dilbilgisi İncelemesi →">📄 Full Grammar Review with 30 practice questions →</span></a></p>
     </div>
 
     <!-- Interactive Quiz -->
@@ -655,7 +655,7 @@ td strong, td b { color: var(--text-primary); }
       <div id="quiz-container">
         <!-- Quiz items injected by JS -->
       </div>
-      <p style="margin-top:20px"><a href="#" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/mock_exam_diagnostic.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_diagnostic.md'); return false;"><span data-en="📄 Full Diagnostic Mock Exam →" data-tr="📄 Tam Teşhis Deneme Sınavı →">📄 Full Diagnostic Mock Exam →</span></a> · <a href="#" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/mock_exam_final.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_final.md'); return false;"><span data-en="📄 Final Mock Exam →" data-tr="📄 Final Deneme Sınavı →">📄 Final Mock Exam →</span></a></p>
+      <p style="margin-top:20px"><a href="#" onclick="openMaterial(5); return false;"><span data-en="📄 Full Diagnostic Mock Exam →" data-tr="📄 Tam Teşhis Deneme Sınavı →">📄 Full Diagnostic Mock Exam →</span></a> · <a href="#" onclick="openMaterial(6); return false;"><span data-en="📄 Final Mock Exam →" data-tr="📄 Final Deneme Sınavı →">📄 Final Mock Exam →</span></a></p>
     </div>
 
     <!-- Study Plan Preview -->
@@ -673,40 +673,40 @@ td strong, td b { color: var(--text-primary); }
           </tbody>
         </table>
       </div>
-      <p><a href="#" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/1_month_study_plan.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/1_month_study_plan.md'); return false;"><span data-en="📄 Full day-by-day study plan →" data-tr="📄 Tam gün gün çalışma planı →">📄 Full day-by-day study plan →</span></a></p>
+      <p><a href="#" onclick="openMaterial(1); return false;"><span data-en="📄 Full day-by-day study plan →" data-tr="📄 Tam gün gün çalışma planı →">📄 Full day-by-day study plan →</span></a></p>
     </div>
 
     <!-- Links to remaining sections -->
     <div class="section" id="reading" style="animation-delay:0.1s">
-      <div class="section-label">📖 Module 4</div>
+      <div class="section-label" data-en="📖 Module 4" data-tr="📖 Modül 4">📖 Module 4</div>
       <h2 data-en="Reading & Listening" data-tr="Okuma ve Dinleme">Reading & Listening</h2>
       <p data-en="Synonym recognition, time management, and practice exercises." data-tr="Eş anlamlı kelime tanıma, zaman yönetimi ve pratik egzersizleri.">Synonym recognition, time management, and practice exercises.</p>
-      <div class="card-links"><button class="card-link primary" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/review_reading_listening.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/review_reading_listening.md')"><span data-en="📄 Open Full Review →" data-tr="📄 Tam İncelemeyi Aç →">📄 Open Full Review →</span></button></div>
+      <div class="card-links"><button class="card-link primary" onclick="openMaterial(3)"><span data-en="📄 Open Full Review →" data-tr="📄 Tam İncelemeyi Aç →">📄 Open Full Review →</span></button></div>
     </div>
     <div class="section" id="writing" style="animation-delay:0.15s">
-      <div class="section-label">✍️ Module 5</div>
+      <div class="section-label" data-en="✍️ Module 5" data-tr="✍️ Modül 5">✍️ Module 5</div>
       <h2 data-en="Writing & Speaking" data-tr="Yazma ve Konuşma">Writing & Speaking</h2>
       <p data-en="Letter templates, model answers, speaking phrase banks, and 4 practice prompts." data-tr="Mektup şablonları, örnek cevaplar, konuşma kalıpları ve 4 pratik konusu.">Letter templates, model answers, speaking phrase banks, and 4 practice prompts.</p>
-      <div class="card-links"><button class="card-link primary" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/review_writing_speaking.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/review_writing_speaking.md')"><span data-en="📄 Open Full Review →" data-tr="📄 Tam İncelemeyi Aç →">📄 Open Full Review →</span></button></div>
+      <div class="card-links"><button class="card-link primary" onclick="openMaterial(4)"><span data-en="📄 Open Full Review →" data-tr="📄 Tam İncelemeyi Aç →">📄 Open Full Review →</span></button></div>
     </div>
     <div class="section" id="final-exam" style="animation-delay:0.2s">
-      <div class="section-label">🎯 Module 7</div>
+      <div class="section-label" data-en="🎯 Module 7" data-tr="🎯 Modül 7">🎯 Module 7</div>
       <h2 data-en="Final Mock Exam" data-tr="Final Deneme Sınavı">Final Mock Exam</h2>
       <p data-en="Full exam with Hören, Lesen, Sprachbausteine, Schreiben, and Sprechen sections." data-tr="Hören, Lesen, Sprachbausteine, Schreiben ve Sprechen bölümlerini içeren tam sınav.">Full exam with Hören, Lesen, Sprachbausteine, Schreiben, and Sprechen sections.</p>
-      <div class="card-links"><button class="card-link primary" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/mock_exam_final.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_final.md')"><span data-en="📄 Open Final Exam →" data-tr="📄 Sınavı Aç →">📄 Open Final Exam →</span></button></div>
+      <div class="card-links"><button class="card-link primary" onclick="openMaterial(6)"><span data-en="📄 Open Final Exam →" data-tr="📄 Sınavı Aç →">📄 Open Final Exam →</span></button></div>
     </div>
     <div class="section" id="resources" style="animation-delay:0.25s">
-      <div class="section-label">🌐 Module 8</div>
+      <div class="section-label" data-en="🌐 Module 8" data-tr="🌐 Modül 8">🌐 Module 8</div>
       <h2 data-en="Free Resources" data-tr="Ücretsiz Kaynaklar">Free Resources</h2>
       <p data-en="Official practice tests, YouTube channels, DW courses, and grammar websites." data-tr="Resmi deneme sınavları, YouTube kanalları, DW kursları ve dilbilgisi siteleri.">Official practice tests, YouTube channels, DW courses, and grammar websites.</p>
-      <div class="card-links"><button class="card-link primary" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/example_exams_resources.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/example_exams_resources.md')"><span data-en="📄 Open Resources List →" data-tr="📄 Kaynaklar Listesini Aç →">📄 Open Resources List →</span></button></div>
+      <div class="card-links"><button class="card-link primary" onclick="openMaterial(7)"><span data-en="📄 Open Resources List →" data-tr="📄 Kaynaklar Listesini Aç →">📄 Open Resources List →</span></button></div>
     </div>
     <div class="section" id="vocab1" style="animation-delay:0.3s">
       <div class="section-label" data-en="📚 Module 9" data-tr="📚 Modül 9">📚 Module 9</div>
       <h2 data-en="Vocabulary: Verbs & Adjectives" data-tr="Kelime Bilgisi: Fiiller ve Sıfatlar">Vocabulary: Verbs & Adjectives</h2>
       <p data-en="~500 most-used German verbs and adjectives with Turkish translations and examples." data-tr="Türkçe çevirileri ve örnekleriyle en çok kullanılan ~500 Almanca fiil ve sıfat.">~500 most-used German verbs and adjectives with Turkish translations and examples.</p>
       <div class="card-links">
-        <button class="card-link primary" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/vocab_part1_verbs_adjectives.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part1_fiiller_sifatlar.md')"><span data-en="📄 Open Vocabulary →" data-tr="📄 Kelime Bilgisini Aç →">📄 Open Vocabulary →</span></button>
+        <button class="card-link primary" onclick="openMaterial(8)"><span data-en="📄 Open Vocabulary →" data-tr="📄 Kelime Bilgisini Aç →">📄 Open Vocabulary →</span></button>
       </div>
     </div>
     <div class="section" id="vocab2" style="animation-delay:0.35s">
@@ -714,7 +714,7 @@ td strong, td b { color: var(--text-primary); }
       <h2 data-en="Vocabulary: Nouns by Theme" data-tr="Kelime Bilgisi: Temalara Göre İsimler">Vocabulary: Nouns by Theme</h2>
       <p data-en="~550 most-used German nouns organized by A2-B1 / B1 exam themes with Turkish translations." data-tr="Türkçe çevirileriyle A2-B1 / B1 sınav temalarına göre düzenlenmiş en çok kullanılan ~550 isim.">~550 most-used German nouns organized by A2-B1 / B1 exam themes with Turkish translations.</p>
       <div class="card-links">
-        <button class="card-link primary" onclick="openMarkdown(currentLang === 'en' ? './TELC_B1_Preparation/vocab_part2_nouns_themes.md' : './TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part2_isimler_temalar.md')"><span data-en="📄 Open Vocabulary →" data-tr="📄 Kelime Bilgisini Aç →">📄 Open Vocabulary →</span></button>
+        <button class="card-link primary" onclick="openMaterial(9)"><span data-en="📄 Open Vocabulary →" data-tr="📄 Kelime Bilgisini Aç →">📄 Open Vocabulary →</span></button>
       </div>
     </div>
 
@@ -757,10 +757,10 @@ td strong, td b { color: var(--text-primary); }
 
       <!-- Legal & Commercial Navigation Links -->
       <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap; margin:24px 0 16px;">
-        <a href="trainer.html" style="font-size:13px; font-weight:600; color:var(--accent-gold);">⚡ Wortschatz Trainer</a>
-        <a href="legal.html" style="font-size:13px; color:var(--text-secondary);">🇩🇪 Impressum (§ 5 DDG)</a>
-        <a href="legal.html#tab-datenschutz" style="font-size:13px; color:var(--text-secondary);">🔒 Datenschutz (DSGVO / GDPR)</a>
-        <a href="legal.html#tab-terms" style="font-size:13px; color:var(--text-secondary);">📜 Terms & Trademarks</a>
+        <a href="trainer.html" style="font-size:13px; font-weight:600; color:var(--accent-gold);"><span data-en="⚡ Wortschatz Trainer" data-tr="⚡ Kelime Antrenörü">⚡ Wortschatz Trainer</span></a>
+        <a href="legal.html" style="font-size:13px; color:var(--text-secondary);"><span data-en="🇩🇪 Impressum (§ 5 DDG)" data-tr="🇩🇪 Yasal Künye (§ 5 DDG)">🇩🇪 Impressum (§ 5 DDG)</span></a>
+        <a href="legal.html#tab-datenschutz" style="font-size:13px; color:var(--text-secondary);"><span data-en="🔒 Privacy Policy (GDPR)" data-tr="🔒 Gizlilik Politikası (KVKK/GDPR)">🔒 Privacy Policy (GDPR)</span></a>
+        <a href="legal.html#tab-terms" style="font-size:13px; color:var(--text-secondary);"><span data-en="📜 Terms & Trademarks" data-tr="📜 Kullanım Şartları ve Markalar">📜 Terms & Trademarks</span></a>
         <a href="https://github.com/egeengin/DeutschLernen" target="_blank" rel="noopener noreferrer" style="font-size:13px; color:var(--text-secondary);">GitHub Source</a>
       </div>
       
@@ -831,18 +831,31 @@ function renderSidebar() {
   });
 }
 
+// Open Material dynamically matching current language
+function openMaterial(index) {
+  const m = materials[index];
+  if (!m) return;
+  const url = currentLang === 'en' ? m.en : m.tr;
+  openMarkdown(url);
+}
+
 // Render material cards
 function renderCards() {
   const cardsEl = document.getElementById('material-cards');
   if (!cardsEl) return;
   cardsEl.innerHTML = '';
   materials.forEach((m, i) => {
-    cardsEl.innerHTML += `<div class="card" onclick="openMarkdown(currentLang === 'en' ? '${m.en}' : '${m.tr}')">
+    const title = currentLang === 'en' ? m.title : m.titleTr;
+    const desc = currentLang === 'en' ? m.desc : m.descTr;
+    const btnText = currentLang === 'en' ? '📄 Open Module &rarr;' : '📄 Modülü Aç &rarr;';
+    cardsEl.innerHTML += `<div class="card" onclick="openMaterial(${i})">
       <div class="card-icon">${m.icon}</div>
-      <h3 data-en="${m.title}" data-tr="${m.titleTr}">${m.title}</h3>
-      <p data-en="${m.desc}" data-tr="${m.descTr}">${m.desc}</p>
+      <h3 data-en="${m.title}" data-tr="${m.titleTr}">${title}</h3>
+      <p data-en="${m.desc}" data-tr="${m.descTr}">${desc}</p>
       <div class="card-links">
-        <button class="card-link primary"><span data-en="📄 Open Module &rarr;" data-tr="📄 Modülü Aç &rarr;">📄 Open Module &rarr;</span></button>
+        <button class="card-link primary" onclick="event.stopPropagation(); openMaterial(${i});">
+          <span data-en="📄 Open Module &rarr;" data-tr="📄 Modülü Aç &rarr;">${btnText}</span>
+        </button>
       </div>
     </div>`;
   });
@@ -1014,19 +1027,34 @@ function openMarkdown(url, skipHistory = false) {
     history.pushState({ mdOpen: true, url: url }, '', '#study-module');
   }
 
-  currentMdUrl = url;
-  currentActiveMaterial = materials.find(m => m.en === url || m.tr === url);
+  const normalize = u => decodeURIComponent(u || '').replace(/^\.\//, '').replace(/^TELC_B1_Preparation\//, '').replace(/^TELC_B1_Hazırlık\//, '');
+  const normUrl = normalize(url);
+  currentActiveMaterial = materials.find(m => 
+    normalize(m.en) === normUrl || 
+    normalize(m.tr) === normUrl ||
+    decodeURIComponent(m.en) === decodeURIComponent(url) || 
+    decodeURIComponent(m.tr) === decodeURIComponent(url)
+  );
   
   const mdView = document.getElementById('md-view');
   const mdContent = document.getElementById('md-content');
   mdView.classList.add('open');
   document.body.style.overflow = 'hidden'; // prevent background scrolling
   
-  mdContent.innerHTML = `<div class="md-loader">Loading content...</div>`;
+  mdContent.innerHTML = `<div class="md-loader">${currentLang === 'tr' ? 'İçerik yükleniyor...' : 'Loading content...'}</div>`;
   
   fetch(url)
     .then(response => {
-      if (!response.ok) throw new Error('File not found');
+      if (!response.ok) {
+        const altUrl = url.includes('%') ? decodeURIComponent(url) : encodeURI(url);
+        if (altUrl !== url) {
+          return fetch(altUrl).then(r2 => {
+            if (!r2.ok) throw new Error('File not found: ' + url);
+            return r2.text();
+          });
+        }
+        throw new Error('File not found');
+      }
       return response.text();
     })
     .then(text => {
@@ -1171,8 +1199,18 @@ function filterCards() {
 
 function setLang(lang) {
   currentLang = lang;
+  localStorage.setItem('site_lang', lang);
+  localStorage.setItem('telc_lang', lang);
+  try {
+    const vs = JSON.parse(localStorage.getItem('deutschlernen_vocab_settings') || '{}');
+    vs.lang = lang;
+    localStorage.setItem('deutschlernen_vocab_settings', JSON.stringify(vs));
+  } catch(e){}
+
   document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-  document.querySelector(`.lang-btn:${lang === 'en' ? 'first-child' : 'last-child'}`).classList.add('active');
+  const activeBtn = document.querySelector(`.lang-btn[onclick*="${lang}"]`) || 
+                    document.querySelector(`.lang-btn:${lang === 'en' ? 'first-child' : 'last-child'}`);
+  if (activeBtn) activeBtn.classList.add('active');
   
   if (document.getElementById('fc-btn-en')) {
     if (lang === 'en') {
@@ -1185,25 +1223,29 @@ function setLang(lang) {
   }
 
   document.querySelectorAll('[data-en]').forEach(el => {
+    const val = el.getAttribute(`data-${lang}`) || el.getAttribute('data-en');
     if (el.tagName === 'INPUT' && el.placeholder) {
-      el.placeholder = el.getAttribute(`data-${lang}`);
+      el.placeholder = val;
     } else {
-      el.innerHTML = el.getAttribute(`data-${lang}`);
+      el.innerHTML = val;
     }
   });
+
+  renderCards(); // Re-render material cards with proper Turkish / English titles and buttons
   renderSidebar(); // Re-render sidebar to update titles
   updateDayTracker();
   updateCard(true); // Redraw flashcard to match language instantly
 
-  // NEW: Reload open markdown if user switches language while reading
+  // Reload open markdown if user switches language while reading
   if (document.getElementById('md-view').classList.contains('open') && currentActiveMaterial) {
     const newUrl = lang === 'en' ? currentActiveMaterial.en : currentActiveMaterial.tr;
     openMarkdown(newUrl, true); // true = skip pushState
   }
 }
-setLang('en');
-renderCards();
-renderSidebar();
+
+// Initialize with saved language (persisted across sessions and pages)
+const savedLang = localStorage.getItem('site_lang') || localStorage.getItem('telc_lang') || 'en';
+setLang(savedLang);
 
 // Active nav tracking
 function showSection(id) {

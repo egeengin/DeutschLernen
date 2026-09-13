@@ -80,9 +80,9 @@
             <span>🎯</span>
             <select id="level-selector" class="styled-select" aria-label="Select CEFR Level">
               <option value="all" data-i18n="levelAll">All Levels</option>
-              <option value="A1">A1 Level</option>
-              <option value="A2">A2 Level</option>
-              <option value="B1">B1 Level</option>
+              <option value="A1" data-i18n="levelA1">A1 Level</option>
+              <option value="A2" data-i18n="levelA2">A2 Level</option>
+              <option value="B1" data-i18n="levelB1">B1 Level</option>
             </select>
           </div>
 
@@ -158,7 +158,7 @@
           </button>
         </div>
 
-        <p class="prompt-subhint" id="arena-subhint">Choose the correct meaning below or press keys 1–4</p>
+        <p class="prompt-subhint" id="arena-subhint" data-i18n="arenaSubhint">Choose the correct meaning below or press keys 1–4</p>
       </div>
 
       <!-- 4 Multiple Choice Options Grid -->
@@ -237,11 +237,11 @@
   <footer class="app-footer">
     <div class="footer-content">
       <div class="footer-links">
-        <a href="index.html">← Portal Dashboard</a>
-        <a href="legal.html">🇩🇪 Impressum (§ 5 DDG)</a>
-        <a href="legal.html#tab-datenschutz">🔒 Datenschutz (GDPR / DSGVO)</a>
-        <a href="legal.html#tab-terms">📜 Terms & Trademarks</a>
-        <button type="button" onclick="if(confirm(window.VocabApp ? window.VocabApp.sessionManager.clearAllProgress : 'Reset?')){localStorage.removeItem('deutschlernen_vocab_progress');location.reload();}">
+        <a href="index.html" data-i18n="portalBack">← Back to Portal</a>
+        <a href="legal.html" data-i18n="impressumLink">🇩🇪 Impressum (§ 5 DDG)</a>
+        <a href="legal.html#tab-datenschutz" data-i18n="privacyLink">🔒 Privacy Policy (GDPR)</a>
+        <a href="legal.html#tab-terms" data-i18n="termsLink">📜 Terms & Trademarks</a>
+        <button type="button" data-i18n="resetProgressBtn" onclick="if(confirm(window.VocabApp ? window.VocabApp.sessionManager.clearAllProgress : 'Reset?')){localStorage.removeItem('deutschlernen_vocab_progress');location.reload();}">
           🗑️ Reset Progress
         </button>
         <a href="https://github.com/egeengin/DeutschLernen" target="_blank" rel="noopener noreferrer">GitHub Source</a>
