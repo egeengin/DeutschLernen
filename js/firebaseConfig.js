@@ -17,12 +17,13 @@
 
   // Default / environment credentials
   const DEFAULT_CONFIG = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyCclkfOgROj_GmObUxb6wZP85Vg8cyj4n0",
+    authDomain: "deutsch-lernen-74f94.firebaseapp.com",
+    projectId: "deutsch-lernen-74f94",
+    storageBucket: "deutsch-lernen-74f94.firebasestorage.app",
+    messagingSenderId: "1071624273908",
+    appId: "1:1071624273908:web:f592a20471ef3fee37c3a1",
+    measurementId: "G-YJ8CVTHV97"
   };
 
   // Check if credentials are stored in localStorage for easy zero-code deployment
