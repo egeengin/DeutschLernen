@@ -266,5 +266,13 @@
   <script src="data/vocab2000.js"></script>
   <script src="data/vocab_b2.js"></script>
   <script src="js/vocabTrainer.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+          .catch(err => console.warn('SW registration failed:', err));
+      });
+    }
+  </script>
 </body>
 </html>

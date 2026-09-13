@@ -305,4 +305,4 @@ CSS heatmap squares:
 | Mermaid diagrams | ✅ Working | Renders in index.html SPA |
 | PWA / Service Worker | ✅ Working | See Guru Rule A above |
 | Heatmap tracker | ✅ Working | See Guru Rule F above |
-| GitHub Actions CI | ⏳ Planned | See Guru Rule C above |
+| GitHub Actions CI | ✅ Working | Automated test suite in `.github/workflows/ci.yml` |

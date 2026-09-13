@@ -353,6 +353,10 @@ ______________________________________________________________________
 | Wein         | der      | şarap               | Ein Glas **Wein** bitte.                 |
 | Rezept       | das      | tarif (yemek)       | Hast du ein **Rezept** für Apfelkuchen?  |
 
-______________________________________________________________________
-
 *See Part 1 for ~500 verbs and adjectives.*
+
+## References
+
+- [telc Deutsch B1 Official Page](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+- [DW — Wortschatz](https://learngerman.dw.com/en/vocabulary/s-60632451) — Deutsche Welle vocabulary resources.
+
