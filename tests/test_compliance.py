@@ -79,5 +79,71 @@ class TestCommercialAndLegalCompliance(unittest.TestCase):
         # Verify DTZ option is removed
         self.assertNotIn("Option B: telc Deutsch A2-B1 (DTZ)", content)
 
+    def test_i18n_and_turkish_material_parity(self):
+        """Verify Turkish and English materials parity and UI dynamic resolution."""
+        index_path = os.path.join(ROOT_DIR, "index.html")
+        with open(index_path, "r", encoding="utf-8") as f:
+            index_content = f.read()
+
+        # Verify openMaterial and dynamic card re-rendering exist
+        self.assertIn("function openMaterial(index)", index_content)
+        self.assertIn("renderCards(); // Re-render material cards", index_content)
+        self.assertIn("localStorage.setItem('site_lang', lang)", index_content)
+
+        # Extract material URLs specifically from the materials array
+        materials_match = re.search(r"const materials = \[(.*?)\];", index_content, re.DOTALL)
+        self.assertIsNotNone(materials_match, "materials array not found in index.html")
+        mat_text = materials_match.group(1)
+
+        en_matches = re.findall(r"en:\s*'([^']+)'", mat_text)
+        tr_matches = re.findall(r"tr:\s*'([^']+)'", mat_text)
+        self.assertEqual(len(en_matches), len(tr_matches))
+        self.assertGreaterEqual(len(en_matches), 10)
+
+        import urllib.parse
+        for en_url in en_matches:
+            rel = en_url.replace("./", "")
+            full_path = os.path.join(ROOT_DIR, rel)
+            self.assertTrue(os.path.exists(full_path), f"EN file missing: {full_path}")
+
+        for tr_url in tr_matches:
+            rel = urllib.parse.unquote(tr_url.replace("./", ""))
+            full_path = os.path.join(ROOT_DIR, rel)
+            self.assertTrue(os.path.exists(full_path), f"TR file missing: {full_path}")
+
+    def test_trainer_i18n_keys_and_elements(self):
+        """Verify trainer.html elements and vocabTrainer.js I18N key parity."""
+        trainer_path = os.path.join(ROOT_DIR, "trainer.html")
+        with open(trainer_path, "r", encoding="utf-8") as f:
+            trainer_content = f.read()
+
+        required_i18n_tags = [
+            'data-i18n="arenaSubhint"',
+            'data-i18n="levelA1"',
+            'data-i18n="levelA2"',
+            'data-i18n="levelB1"',
+            'data-i18n="portalBack"',
+            'data-i18n="impressumLink"',
+            'data-i18n="privacyLink"',
+            'data-i18n="termsLink"',
+            'data-i18n="resetProgressBtn"'
+        ]
+        for tag in required_i18n_tags:
+            self.assertIn(tag, trainer_content, f"Missing i18n tag in trainer.html: {tag}")
+
+        # Check vocabTrainer.js I18N dictionary parity
+        trainer_js_path = os.path.join(ROOT_DIR, "js", "vocabTrainer.js")
+        with open(trainer_js_path, "r", encoding="utf-8") as f:
+            js_content = f.read()
+
+        en_block = re.search(r"en:\s*\{([^}]+)\}", js_content)
+        tr_block = re.search(r"tr:\s*\{([^}]+)\}", js_content)
+        self.assertIsNotNone(en_block)
+        self.assertIsNotNone(tr_block)
+
+        en_keys = set(re.findall(r"^\s*([a-zA-Z0-9_]+)\s*:\s*[\"']", en_block.group(1), re.MULTILINE))
+        tr_keys = set(re.findall(r"^\s*([a-zA-Z0-9_]+)\s*:\s*[\"']", tr_block.group(1), re.MULTILINE))
+        self.assertEqual(en_keys, tr_keys, f"Mismatched I18N keys: {en_keys ^ tr_keys}")
+
 if __name__ == "__main__":
     unittest.main()
