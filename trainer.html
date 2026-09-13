@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wortschatz Trainer 2000 — DeutschLernen</title>
+  <meta name="description" content="Interactive 2,000+ German vocabulary trainer with smart anti-repetition, streak tracking, audio pronunciation, and mistake reviews.">
+  <link rel="icon" type="image/svg+xml" href="https://flagcdn.com/de.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#f59e0b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/trainer.css">
+</head>
+<body>
+
+  <!-- Top App Navigation Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="header-left">
+        <a href="index.html" class="back-link" data-i18n="portalBack">← Back to Portal</a>
+        <div class="brand-title">
+          <span>⚡</span>
+          <span data-i18n="appTitle">Wortschatz Trainer</span>
+        </div>
+      </div>
+
+      <!-- Live Session & Streak Badges -->
+      <div class="header-stats">
+        <div class="stat-pill" title="Current Study Session Number">
+          <span data-i18n="sessionLabel">Session</span>
+          <span id="session-count-badge">#1</span>
+        </div>
+        <div class="stat-pill streak" title="Consecutive Active Study Days">
+          <span id="streak-count-badge">🔥 1d</span>
+        </div>
+        <div class="stat-pill review-queue" id="review-queue-pill" title="Words in your Mistake Review Queue">
+          <span data-i18n="reviewQueue">Mistakes</span>:
+          <span id="review-queue-badge">⚠️ 0</span>
+        </div>
+      </div>
+
+      <!-- Header Controls: Audio, Theme, Language, Dictionary -->
+      <div class="header-controls">
+        <button class="btn-icon" id="btn-open-search" title="Search all 2,000+ words">
+          🔍 <span data-i18n="browserTitle">Dictionary</span>
+        </button>
+        <button class="btn-icon" id="btn-audio-toggle" title="Toggle audio pronunciation">
+          🔊 Audio On
+        </button>
+        <button class="btn-icon" id="btn-theme-toggle" title="Toggle Light / Dark mode">
+          ☀️
+        </button>
+        <button class="btn-icon" id="btn-lang-toggle" title="Switch UI between English & Turkish">
+          TR 🇹🇷
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Training Arena Content -->
+  <main class="main-wrapper">
+
+    <!-- Configuration & Mode Switcher Panel -->
+    <section class="controls-panel" aria-label="Deck and Mode Configuration">
+      <div class="controls-row-top">
+        <div class="selectors-group">
+          <!-- Deck Selection -->
+          <div class="select-wrapper">
+            <span>📦</span>
+            <select id="deck-selector" class="styled-select" aria-label="Select Word Deck">
+              <option value="core" data-i18n="coreDeck">Core 2,000 (A1–B1)</option>
+              <option value="b2" data-i18n="b2Deck">Advanced B2 Deck</option>
+              <option value="all" data-i18n="allDeck">All Words Combined</option>
+            </select>
+          </div>
+
+          <!-- Level Filter -->
+          <div class="select-wrapper">
+            <span>🎯</span>
+            <select id="level-selector" class="styled-select" aria-label="Select CEFR Level">
+              <option value="all" data-i18n="levelAll">All Levels</option>
+              <option value="A1">A1 Level</option>
+              <option value="A2">A2 Level</option>
+              <option value="B1">B1 Level</option>
+            </select>
+          </div>
+
+          <!-- Deck Size -->
+          <div class="select-wrapper">
+            <span data-i18n="deckSize">Cards:</span>
+            <select id="deck-size-select" class="styled-select" aria-label="Cards per drill session">
+              <option value="10">10</option>
+              <option value="20" selected>20</option>
+              <option value="30">30</option>
+              <option value="50">50</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Data Portability Actions -->
+        <div class="selectors-group">
+          <button class="btn-icon" id="btn-export-progress" title="Export progress as JSON backup">
+            💾 <span data-i18n="exportData">Export</span>
+          </button>
+          <label class="btn-icon" title="Import progress from JSON backup" style="cursor:pointer;">
+            📥 <span data-i18n="importData">Import</span>
+            <input type="file" id="file-import-progress" accept=".json" style="display:none;">
+          </label>
+        </div>
+      </div>
+
+      <!-- Mode Selection Chips -->
+      <div class="modes-strip" role="tablist" aria-label="Quiz Modes">
+        <button class="mode-chip active" data-mode="de_meaning" role="tab" aria-selected="true">
+          🇩🇪 ➔ 🌐 <span data-i18n="mode_de_meaning">German ➔ Meaning</span>
+        </button>
+        <button class="mode-chip" data-mode="meaning_de" role="tab" aria-selected="false">
+          🌐 ➔ 🇩🇪 <span data-i18n="mode_meaning_de">Meaning ➔ German</span>
+        </button>
+        <button class="mode-chip" data-mode="synonyms" role="tab" aria-selected="false">
+          🔗 <span data-i18n="mode_synonyms">Synonyms (DE ➔ DE)</span>
+        </button>
+        <button class="mode-chip" data-mode="antonyms" role="tab" aria-selected="false">
+          ⚖️ <span data-i18n="mode_antonyms">Antonyms (Opposites)</span>
+        </button>
+        <button class="mode-chip mistakes-mode" data-mode="mistakes" role="tab" aria-selected="false">
+          ⚠️ <span data-i18n="mode_mistakes">Review Mistakes</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Quiz Arena Section -->
+    <section class="quiz-arena" aria-label="Active Quiz Card">
+      
+      <!-- Progress Bar & Card Counter -->
+      <div class="arena-progress-card">
+        <div class="progress-header">
+          <span id="card-counter">Card 1 / 20</span>
+          <span id="accuracy-counter"><span data-i18n="accuracy">Accuracy</span>: 100%</span>
+        </div>
+        <div class="progress-track" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-fill" id="quiz-progress-bar" style="width: 5%;"></div>
+        </div>
+      </div>
+
+      <!-- Prompt Question Card -->
+      <div class="prompt-card">
+        <div class="prompt-meta">
+          <span class="badge-level" id="arena-level-badge">B1</span>
+          <span class="badge-pos" id="arena-pos-badge">Verb</span>
+        </div>
+
+        <div class="prompt-word-container">
+          <h1 class="prompt-word" id="arena-word-de">aufgeben</h1>
+          <button class="audio-btn-play" id="btn-play-audio" title="Listen to German pronunciation (Spacebar)" aria-label="Pronounce word">
+            🔊
+          </button>
+        </div>
+
+        <p class="prompt-subhint" id="arena-subhint">Choose the correct meaning below or press keys 1–4</p>
+      </div>
+
+      <!-- 4 Multiple Choice Options Grid -->
+      <div class="options-grid" id="options-grid" role="group" aria-label="Answer Choices">
+        <!-- Injected dynamically by VocabTrainerApp -->
+        <button class="quiz-option-btn">
+          <span class="opt-key">1</span>
+          <span class="opt-text">vazgeçmek, pes etmek / to give up</span>
+        </button>
+        <button class="quiz-option-btn">
+          <span class="opt-key">2</span>
+          <span class="opt-text">başlamak / to begin</span>
+        </button>
+        <button class="quiz-option-btn">
+          <span class="opt-key">3</span>
+          <span class="opt-text">terk etmek / to leave</span>
+        </button>
+        <button class="quiz-option-btn">
+          <span class="opt-key">4</span>
+          <span class="opt-text">anlamak / to understand</span>
+        </button>
+      </div>
+
+      <!-- Dynamic Post-Answer Explanation Card -->
+      <div class="explanation-card hidden" id="explanation-card">
+        <div class="explain-title">
+          <span>💡</span>
+          <span data-i18n="exampleUsage">Beispielsatz (Example Usage)</span>
+        </div>
+        <div class="explain-sentence-de" id="explain-example-de">
+          "Ich gebe niemals meine Träume auf."
+        </div>
+        <div class="explain-sentence-trans" id="explain-example-trans">
+          "Hayallerimden asla vazgeçmem."
+        </div>
+        <div class="explain-syn-ant" id="explain-syn-ant">
+          <!-- Injected dynamically if available -->
+        </div>
+      </div>
+
+      <!-- Action Navigation Bar -->
+      <div class="action-bar">
+        <button class="btn-primary-action" id="btn-next-card" disabled>
+          <span data-i18n="nextWord">Next Word (Enter)</span> ➔
+        </button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Dictionary Search Modal Dialog -->
+  <div class="modal-backdrop hidden" id="search-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2 id="modal-title">📖 <span data-i18n="browserTitle">Vocabulary Dictionary</span></h2>
+        <button class="modal-close-btn" id="btn-close-search" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-search-bar">
+        <input 
+          type="text" 
+          id="vocab-search-input" 
+          class="search-input-field" 
+          placeholder="Search 2,000+ words in German, Turkish, English..."
+          data-i18n-placeholder="searchPlaceholder"
+          autocomplete="off"
+        >
+      </div>
+      <div class="modal-scroll-area" id="vocab-search-results">
+        <!-- Injected dynamically by VocabTrainerApp -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Commercial & Legal Footer -->
+  <footer class="app-footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="index.html">← Portal Dashboard</a>
+        <a href="legal.html">🇩🇪 Impressum (§ 5 DDG)</a>
+        <a href="legal.html#tab-datenschutz">🔒 Datenschutz (GDPR / DSGVO)</a>
+        <a href="legal.html#tab-terms">📜 Terms & Trademarks</a>
+        <button type="button" onclick="if(confirm(window.VocabApp ? window.VocabApp.sessionManager.clearAllProgress : 'Reset?')){localStorage.removeItem('deutschlernen_vocab_progress');location.reload();}">
+          🗑️ Reset Progress
+        </button>
+        <a href="https://github.com/egeengin/DeutschLernen" target="_blank" rel="noopener noreferrer">GitHub Source</a>
+      </div>
+
+      <div class="footer-disclaimer-box">
+        <p>
+          <strong>Trademark Disclaimer:</strong> <em>telc®</em> is a registered trademark of telc gGmbH (Frankfurt am Main). <em>Goethe-Zertifikat®</em> is a registered trademark of Goethe-Institut e.V. (Munich). This educational platform is an independent study tool and is neither affiliated with, endorsed by, nor authorized by telc gGmbH or Goethe-Institut e.V.
+        </p>
+        <p data-i18n="privacyNotice">
+          🔒 100% Client-Side Privacy: All progress, session tracking, and mistakes are stored locally on your device in your browser's localStorage. Zero tracking, zero ads.
+        </p>
+      </div>
+
+      <div class="footer-copy">
+        &copy; 2026 Ege Engin. DeutschLernen Portal. All rights reserved. Created with high-yield pedagogical algorithms.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Datasets followed by Trainer Logic -->
+  <script src="data/vocab2000.js"></script>
+  <script src="data/vocab_b2.js"></script>
+  <script src="js/vocabTrainer.js"></script>
+</body>
+</html>
