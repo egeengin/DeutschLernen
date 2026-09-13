@@ -47,6 +47,24 @@ Welcome to the **DeutschLernen (TELC B1 Study Portal)** repository. All contribu
   - `chore`: (Maintenance tasks, like updating dependencies)
 - **Do not** use generic placeholder messages like "update", "fix", or "final cleanup". Be descriptive but concise.
 
+### 7. Comprehensive Test Coverage & Automated Data Validation
+
+- 🛑 **MANDATORY**: All datasets and application engines must maintain high automated test coverage (>95% field-level verification).
+- Every single vocabulary entry in `data/vocab2000.js` or `data/vocab_b2.js` must be validated by automated unit tests:
+  - **100% Bilingual Parity**: Must possess non-empty Turkish (`tr`) and English (`en`) translations.
+  - **Example Sentence Parity**: Must possess non-empty German example, Turkish example translation, and English example translation.
+  - **Schema Completeness**: Must have valid `pos` (verb, noun, adj, adv, prep, conj, phrase), valid CEFR `level` (A1, A2, B1, B2), and arrays for `synonyms` and `antonyms`.
+  - **Zero Duplication**: German headwords must be uniquely identified.
+- Automated tests located in `tests/` must be executed before every release or commit.
+
+### 8. Commercialization & Intellectual Property (IP) Compliance
+
+- When distributing or publishing this project as a commercial product:
+  - **Trademark Disclaimers**: `telc` is a registered trademark of telc gGmbH; `Goethe` is a trademark of the Goethe-Institut. Always display a prominent disclaimer in the UI and documentation stating non-affiliation, non-sponsorship, and independent educational authorship.
+  - **Original Pedagogical Content**: All example sentences, grammatical commentary, glosses, and quiz questions must be original creations. Verbatim copying from copyrighted textbooks (e.g., Hueber, Klett, Cornelsen) is strictly forbidden.
+  - **Client-Side Privacy (GDPR Compliance)**: Keep user progress, session counts, and mistake queues client-side in `localStorage`. Never transmit personal learning data to third parties without explicit consent.
+  - **Permissive Assets**: Fonts (SIL OFL) and icons (FontAwesome Free / MIT) must remain open-source license compliant.
+
 ---
 
 ## 🚀 Guru Best Practices
