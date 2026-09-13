@@ -126,7 +126,11 @@ class TestCommercialAndLegalCompliance(unittest.TestCase):
             'data-i18n="impressumLink"',
             'data-i18n="privacyLink"',
             'data-i18n="termsLink"',
-            'data-i18n="resetProgressBtn"'
+            'data-i18n="resetProgressBtn"',
+            'data-i18n="accountBtn"',
+            'data-i18n="feedbackBtn"',
+            'data-i18n="accountTitle"',
+            'data-i18n="feedbackTitle"'
         ]
         for tag in required_i18n_tags:
             self.assertIn(tag, trainer_content, f"Missing i18n tag in trainer.html: {tag}")
@@ -144,6 +148,62 @@ class TestCommercialAndLegalCompliance(unittest.TestCase):
         en_keys = set(re.findall(r"^\s*([a-zA-Z0-9_]+)\s*:\s*[\"']", en_block.group(1), re.MULTILINE))
         tr_keys = set(re.findall(r"^\s*([a-zA-Z0-9_]+)\s*:\s*[\"']", tr_block.group(1), re.MULTILINE))
         self.assertEqual(en_keys, tr_keys, f"Mismatched I18N keys: {en_keys ^ tr_keys}")
+
+    def test_firebase_cloud_and_feedback_system(self):
+        """Verify Firebase configuration, cloud sync, security rules, and CSV exporter."""
+        # 1. Config
+        cfg_path = os.path.join(ROOT_DIR, "js", "firebaseConfig.js")
+        self.assertTrue(os.path.exists(cfg_path), "js/firebaseConfig.js must exist.")
+        with open(cfg_path, "r", encoding="utf-8") as f:
+            cfg_content = f.read()
+        self.assertIn("FIREBASE_CONFIG", cfg_content)
+        self.assertIn("isFirebaseConfigured", cfg_content)
+
+        # 2. Service
+        srv_path = os.path.join(ROOT_DIR, "js", "firebaseService.js")
+        self.assertTrue(os.path.exists(srv_path), "js/firebaseService.js must exist.")
+        with open(srv_path, "r", encoding="utf-8") as f:
+            srv_content = f.read()
+        self.assertIn("FirebaseService", srv_content)
+        self.assertIn("syncProgress", srv_content)
+        self.assertIn("submitFeedback", srv_content)
+        self.assertIn("detectLocation", srv_content)
+
+        # 3. Security Rules
+        rules_path = os.path.join(ROOT_DIR, "firestore.rules")
+        self.assertTrue(os.path.exists(rules_path), "firestore.rules must exist.")
+        with open(rules_path, "r", encoding="utf-8") as f:
+            rules_content = f.read()
+        self.assertIn("match /users/{userId}", rules_content)
+        self.assertIn("request.auth.uid == userId", rules_content)
+        self.assertIn("match /feedback/{feedbackId}", rules_content)
+
+        # 4. CSV Exporter
+        exporter_path = os.path.join(ROOT_DIR, "scripts", "export_feedback.py")
+        self.assertTrue(os.path.exists(exporter_path), "scripts/export_feedback.py must exist.")
+        with open(exporter_path, "r", encoding="utf-8") as f:
+            exp_content = f.read()
+        self.assertIn("DEFAULT_CSV_OUTPUT", exp_content)
+        self.assertIn("export_records_to_csv", exp_content)
+
+        # 5. HTML integration checks
+        trainer_path = os.path.join(ROOT_DIR, "trainer.html")
+        with open(trainer_path, "r", encoding="utf-8") as f:
+            tr_content = f.read()
+        self.assertIn('id="sync-status-pill"', tr_content)
+        self.assertIn('id="auth-modal"', tr_content)
+        self.assertIn('id="feedback-modal"', tr_content)
+        self.assertIn('id="btn-floating-feedback"', tr_content)
+        self.assertIn('firebaseConfig.js', tr_content)
+        self.assertIn('firebaseService.js', tr_content)
+
+        index_path = os.path.join(ROOT_DIR, "index.html")
+        with open(index_path, "r", encoding="utf-8") as f:
+            idx_content = f.read()
+        self.assertIn('id="feedback-modal"', idx_content)
+        self.assertIn('id="btn-floating-feedback"', idx_content)
+        self.assertIn('firebaseConfig.js', idx_content)
+        self.assertIn('firebaseService.js', idx_content)
 
 if __name__ == "__main__":
     unittest.main()

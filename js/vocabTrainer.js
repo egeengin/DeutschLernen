@@ -65,7 +65,39 @@
       langSwitchBtn: "🇹🇷 Türkçe",
       impressumLink: "🇩🇪 Impressum (§ 5 DDG)",
       privacyLink: "🔒 Privacy Policy (GDPR)",
-      termsLink: "📜 Terms & Trademarks"
+      termsLink: "📜 Terms & Trademarks",
+      accountTitle: "Account & Cloud Sync",
+      accountBtn: "Account",
+      loggedInAs: "Signed in as:",
+      syncActiveDesc: "Your study progress, streak, and mistake reviews are automatically synced with Cloud Firestore across all your devices.",
+      syncNowBtn: "Sync Now",
+      signOutBtn: "Sign Out",
+      tabLogin: "Sign In",
+      tabRegister: "Create Account",
+      labelName: "Full Name / Nickname",
+      labelEmail: "Email Address",
+      labelPassword: "Password",
+      signInAction: "Sign In",
+      signUpAction: "Create Account",
+      orDivider: "OR",
+      googleSignIn: "Continue with Google",
+      feedbackBtn: "Feedback",
+      feedbackTitle: "Send Feedback & Suggestions",
+      feedbackUsername: "Name / Nickname",
+      feedbackLocation: "Location (Auto-detected)",
+      feedbackCategory: "Category",
+      catGeneral: "💡 General Feedback / Suggestion",
+      catVocab: "📝 Vocabulary / Translation Correction",
+      catFeature: "✨ Feature Request",
+      catBug: "🐛 Bug Report",
+      feedbackRating: "Your Rating",
+      feedbackMessage: "Your Message",
+      submitFeedbackBtn: "Submit Feedback",
+      feedbackSuccess: "Thank you! Your feedback has been received.",
+      feedbackError: "Failed to submit feedback. Please try again.",
+      authSuccess: "Successfully signed in!",
+      authLoggedOut: "Signed out. Operating in Guest Mode.",
+      syncSuccess: "Progress synchronized with cloud!"
     },
     tr: {
       portalBack: "← Portala Dön",
@@ -116,7 +148,39 @@
       langSwitchBtn: "🇬🇧 English",
       impressumLink: "🇩🇪 Yasal Künye (§ 5 DDG)",
       privacyLink: "🔒 Gizlilik Politikası (KVKK/GDPR)",
-      termsLink: "📜 Kullanım Şartları ve Markalar"
+      termsLink: "📜 Kullanım Şartları ve Markalar",
+      accountTitle: "Hesap & Bulut Eşitleme",
+      accountBtn: "Hesap",
+      loggedInAs: "Giriş yapılan hesap:",
+      syncActiveDesc: "Kelime çalışma ilerlemeniz, günlük seriniz ve hata havuzunuz tüm cihazlarınız arasında Cloud Firestore ile otomatik eşitlenir.",
+      syncNowBtn: "Şimdi Eşitle",
+      signOutBtn: "Çıkış Yap",
+      tabLogin: "Giriş Yap",
+      tabRegister: "Hesap Oluştur",
+      labelName: "Ad Soyad / Takma Ad",
+      labelEmail: "E-posta Adresi",
+      labelPassword: "Şifre",
+      signInAction: "Giriş Yap",
+      signUpAction: "Hesap Oluştur",
+      orDivider: "VEYA",
+      googleSignIn: "Google ile Devam Et",
+      feedbackBtn: "Geri Bildirim",
+      feedbackTitle: "Geri Bildirim ve Öneriler",
+      feedbackUsername: "İsim / Takma Ad",
+      feedbackLocation: "Konum (Otomatik Tespit)",
+      feedbackCategory: "Kategori",
+      catGeneral: "💡 Genel Geri Bildirim / Öneri",
+      catVocab: "📝 Kelime / Çeviri Düzeltmesi",
+      catFeature: "✨ Yeni Özellik İsteği",
+      catBug: "🐛 Hata Bildirimi",
+      feedbackRating: "Puanınız",
+      feedbackMessage: "Mesajınız",
+      submitFeedbackBtn: "Geri Bildirimi Gönder",
+      feedbackSuccess: "Teşekkür ederiz! Geri bildiriminiz başarıyla iletildi.",
+      feedbackError: "Geri bildirim gönderilemedi. Lütfen tekrar deneyin.",
+      authSuccess: "Başarıyla giriş yapıldı!",
+      authLoggedOut: "Çıkış yapıldı. Misafir modundasınız.",
+      syncSuccess: "İlerlemeniz bulutla eşitlendi!"
     }
   };
 
@@ -230,7 +294,34 @@
 
       progress[wordId] = current;
       this.saveProgressMap(progress);
+
+      // Trigger automatic debounced cloud synchronization if user is authenticated
+      if (window.FirebaseService) {
+        window.FirebaseService.syncProgress(progress, this.sessionData, this.getSettings());
+      }
+
       return current;
+    }
+
+    mergeCloudProgress(cloudData) {
+      if (!cloudData) return;
+      if (cloudData.progress) {
+        const local = this.getProgressMap();
+        const merged = { ...local, ...cloudData.progress };
+        this.saveProgressMap(merged);
+      }
+      if (cloudData.sessions) {
+        const localSessions = this.sessionData || {};
+        const maxStreak = Math.max(localSessions.streak || 1, cloudData.sessions.streak || 1);
+        const maxTotal = Math.max(localSessions.totalSessions || 1, cloudData.sessions.totalSessions || 1);
+        this.sessionData = {
+          ...localSessions,
+          ...cloudData.sessions,
+          streak: maxStreak,
+          totalSessions: maxTotal
+        };
+        localStorage.setItem(this.STORAGE_KEY_SESSIONS, JSON.stringify(this.sessionData));
+      }
     }
 
     getStats(dataset) {
@@ -357,6 +448,7 @@
       this.applyTheme(this.settings.theme);
       this.updateI18nLabels();
       this.refreshHeaderStats();
+      this.setupAuthAndFeedback();
       this.startNewDeck();
     }
 
@@ -392,7 +484,41 @@
         searchInput: document.getElementById('vocab-search-input'),
         searchResults: document.getElementById('vocab-search-results'),
         btnExport: document.getElementById('btn-export-progress'),
-        fileImport: document.getElementById('file-import-progress')
+        fileImport: document.getElementById('file-import-progress'),
+        // Header Sync & User Account
+        syncStatusPill: document.getElementById('sync-status-pill'),
+        btnUserAccount: document.getElementById('btn-user-account'),
+        // Auth Modal
+        authModal: document.getElementById('auth-modal'),
+        btnCloseAuth: document.getElementById('btn-close-auth'),
+        tabLogin: document.getElementById('tab-login'),
+        tabRegister: document.getElementById('tab-register'),
+        groupDisplayName: document.getElementById('group-display-name'),
+        authSubmitText: document.getElementById('auth-submit-text'),
+        authForm: document.getElementById('auth-form'),
+        authEmail: document.getElementById('auth-email'),
+        authPassword: document.getElementById('auth-password'),
+        authDisplayName: document.getElementById('auth-display-name'),
+        btnGoogleAuth: document.getElementById('btn-google-auth'),
+        authNoticeMsg: document.getElementById('auth-notice-msg'),
+        authLoggedInView: document.getElementById('auth-logged-in-view'),
+        authLoggedOutView: document.getElementById('auth-logged-out-view'),
+        authUserEmail: document.getElementById('auth-user-email'),
+        btnCloudSyncNow: document.getElementById('btn-cloud-sync-now'),
+        btnSignOut: document.getElementById('btn-sign-out'),
+        // Community Feedback
+        btnFloatingFeedback: document.getElementById('btn-floating-feedback'),
+        btnFooterFeedback: document.getElementById('btn-footer-feedback'),
+        feedbackModal: document.getElementById('feedback-modal'),
+        btnCloseFeedback: document.getElementById('btn-close-feedback'),
+        feedbackForm: document.getElementById('feedback-form'),
+        feedbackUsername: document.getElementById('feedback-username'),
+        feedbackLocation: document.getElementById('feedback-location'),
+        feedbackCategory: document.getElementById('feedback-category'),
+        feedbackStars: document.getElementById('feedback-stars'),
+        feedbackMessage: document.getElementById('feedback-message'),
+        feedbackNoticeMsg: document.getElementById('feedback-notice-msg'),
+        btnSubmitFeedback: document.getElementById('btn-submit-feedback')
       };
     }
 
@@ -539,6 +665,9 @@
       });
       this.updateAudioBtnState();
       this.dom.langBtn.textContent = this.settings.lang === 'en' ? 'TR 🇹🇷' : 'EN 🇬🇧';
+      if (window.FirebaseService) {
+        window.FirebaseService.updateSyncStatusPill(window.FirebaseService.currentUser ? 'synced' : 'guest');
+      }
     }
 
     refreshHeaderStats() {
@@ -872,6 +1001,263 @@
         }
       };
       reader.readAsText(file);
+    }
+
+    // --- User Account, Cloud Sync & Community Feedback Methods ---
+    setupAuthAndFeedback() {
+      // Connect to Firebase auth state
+      if (window.FirebaseService) {
+        window.FirebaseService.onAuthChange(async (user) => {
+          this.renderAuthState(user);
+          if (user) {
+            // Load and merge cloud progress
+            try {
+              const cloudData = await window.FirebaseService.fetchCloudProgress();
+              if (cloudData) {
+                this.sessionManager.mergeCloudProgress(cloudData);
+                this.refreshHeaderStats();
+                this.startNewDeck();
+              }
+            } catch (err) {
+              console.warn("Cloud progress merge error:", err);
+            }
+          }
+        });
+      }
+
+      // Open / Close Auth Modal
+      if (this.dom.btnUserAccount) {
+        this.dom.btnUserAccount.addEventListener('click', () => this.openAuthModal());
+      }
+      if (this.dom.syncStatusPill) {
+        this.dom.syncStatusPill.addEventListener('click', () => this.openAuthModal());
+      }
+      if (this.dom.btnCloseAuth) {
+        this.dom.btnCloseAuth.addEventListener('click', () => this.closeAuthModal());
+      }
+      if (this.dom.authModal) {
+        this.dom.authModal.addEventListener('click', (e) => {
+          if (e.target === this.dom.authModal) this.closeAuthModal();
+        });
+      }
+
+      // Auth Tabs (Sign In / Register)
+      let authMode = 'login';
+      if (this.dom.tabLogin && this.dom.tabRegister) {
+        this.dom.tabLogin.addEventListener('click', () => {
+          authMode = 'login';
+          this.dom.tabLogin.classList.add('active');
+          this.dom.tabRegister.classList.remove('active');
+          if (this.dom.groupDisplayName) this.dom.groupDisplayName.style.display = 'none';
+          const texts = I18N[this.settings.lang];
+          if (this.dom.authSubmitText) this.dom.authSubmitText.textContent = texts.signInAction;
+        });
+
+        this.dom.tabRegister.addEventListener('click', () => {
+          authMode = 'register';
+          this.dom.tabRegister.classList.add('active');
+          this.dom.tabLogin.classList.remove('active');
+          if (this.dom.groupDisplayName) this.dom.groupDisplayName.style.display = 'block';
+          const texts = I18N[this.settings.lang];
+          if (this.dom.authSubmitText) this.dom.authSubmitText.textContent = texts.signUpAction;
+        });
+      }
+
+      // Auth Form Submit
+      if (this.dom.authForm) {
+        this.dom.authForm.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const email = (this.dom.authEmail ? this.dom.authEmail.value : '').trim();
+          const password = (this.dom.authPassword ? this.dom.authPassword.value : '').trim();
+          const displayName = (this.dom.authDisplayName ? this.dom.authDisplayName.value : '').trim();
+          const texts = I18N[this.settings.lang];
+
+          if (!email || !password) return;
+          this.setAuthNotice("", "");
+
+          try {
+            if (!window.FirebaseService) throw new Error("Firebase Service is not available.");
+            if (authMode === 'login') {
+              await window.FirebaseService.signIn(email, password);
+            } else {
+              await window.FirebaseService.signUp(email, password, displayName);
+            }
+            this.setAuthNotice(texts.authSuccess, "success");
+            setTimeout(() => this.closeAuthModal(), 1200);
+          } catch (err) {
+            this.setAuthNotice(err.message, "error");
+          }
+        });
+      }
+
+      // Google Sign-In
+      if (this.dom.btnGoogleAuth) {
+        this.dom.btnGoogleAuth.addEventListener('click', async () => {
+          const texts = I18N[this.settings.lang];
+          this.setAuthNotice("", "");
+          try {
+            if (!window.FirebaseService) throw new Error("Firebase Service is not available.");
+            await window.FirebaseService.signInWithGoogle();
+            this.setAuthNotice(texts.authSuccess, "success");
+            setTimeout(() => this.closeAuthModal(), 1200);
+          } catch (err) {
+            this.setAuthNotice(err.message, "error");
+          }
+        });
+      }
+
+      // Sign Out
+      if (this.dom.btnSignOut) {
+        this.dom.btnSignOut.addEventListener('click', async () => {
+          const texts = I18N[this.settings.lang];
+          try {
+            if (window.FirebaseService) await window.FirebaseService.signOut();
+            this.setAuthNotice(texts.authLoggedOut, "success");
+            setTimeout(() => this.closeAuthModal(), 1000);
+          } catch (err) {
+            console.warn("Sign out error:", err);
+          }
+        });
+      }
+
+      // Sync Now
+      if (this.dom.btnCloudSyncNow) {
+        this.dom.btnCloudSyncNow.addEventListener('click', async () => {
+          const texts = I18N[this.settings.lang];
+          try {
+            if (window.FirebaseService) {
+              await window.FirebaseService.syncProgress(
+                this.sessionManager.getProgressMap(),
+                this.sessionManager.sessionData,
+                this.settings
+              );
+              this.setAuthNotice(texts.syncSuccess, "success");
+            }
+          } catch (err) {
+            this.setAuthNotice(err.message, "error");
+          }
+        });
+      }
+
+      // Community Feedback Modal Events
+      const openFb = () => this.openFeedbackModal();
+      if (this.dom.btnFloatingFeedback) this.dom.btnFloatingFeedback.addEventListener('click', openFb);
+      if (this.dom.btnFooterFeedback) this.dom.btnFooterFeedback.addEventListener('click', openFb);
+      if (this.dom.btnCloseFeedback) this.dom.btnCloseFeedback.addEventListener('click', () => this.closeFeedbackModal());
+      if (this.dom.feedbackModal) {
+        this.dom.feedbackModal.addEventListener('click', (e) => {
+          if (e.target === this.dom.feedbackModal) this.closeFeedbackModal();
+        });
+      }
+
+      // Feedback Star Rating
+      if (this.dom.feedbackStars) {
+        const stars = this.dom.feedbackStars.querySelectorAll('span');
+        stars.forEach(star => {
+          star.addEventListener('click', () => {
+            const rating = parseInt(star.getAttribute('data-star') || '5', 10);
+            this.dom.feedbackStars.setAttribute('data-rating', rating);
+            stars.forEach((s, idx) => {
+              s.classList.toggle('selected', idx < rating);
+            });
+          });
+        });
+      }
+
+      // Feedback Submit
+      if (this.dom.feedbackForm) {
+        this.dom.feedbackForm.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const username = (this.dom.feedbackUsername ? this.dom.feedbackUsername.value : '').trim() || 'Anonymous';
+          const location = (this.dom.feedbackLocation ? this.dom.feedbackLocation.value : '').trim();
+          const category = this.dom.feedbackCategory ? this.dom.feedbackCategory.value : 'General';
+          const rating = parseInt(this.dom.feedbackStars ? this.dom.feedbackStars.getAttribute('data-rating') || '5' : '5', 10);
+          const message = (this.dom.feedbackMessage ? this.dom.feedbackMessage.value : '').trim();
+          const texts = I18N[this.settings.lang];
+
+          if (!message) return;
+          if (this.dom.btnSubmitFeedback) this.dom.btnSubmitFeedback.disabled = true;
+
+          try {
+            if (window.FirebaseService) {
+              await window.FirebaseService.submitFeedback({ username, location, category, rating, message });
+            }
+            this.setFeedbackNotice(texts.feedbackSuccess, "success");
+            if (this.dom.feedbackForm) this.dom.feedbackForm.reset();
+            setTimeout(() => {
+              this.closeFeedbackModal();
+              if (this.dom.btnSubmitFeedback) this.dom.btnSubmitFeedback.disabled = false;
+            }, 1800);
+          } catch (err) {
+            this.setFeedbackNotice(err.message || texts.feedbackError, "error");
+            if (this.dom.btnSubmitFeedback) this.dom.btnSubmitFeedback.disabled = false;
+          }
+        });
+      }
+    }
+
+    renderAuthState(user) {
+      if (user) {
+        if (this.dom.authLoggedInView) this.dom.authLoggedInView.style.display = 'block';
+        if (this.dom.authLoggedOutView) this.dom.authLoggedOutView.style.display = 'none';
+        if (this.dom.authUserEmail) this.dom.authUserEmail.textContent = user.displayName || user.email || 'User';
+        if (window.FirebaseService) window.FirebaseService.updateSyncStatusPill("synced");
+      } else {
+        if (this.dom.authLoggedInView) this.dom.authLoggedInView.style.display = 'none';
+        if (this.dom.authLoggedOutView) this.dom.authLoggedOutView.style.display = 'block';
+        if (window.FirebaseService) window.FirebaseService.updateSyncStatusPill("guest");
+      }
+    }
+
+    openAuthModal() {
+      if (!this.dom.authModal) return;
+      this.setAuthNotice("", "");
+      this.dom.authModal.classList.remove('hidden');
+    }
+
+    closeAuthModal() {
+      if (!this.dom.authModal) return;
+      this.dom.authModal.classList.add('hidden');
+    }
+
+    setAuthNotice(msg, type) {
+      if (!this.dom.authNoticeMsg) return;
+      if (!msg) {
+        this.dom.authNoticeMsg.style.display = 'none';
+        this.dom.authNoticeMsg.className = 'auth-notice-msg';
+        this.dom.authNoticeMsg.textContent = '';
+      } else {
+        this.dom.authNoticeMsg.style.display = 'block';
+        this.dom.authNoticeMsg.className = `auth-notice-msg ${type}`;
+        this.dom.authNoticeMsg.textContent = msg;
+      }
+    }
+
+    openFeedbackModal() {
+      if (!this.dom.feedbackModal) return;
+      this.setFeedbackNotice("", "");
+      this.dom.feedbackModal.classList.remove('hidden');
+      if (this.dom.feedbackLocation && window.FirebaseService) {
+        this.dom.feedbackLocation.value = window.FirebaseService.detectLocation();
+      }
+    }
+
+    closeFeedbackModal() {
+      if (!this.dom.feedbackModal) return;
+      this.dom.feedbackModal.classList.add('hidden');
+    }
+
+    setFeedbackNotice(msg, type) {
+      if (!this.dom.feedbackNoticeMsg) return;
+      if (!msg) {
+        this.dom.feedbackNoticeMsg.style.display = 'none';
+        this.dom.feedbackNoticeMsg.className = 'auth-notice-msg';
+        this.dom.feedbackNoticeMsg.textContent = '';
+      } else {
+        this.dom.feedbackNoticeMsg.style.display = 'block';
+        this.dom.feedbackNoticeMsg.className = `auth-notice-msg ${type}`;
+        this.dom.feedbackNoticeMsg.textContent = msg;
+      }
     }
   }
 

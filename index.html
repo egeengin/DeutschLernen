@@ -431,7 +431,161 @@ td strong, td b { color: var(--text-primary); }
 .animate { animation: fadeUp 0.5s ease forwards; }
 .section { opacity: 0; animation: fadeUp 0.6s ease forwards; }
 .section:nth-child(2) { animation-delay: 0.1s; }
-.section:nth-child(3) { animation-delay: 0.2s; }
+/* Feedback Modal & Floating Button Styles */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeUp 0.2s ease-out;
+}
+.modal-backdrop.hidden { display: none !important; }
+.modal-dialog {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+}
+.modal-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-secondary);
+}
+.modal-header h2 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.modal-close-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: var(--text-muted);
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+.modal-close-btn:hover { color: var(--text-primary); }
+.modal-scroll-area {
+  overflow-y: auto;
+  padding: 24px;
+}
+.auth-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+.auth-form-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.auth-input-field, .feedback-select-field, .feedback-textarea {
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: all var(--transition);
+}
+.auth-input-field:focus, .feedback-select-field:focus, .feedback-textarea:focus {
+  border-color: var(--accent-gold);
+}
+.auth-notice-msg {
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.auth-notice-msg.error {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid var(--accent-red);
+  color: var(--accent-red);
+}
+.auth-notice-msg.success {
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid var(--accent-green);
+  color: var(--accent-green);
+}
+.btn-feedback-submit {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--accent-gold);
+  color: #000000;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition);
+  margin-top: 8px;
+}
+.btn-feedback-submit:hover {
+  background: var(--de-gold);
+  transform: translateY(-1px);
+}
+.star-rating-wrap {
+  display: flex;
+  gap: 8px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.star-rating-wrap span {
+  color: var(--border);
+  transition: color 0.15s ease;
+}
+.star-rating-wrap span.selected {
+  color: var(--accent-gold);
+}
+.btn-floating-feedback {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 90;
+  background: linear-gradient(135deg, var(--accent-gold), #d97706);
+  color: #000000;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px 18px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.35);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--transition);
+}
+.btn-floating-feedback:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.5);
+}
 </style>
 </head>
 <body>
@@ -712,7 +866,7 @@ td strong, td b { color: var(--text-primary); }
     <div class="section" id="vocab2" style="animation-delay:0.35s">
       <div class="section-label" data-en="📚 Module 10" data-tr="📚 Modül 10">📚 Module 10</div>
       <h2 data-en="Vocabulary: Nouns by Theme" data-tr="Kelime Bilgisi: Temalara Göre İsimler">Vocabulary: Nouns by Theme</h2>
-      <p data-en="~550 most-used German nouns organized by A2-B1 / B1 exam themes with Turkish translations." data-tr="Türkçe çevirileriyle A2-B1 / B1 sınav temalarına göre düzenlenmiş en çok kullanılan ~550 isim.">~550 most-used German nouns organized by A2-B1 / B1 exam themes with Turkish translations.</p>
+      <p data-en="~550 most-used German nouns organized by B1 exam themes with Turkish translations." data-tr="Türkçe çevirileriyle B1 sınav temalarına göre düzenlenmiş en çok kullanılan ~550 isim.">~550 most-used German nouns organized by B1 exam themes with Turkish translations.</p>
       <div class="card-links">
         <button class="card-link primary" onclick="openMaterial(9)"><span data-en="📄 Open Vocabulary →" data-tr="📄 Kelime Bilgisini Aç →">📄 Open Vocabulary →</span></button>
       </div>
@@ -761,6 +915,7 @@ td strong, td b { color: var(--text-primary); }
         <a href="legal.html" style="font-size:13px; color:var(--text-secondary);"><span data-en="🇩🇪 Impressum (§ 5 DDG)" data-tr="🇩🇪 Yasal Künye (§ 5 DDG)">🇩🇪 Impressum (§ 5 DDG)</span></a>
         <a href="legal.html#tab-datenschutz" style="font-size:13px; color:var(--text-secondary);"><span data-en="🔒 Privacy Policy (GDPR)" data-tr="🔒 Gizlilik Politikası (KVKK/GDPR)">🔒 Privacy Policy (GDPR)</span></a>
         <a href="legal.html#tab-terms" style="font-size:13px; color:var(--text-secondary);"><span data-en="📜 Terms & Trademarks" data-tr="📜 Kullanım Şartları ve Markalar">📜 Terms & Trademarks</span></a>
+        <a href="javascript:void(0)" onclick="openFeedbackModal()" style="font-size:13px; color:var(--text-secondary);"><span data-en="💬 Feedback" data-tr="💬 Geri Bildirim">💬 Feedback</span></a>
         <a href="https://github.com/egeengin/DeutschLernen" target="_blank" rel="noopener noreferrer" style="font-size:13px; color:var(--text-secondary);">GitHub Source</a>
       </div>
       
@@ -795,6 +950,68 @@ td strong, td b { color: var(--text-primary); }
   </div>
 </div>
 
+<!-- Floating Feedback Button -->
+<button class="btn-floating-feedback" id="btn-floating-feedback" title="Give Feedback / Geri Bildirim" onclick="openFeedbackModal()">
+  💬 <span data-en="Feedback" data-tr="Geri Bildirim">Feedback</span>
+</button>
+
+<!-- Community Feedback Modal Dialog -->
+<div class="modal-backdrop hidden" id="feedback-modal" role="dialog" aria-modal="true" aria-labelledby="feedback-modal-title">
+  <div class="modal-dialog" style="max-width: 480px;">
+    <div class="modal-header">
+      <h2 id="feedback-modal-title">💬 <span data-en="Send Feedback & Suggestions" data-tr="Geri Bildirim ve Öneriler">Send Feedback & Suggestions</span></h2>
+      <button class="modal-close-btn" onclick="closeFeedbackModal()" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-scroll-area">
+      <div id="feedback-status-msg" class="auth-notice-msg" style="display:none;"></div>
+      
+      <form id="feedback-form" onsubmit="return false;">
+        <div class="auth-form-group">
+          <label for="feedback-username" data-en="Name / Nickname" data-tr="İsim / Takma Ad">Name / Nickname</label>
+          <input type="text" id="feedback-username" class="auth-input-field" placeholder="Anonymous or your name" data-en="Anonymous or your name" data-tr="Anonim veya isminiz">
+        </div>
+
+        <div class="auth-form-group">
+          <label for="feedback-location" data-en="Location (Auto-detected)" data-tr="Konum (Otomatik Tespit)">Location (Auto-detected)</label>
+          <input type="text" id="feedback-location" class="auth-input-field" placeholder="Detecting location..." readonly>
+        </div>
+
+        <div class="auth-form-group">
+          <label for="feedback-category" data-en="Category" data-tr="Kategori">Category</label>
+          <select id="feedback-category" class="feedback-select-field">
+            <option value="General" data-en="💡 General Feedback / Suggestion" data-tr="💡 Genel Geri Bildirim / Öneri">💡 General Feedback / Suggestion</option>
+            <option value="VocabCorrection" data-en="📝 Vocabulary / Translation Correction" data-tr="📝 Kelime / Çeviri Düzeltmesi">📝 Vocabulary / Translation Correction</option>
+            <option value="FeatureRequest" data-en="✨ Feature Request" data-tr="✨ Yeni Özellik İsteği">✨ Feature Request</option>
+            <option value="BugReport" data-en="🐛 Bug Report" data-tr="🐛 Hata Bildirimi">🐛 Bug Report</option>
+          </select>
+        </div>
+
+        <div class="auth-form-group">
+          <label data-en="Your Rating" data-tr="Puanınız">Your Rating</label>
+          <div class="star-rating-wrap" id="feedback-stars" data-rating="5">
+            <span data-star="1" class="selected">★</span>
+            <span data-star="2" class="selected">★</span>
+            <span data-star="3" class="selected">★</span>
+            <span data-star="4" class="selected">★</span>
+            <span data-star="5" class="selected">★</span>
+          </div>
+        </div>
+
+        <div class="auth-form-group">
+          <label for="feedback-message" data-en="Your Message" data-tr="Mesajınız">Your Message</label>
+          <textarea id="feedback-message" class="feedback-textarea" rows="4" placeholder="Tell us what we can improve or report an issue..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-feedback-submit" id="btn-submit-feedback">
+          🚀 <span data-en="Submit Feedback" data-tr="Geri Bildirimi Gönder">Submit Feedback</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="js/firebaseConfig.js"></script>
+<script src="js/firebaseService.js"></script>
 <script>
 // Global State
 let currentLang = 'en';
@@ -1305,9 +1522,79 @@ function renderHeatmap() {
     container.innerHTML = html;
 }
 
+// --- Community Feedback Handlers ---
+function openFeedbackModal() {
+  const modal = document.getElementById('feedback-modal');
+  if (!modal) return;
+  modal.classList.remove('hidden');
+  const locInput = document.getElementById('feedback-location');
+  if (locInput && window.FirebaseService) {
+    locInput.value = window.FirebaseService.detectLocation();
+  }
+}
+
+function closeFeedbackModal() {
+  const modal = document.getElementById('feedback-modal');
+  if (modal) modal.classList.add('hidden');
+}
+
+function initFeedbackForm() {
+  const starsWrap = document.getElementById('feedback-stars');
+  if (starsWrap) {
+    const stars = starsWrap.querySelectorAll('span');
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        const rating = parseInt(star.getAttribute('data-star') || '5', 10);
+        starsWrap.setAttribute('data-rating', rating);
+        stars.forEach((s, idx) => {
+          s.classList.toggle('selected', idx < rating);
+        });
+      });
+    });
+  }
+
+  const form = document.getElementById('feedback-form');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const statusMsg = document.getElementById('feedback-status-msg');
+      const submitBtn = document.getElementById('btn-submit-feedback');
+      const username = document.getElementById('feedback-username').value.trim() || 'Anonymous';
+      const location = document.getElementById('feedback-location').value.trim();
+      const category = document.getElementById('feedback-category').value;
+      const rating = parseInt(document.getElementById('feedback-stars').getAttribute('data-rating') || '5', 10);
+      const message = document.getElementById('feedback-message').value.trim();
+
+      if (!message) return;
+
+      submitBtn.disabled = true;
+      try {
+        if (window.FirebaseService) {
+          await window.FirebaseService.submitFeedback({ username, location, category, rating, message });
+        }
+        statusMsg.style.display = 'block';
+        statusMsg.className = 'auth-notice-msg success';
+        statusMsg.textContent = currentLang === 'en' 
+          ? "Thank you! Your feedback has been received." 
+          : "Teşekkür ederiz! Geri bildiriminiz başarıyla iletildi.";
+        form.reset();
+        setTimeout(() => {
+          closeFeedbackModal();
+          statusMsg.style.display = 'none';
+          submitBtn.disabled = false;
+        }, 1800);
+      } catch (err) {
+        statusMsg.style.display = 'block';
+        statusMsg.className = 'auth-notice-msg error';
+        statusMsg.textContent = err.message || "Submission failed";
+        submitBtn.disabled = false;
+      }
+    });
+  }
+}
+
 // Initialize components
-// renderHeatmap() removed
-// markStudyDay() removed
+initFeedbackForm();
 </script>
 </body>
 </html>

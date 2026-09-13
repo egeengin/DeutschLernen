@@ -5,6 +5,8 @@ const ASSETS = [
   './trainer.html',
   './legal.html',
   './css/trainer.css',
+  './js/firebaseConfig.js',
+  './js/firebaseService.js',
   './js/vocabTrainer.js',
   './data/vocab2000.js',
   './data/vocab_b2.js',
