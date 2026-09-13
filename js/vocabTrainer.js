@@ -766,13 +766,31 @@
       });
     }
 
-    playSpeech(text) {
+    playSpeech(text, rate = 0.92) {
       if (!('speechSynthesis' in window)) return;
       window.speechSynthesis.cancel();
       const clean = text.split('(')[0].trim();
       const utter = new SpeechSynthesisUtterance(clean);
       utter.lang = 'de-DE';
-      utter.rate = 0.92;
+
+      // Select highest quality German voice if available
+      try {
+        const voices = window.speechSynthesis.getVoices();
+        const deVoices = voices.filter(v => v.lang.startsWith('de'));
+        const bestVoice = deVoices.find(v => 
+          v.name.includes('Natural') || 
+          v.name.includes('Google') || 
+          v.name.includes('Premium') ||
+          v.name.includes('Neural') ||
+          v.name.includes('Hedda') ||
+          v.name.includes('Katja')
+        ) || deVoices[0];
+        if (bestVoice) utter.voice = bestVoice;
+      } catch (e) {
+        // Fallback to default
+      }
+
+      utter.rate = rate;
       window.speechSynthesis.speak(utter);
     }
 

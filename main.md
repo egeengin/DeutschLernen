@@ -1,6 +1,6 @@
-# 🇩🇪 TELC A2/B1 (telc Deutsch A2-B1) — B1 in 30 Days / 30 Günde B1
+# 🇩🇪 telc Deutsch B1 — Complete 30-Day Study Portal & Wortschatz Trainer 2000 / 30 Günde telc B1 Hazırlığı
 
-> **🎓 [Access the Interactive Study Portal Here](https://egeengin.github.io/DeutschLernen/)**
+> **🎓 [Access the Interactive Study Portal Here](https://egeengin.github.io/DeutschLernen/)** · **⚡ [Launch Wortschatz Trainer 2000](https://egeengin.github.io/DeutschLernen/trainer.html)**
 
 ## Your Study Materials / Çalışma Materyalleriniz
 
