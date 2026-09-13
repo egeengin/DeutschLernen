@@ -217,6 +217,10 @@ ______________________________________________________________________
 | Kaffee      | der     | kahve          | Ich trinke täglich drei **Kaffees**.    |
 | Tee         | der     | çay            | Ich hätte gern einen **Tee** bitte.     |
 
-______________________________________________________________________
-
 *Bölüm 1 için `vocab_part1_fiiller_sifatlar.md` dosyasına bakın.*
+
+## Kaynaklar
+
+- [telc Deutsch B1 Resmi Sayfası](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+- [DW — Wortschatz](https://learngerman.dw.com/en/vocabulary/s-60632451) — Deutsche Welle kelime kaynakları.
+

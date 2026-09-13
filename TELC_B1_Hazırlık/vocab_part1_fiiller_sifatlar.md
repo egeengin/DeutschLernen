@@ -205,6 +205,10 @@ ______________________________________________________________________
 | sofort      | hemen              | Ich komme **sofort**!                       |
 | bald        | yakında            | Bis **bald**!                               |
 
-______________________________________________________________________
+*Bölüm 2 için `vocab_part2_isimler_temalar.md` dosyasına bakın.*
+ 
+## Kaynaklar
 
-*Bölüm 2 için `vocab_part2_nouns_themes.md` dosyasına bakın.*
+- [telc Deutsch B1 Resmi Sayfası](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+- [DW — Wortschatz](https://learngerman.dw.com/en/vocabulary/s-60632451) — Deutsche Welle kelime kaynakları.
+

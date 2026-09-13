@@ -25,7 +25,11 @@ const ASSETS = [
   './TELC_B1_Preparation/mock_exam_final.md',
   './TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_final.md',
   './TELC_B1_Preparation/example_exams_resources.md',
-  './TELC_B1_Haz%C4%B1rl%C4%B1k/example_exams_resources.md'
+  './TELC_B1_Haz%C4%B1rl%C4%B1k/example_exams_resources.md',
+  './TELC_B1_Preparation/vocab_part1_verbs_adjectives.md',
+  './TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part1_fiiller_sifatlar.md',
+  './TELC_B1_Preparation/vocab_part2_nouns_themes.md',
+  './TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part2_isimler_temalar.md'
 ];
 
 self.addEventListener('install', event => {
