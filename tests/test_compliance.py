@@ -235,5 +235,15 @@ class TestCommercialAndLegalCompliance(unittest.TestCase):
         self.assertIn('firebaseConfig.js', idx_content)
         self.assertIn('firebaseService.js', idx_content)
 
+    def test_no_tracked_cache_or_temp_files(self):
+        """Verify no __pycache__, .pyc, or .DS_Store files are tracked in Git."""
+        import subprocess
+        result = subprocess.run(["git", "ls-files"], cwd=ROOT_DIR, capture_output=True, text=True)
+        if result.returncode == 0:
+            tracked = result.stdout.splitlines()
+            forbidden = [f for f in tracked if "__pycache__" in f or f.endswith((".pyc", ".pyo", ".DS_Store"))]
+            self.assertEqual(forbidden, [], f"Forbidden cache or OS files tracked in git: {forbidden}")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -10,7 +10,7 @@ ______________________________________________________________________
 
 ## 1. Schreiben (Writing) — 30 min, 2 Parts
 
-The official **telc Deutsch A2-B1** Writing Exam ALWAYS consists of two parts:
+The official **telc Deutsch B1** Writing Exam ALWAYS consists of two parts:
 * **Teil 1:** A short, informal "Chat" or "Kurznachricht" (30-40 words).
 * **Teil 2:** A formal or semi-formal E-Mail (70-80 words).
 
@@ -22,7 +22,7 @@ The official **telc Deutsch A2-B1** Writing Exam ALWAYS consists of two parts:
 
 ### Letter & Chat Templates
 
-#### 1. Part 1: Informal Chat (Die Kurznachricht) - *New in telc A2-B1!*
+#### 1. Part 1: Informal Chat (Die Kurznachricht) - *New in telc B1!*
 You usually write to a friend on WhatsApp about an upcoming meeting or apologizing.
 ```text
 Hallo [Name],
@@ -35,7 +35,7 @@ Liebe Grüße
 ```
 
 #### 2. Part 2: Job Application (Die Bewerbung) - *Sehr Wichtig!*
-Replying to a job ad is extremely common in telc Deutsch A2-B1.
+Replying to a job ad is extremely common in telc Deutsch B1.
 
 ```text
 Sehr geehrte Damen und Herren,
@@ -170,7 +170,7 @@ You discuss a topic or react to a statement/picture.
 ______________________________________________________________________
 
 ## References
-* **telc Deutsch A2-B1 Official Portal:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
+* **telc Deutsch B1 Official Portal:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
 * **Goethe-Institut Preparation:** [goethe.de B1 exams](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html)
 * **YouTube B1 Speaking Tips:** [Deutsch Lernen mit der DW](https://learngerman.dw.com/) and specific "telc B1 Sprechen" exam walkthroughs.
 """
@@ -181,7 +181,7 @@ ______________________________________________________________________
 
 ## 1. Yazma (Schreiben) — 30 Dk, 2 Bölüm
 
-Resmi **telc Deutsch A2-B1** Yazma Sınavı DAİMA iki bölümden oluşur:
+Resmi **telc Deutsch B1** Yazma Sınavı DAİMA iki bölümden oluşur:
 * **Teil 1:** Kısa ve gayri resmi bir "Chat" veya "Kurznachricht" (Kısa mesaj) (30-40 kelime).
 * **Teil 2:** Resmi veya yarı resmi bir E-posta (70-80 kelime).
 
@@ -193,7 +193,7 @@ Resmi **telc Deutsch A2-B1** Yazma Sınavı DAİMA iki bölümden oluşur:
 
 ### Şablonlar: Chat ve E-Posta
 
-#### 1. Bölüm 1: Samimi Chat (Die Kurznachricht) - *telc A2-B1'in Farkı!*
+#### 1. Bölüm 1: Samimi Chat (Die Kurznachricht) - *telc B1'in Farkı!*
 Genellikle WhatsApp üzerinden bir arkadaşınıza buluşma veya özür mesajı yazarsınız.
 ```text
 Hallo [İsim],
@@ -206,7 +206,7 @@ Liebe Grüße
 ```
 
 #### 2. Bölüm 2: İş Başvurusu (Die Bewerbung) - *Çok Önemli!*
-telc Deutsch A2-B1 sınavında bir iş ilanına e-posta ile başvurmak çok yaygındır.
+telc Deutsch B1 sınavında bir iş ilanına e-posta ile başvurmak çok yaygındır.
 ```text
 Sehr geehrte Damen und Herren,
 
@@ -341,7 +341,7 @@ Bir konu hakkında konuşur veya deneyimlerinizi paylaşırsınız.
 ______________________________________________________________________
 
 ## Kaynaklar (References)
-* **telc Deutsch A2-B1 Resmi Portal:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
+* **telc Deutsch B1 Resmi Portal:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
 * **Goethe-Institut Hazırlık:** [goethe.de B1 exams](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html)
 * **YouTube B1 Konuşma Tüyoları:** [Deutsch Lernen mit der DW](https://learngerman.dw.com/) ve YouTube üzerinden aratılabilecek "telc B1 Sprechen" popüler kanalları (örn: Marija, DeutschLera).
 """
