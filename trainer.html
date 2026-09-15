@@ -174,7 +174,7 @@
         </div>
 
         <div class="prompt-word-container">
-          <h1 class="prompt-word" id="arena-word-de">aufgeben</h1>
+          <h1 class="prompt-word" id="arena-word-de">...</h1>
           <button class="audio-btn-play" id="btn-play-audio" title="Listen to German pronunciation (Spacebar)" aria-label="Pronounce word">
             🔊
           </button>
@@ -186,22 +186,6 @@
       <!-- 4 Multiple Choice Options Grid -->
       <div class="options-grid" id="options-grid" role="group" aria-label="Answer Choices">
         <!-- Injected dynamically by VocabTrainerApp -->
-        <button class="quiz-option-btn">
-          <span class="opt-key">1</span>
-          <span class="opt-text">vazgeçmek, pes etmek / to give up</span>
-        </button>
-        <button class="quiz-option-btn">
-          <span class="opt-key">2</span>
-          <span class="opt-text">başlamak / to begin</span>
-        </button>
-        <button class="quiz-option-btn">
-          <span class="opt-key">3</span>
-          <span class="opt-text">terk etmek / to leave</span>
-        </button>
-        <button class="quiz-option-btn">
-          <span class="opt-key">4</span>
-          <span class="opt-text">anlamak / to understand</span>
-        </button>
       </div>
 
       <!-- Dynamic Post-Answer Explanation Card -->
@@ -425,7 +409,7 @@
         <a href="legal.html#tab-datenschutz" data-i18n="privacyLink">🔒 Privacy Policy (GDPR)</a>
         <a href="legal.html#tab-terms" data-i18n="termsLink">📜 Terms & Trademarks</a>
         <a href="javascript:void(0)" id="btn-footer-feedback" data-i18n="feedbackBtn">💬 Feedback</a>
-        <button type="button" data-i18n="resetProgressBtn" onclick="if(confirm(window.VocabApp ? window.VocabApp.sessionManager.clearAllProgress : 'Reset?')){localStorage.removeItem('deutschlernen_vocab_progress');location.reload();}">
+        <button type="button" data-i18n="resetProgressBtn" onclick="const msg = (window.VocabApp && window.VocabApp.settings.lang === 'tr') ? 'Kelime ilerleme verilerinizi sıfırlamak istediğinize emin misiniz?' : 'Are you sure you want to reset your vocabulary progress?'; if(confirm(msg)){ if(window.VocabApp && window.VocabApp.sessionManager) { window.VocabApp.sessionManager.clearAllProgress(); } else { localStorage.removeItem('deutschlernen_vocab_progress'); } location.reload(); }">
           🗑️ Reset Progress
         </button>
         <a href="https://github.com/egeengin/DeutschLernen" target="_blank" rel="noopener noreferrer">GitHub Source</a>
