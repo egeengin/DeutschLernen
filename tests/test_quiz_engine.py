@@ -149,12 +149,12 @@ class TestQuizEngine(unittest.TestCase):
             for item in self.vocab2000[:100]:  # Sample test
                 correct_text = item[lang]
                 # Distractors matching same POS
-                distractor_pool = [
+                unique_distractor_pool = list({
                     w[lang] for w in self.vocab2000 
                     if w["id"] != item["id"] and w["pos"] == item["pos"] and w[lang] != correct_text
-                ]
-                self.assertGreaterEqual(len(distractor_pool), 3, f"Not enough distractors for {item['de']} in {lang}")
-                distractors = random.sample(distractor_pool, 3)
+                })
+                self.assertGreaterEqual(len(unique_distractor_pool), 3, f"Not enough distractors for {item['de']} in {lang}")
+                distractors = random.sample(unique_distractor_pool, 3)
                 choices = [correct_text] + distractors
                 self.assertEqual(len(set(choices)), 4, f"Choices are not unique for {item['de']} in {lang}")
 
@@ -215,6 +215,17 @@ class TestQuizEngine(unittest.TestCase):
         self.assertIn("tickSprintTimer", js_content)
         self.assertIn("finishSprint", js_content)
         self.assertIn("sprintModal", js_content)
+
+    def test_headless_node_vocab_trainer(self):
+        """Execute headless Node.js unit tests for js/vocabTrainer.js."""
+        import subprocess
+        import shutil
+        node_bin = shutil.which("node")
+        if not node_bin:
+            self.skipTest("Node.js not installed in environment")
+        js_test_path = os.path.join(BASE_DIR, "test_vocab_trainer.js")
+        result = subprocess.run([node_bin, js_test_path], capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, f"Node.js tests failed:\nSTDOUT:\n{result.stdout}\nSTDERR:\n{result.stderr}")
 
 
 if __name__ == "__main__":

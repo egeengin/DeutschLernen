@@ -50,7 +50,7 @@ ______________________________________________________________________
 
 ## 2. Interactive Reading Practice
 
-Test your synonym and logic recognition with these telc Deutsch A2-B1 style reading questions.
+Test your synonym and logic recognition with these telc Deutsch B1 style reading questions.
 
 ### Reading 1: True / False (Richtig/Falsch)
 
@@ -127,8 +127,8 @@ Imagine listening to a train station announcement:
 ______________________________________________________________________
 
 ## References
-* **telc Deutsch A2·B1 Official Details & Scoring:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
-* **YouTube telc A2-B1 Listening Tracks:** [telc gGmbH YouTube](https://www.youtube.com/c/telc_gGmbH) and mock exam audio tracks.
+* **telc Deutsch B1 Official Details & Scoring:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+* **YouTube telc B1 Listening Tracks:** [telc gGmbH YouTube](https://www.youtube.com/c/telc_gGmbH) and mock exam audio tracks.
 """
 
 tr_content = """# İnceleme: Okuma ve Dinleme (Lesen & Hören)
@@ -177,7 +177,7 @@ ______________________________________________________________________
 
 ## 2. İnteraktif Okuma Pratiği
 
-Aşağıdaki telc Deutsch A2-B1 tarzı sorularla eş anlamlı ve mantık okuma becerinizi test edin.
+Aşağıdaki telc Deutsch B1 tarzı sorularla eş anlamlı ve mantık okuma becerinizi test edin.
 
 ### Okuma 1: Doğru / Yanlış (Richtig/Falsch)
 
@@ -254,8 +254,8 @@ Bir tren istasyonu anonsu dinlediğinizi hayal edin:
 ______________________________________________________________________
 
 ## Kaynaklar (References)
-* **telc Deutsch A2-B1 Resmi Kuralları:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
-* **YouTube Ses Pratikleri (Hören):** Sınav formatına alışmak için YouTube'da "TELC A2-B1 Hören" veya "telc gGmbH" resmi kanalındaki model sınav ses kayıtlarını (Modelltest) haftalık olarak çözün.
+* **telc Deutsch B1 Resmi Kuralları:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+* **YouTube Ses Pratikleri (Hören):** Sınav formatına alışmak için YouTube'da "TELC B1 Hören" veya "telc gGmbH" resmi kanalındaki model sınav ses kayıtlarını (Modelltest) haftalık olarak çözün.
 """
 
 with open(EN_FILE, "w", encoding="utf-8") as f:

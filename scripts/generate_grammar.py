@@ -11,7 +11,7 @@ ______________________________________________________________________
 ## 1. Nebensätze (Subordinate Clauses) — MOST TESTED CONSTRUCT
 
 The conjugated verb goes to the **END** of the subordinate clause. 
-**PRO TRICK:** In the telc Deutsch A2-B1 exam *Sprachbausteine*, if you see a blank right after a comma, look at the rest of the sentence. If the conjugated verb is sitting at the absolute end, the blank MUST be a subordinating conjunction like *dass, weil, wenn,* or *ob*.
+**PRO TRICK:** In the telc Deutsch B1 exam *Sprachbausteine*, if you see a blank right after a comma, look at the rest of the sentence. If the conjugated verb is sitting at the absolute end, the blank MUST be a subordinating conjunction like *dass, weil, wenn,* or *ob*.
 
 | Conjunction | Meaning | Example |
 | --- | --- | --- |
@@ -164,7 +164,7 @@ ______________________________________________________________________
 
 ## 6. Real Exam Practice: Sprachbausteine Mix
 
-Test yourself on mixed telc Deutsch A2-B1-style exercises covering everything above.
+Test yourself on mixed telc Deutsch B1-style exercises covering everything above.
 
 <div class="md-quiz" 
   data-question="Ich habe eine Katze, ___ sehr gerne schläft." 
@@ -199,7 +199,7 @@ Test yourself on mixed telc Deutsch A2-B1-style exercises covering everything ab
 ______________________________________________________________________
 
 ## References
-* **telc Deutsch A2-B1 Rules:** [telc.net/sprachpruefungen/a2b1](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
+* **telc Deutsch B1 Rules:** [telc.net/sprachpruefungen/zertifikat-deutsch-telc-deutsch-b1.html](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
 * **Grammar Explanations:** Adapted from common TELC guidelines and YouTube teachers like "Deutsch lernen durch Hören" and DW Learn German.
 * **Practice:** [Goethe-Institut B1 material](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html).
 """
@@ -211,7 +211,7 @@ ______________________________________________________________________
 ## 1. Nebensätze (Yan Cümleler) — EN ÇOK TEST EDİLEN KONU
 
 Çekimli(zaman ve kişiye göre değişen) fiil yan cümlenin **EN SONUNA** gider. 
-**PRO İPUCU:** telc Deutsch A2-B1 sınavı *Sprachbausteine* (Bölüm 1) kısmında, virgülden hemen sonra bir boşluk görürseniz, cümlenin geri kalanına bakın. Eğer çekimli fiil cümlenin en sonunda yer alıyorsa, boşluğa kesinlikle *dass, weil, wenn,* veya *ob* gibi yan cümle bağlaçlarından biri gelmelidir!
+**PRO İPUCU:** telc Deutsch B1 sınavı *Sprachbausteine* (Bölüm 1) kısmında, virgülden hemen sonra bir boşluk görürseniz, cümlenin geri kalanına bakın. Eğer çekimli fiil cümlenin en sonunda yer alıyorsa, boşluğa kesinlikle *dass, weil, wenn,* veya *ob* gibi yan cümle bağlaçlarından biri gelmelidir!
 
 | Bağlaç | Anlamı | Örnek |
 | --- | --- | --- |
@@ -362,7 +362,7 @@ ______________________________________________________________________
 
 ## 6. Gerçek Sınav Pratiği: Karışık Sprachbausteine
 
-Yukarıdaki tüm kuralları kapsayan telc Deutsch A2-B1 tarzı karma alıştırmalarla kendinizi test edin:
+Yukarıdaki tüm kuralları kapsayan telc Deutsch B1 tarzı karma alıştırmalarla kendinizi test edin:
 
 <div class="md-quiz" 
   data-question="Ich habe eine Katze, ___ sehr gerne schläft." 
@@ -397,7 +397,7 @@ Yukarıdaki tüm kuralları kapsayan telc Deutsch A2-B1 tarzı karma alıştırm
 ______________________________________________________________________
 
 ## Kaynaklar (References)
-* **telc Deutsch A2-B1 Sınav Yapısı:** [telc.net/sprachpruefungen/a2b1](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/telc-deutsch-a2b1/)
+* **telc Deutsch B1 Sınav Yapısı:** [telc.net/sprachpruefungen/zertifikat-deutsch-telc-deutsch-b1.html](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
 * **Gramer Pratikleri:** Genel TELC müfredatı, DW Learn German ve YouTube Almanca eğitmenlerinden derlenmiştir.
 * **Sınav Örnekleri:** [Goethe B1 Modellsatz](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html).
 """
