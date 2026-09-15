@@ -35,8 +35,12 @@ Welcome to the **DeutschLernen (TELC B1 Study Portal)** repository. All contribu
 - **Never** use "DTZ", "Deutsch-Test für Zuwanderer", "A2-B1", or "Zertifikat Deutsch" when referring to the target exam in any file. Always call it **telc Deutsch B1**.
 - When linking to telc resources, use the telc Deutsch B1 product page: `https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html`
 
-### 6. Conventional Commit Messages
+### 6. Conventional Commit Messages & Regular Git Updates
 
+- 🛑 **MANDATORY: Update Git Regularly**:
+  - Commit and push changes frequently to version control.
+  - As soon as a discrete bug fix, feature addition, refactoring, or verification milestone is completed and all automated tests pass, commit the changes immediately.
+  - Avoid leaving uncommitted working trees or accumulating large, multi-feature diffs.
 - All commit messages must follow the [Conventional Commits](https://www.conventionalcommits.org/) standard.
 - Use the following prefixes:
   - `feat`: (New features, like a new PWA module or grammar topic)

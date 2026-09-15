@@ -280,6 +280,10 @@
       localStorage.setItem(this.STORAGE_KEY_PROGRESS, JSON.stringify(map));
     }
 
+    clearAllProgress() {
+      localStorage.removeItem(this.STORAGE_KEY_PROGRESS);
+    }
+
     recordResult(wordId, isCorrect) {
       const progress = this.getProgressMap();
       const todayIso = new Date().toISOString().slice(0, 10);
@@ -535,6 +539,7 @@
         reviewBadge: document.getElementById('review-queue-badge'),
         // Arena
         cardCounter: document.getElementById('card-counter'),
+        accuracyCounter: document.getElementById('accuracy-counter'),
         progressBar: document.getElementById('quiz-progress-bar'),
         arenaWordDe: document.getElementById('arena-word-de'),
         arenaPosBadge: document.getElementById('arena-pos-badge'),
@@ -603,7 +608,11 @@
 
     getAllWordsPool() {
       const core = window.VOCAB_2000 || [];
-      const b2 = window.VOCAB_B2 || [];
+      const b2Raw = window.VOCAB_B2 || [];
+      const b2 = b2Raw.map(w => ({
+        ...w,
+        id: (typeof w.id === 'number' && w.id < 10000) ? 10000 + w.id : w.id
+      }));
       if (this.settings.deck === 'b2') return b2;
       if (this.settings.deck === 'all') return [...core, ...b2];
       return core;
@@ -834,6 +843,12 @@
       this.sessionWrong = 0;
       this.hasAnswered = false;
 
+      // Reset live accuracy counter
+      if (this.dom.accuracyCounter) {
+        const texts = I18N[this.settings.lang];
+        this.dom.accuracyCounter.innerHTML = `<span data-i18n="accuracy">${texts.accuracy || 'Accuracy'}</span>: 100%`;
+      }
+
       if (this.currentDeck.length === 0) {
         this.renderEmptyState();
         return;
@@ -874,7 +889,7 @@
       let promptTitle = "";
       let correctAnswerText = "";
 
-      if (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes') {
+      if (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint') {
         promptTitle = item.de;
         correctAnswerText = isEn ? item.en : item.tr;
       } else if (this.settings.mode === 'meaning_de') {
@@ -891,8 +906,12 @@
       this.dom.arenaWordDe.textContent = promptTitle;
 
       // Auto TTS if audio is on and prompt is German
-      if (this.settings.audio && (this.settings.mode === 'de_meaning' || this.settings.mode === 'synonyms' || this.settings.mode === 'antonyms' || this.settings.mode === 'mistakes')) {
-        this.playSpeech(item.de);
+      if (this.settings.audio && (this.settings.mode === 'de_meaning' || this.settings.mode === 'synonyms' || this.settings.mode === 'antonyms' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint')) {
+        try {
+          this.playSpeech(item.de);
+        } catch (e) {
+          console.warn("Auto TTS playback failed:", e);
+        }
       }
 
       // Generate 4 Distractor Options
@@ -901,6 +920,7 @@
 
       options.forEach((optText, i) => {
         const btn = document.createElement('button');
+        btn.type = 'button';
         btn.className = 'quiz-option-btn';
         btn.setAttribute('tabindex', '0');
         btn.innerHTML = `<span class="opt-key">${i + 1}</span><span class="opt-text">${optText}</span>`;
@@ -934,7 +954,7 @@
       for (const cand of shuffled) {
         if (distractors.size >= 4) break;
         let val = "";
-        if (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes') {
+        if (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint') {
           val = isEn ? cand.en : cand.tr;
         } else if (this.settings.mode === 'meaning_de') {
           val = cand.de;
@@ -955,8 +975,14 @@
         for (const cand of this.deckGenerator.shuffle(fallback)) {
           if (distractors.size >= 4) break;
           let val = "";
-          if (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes') {
+          if (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint') {
             val = isEn ? cand.en : cand.tr;
+          } else if (this.settings.mode === 'meaning_de') {
+            val = cand.de;
+          } else if (this.settings.mode === 'synonyms') {
+            val = (cand.synonyms && cand.synonyms.length > 0) ? cand.synonyms[0] : cand.de;
+          } else if (this.settings.mode === 'antonyms') {
+            val = (cand.antonyms && cand.antonyms.length > 0) ? cand.antonyms[0] : cand.de;
           } else {
             val = cand.de;
           }
@@ -983,6 +1009,7 @@
           b.classList.add('correct');
         }
         b.classList.add('disabled');
+        b.disabled = true;
       });
 
       if (isCorrect) {
@@ -991,6 +1018,14 @@
       } else {
         btn.classList.add('wrong');
         this.sessionWrong++;
+      }
+
+      // Update Accuracy Counter in live UI
+      const totalAnswered = this.sessionCorrect + this.sessionWrong;
+      const accPct = totalAnswered > 0 ? Math.round((this.sessionCorrect / totalAnswered) * 100) : 100;
+      if (this.dom.accuracyCounter) {
+        const texts = I18N[this.settings.lang];
+        this.dom.accuracyCounter.innerHTML = `<span data-i18n="accuracy">${texts.accuracy || 'Accuracy'}</span>: ${accPct}%`;
       }
 
       // Record in Session Manager
@@ -1134,32 +1169,37 @@
       }
     }
 
-    playSpeech(text) {
-      if (!('speechSynthesis' in window)) return;
-      window.speechSynthesis.cancel();
-      const clean = text.split('(')[0].trim();
-      const utter = new SpeechSynthesisUtterance(clean);
-      utter.lang = 'de-DE';
-
-      // Select highest quality German voice if available
+    playSpeech(text, rate = 0.92) {
       try {
-        const voices = window.speechSynthesis.getVoices();
-        const deVoices = voices.filter(v => v.lang.startsWith('de'));
-        const bestVoice = deVoices.find(v => 
-          v.name.includes('Natural') || 
-          v.name.includes('Google') || 
-          v.name.includes('Premium') ||
-          v.name.includes('Neural') ||
-          v.name.includes('Hedda') ||
-          v.name.includes('Katja')
-        ) || deVoices[0];
-        if (bestVoice) utter.voice = bestVoice;
-      } catch (e) {
-        // Fallback to default
-      }
+        if (!('speechSynthesis' in window)) return;
+        window.speechSynthesis.cancel();
+        if (!text) return;
+        const clean = text.split('(')[0].trim();
+        const utter = new SpeechSynthesisUtterance(clean);
+        utter.lang = 'de-DE';
 
-      utter.rate = rate;
-      window.speechSynthesis.speak(utter);
+        // Select highest quality German voice if available
+        try {
+          const voices = window.speechSynthesis.getVoices();
+          const deVoices = voices.filter(v => v.lang.startsWith('de'));
+          const bestVoice = deVoices.find(v => 
+            v.name.includes('Natural') || 
+            v.name.includes('Google') || 
+            v.name.includes('Premium') ||
+            v.name.includes('Neural') ||
+            v.name.includes('Hedda') ||
+            v.name.includes('Katja')
+          ) || deVoices[0];
+          if (bestVoice) utter.voice = bestVoice;
+        } catch (e) {
+          // Fallback to default
+        }
+
+        utter.rate = (typeof rate === 'number' && rate > 0) ? rate : 0.92;
+        window.speechSynthesis.speak(utter);
+      } catch (err) {
+        console.warn('TTS playback error:', err);
+      }
     }
 
     // --- Search Modal / Dictionary ---
@@ -1501,8 +1541,16 @@
   }
 
   // Expose globally for HTML onclick handlers
-  window.addEventListener('DOMContentLoaded', () => {
-    window.VocabApp = new VocabTrainerApp();
-  });
+  function initVocabApp() {
+    if (!window.VocabApp) {
+      window.VocabApp = new VocabTrainerApp();
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initVocabApp);
+  } else {
+    initVocabApp();
+  }
 
 })();
