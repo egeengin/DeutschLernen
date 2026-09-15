@@ -183,6 +183,21 @@ class TestQuizEngine(unittest.TestCase):
             ]
             self.assertGreaterEqual(len(distractors), 3)
 
+    def test_vocab_trainer_js_distractor_and_keyboard_guards(self):
+        """Verify js/vocabTrainer.js source code ensures German-only distractors and keyboard guards."""
+        js_path = os.path.join(ROOT_DIR, "js", "vocabTrainer.js")
+        with open(js_path, "r", encoding="utf-8") as f:
+            js_content = f.read()
+
+        # Verify synonym/antonym distractors do NOT fall back to cand.en or cand.tr
+        self.assertNotIn("(isEn ? cand.en : cand.tr)", js_content, "Synonym/antonym distractors must not fall back to EN/TR translations")
+        self.assertIn("cand.de", js_content, "German fallback must be used for German quiz modes")
+
+        # Verify keyboard shortcuts guard against input typing and open modals
+        self.assertIn("['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)", js_content)
+        self.assertIn("isAnyModalOpen", js_content)
+        self.assertIn("e.key === 'Escape'", js_content)
+
 
 if __name__ == "__main__":
     unittest.main()

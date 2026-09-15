@@ -195,9 +195,10 @@
 
     getSettings() {
       const siteLang = localStorage.getItem('site_lang') || localStorage.getItem('telc_lang');
+      const savedTheme = localStorage.getItem('deutschlernen_theme') || localStorage.getItem('site_theme') || localStorage.getItem('telc_theme') || 'dark';
       const def = {
         lang: siteLang || 'en',
-        theme: localStorage.getItem('site_theme') || 'dark',
+        theme: savedTheme,
         deck: 'core', // 'core', 'b2', 'all'
         mode: 'de_meaning',
         level: 'ALL',
@@ -544,7 +545,9 @@
       // Theme Toggle
       this.dom.themeBtn.addEventListener('click', () => {
         this.settings.theme = this.settings.theme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('deutschlernen_theme', this.settings.theme);
         localStorage.setItem('site_theme', this.settings.theme);
+        localStorage.setItem('telc_theme', this.settings.theme);
         this.sessionManager.saveSettings(this.settings);
         this.applyTheme(this.settings.theme);
       });
@@ -596,11 +599,37 @@
       // Next button
       this.dom.nextButton.addEventListener('click', () => this.nextCard());
 
-      // Keyboard navigation (1-4, Space, Enter)
+      // Keyboard navigation (1-4, Space, Enter, Escape)
       window.addEventListener('keydown', (e) => {
-        if (this.dom.searchModal && !this.dom.searchModal.classList.contains('hidden')) {
-          return; // Modal active
+        // Modal Dismissal with Escape key
+        if (e.key === 'Escape') {
+          if (this.dom.searchModal && !this.dom.searchModal.classList.contains('hidden')) {
+            this.closeSearchModal();
+            return;
+          }
+          if (this.dom.authModal && !this.dom.authModal.classList.contains('hidden')) {
+            this.dom.authModal.classList.add('hidden');
+            return;
+          }
+          if (this.dom.feedbackModal && !this.dom.feedbackModal.classList.contains('hidden')) {
+            this.dom.feedbackModal.classList.add('hidden');
+            return;
+          }
         }
+
+        // Never intercept keyboard shortcuts when typing in an input, textarea, or editable field
+        if (e.target && (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName) || e.target.isContentEditable)) {
+          return;
+        }
+
+        // Prevent quiz hotkeys while ANY modal is visible
+        const isAnyModalOpen = (this.dom.searchModal && !this.dom.searchModal.classList.contains('hidden')) ||
+                               (this.dom.authModal && !this.dom.authModal.classList.contains('hidden')) ||
+                               (this.dom.feedbackModal && !this.dom.feedbackModal.classList.contains('hidden'));
+        if (isAnyModalOpen) {
+          return;
+        }
+
         if (e.key >= '1' && e.key <= '4') {
           const idx = parseInt(e.key, 10) - 1;
           const btns = this.dom.optionsGrid.querySelectorAll('.quiz-option-btn');
@@ -641,9 +670,11 @@
     applyTheme(theme) {
       if (theme === 'light') {
         document.body.classList.add('light-mode');
+        document.documentElement.setAttribute('data-theme', 'light');
         this.dom.themeBtn.innerHTML = '🌙';
       } else {
         document.body.classList.remove('light-mode');
+        document.documentElement.setAttribute('data-theme', 'dark');
         this.dom.themeBtn.innerHTML = '☀️';
       }
     }
@@ -780,10 +811,19 @@
       distractors.add(correctAnswer);
 
       // Filter same POS & similar level for challenging distractors
-      const candidates = pool.filter(w => w.id !== currentItem.id && w.pos === currentItem.pos);
+      let candidates;
+      if (this.settings.mode === 'synonyms') {
+        candidates = pool.filter(w => w.id !== currentItem.id && w.pos === currentItem.pos && w.synonyms && w.synonyms.length > 0);
+        if (candidates.length < 5) candidates = pool.filter(w => w.id !== currentItem.id && w.pos === currentItem.pos);
+      } else if (this.settings.mode === 'antonyms') {
+        candidates = pool.filter(w => w.id !== currentItem.id && w.pos === currentItem.pos && w.antonyms && w.antonyms.length > 0);
+        if (candidates.length < 5) candidates = pool.filter(w => w.id !== currentItem.id && w.pos === currentItem.pos);
+      } else {
+        candidates = pool.filter(w => w.id !== currentItem.id && w.pos === currentItem.pos);
+      }
       const fallback = pool.filter(w => w.id !== currentItem.id);
 
-      const sampleFrom = candidates.length >= 10 ? candidates : fallback;
+      const sampleFrom = candidates.length >= 5 ? candidates : fallback;
       const shuffled = this.deckGenerator.shuffle(sampleFrom);
 
       for (const cand of shuffled) {
@@ -794,12 +834,30 @@
         } else if (this.settings.mode === 'meaning_de') {
           val = cand.de;
         } else if (this.settings.mode === 'synonyms') {
-          val = (cand.synonyms && cand.synonyms.length > 0) ? cand.synonyms[0] : (isEn ? cand.en : cand.tr);
+          // Exclusively German words: prefer candidate's synonym, otherwise candidate German headword
+          val = (cand.synonyms && cand.synonyms.length > 0) ? cand.synonyms[0] : cand.de;
         } else if (this.settings.mode === 'antonyms') {
-          val = (cand.antonyms && cand.antonyms.length > 0) ? cand.antonyms[0] : (isEn ? cand.en : cand.tr);
+          // Exclusively German words: prefer candidate's antonym, otherwise candidate German headword
+          val = (cand.antonyms && cand.antonyms.length > 0) ? cand.antonyms[0] : cand.de;
         }
-        if (val && val !== correctAnswer) {
+        if (val && val !== correctAnswer && !distractors.has(val)) {
           distractors.add(val);
+        }
+      }
+
+      // If pool was small and we still need distractors, fill with other German headwords (or target language meanings)
+      if (distractors.size < 4) {
+        for (const cand of this.deckGenerator.shuffle(fallback)) {
+          if (distractors.size >= 4) break;
+          let val = "";
+          if (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes') {
+            val = isEn ? cand.en : cand.tr;
+          } else {
+            val = cand.de;
+          }
+          if (val && val !== correctAnswer && !distractors.has(val)) {
+            distractors.add(val);
+          }
         }
       }
 

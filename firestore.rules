@@ -12,11 +12,15 @@ service cloud.firestore {
     }
 
     // Community Feedback Collection:
-    // Writable by any user (authenticated or guest), with validation
+    // Writable by any user (authenticated or guest), with schema validation
     match /feedback/{feedbackId} {
       allow create: if request.resource.data.message is string
                     && request.resource.data.message.size() > 0
-                    && request.resource.data.message.size() <= 4000;
+                    && request.resource.data.message.size() <= 4000
+                    && (!('rating' in request.resource.data) || (request.resource.data.rating is int && request.resource.data.rating >= 1 && request.resource.data.rating <= 5))
+                    && (!('category' in request.resource.data) || (request.resource.data.category is string && request.resource.data.category.size() <= 50))
+                    && (!('username' in request.resource.data) || (request.resource.data.username is string && request.resource.data.username.size() <= 100))
+                    && (!('location' in request.resource.data) || (request.resource.data.location is string && request.resource.data.location.size() <= 100));
       // Read access restricted to project admins
       allow read, update, delete: if request.auth != null && request.auth.token.admin == true;
     }

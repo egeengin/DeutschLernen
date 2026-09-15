@@ -34,7 +34,7 @@
   --shadow-glow: 0 0 20px var(--accent-gold-glow);
 }
 
-body.light-mode {
+body.light-mode, [data-theme="light"], html.light-mode {
   --bg-primary: #f8fafc;
   --bg-secondary: #ffffff;
   --bg-card: #ffffff;

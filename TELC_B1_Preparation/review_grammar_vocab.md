@@ -18,7 +18,7 @@ In subordinate clauses (Nebensatz), the conjugated verb always goes to the **VER
 | **wenn** | if / when | **Wenn** es regnet, **bleibe** ich zu Hause. |
 | **obwohl** | although | Er arbeitet viel, **obwohl** er müde **ist**. |
 | **damit** | so that | Ich lerne Deutsch, **damit** ich Arbeit **finde**. |
-| **als** | when (past) | **Als** ich ein Kind **war**, spielte benı oft draußen. |
+| **als** | when (past) | **Als** ich ein Kind **war**, spielte ich oft draußen. |
 | **ob** | whether / if | Ich weiß nicht, **ob** er morgen **kommt**. |
 
 **Important:** When the Nebensatz starts the sentence, the main clause begins with the verb (Verb-Verb rule):
