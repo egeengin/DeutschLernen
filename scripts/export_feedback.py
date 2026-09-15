@@ -43,13 +43,18 @@ def parse_firestore_fields(doc):
             flat[k] = str(v)
     return flat
 
-def fetch_from_firestore_rest(project_id, api_key=None):
+def fetch_from_firestore_rest(project_id, api_key=None, auth_token=None):
     """Fetches documents from /feedback collection via Firestore REST API."""
     url = f"https://firestore.googleapis.com/v1/projects/{project_id}/databases/(default)/documents/feedback"
     if api_key:
         url += f"?key={api_key}"
 
-    req = urllib.request.Request(url, headers={"User-Agent": "DeutschLernen-Exporter/1.0"})
+    headers = {"User-Agent": "DeutschLernen-Exporter/1.0"}
+    token = auth_token or os.environ.get("FIREBASE_AUTH_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+
+    req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req) as resp:
             data = json.loads(resp.read().decode("utf-8"))
@@ -57,6 +62,9 @@ def fetch_from_firestore_rest(project_id, api_key=None):
             return [parse_firestore_fields(d) for d in docs]
     except urllib.error.HTTPError as e:
         print(f"Error fetching from Firestore REST API: {e.code} - {e.reason}", file=sys.stderr)
+        if e.code == 403:
+            print("Note: In accordance with firestore.rules, read access to /feedback requires Admin authentication.", file=sys.stderr)
+            print("Please provide an Admin bearer token via --auth-token or FIREBASE_AUTH_TOKEN, or use --input <file.json> to export from a local backup.", file=sys.stderr)
         return []
     except Exception as e:
         print(f"Network error: {e}", file=sys.stderr)
@@ -102,6 +110,7 @@ def main():
     parser.add_argument("--output", "-o", default=DEFAULT_CSV_OUTPUT, help="Output CSV path (default: feedback_export.csv).")
     parser.add_argument("--project-id", "-p", help="Firebase Project ID to fetch live from Firestore.")
     parser.add_argument("--api-key", "-k", help="Optional Firebase API key for Firestore REST access.")
+    parser.add_argument("--auth-token", "-t", help="Optional Firebase ID/Admin token for authorized Firestore reads.")
     parser.add_argument("--sample", action="store_true", help="Generate sample feedback CSV for demonstration/testing.")
 
     args = parser.parse_args()
@@ -144,7 +153,7 @@ def main():
                 if records and "fields" in records[0]:
                     records = [parse_firestore_fields(d) for d in records]
     elif args.project_id:
-        records = fetch_from_firestore_rest(args.project_id, args.api_key)
+        records = fetch_from_firestore_rest(args.project_id, args.api_key, args.auth_token)
     else:
         print("No source specified. Use --sample, --input <file.json>, or --project-id <id>.")
         print("Running with --sample for demonstration...")

@@ -262,11 +262,15 @@
     function toggleTheme() {
       document.body.classList.toggle('light-mode');
       const isLight = document.body.classList.contains('light-mode');
-      localStorage.setItem('site_theme', isLight ? 'light' : 'dark');
+      const theme = isLight ? 'light' : 'dark';
+      localStorage.setItem('deutschlernen_theme', theme);
+      localStorage.setItem('site_theme', theme);
+      localStorage.setItem('telc_theme', theme);
     }
 
     // Apply saved theme
-    if (localStorage.getItem('site_theme') === 'light' || localStorage.getItem('telc_theme') === 'light') {
+    const savedLegalTheme = localStorage.getItem('deutschlernen_theme') || localStorage.getItem('site_theme') || localStorage.getItem('telc_theme');
+    if (savedLegalTheme === 'light') {
       document.body.classList.add('light-mode');
     }
   </script>

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deutschlernen-v2';
+const CACHE_NAME = 'deutschlernen-v3';
 const ASSETS = [
   './',
   './index.html',
@@ -11,6 +11,7 @@ const ASSETS = [
   './data/vocab2000.js',
   './data/vocab_b2.js',
   './icon-192.png',
+  './icon-512.png',
   './manifest.json',
   './TELC_B1_Preparation/telc_b1_exam_guide.md',
   './TELC_B1_Haz%C4%B1rl%C4%B1k/telc_b1_exam_guide.md',
@@ -56,6 +57,8 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
+  const url = new URL(event.request.url);
+
   // Navigation requests: Network first with cache fallback
   if (event.request.mode === 'navigate') {
     event.respondWith(
@@ -63,8 +66,37 @@ self.addEventListener('fetch', event => {
     );
     return;
   }
-  // Static assets: Cache first
+
+  // External CDN libraries (marked, mermaid, fonts): Cache-first with dynamic caching
+  if (url.origin !== self.location.origin) {
+    if (url.hostname.includes('jsdelivr.net') || url.hostname.includes('googleapis.com') || url.hostname.includes('gstatic.com') || url.hostname.includes('flagcdn.com')) {
+      event.respondWith(
+        caches.match(event.request).then(cached => {
+          if (cached) return cached;
+          return fetch(event.request).then(resp => {
+            if (resp && resp.status === 200) {
+              const clone = resp.clone();
+              caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+            }
+            return resp;
+          }).catch(() => cached);
+        })
+      );
+      return;
+    }
+  }
+
+  // Local assets: Stale-While-Revalidate (instant response from cache + background refresh)
   event.respondWith(
-    caches.match(event.request).then(cached => cached || fetch(event.request))
+    caches.match(event.request).then(cached => {
+      const fetchPromise = fetch(event.request).then(networkResp => {
+        if (networkResp && networkResp.status === 200) {
+          const clone = networkResp.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+        }
+        return networkResp;
+      }).catch(() => cached);
+      return cached || fetchPromise;
+    })
   );
 });

@@ -13,11 +13,16 @@
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>
+  // Apply saved theme immediately to prevent FOUC
+  (function() {
+    const savedTheme = localStorage.getItem('deutschlernen_theme') || localStorage.getItem('telc_theme') || localStorage.getItem('site_theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  })();
+
   // Initialize mermaid
   if (typeof mermaid !== 'undefined') {
     mermaid.initialize({ startOnLoad: false, theme: 'dark' });
   }
-
 </script>
 <style>
 :root {
@@ -1015,7 +1020,8 @@ td strong, td b { color: var(--text-primary); }
 <script>
 // Global State
 let currentLang = 'en';
-let currentTheme = localStorage.getItem('telc_theme') || 'dark';
+let currentTheme = localStorage.getItem('deutschlernen_theme') || localStorage.getItem('telc_theme') || localStorage.getItem('site_theme') || 'dark';
+document.documentElement.setAttribute('data-theme', currentTheme);
 let currentMdUrl = null;
 let currentActiveMaterial = null;
 
@@ -1371,11 +1377,12 @@ function closeMarkdown(skipHistory = false) {
 }
 
 // Theme Toggle
-// Theme logic moved to top
 function toggleTheme() {
   currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
   document.documentElement.setAttribute('data-theme', currentTheme);
+  localStorage.setItem('deutschlernen_theme', currentTheme);
   localStorage.setItem('telc_theme', currentTheme);
+  localStorage.setItem('site_theme', currentTheme);
   updateThemeIcon();
   
   // Re-render markdown to fix Mermaid diagram themes dynamically
@@ -1387,6 +1394,19 @@ function updateThemeIcon() {
   document.getElementById('theme-btn').textContent = currentTheme === 'dark' ? '☀️' : '🌙';
 }
 updateThemeIcon();
+
+// Keyboard accessibility: Dismiss modal & markdown reader on Escape
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    if (document.getElementById('md-view').classList.contains('open')) {
+      closeMarkdown();
+    }
+    const fbModal = document.getElementById('feedback-modal');
+    if (fbModal && !fbModal.classList.contains('hidden')) {
+      closeFeedbackModal();
+    }
+  }
+});
 
 // Day Tracker
 let startDate = localStorage.getItem('telc_start_date');

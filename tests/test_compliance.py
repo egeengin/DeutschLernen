@@ -51,6 +51,8 @@ class TestCommercialAndLegalCompliance(unittest.TestCase):
         self.assertEqual(data.get("short_name"), "DeutschLernen")
         self.assertIn("DeutschLernen", data.get("name"))
         self.assertTrue(any("trainer.html" in s.get("url", "") for s in data.get("shortcuts", [])))
+        # Verify 512x512 icon is present
+        self.assertTrue(any("512x512" in icon.get("sizes", "") for icon in data.get("icons", [])))
         # Verify no A2-B1 in manifest
         self.assertNotIn("A2-B1", data.get("name"))
         self.assertNotIn("A2-B1", data.get("description"))
@@ -67,6 +69,7 @@ class TestCommercialAndLegalCompliance(unittest.TestCase):
         self.assertIn("data/vocab_b2.js", content)
         self.assertIn("js/vocabTrainer.js", content)
         self.assertIn("css/trainer.css", content)
+        self.assertIn("icon-512.png", content)
 
     def test_index_html_telc_b1_adherence(self):
         """Verify index.html adheres strictly to telc Deutsch B1 exam rules (Rule 1 & Rule 8)."""
@@ -76,6 +79,7 @@ class TestCommercialAndLegalCompliance(unittest.TestCase):
         self.assertIn("trainer.html", content)
         self.assertIn("legal.html", content)
         self.assertIn("180 / 300", content)
+        self.assertIn("deutschlernen_theme", content)
         # Verify DTZ option is removed
         self.assertNotIn("Option B: telc Deutsch A2-B1 (DTZ)", content)
 
@@ -110,6 +114,23 @@ class TestCommercialAndLegalCompliance(unittest.TestCase):
             rel = urllib.parse.unquote(tr_url.replace("./", ""))
             full_path = os.path.join(ROOT_DIR, rel)
             self.assertTrue(os.path.exists(full_path), f"TR file missing: {full_path}")
+
+        # Verify English curriculum files contain English table headers
+        p1_path = os.path.join(ROOT_DIR, "TELC_B1_Preparation", "vocab_part1_verbs_adjectives.md")
+        with open(p1_path, "r", encoding="utf-8") as f:
+            p1_content = f.read()
+        self.assertIn("| English", p1_content, "vocab_part1_verbs_adjectives.md must contain English headers")
+        self.assertNotIn("benı", p1_content)
+
+        p2_path = os.path.join(ROOT_DIR, "TELC_B1_Preparation", "vocab_part2_nouns_themes.md")
+        with open(p2_path, "r", encoding="utf-8") as f:
+            p2_content = f.read()
+        self.assertIn("| English", p2_content, "vocab_part2_nouns_themes.md must contain English headers")
+
+        grammar_path = os.path.join(ROOT_DIR, "TELC_B1_Preparation", "review_grammar_vocab.md")
+        with open(grammar_path, "r", encoding="utf-8") as f:
+            grammar_content = f.read()
+        self.assertNotIn("benı", grammar_content, "Grammar review should not contain 'benı' typo")
 
     def test_trainer_i18n_keys_and_elements(self):
         """Verify trainer.html elements and vocabTrainer.js I18N key parity."""
