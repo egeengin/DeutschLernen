@@ -171,6 +171,19 @@ body {
   50% { box-shadow: 0 0 12px rgba(239, 68, 68, 0.35); }
 }
 
+.stat-pill.timer-pill {
+  border-color: rgba(245, 158, 11, 0.4);
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--accent-gold);
+}
+
+.stat-pill.timer-pill.urgent {
+  border-color: rgba(239, 68, 68, 0.7);
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--accent-red);
+  animation: pulse-glow 1s infinite ease-in-out;
+}
+
 .header-controls {
   display: flex;
   align-items: center;
@@ -306,6 +319,43 @@ body {
   background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(220, 38, 38, 0.1));
   border-color: var(--accent-red);
   color: var(--accent-red);
+}
+
+.mode-chip.sprint-mode.active {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(239, 68, 68, 0.2));
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.sprint-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.metric-box {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.metric-val {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--accent-gold);
+}
+
+.metric-lbl {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 /* Quiz Arena */

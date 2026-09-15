@@ -47,6 +47,10 @@
           <span data-i18n="reviewQueue">Mistakes</span>:
           <span id="review-queue-badge">⚠️ 0</span>
         </div>
+        <div class="stat-pill timer-pill hidden" id="exam-timer-pill" title="Exam Sprint Remaining Time">
+          <span>⏱️</span> <span data-i18n="timerLabel">Time</span>:
+          <span id="exam-timer-badge" class="timer-countdown">02:00</span>
+        </div>
       </div>
 
       <!-- Header Controls: Audio, Theme, Language, Dictionary, Sync & Account -->
@@ -141,6 +145,9 @@
         </button>
         <button class="mode-chip mistakes-mode" data-mode="mistakes" role="tab" aria-selected="false">
           ⚠️ <span data-i18n="mode_mistakes">Review Mistakes</span>
+        </button>
+        <button class="mode-chip sprint-mode" id="btn-timed-sprint" data-mode="sprint" role="tab" aria-selected="false" title="Timed Exam Blitz (2 Minutes)">
+          ⏱️ <span data-i18n="mode_sprint">Timed Sprint (2m)</span>
         </button>
       </div>
     </section>
@@ -368,6 +375,38 @@
             🚀 <span data-i18n="submitFeedbackBtn">Submit Feedback</span>
           </button>
         </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timed Sprint Results Modal -->
+  <div class="modal-backdrop hidden" id="sprint-summary-modal" role="dialog" aria-modal="true" aria-labelledby="sprint-summary-title">
+    <div class="modal-dialog sprint-summary-card" style="max-width: 480px;">
+      <div class="modal-header">
+        <h2 id="sprint-summary-title">⏱️ <span data-i18n="sprintSummaryTitle">Timed Sprint Complete!</span></h2>
+        <button class="modal-close-btn" id="btn-close-sprint-summary" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-scroll-area" style="padding: 20px; text-align: center;">
+        <p style="color: var(--text-secondary); margin-bottom: 16px;" data-i18n="sprintSummaryDesc">Here is how you performed under exam countdown pressure:</p>
+        <div class="sprint-metrics-grid">
+          <div class="metric-box">
+            <span class="metric-val" id="sprint-metric-score">0</span>
+            <span class="metric-lbl" data-i18n="sprintCardsAnswered">Answered</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-val" id="sprint-metric-accuracy">0%</span>
+            <span class="metric-lbl" data-i18n="accuracy">Accuracy</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-val" id="sprint-metric-speed">0</span>
+            <span class="metric-lbl" data-i18n="sprintWpm">Cards / min</span>
+          </div>
+        </div>
+        <div style="margin-top: 24px; display: flex; gap: 12px; justify-content: center;">
+          <button type="button" class="btn-auth-submit" id="btn-sprint-retry" style="flex:1;">
+            ⚡ <span data-i18n="sprintTryAgain">Try Again</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>

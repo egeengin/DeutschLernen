@@ -89,14 +89,23 @@ class TestCommercialAndLegalCompliance(unittest.TestCase):
         with open(index_path, "r", encoding="utf-8") as f:
             index_content = f.read()
 
+        # Verify index.html loads modularized CSS and JS
+        self.assertIn("css/portal.css", index_content, "index.html must reference css/portal.css")
+        self.assertIn("js/portal.js", index_content, "index.html must reference js/portal.js")
+
+        portal_js_path = os.path.join(ROOT_DIR, "js", "portal.js")
+        self.assertTrue(os.path.exists(portal_js_path), "js/portal.js must exist")
+        with open(portal_js_path, "r", encoding="utf-8") as f:
+            portal_content = f.read()
+
         # Verify openMaterial and dynamic card re-rendering exist
-        self.assertIn("function openMaterial(index)", index_content)
-        self.assertIn("renderCards(); // Re-render material cards", index_content)
-        self.assertIn("localStorage.setItem('site_lang', lang)", index_content)
+        self.assertIn("function openMaterial(index)", portal_content)
+        self.assertIn("renderCards(); // Re-render material cards", portal_content)
+        self.assertIn("localStorage.setItem('site_lang', lang)", portal_content)
 
         # Extract material URLs specifically from the materials array
-        materials_match = re.search(r"const materials = \[(.*?)\];", index_content, re.DOTALL)
-        self.assertIsNotNone(materials_match, "materials array not found in index.html")
+        materials_match = re.search(r"const materials = \[(.*?)\];", portal_content, re.DOTALL)
+        self.assertIsNotNone(materials_match, "materials array not found in js/portal.js")
         mat_text = materials_match.group(1)
 
         en_matches = re.findall(r"en:\s*'([^']+)'", mat_text)
