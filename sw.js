@@ -1,10 +1,12 @@
-const CACHE_NAME = 'deutschlernen-v3';
+const CACHE_NAME = 'deutschlernen-v4';
 const ASSETS = [
   './',
   './index.html',
   './trainer.html',
   './legal.html',
+  './css/portal.css',
   './css/trainer.css',
+  './js/portal.js',
   './js/firebaseConfig.js',
   './js/firebaseService.js',
   './js/vocabTrainer.js',

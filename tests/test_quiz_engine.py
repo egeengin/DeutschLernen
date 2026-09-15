@@ -198,6 +198,24 @@ class TestQuizEngine(unittest.TestCase):
         self.assertIn("isAnyModalOpen", js_content)
         self.assertIn("e.key === 'Escape'", js_content)
 
+    def test_srs_interval_and_timed_sprint_engine(self):
+        """Verify js/vocabTrainer.js implements SM-2 SRS date-stamped scheduling and Timed Sprint drill."""
+        js_path = os.path.join(ROOT_DIR, "js", "vocabTrainer.js")
+        with open(js_path, "r", encoding="utf-8") as f:
+            js_content = f.read()
+
+        # Verify SM-2 interval expansion (1d, 3d, 7d)
+        self.assertIn("nextReviewDate", js_content)
+        self.assertIn("current.interval = 3", js_content)
+        self.assertIn("current.interval = 7", js_content)
+        self.assertIn("dueReview", js_content)
+
+        # Verify Timed Sprint mode
+        self.assertIn("startSprintMode", js_content)
+        self.assertIn("tickSprintTimer", js_content)
+        self.assertIn("finishSprint", js_content)
+        self.assertIn("sprintModal", js_content)
+
 
 if __name__ == "__main__":
     unittest.main()

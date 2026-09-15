@@ -30,6 +30,13 @@
       mode_synonyms: "Synonyms (DE ➔ DE)",
       mode_antonyms: "Antonyms (Opposites)",
       mode_mistakes: "Review Mistakes",
+      mode_sprint: "Timed Sprint (2m)",
+      timerLabel: "Time",
+      sprintSummaryTitle: "Timed Sprint Complete!",
+      sprintSummaryDesc: "Here is how you performed under exam countdown pressure:",
+      sprintCardsAnswered: "Answered",
+      sprintWpm: "Cards / min",
+      sprintTryAgain: "Try Again",
       levelAll: "All Levels",
       deckSize: "Cards:",
       startQuiz: "Start Drill",
@@ -113,6 +120,13 @@
       mode_synonyms: "Eş Anlamlılar (DE ➔ DE)",
       mode_antonyms: "Zıt Anlamlılar (Karşıt)",
       mode_mistakes: "Hataları Tekrar Et",
+      mode_sprint: "Süreli Hızlı Tur (2dk)",
+      timerLabel: "Süre",
+      sprintSummaryTitle: "Süreli Tur Tamamlandı!",
+      sprintSummaryDesc: "Sınav süresi baskısı altında gösterdiğiniz performans:",
+      sprintCardsAnswered: "Cevaplanan",
+      sprintWpm: "Kart / dk",
+      sprintTryAgain: "Tekrar Dene",
       levelAll: "Tüm Seviyeler",
       deckSize: "Kart:",
       startQuiz: "Antrenmana Başla",
@@ -268,11 +282,15 @@
 
     recordResult(wordId, isCorrect) {
       const progress = this.getProgressMap();
+      const todayIso = new Date().toISOString().slice(0, 10);
       const current = progress[wordId] || {
         status: 'unseen',
         correctCount: 0,
         wrongCount: 0,
         streak: 0,
+        interval: 1,
+        easeFactor: 2.5,
+        nextReviewDate: todayIso,
         lastSeenSession: this.sessionData.totalSessions
       };
 
@@ -281,7 +299,24 @@
       if (isCorrect) {
         current.correctCount += 1;
         current.streak += 1;
-        // If it was in review, promote it back towards mastered after 2 correct answers in a row
+
+        // SM-2 / Leitner progressive interval calculation
+        const prevInterval = current.interval || 1;
+        const ease = current.easeFactor || 2.5;
+        if (current.streak === 1) {
+          current.interval = 1;
+        } else if (current.streak === 2) {
+          current.interval = 3;
+        } else if (current.streak === 3) {
+          current.interval = 7;
+        } else {
+          current.interval = Math.min(60, Math.round(prevInterval * ease));
+        }
+
+        const nextDate = new Date();
+        nextDate.setDate(nextDate.getDate() + current.interval);
+        current.nextReviewDate = nextDate.toISOString().slice(0, 10);
+
         if (current.streak >= 3) {
           current.status = 'mastered';
         } else {
@@ -290,7 +325,10 @@
       } else {
         current.wrongCount += 1;
         current.streak = 0;
-        current.status = 'review'; // Automatically enters Mistake Review Queue!
+        current.interval = 1;
+        current.nextReviewDate = todayIso;
+        current.status = 'review'; // Enters Mistake Review Queue as due immediately!
+        current.easeFactor = Math.max(1.3, (current.easeFactor || 2.5) - 0.2);
       }
 
       progress[wordId] = current;
@@ -327,9 +365,11 @@
 
     getStats(dataset) {
       const progress = this.getProgressMap();
+      const todayIso = new Date().toISOString().slice(0, 10);
       let mastered = 0;
       let learning = 0;
       let review = 0;
+      let dueReview = 0;
       let unseen = 0;
 
       dataset.forEach(item => {
@@ -340,12 +380,15 @@
           mastered++;
         } else if (p.status === 'review') {
           review++;
+          if (!p.nextReviewDate || p.nextReviewDate <= todayIso) {
+            dueReview++;
+          }
         } else {
           learning++;
         }
       });
 
-      return { total: dataset.length, mastered, learning, review, unseen };
+      return { total: dataset.length, mastered, learning, review, dueReview, unseen };
     }
   }
 
@@ -380,8 +423,10 @@
         pool = pool.filter(w => w.antonyms && w.antonyms.length > 0);
       }
 
-      // Partition into Buckets
-      const reviewBucket = [];
+      // Partition into Buckets with SRS due dates
+      const todayIso = new Date().toISOString().slice(0, 10);
+      const dueReviewBucket = [];
+      const futureReviewBucket = [];
       const unseenBucket = [];
       const learningBucket = [];
       const masteredBucket = [];
@@ -391,7 +436,11 @@
         if (!state || state.status === 'unseen') {
           unseenBucket.push(item);
         } else if (state.status === 'review') {
-          reviewBucket.push(item);
+          if (!state.nextReviewDate || state.nextReviewDate <= todayIso) {
+            dueReviewBucket.push(item);
+          } else {
+            futureReviewBucket.push(item);
+          }
         } else if (state.status === 'learning') {
           learningBucket.push(item);
         } else {
@@ -399,18 +448,33 @@
         }
       });
 
-      // If user chose Review Mistakes mode
+      // If user chose Review Mistakes mode: prioritize due items first
       if (mode === 'mistakes') {
-        return this.shuffle(reviewBucket).slice(0, deckSize);
+        const sortedDue = this.shuffle(dueReviewBucket);
+        if (sortedDue.length >= deckSize) {
+          return sortedDue.slice(0, deckSize);
+        }
+        return [...sortedDue, ...this.shuffle(futureReviewBucket)].slice(0, deckSize);
+      }
+
+      // If user chose Timed Sprint mode: rapid fire mix
+      if (mode === 'sprint') {
+        const sprintPool = this.shuffle([...dueReviewBucket, ...unseenBucket, ...learningBucket]);
+        return sprintPool.slice(0, Math.max(30, deckSize));
       }
 
       // Smart proportions for anti-repetition:
-      const targetReview = Math.min(reviewBucket.length, Math.floor(deckSize * 0.35));
+      const combinedReview = [...dueReviewBucket, ...futureReviewBucket];
+      const targetReview = Math.min(combinedReview.length, Math.floor(deckSize * 0.35));
       const targetUnseen = Math.min(unseenBucket.length, Math.floor(deckSize * 0.50));
       const remainingSlots = deckSize - (targetReview + targetUnseen);
 
       const deck = [];
-      deck.push(...this.shuffle(reviewBucket).slice(0, targetReview));
+      const reviewSlice = this.shuffle(dueReviewBucket);
+      if (reviewSlice.length < targetReview) {
+        reviewSlice.push(...this.shuffle(futureReviewBucket));
+      }
+      deck.push(...reviewSlice.slice(0, targetReview));
       deck.push(...this.shuffle(unseenBucket).slice(0, targetUnseen));
 
       // Fill remaining from learning, then unseen, then mastered
@@ -437,6 +501,10 @@
       this.deckGenerator = new DeckGenerator(this.sessionManager);
       this.settings = this.sessionManager.getSettings();
 
+      this.sprintTimer = null;
+      this.sprintTimeRemaining = 120;
+      this.sprintCardsAnswered = 0;
+      this.sprintCorrectCount = 0;
       this.currentDeck = [];
       this.currentIndex = 0;
       this.sessionCorrect = 0;
@@ -519,7 +587,17 @@
         feedbackStars: document.getElementById('feedback-stars'),
         feedbackMessage: document.getElementById('feedback-message'),
         feedbackNoticeMsg: document.getElementById('feedback-notice-msg'),
-        btnSubmitFeedback: document.getElementById('btn-submit-feedback')
+        btnSubmitFeedback: document.getElementById('btn-submit-feedback'),
+        // Timed Sprint
+        timerPill: document.getElementById('exam-timer-pill'),
+        timerBadge: document.getElementById('exam-timer-badge'),
+        btnTimedSprint: document.getElementById('btn-timed-sprint'),
+        sprintModal: document.getElementById('sprint-summary-modal'),
+        btnCloseSprintSummary: document.getElementById('btn-close-sprint-summary'),
+        sprintMetricScore: document.getElementById('sprint-metric-score'),
+        sprintMetricAccuracy: document.getElementById('sprint-metric-accuracy'),
+        sprintMetricSpeed: document.getElementById('sprint-metric-speed'),
+        btnSprintRetry: document.getElementById('btn-sprint-retry')
       };
     }
 
@@ -584,11 +662,30 @@
         chip.addEventListener('click', () => {
           this.dom.modeChips.forEach(c => c.classList.remove('active'));
           chip.classList.add('active');
-          this.settings.mode = chip.dataset.mode;
+          const mode = chip.dataset.mode;
+          this.settings.mode = mode;
           this.sessionManager.saveSettings(this.settings);
-          this.startNewDeck();
+          if (mode === 'sprint') {
+            this.startSprintMode();
+          } else {
+            this.stopSprintTimer();
+            this.startNewDeck();
+          }
         });
       });
+
+      // Sprint Modal Controls
+      if (this.dom.btnCloseSprintSummary) {
+        this.dom.btnCloseSprintSummary.addEventListener('click', () => {
+          if (this.dom.sprintModal) this.dom.sprintModal.classList.add('hidden');
+        });
+      }
+      if (this.dom.btnSprintRetry) {
+        this.dom.btnSprintRetry.addEventListener('click', () => {
+          if (this.dom.sprintModal) this.dom.sprintModal.classList.add('hidden');
+          this.startSprintMode();
+        });
+      }
 
       // Audio speaker button
       this.dom.arenaAudioPlay.addEventListener('click', () => {
@@ -615,6 +712,10 @@
             this.dom.feedbackModal.classList.add('hidden');
             return;
           }
+          if (this.dom.sprintModal && !this.dom.sprintModal.classList.contains('hidden')) {
+            this.dom.sprintModal.classList.add('hidden');
+            return;
+          }
         }
 
         // Never intercept keyboard shortcuts when typing in an input, textarea, or editable field
@@ -625,7 +726,8 @@
         // Prevent quiz hotkeys while ANY modal is visible
         const isAnyModalOpen = (this.dom.searchModal && !this.dom.searchModal.classList.contains('hidden')) ||
                                (this.dom.authModal && !this.dom.authModal.classList.contains('hidden')) ||
-                               (this.dom.feedbackModal && !this.dom.feedbackModal.classList.contains('hidden'));
+                               (this.dom.feedbackModal && !this.dom.feedbackModal.classList.contains('hidden')) ||
+          (this.dom.sprintModal && !this.dom.sprintModal.classList.contains('hidden'));
         if (isAnyModalOpen) {
           return;
         }
@@ -706,7 +808,10 @@
       const stats = this.sessionManager.getStats(pool);
       this.dom.sessionBadge.textContent = `#${this.sessionManager.sessionData.totalSessions}`;
       this.dom.streakBadge.textContent = `🔥 ${this.sessionManager.sessionData.streak}d`;
-      this.dom.reviewBadge.textContent = `⚠️ ${stats.review}`;
+      this.dom.reviewBadge.textContent = stats.dueReview > 0 ? `⚠️ ${stats.dueReview} due` : `⚠️ ${stats.review}`;
+      if (this.dom.reviewBadge.parentElement) {
+        this.dom.reviewBadge.parentElement.title = `${stats.dueReview} due today (${stats.review} total in mistake review queue)`;
+      }
 
       // Highlight review badge if there are mistakes
       if (stats.review > 0) {
@@ -890,6 +995,10 @@
 
       // Record in Session Manager
       this.sessionManager.recordResult(item.id, isCorrect);
+      if (this.settings.mode === 'sprint') {
+        this.sprintCardsAnswered++;
+        if (isCorrect) this.sprintCorrectCount++;
+      }
       this.refreshHeaderStats();
 
       // Show Rich Explanation Card
@@ -953,7 +1062,79 @@
       });
     }
 
-    playSpeech(text, rate = 0.92) {
+    startSprintMode() {
+      this.settings.mode = 'sprint';
+      this.dom.modeChips.forEach(chip => {
+        const isActive = chip.dataset.mode === 'sprint';
+        chip.classList.toggle('active', isActive);
+        chip.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+      if (this.dom.timerPill) {
+        this.dom.timerPill.classList.remove('hidden');
+        this.dom.timerPill.classList.remove('urgent');
+      }
+      this.sprintTimeRemaining = 120;
+      this.sprintCardsAnswered = 0;
+      this.sprintCorrectCount = 0;
+      this.updateTimerDisplay();
+
+      clearInterval(this.sprintTimer);
+      this.sprintTimer = setInterval(() => this.tickSprintTimer(), 1000);
+
+      this.currentDeck = this.deckGenerator.generateDeck(this.getAllWordsPool(), {
+        mode: 'sprint',
+        level: this.settings.level,
+        deckSize: 40
+      });
+      this.currentIndex = 0;
+      this.renderCurrentQuestion();
+    }
+
+    stopSprintTimer() {
+      clearInterval(this.sprintTimer);
+      this.sprintTimer = null;
+      if (this.dom.timerPill) {
+        this.dom.timerPill.classList.add('hidden');
+        this.dom.timerPill.classList.remove('urgent');
+      }
+    }
+
+    tickSprintTimer() {
+      if (this.sprintTimeRemaining > 0) {
+        this.sprintTimeRemaining--;
+        this.updateTimerDisplay();
+        if (this.sprintTimeRemaining <= 30 && this.dom.timerPill) {
+          this.dom.timerPill.classList.add('urgent');
+        }
+      } else {
+        this.finishSprint();
+      }
+    }
+
+    updateTimerDisplay() {
+      if (!this.dom.timerBadge) return;
+      const mins = Math.floor(this.sprintTimeRemaining / 60);
+      const secs = this.sprintTimeRemaining % 60;
+      this.dom.timerBadge.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    finishSprint() {
+      this.stopSprintTimer();
+      const acc = this.sprintCardsAnswered > 0 
+        ? Math.round((this.sprintCorrectCount / this.sprintCardsAnswered) * 100) 
+        : 0;
+      const speedWpm = (this.sprintCardsAnswered / 2).toFixed(1);
+
+      if (this.dom.sprintMetricScore) this.dom.sprintMetricScore.textContent = this.sprintCardsAnswered;
+      if (this.dom.sprintMetricAccuracy) this.dom.sprintMetricAccuracy.textContent = `${acc}%`;
+      if (this.dom.sprintMetricSpeed) this.dom.sprintMetricSpeed.textContent = speedWpm;
+
+      if (this.dom.sprintModal) {
+        this.dom.sprintModal.classList.remove('hidden');
+      }
+    }
+
+    playSpeech(text) {
       if (!('speechSynthesis' in window)) return;
       window.speechSynthesis.cancel();
       const clean = text.split('(')[0].trim();
