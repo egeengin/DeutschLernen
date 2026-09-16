@@ -21,7 +21,7 @@ Welcome to the **DeutschLernen (TELC B1 Study Portal)** repository. All contribu
 ### 3. Maintain Bilingual Parity (EN & TR)
 
 - **Every** new module, feature, or text update must be attempted in both English and Turkish simultaneously.
-- If a file is created or updated in `TELC_B1_Preparation/` (English), its exact structural equivalent must be created or updated in `TELC_B1_Hazırlık/` (Turkish). No exceptions.
+- If a file is created or updated in `docs/en/` (English), its exact structural equivalent must be created or updated in `docs/tr/` (Turkish). No exceptions.
 
 ### 4. Provide External Data References
 

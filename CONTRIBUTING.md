@@ -15,7 +15,7 @@ To maintain the pedagogical integrity, exam precision, and commercial-grade code
 
 ## 🌍 2. 100% Bilingual Parity (EN & TR)
 - Every single new study module, UI label, or vocabulary item must have an exact equivalent in both **English** and **Turkish**.
-- When adding or modifying a markdown file in `TELC_B1_Preparation/`, you must update or create the corresponding file in `TELC_B1_Hazırlık/`.
+- When adding or modifying a markdown file in `docs/en/`, you must update or create the corresponding file in `docs/tr/`.
 
 ---
 

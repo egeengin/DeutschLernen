@@ -21,7 +21,7 @@ ______________________________________________________________________
 Tüm içerik İngilizce tabloyu yansıtmaktadır. Örnek cümleler aynıdır;
 Türkçe çeviriler sayfanın sağ tarafındaki sütunda verilmiştir.
 
-[→ İngilizce dosyayı aç](../TELC_B1_Preparation/vocab_part1_verbs_adjectives.md)
+[→ İngilizce dosyayı aç](../en/vocab_part1_verbs_adjectives.md)
 
 ______________________________________________________________________
 

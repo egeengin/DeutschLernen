@@ -125,18 +125,18 @@ class TestCommercialAndLegalCompliance(unittest.TestCase):
             self.assertTrue(os.path.exists(full_path), f"TR file missing: {full_path}")
 
         # Verify English curriculum files contain English table headers
-        p1_path = os.path.join(ROOT_DIR, "TELC_B1_Preparation", "vocab_part1_verbs_adjectives.md")
+        p1_path = os.path.join(ROOT_DIR, "docs", "en", "vocab_part1_verbs_adjectives.md")
         with open(p1_path, "r", encoding="utf-8") as f:
             p1_content = f.read()
         self.assertIn("| English", p1_content, "vocab_part1_verbs_adjectives.md must contain English headers")
         self.assertNotIn("benı", p1_content)
 
-        p2_path = os.path.join(ROOT_DIR, "TELC_B1_Preparation", "vocab_part2_nouns_themes.md")
+        p2_path = os.path.join(ROOT_DIR, "docs", "en", "vocab_part2_nouns_themes.md")
         with open(p2_path, "r", encoding="utf-8") as f:
             p2_content = f.read()
         self.assertIn("| English", p2_content, "vocab_part2_nouns_themes.md must contain English headers")
 
-        grammar_path = os.path.join(ROOT_DIR, "TELC_B1_Preparation", "review_grammar_vocab.md")
+        grammar_path = os.path.join(ROOT_DIR, "docs", "en", "review_grammar_vocab.md")
         with open(grammar_path, "r", encoding="utf-8") as f:
             grammar_content = f.read()
         self.assertNotIn("benı", grammar_content, "Grammar review should not contain 'benı' typo")

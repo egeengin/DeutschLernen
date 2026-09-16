@@ -1,8 +1,9 @@
 # generate_ws.py
 import os
 
-EN_FILE = r"C:\Private\DeutschLernen\TELC_B1_Preparation\review_writing_speaking.md"
-TR_FILE = r"C:\Private\DeutschLernen\TELC_B1_Hazırlık\review_writing_speaking.md"
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+EN_FILE = os.path.join(ROOT_DIR, "docs", "en", "review_writing_speaking.md")
+TR_FILE = os.path.join(ROOT_DIR, "docs", "tr", "review_writing_speaking.md")
 
 en_content = """# Review: Schreiben & Sprechen (Writing & Speaking)
 
@@ -346,10 +347,11 @@ ______________________________________________________________________
 * **YouTube B1 Konuşma Tüyoları:** [Deutsch Lernen mit der DW](https://learngerman.dw.com/) ve YouTube üzerinden aratılabilecek "telc B1 Sprechen" popüler kanalları (örn: Marija, DeutschLera).
 """
 
-with open(EN_FILE, "w", encoding="utf-8") as f:
-    f.write(en_content)
+if __name__ == "__main__":
+    with open(EN_FILE, "w", encoding="utf-8") as f:
+        f.write(en_content)
 
-with open(TR_FILE, "w", encoding="utf-8") as f:
-    f.write(tr_content)
-    
-print("Successfully generated detailed writing/speaking files with interactive quizzes in both EN and TR!")
+    with open(TR_FILE, "w", encoding="utf-8") as f:
+        f.write(tr_content)
+        
+    print("Successfully generated detailed writing/speaking files with interactive quizzes in both EN and TR!")

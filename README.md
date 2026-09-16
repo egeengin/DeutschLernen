@@ -85,16 +85,16 @@ Equipped with a custom Service Worker (`sw.js`) and Web App Manifest (`manifest.
 
 | Module | Title (English) | Başlık (Türkçe) | Focus Area | English Resource | Türkçe Kaynak |
 |:---:|---|---|---|:---:|:---:|
-| **1** | Exam Guide | Sınav Rehberi | Overview, grading rubric, test tips | [View Guide](TELC_B1_Preparation/telc_b1_exam_guide.md) | [Rehberi Gör](TELC_B1_Haz%C4%B1rl%C4%B1k/telc_b1_exam_guide.md) |
-| **2** | 30-Day Plan | 1 Aylık Plan | Day-by-day structured timetable | [View Plan](TELC_B1_Preparation/1_month_study_plan.md) | [Planı Gör](TELC_B1_Haz%C4%B1rl%C4%B1k/1_month_study_plan.md) |
-| **3** | Grammar & Vocab | Dil Bilgisi & Kelime | Top 10 B1 topics + 30 practice drills | [View Grammar](TELC_B1_Preparation/review_grammar_vocab.md) | [Dilbilgisini Gör](TELC_B1_Haz%C4%B1rl%C4%B1k/review_grammar_vocab.md) |
-| **4** | Reading & Listening | Okuma ve Dinleme | Synonym strategies, keywords, timing | [View Skills](TELC_B1_Preparation/review_reading_listening.md) | [Becerileri Gör](TELC_B1_Haz%C4%B1rl%C4%B1k/review_reading_listening.md) |
-| **5** | Writing & Speaking | Yazma ve Konuşma | Letter templates, speaking phrase bank | [View Templates](TELC_B1_Preparation/review_writing_speaking.md) | [Şablonları Gör](TELC_B1_Haz%C4%B1rl%C4%B1k/review_writing_speaking.md) |
-| **6** | Diagnostic Exam | Tanılama Sınavı | Day-1 baseline assessment | [Take Exam](TELC_B1_Preparation/mock_exam_diagnostic.md) | [Sınavı Çöz](TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_diagnostic.md) |
-| **7** | Final Mock Exam | Final Deneme Sınavı | Full exam simulation under timing | [Take Final](TELC_B1_Preparation/mock_exam_final.md) | [Finali Çöz](TELC_B1_Haz%C4%B1rl%C4%B1k/mock_exam_final.md) |
-| **8** | Free Resources | Ücretsiz Kaynaklar | Official practice tests, DW, YouTube | [View Links](TELC_B1_Preparation/example_exams_resources.md) | [Linkleri Gör](TELC_B1_Haz%C4%B1rl%C4%B1k/example_exams_resources.md) |
-| **9** | Vocab: Verbs & Adj | Kelime: Fiil & Sıfat | ~500 most-used verbs and adjectives | [View Verbs](TELC_B1_Preparation/vocab_part1_verbs_adjectives.md) | [Fiilleri Gör](TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part1_fiiller_sifatlar.md) |
-| **10** | Vocab: Nouns | Kelime: İsimler | ~550 nouns by exam themes | [View Nouns](TELC_B1_Preparation/vocab_part2_nouns_themes.md) | [İsimleri Gör](TELC_B1_Haz%C4%B1rl%C4%B1k/vocab_part2_isimler_temalar.md) |
+| **1** | Exam Guide | Sınav Rehberi | Overview, grading rubric, test tips | [View Guide](docs/en/telc_b1_exam_guide.md) | [Rehberi Gör](docs/tr/telc_b1_exam_guide.md) |
+| **2** | 30-Day Plan | 1 Aylık Plan | Day-by-day structured timetable | [View Plan](docs/en/1_month_study_plan.md) | [Planı Gör](docs/tr/1_month_study_plan.md) |
+| **3** | Grammar & Vocab | Dil Bilgisi & Kelime | Top 10 B1 topics + 30 practice drills | [View Grammar](docs/en/review_grammar_vocab.md) | [Dilbilgisini Gör](docs/tr/review_grammar_vocab.md) |
+| **4** | Reading & Listening | Okuma ve Dinleme | Synonym strategies, keywords, timing | [View Skills](docs/en/review_reading_listening.md) | [Becerileri Gör](docs/tr/review_reading_listening.md) |
+| **5** | Writing & Speaking | Yazma ve Konuşma | Letter templates, speaking phrase bank | [View Templates](docs/en/review_writing_speaking.md) | [Şablonları Gör](docs/tr/review_writing_speaking.md) |
+| **6** | Diagnostic Exam | Tanılama Sınavı | Day-1 baseline assessment | [Take Exam](docs/en/mock_exam_diagnostic.md) | [Sınavı Çöz](docs/tr/mock_exam_diagnostic.md) |
+| **7** | Final Mock Exam | Final Deneme Sınavı | Full exam simulation under timing | [Take Final](docs/en/mock_exam_final.md) | [Finali Çöz](docs/tr/mock_exam_final.md) |
+| **8** | Free Resources | Ücretsiz Kaynaklar | Official practice tests, DW, YouTube | [View Links](docs/en/example_exams_resources.md) | [Linkleri Gör](docs/tr/example_exams_resources.md) |
+| **9** | Vocab: Verbs & Adj | Kelime: Fiil & Sıfat | ~500 most-used verbs and adjectives | [View Verbs](docs/en/vocab_part1_verbs_adjectives.md) | [Fiilleri Gör](docs/tr/vocab_part1_fiiller_sifatlar.md) |
+| **10** | Vocab: Nouns | Kelime: İsimler | ~550 nouns by exam themes | [View Nouns](docs/en/vocab_part2_nouns_themes.md) | [İsimleri Gör](docs/tr/vocab_part2_isimler_temalar.md) |
 
 ---
 
@@ -118,18 +118,31 @@ DeutschLernen/
 ├── legal.html                     # German Impressum (§ 5 DDG) & DSGVO/GDPR Privacy Policy
 ├── sw.js                          # Service Worker for offline asset and dataset caching
 ├── manifest.json                  # PWA installation manifest with shortcuts
+├── assets/
+│   ├── branding/                  # Concept illustrations and original assets
+│   └── icons/                     # PWA icons (192, 512) and browser favicons
 ├── css/
+│   ├── portal.css                 # Main study portal stylesheets
 │   └── trainer.css                # Polished dark/light UI tokens, responsive layouts
 ├── js/
+│   ├── portal.js                  # Study portal SPA, markdown renderer, day tracker
+│   ├── firebaseConfig.js          # Cloud Firestore configuration
+│   ├── firebaseService.js         # Cloud sync and feedback service
 │   └── vocabTrainer.js            # Spaced repetition engine, session tracker, TTS
 ├── data/
 │   ├── vocab2000.js               # 2,000 Core A1-B1 words with full bilingual metadata
 │   └── vocab_b2.js                # Advanced B2 study deck
-├── TELC_B1_Preparation/          # 10 English study modules (Markdown)
-├── TELC_B1_Hazırlık/              # 10 Turkish study modules (Markdown)
+├── docs/
+│   ├── en/                        # 10 English study modules (Markdown)
+│   ├── tr/                        # 10 Turkish study modules (Markdown)
+│   └── study_materials.md         # Curriculum index and syllabus
+├── scripts/
+│   ├── export_feedback.py         # Feedback exporter to CSV
+│   └── run_coverage.py            # Zero-dependency test coverage runner
 ├── tests/
 │   ├── test_vocab_quality.py      # Validates 100% field completion and schema integrity
 │   ├── test_quiz_engine.py        # Verifies anti-repetition, mistake queues, and distractors
+│   ├── test_feedback_and_portal.py# Star rating, day tracker, and UI contracts
 │   └── test_compliance.py         # Audits telc B1 adherence, legal pages, and i18n parity
 ├── LICENSE                        # MIT Open Source License with trademark disclaimers
 ├── RULES.md                       # Internal quality guidelines & guru best practices
