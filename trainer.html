@@ -323,12 +323,12 @@
         <form id="feedback-form" onsubmit="return false;">
           <div class="auth-form-group">
             <label for="feedback-username" data-i18n="feedbackUsername">Name / Nickname</label>
-            <input type="text" id="feedback-username" class="auth-input-field" placeholder="Anonymous or your name">
+            <input type="text" id="feedback-username" class="auth-input-field" placeholder="Anonymous or your name" data-i18n-placeholder="feedbackUserPlaceholder">
           </div>
 
           <div class="auth-form-group">
             <label for="feedback-location" data-i18n="feedbackLocation">Location (Auto-detected)</label>
-            <input type="text" id="feedback-location" class="auth-input-field" placeholder="Detecting location..." readonly>
+            <input type="text" id="feedback-location" class="auth-input-field" placeholder="Detecting location..." data-i18n-placeholder="feedbackLocPlaceholder" readonly>
           </div>
 
           <div class="auth-form-group">
@@ -342,19 +342,22 @@
           </div>
 
           <div class="auth-form-group">
-            <label data-i18n="feedbackRating">Your Rating</label>
-            <div class="star-rating-wrap" id="feedback-stars" data-rating="5">
-              <span data-star="1" class="selected">★</span>
-              <span data-star="2" class="selected">★</span>
-              <span data-star="3" class="selected">★</span>
-              <span data-star="4" class="selected">★</span>
-              <span data-star="5" class="selected">★</span>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <label data-i18n="feedbackRating">Your Rating</label>
+              <span id="feedback-rating-text" style="font-size: 13px; font-weight: 700; color: var(--accent-gold);">5/5 — Excellent</span>
+            </div>
+            <div class="star-rating-wrap" id="feedback-stars" data-rating="5" role="radiogroup" aria-label="Rating">
+              <span data-star="1" class="selected" role="radio" aria-checked="true" tabindex="0" title="1 star / 1 yıldız">★</span>
+              <span data-star="2" class="selected" role="radio" aria-checked="true" tabindex="0" title="2 stars / 2 yıldız">★</span>
+              <span data-star="3" class="selected" role="radio" aria-checked="true" tabindex="0" title="3 stars / 3 yıldız">★</span>
+              <span data-star="4" class="selected" role="radio" aria-checked="true" tabindex="0" title="4 stars / 4 yıldız">★</span>
+              <span data-star="5" class="selected" role="radio" aria-checked="true" tabindex="0" title="5 stars / 5 yıldız">★</span>
             </div>
           </div>
 
           <div class="auth-form-group">
             <label for="feedback-message" data-i18n="feedbackMessage">Your Message</label>
-            <textarea id="feedback-message" class="feedback-textarea" rows="4" placeholder="Tell us what we can improve or report an issue..." required></textarea>
+            <textarea id="feedback-message" class="feedback-textarea" rows="4" placeholder="Tell us what we can improve or report an issue..." data-i18n-placeholder="feedbackMsgPlaceholder" required></textarea>
           </div>
 
           <button type="submit" class="btn-feedback-submit" id="btn-submit-feedback">

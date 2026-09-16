@@ -33,3 +33,6 @@ ehthumbs.db
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Agent Workspace Customizations
+.agents/
