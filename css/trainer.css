@@ -1090,19 +1090,31 @@ body {
 /* Star Rating in Feedback */
 .star-rating-wrap {
   display: flex;
-  gap: 8px;
-  font-size: 24px;
+  gap: 10px;
+  font-size: 28px;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  align-items: center;
+  padding: 4px 0;
 }
 
 .star-rating-wrap span {
   color: var(--border);
-  transition: color 0.15s ease;
+  transition: transform 0.15s ease, color 0.15s ease;
+  display: inline-block;
+  outline: none;
+}
+
+.star-rating-wrap span:hover,
+.star-rating-wrap span:focus-visible {
+  transform: scale(1.25);
 }
 
 .star-rating-wrap span.selected,
 .star-rating-wrap span.hover {
   color: var(--accent-gold);
+  text-shadow: 0 0 10px rgba(245, 158, 11, 0.4);
 }
 
 /* Floating Feedback Button */

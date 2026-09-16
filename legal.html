@@ -252,14 +252,26 @@
   </footer>
 
   <script>
-    function showLegalTab(tabId) {
+    function showLegalTab(tabId, btnElement) {
       document.querySelectorAll('.legal-tab-btn').forEach(btn => btn.classList.remove('active'));
       document.querySelectorAll('.legal-section').forEach(sec => sec.classList.remove('active'));
       
       const targetSec = document.getElementById('tab-' + tabId);
       if (targetSec) targetSec.classList.add('active');
-      event.target.classList.add('active');
+      
+      const activeBtn = btnElement || document.querySelector(`.legal-tab-btn[onclick*="${tabId}"]`);
+      if (activeBtn) activeBtn.classList.add('active');
     }
+
+    function checkHashAndSwitchTab() {
+      const hash = window.location.hash.replace('#tab-', '').replace('#', '');
+      if (hash && document.getElementById('tab-' + hash)) {
+        showLegalTab(hash);
+      }
+    }
+
+    window.addEventListener('load', checkHashAndSwitchTab);
+    window.addEventListener('hashchange', checkHashAndSwitchTab);
 
     function toggleTheme() {
       document.body.classList.toggle('light-mode');

@@ -102,6 +102,14 @@
       submitFeedbackBtn: "Submit Feedback",
       feedbackSuccess: "Thank you! Your feedback has been received.",
       feedbackError: "Failed to submit feedback. Please try again.",
+      feedbackUserPlaceholder: "Anonymous or your name",
+      feedbackLocPlaceholder: "Detecting location...",
+      feedbackMsgPlaceholder: "Tell us what we can improve or report an issue...",
+      ratingExcellent: "5/5 — Excellent",
+      ratingVeryGood: "4/5 — Very Good",
+      ratingGood: "3/5 — Good",
+      ratingNeedsImprovement: "2/5 — Needs Improvement",
+      ratingPoor: "1/5 — Poor",
       authSuccess: "Successfully signed in!",
       authLoggedOut: "Signed out. Operating in Guest Mode.",
       syncSuccess: "Progress synchronized with cloud!"
@@ -192,6 +200,14 @@
       submitFeedbackBtn: "Geri Bildirimi Gönder",
       feedbackSuccess: "Teşekkür ederiz! Geri bildiriminiz başarıyla iletildi.",
       feedbackError: "Geri bildirim gönderilemedi. Lütfen tekrar deneyin.",
+      feedbackUserPlaceholder: "Anonim veya isminiz",
+      feedbackLocPlaceholder: "Konum tespit ediliyor...",
+      feedbackMsgPlaceholder: "Neleri geliştirebileceğimizi bize iletin veya bir hata bildirin...",
+      ratingExcellent: "5/5 — Mükemmel",
+      ratingVeryGood: "4/5 — Çok İyi",
+      ratingGood: "3/5 — İyi",
+      ratingNeedsImprovement: "2/5 — Geliştirilmeli",
+      ratingPoor: "1/5 — Zayıf",
       authSuccess: "Başarıyla giriş yapıldı!",
       authLoggedOut: "Çıkış yapıldı. Misafir modundasınız.",
       syncSuccess: "İlerlemeniz bulutla eşitlendi!"
@@ -590,6 +606,7 @@
         feedbackLocation: document.getElementById('feedback-location'),
         feedbackCategory: document.getElementById('feedback-category'),
         feedbackStars: document.getElementById('feedback-stars'),
+        feedbackRatingText: document.getElementById('feedback-rating-text'),
         feedbackMessage: document.getElementById('feedback-message'),
         feedbackNoticeMsg: document.getElementById('feedback-notice-msg'),
         btnSubmitFeedback: document.getElementById('btn-submit-feedback'),
@@ -807,6 +824,10 @@
       });
       this.updateAudioBtnState();
       this.dom.langBtn.textContent = this.settings.lang === 'en' ? 'TR 🇹🇷' : 'EN 🇬🇧';
+      if (this.dom.feedbackStars && typeof this.updateFeedbackRatingDisplay === 'function') {
+        const curR = parseInt(this.dom.feedbackStars.getAttribute('data-rating') || '5', 10);
+        this.updateFeedbackRatingDisplay(curR, false);
+      }
       if (window.FirebaseService) {
         window.FirebaseService.updateSyncStatusPill(window.FirebaseService.currentUser ? 'synced' : 'guest');
       }
@@ -1078,7 +1099,7 @@
       this.dom.explanationCard.classList.add('hidden');
       this.dom.nextButton.classList.add('hidden');
 
-      document.getElementById('btn-restart-deck').addEventListener('click', () => {
+      document.getElementById('btn-restart-deck')?.addEventListener('click', () => {
         this.startNewDeck();
       });
     }
@@ -1092,8 +1113,10 @@
         </div>
       `;
       this.dom.arenaWordDe.textContent = "Super!";
-      document.getElementById('btn-switch-core').addEventListener('click', () => {
-        this.dom.modeChips[0].click();
+      document.getElementById('btn-switch-core')?.addEventListener('click', () => {
+        if (this.dom.modeChips && this.dom.modeChips[0]) {
+          this.dom.modeChips[0].click();
+        }
       });
     }
 
@@ -1433,14 +1456,33 @@
       if (this.dom.feedbackStars) {
         const stars = this.dom.feedbackStars.querySelectorAll('span');
         stars.forEach(star => {
+          const starVal = parseInt(star.getAttribute('data-star') || '5', 10);
+          
           star.addEventListener('click', () => {
-            const rating = parseInt(star.getAttribute('data-star') || '5', 10);
-            this.dom.feedbackStars.setAttribute('data-rating', rating);
-            stars.forEach((s, idx) => {
-              s.classList.toggle('selected', idx < rating);
-            });
+            this.dom.feedbackStars.setAttribute('data-rating', starVal);
+            this.updateFeedbackRatingDisplay(starVal, false);
+          });
+
+          star.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ' || e.code === 'Space') {
+              e.preventDefault();
+              this.dom.feedbackStars.setAttribute('data-rating', starVal);
+              this.updateFeedbackRatingDisplay(starVal, false);
+            }
+          });
+
+          star.addEventListener('mouseenter', () => {
+            this.updateFeedbackRatingDisplay(starVal, true);
           });
         });
+
+        this.dom.feedbackStars.addEventListener('mouseleave', () => {
+          const curRating = parseInt(this.dom.feedbackStars.getAttribute('data-rating') || '5', 10);
+          this.updateFeedbackRatingDisplay(curRating, false);
+        });
+
+        const initialRating = parseInt(this.dom.feedbackStars.getAttribute('data-rating') || '5', 10);
+        this.updateFeedbackRatingDisplay(initialRating, false);
       }
 
       // Feedback Submit
@@ -1463,6 +1505,10 @@
             }
             this.setFeedbackNotice(texts.feedbackSuccess, "success");
             if (this.dom.feedbackForm) this.dom.feedbackForm.reset();
+            if (this.dom.feedbackStars) {
+              this.dom.feedbackStars.setAttribute('data-rating', '5');
+              this.updateFeedbackRatingDisplay(5, false);
+            }
             setTimeout(() => {
               this.closeFeedbackModal();
               if (this.dom.btnSubmitFeedback) this.dom.btnSubmitFeedback.disabled = false;
@@ -1512,10 +1558,41 @@
       }
     }
 
+    updateFeedbackRatingDisplay(rating, isPreview = false) {
+      if (!this.dom.feedbackStars) return;
+      const stars = this.dom.feedbackStars.querySelectorAll('span');
+      stars.forEach((s, idx) => {
+        const starVal = idx + 1;
+        if (isPreview) {
+          s.classList.toggle('hover', starVal <= rating);
+        } else {
+          s.classList.remove('hover');
+          s.classList.toggle('selected', starVal <= rating);
+          s.setAttribute('aria-checked', starVal === rating ? 'true' : 'false');
+        }
+      });
+
+      if (this.dom.feedbackRatingText) {
+        const texts = I18N[this.settings.lang];
+        const labelMap = {
+          5: texts.ratingExcellent,
+          4: texts.ratingVeryGood,
+          3: texts.ratingGood,
+          2: texts.ratingNeedsImprovement,
+          1: texts.ratingPoor
+        };
+        this.dom.feedbackRatingText.textContent = labelMap[rating] || `${rating}/5`;
+      }
+    }
+
     openFeedbackModal() {
       if (!this.dom.feedbackModal) return;
       this.setFeedbackNotice("", "");
       this.dom.feedbackModal.classList.remove('hidden');
+      if (this.dom.feedbackStars) {
+        const curRating = parseInt(this.dom.feedbackStars.getAttribute('data-rating') || '5', 10);
+        this.updateFeedbackRatingDisplay(curRating, false);
+      }
       if (this.dom.feedbackLocation && window.FirebaseService) {
         this.dom.feedbackLocation.value = window.FirebaseService.detectLocation();
       }

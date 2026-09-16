@@ -398,7 +398,8 @@ function updateDayTracker() {
   const diffTime = Math.abs(new Date() - new Date(startDate));
   const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
   const dayText = currentLang === 'en' ? `Day ${Math.min(diffDays, 30)} of 30` : `30'un ${Math.min(diffDays, 30)}. Günü`;
-  document.getElementById('day-counter').textContent = dayText;
+  const dayEl = document.getElementById('day-counter');
+  if (dayEl) dayEl.textContent = dayText;
 }
 
 // Search Filter
@@ -441,7 +442,7 @@ function setLang(lang) {
 
   document.querySelectorAll('[data-en]').forEach(el => {
     const val = el.getAttribute(`data-${lang}`) || el.getAttribute('data-en');
-    if (el.tagName === 'INPUT' && el.placeholder) {
+    if ((el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') && el.hasAttribute('placeholder')) {
       el.placeholder = val;
     } else {
       el.innerHTML = val;
@@ -453,8 +454,15 @@ function setLang(lang) {
   updateDayTracker();
   updateCard(true); // Redraw flashcard to match language instantly
 
+  // Update rating label text to match language
+  const starsWrap = document.getElementById('feedback-stars');
+  if (starsWrap && typeof updateRatingDisplay === 'function') {
+    const currentRating = parseInt(starsWrap.getAttribute('data-rating') || '5', 10);
+    updateRatingDisplay(currentRating, false);
+  }
+
   // Reload open markdown if user switches language while reading
-  if (document.getElementById('md-view').classList.contains('open') && currentActiveMaterial) {
+  if (document.getElementById('md-view') && document.getElementById('md-view').classList.contains('open') && currentActiveMaterial) {
     const newUrl = lang === 'en' ? currentActiveMaterial.en : currentActiveMaterial.tr;
     openMarkdown(newUrl, true); // true = skip pushState
   }
@@ -523,10 +531,63 @@ function renderHeatmap() {
 }
 
 // --- Community Feedback Handlers ---
+const ratingLabels = {
+  en: {
+    5: "5/5 — Excellent",
+    4: "4/5 — Very Good",
+    3: "3/5 — Good",
+    2: "2/5 — Needs Improvement",
+    1: "1/5 — Poor"
+  },
+  tr: {
+    5: "5/5 — Mükemmel",
+    4: "4/5 — Çok İyi",
+    3: "3/5 — İyi",
+    2: "2/5 — Geliştirilmeli",
+    1: "1/5 — Zayıf"
+  }
+};
+
+function updateRatingDisplay(rating, isPreview = false) {
+  const starsWrap = document.getElementById('feedback-stars');
+  if (!starsWrap) return;
+  const ratingText = document.getElementById('feedback-rating-text');
+  const stars = starsWrap.querySelectorAll('span');
+  
+  stars.forEach((s, idx) => {
+    const starVal = idx + 1;
+    if (isPreview) {
+      s.classList.toggle('hover', starVal <= rating);
+    } else {
+      s.classList.remove('hover');
+      s.classList.toggle('selected', starVal <= rating);
+      s.setAttribute('aria-checked', starVal === rating ? 'true' : 'false');
+    }
+  });
+
+  if (ratingText) {
+    const langKey = currentLang === 'tr' ? 'tr' : 'en';
+    ratingText.textContent = ratingLabels[langKey][rating] || `${rating}/5`;
+  }
+}
+
 function openFeedbackModal() {
   const modal = document.getElementById('feedback-modal');
   if (!modal) return;
   modal.classList.remove('hidden');
+  
+  const statusMsg = document.getElementById('feedback-status-msg');
+  if (statusMsg) {
+    statusMsg.style.display = 'none';
+    statusMsg.textContent = '';
+  }
+
+  const starsWrap = document.getElementById('feedback-stars');
+  if (starsWrap) {
+    const currentRating = parseInt(starsWrap.getAttribute('data-rating') || '5', 10);
+    updateRatingDisplay(currentRating, false);
+  }
+
   const locInput = document.getElementById('feedback-location');
   if (locInput && window.FirebaseService) {
     locInput.value = window.FirebaseService.detectLocation();
@@ -543,13 +604,45 @@ function initFeedbackForm() {
   if (starsWrap) {
     const stars = starsWrap.querySelectorAll('span');
     stars.forEach(star => {
+      const starVal = parseInt(star.getAttribute('data-star') || '5', 10);
+      
+      // Click event
       star.addEventListener('click', () => {
-        const rating = parseInt(star.getAttribute('data-star') || '5', 10);
-        starsWrap.setAttribute('data-rating', rating);
-        stars.forEach((s, idx) => {
-          s.classList.toggle('selected', idx < rating);
-        });
+        starsWrap.setAttribute('data-rating', starVal);
+        updateRatingDisplay(starVal, false);
       });
+
+      // Keyboard accessibility
+      star.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ' || e.code === 'Space') {
+          e.preventDefault();
+          starsWrap.setAttribute('data-rating', starVal);
+          updateRatingDisplay(starVal, false);
+        }
+      });
+
+      // Hover preview
+      star.addEventListener('mouseenter', () => {
+        updateRatingDisplay(starVal, true);
+      });
+    });
+
+    // Mouseleave restores selected rating
+    starsWrap.addEventListener('mouseleave', () => {
+      const currentRating = parseInt(starsWrap.getAttribute('data-rating') || '5', 10);
+      updateRatingDisplay(currentRating, false);
+    });
+
+    // Initial render
+    const initialRating = parseInt(starsWrap.getAttribute('data-rating') || '5', 10);
+    updateRatingDisplay(initialRating, false);
+  }
+
+  const modal = document.getElementById('feedback-modal');
+  if (modal) {
+    // Backdrop click to close
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeFeedbackModal();
     });
   }
 
@@ -559,35 +652,43 @@ function initFeedbackForm() {
       e.preventDefault();
       const statusMsg = document.getElementById('feedback-status-msg');
       const submitBtn = document.getElementById('btn-submit-feedback');
-      const username = document.getElementById('feedback-username').value.trim() || 'Anonymous';
-      const location = document.getElementById('feedback-location').value.trim();
-      const category = document.getElementById('feedback-category').value;
-      const rating = parseInt(document.getElementById('feedback-stars').getAttribute('data-rating') || '5', 10);
-      const message = document.getElementById('feedback-message').value.trim();
+      const username = (document.getElementById('feedback-username')?.value || '').trim() || 'Anonymous';
+      const location = (document.getElementById('feedback-location')?.value || '').trim();
+      const category = document.getElementById('feedback-category')?.value || 'General';
+      const rating = parseInt(document.getElementById('feedback-stars')?.getAttribute('data-rating') || '5', 10);
+      const message = (document.getElementById('feedback-message')?.value || '').trim();
 
       if (!message) return;
 
-      submitBtn.disabled = true;
+      if (submitBtn) submitBtn.disabled = true;
       try {
         if (window.FirebaseService) {
           await window.FirebaseService.submitFeedback({ username, location, category, rating, message });
         }
-        statusMsg.style.display = 'block';
-        statusMsg.className = 'auth-notice-msg success';
-        statusMsg.textContent = currentLang === 'en' 
-          ? "Thank you! Your feedback has been received." 
-          : "Teşekkür ederiz! Geri bildiriminiz başarıyla iletildi.";
+        if (statusMsg) {
+          statusMsg.style.display = 'block';
+          statusMsg.className = 'auth-notice-msg success';
+          statusMsg.textContent = currentLang === 'en' 
+            ? "Thank you! Your feedback has been received." 
+            : "Teşekkür ederiz! Geri bildiriminiz başarıyla iletildi.";
+        }
         form.reset();
+        if (starsWrap) {
+          starsWrap.setAttribute('data-rating', '5');
+          updateRatingDisplay(5, false);
+        }
         setTimeout(() => {
           closeFeedbackModal();
-          statusMsg.style.display = 'none';
-          submitBtn.disabled = false;
+          if (statusMsg) statusMsg.style.display = 'none';
+          if (submitBtn) submitBtn.disabled = false;
         }, 1800);
       } catch (err) {
-        statusMsg.style.display = 'block';
-        statusMsg.className = 'auth-notice-msg error';
-        statusMsg.textContent = err.message || "Submission failed";
-        submitBtn.disabled = false;
+        if (statusMsg) {
+          statusMsg.style.display = 'block';
+          statusMsg.className = 'auth-notice-msg error';
+          statusMsg.textContent = err.message || (currentLang === 'en' ? "Submission failed" : "Gönderim başarısız oldu");
+        }
+        if (submitBtn) submitBtn.disabled = false;
       }
     });
   }
