@@ -12,6 +12,7 @@ const ASSETS = [
   './js/vocabTrainer.js',
   './data/vocab2000.js',
   './data/vocab_b2.js',
+  './data/vocab_c1.js',
   './assets/icons/icon-192.png',
   './assets/icons/icon-512.png',
   './assets/icons/apple-touch-icon.png',

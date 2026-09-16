@@ -21,6 +21,7 @@
       appTitle: "Wortschatz Trainer",
       coreDeck: "Core 2,000 (A1–B1)",
       b2Deck: "Advanced B2 Deck",
+      c1Deck: "Academic C1 Deck",
       allDeck: "All Words Combined",
       sessionLabel: "Session",
       streakLabel: "Day Streak",
@@ -69,6 +70,8 @@
       levelA1: "A1 Level",
       levelA2: "A2 Level",
       levelB1: "B1 Level",
+      levelB2: "B2 Level",
+      levelC1: "C1 Level",
       langSwitchBtn: "🇹🇷 Türkçe",
       impressumLink: "🇩🇪 Impressum (§ 5 DDG)",
       privacyLink: "🔒 Privacy Policy (GDPR)",
@@ -119,6 +122,7 @@
       appTitle: "Kelime Antrenörü",
       coreDeck: "Temel 2.000 (A1–B1)",
       b2Deck: "İleri B2 Destesi",
+      c1Deck: "Akademik C1 Destesi",
       allDeck: "Tüm Kelimeler (Birleşik)",
       sessionLabel: "Oturum",
       streakLabel: "Günlük Seri",
@@ -167,6 +171,8 @@
       levelA1: "A1 Seviyesi",
       levelA2: "A2 Seviyesi",
       levelB1: "B1 Seviyesi",
+      levelB2: "B2 Seviyesi",
+      levelC1: "C1 Seviyesi",
       langSwitchBtn: "🇬🇧 English",
       impressumLink: "🇩🇪 Yasal Künye (§ 5 DDG)",
       privacyLink: "🔒 Gizlilik Politikası (KVKK/GDPR)",
@@ -432,8 +438,8 @@
 
       // Filter by Level
       let pool = allWords;
-      if (level !== 'ALL') {
-        pool = pool.filter(w => w.level === level);
+      if (level && level.toUpperCase() !== 'ALL') {
+        pool = pool.filter(w => w.level && w.level.toUpperCase() === level.toUpperCase());
       }
 
       // Filter by Mode eligibility (e.g. synonyms require non-empty synonyms array)
@@ -520,6 +526,26 @@
       this.sessionManager = new VocabSessionManager();
       this.deckGenerator = new DeckGenerator(this.sessionManager);
       this.settings = this.sessionManager.getSettings();
+
+      // Support URL parameter initialization (e.g. ?level=B2, ?level=A1, ?deck=b2)
+      try {
+        if (typeof window !== 'undefined' && window.location && window.location.search) {
+          const params = new URLSearchParams(window.location.search);
+          const urlLevel = params.get('level');
+          if (urlLevel && ['ALL', 'A1', 'A2', 'B1', 'B2'].includes(urlLevel.toUpperCase())) {
+            this.settings.level = urlLevel.toUpperCase();
+            if (this.settings.level === 'B2') {
+              this.settings.deck = 'b2';
+            }
+          }
+          const urlDeck = params.get('deck');
+          if (urlDeck && ['core', 'b2', 'all'].includes(urlDeck.toLowerCase())) {
+            this.settings.deck = urlDeck.toLowerCase();
+          }
+        }
+      } catch (e) {
+        console.warn('URL parameter parsing skipped:', e);
+      }
 
       this.sprintTimer = null;
       this.sprintTimeRemaining = 120;
@@ -621,17 +647,35 @@
         sprintMetricSpeed: document.getElementById('sprint-metric-speed'),
         btnSprintRetry: document.getElementById('btn-sprint-retry')
       };
+
+      if (this.dom.deckSelector && this.settings.deck) {
+        this.dom.deckSelector.value = this.settings.deck;
+      }
+      if (this.dom.levelSelector && this.settings.level) {
+        this.dom.levelSelector.value = this.settings.level;
+      }
+      if (this.dom.deckSizeSelect && this.settings.deckSize) {
+        this.dom.deckSizeSelect.value = String(this.settings.deckSize);
+      }
     }
 
     getAllWordsPool() {
       const core = window.VOCAB_2000 || [];
       const b2Raw = window.VOCAB_B2 || [];
+      const c1Raw = window.VOCAB_C1 || [];
       const b2 = b2Raw.map(w => ({
         ...w,
         id: (typeof w.id === 'number' && w.id < 10000) ? 10000 + w.id : w.id
       }));
+      const c1 = c1Raw.map(w => ({
+        ...w,
+        id: (typeof w.id === 'number' && w.id < 20000) ? 20000 + w.id : w.id
+      }));
+      if (this.settings.level === 'C1') return c1;
+      if (this.settings.level === 'B2') return b2;
+      if (this.settings.deck === 'c1') return c1;
       if (this.settings.deck === 'b2') return b2;
-      if (this.settings.deck === 'all') return [...core, ...b2];
+      if (this.settings.deck === 'all') return [...core, ...b2, ...c1];
       return core;
     }
 

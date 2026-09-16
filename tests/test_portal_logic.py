@@ -113,6 +113,50 @@ class TestPortalLogicAndContracts(unittest.TestCase):
 
         self.assertGreater(quiz_count, 10, "Should find multiple interactive markdown quizzes across curriculum")
 
+    def test_entrance_modal_and_goal_configuration(self):
+        """Verify entrance modal markup, goals configuration, and persistence hooks."""
+        index_path = os.path.join(ROOT_DIR, "index.html")
+        with open(index_path, "r", encoding="utf-8") as f:
+            index_html = f.read()
+
+        # Check DOM entrance modal hooks
+        self.assertIn('id="entrance-modal"', index_html)
+        self.assertIn('id="current-goal-btn"', index_html)
+        self.assertIn('class="sidebar-goal-badge"', index_html)
+        self.assertIn('id="hero-goal-strip"', index_html)
+        self.assertIn('card-goal-a1-a2', index_html)
+        self.assertIn('card-goal-b1', index_html)
+        self.assertIn('card-goal-b2', index_html)
+        self.assertIn('card-goal-vocab', index_html)
+
+        # Check portal.js goal config & persistence
+        self.assertIn("const GOAL_CONFIG = {", self.portal_js)
+        self.assertIn("'goal-a1-a2':", self.portal_js)
+        self.assertIn("'goal-b1':", self.portal_js)
+        self.assertIn("'goal-b2':", self.portal_js)
+        self.assertIn("'goal-vocab':", self.portal_js)
+        self.assertIn("deutschlernen_goal", self.portal_js)
+        self.assertIn("deutschlernen_level", self.portal_js)
+
+    def test_multi_level_trainer_contracts(self):
+        """Verify trainer.html and vocabTrainer.js support A1, A2, B1, and B2 CEFR levels."""
+        trainer_path = os.path.join(ROOT_DIR, "trainer.html")
+        with open(trainer_path, "r", encoding="utf-8") as f:
+            trainer_html = f.read()
+
+        # Check trainer.html has all CEFR level options
+        self.assertIn('value="A1"', trainer_html)
+        self.assertIn('value="A2"', trainer_html)
+        self.assertIn('value="B1"', trainer_html)
+        self.assertIn('value="B2"', trainer_html)
+        self.assertIn('data-i18n="levelB2"', trainer_html)
+
+        # Check vocabTrainer.js I18N support
+        self.assertIn('levelB2: "B2 Level"', self.trainer_js)
+        self.assertIn('levelB2: "B2 Seviyesi"', self.trainer_js)
+        # Check URL parameter parsing
+        self.assertIn("params.get('level')", self.trainer_js)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -92,6 +92,7 @@
             <select id="deck-selector" class="styled-select" aria-label="Select Word Deck">
               <option value="core" data-i18n="coreDeck">Core 2,000 (A1–B1)</option>
               <option value="b2" data-i18n="b2Deck">Advanced B2 Deck</option>
+              <option value="c1" data-i18n="c1Deck">Academic C1 Deck</option>
               <option value="all" data-i18n="allDeck">All Words Combined</option>
             </select>
           </div>
@@ -100,10 +101,12 @@
           <div class="select-wrapper">
             <span>🎯</span>
             <select id="level-selector" class="styled-select" aria-label="Select CEFR Level">
-              <option value="all" data-i18n="levelAll">All Levels</option>
+              <option value="ALL" data-i18n="levelAll">All Levels</option>
               <option value="A1" data-i18n="levelA1">A1 Level</option>
               <option value="A2" data-i18n="levelA2">A2 Level</option>
               <option value="B1" data-i18n="levelB1">B1 Level</option>
+              <option value="B2" data-i18n="levelB2">B2 Level</option>
+              <option value="C1" data-i18n="levelC1">C1 Level</option>
             </select>
           </div>
 
@@ -440,6 +443,7 @@
   <script src="js/firebaseService.js"></script>
   <script src="data/vocab2000.js"></script>
   <script src="data/vocab_b2.js"></script>
+  <script src="data/vocab_c1.js"></script>
   <script src="js/vocabTrainer.js"></script>
   <script>
     if ('serviceWorker' in navigator) {

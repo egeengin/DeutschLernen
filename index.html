@@ -30,10 +30,17 @@
 </head>
 <body>
 
-<!-- Global Language Toggle -->
-<div class="global-lang-toggle">
-  <button class="lang-btn active" onclick="setLang('en')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/us.png" width="16" alt="US" style="border-radius:2px;"> EN</button>
-  <button class="lang-btn" onclick="setLang('tr')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/tr.png" width="16" alt="TR" style="border-radius:2px;"> TR</button>
+<!-- Global Top Controls: Goal Selector & Language Toggle -->
+<div class="global-top-bar">
+  <button class="goal-chip-btn" id="current-goal-btn" onclick="openGoalModal()" title="Choose or switch your German learning goal and level">
+    <span class="goal-chip-icon" id="current-goal-icon">🎯</span>
+    <span class="goal-chip-text" id="current-goal-text">Goal: B1 Exam</span>
+    <span class="goal-chip-action" data-en="Change" data-tr="Değiştir">Change</span>
+  </button>
+  <div class="global-lang-toggle">
+    <button class="lang-btn active" onclick="setLang('en')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/us.png" width="16" alt="US" style="border-radius:2px;"> EN</button>
+    <button class="lang-btn" onclick="setLang('tr')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/tr.png" width="16" alt="TR" style="border-radius:2px;"> TR</button>
+  </div>
 </div>
 
 <!-- Mobile Menu Toggle -->
@@ -48,6 +55,16 @@
     <h2>TELC B1 Portal</h2>
     <p data-en="30-Day Study Plan" data-tr="30 Günlük Çalışma Planı">30-Day Study Plan</p>
     <input type="text" id="search-input" class="search-box" data-en="Search materials..." data-tr="Materyal ara..." placeholder="Search materials..." onkeyup="filterCards()">
+    
+    <!-- Sidebar Goal Card -->
+    <div class="sidebar-goal-badge" onclick="openGoalModal()" title="Click to change your target level or wish">
+      <div class="sidebar-goal-row">
+        <span class="sidebar-goal-kicker" data-en="ACTIVE GOAL" data-tr="AKTİF HEDEF">ACTIVE GOAL</span>
+        <span class="sidebar-goal-edit" data-en="Change ⚙️" data-tr="Değiştir ⚙️">Change ⚙️</span>
+      </div>
+      <div class="sidebar-goal-name" id="sidebar-goal-name">telc B1 Exam</div>
+      <div class="sidebar-goal-sub" id="sidebar-goal-sub">Level: B1 Intermediate</div>
+    </div>
   </div>
 
   <!-- Interactive Vocab Trainer CTA -->
@@ -77,9 +94,28 @@
 
   <!-- Hero -->
   <header class="hero" id="home">
-    <div class="hero-badge" data-en="📚 telc Deutsch B1 Exam Preparation & Vocab Master" data-tr="📚 telc Deutsch B1 Sınav Hazırlığı ve Kelime Antrenörü">📚 telc Deutsch B1 Exam Preparation & Vocab Master</div>
-    <h1 data-en="Pass telc Deutsch B1<br>with Confidence" data-tr="telc Deutsch B1 Sınavını<br>Güvenle Geçin">Pass telc Deutsch B1<br>with Confidence</h1>
-    <p data-en="A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates." data-tr="telc Deutsch B1 (180/300 barajı) için eksiksiz çalışma portalı ve 2.000 kelimelik interaktif antrenör. Dilbilgisi, akıllı kelime antrenmanı, deneme sınavları ve mektup şablonları.">A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates.</p>
+    <div class="hero-badge" id="hero-active-goal-badge" data-en="📚 telc Deutsch B1 Exam Preparation & Vocab Master" data-tr="📚 telc Deutsch B1 Sınav Hazırlığı ve Kelime Antrenörü">📚 telc Deutsch B1 Exam Preparation & Vocab Master</div>
+    <h1 id="hero-main-title" data-en="Pass telc Deutsch B1<br>with Confidence" data-tr="telc Deutsch B1 Sınavını<br>Güvenle Geçin">Pass telc Deutsch B1<br>with Confidence</h1>
+    <p id="hero-main-desc" data-en="A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates." data-tr="telc Deutsch B1 (180/300 barajı) için eksiksiz çalışma portalı ve 2.000 kelimelik interaktif antrenör. Dilbilgisi, akıllı kelime antrenmanı, deneme sınavları ve mektup şablonları.">A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates.</p>
+    
+    <!-- Goal Tailored Quick Action Strip -->
+    <div class="hero-goal-strip" id="hero-goal-strip">
+      <div class="hero-goal-info">
+        <span class="hero-goal-icon" id="hero-goal-strip-icon">🎯</span>
+        <div>
+          <strong id="hero-goal-strip-title" data-en="Active Track: telc B1 Certification" data-tr="Aktif Program: telc B1 Sınavı">Active Track: telc B1 Certification</strong>
+          <div style="font-size: 12px; color: var(--text-muted);" id="hero-goal-strip-hint" data-en="Focusing on 30-day curriculum, mock exams & B1 vocabulary" data-tr="30 günlük program, deneme sınavları ve B1 kelimelerine odaklanıyor">Focusing on 30-day curriculum, mock exams & B1 vocabulary</div>
+        </div>
+      </div>
+      <div class="hero-goal-actions">
+        <button class="btn-sm-goal" onclick="openGoalModal()">
+          <span data-en="Switch Goal / Level" data-tr="Hedef / Seviye Değiştir">Switch Goal / Level</span>
+        </button>
+        <a href="trainer.html" class="btn-sm-trainer" id="hero-goal-trainer-link">
+          <span data-en="⚡ Start Vocab Drill →" data-tr="⚡ Kelime Antrenmanı →">⚡ Start Vocab Drill →</span>
+        </a>
+      </div>
+    </div>
     <div class="hero-stats">
       <div class="hero-stat"><div class="val">10</div><div class="label" data-en="Study Modules" data-tr="Modül">Study Modules</div></div>
       <div class="hero-stat"><div class="val">30</div><div class="label" data-en="Day Plan" data-tr="Günlük Plan">Day Plan</div></div>
@@ -449,6 +485,122 @@
           🚀 <span data-en="Submit Feedback" data-tr="Geri Bildirimi Gönder">Submit Feedback</span>
         </button>
       </form>
+    </div>
+  </div>
+</div>
+
+<!-- Entrance Onboarding Modal ("Ask for Wish") -->
+<div id="entrance-modal" class="entrance-modal-overlay" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="entrance-title">
+  <div class="entrance-modal-card">
+    <div class="entrance-header">
+      <div class="entrance-badge" data-en="✨ WELCOME TO DEUTSCHLERNEN" data-tr="✨ DEUTSCHLERNEN'E HOŞ GELDİNİZ">✨ WELCOME TO DEUTSCHLERNEN</div>
+      <h2 id="entrance-title" data-en="What is your learning goal?" data-tr="Almanca öğrenme hedefiniz nedir?">What is your learning goal?</h2>
+      <p class="entrance-subtitle" data-en="Choose your path below so we can tailor the study modules, practice drills, and vocabulary decks for you." data-tr="Çalışma modüllerini, alıştırmaları ve kelime destelerini size özel uyarlayabilmemiz için hedefinizi seçin.">Choose your path below so we can tailor the study modules, practice drills, and vocabulary decks for you.</p>
+    </div>
+
+    <!-- 4 Goal Cards Grid ("Wishes") -->
+    <div class="goal-cards-grid" role="radiogroup" aria-label="Learning Goals">
+      <!-- Goal 1: A1-A2 -->
+      <div class="goal-card" id="card-goal-a1-a2" data-goal-id="goal-a1-a2" data-default-level="A1" onclick="selectGoalCard('goal-a1-a2', 'A1')" tabindex="0" role="radio" aria-checked="false">
+        <div class="goal-card-top">
+          <span class="goal-icon">🌱</span>
+          <span class="goal-cefr-badge badge-a1">A1 – A2</span>
+        </div>
+        <h3 data-en="Beginner Fundamentals" data-tr="Temel Başlangıç">Beginner Fundamentals</h3>
+        <p data-en="Start from scratch or solidify basics: daily life vocabulary, high-frequency verbs, and foundational grammar." data-tr="Sıfırdan başlayın veya temelleri pekiştirin: günlük kelimeler, temel fiiller ve çekimler.">Start from scratch or solidify basics: daily life vocabulary, high-frequency verbs, and foundational grammar.</p>
+        <div class="goal-perks">
+          <span data-en="✓ ~1,000 Everyday Words" data-tr="✓ ~1.000 Günlük Kelime">✓ ~1,000 Everyday Words</span>
+          <span data-en="✓ Core Sentence Structure" data-tr="✓ Temel Cümle Yapıları">✓ Core Sentence Structure</span>
+        </div>
+      </div>
+
+      <!-- Goal 2: B1 Exam -->
+      <div class="goal-card active" id="card-goal-b1" data-goal-id="goal-b1" data-default-level="B1" onclick="selectGoalCard('goal-b1', 'B1')" tabindex="0" role="radio" aria-checked="true">
+        <div class="goal-card-top">
+          <span class="goal-icon">🏆</span>
+          <span class="goal-cefr-badge badge-b1">B1 TELC / Goethe</span>
+        </div>
+        <h3 data-en="telc B1 Certification" data-tr="telc B1 Sınav Hazırlığı">telc B1 Certification</h3>
+        <p data-en="Pass your official B1 exam (180/300 pass score): 30-day plan, diagnostic & final mock tests, and letter templates." data-tr="Resmi B1 sınavını geçin (180/300 barajı): 30 günlük plan, deneme sınavları ve mektup şablonları.">Pass your official B1 exam (180/300 pass score): 30-day plan, diagnostic & final mock tests, and letter templates.</p>
+        <div class="goal-perks">
+          <span data-en="✓ 30-Day Step-by-Step Plan" data-tr="✓ 30 Günlük Adım Adım Plan">✓ 30-Day Step-by-Step Plan</span>
+          <span data-en="✓ 2 Full Mock Simulations" data-tr="✓ 2 Tam Deneme Sınavı">✓ 2 Full Mock Simulations</span>
+        </div>
+      </div>
+
+      <!-- Goal 3: B2 Professional -->
+      <div class="goal-card" id="card-goal-b2" data-goal-id="goal-b2" data-default-level="B2" onclick="selectGoalCard('goal-b2', 'B2')" tabindex="0" role="radio" aria-checked="false">
+        <div class="goal-card-top">
+          <span class="goal-icon">💼</span>
+          <span class="goal-cefr-badge badge-b2">B2 Professional</span>
+        </div>
+        <h3 data-en="Advanced & Workplace" data-tr="İleri Düzey & İş Almancası">Advanced & Workplace</h3>
+        <p data-en="Excel in workplace German and academic contexts: advanced vocabulary, complex connectors, and formal writing." data-tr="İş hayatında ve akademik ortamda öne çıkın: ileri düzey kelimeler, karmaşık bağlaçlar ve resmi yazım.">Excel in workplace German and academic contexts: advanced vocabulary, complex connectors, and formal writing.</p>
+        <div class="goal-perks">
+          <span data-en="✓ Advanced B2 Study Deck" data-tr="✓ İleri Seviye B2 Destesi">✓ Advanced B2 Study Deck</span>
+          <span data-en="✓ Complex Connectors & C-Test" data-tr="✓ Karmaşık Bağlaçlar & C-Test">✓ Complex Connectors & C-Test</span>
+        </div>
+      </div>
+
+      <!-- Goal 4: C1 Academic -->
+      <div class="goal-card" id="card-goal-c1" data-goal-id="goal-c1" data-default-level="C1" onclick="selectGoalCard('goal-c1', 'C1')" tabindex="0" role="radio" aria-checked="false">
+        <div class="goal-card-top">
+          <span class="goal-icon">🎓</span>
+          <span class="goal-cefr-badge badge-c1">C1 Academic</span>
+        </div>
+        <h3 data-en="C1 Hochschule & Mastery" data-tr="C1 Üniversite & Uzmanlık">C1 Hochschule & Mastery</h3>
+        <p data-en="Master academic German for university studies, research papers, and professional settings. High-frequency C1 terminology and complex sentence structures." data-tr="Üniversite eğitimi, akademik makaleler ve profesyonel ortamlar için akademik Almancayı ustalaşın. Yüksek frekanslı C1 terimleri ve karmaşık cümle yapıları.">Master academic German for university studies, research papers, and professional settings. High-frequency C1 terminology and complex sentence structures.</p>
+        <div class="goal-perks">
+          <span data-en="✓ Academic C1 Study Deck" data-tr="✓ Akademik C1 Destesi">✓ Academic C1 Study Deck</span>
+          <span data-en="✓ University & Research Vocab" data-tr="✓ Üniversite & Araştırma Kelimeleri">✓ University & Research Vocab</span>
+        </div>
+      </div>
+
+      <!-- Goal 5: Rapid Vocab Trainer -->
+      <div class="goal-card" id="card-goal-vocab" data-goal-id="goal-vocab" data-default-level="ALL" onclick="selectGoalCard('goal-vocab', 'ALL')" tabindex="0" role="radio" aria-checked="false">
+        <div class="goal-card-top">
+          <span class="goal-icon">⚡</span>
+          <span class="goal-cefr-badge badge-all">All Levels</span>
+        </div>
+        <h3 data-en="Rapid Vocab Trainer" data-tr="Hızlı Kelime Antrenmanı">Rapid Vocab Trainer</h3>
+        <p data-en="Jump directly into high-speed flashcards, 5 quiz modes, native audio speech, and daily streak tracking." data-tr="Hızlı kelime kartlarına, 5 test moduna, sesli telaffuza ve seri takibine doğrudan atlayın.">Jump directly into high-speed flashcards, 5 quiz modes, native audio speech, and daily streak tracking.</p>
+        <div class="goal-perks">
+          <span data-en="✓ 2,000+ Words Offline" data-tr="✓ 2.000+ Kelime Çevrimdışı">✓ 2,000+ Words Offline</span>
+          <span data-en="✓ Native Audio & Spaced Drills" data-tr="✓ Sesli Tekrar & Akıllı Algoritma">✓ Native Audio & Spaced Drills</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fine-tune Level & Language Controls -->
+    <div class="entrance-controls-row">
+      <div class="entrance-control-group">
+        <label for="entrance-level-select" data-en="Target CEFR Level:" data-tr="Hedef CEFR Seviyeniz:">Target CEFR Level:</label>
+        <select id="entrance-level-select" class="styled-select" onchange="onEntranceLevelChange(this.value)">
+          <option value="A1">A1 – Beginner (Anfänger)</option>
+          <option value="A2">A2 – Elementary (Grundstufe)</option>
+          <option value="B1" selected>B1 – Intermediate (telc / Goethe)</option>
+          <option value="B2">B2 – Upper Intermediate (Fortgeschritten)</option>
+          <option value="C1">C1 – Advanced Academic (Hochschule)</option>
+          <option value="ALL">All Levels Combined (A1–C1)</option>
+        </select>
+      </div>
+      <div class="entrance-control-group">
+        <label for="entrance-lang-select" data-en="Learning from language:" data-tr="Açıklama / Hedef diliniz:">Learning from language:</label>
+        <select id="entrance-lang-select" class="styled-select" onchange="setLang(this.value)">
+          <option value="en">🇬🇧 English</option>
+          <option value="tr">🇹🇷 Türkçe</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Modal Footer Actions -->
+    <div class="entrance-footer">
+      <button class="btn-primary entrance-confirm-btn" id="btn-confirm-goal" onclick="applyGoalSelection()">
+        <span data-en="Start Learning →" data-tr="Öğrenmeye Başla →">Start Learning →</span>
+      </button>
+      <button class="btn-secondary entrance-dismiss-btn" id="btn-dismiss-goal" onclick="closeGoalModal()">
+        <span data-en="Explore All Materials" data-tr="Tüm Materyalleri İncele">Explore All Materials</span>
+      </button>
     </div>
   </div>
 </div>
