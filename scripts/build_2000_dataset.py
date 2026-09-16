@@ -87,44 +87,54 @@ for src in core_sources:
 print(f"Total compiled Core entries: {len(CORE_ENTRIES)}")
 assert len(CORE_ENTRIES) == 2000, f"Expected 2000 entries, but got {len(CORE_ENTRIES)}"
 
-# Write data/vocab2000.js
-with open(VOCAB2000_PATH, "w", encoding="utf-8") as f:
-    f.write("/**\n * DeutschLernen - 2000 Essential German Words (CEFR A1, A2, B1)\n")
-    f.write(" * Built for telc Deutsch B1 exam candidates and serious German learners.\n")
-    f.write(" * 100% Offline-capable, zero CORS dependency.\n */\n\n")
-    f.write("window.VOCAB_2000 = ")
-    json.dump(CORE_ENTRIES, f, ensure_ascii=False, indent=2)
-    f.write(";\n")
+def build_datasets(output_vocab2000=VOCAB2000_PATH, output_vocab_b2=VOCAB_B2_PATH):
+    """Builds and serializes VOCAB_2000 and VOCAB_B2 JavaScript files."""
+    os.makedirs(os.path.dirname(os.path.abspath(output_vocab2000)), exist_ok=True)
+    os.makedirs(os.path.dirname(os.path.abspath(output_vocab_b2)), exist_ok=True)
 
-print(f"Successfully generated: {VOCAB2000_PATH} ({len(CORE_ENTRIES)} entries)")
+    # Write vocab2000.js
+    with open(output_vocab2000, "w", encoding="utf-8") as f:
+        f.write("/**\n * DeutschLernen - 2000 Essential German Words (CEFR A1, A2, B1)\n")
+        f.write(" * Built for telc Deutsch B1 exam candidates and serious German learners.\n")
+        f.write(" * 100% Offline-capable, zero CORS dependency.\n */\n\n")
+        f.write("window.VOCAB_2000 = ")
+        json.dump(CORE_ENTRIES, f, ensure_ascii=False, indent=2)
+        f.write(";\n")
 
-# Build and write data/vocab_b2.js
-B2_ENTRIES = []
-SEEN_B2 = set()
-for item in B2_ADVANCED_DATA:
-    clean_de = item[0].strip()
-    if clean_de in SEEN_B2:
-        continue
-    SEEN_B2.add(clean_de)
-    B2_ENTRIES.append({
-        "id": len(B2_ENTRIES) + 1,
-        "de": clean_de,
-        "tr": item[1].strip(),
-        "en": item[2].strip(),
-        "pos": item[3].strip(),
-        "level": item[4].strip(),
-        "example": item[5].strip(),
-        "example_tr": item[6].strip(),
-        "example_en": item[7].strip(),
-        "synonyms": item[8] or [],
-        "antonyms": item[9] or []
-    })
+    print(f"Successfully generated: {output_vocab2000} ({len(CORE_ENTRIES)} entries)")
 
-with open(VOCAB_B2_PATH, "w", encoding="utf-8") as f:
-    f.write("/**\n * DeutschLernen - Advanced B2 German Study Deck\n")
-    f.write(" * Specialized vocabulary for academic, workplace, and higher CEFR transition.\n */\n\n")
-    f.write("window.VOCAB_B2 = ")
-    json.dump(B2_ENTRIES, f, ensure_ascii=False, indent=2)
-    f.write(";\n")
+    # Build and write vocab_b2.js
+    B2_ENTRIES = []
+    SEEN_B2 = set()
+    for item in B2_ADVANCED_DATA:
+        clean_de = item[0].strip()
+        if clean_de in SEEN_B2:
+            continue
+        SEEN_B2.add(clean_de)
+        B2_ENTRIES.append({
+            "id": len(B2_ENTRIES) + 1,
+            "de": clean_de,
+            "tr": item[1].strip(),
+            "en": item[2].strip(),
+            "pos": item[3].strip(),
+            "level": item[4].strip(),
+            "example": item[5].strip(),
+            "example_tr": item[6].strip(),
+            "example_en": item[7].strip(),
+            "synonyms": item[8] or [],
+            "antonyms": item[9] or []
+        })
 
-print(f"Successfully generated: {VOCAB_B2_PATH} ({len(B2_ENTRIES)} entries)")
+    with open(output_vocab_b2, "w", encoding="utf-8") as f:
+        f.write("/**\n * DeutschLernen - Advanced B2 German Study Deck\n")
+        f.write(" * Specialized vocabulary for academic, workplace, and higher CEFR transition.\n */\n\n")
+        f.write("window.VOCAB_B2 = ")
+        json.dump(B2_ENTRIES, f, ensure_ascii=False, indent=2)
+        f.write(";\n")
+
+    print(f"Successfully generated: {output_vocab_b2} ({len(B2_ENTRIES)} entries)")
+    return len(CORE_ENTRIES), len(B2_ENTRIES)
+
+if __name__ == "__main__":
+    build_datasets()
+

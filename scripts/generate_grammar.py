@@ -1,8 +1,9 @@
 # generate_grammar.py
 import os
 
-EN_FILE = r"C:\Private\DeutschLernen\TELC_B1_Preparation\review_grammar_vocab.md"
-TR_FILE = r"C:\Private\DeutschLernen\TELC_B1_Hazırlık\review_grammar_vocab.md"
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+EN_FILE = os.path.join(ROOT_DIR, "docs", "en", "review_grammar_vocab.md")
+TR_FILE = os.path.join(ROOT_DIR, "docs", "tr", "review_grammar_vocab.md")
 
 en_content = """# Review: Grammar & Vocabulary (Sprachbausteine)
 
@@ -402,10 +403,11 @@ ______________________________________________________________________
 * **Sınav Örnekleri:** [Goethe B1 Modellsatz](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html).
 """
 
-with open(EN_FILE, "w", encoding="utf-8") as f:
-    f.write(en_content)
+if __name__ == "__main__":
+    with open(EN_FILE, "w", encoding="utf-8") as f:
+        f.write(en_content)
 
-with open(TR_FILE, "w", encoding="utf-8") as f:
-    f.write(tr_content)
-    
-print("Successfully generated detailed grammar files with interactive quizzes in both EN and TR!")
+    with open(TR_FILE, "w", encoding="utf-8") as f:
+        f.write(tr_content)
+        
+    print("Successfully generated detailed grammar files with interactive quizzes in both EN and TR!")
