@@ -22,6 +22,7 @@ os.makedirs(DATA_DIR, exist_ok=True)
 
 VOCAB2000_PATH = os.path.join(DATA_DIR, "vocab2000.js")
 VOCAB_B2_PATH = os.path.join(DATA_DIR, "vocab_b2.js")
+VOCAB_C1_PATH = os.path.join(DATA_DIR, "vocab_c1.js")
 
 CORE_ENTRIES = []
 SEEN_CORE = set()
@@ -71,6 +72,7 @@ from scripts.vocab_sources.adjectives_part2 import ADJECTIVES_P2
 from scripts.vocab_sources.connectors_phrases import CONNECTORS_AND_PHRASES
 from scripts.vocab_sources.adverbs_particles import ADVERBS_AND_PARTICLES
 from scripts.vocab_sources.b2_advanced import B2_ADVANCED_DATA
+from scripts.vocab_sources.c1_academic import C1_ACADEMIC_DATA
 
 core_sources = [
     VERBS, VERBS_P1, VERBS_P2, VERBS_EXTRA, VERBS_DAILY_ACTIONS,
@@ -87,10 +89,11 @@ for src in core_sources:
 print(f"Total compiled Core entries: {len(CORE_ENTRIES)}")
 assert len(CORE_ENTRIES) == 2000, f"Expected 2000 entries, but got {len(CORE_ENTRIES)}"
 
-def build_datasets(output_vocab2000=VOCAB2000_PATH, output_vocab_b2=VOCAB_B2_PATH):
-    """Builds and serializes VOCAB_2000 and VOCAB_B2 JavaScript files."""
+def build_datasets(output_vocab2000=VOCAB2000_PATH, output_vocab_b2=VOCAB_B2_PATH, output_vocab_c1=VOCAB_C1_PATH):
+    """Builds and serializes VOCAB_2000, VOCAB_B2, and VOCAB_C1 JavaScript files."""
     os.makedirs(os.path.dirname(os.path.abspath(output_vocab2000)), exist_ok=True)
     os.makedirs(os.path.dirname(os.path.abspath(output_vocab_b2)), exist_ok=True)
+    os.makedirs(os.path.dirname(os.path.abspath(output_vocab_c1)), exist_ok=True)
 
     # Write vocab2000.js
     with open(output_vocab2000, "w", encoding="utf-8") as f:
@@ -133,6 +136,37 @@ def build_datasets(output_vocab2000=VOCAB2000_PATH, output_vocab_b2=VOCAB_B2_PAT
         f.write(";\n")
 
     print(f"Successfully generated: {output_vocab_b2} ({len(B2_ENTRIES)} entries)")
+
+    # Build and write vocab_c1.js
+    C1_ENTRIES = []
+    SEEN_C1 = set()
+    for item in C1_ACADEMIC_DATA:
+        clean_de = item[0].strip()
+        if clean_de in SEEN_C1:
+            continue
+        SEEN_C1.add(clean_de)
+        C1_ENTRIES.append({
+            "id": len(C1_ENTRIES) + 1,
+            "de": clean_de,
+            "tr": item[1].strip(),
+            "en": item[2].strip(),
+            "pos": item[3].strip(),
+            "level": item[4].strip(),
+            "example": item[5].strip(),
+            "example_tr": item[6].strip(),
+            "example_en": item[7].strip(),
+            "synonyms": item[8] or [],
+            "antonyms": item[9] or []
+        })
+
+    with open(output_vocab_c1, "w", encoding="utf-8") as f:
+        f.write("/**\n * DeutschLernen - Academic C1 German Study Deck\n")
+        f.write(" * High-yield vocabulary for C1 Hochschule, university studies, and academic mastery.\n */\n\n")
+        f.write("window.VOCAB_C1 = ")
+        json.dump(C1_ENTRIES, f, ensure_ascii=False, indent=2)
+        f.write(";\n")
+
+    print(f"Successfully generated: {output_vocab_c1} ({len(C1_ENTRIES)} entries)")
     return len(CORE_ENTRIES), len(B2_ENTRIES)
 
 if __name__ == "__main__":

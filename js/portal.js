@@ -7,17 +7,111 @@ let currentActiveMaterial = null;
 
 // Material cards data
 const materials = [
-  { icon:'📋', title:'Exam Guide', titleTr:'Sınav Rehberi', desc:'Structure, scoring, strategies', descTr:'Yapı, puanlama, stratejiler', en:'./docs/en/telc_b1_exam_guide.md', tr:'./docs/tr/telc_b1_exam_guide.md' },
-  { icon:'📅', title:'1-Month Plan', titleTr:'1 Aylık Plan', desc:'Day-by-day study schedule', descTr:'Gün gün çalışma programı', en:'./docs/en/1_month_study_plan.md', tr:'./docs/tr/1_month_study_plan.md' },
-  { icon:'📝', title:'Grammar & Vocab', titleTr:'Dil Bilgisi ve Kelime', desc:'Nebensätze, Perfekt, prepositions + 30 exercises', descTr:'Nebensätze, Perfekt, edatlar + 30 alıştırma', en:'./docs/en/review_grammar_vocab.md', tr:'./docs/tr/review_grammar_vocab.md' },
-  { icon:'📖', title:'Reading & Listening', titleTr:'Okuma ve Dinleme', desc:'Synonym recognition, strategies, 6 exercises', descTr:'Eşanlamlı tanıma, stratejiler, 6 alıştırma', en:'./docs/en/review_reading_listening.md', tr:'./docs/tr/review_reading_listening.md' },
-  { icon:'✍️', title:'Writing & Speaking', titleTr:'Yazma ve Konuşma', desc:'Letter templates, model answer, speaking phrases', descTr:'Mektup şablonları, model cevap, konuşma ifadeleri', en:'./docs/en/review_writing_speaking.md', tr:'./docs/tr/review_writing_speaking.md' },
-  { icon:'🔍', title:'Diagnostic Exam', titleTr:'Tanılama Sınavı', desc:'Day 1 assessment — find your weak spots', descTr:'1. gün değerlendirmesi — zayıf noktalarınızı bulun', en:'./docs/en/mock_exam_diagnostic.md', tr:'./docs/tr/mock_exam_diagnostic.md' },
-  { icon:'🎯', title:'Final Mock Exam', titleTr:'Final Sınavı', desc:'Week 4 full simulation under exam conditions', descTr:'4. hafta sınav koşullarında tam simülasyon', en:'./docs/en/mock_exam_final.md', tr:'./docs/tr/mock_exam_final.md' },
-  { icon:'🌐', title:'Free Resources', titleTr:'Ücretsiz Kaynaklar', desc:'Official tests, YouTube, DW courses, websites', descTr:'Resmi testler, YouTube, DW kursları, web siteleri', en:'./docs/en/example_exams_resources.md', tr:'./docs/tr/example_exams_resources.md' },
-  { icon:'📚', title:'Vocab: Verbs', titleTr:'Kelime: Fiiller', desc:'~500 verbs & adjectives with examples', descTr:'~500 fiil ve sıfat, örneklerle', en:'./docs/en/vocab_part1_verbs_adjectives.md', tr:'./docs/tr/vocab_part1_fiiller_sifatlar.md' },
-  { icon:'📚', title:'Vocab: Nouns', titleTr:'Kelime: İsimler', desc:'~550 nouns by exam theme', descTr:'~550 isim, sınav temalarına göre', en:'./docs/en/vocab_part2_nouns_themes.md', tr:'./docs/tr/vocab_part2_isimler_temalar.md' },
+  { icon:'📋', title:'Exam Guide', titleTr:'Sınav Rehberi', desc:'Structure, scoring, strategies', descTr:'Yapı, puanlama, stratejiler', en:'./docs/en/telc_b1_exam_guide.md', tr:'./docs/tr/telc_b1_exam_guide.md', levels: ['B1'] },
+  { icon:'📅', title:'1-Month Plan', titleTr:'1 Aylık Plan', desc:'Day-by-day study schedule', descTr:'Gün gün çalışma programı', en:'./docs/en/1_month_study_plan.md', tr:'./docs/tr/1_month_study_plan.md', levels: ['B1'] },
+  { icon:'📝', title:'Grammar & Vocab', titleTr:'Dil Bilgisi ve Kelime', desc:'Nebensätze, Perfekt, prepositions + 30 exercises', descTr:'Nebensätze, Perfekt, edatlar + 30 alıştırma', en:'./docs/en/review_grammar_vocab.md', tr:'./docs/tr/review_grammar_vocab.md', levels: ['A2', 'B1', 'B2'] },
+  { icon:'📖', title:'Reading & Listening', titleTr:'Okuma ve Dinleme', desc:'Synonym recognition, strategies, 6 exercises', descTr:'Eşanlamlı tanıma, stratejiler, 6 alıştırma', en:'./docs/en/review_reading_listening.md', tr:'./docs/tr/review_reading_listening.md', levels: ['B1', 'B2'] },
+  { icon:'✍️', title:'Writing & Speaking', titleTr:'Yazma ve Konuşma', desc:'Letter templates, model answer, speaking phrases', descTr:'Mektup şablonları, model cevap, konuşma ifadeleri', en:'./docs/en/review_writing_speaking.md', tr:'./docs/tr/review_writing_speaking.md', levels: ['B1', 'B2'] },
+  { icon:'🔍', title:'Diagnostic Exam', titleTr:'Tanılama Sınavı', desc:'Day 1 assessment — find your weak spots', descTr:'1. gün değerlendirmesi — zayıf noktalarınızı bulun', en:'./docs/en/mock_exam_diagnostic.md', tr:'./docs/tr/mock_exam_diagnostic.md', levels: ['B1'] },
+  { icon:'🎯', title:'Final Mock Exam', titleTr:'Final Sınavı', desc:'Week 4 full simulation under exam conditions', descTr:'4. hafta sınav koşullarında tam simülasyon', en:'./docs/en/mock_exam_final.md', tr:'./docs/tr/mock_exam_final.md', levels: ['B1'] },
+  { icon:'🌐', title:'Free Resources', titleTr:'Ücretsiz Kaynaklar', desc:'Official tests, YouTube, DW courses, websites', descTr:'Resmi testler, YouTube, DW kursları, web siteleri', en:'./docs/en/example_exams_resources.md', tr:'./docs/tr/example_exams_resources.md', levels: ['A1', 'A2', 'B1', 'B2'] },
+  { icon:'📚', title:'Vocab: Verbs', titleTr:'Kelime: Fiiller', desc:'~500 verbs & adjectives with examples', descTr:'~500 fiil ve sıfat, örneklerle', en:'./docs/en/vocab_part1_verbs_adjectives.md', tr:'./docs/tr/vocab_part1_fiiller_sifatlar.md', levels: ['A1', 'A2', 'B1'] },
+  { icon:'📚', title:'Vocab: Nouns', titleTr:'Kelime: İsimler', desc:'~550 nouns by exam theme', descTr:'~550 isim, sınav temalarına göre', en:'./docs/en/vocab_part2_nouns_themes.md', tr:'./docs/tr/vocab_part2_isimler_temalar.md', levels: ['A1', 'A2', 'B1'] },
 ];
+
+// Goals & Wishes Configuration
+const GOAL_CONFIG = {
+  'goal-a1-a2': {
+    id: 'goal-a1-a2',
+    icon: '🌱',
+    nameEn: 'A1–A2 Fundamentals',
+    nameTr: 'A1–A2 Temel Başlangıç',
+    level: 'A1',
+    levels: ['A1', 'A2'],
+    badgeEn: '🌱 Goal: A1–A2 Fundamentals & Daily German',
+    badgeTr: '🌱 Hedef: A1–A2 Temel ve Günlük Almanca',
+    titleEn: 'Master A1–A2 German Fundamentals',
+    titleTr: 'A1–A2 Almanca Temellerinde Uzmanlaşın',
+    descEn: 'Build your foundational vocabulary, essential daily verbs, and sentence grammar. Start drilling with our interactive Wortschatz Trainer.',
+    descTr: 'Temel kelime dağarcığınızı, en sık kullanılan günlük fiilleri ve cümle yapılarını geliştirin. İnteraktif Wortschatz Trainer ile hemen başlayın.',
+    hintEn: 'Focusing on daily life vocabulary, essential verbs & foundational grammar',
+    hintTr: 'Günlük yaşam kelimeleri, temel fiiller ve başlangıç dilbilgisine odaklanıyor',
+    trainerUrl: 'trainer.html?level=A1'
+  },
+  'goal-b1': {
+    id: 'goal-b1',
+    icon: '🏆',
+    nameEn: 'telc B1 Exam',
+    nameTr: 'telc B1 Sınavı',
+    level: 'B1',
+    levels: ['B1'],
+    badgeEn: '📚 telc Deutsch B1 Exam Preparation & Vocab Master',
+    badgeTr: '📚 telc Deutsch B1 Sınav Hazırlığı ve Kelime Antrenörü',
+    titleEn: 'Pass telc Deutsch B1<br>with Confidence',
+    titleTr: 'telc Deutsch B1 Sınavını<br>Güvenle Geçin',
+    descEn: 'A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates.',
+    descTr: 'telc Deutsch B1 (180/300 barajı) için eksiksiz çalışma portalı ve 2.000 kelimelik interaktif antrenör. Dilbilgisi, akıllı kelime antrenmanı, deneme sınavları ve mektup şablonları.',
+    hintEn: 'Focusing on 30-day curriculum, mock exams & B1 vocabulary',
+    hintTr: '30 günlük program, deneme sınavları ve B1 kelimelerine odaklanıyor',
+    trainerUrl: 'trainer.html?level=B1'
+  },
+  'goal-b2': {
+    id: 'goal-b2',
+    icon: '💼',
+    nameEn: 'B2 Professional',
+    nameTr: 'B2 İleri Düzey & İş',
+    level: 'B2',
+    levels: ['B2'],
+    badgeEn: '💼 Goal: B2 Advanced & Professional German',
+    badgeTr: '💼 Hedef: B2 İleri Düzey ve İş Almancası',
+    titleEn: 'Advance to B2 Professional Fluency',
+    titleTr: 'B2 İleri Düzey Akıcılığa Ulaşın',
+    descEn: 'Prepare for workplace communication, complex texts, advanced connectors, and the specialized B2 vocabulary deck.',
+    descTr: 'İş yeri iletişimi, karmaşık metinler, ileri düzey bağlaçlar ve özel B2 kelime destesi ile seviyenizi yükseltin.',
+    hintEn: 'Focusing on advanced connectors, workplace expressions & B2 deck',
+    hintTr: 'İleri düzey bağlaçlar, iş hayatı kalıpları ve B2 kelime destesine odaklanıyor',
+    trainerUrl: 'trainer.html?level=B2&deck=b2'
+  },
+  'goal-c1': {
+    id: 'goal-c1',
+    icon: '🎓',
+    nameEn: 'C1 Academic',
+    nameTr: 'C1 Akademik',
+    level: 'C1',
+    levels: ['C1'],
+    badgeEn: '🎓 Goal: C1 Hochschule & Academic Mastery',
+    badgeTr: '🎓 Hedef: C1 Üniversite & Akademik Uzmanlık',
+    titleEn: 'Master C1 Academic German',
+    titleTr: 'C1 Akademik Almancada Ustalaşın',
+    descEn: 'High-frequency academic vocabulary for university studies, research papers, and professional settings. Complex sentence structures and scholarly terminology.',
+    descTr: 'Üniversite eğitimi, akademik makaleler ve profesyonel ortamlar için yüksek frekanslı akademik kelimeler. Karmaşık cümle yapıları ve bilimsel terminoloji.',
+    hintEn: 'Focusing on academic vocabulary, university terminology & research language',
+    hintTr: 'Akademik kelimeler, üniversite terminolojisi ve araştırma diline odaklanıyor',
+    trainerUrl: 'trainer.html?level=C1&deck=c1'
+  },
+  'goal-vocab': {
+    id: 'goal-vocab',
+    icon: '⚡',
+    nameEn: 'Rapid Vocab Trainer',
+    nameTr: 'Hızlı Kelime Antrenmanı',
+    level: 'ALL',
+    levels: ['A1', 'A2', 'B1', 'B2', 'C1'],
+    badgeEn: '⚡ Interactive Wortschatz Speed Trainer',
+    badgeTr: '⚡ İnteraktif Kelime Hız Antrenörü',
+    titleEn: 'Supercharge Your German Vocabulary',
+    titleTr: 'Almanca Kelime Dağarcığınızı Güçlendirin',
+    descEn: '2,000+ words across A1–C1 CEFR levels with native speech audio, 5 quiz modes, anti-repetition rotation, and streak tracking.',
+    descTr: 'A1–C1 CEFR seviyelerinde 2.000+ kelime, sesli telaffuz, 5 test modu, akıllı tekrar algoritması ve seri takibi.',
+    hintEn: 'Direct speed drill mode with native TTS audio & spaced repetition',
+    hintTr: 'Sesli telaffuz ve akıllı algoritma ile doğrudan hızlı test modu',
+    trainerUrl: 'trainer.html?level=ALL'
+  }
+};
+
+let currentGoalId = localStorage.getItem('deutschlernen_goal') || 'goal-b1';
+let currentGoalLevel = localStorage.getItem('deutschlernen_level') || (GOAL_CONFIG[currentGoalId] ? GOAL_CONFIG[currentGoalId].level : 'B1');
+let pendingGoalId = currentGoalId;
+let pendingGoalLevel = currentGoalLevel;
 
 const navIds = ['exam-guide', 'study-plan', 'grammar', 'reading', 'writing', 'diagnostic', 'final-exam', 'resources', 'vocab1', 'vocab2'];
 function renderSidebar() {
@@ -47,11 +141,21 @@ function renderCards() {
   const cardsEl = document.getElementById('material-cards');
   if (!cardsEl) return;
   cardsEl.innerHTML = '';
+
+  const activeGoal = GOAL_CONFIG[currentGoalId] || GOAL_CONFIG['goal-b1'];
+  const targetLevels = activeGoal.levels || [currentGoalLevel];
+
   materials.forEach((m, i) => {
     const title = currentLang === 'en' ? m.title : m.titleTr;
     const desc = currentLang === 'en' ? m.desc : m.descTr;
     const btnText = currentLang === 'en' ? '📄 Open Module &rarr;' : '📄 Modülü Aç &rarr;';
-    cardsEl.innerHTML += `<div class="card" onclick="openMaterial(${i})">
+    const isRecommended = m.levels && m.levels.some(lvl => targetLevels.includes(lvl));
+    const recBadge = isRecommended 
+      ? `<span class="card-badge-recommended" data-en="⭐ Recommended" data-tr="⭐ Önerilen">${currentLang === 'en' ? '⭐ Recommended' : '⭐ Önerilen'}</span>` 
+      : '';
+
+    cardsEl.innerHTML += `<div class="card ${isRecommended ? 'recommended' : ''}" onclick="openMaterial(${i})">
+      ${recBadge}
       <div class="card-icon">${m.icon}</div>
       <h3 data-en="${m.title}" data-tr="${m.titleTr}">${title}</h3>
       <p data-en="${m.desc}" data-tr="${m.descTr}">${desc}</p>
@@ -453,6 +557,7 @@ function setLang(lang) {
   renderSidebar(); // Re-render sidebar to update titles
   updateDayTracker();
   updateCard(true); // Redraw flashcard to match language instantly
+  updateGoalDisplays(); // Update goal labels and badges
 
   // Update rating label text to match language
   const starsWrap = document.getElementById('feedback-stars');
@@ -694,5 +799,115 @@ function initFeedbackForm() {
   }
 }
 
+// Entrance Goal Selection & Level Management
+function openGoalModal() {
+  const modal = document.getElementById('entrance-modal');
+  if (!modal) return;
+  modal.style.display = 'flex';
+  requestAnimationFrame(() => {
+    modal.classList.add('open');
+  });
+
+  pendingGoalId = currentGoalId;
+  pendingGoalLevel = currentGoalLevel;
+  selectGoalCard(pendingGoalId, pendingGoalLevel, false);
+}
+
+function closeGoalModal() {
+  const modal = document.getElementById('entrance-modal');
+  if (!modal) return;
+  modal.classList.remove('open');
+  setTimeout(() => {
+    modal.style.display = 'none';
+  }, 250);
+}
+
+function selectGoalCard(goalId, defaultLevel, updatePendingLevel = true) {
+  pendingGoalId = goalId;
+  if (updatePendingLevel && defaultLevel) {
+    pendingGoalLevel = defaultLevel;
+    const levelSelect = document.getElementById('entrance-level-select');
+    if (levelSelect) levelSelect.value = defaultLevel;
+  }
+  document.querySelectorAll('.goal-card').forEach(c => {
+    const isThis = c.getAttribute('data-goal-id') === goalId;
+    c.classList.toggle('active', isThis);
+    c.setAttribute('aria-checked', isThis ? 'true' : 'false');
+  });
+}
+
+function onEntranceLevelChange(levelVal) {
+  pendingGoalLevel = levelVal;
+}
+
+function applyGoalSelection() {
+  currentGoalId = pendingGoalId || 'goal-b1';
+  currentGoalLevel = pendingGoalLevel || 'B1';
+  
+  localStorage.setItem('deutschlernen_goal', currentGoalId);
+  localStorage.setItem('deutschlernen_level', currentGoalLevel);
+
+  if (currentGoalId === 'goal-vocab') {
+    closeGoalModal();
+    window.location.href = `trainer.html?level=${encodeURIComponent(currentGoalLevel)}`;
+    return;
+  }
+
+  updateGoalDisplays();
+  renderCards(); // Re-render material cards to reflect recommendation badges
+  closeGoalModal();
+}
+
+function updateGoalDisplays() {
+  const goal = GOAL_CONFIG[currentGoalId] || GOAL_CONFIG['goal-b1'];
+  const goalName = currentLang === 'en' ? goal.nameEn : goal.nameTr;
+  const goalHint = currentLang === 'en' ? goal.hintEn : goal.hintTr;
+
+  // Header chip
+  const topGoalIcon = document.getElementById('current-goal-icon');
+  const topGoalText = document.getElementById('current-goal-text');
+  if (topGoalIcon) topGoalIcon.textContent = goal.icon;
+  if (topGoalText) topGoalText.textContent = `${currentLang === 'en' ? 'Goal:' : 'Hedef:'} ${goalName}`;
+
+  // Sidebar badge
+  const sidebarGoalName = document.getElementById('sidebar-goal-name');
+  const sidebarGoalSub = document.getElementById('sidebar-goal-sub');
+  if (sidebarGoalName) sidebarGoalName.textContent = goalName;
+  if (sidebarGoalSub) {
+    sidebarGoalSub.textContent = `${currentLang === 'en' ? 'Target Level:' : 'Hedef Seviye:'} ${currentGoalLevel}`;
+  }
+
+  // Hero section badge & title
+  const heroBadge = document.getElementById('hero-active-goal-badge');
+  const heroTitle = document.getElementById('hero-main-title');
+  const heroDesc = document.getElementById('hero-main-desc');
+  if (heroBadge) heroBadge.innerHTML = currentLang === 'en' ? goal.badgeEn : goal.badgeTr;
+  if (heroTitle) heroTitle.innerHTML = currentLang === 'en' ? goal.titleEn : goal.titleTr;
+  if (heroDesc) heroDesc.innerHTML = currentLang === 'en' ? goal.descEn : goal.descTr;
+
+  // Hero goal action strip
+  const stripTitle = document.getElementById('hero-goal-strip-title');
+  const stripHint = document.getElementById('hero-goal-strip-hint');
+  const stripIcon = document.getElementById('hero-goal-strip-icon');
+  const stripTrainerLink = document.getElementById('hero-goal-trainer-link');
+
+  if (stripTitle) stripTitle.textContent = `${currentLang === 'en' ? 'Active Track:' : 'Aktif Program:'} ${goalName}`;
+  if (stripHint) stripHint.textContent = goalHint;
+  if (stripIcon) stripIcon.textContent = goal.icon;
+  if (stripTrainerLink) stripTrainerLink.href = goal.trainerUrl || `trainer.html?level=${currentGoalLevel}`;
+}
+
+function initEntranceGoal() {
+  updateGoalDisplays();
+  const storedGoal = localStorage.getItem('deutschlernen_goal');
+  if (!storedGoal) {
+    // Show entrance modal on first visit
+    setTimeout(() => {
+      openGoalModal();
+    }, 400);
+  }
+}
+
 // Initialize components
 initFeedbackForm();
+initEntranceGoal();

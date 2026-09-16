@@ -126,6 +126,11 @@ eval(fs.readFileSync(path.join(ROOT_DIR, 'data', 'vocab_b2.js'), 'utf8'));
 assert(Array.isArray(global.VOCAB_B2), 'VOCAB_B2 must be an array');
 assert(global.VOCAB_B2.length >= 50, 'VOCAB_B2 must contain >= 50 items');
 
+console.log('▶ Evaluating data/vocab_c1.js...');
+eval(fs.readFileSync(path.join(ROOT_DIR, 'data', 'vocab_c1.js'), 'utf8'));
+assert(Array.isArray(global.VOCAB_C1), 'VOCAB_C1 must be an array');
+assert(global.VOCAB_C1.length >= 40, 'VOCAB_C1 must contain >= 40 items');
+
 console.log('▶ Evaluating js/vocabTrainer.js...');
 eval(fs.readFileSync(path.join(ROOT_DIR, 'js', 'vocabTrainer.js'), 'utf8'));
 assert(global.VocabApp, 'VocabApp must be instantiated globally');
@@ -199,4 +204,40 @@ assert.doesNotThrow(() => {
 }, 'Advancing to next card must execute without error');
 assert.strictEqual(global.VocabApp.currentIndex, 1, 'Card index must advance to 1');
 
+// 6. Test Multi-Level CEFR Filtering (A1, A2, B1, B2)
+console.log('▶ Testing CEFR level filtering and B2 deck integration...');
+global.VocabApp.settings.level = 'B2';
+const b2Pool = global.VocabApp.getAllWordsPool();
+assert(b2Pool.length >= 50, 'B2 pool must contain >= 50 words when level is B2');
+const b2Deck = global.VocabApp.deckGenerator.generateDeck(b2Pool, { level: 'B2', deckSize: 10 });
+assert(b2Deck.length > 0, 'Must generate a non-empty deck for B2 level');
+b2Deck.forEach(card => {
+  assert.strictEqual(card.level, 'B2', `Deck card level must be B2, got ${card.level}`);
+});
+
+global.VocabApp.settings.level = 'A1';
+const a1Pool = global.VocabApp.getAllWordsPool();
+const a1Deck = global.VocabApp.deckGenerator.generateDeck(a1Pool, { level: 'A1', deckSize: 10 });
+assert(a1Deck.length > 0, 'Must generate a non-empty deck for A1 level');
+a1Deck.forEach(card => {
+  assert.strictEqual(card.level, 'A1', `Deck card level must be A1, got ${card.level}`);
+});
+
+// 6b. Test C1 level filtering
+global.VocabApp.settings.level = 'C1';
+const c1Pool = global.VocabApp.getAllWordsPool();
+assert(c1Pool.length >= 40, 'C1 pool must contain >= 40 words when level is C1');
+const c1Deck = global.VocabApp.deckGenerator.generateDeck(c1Pool, { level: 'C1', deckSize: 10 });
+assert(c1Deck.length > 0, 'Must generate a non-empty deck for C1 level');
+c1Deck.forEach(card => {
+  assert.strictEqual(card.level, 'C1', `Deck card level must be C1, got ${card.level}`);
+});
+
+// 6c. Test 'all' deck includes C1 words
+global.VocabApp.settings.level = 'ALL';
+global.VocabApp.settings.deck = 'all';
+const allPool = global.VocabApp.getAllWordsPool();
+assert(allPool.length > 2050, `'all' deck pool must include core + B2 + C1 words, got ${allPool.length}`);
+
 console.log('✅ All Headless Frontend JS Unit Tests Passed successfully!');
+
