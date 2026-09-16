@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deutschlernen-v5';
+const CACHE_NAME = 'deutschlernen-v6';
 const ASSETS = [
   './',
   './index.html',
@@ -14,6 +14,9 @@ const ASSETS = [
   './data/vocab_b2.js',
   './icon-192.png',
   './icon-512.png',
+  './apple-touch-icon.png',
+  './favicon-32.png',
+  './favicon.ico',
   './manifest.json',
   './TELC_B1_Preparation/telc_b1_exam_guide.md',
   './TELC_B1_Haz%C4%B1rl%C4%B1k/telc_b1_exam_guide.md',
