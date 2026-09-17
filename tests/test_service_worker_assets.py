@@ -10,6 +10,12 @@ import re
 import unittest
 import urllib.parse
 
+try:
+    from PIL import Image as _PILImage  # noqa: F401
+    PIL_AVAILABLE = True
+except ImportError:
+    PIL_AVAILABLE = False
+
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 
@@ -105,6 +111,7 @@ class TestServiceWorkerAndPWAAssets(unittest.TestCase):
                 self.assertTrue(os.path.exists(disk_path), f"{page} links to missing icon: {href} -> {disk_path}")
 
 
+    @unittest.skipUnless(PIL_AVAILABLE, "Pillow not installed — install with: pip install Pillow")
     def test_transparent_icon_generation_and_taskbar_clarity(self):
         """Verify generated icons have 100% transparent backgrounds and prominent sizing."""
         import tempfile
