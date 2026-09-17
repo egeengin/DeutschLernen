@@ -89,8 +89,9 @@
       labelPassword: "Password",
       signInAction: "Sign In",
       signUpAction: "Create Account",
-      orDivider: "OR",
       googleSignIn: "Continue with Google",
+      googleSignInRedirect: "Popup blocked? Sign in with full-page redirect →",
+      authRedirecting: "Redirecting to Google Sign-In...",
       feedbackBtn: "Feedback",
       feedbackTitle: "Send Feedback & Suggestions",
       feedbackUsername: "Name / Nickname",
@@ -190,8 +191,9 @@
       labelPassword: "Şifre",
       signInAction: "Giriş Yap",
       signUpAction: "Hesap Oluştur",
-      orDivider: "VEYA",
       googleSignIn: "Google ile Devam Et",
+      googleSignInRedirect: "Pencere açılmıyor mu? Sayfa yönlendirmesiyle giriş yapın →",
+      authRedirecting: "Google Girişine yönlendiriliyor...",
       feedbackBtn: "Geri Bildirim",
       feedbackTitle: "Geri Bildirim ve Öneriler",
       feedbackUsername: "İsim / Takma Ad",
@@ -291,8 +293,9 @@
       labelPassword: "كلمة المرور",
       signInAction: "تسجيل الدخول",
       signUpAction: "إنشاء حساب",
-      orDivider: "أو",
       googleSignIn: "المتابعة باستخدام Google",
+      googleSignInRedirect: "تعذر فتح النافذة؟ الدخول عبر إعادة التوجيه ←",
+      authRedirecting: "جاري إعادة التوجيه إلى Google...",
       feedbackBtn: "ملاحظات",
       feedbackTitle: "إرسال الملاحظات والاقتراحات",
       feedbackUsername: "الاسم / اللقب",
@@ -392,8 +395,9 @@
       labelPassword: "Пароль",
       signInAction: "Увійти",
       signUpAction: "Створити акаунт",
-      orDivider: "АБО",
       googleSignIn: "Продовжити з Google",
+      googleSignInRedirect: "Спливаюче вікно заблоковано? Увійти через перенаправлення →",
+      authRedirecting: "Перенаправлення на Google...",
       feedbackBtn: "Відгук",
       feedbackTitle: "Надіслати відгук та пропозиції",
       feedbackUsername: "Ім'я / Псевдонім",
@@ -816,8 +820,8 @@
         authForm: document.getElementById('auth-form'),
         authEmail: document.getElementById('auth-email'),
         authPassword: document.getElementById('auth-password'),
-        authDisplayName: document.getElementById('auth-display-name'),
         btnGoogleAuth: document.getElementById('btn-google-auth'),
+        btnGoogleAuthRedirect: document.getElementById('btn-google-auth-redirect'),
         authNoticeMsg: document.getElementById('auth-notice-msg'),
         authLoggedInView: document.getElementById('auth-logged-in-view'),
         authLoggedOutView: document.getElementById('auth-logged-out-view'),
@@ -1674,16 +1678,39 @@
         });
       }
 
-      // Google Sign-In
+      // Google Sign-In (Popup with auto-fallback)
       if (this.dom.btnGoogleAuth) {
         this.dom.btnGoogleAuth.addEventListener('click', async () => {
           const texts = I18N[this.settings.lang];
           this.setAuthNotice("", "");
+          this.dom.btnGoogleAuth.disabled = true;
+          this.dom.btnGoogleAuth.style.opacity = '0.7';
           try {
             if (!window.FirebaseService) throw new Error("Firebase Service is not available.");
-            await window.FirebaseService.signInWithGoogle();
-            this.setAuthNotice(texts.authSuccess, "success");
-            setTimeout(() => this.closeAuthModal(), 1200);
+            const user = await window.FirebaseService.signInWithGoogle({ mode: 'popup' });
+            if (user) {
+              this.setAuthNotice(texts.authSuccess, "success");
+              setTimeout(() => this.closeAuthModal(), 1200);
+            } else {
+              this.setAuthNotice(texts.authRedirecting, "info");
+            }
+          } catch (err) {
+            this.setAuthNotice(err.message, "error");
+          } finally {
+            this.dom.btnGoogleAuth.disabled = false;
+            this.dom.btnGoogleAuth.style.opacity = '1';
+          }
+        });
+      }
+
+      // Direct Redirect Sign-In
+      if (this.dom.btnGoogleAuthRedirect) {
+        this.dom.btnGoogleAuthRedirect.addEventListener('click', async () => {
+          const texts = I18N[this.settings.lang];
+          this.setAuthNotice(texts.authRedirecting, "info");
+          try {
+            if (!window.FirebaseService) throw new Error("Firebase Service is not available.");
+            await window.FirebaseService.signInWithGoogle({ mode: 'redirect' });
           } catch (err) {
             this.setAuthNotice(err.message, "error");
           }

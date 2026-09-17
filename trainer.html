@@ -308,6 +308,11 @@
             </svg>
             <span data-i18n="googleSignIn">Continue with Google</span>
           </button>
+          <div style="text-align:center; margin-top:8px;">
+            <button type="button" id="btn-google-auth-redirect" class="btn-link-subtle" style="background:none; border:none; color:var(--text-muted,#94a3b8); font-size:0.8rem; cursor:pointer; text-decoration:underline; padding:4px 8px;" data-i18n="googleSignInRedirect">
+              Popup blocked? Sign in with full-page redirect &rarr;
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -449,6 +454,7 @@
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('sw.js')
+          .then(reg => reg.update())
           .catch(err => console.warn('SW registration failed:', err));
       });
     }

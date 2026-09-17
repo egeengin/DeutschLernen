@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deutschlernen-v8';
+const CACHE_NAME = 'deutschlernen-v9';
 const ASSETS = [
   './',
   './index.html',
@@ -63,7 +63,24 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
+  // Only handle GET requests with cache
+  if (event.request.method !== 'GET') {
+    return;
+  }
+
   const url = new URL(event.request.url);
+
+  // Bypass service worker entirely for Firebase Auth, OAuth, Firestore and dynamic APIs
+  if (
+    url.hostname.includes('identitytoolkit.googleapis.com') ||
+    url.hostname.includes('securetoken.googleapis.com') ||
+    url.hostname.includes('firestore.googleapis.com') ||
+    url.hostname.includes('accounts.google.com') ||
+    url.hostname.includes('firebaseapp.com') ||
+    url.hostname.includes('firebasestorage.app')
+  ) {
+    return;
+  }
 
   // Navigation requests: Network first with cache fallback
   if (event.request.mode === 'navigate') {
@@ -73,9 +90,14 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // External CDN libraries (marked, mermaid, fonts): Cache-first with dynamic caching
+  // External CDN static assets (fonts, flag icons, jsdelivr): Cache-first with dynamic caching
   if (url.origin !== self.location.origin) {
-    if (url.hostname.includes('jsdelivr.net') || url.hostname.includes('googleapis.com') || url.hostname.includes('gstatic.com') || url.hostname.includes('flagcdn.com')) {
+    if (
+      url.hostname === 'fonts.googleapis.com' ||
+      url.hostname === 'fonts.gstatic.com' ||
+      url.hostname.includes('jsdelivr.net') ||
+      url.hostname.includes('flagcdn.com')
+    ) {
       event.respondWith(
         caches.match(event.request).then(cached => {
           if (cached) return cached;
@@ -90,6 +112,8 @@ self.addEventListener('fetch', event => {
       );
       return;
     }
+    // Let other external origins (e.g. gstatic modules) stream natively
+    return;
   }
 
   // Local assets: Stale-While-Revalidate (instant response from cache + background refresh)

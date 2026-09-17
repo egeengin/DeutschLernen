@@ -22,10 +22,12 @@ class TestServiceWorkerAndPWAAssets(unittest.TestCase):
         self.assertTrue(os.path.exists(self.manifest_path), "manifest.json must exist.")
 
     def test_sw_cache_version_v8(self):
-        """Verify service worker cache version has incremented to deutschlernen-v8."""
+        """Verify service worker cache version is deutschlernen-v8 or newer (v9)."""
         with open(self.sw_path, "r", encoding="utf-8") as f:
             content = f.read()
-        self.assertIn("deutschlernen-v8", content, "sw.js must use CACHE_NAME deutschlernen-v8.")
+        version_match = re.search(r"const CACHE_NAME = ['\"]deutschlernen-v(\d+)['\"];", content)
+        self.assertIsNotNone(version_match, "sw.js must define a versioned CACHE_NAME.")
+        self.assertGreaterEqual(int(version_match.group(1)), 8, "CACHE_NAME must be at least v8 or newer.")
 
     def test_all_sw_assets_exist_on_disk(self):
         """Verify that 100% of URLs listed in sw.js ASSETS physically exist on disk."""

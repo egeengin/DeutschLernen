@@ -206,7 +206,42 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn("getExample(item)", self.trainer_js)
         self.assertIn("setLanguage(lang)", self.trainer_js)
 
+    def test_portal_declaration_order_no_reference_error(self):
+        """Verify that ratingLabels is defined before setLang is invoked in portal.js to prevent TDZ ReferenceError."""
+        rating_labels_pos = self.portal_js.find("const ratingLabels = {")
+        set_lang_invoked_pos = self.portal_js.find("setLang(savedLang);")
+        self.assertNotEqual(rating_labels_pos, -1, "ratingLabels must be declared in portal.js")
+        self.assertNotEqual(set_lang_invoked_pos, -1, "setLang(savedLang) must be invoked in portal.js")
+        self.assertLess(rating_labels_pos, set_lang_invoked_pos,
+                        "ratingLabels must be defined before setLang(savedLang) is executed to prevent ReferenceError")
+
+    def test_firebase_auth_resilience_and_redirect_methods(self):
+        """Verify FirebaseService supports redirect sign-in, formatAuthError, and GoogleAuthProvider configuration."""
+        fb_path = os.path.join(ROOT_DIR, "js", "firebaseService.js")
+        with open(fb_path, "r", encoding="utf-8") as f:
+            fb_content = f.read()
+
+        self.assertIn("signInWithRedirect", fb_content)
+        self.assertIn("getRedirectResult", fb_content)
+        self.assertIn("formatAuthError", fb_content)
+        self.assertIn("auth/unauthorized-domain", fb_content)
+        self.assertIn("auth/popup-blocked", fb_content)
+        self.assertIn("auth/cancelled-popup-request", fb_content)
+        self.assertIn("select_account", fb_content)
+
+    def test_service_worker_auth_bypass(self):
+        """Verify service worker explicitly bypasses Firebase Auth, Firestore, and non-GET requests."""
+        sw_path = os.path.join(ROOT_DIR, "sw.js")
+        with open(sw_path, "r", encoding="utf-8") as f:
+            sw_content = f.read()
+
+        self.assertIn("event.request.method !== 'GET'", sw_content)
+        self.assertIn("identitytoolkit.googleapis.com", sw_content)
+        self.assertIn("firestore.googleapis.com", sw_content)
+        self.assertIn("securetoken.googleapis.com", sw_content)
+
 
 if __name__ == "__main__":
     unittest.main()
+
 

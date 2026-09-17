@@ -652,69 +652,7 @@ function setLang(lang) {
   }
 }
 
-// Initialize with saved language (persisted across sessions and pages)
-const savedLang = localStorage.getItem('site_lang') || localStorage.getItem('telc_lang') || 'en';
-setLang(savedLang);
-
-// Active nav tracking
-function showSection(id) {
-  document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
-  const active = document.querySelector(`.sidebar-nav a[href="#${id}"]`);
-  if (active) active.classList.add('active');
-  // Close mobile sidebar
-  document.querySelector('.sidebar').classList.remove('open');
-}
-
-// Intersection observer for active nav
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      const id = e.target.id;
-      document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
-      const match = document.querySelector(`.sidebar-nav a[href="#${id}"]`);
-      if (match) match.classList.add('active');
-    }
-  });
-}, { threshold: 0.3 });
-
-document.querySelectorAll('.section[id]').forEach(s => observer.observe(s));
-
-// --- PWA Service Worker Registration ---
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js')
-            .then(reg => console.log('SW registered'))
-            .catch(err => console.log('SW failed', err));
-    });
-}
-
-// --- Heatmap Logic ---
-function markStudyDay() {
-    const today = new Date().toISOString().slice(0, 10);
-    const heatmap = JSON.parse(localStorage.getItem('study_heatmap') || '{}');
-    heatmap[today] = (heatmap[today] || 0) + 1;
-    localStorage.setItem('study_heatmap', JSON.stringify(heatmap));
-    renderHeatmap();
-}
-
-function renderHeatmap() {
-    const container = document.getElementById('study-heatmap');
-    if (!container) return;
-    const data = JSON.parse(localStorage.getItem('study_heatmap') || '{}');
-    const today = new Date();
-    let html = '';
-    // Show last 28 days (4 weeks)
-    for (let i = 27; i >= 0; i--) {
-        const d = new Date(today);
-        d.setDate(today.getDate() - i);
-        const key = d.toISOString().slice(0, 10);
-        const intensity = Math.min(data[key] || 0, 4);
-        html += `<div class="heat-square" data-intensity="${intensity}" title="${key}: ${data[key] || 0} sessions"></div>`;
-    }
-    container.innerHTML = html;
-}
-
-// --- Community Feedback Handlers ---
+// --- Community Feedback Rating Labels & Display ---
 const ratingLabels = {
   en: {
     5: "5/5 — Excellent",
@@ -768,6 +706,72 @@ function updateRatingDisplay(rating, isPreview = false) {
     ratingText.textContent = ratingLabels[langKey][rating] || `${rating}/5`;
   }
 }
+
+// Initialize with saved language (persisted across sessions and pages)
+const savedLang = localStorage.getItem('site_lang') || localStorage.getItem('telc_lang') || 'en';
+setLang(savedLang);
+
+// Active nav tracking
+function showSection(id) {
+  document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+  const active = document.querySelector(`.sidebar-nav a[href="#${id}"]`);
+  if (active) active.classList.add('active');
+  // Close mobile sidebar
+  document.querySelector('.sidebar').classList.remove('open');
+}
+
+// Intersection observer for active nav
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const id = e.target.id;
+      document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+      const match = document.querySelector(`.sidebar-nav a[href="#${id}"]`);
+      if (match) match.classList.add('active');
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('.section[id]').forEach(s => observer.observe(s));
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+            .then(reg => {
+                reg.update();
+                console.log('SW registered and checked for updates');
+            })
+            .catch(err => console.log('SW failed', err));
+    });
+}
+
+// --- Heatmap Logic ---
+function markStudyDay() {
+    const today = new Date().toISOString().slice(0, 10);
+    const heatmap = JSON.parse(localStorage.getItem('study_heatmap') || '{}');
+    heatmap[today] = (heatmap[today] || 0) + 1;
+    localStorage.setItem('study_heatmap', JSON.stringify(heatmap));
+    renderHeatmap();
+}
+
+function renderHeatmap() {
+    const container = document.getElementById('study-heatmap');
+    if (!container) return;
+    const data = JSON.parse(localStorage.getItem('study_heatmap') || '{}');
+    const today = new Date();
+    let html = '';
+    // Show last 28 days (4 weeks)
+    for (let i = 27; i >= 0; i--) {
+        const d = new Date(today);
+        d.setDate(today.getDate() - i);
+        const key = d.toISOString().slice(0, 10);
+        const intensity = Math.min(data[key] || 0, 4);
+        html += `<div class="heat-square" data-intensity="${intensity}" title="${key}: ${data[key] || 0} sessions"></div>`;
+    }
+    container.innerHTML = html;
+}
+
+// --- Community Feedback Handlers ---
 
 function openFeedbackModal() {
   const modal = document.getElementById('feedback-modal');
