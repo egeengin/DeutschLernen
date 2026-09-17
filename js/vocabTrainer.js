@@ -217,6 +217,208 @@
       authSuccess: "Başarıyla giriş yapıldı!",
       authLoggedOut: "Çıkış yapıldı. Misafir modundasınız.",
       syncSuccess: "İlerlemeniz bulutla eşitlendi!"
+    },
+    ar: {
+      portalBack: "العودة إلى البوابة ←",
+      appTitle: "مدرب المفردات",
+      coreDeck: "المفردات الأساسية 2,000 (A1–B1)",
+      b2Deck: "مجموعة B2 المتقدمة",
+      c1Deck: "مجموعة C1 الأكاديمية",
+      allDeck: "جميع الكلمات مدمجة",
+      sessionLabel: "الجلسة",
+      streakLabel: "سلسلة الأيام",
+      reviewQueue: "قائمة مراجعة الأخطاء",
+      mode_de_meaning: "الألمانية ➔ المعنى",
+      mode_meaning_de: "المعنى ➔ الألمانية",
+      mode_synonyms: "المرادفات (DE ➔ DE)",
+      mode_antonyms: "الأضداد (المعاكسات)",
+      mode_mistakes: "مراجعة الأخطاء",
+      mode_sprint: "تحدي السرعة (دقيقتان)",
+      timerLabel: "الوقت",
+      sprintSummaryTitle: "اكتمل تحدي السرعة!",
+      sprintSummaryDesc: "إليك أداؤك تحت ضغط العد التنازلي للامتحان:",
+      sprintCardsAnswered: "تمت الإجابة",
+      sprintWpm: "بطاقات / دقيقة",
+      sprintTryAgain: "حاول مرة أخرى",
+      levelAll: "جميع المستويات",
+      deckSize: "البطاقات:",
+      startQuiz: "بدء التدريب",
+      nextWord: "الكلمة التالية (Enter)",
+      finishDeck: "اكتملت المجموعة!",
+      accuracy: "الدقة",
+      mastered: "متقنة",
+      learning: "قيد التعلم",
+      unseen: "غير مرئية",
+      inReview: "قيد المراجعة",
+      audioOn: "الصوت مشغل",
+      audioOff: "الصوت متوقف",
+      searchPlaceholder: "ابحث في أكثر من 2000 كلمة بالألمانية، العربية، الإنجليزية...",
+      emptyReview: "عمل رائع! لا توجد أخطاء في قائمة المراجعة حالياً.",
+      browserTitle: "قاموس المفردات والبحث",
+      exportData: "تصدير التقدم",
+      importData: "استيراد التقدم",
+      resetConfirm: "هل أنت متأكد من رغبتك في إعادة تعيين تقدمك في المفردات؟",
+      correctToast: "صحيح! تذكر ممتاز.",
+      wrongToast: "غير صحيح! تمت الإضافة إلى قائمة مراجعة الأخطاء.",
+      disclaimer: "أداة إعداد تعليمية مستقلة. telc هي علامة تجارية مسجلة لشركة telc gGmbH.",
+      privacyNotice: "خصوصية 100% على جهازك. تُحفظ بيانات دراستك محلياً فقط.",
+      exampleUsage: "مثال للاستخدام",
+      synonymsLabel: "المرادفات",
+      antonymsLabel: "الأضداد",
+      arenaSubhint: "اختر المعنى الصحيح أدناه أو اضغط على المفاتيح 1–4",
+      cardLabel: "بطاقة",
+      restartDeck: "إعادة بدء التدريب",
+      resetProgressBtn: "إعادة ضبط التقدم",
+      levelA1: "المستوى A1",
+      levelA2: "المستوى A2",
+      levelB1: "المستوى B1",
+      levelB2: "المستوى B2",
+      levelC1: "المستوى C1",
+      langSwitchBtn: "🇸🇦 العربية",
+      impressumLink: "🇩🇪 معلومات الناشر (§ 5 DDG)",
+      privacyLink: "🔒 سياسة الخصوصية (GDPR)",
+      termsLink: "📜 الشروط والعلامات التجارية",
+      accountTitle: "الحساب والمزامنة السحابية",
+      accountBtn: "الحساب",
+      loggedInAs: "مسجل الدخول كـ:",
+      syncActiveDesc: "يتم مزامنة تقدمك وسلسلتك ومراجعة الأخطاء تلقائياً عبر Cloud Firestore على جميع أجهزتك.",
+      syncNowBtn: "مزامنة الآن",
+      signOutBtn: "تسجيل الخروج",
+      tabLogin: "تسجيل الدخول",
+      tabRegister: "إنشاء حساب",
+      labelName: "الاسم الكامل / اللقب",
+      labelEmail: "البريد الإلكتروني",
+      labelPassword: "كلمة المرور",
+      signInAction: "تسجيل الدخول",
+      signUpAction: "إنشاء حساب",
+      orDivider: "أو",
+      googleSignIn: "المتابعة باستخدام Google",
+      feedbackBtn: "ملاحظات",
+      feedbackTitle: "إرسال الملاحظات والاقتراحات",
+      feedbackUsername: "الاسم / اللقب",
+      feedbackLocation: "الموقع (تلقائي)",
+      feedbackCategory: "الفئة",
+      catGeneral: "💡 ملاحظات / اقتراحات عامة",
+      catVocab: "📝 تصحيح مفردات / ترجمة",
+      catFeature: "✨ طلب ميزة جديدة",
+      catBug: "🐛 الإبلاغ عن خطأ",
+      feedbackRating: "تقييمك",
+      feedbackMessage: "رسالتك",
+      submitFeedbackBtn: "إرسال الملاحظات",
+      feedbackSuccess: "شكراً لك! تم استلام ملاحظاتك بنجاح.",
+      feedbackError: "فشل إرسال الملاحظات. يرجى المحاولة مرة أخرى.",
+      feedbackUserPlaceholder: "اسمك أو مجهول",
+      feedbackLocPlaceholder: "جاري تحديد الموقع...",
+      feedbackMsgPlaceholder: "أخبرنا بما يمكننا تحسينه أو أبلغ عن مشكلة...",
+      ratingExcellent: "5/5 — ممتاز",
+      ratingVeryGood: "4/5 — جيد جداً",
+      ratingGood: "3/5 — جيد",
+      ratingNeedsImprovement: "2/5 — يحتاج تحسين",
+      ratingPoor: "1/5 — ضعيف",
+      authSuccess: "تم تسجيل الدخول بنجاح!",
+      authLoggedOut: "تم تسجيل الخروج. أنت في وضع الضيف.",
+      syncSuccess: "تمت مزامنة التقدم مع السحابة!"
+    },
+    uk: {
+      portalBack: "← Назад до порталу",
+      appTitle: "Тренажер слів",
+      coreDeck: "Базові 2 000 (A1–B1)",
+      b2Deck: "Поглиблена колода B2",
+      c1Deck: "Академічна колода C1",
+      allDeck: "Усі слова разом",
+      sessionLabel: "Сесія",
+      streakLabel: "Серія днів",
+      reviewQueue: "Черга помилок",
+      mode_de_meaning: "Німецька ➔ Значення",
+      mode_meaning_de: "Значення ➔ Німецька",
+      mode_synonyms: "Синоніми (DE ➔ DE)",
+      mode_antonyms: "Антоніми (Протилежності)",
+      mode_mistakes: "Повторення помилок",
+      mode_sprint: "Спринт на час (2 хв)",
+      timerLabel: "Час",
+      sprintSummaryTitle: "Спринт завершено!",
+      sprintSummaryDesc: "Ось ваші результати під час зворотного відліку іспиту:",
+      sprintCardsAnswered: "Відповідей",
+      sprintWpm: "Карток / хв",
+      sprintTryAgain: "Спробувати ще раз",
+      levelAll: "Усі рівні",
+      deckSize: "Карток:",
+      startQuiz: "Почати тренування",
+      nextWord: "Наступне слово (Enter)",
+      finishDeck: "Колоду завершено!",
+      accuracy: "Точність",
+      mastered: "Засвоєно",
+      learning: "Вивчається",
+      unseen: "Не бачено",
+      inReview: "На повторенні",
+      audioOn: "Звук увімкнено",
+      audioOff: "Звук вимкнено",
+      searchPlaceholder: "Пошук 2000+ слів німецькою, українською, англійською...",
+      emptyReview: "Чудова робота! Зараз у черзі помилок нічого немає.",
+      browserTitle: "Словник та пошук",
+      exportData: "Експорт прогресу",
+      importData: "Імпорт прогресу",
+      resetConfirm: "Ви впевнені, що хочете скинути свій прогрес вивчення слів?",
+      correctToast: "Правильно! Відмінна пам'ять.",
+      wrongToast: "Неправильно! Додано до черги помилок для повторення.",
+      disclaimer: "Незалежний навчальний інструмент підготовки. telc є зареєстрованою торговою маркою telc gGmbH.",
+      privacyNotice: "100% конфіденційність на пристрої. Дані зберігаються лише локально.",
+      exampleUsage: "Приклад речення",
+      synonymsLabel: "Синоніми",
+      antonymsLabel: "Антоніми",
+      arenaSubhint: "Виберіть правильне значення нижче або натисніть клавіші 1–4",
+      cardLabel: "Картка",
+      restartDeck: "Почати тренування спочатку",
+      resetProgressBtn: "Скинути прогрес",
+      levelA1: "Рівень A1",
+      levelA2: "Рівень A2",
+      levelB1: "Рівень B1",
+      levelB2: "Рівень B2",
+      levelC1: "Рівень C1",
+      langSwitchBtn: "🇺🇦 Українська",
+      impressumLink: "🇩🇪 Вихідні дані (§ 5 DDG)",
+      privacyLink: "🔒 Політика конфіденційності (GDPR)",
+      termsLink: "📜 Умови та торгові марки",
+      accountTitle: "Акаунт та хмарна синхронізація",
+      accountBtn: "Акаунт",
+      loggedInAs: "Увійшли як:",
+      syncActiveDesc: "Ваш прогрес, серія днів та черга помилок автоматично синхронізуються через Cloud Firestore на всіх пристроях.",
+      syncNowBtn: "Синхронізувати зараз",
+      signOutBtn: "Вийти",
+      tabLogin: "Вхід",
+      tabRegister: "Реєстрація",
+      labelName: "Повне ім'я / Псевдонім",
+      labelEmail: "Електронна пошта",
+      labelPassword: "Пароль",
+      signInAction: "Увійти",
+      signUpAction: "Створити акаунт",
+      orDivider: "АБО",
+      googleSignIn: "Продовжити з Google",
+      feedbackBtn: "Відгук",
+      feedbackTitle: "Надіслати відгук та пропозиції",
+      feedbackUsername: "Ім'я / Псевдонім",
+      feedbackLocation: "Місцезнаходження (автовизначення)",
+      feedbackCategory: "Категорія",
+      catGeneral: "💡 Загальний відгук / пропозиція",
+      catVocab: "📝 Виправлення слова / перекладу",
+      catFeature: "✨ Запит на нову функцію",
+      catBug: "🐛 Звіт про помилку",
+      feedbackRating: "Ваша оцінка",
+      feedbackMessage: "Ваше повідомлення",
+      submitFeedbackBtn: "Надіслати відгук",
+      feedbackSuccess: "Дякуємо! Ваш відгук успішно отримано.",
+      feedbackError: "Не вдалося надіслати відгук. Будь ласка, спробуйте знову.",
+      feedbackUserPlaceholder: "Анонімно або ваше ім'я",
+      feedbackLocPlaceholder: "Визначення місцезнаходження...",
+      feedbackMsgPlaceholder: "Розкажіть нам, що можна покращити, або повідомте про помилку...",
+      ratingExcellent: "5/5 — Відмінно",
+      ratingVeryGood: "4/5 — Дуже добре",
+      ratingGood: "3/5 — Добре",
+      ratingNeedsImprovement: "2/5 — Потребує покращення",
+      ratingPoor: "1/5 — Погано",
+      authSuccess: "Успішний вхід!",
+      authLoggedOut: "Вийшли з акаунта. Працюєте в гостьовому режимі.",
+      syncSuccess: "Прогрес синхронізовано з хмарою!"
     }
   };
 
@@ -679,15 +881,39 @@
       return core;
     }
 
+    getMeaning(item) {
+      if (!item) return '';
+      const lang = this.settings.lang;
+      return (lang && item[lang]) || item.en || item.tr || '';
+    }
+
+    getExample(item) {
+      if (!item) return '';
+      const lang = this.settings.lang;
+      return (lang && item[`example_${lang}`]) || item.example_en || item.example_tr || '';
+    }
+
+    getI18nText(key) {
+      const lang = this.settings.lang;
+      return (I18N[lang] && I18N[lang][key]) || (I18N.en && I18N.en[key]) || '';
+    }
+
+    setLanguage(lang) {
+      this.settings.lang = lang;
+      localStorage.setItem('site_lang', this.settings.lang);
+      localStorage.setItem('telc_lang', this.settings.lang);
+      this.sessionManager.saveSettings(this.settings);
+      this.updateI18nLabels();
+      this.renderCurrentQuestion();
+    }
+
     bindEvents() {
       // Language Toggle
+      const LANG_CYCLE = ['en', 'tr', 'ar', 'uk'];
       this.dom.langBtn.addEventListener('click', () => {
-        this.settings.lang = this.settings.lang === 'en' ? 'tr' : 'en';
-        localStorage.setItem('site_lang', this.settings.lang);
-        localStorage.setItem('telc_lang', this.settings.lang);
-        this.sessionManager.saveSettings(this.settings);
-        this.updateI18nLabels();
-        this.renderCurrentQuestion();
+        const currIdx = LANG_CYCLE.indexOf(this.settings.lang);
+        const nextLang = LANG_CYCLE[(currIdx + 1) % LANG_CYCLE.length] || 'en';
+        this.setLanguage(nextLang);
       });
 
       // Theme Toggle
@@ -867,7 +1093,14 @@
         if (texts[key]) el.placeholder = texts[key];
       });
       this.updateAudioBtnState();
-      this.dom.langBtn.textContent = this.settings.lang === 'en' ? 'TR 🇹🇷' : 'EN 🇬🇧';
+      const LANG_LABELS = {
+        en: '🇬🇧 EN',
+        tr: '🇹🇷 TR',
+        ar: '🇸🇦 AR',
+        uk: '🇺🇦 UK'
+      };
+      this.dom.langBtn.textContent = LANG_LABELS[this.settings.lang] || '🌐 ' + (this.settings.lang || 'EN').toUpperCase();
+      this.dom.langBtn.title = `Switch Language (${(this.settings.lang || 'EN').toUpperCase()} active)`;
       if (this.dom.feedbackStars && typeof this.updateFeedbackRatingDisplay === 'function') {
         const curR = parseInt(this.dom.feedbackStars.getAttribute('data-rating') || '5', 10);
         this.updateFeedbackRatingDisplay(curR, false);
@@ -950,25 +1183,25 @@
       this.dom.arenaLevelBadge.textContent = item.level;
 
       // Render Question prompt according to selected Mode
-      const isEn = this.settings.lang === 'en';
       let promptTitle = "";
       let correctAnswerText = "";
 
       if (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint') {
         promptTitle = item.de;
-        correctAnswerText = isEn ? item.en : item.tr;
+        correctAnswerText = this.getMeaning(item);
       } else if (this.settings.mode === 'meaning_de') {
-        promptTitle = isEn ? item.en : item.tr;
+        promptTitle = this.getMeaning(item);
         correctAnswerText = item.de;
       } else if (this.settings.mode === 'synonyms') {
         promptTitle = item.de;
-        correctAnswerText = (item.synonyms && item.synonyms.length > 0) ? item.synonyms[0] : (isEn ? item.en : item.tr);
+        correctAnswerText = (item.synonyms && item.synonyms.length > 0) ? item.synonyms[0] : this.getMeaning(item);
       } else if (this.settings.mode === 'antonyms') {
         promptTitle = item.de;
-        correctAnswerText = (item.antonyms && item.antonyms.length > 0) ? item.antonyms[0] : (isEn ? item.en : item.tr);
+        correctAnswerText = (item.antonyms && item.antonyms.length > 0) ? item.antonyms[0] : this.getMeaning(item);
       }
 
       this.dom.arenaWordDe.textContent = promptTitle;
+      this.dom.arenaWordDe.setAttribute('dir', (this.settings.lang === 'ar' && this.settings.mode === 'meaning_de') ? 'rtl' : 'ltr');
 
       // Auto TTS if audio is on and prompt is German
       if (this.settings.audio && (this.settings.mode === 'de_meaning' || this.settings.mode === 'synonyms' || this.settings.mode === 'antonyms' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint')) {
@@ -982,12 +1215,14 @@
       // Generate 4 Distractor Options
       const options = this.generateOptions(item, correctAnswerText);
       this.dom.optionsGrid.innerHTML = '';
+      const isMeaningArabic = this.settings.lang === 'ar' && (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint');
 
       options.forEach((optText, i) => {
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'quiz-option-btn';
         btn.setAttribute('tabindex', '0');
+        if (isMeaningArabic) btn.setAttribute('dir', 'rtl');
         btn.innerHTML = `<span class="opt-key">${i + 1}</span><span class="opt-text">${optText}</span>`;
         btn.addEventListener('click', () => this.handleAnswer(btn, optText, correctAnswerText, item));
         this.dom.optionsGrid.appendChild(btn);
@@ -1020,7 +1255,7 @@
         if (distractors.size >= 4) break;
         let val = "";
         if (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint') {
-          val = isEn ? cand.en : cand.tr;
+          val = this.getMeaning(cand);
         } else if (this.settings.mode === 'meaning_de') {
           val = cand.de;
         } else if (this.settings.mode === 'synonyms') {
@@ -1041,7 +1276,7 @@
           if (distractors.size >= 4) break;
           let val = "";
           if (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint') {
-            val = isEn ? cand.en : cand.tr;
+            val = this.getMeaning(cand);
           } else if (this.settings.mode === 'meaning_de') {
             val = cand.de;
           } else if (this.settings.mode === 'synonyms') {
@@ -1102,9 +1337,10 @@
       this.refreshHeaderStats();
 
       // Show Rich Explanation Card
-      const texts = I18N[this.settings.lang];
+      const texts = I18N[this.settings.lang] || I18N.en;
       this.dom.explainExampleDe.textContent = item.example;
-      this.dom.explainExampleTrans.textContent = this.settings.lang === 'en' ? item.example_en : item.example_tr;
+      this.dom.explainExampleTrans.textContent = this.getExample(item);
+      this.dom.explainExampleTrans.setAttribute('dir', this.settings.lang === 'ar' ? 'rtl' : 'ltr');
 
       let synAntHtml = "";
       if (item.synonyms && item.synonyms.length > 0) {
@@ -1287,9 +1523,11 @@
       const filtered = q === '' 
         ? pool.slice(0, 50) 
         : pool.filter(w => 
-            w.de.toLowerCase().includes(q) || 
-            w.tr.toLowerCase().includes(q) || 
-            w.en.toLowerCase().includes(q)
+            (w.de && w.de.toLowerCase().includes(q)) || 
+            (w.tr && w.tr.toLowerCase().includes(q)) || 
+            (w.en && w.en.toLowerCase().includes(q)) ||
+            (w.ar && w.ar.toLowerCase().includes(q)) ||
+            (w.uk && w.uk.toLowerCase().includes(q))
           ).slice(0, 100);
 
       this.dom.searchResults.innerHTML = filtered.map(w => `
@@ -1301,7 +1539,7 @@
             <button class="mini-audio-btn" onclick="window.VocabApp.playSpeech('${w.de.replace(/'/g, "\\'")}')">🔊</button>
           </div>
           <div class="row-meanings">
-            <span>🇹🇷 ${w.tr}</span> · <span>🇬🇧 ${w.en}</span>
+            <span>🇹🇷 ${w.tr}</span> · <span>🇬🇧 ${w.en}</span>${w.ar ? ` · <span dir="rtl">🇸🇦 ${w.ar}</span>` : ''}${w.uk ? ` · <span>🇺🇦 ${w.uk}</span>` : ''}
           </div>
           <div class="row-example">
             <em>"${w.example}"</em>

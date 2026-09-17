@@ -239,5 +239,32 @@ global.VocabApp.settings.deck = 'all';
 const allPool = global.VocabApp.getAllWordsPool();
 assert(allPool.length > 2050, `'all' deck pool must include core + B2 + C1 words, got ${allPool.length}`);
 
+// 7. Test Multilingual Support (Arabic & Ukrainian)
+console.log('▶ Testing multilingual I18N and helper methods (AR & UK)...');
+const sampleWord = global.VOCAB_2000[0];
+assert(sampleWord.hasOwnProperty('ar'), 'VOCAB_2000 entries must have an "ar" property');
+assert(sampleWord.hasOwnProperty('uk'), 'VOCAB_2000 entries must have a "uk" property');
+assert(sampleWord.hasOwnProperty('example_ar'), 'VOCAB_2000 entries must have an "example_ar" property');
+assert(sampleWord.hasOwnProperty('example_uk'), 'VOCAB_2000 entries must have an "example_uk" property');
+
+// Test getMeaning & getExample
+global.VocabApp.settings.lang = 'ar';
+assert.strictEqual(global.VocabApp.getMeaning(sampleWord), sampleWord.ar || sampleWord.en, 'getMeaning for AR must return Arabic or English fallback');
+assert.strictEqual(global.VocabApp.getExample(sampleWord), sampleWord.example_ar || sampleWord.example_en, 'getExample for AR must return Arabic or English fallback');
+
+global.VocabApp.settings.lang = 'uk';
+assert.strictEqual(global.VocabApp.getMeaning(sampleWord), sampleWord.uk || sampleWord.en, 'getMeaning for UK must return Ukrainian or English fallback');
+assert.strictEqual(global.VocabApp.getExample(sampleWord), sampleWord.example_uk || sampleWord.example_en, 'getExample for UK must return Ukrainian or English fallback');
+
+// Test language switching
+assert.doesNotThrow(() => {
+  global.VocabApp.setLanguage('ar');
+  assert.strictEqual(global.VocabApp.settings.lang, 'ar');
+  global.VocabApp.setLanguage('uk');
+  assert.strictEqual(global.VocabApp.settings.lang, 'uk');
+  global.VocabApp.setLanguage('en');
+}, 'Switching between AR, UK, and EN must execute cleanly');
+
 console.log('✅ All Headless Frontend JS Unit Tests Passed successfully!');
+
 

@@ -157,6 +157,56 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         # Check URL parameter parsing
         self.assertIn("params.get('level')", self.trainer_js)
 
+    def test_multilingual_arabic_ukrainian_support(self):
+        """Verify Arabic and Ukrainian support across portal.js, vocabTrainer.js, and index.html."""
+        index_path = os.path.join(ROOT_DIR, "index.html")
+        with open(index_path, "r", encoding="utf-8") as f:
+            index_html = f.read()
+
+        # Check global lang buttons in index.html for EN, TR, AR, UK
+        self.assertIn("onclick=\"setLang('ar')\"", index_html)
+        self.assertIn("onclick=\"setLang('uk')\"", index_html)
+        self.assertIn('value="ar"', index_html)
+        self.assertIn('value="uk"', index_html)
+
+        # Check data-ar and data-uk attribute parity with data-en
+        en_count = len(re.findall(r'data-en="[^"]*"', index_html))
+        ar_count = len(re.findall(r'data-ar="[^"]*"', index_html))
+        uk_count = len(re.findall(r'data-uk="[^"]*"', index_html))
+        self.assertGreater(en_count, 50, "Should have dozens of multilingual elements in index.html")
+        self.assertEqual(en_count, ar_count, "All data-en elements must have data-ar")
+        self.assertEqual(en_count, uk_count, "All data-en elements must have data-uk")
+
+        # Check rating labels for AR and UK in portal.js and vocabTrainer.js
+        expected_ar = {
+            1: "1/5 — ضعيف",
+            2: "2/5 — يحتاج تحسين",
+            3: "3/5 — جيد",
+            4: "4/5 — جيد جداً",
+            5: "5/5 — ممتاز"
+        }
+        expected_uk = {
+            1: "1/5 — Погано",
+            2: "2/5 — Потребує покращення",
+            3: "3/5 — Добре",
+            4: "4/5 — Дуже добре",
+            5: "5/5 — Відмінно"
+        }
+
+        for score, label in expected_ar.items():
+            self.assertIn(label, self.portal_js)
+            self.assertIn(label, self.trainer_js)
+
+        for score, label in expected_uk.items():
+            self.assertIn(label, self.portal_js)
+            self.assertIn(label, self.trainer_js)
+
+        # Check helper methods in vocabTrainer.js
+        self.assertIn("getMeaning(item)", self.trainer_js)
+        self.assertIn("getExample(item)", self.trainer_js)
+        self.assertIn("setLanguage(lang)", self.trainer_js)
+
 
 if __name__ == "__main__":
     unittest.main()
+

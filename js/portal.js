@@ -7,17 +7,23 @@ let currentActiveMaterial = null;
 
 // Material cards data
 const materials = [
-  { icon:'📋', title:'Exam Guide', titleTr:'Sınav Rehberi', desc:'Structure, scoring, strategies', descTr:'Yapı, puanlama, stratejiler', en:'./docs/en/telc_b1_exam_guide.md', tr:'./docs/tr/telc_b1_exam_guide.md', levels: ['B1'] },
-  { icon:'📅', title:'1-Month Plan', titleTr:'1 Aylık Plan', desc:'Day-by-day study schedule', descTr:'Gün gün çalışma programı', en:'./docs/en/1_month_study_plan.md', tr:'./docs/tr/1_month_study_plan.md', levels: ['B1'] },
-  { icon:'📝', title:'Grammar & Vocab', titleTr:'Dil Bilgisi ve Kelime', desc:'Nebensätze, Perfekt, prepositions + 30 exercises', descTr:'Nebensätze, Perfekt, edatlar + 30 alıştırma', en:'./docs/en/review_grammar_vocab.md', tr:'./docs/tr/review_grammar_vocab.md', levels: ['A2', 'B1', 'B2'] },
-  { icon:'📖', title:'Reading & Listening', titleTr:'Okuma ve Dinleme', desc:'Synonym recognition, strategies, 6 exercises', descTr:'Eşanlamlı tanıma, stratejiler, 6 alıştırma', en:'./docs/en/review_reading_listening.md', tr:'./docs/tr/review_reading_listening.md', levels: ['B1', 'B2'] },
-  { icon:'✍️', title:'Writing & Speaking', titleTr:'Yazma ve Konuşma', desc:'Letter templates, model answer, speaking phrases', descTr:'Mektup şablonları, model cevap, konuşma ifadeleri', en:'./docs/en/review_writing_speaking.md', tr:'./docs/tr/review_writing_speaking.md', levels: ['B1', 'B2'] },
-  { icon:'🔍', title:'Diagnostic Exam', titleTr:'Tanılama Sınavı', desc:'Day 1 assessment — find your weak spots', descTr:'1. gün değerlendirmesi — zayıf noktalarınızı bulun', en:'./docs/en/mock_exam_diagnostic.md', tr:'./docs/tr/mock_exam_diagnostic.md', levels: ['B1'] },
-  { icon:'🎯', title:'Final Mock Exam', titleTr:'Final Sınavı', desc:'Week 4 full simulation under exam conditions', descTr:'4. hafta sınav koşullarında tam simülasyon', en:'./docs/en/mock_exam_final.md', tr:'./docs/tr/mock_exam_final.md', levels: ['B1'] },
-  { icon:'🌐', title:'Free Resources', titleTr:'Ücretsiz Kaynaklar', desc:'Official tests, YouTube, DW courses, websites', descTr:'Resmi testler, YouTube, DW kursları, web siteleri', en:'./docs/en/example_exams_resources.md', tr:'./docs/tr/example_exams_resources.md', levels: ['A1', 'A2', 'B1', 'B2'] },
-  { icon:'📚', title:'Vocab: Verbs', titleTr:'Kelime: Fiiller', desc:'~500 verbs & adjectives with examples', descTr:'~500 fiil ve sıfat, örneklerle', en:'./docs/en/vocab_part1_verbs_adjectives.md', tr:'./docs/tr/vocab_part1_fiiller_sifatlar.md', levels: ['A1', 'A2', 'B1'] },
-  { icon:'📚', title:'Vocab: Nouns', titleTr:'Kelime: İsimler', desc:'~550 nouns by exam theme', descTr:'~550 isim, sınav temalarına göre', en:'./docs/en/vocab_part2_nouns_themes.md', tr:'./docs/tr/vocab_part2_isimler_temalar.md', levels: ['A1', 'A2', 'B1'] },
+  { icon:'📋', title:'Exam Guide', titleTr:'Sınav Rehberi', titleAr:'دليل الامتحان', titleUk:'Посібник до іспиту', desc:'Structure, scoring, strategies', descTr:'Yapı, puanlama, stratejiler', descAr:'الهيكل، درجات التقييم، والاستراتيجيات', descUk:'Структура, оцінювання та стратегії', en:'./docs/en/telc_b1_exam_guide.md', tr:'./docs/tr/telc_b1_exam_guide.md', levels: ['B1'] },
+  { icon:'📅', title:'1-Month Plan', titleTr:'1 Aylık Plan', titleAr:'خطة الشهر الواحد', titleUk:'План на 1 місяць', desc:'Day-by-day study schedule', descTr:'Gün gün çalışma programı', descAr:'جدول دراسي يومي منظم', descUk:'Щоденний розклад навчання', en:'./docs/en/1_month_study_plan.md', tr:'./docs/tr/1_month_study_plan.md', levels: ['B1'] },
+  { icon:'📝', title:'Grammar & Vocab', titleTr:'Dil Bilgisi ve Kelime', titleAr:'القواعد والمفردات', titleUk:'Граматика та лексика', desc:'Nebensätze, Perfekt, prepositions + 30 exercises', descTr:'Nebensätze, Perfekt, edatlar + 30 alıştırma', descAr:'الجمل الجانبية، الماضي التام، حروف الجر + 30 تمرين', descUk:'Підрядні речення, Perfekt, прийменники + 30 вправ', en:'./docs/en/review_grammar_vocab.md', tr:'./docs/tr/review_grammar_vocab.md', levels: ['A2', 'B1', 'B2'] },
+  { icon:'📖', title:'Reading & Listening', titleTr:'Okuma ve Dinleme', titleAr:'القراءة والاستماع', titleUk:'Читання та аудіювання', desc:'Synonym recognition, strategies, 6 exercises', descTr:'Eşanlamlı tanıma, stratejiler, 6 alıştırma', descAr:'تمييز المرادفات، الاستراتيجيات، 6 تمارين', descUk:'Розпізнавання синонімів, стратегії, 6 вправ', en:'./docs/en/review_reading_listening.md', tr:'./docs/tr/review_reading_listening.md', levels: ['B1', 'B2'] },
+  { icon:'✍️', title:'Writing & Speaking', titleTr:'Yazma ve Konuşma', titleAr:'الكتابة والمحادثة', titleUk:'Письмо та мовлення', desc:'Letter templates, model answer, speaking phrases', descTr:'Mektup şablonları, model cevap, konuşma ifadeleri', descAr:'نماذج الرسائل، إجابات نموذجية، عبارات التحدث', descUk:'Шаблони листів, зразки відповідей, розмовні фрази', en:'./docs/en/review_writing_speaking.md', tr:'./docs/tr/review_writing_speaking.md', levels: ['B1', 'B2'] },
+  { icon:'🔍', title:'Diagnostic Exam', titleTr:'Tanılama Sınavı', titleAr:'الامتحان التشخيصي', titleUk:'Діагностичний іспит', desc:'Day 1 assessment — find your weak spots', descTr:'1. gün değerlendirmesi — zayıf noktalarınızı bulun', descAr:'تقييم اليوم الأول — اكتشف نقاط ضعفك', descUk:'Оцінювання 1-го дня — визначте слабкі місця', en:'./docs/en/mock_exam_diagnostic.md', tr:'./docs/tr/mock_exam_diagnostic.md', levels: ['B1'] },
+  { icon:'🎯', title:'Final Mock Exam', titleTr:'Final Sınavı', titleAr:'الامتحان التجريبي النهائي', titleUk:'Фінальний пробний іспит', desc:'Week 4 full simulation under exam conditions', descTr:'4. hafta sınav koşullarında tam simülasyon', descAr:'محاكاة كاملة في الأسبوع 4 في ظروف الامتحان', descUk:'Повна симуляція 4-го тижня в умовах іспиту', en:'./docs/en/mock_exam_final.md', tr:'./docs/tr/mock_exam_final.md', levels: ['B1'] },
+  { icon:'🌐', title:'Free Resources', titleTr:'Ücretsiz Kaynaklar', titleAr:'موارد مجانية', titleUk:'Безкоштовні ресурси', desc:'Official tests, YouTube, DW courses, websites', descTr:'Resmi testler, YouTube, DW kursları, web siteleri', descAr:'امتحانات رسمية، يوتيوب، دورات DW، ومواقع مفيدة', descUk:'Офіційні тести, YouTube, курси DW, сайти', en:'./docs/en/example_exams_resources.md', tr:'./docs/tr/example_exams_resources.md', levels: ['A1', 'A2', 'B1', 'B2'] },
+  { icon:'📚', title:'Vocab: Verbs', titleTr:'Kelime: Fiiller', titleAr:'المفردات: الأفعال', titleUk:'Лексика: Дієслова', desc:'~500 verbs & adjectives with examples', descTr:'~500 fiil ve sıfat, örneklerle', descAr:'~500 فعل وصفة مع أمثلة', descUk:'~500 дієслів та прикметників із прикладами', en:'./docs/en/vocab_part1_verbs_adjectives.md', tr:'./docs/tr/vocab_part1_fiiller_sifatlar.md', levels: ['A1', 'A2', 'B1'] },
+  { icon:'📚', title:'Vocab: Nouns', titleTr:'Kelime: İsimler', titleAr:'المفردات: الأسماء', titleUk:'Лексика: Іменники', desc:'~550 nouns by exam theme', descTr:'~550 isim, sınav temalarına göre', descAr:'~550 اسم مصنفة حسب مواضيع الامتحان', descUk:'~550 іменників за темами іспиту', en:'./docs/en/vocab_part2_nouns_themes.md', tr:'./docs/tr/vocab_part2_isimler_temalar.md', levels: ['A1', 'A2', 'B1'] },
 ];
+
+function getMaterialField(m, field) {
+  if (!m) return '';
+  const langKey = currentLang.charAt(0).toUpperCase() + currentLang.slice(1);
+  return m[field + langKey] || m[field] || m[field + 'Tr'] || '';
+}
 
 // Goals & Wishes Configuration
 const GOAL_CONFIG = {
@@ -26,16 +32,26 @@ const GOAL_CONFIG = {
     icon: '🌱',
     nameEn: 'A1–A2 Fundamentals',
     nameTr: 'A1–A2 Temel Başlangıç',
+    nameAr: 'الأساسيات A1–A2',
+    nameUk: 'Основи A1–A2',
     level: 'A1',
     levels: ['A1', 'A2'],
     badgeEn: '🌱 Goal: A1–A2 Fundamentals & Daily German',
     badgeTr: '🌱 Hedef: A1–A2 Temel ve Günlük Almanca',
+    badgeAr: '🌱 الهدف: أساسيات A1–A2 والألمانية اليومية',
+    badgeUk: '🌱 Ціль: Основи A1–A2 та повсякденна німецька',
     titleEn: 'Master A1–A2 German Fundamentals',
     titleTr: 'A1–A2 Almanca Temellerinde Uzmanlaşın',
+    titleAr: 'أتقن أساسيات اللغة الألمانية A1–A2',
+    titleUk: 'Опануйте базові основи німецької A1–A2',
     descEn: 'Build your foundational vocabulary, essential daily verbs, and sentence grammar. Start drilling with our interactive Wortschatz Trainer.',
     descTr: 'Temel kelime dağarcığınızı, en sık kullanılan günlük fiilleri ve cümle yapılarını geliştirin. İnteraktif Wortschatz Trainer ile hemen başlayın.',
+    descAr: 'ابنِ مفرداتك الأساسية، أفعال الحياة اليومية وقواعد بناء الجملة. ابدأ التدريب مع مدرب المفردات التفاعلي.',
+    descUk: 'Побудуйте базовий словниковий запас, вивчіть щоденні дієслова та граматику. Почніть тренування з інтерактивним Wortschatz Trainer.',
     hintEn: 'Focusing on daily life vocabulary, essential verbs & foundational grammar',
     hintTr: 'Günlük yaşam kelimeleri, temel fiiller ve başlangıç dilbilgisine odaklanıyor',
+    hintAr: 'التركيز على مفردات الحياة اليومية، الأفعال الأساسية والقواعد التأسيسية',
+    hintUk: 'Фокус на щоденній лексиці, базових дієсловах та основах граматики',
     trainerUrl: 'trainer.html?level=A1'
   },
   'goal-b1': {
@@ -43,16 +59,26 @@ const GOAL_CONFIG = {
     icon: '🏆',
     nameEn: 'telc B1 Exam',
     nameTr: 'telc B1 Sınavı',
+    nameAr: 'امتحان telc B1',
+    nameUk: 'Іспит telc B1',
     level: 'B1',
     levels: ['B1'],
     badgeEn: '📚 telc Deutsch B1 Exam Preparation & Vocab Master',
     badgeTr: '📚 telc Deutsch B1 Sınav Hazırlığı ve Kelime Antrenörü',
+    badgeAr: '📚 التحضير لامتحان telc Deutsch B1 وإتقان المفردات',
+    badgeUk: '📚 Підготовка до іспиту telc Deutsch B1 та вивчення лексики',
     titleEn: 'Pass telc Deutsch B1<br>with Confidence',
     titleTr: 'telc Deutsch B1 Sınavını<br>Güvenle Geçin',
+    titleAr: 'اجتز امتحان telc Deutsch B1<br>بكل ثقة',
+    titleUk: 'Складіть telc Deutsch B1<br>впевнено',
     descEn: 'A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates.',
     descTr: 'telc Deutsch B1 (180/300 barajı) için eksiksiz çalışma portalı ve 2.000 kelimelik interaktif antrenör. Dilbilgisi, akıllı kelime antrenmanı, deneme sınavları ve mektup şablonları.',
+    descAr: 'بوابة دراسية متكاملة ومدرب تفاعلي لأكثر من 2000 كلمة لامتحان telc Deutsch B1 (درجة النجاح 180/300). القواعد، تكرار الكلمات الذكي، امتحانات تجريبية، ونماذج رسائل.',
+    descUk: 'Повний навчальний портал та інтерактивний тренажер на 2000 слів для telc Deutsch B1 (поріг 180/300). Граматика, розумне повторення слів, пробні іспити та шаблони листів.',
     hintEn: 'Focusing on 30-day curriculum, mock exams & B1 vocabulary',
     hintTr: '30 günlük program, deneme sınavları ve B1 kelimelerine odaklanıyor',
+    hintAr: 'التركيز على خطة الـ 30 يوماً، الامتحانات التجريبية ومفردات B1',
+    hintUk: 'Фокус на 30-денній програмі, пробних іспитах та лексиці B1',
     trainerUrl: 'trainer.html?level=B1'
   },
   'goal-b2': {
@@ -60,16 +86,26 @@ const GOAL_CONFIG = {
     icon: '💼',
     nameEn: 'B2 Professional',
     nameTr: 'B2 İleri Düzey & İş',
+    nameAr: 'B2 للمحترفين والعمل',
+    nameUk: 'B2 Професійний',
     level: 'B2',
     levels: ['B2'],
     badgeEn: '💼 Goal: B2 Advanced & Professional German',
     badgeTr: '💼 Hedef: B2 İleri Düzey ve İş Almancası',
+    badgeAr: '💼 الهدف: الألمانية المتقدمة والمهنية B2',
+    badgeUk: '💼 Ціль: Просунута та ділова німецька B2',
     titleEn: 'Advance to B2 Professional Fluency',
     titleTr: 'B2 İleri Düzey Akıcılığa Ulaşın',
+    titleAr: 'تقدم إلى الطلاقة المهنية بمستوى B2',
+    titleUk: 'Досягніть професійної вільності B2',
     descEn: 'Prepare for workplace communication, complex texts, advanced connectors, and the specialized B2 vocabulary deck.',
     descTr: 'İş yeri iletişimi, karmaşık metinler, ileri düzey bağlaçlar ve özel B2 kelime destesi ile seviyenizi yükseltin.',
+    descAr: 'استعد للتواصل في مكان العمل، النصوص المعقدة، أدوات الربط المتقدمة، ومجموعة مفردات B2 المتخصصة.',
+    descUk: 'Підготуйтеся до спілкування на роботі, складних текстів, просунутих сполучників та спеціальної колоди B2.',
     hintEn: 'Focusing on advanced connectors, workplace expressions & B2 deck',
     hintTr: 'İleri düzey bağlaçlar, iş hayatı kalıpları ve B2 kelime destesine odaklanıyor',
+    hintAr: 'التركيز على أدوات الربط المتقدمة، تعبيرات بيئة العمل ومجموعة B2',
+    hintUk: 'Фокус на складних сполучниках, виразах для роботи та колоді B2',
     trainerUrl: 'trainer.html?level=B2&deck=b2'
   },
   'goal-c1': {
@@ -77,16 +113,26 @@ const GOAL_CONFIG = {
     icon: '🎓',
     nameEn: 'C1 Academic',
     nameTr: 'C1 Akademik',
+    nameAr: 'C1 الأكاديمي',
+    nameUk: 'C1 Академічний',
     level: 'C1',
     levels: ['C1'],
     badgeEn: '🎓 Goal: C1 Hochschule & Academic Mastery',
     badgeTr: '🎓 Hedef: C1 Üniversite & Akademik Uzmanlık',
+    badgeAr: '🎓 الهدف: C1 للجامعة والتمكن الأكاديمي',
+    badgeUk: '🎓 Ціль: C1 для університету та академічна майстерність',
     titleEn: 'Master C1 Academic German',
     titleTr: 'C1 Akademik Almancada Ustalaşın',
+    titleAr: 'أتقن الألمانية الأكاديمية بمستوى C1',
+    titleUk: 'Опануйте академічну німецьку C1',
     descEn: 'High-frequency academic vocabulary for university studies, research papers, and professional settings. Complex sentence structures and scholarly terminology.',
     descTr: 'Üniversite eğitimi, akademik makaleler ve profesyonel ortamlar için yüksek frekanslı akademik kelimeler. Karmaşık cümle yapıları ve bilimsel terminoloji.',
+    descAr: 'مفردات أكاديمية عالية التردد للدراسات الجامعية، الأوراق البحثية، والبيئات الاحترافية. تراكيب جمل معقدة ومصطلحات علمية.',
+    descUk: 'Високочастотна академічна лексика для навчання в університеті, наукових статей та професійного середовища. Складні структури та наукова термінологія.',
     hintEn: 'Focusing on academic vocabulary, university terminology & research language',
     hintTr: 'Akademik kelimeler, üniversite terminolojisi ve araştırma diline odaklanıyor',
+    hintAr: 'التركيز على المفردات الأكاديمية، مصطلحات الجامعة ولغة البحث العلمي',
+    hintUk: 'Фокус на академічній лексиці, університетській термінології та мові досліджень',
     trainerUrl: 'trainer.html?level=C1&deck=c1'
   },
   'goal-vocab': {
@@ -94,16 +140,26 @@ const GOAL_CONFIG = {
     icon: '⚡',
     nameEn: 'Rapid Vocab Trainer',
     nameTr: 'Hızlı Kelime Antrenmanı',
+    nameAr: 'مدرب المفردات السريع',
+    nameUk: 'Швидкий тренажер слів',
     level: 'ALL',
     levels: ['A1', 'A2', 'B1', 'B2', 'C1'],
     badgeEn: '⚡ Interactive Wortschatz Speed Trainer',
     badgeTr: '⚡ İnteraktif Kelime Hız Antrenörü',
+    badgeAr: '⚡ مدرب المفردات التفاعلي السريع',
+    badgeUk: '⚡ Інтерактивний швидкісний тренажер слів',
     titleEn: 'Supercharge Your German Vocabulary',
     titleTr: 'Almanca Kelime Dağarcığınızı Güçlendirin',
+    titleAr: 'عزز حصيلتك من مفردات اللغة الألمانية',
+    titleUk: 'Прокачайте свій словниковий запас німецької',
     descEn: '2,000+ words across A1–C1 CEFR levels with native speech audio, 5 quiz modes, anti-repetition rotation, and streak tracking.',
     descTr: 'A1–C1 CEFR seviyelerinde 2.000+ kelime, sesli telaffuz, 5 test modu, akıllı tekrar algoritması ve seri takibi.',
+    descAr: 'أكثر من 2000 كلمة عبر مستويات A1–C1 مع نطق صوتي أصلي، 5 أوضاع اختبار، تكرار ذكي ومتابعة السلسلة اليومية.',
+    descUk: '2000+ слів на рівнях A1–C1 із природним озвученням, 5 режимами тестів, розумною ротацією та серіями днів.',
     hintEn: 'Direct speed drill mode with native TTS audio & spaced repetition',
     hintTr: 'Sesli telaffuz ve akıllı algoritma ile doğrudan hızlı test modu',
+    hintAr: 'وضع تدريب سرعة مباشر مع نطق صوتي وتكرار متباعد',
+    hintUk: 'Режим швидкісного тренування з аудіо та інтервальним повторенням',
     trainerUrl: 'trainer.html?level=ALL'
   }
 };
@@ -120,9 +176,10 @@ function renderSidebar() {
   nav.innerHTML = '';
   materials.forEach((m, i) => {
     const id = navIds[i];
+    const title = getMaterialField(m, 'title');
     nav.innerHTML += `<a href="#${id}" onclick="showSection('${id}')">
       <span class="icon">${m.icon}</span>
-      <span data-en="${m.title}" data-tr="${m.titleTr}">${currentLang === 'en' ? m.title : m.titleTr}</span>
+      <span data-en="${m.title}" data-tr="${m.titleTr}" data-ar="${m.titleAr || ''}" data-uk="${m.titleUk || ''}">${title}</span>
       <span class="num">${i+1}</span>
     </a>`;
   });
@@ -132,7 +189,7 @@ function renderSidebar() {
 function openMaterial(index) {
   const m = materials[index];
   if (!m) return;
-  const url = currentLang === 'en' ? m.en : m.tr;
+  const url = currentLang === 'tr' ? m.tr : m.en;
   openMarkdown(url);
 }
 
@@ -145,23 +202,37 @@ function renderCards() {
   const activeGoal = GOAL_CONFIG[currentGoalId] || GOAL_CONFIG['goal-b1'];
   const targetLevels = activeGoal.levels || [currentGoalLevel];
 
+  const btnTexts = {
+    en: '📄 Open Module &rarr;',
+    tr: '📄 Modülü Aç &rarr;',
+    ar: '📄 فتح الوحدة &larr;',
+    uk: '📄 Відкрити модуль &rarr;'
+  };
+  const recBadges = {
+    en: '⭐ Recommended',
+    tr: '⭐ Önerilen',
+    ar: '⭐ موصى به',
+    uk: '⭐ Рекомендовано'
+  };
+
   materials.forEach((m, i) => {
-    const title = currentLang === 'en' ? m.title : m.titleTr;
-    const desc = currentLang === 'en' ? m.desc : m.descTr;
-    const btnText = currentLang === 'en' ? '📄 Open Module &rarr;' : '📄 Modülü Aç &rarr;';
+    const title = getMaterialField(m, 'title');
+    const desc = getMaterialField(m, 'desc');
+    const btnText = btnTexts[currentLang] || btnTexts.en;
     const isRecommended = m.levels && m.levels.some(lvl => targetLevels.includes(lvl));
+    const recText = recBadges[currentLang] || recBadges.en;
     const recBadge = isRecommended 
-      ? `<span class="card-badge-recommended" data-en="⭐ Recommended" data-tr="⭐ Önerilen">${currentLang === 'en' ? '⭐ Recommended' : '⭐ Önerilen'}</span>` 
+      ? `<span class="card-badge-recommended" data-en="⭐ Recommended" data-tr="⭐ Önerilen" data-ar="⭐ موصى به" data-uk="⭐ Рекомендовано">${recText}</span>` 
       : '';
 
     cardsEl.innerHTML += `<div class="card ${isRecommended ? 'recommended' : ''}" onclick="openMaterial(${i})">
       ${recBadge}
       <div class="card-icon">${m.icon}</div>
-      <h3 data-en="${m.title}" data-tr="${m.titleTr}">${title}</h3>
-      <p data-en="${m.desc}" data-tr="${m.descTr}">${desc}</p>
+      <h3 data-en="${m.title}" data-tr="${m.titleTr}" data-ar="${m.titleAr || ''}" data-uk="${m.titleUk || ''}">${title}</h3>
+      <p data-en="${m.desc}" data-tr="${m.descTr}" data-ar="${m.descAr || ''}" data-uk="${m.descUk || ''}">${desc}</p>
       <div class="card-links">
         <button class="card-link primary" onclick="event.stopPropagation(); openMaterial(${i});">
-          <span data-en="📄 Open Module &rarr;" data-tr="📄 Modülü Aç &rarr;">${btnText}</span>
+          <span data-en="📄 Open Module &rarr;" data-tr="📄 Modülü Aç &rarr;" data-ar="📄 فتح الوحدة &larr;" data-uk="📄 Відкрити модуль &rarr;">${btnText}</span>
         </button>
       </div>
     </div>`;
@@ -270,36 +341,41 @@ restoreQuiz();
 
 // Flashcards
 const vocabList = [
-  { de: 'arbeiten', tr: 'çalışmak', en: 'to work', ex: 'Ich arbeite jeden Tag von 8 bis 17 Uhr.' },
-  { de: 'wohnen', tr: 'yaşamak / oturmak', en: 'to live / reside', ex: 'Wir wohnen seit drei Jahren in Berlin.' },
-  { de: 'kommen', tr: 'gelmek', en: 'to come', ex: 'Woher kommen Sie? – Ich komme aus der Türkei.' },
-  { de: 'gehen', tr: 'gitmek', en: 'to go', ex: 'Ich gehe jeden Morgen zu Fuß zur Arbeit.' },
-  { de: 'fahren', tr: 'sürmek / gitmek', en: 'to drive / ride', ex: 'Ich fahre mit dem Bus zur Schule.' },
-  { de: 'machen', tr: 'yapmak', en: 'to do / make', ex: 'Was machst du am Wochenende?' },
-  { de: 'haben', tr: 'sahip olmak', en: 'to have', ex: 'Ich habe drei Kinder.' },
-  { de: 'sein', tr: 'olmak', en: 'to be', ex: 'Sie ist Ärztin von Beruf.' },
-  { de: 'werden', tr: 'olmak (gelecek)', en: 'to become', ex: 'Ich möchte Lehrerin werden.' },
-  { de: 'brauchen', tr: 'ihtiyaç duymak', en: 'to need', ex: 'Wir brauchen einen neuen Kühlschrank.' },
-  { de: 'kaufen', tr: 'satın almak', en: 'to buy', ex: 'Ich kaufe jeden Tag frisches Gemüse.' },
-  { de: 'kochen', tr: 'yemek pişirmek', en: 'to cook', ex: 'Meine Mutter kocht sehr lecker.' },
-  { de: 'essen', tr: 'yemek (fiil)', en: 'to eat', ex: 'Was isst du gern?' },
-  { de: 'trinken', tr: 'içmek', en: 'to drink', ex: 'Ich trinke jeden Morgen Kaffee.' },
-  { de: 'schlafen', tr: 'uyumak', en: 'to sleep', ex: 'Ich schlafe immer acht Stunden.' },
-  { de: 'lernen', tr: 'öğrenmek', en: 'to learn', ex: 'Ich lerne seit sechs Monaten Deutsch.' },
-  { de: 'schreiben', tr: 'yazmak', en: 'to write', ex: 'Kannst du mir eine E-Mail schreiben?' },
-  { de: 'lesen', tr: 'okumak', en: 'to read', ex: 'Ich lese gern Bücher.' },
-  { de: 'sprechen', tr: 'konuşmak', en: 'to speak', ex: 'Sprechen Sie Deutsch?' },
-  { de: 'hören', tr: 'duymak / dinlemek', en: 'to hear / listen', ex: 'Ich höre gern Musik.' }
+  { de: 'arbeiten', tr: 'çalışmak', en: 'to work', ar: 'يعمل', uk: 'працювати', ex: 'Ich arbeite jeden Tag von 8 bis 17 Uhr.' },
+  { de: 'wohnen', tr: 'yaşamak / oturmak', en: 'to live / reside', ar: 'يسكن / يعيش', uk: 'жити / мешкати', ex: 'Wir wohnen seit drei Jahren in Berlin.' },
+  { de: 'kommen', tr: 'gelmek', en: 'to come', ar: 'يأتي', uk: 'приходити', ex: 'Woher kommen Sie? – Ich komme aus der Türkei.' },
+  { de: 'gehen', tr: 'gitmek', en: 'to go', ar: 'يذهب', uk: 'йти / ходити', ex: 'Ich gehe jeden Morgen zu Fuß zur Arbeit.' },
+  { de: 'fahren', tr: 'sürmek / gitmek', en: 'to drive / ride', ar: 'يقود / يسافر', uk: 'їхати', ex: 'Ich fahre mit dem Bus zur Schule.' },
+  { de: 'machen', tr: 'yapmak', en: 'to do / make', ar: 'يفعل / يصنع', uk: 'робити', ex: 'Was machst du am Wochenende?' },
+  { de: 'haben', tr: 'sahip olmak', en: 'to have', ar: 'يملك / لديه', uk: 'мати', ex: 'Ich habe drei Kinder.' },
+  { de: 'sein', tr: 'olmak', en: 'to be', ar: 'يكون', uk: 'бути', ex: 'Sie ist Ärztin von Beruf.' },
+  { de: 'werden', tr: 'olmak (gelecek)', en: 'to become', ar: 'يصبح', uk: 'ставати', ex: 'Ich möchte Lehrerin werden.' },
+  { de: 'brauchen', tr: 'ihtiyaç duymak', en: 'to need', ar: 'يحتاج', uk: 'потребувати', ex: 'Wir brauchen einen neuen Kühlschrank.' },
+  { de: 'kaufen', tr: 'satın almak', en: 'to buy', ar: 'يشتري', uk: 'купувати', ex: 'Ich kaufe jeden Tag frisches Gemüse.' },
+  { de: 'kochen', tr: 'yemek pişirmek', en: 'to cook', ar: 'يطبخ', uk: 'готувати їжу', ex: 'Meine Mutter kocht sehr lecker.' },
+  { de: 'essen', tr: 'yemek (fiil)', en: 'to eat', ar: 'يأكل', uk: 'їсти', ex: 'Was isst du gern?' },
+  { de: 'trinken', tr: 'içmek', en: 'to drink', ar: 'يشرب', uk: 'пити', ex: 'Ich trinke jeden Morgen Kaffee.' },
+  { de: 'schlafen', tr: 'uyumak', en: 'to sleep', ar: 'ينام', uk: 'спати', ex: 'Ich schlafe immer acht Stunden.' },
+  { de: 'lernen', tr: 'öğrenmek', en: 'to learn', ar: 'يتعلم', uk: 'вчити / навчатися', ex: 'Ich lerne seit sechs Monaten Deutsch.' },
+  { de: 'schreiben', tr: 'yazmak', en: 'to write', ar: 'يكتب', uk: 'писати', ex: 'Kannst du mir eine E-Mail schreiben?' },
+  { de: 'lesen', tr: 'okumak', en: 'to read', ar: 'يقرأ', uk: 'читати', ex: 'Ich lese gern Bücher.' },
+  { de: 'sprechen', tr: 'konuşmak', en: 'to speak', ar: 'يتحدث', uk: 'говорити', ex: 'Sprechen Sie Deutsch?' },
+  { de: 'hören', tr: 'duymak / dinlemek', en: 'to hear / listen', ar: 'يسمع / يستمع', uk: 'чути / слухати', ex: 'Ich höre gern Musik.' }
 ];
 
 let currentCard = 0;
 function updateCard(immediate = false) {
   const card = document.getElementById('flashcard');
+  if (!card) return;
   card.classList.remove('flipped');
   setTimeout(() => {
-    document.getElementById('fc-de').textContent = vocabList[currentCard].de;
-    document.getElementById('fc-tr').textContent = currentLang === 'en' ? vocabList[currentCard].en : vocabList[currentCard].tr;
-    document.getElementById('fc-ex').textContent = vocabList[currentCard].ex;
+    const item = vocabList[currentCard];
+    document.getElementById('fc-de').textContent = item.de;
+    const transEl = document.getElementById('fc-tr');
+    const meaning = item[currentLang] || item.en || item.tr || '';
+    transEl.textContent = meaning;
+    transEl.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+    document.getElementById('fc-ex').textContent = item.ex;
     document.getElementById('fc-count').textContent = `${currentCard + 1} / ${vocabList.length}`;
   }, immediate ? 0 : 150);
 }
@@ -534,14 +610,17 @@ function setLang(lang) {
                     document.querySelector(`.lang-btn:${lang === 'en' ? 'first-child' : 'last-child'}`);
   if (activeBtn) activeBtn.classList.add('active');
   
-  if (document.getElementById('fc-btn-en')) {
-    if (lang === 'en') {
-      document.getElementById('fc-btn-en').classList.add('primary');
-      document.getElementById('fc-btn-tr').classList.remove('primary');
-    } else {
-      document.getElementById('fc-btn-tr').classList.add('primary');
-      document.getElementById('fc-btn-en').classList.remove('primary');
+  ['en', 'tr', 'ar', 'uk'].forEach(l => {
+    const btn = document.getElementById(`fc-btn-${l}`);
+    if (btn) {
+      if (l === lang) btn.classList.add('primary');
+      else btn.classList.remove('primary');
     }
+  });
+
+  const entranceLangSelect = document.getElementById('entrance-lang-select');
+  if (entranceLangSelect) {
+    entranceLangSelect.value = lang;
   }
 
   document.querySelectorAll('[data-en]').forEach(el => {
@@ -650,6 +729,20 @@ const ratingLabels = {
     3: "3/5 — İyi",
     2: "2/5 — Geliştirilmeli",
     1: "1/5 — Zayıf"
+  },
+  ar: {
+    5: "5/5 — ممتاز",
+    4: "4/5 — جيد جداً",
+    3: "3/5 — جيد",
+    2: "2/5 — يحتاج تحسين",
+    1: "1/5 — ضعيف"
+  },
+  uk: {
+    5: "5/5 — Відмінно",
+    4: "4/5 — Дуже добре",
+    3: "3/5 — Добре",
+    2: "2/5 — Потребує покращення",
+    1: "1/5 — Погано"
   }
 };
 
@@ -671,7 +764,7 @@ function updateRatingDisplay(rating, isPreview = false) {
   });
 
   if (ratingText) {
-    const langKey = currentLang === 'tr' ? 'tr' : 'en';
+    const langKey = ratingLabels[currentLang] ? currentLang : 'en';
     ratingText.textContent = ratingLabels[langKey][rating] || `${rating}/5`;
   }
 }
@@ -858,32 +951,48 @@ function applyGoalSelection() {
   closeGoalModal();
 }
 
+function getGoalText(goal, keyPrefix) {
+  if (!goal) return '';
+  const langKey = currentLang.charAt(0).toUpperCase() + currentLang.slice(1);
+  return goal[keyPrefix + langKey] || goal[keyPrefix + 'En'] || goal[keyPrefix + 'Tr'] || '';
+}
+
 function updateGoalDisplays() {
   const goal = GOAL_CONFIG[currentGoalId] || GOAL_CONFIG['goal-b1'];
-  const goalName = currentLang === 'en' ? goal.nameEn : goal.nameTr;
-  const goalHint = currentLang === 'en' ? goal.hintEn : goal.hintTr;
+  const goalName = getGoalText(goal, 'name');
+  const goalHint = getGoalText(goal, 'hint');
+
+  const prefixes = {
+    goal: { en: 'Goal:', tr: 'Hedef:', ar: 'الهدف:', uk: 'Ціль:' },
+    target: { en: 'Target Level:', tr: 'Hedef Seviye:', ar: 'المستوى المستهدف:', uk: 'Цільовий рівень:' },
+    activeTrack: { en: 'Active Track:', tr: 'Aktif Program:', ar: 'المسار النشط:', uk: 'Активний курс:' }
+  };
+
+  const pGoal = prefixes.goal[currentLang] || prefixes.goal.en;
+  const pTarget = prefixes.target[currentLang] || prefixes.target.en;
+  const pActiveTrack = prefixes.activeTrack[currentLang] || prefixes.activeTrack.en;
 
   // Header chip
   const topGoalIcon = document.getElementById('current-goal-icon');
   const topGoalText = document.getElementById('current-goal-text');
   if (topGoalIcon) topGoalIcon.textContent = goal.icon;
-  if (topGoalText) topGoalText.textContent = `${currentLang === 'en' ? 'Goal:' : 'Hedef:'} ${goalName}`;
+  if (topGoalText) topGoalText.textContent = `${pGoal} ${goalName}`;
 
   // Sidebar badge
   const sidebarGoalName = document.getElementById('sidebar-goal-name');
   const sidebarGoalSub = document.getElementById('sidebar-goal-sub');
   if (sidebarGoalName) sidebarGoalName.textContent = goalName;
   if (sidebarGoalSub) {
-    sidebarGoalSub.textContent = `${currentLang === 'en' ? 'Target Level:' : 'Hedef Seviye:'} ${currentGoalLevel}`;
+    sidebarGoalSub.textContent = `${pTarget} ${currentGoalLevel}`;
   }
 
   // Hero section badge & title
   const heroBadge = document.getElementById('hero-active-goal-badge');
   const heroTitle = document.getElementById('hero-main-title');
   const heroDesc = document.getElementById('hero-main-desc');
-  if (heroBadge) heroBadge.innerHTML = currentLang === 'en' ? goal.badgeEn : goal.badgeTr;
-  if (heroTitle) heroTitle.innerHTML = currentLang === 'en' ? goal.titleEn : goal.titleTr;
-  if (heroDesc) heroDesc.innerHTML = currentLang === 'en' ? goal.descEn : goal.descTr;
+  if (heroBadge) heroBadge.innerHTML = getGoalText(goal, 'badge');
+  if (heroTitle) heroTitle.innerHTML = getGoalText(goal, 'title');
+  if (heroDesc) heroDesc.innerHTML = getGoalText(goal, 'desc');
 
   // Hero goal action strip
   const stripTitle = document.getElementById('hero-goal-strip-title');
@@ -891,7 +1000,7 @@ function updateGoalDisplays() {
   const stripIcon = document.getElementById('hero-goal-strip-icon');
   const stripTrainerLink = document.getElementById('hero-goal-trainer-link');
 
-  if (stripTitle) stripTitle.textContent = `${currentLang === 'en' ? 'Active Track:' : 'Aktif Program:'} ${goalName}`;
+  if (stripTitle) stripTitle.textContent = `${pActiveTrack} ${goalName}`;
   if (stripHint) stripHint.textContent = goalHint;
   if (stripIcon) stripIcon.textContent = goal.icon;
   if (stripTrainerLink) stripTrainerLink.href = goal.trainerUrl || `trainer.html?level=${currentGoalLevel}`;

@@ -27,6 +27,12 @@ VOCAB_C1_PATH = os.path.join(DATA_DIR, "vocab_c1.js")
 CORE_ENTRIES = []
 SEEN_CORE = set()
 
+# Import Arabic & Ukrainian translation overlay
+try:
+    from scripts.vocab_sources.translations_ar_uk import TRANSLATIONS_AR_UK
+except ImportError:
+    TRANSLATIONS_AR_UK = {}
+
 def register_core(de, tr, en, pos, level, ex, ex_tr, ex_en, syns=None, ants=None):
     clean_de = de.strip()
     if clean_de in SEEN_CORE:
@@ -34,16 +40,22 @@ def register_core(de, tr, en, pos, level, ex, ex_tr, ex_en, syns=None, ants=None
     if len(CORE_ENTRIES) >= 2000:
         return
     SEEN_CORE.add(clean_de)
+    # Look up Arabic/Ukrainian translations from overlay
+    overlay = TRANSLATIONS_AR_UK.get(clean_de, {})
     CORE_ENTRIES.append({
         "id": len(CORE_ENTRIES) + 1,
         "de": clean_de,
         "tr": tr.strip(),
         "en": en.strip(),
+        "ar": overlay.get("ar", ""),
+        "uk": overlay.get("uk", ""),
         "pos": pos.strip(),
         "level": level.strip(),
         "example": ex.strip(),
         "example_tr": ex_tr.strip(),
         "example_en": ex_en.strip(),
+        "example_ar": overlay.get("example_ar", ""),
+        "example_uk": overlay.get("example_uk", ""),
         "synonyms": syns or [],
         "antonyms": ants or []
     })
@@ -114,16 +126,21 @@ def build_datasets(output_vocab2000=VOCAB2000_PATH, output_vocab_b2=VOCAB_B2_PAT
         if clean_de in SEEN_B2:
             continue
         SEEN_B2.add(clean_de)
+        overlay = TRANSLATIONS_AR_UK.get(clean_de, {})
         B2_ENTRIES.append({
             "id": len(B2_ENTRIES) + 1,
             "de": clean_de,
             "tr": item[1].strip(),
             "en": item[2].strip(),
+            "ar": overlay.get("ar", ""),
+            "uk": overlay.get("uk", ""),
             "pos": item[3].strip(),
             "level": item[4].strip(),
             "example": item[5].strip(),
             "example_tr": item[6].strip(),
             "example_en": item[7].strip(),
+            "example_ar": overlay.get("example_ar", ""),
+            "example_uk": overlay.get("example_uk", ""),
             "synonyms": item[8] or [],
             "antonyms": item[9] or []
         })
@@ -145,16 +162,21 @@ def build_datasets(output_vocab2000=VOCAB2000_PATH, output_vocab_b2=VOCAB_B2_PAT
         if clean_de in SEEN_C1:
             continue
         SEEN_C1.add(clean_de)
+        overlay = TRANSLATIONS_AR_UK.get(clean_de, {})
         C1_ENTRIES.append({
             "id": len(C1_ENTRIES) + 1,
             "de": clean_de,
             "tr": item[1].strip(),
             "en": item[2].strip(),
+            "ar": overlay.get("ar", ""),
+            "uk": overlay.get("uk", ""),
             "pos": item[3].strip(),
             "level": item[4].strip(),
             "example": item[5].strip(),
             "example_tr": item[6].strip(),
             "example_en": item[7].strip(),
+            "example_ar": overlay.get("example_ar", ""),
+            "example_uk": overlay.get("example_uk", ""),
             "synonyms": item[8] or [],
             "antonyms": item[9] or []
         })

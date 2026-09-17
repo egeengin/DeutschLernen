@@ -18,10 +18,12 @@ Welcome to the **DeutschLernen (TELC B1 Study Portal)** repository. All contribu
 - For Javascript/HTML changes: Verify that the Single Page Application (SPA) routing, `localStorage` trackers, and global language toggles function seamlessly without page refreshing.
 - For Content changes: Verify that German grammar examples are technically flawless and match B1 (Zertifikat Deutsch) specifications exactly.
 
-### 3. Maintain Bilingual Parity (EN & TR)
+### 3. Maintain Multilingual Parity (EN, TR, AR, UK)
 
-- **Every** new module, feature, or text update must be attempted in both English and Turkish simultaneously.
-- If a file is created or updated in `docs/en/` (English), its exact structural equivalent must be created or updated in `docs/tr/` (Turkish). No exceptions.
+- **UI and Vocabulary Parity**: All portal controls, vocabulary trainer interfaces, star ratings, and dictionary tools support 4 languages: English (`en`), Turkish (`tr`), Modern Standard Arabic (`ar`), and Ukrainian (`uk`).
+- **Graceful Fallback**: Vocabulary entries provide native Arabic and Ukrainian overlays where available, falling back gracefully to English when a specific language translation is pending.
+- **RTL & Typography**: Arabic text must respect right-to-left (`dir="rtl"`) orientation in flashcards, quiz options, and example sentence translations.
+- **Curriculum Markdown Guides**: Full 30-day curriculum study guides are maintained in structural parity between `docs/en/` (English) and `docs/tr/` (Turkish). Additional language guides fall back to English.
 
 ### 4. Provide External Data References
 

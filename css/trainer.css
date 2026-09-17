@@ -1143,3 +1143,27 @@ body {
   box-shadow: 0 8px 25px rgba(245, 158, 11, 0.5);
 }
 
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+.quiz-option-btn[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+.quiz-option-btn[dir="rtl"] .opt-key {
+  margin-left: 8px;
+  margin-right: 0;
+}
+.arena-prompt[dir="rtl"],
+.arena-word[dir="rtl"] {
+  direction: rtl;
+  text-align: center;
+}
+.explain-trans[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+
