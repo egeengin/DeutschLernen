@@ -1024,6 +1024,13 @@ body {
   color: var(--accent-green);
 }
 
+.auth-notice-msg.info {
+  display: block;
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid var(--accent-blue, #3b82f6);
+  color: #60a5fa;
+}
+
 .btn-auth-submit,
 .btn-feedback-submit {
   width: 100%;

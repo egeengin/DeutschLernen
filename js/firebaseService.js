@@ -43,6 +43,8 @@
             signInWithEmailAndPassword, 
             createUserWithEmailAndPassword, 
             signInWithPopup, 
+            signInWithRedirect,
+            getRedirectResult,
             GoogleAuthProvider, 
             signOut,
             updateProfile 
@@ -60,13 +62,19 @@
           this.app = initializeApp(window.FIREBASE_CONFIG);
           this.auth = getAuth(this.app);
           this.db = getFirestore(this.app);
+
           this.googleProvider = new GoogleAuthProvider();
+          this.googleProvider.addScope('email');
+          this.googleProvider.addScope('profile');
+          this.googleProvider.setCustomParameters({ prompt: 'select_account' });
 
           this.firestoreOps = { doc, setDoc, getDoc, addDoc, collection, serverTimestamp };
           this.authOps = { 
             signInWithEmailAndPassword, 
             createUserWithEmailAndPassword, 
             signInWithPopup, 
+            signInWithRedirect,
+            getRedirectResult,
             signOut,
             updateProfile 
           };
@@ -77,6 +85,17 @@
             this.notifyAuthListeners(user);
           });
 
+          // Check if returning from a Google redirect sign-in
+          try {
+            const redirectResult = await getRedirectResult(this.auth);
+            if (redirectResult && redirectResult.user) {
+              this.currentUser = redirectResult.user;
+              this.notifyAuthListeners(redirectResult.user);
+            }
+          } catch (redirErr) {
+            console.warn("DeutschLernen: getRedirectResult notice:", redirErr.code, redirErr.message);
+          }
+
           this.initialized = true;
           console.info("DeutschLernen: Firebase Cloud Sync connected successfully.");
         } catch (err) {
@@ -85,6 +104,41 @@
       })();
 
       return this.initPromise;
+    }
+
+    formatAuthError(err) {
+      if (!err) return "An unknown error occurred during authentication.";
+      const code = err.code || "";
+      const currentHost = window.location.hostname || "current host";
+      
+      switch (code) {
+        case 'auth/unauthorized-domain':
+          return `Domain not authorized (${currentHost}). Please add "${currentHost}" in Firebase Console -> Authentication -> Settings -> Authorized domains.`;
+        case 'auth/operation-not-allowed':
+          return "Google Sign-In is not enabled. Please enable Google provider under Firebase Console -> Authentication -> Sign-in method.";
+        case 'auth/popup-blocked':
+          return "Popup was blocked by your browser. Please allow popups or use the direct redirect sign-in below.";
+        case 'auth/popup-closed-by-user':
+          return "Sign-in window was closed before completing.";
+        case 'auth/cancelled-popup-request':
+          return "Authentication popup request was cancelled. Falling back to redirect...";
+        case 'auth/user-cancelled':
+          return "Sign-in was cancelled.";
+        case 'auth/network-request-failed':
+          return "Network error: Unable to reach Firebase. Please check your internet connection.";
+        case 'auth/invalid-email':
+          return "Please enter a valid email address.";
+        case 'auth/user-not-found':
+        case 'auth/wrong-password':
+        case 'auth/invalid-credential':
+          return "Invalid email or password.";
+        case 'auth/email-already-in-use':
+          return "An account already exists with this email address. Please sign in instead.";
+        case 'auth/weak-password':
+          return "Password must be at least 6 characters.";
+        default:
+          return err.message ? err.message.replace(/^Firebase:\s*/, '') : "Authentication error.";
+      }
     }
 
     isReady() {
@@ -109,27 +163,57 @@
       await this.init();
       if (!this.isReady()) throw new Error("Firebase is not configured. Please use Guest Mode or provide Firebase credentials.");
 
-      const cred = await this.authOps.createUserWithEmailAndPassword(this.auth, email, password);
-      if (displayName && cred.user) {
-        await this.authOps.updateProfile(cred.user, { displayName });
+      try {
+        const cred = await this.authOps.createUserWithEmailAndPassword(this.auth, email, password);
+        if (displayName && cred.user) {
+          await this.authOps.updateProfile(cred.user, { displayName });
+        }
+        return cred.user;
+      } catch (err) {
+        throw new Error(this.formatAuthError(err));
       }
-      return cred.user;
     }
 
     async signIn(email, password) {
       await this.init();
       if (!this.isReady()) throw new Error("Firebase is not configured. Please use Guest Mode or provide Firebase credentials.");
 
-      const cred = await this.authOps.signInWithEmailAndPassword(this.auth, email, password);
-      return cred.user;
+      try {
+        const cred = await this.authOps.signInWithEmailAndPassword(this.auth, email, password);
+        return cred.user;
+      } catch (err) {
+        throw new Error(this.formatAuthError(err));
+      }
     }
 
-    async signInWithGoogle() {
+    async signInWithGoogle(options = { mode: 'popup' }) {
       await this.init();
       if (!this.isReady()) throw new Error("Firebase is not configured. Please use Guest Mode or provide Firebase credentials.");
 
-      const cred = await this.authOps.signInWithPopup(this.auth, this.googleProvider);
-      return cred.user;
+      if (options.mode === 'redirect') {
+        sessionStorage.setItem('dl_auth_redirect_pending', 'true');
+        await this.authOps.signInWithRedirect(this.auth, this.googleProvider);
+        return null;
+      }
+
+      try {
+        const cred = await this.authOps.signInWithPopup(this.auth, this.googleProvider);
+        return cred.user;
+      } catch (err) {
+        console.warn("signInWithPopup notice:", err.code, err.message);
+        // If popup was blocked or cancelled, automatically trigger redirect
+        if (err.code === 'auth/popup-blocked' || err.code === 'auth/cancelled-popup-request') {
+          console.info("Popup blocked/cancelled, attempting redirect flow...");
+          sessionStorage.setItem('dl_auth_redirect_pending', 'true');
+          try {
+            await this.authOps.signInWithRedirect(this.auth, this.googleProvider);
+            return null;
+          } catch (redirErr) {
+            throw new Error(this.formatAuthError(redirErr));
+          }
+        }
+        throw new Error(this.formatAuthError(err));
+      }
     }
 
     async signOut() {
@@ -272,6 +356,18 @@
           syncing: "🔄 Eşitleniyor...",
           guest: "👤 Misafir Modu",
           offline: "⚠️ Çevrimdışı"
+        },
+        ar: {
+          synced: "☁️ متزامن",
+          syncing: "🔄 جاري المزامنة...",
+          guest: "👤 وضع الضيف",
+          offline: "⚠️ غير متصل"
+        },
+        uk: {
+          synced: "☁️ Синхронізовано",
+          syncing: "🔄 Синхронізація...",
+          guest: "👤 Гостьовий режим",
+          offline: "⚠️ Офлайн"
         }
       };
 
