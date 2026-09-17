@@ -265,6 +265,15 @@ assert.doesNotThrow(() => {
   global.VocabApp.setLanguage('en');
 }, 'Switching between AR, UK, and EN must execute cleanly');
 
+// 8. Test switchMode & Review Queue Shortcuts
+console.log('▶ Testing switchMode and mode change interactions...');
+assert.doesNotThrow(() => {
+  global.VocabApp.switchMode('mistakes');
+  assert.strictEqual(global.VocabApp.settings.mode, 'mistakes');
+  global.VocabApp.switchMode('de_meaning');
+  assert.strictEqual(global.VocabApp.settings.mode, 'de_meaning');
+}, 'switchMode should cleanly update mode and trigger deck reload');
+
 console.log('✅ All Headless Frontend JS Unit Tests Passed successfully!');
 
 

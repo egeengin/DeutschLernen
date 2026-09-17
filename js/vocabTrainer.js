@@ -785,6 +785,7 @@
         sessionBadge: document.getElementById('session-count-badge'),
         streakBadge: document.getElementById('streak-count-badge'),
         reviewBadge: document.getElementById('review-queue-badge'),
+        reviewQueuePill: document.getElementById('review-queue-pill'),
         // Arena
         cardCounter: document.getElementById('card-counter'),
         accuracyCounter: document.getElementById('accuracy-counter'),
@@ -960,19 +961,22 @@
       // Mode Chips
       this.dom.modeChips.forEach(chip => {
         chip.addEventListener('click', () => {
-          this.dom.modeChips.forEach(c => c.classList.remove('active'));
-          chip.classList.add('active');
-          const mode = chip.dataset.mode;
-          this.settings.mode = mode;
-          this.sessionManager.saveSettings(this.settings);
-          if (mode === 'sprint') {
-            this.startSprintMode();
-          } else {
-            this.stopSprintTimer();
-            this.startNewDeck();
-          }
+          this.switchMode(chip.dataset.mode);
         });
       });
+
+      // Quick Mistake Review Pill Shortcut
+      if (this.dom.reviewQueuePill) {
+        this.dom.reviewQueuePill.setAttribute('role', 'button');
+        this.dom.reviewQueuePill.setAttribute('tabindex', '0');
+        this.dom.reviewQueuePill.addEventListener('click', () => this.switchMode('mistakes'));
+        this.dom.reviewQueuePill.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.switchMode('mistakes');
+          }
+        });
+      }
 
       // Sprint Modal Controls
       if (this.dom.btnCloseSprintSummary) {
@@ -1066,6 +1070,23 @@
       }
       if (this.dom.fileImport) {
         this.dom.fileImport.addEventListener('change', (e) => this.importProgress(e));
+      }
+    }
+
+    switchMode(mode) {
+      if (!mode) return;
+      this.dom.modeChips.forEach(c => {
+        const isTarget = c.dataset.mode === mode;
+        c.classList.toggle('active', isTarget);
+        c.setAttribute('aria-selected', isTarget ? 'true' : 'false');
+      });
+      this.settings.mode = mode;
+      this.sessionManager.saveSettings(this.settings);
+      if (mode === 'sprint') {
+        this.startSprintMode();
+      } else {
+        this.stopSprintTimer();
+        this.startNewDeck();
       }
     }
 
@@ -1226,6 +1247,7 @@
         btn.type = 'button';
         btn.className = 'quiz-option-btn';
         btn.setAttribute('tabindex', '0');
+        btn.setAttribute('aria-label', `Option ${i + 1}: ${optText}`);
         if (isMeaningArabic) btn.setAttribute('dir', 'rtl');
         btn.innerHTML = `<span class="opt-key">${i + 1}</span><span class="opt-text">${optText}</span>`;
         btn.addEventListener('click', () => this.handleAnswer(btn, optText, correctAnswerText, item));
@@ -1618,7 +1640,15 @@
         this.dom.btnUserAccount.addEventListener('click', () => this.openAuthModal());
       }
       if (this.dom.syncStatusPill) {
+        this.dom.syncStatusPill.setAttribute('role', 'button');
+        this.dom.syncStatusPill.setAttribute('tabindex', '0');
         this.dom.syncStatusPill.addEventListener('click', () => this.openAuthModal());
+        this.dom.syncStatusPill.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.openAuthModal();
+          }
+        });
       }
       if (this.dom.btnCloseAuth) {
         this.dom.btnCloseAuth.addEventListener('click', () => this.closeAuthModal());
