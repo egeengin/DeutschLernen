@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deutschlernen-v9';
+const CACHE_NAME = 'deutschlernen-v10';
 const ASSETS = [
   './',
   './index.html',
@@ -17,7 +17,9 @@ const ASSETS = [
   './assets/icons/icon-512.png',
   './assets/icons/apple-touch-icon.png',
   './assets/icons/favicon-32.png',
+  './assets/icons/favicon-16.png',
   './assets/icons/favicon.ico',
+  './favicon.ico',
   './manifest.json',
   './docs/en/telc_b1_exam_guide.md',
   './docs/tr/telc_b1_exam_guide.md',

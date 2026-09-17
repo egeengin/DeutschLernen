@@ -5,6 +5,38 @@ document.documentElement.setAttribute('data-theme', currentTheme);
 let currentMdUrl = null;
 let currentActiveMaterial = null;
 
+// --- Community Feedback Rating Labels & Display ---
+const ratingLabels = {
+  en: {
+    5: "5/5 — Excellent",
+    4: "4/5 — Very Good",
+    3: "3/5 — Good",
+    2: "2/5 — Needs Improvement",
+    1: "1/5 — Poor"
+  },
+  tr: {
+    5: "5/5 — Mükemmel",
+    4: "4/5 — Çok İyi",
+    3: "3/5 — İyi",
+    2: "2/5 — Geliştirilmeli",
+    1: "1/5 — Zayıf"
+  },
+  ar: {
+    5: "5/5 — ممتاز",
+    4: "4/5 — جيد جداً",
+    3: "3/5 — جيد",
+    2: "2/5 — يحتاج تحسين",
+    1: "1/5 — ضعيف"
+  },
+  uk: {
+    5: "5/5 — Відмінно",
+    4: "4/5 — Дуже добре",
+    3: "3/5 — Добре",
+    2: "2/5 — Потребує покращення",
+    1: "1/5 — Погано"
+  }
+};
+
 // Material cards data
 const materials = [
   { icon:'📋', title:'Exam Guide', titleTr:'Sınav Rehberi', titleAr:'دليل الامتحان', titleUk:'Посібник до іспиту', desc:'Structure, scoring, strategies', descTr:'Yapı, puanlama, stratejiler', descAr:'الهيكل، درجات التقييم، والاستراتيجيات', descUk:'Структура, оцінювання та стратегії', en:'./docs/en/telc_b1_exam_guide.md', tr:'./docs/tr/telc_b1_exam_guide.md', levels: ['B1'] },
@@ -652,37 +684,7 @@ function setLang(lang) {
   }
 }
 
-// --- Community Feedback Rating Labels & Display ---
-const ratingLabels = {
-  en: {
-    5: "5/5 — Excellent",
-    4: "4/5 — Very Good",
-    3: "3/5 — Good",
-    2: "2/5 — Needs Improvement",
-    1: "1/5 — Poor"
-  },
-  tr: {
-    5: "5/5 — Mükemmel",
-    4: "4/5 — Çok İyi",
-    3: "3/5 — İyi",
-    2: "2/5 — Geliştirilmeli",
-    1: "1/5 — Zayıf"
-  },
-  ar: {
-    5: "5/5 — ممتاز",
-    4: "4/5 — جيد جداً",
-    3: "3/5 — جيد",
-    2: "2/5 — يحتاج تحسين",
-    1: "1/5 — ضعيف"
-  },
-  uk: {
-    5: "5/5 — Відмінно",
-    4: "4/5 — Дуже добре",
-    3: "3/5 — Добре",
-    2: "2/5 — Потребує покращення",
-    1: "1/5 — Погано"
-  }
-};
+// --- Community Feedback Rating Display ---
 
 function updateRatingDisplay(rating, isPreview = false) {
   const starsWrap = document.getElementById('feedback-stars');

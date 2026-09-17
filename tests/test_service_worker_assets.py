@@ -105,5 +105,48 @@ class TestServiceWorkerAndPWAAssets(unittest.TestCase):
                 self.assertTrue(os.path.exists(disk_path), f"{page} links to missing icon: {href} -> {disk_path}")
 
 
+    def test_transparent_icon_generation_and_taskbar_clarity(self):
+        """Verify generated icons have 100% transparent backgrounds and prominent sizing."""
+        import tempfile
+        import runpy
+        from PIL import Image
+        from scripts.generate_icons import generate_icons
+
+        # Test generation in temporary directory
+        with tempfile.TemporaryDirectory() as tmpdir:
+            generated = generate_icons(output_dir=tmpdir)
+            self.assertIn("512", generated)
+            self.assertIn("192", generated)
+            self.assertIn("180", generated)
+            self.assertIn("32", generated)
+            self.assertIn("16", generated)
+            self.assertIn("ico", generated)
+
+            # Check 512x512 icon transparency and sizing
+            im512 = Image.open(generated["512"])
+            self.assertEqual(im512.size, (512, 512))
+            self.assertEqual(im512.mode, "RGBA")
+            # All 4 corners must be transparent
+            self.assertEqual(im512.getpixel((0, 0))[3], 0)
+            self.assertEqual(im512.getpixel((511, 0))[3], 0)
+            self.assertEqual(im512.getpixel((0, 511))[3], 0)
+            self.assertEqual(im512.getpixel((511, 511))[3], 0)
+
+            # Check visible graphic fills >= 85% of canvas for taskbar prominence
+            bbox = im512.getbbox()
+            self.assertIsNotNone(bbox)
+            w = bbox[2] - bbox[0]
+            h = bbox[3] - bbox[1]
+            self.assertGreaterEqual(w / 512, 0.85, "Icon emblem must fill at least 85% of canvas width")
+            self.assertGreaterEqual(h / 512, 0.85, "Icon emblem must fill at least 85% of canvas height")
+
+        # Test scripts/generate_icons.py execution as __main__
+        import io
+        from contextlib import redirect_stdout
+        script_path = os.path.join(ROOT_DIR, "scripts", "generate_icons.py")
+        with redirect_stdout(io.StringIO()):
+            runpy.run_path(script_path, run_name="__main__")
+
+
 if __name__ == "__main__":
     unittest.main()
