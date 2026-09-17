@@ -62,12 +62,12 @@
     <div class="top-row" style="justify-content: flex-end;">
       <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn" aria-label="Toggle dark mode">☀️</button>
     </div>
-    <h2>TELC B1 Portal</h2>
+    <h2 data-en="TELC B1 Portal" data-tr="TELC B1 Portalı" data-ar="بوابة TELC B1" data-uk="Портал TELC B1">TELC B1 Portal</h2>
     <p data-en="30-Day Study Plan" data-tr="30 Günlük Çalışma Planı" data-ar="خطة دراسية لمدة 30 يوماً" data-uk="30-денний план навчання">30-Day Study Plan</p>
     <input type="text" id="search-input" class="search-box" data-en="Search materials..." data-tr="Materyal ara..." data-ar="ابحث في المواد..." data-uk="Пошук матеріалів..." placeholder="Search materials..." onkeyup="filterCards()">
     
     <!-- Sidebar Goal Card -->
-    <div class="sidebar-goal-badge" onclick="openGoalModal()" title="Click to change your target level or wish">
+    <div class="sidebar-goal-badge" onclick="openGoalModal()" title="Click to change your target level or wish" data-en-title="Click to change your target level or wish" data-tr-title="Hedef seviyenizi veya modunuzu değiştirmek için tıklayın" data-ar-title="انقر لتغيير مستواك المستهدف أو رغبتك" data-uk-title="Натисніть, щоб змінити цільовий рівень або мету">
       <div class="sidebar-goal-row">
         <span class="sidebar-goal-kicker" data-en="ACTIVE GOAL" data-tr="AKTİF HEDEF" data-ar="الهدف النشط" data-uk="АКТИВНА ЦІЛЬ">ACTIVE GOAL</span>
         <span class="sidebar-goal-edit" data-en="Change ⚙️" data-tr="Değiştir ⚙️" data-ar="تغيير ⚙️" data-uk="Змінити ⚙️">Change ⚙️</span>
@@ -82,7 +82,7 @@
     <a href="trainer.html" style="display:flex; align-items:center; gap:10px; background:linear-gradient(135deg, #f59e0b, #ef4444); color:#000000; padding:10px 14px; border-radius:10px; font-weight:700; font-size:13px; text-decoration:none; box-shadow:0 4px 12px rgba(245,158,11,0.25); transition:transform 0.2s ease;">
       <span style="font-size:18px;">⚡</span>
       <div>
-        <div style="line-height:1.2;">Wortschatz Trainer</div>
+        <div style="line-height:1.2;" data-en="Vocab Trainer" data-tr="Kelime Antrenörü" data-ar="مدرب المفردات" data-uk="Тренажер слів">Vocab Trainer</div>
         <div style="font-size:10px; opacity:0.85; font-weight:600;" data-en="2,000+ Words & Quiz" data-tr="2.000+ Kelime & Test" data-ar="أكثر من 2000 كلمة واختبارات" data-uk="2 000+ слів та тести">2,000+ Words & Quiz</div>
       </div>
     </a>
@@ -369,7 +369,7 @@
           <div class="fc-face fc-front">
             <div class="fc-hint" data-en="German" data-tr="Almanca" data-ar="الألمانية" data-uk="Німецька">German</div>
             <div class="fc-word" id="fc-de">arbeiten</div>
-            <div style="font-size:11px; color:var(--text-muted); position:absolute; bottom:16px;">(Click to flip / Çevirmek için tıklayın)</div>
+            <div style="font-size:11px; color:var(--text-muted); position:absolute; bottom:16px;" data-en="(Click to flip)" data-tr="(Çevirmek için tıklayın)" data-ar="(انقر للقلب)" data-uk="(Натисніть, щоб перевернути)">(Click to flip)</div>
           </div>
           <div class="fc-face fc-back">
             <div class="fc-hint" data-en="Translation" data-tr="Çeviri" data-ar="الترجمة" data-uk="Переклад">Translation</div>
@@ -588,12 +588,12 @@
       <div class="entrance-control-group">
         <label for="entrance-level-select" data-en="Target CEFR Level:" data-tr="Hedef CEFR Seviyeniz:" data-ar="المستوى المستهدف حسب الإطار الأوروبي:" data-uk="Цільовий рівень CEFR:">Target CEFR Level:</label>
         <select id="entrance-level-select" class="styled-select" onchange="onEntranceLevelChange(this.value)">
-          <option value="A1">A1 – Beginner (Anfänger)</option>
-          <option value="A2">A2 – Elementary (Grundstufe)</option>
-          <option value="B1" selected>B1 – Intermediate (telc / Goethe)</option>
-          <option value="B2">B2 – Upper Intermediate (Fortgeschritten)</option>
-          <option value="C1">C1 – Advanced Academic (Hochschule)</option>
-          <option value="ALL">All Levels Combined (A1–C1)</option>
+          <option value="A1" data-en="A1 – Beginner (Anfänger)" data-tr="A1 – Başlangıç (Anfänger)" data-ar="A1 – مبتدئ (Anfänger)" data-uk="A1 – Початковий (Anfänger)">A1 – Beginner (Anfänger)</option>
+          <option value="A2" data-en="A2 – Elementary (Grundstufe)" data-tr="A2 – Temel (Grundstufe)" data-ar="A2 – أساسي (Grundstufe)" data-uk="A2 – Базовий (Grundstufe)">A2 – Elementary (Grundstufe)</option>
+          <option value="B1" selected data-en="B1 – Intermediate (telc / Goethe)" data-tr="B1 – Orta Seviye (telc / Goethe)" data-ar="B1 – متوسط (telc / Goethe)" data-uk="B1 – Середній (telc / Goethe)">B1 – Intermediate (telc / Goethe)</option>
+          <option value="B2" data-en="B2 – Upper Intermediate (Fortgeschritten)" data-tr="B2 – İleri Orta (Fortgeschritten)" data-ar="B2 – فوق المتوسط (Fortgeschritten)" data-uk="B2 – Вище середнього (Fortgeschritten)">B2 – Upper Intermediate (Fortgeschritten)</option>
+          <option value="C1" data-en="C1 – Advanced Academic (Hochschule)" data-tr="C1 – İleri Akademik (Hochschule)" data-ar="C1 – أكاديمي متقدم (Hochschule)" data-uk="C1 – Просунутий академічний (Hochschule)">C1 – Advanced Academic (Hochschule)</option>
+          <option value="ALL" data-en="All Levels Combined (A1–C1)" data-tr="Tüm Seviyeler Bir Arada (A1–C1)" data-ar="جميع المستويات مجتمعة (A1–C1)" data-uk="Усі рівні разом (A1–C1)">All Levels Combined (A1–C1)</option>
         </select>
       </div>
       <div class="entrance-control-group">
@@ -621,6 +621,6 @@
 
 <script src="js/firebaseConfig.js"></script>
 <script src="js/firebaseService.js"></script>
-<script src="js/portal.js"></script>
+<script src="js/portal.js?v=2.2"></script>
 </body>
 </html>

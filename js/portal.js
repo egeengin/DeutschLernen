@@ -53,8 +53,10 @@ const materials = [
 
 function getMaterialField(m, field) {
   if (!m) return '';
-  const langKey = currentLang.charAt(0).toUpperCase() + currentLang.slice(1);
-  return m[field + langKey] || m[field] || m[field + 'Tr'] || '';
+  if (currentLang === 'tr') return m[field + 'Tr'] || m[field] || '';
+  if (currentLang === 'ar') return m[field + 'Ar'] || m[field] || '';
+  if (currentLang === 'uk') return m[field + 'Uk'] || m[field] || '';
+  return m[field + 'En'] || m[field] || '';
 }
 
 // Goals & Wishes Configuration
@@ -659,9 +661,16 @@ function setLang(lang) {
     const val = el.getAttribute(`data-${lang}`) || el.getAttribute('data-en');
     if ((el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') && el.hasAttribute('placeholder')) {
       el.placeholder = val;
+    } else if (el.tagName === 'OPTION') {
+      el.textContent = val;
     } else {
       el.innerHTML = val;
     }
+  });
+
+  document.querySelectorAll('[data-en-title]').forEach(el => {
+    const val = el.getAttribute(`data-${lang}-title`) || el.getAttribute('data-en-title');
+    if (val) el.title = val;
   });
 
   renderCards(); // Re-render material cards with proper Turkish / English titles and buttons
@@ -704,8 +713,9 @@ function updateRatingDisplay(rating, isPreview = false) {
   });
 
   if (ratingText) {
-    const langKey = ratingLabels[currentLang] ? currentLang : 'en';
-    ratingText.textContent = ratingLabels[langKey][rating] || `${rating}/5`;
+    const langKey = (typeof ratingLabels !== 'undefined' && ratingLabels[currentLang]) ? currentLang : 'en';
+    const dict = (typeof ratingLabels !== 'undefined') ? ratingLabels[langKey] : null;
+    ratingText.textContent = (dict && dict[rating]) ? dict[rating] : `${rating}/5`;
   }
 }
 
@@ -953,6 +963,7 @@ function applyGoalSelection() {
   }
 
   updateGoalDisplays();
+  renderSidebar(); // Re-render sidebar in case goal or language was adjusted
   renderCards(); // Re-render material cards to reflect recommendation badges
   closeGoalModal();
 }
@@ -978,6 +989,16 @@ function updateGoalDisplays() {
   const pTarget = prefixes.target[currentLang] || prefixes.target.en;
   const pActiveTrack = prefixes.activeTrack[currentLang] || prefixes.activeTrack.en;
 
+  const allLevelLabels = {
+    en: 'All Levels (A1–C1)',
+    tr: 'Tüm Seviyeler (A1–C1)',
+    ar: 'جميع المستويات (A1–C1)',
+    uk: 'Усі рівні (A1–C1)'
+  };
+  const levelDisplay = currentGoalLevel === 'ALL' 
+    ? (allLevelLabels[currentLang] || allLevelLabels.en) 
+    : currentGoalLevel;
+
   // Header chip
   const topGoalIcon = document.getElementById('current-goal-icon');
   const topGoalText = document.getElementById('current-goal-text');
@@ -989,7 +1010,7 @@ function updateGoalDisplays() {
   const sidebarGoalSub = document.getElementById('sidebar-goal-sub');
   if (sidebarGoalName) sidebarGoalName.textContent = goalName;
   if (sidebarGoalSub) {
-    sidebarGoalSub.textContent = `${pTarget} ${currentGoalLevel}`;
+    sidebarGoalSub.textContent = `${pTarget} ${levelDisplay}`;
   }
 
   // Hero section badge & title
