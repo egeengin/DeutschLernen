@@ -16,8 +16,45 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 
 // 1. Mock Browser Environment
 global.window = global;
-global.window.addEventListener = (evt, fn) => {};
-global.window.removeEventListener = (evt, fn) => {};
+const windowListeners = {};
+global.window.addEventListener = (evt, fn) => {
+  windowListeners[evt] = windowListeners[evt] || [];
+  windowListeners[evt].push(fn);
+};
+global.window.removeEventListener = (evt, fn) => {
+  if (windowListeners[evt]) {
+    windowListeners[evt] = windowListeners[evt].filter(f => f !== fn);
+  }
+};
+global.window.dispatchMockEvent = (evt, data) => {
+  (windowListeners[evt] || []).forEach(fn => fn(data));
+};
+
+class MockAudioContext {
+  constructor() {
+    this.state = 'suspended';
+    this.currentTime = 0;
+    this.destination = {};
+  }
+  resume() { this.state = 'running'; }
+  createOscillator() {
+    return {
+      type: 'sine',
+      frequency: { setValueAtTime: () => {}, exponentialRampToValueAtTime: () => {} },
+      connect: () => {},
+      start: () => {},
+      stop: () => {}
+    };
+  }
+  createGain() {
+    return {
+      gain: { setValueAtTime: () => {}, exponentialRampToValueAtTime: () => {} },
+      connect: () => {}
+    };
+  }
+}
+global.window.AudioContext = MockAudioContext;
+global.window.webkitAudioContext = MockAudioContext;
 
 const storage = {};
 global.localStorage = {
@@ -273,6 +310,121 @@ assert.doesNotThrow(() => {
   global.VocabApp.switchMode('de_meaning');
   assert.strictEqual(global.VocabApp.settings.mode, 'de_meaning');
 }, 'switchMode should cleanly update mode and trigger deck reload');
+
+// 9. Test Audio Feedback Synthesizer
+console.log('▶ Testing Web Audio synthesizer feedback (chime & buzz)...');
+assert.doesNotThrow(() => {
+  global.VocabApp.settings.audio = true;
+  global.VocabApp.playAudioFeedback(true);
+  global.VocabApp.playAudioFeedback(false);
+  global.VocabApp.settings.audio = false;
+  global.VocabApp.playAudioFeedback(true); // Should gracefully no-op when audio is false
+  global.VocabApp.settings.audio = true;
+}, 'playAudioFeedback should run cleanly without throwing');
+
+// 10. Test Keyboard Navigation & Shortcuts
+console.log('▶ Testing keyboard navigation and modal hotkeys...');
+assert.doesNotThrow(() => {
+  // Ensure search modal starts hidden
+  global.VocabApp.dom.searchModal.classList.add('hidden');
+
+  // Press D to open search modal
+  global.window.dispatchMockEvent('keydown', { key: 'd', preventDefault: () => {}, target: { tagName: 'DIV' } });
+  assert(!global.VocabApp.dom.searchModal.classList.contains('hidden'), 'Pressing D must open the dictionary modal');
+
+  // Press Escape to close search modal
+  global.window.dispatchMockEvent('keydown', { key: 'Escape', preventDefault: () => {}, target: { tagName: 'DIV' } });
+  assert(global.VocabApp.dom.searchModal.classList.contains('hidden'), 'Pressing Escape must close the dictionary modal');
+
+  // Press R to switch to mistakes mode
+  global.window.dispatchMockEvent('keydown', { key: 'r', preventDefault: () => {}, target: { tagName: 'DIV' } });
+  assert.strictEqual(global.VocabApp.settings.mode, 'mistakes', 'Pressing R must activate mistakes review mode');
+  global.VocabApp.switchMode('de_meaning');
+
+  // Hotkeys should be ignored when target is an input field
+  global.window.dispatchMockEvent('keydown', { key: '1', preventDefault: () => {}, target: { tagName: 'INPUT' } });
+}, 'Keyboard shortcuts must handle modal toggles and input isolation safely');
+
+// 11. Test Spaced Repetition (SRS) SM-2 Algorithm
+console.log('▶ Testing SRS SM-2 progressive interval & mistake queuing logic...');
+const sm = global.VocabApp.sessionManager;
+const testWordId = 99999;
+
+// Wrong answer should set status to review, interval 1, reset streak
+const wrongRes = sm.recordResult(testWordId, false);
+assert.strictEqual(wrongRes.status, 'review', 'Wrong answer must move item to review status');
+assert.strictEqual(wrongRes.streak, 0, 'Wrong answer must reset streak to 0');
+assert.strictEqual(wrongRes.interval, 1, 'Wrong answer interval must reset to 1 day');
+assert(wrongRes.easeFactor <= 2.3, 'Wrong answer must decrease easeFactor');
+
+// 1st correct answer: streak 1, interval 1
+const c1Res = sm.recordResult(testWordId, true);
+assert.strictEqual(c1Res.status, 'learning', '1st correct answer status should be learning');
+assert.strictEqual(c1Res.streak, 1, 'Streak should be 1');
+assert.strictEqual(c1Res.interval, 1, 'Interval should be 1');
+
+// 2nd correct answer: streak 2, interval 3
+const c2Res = sm.recordResult(testWordId, true);
+assert.strictEqual(c2Res.streak, 2, 'Streak should be 2');
+assert.strictEqual(c2Res.interval, 3, 'Interval should increase to 3 days');
+
+// 3rd correct answer: streak 3, interval 7, status mastered
+const c3Res = sm.recordResult(testWordId, true);
+assert.strictEqual(c3Res.streak, 3, 'Streak should be 3');
+assert.strictEqual(c3Res.interval, 7, 'Interval should increase to 7 days');
+assert.strictEqual(c3Res.status, 'mastered', '3 consecutive correct answers must advance item to mastered');
+
+// 12. Test Timed Sprint Drill Engine
+console.log('▶ Testing Timed Sprint drill engine...');
+assert.doesNotThrow(() => {
+  global.VocabApp.startSprintMode();
+  assert.strictEqual(global.VocabApp.settings.mode, 'sprint', 'Sprint mode setting must be sprint');
+  assert.strictEqual(global.VocabApp.sprintTimeRemaining, 120, 'Sprint initial timer must be 120 seconds');
+  assert.strictEqual(global.VocabApp.sprintCardsAnswered, 0, 'Initial sprint answers must be 0');
+
+  // Manually stop sprint timer to clean up interval
+  global.VocabApp.stopSprintTimer();
+  global.VocabApp.switchMode('de_meaning');
+}, 'Timed Sprint mode must initialize and clean up cleanly');
+
+// 13. Test Multi-Level Dictionary Search
+console.log('▶ Testing multi-level dictionary search (DE, TR, EN, AR, UK)...');
+assert.doesNotThrow(() => {
+  global.VocabApp.openSearchModal();
+  assert(!global.VocabApp.dom.searchModal.classList.contains('hidden'), 'Search modal must be visible');
+
+  // Empty query should return first 50 results
+  global.VocabApp.filterSearchResults('');
+  assert(global.VocabApp.dom.searchResults.innerHTML.includes('search-result-row'), 'Empty search must render preview rows');
+
+  // Query for B2/C1 academic words
+  global.VocabApp.filterSearchResults('differenzieren');
+  assert(global.VocabApp.dom.searchResults.innerHTML.includes('differenzieren'), 'Search for "differenzieren" should return results');
+
+  global.VocabApp.filterSearchResults('implizieren');
+  assert(global.VocabApp.dom.searchResults.innerHTML.includes('implizieren'), 'Search for "implizieren" should return results');
+
+  // Search across languages
+  global.VocabApp.filterSearchResults('kitap');
+  global.VocabApp.filterSearchResults('book');
+
+  global.VocabApp.closeSearchModal();
+  assert(global.VocabApp.dom.searchModal.classList.contains('hidden'), 'Search modal must be hidden after closing');
+}, 'Dictionary search must work across all language fields');
+
+// 14. Test Progress Export and Backup Portability
+console.log('▶ Testing progress export and backup data structure...');
+assert.doesNotThrow(() => {
+  const exportData = {
+    version: 2,
+    timestamp: new Date().toISOString(),
+    progress: sm.getProgressMap(),
+    sessions: sm.sessionData,
+    settings: sm.getSettings()
+  };
+  assert(exportData.progress.hasOwnProperty(String(testWordId)), 'Export data must contain recorded test word');
+  assert(exportData.sessions.totalSessions >= 1, 'Export data must include session history');
+}, 'Export data structure must be complete and valid');
 
 console.log('✅ All Headless Frontend JS Unit Tests Passed successfully!');
 

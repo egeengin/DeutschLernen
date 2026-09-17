@@ -1,124 +1,169 @@
-<!-- markdownlint-disable MD033 -->
-# B1 Yazma ve Konuşma Özeti
+# İnceleme: Yazma ve Konuşma (Schreiben & Sprechen)
 
----
+______________________________________________________________________
 
-## 1. Yazma (Schreiben / Schriftlicher Ausdruck) — 30 dk
+## 1. Yazma (Schreiben) — 30 Dk, 2 Bölüm
 
-Yazma bölümü, günlük durumlarda e-posta yoluyla iletişim kurma yeteneğinizi test eder.
+Resmi **telc Deutsch B1** Yazma Sınavı DAİMA iki bölümden oluşur:
+* **Teil 1:** Kısa ve gayri resmi bir "Chat" veya "Kurznachricht" (Kısa mesaj) (30-40 kelime).
+* **Teil 2:** Resmi veya yarı resmi bir E-posta (70-80 kelime).
 
-### telc Deutsch B1 Yazma Görevi
+### Tam Puan Almak İçin 4 Altın Kural
+1. ✅ Soruda verilen **TÜM maddelere (genelde her görev için 3 madde)** değinin. Birini bile atlarsanız ciddi puan kaybedersiniz.
+2. ✅ Muhatabınıza uygun doğru bir **selamlama** ve **kapanış** kullanın (Chat için samimi, E-posta için resmi).
+3. ✅ En az 2-3 tane **bağlaç** (deshalb, außerdem, weil, dass) kullanın. Kısa, basit cümleleri art arda sıralamayın.
+4. ✅ Kelime sınırlarına uyun. Eksik kelime kesin puan cezası demektir.
 
-**TEK** bir metin yazarsınız: 4 alt başlığa (Leitpunkte) dayalı resmi veya yarı resmi bir e-posta yanıtı. E-posta yaklaşık **100–150 kelime** olmalıdır. Toplam: **45 puan**.
+### Şablonlar: Chat ve E-Posta
 
-### Tam Puan İçin Temel Kurallar
-
-1. **Görevi Tamamlama (Aufgabenbewältigung):** Soruda verilen **TÜM** 4 maddeye değinmelisiniz. Birini bile atlamak ciddi puan kaybına neden olur.
-2. **Format:** Doğru Selamlama ve Kapanışları kullanın (Resmi ve Samimi ayrımı).
-3. **Bağlaçlar:** B1 seviyenizi göstermek için en az 2-3 bağlaç (*weil, dass, deshalb, aber*) kullanın.
-4. **Yapı:** Yazmaya başlamadan önce planınızı yapın — Anrede → Einleitung → 4 Leitpunkte → Schluss → Grußformel.
-
-### Puanlama Kriterleri
-
-| Kriter | A (5 puan) | B (3 puan) | C (1 puan) | D (0 puan) |
-| --- | --- | --- | --- | --- |
-| I. Aufgabenbewältigung | 4 maddenin tümü iyi ele alınmış | Çoğunlukla ele alınmış | Kısmen ele alınmış | Konu kaçırılmış |
-| II. Kommunikative Gestaltung | Zengin bağlaçlar, tutarlı | Yeterli akış | Temel, kopuk | Tutarsız |
-| III. Formale Richtigkeit | Çok az hata | Bazı hatalar | Çok hata | Çoğunlukla yanlış |
-
-*Final puan = (I + II + III) × 3 = maks 45 puan.*
-
-### E-Posta Şablonu
-
+#### 1. Bölüm 1: Samimi Chat (Die Kurznachricht) - *telc B1'in Farkı!*
+Genellikle WhatsApp üzerinden bir arkadaşınıza buluşma veya özür mesajı yazarsınız.
 ```text
-Sehr geehrte Damen und Herren, (veya Sehr geehrte Frau X / Sehr geehrter Herr Y)
+Hallo [İsim],
+wie geht es dir? 
+Es tut mir leid, aber ich kann morgen leider nicht kommen, weil [Mazeretiniz/Madde 1].
+Können wir uns am [Yeni Gün/Saat] treffen? [Madde 2]
+Bitte melde dich!
+Liebe Grüße
+[Sadece Adınız]
+```
 
-ich schreibe Ihnen, weil...
-[1. Madde]
-Außerdem möchte ich fragen, ob... [2. Madde]
-[3. Madde]
-[4. Madde]
+#### 2. Bölüm 2: İş Başvurusu (Die Bewerbung) - *Çok Önemli!*
+telc Deutsch B1 sınavında bir iş ilanına e-posta ile başvurmak çok yaygındır.
+```text
+Sehr geehrte Damen und Herren,
 
-Ich danke Ihnen im Voraus für Ihre Hilfe.
+mit großem Interesse habe ich Ihre Anzeige im Internet gelesen.
+Ich schreibe Ihnen diese E-Mail, weil ich mich um die Stelle als [Meslek Adı] bewerben möchte.
+... [Madde 1: Tecrübenizi anlatın]
+Außerdem möchte ich Sie fragen, wie die Arbeitszeiten sind. [Madde 2]
+Ich habe Erfahrung in diesem Bereich, weil ich in meiner Heimat als [Meslek Adı] gearbeitet habe. [Madde 3]
+Über eine Einladung zu einem persönlichen Gespräch würde ich mich sehr freuen. [Madde 4]
+
+Vielen Dank im Voraus für Ihre Antwort.
 
 Mit freundlichen Grüßen
 [Adınız Soyadınız]
 ```
 
-**Samimi versiyon (arkadaşlara yanıtlar için):**
-
+#### 2. Resmi Şikayet / Tanınmayan Kişi (Die Beschwerde)
+Bozuk bir ürün geldiğinde veya bir şirkete kızdığınızda bunu kullanın.
 ```text
-Liebe/r [İsim],
+Sehr geehrte Damen und Herren,
 
-vielen Dank für deine E-Mail! [1. Madde]
-[2. Madde]
-[3. Madde]
-[4. Madde]
+ich schreibe Ihnen, weil ich am [Tarih] [Ürün] bei Ihnen gekauft habe und es leider ein großes Problem gibt.
+... [Madde 1 & 2]
+Außerdem möchte ich Sie darauf hinweisen, dass... [Madde 3]
+Deshalb erwarte ich, dass Sie mir mein Geld zurückgeben oder mir einen Ersatz schicken. [Madde 4]
 
-Ich freue mich auf deine Antwort!
+Ich hoffe auf eine schnelle und positive Antwort.
+Vielen Dank im Voraus.
 
-Liebe Grüße
-[Adınız]
+Mit freundlichen Grüßen
+[Adınız Soyadınız]
 ```
 
----
+#### 3. Yarı Resmi Özür (Entschuldigung)
+Bir kursa, işe veya randevuya gidemeyeceğiniz durumlarda bunu kullanın.
+```text
+Sehr geehrte(r) Frau/Herr [İsim],
 
-## 2. Konuşma (Sprechen / Mündlicher Ausdruck) — ~15 dk
+ich hoffe, es geht Ihnen gut.
+Ich schreibe Ihnen diese E-Mail, um mich zu entschuldigen.
+Leider kann ich am [Tarih] nicht zu unserem Termin kommen, weil ich plötzlich krank geworden bin.
+... [Madde 1 & 2 için detaylar]
+Könnten wir den Termin vielleicht auf nächste Woche verschieben? [Madde 3]
+Es wäre toll, wenn Sie mir kurz Bescheid geben könnten. [Madde 4]
 
-Çiftler halinde (iki aday) iki sınavcı eşliğinde yapılır. 20 dakika hazırlık süresi vardır.
+Vielen Dank für Ihr Verständnis.
 
-### Teil 1: Einander kennenlernen (Tanışma) — 15 puan
+Mit freundlichen Grüßen
+[Adınız Soyadınız]
+```
 
-Standart konular: Ad, Yaş, Ülke, İş, Aile, Diller, Barınma.
+#### 4. Samimi Davet (Einladung)
+Bir arkadaşınıza parti veya gezi düzenlemek için yazdığınızda kullanın.
+```text
+Liebe(r) [İsim],
 
-**B1 İpucu:** Sadece gerçekleri sıralamayın. Derinlik katmak için "seit" ve "weil" kullanın.
+wie geht es dir? Mir geht es super!
+Ich schreibe dir heute, weil ich am Wochenende eine große Party feiere und dich herzlich einladen möchte!
+... [Madde 1 & 2]
+Wir könnten auch zusammen etwas kochen, wenn du Lust hast. [Madde 3]
+Bitte gib mir bis Freitag Bescheid, ob du kommen kannst. [Madde 4]
 
-- *Örn:* "Ich lebe seit zwei Jahren in Berlin, weil ich hier arbeiten möchte."
+Ich freue mich sehr auf dich!
+Liebe Grüße
+[Sadece Adınız]
+```
 
-### Teil 2: Über ein Thema sprechen (Bir Konu Hakkında Konuşma) — 30 puan
+______________________________________________________________________
 
-Bir konu hakkında (örn. "Gruppenreisen") bir kişinin kısa alıntısını okursunuz. Yapmanız gerekenler:
+## 2. İnteraktif Mektup Pratiği
 
-1. Kişinin ne dediğini **aktarın**.
-2. **Kendi fikrinizi belirtin.**
-3. Partnerinizle **tartışın** — onaylayın/karşı çıkın.
+Resmi ve samimi kalıpları ne kadar iyi ayırt edebildiğinizi test edelim.
 
-**Faydalı kalıplar:**
+<div class="md-quiz" 
+  data-question="Çocuğunuzun öğretmeni 'Herr Müller'e bir e-posta yazıyorsunuz. Doğru selamlama hangisidir?" 
+  data-options="Lieber Herr Müller,|Sehr geehrter Herr Müller,|Hallo Müller," 
+  data-answer="1" 
+  data-explain="Öğretmenler yarı resmi bir saygı gerektirir. 'Sehr geehrter Herr Müller,' mükemmel bir açılıştır. 'Lieber' fazla samimidir, ve 'Hallo Müller' Alman kültüründe son derece kabadır!"></div>
 
-- "In dem Text sagt Frau X, dass..." (aktarma)
-- "Ich bin der Meinung, dass..." / "Meiner Meinung nach..." (fikir)
-- "Ich finde das Thema wichtig, weil..."
-- "In meinem Heimatland ist das anders/ähnlich." (Benim ülkemde bu durum farklıdır/benzerdir.)
+<div class="md-quiz" 
+  data-question="Bir şirkete yazdığınız resmi bir mektubu bitirmek istiyorsunuz. Hangi kapanış doğrudur?" 
+  data-options="Liebe Grüße,|Mit freundlichen Grüßen|Dein Tom" 
+  data-answer="1" 
+  data-explain="Resmi mektuplar DAİMA 'Mit freundlichen Grüßen' ile biter. Dikkat: Almanca'da bu cümlenin sonuna İngilizcedeki gibi VİRGÜL KONMAZ!"></div>
 
-### Teil 3: Gemeinsam eine Aufgabe lösen (Birlikte Planlama) — 30 puan
+<div class="md-quiz" 
+  data-question="Bir şirketten para iadesi istiyorsunuz. En iyi B1 seviyesi ifade hangisidir?" 
+  data-options="Ich will mein Geld. (Paramı istiyorum.)|Könnten Sie mir bitte mein Geld zurückerstatten? (Acaba paramı iade etmeniz mümkün müdür?)|Geben Sie mir Geld sofort. (Bana hemen para verin.)" 
+  data-answer="1" 
+  data-explain="'Könnten Sie' kalıbı kibar Konjunktiv II formunu kullanır. Diğer ikisi inanılmaz derecede agresif ve düşük eğitimli görünür, sınavda puan kaybettirir."></div>
 
-Partnerinizle bir etkinlik, gezi veya hediye organize edin.
+______________________________________________________________________
 
-**Sınav görevlileri birbirinize TEPKİ verdiğinizi görmek ister.**
+## 3. Konuşma (Sprechen) — 15 Dk, Partnerli
 
-- "Was meinst du dazu?" (Bu konuda ne düşünüyorsun?)
-- "Das ist eine gute Idee, aber..." (Bu iyi bir fikir ama...)
-- "Sollen wir vielleicht...?" (Acaba ... yapsak mı?)
-- "Ich schlage vor, dass wir..." (Öneririm ki biz...)
-- "Einverstanden!" / "Das finde ich nicht so gut, weil..." (Kabul! / Bunu pek iyi bulmuyorum çünkü...)
+Konuşma sınavı bir partnerle birlikte yapılır ve 3 bölümden oluşur:
 
----
+### Bölüm 1: Kendini Tanıtma (Sich vorstellen)
+Ad, Yaş, Ülke, Şehir, Meslek, Diller hakkında konuşmalısınız.
+**🛑 YOUTUBE SINAV İPUCU:** Sınav görevlileri arka arkaya robot gibi basit cümleler kuranlardan nefret eder! B1 olduğunuzu kanıtlamak için cümleleri detaylandırmalısınız!
+- **Kötü:** "Ich heiße Ali. Ich bin 30 Jahre alt."
+- **İyi (B1):** "Ich heiße Ali und ich komme aus der Türkei, aber **seit drei Jahren lebe ich** mit meiner Familie in Berlin." (Bağlaç kullanarak ve bir tık detay vererek)
 
-## İnteraktif Pratik
+### Bölüm 2: Gemeinsam etwas planen (Birlikte bir şey planlama)
+Partnerinizle birlikte bir parti, gezi veya hediye kararı vermelisiniz.
+**🛑 YOUTUBE SINAV İPUCU:** Sınav görevlilerinin görmek istedikleri en önemli şey **partnerinize TEPKİ vermenizdir**.
 
-<div class="md-quiz"
-  data-question="Bir şirkete resmi bir e-posta yazıyorsunuz. Doğru kapanış hangisidir?"
-  data-options="Liebe Grüße|Mit freundlichen Grüßen|Tschüss"
-  data-answer="1"
-  data-explain="Doğru: 'Mit freundlichen Grüßen' standart resmi kapanıştır. Not: Almanca'da resmi yazışmalarda kapanıştan sonra VİRGÜL konmaz."></div>
+| İşlev | İfadeler (Redemittel) |
+| --- | --- |
+| **Öneri** | *Ich schlage vor, dass... / Wie wäre es, wenn wir...? / Wollen wir vielleicht...?* |
+| **Onaylama** | *Das ist eine tolle Idee! / Ja, damit bin ich einverstanden. / Genau!* |
+| **Reddetme** | *Das finde ich nicht so gut... / Vielleicht wäre es besser, wenn...* |
 
-<div class="md-quiz"
-  data-question="telc Deutsch B1 yazma görevinde kaç Leitpunkte'ye değinmeniz gerekiyor?"
-  data-options="2|3|4"
-  data-answer="2"
-  data-explain="Doğru: E-posta yanıtınızda 4 Leitpunkte'nin (madde) TÜMÜNE değinmeniz gerekir."></div>
+### Bölüm 3: Meinung äußern / Diskutieren (Fikir Beyan Etme veya Konu Tartışma)
+Bir konu hakkında konuşur veya deneyimlerinizi paylaşırsınız.
+**🛑 YOUTUBE SINAV İPUCU:** Konuyu DAİMA kendi anavatanınızla kıyaslayın!
+* *In meinem Heimatland ist das anders...* (Benim ülkemde bu durum farklıdır...) 
+* *Bei uns machen wir das genauso...* (Biz de aynen böyle yaparız...)
 
-## Kaynaklar
+<div class="md-quiz" 
+  data-question="Partneriniz öğretmene çiçek almayı öneriyor, ancak siz kitap almanın daha iyi olduğunu düşünüyorsunuz. Nasıl yanıt verirsiniz?" 
+  data-options="Nein, Blumen sind dumm. (Hayır, çiçekler aptalca.)|Blumen sind schön, aber ein Buch wäre vielleicht noch besser, weil... (Çiçekler güzel, ama bir kitap belki daha iyi OLURDU çünkü...)|Ich will ein Buch kaufen. (Ben kitap almak istiyorum.)" 
+  data-answer="1" 
+  data-explain="B Seçeneği kibarca aynı fikirde olmamayı (Disagreement) ve Konjunktiv II ('wäre') kullanımını harmanlıyor. Üstelik 'weil' ile sebep belirtmeniz B1 sınavından çok yüksek puan almanızı sağlar."></div>
 
-- [telc Deutsch B1 Resmi Sayfası](https://www.telc.net/sprachpruefungen/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
-- [telc Deutsch B1 Übungstest 1 (PDF)](file:///Users/ege/Downloads/telc_deutsch_b1/telc_deutsch_b1_zd_uebungstest_1.pdf) — Yazma kriterleri sayfa 36–38'de.
+<div class="md-quiz" 
+  data-question="Bir buluşma saati önermeniz gerekiyor. En iyi dil bilgisi seviyesi hangisidir?" 
+  data-options="Wir treffen uns um 8. (8'de buluşuyoruz.)|Wann treffen wir uns? (Ne zaman buluşuruz?)|Wie wäre es, wenn wir uns am Samstag um 14 Uhr treffen? (Cumartesi 14:00'da buluşmaya ne dersin?)" 
+  data-answer="2" 
+  data-explain="'Wie wäre es, wenn...' (Aşağıdaki durumu yapsaydık nasıl olurdu...) klasik ve çok havalı bir B1 öneri kalıbıdır. Sınav görevlilerini anında etkiler."></div>
+
+______________________________________________________________________
+
+## Kaynaklar (References)
+* **telc Deutsch B1 Resmi Portal:** [telc.net/sprachpruefungen](https://www.telc.net/sprachpruefungen/zertifikatspruefung/deutsch/zertifikat-deutsch-telc-deutsch-b1.html)
+* **Goethe-Institut Hazırlık:** [goethe.de B1 exams](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html)
+* **YouTube B1 Konuşma Tüyoları:** [Deutsch Lernen mit der DW](https://learngerman.dw.com/) ve YouTube üzerinden aratılabilecek "telc B1 Sprechen" popüler kanalları (örn: Marija, DeutschLera).

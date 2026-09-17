@@ -323,6 +323,23 @@ class TestExportFeedback(unittest.TestCase):
             self.assertEqual(reader[1][1], "doc_cli_1")
 
 
+    def test_runpy_main_export_feedback(self):
+        """Test invoking scripts/export_feedback.py as __main__ using runpy."""
+        import runpy
+        from unittest.mock import patch
+        import io
+        from contextlib import redirect_stdout
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            out_csv = os.path.join(tmpdir, "main_out.csv")
+            test_argv = ["export_feedback.py", "--sample", "--output", out_csv]
+            script_path = os.path.join(ROOT_DIR, "scripts", "export_feedback.py")
+            with patch.object(sys, "argv", test_argv):
+                with redirect_stdout(io.StringIO()):
+                    runpy.run_path(script_path, run_name="__main__")
+            self.assertTrue(os.path.exists(out_csv))
+
+
 if __name__ == "__main__":
     unittest.main()
 

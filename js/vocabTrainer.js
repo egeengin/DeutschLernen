@@ -738,14 +738,16 @@
         if (typeof window !== 'undefined' && window.location && window.location.search) {
           const params = new URLSearchParams(window.location.search);
           const urlLevel = params.get('level');
-          if (urlLevel && ['ALL', 'A1', 'A2', 'B1', 'B2'].includes(urlLevel.toUpperCase())) {
+          if (urlLevel && ['ALL', 'A1', 'A2', 'B1', 'B2', 'C1'].includes(urlLevel.toUpperCase())) {
             this.settings.level = urlLevel.toUpperCase();
             if (this.settings.level === 'B2') {
               this.settings.deck = 'b2';
+            } else if (this.settings.level === 'C1') {
+              this.settings.deck = 'c1';
             }
           }
           const urlDeck = params.get('deck');
-          if (urlDeck && ['core', 'b2', 'all'].includes(urlDeck.toLowerCase())) {
+          if (urlDeck && ['core', 'b2', 'c1', 'all'].includes(urlDeck.toLowerCase())) {
             this.settings.deck = urlDeck.toLowerCase();
           }
         }
@@ -878,11 +880,9 @@
         ...w,
         id: (typeof w.id === 'number' && w.id < 20000) ? 20000 + w.id : w.id
       }));
-      if (this.settings.level === 'C1') return c1;
-      if (this.settings.level === 'B2') return b2;
-      if (this.settings.deck === 'c1') return c1;
-      if (this.settings.deck === 'b2') return b2;
-      if (this.settings.deck === 'all') return [...core, ...b2, ...c1];
+      if (this.settings.level === 'C1' || this.settings.deck === 'c1') return c1;
+      if (this.settings.level === 'B2' || this.settings.deck === 'b2') return b2;
+      if (this.settings.level === 'ALL' || this.settings.deck === 'all') return [...core, ...b2, ...c1];
       return core;
     }
 
@@ -941,6 +941,16 @@
       // Deck & Level Selectors
       this.dom.deckSelector.addEventListener('change', (e) => {
         this.settings.deck = e.target.value;
+        if (this.settings.deck === 'b2') {
+          this.settings.level = 'B2';
+          if (this.dom.levelSelector) this.dom.levelSelector.value = 'B2';
+        } else if (this.settings.deck === 'c1') {
+          this.settings.level = 'C1';
+          if (this.dom.levelSelector) this.dom.levelSelector.value = 'C1';
+        } else if (this.settings.deck === 'all') {
+          this.settings.level = 'ALL';
+          if (this.dom.levelSelector) this.dom.levelSelector.value = 'ALL';
+        }
         this.sessionManager.saveSettings(this.settings);
         this.refreshHeaderStats();
         this.startNewDeck();
@@ -948,7 +958,21 @@
 
       this.dom.levelSelector.addEventListener('change', (e) => {
         this.settings.level = e.target.value;
+        if (this.settings.level === 'B2') {
+          this.settings.deck = 'b2';
+          if (this.dom.deckSelector) this.dom.deckSelector.value = 'b2';
+        } else if (this.settings.level === 'C1') {
+          this.settings.deck = 'c1';
+          if (this.dom.deckSelector) this.dom.deckSelector.value = 'c1';
+        } else if (this.settings.level === 'ALL') {
+          this.settings.deck = 'all';
+          if (this.dom.deckSelector) this.dom.deckSelector.value = 'all';
+        } else {
+          this.settings.deck = 'core';
+          if (this.dom.deckSelector) this.dom.deckSelector.value = 'core';
+        }
         this.sessionManager.saveSettings(this.settings);
+        this.refreshHeaderStats();
         this.startNewDeck();
       });
 
@@ -1024,6 +1048,22 @@
 
         // Never intercept keyboard shortcuts when typing in an input, textarea, or editable field
         if (e.target && (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName) || e.target.isContentEditable)) {
+          return;
+        }
+
+        // Quick shortcut to open dictionary browser modal [D]
+        if (e.key === 'd' || e.key === 'D') {
+          if (this.dom.searchModal && this.dom.searchModal.classList.contains('hidden')) {
+            e.preventDefault();
+            this.openSearchModal();
+            return;
+          }
+        }
+
+        // Quick shortcut to jump directly to mistakes review mode [R]
+        if (e.key === 'r' || e.key === 'R') {
+          e.preventDefault();
+          this.switchMode('mistakes');
           return;
         }
 
@@ -1206,6 +1246,7 @@
       // Word & Badges
       this.dom.arenaPosBadge.textContent = item.pos.toUpperCase();
       this.dom.arenaLevelBadge.textContent = item.level;
+      this.dom.arenaLevelBadge.className = 'badge-level badge-' + (item.level ? item.level.toLowerCase() : 'b1');
 
       // Render Question prompt according to selected Mode
       let promptTitle = "";
@@ -1345,6 +1386,9 @@
         btn.classList.add('wrong');
         this.sessionWrong++;
       }
+
+      // Audio feedback chime or soft buzz
+      this.playAudioFeedback(isCorrect);
 
       // Update Accuracy Counter in live UI
       const totalAnswered = this.sessionCorrect + this.sessionWrong;
@@ -1531,6 +1575,47 @@
       }
     }
 
+    playAudioFeedback(isCorrect) {
+      if (!this.settings.audio) return;
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtx) return;
+        if (!this.audioCtx) {
+          this.audioCtx = new AudioCtx();
+        }
+        if (this.audioCtx.state === 'suspended') {
+          this.audioCtx.resume();
+        }
+        const now = this.audioCtx.currentTime;
+        const osc = this.audioCtx.createOscillator();
+        const gain = this.audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(this.audioCtx.destination);
+
+        if (isCorrect) {
+          // Cheerful chime: C5 (523.25Hz) to G5 (783.99Hz)
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(523.25, now);
+          osc.frequency.exponentialRampToValueAtTime(783.99, now + 0.12);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+          osc.start(now);
+          osc.stop(now + 0.25);
+        } else {
+          // Soft low buzz: 220Hz to 160Hz
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(220, now);
+          osc.frequency.exponentialRampToValueAtTime(160, now + 0.15);
+          gain.gain.setValueAtTime(0.18, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.22);
+          osc.start(now);
+          osc.stop(now + 0.22);
+        }
+      } catch (e) {
+        // AudioContext disabled or unpermitted in host environment
+      }
+    }
+
     // --- Search Modal / Dictionary ---
     openSearchModal() {
       this.dom.searchModal.classList.remove('hidden');
@@ -1544,11 +1629,14 @@
     }
 
     filterSearchResults(query) {
-      const pool = this.getAllWordsPool();
+      const core = window.VOCAB_2000 || [];
+      const b2 = window.VOCAB_B2 || [];
+      const c1 = window.VOCAB_C1 || [];
+      const allWords = [...core, ...b2, ...c1];
       const q = query.trim().toLowerCase();
       const filtered = q === '' 
-        ? pool.slice(0, 50) 
-        : pool.filter(w => 
+        ? allWords.slice(0, 50) 
+        : allWords.filter(w => 
             (w.de && w.de.toLowerCase().includes(q)) || 
             (w.tr && w.tr.toLowerCase().includes(q)) || 
             (w.en && w.en.toLowerCase().includes(q)) ||

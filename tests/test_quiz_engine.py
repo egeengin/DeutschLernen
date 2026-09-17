@@ -183,6 +183,18 @@ class TestQuizEngine(unittest.TestCase):
             ]
             self.assertGreaterEqual(len(distractors), 3)
 
+        # Test mock engine deck generation for synonyms and antonyms
+        sim = SimulatedDeckGenerator(self.vocab2000)
+        syn_deck = sim.generate_deck(mode="synonyms", deck_size=10)
+        self.assertGreater(len(syn_deck), 0)
+        ant_deck = sim.generate_deck(mode="antonyms", deck_size=10)
+        self.assertGreater(len(ant_deck), 0)
+
+        # Test in_review items inclusion in quota_review
+        sim.progress_map[self.vocab2000[0]["id"]] = {"in_review": True, "state": "learning"}
+        std_deck = sim.generate_deck(mode="de_meaning", deck_size=20)
+        self.assertGreater(len(std_deck), 0)
+
     def test_vocab_trainer_js_distractor_and_keyboard_guards(self):
         """Verify js/vocabTrainer.js source code ensures German-only distractors and keyboard guards."""
         js_path = os.path.join(ROOT_DIR, "js", "vocabTrainer.js")
