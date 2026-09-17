@@ -461,10 +461,59 @@ body {
   text-transform: uppercase;
 }
 
-.badge-level.badge-b2 {
+.badge-level.badge-a1,
+.badge-a1 {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.badge-level.badge-a2,
+.badge-a2 {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.badge-level.badge-b1,
+.badge-b1 {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.badge-level.badge-b2,
+.badge-b2 {
   background: rgba(139, 92, 246, 0.15);
-  color: var(--accent-purple);
+  color: #8b5cf6;
   border-color: rgba(139, 92, 246, 0.3);
+}
+
+.badge-level.badge-c1,
+.badge-c1 {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.shortcut-hints {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  cursor: help;
+  user-select: none;
+  transition: var(--transition);
+}
+
+.shortcut-hints:hover {
+  color: var(--text-primary);
+  border-color: var(--accent-gold);
 }
 
 .badge-pos {

@@ -156,6 +156,70 @@ class TestDatasetAndGenerators(unittest.TestCase):
             second_count = add_ar_uk.run(test_html_path)
             self.assertEqual(second_count, 0, "Re-running should be idempotent and not add duplicates")
 
+    def test_runpy_main_execution_generators(self):
+        """Verify generator scripts and dataset builders execute as __main__."""
+        import runpy
+        import io
+        from contextlib import redirect_stdout
+
+        scripts_to_run = [
+            os.path.join(ROOT_DIR, "scripts", "generate_grammar.py"),
+            os.path.join(ROOT_DIR, "scripts", "generate_rl.py"),
+            os.path.join(ROOT_DIR, "scripts", "generate_ws.py"),
+            os.path.join(ROOT_DIR, "scripts", "add_ar_uk_to_index.py"),
+            os.path.join(ROOT_DIR, "scripts", "build_2000_dataset.py"),
+        ]
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            for script_path in scripts_to_run:
+                runpy.run_path(script_path, run_name="__main__")
+        output = buf.getvalue()
+        self.assertIn("grammar files", output)
+        self.assertIn("reading/listening files", output)
+        self.assertIn("writing/speaking files", output)
+        self.assertIn("Total compiled Core entries", output)
+
+    def test_build_2000_dataset_duplicates_handling(self):
+        """Verify build_datasets handles duplicate B2/C1 words cleanly."""
+        import tempfile
+        from scripts.build_2000_dataset import B2_ADVANCED_DATA, C1_ACADEMIC_DATA, build_datasets
+
+        orig_b2 = list(B2_ADVANCED_DATA)
+        orig_c1 = list(C1_ACADEMIC_DATA)
+        try:
+            if B2_ADVANCED_DATA:
+                B2_ADVANCED_DATA.append(B2_ADVANCED_DATA[0])
+            if C1_ACADEMIC_DATA:
+                C1_ACADEMIC_DATA.append(C1_ACADEMIC_DATA[0])
+
+            with tempfile.TemporaryDirectory() as tmpdir:
+                tmp_v2 = os.path.join(tmpdir, "v2000.js")
+                tmp_b2 = os.path.join(tmpdir, "vb2.js")
+                tmp_c1 = os.path.join(tmpdir, "vc1.js")
+                build_datasets(tmp_v2, tmp_b2, tmp_c1)
+                self.assertTrue(os.path.exists(tmp_b2))
+                self.assertTrue(os.path.exists(tmp_c1))
+        finally:
+            B2_ADVANCED_DATA.clear()
+            B2_ADVANCED_DATA.extend(orig_b2)
+            C1_ACADEMIC_DATA.clear()
+            C1_ACADEMIC_DATA.extend(orig_c1)
+
+    def test_add_ar_uk_to_index_missing_translation(self):
+        """Verify add_ar_uk_to_index handles unknown keys gracefully."""
+        import tempfile
+        import scripts.add_ar_uk_to_index as add_ar_uk
+
+        mock_html = '<span data-en="UnknownKeyXYZ123" data-tr="Bilinmeyen">Unknown</span>'
+        with tempfile.TemporaryDirectory() as tmpdir:
+            test_html_path = os.path.join(tmpdir, "unknown_index.html")
+            with open(test_html_path, "w", encoding="utf-8") as f:
+                f.write(mock_html)
+            add_ar_uk.run(test_html_path)
+            with open(test_html_path, "r", encoding="utf-8") as f:
+                result_content = f.read()
+            self.assertEqual(result_content, mock_html, "File content should remain unchanged for unmapped keys")
+
 
 if __name__ == "__main__":
     unittest.main()
