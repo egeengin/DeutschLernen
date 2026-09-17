@@ -229,6 +229,50 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn("auth/cancelled-popup-request", fb_content)
         self.assertIn("select_account", fb_content)
 
+    def test_sidebar_multilingual_no_leakage(self):
+        """Verify left sidebar has complete multilingual contracts across EN, TR, AR, UK with zero leakage."""
+        index_path = os.path.join(ROOT_DIR, "index.html")
+        with open(index_path, "r", encoding="utf-8") as f:
+            index_html = f.read()
+
+        # Find sidebar block
+        sidebar_start = index_html.find('<nav class="sidebar"')
+        sidebar_end = index_html.find('</nav>', sidebar_start)
+        self.assertNotEqual(sidebar_start, -1, "Sidebar must exist in index.html")
+        sidebar_html = index_html[sidebar_start:sidebar_end]
+
+        # Verify key sidebar elements have data-en, data-tr, data-ar, data-uk
+        sidebar_data_en = re.findall(r'data-en="([^"]+)"', sidebar_html)
+        sidebar_data_tr = re.findall(r'data-tr="([^"]+)"', sidebar_html)
+        sidebar_data_ar = re.findall(r'data-ar="([^"]+)"', sidebar_html)
+        sidebar_data_uk = re.findall(r'data-uk="([^"]+)"', sidebar_html)
+
+        self.assertEqual(len(sidebar_data_en), len(sidebar_data_tr), "Sidebar data-tr count must match data-en")
+        self.assertEqual(len(sidebar_data_en), len(sidebar_data_ar), "Sidebar data-ar count must match data-en")
+        self.assertEqual(len(sidebar_data_en), len(sidebar_data_uk), "Sidebar data-uk count must match data-en")
+        self.assertGreaterEqual(len(sidebar_data_en), 6, "Sidebar must contain at least 6 translatable elements")
+
+        # Verify all 10 materials have all 4 language titles
+        mat_match = re.search(r"const materials = \[(.*?)\];", self.portal_js, re.DOTALL)
+        self.assertIsNotNone(mat_match, "materials array must exist in portal.js")
+        mat_content = mat_match.group(1)
+        for key in ["titleTr", "titleAr", "titleUk"]:
+            count = len(re.findall(rf"{key}:", mat_content))
+            self.assertEqual(count, 10, f"Materials must define 10 occurrences of {key}")
+
+        # Verify getMaterialField does not leak Turkish in en, ar, uk
+        self.assertIn("if (currentLang === 'tr') return m[field + 'Tr']", self.portal_js)
+        self.assertIn("if (currentLang === 'ar') return m[field + 'Ar']", self.portal_js)
+        self.assertIn("if (currentLang === 'uk') return m[field + 'Uk']", self.portal_js)
+
+        # Verify GOAL_CONFIG has full 4-language parity for all 5 goals
+        goal_ids = ['goal-a1-a2', 'goal-b1', 'goal-b2', 'goal-c1', 'goal-vocab']
+        for gid in goal_ids:
+            self.assertIn(f"'{gid}':", self.portal_js)
+            for lang_suffix in ['En', 'Tr', 'Ar', 'Uk']:
+                self.assertIn(f"name{lang_suffix}:", self.portal_js, f"Missing name{lang_suffix} in portal.js")
+                self.assertIn(f"hint{lang_suffix}:", self.portal_js, f"Missing hint{lang_suffix} in portal.js")
+
     def test_service_worker_auth_bypass(self):
         """Verify service worker explicitly bypasses Firebase Auth, Firestore, and non-GET requests."""
         sw_path = os.path.join(ROOT_DIR, "sw.js")
