@@ -403,11 +403,20 @@ ______________________________________________________________________
 * **Sınav Örnekleri:** [Goethe B1 Modellsatz](https://www.goethe.de/de/spr/kup/prf/prf/gb1/ueb.html).
 """
 
-if __name__ == "__main__":
-    with open(EN_FILE, "w", encoding="utf-8") as f:
+def generate_grammar_files(en_path=None, tr_path=None):
+    """Writes English and Turkish grammar guide markdown files with interactive quizzes."""
+    target_en = en_path or EN_FILE
+    target_tr = tr_path or TR_FILE
+
+    with open(target_en, "w", encoding="utf-8") as f:
         f.write(en_content)
 
-    with open(TR_FILE, "w", encoding="utf-8") as f:
+    with open(target_tr, "w", encoding="utf-8") as f:
         f.write(tr_content)
-        
+
+    return target_en, target_tr
+
+
+if __name__ == "__main__":
+    generate_grammar_files()
     print("Successfully generated detailed grammar files with interactive quizzes in both EN and TR!")

@@ -24,23 +24,24 @@ if sys.platform == "win32":
 
 
 def count_executable_lines(filepath):
-    """Counts non-blank, non-comment lines in a Python source file."""
-    executable = set()
+    """Finds all true executable line numbers in a Python source file using bytecode compilation."""
     with open(filepath, "r", encoding="utf-8") as f:
-        in_multiline_str = False
-        for idx, raw_line in enumerate(f, start=1):
-            line = raw_line.strip()
-            if not line or line.startswith("#"):
-                continue
-            if line.startswith('"""') or line.startswith("'''"):
-                if line.count('"""') == 1 or line.count("'''") == 1:
-                    in_multiline_str = not in_multiline_str
-                continue
-            if in_multiline_str:
-                if '"""' in line or "'''" in line:
-                    in_multiline_str = False
-                continue
-            executable.add(idx)
+        source = f.read()
+    try:
+        co = compile(source, filepath, "exec")
+    except SyntaxError:
+        return set()
+
+    executable = set()
+    stack = [co]
+    while stack:
+        code_obj = stack.pop()
+        for const in code_obj.co_consts:
+            if hasattr(const, "co_code"):
+                stack.append(const)
+        for _, _, lineno in code_obj.co_lines():
+            if lineno and lineno > 0:
+                executable.add(lineno)
     return executable
 
 
@@ -82,7 +83,7 @@ def run_tests_with_coverage():
                 if "__pycache__" in root or "vocab_sources" in root:
                     continue
                 for f in sorted(files):
-                    if f.endswith(".py"):
+                    if f.endswith(".py") and f != "run_coverage.py":
                         all_files.append(os.path.join(root, f))
 
     for fpath in sorted(all_files):

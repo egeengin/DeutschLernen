@@ -188,8 +188,9 @@ TRANSLATIONS = {
   "Explore All Materials": ("استكشاف جميع المواد", "Переглянути всі матеріали")
 }
 
-def run():
-    with open(INDEX_PATH, 'r', encoding='utf-8') as f:
+def run(target_path=None):
+    dest = target_path or INDEX_PATH
+    with open(dest, 'r', encoding='utf-8') as f:
         content = f.read()
 
     # Regex to find elements with data-en="..." data-tr="..."
@@ -213,13 +214,14 @@ def run():
         uk_esc = uk_text.replace('"', '&quot;')
         return f'{match.group(0)} data-ar="{ar_esc}" data-uk="{uk_esc}"'
 
-    # Pattern for data-en="..." data-tr="..."
-    pattern = r'data-en="([^"]*)"\s+data-tr="([^"]*)"'
+    # Pattern for data-en="..." data-tr="..." without following data-ar
+    pattern = r'data-en="([^"]*)"\s+data-tr="([^"]*)"(?!\s+data-ar=)'
     new_content, count = re.subn(pattern, replacer, content)
 
     print(f"Updated {count} elements with data-ar and data-uk attributes.")
-    with open(INDEX_PATH, 'w', encoding='utf-8') as f:
+    with open(dest, 'w', encoding='utf-8') as f:
         f.write(new_content)
+    return count
 
 if __name__ == '__main__':
     run()
