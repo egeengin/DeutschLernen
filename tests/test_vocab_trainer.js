@@ -141,6 +141,7 @@ global.document = {
 };
 
 // Mock SpeechSynthesis
+let lastSpokenUtterance = null;
 global.SpeechSynthesisUtterance = function (text) {
   this.text = text;
   this.rate = 1;
@@ -148,7 +149,7 @@ global.SpeechSynthesisUtterance = function (text) {
 };
 global.speechSynthesis = {
   cancel: () => {},
-  speak: (utter) => {},
+  speak: (utter) => { lastSpokenUtterance = utter; },
   getVoices: () => []
 };
 
@@ -172,13 +173,74 @@ console.log('▶ Evaluating js/vocabTrainer.js...');
 eval(fs.readFileSync(path.join(ROOT_DIR, 'js', 'vocabTrainer.js'), 'utf8'));
 assert(global.VocabApp, 'VocabApp must be instantiated globally');
 
-// 3. Test Speech Synthesis Functionality & Error-Resilience
-console.log('▶ Testing playSpeech method...');
+// 3. Test Speech Synthesis Functionality & Pronunciation Parsing Rules
+console.log('▶ Testing playSpeech method and sanitization parsing rules...');
 assert.doesNotThrow(() => {
   global.VocabApp.playSpeech('gehen');
+  assert.strictEqual(lastSpokenUtterance && lastSpokenUtterance.text, 'gehen', 'Simple word should be spoken unchanged');
+
   global.VocabApp.playSpeech('schlafen (schläft, schlief)', 0.85);
+  assert.strictEqual(lastSpokenUtterance.text, 'schlafen', 'Parentheses should be stripped preserving existing bracket behavior');
+
+  // Rule 1: Truncate at Comma (stop immediately at comma, ignore text following it)
+  global.VocabApp.playSpeech('die Wohnung, -en');
+  assert.strictEqual(lastSpokenUtterance.text, 'die Wohnung', 'Should truncate at first comma and ignore trailing plural suffix');
+
+  global.VocabApp.playSpeech('das Zimmer, -');
+  assert.strictEqual(lastSpokenUtterance.text, 'das Zimmer', 'Should truncate at comma for unchanged plural nouns');
+
+  global.VocabApp.playSpeech('das Haus, -¨er');
+  assert.strictEqual(lastSpokenUtterance.text, 'das Haus', 'Should truncate at comma and ignore umlaut suffixes');
+
+  global.VocabApp.playSpeech('die Praxis, Praxen');
+  assert.strictEqual(lastSpokenUtterance.text, 'die Praxis', 'Should truncate at comma for irregular plural nouns');
+
+  global.VocabApp.playSpeech('die Kohärenz, (nur Sg.)');
+  assert.strictEqual(lastSpokenUtterance.text, 'die Kohärenz', 'Should truncate at comma when followed by notes in parentheses');
+
+  global.VocabApp.playSpeech('abzielen (zielt ab, zielte ab, hat abgezielt) [auf + Akk]');
+  assert.strictEqual(lastSpokenUtterance.text, 'abzielen', 'Should handle verbs with both parentheses and bracketed prepositions');
+
+  // Rule 2: Keep Suffixes/Hyphens (do not strip hyphens or suffix extensions)
+  global.VocabApp.playSpeech('mach-te');
+  assert.strictEqual(lastSpokenUtterance.text, 'mach-te', 'Trailing word forms and endings like -te should not be stripped');
+
+  global.VocabApp.playSpeech('spiel-en');
+  assert.strictEqual(lastSpokenUtterance.text, 'spiel-en', 'Suffix extensions like -en should keep hyphens intact');
+
+  global.VocabApp.playSpeech('-en');
+  assert.strictEqual(lastSpokenUtterance.text, '-en', 'Standalone suffix should be spoken intact');
+
+  global.VocabApp.playSpeech('-te');
+  assert.strictEqual(lastSpokenUtterance.text, '-te', 'Standalone suffix -te should be spoken intact');
+
+  // Speaker button event test & text rendering preservation (Scope check)
+  const testItem = { de: 'die Wohnung, -en', en: 'the apartment', tr: 'daire' };
+  global.VocabApp.currentDeck = [testItem];
+  global.VocabApp.currentIndex = 0;
+  global.VocabApp.dom.arenaAudioPlay.click();
+  assert.strictEqual(lastSpokenUtterance.text, 'die Wohnung', 'Speaker button click should pronounce truncated text');
+  assert.strictEqual(testItem.de, 'die Wohnung, -en', 'Original item.de must not be mutated in data or text rendering');
+
+  // CleanSpeechText method tests
+  assert.strictEqual(global.VocabApp.cleanSpeechText('die Wohnung, -en'), 'die Wohnung');
+  assert.strictEqual(global.VocabApp.cleanSpeechText('mach-te'), 'mach-te');
+  assert.strictEqual(global.VocabApp.cleanSpeechText(''), '');
+  assert.strictEqual(global.VocabApp.cleanSpeechText(null), '');
+
+  // Error resilience and empty inputs
+  lastSpokenUtterance = null;
   global.VocabApp.playSpeech('');
+  assert.strictEqual(lastSpokenUtterance, null, 'Empty string should not invoke speech synthesis');
+
   global.VocabApp.playSpeech(null);
+  assert.strictEqual(lastSpokenUtterance, null, 'Null should not invoke speech synthesis');
+
+  global.VocabApp.playSpeech(undefined);
+  assert.strictEqual(lastSpokenUtterance, null, 'Undefined should not invoke speech synthesis');
+
+  global.VocabApp.playSpeech(', only trailing');
+  assert.strictEqual(lastSpokenUtterance, null, 'String starting with comma should not invoke speech synthesis');
 }, 'playSpeech must never throw an uncaught exception');
 
 // 4. Test Quiz Modes & Distractor Generation

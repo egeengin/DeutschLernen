@@ -1542,12 +1542,27 @@
       }
     }
 
+    static cleanSpeechText(text) {
+      if (!text || typeof text !== 'string') return '';
+      // Rule 3: Preserve Parentheses/Brackets - keep existing handling (split on '(')
+      let clean = text.split('(')[0];
+      // Rule 1: Truncate at Comma - read only up to the first comma (,), ignore following text
+      // Rule 2: Keep Suffixes/Hyphens - ensure trailing word forms and endings (such as -en, -te, etc.)
+      // are spoken clearly together with the root word; do not strip hyphens or suffix extensions.
+      clean = clean.split(',')[0].trim();
+      return clean;
+    }
+
+    cleanSpeechText(text) {
+      return VocabTrainerApp.cleanSpeechText(text);
+    }
+
     playSpeech(text, rate = 0.92) {
       try {
         if (!('speechSynthesis' in window)) return;
         window.speechSynthesis.cancel();
-        if (!text) return;
-        const clean = text.split('(')[0].trim();
+        const clean = VocabTrainerApp.cleanSpeechText(text);
+        if (!clean) return;
         const utter = new SpeechSynthesisUtterance(clean);
         utter.lang = 'de-DE';
 
