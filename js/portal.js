@@ -1099,3 +1099,8 @@ function initEntranceGoal() {
 // Initialize components
 initFeedbackForm();
 initEntranceGoal();
+
+if (typeof renderSchreibenShowcase === 'function') {
+  renderSchreibenShowcase('schreiben-showcase-container');
+}
+
