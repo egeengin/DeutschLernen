@@ -68,6 +68,14 @@ const GOAL_CONFIG = {
     nameTr: 'A1–A2 Temel Başlangıç',
     nameAr: 'الأساسيات A1–A2',
     nameUk: 'Основи A1–A2',
+    portalTitleEn: '🌱 Beginner Portal',
+    portalTitleTr: '🌱 Başlangıç Portalı',
+    portalTitleAr: '🌱 بوابة المبتدئين',
+    portalTitleUk: '🌱 Портал початківця',
+    planLabelEn: 'A1–A2 Starter Plan',
+    planLabelTr: 'A1–A2 Başlangıç Planı',
+    planLabelAr: 'خطة المستوى A1–A2',
+    planLabelUk: 'Стартовий план A1–A2',
     level: 'A1',
     levels: ['A1', 'A2'],
     badgeEn: '🌱 Goal: A1–A2 Fundamentals & Daily German',
@@ -95,6 +103,14 @@ const GOAL_CONFIG = {
     nameTr: 'telc B1 Sınavı',
     nameAr: 'امتحان telc B1',
     nameUk: 'Іспит telc B1',
+    portalTitleEn: '🏆 telc B1 Study Portal',
+    portalTitleTr: '🏆 telc B1 Çalışma Portalı',
+    portalTitleAr: '🏆 بوابة دراسة telc B1',
+    portalTitleUk: '🏆 Портал telc B1',
+    planLabelEn: '30-Day B1 Exam Plan',
+    planLabelTr: '30 Günlük B1 Sınav Planı',
+    planLabelAr: 'خطة 30 يوماً لاجتياز B1',
+    planLabelUk: '30-денний план для B1',
     level: 'B1',
     levels: ['B1'],
     badgeEn: '📚 telc Deutsch B1 Exam Preparation & Vocab Master',
@@ -122,6 +138,14 @@ const GOAL_CONFIG = {
     nameTr: 'B2 İleri Düzey & İş',
     nameAr: 'B2 للمحترفين والعمل',
     nameUk: 'B2 Професійний',
+    portalTitleEn: '💼 B2 Professional Portal',
+    portalTitleTr: '💼 B2 Profesyonel Portalı',
+    portalTitleAr: '💼 بوابة B2 المهنية',
+    portalTitleUk: '💼 Портал B2 Професійний',
+    planLabelEn: 'B2 Advanced Study Plan',
+    planLabelTr: 'B2 İleri Çalışma Planı',
+    planLabelAr: 'خطة الدراسة المتقدمة B2',
+    planLabelUk: 'Просунутий план B2',
     level: 'B2',
     levels: ['B2'],
     badgeEn: '💼 Goal: B2 Advanced & Professional German',
@@ -149,6 +173,14 @@ const GOAL_CONFIG = {
     nameTr: 'C1 Akademik',
     nameAr: 'C1 الأكاديمي',
     nameUk: 'C1 Академічний',
+    portalTitleEn: '🎓 C1 Academic Portal',
+    portalTitleTr: '🎓 C1 Akademik Portalı',
+    portalTitleAr: '🎓 بوابة C1 الأكاديمية',
+    portalTitleUk: '🎓 Академічний портал C1',
+    planLabelEn: 'C1 Academic Study Plan',
+    planLabelTr: 'C1 Akademik Çalışma Planı',
+    planLabelAr: 'خطة الدراسة الأكاديمية C1',
+    planLabelUk: 'Академічний план C1',
     level: 'C1',
     levels: ['C1'],
     badgeEn: '🎓 Goal: C1 Hochschule & Academic Mastery',
@@ -176,6 +208,14 @@ const GOAL_CONFIG = {
     nameTr: 'Hızlı Kelime Antrenmanı',
     nameAr: 'مدرب المفردات السريع',
     nameUk: 'Швидкий тренажер слів',
+    portalTitleEn: '⚡ Wortschatz Trainer',
+    portalTitleTr: '⚡ Kelime Antrenörü',
+    portalTitleAr: '⚡ مدرب المفردات',
+    portalTitleUk: '⚡ Тренажер слів',
+    planLabelEn: 'A1–C1 All Levels Drill',
+    planLabelTr: 'A1–C1 Tüm Seviye Antrenmanı',
+    planLabelAr: 'تدريب شامل A1–C1',
+    planLabelUk: 'Тренування A1–C1 всіх рівнів',
     level: 'ALL',
     levels: ['A1', 'A2', 'B1', 'B2', 'C1'],
     badgeEn: '⚡ Interactive Wortschatz Speed Trainer',
@@ -1004,6 +1044,18 @@ function updateGoalDisplays() {
   const topGoalText = document.getElementById('current-goal-text');
   if (topGoalIcon) topGoalIcon.textContent = goal.icon;
   if (topGoalText) topGoalText.textContent = `${pGoal} ${goalName}`;
+
+  // Sidebar header title & plan label (dynamic per goal)
+  const sidebarPortalTitle = document.getElementById('sidebar-portal-title');
+  const sidebarPlanLabel = document.getElementById('sidebar-plan-label');
+  if (sidebarPortalTitle) {
+    const ptKey = 'portalTitle' + currentLang.charAt(0).toUpperCase() + currentLang.slice(1);
+    sidebarPortalTitle.textContent = goal[ptKey] || goal.portalTitleEn || goal.icon + ' ' + goalName;
+  }
+  if (sidebarPlanLabel) {
+    const plKey = 'planLabel' + currentLang.charAt(0).toUpperCase() + currentLang.slice(1);
+    sidebarPlanLabel.textContent = goal[plKey] || goal.planLabelEn || '';
+  }
 
   // Sidebar badge
   const sidebarGoalName = document.getElementById('sidebar-goal-name');
