@@ -72,8 +72,8 @@
         <button class="btn-icon" id="btn-theme-toggle" title="Toggle Light / Dark mode">
           ☀️
         </button>
-        <button class="btn-icon" id="btn-lang-toggle" title="Switch UI between English & Turkish">
-          TR 🇹🇷
+        <button class="btn-icon" id="btn-lang-toggle" title="Switch UI language (EN / TR / AR / UK)">
+          🌐 EN
         </button>
       </div>
     </div>
@@ -417,7 +417,7 @@
         <a href="legal.html#tab-datenschutz" data-i18n="privacyLink">🔒 Privacy Policy (GDPR)</a>
         <a href="legal.html#tab-terms" data-i18n="termsLink">📜 Terms & Trademarks</a>
         <a href="javascript:void(0)" id="btn-footer-feedback" data-i18n="feedbackBtn">💬 Feedback</a>
-        <button type="button" data-i18n="resetProgressBtn" onclick="const msg = (window.VocabApp && window.VocabApp.settings.lang === 'tr') ? 'Kelime ilerleme verilerinizi sıfırlamak istediğinize emin misiniz?' : 'Are you sure you want to reset your vocabulary progress?'; if(confirm(msg)){ if(window.VocabApp && window.VocabApp.sessionManager) { window.VocabApp.sessionManager.clearAllProgress(); } else { localStorage.removeItem('deutschlernen_vocab_progress'); } location.reload(); }">
+        <button type="button" data-i18n="resetProgressBtn" onclick="const msg = (window.VocabApp && window.VocabApp.getI18nText) ? window.VocabApp.getI18nText('resetConfirm') : 'Are you sure you want to reset your vocabulary progress?'; if(confirm(msg)){ if(window.VocabApp && window.VocabApp.sessionManager) { window.VocabApp.sessionManager.clearAllProgress(); } else { localStorage.removeItem('deutschlernen_vocab_progress'); } location.reload(); }">
           🗑️ Reset Progress
         </button>
         <a href="https://github.com/egeengin/DeutschLernen" target="_blank" rel="noopener noreferrer">GitHub Source</a>

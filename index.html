@@ -35,11 +35,13 @@
   <button class="goal-chip-btn" id="current-goal-btn" onclick="openGoalModal()" title="Choose or switch your German learning goal and level">
     <span class="goal-chip-icon" id="current-goal-icon">🎯</span>
     <span class="goal-chip-text" id="current-goal-text">Goal: B1 Exam</span>
-    <span class="goal-chip-action" data-en="Change" data-tr="Değiştir">Change</span>
+    <span class="goal-chip-action" data-en="Change" data-tr="Değiştir" data-ar="تغيير" data-uk="Змінити">Change</span>
   </button>
   <div class="global-lang-toggle">
     <button class="lang-btn active" onclick="setLang('en')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/us.png" width="16" alt="US" style="border-radius:2px;"> EN</button>
     <button class="lang-btn" onclick="setLang('tr')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/tr.png" width="16" alt="TR" style="border-radius:2px;"> TR</button>
+    <button class="lang-btn" onclick="setLang('ar')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/sa.png" width="16" alt="AR" style="border-radius:2px;"> AR</button>
+    <button class="lang-btn" onclick="setLang('uk')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/ua.png" width="16" alt="UK" style="border-radius:2px;"> UK</button>
   </div>
 </div>
 
@@ -53,14 +55,14 @@
       <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn" aria-label="Toggle dark mode">☀️</button>
     </div>
     <h2>TELC B1 Portal</h2>
-    <p data-en="30-Day Study Plan" data-tr="30 Günlük Çalışma Planı">30-Day Study Plan</p>
-    <input type="text" id="search-input" class="search-box" data-en="Search materials..." data-tr="Materyal ara..." placeholder="Search materials..." onkeyup="filterCards()">
+    <p data-en="30-Day Study Plan" data-tr="30 Günlük Çalışma Planı" data-ar="خطة دراسية لمدة 30 يوماً" data-uk="30-денний план навчання">30-Day Study Plan</p>
+    <input type="text" id="search-input" class="search-box" data-en="Search materials..." data-tr="Materyal ara..." data-ar="ابحث في المواد..." data-uk="Пошук матеріалів..." placeholder="Search materials..." onkeyup="filterCards()">
     
     <!-- Sidebar Goal Card -->
     <div class="sidebar-goal-badge" onclick="openGoalModal()" title="Click to change your target level or wish">
       <div class="sidebar-goal-row">
-        <span class="sidebar-goal-kicker" data-en="ACTIVE GOAL" data-tr="AKTİF HEDEF">ACTIVE GOAL</span>
-        <span class="sidebar-goal-edit" data-en="Change ⚙️" data-tr="Değiştir ⚙️">Change ⚙️</span>
+        <span class="sidebar-goal-kicker" data-en="ACTIVE GOAL" data-tr="AKTİF HEDEF" data-ar="الهدف النشط" data-uk="АКТИВНА ЦІЛЬ">ACTIVE GOAL</span>
+        <span class="sidebar-goal-edit" data-en="Change ⚙️" data-tr="Değiştir ⚙️" data-ar="تغيير ⚙️" data-uk="Змінити ⚙️">Change ⚙️</span>
       </div>
       <div class="sidebar-goal-name" id="sidebar-goal-name">telc B1 Exam</div>
       <div class="sidebar-goal-sub" id="sidebar-goal-sub">Level: B1 Intermediate</div>
@@ -73,7 +75,7 @@
       <span style="font-size:18px;">⚡</span>
       <div>
         <div style="line-height:1.2;">Wortschatz Trainer</div>
-        <div style="font-size:10px; opacity:0.85; font-weight:600;" data-en="2,000+ Words & Quiz" data-tr="2.000+ Kelime & Test">2,000+ Words & Quiz</div>
+        <div style="font-size:10px; opacity:0.85; font-weight:600;" data-en="2,000+ Words & Quiz" data-tr="2.000+ Kelime & Test" data-ar="أكثر من 2000 كلمة واختبارات" data-uk="2 000+ слів та тести">2,000+ Words & Quiz</div>
       </div>
     </a>
   </div>
@@ -84,7 +86,7 @@
   <div class="sidebar-footer">
     <div style="font-size: 11px; color: var(--text-muted); opacity: 0.7; padding: 16px 20px;">
       <div>DeutschLernen Suite v2.0</div>
-      <div style="margin-top:4px;"><a href="legal.html" style="color:var(--text-muted); text-decoration:underline;" data-en="Impressum & Privacy" data-tr="Yasal Künye ve Gizlilik">Impressum & Privacy</a></div>
+      <div style="margin-top:4px;"><a href="legal.html" style="color:var(--text-muted); text-decoration:underline;" data-en="Impressum & Privacy" data-tr="Yasal Künye ve Gizlilik" data-ar="معلومات الناشر والخصوصية" data-uk="Вихідні дані та конфіденційність">Impressum & Privacy</a></div>
     </div>
   </div>
 </nav>
@@ -94,33 +96,33 @@
 
   <!-- Hero -->
   <header class="hero" id="home">
-    <div class="hero-badge" id="hero-active-goal-badge" data-en="📚 telc Deutsch B1 Exam Preparation & Vocab Master" data-tr="📚 telc Deutsch B1 Sınav Hazırlığı ve Kelime Antrenörü">📚 telc Deutsch B1 Exam Preparation & Vocab Master</div>
-    <h1 id="hero-main-title" data-en="Pass telc Deutsch B1<br>with Confidence" data-tr="telc Deutsch B1 Sınavını<br>Güvenle Geçin">Pass telc Deutsch B1<br>with Confidence</h1>
-    <p id="hero-main-desc" data-en="A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates." data-tr="telc Deutsch B1 (180/300 barajı) için eksiksiz çalışma portalı ve 2.000 kelimelik interaktif antrenör. Dilbilgisi, akıllı kelime antrenmanı, deneme sınavları ve mektup şablonları.">A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates.</p>
+    <div class="hero-badge" id="hero-active-goal-badge" data-en="📚 telc Deutsch B1 Exam Preparation & Vocab Master" data-tr="📚 telc Deutsch B1 Sınav Hazırlığı ve Kelime Antrenörü" data-ar="📚 التحضير لامتحان telc Deutsch B1 وإتقان المفردات" data-uk="📚 Підготовка до іспиту telc Deutsch B1 та вивчення лексики">📚 telc Deutsch B1 Exam Preparation & Vocab Master</div>
+    <h1 id="hero-main-title" data-en="Pass telc Deutsch B1<br>with Confidence" data-tr="telc Deutsch B1 Sınavını<br>Güvenle Geçin" data-ar="اجتز امتحان telc Deutsch B1<br>بكل ثقة" data-uk="Складіть telc Deutsch B1<br>впевнено">Pass telc Deutsch B1<br>with Confidence</h1>
+    <p id="hero-main-desc" data-en="A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates." data-tr="telc Deutsch B1 (180/300 barajı) için eksiksiz çalışma portalı ve 2.000 kelimelik interaktif antrenör. Dilbilgisi, akıllı kelime antrenmanı, deneme sınavları ve mektup şablonları." data-ar="بوابة دراسية متكاملة ومدرب تفاعلي لأكثر من 2000 كلمة لامتحان telc Deutsch B1 (درجة النجاح 180/300). القواعد، تكرار الكلمات الذكي، امتحانات تجريبية، ونماذج رسائل." data-uk="Повний навчальний портал та інтерактивний тренажер на 2000 слів для telc Deutsch B1 (поріг 180/300). Граматика, розумне повторення слів, пробні іспити та шаблони листів.">A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates.</p>
     
     <!-- Goal Tailored Quick Action Strip -->
     <div class="hero-goal-strip" id="hero-goal-strip">
       <div class="hero-goal-info">
         <span class="hero-goal-icon" id="hero-goal-strip-icon">🎯</span>
         <div>
-          <strong id="hero-goal-strip-title" data-en="Active Track: telc B1 Certification" data-tr="Aktif Program: telc B1 Sınavı">Active Track: telc B1 Certification</strong>
-          <div style="font-size: 12px; color: var(--text-muted);" id="hero-goal-strip-hint" data-en="Focusing on 30-day curriculum, mock exams & B1 vocabulary" data-tr="30 günlük program, deneme sınavları ve B1 kelimelerine odaklanıyor">Focusing on 30-day curriculum, mock exams & B1 vocabulary</div>
+          <strong id="hero-goal-strip-title" data-en="Active Track: telc B1 Certification" data-tr="Aktif Program: telc B1 Sınavı" data-ar="المسار النشط: شهادة telc B1" data-uk="Активний курс: сертифікація telc B1">Active Track: telc B1 Certification</strong>
+          <div style="font-size: 12px; color: var(--text-muted);" id="hero-goal-strip-hint" data-en="Focusing on 30-day curriculum, mock exams & B1 vocabulary" data-tr="30 günlük program, deneme sınavları ve B1 kelimelerine odaklanıyor" data-ar="التركيز على خطة الـ 30 يوماً، الامتحانات التجريبية ومفردات B1" data-uk="Фокус на 30-денній програмі, пробних іспитах та лексиці B1">Focusing on 30-day curriculum, mock exams & B1 vocabulary</div>
         </div>
       </div>
       <div class="hero-goal-actions">
         <button class="btn-sm-goal" onclick="openGoalModal()">
-          <span data-en="Switch Goal / Level" data-tr="Hedef / Seviye Değiştir">Switch Goal / Level</span>
+          <span data-en="Switch Goal / Level" data-tr="Hedef / Seviye Değiştir" data-ar="تغيير الهدف / المستوى" data-uk="Змінити ціль / рівень">Switch Goal / Level</span>
         </button>
         <a href="trainer.html" class="btn-sm-trainer" id="hero-goal-trainer-link">
-          <span data-en="⚡ Start Vocab Drill →" data-tr="⚡ Kelime Antrenmanı →">⚡ Start Vocab Drill →</span>
+          <span data-en="⚡ Start Vocab Drill →" data-tr="⚡ Kelime Antrenmanı →" data-ar="⚡ بدء تدريب المفردات ←" data-uk="⚡ Почати тренування слів →">⚡ Start Vocab Drill →</span>
         </a>
       </div>
     </div>
     <div class="hero-stats">
-      <div class="hero-stat"><div class="val">10</div><div class="label" data-en="Study Modules" data-tr="Modül">Study Modules</div></div>
-      <div class="hero-stat"><div class="val">30</div><div class="label" data-en="Day Plan" data-tr="Günlük Plan">Day Plan</div></div>
-      <div class="hero-stat"><div class="val">2000+</div><div class="label" data-en="Vocab Words" data-tr="Kelime">Vocab Words</div></div>
-      <div class="hero-stat"><div class="val">180/300</div><div class="label" data-en="Pass Threshold" data-tr="Geçme Barajı">Pass Threshold</div></div>
+      <div class="hero-stat"><div class="val">10</div><div class="label" data-en="Study Modules" data-tr="Modül" data-ar="وحدات دراسية" data-uk="Навчальні модулі">Study Modules</div></div>
+      <div class="hero-stat"><div class="val">30</div><div class="label" data-en="Day Plan" data-tr="Günlük Plan" data-ar="خطة الأيام" data-uk="Денний план">Day Plan</div></div>
+      <div class="hero-stat"><div class="val">2000+</div><div class="label" data-en="Vocab Words" data-tr="Kelime" data-ar="كلمات" data-uk="Слів">Vocab Words</div></div>
+      <div class="hero-stat"><div class="val">180/300</div><div class="label" data-en="Pass Threshold" data-tr="Geçme Barajı" data-ar="نسبة النجاح" data-uk="Прохідний бал">Pass Threshold</div></div>
     </div>
   </header>
 
@@ -133,22 +135,22 @@
           <div style="display:inline-flex; align-items:center; gap:6px; background:var(--accent-gold); color:#000000; font-size:11px; font-weight:800; padding:3px 10px; border-radius:12px; margin-bottom:12px; text-transform:uppercase; letter-spacing:0.05em;">
             ⚡ NEW &bull; INTERACTIVE DRILL
           </div>
-          <h2 style="font-size: 24px; margin-bottom: 8px; color: var(--text-primary);" data-en="2,000+ German Words Vocabulary Trainer" data-tr="2.000+ Almanca Kelime Antrenörü">
+          <h2 style="font-size: 24px; margin-bottom: 8px; color: var(--text-primary);" data-en="2,000+ German Words Vocabulary Trainer" data-tr="2.000+ Almanca Kelime Antrenörü" data-ar="مدرب مفردات اللغة الألمانية بأكثر من 2,000 كلمة" data-uk="Тренажер німецьких слів на 2000+ слів">
             2,000+ German Words Vocabulary Trainer
           </h2>
-          <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 14px;" data-en="Drill essential A1–B1 vocabulary and Advanced B2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes." data-tr="Temel A1–B1 ve İleri B2 kelimelerini çalışın. Akıllı tekrar algoritması, hata tekrar havuzu, sesli telaffuz, günlük seri takibi ve 5 farklı test modu içerir.">
+          <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 14px;" data-en="Drill essential A1–B1 vocabulary and Advanced B2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes." data-tr="Temel A1–B1 ve İleri B2 kelimelerini çalışın. Akıllı tekrar algoritması, hata tekrar havuzu, sesli telaffuz, günlük seri takibi ve 5 farklı test modu içerir." data-ar="تدرب على مفردات A1–B1 الأساسية ومجموعات B2 المتقدمة. يشمل تكراراً ذكياً لمنع التكرار، قائمة مراجعة الأخطاء، نطقاً صوتياً، متابعة السلسلة و5 أوضاع اختبار." data-uk="Вивчайте базові слова A1–B1 та просунуту колоду B2. Розумна ротація без повторів, черга помилок, аудіовимова, відстеження серії днів та 5 режимів тестів.">
             Drill essential A1–B1 vocabulary and Advanced B2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes.
           </p>
           <div style="display:flex; gap:16px; font-size:12px; color:var(--text-muted); font-weight:600; flex-wrap:wrap;">
-            <span data-en="🎯 5 Quiz Modes" data-tr="🎯 5 Test Modu">🎯 5 Quiz Modes</span>
-            <span data-en="🔊 Native TTS Audio" data-tr="🔊 Sesli Telaffuz">🔊 Native TTS Audio</span>
-            <span data-en="🔥 Daily Streaks" data-tr="🔥 Günlük Seri">🔥 Daily Streaks</span>
-            <span data-en="🔒 100% Private (Local)" data-tr="🔒 %100 Cihaz İçi Gizlilik">🔒 100% Private (Local)</span>
+            <span data-en="🎯 5 Quiz Modes" data-tr="🎯 5 Test Modu" data-ar="🎯 5 أوضاع اختبار" data-uk="🎯 5 режимів тестів">🎯 5 Quiz Modes</span>
+            <span data-en="🔊 Native TTS Audio" data-tr="🔊 Sesli Telaffuz" data-ar="🔊 نطق صوتي أصلي" data-uk="🔊 Озвучення слів">🔊 Native TTS Audio</span>
+            <span data-en="🔥 Daily Streaks" data-tr="🔥 Günlük Seri" data-ar="🔥 سلسلة أيام يومية" data-uk="🔥 Щоденні серії">🔥 Daily Streaks</span>
+            <span data-en="🔒 100% Private (Local)" data-tr="🔒 %100 Cihaz İçi Gizlilik" data-ar="🔒 خصوصية 100% (محلي)" data-uk="🔒 100% конфіденційно (локально)">🔒 100% Private (Local)</span>
           </div>
         </div>
         <div>
           <a href="trainer.html" class="card-link primary" style="padding: 14px 28px; font-size: 15px; font-weight: 700; border-radius: 10px; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 14px rgba(245,158,11,0.3); text-decoration:none;">
-            <span data-en="🚀 Launch Vocabulary Trainer →" data-tr="🚀 Kelime Antrenörünü Başlat →">🚀 Launch Vocabulary Trainer →</span>
+            <span data-en="🚀 Launch Vocabulary Trainer →" data-tr="🚀 Kelime Antrenörünü Başlat →" data-ar="🚀 تشغيل مدرب المفردات ←" data-uk="🚀 Запустити тренажер слів →">🚀 Launch Vocabulary Trainer →</span>
           </a>
         </div>
       </div>
@@ -156,37 +158,37 @@
 
     <!-- Quick Start -->
     <div class="section" id="quickstart" style="animation-delay:0s">
-      <div class="section-label" data-en="🚀 Getting Started" data-tr="🚀 Başlangıç">🚀 Getting Started</div>
-      <h2 data-en="Quick Start Guide" data-tr="Hızlı Başlangıç Rehberi">Quick Start Guide</h2>
+      <div class="section-label" data-en="🚀 Getting Started" data-tr="🚀 Başlangıç" data-ar="🚀 البدء السريع" data-uk="🚀 Початок роботи">🚀 Getting Started</div>
+      <h2 data-en="Quick Start Guide" data-tr="Hızlı Başlangıç Rehberi" data-ar="دليل البدء السريع" data-uk="Короткий посібник">Quick Start Guide</h2>
       <div class="steps">
         <div class="step"><div class="step-text">
-          <h4 data-en="Read the Exam Guide" data-tr="Sınav Rehberini Okuyun">Read the Exam Guide</h4>
-          <p data-en="Understand the exam structure, scoring, and what B1 requires." data-tr="Sınav yapısını, puanlamayı ve B1 gereksinimlerini anlayın.">Understand the exam structure, scoring, and what B1 requires.</p>
+          <h4 data-en="Read the Exam Guide" data-tr="Sınav Rehberini Okuyun" data-ar="اقرأ دليل الامتحان" data-uk="Прочитайте посібник до іспиту">Read the Exam Guide</h4>
+          <p data-en="Understand the exam structure, scoring, and what B1 requires." data-tr="Sınav yapısını, puanlamayı ve B1 gereksinimlerini anlayın." data-ar="افهم هيكل الامتحان، نظام الدرجات وما يتطلبه مستوى B1." data-uk="Зрозумійте структуру іспиту, оцінювання та вимоги рівня B1.">Understand the exam structure, scoring, and what B1 requires.</p>
         </div></div>
         <div class="step"><div class="step-text">
-          <h4 data-en="Take the Diagnostic Exam" data-tr="Tanılama Sınavını Çözün">Take the Diagnostic Exam</h4>
-          <p data-en="Identify your weak areas on Day 1." data-tr="İlk gün zayıf noktalarınızı belirleyin.">Identify your weak areas on Day 1.</p>
+          <h4 data-en="Take the Diagnostic Exam" data-tr="Tanılama Sınavını Çözün" data-ar="خض الامتحان التشخيصي" data-uk="Пройдіть діагностичний іспит">Take the Diagnostic Exam</h4>
+          <p data-en="Identify your weak areas on Day 1." data-tr="İlk gün zayıf noktalarınızı belirleyin." data-ar="حدد نقاط ضعفك في اليوم الأول." data-uk="Визначте свої слабкі місця в перший день.">Identify your weak areas on Day 1.</p>
         </div></div>
         <div class="step"><div class="step-text">
-          <h4 data-en="Follow the 1-Month Plan" data-tr="1 Aylık Planı Takip Edin">Follow the 1-Month Plan</h4>
-          <p data-en="Day-by-day structured learning for all 4 skills." data-tr="4 yetenek için gün gün yapılandırılmış öğrenme.">Day-by-day structured learning for all 4 skills.</p>
+          <h4 data-en="Follow the 1-Month Plan" data-tr="1 Aylık Planı Takip Edin" data-ar="اتبع خطة الشهر الواحد" data-uk="Дотримуйтесь 1-місячного плану">Follow the 1-Month Plan</h4>
+          <p data-en="Day-by-day structured learning for all 4 skills." data-tr="4 yetenek için gün gün yapılandırılmış öğrenme." data-ar="تعلم منظم يوماً بيوم لجميع المهارات الأربع." data-uk="Щоденне структуроване навчання для всіх 4 навичок.">Day-by-day structured learning for all 4 skills.</p>
         </div></div>
         <div class="step"><div class="step-text">
-          <h4 data-en="Use Review Materials" data-tr="Tekrar Materyallerini Kullanın">Use Review Materials</h4>
-          <p data-en="Grammar, reading, writing, and speaking guides with practice exercises." data-tr="Pratik alıştırmalarla dilbilgisi, okuma, yazma ve konuşma rehberleri.">Grammar, reading, writing, and speaking guides with practice exercises.</p>
+          <h4 data-en="Use Review Materials" data-tr="Tekrar Materyallerini Kullanın" data-ar="استخدم مواد المراجعة" data-uk="Використовуйте матеріали для повторення">Use Review Materials</h4>
+          <p data-en="Grammar, reading, writing, and speaking guides with practice exercises." data-tr="Pratik alıştırmalarla dilbilgisi, okuma, yazma ve konuşma rehberleri." data-ar="أدلة القواعد، القراءة، الكتابة والتحدث مع تمارين عملية." data-uk="Посібники з граматики, читання, письма та мовлення з практичними вправами.">Grammar, reading, writing, and speaking guides with practice exercises.</p>
         </div></div>
         <div class="step"><div class="step-text">
-          <h4 data-en="Take the Final Mock Exam" data-tr="Final Sınavını Çözün">Take the Final Mock Exam</h4>
-          <p data-en="Week 4: Full exam simulation under real conditions." data-tr="4. Hafta: Gerçek koşullarda tam sınav simülasyonu.">Week 4: Full exam simulation under real conditions.</p>
+          <h4 data-en="Take the Final Mock Exam" data-tr="Final Sınavını Çözün" data-ar="خض الامتحان التجريبي النهائي" data-uk="Пройдіть фінальний пробний іспит">Take the Final Mock Exam</h4>
+          <p data-en="Week 4: Full exam simulation under real conditions." data-tr="4. Hafta: Gerçek koşullarda tam sınav simülasyonu." data-ar="الأسبوع 4: محاكاة كاملة للامتحان في ظروف حقيقية." data-uk="4-й тиждень: повна симуляція іспиту в реальних умовах.">Week 4: Full exam simulation under real conditions.</p>
         </div></div>
       </div>
     </div>
 
     <!-- Study Materials -->
     <div class="section" id="materials" style="animation-delay:0.15s">
-      <div class="section-label" data-en="📂 All Materials" data-tr="📂 Tüm Materyaller">📂 All Materials</div>
-      <h2 data-en="Study Materials" data-tr="Çalışma Materyalleri">Study Materials</h2>
-      <p data-en="Click any card to open the full study material." data-tr="Tam çalışma materyalini açmak için herhangi bir karta tıklayın.">Click any card to open the full study material.</p>
+      <div class="section-label" data-en="📂 All Materials" data-tr="📂 Tüm Materyaller" data-ar="📂 جميع المواد" data-uk="📂 Усі матеріали">📂 All Materials</div>
+      <h2 data-en="Study Materials" data-tr="Çalışma Materyalleri" data-ar="المواد الدراسية" data-uk="Навчальні матеріали">Study Materials</h2>
+      <p data-en="Click any card to open the full study material." data-tr="Tam çalışma materyalini açmak için herhangi bir karta tıklayın." data-ar="انقر على أي بطاقة لفتح المادة الدراسية الكاملة." data-uk="Натисніть на будь-яку картку, щоб відкрити повний навчальний матеріал.">Click any card to open the full study material.</p>
       <div class="cards" id="material-cards">
         <!-- Cards injected by JS -->
       </div>
@@ -194,9 +196,9 @@
 
     <!-- Exam Scoring Overview -->
     <div class="section" id="exam-guide" style="animation-delay:0.2s">
-      <div class="section-label" data-en="📋 Module 1" data-tr="📋 Modül 1">📋 Module 1</div>
-      <h2 data-en="telc Deutsch B1 Structure & Scoring" data-tr="telc Deutsch B1 Sınav Yapısı ve Puanlama">telc Deutsch B1 Structure & Scoring</h2>
-      <p data-en="The telc Deutsch B1 examination consists of a Written Exam (225 points) and an Oral Exam (75 points). Overall pass threshold is 180 / 300 points (60%)." data-tr="telc Deutsch B1 sınavı Yazılı Sınav (225 puan) ve Sözlü Sınavdan (75 puan) oluşur. Toplam geçme barajı 180 / 300 puandır (%60).">The telc Deutsch B1 examination consists of a Written Exam (225 points) and an Oral Exam (75 points). Overall pass threshold is 180 / 300 points (60%).</p>
+      <div class="section-label" data-en="📋 Module 1" data-tr="📋 Modül 1" data-ar="📋 الوحدة 1" data-uk="📋 Модуль 1">📋 Module 1</div>
+      <h2 data-en="telc Deutsch B1 Structure & Scoring" data-tr="telc Deutsch B1 Sınav Yapısı ve Puanlama" data-ar="هيكل امتحان telc Deutsch B1 وتوزيع الدرجات" data-uk="Структура та оцінювання telc Deutsch B1">telc Deutsch B1 Structure & Scoring</h2>
+      <p data-en="The telc Deutsch B1 examination consists of a Written Exam (225 points) and an Oral Exam (75 points). Overall pass threshold is 180 / 300 points (60%)." data-tr="telc Deutsch B1 sınavı Yazılı Sınav (225 puan) ve Sözlü Sınavdan (75 puan) oluşur. Toplam geçme barajı 180 / 300 puandır (%60)." data-ar="يتكون امتحان telc Deutsch B1 من امتحان كتابي (225 نقطة) وامتحان شفهي (75 نقطة). درجة النجاح الإجمالية هي 180 / 300 نقطة (60%)." data-uk="Іспит telc Deutsch B1 складається з письмової частини (225 балів) та усної (75 балів). Загальний прохідний бал — 180 / 300 балів (60%).">The telc Deutsch B1 examination consists of a Written Exam (225 points) and an Oral Exam (75 points). Overall pass threshold is 180 / 300 points (60%).</p>
 
       <h3 style="margin-top:24px; margin-bottom:12px; font-size: 16px; color: var(--text-primary)">telc Deutsch B1 (300 Punkte Gesamt)</h3>
       <div class="score-grid" style="margin-bottom: 24px;">
@@ -205,175 +207,177 @@
         <div class="score-card"><h4>Hörverstehen</h4><p>75 pts (3 Teile)</p></div>
         <div class="score-card"><h4>Schreiben</h4><p>45 pts (Brief)</p></div>
         <div class="score-card"><h4>Sprechen</h4><p>75 pts (Paarprüfung)</p></div>
-        <div class="score-card" style="border-color: var(--accent-gold);"><h4 style="color:var(--accent-gold)">Pass: 180 / 300 (60%)</h4><p data-en="Written ≥ 135 & Oral ≥ 45" data-tr="Yazılı ≥ 135 & Sözlü ≥ 45">Written ≥ 135 & Oral ≥ 45</p></div>
+        <div class="score-card" style="border-color: var(--accent-gold);"><h4 style="color:var(--accent-gold)">Pass: 180 / 300 (60%)</h4><p data-en="Written ≥ 135 & Oral ≥ 45" data-tr="Yazılı ≥ 135 & Sözlü ≥ 45" data-ar="الكتابي ≥ 135 والشفهي ≥ 45" data-uk="Письмова ≥ 135 та Усна ≥ 45">Written ≥ 135 & Oral ≥ 45</p></div>
       </div>
 
-      <p style="margin-top:16px"><a href="#" onclick="openMaterial(0); return false;"><span data-en="📄 Read full Exam Guide →" data-tr="📄 Sınav Rehberinin Tamamını Oku →">📄 Read full Exam Guide →</span></a></p>
+      <p style="margin-top:16px"><a href="#" onclick="openMaterial(0); return false;"><span data-en="📄 Read full Exam Guide →" data-tr="📄 Sınav Rehberinin Tamamını Oku →" data-ar="📄 قراءة دليل الامتحان كاملاً ←" data-uk="📄 Читати повний посібник →">📄 Read full Exam Guide →</span></a></p>
     </div>
 
     <!-- Top 10 Grammar -->
     <div class="section" id="grammar" style="animation-delay:0.25s">
-      <div class="section-label" data-en="📝 Module 3" data-tr="📝 Modül 3">📝 Module 3</div>
-      <h2 data-en="Top 10 Grammar Topics" data-tr="En Önemli 10 Dilbilgisi Konusu">Top 10 Grammar Topics</h2>
+      <div class="section-label" data-en="📝 Module 3" data-tr="📝 Modül 3" data-ar="📝 الوحدة 3" data-uk="📝 Модуль 3">📝 Module 3</div>
+      <h2 data-en="Top 10 Grammar Topics" data-tr="En Önemli 10 Dilbilgisi Konusu" data-ar="أهم 10 مواضيع في القواعد" data-uk="Топ-10 тем граматики">Top 10 Grammar Topics</h2>
 
       <div class="grammar-box">
         <h4>1. Nebensätze <span style="color:var(--text-muted);font-weight:400">(weil, dass, wenn, obwohl, damit, als, ob)</span></h4>
-        <p style="font-size:13px;color:var(--text-secondary)" data-en="Conjunctions that send the conjugated verb to the very end of the clause." data-tr="Bağlaçlar, çekimli fiili yan cümlenin en sonuna gönderir.">Conjunctions that send the conjugated verb to the very end of the clause.</p>
-        <div class="example">Ich bleibe zu Hause, <b>weil</b> ich krank <b>bin</b>. <span style="font-size:11px;color:var(--text-muted)" data-en="(I stay home because I am sick)" data-tr="(Hasta olduğum için evde kalıyorum)">(I stay home because I am sick)</span></div>
+        <p style="font-size:13px;color:var(--text-secondary)" data-en="Conjunctions that send the conjugated verb to the very end of the clause." data-tr="Bağlaçlar, çekimli fiili yan cümlenin en sonuna gönderir." data-ar="أدوات الربط التي تنقل الفعل المصرف إلى نهاية الجملة تماماً." data-uk="Сполучники, які переміщують відмінюване дієслово в самий кінець речення.">Conjunctions that send the conjugated verb to the very end of the clause.</p>
+        <div class="example">Ich bleibe zu Hause, <b>weil</b> ich krank <b>bin</b>. <span style="font-size:11px;color:var(--text-muted)" data-en="(I stay home because I am sick)" data-tr="(Hasta olduğum için evde kalıyorum)" data-ar="(أبقى في المنزل لأنني مريض)" data-uk="(Я залишаюся вдома, тому що захворів)">(I stay home because I am sick)</span></div>
       </div>
       <div class="grammar-box">
         <h4>2. Konnektoren <span style="color:var(--text-muted);font-weight:400">(deshalb, trotzdem, außerdem)</span></h4>
-        <p style="font-size:13px;color:var(--text-secondary)" data-en="Position 1 adverbs that force 'Verb-Subject' inversion (Position 2)." data-tr="Fiil-Özne devrik yapısını (2. pozisyon) zorlayan 1. pozisyon zarfları.">Position 1 adverbs that force 'Verb-Subject' inversion (Position 2).</p>
-        <div class="example">Ich bin müde. <b>Deshalb</b> <b>bleibe</b> ich zu Hause. <span style="font-size:11px;color:var(--text-muted)" data-en="(Therefore I stay home)" data-tr="(Bu yüzden evde kalıyorum)">(Therefore I stay home)</span></div>
+        <p style="font-size:13px;color:var(--text-secondary)" data-en="Position 1 adverbs that force 'Verb-Subject' inversion (Position 2)." data-tr="Fiil-Özne devrik yapısını (2. pozisyon) zorlayan 1. pozisyon zarfları." data-ar="ظروف المكان الأول التي تفرض تقديم الفعل على الفاعل (الموقع 2)." data-uk="Прислівники першої позиції, що вимагають інверсії дієслова та підмета (позиція 2).">Position 1 adverbs that force 'Verb-Subject' inversion (Position 2).</p>
+        <div class="example">Ich bin müde. <b>Deshalb</b> <b>bleibe</b> ich zu Hause. <span style="font-size:11px;color:var(--text-muted)" data-en="(Therefore I stay home)" data-tr="(Bu yüzden evde kalıyorum)" data-ar="(لذلك أبقى في المنزل)" data-uk="(Тому я залишаюся вдома)">(Therefore I stay home)</span></div>
       </div>
       <div class="grammar-box">
         <h4>3. Perfekt <span style="color:var(--text-muted);font-weight:400">(haben/sein + Partizip II)</span></h4>
-        <p style="font-size:13px;color:var(--text-secondary)" data-en="Main past tense in spoken German. 'Sein' is used for movement or change of state." data-tr="Almanca konuşma dilindeki ana geçmiş zaman. Hareket veya durum değişikliği için 'sein' kullanılır.">Main past tense in spoken German. 'Sein' is used for movement or change of state.</p>
-        <div class="example">Sie <b>ist</b> nach Berlin <b>gefahren</b>. <span style="font-size:11px;color:var(--text-muted)" data-en="(She went to Berlin)" data-tr="(O Berlin'e gitti)">(She went to Berlin)</span></div>
+        <p style="font-size:13px;color:var(--text-secondary)" data-en="Main past tense in spoken German. 'Sein' is used for movement or change of state." data-tr="Almanca konuşma dilindeki ana geçmiş zaman. Hareket veya durum değişikliği için 'sein' kullanılır." data-ar="صيغة الماضي الرئيسية في الألمانية المحكية. يُستخدم 'sein' للحركة أو تغير الحالة." data-uk="Основний минулий час у розмовній німецькій. 'Sein' вживається для руху або зміни стану.">Main past tense in spoken German. 'Sein' is used for movement or change of state.</p>
+        <div class="example">Sie <b>ist</b> nach Berlin <b>gefahren</b>. <span style="font-size:11px;color:var(--text-muted)" data-en="(She went to Berlin)" data-tr="(O Berlin'e gitti)" data-ar="(ذهبت إلى برلين)" data-uk="(Вона поїхала до Берліна)">(She went to Berlin)</span></div>
       </div>
       <div class="grammar-box">
         <h4>4. Wechselpräpositionen <span style="color:var(--text-muted);font-weight:400">(in, an, auf, vor, hinter...)</span></h4>
-        <p style="font-size:13px;color:var(--text-secondary)" data-en="<b>Wohin?</b> (Direction) → Akkusativ | <b>Wo?</b> (Location) → Dativ" data-tr="<b>Wohin?</b> (Nereye/Yönelim) → Akkusativ | <b>Wo?</b> (Nerede/Konum) → Dativ"><b>Wohin?</b> (Direction) → Akkusativ | <b>Wo?</b> (Location) → Dativ</p>
+        <p style="font-size:13px;color:var(--text-secondary)" data-en="<b>Wohin?</b> (Direction) → Akkusativ | <b>Wo?</b> (Location) → Dativ" data-tr="<b>Wohin?</b> (Nereye/Yönelim) → Akkusativ | <b>Wo?</b> (Nerede/Konum) → Dativ" data-ar="<b>Wohin?</b> (إلى أين/الاتجاه) ← Akkusativ | <b>Wo?</b> (أين/الموقع) ← Dativ" data-uk="<b>Wohin?</b> (Куди/напрямок) → Akkusativ | <b>Wo?</b> (Де/місце) → Dativ"><b>Wohin?</b> (Direction) → Akkusativ | <b>Wo?</b> (Location) → Dativ</p>
         <div class="example">Ich gehe <b>in den</b> Supermarkt (Akk). / Ich bin <b>im</b> Supermarkt (Dat).</div>
       </div>
       <div class="grammar-box">
         <h4>5. Konjunktiv II <span style="color:var(--text-muted);font-weight:400">(wäre, hätte, könnte, würde)</span></h4>
-        <p style="font-size:13px;color:var(--text-secondary)" data-en="Used for polite requests, wishes, and hypothetical scenarios." data-tr="Kibar ricalar, dilekler ve varsayımsal senaryolar için kullanılır.">Used for polite requests, wishes, and hypothetical scenarios.</p>
-        <div class="example"><b>Könnten</b> Sie mir bitte helfen? <span style="font-size:11px;color:var(--text-muted)" data-en="(Could you please help me?)" data-tr="(Bana yardım edebilir misiniz?)">(Could you please help me?)</span></div>
+        <p style="font-size:13px;color:var(--text-secondary)" data-en="Used for polite requests, wishes, and hypothetical scenarios." data-tr="Kibar ricalar, dilekler ve varsayımsal senaryolar için kullanılır." data-ar="تُستخدم للطلبات المهذبة، الأمنيات، والسيناريوهات الافتراضية." data-uk="Використовується для ввічливих прохань, побажань та гіпотетичних ситуацій.">Used for polite requests, wishes, and hypothetical scenarios.</p>
+        <div class="example"><b>Könnten</b> Sie mir bitte helfen? <span style="font-size:11px;color:var(--text-muted)" data-en="(Could you please help me?)" data-tr="(Bana yardım edebilir misiniz?)" data-ar="(هل يمكنك مساعدتي من فضلك؟)" data-uk="(Чи не могли б ви мені допомогти?)">(Could you please help me?)</span></div>
       </div>
       <div class="grammar-box">
         <h4>6. Adjektivdeklination <span style="color:var(--text-muted);font-weight:400">(der gute Mann, ein guter Mann)</span></h4>
-        <p style="font-size:13px;color:var(--text-secondary)" data-en="Adjective endings change based on the article, gender, and case." data-tr="Sıfat tamlamaları; artikel, cinsiyet ve ismin haline göre değişir.">Adjective endings change based on the article, gender, and case.</p>
+        <p style="font-size:13px;color:var(--text-secondary)" data-en="Adjective endings change based on the article, gender, and case." data-tr="Sıfat tamlamaları; artikel, cinsiyet ve ismin haline göre değişir." data-ar="تتغير نهايات الصفات بناءً على أداة التعريف، الجنس والحالة الإعرابية." data-uk="Закінчення прикметників змінюються залежно від артикля, роду та відмінка.">Adjective endings change based on the article, gender, and case.</p>
         <div class="example">Das ist <b>ein guter</b> Film (Akk). / Ich kaufe <b>den neuen</b> Wagen.</div>
       </div>
       <div class="grammar-box">
         <h4>7. Relativsätze <span style="color:var(--text-muted);font-weight:400">(der, die, das, denen)</span></h4>
-        <p style="font-size:13px;color:var(--text-secondary)" data-en="Used to provide more info about a noun. Verb goes to the END." data-tr="Bir isim hakkında daha fazla bilgi vermek için kullanılır. Fiil SONA gider.">Used to provide more info about a noun. Verb goes to the END.</p>
-        <div class="example">Das ist der Mann, <b>den</b> ich gestern <b>sah</b>. <span style="font-size:11px;color:var(--text-muted)" data-en="(The man I saw yesterday)" data-tr="(Dün gördüğüm adam)">(The man I saw yesterday)</span></div>
+        <p style="font-size:13px;color:var(--text-secondary)" data-en="Used to provide more info about a noun. Verb goes to the END." data-tr="Bir isim hakkında daha fazla bilgi vermek için kullanılır. Fiil SONA gider." data-ar="تُستخدم لتقديم مزيد من المعلومات عن الاسم. يذهب الفعل إلى النهاية." data-uk="Використовується для надання додаткової інформації про іменник. Дієслово йде в КІНЕЦЬ.">Used to provide more info about a noun. Verb goes to the END.</p>
+        <div class="example">Das ist der Mann, <b>den</b> ich gestern <b>sah</b>. <span style="font-size:11px;color:var(--text-muted)" data-en="(The man I saw yesterday)" data-tr="(Dün gördüğüm adam)" data-ar="(الرجل الذي رأيته بالأمس)" data-uk="(Чоловік, якого я бачив учора)">(The man I saw yesterday)</span></div>
       </div>
       <div class="grammar-box">
         <h4>8. Passiv Präsens <span style="color:var(--text-muted);font-weight:400">(werden + Partizip II)</span></h4>
-        <p style="font-size:13px;color:var(--text-secondary)" data-en="Focuses on the action rather than the doer. Common in notices/rules." data-tr="Yapan kişiden ziyade eyleme odaklanır. İlanlarda ve kurallarda yaygındır.">Focuses on the action rather than the doer. Common in notices/rules.</p>
-        <div class="example">Hier <b>wird</b> Deutsch <b>gesprochen</b>. <span style="font-size:11px;color:var(--text-muted)" data-en="(German is spoken here)" data-tr="(Burada Almanca konuşulur)">(German is spoken here)</span></div>
+        <p style="font-size:13px;color:var(--text-secondary)" data-en="Focuses on the action rather than the doer. Common in notices/rules." data-tr="Yapan kişiden ziyade eyleme odaklanır. İlanlarda ve kurallarda yaygındır." data-ar="يركز على الفعل بدلاً من الفاعل. شائع في الإعلانات والقواعد." data-uk="Фокусується на дії, а не на виконавці. Поширений у повідомленнях і правилах.">Focuses on the action rather than the doer. Common in notices/rules.</p>
+        <div class="example">Hier <b>wird</b> Deutsch <b>gesprochen</b>. <span style="font-size:11px;color:var(--text-muted)" data-en="(German is spoken here)" data-tr="(Burada Almanca konuşulur)" data-ar="(هنا يُتحدث بالألمانية)" data-uk="(Тут говорять німецькою)">(German is spoken here)</span></div>
       </div>
       <div class="grammar-box">
         <h4>9. Verben mit festen Präpositionen <span style="color:var(--text-muted);font-weight:400">(warten auf, sich freuen über)</span></h4>
-        <p style="font-size:13px;color:var(--text-secondary)" data-en="Verbs that always take a specific preposition and case." data-tr="Her zaman belirli bir edat ve hal (case) alan fiiller.">Verbs that always take a specific preposition and case.</p>
+        <p style="font-size:13px;color:var(--text-secondary)" data-en="Verbs that always take a specific preposition and case." data-tr="Her zaman belirli bir edat ve hal (case) alan fiiller." data-ar="أفعال تأتي دائماً مع حرف جر وحالة إعرابية محددة." data-uk="Дієслова, які завжди вживаються з певним прийменником і відмінком.">Verbs that always take a specific preposition and case.</p>
         <div class="example">Ich <b>warte auf</b> den Bus (Akk). / Ich <b>freue mich über</b> dich (Akk).</div>
       </div>
       <div class="grammar-box">
         <h4>10. Modalverben im Präteritum <span style="color:var(--text-muted);font-weight:400">(konnte, wollte, musste)</span></h4>
-        <p style="font-size:13px;color:var(--text-secondary)" data-en="Used to describe ability, desire, or obligation in the past." data-tr="Geçmişteki yetenek, istek veya zorunlulukları tanımlamak için kullanılır.">Used to describe ability, desire, or obligation in the past.</p>
-        <div class="example">Als Kind <b>wollte</b> ich Pilot werden. <span style="font-size:11px;color:var(--text-muted)" data-en="(I wanted to be a pilot)" data-tr="(Çocukken pilot olmak istiyordum)">(I wanted to be a pilot)</span></div>
+        <p style="font-size:13px;color:var(--text-secondary)" data-en="Used to describe ability, desire, or obligation in the past." data-tr="Geçmişteki yetenek, istek veya zorunlulukları tanımlamak için kullanılır." data-ar="تُستخدم لوصف القدرة، الرغبة أو الالتزام في الماضي." data-uk="Використовується для опису здатності, бажання або обов'язку в минулому.">Used to describe ability, desire, or obligation in the past.</p>
+        <div class="example">Als Kind <b>wollte</b> ich Pilot werden. <span style="font-size:11px;color:var(--text-muted)" data-en="(I wanted to be a pilot)" data-tr="(Çocukken pilot olmak istiyordum)" data-ar="(كنت أريد أن أصبح طياراً)" data-uk="(Я хотів бути пілотом)">(I wanted to be a pilot)</span></div>
       </div>
-      <p><a href="#" onclick="openMaterial(2); return false;"><span data-en="📄 Full Grammar Review with 30 practice questions →" data-tr="📄 30 pratik sorulu Tam Dilbilgisi İncelemesi →">📄 Full Grammar Review with 30 practice questions →</span></a></p>
+      <p><a href="#" onclick="openMaterial(2); return false;"><span data-en="📄 Full Grammar Review with 30 practice questions →" data-tr="📄 30 pratik sorulu Tam Dilbilgisi İncelemesi →" data-ar="📄 مراجعة كاملة للقواعد مع 30 سؤالاً تدريبياً ←" data-uk="📄 Повний огляд граматики з 30 практичними питаннями →">📄 Full Grammar Review with 30 practice questions →</span></a></p>
     </div>
 
     <!-- Interactive Quiz -->
     <div class="section" id="diagnostic" style="animation-delay:0.3s">
-      <div class="section-label" data-en="🔍 Quick Practice" data-tr="🔍 Hızlı Pratik">🔍 Quick Practice</div>
-      <h2 data-en="Sprachbausteine Quiz" data-tr="Dil Yapıları Testi">Sprachbausteine Quiz</h2>
-      <p data-en="Test yourself — click the correct answer!" data-tr="Kendinizi test edin — doğru cevaba tıklayın!">Test yourself — click the correct answer!</p>
+      <div class="section-label" data-en="🔍 Quick Practice" data-tr="🔍 Hızlı Pratik" data-ar="🔍 تدريب سريع" data-uk="🔍 Швидка практика">🔍 Quick Practice</div>
+      <h2 data-en="Sprachbausteine Quiz" data-tr="Dil Yapıları Testi" data-ar="اختبار تراكيب اللغة (Sprachbausteine)" data-uk="Тест мовних структур (Sprachbausteine)">Sprachbausteine Quiz</h2>
+      <p data-en="Test yourself — click the correct answer!" data-tr="Kendinizi test edin — doğru cevaba tıklayın!" data-ar="اختبر نفسك — انقر على الإجابة الصحيحة!" data-uk="Перевірте себе — натисніть правильну відповідь!">Test yourself — click the correct answer!</p>
 
       <div class="quiz-score">
-        <div><div class="score-text" data-en="Your Score" data-tr="Puanınız">Your Score</div></div>
+        <div><div class="score-text" data-en="Your Score" data-tr="Puanınız" data-ar="نتيجتك" data-uk="Ваш результат">Your Score</div></div>
         <div style="display:flex;align-items:center;gap:12px">
           <div class="score-num" id="quiz-score-display">0/8</div>
-          <button class="reset-btn" onclick="resetQuiz()" data-en="Reset" data-tr="Sıfırla">Reset</button>
+          <button class="reset-btn" onclick="resetQuiz()" data-en="Reset" data-tr="Sıfırla" data-ar="إعادة ضبط" data-uk="Скинути">Reset</button>
         </div>
       </div>
       <div id="quiz-container">
         <!-- Quiz items injected by JS -->
       </div>
-      <p style="margin-top:20px"><a href="#" onclick="openMaterial(5); return false;"><span data-en="📄 Full Diagnostic Mock Exam →" data-tr="📄 Tam Teşhis Deneme Sınavı →">📄 Full Diagnostic Mock Exam →</span></a> · <a href="#" onclick="openMaterial(6); return false;"><span data-en="📄 Final Mock Exam →" data-tr="📄 Final Deneme Sınavı →">📄 Final Mock Exam →</span></a></p>
+      <p style="margin-top:20px"><a href="#" onclick="openMaterial(5); return false;"><span data-en="📄 Full Diagnostic Mock Exam →" data-tr="📄 Tam Teşhis Deneme Sınavı →" data-ar="📄 الامتحان التجريبي التشخيصي الكامل ←" data-uk="📄 Повний діагностичний пробний іспит →">📄 Full Diagnostic Mock Exam →</span></a> · <a href="#" onclick="openMaterial(6); return false;"><span data-en="📄 Final Mock Exam →" data-tr="📄 Final Deneme Sınavı →" data-ar="📄 الامتحان التجريبي النهائي ←" data-uk="📄 Фінальний пробний іспит →">📄 Final Mock Exam →</span></a></p>
     </div>
 
     <!-- Study Plan Preview -->
     <div class="section" id="study-plan" style="animation-delay:0.1s">
-      <div class="section-label" data-en="📅 Module 2" data-tr="📅 Modül 2">📅 Module 2</div>
-      <h2 data-en="1-Month Study Plan" data-tr="1 Aylık Çalışma Planı">1-Month Study Plan</h2>
+      <div class="section-label" data-en="📅 Module 2" data-tr="📅 Modül 2" data-ar="📅 الوحدة 2" data-uk="📅 Модуль 2">📅 Module 2</div>
+      <h2 data-en="1-Month Study Plan" data-tr="1 Aylık Çalışma Planı" data-ar="خطة دراسية لمدة شهر" data-uk="План навчання на 1 місяць">1-Month Study Plan</h2>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Week</th><th data-en="Focus" data-tr="Odak">Focus</th><th data-en="Goal" data-tr="Hedef">Goal</th><th data-en="Checkpoint" data-tr="Kontrol Noktası">Checkpoint</th></tr></thead>
+          <thead><tr><th>Week</th><th data-en="Focus" data-tr="Odak" data-ar="التركيز" data-uk="Фокус">Focus</th><th data-en="Goal" data-tr="Hedef" data-ar="الهدف" data-uk="Ціль">Goal</th><th data-en="Checkpoint" data-tr="Kontrol Noktası" data-ar="نقطة التقييم" data-uk="Контрольна точка">Checkpoint</th></tr></thead>
           <tbody>
-            <tr><td><b data-en="Week 1" data-tr="1. Hafta">Week 1</b></td><td data-en="Grammar & Sprachbausteine" data-tr="Dilbilgisi ve Dil Yapıları">Grammar & Sprachbausteine</td><td data-en="Master grammar patterns (30% of exam)" data-tr="Dilbilgisi kalıplarını öğrenin (sınavın %30'u)">Master grammar patterns (30% of exam)</td><td data-en="70%+ Sprachbausteine accuracy" data-tr="%70+ Sprachbausteine doğruluğu">70%+ Sprachbausteine accuracy</td></tr>
-            <tr><td><b data-en="Week 2" data-tr="2. Hafta">Week 2</b></td><td data-en="Reading & Listening" data-tr="Okuma ve Dinleme">Reading & Listening</td><td data-en="Build speed & accuracy for input sections" data-tr="Girdi bölümleri için hız ve doğruluk oluşturun">Build speed & accuracy for input sections</td><td data-en="Reading in 45 min, 60%+ accuracy" data-tr="45 dk'da okuma, %60+ doğruluk">Reading in 45 min, 60%+ accuracy</td></tr>
-            <tr><td><b data-en="Week 3" data-tr="3. Hafta">Week 3</b></td><td data-en="Writing & Speaking" data-tr="Yazma ve Konuşma">Writing & Speaking</td><td data-en="Memorize templates, practice speaking" data-tr="Şablonları ezberleyin, konuşma pratiği yapın">Memorize templates, practice speaking</td><td data-en="Complete letter in 20 min" data-tr="20 dk'da mektup tamamlama">Complete letter in 20 min</td></tr>
-            <tr><td><b data-en="Week 4" data-tr="4. Hafta">Week 4</b></td><td data-en="Mock Exams & Polish" data-tr="Deneme Sınavları ve Rötuş">Mock Exams & Polish</td><td data-en="Full exam simulations, fix weak points" data-tr="Tam sınav simülasyonları, zayıf noktaları düzeltin">Full exam simulations, fix weak points</td><td data-en="Pass final mock with B1 score" data-tr="Final sınavını B1 puanıyla geçin">Pass final mock with B1 score</td></tr>
+            <tr><td><b data-en="Week 1" data-tr="1. Hafta" data-ar="الأسبوع 1" data-uk="1-й тиждень">Week 1</b></td><td data-en="Grammar & Sprachbausteine" data-tr="Dilbilgisi ve Dil Yapıları" data-ar="القواعد وتراكيب اللغة" data-uk="Граматика та мовні структури">Grammar & Sprachbausteine</td><td data-en="Master grammar patterns (30% of exam)" data-tr="Dilbilgisi kalıplarını öğrenin (sınavın %30'u)" data-ar="إتقان أنماط القواعد (30% من الامتحان)" data-uk="Опануйте граматичні моделі (30% іспиту)">Master grammar patterns (30% of exam)</td><td data-en="70%+ Sprachbausteine accuracy" data-tr="%70+ Sprachbausteine doğruluğu" data-ar="دقة 70%+ في تراكيب اللغة" data-uk="70%+ точність у мовних структурах">70%+ Sprachbausteine accuracy</td></tr>
+            <tr><td><b data-en="Week 2" data-tr="2. Hafta" data-ar="الأسبوع 2" data-uk="2-й тиждень">Week 2</b></td><td data-en="Reading & Listening" data-tr="Okuma ve Dinleme" data-ar="القراءة والاستماع" data-uk="Читання та аудіювання">Reading & Listening</td><td data-en="Build speed & accuracy for input sections" data-tr="Girdi bölümleri için hız ve doğruluk oluşturun" data-ar="بناء السرعة والدقة لأقسام الاستيعاب" data-uk="Розвивайте швидкість та точність для розділів сприйняття">Build speed & accuracy for input sections</td><td data-en="Reading in 45 min, 60%+ accuracy" data-tr="45 dk'da okuma, %60+ doğruluk" data-ar="القراءة في 45 دقيقة، بدقة 60%+" data-uk="Читання за 45 хв, 60%+ точність">Reading in 45 min, 60%+ accuracy</td></tr>
+            <tr><td><b data-en="Week 3" data-tr="3. Hafta" data-ar="الأسبوع 3" data-uk="3-й тиждень">Week 3</b></td><td data-en="Writing & Speaking" data-tr="Yazma ve Konuşma" data-ar="الكتابة والتحدث" data-uk="Письмо та мовлення">Writing & Speaking</td><td data-en="Memorize templates, practice speaking" data-tr="Şablonları ezberleyin, konuşma pratiği yapın" data-ar="حفظ النماذج وممارسة التحدث" data-uk="Вивчіть шаблони, практикуйте мовлення">Memorize templates, practice speaking</td><td data-en="Complete letter in 20 min" data-tr="20 dk'da mektup tamamlama" data-ar="إكمال الرسالة في 20 دقيقة" data-uk="Написання листа за 20 хв">Complete letter in 20 min</td></tr>
+            <tr><td><b data-en="Week 4" data-tr="4. Hafta" data-ar="الأسبوع 4" data-uk="4-й тиждень">Week 4</b></td><td data-en="Mock Exams & Polish" data-tr="Deneme Sınavları ve Rötuş" data-ar="امتحانات تجريبية ومراجعة نهائية" data-uk="Пробні іспити та шліфування">Mock Exams & Polish</td><td data-en="Full exam simulations, fix weak points" data-tr="Tam sınav simülasyonları, zayıf noktaları düzeltin" data-ar="محاكاة كاملة للامتحان ومعالجة نقاط الضعف" data-uk="Повна симуляція іспиту, усунення слабких місць">Full exam simulations, fix weak points</td><td data-en="Pass final mock with B1 score" data-tr="Final sınavını B1 puanıyla geçin" data-ar="اجتياز الامتحان النهائي بدرجة B1" data-uk="Складання фінального тесту з результатом B1">Pass final mock with B1 score</td></tr>
           </tbody>
         </table>
       </div>
-      <p><a href="#" onclick="openMaterial(1); return false;"><span data-en="📄 Full day-by-day study plan →" data-tr="📄 Tam gün gün çalışma planı →">📄 Full day-by-day study plan →</span></a></p>
+      <p><a href="#" onclick="openMaterial(1); return false;"><span data-en="📄 Full day-by-day study plan →" data-tr="📄 Tam gün gün çalışma planı →" data-ar="📄 الخطة الدراسية الكاملة يوماً بيوم ←" data-uk="📄 Повний щоденний план навчання →">📄 Full day-by-day study plan →</span></a></p>
     </div>
 
     <!-- Links to remaining sections -->
     <div class="section" id="reading" style="animation-delay:0.1s">
-      <div class="section-label" data-en="📖 Module 4" data-tr="📖 Modül 4">📖 Module 4</div>
-      <h2 data-en="Reading & Listening" data-tr="Okuma ve Dinleme">Reading & Listening</h2>
-      <p data-en="Synonym recognition, time management, and practice exercises." data-tr="Eş anlamlı kelime tanıma, zaman yönetimi ve pratik egzersizleri.">Synonym recognition, time management, and practice exercises.</p>
-      <div class="card-links"><button class="card-link primary" onclick="openMaterial(3)"><span data-en="📄 Open Full Review →" data-tr="📄 Tam İncelemeyi Aç →">📄 Open Full Review →</span></button></div>
+      <div class="section-label" data-en="📖 Module 4" data-tr="📖 Modül 4" data-ar="📖 الوحدة 4" data-uk="📖 Модуль 4">📖 Module 4</div>
+      <h2 data-en="Reading & Listening" data-tr="Okuma ve Dinleme" data-ar="القراءة والاستماع" data-uk="Читання та аудіювання">Reading & Listening</h2>
+      <p data-en="Synonym recognition, time management, and practice exercises." data-tr="Eş anlamlı kelime tanıma, zaman yönetimi ve pratik egzersizleri." data-ar="تمييز المرادفات، إدارة الوقت وتمارين تطبيقية." data-uk="Розпізнавання синонімів, тайм-менеджмент та практичні вправи.">Synonym recognition, time management, and practice exercises.</p>
+      <div class="card-links"><button class="card-link primary" onclick="openMaterial(3)"><span data-en="📄 Open Full Review →" data-tr="📄 Tam İncelemeyi Aç →" data-ar="📄 فتح المراجعة الكاملة ←" data-uk="📄 Відкрити повний огляд →">📄 Open Full Review →</span></button></div>
     </div>
     <div class="section" id="writing" style="animation-delay:0.15s">
-      <div class="section-label" data-en="✍️ Module 5" data-tr="✍️ Modül 5">✍️ Module 5</div>
-      <h2 data-en="Writing & Speaking" data-tr="Yazma ve Konuşma">Writing & Speaking</h2>
-      <p data-en="Letter templates, model answers, speaking phrase banks, and 4 practice prompts." data-tr="Mektup şablonları, örnek cevaplar, konuşma kalıpları ve 4 pratik konusu.">Letter templates, model answers, speaking phrase banks, and 4 practice prompts.</p>
-      <div class="card-links"><button class="card-link primary" onclick="openMaterial(4)"><span data-en="📄 Open Full Review →" data-tr="📄 Tam İncelemeyi Aç →">📄 Open Full Review →</span></button></div>
+      <div class="section-label" data-en="✍️ Module 5" data-tr="✍️ Modül 5" data-ar="✍️ Module 5" data-uk="✍️ Модуль 5">✍️ Module 5</div>
+      <h2 data-en="Writing & Speaking" data-tr="Yazma ve Konuşma" data-ar="الكتابة والتحدث" data-uk="Письмо та мовлення">Writing & Speaking</h2>
+      <p data-en="Letter templates, model answers, speaking phrase banks, and 4 practice prompts." data-tr="Mektup şablonları, örnek cevaplar, konuşma kalıpları ve 4 pratik konusu." data-ar="نماذج الرسائل، إجابات نموذجية، بنوك عبارات المحادثة و4 مواضيع تدريبية." data-uk="Шаблони листів, зразки відповідей, фрази для розмови та 4 теми для практики.">Letter templates, model answers, speaking phrase banks, and 4 practice prompts.</p>
+      <div class="card-links"><button class="card-link primary" onclick="openMaterial(4)"><span data-en="📄 Open Full Review →" data-tr="📄 Tam İncelemeyi Aç →" data-ar="📄 فتح المراجعة الكاملة ←" data-uk="📄 Відкрити повний огляд →">📄 Open Full Review →</span></button></div>
     </div>
     <div class="section" id="final-exam" style="animation-delay:0.2s">
-      <div class="section-label" data-en="🎯 Module 7" data-tr="🎯 Modül 7">🎯 Module 7</div>
-      <h2 data-en="Final Mock Exam" data-tr="Final Deneme Sınavı">Final Mock Exam</h2>
-      <p data-en="Full exam with Hören, Lesen, Sprachbausteine, Schreiben, and Sprechen sections." data-tr="Hören, Lesen, Sprachbausteine, Schreiben ve Sprechen bölümlerini içeren tam sınav.">Full exam with Hören, Lesen, Sprachbausteine, Schreiben, and Sprechen sections.</p>
-      <div class="card-links"><button class="card-link primary" onclick="openMaterial(6)"><span data-en="📄 Open Final Exam →" data-tr="📄 Sınavı Aç →">📄 Open Final Exam →</span></button></div>
+      <div class="section-label" data-en="🎯 Module 7" data-tr="🎯 Modül 7" data-ar="🎯 الوحدة 7" data-uk="🎯 Модуль 7">🎯 Module 7</div>
+      <h2 data-en="Final Mock Exam" data-tr="Final Deneme Sınavı" data-ar="الامتحان التجريبي النهائي" data-uk="Фінальний пробний іспит">Final Mock Exam</h2>
+      <p data-en="Full exam with Hören, Lesen, Sprachbausteine, Schreiben, and Sprechen sections." data-tr="Hören, Lesen, Sprachbausteine, Schreiben ve Sprechen bölümlerini içeren tam sınav." data-ar="امتحان كامل يشمل أقسام الاستماع، القراءة، تراكيب اللغة، الكتابة والتحدث." data-uk="Повний іспит із частинами Hören, Lesen, Sprachbausteine, Schreiben та Sprechen.">Full exam with Hören, Lesen, Sprachbausteine, Schreiben, and Sprechen sections.</p>
+      <div class="card-links"><button class="card-link primary" onclick="openMaterial(6)"><span data-en="📄 Open Final Exam →" data-tr="📄 Sınavı Aç →" data-ar="📄 فتح الامتحان النهائي ←" data-uk="📄 Відкрити фінальний іспит →">📄 Open Final Exam →</span></button></div>
     </div>
     <div class="section" id="resources" style="animation-delay:0.25s">
-      <div class="section-label" data-en="🌐 Module 8" data-tr="🌐 Modül 8">🌐 Module 8</div>
-      <h2 data-en="Free Resources" data-tr="Ücretsiz Kaynaklar">Free Resources</h2>
-      <p data-en="Official practice tests, YouTube channels, DW courses, and grammar websites." data-tr="Resmi deneme sınavları, YouTube kanalları, DW kursları ve dilbilgisi siteleri.">Official practice tests, YouTube channels, DW courses, and grammar websites.</p>
-      <div class="card-links"><button class="card-link primary" onclick="openMaterial(7)"><span data-en="📄 Open Resources List →" data-tr="📄 Kaynaklar Listesini Aç →">📄 Open Resources List →</span></button></div>
+      <div class="section-label" data-en="🌐 Module 8" data-tr="🌐 Modül 8" data-ar="🌐 الوحدة 8" data-uk="🌐 Модуль 8">🌐 Module 8</div>
+      <h2 data-en="Free Resources" data-tr="Ücretsiz Kaynaklar" data-ar="موارد مجانية" data-uk="Безкоштовні ресурси">Free Resources</h2>
+      <p data-en="Official practice tests, YouTube channels, DW courses, and grammar websites." data-tr="Resmi deneme sınavları, YouTube kanalları, DW kursları ve dilbilgisi siteleri." data-ar="امتحانات تدريبية رسمية، قنوات يوتيوب، دورات DW ومواقع للقواعد." data-uk="Офіційні практичні тести, YouTube-канали, курси DW та сайти граматики.">Official practice tests, YouTube channels, DW courses, and grammar websites.</p>
+      <div class="card-links"><button class="card-link primary" onclick="openMaterial(7)"><span data-en="📄 Open Resources List →" data-tr="📄 Kaynaklar Listesini Aç →" data-ar="📄 فتح قائمة الموارد ←" data-uk="📄 Відкрити список ресурсів →">📄 Open Resources List →</span></button></div>
     </div>
     <div class="section" id="vocab1" style="animation-delay:0.3s">
-      <div class="section-label" data-en="📚 Module 9" data-tr="📚 Modül 9">📚 Module 9</div>
-      <h2 data-en="Vocabulary: Verbs & Adjectives" data-tr="Kelime Bilgisi: Fiiller ve Sıfatlar">Vocabulary: Verbs & Adjectives</h2>
-      <p data-en="~500 most-used German verbs and adjectives with Turkish translations and examples." data-tr="Türkçe çevirileri ve örnekleriyle en çok kullanılan ~500 Almanca fiil ve sıfat.">~500 most-used German verbs and adjectives with Turkish translations and examples.</p>
+      <div class="section-label" data-en="📚 Module 9" data-tr="📚 Modül 9" data-ar="📚 الوحدة 9" data-uk="📚 Модуль 9">📚 Module 9</div>
+      <h2 data-en="Vocabulary: Verbs & Adjectives" data-tr="Kelime Bilgisi: Fiiller ve Sıfatlar" data-ar="المفردات: الأفعال والصفات" data-uk="Лексика: Дієслова та прикметники">Vocabulary: Verbs & Adjectives</h2>
+      <p data-en="~500 most-used German verbs and adjectives with Turkish translations and examples." data-tr="Türkçe çevirileri ve örnekleriyle en çok kullanılan ~500 Almanca fiil ve sıfat." data-ar="~500 من الأفعال والصفات الألمانية الأكثر استخداماً مع الترجمات والأمثلة." data-uk="~500 найуживаніших німецьких дієслів та прикметників із перекладами та прикладами.">~500 most-used German verbs and adjectives with Turkish translations and examples.</p>
       <div class="card-links">
-        <button class="card-link primary" onclick="openMaterial(8)"><span data-en="📄 Open Vocabulary →" data-tr="📄 Kelime Bilgisini Aç →">📄 Open Vocabulary →</span></button>
+        <button class="card-link primary" onclick="openMaterial(8)"><span data-en="📄 Open Vocabulary →" data-tr="📄 Kelime Bilgisini Aç →" data-ar="📄 فتح المفردات ←" data-uk="📄 Відкрити словник →">📄 Open Vocabulary →</span></button>
       </div>
     </div>
     <div class="section" id="vocab2" style="animation-delay:0.35s">
-      <div class="section-label" data-en="📚 Module 10" data-tr="📚 Modül 10">📚 Module 10</div>
-      <h2 data-en="Vocabulary: Nouns by Theme" data-tr="Kelime Bilgisi: Temalara Göre İsimler">Vocabulary: Nouns by Theme</h2>
-      <p data-en="~550 most-used German nouns organized by B1 exam themes with Turkish translations." data-tr="Türkçe çevirileriyle B1 sınav temalarına göre düzenlenmiş en çok kullanılan ~550 isim.">~550 most-used German nouns organized by B1 exam themes with Turkish translations.</p>
+      <div class="section-label" data-en="📚 Module 10" data-tr="📚 Modül 10" data-ar="📚 الوحدة 10" data-uk="📚 Модуль 10">📚 Module 10</div>
+      <h2 data-en="Vocabulary: Nouns by Theme" data-tr="Kelime Bilgisi: Temalara Göre İsimler" data-ar="المفردات: الأسماء حسب الموضوع" data-uk="Лексика: Іменники за темами">Vocabulary: Nouns by Theme</h2>
+      <p data-en="~550 most-used German nouns organized by B1 exam themes with Turkish translations." data-tr="Türkçe çevirileriyle B1 sınav temalarına göre düzenlenmiş en çok kullanılan ~550 isim." data-ar="~550 اسماً ألمانياً مرتبة حسب مواضيع امتحان B1 مع الترجمات." data-uk="~550 найуживаніших німецьких іменників за темами іспиту B1 з перекладами.">~550 most-used German nouns organized by B1 exam themes with Turkish translations.</p>
       <div class="card-links">
-        <button class="card-link primary" onclick="openMaterial(9)"><span data-en="📄 Open Vocabulary →" data-tr="📄 Kelime Bilgisini Aç →">📄 Open Vocabulary →</span></button>
+        <button class="card-link primary" onclick="openMaterial(9)"><span data-en="📄 Open Vocabulary →" data-tr="📄 Kelime Bilgisini Aç →" data-ar="📄 فتح المفردات ←" data-uk="📄 Відкрити словник →">📄 Open Vocabulary →</span></button>
       </div>
     </div>
 
     <!-- Flashcards Widget -->
     <div class="section" id="flashcards" style="animation-delay:0.4s">
-      <div class="section-label" data-en="🗂️ Bonus" data-tr="🗂️ Bonus">🗂️ Bonus</div>
-      <h2 data-en="Quick Vocab Practice" data-tr="Hızlı Kelime Pratiği">Quick Vocab Practice</h2>
-      <p data-en="Test your memory with 20 essential B1 verbs. Click the card to flip!" data-tr="20 temel B1 fiiliyle hafızanızı test edin. Çevirmek için karta tıklayın!">Test your memory with 20 essential B1 verbs. Click the card to flip!</p>
+      <div class="section-label" data-en="🗂️ Bonus" data-tr="🗂️ Bonus" data-ar="🗂️ إضافي" data-uk="🗂️ Бонус">🗂️ Bonus</div>
+      <h2 data-en="Quick Vocab Practice" data-tr="Hızlı Kelime Pratiği" data-ar="ممارسة سريعة للمفردات" data-uk="Швидка практика слів">Quick Vocab Practice</h2>
+      <p data-en="Test your memory with 20 essential B1 verbs. Click the card to flip!" data-tr="20 temel B1 fiiliyle hafızanızı test edin. Çevirmek için karta tıklayın!" data-ar="اختبر ذاكرتك مع 20 فعلاً أساسياً لمستوى B1. انقر على البطاقة لقلبها!" data-uk="Перевірте свою пам'ять на 20 важливих дієсловах B1. Натисніть на картку, щоб перевернути!">Test your memory with 20 essential B1 verbs. Click the card to flip!</p>
 
       <div class="flashcard-container">
         <div class="flashcard" id="flashcard" onclick="flipCard()">
           <div class="fc-face fc-front">
-            <div class="fc-hint" data-en="German" data-tr="Almanca">German</div>
+            <div class="fc-hint" data-en="German" data-tr="Almanca" data-ar="الألمانية" data-uk="Німецька">German</div>
             <div class="fc-word" id="fc-de">arbeiten</div>
             <div style="font-size:11px; color:var(--text-muted); position:absolute; bottom:16px;">(Click to flip / Çevirmek için tıklayın)</div>
           </div>
           <div class="fc-face fc-back">
-            <div class="fc-hint" data-en="Translation" data-tr="Çeviri">Translation</div>
+            <div class="fc-hint" data-en="Translation" data-tr="Çeviri" data-ar="الترجمة" data-uk="Переклад">Translation</div>
             <div class="fc-word" id="fc-tr">çalışmak</div>
             <div class="fc-example" id="fc-ex">Ich arbeite jeden Tag von 8 bis 17 Uhr.</div>
           </div>
         </div>
         <div class="fc-controls" style="align-items: center;">
-          <button class="card-link" onclick="prevCard()">&larr; <span data-en="Prev" data-tr="Önceki">Prev</span></button>
-          <div style="display:flex; gap:8px; margin:0 8px;">
-            <button class="card-link" id="fc-btn-en" onclick="setLang('en')" style="padding:6px 12px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/us.png" width="14" alt="US" style="border-radius:2px;"> EN</button>
-            <button class="card-link" id="fc-btn-tr" onclick="setLang('tr')" style="padding:6px 12px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/tr.png" width="14" alt="TR" style="border-radius:2px;"> TR</button>
+          <button class="card-link" onclick="prevCard()">&larr; <span data-en="Prev" data-tr="Önceki" data-ar="السابق" data-uk="Попередня">Prev</span></button>
+          <div style="display:flex; gap:6px; margin:0 8px; flex-wrap:wrap; justify-content:center;">
+            <button class="card-link" id="fc-btn-en" onclick="setLang('en')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/us.png" width="14" alt="US" style="border-radius:2px;"> EN</button>
+            <button class="card-link" id="fc-btn-tr" onclick="setLang('tr')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/tr.png" width="14" alt="TR" style="border-radius:2px;"> TR</button>
+            <button class="card-link" id="fc-btn-ar" onclick="setLang('ar')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/sa.png" width="14" alt="AR" style="border-radius:2px;"> AR</button>
+            <button class="card-link" id="fc-btn-uk" onclick="setLang('uk')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/ua.png" width="14" alt="UK" style="border-radius:2px;"> UK</button>
           </div>
-          <button class="card-link primary" onclick="nextCard()"><span data-en="Next Word" data-tr="Sonraki Kelime">Next Word</span> &rarr;</button>
+          <button class="card-link primary" onclick="nextCard()"><span data-en="Next Word" data-tr="Sonraki Kelime" data-ar="الكلمة التالية" data-uk="Наступне слово">Next Word</span> &rarr;</button>
         </div>
         <div style="margin-top:12px; font-size:12px; color:var(--text-muted); font-weight: 600;" id="fc-count">1 / 20</div>
       </div>
@@ -382,16 +386,16 @@
     <!-- Commercial & Legal Footer -->
     <footer style="text-align:center;padding:40px 20px 30px;border-top:1px solid var(--border);margin-top:40px">
       <p style="font-size:28px;margin-bottom:8px">🎓</p>
-      <p style="font-size:15px;font-weight:700;color:var(--text-primary)" data-en="DeutschLernen — Comprehensive telc Deutsch B1 Study Portal & Vocab 2000" data-tr="DeutschLernen — Kapsamlı telc Deutsch B1 Çalışma Portalı ve Kelime 2000">DeutschLernen — Comprehensive telc Deutsch B1 Study Portal & Vocab 2000</p>
-      <p style="font-size:13px;color:var(--text-muted);margin-top:4px" data-en="Good luck with your exam preparation!" data-tr="Sınav hazırlığınızda başarılar dileriz!">Good luck with your exam preparation!</p>
+      <p style="font-size:15px;font-weight:700;color:var(--text-primary)" data-en="DeutschLernen — Comprehensive telc Deutsch B1 Study Portal & Vocab 2000" data-tr="DeutschLernen — Kapsamlı telc Deutsch B1 Çalışma Portalı ve Kelime 2000" data-ar="DeutschLernen — بوابة دراسية شاملة لامتحان telc Deutsch B1 والمفردات 2000" data-uk="DeutschLernen — Комплексний навчальний портал telc Deutsch B1 та Словник 2000">DeutschLernen — Comprehensive telc Deutsch B1 Study Portal & Vocab 2000</p>
+      <p style="font-size:13px;color:var(--text-muted);margin-top:4px" data-en="Good luck with your exam preparation!" data-tr="Sınav hazırlığınızda başarılar dileriz!" data-ar="نتمنى لك التوفيق في تحضيرك للامتحان!" data-uk="Успіхів у підготовці до іспиту!">Good luck with your exam preparation!</p>
 
       <!-- Legal & Commercial Navigation Links -->
       <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap; margin:24px 0 16px;">
-        <a href="trainer.html" style="font-size:13px; font-weight:600; color:var(--accent-gold);"><span data-en="⚡ Wortschatz Trainer" data-tr="⚡ Kelime Antrenörü">⚡ Wortschatz Trainer</span></a>
-        <a href="legal.html" style="font-size:13px; color:var(--text-secondary);"><span data-en="🇩🇪 Impressum (§ 5 DDG)" data-tr="🇩🇪 Yasal Künye (§ 5 DDG)">🇩🇪 Impressum (§ 5 DDG)</span></a>
-        <a href="legal.html#tab-datenschutz" style="font-size:13px; color:var(--text-secondary);"><span data-en="🔒 Privacy Policy (GDPR)" data-tr="🔒 Gizlilik Politikası (KVKK/GDPR)">🔒 Privacy Policy (GDPR)</span></a>
-        <a href="legal.html#tab-terms" style="font-size:13px; color:var(--text-secondary);"><span data-en="📜 Terms & Trademarks" data-tr="📜 Kullanım Şartları ve Markalar">📜 Terms & Trademarks</span></a>
-        <a href="javascript:void(0)" onclick="openFeedbackModal()" style="font-size:13px; color:var(--text-secondary);"><span data-en="💬 Feedback" data-tr="💬 Geri Bildirim">💬 Feedback</span></a>
+        <a href="trainer.html" style="font-size:13px; font-weight:600; color:var(--accent-gold);"><span data-en="⚡ Wortschatz Trainer" data-tr="⚡ Kelime Antrenörü" data-ar="⚡ مدرب المفردات" data-uk="⚡ Тренажер слів">⚡ Wortschatz Trainer</span></a>
+        <a href="legal.html" style="font-size:13px; color:var(--text-secondary);"><span data-en="🇩🇪 Impressum (§ 5 DDG)" data-tr="🇩🇪 Yasal Künye (§ 5 DDG)" data-ar="🇩🇪 بيانات الناشر (§ 5 DDG)" data-uk="🇩🇪 Вихідні дані (§ 5 DDG)">🇩🇪 Impressum (§ 5 DDG)</span></a>
+        <a href="legal.html#tab-datenschutz" style="font-size:13px; color:var(--text-secondary);"><span data-en="🔒 Privacy Policy (GDPR)" data-tr="🔒 Gizlilik Politikası (KVKK/GDPR)" data-ar="🔒 سياسة الخصوصية (GDPR)" data-uk="🔒 Політика конфіденційності (GDPR)">🔒 Privacy Policy (GDPR)</span></a>
+        <a href="legal.html#tab-terms" style="font-size:13px; color:var(--text-secondary);"><span data-en="📜 Terms & Trademarks" data-tr="📜 Kullanım Şartları ve Markalar" data-ar="📜 الشروط والعلامات التجارية" data-uk="📜 Умови та торговельні марки">📜 Terms & Trademarks</span></a>
+        <a href="javascript:void(0)" onclick="openFeedbackModal()" style="font-size:13px; color:var(--text-secondary);"><span data-en="💬 Feedback" data-tr="💬 Geri Bildirim" data-ar="💬 ملاحظات" data-uk="💬 Відгук">💬 Feedback</span></a>
         <a href="https://github.com/egeengin/DeutschLernen" target="_blank" rel="noopener noreferrer" style="font-size:13px; color:var(--text-secondary);">GitHub Source</a>
       </div>
       
@@ -400,13 +404,13 @@
           <strong>Trademark Disclaimer:</strong> <em>telc®</em> is a registered trademark of telc gGmbH (Frankfurt am Main). <em>Goethe-Zertifikat®</em> is a registered trademark of Goethe-Institut e.V. (Munich). This portal is an independent study tool and is not affiliated with, endorsed by, or sponsored by telc gGmbH or Goethe-Institut e.V.
         </p>
         <p style="margin-bottom: 8px;">
-          <strong data-en="Privacy Guarantee:" data-tr="Gizlilik Güvencesi:">Privacy Guarantee:</strong>
-          <span data-en="100% Client-Side Privacy. No cookies, no external user tracking. Your study progress and streak are saved strictly in your device's browser." data-tr="%100 Cihaz İçi Gizlilik. Çerez veya harici kullanıcı takibi yoktur. Çalışma ilerlemeniz ve seriniz yalnızca cihazınızın tarayıcısında saklanır.">100% Client-Side Privacy. No cookies, no external user tracking. Your study progress and streak are saved strictly in your device's browser.</span>
+          <strong data-en="Privacy Guarantee:" data-tr="Gizlilik Güvencesi:" data-ar="ضمان الخصوصية:" data-uk="Гарантія конфіденційності:">Privacy Guarantee:</strong>
+          <span data-en="100% Client-Side Privacy. No cookies, no external user tracking. Your study progress and streak are saved strictly in your device's browser." data-tr="%100 Cihaz İçi Gizlilik. Çerez veya harici kullanıcı takibi yoktur. Çalışma ilerlemeniz ve seriniz yalnızca cihazınızın tarayıcısında saklanır." data-ar="خصوصية 100% على جانب العميل. لا ملفات تعريف ارتباط ولا تتبع خارجي. يُحفظ تقدمك وسلسلتك حصرياً في متصفح جهازك." data-uk="100% конфіденційність на стороні клієнта. Жодних файлів cookie чи зовнішнього відстеження. Ваш прогрес зберігається лише у вашому браузері.">100% Client-Side Privacy. No cookies, no external user tracking. Your study progress and streak are saved strictly in your device's browser.</span>
         </p>
         <p>
-          <strong data-en="Created by" data-tr="Geliştirici:">Created by</strong> 
+          <strong data-en="Created by" data-tr="Geliştirici:" data-ar="تم الإنشاء بواسطة" data-uk="Створено">Created by</strong> 
           <a href="https://www.linkedin.com/in/egeengin/" target="_blank" rel="noopener noreferrer" style="color:var(--text-primary); text-decoration:underline;">Ege Engin</a>. 
-          <span data-en="Open-source educational suite licensed under the MIT License." data-tr="MIT Lisansı altında lisanslanmış açık kaynaklı eğitim paketi.">Open-source educational suite licensed under the MIT License.</span>
+          <span data-en="Open-source educational suite licensed under the MIT License." data-tr="MIT Lisansı altında lisanslanmış açık kaynaklı eğitim paketi." data-ar="حزمة تعليمية مفتوحة المصدر مرخصة بموجب رخصة MIT." data-uk="Освітній комплекс із відкритим кодом під ліцензією MIT.">Open-source educational suite licensed under the MIT License.</span>
         </p>
       </div>
     </footer>
@@ -418,7 +422,7 @@
 <div class="markdown-view" id="md-view">
   <div class="md-header">
     <button class="back-btn" onclick="goBackOrClose()">
-      <span style="font-size:18px">&larr;</span> <span data-en="Back to Dashboard" data-tr="Panoya Dön">Back to Dashboard</span>
+      <span style="font-size:18px">&larr;</span> <span data-en="Back to Dashboard" data-tr="Panoya Dön" data-ar="العودة للوحة التحكم" data-uk="Назад до панелі">Back to Dashboard</span>
     </button>
   </div>
   <div class="md-content" id="md-content">
@@ -428,14 +432,14 @@
 
 <!-- Floating Feedback Button -->
 <button class="btn-floating-feedback" id="btn-floating-feedback" title="Give Feedback / Geri Bildirim" onclick="openFeedbackModal()">
-  💬 <span data-en="Feedback" data-tr="Geri Bildirim">Feedback</span>
+  💬 <span data-en="Feedback" data-tr="Geri Bildirim" data-ar="ملاحظات" data-uk="Відгук">Feedback</span>
 </button>
 
 <!-- Community Feedback Modal Dialog -->
 <div class="modal-backdrop hidden" id="feedback-modal" role="dialog" aria-modal="true" aria-labelledby="feedback-modal-title">
   <div class="modal-dialog" style="max-width: 480px;">
     <div class="modal-header">
-      <h2 id="feedback-modal-title">💬 <span data-en="Send Feedback & Suggestions" data-tr="Geri Bildirim ve Öneriler">Send Feedback & Suggestions</span></h2>
+      <h2 id="feedback-modal-title">💬 <span data-en="Send Feedback & Suggestions" data-tr="Geri Bildirim ve Öneriler" data-ar="إرسال الملاحظات والاقتراحات" data-uk="Надіслати відгук та пропозиції">Send Feedback & Suggestions</span></h2>
       <button class="modal-close-btn" onclick="closeFeedbackModal()" aria-label="Close modal">&times;</button>
     </div>
     <div class="modal-scroll-area">
@@ -443,28 +447,28 @@
       
       <form id="feedback-form" onsubmit="return false;">
         <div class="auth-form-group">
-          <label for="feedback-username" data-en="Name / Nickname" data-tr="İsim / Takma Ad">Name / Nickname</label>
-          <input type="text" id="feedback-username" class="auth-input-field" placeholder="Anonymous or your name" data-en="Anonymous or your name" data-tr="Anonim veya isminiz">
+          <label for="feedback-username" data-en="Name / Nickname" data-tr="İsim / Takma Ad" data-ar="الاسم / اللقب" data-uk="Ім'я / Псевдонім">Name / Nickname</label>
+          <input type="text" id="feedback-username" class="auth-input-field" placeholder="Anonymous or your name" data-en="Anonymous or your name" data-tr="Anonim veya isminiz" data-ar="مجهول أو اسمك" data-uk="Анонімно або ваше ім'я">
         </div>
 
         <div class="auth-form-group">
-          <label for="feedback-location" data-en="Location (Auto-detected)" data-tr="Konum (Otomatik Tespit)">Location (Auto-detected)</label>
-          <input type="text" id="feedback-location" class="auth-input-field" placeholder="Detecting location..." data-en="Detecting location..." data-tr="Konum tespit ediliyor..." readonly>
+          <label for="feedback-location" data-en="Location (Auto-detected)" data-tr="Konum (Otomatik Tespit)" data-ar="الموقع (تلقائي)" data-uk="Місцезнаходження (авто)">Location (Auto-detected)</label>
+          <input type="text" id="feedback-location" class="auth-input-field" placeholder="Detecting location..." data-en="Detecting location..." data-tr="Konum tespit ediliyor..." data-ar="جاري تحديد الموقع..." data-uk="Визначення місця..." readonly>
         </div>
 
         <div class="auth-form-group">
-          <label for="feedback-category" data-en="Category" data-tr="Kategori">Category</label>
+          <label for="feedback-category" data-en="Category" data-tr="Kategori" data-ar="الفئة" data-uk="Категорія">Category</label>
           <select id="feedback-category" class="feedback-select-field">
-            <option value="General" data-en="💡 General Feedback / Suggestion" data-tr="💡 Genel Geri Bildirim / Öneri">💡 General Feedback / Suggestion</option>
-            <option value="VocabCorrection" data-en="📝 Vocabulary / Translation Correction" data-tr="📝 Kelime / Çeviri Düzeltmesi">📝 Vocabulary / Translation Correction</option>
-            <option value="FeatureRequest" data-en="✨ Feature Request" data-tr="✨ Yeni Özellik İsteği">✨ Feature Request</option>
-            <option value="BugReport" data-en="🐛 Bug Report" data-tr="🐛 Hata Bildirimi">🐛 Bug Report</option>
+            <option value="General" data-en="💡 General Feedback / Suggestion" data-tr="💡 Genel Geri Bildirim / Öneri" data-ar="💡 ملاحظات / اقتراحات عامة" data-uk="💡 Загальний відгук / пропозиція">💡 General Feedback / Suggestion</option>
+            <option value="VocabCorrection" data-en="📝 Vocabulary / Translation Correction" data-tr="📝 Kelime / Çeviri Düzeltmesi" data-ar="📝 تصحيح مفردات / ترجمة" data-uk="📝 Виправлення слова / перекладу">📝 Vocabulary / Translation Correction</option>
+            <option value="FeatureRequest" data-en="✨ Feature Request" data-tr="✨ Yeni Özellik İsteği" data-ar="✨ طلب ميزة جديدة" data-uk="✨ Запит на нову функцію">✨ Feature Request</option>
+            <option value="BugReport" data-en="🐛 Bug Report" data-tr="🐛 Hata Bildirimi" data-ar="🐛 إبلاغ عن خطأ" data-uk="🐛 Звіт про помилку">🐛 Bug Report</option>
           </select>
         </div>
 
         <div class="auth-form-group">
           <div style="display: flex; justify-content: space-between; align-items: center;">
-            <label data-en="Your Rating" data-tr="Puanınız">Your Rating</label>
+            <label data-en="Your Rating" data-tr="Puanınız" data-ar="تقييمك" data-uk="Ваша оцінка">Your Rating</label>
             <span id="feedback-rating-text" style="font-size: 13px; font-weight: 700; color: var(--accent-gold);">5/5 — Excellent</span>
           </div>
           <div class="star-rating-wrap" id="feedback-stars" data-rating="5" role="radiogroup" aria-label="Rating">
@@ -477,12 +481,12 @@
         </div>
 
         <div class="auth-form-group">
-          <label for="feedback-message" data-en="Your Message" data-tr="Mesajınız">Your Message</label>
-          <textarea id="feedback-message" class="feedback-textarea" rows="4" placeholder="Tell us what we can improve or report an issue..." data-en="Tell us what we can improve or report an issue..." data-tr="Neleri geliştirebileceğimizi bize iletin veya bir hata bildirin..." required></textarea>
+          <label for="feedback-message" data-en="Your Message" data-tr="Mesajınız" data-ar="رسالتك" data-uk="Ваше повідомлення">Your Message</label>
+          <textarea id="feedback-message" class="feedback-textarea" rows="4" placeholder="Tell us what we can improve or report an issue..." data-en="Tell us what we can improve or report an issue..." data-tr="Neleri geliştirebileceğimizi bize iletin veya bir hata bildirin..." data-ar="أخبرنا بما يمكننا تحسينه أو أبلغ عن مشكلة..." data-uk="Розкажіть, що можна покращити, або повідомте про проблему..." required></textarea>
         </div>
 
         <button type="submit" class="btn-feedback-submit" id="btn-submit-feedback">
-          🚀 <span data-en="Submit Feedback" data-tr="Geri Bildirimi Gönder">Submit Feedback</span>
+          🚀 <span data-en="Submit Feedback" data-tr="Geri Bildirimi Gönder" data-ar="إرسال الملاحظات" data-uk="Надіслати відгук">Submit Feedback</span>
         </button>
       </form>
     </div>
@@ -493,9 +497,9 @@
 <div id="entrance-modal" class="entrance-modal-overlay" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="entrance-title">
   <div class="entrance-modal-card">
     <div class="entrance-header">
-      <div class="entrance-badge" data-en="✨ WELCOME TO DEUTSCHLERNEN" data-tr="✨ DEUTSCHLERNEN'E HOŞ GELDİNİZ">✨ WELCOME TO DEUTSCHLERNEN</div>
-      <h2 id="entrance-title" data-en="What is your learning goal?" data-tr="Almanca öğrenme hedefiniz nedir?">What is your learning goal?</h2>
-      <p class="entrance-subtitle" data-en="Choose your path below so we can tailor the study modules, practice drills, and vocabulary decks for you." data-tr="Çalışma modüllerini, alıştırmaları ve kelime destelerini size özel uyarlayabilmemiz için hedefinizi seçin.">Choose your path below so we can tailor the study modules, practice drills, and vocabulary decks for you.</p>
+      <div class="entrance-badge" data-en="✨ WELCOME TO DEUTSCHLERNEN" data-tr="✨ DEUTSCHLERNEN'E HOŞ GELDİNİZ" data-ar="✨ مرحباً بك في DEUTSCHLERNEN" data-uk="✨ ЛАСКАВО ПРОСИМО ДО DEUTSCHLERNEN">✨ WELCOME TO DEUTSCHLERNEN</div>
+      <h2 id="entrance-title" data-en="What is your learning goal?" data-tr="Almanca öğrenme hedefiniz nedir?" data-ar="ما هو هدفك في تعلم الألمانية؟" data-uk="Яка ваша мета у вивченні німецької?">What is your learning goal?</h2>
+      <p class="entrance-subtitle" data-en="Choose your path below so we can tailor the study modules, practice drills, and vocabulary decks for you." data-tr="Çalışma modüllerini, alıştırmaları ve kelime destelerini size özel uyarlayabilmemiz için hedefinizi seçin." data-ar="اختر مسارك أدناه حتى نتمكن من تخصيص الوحدات الدراسية، التدريبات ومجموعات المفردات لك." data-uk="Оберіть свій шлях нижче, щоб ми адаптували навчальні модулі, практичні вправи та словникові колоди для вас.">Choose your path below so we can tailor the study modules, practice drills, and vocabulary decks for you.</p>
     </div>
 
     <!-- 4 Goal Cards Grid ("Wishes") -->
@@ -506,11 +510,11 @@
           <span class="goal-icon">🌱</span>
           <span class="goal-cefr-badge badge-a1">A1 – A2</span>
         </div>
-        <h3 data-en="Beginner Fundamentals" data-tr="Temel Başlangıç">Beginner Fundamentals</h3>
-        <p data-en="Start from scratch or solidify basics: daily life vocabulary, high-frequency verbs, and foundational grammar." data-tr="Sıfırdan başlayın veya temelleri pekiştirin: günlük kelimeler, temel fiiller ve çekimler.">Start from scratch or solidify basics: daily life vocabulary, high-frequency verbs, and foundational grammar.</p>
+        <h3 data-en="Beginner Fundamentals" data-tr="Temel Başlangıç" data-ar="الأساسيات للمبتدئين" data-uk="Базові основи">Beginner Fundamentals</h3>
+        <p data-en="Start from scratch or solidify basics: daily life vocabulary, high-frequency verbs, and foundational grammar." data-tr="Sıfırdan başlayın veya temelleri pekiştirin: günlük kelimeler, temel fiiller ve çekimler." data-ar="ابدأ من الصفر أو ثبت الأساسيات: مفردات الحياة اليومية، الأفعال المتكررة، والقواعد الأساسية." data-uk="Почніть з нуля або закріпіть базу: щоденна лексика, найуживаніші дієслова та базова граматика.">Start from scratch or solidify basics: daily life vocabulary, high-frequency verbs, and foundational grammar.</p>
         <div class="goal-perks">
-          <span data-en="✓ ~1,000 Everyday Words" data-tr="✓ ~1.000 Günlük Kelime">✓ ~1,000 Everyday Words</span>
-          <span data-en="✓ Core Sentence Structure" data-tr="✓ Temel Cümle Yapıları">✓ Core Sentence Structure</span>
+          <span data-en="✓ ~1,000 Everyday Words" data-tr="✓ ~1.000 Günlük Kelime" data-ar="✓ ~1,000 كلمة يومية" data-uk="✓ ~1 000 повсякденних слів">✓ ~1,000 Everyday Words</span>
+          <span data-en="✓ Core Sentence Structure" data-tr="✓ Temel Cümle Yapıları" data-ar="✓ بنية الجملة الأساسية" data-uk="✓ Базова структура речення">✓ Core Sentence Structure</span>
         </div>
       </div>
 
@@ -520,11 +524,11 @@
           <span class="goal-icon">🏆</span>
           <span class="goal-cefr-badge badge-b1">B1 TELC / Goethe</span>
         </div>
-        <h3 data-en="telc B1 Certification" data-tr="telc B1 Sınav Hazırlığı">telc B1 Certification</h3>
-        <p data-en="Pass your official B1 exam (180/300 pass score): 30-day plan, diagnostic & final mock tests, and letter templates." data-tr="Resmi B1 sınavını geçin (180/300 barajı): 30 günlük plan, deneme sınavları ve mektup şablonları.">Pass your official B1 exam (180/300 pass score): 30-day plan, diagnostic & final mock tests, and letter templates.</p>
+        <h3 data-en="telc B1 Certification" data-tr="telc B1 Sınav Hazırlığı" data-ar="شهادة telc B1" data-uk="Сертифікація telc B1">telc B1 Certification</h3>
+        <p data-en="Pass your official B1 exam (180/300 pass score): 30-day plan, diagnostic & final mock tests, and letter templates." data-tr="Resmi B1 sınavını geçin (180/300 barajı): 30 günlük plan, deneme sınavları ve mektup şablonları." data-ar="اجتز امتحان B1 الرسمي (درجة النجاح 180/300): خطة 30 يوماً، اختبارات تشخيصية ونهائية، ونماذج رسائل." data-uk="Складіть офіційний іспит B1 (прохідний бал 180/300): 30-денний план, діагностичні та фінальні тести, шаблони листів.">Pass your official B1 exam (180/300 pass score): 30-day plan, diagnostic & final mock tests, and letter templates.</p>
         <div class="goal-perks">
-          <span data-en="✓ 30-Day Step-by-Step Plan" data-tr="✓ 30 Günlük Adım Adım Plan">✓ 30-Day Step-by-Step Plan</span>
-          <span data-en="✓ 2 Full Mock Simulations" data-tr="✓ 2 Tam Deneme Sınavı">✓ 2 Full Mock Simulations</span>
+          <span data-en="✓ 30-Day Step-by-Step Plan" data-tr="✓ 30 Günlük Adım Adım Plan" data-ar="✓ خطة خطوة بخطوة لمدة 30 يوماً" data-uk="✓ 30-денний покроковий план">✓ 30-Day Step-by-Step Plan</span>
+          <span data-en="✓ 2 Full Mock Simulations" data-tr="✓ 2 Tam Deneme Sınavı" data-ar="✓ محاكاتان كاملتان للامتحان" data-uk="✓ 2 повні симуляції іспиту">✓ 2 Full Mock Simulations</span>
         </div>
       </div>
 
@@ -534,11 +538,11 @@
           <span class="goal-icon">💼</span>
           <span class="goal-cefr-badge badge-b2">B2 Professional</span>
         </div>
-        <h3 data-en="Advanced & Workplace" data-tr="İleri Düzey & İş Almancası">Advanced & Workplace</h3>
-        <p data-en="Excel in workplace German and academic contexts: advanced vocabulary, complex connectors, and formal writing." data-tr="İş hayatında ve akademik ortamda öne çıkın: ileri düzey kelimeler, karmaşık bağlaçlar ve resmi yazım.">Excel in workplace German and academic contexts: advanced vocabulary, complex connectors, and formal writing.</p>
+        <h3 data-en="Advanced & Workplace" data-tr="İleri Düzey & İş Almancası" data-ar="المتقدم وبيئة العمل" data-uk="Просунутий та бізнес-рівень">Advanced & Workplace</h3>
+        <p data-en="Excel in workplace German and academic contexts: advanced vocabulary, complex connectors, and formal writing." data-tr="İş hayatında ve akademik ortamda öne çıkın: ileri düzey kelimeler, karmaşık bağlaçlar ve resmi yazım." data-ar="تميز في الألمانية لبيئة العمل والسياقات الأكاديمية: مفردات متقدمة، أدوات ربط مركبة، وكتابة رسمية." data-uk="Вдосконалюйте німецьку для роботи та академічних цілей: просунута лексика, складні сполучники та офіційне письмо.">Excel in workplace German and academic contexts: advanced vocabulary, complex connectors, and formal writing.</p>
         <div class="goal-perks">
-          <span data-en="✓ Advanced B2 Study Deck" data-tr="✓ İleri Seviye B2 Destesi">✓ Advanced B2 Study Deck</span>
-          <span data-en="✓ Complex Connectors & C-Test" data-tr="✓ Karmaşık Bağlaçlar & C-Test">✓ Complex Connectors & C-Test</span>
+          <span data-en="✓ Advanced B2 Study Deck" data-tr="✓ İleri Seviye B2 Destesi" data-ar="✓ مجموعة B2 المتقدمة للدراسة" data-uk="✓ Просунута навчальна колода B2">✓ Advanced B2 Study Deck</span>
+          <span data-en="✓ Complex Connectors & C-Test" data-tr="✓ Karmaşık Bağlaçlar & C-Test" data-ar="✓ أدوات ربط معقدة واختبار C-Test" data-uk="✓ Складні сполучники та C-Test">✓ Complex Connectors & C-Test</span>
         </div>
       </div>
 
@@ -548,11 +552,11 @@
           <span class="goal-icon">🎓</span>
           <span class="goal-cefr-badge badge-c1">C1 Academic</span>
         </div>
-        <h3 data-en="C1 Hochschule & Mastery" data-tr="C1 Üniversite & Uzmanlık">C1 Hochschule & Mastery</h3>
-        <p data-en="Master academic German for university studies, research papers, and professional settings. High-frequency C1 terminology and complex sentence structures." data-tr="Üniversite eğitimi, akademik makaleler ve profesyonel ortamlar için akademik Almancayı ustalaşın. Yüksek frekanslı C1 terimleri ve karmaşık cümle yapıları.">Master academic German for university studies, research papers, and professional settings. High-frequency C1 terminology and complex sentence structures.</p>
+        <h3 data-en="C1 Hochschule & Mastery" data-tr="C1 Üniversite & Uzmanlık" data-ar="C1 للجامعة والاحتراف" data-uk="C1 для університету та майстерність">C1 Hochschule & Mastery</h3>
+        <p data-en="Master academic German for university studies, research papers, and professional settings. High-frequency C1 terminology and complex sentence structures." data-tr="Üniversite eğitimi, akademik makaleler ve profesyonel ortamlar için akademik Almancayı ustalaşın. Yüksek frekanslı C1 terimleri ve karmaşık cümle yapıları." data-ar="أتقن الألمانية الأكاديمية للدراسات الجامعية، الأوراق البحثية، والبيئات الاحترافية. مصطلحات C1 شائعة وتراكيب جمل معقدة." data-uk="Опануйте академічну німецьку для університету, наукових робіт та професійного середовища. Термінологія C1 та складні структури речень.">Master academic German for university studies, research papers, and professional settings. High-frequency C1 terminology and complex sentence structures.</p>
         <div class="goal-perks">
-          <span data-en="✓ Academic C1 Study Deck" data-tr="✓ Akademik C1 Destesi">✓ Academic C1 Study Deck</span>
-          <span data-en="✓ University & Research Vocab" data-tr="✓ Üniversite & Araştırma Kelimeleri">✓ University & Research Vocab</span>
+          <span data-en="✓ Academic C1 Study Deck" data-tr="✓ Akademik C1 Destesi" data-ar="✓ مجموعة C1 الأكاديمية للدراسة" data-uk="✓ Академічна колода C1">✓ Academic C1 Study Deck</span>
+          <span data-en="✓ University & Research Vocab" data-tr="✓ Üniversite & Araştırma Kelimeleri" data-ar="✓ مفردات الجامعة والبحث العلمي" data-uk="✓ Лексика для університету та досліджень">✓ University & Research Vocab</span>
         </div>
       </div>
 
@@ -562,11 +566,11 @@
           <span class="goal-icon">⚡</span>
           <span class="goal-cefr-badge badge-all">All Levels</span>
         </div>
-        <h3 data-en="Rapid Vocab Trainer" data-tr="Hızlı Kelime Antrenmanı">Rapid Vocab Trainer</h3>
-        <p data-en="Jump directly into high-speed flashcards, 5 quiz modes, native audio speech, and daily streak tracking." data-tr="Hızlı kelime kartlarına, 5 test moduna, sesli telaffuza ve seri takibine doğrudan atlayın.">Jump directly into high-speed flashcards, 5 quiz modes, native audio speech, and daily streak tracking.</p>
+        <h3 data-en="Rapid Vocab Trainer" data-tr="Hızlı Kelime Antrenmanı" data-ar="مدرب المفردات السريع" data-uk="Швидкий тренажер слів">Rapid Vocab Trainer</h3>
+        <p data-en="Jump directly into high-speed flashcards, 5 quiz modes, native audio speech, and daily streak tracking." data-tr="Hızlı kelime kartlarına, 5 test moduna, sesli telaffuza ve seri takibine doğrudan atlayın." data-ar="انتقل مباشرة إلى بطاقات المفردات السريعة، 5 أوضاع اختبار، نطق صوتي أصلي، ومتابعة السلسلة اليومية." data-uk="Переходьте одразу до швидких карток, 5 режимів тестів, озвучення та відстеження щоденних серій.">Jump directly into high-speed flashcards, 5 quiz modes, native audio speech, and daily streak tracking.</p>
         <div class="goal-perks">
-          <span data-en="✓ 2,000+ Words Offline" data-tr="✓ 2.000+ Kelime Çevrimdışı">✓ 2,000+ Words Offline</span>
-          <span data-en="✓ Native Audio & Spaced Drills" data-tr="✓ Sesli Tekrar & Akıllı Algoritma">✓ Native Audio & Spaced Drills</span>
+          <span data-en="✓ 2,000+ Words Offline" data-tr="✓ 2.000+ Kelime Çevrimdışı" data-ar="✓ أكثر من 2,000 كلمة بدون إنترنت" data-uk="✓ 2 000+ слів офлайн">✓ 2,000+ Words Offline</span>
+          <span data-en="✓ Native Audio & Spaced Drills" data-tr="✓ Sesli Tekrar & Akıllı Algoritma" data-ar="✓ نطق صوتي وتدريبات ذكية متباعدة" data-uk="✓ Озвучення та інтервальні тренування">✓ Native Audio & Spaced Drills</span>
         </div>
       </div>
     </div>
@@ -574,7 +578,7 @@
     <!-- Fine-tune Level & Language Controls -->
     <div class="entrance-controls-row">
       <div class="entrance-control-group">
-        <label for="entrance-level-select" data-en="Target CEFR Level:" data-tr="Hedef CEFR Seviyeniz:">Target CEFR Level:</label>
+        <label for="entrance-level-select" data-en="Target CEFR Level:" data-tr="Hedef CEFR Seviyeniz:" data-ar="المستوى المستهدف حسب الإطار الأوروبي:" data-uk="Цільовий рівень CEFR:">Target CEFR Level:</label>
         <select id="entrance-level-select" class="styled-select" onchange="onEntranceLevelChange(this.value)">
           <option value="A1">A1 – Beginner (Anfänger)</option>
           <option value="A2">A2 – Elementary (Grundstufe)</option>
@@ -585,10 +589,12 @@
         </select>
       </div>
       <div class="entrance-control-group">
-        <label for="entrance-lang-select" data-en="Learning from language:" data-tr="Açıklama / Hedef diliniz:">Learning from language:</label>
+        <label for="entrance-lang-select" data-en="Learning from language:" data-tr="Açıklama / Hedef diliniz:" data-ar="لغة الشرح والتعلم منها:" data-uk="Мова навчання та підказок:">Learning from language:</label>
         <select id="entrance-lang-select" class="styled-select" onchange="setLang(this.value)">
           <option value="en">🇬🇧 English</option>
           <option value="tr">🇹🇷 Türkçe</option>
+          <option value="ar">🇸🇦 العربية (Arabic)</option>
+          <option value="uk">🇺🇦 Українська (Ukrainian)</option>
         </select>
       </div>
     </div>
@@ -596,10 +602,10 @@
     <!-- Modal Footer Actions -->
     <div class="entrance-footer">
       <button class="btn-primary entrance-confirm-btn" id="btn-confirm-goal" onclick="applyGoalSelection()">
-        <span data-en="Start Learning →" data-tr="Öğrenmeye Başla →">Start Learning →</span>
+        <span data-en="Start Learning →" data-tr="Öğrenmeye Başla →" data-ar="ابدأ التعلم ←" data-uk="Почати навчання →">Start Learning →</span>
       </button>
       <button class="btn-secondary entrance-dismiss-btn" id="btn-dismiss-goal" onclick="closeGoalModal()">
-        <span data-en="Explore All Materials" data-tr="Tüm Materyalleri İncele">Explore All Materials</span>
+        <span data-en="Explore All Materials" data-tr="Tüm Materyalleri İncele" data-ar="استكشاف جميع المواد" data-uk="Переглянути всі матеріали">Explore All Materials</span>
       </button>
     </div>
   </div>

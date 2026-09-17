@@ -1004,3 +1004,13 @@ td strong, td b { color: var(--text-primary); }
   }
 }
 
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+.fc-word[dir="rtl"],
+.fc-hint[dir="rtl"] {
+  direction: rtl;
+  text-align: center;
+}
