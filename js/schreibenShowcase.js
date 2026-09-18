@@ -678,11 +678,13 @@ function handlePromptSelectChange(val) {
   if (!textarea) return;
 
   if (val === 'marianne') {
-    textarea.value = `Liebe Marianne,\n\nich habe mich sehr über deine E-Mail gefreut! Es ist wirklich schön, dass du mich bald in Deutschland besuchen möchtest.\n\nDie beste Jahreszeit für deine Reise ist der Frühling, besonders der Mai...`;
+    textarea.value = `Liebe Marianne,\n\nich habe mich sehr über deine E-Mail gefreut! Es ist wirklich schön, dass du mich bald in Deutschland besuchen möchtest.\n\nDie beste Jahreszeit für deine Reise ist der Frühling, besonders der Mai. Im Juli und August kann es hier nämlich sehr heiß werden, aber im Frühling ist das Wetter angenehm mild und sonnig.\n\nWenn du hier bist, können wir zusammen einen Ausflug nach Berlin machen. Dort gibt es viele berühmte Museen und schöne Parks. Außerdem möchte ich dir unseren großen See zeigen, an dem wir spazieren gehen und schwimmen können.\n\nFür die Reise solltest du unbedingt feste Schuhe und eine warme Jacke mitbringen, weil die Abende manchmal noch frisch sind.\n\nZur Vorbereitung empfehle ich dir, deine Fahrkarten für den Zug möglichst früh online zu buchen, damit sie billiger sind. Lade dir auch die DB-App auf dein Handy herunter.\n\nIch freue mich schon sehr auf deinen Besuch! Schreib mir bald zurück.\n\nViele Grüße,\nAli`;
   } else if (val === 'hotel') {
-    textarea.value = `Sehr geehrte Damen und Herren,\n\nich schreibe Ihnen, weil ich mich über meinen Aufenthalt im Hotel Meeresblick beschweren möchte...`;
+    textarea.value = `Sehr geehrte Damen und Herren,\n\nich schreibe Ihnen, weil ich mich über meinen Aufenthalt im Hotel Meeresblick vom 10. bis 17. August beschweren möchte.\n\nIn Ihrer Anzeige im Internet stand, dass alle Zimmer einen Blick auf das Meer haben und es sehr ruhig ist. Als ich ankam, lag mein Zimmer jedoch direkt über der lauten Hotelküche, und ich konnte das Meer überhaupt nicht sehen.\n\nAußerdem war die Klimaanlage während meines gesamten Aufenthalts kaputt, obwohl es draußen über 30 Grad warm war. An der Rezeption habe ich mich mehrmals beschwert, aber niemand hat das Problem gelöst.\n\nAus diesen Gründen erwarte ich, dass Sie mir 30 Prozent der Reisekosten zurückerstatten. Bitte überweisen Sie den Betrag innerhalb von zwei Wochen auf mein Bankkonto.\n\nMit freundlichen Grüßen,\nMehmet Yılmaz`;
   } else if (val === 'vhs') {
-    textarea.value = `Sehr geehrte Damen und Herren,\n\nich interessiere mich sehr für den Deutschkurs B2 an Ihrer Volkshochschule und hätte dazu einige Fragen...`;
+    textarea.value = `Sehr geehrte Damen und Herren,\n\nich interessiere mich sehr für den Deutschkurs B2 an Ihrer Volkshochschule und hätte dazu einige wichtige Fragen.\n\nIch habe vor zwei Monaten meine B1-Prüfung mit gutem Erfolg bestanden. Da ich mich beruflich weiterentwickeln möchte, brauche ich nun das B2-Zertifikat. Findet der Intensivkurs am Vormittag oder am Abend statt?\n\nKönnten Sie mir bitte auch mitteilen, welche Lehrbücher im Unterricht verwendet werden und wie hoch die Kursgebühren sind? Besteht die Möglichkeit, die Kurskosten in monatlichen Raten zu bezahlen?\n\nÜber eine baldige Auskunft würde ich mich sehr freuen.\n\nMit freundlichen Grüßen,\nOlena Kovalenko`;
+  } else if (val === 'custom') {
+    textarea.value = '';
   }
   updateWordCounter(textarea);
 }
