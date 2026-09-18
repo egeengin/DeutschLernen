@@ -1740,6 +1740,9 @@ if (typeof window !== 'undefined') {
   window.saveAiSettings = saveAiSettings;
   window.clearAiSettings = clearAiSettings;
   window.callLlmLetterGrader = callLlmLetterGrader;
+  window.handlePromptSelectChange = handlePromptSelectChange;
+  window.updateWordCounter = updateWordCounter;
+  window.switchSchreibenTab = switchSchreibenTab;
 }
 
 if (typeof module !== 'undefined' && module.exports) {
@@ -1759,6 +1762,9 @@ if (typeof module !== 'undefined' && module.exports) {
     handleAiProviderChange,
     saveAiSettings,
     clearAiSettings,
-    callLlmLetterGrader
+    callLlmLetterGrader,
+    handlePromptSelectChange,
+    updateWordCounter,
+    switchSchreibenTab
   };
 }
