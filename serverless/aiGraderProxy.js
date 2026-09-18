@@ -44,24 +44,27 @@ export async function handleGradeLetter(request, env, db) {
   }
 
   // 4. Construct System Prompt & Structured JSON Schema for LLM
-  const systemPrompt = `You are an official telc Deutsch B1 examiner. Grade the provided B1 student letter against the official 3 telc criteria:
-1. Inhaltliche Angemessenheit (0-10 pts)
-2. Sprachliche Angemessenheit (0-15 pts)
-3. Korrektheit (0-20 pts)
-Total max points = 45.
+  const systemPrompt = `You are an official, accredited telc Deutsch B1 examiner. Grade the provided B1 student letter against the official 3 telc criteria:
+1. Kriterium I: Aufgabenbewältigung (Inhaltliche Angemessenheit & 4 Leitpunkte) - Raw score: A=5, B=3, C=1, D=0.
+2. Kriterium II: Kommunikative Gestaltung (Sprachliche Angemessenheit, Register & Konnektoren) - Raw score: A=5, B=3, C=1, D=0.
+3. Kriterium III: Formale Richtigkeit (Grammatik, Morphologie & Orthographie nach dem Primat der Verständlichkeit) - Raw score: A=5, B=3, C=1, D=0.
 
-Return ONLY a valid JSON object with the following structure:
+Scoring Formula: (Score_I + Score_II + Score_III) * 3 = Total Points (Max 45). Pass threshold is >= 27 points (60%).
+
+Return ONLY a valid JSON object matching this exact schema:
 {
   "totalScore": number,
   "maxTotal": 45,
+  "rawSum": number,
   "grade": string,
+  "percentage": number,
   "criteria": [
-    { "id": "inhalt", "title": "Inhaltliche Angemessenheit", "score": number, "maxScore": 10, "feedback": string },
-    { "id": "sprache", "title": "Sprachliche Angemessenheit", "score": number, "maxScore": 15, "feedback": string },
-    { "id": "korrektheit", "title": "Korrektheit", "score": number, "maxScore": 20, "feedback": string }
+    { "id": "inhalt", "title": "Kriterium I: Aufgabenbewältigung", "rawScore": number, "ratingLetter": "A"|"B"|"C"|"D", "finalScore": number, "finalMax": 15, "feedback": string },
+    { "id": "sprache", "title": "Kriterium II: Kommunikative Gestaltung", "rawScore": number, "ratingLetter": "A"|"B"|"C"|"D", "finalScore": number, "finalMax": 15, "feedback": string },
+    { "id": "korrektheit", "title": "Kriterium III: Formale Richtigkeit", "rawScore": number, "ratingLetter": "A"|"B"|"C"|"D", "finalScore": number, "finalMax": 15, "feedback": string }
   ],
   "annotations": [
-    { "targetText": string, "correctedText": string, "type": "grammar"|"syntax"|"spelling"|"vocab", "rule": string, "explanation": string }
+    { "targetText": string, "correctedText": string, "type": "syntax"|"spelling"|"vocab"|"grammar", "rule": string, "explanation": string }
   ],
   "b1Upgrades": [
     { "original": string, "upgrade": string, "benefit": string }
@@ -109,9 +112,9 @@ ${studentText}
         user.id,
         promptTitle || 'B1 Letter',
         studentText,
-        evaluationResult.criteria[0].score,
-        evaluationResult.criteria[1].score,
-        evaluationResult.criteria[2].score,
+        evaluationResult.criteria[0].finalScore,
+        evaluationResult.criteria[1].finalScore,
+        evaluationResult.criteria[2].finalScore,
         evaluationResult.totalScore,
         JSON.stringify(evaluationResult)
       ]
@@ -132,12 +135,55 @@ ${studentText}
 }
 
 /**
- * Placeholder JWT Token Verification
+ * Production Web Crypto HMAC SHA-256 JWT Verification
  */
 async function verifyAuthToken(token, secret) {
-  // In production, verify JWT payload with crypto.subtle or Jose
-  if (token && token.length > 10) {
-    return { id: 'user-uuid-1234', email: 'student@example.com' };
+  if (!token || typeof token !== 'string') return null;
+  const parts = token.split('.');
+  if (parts.length !== 3) return null;
+
+  const [headerB64, payloadB64, signatureB64] = parts;
+
+  try {
+    const encoder = new TextEncoder();
+    const key = await crypto.subtle.importKey(
+      'raw',
+      encoder.encode(secret || 'default-secret-change-in-env'),
+      { name: 'HMAC', hash: 'SHA-256' },
+      false,
+      ['verify']
+    );
+
+    const data = encoder.encode(`${headerB64}.${payloadB64}`);
+    const signature = base64UrlToUint8Array(signatureB64);
+    const isValid = await crypto.subtle.verify('HMAC', key, signature, data);
+
+    if (!isValid) return null;
+
+    const payloadJson = new TextDecoder().decode(base64UrlToUint8Array(payloadB64));
+    const payload = JSON.parse(payloadJson);
+
+    // Validate expiration
+    if (payload.exp && payload.exp < Date.now() / 1000) {
+      return null;
+    }
+
+    return payload;
+  } catch (err) {
+    console.error('JWT Verification Error:', err);
+    return null;
   }
-  return null;
+}
+
+function base64UrlToUint8Array(base64Url) {
+  let base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+  while (base64.length % 4) {
+    base64 += '=';
+  }
+  const binaryString = atob(base64);
+  const bytes = new Uint8Array(binaryString.length);
+  for (let i = 0; i < binaryString.length; i++) {
+    bytes[i] = binaryString.charCodeAt(i);
+  }
+  return bytes;
 }

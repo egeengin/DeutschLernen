@@ -39,11 +39,11 @@ const ratingLabels = {
 
 // Material cards data
 const materials = [
-  { icon:'📋', title:'Exam Guide', titleTr:'Sınav Rehberi', titleAr:'دليل الامتحان', titleUk:'Посібник до іспиту', desc:'Structure, scoring, strategies', descTr:'Yapı, puanlama, stratejiler', descAr:'الهيكل، درجات التقييم، والاستراتيجيات', descUk:'Структура, оцінювання та стратегії', en:'./docs/en/telc_b1_exam_guide.md', tr:'./docs/tr/telc_b1_exam_guide.md', levels: ['B1'] },
-  { icon:'📅', title:'1-Month Plan', titleTr:'1 Aylık Plan', titleAr:'خطة الشهر الواحد', titleUk:'План на 1 місяць', desc:'Day-by-day study schedule', descTr:'Gün gün çalışma programı', descAr:'جدول دراسي يومي منظم', descUk:'Щоденний розклад навчання', en:'./docs/en/1_month_study_plan.md', tr:'./docs/tr/1_month_study_plan.md', levels: ['B1'] },
+  { icon:'📋', title:'Exam Guide', titleTr:'Sınav Rehberi', titleAr:'دليل الامتحان', titleUk:'Посібник до іспиту', desc:'Structure, scoring, strategies', descTr:'Yapı, puanlama, stratejiler', descAr:'الهيكل، درجات التقييم، والاستراتيجيات', descUk:'Структура, оцінювання та стратегії', en:'./docs/en/telc_b1_exam_guide.md', tr:'./docs/tr/telc_b1_exam_guide.md', ar:'./docs/ar/telc_b1_exam_guide.md', uk:'./docs/uk/telc_b1_exam_guide.md', levels: ['B1'] },
+  { icon:'📅', title:'1-Month Plan', titleTr:'1 Aylık Plan', titleAr:'خطة الشهر الواحد', titleUk:'План на 1 місяць', desc:'Day-by-day study schedule', descTr:'Gün gün çalışma programı', descAr:'جدول دراسي يومي منظم', descUk:'Щоденний розклад навчання', en:'./docs/en/1_month_study_plan.md', tr:'./docs/tr/1_month_study_plan.md', ar:'./docs/ar/1_month_study_plan.md', uk:'./docs/uk/1_month_study_plan.md', levels: ['B1'] },
   { icon:'📝', title:'Grammar & Vocab', titleTr:'Dil Bilgisi ve Kelime', titleAr:'القواعد والمفردات', titleUk:'Граматика та лексика', desc:'Nebensätze, Perfekt, prepositions + 30 exercises', descTr:'Nebensätze, Perfekt, edatlar + 30 alıştırma', descAr:'الجمل الجانبية، الماضي التام، حروف الجر + 30 تمرين', descUk:'Підрядні речення, Perfekt, прийменники + 30 вправ', en:'./docs/en/review_grammar_vocab.md', tr:'./docs/tr/review_grammar_vocab.md', levels: ['A2', 'B1', 'B2'] },
   { icon:'📖', title:'Reading & Listening', titleTr:'Okuma ve Dinleme', titleAr:'القراءة والاستماع', titleUk:'Читання та аудіювання', desc:'Synonym recognition, strategies, 6 exercises', descTr:'Eşanlamlı tanıma, stratejiler, 6 alıştırma', descAr:'تمييز المرادفات، الاستراتيجيات، 6 تمارين', descUk:'Розпізнавання синонімів, стратегії, 6 вправ', en:'./docs/en/review_reading_listening.md', tr:'./docs/tr/review_reading_listening.md', levels: ['B1', 'B2'] },
-  { icon:'✍️', title:'Writing & Speaking', titleTr:'Yazma ve Konuşma', titleAr:'الكتابة والمحادثة', titleUk:'Письмо та мовлення', desc:'Letter templates, model answer, speaking phrases', descTr:'Mektup şablonları, model cevap, konuşma ifadeleri', descAr:'نماذج الرسائل، إجابات نموذجية، عبارات التحدث', descUk:'Шаблони листів, зразки відповідей, розмовні фрази', en:'./docs/en/review_writing_speaking.md', tr:'./docs/tr/review_writing_speaking.md', levels: ['B1', 'B2'] },
+  { icon:'✍️', title:'Writing & Speaking', titleTr:'Yazma ve Konuşma', titleAr:'الكتابة والمحادثة', titleUk:'Письмо та мовлення', desc:'Letter templates, model answer, speaking phrases', descTr:'Mektup şablonları, model cevap, konuşma ifadeleri', descAr:'نماذج الرسائل، إجابات نموذجية، عبارات التحدث', descUk:'Шаблони листів, зразки відповідей, розмовні фрази', en:'./docs/en/review_writing_speaking.md', tr:'./docs/tr/review_writing_speaking.md', ar:'./docs/ar/review_writing_speaking.md', uk:'./docs/uk/review_writing_speaking.md', levels: ['B1', 'B2'] },
   { icon:'🔍', title:'Diagnostic Exam', titleTr:'Tanılama Sınavı', titleAr:'الامتحان التشخيصي', titleUk:'Діагностичний іспит', desc:'Day 1 assessment — find your weak spots', descTr:'1. gün değerlendirmesi — zayıf noktalarınızı bulun', descAr:'تقييم اليوم الأول — اكتشف نقاط ضعفك', descUk:'Оцінювання 1-го дня — визначте слабкі місця', en:'./docs/en/mock_exam_diagnostic.md', tr:'./docs/tr/mock_exam_diagnostic.md', levels: ['B1'] },
   { icon:'🎯', title:'Final Mock Exam', titleTr:'Final Sınavı', titleAr:'الامتحان التجريبي النهائي', titleUk:'Фінальний пробний іспит', desc:'Week 4 full simulation under exam conditions', descTr:'4. hafta sınav koşullarında tam simülasyon', descAr:'محاكاة كاملة في الأسبوع 4 في ظروف الامتحان', descUk:'Повна симуляція 4-го тижня в умовах іспиту', en:'./docs/en/mock_exam_final.md', tr:'./docs/tr/mock_exam_final.md', levels: ['B1'] },
   { icon:'🌐', title:'Free Resources', titleTr:'Ücretsiz Kaynaklar', titleAr:'موارد مجانية', titleUk:'Безкоштовні ресурси', desc:'Official tests, YouTube, DW courses, websites', descTr:'Resmi testler, YouTube, DW kursları, web siteleri', descAr:'امتحانات رسمية، يوتيوب، دورات DW، ومواقع مفيدة', descUk:'Офіційні тести, YouTube, курси DW, сайти', en:'./docs/en/example_exams_resources.md', tr:'./docs/tr/example_exams_resources.md', levels: ['A1', 'A2', 'B1', 'B2'] },
@@ -263,7 +263,7 @@ function renderSidebar() {
 function openMaterial(index) {
   const m = materials[index];
   if (!m) return;
-  const url = currentLang === 'tr' ? m.tr : m.en;
+  const url = m[currentLang] || m.en;
   openMarkdown(url);
 }
 
@@ -498,7 +498,18 @@ function openMarkdown(url, skipHistory = false) {
   mdView.classList.add('open');
   document.body.style.overflow = 'hidden'; // prevent background scrolling
   
-  mdContent.innerHTML = `<div class="md-loader">${currentLang === 'tr' ? 'İçerik yükleniyor...' : 'Loading content...'}</div>`;
+  const loaderText = {
+    en: 'Loading content...',
+    tr: 'İçerik yükleniyor...',
+    ar: 'جاري تحميل المحتوى...',
+    uk: 'Завантаження вмісту...'
+  };
+  mdContent.innerHTML = `<div class="md-loader">${loaderText[currentLang] || loaderText.en}</div>`;
+  if (currentLang === 'ar') {
+    mdContent.setAttribute('dir', 'rtl');
+  } else {
+    mdContent.removeAttribute('dir');
+  }
   
   fetch(url)
     .then(response => {

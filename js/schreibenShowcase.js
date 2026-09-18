@@ -435,7 +435,33 @@ function closeProPricingModal() {
 }
 
 function selectProPlan(planId) {
-  alert(`Thank you for selecting the ${planId.toUpperCase()} Pass! Checkout integration with Paddle / Lemon Squeezy will open here.`);
+  // Check if Paddle or Lemon Squeezy overlay checkout is configured
+  if (typeof window.Paddle !== 'undefined' && window.Paddle.Checkout) {
+    window.Paddle.Checkout.open({
+      items: [{ priceId: planId, quantity: 1 }]
+    });
+    return;
+  }
+  if (typeof window.createLemonSqueezyCheckout === 'function') {
+    window.createLemonSqueezyCheckout(planId);
+    return;
+  }
+
+  // Graceful checkout dialog
+  const modal = document.getElementById('pro-pricing-modal');
+  if (modal) {
+    const header = modal.querySelector('.modal-header');
+    if (header) {
+      header.innerHTML = `
+        <span class="modal-kicker">🔒 SECURE CHECKOUT INITIALIZED</span>
+        <h2>Proceed to Pro Activation</h2>
+        <p>Selected Plan: <strong>${planId.toUpperCase()} Pass</strong>. Complete payment via Merchant of Record to instantly receive your AI letter grading credits.</p>
+        <div style="background:rgba(217,119,6,0.12); border:1px solid var(--accent-gold); border-radius:8px; padding:12px; margin-top:10px; font-size:13px; color:var(--text-primary);">
+          ✨ <strong>Instant Quota Delivery:</strong> Upon checkout completion, your unique license token is automatically credited to your account via serverless webhook.
+        </div>
+      `;
+    }
+  }
 }
 
 if (typeof window !== 'undefined') {

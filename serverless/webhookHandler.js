@@ -77,7 +77,28 @@ export async function handlePaymentWebhook(request, env, db) {
       [userId, 'paddle', transactionId, planId, amountCents]
     );
 
-    return new Response(JSON.stringify({ success: true, user_id: userId, credits_added: creditsToGrant }), {
+    // Track YTD Revenue for German Kleinunternehmerregelung (§ 19 UStG €22,000 threshold)
+    const currentYear = new Date().getFullYear();
+    const yearStartDate = new Date(currentYear, 0, 1).toISOString();
+    const revCheck = await db.query(
+      'SELECT SUM(amount_cents) as total_cents FROM purchases WHERE created_at >= $1',
+      [yearStartDate]
+    );
+    const ytdCents = parseInt(revCheck.rows[0]?.total_cents || 0, 10);
+    const ytdEuros = ytdCents / 100;
+
+    if (ytdEuros >= 18000) {
+      console.warn(
+        `[TAX COMPLIANCE ALERT] YTD Revenue has reached €${ytdEuros.toFixed(2)}. Approaching the § 19 UStG €22,000 Kleinunternehmer threshold!`
+      );
+    }
+
+    return new Response(JSON.stringify({
+      success: true,
+      user_id: userId,
+      credits_added: creditsToGrant,
+      ytd_revenue_eur: ytdEuros
+    }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' }
     });
