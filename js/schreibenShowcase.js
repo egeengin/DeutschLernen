@@ -233,19 +233,19 @@ function renderSchreibenShowcase(containerId) {
             <h4>📋 Checklist & Task Points to Agree On:</h4>
             <div class="speaking-points-grid">
               <div class="sp-point">
-                <input type="checkbox" id="sp1">
+                <input type="checkbox" id="sp1" onchange="toggleSpeakingPoint('sp1', this.checked)">
                 <label for="sp1"><strong>Wann?</strong> (Datum, Wochentag & Uhrzeit festlegen)</label>
               </div>
               <div class="sp-point">
-                <input type="checkbox" id="sp2">
+                <input type="checkbox" id="sp2" onchange="toggleSpeakingPoint('sp2', this.checked)">
                 <label for="sp2"><strong>Wo?</strong> (Treffpunkt, Raum, Garten oder Restaurant)</label>
               </div>
               <div class="sp-point">
-                <input type="checkbox" id="sp3">
+                <input type="checkbox" id="sp3" onchange="toggleSpeakingPoint('sp3', this.checked)">
                 <label for="sp3"><strong>Essen & Trinken?</strong> (Kuchen, Fingerfood, Getränke kaufen)</label>
               </div>
               <div class="sp-point">
-                <input type="checkbox" id="sp4">
+                <input type="checkbox" id="sp4" onchange="toggleSpeakingPoint('sp4', this.checked)">
                 <label for="sp4"><strong>Wer bezahlt wofür?</strong> (Kosten verteilen & Budget)</label>
               </div>
             </div>
@@ -268,19 +268,19 @@ function renderSchreibenShowcase(containerId) {
                 <ul>
                   <li>"Das ist eine hervorragende Idee!"</li>
                   <li>"Ich bin ganz deiner Meinung."</li>
-                  <li>"Das klingt super, das machen wir so."</li>
+                  <li>"Genau so machen wir das."</li>
                 </ul>
               </div>
               <div class="rm-card">
-                <h5>Widersprechen / Gegenvorschlag</h5>
+                <h5>Widersprechen & Gegenvorschlag (Countering)</h5>
                 <ul>
-                  <li>"Ich weiß nicht recht... Vielleicht lieber..."</li>
-                  <li>"Das ist zwar möglich, aber..."</li>
-                  <li>"Da habe ich eine andere Idee."</li>
+                  <li>"Das ist zwar gut, aber vielleicht sollten wir..."</li>
+                  <li>"Ich weiß nicht, ob das klappt. Besser wäre..."</li>
+                  <li>"Tut mir leid, aber da bin ich skeptisch."</li>
                 </ul>
               </div>
               <div class="rm-card">
-                <h5>Einigung & Abschluss</h5>
+                <h5>Vereinbaren & Festhalten (Deciding)</h5>
                 <ul>
                   <li>"Gut, dann halten wir das so fest!"</li>
                   <li>"Einverstanden! Wer kümmert sich um...?"</li>
@@ -293,6 +293,36 @@ function renderSchreibenShowcase(containerId) {
       </div>
     </div>
   `;
+
+  // Restore Speaking checklist states
+  restoreSpeakingPoints();
+}
+
+/**
+ * Persist and restore Speaking checklist states across sessions and tab changes
+ */
+function toggleSpeakingPoint(id, checked) {
+  try {
+    const saved = JSON.parse(localStorage.getItem('telc_speaking_plan_checks') || '{}');
+    saved[id] = !!checked;
+    localStorage.setItem('telc_speaking_plan_checks', JSON.stringify(saved));
+  } catch (e) {
+    console.error('Failed to save speaking checklist state:', e);
+  }
+}
+
+function restoreSpeakingPoints() {
+  try {
+    const saved = JSON.parse(localStorage.getItem('telc_speaking_plan_checks') || '{}');
+    ['sp1', 'sp2', 'sp3', 'sp4'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el && saved[id] !== undefined) {
+        el.checked = !!saved[id];
+      }
+    });
+  } catch (e) {
+    console.error('Failed to restore speaking checklist state:', e);
+  }
 }
 
 /**
@@ -309,6 +339,10 @@ function switchSchreibenTab(tabName) {
   // Trigger button state
   const targetBtn = Array.from(document.querySelectorAll('.schreiben-tab-btn')).find(b => b.getAttribute('onclick')?.includes(tabName));
   if (targetBtn) targetBtn.classList.add('active');
+
+  if (tabName === 'sprechen') {
+    restoreSpeakingPoints();
+  }
 }
 
 /**
@@ -473,4 +507,6 @@ if (typeof window !== 'undefined') {
   window.openProPricingModal = openProPricingModal;
   window.closeProPricingModal = closeProPricingModal;
   window.selectProPlan = selectProPlan;
+  window.toggleSpeakingPoint = toggleSpeakingPoint;
+  window.restoreSpeakingPoints = restoreSpeakingPoints;
 }

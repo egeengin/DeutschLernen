@@ -428,6 +428,59 @@ function renderQuiz() {
   updateQuizScore();
 }
 
+function updateQuizScore() {
+  const scoreEl = document.getElementById('quiz-score-display');
+  if (!scoreEl) return;
+  const correctCount = Object.values(quizAnswered).filter(v => v === true).length;
+  scoreEl.textContent = `${correctCount}/${quizData.length}`;
+}
+
+function checkAnswer(qi, oi) {
+  if (quizAnswered[qi] !== undefined) return;
+
+  const q = quizData[qi];
+  const isCorrect = (oi === q.correct);
+  quizAnswered[qi] = isCorrect;
+  localStorage.setItem('telc_quiz', JSON.stringify(quizAnswered));
+
+  // If incorrect, record in Fehlerheft for targeted review
+  if (!isCorrect && typeof recordFehlerheftItem === 'function') {
+    const correctOpt = q.opts[q.correct];
+    recordFehlerheftItem({
+      word: q.q.replace('___', `[${correctOpt}]`),
+      meaning: q.explain,
+      example: q.q,
+      mistakeType: 'grammar'
+    });
+    if (typeof renderFehlerheftDashboard === 'function') {
+      renderFehlerheftDashboard('fehlerheft-container');
+    }
+  }
+
+  // Update DOM for this quiz item
+  const quizEl = document.getElementById(`quiz-${qi}`);
+  if (quizEl) {
+    const btns = quizEl.querySelectorAll('.quiz-opt');
+    btns.forEach((btn, idx) => {
+      btn.classList.add('disabled');
+      if (idx === q.correct) btn.classList.add('correct');
+      else if (idx === oi) btn.classList.add('wrong');
+    });
+    const expEl = document.getElementById(`explain-${qi}`);
+    if (expEl) expEl.classList.add('show');
+  }
+
+  updateQuizScore();
+  trackSection('diagnostic');
+}
+
+// Expose to window for inline onclick handlers
+if (typeof window !== 'undefined') {
+  window.checkAnswer = checkAnswer;
+  window.updateQuizScore = updateQuizScore;
+  window.resetQuiz = resetQuiz;
+}
+
 // Initial quiz render
 renderQuiz();
 
