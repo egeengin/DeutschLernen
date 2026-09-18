@@ -1152,8 +1152,11 @@
     }
 
     updateAudioBtnState() {
-      const texts = I18N[this.settings.lang];
-      this.dom.audioBtn.innerHTML = this.settings.audio ? '🔊 ' + texts.audioOn : '🔇 ' + texts.audioOff;
+      if (!this.dom.audioBtn) return;
+      const texts = I18N[this.settings.lang] || I18N.en;
+      this.dom.audioBtn.innerHTML = this.settings.audio ? '🔊' : '🔇';
+      this.dom.audioBtn.title = this.settings.audio ? `Audio: ${texts.audioOn}` : `Audio: ${texts.audioOff}`;
+      this.dom.audioBtn.setAttribute('aria-label', this.settings.audio ? texts.audioOn : texts.audioOff);
     }
 
     updateI18nLabels() {

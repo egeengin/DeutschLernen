@@ -59,19 +59,16 @@
         </div>
       </div>
 
-      <!-- Header Controls: Audio, Theme, Language, Dictionary, Sync & Account -->
+      <!-- Header Controls: Theme, Audio, Language, Dictionary & Unified Account Sync -->
       <div class="header-controls">
-        <div class="stat-pill sync-status" id="sync-status-pill" title="Click to sync or sign in">
-          <span style="color:var(--text-muted,#94a3b8)">👤 Guest Mode</span>
-        </div>
-        <button class="btn-auth-trigger" id="btn-user-account" title="Account & Cloud Sync">
-          👤 <span data-i18n="accountBtn">Account</span>
+        <button class="btn-auth-trigger stat-pill sync-status" id="btn-user-account" title="Account & Cloud Sync" style="cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
+          <span id="sync-status-pill">👤 <span data-i18n="accountBtn">Account</span></span>
         </button>
         <button class="btn-icon" id="btn-open-search" title="Search all 2,000+ words">
           🔍 <span data-i18n="browserTitle">Dictionary</span>
         </button>
-        <button class="btn-icon" id="btn-audio-toggle" title="Toggle audio pronunciation">
-          🔊 Audio On
+        <button class="btn-icon" id="btn-audio-toggle" title="Toggle audio pronunciation" aria-label="Toggle audio">
+          🔊
         </button>
         <button class="btn-icon" id="btn-theme-toggle" title="Toggle Light / Dark mode">
           ☀️
