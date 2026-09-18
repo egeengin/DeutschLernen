@@ -18,6 +18,152 @@ let lidExamAnswers = {}; // index -> boolean
 let lidExamTimerInterval = null;
 let lidExamSecondsLeft = 3600; // 60 minutes
 
+// Starred / Favorite Questions Persistence
+const LID_STARRED_STORAGE_KEY = 'deutschlernen_lid_starred';
+let isLiDStarredOnly = false;
+
+function getStarredLiDQuestionIds() {
+  try {
+    if (typeof localStorage === 'undefined') return [];
+    const raw = localStorage.getItem(LID_STARRED_STORAGE_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function toggleLiDStar(qId, btnEl) {
+  try {
+    if (typeof localStorage === 'undefined') return;
+    let starred = getStarredLiDQuestionIds();
+    const idx = starred.indexOf(qId);
+    let isStarred = false;
+    if (idx > -1) {
+      starred.splice(idx, 1);
+      isStarred = false;
+    } else {
+      starred.push(qId);
+      isStarred = true;
+    }
+    localStorage.setItem(LID_STARRED_STORAGE_KEY, JSON.stringify(starred));
+
+    // Update star filter count in UI
+    const countSpan = document.getElementById('lid-starred-count');
+    if (countSpan) {
+      countSpan.textContent = starred.length;
+    }
+
+    if (btnEl) {
+      const starLabel = btnEl.getAttribute('data-star-label') || 'Star';
+      const starredLabel = btnEl.getAttribute('data-starred-label') || 'Starred';
+      if (isStarred) {
+        btnEl.classList.add('starred');
+        btnEl.innerHTML = `⭐ ${starredLabel}`;
+        btnEl.title = starredLabel;
+      } else {
+        btnEl.classList.remove('starred');
+        btnEl.innerHTML = `☆ ${starLabel}`;
+        btnEl.title = starLabel;
+      }
+    }
+
+    if (isLiDStarredOnly) {
+      const pool = getActiveLiDQuestionsPool();
+      if (currentLiDIndex >= pool.length && pool.length > 0) {
+        currentLiDIndex = pool.length - 1;
+      }
+      updateLiDView();
+    }
+  } catch (e) {
+    console.error("Error toggling LiD star:", e);
+  }
+}
+
+function toggleLiDStarredFilter() {
+  if (isLiDExamMode) return;
+  isLiDStarredOnly = !isLiDStarredOnly;
+  currentLiDIndex = 0;
+
+  const filterBtn = document.getElementById('lid-filter-starred-btn');
+  if (filterBtn) {
+    if (isLiDStarredOnly) {
+      filterBtn.classList.add('active');
+    } else {
+      filterBtn.classList.remove('active');
+    }
+  }
+  updateLiDView();
+}
+
+const LID_UI_TEXT = {
+  badge: {
+    en: "🇩🇪 BAMF Naturalization Exam",
+    tr: "🇩🇪 BAMF Vatandaşlık Sınavı",
+    ar: "🇩🇪 امتحان التجنيس BAMF",
+    uk: "🇩🇪 Іспит на громадянство BAMF"
+  },
+  title: {
+    en: "Leben in Deutschland (LiD) 310 Citizenship Browser",
+    tr: "Leben in Deutschland (LiD) 310 Vatandaşlık Sınavı",
+    ar: "اختبار الحياة في ألمانيا (LiD) 310 سؤال للتجنيس",
+    uk: "Тест Життя в Німеччині (LiD) 310 питань для громадянства"
+  },
+  desc: {
+    en: "Master all official 310 citizenship questions required for German Naturalization (Einbürgerung / § 10 StAG). Practice free offline with instant translations & B1 political vocabulary tags.",
+    tr: "Alman Vatandaşlığı (Einbürgerung / § 10 StAG) için zorunlu olan 310 resmi soruyu öğrenin. Çevrimdışı ve B1 siyasi kelime etiketleriyle ücretsiz pratik yapın.",
+    ar: "أتقن جميع أسئلة التجنيس الرسمية البالغ عددها 310 سؤالاً المطلوبة للحصول على الجنسية الألمانية (§ 10 StAG). تدرب مجاناً دون اتصال بالإنترنت مع الترجمة والمفردات السياسية B1.",
+    uk: "Опануйте всі офіційні 310 питань для отримання громадянства Німеччини (§ 10 StAG). Тренуйтеся офлайн із перекладом та політичною лексикою B1."
+  },
+  selectState: {
+    en: "Select Your Federal State (16 Bundesländer):",
+    tr: "Eyaletinizi Seçin (16 Bundesland):",
+    ar: "اختر ولايتك الفيدرالية (16 ولاية):",
+    uk: "Оберіть вашу федеральну землю (16 земель):"
+  },
+  searchPlaceholder: {
+    en: "Search Grundgesetz, Bundestag, Kanzler...",
+    tr: "Grundgesetz, Bundestag, Kanzler ara...",
+    ar: "ابحث عن الدستور، البرلمان، المستشار...",
+    uk: "Пошук: Grundgesetz, Bundestag, Kanzler..."
+  },
+  prev: { en: "← Previous", tr: "← Önceki", ar: "← السابق", uk: "← Попереднє" },
+  next: { en: "Next Question →", tr: "Sonraki Soru →", ar: "السؤال التالي →", uk: "Наступне питання →" },
+  qLabel: { en: "Question", tr: "Soru", ar: "سؤال", uk: "Питання" },
+  ofLabel: { en: "of", tr: "/", ar: "من", uk: "з" },
+  startExam: {
+    en: "⏱️ Timed Exam Mode (33 Qs / 60 Min)",
+    tr: "⏱️ Zaman Ayarlı Sınav Modu (33 Soru / 60 Dk)",
+    ar: "⏱️ محاكاة الامتحان (33 سؤال / 60 دقيقة)",
+    uk: "⏱️ Режим іспиту (33 питання / 60 хв)"
+  },
+  exitExam: {
+    en: "✕ Exit Exam Mode",
+    tr: "✕ Sınav Modundan Çık",
+    ar: "✕ إنهاء المحاكاة",
+    uk: "✕ Вийти з режиму іспиту"
+  },
+  submitExam: {
+    en: "📊 Grade Exam Now",
+    tr: "📊 Sınavı Puanla",
+    ar: "📊 إنهاء وتقييم الامتحان",
+    uk: "📊 Оцінити іспит"
+  },
+  starBtn: { en: "Star", tr: "Yıldızla", ar: "تمييز", uk: "Зірочка" },
+  starredBtn: { en: "Starred", tr: "Yıldızlı", ar: "مميز", uk: "Зі зірочкою" },
+  filterStarred: { en: "⭐ Starred", tr: "⭐ Yıldızlılar", ar: "⭐ المميزة", uk: "⭐ Зі зірочкою" },
+  starredEmpty: {
+    en: "⭐ No starred questions yet. Click ☆ Star on any tricky question to review it here!",
+    tr: "⭐ Henüz yıldızlı soru yok. Zorlandığınız sorularda ☆ Yıldızla butonuna tıklayarak burada toplayabilirsiniz!",
+    ar: "⭐ لا توجد أسئلة مميزة بنجمة بعد. انقر فوق ☆ تمييز على أي سؤال صعب لمراجعته هنا!",
+    uk: "⭐ Ще немає збережених питань. Натисніть ☆ Зірочка на складному питанні, щоб зберегти його тут!"
+  }
+};
+
+function getLiDTranslation(key, lang) {
+  const l = lang || (typeof currentLang !== 'undefined' ? currentLang : 'en');
+  return LID_UI_TEXT[key]?.[l] || LID_UI_TEXT[key]?.en || '';
+}
+
 function renderLiDTrainer(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
@@ -25,63 +171,9 @@ function renderLiDTrainer(containerId) {
   const questions = getActiveLiDQuestionsPool();
   const states = typeof GERMAN_STATES !== 'undefined' ? GERMAN_STATES : [];
   const lang = typeof currentLang !== 'undefined' ? currentLang : 'en';
+  const starredIds = getStarredLiDQuestionIds();
 
-  const uiText = {
-    badge: {
-      en: "🇩🇪 BAMF Naturalization Exam",
-      tr: "🇩🇪 BAMF Vatandaşlık Sınavı",
-      ar: "🇩🇪 امتحان التجنيس BAMF",
-      uk: "🇩🇪 Іспит на громадянство BAMF"
-    },
-    title: {
-      en: "Leben in Deutschland (LiD) 310 Citizenship Browser",
-      tr: "Leben in Deutschland (LiD) 310 Vatandaşlık Sınavı",
-      ar: "اختبار الحياة في ألمانيا (LiD) 310 سؤال للتجنيس",
-      uk: "Тест Життя в Німеччині (LiD) 310 питань для громадянства"
-    },
-    desc: {
-      en: "Master all official 310 citizenship questions required for German Naturalization (Einbürgerung / § 10 StAG). Practice free offline with instant translations & B1 political vocabulary tags.",
-      tr: "Alman Vatandaşlığı (Einbürgerung / § 10 StAG) için zorunlu olan 310 resmi soruyu öğrenin. Çevrimdışı ve B1 siyasi kelime etiketleriyle ücretsiz pratik yapın.",
-      ar: "أتقن جميع أسئلة التجنيس الرسمية البالغ عددها 310 سؤالاً المطلوبة للحصول على الجنسية الألمانية (§ 10 StAG). تدرب مجاناً دون اتصال بالإنترنت مع الترجمة والمفردات السياسية B1.",
-      uk: "Опануйте всі офіційні 310 питань для отримання громадянства Німеччини (§ 10 StAG). Тренуйтеся офлайн із перекладом та політичною лексикою B1."
-    },
-    selectState: {
-      en: "Select Your Federal State (16 Bundesländer):",
-      tr: "Eyaletinizi Seçin (16 Bundesland):",
-      ar: "اختر ولايتك الفيدرالية (16 ولاية):",
-      uk: "Оберіть вашу федеральну землю (16 земель):"
-    },
-    searchPlaceholder: {
-      en: "Search Grundgesetz, Bundestag, Kanzler...",
-      tr: "Grundgesetz, Bundestag, Kanzler ara...",
-      ar: "ابحث عن الدستور، البرلمان، المستشار...",
-      uk: "Пошук: Grundgesetz, Bundestag, Kanzler..."
-    },
-    prev: { en: "← Previous", tr: "← Önceki", ar: "← السابق", uk: "← Попереднє" },
-    next: { en: "Next Question →", tr: "Sonraki Soru →", ar: "السؤال التالي →", uk: "Наступне питання →" },
-    qLabel: { en: "Question", tr: "Soru", ar: "سؤال", uk: "Питання" },
-    ofLabel: { en: "of", tr: "/", ar: "من", uk: "з" },
-    startExam: {
-      en: "⏱️ Timed Exam Mode (33 Qs / 60 Min)",
-      tr: "⏱️ Zaman Ayarlı Sınav Modu (33 Soru / 60 Dk)",
-      ar: "⏱️ محاكاة الامتحان (33 سؤال / 60 دقيقة)",
-      uk: "⏱️ Режим іспиту (33 питання / 60 хв)"
-    },
-    exitExam: {
-      en: "✕ Exit Exam Mode",
-      tr: "✕ Sınav Modundan Çık",
-      ar: "✕ إنهاء المحاكاة",
-      uk: "✕ Вийти з режиму іспиту"
-    },
-    submitExam: {
-      en: "📊 Grade Exam Now",
-      tr: "📊 Sınavı Puanla",
-      ar: "📊 إنهاء وتقييم الامتحان",
-      uk: "📊 Оцінити іспит"
-    }
-  };
-
-  const t = (key) => uiText[key]?.[lang] || uiText[key]?.en || '';
+  const t = (key) => getLiDTranslation(key, lang);
 
   const timerMin = Math.floor(lidExamSecondsLeft / 60);
   const timerSec = String(lidExamSecondsLeft % 60).padStart(2, '0');
@@ -95,7 +187,7 @@ function renderLiDTrainer(containerId) {
         <p>${t('desc')}</p>
       </div>
 
-      <!-- Controls Row: State Selector, Search Filter, Exam Simulation Mode Trigger -->
+      <!-- Controls Row: State Selector, Search Filter, Starred Filter, Exam Mode Trigger -->
       <div class="lid-controls-bar" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
         <div style="display:flex; gap:16px; flex-wrap:wrap; flex:1;">
           <div class="lid-control-group">
@@ -109,6 +201,11 @@ function renderLiDTrainer(containerId) {
           <div class="lid-control-group">
             <label for="lid-search-input"><strong>Search:</strong></label>
             <input type="text" id="lid-search-input" class="search-box" placeholder="${t('searchPlaceholder')}" onkeyup="filterLiDQuestions(this.value)">
+          </div>
+          <div class="lid-control-group" style="display:flex; align-items:flex-end;">
+            <button id="lid-filter-starred-btn" class="lid-star-filter-btn ${isLiDStarredOnly ? 'active' : ''}" onclick="toggleLiDStarredFilter()" title="${t('filterStarred')}">
+              ${t('filterStarred')} (<span id="lid-starred-count">${starredIds.length}</span>)
+            </button>
           </div>
           ` : ''}
         </div>
@@ -186,10 +283,22 @@ function renderSingleLiDQuestion(q) {
   // If in exam mode and already answered
   const isAnswered = isLiDExamMode && lidExamAnswers[currentLiDIndex] !== undefined;
 
+  const starredIds = getStarredLiDQuestionIds();
+  const isStarred = starredIds.includes(q.id);
+  const starLabel = getLiDTranslation('starBtn', lang);
+  const starredLabel = getLiDTranslation('starredBtn', lang);
+
   return `
-    <div class="lid-q-header">
-      <span class="lid-q-cat">📂 ${q.category || 'Staatsbürgerschaft & Recht'}</span>
-      <span class="lid-q-id">${isLiDExamMode ? `Exam Q#${currentLiDIndex + 1}` : `BAMF Q#${q.id}`}</span>
+    <div class="lid-q-header" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <div>
+        <span class="lid-q-cat">📂 ${q.category || 'Staatsbürgerschaft & Recht'}</span>
+        <span class="lid-q-id">${isLiDExamMode ? `Exam Q#${currentLiDIndex + 1}` : `BAMF Q#${q.id}`}</span>
+      </div>
+      ${!isLiDExamMode ? `
+        <button class="lid-star-btn ${isStarred ? 'starred' : ''}" onclick="toggleLiDStar(${q.id}, this)" data-star-label="${starLabel}" data-starred-label="${starredLabel}" title="${isStarred ? starredLabel : starLabel}">
+          ${isStarred ? '⭐ ' + starredLabel : '☆ ' + starLabel}
+        </button>
+      ` : ''}
     </div>
     <h3 class="lid-q-text">${q.questionDe}</h3>
 
@@ -242,6 +351,11 @@ function getActiveLiDQuestionsPool() {
   const stateSpecific = stateMap[selectedLiDState] || [];
   
   let pool = [...general, ...stateSpecific];
+
+  if (!isLiDExamMode && isLiDStarredOnly) {
+    const starred = getStarredLiDQuestionIds();
+    pool = pool.filter(q => starred.includes(q.id));
+  }
 
   const searchInput = document.getElementById('lid-search-input');
   const term = (searchInput && searchInput.value) ? searchInput.value.trim().toLowerCase() : '';
@@ -363,7 +477,11 @@ function updateLiDView() {
     if (pool.length > 0 && pool[currentLiDIndex]) {
       card.innerHTML = renderSingleLiDQuestion(pool[currentLiDIndex]);
     } else {
-      card.innerHTML = `<div style="text-align:center; padding:30px; color:var(--text-muted);">🔍 No questions match your search filter. Try clearing the search box.</div>`;
+      if (isLiDStarredOnly) {
+        card.innerHTML = `<div style="text-align:center; padding:36px 20px; color:var(--text-muted); font-size:15px; line-height:1.6;">${getLiDTranslation('starredEmpty', lang)}</div>`;
+      } else {
+        card.innerHTML = `<div style="text-align:center; padding:30px; color:var(--text-muted);">🔍 No questions match your search filter. Try clearing the search box.</div>`;
+      }
     }
   }
   if (label) {
@@ -490,4 +608,27 @@ if (typeof window !== 'undefined') {
   window.startLiDExamSimulation = startLiDExamSimulation;
   window.finishLiDExam = finishLiDExam;
   window.exitLiDExamSimulation = exitLiDExamSimulation;
+  window.toggleLiDStar = toggleLiDStar;
+  window.toggleLiDStarredFilter = toggleLiDStarredFilter;
+  window.getStarredLiDQuestionIds = getStarredLiDQuestionIds;
+  window.LID_UI_TEXT = LID_UI_TEXT;
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    renderLiDTrainer,
+    checkLiDAnswer,
+    nextLiDQuestion,
+    prevLiDQuestion,
+    changeLiDState,
+    filterLiDQuestions,
+    getActiveLiDQuestionsPool,
+    startLiDExamSimulation,
+    finishLiDExam,
+    exitLiDExamSimulation,
+    toggleLiDStar,
+    toggleLiDStarredFilter,
+    getStarredLiDQuestionIds,
+    LID_UI_TEXT
+  };
 }

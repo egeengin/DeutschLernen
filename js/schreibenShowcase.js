@@ -51,6 +51,8 @@ const SHOWCASE_I18N = {
     livePromptHotel: "Option 2 (Formal): Complaint Letter to Hotel Meeresblick",
     livePromptVhs: "Option 3 (Semi-formal): Inquiry to Adult Education Center (VHS)",
     livePromptCustom: "Custom Prompt (Enter your own situation & Leitpunkte)",
+    connectorsPaletteLabel: "⚡ B1 Connectors Quick-Insert:",
+    connectorsUsedLabel: "B1 Connectors used:",
     liveTextareaLabel: "Your Practice Letter (Minimal 20 words):",
     liveTextareaPlaceholder: "Liebe Marianne, ich habe mich sehr über deine E-Mail gefreut! Es ist wirklich schön, dass du mich bald in Deutschland besuchen möchtest...",
     liveWordCount: "Words:",
@@ -71,6 +73,12 @@ const SHOWCASE_I18N = {
     rmAgree: "Agreeing (Zustimmen)",
     rmDisagree: "Countering Politely (Widersprechen)",
     rmDecide: "Deciding & Concluding (Vereinbaren)",
+    speakingDialogueTitle: "🎭 Model Pair Dialogue Simulation (Prüfungsdialog)",
+    speakingDialogueDesc: "Listen to how Partner A and Partner B negotiate back and forth with active turn-taking and agreement:",
+    speakingTipHeader: "💡 Examiner Pro-Tip: Avoid Monologues & Pass the Ball!",
+    speakingTipDesc: "The #1 reason candidates lose marks in Teil 3 is speaking for too long without asking their partner questions. Always use follow-up questions: 'Was meinst du dazu?', 'Passt dir das?', 'Wer übernimmt das?'.",
+    partnerALabel: "Partner A (Propose / Solve)",
+    partnerBLabel: "Partner B (Counter / Detail)",
     modalKicker: "PASS THE TELC B1 EXAM",
     modalTitle: "Choose Your Pro Pass",
     modalDesc: "Unlock live AI letter grading, error tracking, and examination simulation.",
@@ -120,6 +128,8 @@ const SHOWCASE_I18N = {
     livePromptHotel: "Seçenek 2 (Resmi): Hotel Meeresblick Şikayet Mektubu",
     livePromptVhs: "Seçenek 3 (Yarı Resmi): Halk Eğitim Kurs Bilgi Talebi",
     livePromptCustom: "Özel Görev (Kendi konunuzu ve kılavuz noktalarınızı yazın)",
+    connectorsPaletteLabel: "⚡ B1 Bağlaç Hızlı Ekleme:",
+    connectorsUsedLabel: "Kullanılan B1 Bağlaçları:",
     liveTextareaLabel: "Alıştırma Mektubunuz (En az 20 kelime):",
     liveTextareaPlaceholder: "Liebe Marianne, ich habe mich sehr über deine E-Mail gefreut! Es ist wirklich schön, dass du mich bald in Deutschland besuchen möchtest...",
     liveWordCount: "Kelime:",
@@ -140,6 +150,12 @@ const SHOWCASE_I18N = {
     rmAgree: "Onaylama / Katılma (Zustimmen)",
     rmDisagree: "Kibarca İtiraz Etme (Widersprechen)",
     rmDecide: "Karara Bağlama (Vereinbaren)",
+    speakingDialogueTitle: "🎭 Örnek İkili Sınav Diyaloğu (Prüfungsdialog)",
+    speakingDialogueDesc: "Partner A ve Partner B'nin karşılıklı fikir alışverişinde bulunarak nasıl anlaştığını dinleyin:",
+    speakingTipHeader: "💡 Sınav Uzmanı İpucu: Monologdan Kaçının ve Karşı Tarafa Söz Verin!",
+    speakingTipDesc: "Adayların 3. Bölümde puan kaybetmesinin 1 numaralı sebebi, partnerine soru sormadan uzun monologlar yapmaktır. Her öneriden sonra mutlaka pas atın: 'Was meinst du dazu?', 'Passt dir das?'.",
+    partnerALabel: "Partner A (Öneri / Çözüm)",
+    partnerBLabel: "Partner B (Geliştirme / Karşı Fikir)",
     modalKicker: "TELC B1 SINAVINI GEÇİN",
     modalTitle: "Pro Kartınızı Seçin",
     modalDesc: "Canlı mektup puanlama, hata takibi ve sınav simülasyonunu etkinleştirin.",
@@ -189,6 +205,8 @@ const SHOWCASE_I18N = {
     livePromptHotel: "الخيار 2 (رسمي): رسالة شكوى لفندق Meeresblick",
     livePromptVhs: "الخيار 3 (شبه رسمي): استفسار عن دورة لغات في VHS",
     livePromptCustom: "موضوع مخصص (اكتب الموقف والنقاط بنفسك)",
+    connectorsPaletteLabel: "⚡ إدراج روابط B1 بنقرة واحدة:",
+    connectorsUsedLabel: "الروابط المستخدمة:",
     liveTextareaLabel: "رسالتك التدريبية (20 كلمة على الأقل):",
     liveTextareaPlaceholder: "Liebe Marianne, ich habe mich sehr über deine E-Mail gefreut! Es ist wirklich schön, dass du mich bald in Deutschland besuchen möchtest...",
     liveWordCount: "الكلمات:",
@@ -209,6 +227,12 @@ const SHOWCASE_I18N = {
     rmAgree: "الموافقة والقبول (Zustimmen)",
     rmDisagree: "الاعتراض بلباقة (Widersprechen)",
     rmDecide: "الاتفاق النهائي وتدوين الخطة (Vereinbaren)",
+    speakingDialogueTitle: "🎭 محاكاة حوار ثنائي كامل للاختبار",
+    speakingDialogueDesc: "استمع إلى كيفية تفاعل ومفاوضة الشريكين وتبادل الأدوار وصولاً إلى الاتفاق:",
+    speakingTipHeader: "💡 نصيحة الفاحص الذهبية: تجنب الحديث المنفرد ومرر الكلمة لشريكك!",
+    speakingTipDesc: "السبب الأول لخصم الدرجات في الجزء الثالث هو التحدث مطولاً دون إشراك الشريك. احرص دائماً على طرح أسئلة متابعة: 'Was meinst du dazu؟', 'Passt dir das؟'.",
+    partnerALabel: "الشريك أ (اقتراح / حل)",
+    partnerBLabel: "الشريك ب (تطوير / اعتراض لبق)",
     modalKicker: "اجتز امتحان TELC B1",
     modalTitle: "اختر باقتك الاحترافية",
     modalDesc: "فعّل التصحيح المباشر وتتبع الأخطاء ومحاكاة الامتحان.",
@@ -258,6 +282,8 @@ const SHOWCASE_I18N = {
     livePromptHotel: "Варіант 2 (Офіційний): Скарга до готелю Meeresblick",
     livePromptVhs: "Варіант 3 (Напівофіційний): Запит на мовний курс у VHS",
     livePromptCustom: "Власне завдання (введіть свою ситуацію та пункти)",
+    connectorsPaletteLabel: "⚡ Швидка вставка сполучників B1:",
+    connectorsUsedLabel: "Використані сполучники B1:",
     liveTextareaLabel: "Ваш тренувальний лист (мінімум 20 слів):",
     liveTextareaPlaceholder: "Liebe Marianne, ich habe mich sehr über deine E-Mail gefreut! Es ist wirklich schön, dass du mich bald in Deutschland besuchen möchtest...",
     liveWordCount: "Слів:",
@@ -278,6 +304,12 @@ const SHOWCASE_I18N = {
     rmAgree: "Згода (Zustimmen)",
     rmDisagree: "Ввічлива незгода (Widersprechen)",
     rmDecide: "Підсумок та домовленості (Vereinbaren)",
+    speakingDialogueTitle: "🎭 Зразок парного діалогу на іспиті",
+    speakingDialogueDesc: "Послухайте, як партнер А та партнер Б ведуть діалог, передають ініціативу та доходять згоди:",
+    speakingTipHeader: "💡 Порада екзаменатора: Уникайте монологу та передавайте слово!",
+    speakingTipDesc: "Головна причина втрати балів у Частині 3 — довгий монолог без запитань до партнера. Завжди передавайте ініціативу: 'Was meinst du dazu?', 'Passt dir das?'.",
+    partnerALabel: "Партнер А (Пропозиція / Рішення)",
+    partnerBLabel: "Партнер Б (Відповідь / Уточнення)",
     modalKicker: "СКЛАДІТЬ ІСПИТ TELC B1",
     modalTitle: "Виберіть свій Pro абонемент",
     modalDesc: "Отримайте живе оцінювання листів, трекінг помилок та симуляцію іспиту.",
@@ -295,6 +327,38 @@ function getActiveLanguage() {
 function getShowcaseText(key) {
   const lang = getActiveLanguage();
   return SHOWCASE_I18N[lang]?.[key] || SHOWCASE_I18N.en[key] || '';
+}
+
+/**
+ * Speech Audio Synthesizer for German Speaking Expressions & Dialogues
+ */
+function playSchreibenSpeech(text) {
+  if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'de-DE';
+  utterance.rate = 0.92;
+  const voices = window.speechSynthesis.getVoices();
+  const deVoice = voices.find(v => v.lang.startsWith('de') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('German') || v.localService));
+  if (deVoice) utterance.voice = deVoice;
+  window.speechSynthesis.speak(utterance);
+}
+
+/**
+ * Quick-Insert Connector into Student Practice Letter Textarea
+ */
+function insertConnectorIntoLetter(connector) {
+  const textarea = document.getElementById('student-letter-textarea');
+  if (!textarea) return;
+  const start = textarea.selectionStart;
+  const end = textarea.selectionEnd;
+  const val = textarea.value;
+  const needsSpace = start > 0 && !/\s$/.test(val.slice(0, start));
+  const insertText = (needsSpace ? ' ' : '') + connector + ', ';
+  textarea.value = val.slice(0, start) + insertText + val.slice(end);
+  textarea.selectionStart = textarea.selectionEnd = start + insertText.length;
+  textarea.focus();
+  updateWordCounter(textarea);
 }
 
 function renderSchreibenShowcase(containerId) {
@@ -504,6 +568,19 @@ function renderSchreibenShowcase(containerId) {
             </select>
           </div>
 
+          <!-- B1 Connectors Palette -->
+          <div class="connector-palette-container">
+            <div class="connector-palette-header">
+              <span>${t('connectorsPaletteLabel')}</span>
+              <span id="letter-connector-count" class="connector-status-badge">${t('connectorsUsedLabel')} 0</span>
+            </div>
+            <div class="connector-chips-grid">
+              ${['weil', 'obwohl', 'damit', 'deshalb', 'trotzdem', 'sobald', 'da', 'außerdem', 'dass', 'wenn'].map(c => `
+                <button type="button" class="connector-chip-btn" onclick="insertConnectorIntoLetter('${c}')">+ ${c}</button>
+              `).join('')}
+            </div>
+          </div>
+
           <div class="live-form-group">
             <label for="student-letter-textarea"><strong>${t('liveTextareaLabel')}</strong></label>
             <textarea id="student-letter-textarea" class="styled-textarea" rows="8" dir="ltr" placeholder="${t('liveTextareaPlaceholder')}" oninput="updateWordCounter(this)"></textarea>
@@ -561,6 +638,69 @@ function renderSchreibenShowcase(containerId) {
             </div>
           </div>
 
+          <!-- Simulated Full Pair Dialogue Card -->
+          <div class="dialogue-flow-card">
+            <h4>${t('speakingDialogueTitle')}</h4>
+            <p class="dialogue-flow-desc">${t('speakingDialogueDesc')}</p>
+            <div class="dialogue-turns-list">
+              <div class="dialogue-turn partner-a">
+                <div class="turn-speaker-row a">
+                  <span>${t('partnerALabel')}</span>
+                </div>
+                <div class="turn-body">
+                  <span class="turn-text" dir="ltr">"Ich schlage vor, dass wir am Samstag eine Abschiedsparty im Park feiern. Was hältst du davon?"</span>
+                  <button type="button" class="dialogue-play-btn" onclick="playSchreibenSpeech('Ich schlage vor, dass wir am Samstag eine Abschiedsparty im Park feiern. Was hältst du davon?')" title="Listen to German audio">🔊</button>
+                </div>
+              </div>
+
+              <div class="dialogue-turn partner-b">
+                <div class="turn-speaker-row b">
+                  <span>${t('partnerBLabel')}</span>
+                </div>
+                <div class="turn-body">
+                  <span class="turn-text" dir="ltr">"Das ist eine schöne Idee, aber am Samstag soll es regnen. Wie wäre es, wenn wir stattdessen einen Raum im Bürgerhaus mieten?"</span>
+                  <button type="button" class="dialogue-play-btn" onclick="playSchreibenSpeech('Das ist eine schöne Idee, aber am Samstag soll es regnen. Wie wäre es, wenn wir stattdessen einen Raum im Bürgerhaus mieten?')" title="Listen to German audio">🔊</button>
+                </div>
+              </div>
+
+              <div class="dialogue-turn partner-a">
+                <div class="turn-speaker-row a">
+                  <span>${t('partnerALabel')}</span>
+                </div>
+                <div class="turn-body">
+                  <span class="turn-text" dir="ltr">"Guter Punkt! Drinnen ist es viel sicherer. Ich kann dort morgen anrufen und nachfragen. Wer besorgt die Getränke und den Kuchen?"</span>
+                  <button type="button" class="dialogue-play-btn" onclick="playSchreibenSpeech('Guter Punkt! Drinnen ist es viel sicherer. Ich kann dort morgen anrufen und nachfragen. Wer besorgt die Getränke und den Kuchen?')" title="Listen to German audio">🔊</button>
+                </div>
+              </div>
+
+              <div class="dialogue-turn partner-b">
+                <div class="turn-speaker-row b">
+                  <span>${t('partnerBLabel')}</span>
+                </div>
+                <div class="turn-body">
+                  <span class="turn-text" dir="ltr">"Das mache ich sehr gern! Und wir können alle Gäste bitten, etwas Fingerfood mitzubringen. Wie teilen wir die Raumkosten?"</span>
+                  <button type="button" class="dialogue-play-btn" onclick="playSchreibenSpeech('Das mache ich sehr gern! Und wir können alle Gäste bitten, etwas Fingerfood mitzubringen. Wie teilen wir die Raumkosten?')" title="Listen to German audio">🔊</button>
+                </div>
+              </div>
+
+              <div class="dialogue-turn partner-a">
+                <div class="turn-speaker-row a">
+                  <span>${t('partnerALabel')}</span>
+                </div>
+                <div class="turn-body">
+                  <span class="turn-text" dir="ltr">"Wir teilen uns einfach die Miete zur Hälfte. Einverstanden! Perfekt, so machen wir das!"</span>
+                  <button type="button" class="dialogue-play-btn" onclick="playSchreibenSpeech('Wir teilen uns einfach die Miete zur Hälfte. Einverstanden! Perfekt, so machen wir das!')" title="Listen to German audio">🔊</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Examiner Pro-Tip Card -->
+          <div class="speaking-tip-card">
+            <h5>${t('speakingTipHeader')}</h5>
+            <p>${t('speakingTipDesc')}</p>
+          </div>
+
           <!-- Essential B1 Speaking Phrases (Redemittel) -->
           <div class="redemittel-section">
             <h4>${t('redemittelHeader')}</h4>
@@ -568,33 +708,33 @@ function renderSchreibenShowcase(containerId) {
               <div class="rm-card">
                 <h5>${t('rmPropose')}</h5>
                 <ul dir="ltr">
-                  <li>"Ich schlage vor, dass wir..."</li>
-                  <li>"Wie wäre es, wenn wir...?"</li>
-                  <li>"Was hältst du davon, wenn...?"</li>
+                  <li>"Ich schlage vor, dass wir..." <button type="button" class="dialogue-play-btn" style="display:inline-flex; width:24px; height:24px; font-size:11px;" onclick="playSchreibenSpeech('Ich schlage vor, dass wir...')">🔊</button></li>
+                  <li>"Wie wäre es, wenn wir...?" <button type="button" class="dialogue-play-btn" style="display:inline-flex; width:24px; height:24px; font-size:11px;" onclick="playSchreibenSpeech('Wie wäre es, wenn wir...?')">🔊</button></li>
+                  <li>"Was hältst du davon, wenn...?" <button type="button" class="dialogue-play-btn" style="display:inline-flex; width:24px; height:24px; font-size:11px;" onclick="playSchreibenSpeech('Was hältst du davon, wenn...?')">🔊</button></li>
                 </ul>
               </div>
               <div class="rm-card">
                 <h5>${t('rmAgree')}</h5>
                 <ul dir="ltr">
-                  <li>"Das ist eine hervorragende Idee!"</li>
-                  <li>"Ich bin ganz deiner Meinung."</li>
-                  <li>"Genau so machen wir das."</li>
+                  <li>"Das ist eine hervorragende Idee!" <button type="button" class="dialogue-play-btn" style="display:inline-flex; width:24px; height:24px; font-size:11px;" onclick="playSchreibenSpeech('Das ist eine hervorragende Idee!')">🔊</button></li>
+                  <li>"Ich bin ganz deiner Meinung." <button type="button" class="dialogue-play-btn" style="display:inline-flex; width:24px; height:24px; font-size:11px;" onclick="playSchreibenSpeech('Ich bin ganz deiner Meinung.')">🔊</button></li>
+                  <li>"Genau so machen wir das." <button type="button" class="dialogue-play-btn" style="display:inline-flex; width:24px; height:24px; font-size:11px;" onclick="playSchreibenSpeech('Genau so machen wir das.')">🔊</button></li>
                 </ul>
               </div>
               <div class="rm-card">
                 <h5>${t('rmDisagree')}</h5>
                 <ul dir="ltr">
-                  <li>"Das ist zwar gut, aber vielleicht sollten wir..."</li>
-                  <li>"Ich weiß nicht, ob das klappt. Besser wäre..."</li>
-                  <li>"Tut mir leid, aber da bin ich skeptisch."</li>
+                  <li>"Das ist zwar gut, aber vielleicht..." <button type="button" class="dialogue-play-btn" style="display:inline-flex; width:24px; height:24px; font-size:11px;" onclick="playSchreibenSpeech('Das ist zwar gut, aber vielleicht sollten wir...')">🔊</button></li>
+                  <li>"Ich weiß nicht, ob das klappt." <button type="button" class="dialogue-play-btn" style="display:inline-flex; width:24px; height:24px; font-size:11px;" onclick="playSchreibenSpeech('Ich weiß nicht, ob das klappt. Besser wäre...')">🔊</button></li>
+                  <li>"Tut mir leid, da bin ich skeptisch." <button type="button" class="dialogue-play-btn" style="display:inline-flex; width:24px; height:24px; font-size:11px;" onclick="playSchreibenSpeech('Tut mir leid, aber da bin ich skeptisch.')">🔊</button></li>
                 </ul>
               </div>
               <div class="rm-card">
                 <h5>${t('rmDecide')}</h5>
                 <ul dir="ltr">
-                  <li>"Gut, dann halten wir das so fest!"</li>
-                  <li>"Einverstanden! Wer kümmert sich um...?"</li>
-                  <li>"Perfekt, abgemacht!"</li>
+                  <li>"Gut, dann halten wir das so fest!" <button type="button" class="dialogue-play-btn" style="display:inline-flex; width:24px; height:24px; font-size:11px;" onclick="playSchreibenSpeech('Gut, dann halten wir das so fest!')">🔊</button></li>
+                  <li>"Einverstanden! Wer kümmert sich um...?" <button type="button" class="dialogue-play-btn" style="display:inline-flex; width:24px; height:24px; font-size:11px;" onclick="playSchreibenSpeech('Einverstanden! Wer kümmert sich darum?')">🔊</button></li>
+                  <li>"Perfekt, abgemacht!" <button type="button" class="dialogue-play-btn" style="display:inline-flex; width:24px; height:24px; font-size:11px;" onclick="playSchreibenSpeech('Perfekt, abgemacht!')">🔊</button></li>
                 </ul>
               </div>
             </div>
@@ -656,7 +796,7 @@ function switchSchreibenTab(tabName) {
 }
 
 /**
- * Update Word & Character Counter
+ * Update Word & Character Counter, and B1 Connectors scan
  */
 function updateWordCounter(textarea) {
   const text = textarea.value.trim();
@@ -668,6 +808,17 @@ function updateWordCounter(textarea) {
   const charEl = document.getElementById('letter-char-count');
   if (wordEl) wordEl.textContent = `${t('liveWordCount')} ${words}`;
   if (charEl) charEl.textContent = `${t('liveCharCount')} ${chars}`;
+
+  // Real-time B1 Connectors Scanner
+  const connectors = ['weil', 'obwohl', 'damit', 'deshalb', 'trotzdem', 'sobald', 'da', 'außerdem', 'dass', 'wenn'];
+  const lower = text.toLowerCase();
+  const found = connectors.filter(c => new RegExp(`\\b${c}\\b`, 'i').test(lower));
+  const connectorEl = document.getElementById('letter-connector-count');
+  if (connectorEl) {
+    connectorEl.innerHTML = found.length > 0
+      ? `<span>${t('connectorsUsedLabel')} <strong>${found.length}</strong> (${found.join(', ')})</span>`
+      : `<span>${t('connectorsUsedLabel')} 0</span>`;
+  }
 }
 
 /**
@@ -823,6 +974,8 @@ if (typeof module !== 'undefined' && module.exports) {
     renderSchreibenShowcase,
     renderAnnotatedText,
     getActiveLanguage,
-    getShowcaseText
+    getShowcaseText,
+    insertConnectorIntoLetter,
+    playSchreibenSpeech
   };
 }

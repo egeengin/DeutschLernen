@@ -798,6 +798,7 @@
         progressBar: document.getElementById('quiz-progress-bar'),
         arenaWordDe: document.getElementById('arena-word-de'),
         arenaPosBadge: document.getElementById('arena-pos-badge'),
+        arenaGenderBadge: document.getElementById('arena-gender-badge'),
         arenaLevelBadge: document.getElementById('arena-level-badge'),
         arenaAudioPlay: document.getElementById('btn-play-audio'),
         optionsGrid: document.getElementById('options-grid'),
@@ -1252,6 +1253,27 @@
       this.dom.arenaLevelBadge.textContent = item.level;
       this.dom.arenaLevelBadge.className = 'badge-level badge-' + (item.level ? item.level.toLowerCase() : 'b1');
 
+      // German Noun Gender Color Indicators (der=Blue, die=Pink/Red, das=Green)
+      let gender = null;
+      if (item.pos === 'noun' || (item.de && /^(der|die|das)\s/i.test(item.de))) {
+        const gMatch = item.de.match(/^(der|die|das)\b/i);
+        if (gMatch) gender = gMatch[1].toLowerCase();
+      }
+      if (this.dom.arenaGenderBadge) {
+        if (gender) {
+          const genderLabels = {
+            der: 'der • Maskulin',
+            die: 'die • Feminin',
+            das: 'das • Neutral'
+          };
+          this.dom.arenaGenderBadge.textContent = genderLabels[gender] || gender;
+          this.dom.arenaGenderBadge.className = `badge-gender ${gender}`;
+          this.dom.arenaGenderBadge.style.display = 'inline-block';
+        } else {
+          this.dom.arenaGenderBadge.style.display = 'none';
+        }
+      }
+
       // Render Question prompt according to selected Mode
       let promptTitle = "";
       let correctAnswerText = "";
@@ -1671,12 +1693,19 @@
             (w.uk && w.uk.toLowerCase().includes(q))
           ).slice(0, 100);
 
-      this.dom.searchResults.innerHTML = filtered.map(w => `
+      this.dom.searchResults.innerHTML = filtered.map(w => {
+        let gBadge = '';
+        if (w.pos === 'noun' && /^(der|die|das)\b/i.test(w.de)) {
+          const g = w.de.match(/^(der|die|das)\b/i)[1].toLowerCase();
+          gBadge = `<span class="badge-gender ${g}">${g}</span>`;
+        }
+        return `
         <div class="search-result-row">
           <div class="row-header">
             <strong>${w.de}</strong>
             <span class="badge badge-${w.level.toLowerCase()}">${w.level}</span>
             <span class="badge-pos">${w.pos}</span>
+            ${gBadge}
             <button class="mini-audio-btn" onclick="window.VocabApp.playSpeech('${w.de.replace(/'/g, "\\'")}')">🔊</button>
           </div>
           <div class="row-meanings">
@@ -1686,7 +1715,8 @@
             <em>"${w.example}"</em>
           </div>
         </div>
-      `).join('');
+      `;
+      }).join('');
     }
 
     exportProgress() {
