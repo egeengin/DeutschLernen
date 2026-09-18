@@ -596,8 +596,12 @@ function openMarkdown(url, skipHistory = false) {
   currentActiveMaterial = materials.find(m => 
     normalize(m.en) === normUrl || 
     normalize(m.tr) === normUrl ||
+    (m.ar && normalize(m.ar) === normUrl) ||
+    (m.uk && normalize(m.uk) === normUrl) ||
     decodeURIComponent(m.en) === decodeURIComponent(url) || 
-    decodeURIComponent(m.tr) === decodeURIComponent(url)
+    decodeURIComponent(m.tr) === decodeURIComponent(url) ||
+    (m.ar && decodeURIComponent(m.ar) === decodeURIComponent(url)) ||
+    (m.uk && decodeURIComponent(m.uk) === decodeURIComponent(url))
   );
   
   const mdView = document.getElementById('md-view');
@@ -661,9 +665,13 @@ function openMarkdown(url, skipHistory = false) {
             let newTarget = href;
             // Route seamlessly to correct language file
             if (currentLang === 'tr') {
-              newTarget = href.replace('TELC_B1_Preparation', 'TELC_B1_Haz%C4%B1rl%C4%B1k').replace('TELC_B1_Hazırlık', 'TELC_B1_Haz%C4%B1rl%C4%B1k');
+              newTarget = newTarget.replace('/docs/en/', '/docs/tr/').replace('TELC_B1_Preparation', 'TELC_B1_Haz%C4%B1rl%C4%B1k').replace('TELC_B1_Hazırlık', 'TELC_B1_Haz%C4%B1rl%C4%B1k');
+            } else if (currentLang === 'ar') {
+              newTarget = newTarget.replace('/docs/en/', '/docs/ar/');
+            } else if (currentLang === 'uk') {
+              newTarget = newTarget.replace('/docs/en/', '/docs/uk/');
             } else {
-              newTarget = href.replace('TELC_B1_Haz%C4%B1rl%C4%B1k', 'TELC_B1_Preparation').replace('TELC_B1_Hazırlık', 'TELC_B1_Preparation');
+              newTarget = newTarget.replace('/docs/tr/', '/docs/en/').replace('TELC_B1_Haz%C4%B1rl%C4%B1k', 'TELC_B1_Preparation').replace('TELC_B1_Hazırlık', 'TELC_B1_Preparation');
             }
             openMarkdown(newTarget);
           };
@@ -769,7 +777,11 @@ if (!startDate) {
 function updateDayTracker() {
   const diffTime = Math.abs(new Date() - new Date(startDate));
   const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
-  const dayText = currentLang === 'en' ? `Day ${Math.min(diffDays, 30)} of 30` : `30'un ${Math.min(diffDays, 30)}. Günü`;
+  const curDay = Math.min(diffDays, 30);
+  let dayText = `Day ${curDay} of 30`;
+  if (currentLang === 'tr') dayText = `30'un ${curDay}. Günü`;
+  else if (currentLang === 'ar') dayText = `اليوم ${curDay} من 30`;
+  else if (currentLang === 'uk') dayText = `День ${curDay} з 30`;
   const dayEl = document.getElementById('day-counter');
   if (dayEl) dayEl.textContent = dayText;
 }
@@ -854,7 +866,7 @@ function setLang(lang) {
 
   // Reload open markdown if user switches language while reading
   if (document.getElementById('md-view') && document.getElementById('md-view').classList.contains('open') && currentActiveMaterial) {
-    const newUrl = lang === 'en' ? currentActiveMaterial.en : currentActiveMaterial.tr;
+    const newUrl = currentActiveMaterial[lang] || currentActiveMaterial.en;
     openMarkdown(newUrl, true); // true = skip pushState
   }
 }
@@ -1048,9 +1060,13 @@ function initFeedbackForm() {
         if (statusMsg) {
           statusMsg.style.display = 'block';
           statusMsg.className = 'auth-notice-msg success';
-          statusMsg.textContent = currentLang === 'en' 
-            ? "Thank you! Your feedback has been received." 
-            : "Teşekkür ederiz! Geri bildiriminiz başarıyla iletildi.";
+          const successMsgs = {
+            en: "Thank you! Your feedback has been received.",
+            tr: "Teşekkür ederiz! Geri bildiriminiz başarıyla iletildi.",
+            ar: "شكراً لك! تم استلام ملاحظاتك بنجاح.",
+            uk: "Дякуємо! Ваш відгук успішно отримано."
+          };
+          statusMsg.textContent = successMsgs[currentLang] || successMsgs.en;
         }
         form.reset();
         if (starsWrap) {
@@ -1066,7 +1082,13 @@ function initFeedbackForm() {
         if (statusMsg) {
           statusMsg.style.display = 'block';
           statusMsg.className = 'auth-notice-msg error';
-          statusMsg.textContent = err.message || (currentLang === 'en' ? "Submission failed" : "Gönderim başarısız oldu");
+          const failMsgs = {
+            en: "Submission failed",
+            tr: "Gönderim başarısız oldu",
+            ar: "فشل إرسال الملاحظات",
+            uk: "Не вдалося надіслати"
+          };
+          statusMsg.textContent = err.message || (failMsgs[currentLang] || failMsgs.en);
         }
         if (submitBtn) submitBtn.disabled = false;
       }
