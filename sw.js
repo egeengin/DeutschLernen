@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deutschlernen-v14';
+const CACHE_NAME = 'deutschlernen-v15';
 const ASSETS = [
   './',
   './index.html',
@@ -28,14 +28,20 @@ const ASSETS = [
   './manifest.json',
   './docs/en/telc_b1_exam_guide.md',
   './docs/tr/telc_b1_exam_guide.md',
+  './docs/ar/telc_b1_exam_guide.md',
+  './docs/uk/telc_b1_exam_guide.md',
   './docs/en/1_month_study_plan.md',
   './docs/tr/1_month_study_plan.md',
+  './docs/ar/1_month_study_plan.md',
+  './docs/uk/1_month_study_plan.md',
   './docs/en/review_grammar_vocab.md',
   './docs/tr/review_grammar_vocab.md',
   './docs/en/review_reading_listening.md',
   './docs/tr/review_reading_listening.md',
   './docs/en/review_writing_speaking.md',
   './docs/tr/review_writing_speaking.md',
+  './docs/ar/review_writing_speaking.md',
+  './docs/uk/review_writing_speaking.md',
   './docs/en/mock_exam_diagnostic.md',
   './docs/tr/mock_exam_diagnostic.md',
   './docs/en/mock_exam_final.md',
