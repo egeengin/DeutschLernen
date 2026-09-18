@@ -253,6 +253,41 @@ class TestMultilingualConsistency(unittest.TestCase):
                 self.assertIn(lang, trans_map, f"LID_UI_TEXT['{key}'] missing language '{lang}'")
                 self.assertTrue(len(trans_map[lang].strip()) > 0, f"LID_UI_TEXT['{key}']['{lang}'] must not be empty")
 
+    def test_evaluate_student_letter_b1_rule_engine(self):
+        """Verify client-side B1 letter evaluation engine calculates authentic telc scores and flags errors."""
+        import subprocess
+        node_code = """
+        const { evaluateStudentLetterB1 } = require('./js/schreibenShowcase.js');
+        const marianneText = `Liebe Marianne,\\n\\nich habe mich sehr über deine E-Mail gefreut! Es ist wirklich schön, dass du mich bald in Deutschland besuchen möchtest.\\n\\nDie beste Jahreszeit für deine Reise ist der Frühling, besonders der Mai. Im Juli und August kann es hier nämlich sehr heiß werden, aber im Frühling ist das Wetter angenehm mild und sonnig.\\n\\nWenn du hier bist, wir können zusammen einen Ausflug nach Berlin machen. Dort gibt es viele berühmte Museen und schöne Parks. Ausserdem möchte ich dir unseren großen See zeigen, an dem wir spazieren gehen und schwimmen können.\\n\\nFür die Reise solltest du unbedingt feste Schuhe und eine warme Jacke mitbringen, weil die Abende manchmal noch frisch sind.\\n\\nZur Vorbereitung empfehle ich dir, deine Fahrkarten für den Zug möglichst früh online zu buchen, damit sie billiger sind. Lade dir auch die DB-App auf dein Handy herunter.\\n\\nIch freue mich schon sehr auf dein Besuch! Schreib mir bald zurück.\\n\\nViele Grüße,\\nAli`;
+        const failText = "Hallo, ich bin müde. Auf Wiedersehen.";
+
+        const passRes = evaluateStudentLetterB1(marianneText, 'marianne', 'en');
+        const failRes = evaluateStudentLetterB1(failText, 'marianne', 'en');
+
+        console.log(JSON.stringify({ passRes, failRes }));
+        """
+        proc = subprocess.run(
+            ["node", "-e", node_code],
+            cwd=ROOT_DIR,
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        res = json.loads(proc.stdout)
+        pass_res = res["passRes"]
+        fail_res = res["failRes"]
+
+        # 1. Authentic Passing Letter assertions
+        self.assertTrue(pass_res["passed"], "Marianne model letter must pass telc B1")
+        self.assertGreaterEqual(pass_res["totalScore"], 27, "Must meet or exceed pass threshold 27")
+        self.assertEqual(pass_res["totalScore"], pass_res["rawSum"] * 3, "Total must equal rawSum * 3")
+        self.assertEqual(len(pass_res["criteria"]), 3, "Must evaluate all 3 telc criteria")
+        self.assertGreater(len(pass_res["annotations"]), 0, "Must flag syntax and spelling annotations")
+
+        # 2. Deficient Letter assertions
+        self.assertFalse(fail_res["passed"], "Short 7-word letter must not pass")
+        self.assertLess(fail_res["totalScore"], 27, "Failing letter score must be below 27")
+
 
 if __name__ == "__main__":
     unittest.main()
