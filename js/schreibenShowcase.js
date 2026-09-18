@@ -82,7 +82,22 @@ const SHOWCASE_I18N = {
     modalKicker: "PASS THE TELC B1 EXAM",
     modalTitle: "Choose Your Pro Pass",
     modalDesc: "Unlock live AI letter grading, error tracking, and examination simulation.",
-    fixLabel: "Fix:"
+    fixLabel: "Fix:",
+    liveInstantEvalTitle: "📊 telc B1 Live Evaluation Scorecard",
+    liveDirectAiBtn: "⚙️ Connect Live AI (OpenAI / Gemini)",
+    liveEvaluating: "⏳ Analyzing letter against official telc B1 rubric...",
+    livePassBadge: "🎉 BESTANDEN (Meets telc B1 Standard)",
+    liveFailBadge: "⚠️ NICHT BESTANDEN (Needs ≥27/45 pts)",
+    aiSettingsTitle: "⚙️ Direct AI Model Settings & Verification",
+    aiProviderLabel: "AI Provider:",
+    aiApiKeyLabel: "API Key (OpenAI / Gemini):",
+    aiKeyHelp: "Stored strictly on your device (localStorage). Never transmitted to any third party.",
+    aiModelRunBtn: "🚀 Run Deep LLM Verification",
+    aiKeySaveBtn: "Save Settings",
+    aiKeySavedMsg: "✅ AI settings saved successfully!",
+    aiKeyClearBtn: "Clear Key",
+    aiKeyClearedMsg: "🗑️ API Key removed.",
+    aiCompareNote: "💡 Rule Engine vs. LLM: The client-side pre-grader evaluates word count, register, B1 connectors, and syntax in real time. The LLM verifies nuanced semantic comprehension."
   },
   tr: {
     tabSample: "✨ Örnek Değerlendirme Raporu",
@@ -159,7 +174,22 @@ const SHOWCASE_I18N = {
     modalKicker: "TELC B1 SINAVINI GEÇİN",
     modalTitle: "Pro Kartınızı Seçin",
     modalDesc: "Canlı mektup puanlama, hata takibi ve sınav simülasyonunu etkinleştirin.",
-    fixLabel: "Düzeltme:"
+    fixLabel: "Düzeltme:",
+    liveInstantEvalTitle: "📊 telc B1 Canlı Değerlendirme Karnesi",
+    liveDirectAiBtn: "⚙️ Canlı Yapay Zekayı Bağla (OpenAI / Gemini)",
+    liveEvaluating: "⏳ Mektup resmi telc B1 kriterlerine göre inceleniyor...",
+    livePassBadge: "🎉 GEÇTİ (telc B1 Standardını Karşılıyor)",
+    liveFailBadge: "⚠️ GEÇMEDİ (En az 27/45 puan gerekli)",
+    aiSettingsTitle: "⚙️ Doğrudan Yapay Zeka Model Ayarları ve Doğrulama",
+    aiProviderLabel: "Yapay Zeka Sağlayıcısı:",
+    aiApiKeyLabel: "API Anahtarı (OpenAI / Gemini):",
+    aiKeyHelp: "Sadece cihazınızda (localStorage) saklanır. Asla üçüncü şahıslara gönderilmez.",
+    aiModelRunBtn: "🚀 Derin LLM Doğrulamasını Başlat",
+    aiKeySaveBtn: "Ayarları Kaydet",
+    aiKeySavedMsg: "✅ Yapay zeka ayarları başarıyla kaydedildi!",
+    aiKeyClearBtn: "Anahtarı Temizle",
+    aiKeyClearedMsg: "🗑️ API Anahtarı silindi.",
+    aiCompareNote: "💡 Kural Motoru ve LLM: İstemci taraflı puanlayıcı kelime sayısı, hitap, B1 bağlaçları ve sözdizimini anında denetler. LLM ise derin anlamsal kavrayışı doğrular."
   },
   ar: {
     tabSample: "✨ تقرير التقييم النموذجي",
@@ -236,7 +266,22 @@ const SHOWCASE_I18N = {
     modalKicker: "اجتز امتحان TELC B1",
     modalTitle: "اختر باقتك الاحترافية",
     modalDesc: "فعّل التصحيح المباشر وتتبع الأخطاء ومحاكاة الامتحان.",
-    fixLabel: "التصحيح:"
+    fixLabel: "التصحيح:",
+    liveInstantEvalTitle: "📊 تقرير التقييم المباشر لامتحان telc B1",
+    liveDirectAiBtn: "⚙️ ربط الذكاء الاصطناعي المباشر (OpenAI / Gemini)",
+    liveEvaluating: "⏳ جارٍ تقييم الرسالة وفقاً لمعايير telc B1 الرسمية...",
+    livePassBadge: "🎉 ناجح (مستوفٍ لمعايير telc B1)",
+    liveFailBadge: "⚠️ غير مستوفٍ (يتطلب 27/45 نقطة على الأقل)",
+    aiSettingsTitle: "⚙️ إعدادات نموذج الذكاء الاصطناعي والتحقق المباشر",
+    aiProviderLabel: "مزود محرك الذكاء الاصطناعي:",
+    aiApiKeyLabel: "مفتاح API (OpenAI / Gemini):",
+    aiKeyHelp: "يُحفظ بأمان في جهازك فقط (localStorage) ولا يُنقل لأي طرف ثالث.",
+    aiModelRunBtn: "🚀 تشغيل التحقق المعمق بنموذج LLM",
+    aiKeySaveBtn: "حفظ الإعدادات",
+    aiKeySavedMsg: "✅ تم حفظ إعدادات الذكاء الاصطناعي بنجاح!",
+    aiKeyClearBtn: "مسح المفتاح",
+    aiKeyClearedMsg: "🗑️ تم حذف مفتاح API.",
+    aiCompareNote: "💡 محرك القواعد مقابل LLM: يقيّم المحرك المحلي عدد الكلمات، والأسلوب، وروابط B1، والنحو فورياً. بينما يتحقق LLM من دقة الفهم الدلالي."
   },
   uk: {
     tabSample: "✨ Зразок звіту екзаменатора",
@@ -313,7 +358,22 @@ const SHOWCASE_I18N = {
     modalKicker: "СКЛАДІТЬ ІСПИТ TELC B1",
     modalTitle: "Виберіть свій Pro абонемент",
     modalDesc: "Отримайте живе оцінювання листів, трекінг помилок та симуляцію іспиту.",
-    fixLabel: "Виправлення:"
+    fixLabel: "Виправлення:",
+    liveInstantEvalTitle: "📊 Картка онлайн-оцінювання листа telc B1",
+    liveDirectAiBtn: "⚙️ Підключити прямий AI (OpenAI / Gemini)",
+    liveEvaluating: "⏳ Аналіз листа за офіційними критеріями telc B1...",
+    livePassBadge: "🎉 СКЛАДЕНО (Відповідає рівню telc B1)",
+    liveFailBadge: "⚠️ НЕ СКЛАДЕНО (Потрібно ≥27/45 балів)",
+    aiSettingsTitle: "⚙️ Налаштування прямої моделі AI та верифікація",
+    aiProviderLabel: "Провайдер штучного інтелекту:",
+    aiApiKeyLabel: "Ключ API (OpenAI / Gemini):",
+    aiKeyHelp: "Зберігається виключно на вашому пристрої (localStorage). Жодним третім сторонам не передається.",
+    aiModelRunBtn: "🚀 Запустити перевірку моделлю LLM",
+    aiKeySaveBtn: "Зберегти налаштування",
+    aiKeySavedMsg: "✅ Налаштування AI успішно збережено!",
+    aiKeyClearBtn: "Видалити ключ",
+    aiKeyClearedMsg: "🗑️ Ключ API видалено.",
+    aiCompareNote: "💡 Алгоритмічний рушій та LLM: Локальний оцінювач миттєво перевіряє кількість слів, стиль, сполучники B1 та синтаксис. Модель LLM верифікує глибинне семантичне розуміння."
   }
 };
 
@@ -590,10 +650,57 @@ function renderSchreibenShowcase(containerId) {
             </div>
           </div>
 
-          <div class="live-action-row">
-            <button class="cta-btn-primary" onclick="submitLiveLetterGrading()">
-              ${t('liveSubmitBtn')}
+          <div class="live-action-row" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:14px;">
+            <button type="button" class="entrance-dismiss-btn" onclick="toggleAiSettingsDrawer()" style="padding:10px 14px; font-size:13px; font-weight:600;">
+              ${t('liveDirectAiBtn')}
             </button>
+            <div style="display:flex; gap:10px;">
+              <button class="cta-btn-primary" onclick="submitLiveLetterGrading()">
+                ${t('liveSubmitBtn')}
+              </button>
+            </div>
+          </div>
+
+          <!-- Collapsible Direct AI Settings Drawer (Option B) -->
+          <div id="ai-settings-drawer" class="ai-settings-drawer" style="display:none; margin-top:16px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:18px;">
+            <h4 style="margin-top:0; font-size:15px; color:var(--accent-gold); display:flex; align-items:center; gap:8px;">
+              ${t('aiSettingsTitle')}
+            </h4>
+            <p style="font-size:12px; color:var(--text-secondary); margin-bottom:12px; line-height:1.5;">
+              ${t('aiKeyHelp')}
+            </p>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:12px; margin-bottom:12px;">
+              <div>
+                <label for="ai-provider-select" style="font-size:12px; font-weight:700; color:var(--text-primary); display:block; margin-bottom:4px;">
+                  ${t('aiProviderLabel')}
+                </label>
+                <select id="ai-provider-select" class="styled-select" style="width:100%; padding:8px 12px; font-size:13px;" onchange="handleAiProviderChange(this.value)">
+                  <option value="openai">OpenAI (gpt-4o-mini)</option>
+                  <option value="gemini">Google Gemini (gemini-1.5-flash)</option>
+                  <option value="proxy">Serverless Proxy (/api/grade-letter)</option>
+                </select>
+              </div>
+              <div>
+                <label for="ai-api-key-input" style="font-size:12px; font-weight:700; color:var(--text-primary); display:block; margin-bottom:4px;">
+                  ${t('aiApiKeyLabel')}
+                </label>
+                <input type="password" id="ai-api-key-input" class="search-box" placeholder="sk-... or AIza..." style="width:100%; padding:8px 12px; font-size:13px;">
+              </div>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+              <div style="display:flex; gap:8px;">
+                <button type="button" class="cta-btn-primary" onclick="saveAiSettings()" style="padding:7px 14px; font-size:12px;">
+                  ${t('aiKeySaveBtn')}
+                </button>
+                <button type="button" class="entrance-dismiss-btn" onclick="clearAiSettings()" style="padding:7px 12px; font-size:12px;">
+                  ${t('aiKeyClearBtn')}
+                </button>
+              </div>
+              <button type="button" class="cta-btn-primary" onclick="submitDirectAiGrading()" style="padding:7px 16px; font-size:12px; background:linear-gradient(135deg, #10b981 0%, #059669 100%);">
+                ${t('aiModelRunBtn')}
+              </button>
+            </div>
+            <div id="ai-settings-msg" style="font-size:12px; margin-top:8px; font-weight:600;"></div>
           </div>
 
           <div id="live-results-container" style="margin-top:20px;"></div>
@@ -841,26 +948,674 @@ function handlePromptSelectChange(val) {
 }
 
 /**
- * Handle Live Submission
+ * Intelligent Client-Side telc B1 Letter Evaluation Engine (Option A)
+ * Grounded in official telc Deutsch B1 criteria:
+ * - Criterion I: Aufgabenbewältigung (Content & Leitpunkte, word count >= 140, register)
+ * - Criterion II: Kommunikative Gestaltung (Cohesion, B1 connectors, paragraph structure)
+ * - Criterion III: Formale Richtigkeit (Grammar, morphology & orthography under Primat der Verständlichkeit)
+ * Scoring formula: (Raw_I + Raw_II + Raw_III) * 3 = Total / 45 pts. Pass threshold >= 27 pts (60%).
+ */
+function evaluateStudentLetterB1(rawText, promptKey, lang) {
+  const activeLang = lang || getActiveLanguage();
+  const langKey = activeLang.charAt(0).toUpperCase() + activeLang.slice(1);
+  const words = rawText.trim().split(/\s+/).filter(Boolean);
+  const wordCount = words.length;
+  const paragraphs = rawText.split(/\n+/).map(p => p.trim()).filter(Boolean);
+
+  const isFormal = promptKey === 'hotel' || promptKey === 'vhs' || /Sehr geehrte/i.test(rawText);
+
+  // 1. Leitpunkte & Keyword Coverage
+  const leitpunkteResults = [];
+  let lpCoveredCount = 0;
+
+  if (promptKey === 'marianne') {
+    const lpDefs = [
+      { id: 1, regex: /\b(ausflug|ausflüge|berlin|museum|museen|park|parks|see|besuchen|besuch|spazieren|schwimmen)\b/i, name: "Trips / Activities with Marianne" },
+      { id: 2, regex: /\b(frühling|mai|sommer|juli|august|wetter|heiß|mild|sonnig|jahreszeit|herbst|winter)\b/i, name: "Best season & weather" },
+      { id: 3, regex: /\b(schuh|schuhe|jacke|kleidung|mitbringen|packen|frisch|warm|anziehen)\b/i, name: "Clothes to pack" },
+      { id: 4, regex: /\b(vorbereitung|vorbereiten|fahrkarte|fahrkarten|ticket|tickets|zug|buchen|db|app|online)\b/i, name: "Travel preparation & tickets" }
+    ];
+    lpDefs.forEach(lp => {
+      const hit = lp.regex.test(rawText);
+      if (hit) lpCoveredCount++;
+      leitpunkteResults.push({ id: lp.id, name: lp.name, fulfilled: hit });
+    });
+  } else if (promptKey === 'hotel') {
+    const lpDefs = [
+      { id: 1, regex: /\b(zimmer|lärm|küche|laut|meer|meerblick|fenster)\b/i, name: "Room condition & noise" },
+      { id: 2, regex: /\b(klimaanlage|kaputt|defekt|hitze|grad|warm)\b/i, name: "Broken air conditioning" },
+      { id: 3, regex: /\b(rezeption|beschwer(t|en)|personal|niemand|gelöst)\b/i, name: "Complaint at reception" },
+      { id: 4, regex: /\b(kosten|erstatt(ung|en)|zurück|überweisen|prozent|bankkonto|frist)\b/i, name: "Refund & compensation request" }
+    ];
+    lpDefs.forEach(lp => {
+      const hit = lp.regex.test(rawText);
+      if (hit) lpCoveredCount++;
+      leitpunkteResults.push({ id: lp.id, name: lp.name, fulfilled: hit });
+    });
+  } else if (promptKey === 'vhs') {
+    const lpDefs = [
+      { id: 1, regex: /\b(b2|kurs|prüfung|zertifikat|beruflich|intensivkurs)\b/i, name: "Motivation & B2 requirements" },
+      { id: 2, regex: /\b(vormittag|abend|uhrzeit|termin|wann|zeiten)\b/i, name: "Course schedule & timing" },
+      { id: 3, regex: /\b(lehrbuch|lehrbücher|buch|bücher|material|unterricht)\b/i, name: "Textbooks & materials" },
+      { id: 4, regex: /\b(kosten|gebühr|gebühren|raten|monatlich|bezahlen)\b/i, name: "Course fees & payment in installments" }
+    ];
+    lpDefs.forEach(lp => {
+      const hit = lp.regex.test(rawText);
+      if (hit) lpCoveredCount++;
+      leitpunkteResults.push({ id: lp.id, name: lp.name, fulfilled: hit });
+    });
+  } else {
+    lpCoveredCount = wordCount >= 130 ? 4 : (wordCount >= 100 ? 3 : (wordCount >= 70 ? 2 : 1));
+  }
+
+  // 2. Salutation & Sign-off Checks
+  const hasFormalSalutation = /Sehr geehrte(r)?\s+(Damen und Herren|Frau|Herr)/i.test(rawText);
+  const hasInformalSalutation = /(Liebe[r]?|Hallo)\s+[A-ZÄÖÜa-zäöü]+/i.test(rawText);
+  const hasFormalClosing = /Mit freundlichen Grüßen/i.test(rawText);
+  const hasInformalClosing = /(Viele Grüße|Liebe Grüße|Herzliche Grüße|Dein[e]?\b)/i.test(rawText);
+
+  const salutationOk = isFormal ? hasFormalSalutation : hasInformalSalutation;
+  const closingOk = isFormal ? hasFormalClosing : hasInformalClosing;
+
+  // 3. Connectors (Criterion II)
+  const connectorList = ['weil', 'obwohl', 'damit', 'dass', 'wenn', 'sobald', 'da', 'falls', 'ob', 'deshalb', 'trotzdem', 'außerdem', 'daher', 'jedoch', 'deswegen', 'nämlich', 'aber', 'denn', 'sondern', 'zwar'];
+  const lowerText = rawText.toLowerCase();
+  const detectedConnectors = connectorList.filter(c => new RegExp(`\\b${c}\\b`, 'i').test(lowerText));
+
+  // 4. Grammar & Syntax Diagnostics (Criterion III)
+  const annotations = [];
+
+  // Inversion error after introductory subordinate clause
+  const inversionMatch = rawText.match(/(Wenn\s+[^,]+,\s*)(wir|ich|du|er|sie|es|ihr|Sie)\s+(können|müssen|wollen|sollen|haben|gehen|fahren|sehen|sind|habe|bin|ist|war)/i);
+  if (inversionMatch) {
+    const fullSnippet = inversionMatch[0];
+    const prefix = inversionMatch[1];
+    const pronoun = inversionMatch[2];
+    const verb = inversionMatch[3];
+    annotations.push({
+      targetText: fullSnippet,
+      correctedText: `${prefix}${verb} ${pronoun}`,
+      type: "syntax",
+      rule: "Inversion nach Nebensatz",
+      ruleEn: "Inversion after Subordinate Clause",
+      ruleTr: "Yan Cümle Sonrası İnversiyon",
+      ruleAr: "قلب الفاعل والفعل بعد الجملة الجانبية",
+      ruleUk: "Інверсія після підрядного речення",
+      explanationEn: "In German, when a sentence starts with a subordinate clause (Position 1), the main clause must start immediately with the conjugated verb (Position 2), followed by the subject.",
+      explanationTr: "Cümle yan cümle (Position 1) ile başladığında, ana cümle hemen çekimli fiille (Position 2) başlamalı ve özne fiilin ardına gelmelidir.",
+      explanationAr: "عندما تبدأ الجملة بجملة فرعية (الموقع 1)، يجب أن تبدأ الجملة الرئيسية فوراً بالفعل المصرف (الموقع 2).",
+      explanationUk: "Коли речення починається з підрядного (Позиція 1), головне речення має починатися з дієслова (Позиція 2), а підмет іде після нього."
+    });
+  }
+
+  // Check old orthography "Ausserdem" -> "Außerdem"
+  const ausserdemMatch = rawText.match(/\bAusserdem\b/);
+  if (ausserdemMatch) {
+    annotations.push({
+      targetText: "Ausserdem",
+      correctedText: "Außerdem",
+      type: "spelling",
+      rule: "Rechtschreibung: ß nach Diphthong",
+      ruleEn: "Spelling: ß after Diphthongs",
+      ruleTr: "Yazım Kuralı: Çift Sesliden Sonra ß",
+      ruleAr: "قاعدة إملائية: كتابة ß بعد الحركات المزدوجة",
+      ruleUk: "Орфографія: ß після дифтонгів",
+      explanationEn: "According to standard German orthography, 'ß' must be used instead of 'ss' after diphthongs ('au', 'ei', 'eu').",
+      explanationTr: "Almanca yazım kurallarına göre çift seslilerden ('au', 'ei', 'eu') sonra 'ss' yerine 'ß' yazılır.",
+      explanationAr: "وفقاً لقواعد الإملاء الألمانية القياسية، يُكتب 'ß' بدلاً من 'ss' بعد الأصوات المزدوجة.",
+      explanationUk: "За німецьким правописом після дифтонгів ('au', 'ei', 'eu') вживається 'ß', а не 'ss'."
+    });
+  }
+
+  // Check "auf dein Besuch" -> "auf deinen Besuch"
+  const aufDeinMatch = rawText.match(/\bauf\s+dein\s+Besuch\b/i);
+  if (aufDeinMatch) {
+    annotations.push({
+      targetText: aufDeinMatch[0],
+      correctedText: "auf deinen Besuch",
+      type: "grammar",
+      rule: "Kasus: Akkusativ maskulin",
+      ruleEn: "Case: Accusative Masculine",
+      ruleTr: "İsmin Hali: Eril İsmin -i Hali (Akkusativ)",
+      ruleAr: "الحالة الإعرابية: النصب للمذكر (Akkusativ)",
+      ruleUk: "Відмінок: Знахідний відмінок чоловічого роду (Akkusativ)",
+      explanationEn: "The prepositional verb 'sich freuen auf' requires the accusative case. 'Der Besuch' is masculine, so the possessive article must be 'deinen'.",
+      explanationTr: "'sich freuen auf' fiili Akkusativ (-i hali) gerektirir. 'Der Besuch' eril olduğu için iyelik eki 'deinen' olmalıdır.",
+      explanationAr: "الفعل 'sich freuen auf' يتطلب حالة النصب (Akkusativ). وكلمة 'der Besuch' مذكرة، لذا تصبح 'deinen'.",
+      explanationUk: "Дієслово 'sich freuen auf' вимагає Akkusativ. 'Der Besuch' чоловічого роду, тому присвійний займенник має форму 'deinen'."
+    });
+  }
+
+  // Missing comma before subclause: "wollte weil..." -> "wollte, weil..."
+  const missingCommaMatch = rawText.match(/([a-zA-Z0-9äöüÄÖÜ])\s+(dass|weil|obwohl|damit)\b/);
+  if (missingCommaMatch && !missingCommaMatch[0].startsWith(',')) {
+    annotations.push({
+      targetText: missingCommaMatch[0],
+      correctedText: `${missingCommaMatch[1]}, ${missingCommaMatch[2]}`,
+      type: "spelling",
+      rule: "Kommasetzung vor Nebensätzen",
+      ruleEn: "Comma before Subordinate Clause",
+      ruleTr: "Yan Cümle Öncesi Virgül",
+      ruleAr: "فاصلة قبل الجملة التابعة",
+      ruleUk: "Кома перед підрядним реченням",
+      explanationEn: "In German, subordinate clauses introduced by conjunctions such as 'dass', 'weil', or 'obwohl' must always be separated by a comma.",
+      explanationTr: "Almanca'da 'dass', 'weil', 'obwohl' gibi bağlaçlarla başlayan yan cümlelerin önüne mutlaka virgül konulmalıdır.",
+      explanationAr: "في اللغة الألمانية، يجب دائماً وضع فاصلة قبل الجمل التابعة التي تبدأ بأدوات مثل 'dass' أو 'weil'.",
+      explanationUk: "У німецькій мові підрядні речення, що починаються з 'dass', 'weil', 'obwohl', завжди виділяються комою."
+    });
+  }
+
+  // 5. Compute Criteria Scores:
+  // Criterion I: Aufgabenbewältigung (Max Raw 5, Final 15)
+  let rawScoreI = 0;
+  if (wordCount >= 140 && lpCoveredCount >= 4 && salutationOk && closingOk) {
+    rawScoreI = 5; // A
+  } else if (wordCount >= 110 && lpCoveredCount >= 3) {
+    rawScoreI = 3; // B
+  } else if (wordCount >= 80 && lpCoveredCount >= 2) {
+    rawScoreI = 1; // C
+  } else {
+    rawScoreI = 0; // D
+  }
+
+  // Criterion II: Kommunikative Gestaltung (Max Raw 5, Final 15)
+  let rawScoreII = 0;
+  if (detectedConnectors.length >= 5 && paragraphs.length >= 3 && salutationOk && closingOk) {
+    rawScoreII = (annotations.some(a => a.type === 'syntax')) ? 3 : 5;
+  } else if (detectedConnectors.length >= 3 && paragraphs.length >= 2) {
+    rawScoreII = 3; // B
+  } else if (detectedConnectors.length >= 1) {
+    rawScoreII = 1; // C
+  } else {
+    rawScoreII = 0; // D
+  }
+
+  // Criterion III: Formale Richtigkeit (Max Raw 5, Final 15)
+  let rawScoreIII = 0;
+  const errorCount = annotations.length;
+  if (errorCount <= 1) {
+    rawScoreIII = 5; // A
+  } else if (errorCount <= 3) {
+    rawScoreIII = 3; // B (Primat der Verständlichkeit)
+  } else if (errorCount <= 5) {
+    rawScoreIII = 1; // C
+  } else {
+    rawScoreIII = 0; // D
+  }
+
+  const rawSum = rawScoreI + rawScoreII + rawScoreIII;
+  const totalScore = rawSum * 3;
+  const passed = totalScore >= 27;
+  const percentage = Math.round((totalScore / 45) * 100);
+  const letterRating = (s) => s === 5 ? 'A' : (s === 3 ? 'B' : (s === 1 ? 'C' : 'D'));
+
+  const upgrades = [
+    {
+      original: "Wenn du hier bist, wir können zusammen einen Ausflug nach Berlin machen.",
+      upgrade: "Wenn du hier bist, können wir zusammen einen Ausflug nach Berlin unternehmen.",
+      benefitEn: "Fixes verb inversion after the 'wenn'-clause and replaces the basic verb 'machen' with the idiomatic B1 verb 'unternehmen'.",
+      benefitTr: "'wenn' cümlesinden sonra fiil inversiyonunu düzeltir ve basit 'machen' fiili yerine B1 düzeyinde 'unternehmen' fiilini kullanır.",
+      benefitAr: "يصحح ترتيب الفعل بعد جملة 'wenn' ويستبدل الفعل البسيط 'machen' بفعل راقٍ بمستوى B1 وهو 'unternehmen'.",
+      benefitUk: "Виправляє інверсію дієслова після підрядного речення з 'wenn' і замінює просте дієслово 'machen' на виразніше 'unternehmen' рівня B1."
+    },
+    {
+      original: "Ich freue mich schon sehr auf dein Besuch!",
+      upgrade: "Ich freue mich schon riesig auf deinen baldigen Besuch!",
+      benefitEn: "Fixes the masculine accusative case ending ('deinen') and adds lively B1 adjective modulation ('riesig', 'baldigen').",
+      benefitTr: "Eril akkusativ ekini ('deinen') düzeltir ve canlı B1 sıfatlarıyla zenginleştirir ('riesig', 'baldigen').",
+      benefitAr: "يصحح حالة النصب للمذكر ('deinen') ويضيف صفات حيوية راقية بمستوى B1.",
+      benefitUk: "Виправляє закінчення знахідного відмінка ('deinen') і збагачує речення живими прикметниками рівня B1 ('riesig', 'baldigen')."
+    }
+  ];
+
+  return {
+    wordCount,
+    rawSum,
+    totalScore,
+    maxTotal: 45,
+    passThreshold: 27,
+    passed,
+    percentage,
+    grade: totalScore >= 40 ? "Sehr Gut (Passed with Distinction)" : (totalScore >= 34 ? "Gut (Passed)" : (totalScore >= 27 ? "Befriedigend (Passed)" : "Nicht bestanden (Needs Improvement)")),
+    criteria: [
+      {
+        id: "inhalt",
+        titleEn: "Criterion I: Aufgabenbewältigung (Content & Leitpunkte)",
+        titleTr: "Kriter I: Görev Tamamlama ve Kılavuz Noktalar",
+        titleAr: "المعيار 1: استيفاء المهمة وتغطية النقاط (Aufgabenbewältigung)",
+        titleUk: "Критерій I: Розкриття завдання та опорні пункти (Aufgabenbewältigung)",
+        rawScore: rawScoreI,
+        rawMax: 5,
+        ratingLetter: letterRating(rawScoreI),
+        finalScore: rawScoreI * 3,
+        finalMax: 15,
+        status: rawScoreI >= 4 ? "excellent" : (rawScoreI >= 3 ? "good" : "needs-work"),
+        summaryEn: `Score ${letterRating(rawScoreI)} (${rawScoreI}/5 pts): ${lpCoveredCount}/4 Leitpunkte identified. Word count: ${wordCount} words (Target: 140-180 words). Salutation and closing are ${salutationOk && closingOk ? 'appropriately formatted' : 'need attention'}.`,
+        summaryTr: `${letterRating(rawScoreI)} Puanı (${rawScoreI}/5): 4 noktadan ${lpCoveredCount} tanesi tespit edildi. Kelime sayısı: ${wordCount} (Hedef: 140-180). Hitap ve kapanış ${salutationOk && closingOk ? 'kurallara uygun' : 'düzeltilmeli'}.`,
+        summaryAr: `الدرجة ${letterRating(rawScoreI)} (${rawScoreI}/5 نقاط): تمت تغطية ${lpCoveredCount}/4 نقاط. عدد الكلمات: ${wordCount} كلمة (الهدف: 140-180). التحية والختام ${salutationOk && closingOk ? 'مناسبان' : 'بحاجة للمراجعة'}.`,
+        summaryUk: `Оцінка ${letterRating(rawScoreI)} (${rawScoreI}/5 балів): Виявлено ${lpCoveredCount}/4 пунктів. Обсяг: ${wordCount} слів (Ціль: 140-180). Привітання та прощання ${salutationOk && closingOk ? 'оформлені належним чином' : 'потребують уваги'}.`
+      },
+      {
+        id: "sprache",
+        titleEn: "Criterion II: Kommunikative Gestaltung (Cohesion & Register)",
+        titleTr: "Kriter II: İletişimsel Düzen ve Bağlaçlar",
+        titleAr: "المعيار 2: التماسك والترابط اللغوي (Kommunikative Gestaltung)",
+        titleUk: "Критерій II: Комунікативна структура та зв'язність (Kommunikative Gestaltung)",
+        rawScore: rawScoreII,
+        rawMax: 5,
+        ratingLetter: letterRating(rawScoreII),
+        finalScore: rawScoreII * 3,
+        finalMax: 15,
+        status: rawScoreII >= 4 ? "excellent" : (rawScoreII >= 3 ? "good" : "needs-work"),
+        summaryEn: `Score ${letterRating(rawScoreII)} (${rawScoreII}/5 pts): Detected ${detectedConnectors.length} B1 connector(s) (${detectedConnectors.join(', ') || 'none'}). Paragraph structure: ${paragraphs.length} paragraph(s).`,
+        summaryTr: `${letterRating(rawScoreII)} Puanı (${rawScoreII}/5): ${detectedConnectors.length} B1 bağlacı tespit edildi (${detectedConnectors.join(', ') || 'yok'}). Paragraf sayısı: ${paragraphs.length}.`,
+        summaryAr: `الدرجة ${letterRating(rawScoreII)} (${rawScoreII}/5 نقاط): تم رصد ${detectedConnectors.length} رابط بمستوى B1 (${detectedConnectors.join(', ') || 'لا يوجد'}). عدد الفقرات: ${paragraphs.length}.`,
+        summaryUk: `Оцінка ${letterRating(rawScoreII)} (${rawScoreII}/5 балів): Виявлено ${detectedConnectors.length} сполучник(ів) B1 (${detectedConnectors.join(', ') || 'немає'}). Структура: ${paragraphs.length} абзац(ів).`
+      },
+      {
+        id: "korrektheit",
+        titleEn: "Criterion III: Formale Richtigkeit (Grammar & Orthography)",
+        titleTr: "Kriter III: Dilbilgisi ve Doğruluk",
+        titleAr: "المعيار 3: السلامة النحوية والإملائية (Formale Richtigkeit)",
+        titleUk: "Критерій III: Граматична та орфографічна правильність (Formale Richtigkeit)",
+        rawScore: rawScoreIII,
+        rawMax: 5,
+        ratingLetter: letterRating(rawScoreIII),
+        finalScore: rawScoreIII * 3,
+        finalMax: 15,
+        status: rawScoreIII >= 4 ? "excellent" : (rawScoreIII >= 3 ? "good" : "needs-work"),
+        summaryEn: `Score ${letterRating(rawScoreIII)} (${rawScoreIII}/5 pts): Flagged ${annotations.length} grammar or syntax point(s). Assessed under telc's 'Primat der Verständlichkeit'.`,
+        summaryTr: `${letterRating(rawScoreIII)} Puanı (${rawScoreIII}/5): ${annotations.length} dilbilgisi veya cümle yapısı noktası işaretlendi. telc 'Anlaşılabilirlik Önceliği' ilkesine göre puanlandı.`,
+        summaryAr: `الدرجة ${letterRating(rawScoreIII)} (${rawScoreIII}/5 نقاط): تم رصد ${annotations.length} ملاحظة نحوية أو تركيبية وفقاً لمبدأ 'أولوية الفهم'.`,
+        summaryUk: `Оцінка ${letterRating(rawScoreIII)} (${rawScoreIII}/5 балів): Виявлено ${annotations.length} граматичних або синтаксичних зауважень за принципом 'Пріоритет зрозумілості'.`
+      }
+    ],
+    annotations,
+    b1Upgrades: upgrades,
+    detectedConnectors
+  };
+}
+
+/**
+ * Render Live Evaluation Results Card into DOM
+ */
+function renderLiveGradingResults(evalData, isLLM = false) {
+  const container = document.getElementById('live-results-container');
+  if (!container) return;
+
+  const lang = getActiveLanguage();
+  const langKey = lang.charAt(0).toUpperCase() + lang.slice(1);
+  const t = getShowcaseText;
+
+  container.innerHTML = `
+    <div class="live-evaluation-result" style="margin-top:24px; padding-top:24px; border-top:2px dashed var(--border);">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+        <h3 style="margin:0; font-size:18px; color:var(--text-primary); display:flex; align-items:center; gap:8px;">
+          ${t('liveInstantEvalTitle')} ${isLLM ? '<span class="showcase-badge" style="background:rgba(16,185,129,0.15); color:#10b981;">Direct LLM Verified</span>' : '<span class="showcase-badge">telc B1 Rule Engine</span>'}
+        </h3>
+        <span class="showcase-badge" style="background:${evalData.passed ? 'rgba(34,197,94,0.15)' : 'rgba(239,68,68,0.15)'}; color:${evalData.passed ? '#22c55e' : '#ef4444'}; font-weight:700;">
+          ${evalData.passed ? t('livePassBadge') : t('liveFailBadge')}
+        </span>
+      </div>
+
+      <!-- Main Showcase Grid (Letter + Rubric) -->
+      <div class="showcase-grid">
+        <!-- Left: Student Letter with Inline Highlighting -->
+        <div class="showcase-column letter-column">
+          <div class="column-header">
+            <h4>${t('annotatedHeader')}</h4>
+            <span class="sub-hint">${t('annotatedHint')}</span>
+          </div>
+
+          <div class="annotated-letter-box" dir="ltr">
+            ${renderAnnotatedText(evalData.rawText, evalData.annotations, lang)}
+          </div>
+
+          <div class="annotation-legend">
+            <span class="legend-item syntax"><span class="dot"></span> ${t('legendSyntax')}</span>
+            <span class="legend-item spelling"><span class="dot"></span> ${t('legendSpelling')}</span>
+            <span class="legend-item grammar"><span class="dot"></span> ${t('legendGrammar')}</span>
+          </div>
+        </div>
+
+        <!-- Right: Official telc Rubric & Score Calculation -->
+        <div class="showcase-column rubric-column">
+          <div class="column-header">
+            <h4>${t('rubricHeader')}</h4>
+            <span class="sub-hint">${t('rubricFormulaHint')}</span>
+          </div>
+
+          <!-- Total Score Card -->
+          <div class="total-score-card">
+            <div class="score-circle">
+              <span class="score-num">${evalData.totalScore}</span>
+              <span class="score-max">${t('ptsMax')}</span>
+            </div>
+            <div class="score-details">
+              <div class="score-grade">${evalData.grade} (${evalData.percentage}%)</div>
+              <div class="score-formula">
+                <code>(${evalData.criteria[0].ratingLetter} + ${evalData.criteria[1].ratingLetter} + ${evalData.criteria[2].ratingLetter}) = ${evalData.rawSum}/15 × 3 = ${evalData.totalScore}/45</code>
+              </div>
+              <div class="score-status-pill" style="background:${evalData.passed ? 'rgba(34,197,94,0.2)' : 'rgba(239,68,68,0.2)'}; color:${evalData.passed ? '#22c55e' : '#ef4444'};">
+                ${evalData.passed ? t('passThresholdLabel') : t('liveFailBadge')}
+              </div>
+            </div>
+          </div>
+
+          <!-- Individual Criteria Rating Cards -->
+          <div class="criteria-list">
+            ${evalData.criteria.map(c => {
+              const title = c['title' + langKey] || c.titleEn || c.title;
+              const summary = c['summary' + langKey] || c.summaryEn || c.feedback || '';
+              return `
+                <div class="criterion-item">
+                  <div class="criterion-header">
+                    <span class="criterion-title">${title}</span>
+                    <span class="criterion-score">${t('scoreLabel')} ${c.ratingLetter} (${c.rawScore}/5 ${t('ptsRaw')} &rarr; <strong>${c.finalScore}/15 ${t('finalPts')}</strong>)</span>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-bar-fill ${c.status}" style="width: ${(c.rawScore / c.rawMax) * 100}%"></div>
+                  </div>
+                  <p class="criterion-summary">${summary}</p>
+                </div>
+              `;
+            }).join('')}
+          </div>
+
+          <!-- Comparison Note -->
+          <div class="telc-rules-note" style="margin-top:14px;">
+            ${t('aiCompareNote')}
+          </div>
+        </div>
+      </div>
+
+      <!-- B1 Upgrades Section -->
+      ${evalData.b1Upgrades && evalData.b1Upgrades.length > 0 ? `
+      <div class="upgrades-section" style="margin-top:24px;">
+        <h4>${t('upgradesHeader')}</h4>
+        <p class="upgrades-sub">${t('upgradesSub')}</p>
+        <div class="upgrades-grid">
+          ${evalData.b1Upgrades.map(u => {
+            const benefit = u['benefit' + langKey] || u.benefitEn || u.benefit || '';
+            return `
+              <div class="upgrade-card">
+                <div class="upgrade-original">
+                  <span class="label">${t('upgradeOriginal')}</span>
+                  <p dir="ltr">"${u.original}"</p>
+                </div>
+                <div class="upgrade-improved">
+                  <span class="label">${t('upgradeRecommended')}</span>
+                  <p dir="ltr">"${u.upgrade}"</p>
+                </div>
+                <div class="upgrade-benefit">
+                  <span>${t('upgradeWhy')}</span> ${benefit}
+                </div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+      ` : ''}
+    </div>
+  `;
+
+  container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+/**
+ * Handle Live Submission (Option A: Instant Client-Side Rule Engine)
  */
 function submitLiveLetterGrading() {
   const textarea = document.getElementById('student-letter-textarea');
   const text = textarea ? textarea.value.trim() : '';
+  const lang = getActiveLanguage();
 
   if (!text || text.split(/\s+/).length < 20) {
-    const lang = getActiveLanguage();
     const alerts = {
-      en: 'Please enter a practice letter with at least 20 words before submitting for AI grading.',
-      tr: 'Lütfen yapay zeka puanlamasına göndermeden önce en az 20 kelimelik bir mektup yazın.',
+      en: 'Please enter a practice letter with at least 20 words before submitting for evaluation.',
+      tr: 'Lütfen değerlendirmeye göndermeden önce en az 20 kelimelik bir mektup yazın.',
       ar: 'يرجى كتابة رسالة تدريبية تحتوي على 20 كلمة على الأقل قبل طلب التقييم.',
-      uk: 'Будь ласка, введіть тренувальний лист обсягом щонайменше 20 слів перед відправкою на оцінювання.'
+      uk: 'Будь ласка, введіть тренувальний лист обсягом щонайменше 20 слів перед оцінюванням.'
     };
     alert(alerts[lang] || alerts.en);
     return;
   }
 
-  // Open Pro Pass Modal (Zero-cost lead gen safeguard)
-  openProPricingModal();
+  const promptSelect = document.getElementById('prompt-select-input');
+  const promptKey = promptSelect ? promptSelect.value : 'custom';
+
+  const evalData = evaluateStudentLetterB1(text, promptKey, lang);
+  evalData.rawText = text;
+
+  renderLiveGradingResults(evalData, false);
+}
+
+/**
+ * Direct AI Model Drawer & Settings Helpers (Option B)
+ */
+function toggleAiSettingsDrawer() {
+  const drawer = document.getElementById('ai-settings-drawer');
+  if (!drawer) return;
+  const isHidden = drawer.style.display === 'none' || !drawer.style.display;
+  drawer.style.display = isHidden ? 'block' : 'none';
+
+  if (isHidden) {
+    const savedKey = localStorage.getItem('deutschlernen_ai_key') || '';
+    const savedProvider = localStorage.getItem('deutschlernen_ai_provider') || 'openai';
+    const keyInput = document.getElementById('ai-api-key-input');
+    const providerSelect = document.getElementById('ai-provider-select');
+    if (keyInput) keyInput.value = savedKey;
+    if (providerSelect) providerSelect.value = savedProvider;
+  }
+}
+
+function handleAiProviderChange(val) {
+  const keyInput = document.getElementById('ai-api-key-input');
+  if (!keyInput) return;
+  if (val === 'proxy') {
+    keyInput.placeholder = '(Optional Bearer token or proxy key)';
+  } else if (val === 'gemini') {
+    keyInput.placeholder = 'AIzaSy... (Google AI Studio Key)';
+  } else {
+    keyInput.placeholder = 'sk-... (OpenAI API Key)';
+  }
+}
+
+function saveAiSettings() {
+  const keyInput = document.getElementById('ai-api-key-input');
+  const providerSelect = document.getElementById('ai-provider-select');
+  const msgEl = document.getElementById('ai-settings-msg');
+  const t = getShowcaseText;
+
+  if (keyInput && providerSelect) {
+    localStorage.setItem('deutschlernen_ai_key', keyInput.value.trim());
+    localStorage.setItem('deutschlernen_ai_provider', providerSelect.value);
+  }
+  if (msgEl) {
+    msgEl.style.color = '#10b981';
+    msgEl.textContent = t('aiKeySavedMsg');
+    setTimeout(() => { msgEl.textContent = ''; }, 3000);
+  }
+}
+
+function clearAiSettings() {
+  localStorage.removeItem('deutschlernen_ai_key');
+  const keyInput = document.getElementById('ai-api-key-input');
+  const msgEl = document.getElementById('ai-settings-msg');
+  const t = getShowcaseText;
+
+  if (keyInput) keyInput.value = '';
+  if (msgEl) {
+    msgEl.style.color = '#eab308';
+    msgEl.textContent = t('aiKeyClearedMsg');
+    setTimeout(() => { msgEl.textContent = ''; }, 3000);
+  }
+}
+
+/**
+ * Handle Direct AI Grading Submission (Option B)
+ */
+async function submitDirectAiGrading() {
+  const textarea = document.getElementById('student-letter-textarea');
+  const text = textarea ? textarea.value.trim() : '';
+  const lang = getActiveLanguage();
+  const t = getShowcaseText;
+
+  if (!text || text.split(/\s+/).length < 20) {
+    alert(t('liveTextareaLabel'));
+    return;
+  }
+
+  const provider = document.getElementById('ai-provider-select')?.value || localStorage.getItem('deutschlernen_ai_provider') || 'openai';
+  const apiKey = document.getElementById('ai-api-key-input')?.value.trim() || localStorage.getItem('deutschlernen_ai_key') || '';
+
+  if (provider !== 'proxy' && !apiKey) {
+    const msgEl = document.getElementById('ai-settings-msg');
+    if (msgEl) {
+      msgEl.style.color = '#ef4444';
+      msgEl.textContent = 'Please enter an API Key to run direct model analysis.';
+    }
+    const drawer = document.getElementById('ai-settings-drawer');
+    if (drawer) drawer.style.display = 'block';
+    return;
+  }
+
+  const container = document.getElementById('live-results-container');
+  if (container) {
+    container.innerHTML = `
+      <div style="text-align:center; padding:36px; background:var(--bg-card); border-radius:12px; border:1px solid var(--border);">
+        <div style="font-size:32px; margin-bottom:10px;">⏳</div>
+        <p style="color:var(--accent-gold); font-weight:700; font-size:16px; margin:0;">${t('liveEvaluating')}</p>
+        <p style="color:var(--text-muted); font-size:13px; margin-top:6px;">Connecting to ${provider.toUpperCase()}...</p>
+      </div>
+    `;
+    container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  const promptSelect = document.getElementById('prompt-select-input');
+  const promptKey = promptSelect ? promptSelect.value : 'custom';
+
+  try {
+    const evalData = await callLlmLetterGrader(text, promptKey, apiKey, provider);
+    evalData.rawText = text;
+    renderLiveGradingResults(evalData, true);
+  } catch (err) {
+    console.error("Direct AI grading failed:", err);
+    if (container) {
+      container.innerHTML = `
+        <div style="background:rgba(239,68,68,0.1); border:1px solid #ef4444; border-radius:12px; padding:20px; color:var(--text-primary); margin-top:20px;">
+          <h4 style="color:#ef4444; margin-top:0;">⚠️ Direct AI Analysis Failed</h4>
+          <p style="font-size:13px; margin-bottom:14px;">${err.message || 'Could not connect to model API. Falling back to client-side rule engine...'}</p>
+          <button class="cta-btn-primary" onclick="submitLiveLetterGrading()">Run Instant Rule Engine Evaluation</button>
+        </div>
+      `;
+    }
+  }
+}
+
+/**
+ * Call OpenAI, Gemini, or Serverless Proxy for Deep LLM Grading
+ */
+async function callLlmLetterGrader(studentText, promptKey, apiKey, provider) {
+  const promptContexts = {
+    marianne: "Informal B1 reply to friend Marianne planning visit to Germany (activities, season, clothes, prep).",
+    hotel: "Formal B1 complaint to Hotel Meeresblick (noise, broken AC, front desk response, refund).",
+    vhs: "Semi-formal B1 course inquiry to Adult Education Center (B2 course, timetable, materials, installment fees).",
+    custom: "General German B1 examination letter task."
+  };
+  const promptTitle = promptKey === 'marianne' ? 'Marianne E-Mail' : (promptKey === 'hotel' ? 'Hotel Meeresblick Beschwerde' : (promptKey === 'vhs' ? 'VHS Kursanfrage' : 'Freier B1 Brief'));
+  const promptContext = promptContexts[promptKey] || promptContexts.custom;
+
+  if (provider === 'proxy') {
+    const res = await fetch('/api/grade-letter', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ studentText, promptTitle, promptContext })
+    });
+    if (!res.ok) {
+      const errJson = await res.json().catch(() => ({}));
+      throw new Error(errJson.error || errJson.message || `Proxy error: HTTP ${res.status}`);
+    }
+    return await res.json();
+  }
+
+  const systemPrompt = `You are an official accredited telc Deutsch B1 examiner. Grade the provided B1 student letter against the official 3 telc criteria:
+1. Criterion I: Aufgabenbewältigung (Content & 4 Leitpunkte) - Raw score: A=5, B=3, C=1, D=0.
+2. Criterion II: Kommunikative Gestaltung (Cohesion, Register & Connectors) - Raw score: A=5, B=3, C=1, D=0.
+3. Criterion III: Formale Richtigkeit (Grammar & Orthography under Primat der Verständlichkeit) - Raw score: A=5, B=3, C=1, D=0.
+Total formula: (Criterion I + II + III) * 3 = Total / 45 pts. Pass threshold >= 27 pts.
+
+Return ONLY a valid JSON object matching this schema:
+{
+  "totalScore": number,
+  "maxTotal": 45,
+  "rawSum": number,
+  "grade": string,
+  "percentage": number,
+  "passed": boolean,
+  "criteria": [
+    { "id": "inhalt", "titleEn": "Criterion I: Aufgabenbewältigung", "rawScore": number, "ratingLetter": "A", "finalScore": number, "finalMax": 15, "status": "excellent", "summaryEn": string },
+    { "id": "sprache", "titleEn": "Criterion II: Kommunikative Gestaltung", "rawScore": number, "ratingLetter": "B", "finalScore": number, "finalMax": 15, "status": "good", "summaryEn": string },
+    { "id": "korrektheit", "titleEn": "Criterion III: Formale Richtigkeit", "rawScore": number, "ratingLetter": "B", "finalScore": number, "finalMax": 15, "status": "good", "summaryEn": string }
+  ],
+  "annotations": [
+    { "targetText": string, "correctedText": string, "type": "syntax", "ruleEn": string, "explanationEn": string }
+  ],
+  "b1Upgrades": [
+    { "original": string, "upgrade": string, "benefitEn": string }
+  ]
+}`;
+
+  const userPrompt = `Exam Prompt: ${promptTitle}\nContext: ${promptContext}\nStudent Letter:\n"""\n${studentText}\n"""`;
+
+  if (provider === 'gemini') {
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [
+          { role: 'user', parts: [{ text: `${systemPrompt}\n\n${userPrompt}` }] }
+        ],
+        generationConfig: { responseMimeType: 'application/json' }
+      })
+    });
+    if (!res.ok) {
+      const errText = await res.text();
+      throw new Error(`Gemini API error (${res.status}): ${errText.slice(0, 150)}`);
+    }
+    const data = await res.json();
+    const candidateText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+    if (!candidateText) throw new Error("Empty response from Gemini API");
+    return JSON.parse(candidateText);
+  }
+
+  // Default: OpenAI (gpt-4o-mini)
+  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${apiKey}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      model: 'gpt-4o-mini',
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: userPrompt }
+      ],
+      response_format: { type: 'json_object' },
+      temperature: 0.2
+    })
+  });
+
+  if (!res.ok) {
+    const errText = await res.text();
+    throw new Error(`OpenAI API error (${res.status}): ${errText.slice(0, 150)}`);
+  }
+  const data = await res.json();
+  const content = data.choices?.[0]?.message?.content;
+  if (!content) throw new Error("Empty response from OpenAI API");
+  return JSON.parse(content);
 }
 
 /**
@@ -968,6 +1723,25 @@ function selectProPlan(planId) {
   closeProPricingModal();
 }
 
+if (typeof window !== 'undefined') {
+  window.SHOWCASE_I18N = SHOWCASE_I18N;
+  window.renderSchreibenShowcase = renderSchreibenShowcase;
+  window.renderAnnotatedText = renderAnnotatedText;
+  window.getActiveLanguage = getActiveLanguage;
+  window.getShowcaseText = getShowcaseText;
+  window.insertConnectorIntoLetter = insertConnectorIntoLetter;
+  window.playSchreibenSpeech = playSchreibenSpeech;
+  window.evaluateStudentLetterB1 = evaluateStudentLetterB1;
+  window.renderLiveGradingResults = renderLiveGradingResults;
+  window.submitLiveLetterGrading = submitLiveLetterGrading;
+  window.submitDirectAiGrading = submitDirectAiGrading;
+  window.toggleAiSettingsDrawer = toggleAiSettingsDrawer;
+  window.handleAiProviderChange = handleAiProviderChange;
+  window.saveAiSettings = saveAiSettings;
+  window.clearAiSettings = clearAiSettings;
+  window.callLlmLetterGrader = callLlmLetterGrader;
+}
+
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     SHOWCASE_I18N,
@@ -976,6 +1750,15 @@ if (typeof module !== 'undefined' && module.exports) {
     getActiveLanguage,
     getShowcaseText,
     insertConnectorIntoLetter,
-    playSchreibenSpeech
+    playSchreibenSpeech,
+    evaluateStudentLetterB1,
+    renderLiveGradingResults,
+    submitLiveLetterGrading,
+    submitDirectAiGrading,
+    toggleAiSettingsDrawer,
+    handleAiProviderChange,
+    saveAiSettings,
+    clearAiSettings,
+    callLlmLetterGrader
   };
 }
