@@ -314,73 +314,127 @@ function renderCards() {
 }
 
 // Quiz data
+// Quiz data
 const quizData = [
-  { q: 'Ich bleibe zu Hause, ___ ich krank bin.', opts: ['dass','weil','wenn'], correct: 1, explain: 'weil = because. Reason clause → verb to end.' },
-  { q: 'Ich bin müde. ___ bleibe ich zu Hause.', opts: ['Trotzdem','Außerdem','Deshalb'], correct: 2, explain: 'Deshalb = therefore. Position 1 → verb inversion.' },
-  { q: 'Gestern ___ ich den ganzen Tag zu Hause ___.', opts: ['habe...geblieben','bin...geblieben','habe...gebleibt'], correct: 1, explain: 'bleiben = change of state → use sein. Irregular: geblieben.' },
-  { q: '___ Sie mir bitte helfen?', opts: ['Können','Konnten','Könnten'], correct: 2, explain: 'Könnten = Konjunktiv II. Polite request form.' },
-  { q: 'Das ist der Mann, ___ gestern bei uns war.', opts: ['der','den','dem'], correct: 0, explain: 'Relativpronomen Nominativ maskulin — der Mann ist Subjekt.' },
-  { q: 'Ich warte ___ Bus.', opts: ['auf dem','auf den','auf der'], correct: 1, explain: 'warten auf + Akkusativ. den Bus = Akk maskulin.' },
-  { q: 'Sie hat sich ___ die Verspätung entschuldigt.', opts: ['über','für','um'], correct: 1, explain: 'sich entschuldigen für + Akkusativ.' },
-  { q: 'Ich interessiere mich ___ den Deutschkurs.', opts: ['für','um','an'], correct: 0, explain: 'sich interessieren für + Akkusativ.' },
+  {
+    q: 'Ich bleibe zu Hause, ___ ich krank bin.',
+    opts: ['dass','weil','wenn'],
+    correct: 1,
+    explain: 'weil = because. Reason subclause → verb to end.',
+    explainTr: 'weil = çünkü. Neden bildiren yan cümle → fiil en sona gider.',
+    explainAr: 'weil = لأن. جملة سببية جانبية → يذهب الفعل إلى النهاية.',
+    explainUk: 'weil = тому що. Підрядне речення причини → дієслово йде в кінець.'
+  },
+  {
+    q: 'Ich bin müde. ___ bleibe ich zu Hause.',
+    opts: ['Trotzdem','Außerdem','Deshalb'],
+    correct: 2,
+    explain: 'Deshalb = therefore. Position 1 → verb inversion.',
+    explainTr: 'Deshalb = bu yüzden. 1. pozisyondadır → fiil öne gelir (inversiyon).',
+    explainAr: 'Deshalb = لذلك. أداة في الموضع الأول → يحدث تقديم للفعل (Inversion).',
+    explainUk: 'Deshalb = тому. 1-ша позиція → інверсія (дієслово на 2-му місці).'
+  },
+  {
+    q: 'Gestern ___ ich den ganzen Tag zu Hause ___.',
+    opts: ['habe...geblieben','bin...geblieben','habe...gebleibt'],
+    correct: 1,
+    explain: 'bleiben = to stay. Uses auxiliary sein. Irregular: ist geblieben.',
+    explainTr: 'bleiben = kalmak. sein yardımcı fiili alır. Düzensiz: ist geblieben.',
+    explainAr: 'bleiben = يمكث. يأخذ الفعل المساعد sein. التصريف الثالث: ist geblieben.',
+    explainUk: 'bleiben = залишатися. Вживається з дієсловом sein. Форма: ist geblieben.'
+  },
+  {
+    q: '___ Sie mir bitte helfen?',
+    opts: ['Können','Konnten','Könnten'],
+    correct: 2,
+    explain: 'Könnten = Konjunktiv II. Polite request form.',
+    explainTr: 'Könnten = Konjunktiv II. Kibar rica formu.',
+    explainAr: 'Könnten = صيغة Konjunktiv II للطلب بأدب واحترام.',
+    explainUk: 'Könnten = Konjunktiv II. Ввічлива форма прохання.'
+  },
+  {
+    q: 'Das ist der Mann, ___ gestern bei uns war.',
+    opts: ['der','den','dem'],
+    correct: 0,
+    explain: 'Relativpronomen Nominativ maskulin — der Mann is the subject.',
+    explainTr: 'İlgi zamiri Nominativ eril — der Mann özne durumundadır.',
+    explainAr: 'ضمير وصل مذكر في حالة الرفع (Nominativ) — الفاعل der Mann.',
+    explainUk: 'Відносний займенник Nominativ maskulin — der Mann є підметом.'
+  },
+  {
+    q: 'Ich warte ___ Bus.',
+    opts: ['auf dem','auf den','auf der'],
+    correct: 1,
+    explain: 'warten auf + Akkusativ. den Bus = Akk maskulin.',
+    explainTr: 'warten auf + Akkusativ. den Bus = eril Akkusativ.',
+    explainAr: 'الفعل warten يأخذ حرف الجر auf + حالة النصب (den Bus).',
+    explainUk: 'warten auf + Akkusativ. den Bus = знахідний відмінок.'
+  },
+  {
+    q: 'Sie hat sich ___ die Verspätung entschuldigt.',
+    opts: ['über','für','um'],
+    correct: 1,
+    explain: 'sich entschuldigen für + Akkusativ.',
+    explainTr: 'sich entschuldigen für + Akkusativ = bir şey için özür dilemek.',
+    explainAr: 'sich entschuldigen für + Akkusativ = يعتذر عن أمر ما.',
+    explainUk: 'sich entschuldigen für + Akkusativ = вибачатися за щось.'
+  },
+  {
+    q: 'Ich interessiere mich ___ den Deutschkurs.',
+    opts: ['für','um','an'],
+    correct: 0,
+    explain: 'sich interessieren für + Akkusativ.',
+    explainTr: 'sich interessieren für + Akkusativ = bir şeye ilgi duymak.',
+    explainAr: 'sich interessieren für + Akkusativ = يهتم بدورة اللغة الألمانية.',
+    explainUk: 'sich interessieren für + Akkusativ = цікавитися курсом німецької.'
+  },
 ];
 
-// Render quiz
-const quizEl = document.getElementById('quiz-container');
-quizData.forEach((q, qi) => {
-  let optsHtml = q.opts.map((o, oi) =>
-    `<button class="quiz-opt" onclick="checkAnswer(${qi},${oi})">${String.fromCharCode(97+oi)}) ${o}</button>`
-  ).join('');
-  quizEl.innerHTML += `<div class="quiz-item" id="quiz-${qi}">
-    <div class="quiz-q"><b>${qi+1}.</b> ${q.q}</div>
-    <div class="quiz-options">${optsHtml}</div>
-    <div class="quiz-explain" id="explain-${qi}">✅ ${q.explain}</div>
-  </div>`;
-});
+let quizAnswered = JSON.parse(localStorage.getItem('telc_quiz') || '{}');
+let sectionsVisited = JSON.parse(localStorage.getItem('telc_sections') || '{}');
 
-  let quizAnswered = JSON.parse(localStorage.getItem('telc_quiz') || '{}');
-  let sectionsVisited = JSON.parse(localStorage.getItem('telc_sections') || '{}');
+function renderQuiz() {
+  const quizEl = document.getElementById('quiz-container');
+  if (!quizEl) return;
+  quizEl.innerHTML = '';
 
-function checkAnswer(qi, oi) {
-  if (quizAnswered[qi] !== undefined) return;
-  const item = document.getElementById(`quiz-${qi}`);
-  const btns = item.querySelectorAll('.quiz-opt');
-  const correct = quizData[qi].correct;
-  btns.forEach((b, i) => {
-    b.classList.add('disabled');
-    if (i === correct) b.classList.add('correct');
-    else if (i === oi && oi !== correct) b.classList.add('wrong');
+  const isAr = currentLang === 'ar';
+
+  quizData.forEach((q, qi) => {
+    let expText = q.explain;
+    if (currentLang === 'tr' && q.explainTr) expText = q.explainTr;
+    else if (currentLang === 'ar' && q.explainAr) expText = q.explainAr;
+    else if (currentLang === 'uk' && q.explainUk) expText = q.explainUk;
+
+    let optsHtml = q.opts.map((o, oi) => {
+      let extraClass = '';
+      if (quizAnswered[qi] !== undefined) {
+        extraClass = ' disabled';
+        if (oi === q.correct) extraClass += ' correct';
+        else if (quizAnswered[qi] === false) extraClass += ' wrong';
+      }
+      return `<button class="quiz-opt${extraClass}" onclick="checkAnswer(${qi},${oi})">${String.fromCharCode(97+oi)}) ${o}</button>`;
+    }).join('');
+
+    const showExplainClass = quizAnswered[qi] !== undefined ? ' show' : '';
+
+    quizEl.innerHTML += `<div class="quiz-item" id="quiz-${qi}">
+      <div class="quiz-q"><b>${qi+1}.</b> ${q.q}</div>
+      <div class="quiz-options">${optsHtml}</div>
+      <div class="quiz-explain${showExplainClass}" id="explain-${qi}" ${isAr ? 'dir="rtl" style="text-align:right;"' : ''}>✅ ${expText}</div>
+    </div>`;
   });
-  document.getElementById(`explain-${qi}`).classList.add('show');
-  quizAnswered[qi] = (oi === correct);
-  localStorage.setItem('telc_quiz', JSON.stringify(quizAnswered));
+
   updateQuizScore();
-  updateProgress();
 }
 
-function updateQuizScore() {
-  const total = quizData.length;
-  const answered = Object.keys(quizAnswered).length;
-  const correctCount = Object.values(quizAnswered).filter(v => v).length;
-  document.getElementById('quiz-score-display').textContent = `${correctCount}/${total}`;
-}
+// Initial quiz render
+renderQuiz();
 
 function resetQuiz() {
   quizAnswered = {};
   localStorage.removeItem('telc_quiz');
-  document.getElementById('quiz-container').innerHTML = '';
-  quizData.forEach((q, qi) => {
-    let optsHtml = q.opts.map((o, oi) =>
-      `<button class="quiz-opt" onclick="checkAnswer(${qi},${oi})">${String.fromCharCode(97+oi)}) ${o}</button>`
-    ).join('');
-    document.getElementById('quiz-container').innerHTML += `<div class="quiz-item" id="quiz-${qi}">
-      <div class="quiz-q"><b>${qi+1}.</b> ${q.q}</div>
-      <div class="quiz-options">${optsHtml}</div>
-      <div class="quiz-explain" id="explain-${qi}">✅ ${q.explain}</div>
-    </div>`;
-  });
-  updateQuizScore();
-  updateProgress();
+  renderQuiz();
 }
 
 function trackSection(id) {
@@ -729,6 +783,14 @@ function setLang(lang) {
   updateDayTracker();
   updateCard(true); // Redraw flashcard to match language instantly
   updateGoalDisplays(); // Update goal labels and badges
+  renderQuiz(); // Re-render quiz with translated explanations
+
+  if (typeof renderLiDTrainer === 'function') {
+    renderLiDTrainer('lid-trainer-container');
+  }
+  if (typeof renderSchreibenShowcase === 'function') {
+    renderSchreibenShowcase('schreiben-showcase-container');
+  }
 
   // Update rating label text to match language
   const starsWrap = document.getElementById('feedback-stars');
