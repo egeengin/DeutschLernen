@@ -1104,3 +1104,12 @@ if (typeof renderSchreibenShowcase === 'function') {
   renderSchreibenShowcase('schreiben-showcase-container');
 }
 
+if (typeof renderLiDTrainer === 'function') {
+  renderLiDTrainer('lid-trainer-container');
+}
+
+if (typeof renderFehlerheftDashboard === 'function') {
+  renderFehlerheftDashboard('fehlerheft-container');
+}
+
+

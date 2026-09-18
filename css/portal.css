@@ -1834,5 +1834,236 @@ td strong, td b { color: var(--text-primary); }
   color: var(--text-secondary);
 }
 
+/* ==========================================================================
+   Leben in Deutschland (LiD 310) & Fehlerheft Styles
+   ========================================================================== */
+.lid-trainer-wrapper,
+.fehlerheft-wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.lid-header h2,
+.fehlerheft-header h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.lid-header p,
+.fehlerheft-header p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.lid-controls-bar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  padding: 16px;
+  border-radius: 12px;
+}
+.lid-control-group {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.lid-control-group label {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.lid-question-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+.lid-q-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent-gold);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.lid-q-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.lid-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.lid-opt-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 14px 18px;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+.lid-opt-btn:hover:not(:disabled) {
+  border-color: var(--accent-gold);
+  transform: translateX(4px);
+}
+.lid-opt-btn.correct {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: #10b981;
+  color: #10b981;
+  font-weight: 700;
+}
+.lid-opt-btn.wrong {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: #ef4444;
+  color: #ef4444;
+}
+.opt-letter {
+  font-weight: 800;
+  color: var(--accent-gold);
+}
+
+.lid-explanation-box {
+  background: var(--bg-card);
+  border-left: 4px solid #10b981;
+  border: 1px solid var(--border);
+  border-left-width: 4px;
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.lid-explanation-box h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #10b981;
+  margin-bottom: 8px;
+}
+.exp-de { color: var(--text-primary); margin-bottom: 4px; }
+.exp-tr { color: var(--text-secondary); margin-bottom: 12px; }
+
+.lid-vocab-crosslink {
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.vocab-tag-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+.vocab-pill-link {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--accent-gold);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 3px 10px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 11px;
+  transition: all 0.2s ease;
+}
+.vocab-pill-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(245, 158, 11, 0.3);
+}
+
+.lid-nav-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+/* Fehlerheft Grid */
+.fehlerheft-empty-card {
+  text-align: center;
+  padding: 40px 20px;
+}
+.empty-icon { font-size: 40px; margin-bottom: 12px; }
+.fehlerheft-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.fehlerheft-item-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.fh-type-badge {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 8px;
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 8px;
+}
+.fh-type-badge.vocab { background: rgba(59, 130, 246, 0.15); color: #3b82f6; }
+.fh-type-badge.grammar { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+.fh-type-badge.syntax { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+.fh-word { font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
+.fh-meaning { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+.fh-example { font-size: 11px; color: var(--text-muted); margin-bottom: 12px; flex: 1; }
+.fh-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.remove-fh-btn {
+  background: transparent;
+  border: 1px solid #10b981;
+  color: #10b981;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.remove-fh-btn:hover {
+  background: #10b981;
+  color: #ffffff;
+}
+
+
 
 
