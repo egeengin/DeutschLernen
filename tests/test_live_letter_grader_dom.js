@@ -191,7 +191,10 @@ assert.ok(resultHtml.includes('Criterion II'), 'Should render Criterion II (Komm
 assert.ok(resultHtml.includes('Criterion III'), 'Should render Criterion III (Formale Richtigkeit)');
 assert.ok(resultHtml.includes('annotation-mark'), 'Should render inline annotation highlights for flagged student mistakes');
 assert.ok(resultHtml.includes('upgrade-card'), 'Should render B1 sentence upgrades section');
-console.log('✅ DOM Output Verified: Scorecard, 3 Criteria, Annotations, and Upgrades all rendered properly.');
+assert.ok(resultHtml.includes('option-b-verify-card'), 'Should render Option B Check Afterwards callout card');
+assert.ok(resultHtml.includes('Check Afterwards with AI'), 'Should have Option B trigger button');
+assert.ok(resultHtml.includes('option-b-comparison-container'), 'Should have container for Option B comparison');
+console.log('✅ DOM Output Verified: Scorecard, 3 Criteria, Annotations, Upgrades, and Option B Check Afterwards card all rendered properly.');
 
 let lastAlert = '';
 global.alert = (msg) => { lastAlert = msg; };
@@ -217,5 +220,48 @@ assert.strictEqual(localStorage.getItem('deutschlernen_ai_provider'), 'gemini', 
 clearAiSettings();
 assert.strictEqual(localStorage.getItem('deutschlernen_ai_key'), null, 'API key should be cleared from localStorage');
 console.log('✅ Option B Drawer & LocalStorage Persistence Verified.');
+
+// 8. Test Option B Calibration & Side-by-Side Comparison Rendering
+const mockOptionA = {
+  totalScore: 39,
+  rawSum: 13,
+  grade: 'Gut',
+  percentage: 87,
+  passed: true,
+  criteria: [
+    { id: 'inhalt', rawScore: 5, ratingLetter: 'A', finalScore: 15 },
+    { id: 'sprache', rawScore: 5, ratingLetter: 'A', finalScore: 15 },
+    { id: 'korrektheit', rawScore: 3, ratingLetter: 'B', finalScore: 9 }
+  ]
+};
+
+const mockOptionB = {
+  totalScore: 36,
+  rawSum: 12,
+  grade: 'Gut',
+  percentage: 80,
+  passed: true,
+  criteria: [
+    { id: 'inhalt', rawScore: 5, ratingLetter: 'A', finalScore: 15 },
+    { id: 'sprache', rawScore: 4, ratingLetter: 'B', finalScore: 12 },
+    { id: 'korrektheit', rawScore: 3, ratingLetter: 'B', finalScore: 9 }
+  ]
+};
+
+// Ensure container exists for test
+const comparisonContainer = new MockElement('DIV', 'option-b-comparison-container');
+domElementsById['option-b-comparison-container'] = comparisonContainer;
+
+const compOutput = renderOptionBComparison(mockOptionA, mockOptionB);
+assert.ok(compOutput.includes('Option A vs. Option B Calibration & Comparison'), 'Should render calibration comparison title');
+assert.ok(compOutput.includes('Option A (Rule Engine)'), 'Should display Option A label');
+assert.ok(compOutput.includes('Option B (Deep LLM)'), 'Should display Option B label');
+assert.ok(compOutput.includes('39'), 'Should show Option A score (39)');
+assert.ok(compOutput.includes('36'), 'Should show Option B score (36)');
+assert.ok(compOutput.includes('±3 pts'), 'Should calculate delta (±3 pts)');
+assert.ok(compOutput.includes('93%'), 'Should calculate high agreement percentage (93%)');
+assert.ok(compOutput.includes('Match'), 'Should note matching criteria');
+assert.strictEqual(comparisonContainer.style.display, 'block', 'Comparison container should be made visible');
+console.log('✅ Option B Side-by-Side Calibration & Comparison Matrix Verified.');
 
 console.log('🎉 All Live Letter Grader Tests Passed Successfully!');

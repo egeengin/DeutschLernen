@@ -97,7 +97,14 @@ const SHOWCASE_I18N = {
     aiKeySavedMsg: "✅ AI settings saved successfully!",
     aiKeyClearBtn: "Clear Key",
     aiKeyClearedMsg: "🗑️ API Key removed.",
-    aiCompareNote: "💡 Rule Engine vs. LLM: The client-side pre-grader evaluates word count, register, B1 connectors, and syntax in real time. The LLM verifies nuanced semantic comprehension."
+    aiCompareNote: "💡 Rule Engine vs. LLM: The client-side pre-grader evaluates word count, register, B1 connectors, and syntax in real time. The LLM verifies nuanced semantic comprehension.",
+    verifyWithAiTitle: "Verify this Letter with Deep AI (Option B)",
+    verifyWithAiDesc: "Option A analyzed syntax and word count locally for free. Now run Option B to cross-check with a large language model (GPT-4o / Gemini) for nuanced semantic understanding.",
+    runAiVerifyBtn: "🤖 Check Afterwards with AI",
+    comparisonTitle: "⚖️ Option A vs. Option B Calibration & Comparison",
+    ruleEngineLabel: "Option A (Rule Engine)",
+    deepAiLabel: "Option B (Deep LLM)",
+    scoreDeltaLabel: "Score Agreement:"
   },
   tr: {
     tabSample: "✨ Örnek Değerlendirme Raporu",
@@ -189,7 +196,14 @@ const SHOWCASE_I18N = {
     aiKeySavedMsg: "✅ Yapay zeka ayarları başarıyla kaydedildi!",
     aiKeyClearBtn: "Anahtarı Temizle",
     aiKeyClearedMsg: "🗑️ API Anahtarı silindi.",
-    aiCompareNote: "💡 Kural Motoru ve LLM: İstemci taraflı puanlayıcı kelime sayısı, hitap, B1 bağlaçları ve sözdizimini anında denetler. LLM ise derin anlamsal kavrayışı doğrular."
+    aiCompareNote: "💡 Kural Motoru ve LLM: İstemci taraflı puanlayıcı kelime sayısı, hitap, B1 bağlaçları ve sözdizimini anında denetler. LLM ise derin anlamsal kavrayışı doğrular.",
+    verifyWithAiTitle: "Bu Mektubu Derin Yapay Zeka ile Doğrula (Seçenek B)",
+    verifyWithAiDesc: "Seçenek A sözdizimini ve kelime sayısını yerel olarak ücretsiz inceledi. Şimdi büyük dil modeliyle (GPT-4o / Gemini) derin anlamsal kavrayışı çapraz kontrol edin.",
+    runAiVerifyBtn: "🤖 Yapay Zeka ile Sonradan Kontrol Et",
+    comparisonTitle: "⚖️ Seçenek A ve Seçenek B Kalibrasyon & Karşılaştırma",
+    ruleEngineLabel: "Seçenek A (Kural Motoru)",
+    deepAiLabel: "Seçenek B (Derin LLM)",
+    scoreDeltaLabel: "Puan Uyumu:"
   },
   ar: {
     tabSample: "✨ تقرير التقييم النموذجي",
@@ -281,7 +295,14 @@ const SHOWCASE_I18N = {
     aiKeySavedMsg: "✅ تم حفظ إعدادات الذكاء الاصطناعي بنجاح!",
     aiKeyClearBtn: "مسح المفتاح",
     aiKeyClearedMsg: "🗑️ تم حذف مفتاح API.",
-    aiCompareNote: "💡 محرك القواعد مقابل LLM: يقيّم المحرك المحلي عدد الكلمات، والأسلوب، وروابط B1، والنحو فورياً. بينما يتحقق LLM من دقة الفهم الدلالي."
+    aiCompareNote: "💡 محرك القواعد مقابل LLM: يقيّم المحرك المحلي عدد الكلمات، والأسلوب، وروابط B1، والنحو فورياً. بينما يتحقق LLM من دقة الفهم الدلالي.",
+    verifyWithAiTitle: "التحقق من هذه الرسالة بالذكاء الاصطناعي المعمق (الخيار B)",
+    verifyWithAiDesc: "قام الخيار A بتحليل القواعد وعدد الكلمات محلياً ومجاناً. شغّل الخيار B الآن للمطابقة مع نموذج لغوي متقدم (GPT-4o / Gemini) للتحقق الدلالي الشامل.",
+    runAiVerifyBtn: "🤖 التحقق لاحقاً بالذكاء الاصطناعي",
+    comparisonTitle: "⚖️ مقارنة ومعايرة النتائج بين الخيار A والخيار B",
+    ruleEngineLabel: "الخيار A (محرك القواعد)",
+    deepAiLabel: "الخيار B (نموذج LLM المعمق)",
+    scoreDeltaLabel: "نسبة توافق الدرجات:"
   },
   uk: {
     tabSample: "✨ Зразок звіту екзаменатора",
@@ -373,7 +394,14 @@ const SHOWCASE_I18N = {
     aiKeySavedMsg: "✅ Налаштування AI успішно збережено!",
     aiKeyClearBtn: "Видалити ключ",
     aiKeyClearedMsg: "🗑️ Ключ API видалено.",
-    aiCompareNote: "💡 Алгоритмічний рушій та LLM: Локальний оцінювач миттєво перевіряє кількість слів, стиль, сполучники B1 та синтаксис. Модель LLM верифікує глибинне семантичне розуміння."
+    aiCompareNote: "💡 Алгоритмічний рушій та LLM: Локальний оцінювач миттєво перевіряє кількість слів, стиль, сполучники B1 та синтаксис. Модель LLM верифікує глибинне семантичне розуміння.",
+    verifyWithAiTitle: "Перевірити цей лист за допомогою глибинного AI (Варіант B)",
+    verifyWithAiDesc: "Варіант A перевірив синтаксис та обсяг локально та безкоштовно. Тепер запустіть Варіант B для перехресної перевірки моделлю (GPT-4o / Gemini) для глибокого семантичного аналізу.",
+    runAiVerifyBtn: "🤖 Перевірити після цього за допомогою AI",
+    comparisonTitle: "⚖️ Порівняння та калібрування Варіанту A та Варіанту B",
+    ruleEngineLabel: "Варіант A (Алгоритмічний рушій)",
+    deepAiLabel: "Варіант B (Глибинний LLM)",
+    scoreDeltaLabel: "Узгодженість балів:"
   }
 };
 
@@ -1239,9 +1267,18 @@ function evaluateStudentLetterB1(rawText, promptKey, lang) {
 /**
  * Render Live Evaluation Results Card into DOM
  */
+let lastOptionAEvalData = null;
+
+/**
+ * Render Live Evaluation Results Card into DOM
+ */
 function renderLiveGradingResults(evalData, isLLM = false) {
   const container = document.getElementById('live-results-container');
   if (!container) return;
+
+  if (!isLLM) {
+    lastOptionAEvalData = evalData;
+  }
 
   const lang = getActiveLanguage();
   const langKey = lang.charAt(0).toUpperCase() + lang.slice(1);
@@ -1356,10 +1393,242 @@ function renderLiveGradingResults(evalData, isLLM = false) {
         </div>
       </div>
       ` : ''}
+
+      <!-- Option B: Check Afterwards with Deep AI Callout Card -->
+      <div class="option-b-verify-card" style="margin-top:28px; padding:22px; border-radius:14px; background:linear-gradient(135deg, rgba(99,102,241,0.06) 0%, rgba(168,85,247,0.06) 100%); border:1px solid rgba(99,102,241,0.25); box-shadow:0 4px 20px rgba(0,0,0,0.04);">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px;">
+          <div style="flex:1; min-width:260px;">
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+              <span style="font-size:22px;">🤖</span>
+              <h4 style="margin:0; font-size:16px; font-weight:700; color:var(--text-primary);">${t('verifyWithAiTitle')}</h4>
+              <span class="showcase-badge" style="background:rgba(99,102,241,0.15); color:#6366f1; font-size:11px;">Option B</span>
+            </div>
+            <p style="margin:0; font-size:13px; color:var(--text-secondary); line-height:1.5;">${t('verifyWithAiDesc')}</p>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+            <button class="cta-btn-primary" id="btn-trigger-option-b" onclick="triggerOptionBAfterwards()" style="display:inline-flex; align-items:center; gap:8px; background:linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color:#fff; border:none; padding:10px 18px; border-radius:8px; font-weight:600; cursor:pointer; box-shadow:0 2px 8px rgba(99,102,241,0.3);">
+              <span>🤖</span> ${t('runAiVerifyBtn')}
+            </button>
+            <button class="cta-btn-secondary" onclick="toggleAiSettingsDrawer()" style="display:inline-flex; align-items:center; gap:6px; padding:9px 14px; border-radius:8px; border:1px solid var(--border); background:var(--bg-card); color:var(--text-secondary); cursor:pointer; font-size:13px;">
+              <span>⚙️</span> ${t('aiSettingsTitle')}
+            </button>
+          </div>
+        </div>
+        <div id="option-b-comparison-container" style="margin-top:20px; display:none;"></div>
+      </div>
     </div>
   `;
 
   container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+/**
+ * Trigger Option B (Deep AI Verification) afterwards on demand
+ */
+async function triggerOptionBAfterwards() {
+  const textarea = document.getElementById('student-letter-textarea');
+  const text = textarea && textarea.value.trim() ? textarea.value.trim() : (lastOptionAEvalData ? lastOptionAEvalData.rawText : '');
+  const t = getShowcaseText;
+  const compContainer = document.getElementById('option-b-comparison-container');
+  const triggerBtn = document.getElementById('btn-trigger-option-b');
+
+  if (!text || text.split(/\s+/).length < 20) {
+    alert(t('liveTextareaLabel'));
+    return;
+  }
+
+  const provider = document.getElementById('ai-provider-select')?.value || localStorage.getItem('deutschlernen_ai_provider') || 'openai';
+  const apiKey = document.getElementById('ai-api-key-input')?.value?.trim() || localStorage.getItem('deutschlernen_ai_key') || '';
+
+  if (provider !== 'proxy' && !apiKey) {
+    const msgEl = document.getElementById('ai-settings-msg');
+    if (msgEl) {
+      msgEl.style.color = '#ef4444';
+      msgEl.textContent = 'Please enter an API Key in AI Settings to run Option B.';
+    }
+    const drawer = document.getElementById('ai-settings-drawer');
+    if (drawer) {
+      drawer.style.display = 'block';
+      drawer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+    return;
+  }
+
+  if (compContainer) {
+    compContainer.style.display = 'block';
+    compContainer.innerHTML = `
+      <div style="text-align:center; padding:24px; background:var(--bg-card); border-radius:10px; border:1px solid var(--border);">
+        <div style="font-size:28px; margin-bottom:8px;">⏳</div>
+        <p style="color:var(--accent-gold); font-weight:700; font-size:15px; margin:0;">${t('liveEvaluating')}</p>
+        <p style="color:var(--text-muted); font-size:12px; margin-top:4px;">Contacting ${provider.toUpperCase()} for Option B verification...</p>
+      </div>
+    `;
+    compContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+  if (triggerBtn) triggerBtn.disabled = true;
+
+  const promptSelect = document.getElementById('prompt-select-input');
+  const promptKey = promptSelect ? promptSelect.value : 'custom';
+
+  try {
+    const optBData = await callLlmLetterGrader(text, promptKey, apiKey, provider);
+    optBData.rawText = text;
+    if (!lastOptionAEvalData) {
+      const lang = getActiveLanguage();
+      lastOptionAEvalData = evaluateStudentLetterB1(text, promptKey, lang);
+      lastOptionAEvalData.rawText = text;
+    }
+    renderOptionBComparison(lastOptionAEvalData, optBData);
+  } catch (err) {
+    console.error("Option B verification failed:", err);
+    if (compContainer) {
+      compContainer.innerHTML = `
+        <div style="background:rgba(239,68,68,0.1); border:1px solid #ef4444; border-radius:10px; padding:16px; color:var(--text-primary);">
+          <h5 style="color:#ef4444; margin:0 0 6px 0;">⚠️ Option B Verification Failed</h5>
+          <p style="font-size:13px; margin:0 0 10px 0;">${err.message || 'Could not complete LLM evaluation.'}</p>
+          <button class="cta-btn-secondary" onclick="toggleAiSettingsDrawer()" style="font-size:12px; padding:6px 12px;">Check AI Key Settings</button>
+        </div>
+      `;
+    }
+  } finally {
+    if (triggerBtn) triggerBtn.disabled = false;
+  }
+}
+
+/**
+ * Render Side-by-Side Calibration and Comparison between Option A & Option B
+ */
+function renderOptionBComparison(optAData, optBData) {
+  const container = document.getElementById('option-b-comparison-container');
+  const lang = getActiveLanguage();
+  const langKey = lang.charAt(0).toUpperCase() + lang.slice(1);
+  const t = getShowcaseText;
+
+  if (!optAData || !optBData) {
+    const fallback = `<p style="color:var(--text-muted); font-size:13px;">Both Option A and Option B results are required for calibration comparison.</p>`;
+    if (container) {
+      container.style.display = 'block';
+      container.innerHTML = fallback;
+    }
+    return fallback;
+  }
+
+  const scoreA = optAData.totalScore !== undefined ? optAData.totalScore : 0;
+  const scoreB = optBData.totalScore !== undefined ? optBData.totalScore : 0;
+  const delta = Math.abs(scoreA - scoreB);
+  const agreement = Math.max(0, Math.round(100 - (delta / 45) * 100));
+
+  let badgeColor = '#10b981';
+  let badgeBg = 'rgba(16,185,129,0.15)';
+  let agreementStatus = delta === 0 ? 'Exact Match (100%)' : `±${delta} pt${delta > 1 ? 's' : ''} (${agreement}% agreement)`;
+  if (delta > 6) {
+    badgeColor = '#ef4444';
+    badgeBg = 'rgba(239,68,68,0.15)';
+  } else if (delta > 3) {
+    badgeColor = '#f59e0b';
+    badgeBg = 'rgba(245,158,11,0.15)';
+  }
+
+  const criteriaNames = [
+    { id: 'inhalt', name: 'Criterion I: Aufgabenbewältigung', nameTr: 'Kriter I: Görev Başarımı', nameAr: 'المعيار I: إنجاز المهمة', nameUk: 'Критерій I: Виконання завдання' },
+    { id: 'sprache', name: 'Criterion II: Kommunikative Gestaltung', nameTr: 'Kriter II: İletişimsel Düzen', nameAr: 'المعيار II: الصياغة التواصلية', nameUk: 'Критерій II: Комунікативна структура' },
+    { id: 'korrektheit', name: 'Criterion III: Formale Richtigkeit', nameTr: 'Kriter III: Biçimsel Doğruluk', nameAr: 'المعيار III: الصحة الشكلية والقواعد', nameUk: 'Критерій III: Граматична та формальна точність' }
+  ];
+
+  const criteriaRows = criteriaNames.map((item, idx) => {
+    const cA = optAData.criteria ? optAData.criteria[idx] : null;
+    const cB = optBData.criteria ? optBData.criteria[idx] : null;
+    const rA = cA ? `${cA.ratingLetter} (${cA.rawScore}/5 &rarr; ${cA.finalScore}/15)` : 'N/A';
+    const rB = cB ? `${cB.ratingLetter} (${cB.rawScore}/5 &rarr; ${cB.finalScore}/15)` : 'N/A';
+    const isMatch = cA && cB && cA.ratingLetter === cB.ratingLetter;
+    const matchBadge = isMatch
+      ? '<span style="color:#10b981; font-weight:600;">✅ Match</span>'
+      : '<span style="color:#f59e0b; font-weight:600;">⚖️ Minor Delta</span>';
+    const label = item['name' + langKey] || item.name;
+
+    return `
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:10px 12px; font-weight:600; font-size:13px; color:var(--text-primary);">${label}</td>
+        <td style="padding:10px 12px; text-align:center; font-size:13px; color:var(--text-secondary);">${rA}</td>
+        <td style="padding:10px 12px; text-align:center; font-size:13px; color:var(--text-secondary);">${rB}</td>
+        <td style="padding:10px 12px; text-align:center; font-size:12px;">${matchBadge}</td>
+      </tr>
+    `;
+  }).join('');
+
+  const html = `
+    <div class="option-b-comparison-box" style="background:var(--bg-card); border-radius:12px; border:1px solid rgba(99,102,241,0.3); padding:20px; box-shadow:0 4px 16px rgba(0,0,0,0.06);">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+        <h4 style="margin:0; font-size:16px; font-weight:700; color:var(--text-primary); display:flex; align-items:center; gap:8px;">
+          ${t('comparisonTitle')}
+        </h4>
+        <span class="showcase-badge" style="background:${badgeBg}; color:${badgeColor}; font-weight:700; font-size:12px; padding:6px 12px;">
+          ${t('scoreDeltaLabel')} ${agreementStatus}
+        </span>
+      </div>
+
+      <!-- Side by side comparison cards -->
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:14px; margin-bottom:18px;">
+        <!-- Option A Summary -->
+        <div style="background:rgba(59,130,246,0.05); border:1px solid rgba(59,130,246,0.2); border-radius:10px; padding:14px;">
+          <div style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; color:#3b82f6; margin-bottom:4px;">
+            ⚡ ${t('ruleEngineLabel')}
+          </div>
+          <div style="display:flex; align-items:baseline; gap:6px;">
+            <span style="font-size:26px; font-weight:800; color:var(--text-primary);">${scoreA}</span>
+            <span style="font-size:14px; color:var(--text-muted); font-weight:600;">/ 45 ${t('ptsMax')}</span>
+          </div>
+          <div style="font-size:13px; color:var(--text-secondary); margin-top:4px;">
+            ${optAData.grade || ''} (${optAData.percentage || 0}%) • <strong style="color:${optAData.passed ? '#10b981' : '#ef4444'};">${optAData.passed ? t('livePassBadge') : t('liveFailBadge')}</strong>
+          </div>
+        </div>
+
+        <!-- Option B Summary -->
+        <div style="background:rgba(147,51,234,0.05); border:1px solid rgba(147,51,234,0.2); border-radius:10px; padding:14px;">
+          <div style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; color:#9333ea; margin-bottom:4px;">
+            🤖 ${t('deepAiLabel')}
+          </div>
+          <div style="display:flex; align-items:baseline; gap:6px;">
+            <span style="font-size:26px; font-weight:800; color:var(--text-primary);">${scoreB}</span>
+            <span style="font-size:14px; color:var(--text-muted); font-weight:600;">/ 45 ${t('ptsMax')}</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-secondary); margin-top:4px;">
+            ${optBData.grade || ''} (${optBData.percentage || 0}%) • <strong style="color:${optBData.passed ? '#10b981' : '#ef4444'};">${optBData.passed ? t('livePassBadge') : t('liveFailBadge')}</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Criteria Matrix Table -->
+      <div style="overflow-x:auto;">
+        <table style="width:100%; border-collapse:collapse; text-align:left; font-size:13px;">
+          <thead>
+            <tr style="background:rgba(0,0,0,0.03); border-bottom:2px solid var(--border);">
+              <th style="padding:8px 12px; font-weight:700; color:var(--text-primary);">${t('rubricHeader')}</th>
+              <th style="padding:8px 12px; text-align:center; font-weight:700; color:var(--text-primary);">${t('ruleEngineLabel')}</th>
+              <th style="padding:8px 12px; text-align:center; font-weight:700; color:var(--text-primary);">${t('deepAiLabel')}</th>
+              <th style="padding:8px 12px; text-align:center; font-weight:700; color:var(--text-primary);">Calibration</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${criteriaRows}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Calibration Summary Note -->
+      <div style="margin-top:14px; padding:10px 14px; border-radius:8px; background:rgba(99,102,241,0.08); font-size:12px; color:var(--text-secondary); line-height:1.5;">
+        ${t('aiCompareNote')}
+      </div>
+    </div>
+  `;
+
+  if (container) {
+    container.style.display = 'block';
+    container.innerHTML = html;
+    container.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  return html;
 }
 
 /**
@@ -1498,7 +1767,14 @@ async function submitDirectAiGrading() {
   try {
     const evalData = await callLlmLetterGrader(text, promptKey, apiKey, provider);
     evalData.rawText = text;
+    if (!lastOptionAEvalData) {
+      lastOptionAEvalData = evaluateStudentLetterB1(text, promptKey, lang);
+      lastOptionAEvalData.rawText = text;
+    }
     renderLiveGradingResults(evalData, true);
+    if (lastOptionAEvalData) {
+      renderOptionBComparison(lastOptionAEvalData, evalData);
+    }
   } catch (err) {
     console.error("Direct AI grading failed:", err);
     if (container) {
@@ -1735,6 +2011,8 @@ if (typeof window !== 'undefined') {
   window.renderLiveGradingResults = renderLiveGradingResults;
   window.submitLiveLetterGrading = submitLiveLetterGrading;
   window.submitDirectAiGrading = submitDirectAiGrading;
+  window.triggerOptionBAfterwards = triggerOptionBAfterwards;
+  window.renderOptionBComparison = renderOptionBComparison;
   window.toggleAiSettingsDrawer = toggleAiSettingsDrawer;
   window.handleAiProviderChange = handleAiProviderChange;
   window.saveAiSettings = saveAiSettings;
@@ -1758,6 +2036,10 @@ if (typeof module !== 'undefined' && module.exports) {
     renderLiveGradingResults,
     submitLiveLetterGrading,
     submitDirectAiGrading,
+    triggerOptionBAfterwards,
+    renderOptionBComparison,
+    getLastOptionAEvalData: () => lastOptionAEvalData,
+    setLastOptionAEvalData: (val) => { lastOptionAEvalData = val; },
     toggleAiSettingsDrawer,
     handleAiProviderChange,
     saveAiSettings,
