@@ -234,7 +234,50 @@ const GOAL_CONFIG = {
     hintTr: 'Sesli telaffuz ve akıllı algoritma ile doğrudan hızlı test modu',
     hintAr: 'وضع تدريب سرعة مباشر مع نطق صوتي وتكرار متباعد',
     hintUk: 'Режим швидкісного тренування з аудіо та інтервальним повторенням',
+    ctaEn: '⚡ Start Vocab Drill →',
+    ctaTr: '⚡ Kelime Antrenmanı →',
+    ctaAr: '⚡ بدء تدريب المفردات ←',
+    ctaUk: '⚡ Почати тренування слів →',
     trainerUrl: 'trainer.html?level=ALL'
+  },
+  'goal-lid': {
+    id: 'goal-lid',
+    icon: '🇩🇪',
+    nameEn: 'Leben in Deutschland (LiD)',
+    nameTr: 'Leben in Deutschland (LiD)',
+    nameAr: 'الحياة في ألمانيا (LiD)',
+    nameUk: 'Життя в Німеччині (LiD)',
+    portalTitleEn: '🇩🇪 LiD Citizenship Portal',
+    portalTitleTr: '🇩🇪 LiD Vatandaşlık Portalı',
+    portalTitleAr: '🇩🇪 بوابة اختبار الجنسية LiD',
+    portalTitleUk: '🇩🇪 Портал тесту на громадянство LiD',
+    planLabelEn: 'Official BAMF 310 Questions',
+    planLabelTr: 'Resmi BAMF 310 Soru',
+    planLabelAr: '310 سؤال رسمي من BAMF',
+    planLabelUk: 'Офіційні 310 питань BAMF',
+    level: 'B1',
+    levels: ['B1'],
+    badgeEn: '🇩🇪 Goal: Leben in Deutschland & Citizenship Exam',
+    badgeTr: '🇩🇪 Hedef: Leben in Deutschland & Vatandaşlık Sınavı',
+    badgeAr: '🇩🇪 الهدف: اختبار الحياة في ألمانيا والجنسية',
+    badgeUk: '🇩🇪 Ціль: Життя в Німеччині та тест на громадянство',
+    titleEn: 'Pass Leben in Deutschland<br>& Einbürgerungstest',
+    titleTr: 'Leben in Deutschland ve<br>Vatandaşlık Sınavını Geçin',
+    titleAr: 'اجتز امتحان الحياة في ألمانيا<br>واختبار التجنس',
+    titleUk: 'Складіть іспит Життя в Німеччині<br>та тест на громадянство',
+    descEn: 'Master all 300 general questions and 160 state-specific questions with quad-lingual translations, official illustrations, and 33-question simulation mode.',
+    descTr: 'Tüm 300 genel soru ve 16 eyaletin 160 sorusunu çok dilli çeviriler, resmi sınav resimleri ve 33 soruluk deneme sınavı simülasyonuyla çalışın.',
+    descAr: 'تدرب على جميع الأسئلة العامة الـ 300 وأسئلة الولايات الـ 160 مع ترجمات متعددة اللغات وصور رسمية ومحاكاة امتحان من 33 سؤالاً.',
+    descUk: 'Опануйте всі 300 загальних питань та 160 питань федеральних земель з перекладами, офіційними ілюстраціями та симуляцією іспиту на 33 питання.',
+    hintEn: 'Focusing on 300 BAMF citizenship questions, state questions & exam simulation',
+    hintTr: '300 resmi BAMF vatandaşlık sorusu, eyalet soruları ve sınav simülasyonuna odaklanıyor',
+    hintAr: 'التركيز على 300 سؤال من BAMF للجنسية وأسئلة الولايات ومحاكاة الامتحان',
+    hintUk: 'Фокус на 300 офіційних питаннях BAMF, питаннях земель та симуляції',
+    ctaEn: '🇩🇪 Start LiD Drill →',
+    ctaTr: '🇩🇪 LiD Sınavına Başla →',
+    ctaAr: '🇩🇪 ابدأ اختبار LiD ←',
+    ctaUk: '🇩🇪 Почати тест LiD →',
+    trainerUrl: '#lid-trainer-section'
   }
 };
 
@@ -1150,6 +1193,17 @@ function applyGoalSelection() {
     return;
   }
 
+  if (currentGoalId === 'goal-lid') {
+    closeGoalModal();
+    updateGoalDisplays();
+    renderSidebar();
+    const lidEl = document.getElementById('lid-trainer-section');
+    if (lidEl) {
+      lidEl.scrollIntoView({ behavior: 'smooth' });
+    }
+    return;
+  }
+
   updateGoalDisplays();
   renderSidebar(); // Re-render sidebar in case goal or language was adjusted
   renderCards(); // Re-render material cards to reflect recommendation badges
@@ -1230,7 +1284,13 @@ function updateGoalDisplays() {
   if (stripTitle) stripTitle.textContent = `${pActiveTrack} ${goalName}`;
   if (stripHint) stripHint.textContent = goalHint;
   if (stripIcon) stripIcon.textContent = goal.icon;
-  if (stripTrainerLink) stripTrainerLink.href = goal.trainerUrl || `trainer.html?level=${currentGoalLevel}`;
+  if (stripTrainerLink) {
+    stripTrainerLink.href = goal.trainerUrl || `trainer.html?level=${currentGoalLevel}`;
+    const ctaText = getGoalText(goal, 'cta');
+    if (ctaText) {
+      stripTrainerLink.innerHTML = `<span>${ctaText}</span>`;
+    }
+  }
 }
 
 function initEntranceGoal() {

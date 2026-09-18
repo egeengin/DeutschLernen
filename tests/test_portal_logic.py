@@ -128,6 +128,7 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn('card-goal-b1', index_html)
         self.assertIn('card-goal-b2', index_html)
         self.assertIn('card-goal-vocab', index_html)
+        self.assertIn('card-goal-lid', index_html)
 
         # Check portal.js goal config & persistence
         self.assertIn("const GOAL_CONFIG = {", self.portal_js)
@@ -135,6 +136,7 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn("'goal-b1':", self.portal_js)
         self.assertIn("'goal-b2':", self.portal_js)
         self.assertIn("'goal-vocab':", self.portal_js)
+        self.assertIn("'goal-lid':", self.portal_js)
         self.assertIn("deutschlernen_goal", self.portal_js)
         self.assertIn("deutschlernen_level", self.portal_js)
 
@@ -265,8 +267,8 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn("if (currentLang === 'ar') return m[field + 'Ar']", self.portal_js)
         self.assertIn("if (currentLang === 'uk') return m[field + 'Uk']", self.portal_js)
 
-        # Verify GOAL_CONFIG has full 4-language parity for all 5 goals
-        goal_ids = ['goal-a1-a2', 'goal-b1', 'goal-b2', 'goal-c1', 'goal-vocab']
+        # Verify GOAL_CONFIG has full 4-language parity for all goals
+        goal_ids = ['goal-a1-a2', 'goal-b1', 'goal-b2', 'goal-c1', 'goal-vocab', 'goal-lid']
         for gid in goal_ids:
             self.assertIn(f"'{gid}':", self.portal_js)
             for lang_suffix in ['En', 'Tr', 'Ar', 'Uk']:

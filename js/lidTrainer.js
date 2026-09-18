@@ -264,20 +264,27 @@ function renderSingleLiDQuestion(q) {
   if (!q) return '<p style="text-align:center; padding:30px; color:var(--text-muted);">No questions available.</p>';
   const lang = typeof currentLang !== 'undefined' ? currentLang : 'en';
 
+  const transObj = q.translations?.[lang] || q.translations?.en;
+  let qTrans = transObj?.question || '';
+  if (qTrans === q.questionDe) qTrans = '';
+
   let transExp = q.explanationEn || '';
   let transLangLabel = 'EN';
   let isRtl = false;
 
-  if (lang === 'tr' && q.explanationTr) {
-    transExp = q.explanationTr;
+  if (lang === 'tr') {
+    transExp = q.explanationTr || transObj?.context || '';
     transLangLabel = 'TR';
-  } else if (lang === 'ar' && q.explanationAr) {
-    transExp = q.explanationAr;
+  } else if (lang === 'ar') {
+    transExp = q.explanationAr || transObj?.context || '';
     transLangLabel = 'AR';
     isRtl = true;
-  } else if (lang === 'uk' && q.explanationUk) {
-    transExp = q.explanationUk;
+  } else if (lang === 'uk') {
+    transExp = q.explanationUk || transObj?.context || '';
     transLangLabel = 'UK';
+  } else {
+    transExp = q.explanationEn || transObj?.context || '';
+    transLangLabel = 'EN';
   }
 
   // If in exam mode and already answered
@@ -300,7 +307,19 @@ function renderSingleLiDQuestion(q) {
         </button>
       ` : ''}
     </div>
+    
     <h3 class="lid-q-text">${q.questionDe}</h3>
+    ${qTrans ? `
+      <p class="lid-q-translation" ${isRtl ? 'dir="rtl" style="text-align:right;"' : ''} style="font-size:14px; color:var(--text-muted); margin-top:-6px; margin-bottom:14px; font-style:italic;">
+        ${qTrans}
+      </p>
+    ` : ''}
+
+    ${q.image ? `
+      <div class="lid-q-image-container" style="text-align:center; margin:16px 0;">
+        <img src="${q.image}" class="lid-q-img" alt="BAMF Frage Abbildung" style="max-width:100%; max-height:280px; object-fit:contain; border-radius:8px; border:1px solid var(--border); box-shadow:0 4px 12px rgba(0,0,0,0.15); background:#ffffff; padding:6px;">
+      </div>
+    ` : ''}
 
     <div class="lid-options-list">
       ${q.optionsDe.map((opt, idx) => {
@@ -309,10 +328,14 @@ function renderSingleLiDQuestion(q) {
           if (idx === q.correctIndex) extraClass = ' correct';
           else if (!lidExamAnswers[currentLiDIndex]) extraClass = ' wrong';
         }
+        const optTrans = transObj?.options?.[idx] || '';
         return `
           <button class="lid-opt-btn${extraClass}" ${isAnswered ? 'disabled' : ''} onclick="checkLiDAnswer(${idx}, ${q.correctIndex}, this)">
             <span class="opt-letter">${String.fromCharCode(65 + idx)}.</span>
-            <span class="opt-text">${opt}</span>
+            <div style="flex:1;">
+              <span class="opt-text">${opt}</span>
+              ${optTrans && optTrans !== opt ? `<span class="opt-trans" ${isRtl ? 'dir="rtl" style="text-align:right;"' : ''} style="display:block; font-size:12px; color:var(--text-muted); margin-top:2px;">${optTrans}</span>` : ''}
+            </div>
           </button>
         `;
       }).join('')}
