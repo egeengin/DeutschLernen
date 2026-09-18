@@ -149,6 +149,27 @@ function renderSingleLiDQuestion(q) {
   `;
 }
 
+function getActiveLiDQuestionsPool() {
+  const general = typeof LID_QUESTIONS !== 'undefined' ? LID_QUESTIONS : [];
+  const stateMap = typeof LID_STATE_QUESTIONS !== 'undefined' ? LID_STATE_QUESTIONS : {};
+  const stateSpecific = stateMap[selectedLiDState] || [];
+  
+  let pool = [...general, ...stateSpecific];
+
+  const searchInput = document.getElementById('lid-search-input');
+  const term = searchInput ? searchInput.value.trim().toLowerCase() : '';
+
+  if (term) {
+    pool = pool.filter(q => 
+      q.questionDe.toLowerCase().includes(term) ||
+      (q.explanationDe && q.explanationDe.toLowerCase().includes(term)) ||
+      (q.b1VocabTags && q.b1VocabTags.some(t => t.toLowerCase().includes(term)))
+    );
+  }
+
+  return pool;
+}
+
 function checkLiDAnswer(selectedIdx, correctIdx, btnEl) {
   const parentContainer = btnEl.closest('.lid-options-list');
   const buttons = parentContainer.querySelectorAll('.lid-opt-btn');
@@ -166,8 +187,8 @@ function checkLiDAnswer(selectedIdx, correctIdx, btnEl) {
 }
 
 function nextLiDQuestion() {
-  const questions = typeof LID_QUESTIONS !== 'undefined' ? LID_QUESTIONS : [];
-  if (currentLiDIndex < questions.length - 1) {
+  const pool = getActiveLiDQuestionsPool();
+  if (currentLiDIndex < pool.length - 1) {
     currentLiDIndex++;
     updateLiDView();
   }
@@ -182,23 +203,48 @@ function prevLiDQuestion() {
 
 function changeLiDState(stateCode) {
   selectedLiDState = stateCode;
-  alert(`State updated to ${stateCode}. State-specific questions (Questions 301–310) updated!`);
+  currentLiDIndex = 0;
+  updateLiDView();
+
+  const stateSelect = document.getElementById('lid-state-select');
+  const stateName = stateSelect ? stateSelect.options[stateSelect.selectedIndex]?.text : stateCode;
+
+  // Non-intrusive status pill update
+  let statusPill = document.getElementById('lid-state-active-pill');
+  if (!statusPill && stateSelect) {
+    statusPill = document.createElement('div');
+    statusPill.id = 'lid-state-active-pill';
+    statusPill.style.cssText = 'font-size:12px; color:var(--accent-gold); margin-top:6px; font-weight:600;';
+    stateSelect.parentElement.appendChild(statusPill);
+  }
+  if (statusPill) {
+    statusPill.textContent = `📍 State updated: ${stateName} questions active (Questions 301–310 loaded)`;
+  }
 }
 
 function filterLiDQuestions(term) {
-  // Simple client-side search trigger
+  currentLiDIndex = 0;
+  updateLiDView();
 }
 
 function updateLiDView() {
   const card = document.getElementById('lid-active-question-card');
   const label = document.getElementById('lid-progress-label');
-  const questions = typeof LID_QUESTIONS !== 'undefined' ? LID_QUESTIONS : [];
+  const pool = getActiveLiDQuestionsPool();
+  const lang = typeof currentLang !== 'undefined' ? currentLang : 'en';
 
-  if (card && questions[currentLiDIndex]) {
-    card.innerHTML = renderSingleLiDQuestion(questions[currentLiDIndex]);
+  const qLabel = lang === 'tr' ? 'Soru' : (lang === 'ar' ? 'سؤال' : (lang === 'uk' ? 'Питання' : 'Question'));
+  const ofLabel = lang === 'tr' ? '/' : (lang === 'ar' ? 'من' : (lang === 'uk' ? 'з' : 'of'));
+
+  if (card) {
+    if (pool.length > 0 && pool[currentLiDIndex]) {
+      card.innerHTML = renderSingleLiDQuestion(pool[currentLiDIndex]);
+    } else {
+      card.innerHTML = `<div style="text-align:center; padding:30px; color:var(--text-muted);">🔍 No questions match your search filter. Try clearing the search box.</div>`;
+    }
   }
   if (label) {
-    label.textContent = `Question ${currentLiDIndex + 1} of ${questions.length}`;
+    label.textContent = pool.length > 0 ? `${qLabel} ${currentLiDIndex + 1} ${ofLabel} ${pool.length}` : `${qLabel} 0 ${ofLabel} 0`;
   }
 }
 
@@ -209,4 +255,5 @@ if (typeof window !== 'undefined') {
   window.prevLiDQuestion = prevLiDQuestion;
   window.changeLiDState = changeLiDState;
   window.filterLiDQuestions = filterLiDQuestions;
+  window.getActiveLiDQuestionsPool = getActiveLiDQuestionsPool;
 }
