@@ -147,12 +147,16 @@ class TestServiceWorkerAndPWAAssets(unittest.TestCase):
             self.assertGreaterEqual(w / 512, 0.85, "Icon emblem must fill at least 85% of canvas width")
             self.assertGreaterEqual(h / 512, 0.85, "Icon emblem must fill at least 85% of canvas height")
 
-        # Test scripts/generate_icons.py execution as __main__
+        # Test scripts/generate_icons.py execution as __main__ into a temp directory
         import io
+        import sys
         from contextlib import redirect_stdout
-        script_path = os.path.join(ROOT_DIR, "scripts", "generate_icons.py")
-        with redirect_stdout(io.StringIO()):
-            runpy.run_path(script_path, run_name="__main__")
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as tmpdir:
+            script_path = os.path.join(ROOT_DIR, "scripts", "generate_icons.py")
+            with patch.object(sys, "argv", ["generate_icons.py", tmpdir]):
+                with redirect_stdout(io.StringIO()):
+                    runpy.run_path(script_path, run_name="__main__")
 
 
 if __name__ == "__main__":

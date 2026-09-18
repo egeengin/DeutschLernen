@@ -92,7 +92,8 @@ def generate_icons(source_image_path=None, output_dir=None):
 
 def main():
     print("Generating transparent, large-emblem icons for DeutschLernen...")
-    generated = generate_icons()
+    out_dir = sys.argv[1] if len(sys.argv) > 1 else None
+    generated = generate_icons(output_dir=out_dir)
     for key, path in generated.items():
         print(f"  [OK] Generated {key}: {path}")
     print("Icon generation complete!")
