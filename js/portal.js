@@ -1201,6 +1201,11 @@ function applyGoalSelection() {
     if (lidEl) {
       lidEl.scrollIntoView({ behavior: 'smooth' });
     }
+    if (typeof getStoredLiDState === 'function' && !getStoredLiDState()) {
+      setTimeout(() => {
+        if (typeof openLiDStateModal === 'function') openLiDStateModal();
+      }, 500);
+    }
     return;
   }
 
