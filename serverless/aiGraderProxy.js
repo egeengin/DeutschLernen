@@ -21,11 +21,12 @@ export async function handleGradeLetter(request, env, db) {
     return new Response(JSON.stringify({ error: 'Unauthorized: Invalid Auth Token' }), { status: 401 });
   }
 
-  // 2. Check User Quota
-  const userRes = await db.query('SELECT letter_credits FROM users WHERE id = $1', [user.id]);
-  const credits = userRes.rows[0]?.letter_credits || 0;
-
-  if (credits <= 0) {
+  // 2. Atomically Claim/Decrement User Quota (Prevents concurrent multi-tab exploit)
+  const quotaRes = await db.query(
+    'UPDATE users SET letter_credits = letter_credits - 1 WHERE id = $1 AND letter_credits > 0 RETURNING letter_credits',
+    [user.id]
+  );
+  if (!quotaRes.rows || quotaRes.rows.length === 0) {
     return new Response(
       JSON.stringify({
         error: 'Quota Exceeded',
@@ -34,6 +35,7 @@ export async function handleGradeLetter(request, env, db) {
       { status: 403, headers: { 'Content-Type': 'application/json' } }
     );
   }
+  const remainingCredits = quotaRes.rows[0].letter_credits;
 
   // 3. Parse Request Payload
   const body = await request.json();
@@ -104,8 +106,7 @@ ${studentText}
     const aiData = await aiResponse.json();
     const evaluationResult = JSON.parse(aiData.choices[0].message.content);
 
-    // 6. Atomically Decrement Quota & Record Evaluation
-    await db.query('UPDATE users SET letter_credits = letter_credits - 1 WHERE id = $1', [user.id]);
+    // 6. Record Evaluation (Quota already atomically decremented before LLM call)
     await db.query(
       'INSERT INTO letter_evaluations (user_id, prompt_title, user_submission, score_inhalt, score_sprache, score_korrektheit, score_total, feedback_json) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)',
       [
@@ -123,12 +124,18 @@ ${studentText}
     return new Response(
       JSON.stringify({
         success: true,
-        remainingCredits: credits - 1,
+        remainingCredits: remainingCredits,
         evaluation: evaluationResult
       }),
       { status: 200, headers: { 'Content-Type': 'application/json' } }
     );
   } catch (err) {
+    // Compensating refund transaction: restore credit if LLM call or DB insert fails
+    try {
+      await db.query('UPDATE users SET letter_credits = letter_credits + 1 WHERE id = $1', [user.id]);
+    } catch (refundErr) {
+      console.error('Failed to refund credit on error:', refundErr);
+    }
     console.error('AI Proxy Error:', err);
     return new Response(JSON.stringify({ error: 'Failed to evaluate letter. Please try again later.' }), { status: 500 });
   }

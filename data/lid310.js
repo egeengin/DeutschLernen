@@ -296,6 +296,12 @@ const LID_STATE_QUESTIONS = {
   ]
 };
 
+if (typeof globalThis !== 'undefined') {
+  globalThis.LID_QUESTIONS = LID_QUESTIONS;
+  globalThis.GERMAN_STATES = GERMAN_STATES;
+  globalThis.LID_STATE_QUESTIONS = LID_STATE_QUESTIONS;
+}
+
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { LID_QUESTIONS, GERMAN_STATES, LID_STATE_QUESTIONS };
 }

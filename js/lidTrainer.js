@@ -1,17 +1,28 @@
 /**
  * Leben in Deutschland (LiD) 310 Citizenship Test Browser & Quiz Component
  * 100% Free Client-Side PWA Feature for SEO lead generation and citizenship prep.
+ * Features:
+ * 1. Full 310 questions browser with Bundesland selector & search.
+ * 2. Authentic BAMF 33-question / 60-minute timed exam simulation mode (§ 10 StAG pass threshold >= 17/33).
+ * 3. Automatic error capture into personal Fehlerheft review deck.
  */
 
 let currentLiDIndex = 0;
 let selectedLiDState = 'NW';
 let userLiDScore = 0;
 
+// Exam Simulation Mode State
+let isLiDExamMode = false;
+let lidExamQuestions = [];
+let lidExamAnswers = {}; // index -> boolean
+let lidExamTimerInterval = null;
+let lidExamSecondsLeft = 3600; // 60 minutes
+
 function renderLiDTrainer(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  const questions = typeof LID_QUESTIONS !== 'undefined' ? LID_QUESTIONS : [];
+  const questions = getActiveLiDQuestionsPool();
   const states = typeof GERMAN_STATES !== 'undefined' ? GERMAN_STATES : [];
   const lang = typeof currentLang !== 'undefined' ? currentLang : 'en';
 
@@ -49,10 +60,32 @@ function renderLiDTrainer(containerId) {
     prev: { en: "← Previous", tr: "← Önceki", ar: "← السابق", uk: "← Попереднє" },
     next: { en: "Next Question →", tr: "Sonraki Soru →", ar: "السؤال التالي →", uk: "Наступне питання →" },
     qLabel: { en: "Question", tr: "Soru", ar: "سؤال", uk: "Питання" },
-    ofLabel: { en: "of", tr: "/", ar: "من", uk: "з" }
+    ofLabel: { en: "of", tr: "/", ar: "من", uk: "з" },
+    startExam: {
+      en: "⏱️ Timed Exam Mode (33 Qs / 60 Min)",
+      tr: "⏱️ Zaman Ayarlı Sınav Modu (33 Soru / 60 Dk)",
+      ar: "⏱️ محاكاة الامتحان (33 سؤال / 60 دقيقة)",
+      uk: "⏱️ Режим іспиту (33 питання / 60 хв)"
+    },
+    exitExam: {
+      en: "✕ Exit Exam Mode",
+      tr: "✕ Sınav Modundan Çık",
+      ar: "✕ إنهاء المحاكاة",
+      uk: "✕ Вийти з режиму іспиту"
+    },
+    submitExam: {
+      en: "📊 Grade Exam Now",
+      tr: "📊 Sınavı Puanla",
+      ar: "📊 إنهاء وتقييم الامتحان",
+      uk: "📊 Оцінити іспит"
+    }
   };
 
   const t = (key) => uiText[key]?.[lang] || uiText[key]?.en || '';
+
+  const timerMin = Math.floor(lidExamSecondsLeft / 60);
+  const timerSec = String(lidExamSecondsLeft % 60).padStart(2, '0');
+  const answeredCount = Object.keys(lidExamAnswers).length;
 
   container.innerHTML = `
     <div class="lid-trainer-wrapper">
@@ -62,20 +95,58 @@ function renderLiDTrainer(containerId) {
         <p>${t('desc')}</p>
       </div>
 
-      <!-- Controls Row: State Selector & Search Filter -->
-      <div class="lid-controls-bar">
-        <div class="lid-control-group">
-          <label for="lid-state-select"><strong>${t('selectState')}</strong></label>
-          <select id="lid-state-select" class="styled-select" onchange="changeLiDState(this.value)">
-            ${states.map(s => `<option value="${s.code}" ${s.code === selectedLiDState ? 'selected' : ''}>${s.name} (Capital: ${s.capital})</option>`).join('')}
-          </select>
+      <!-- Controls Row: State Selector, Search Filter, Exam Simulation Mode Trigger -->
+      <div class="lid-controls-bar" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
+        <div style="display:flex; gap:16px; flex-wrap:wrap; flex:1;">
+          <div class="lid-control-group">
+            <label for="lid-state-select"><strong>${t('selectState')}</strong></label>
+            <select id="lid-state-select" class="styled-select" onchange="changeLiDState(this.value)" ${isLiDExamMode ? 'disabled' : ''}>
+              ${states.map(s => `<option value="${s.code}" ${s.code === selectedLiDState ? 'selected' : ''}>${s.name} (Capital: ${s.capital})</option>`).join('')}
+            </select>
+          </div>
+
+          ${!isLiDExamMode ? `
+          <div class="lid-control-group">
+            <label for="lid-search-input"><strong>Search:</strong></label>
+            <input type="text" id="lid-search-input" class="search-box" placeholder="${t('searchPlaceholder')}" onkeyup="filterLiDQuestions(this.value)">
+          </div>
+          ` : ''}
         </div>
 
-        <div class="lid-control-group">
-          <label for="lid-search-input"><strong>Search:</strong></label>
-          <input type="text" id="lid-search-input" class="search-box" placeholder="${t('searchPlaceholder')}" onkeyup="filterLiDQuestions(this.value)">
+        <div>
+          ${!isLiDExamMode ? `
+            <button class="cta-btn-primary" onclick="startLiDExamSimulation()" style="padding:10px 18px; font-weight:700; background:linear-gradient(135deg, #d97706 0%, #b45309 100%);">
+              ${t('startExam')}
+            </button>
+          ` : `
+            <div style="display:flex; gap:8px; align-items:center;">
+              <button class="cta-btn-primary" onclick="finishLiDExam()" style="padding:8px 16px; font-weight:700;">
+                ${t('submitExam')} (${answeredCount}/33)
+              </button>
+              <button class="entrance-dismiss-btn" onclick="exitLiDExamSimulation()" style="padding:8px 12px; font-size:13px;">
+                ${t('exitExam')}
+              </button>
+            </div>
+          `}
         </div>
       </div>
+
+      ${isLiDExamMode ? `
+      <!-- Exam Simulation Active Banner -->
+      <div style="background:rgba(217, 119, 6, 0.12); border:1px solid var(--accent-gold); border-radius:10px; padding:12px 18px; margin-bottom:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+        <div style="font-weight:700; color:var(--text-primary);">
+          🏛️ <strong>Offizieller BAMF Einbürgerungstest:</strong> 30 Allgemeine Fragen + 3 Landesfragen (${selectedLiDState})
+        </div>
+        <div style="display:flex; align-items:center; gap:16px;">
+          <div style="font-size:14px; font-weight:600; color:var(--text-muted);">
+            Answered: <strong style="color:var(--text-primary);">${answeredCount} / 33</strong>
+          </div>
+          <div id="lid-exam-timer-display" style="background:#0f172a; color:#fbbf24; border:1px solid #f59e0b; padding:4px 12px; border-radius:6px; font-family:monospace; font-size:16px; font-weight:bold;">
+            ⏱️ ${timerMin}:${timerSec}
+          </div>
+        </div>
+      </div>
+      ` : ''}
 
       <!-- Question Container Card -->
       <div id="lid-active-question-card" class="lid-question-card">
@@ -93,7 +164,7 @@ function renderLiDTrainer(containerId) {
 }
 
 function renderSingleLiDQuestion(q) {
-  if (!q) return '<p>No questions found.</p>';
+  if (!q) return '<p style="text-align:center; padding:30px; color:var(--text-muted);">No questions available.</p>';
   const lang = typeof currentLang !== 'undefined' ? currentLang : 'en';
 
   let transExp = q.explanationEn || '';
@@ -112,24 +183,34 @@ function renderSingleLiDQuestion(q) {
     transLangLabel = 'UK';
   }
 
+  // If in exam mode and already answered
+  const isAnswered = isLiDExamMode && lidExamAnswers[currentLiDIndex] !== undefined;
+
   return `
     <div class="lid-q-header">
-      <span class="lid-q-cat">📂 ${q.category}</span>
-      <span class="lid-q-id">BAMF Q#${q.id}</span>
+      <span class="lid-q-cat">📂 ${q.category || 'Staatsbürgerschaft & Recht'}</span>
+      <span class="lid-q-id">${isLiDExamMode ? `Exam Q#${currentLiDIndex + 1}` : `BAMF Q#${q.id}`}</span>
     </div>
     <h3 class="lid-q-text">${q.questionDe}</h3>
 
     <div class="lid-options-list">
-      ${q.optionsDe.map((opt, idx) => `
-        <button class="lid-opt-btn" onclick="checkLiDAnswer(${idx}, ${q.correctIndex}, this)">
-          <span class="opt-letter">${String.fromCharCode(65 + idx)}.</span>
-          <span class="opt-text">${opt}</span>
-        </button>
-      `).join('')}
+      ${q.optionsDe.map((opt, idx) => {
+        let extraClass = '';
+        if (isAnswered) {
+          if (idx === q.correctIndex) extraClass = ' correct';
+          else if (!lidExamAnswers[currentLiDIndex]) extraClass = ' wrong';
+        }
+        return `
+          <button class="lid-opt-btn${extraClass}" ${isAnswered ? 'disabled' : ''} onclick="checkLiDAnswer(${idx}, ${q.correctIndex}, this)">
+            <span class="opt-letter">${String.fromCharCode(65 + idx)}.</span>
+            <span class="opt-text">${opt}</span>
+          </button>
+        `;
+      }).join('')}
     </div>
 
-    <!-- Explanation Box (Initially Hidden) -->
-    <div id="lid-explanation-${q.id}" class="lid-explanation-box" style="display:none;">
+    <!-- Explanation Box -->
+    <div id="lid-explanation-${q.id}" class="lid-explanation-box" style="display:${isAnswered ? 'block' : 'none'};">
       <h4>💡 Official BAMF Explanation:</h4>
       <p class="exp-de"><strong>DE:</strong> ${q.explanationDe}</p>
       <p class="exp-trans" ${isRtl ? 'dir="rtl" style="text-align:right; font-family:system-ui, sans-serif;"' : ''}>
@@ -137,6 +218,7 @@ function renderSingleLiDQuestion(q) {
       </p>
       
       <!-- B1 Vocab Tags Cross-Link -->
+      ${q.b1VocabTags && q.b1VocabTags.length > 0 ? `
       <div class="lid-vocab-crosslink">
         <span>📚 Related B1 Political Vocabulary:</span>
         <div class="vocab-tag-pills">
@@ -145,11 +227,16 @@ function renderSingleLiDQuestion(q) {
           `).join('')}
         </div>
       </div>
+      ` : ''}
     </div>
   `;
 }
 
 function getActiveLiDQuestionsPool() {
+  if (isLiDExamMode && lidExamQuestions.length > 0) {
+    return lidExamQuestions;
+  }
+
   const general = typeof LID_QUESTIONS !== 'undefined' ? LID_QUESTIONS : [];
   const stateMap = typeof LID_STATE_QUESTIONS !== 'undefined' ? LID_STATE_QUESTIONS : {};
   const stateSpecific = stateMap[selectedLiDState] || [];
@@ -157,7 +244,7 @@ function getActiveLiDQuestionsPool() {
   let pool = [...general, ...stateSpecific];
 
   const searchInput = document.getElementById('lid-search-input');
-  const term = searchInput ? searchInput.value.trim().toLowerCase() : '';
+  const term = (searchInput && searchInput.value) ? searchInput.value.trim().toLowerCase() : '';
 
   if (term) {
     pool = pool.filter(q => 
@@ -175,15 +262,50 @@ function checkLiDAnswer(selectedIdx, correctIdx, btnEl) {
   const buttons = parentContainer.querySelectorAll('.lid-opt-btn');
   buttons.forEach(b => b.disabled = true);
 
-  if (selectedIdx === correctIdx) {
+  const isCorrect = (selectedIdx === correctIdx);
+
+  if (isCorrect) {
     btnEl.classList.add('correct');
+    if (isLiDExamMode) {
+      lidExamAnswers[currentLiDIndex] = true;
+    }
   } else {
     btnEl.classList.add('wrong');
-    buttons[correctIdx].classList.add('correct');
+    if (buttons[correctIdx]) buttons[correctIdx].classList.add('correct');
+    if (isLiDExamMode) {
+      lidExamAnswers[currentLiDIndex] = false;
+    }
+
+    // Automatically capture mistake into personal Fehlerheft review deck
+    const pool = getActiveLiDQuestionsPool();
+    const currentQ = pool[currentLiDIndex];
+    if (currentQ && typeof recordFehlerheftItem === 'function') {
+      recordFehlerheftItem({
+        word: currentQ.questionDe,
+        meaning: currentQ.explanationDe || currentQ.explanationEn || '',
+        example: `Correct: ${currentQ.optionsDe[correctIdx]}`,
+        mistakeType: 'syntax'
+      });
+      if (typeof renderFehlerheftDashboard === 'function') {
+        renderFehlerheftDashboard('fehlerheft-container');
+      }
+    }
   }
 
   const expBox = parentContainer.nextElementSibling;
   if (expBox) expBox.style.display = 'block';
+
+  if (isLiDExamMode) {
+    updateLiDExamStatus();
+  }
+}
+
+function updateLiDExamStatus() {
+  const answeredCount = Object.keys(lidExamAnswers).length;
+  const submitBtn = document.querySelector("button[onclick='finishLiDExam()']");
+  if (submitBtn) {
+    submitBtn.textContent = `📊 Grade Exam Now (${answeredCount}/33)`;
+  }
 }
 
 function nextLiDQuestion() {
@@ -202,6 +324,7 @@ function prevLiDQuestion() {
 }
 
 function changeLiDState(stateCode) {
+  if (isLiDExamMode) return;
   selectedLiDState = stateCode;
   currentLiDIndex = 0;
   updateLiDView();
@@ -209,7 +332,6 @@ function changeLiDState(stateCode) {
   const stateSelect = document.getElementById('lid-state-select');
   const stateName = stateSelect ? stateSelect.options[stateSelect.selectedIndex]?.text : stateCode;
 
-  // Non-intrusive status pill update
   let statusPill = document.getElementById('lid-state-active-pill');
   if (!statusPill && stateSelect) {
     statusPill = document.createElement('div');
@@ -223,6 +345,7 @@ function changeLiDState(stateCode) {
 }
 
 function filterLiDQuestions(term) {
+  if (isLiDExamMode) return;
   currentLiDIndex = 0;
   updateLiDView();
 }
@@ -248,6 +371,114 @@ function updateLiDView() {
   }
 }
 
+/**
+ * BAMF 310 Timed Exam Simulation Mode
+ * Generates 30 general questions + 3 state questions = 33 total
+ * 60 minutes countdown
+ */
+function startLiDExamSimulation() {
+  const general = typeof LID_QUESTIONS !== 'undefined' ? [...LID_QUESTIONS] : [];
+  const stateMap = typeof LID_STATE_QUESTIONS !== 'undefined' ? LID_STATE_QUESTIONS : {};
+  const stateSpecific = stateMap[selectedLiDState] ? [...stateMap[selectedLiDState]] : [];
+
+  // Shuffle helper
+  const shuffle = (arr) => arr.slice().sort(() => Math.random() - 0.5);
+
+  // Helper to sample N questions (repeats with shuffle if bank is smaller than target)
+  const sampleN = (source, n) => {
+    if (!source || source.length === 0) return [];
+    if (source.length >= n) return shuffle(source).slice(0, n);
+    let result = [];
+    while (result.length < n) {
+      result = result.concat(shuffle(source));
+    }
+    return result.slice(0, n);
+  };
+
+  const sampledGeneral = sampleN(general, 30);
+  const statePool = stateSpecific.length > 0 ? stateSpecific : general;
+  const sampledState = sampleN(statePool, 3);
+
+  lidExamQuestions = [...sampledGeneral, ...sampledState];
+  lidExamAnswers = {};
+  isLiDExamMode = true;
+  currentLiDIndex = 0;
+  lidExamSecondsLeft = 3600; // 60 minutes
+
+  if (lidExamTimerInterval) clearInterval(lidExamTimerInterval);
+  lidExamTimerInterval = setInterval(() => {
+    lidExamSecondsLeft--;
+    const timerDisplay = document.getElementById('lid-exam-timer-display');
+    if (timerDisplay) {
+      const m = Math.floor(lidExamSecondsLeft / 60);
+      const s = String(lidExamSecondsLeft % 60).padStart(2, '0');
+      timerDisplay.textContent = `⏱️ ${m}:${s}`;
+      if (lidExamSecondsLeft <= 300) {
+        timerDisplay.style.color = '#ef4444';
+        timerDisplay.style.borderColor = '#ef4444';
+      }
+    }
+    if (lidExamSecondsLeft <= 0) {
+      clearInterval(lidExamTimerInterval);
+      finishLiDExam();
+    }
+  }, 1000);
+
+  renderLiDTrainer('lid-trainer-container');
+}
+
+function finishLiDExam() {
+  if (lidExamTimerInterval) clearInterval(lidExamTimerInterval);
+
+  const correctCount = Object.values(lidExamAnswers).filter(v => v === true).length;
+  const totalCount = lidExamQuestions.length || 33;
+  const passed = correctCount >= 17; // BAMF Einbürgerung pass threshold is 17/33
+  const timeSpentMin = Math.floor((3600 - lidExamSecondsLeft) / 60);
+
+  const card = document.getElementById('lid-active-question-card');
+  if (card) {
+    card.innerHTML = `
+      <div class="lid-exam-result-card" style="text-align:center; padding:30px 20px;">
+        <div style="font-size:52px; margin-bottom:12px;">${passed ? '🎉' : '⚠️'}</div>
+        <div class="showcase-badge" style="background:${passed ? 'rgba(34,197,94,0.15)' : 'rgba(239,68,68,0.15)'}; color:${passed ? '#22c55e' : '#ef4444'};">
+          ${passed ? 'BESTANDEN (Passed BAMF Einbürgerung)' : 'NICHT BESTANDEN (Need 17/33)'}
+        </div>
+        <h2 style="margin:16px 0 8px 0; font-size:28px;">
+          Your Score: <span style="color:${passed ? 'var(--accent-gold)' : '#ef4444'};">${correctCount} / ${totalCount}</span> (${Math.round((correctCount/totalCount)*100)}%)
+        </h2>
+        <p style="color:var(--text-muted); font-size:15px; max-width:550px; margin:0 auto 24px auto;">
+          ${passed 
+            ? `Herzlichen Glückwunsch! You met the official requirements for German Naturalization according to § 10 StAG (minimum 17 points required). Time taken: ${timeSpentMin} minutes.`
+            : `You scored ${correctCount} points. Naturalization (§ 10 StAG) requires at least 17 correct answers. Your missed questions have been automatically added to your Fehlerheft review deck below.`
+          }
+        </p>
+
+        <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:20px;">
+          <button class="cta-btn-primary" onclick="startLiDExamSimulation()" style="padding:10px 20px;">
+            🔄 Retake Simulation
+          </button>
+          <a href="#fehlerheft-container" class="entrance-dismiss-btn" style="text-decoration:none; padding:10px 20px; display:inline-block;">
+            🧠 Review Fehlerheft Deck
+          </a>
+          <button class="entrance-dismiss-btn" onclick="exitLiDExamSimulation()" style="padding:10px 20px;">
+            🚪 Exit to Full Question Browser
+          </button>
+        </div>
+      </div>
+    `;
+  }
+}
+
+function exitLiDExamSimulation() {
+  if (lidExamTimerInterval) clearInterval(lidExamTimerInterval);
+  isLiDExamMode = false;
+  lidExamQuestions = [];
+  lidExamAnswers = {};
+  currentLiDIndex = 0;
+  lidExamSecondsLeft = 3600;
+  renderLiDTrainer('lid-trainer-container');
+}
+
 if (typeof window !== 'undefined') {
   window.renderLiDTrainer = renderLiDTrainer;
   window.checkLiDAnswer = checkLiDAnswer;
@@ -256,4 +487,7 @@ if (typeof window !== 'undefined') {
   window.changeLiDState = changeLiDState;
   window.filterLiDQuestions = filterLiDQuestions;
   window.getActiveLiDQuestionsPool = getActiveLiDQuestionsPool;
+  window.startLiDExamSimulation = startLiDExamSimulation;
+  window.finishLiDExam = finishLiDExam;
+  window.exitLiDExamSimulation = exitLiDExamSimulation;
 }
