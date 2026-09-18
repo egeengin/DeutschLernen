@@ -168,6 +168,135 @@ const GERMAN_STATES = [
   { code: "MV", name: "Mecklenburg-Vorpommern", capital: "Schwerin" }
 ];
 
+const LID_STATE_QUESTIONS = {
+  "NW": [
+    {
+      id: 301,
+      stateCode: "NW",
+      category: "Bundeslandfragen (Nordrhein-Westfalen)",
+      questionDe: "Welche Stadt ist die Landeshauptstadt von Nordrhein-Westfalen?",
+      optionsDe: ["Düsseldorf", "Köln", "Bonn", "Dortmund"],
+      correctIndex: 0,
+      explanationDe: "Die Landeshauptstadt von Nordrhein-Westfalen ist Düsseldorf (Köln ist zwar die größte Stadt, aber nicht die Hauptstadt).",
+      explanationTr: "Kuzey Ren-Vestfalya (NRW) eyaletinin başkenti Düsseldorf'tur (Köln en büyük şehirdir ancak başkent değildir).",
+      explanationEn: "The capital city of North Rhine-Westphalia is Düsseldorf (Cologne is the largest city, but not the capital).",
+      explanationAr: "عاصمة ولاية شمال الراين-وستفاليا (NRW) هي دوسلدورف (كولونيا هي أكبر مدينة ولكنها ليست العاصمة).",
+      explanationUk: "Столицею землі Північний Рейн-Вестфалія є Дюссельдорф (Кельн є найбільшим містом, але не столицею).",
+      b1VocabTags: ["die Landeshauptstadt", "Nordrhein-Westfalen", "der Landtag"]
+    },
+    {
+      id: 302,
+      stateCode: "NW",
+      category: "Bundeslandfragen (Nordrhein-Westfalen)",
+      questionDe: "Welche Farben hat die Landesflagge von Nordrhein-Westfalen?",
+      optionsDe: ["Grün-Weiß-Rot", "Schwarz-Rot-Gold", "Rot-Weiß", "Blau-Weiß-Rot"],
+      correctIndex: 0,
+      explanationDe: "Die Landesflagge von NRW besteht aus drei gleich breiten Querstreifen in den Farben Grün, Weiß und Rot.",
+      explanationTr: "NRW eyalet bayrağı Yeşil-Beyaz-Kırmızı renklerinden oluşur.",
+      explanationEn: "The state flag of NRW features green, white, and red horizontal stripes.",
+      explanationAr: "يتكون علم ولاية شمال الراين-وستفاليا من ثلاثة خطوط أفقية: الأخضر، الأبيض، والأحمر.",
+      explanationUk: "Державний прапор землі Північний Рейн-Вестфалія складається з зеленої, білої та червоної смуг.",
+      b1VocabTags: ["die Landesflagge", "die Farbe", "das Symbol"]
+    },
+    {
+      id: 303,
+      stateCode: "NW",
+      category: "Bundeslandfragen (Nordrhein-Westfalen)",
+      questionDe: "Ab welchem Alter darf man in Nordrhein-Westfalen bei Kommunalwahlen wählen?",
+      optionsDe: ["16 Jahre", "18 Jahre", "21 Jahre", "14 Jahre"],
+      correctIndex: 0,
+      explanationDe: "In Nordrhein-Westfalen liegt das aktive Wahlalter bei Kommunalwahlen (Stadtrat, Bürgermeister) bei 16 Jahren.",
+      explanationTr: "NRW'de yerel seçimlerde (belediye) oy kullanma yaşı 16'dır.",
+      explanationEn: "In North Rhine-Westphalia, the voting age for local municipal elections is 16.",
+      explanationAr: "في ولاية شمال الراين-وستفاليا، يحق للمواطنين التصويت في الانتخابات البلدية ابتداءً من سن 16 عاماً.",
+      explanationUk: "У землі Північний Рейн-Вестфалія голосувати на місцевих виборах дозволено з 16 років.",
+      b1VocabTags: ["die Kommunalwahl", "das Wahlalter", "wählen"]
+    }
+  ],
+  "BY": [
+    {
+      id: 304,
+      stateCode: "BY",
+      category: "Bundeslandfragen (Bayern)",
+      questionDe: "Welche Stadt ist die Landeshauptstadt des Freistaates Bayern?",
+      optionsDe: ["München", "Nürnberg", "Augsburg", "Regensburg"],
+      correctIndex: 0,
+      explanationDe: "Die Landeshauptstadt des Freistaates Bayern ist München.",
+      explanationTr: "Bavyera Serbest Eyaleti'nin başkenti Münih'tir (München).",
+      explanationEn: "The state capital of the Free State of Bavaria is Munich (München).",
+      explanationAr: "عاصمة ولاية بافاريا هي مدينة ميونخ (München).",
+      explanationUk: "Столицею Вільної держави Баварія є Мюнхен.",
+      b1VocabTags: ["der Freistaat", "die Landeshauptstadt", "Bayern"]
+    },
+    {
+      id: 305,
+      stateCode: "BY",
+      category: "Bundeslandfragen (Bayern)",
+      questionDe: "Welche Farben hat die bayerische Landesflagge?",
+      optionsDe: ["Weiß-Blau", "Schwarz-Gelb", "Grün-Weiß", "Rot-Weiß"],
+      correctIndex: 0,
+      explanationDe: "Die Landesfarben des Freistaates Bayern sind Weiß und Blau (bekannt auch durch das Rautenmuster).",
+      explanationTr: "Bavyera eyalet bayrağının renkleri Beyaz ve Mavidir.",
+      explanationEn: "The state colors of Bavaria are white and blue.",
+      explanationAr: "ألوان علم ولاية بافاريا الرسمية هي الأبيض والأزرق.",
+      explanationUk: "Державними кольорами Баварії є білий та синій.",
+      b1VocabTags: ["die Landesflagge", "die Raute", "Weiß-Blau"]
+    }
+  ],
+  "BE": [
+    {
+      id: 306,
+      stateCode: "BE",
+      category: "Bundeslandfragen (Berlin)",
+      questionDe: "Welches Wappentier ist auf dem Landeswappen von Berlin abgebildet?",
+      optionsDe: ["Der Berliner Bär", "Der Adler", "Der Löwe", "Das Pferd"],
+      correctIndex: 0,
+      explanationDe: "Das Berliner Wappentier ist der Berliner Bär auf silbernem (weißem) Schild.",
+      explanationTr: "Berlin eyalet armasında Berlin Ayısı (Berliner Bär) yer alır.",
+      explanationEn: "The heraldic animal of Berlin is the Berlin Bear.",
+      explanationAr: "الحيوان الموجود على شعار ولاية برلين هو الدب البرليني (Berliner Bär).",
+      explanationUk: "Геральдичною твариною Берліна є Берлінський ведмідь.",
+      b1VocabTags: ["das Landeswappen", "das Wappentier", "der Bär"]
+    },
+    {
+      id: 307,
+      stateCode: "BE",
+      category: "Bundeslandfragen (Berlin)",
+      questionDe: "Berlin ist...",
+      optionsDe: [
+        "ein Stadtstaat und die Bundeshauptstadt Deutschlands.",
+        "nur eine Stadt in Brandenburg.",
+        "ein Landkreis in Ostdeutschland.",
+        "die Hauptstadt von Sachsen."
+      ],
+      correctIndex: 0,
+      explanationDe: "Berlin ist sowohl ein Bundesland (Stadtstaat) als auch die Bundeshauptstadt der Bundesrepublik Deutschland.",
+      explanationTr: "Berlin hem bir şehir devleti (eyalet) hem de Almanya'nın federal başkentidir.",
+      explanationEn: "Berlin is both a federal state (city-state) and the capital of Germany.",
+      explanationAr: "برلين هي ولاية اتحادية (مدينة-ولاية) وفي الوقت نفسه العاصمة الفيدرالية لألمانيا.",
+      explanationUk: "Берлін є одночасно федеральною землею (містом-державою) і столицею Німеччини.",
+      b1VocabTags: ["der Stadtstaat", "die Bundeshauptstadt", "das Bundesland"]
+    }
+  ],
+  "BW": [
+    {
+      id: 308,
+      stateCode: "BW",
+      category: "Bundeslandfragen (Baden-Württemberg)",
+      questionDe: "Welche Stadt ist die Landeshauptstadt von Baden-Württemberg?",
+      optionsDe: ["Stuttgart", "Karlsruhe", "Mannheim", "Freiburg"],
+      correctIndex: 0,
+      explanationDe: "Die Landeshauptstadt von Baden-Württemberg ist Stuttgart.",
+      explanationTr: "Baden-Württemberg eyaletinin başkenti Stuttgart'tır.",
+      explanationEn: "The state capital of Baden-Württemberg is Stuttgart.",
+      explanationAr: "عاصمة ولاية بادن-فورتمبيرغ هي شتوتغارت (Stuttgart).",
+      explanationUk: "Столицею землі Баден-Вюртемберг є Штутгарт.",
+      b1VocabTags: ["die Landeshauptstadt", "Baden-Württemberg", "der Landtag"]
+    }
+  ]
+};
+
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { LID_QUESTIONS, GERMAN_STATES };
+  module.exports = { LID_QUESTIONS, GERMAN_STATES, LID_STATE_QUESTIONS };
 }
+
