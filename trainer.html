@@ -44,12 +44,8 @@
         </div>
       </div>
 
-      <!-- Live Session & Streak Badges -->
+      <!-- Live Streak & Review Badges -->
       <div class="header-stats">
-        <div class="stat-pill" title="Current Study Session Number">
-          <span data-i18n="sessionLabel">Session</span>
-          <span id="session-count-badge">#1</span>
-        </div>
         <div class="stat-pill streak" title="Consecutive Active Study Days">
           <span id="streak-count-badge">🔥 1d</span>
         </div>
@@ -68,7 +64,6 @@
         <div class="stat-pill sync-status" id="sync-status-pill" title="Click to sync or sign in">
           <span style="color:var(--text-muted,#94a3b8)">👤 Guest Mode</span>
         </div>
-        <span class="shortcut-hints" id="header-shortcut-hints" title="Hotkeys: [1-4] Options, [Space] Audio, [Enter] Next, [D] Dictionary, [R] Mistakes" aria-label="Keyboard shortcuts active">⌨️ 1-4 · Space · Enter</span>
         <button class="btn-auth-trigger" id="btn-user-account" title="Account & Cloud Sync">
           👤 <span data-i18n="accountBtn">Account</span>
         </button>
@@ -129,17 +124,6 @@
               <option value="50">50</option>
             </select>
           </div>
-        </div>
-
-        <!-- Data Portability Actions -->
-        <div class="selectors-group">
-          <button class="btn-icon" id="btn-export-progress" title="Export progress as JSON backup">
-            💾 <span data-i18n="exportData">Export</span>
-          </button>
-          <label class="btn-icon" title="Import progress from JSON backup" style="cursor:pointer;">
-            📥 <span data-i18n="importData">Import</span>
-            <input type="file" id="file-import-progress" accept=".json" style="display:none;">
-          </label>
         </div>
       </div>
 
@@ -324,6 +308,22 @@
             </button>
           </div>
         </div>
+
+        <!-- Data Backup & Portability Actions (JSON) -->
+        <div class="auth-data-box" style="margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border);">
+          <p style="font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
+            <span>📦</span> <span data-i18n="dataManagement">Data Backup & Restore (JSON)</span>
+          </p>
+          <div style="display: flex; gap: 10px;">
+            <button class="btn-icon" id="btn-export-progress" style="flex: 1; justify-content: center;" title="Export progress as JSON backup">
+              💾 <span data-i18n="exportData">Export</span>
+            </button>
+            <label class="btn-icon" style="flex: 1; justify-content: center; cursor: pointer;" title="Import progress from JSON backup">
+              📥 <span data-i18n="importData">Import</span>
+              <input type="file" id="file-import-progress" accept=".json" style="display: none;">
+            </label>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -344,7 +344,7 @@
             <input type="text" id="feedback-username" class="auth-input-field" placeholder="Anonymous or your name" data-i18n-placeholder="feedbackUserPlaceholder">
           </div>
 
-          <div class="auth-form-group">
+          <div class="auth-form-group" style="display: none;">
             <label for="feedback-location" data-i18n="feedbackLocation">Location (Auto-detected)</label>
             <input type="text" id="feedback-location" class="auth-input-field" placeholder="Detecting location..." data-i18n-placeholder="feedbackLocPlaceholder" readonly>
           </div>

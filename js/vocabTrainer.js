@@ -55,6 +55,7 @@
       browserTitle: "Vocabulary Dictionary",
       exportData: "Export Progress",
       importData: "Import Progress",
+      dataManagement: "Backup & Restore (JSON)",
       resetConfirm: "Are you sure you want to reset your vocabulary progress?",
       correctToast: "Correct! Excellent recall.",
       wrongToast: "Incorrect! Added to your Mistakes Queue for review.",
@@ -158,6 +159,7 @@
       browserTitle: "Kelime Sözlüğü & Arama",
       exportData: "İlerlemeyi Dışa Aktar",
       importData: "İlerlemeyi İçe Aktar",
+      dataManagement: "Yedekleme ve Geri Yükleme (JSON)",
       resetConfirm: "Kelime ilerleme verilerinizi sıfırlamak istediğinize emin misiniz?",
       correctToast: "Tebrikler! Doğru cevap.",
       wrongToast: "Yanlış! Bu kelime tekrar edilmek üzere Hata Havuzunuza eklendi.",
@@ -261,6 +263,7 @@
       browserTitle: "قاموس المفردات والبحث",
       exportData: "تصدير التقدم",
       importData: "استيراد التقدم",
+      dataManagement: "النسخ الاحتياطي واستعادة البيانات (JSON)",
       resetConfirm: "هل أنت متأكد من رغبتك في إعادة تعيين تقدمك في المفردات؟",
       correctToast: "صحيح! تذكر ممتاز.",
       wrongToast: "غير صحيح! تمت الإضافة إلى قائمة مراجعة الأخطاء.",
@@ -364,6 +367,7 @@
       browserTitle: "Словник та пошук",
       exportData: "Експорт прогресу",
       importData: "Імпорт прогресу",
+      dataManagement: "Резервне копіювання та відновлення (JSON)",
       resetConfirm: "Ви впевнені, що хочете скинути свій прогрес вивчення слів?",
       correctToast: "Правильно! Відмінна пам'ять.",
       wrongToast: "Неправильно! Додано до черги помилок для повторення.",
@@ -1183,18 +1187,24 @@
     refreshHeaderStats() {
       const pool = this.getAllWordsPool();
       const stats = this.sessionManager.getStats(pool);
-      this.dom.sessionBadge.textContent = `#${this.sessionManager.sessionData.totalSessions}`;
-      this.dom.streakBadge.textContent = `🔥 ${this.sessionManager.sessionData.streak}d`;
-      this.dom.reviewBadge.textContent = stats.dueReview > 0 ? `⚠️ ${stats.dueReview} due` : `⚠️ ${stats.review}`;
-      if (this.dom.reviewBadge.parentElement) {
-        this.dom.reviewBadge.parentElement.title = `${stats.dueReview} due today (${stats.review} total in mistake review queue)`;
+      if (this.dom.sessionBadge) {
+        this.dom.sessionBadge.textContent = `#${this.sessionManager.sessionData.totalSessions}`;
       }
+      if (this.dom.streakBadge) {
+        this.dom.streakBadge.textContent = `🔥 ${this.sessionManager.sessionData.streak}d`;
+      }
+      if (this.dom.reviewBadge) {
+        this.dom.reviewBadge.textContent = stats.dueReview > 0 ? `⚠️ ${stats.dueReview} due` : `⚠️ ${stats.review}`;
+        if (this.dom.reviewBadge.parentElement) {
+          this.dom.reviewBadge.parentElement.title = `${stats.dueReview} due today (${stats.review} total in mistake review queue)`;
+        }
 
-      // Highlight review badge if there are mistakes
-      if (stats.review > 0) {
-        this.dom.reviewBadge.classList.add('has-mistakes');
-      } else {
-        this.dom.reviewBadge.classList.remove('has-mistakes');
+        // Highlight review badge if there are mistakes
+        if (stats.review > 0) {
+          this.dom.reviewBadge.classList.add('has-mistakes');
+        } else {
+          this.dom.reviewBadge.classList.remove('has-mistakes');
+        }
       }
     }
 

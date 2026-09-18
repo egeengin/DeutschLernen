@@ -1273,4 +1273,38 @@ body {
   text-align: right;
 }
 
-
+/* Responsive Mobile Layout Enhancements */
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 10px 14px;
+  }
+  .header-left {
+    flex: 1;
+    min-width: 200px;
+  }
+  .header-stats {
+    order: 2;
+    gap: 8px;
+  }
+  .header-controls {
+    order: 3;
+    width: 100%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .selectors-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .select-wrapper {
+    justify-content: space-between;
+  }
+  .select-wrapper .styled-select {
+    flex: 1;
+    max-width: 220px;
+  }
+}
