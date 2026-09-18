@@ -526,6 +526,31 @@ body {
   border-radius: var(--radius-sm);
 }
 
+/* German Noun Gender Color Indicators (Standard Pedagogy: der=Blue, die=Pink/Red, das=Green) */
+.badge-gender {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.badge-gender.der, .gender-der {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+}
+.badge-gender.die, .gender-die {
+  background: rgba(244, 114, 182, 0.15);
+  color: #f472b6 !important;
+  border: 1px solid rgba(244, 114, 182, 0.4);
+}
+.badge-gender.das, .gender-das {
+  background: rgba(74, 222, 128, 0.15);
+  color: #4ade80 !important;
+  border: 1px solid rgba(74, 222, 128, 0.4);
+}
+
 .prompt-word-container {
   display: flex;
   align-items: center;

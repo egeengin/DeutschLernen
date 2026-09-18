@@ -230,6 +230,29 @@ class TestMultilingualConsistency(unittest.TestCase):
             missing = en_keys - lang_keys
             self.assertEqual(len(missing), 0, f"SHOWCASE_I18N['{lang}'] missing keys: {missing}")
 
+    def test_lid_trainer_ui_keys_parity(self):
+        """Verify LID_UI_TEXT has complete key and quad-lingual parity across en, tr, ar, and uk."""
+        import subprocess
+        node_code = """
+        const { LID_UI_TEXT } = require('./js/lidTrainer.js');
+        console.log(JSON.stringify(LID_UI_TEXT));
+        """
+        proc = subprocess.run(
+            ["node", "-e", node_code],
+            cwd=ROOT_DIR,
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        ui_text = json.loads(proc.stdout)
+        expected_langs = {"en", "tr", "ar", "uk"}
+
+        for key, trans_map in ui_text.items():
+            self.assertIsInstance(trans_map, dict, f"LID_UI_TEXT['{key}'] must be a dictionary")
+            for lang in expected_langs:
+                self.assertIn(lang, trans_map, f"LID_UI_TEXT['{key}'] missing language '{lang}'")
+                self.assertTrue(len(trans_map[lang].strip()) > 0, f"LID_UI_TEXT['{key}']['{lang}'] must not be empty")
+
 
 if __name__ == "__main__":
     unittest.main()
