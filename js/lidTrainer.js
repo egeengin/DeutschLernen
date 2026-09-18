@@ -7,9 +7,21 @@
  * 3. Automatic error capture into personal Fehlerheft review deck.
  */
 
+const LID_STATE_STORAGE_KEY = 'deutschlernen_lid_state';
+
+function getStoredLiDState() {
+  try {
+    if (typeof localStorage === 'undefined') return '';
+    return localStorage.getItem(LID_STATE_STORAGE_KEY) || '';
+  } catch (e) {
+    return '';
+  }
+}
+
 let currentLiDIndex = 0;
-let selectedLiDState = 'NW';
+let selectedLiDState = getStoredLiDState() || 'NW';
 let userLiDScore = 0;
+let hasAutoPromptedState = false;
 
 // Exam Simulation Mode State
 let isLiDExamMode = false;
@@ -156,6 +168,48 @@ const LID_UI_TEXT = {
     tr: "⭐ Henüz yıldızlı soru yok. Zorlandığınız sorularda ☆ Yıldızla butonuna tıklayarak burada toplayabilirsiniz!",
     ar: "⭐ لا توجد أسئلة مميزة بنجمة بعد. انقر فوق ☆ تمييز على أي سؤال صعب لمراجعته هنا!",
     uk: "⭐ Ще немає збережених питань. Натисніть ☆ Зірочка на складному питанні, щоб зберегти його тут!"
+  },
+  stateModalBadge: {
+    en: "📍 State Setup",
+    tr: "📍 Eyalet Seçimi",
+    ar: "📍 تحديد الولاية",
+    uk: "📍 Вибір землі"
+  },
+  stateModalTitle: {
+    en: "Select Your Federal State",
+    tr: "Federal Eyaletinizi Seçin",
+    ar: "اختر ولايتك الفيدرالية",
+    uk: "Оберіть вашу федеральну землю"
+  },
+  stateModalDesc: {
+    en: "The citizenship exam includes 3 state-specific questions (Questions 301–310). Choose your state once — you can change it anytime with the ⚙️ Change button.",
+    tr: "Vatandaşlık sınavında eyaletinize özel 3 soru (301–310. sorular) yer alır. Eyaletinizi bir kez seçin — dilediğiniz an ⚙️ Değiştir butonuyla güncelleyebilirsiniz.",
+    ar: "يتضمن امتحان التجنيس 3 أسئلة خاصة بولايتك (الأسئلة 301-310). اختر ولايتك مرة واحدة — ويمكنك تغييرها في أي وقت عبر زر ⚙️ تغيير.",
+    uk: "Іспит на громадянство включає 3 питання для вашої землі (питання 301–310). Оберіть землю один раз — ви можете змінити її в будь-який час кнопкою ⚙️ Змінити."
+  },
+  stateKicker: {
+    en: "EXAM STATE",
+    tr: "SINAV EYALETİ",
+    ar: "ولاية الامتحان",
+    uk: "ЗЕМЛЯ ІСПИТУ"
+  },
+  changeStateBtn: {
+    en: "Change ⚙️",
+    tr: "Değiştir ⚙️",
+    ar: "تغيير ⚙️",
+    uk: "Змінити ⚙️"
+  },
+  saveStateBtn: {
+    en: "Save State & Continue →",
+    tr: "Eyaleti Kaydet ve Devam Et →",
+    ar: "حفظ ومتابعة ←",
+    uk: "Зберегти та продовжити →"
+  },
+  cancelBtn: {
+    en: "Cancel",
+    tr: "Vazgeç",
+    ar: "إلغاء",
+    uk: "Скасувати"
   }
 };
 
@@ -179,6 +233,8 @@ function renderLiDTrainer(containerId) {
   const timerSec = String(lidExamSecondsLeft % 60).padStart(2, '0');
   const answeredCount = Object.keys(lidExamAnswers).length;
 
+  const currentStateObj = states.find(s => s.code === selectedLiDState) || { name: selectedLiDState };
+
   container.innerHTML = `
     <div class="lid-trainer-wrapper">
       <div class="lid-header">
@@ -187,14 +243,18 @@ function renderLiDTrainer(containerId) {
         <p>${t('desc')}</p>
       </div>
 
-      <!-- Controls Row: State Selector, Search Filter, Starred Filter, Exam Mode Trigger -->
+      <!-- Controls Row: State Selector Badge, Search Filter, Starred Filter, Exam Mode Trigger -->
       <div class="lid-controls-bar" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
-        <div style="display:flex; gap:16px; flex-wrap:wrap; flex:1;">
-          <div class="lid-control-group">
-            <label for="lid-state-select"><strong>${t('selectState')}</strong></label>
-            <select id="lid-state-select" class="styled-select" onchange="changeLiDState(this.value)" ${isLiDExamMode ? 'disabled' : ''}>
-              ${states.map(s => `<option value="${s.code}" ${s.code === selectedLiDState ? 'selected' : ''}>${s.name} (Capital: ${s.capital})</option>`).join('')}
-            </select>
+        <div style="display:flex; gap:16px; flex-wrap:wrap; flex:1; align-items:flex-end;">
+          <div class="lid-control-group" style="display:flex; align-items:flex-end;">
+            <div class="lid-state-badge" onclick="${!isLiDExamMode ? 'openLiDStateModal()' : ''}" role="button" tabindex="0" title="${t('changeStateBtn')}" style="${isLiDExamMode ? 'opacity:0.6; cursor:not-allowed;' : ''}">
+              <span class="lid-state-badge-icon">📍</span>
+              <div class="lid-state-badge-details">
+                <span class="lid-state-badge-kicker">${t('stateKicker')}</span>
+                <span class="lid-state-badge-name" id="lid-state-display-name">${currentStateObj.name}</span>
+              </div>
+              ${!isLiDExamMode ? `<span class="lid-state-badge-action">${t('changeStateBtn')}</span>` : ''}
+            </div>
           </div>
 
           ${!isLiDExamMode ? `
@@ -256,8 +316,45 @@ function renderLiDTrainer(containerId) {
         <span id="lid-progress-label">${t('qLabel')} ${currentLiDIndex + 1} ${t('ofLabel')} ${questions.length}</span>
         <button class="cta-btn-primary" onclick="nextLiDQuestion()">${t('next')}</button>
       </div>
+
+      <!-- One-Time / Change State Selector Modal -->
+      <div id="lid-state-modal" class="entrance-modal-overlay" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="lid-state-modal-title">
+        <div class="entrance-modal-card" style="max-width: 520px; padding: 28px;">
+          <div class="entrance-header" style="margin-bottom: 20px;">
+            <div class="entrance-badge">${t('stateModalBadge')}</div>
+            <h2 id="lid-state-modal-title" style="font-size: 20px; margin-top: 8px;">${t('stateModalTitle')}</h2>
+            <p class="entrance-subtitle" style="font-size: 13px; margin-top: 6px; line-height: 1.5;">${t('stateModalDesc')}</p>
+          </div>
+
+          <div style="margin: 20px 0;">
+            <label for="lid-state-select" style="display:block; font-size:12px; font-weight:700; color:var(--text-muted); margin-bottom:8px; text-transform:uppercase;">
+              ${t('selectState')}
+            </label>
+            <select id="lid-state-select" class="styled-select" style="width:100%; font-size:14px; padding:12px 14px;">
+              ${states.map(s => `<option value="${s.code}" ${s.code === selectedLiDState ? 'selected' : ''}>${s.name} (Capital: ${s.capital})</option>`).join('')}
+            </select>
+          </div>
+
+          <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:24px;">
+            <button class="entrance-dismiss-btn" onclick="closeLiDStateModal()" id="btn-cancel-state-modal" style="padding:10px 18px; font-size:13px;">
+              ${t('cancelBtn')}
+            </button>
+            <button class="cta-btn-primary" onclick="confirmLiDStateSelection()" style="padding:10px 20px; font-weight:700; font-size:13px;">
+              ${t('saveStateBtn')}
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   `;
+
+  // One-time prompt check: if state has never been chosen by user, prompt once
+  if (!getStoredLiDState() && !hasAutoPromptedState && !isLiDExamMode) {
+    hasAutoPromptedState = true;
+    setTimeout(() => {
+      openLiDStateModal();
+    }, 400);
+  }
 }
 
 function renderSingleLiDQuestion(q) {
@@ -463,22 +560,56 @@ function prevLiDQuestion() {
 function changeLiDState(stateCode) {
   if (isLiDExamMode) return;
   selectedLiDState = stateCode;
+  try {
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem(LID_STATE_STORAGE_KEY, stateCode);
+    }
+  } catch (e) {}
   currentLiDIndex = 0;
   updateLiDView();
 
-  const stateSelect = document.getElementById('lid-state-select');
-  const stateName = stateSelect ? stateSelect.options[stateSelect.selectedIndex]?.text : stateCode;
+  const states = typeof GERMAN_STATES !== 'undefined' ? GERMAN_STATES : [];
+  const stateObj = states.find(s => s.code === stateCode);
+  const stateName = stateObj ? stateObj.name : stateCode;
 
-  let statusPill = document.getElementById('lid-state-active-pill');
-  if (!statusPill && stateSelect) {
-    statusPill = document.createElement('div');
-    statusPill.id = 'lid-state-active-pill';
-    statusPill.style.cssText = 'font-size:12px; color:var(--accent-gold); margin-top:6px; font-weight:600;';
-    stateSelect.parentElement.appendChild(statusPill);
+  const displayNameEl = document.getElementById('lid-state-display-name');
+  if (displayNameEl) {
+    displayNameEl.textContent = stateName;
   }
-  if (statusPill) {
-    statusPill.textContent = `📍 State updated: ${stateName} questions active (Questions 301–310 loaded)`;
+
+  const stateSelect = document.getElementById('lid-state-select');
+  if (stateSelect) {
+    stateSelect.value = stateCode;
   }
+}
+
+function openLiDStateModal() {
+  const modal = document.getElementById('lid-state-modal');
+  if (!modal) return;
+  const select = document.getElementById('lid-state-select');
+  if (select) {
+    select.value = selectedLiDState;
+  }
+  modal.style.display = 'flex';
+  requestAnimationFrame(() => {
+    modal.classList.add('open');
+  });
+}
+
+function closeLiDStateModal() {
+  const modal = document.getElementById('lid-state-modal');
+  if (!modal) return;
+  modal.classList.remove('open');
+  setTimeout(() => {
+    modal.style.display = 'none';
+  }, 250);
+}
+
+function confirmLiDStateSelection() {
+  const select = document.getElementById('lid-state-select');
+  const code = select ? select.value : selectedLiDState;
+  changeLiDState(code);
+  closeLiDStateModal();
 }
 
 function filterLiDQuestions(term) {
@@ -626,6 +757,10 @@ if (typeof window !== 'undefined') {
   window.nextLiDQuestion = nextLiDQuestion;
   window.prevLiDQuestion = prevLiDQuestion;
   window.changeLiDState = changeLiDState;
+  window.openLiDStateModal = openLiDStateModal;
+  window.closeLiDStateModal = closeLiDStateModal;
+  window.confirmLiDStateSelection = confirmLiDStateSelection;
+  window.getStoredLiDState = getStoredLiDState;
   window.filterLiDQuestions = filterLiDQuestions;
   window.getActiveLiDQuestionsPool = getActiveLiDQuestionsPool;
   window.startLiDExamSimulation = startLiDExamSimulation;
@@ -644,6 +779,10 @@ if (typeof module !== 'undefined' && module.exports) {
     nextLiDQuestion,
     prevLiDQuestion,
     changeLiDState,
+    openLiDStateModal,
+    closeLiDStateModal,
+    confirmLiDStateSelection,
+    getStoredLiDState,
     filterLiDQuestions,
     getActiveLiDQuestionsPool,
     startLiDExamSimulation,

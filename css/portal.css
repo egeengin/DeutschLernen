@@ -1904,6 +1904,60 @@ td strong, td b { color: var(--text-primary); }
   color: var(--text-secondary);
 }
 
+/* LiD Federal State Badge & Controls */
+.lid-state-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(59, 130, 246, 0.08));
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+.lid-state-badge:hover {
+  border-color: var(--accent-gold);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.16), rgba(59, 130, 246, 0.14));
+  transform: translateY(-1px);
+}
+.lid-state-badge-icon {
+  font-size: 18px;
+}
+.lid-state-badge-details {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.lid-state-badge-kicker {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+}
+.lid-state-badge-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.lid-state-badge-action {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  margin-left: 4px;
+  transition: all 0.2s ease;
+}
+.lid-state-badge:hover .lid-state-badge-action {
+  color: var(--accent-gold);
+  border-color: var(--accent-gold);
+}
+
 .lid-question-card {
   background: var(--bg-primary);
   border: 1px solid var(--border);

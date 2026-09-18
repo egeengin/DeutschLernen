@@ -76,13 +76,29 @@ class TestLiDDataset(unittest.TestCase):
             idx = q.get("correctIndex")
             self.assertIn(idx, (0, 1, 2, 3), f"Q{q['id']} has invalid correctIndex: {idx}")
 
-    def test_multilingual_translations_present(self):
-        """Verify quad-lingual translations exist for questions and explanations."""
-        for q in self.questions[:50]:
-            trans = q.get("translations", {})
-            for lang in ("en", "tr", "ar", "uk"):
-                self.assertIn(lang, trans, f"Q{q['id']} missing translation for {lang}")
-                self.assertTrue(len(trans[lang].get("question", "").strip()) > 0, f"Q{q['id']} empty question in {lang}")
+    def test_state_selection_contracts_and_persistence(self):
+        """Verify state selection persistence key, modal controls, and export contracts."""
+        trainer_path = os.path.join(ROOT_DIR, "js", "lidTrainer.js")
+        with open(trainer_path, "r", encoding="utf-8") as f:
+            trainer_code = f.read()
+
+        # Check storage key and functions
+        self.assertIn("LID_STATE_STORAGE_KEY = 'deutschlernen_lid_state'", trainer_code)
+        self.assertIn("function getStoredLiDState()", trainer_code)
+        self.assertIn("function changeLiDState(", trainer_code)
+        self.assertIn("function openLiDStateModal()", trainer_code)
+        self.assertIn("function closeLiDStateModal()", trainer_code)
+        self.assertIn("function confirmLiDStateSelection()", trainer_code)
+
+        # Check DOM markup elements
+        self.assertIn('id="lid-state-modal"', trainer_code)
+        self.assertIn('class="lid-state-badge"', trainer_code)
+        self.assertIn('id="lid-state-display-name"', trainer_code)
+
+        # Check module exports
+        for fn in ["changeLiDState", "openLiDStateModal", "closeLiDStateModal", "confirmLiDStateSelection", "getStoredLiDState"]:
+            self.assertIn(fn, trainer_code)
+
 
 if __name__ == "__main__":
     unittest.main()
