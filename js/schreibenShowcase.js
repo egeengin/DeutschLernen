@@ -1,68 +1,371 @@
 /**
  * Interactive Render Engine for telc B1 Schreiben & Sprechen Suite
  * Grounded strictly in official telc Deutsch B1 examination guidelines.
+ * Features full Quad-Lingual localization across English (en), Turkish (tr), Arabic (ar), and Ukrainian (uk).
  */
 
 let currentShowcaseTab = 'showcase';
+
+const SHOWCASE_I18N = {
+  en: {
+    tabSample: "✨ Pre-Computed Sample Report",
+    tabLive: "⚡ Live AI Letter Grader (Pro)",
+    tabSpeaking: "🗣️ Sprechen Teil 3 Simulator",
+    badgeOfficial: "✨ Official telc B1 Sample Evaluation",
+    titleReport: "📝 telc Deutsch B1 Schreiben — Interactive Examiner Report",
+    descReport: "This report demonstrates how the <strong>Pro AI Exam Grader</strong> evaluates student letters line-by-line using the official <strong>telc B1 3-Criteria Rating System</strong> (Max 45 points).",
+    fromLabel: "From:",
+    subjectLabel: "Subject:",
+    leitpunkteHeader: "📋 telc B1 Leitpunkte Check (4 Guided Points Required):",
+    pointLabel: "Point",
+    annotatedHeader: "📜 Annotated B1 Student Letter",
+    annotatedHint: "Hover or tap highlighted text to view examiner corrections & rule references",
+    legendSyntax: "Word Order / Inversion",
+    legendSpelling: "Orthography / Eszett",
+    legendGrammar: "Case / Grammar",
+    rubricHeader: "📊 Official telc B1 Rubric & Calculation",
+    rubricFormulaHint: "Formula: (Criterion I + II + III) × 3 = Final Score / 45",
+    ptsMax: "/ 45 pts",
+    passThresholdLabel: "Pass Threshold Met (≥27 pts)",
+    scoreLabel: "Score",
+    ptsRaw: "pts raw",
+    finalPts: "pts",
+    telcRuleNote: "💡 <strong>telc B1 Rule ('Primat der Verständlichkeit'):</strong> Grammar errors that do not hinder understanding are graded Score B (3 pts). Full Score A (5 pts) requires zero systematic syntax errors and natural B1 register.",
+    upgradesHeader: "💡 Examiner B1 Sentence Upgrades",
+    upgradesSub: "Transforming basic expressions into high-scoring B1 formal structures:",
+    upgradeOriginal: "Original Student Phrase:",
+    upgradeRecommended: "✨ B1 Examiner Recommendation:",
+    upgradeWhy: "💡 Why this scores higher:",
+    ctaKicker: "🚀 UNLOCK THE AI EXAM GRADER",
+    ctaTitle: "Want instant, line-by-line feedback on your OWN practice letters?",
+    ctaDesc: "Get authentic telc B1 rubric scoring, syntax fixes, and personalized weak-spot tracking in 15 seconds.",
+    ctaBadge1: "⚡ Instant 15s Feedback",
+    ctaBadge2: "🎯 Official telc B1 Criteria (I + II + III × 3)",
+    ctaBadge3: "🔒 100% Secure & Private",
+    ctaBtn: "⚡ Unlock AI Exam Grader — from €29",
+    ctaGuarantee: "30-Day Pass • No recurring monthly subscription",
+    liveTitle: "⚡ Live telc B1 AI Exam Grader",
+    liveDesc: "Paste or type your practice letter below to evaluate it instantly against official telc B1 criteria.",
+    livePromptSelectLabel: "Choose Examination Prompt:",
+    livePromptMarianne: "Option 1 (Informal): E-Mail to Marianne (Visit to Germany)",
+    livePromptHotel: "Option 2 (Formal): Complaint Letter to Hotel Meeresblick",
+    livePromptVhs: "Option 3 (Semi-formal): Inquiry to Adult Education Center (VHS)",
+    livePromptCustom: "Custom Prompt (Enter your own situation & Leitpunkte)",
+    liveTextareaLabel: "Your Practice Letter (Minimal 20 words):",
+    liveTextareaPlaceholder: "Liebe Marianne, ich habe mich sehr über deine E-Mail gefreut! Es ist wirklich schön, dass du mich bald in Deutschland besuchen möchtest...",
+    liveWordCount: "Words:",
+    liveCharCount: "Characters:",
+    liveSubmitBtn: "⚡ Grade My Letter with AI (/45)",
+    speakingBadge: "🗣️ telc B1 Oral Exam",
+    speakingTitle: "Teil 3: Gemeinsam etwas planen (Pair Task)",
+    speakingDesc: "Simulate the joint planning examination task. Review official exam topics, interactive checklists, and essential B1 conversation phrases (Redemittel).",
+    speakingTaskTitle: "Task: Abschiedsparty planen (Farewell Party)",
+    speakingTaskDesc: "Sie haben zwei Wochen Urlaub gemacht und einige nette Deutsche kennengelernt. Vor dem Ende des Urlaubs möchten Sie eine Abschiedsparty feiern. Planen Sie das Fest gemeinsam mit Ihrem Partner.",
+    speakingChecklistHeader: "📋 Checklist & Task Points to Agree On:",
+    spWhen: "Wann? (Date, weekday & time)",
+    spWhere: "Wo? (Venue, room, garden or restaurant)",
+    spFood: "Essen & Trinken? (Cake, snacks, drinks)",
+    spBudget: "Wer bezahlt wofür? (Cost split & budget)",
+    redemittelHeader: "💡 Essential telc B1 Redemittel (Conversation Phrases):",
+    rmPropose: "Making Proposals (Vorschläge machen)",
+    rmAgree: "Agreeing (Zustimmen)",
+    rmDisagree: "Countering Politely (Widersprechen)",
+    rmDecide: "Deciding & Concluding (Vereinbaren)",
+    modalKicker: "PASS THE TELC B1 EXAM",
+    modalTitle: "Choose Your Pro Pass",
+    modalDesc: "Unlock live AI letter grading, error tracking, and examination simulation.",
+    fixLabel: "Fix:"
+  },
+  tr: {
+    tabSample: "✨ Örnek Değerlendirme Raporu",
+    tabLive: "⚡ Canlı Yapay Zeka Mektup Puanlayıcı",
+    tabSpeaking: "🗣️ Konuşma Bölüm 3 Simülatörü",
+    badgeOfficial: "✨ Resmi telc B1 Örnek Değerlendirmesi",
+    titleReport: "📝 telc Deutsch B1 Yazma — İnteraktif Sınav Raporu",
+    descReport: "Bu rapor, <strong>Pro Yapay Zeka Puanlayıcısının</strong> öğrenci mektuplarını resmi <strong>telc B1 3-Kriter Değerlendirme Sistemi</strong> (Maks. 45 puan) ile nasıl satır satır puanladığını gösterir.",
+    fromLabel: "Kimden:",
+    subjectLabel: "Konu:",
+    leitpunkteHeader: "📋 telc B1 Leitpunkte Kontrolü (4 Kılavuz Nokta Zorunludur):",
+    pointLabel: "Nokta",
+    annotatedHeader: "📜 İşaretli B1 Öğrenci Mektubu",
+    annotatedHint: "Düzeltmeleri ve kural açıklamalarını görmek için vurgulanan metinlerin üzerine gelin veya dokunun",
+    legendSyntax: "Cümle Düzeni / İnversiyon",
+    legendSpelling: "İmla / Eszett (ß)",
+    legendGrammar: "Edat / Dilbilgisi",
+    rubricHeader: "📊 Resmi telc B1 Puan Tablosu ve Hesaplama",
+    rubricFormulaHint: "Formül: (Kriter I + II + III) × 3 = Toplam Puan / 45",
+    ptsMax: "/ 45 puan",
+    passThresholdLabel: "Geçme Barajı Karşılandı (≥27 puan)",
+    scoreLabel: "Not",
+    ptsRaw: "ham puan",
+    finalPts: "puan",
+    telcRuleNote: "💡 <strong>telc B1 Kuralı ('Anlaşılabilirlik Önceliği'):</strong> İletişimi ve anlamayı engellemeyen dilbilgisi hatalarında B notu (3 puan) verilir. Tam A notu (5 puan) için sıfır sistematik hata ve akıcı B1 üslubu gerekir.",
+    upgradesHeader: "💡 Sınav Uzmanı B1 Cümle İyileştirmeleri",
+    upgradesSub: "Basit ifadeleri yüksek puan getiren resmi B1 yapılarına dönüştürme:",
+    upgradeOriginal: "Öğrencinin Orijinal Cümlesi:",
+    upgradeRecommended: "✨ B1 Uzman Önerisi:",
+    upgradeWhy: "💡 Neden daha yüksek puan alır:",
+    ctaKicker: "🚀 YAPAY ZEKA SINAV PUANLAYICIYI AÇIN",
+    ctaTitle: "Kendi yazdığınız mektuplara 15 saniyede satır satır geri bildirim almak ister misiniz?",
+    ctaDesc: "Resmi telc B1 kriterlerine göre puanlama, dilbilgisi düzeltmeleri ve kişiselleştirilmiş zayıf nokta takibi edinin.",
+    ctaBadge1: "⚡ 15 Saniyede Anında Geri Bildirim",
+    ctaBadge2: "🎯 Resmi telc B1 Kriterleri (I + II + III × 3)",
+    ctaBadge3: "🔒 %100 Güvenli ve Gizli",
+    ctaBtn: "⚡ Yapay Zeka Puanlayıcıyı Aç — 29€'dan başlayan",
+    ctaGuarantee: "30 Günlük Geçiş • Tekrarlayan abonelik yok",
+    liveTitle: "⚡ Canlı telc B1 Yapay Zeka Mektup Puanlayıcı",
+    liveDesc: "Mektubunuzu aşağıya yapıştırın veya yazın; resmi telc B1 kriterlerine göre anında puanlansın.",
+    livePromptSelectLabel: "Sınav Görevini Seçin:",
+    livePromptMarianne: "Seçenek 1 (Samimi): Marianne'ye E-Posta (Almanya Ziyareti)",
+    livePromptHotel: "Seçenek 2 (Resmi): Hotel Meeresblick Şikayet Mektubu",
+    livePromptVhs: "Seçenek 3 (Yarı Resmi): Halk Eğitim Kurs Bilgi Talebi",
+    livePromptCustom: "Özel Görev (Kendi konunuzu ve kılavuz noktalarınızı yazın)",
+    liveTextareaLabel: "Alıştırma Mektubunuz (En az 20 kelime):",
+    liveTextareaPlaceholder: "Liebe Marianne, ich habe mich sehr über deine E-Mail gefreut! Es ist wirklich schön, dass du mich bald in Deutschland besuchen möchtest...",
+    liveWordCount: "Kelime:",
+    liveCharCount: "Karakter:",
+    liveSubmitBtn: "⚡ Mektubumu Yapay Zeka ile Puanla (/45)",
+    speakingBadge: "🗣️ telc B1 Sözlü Sınav",
+    speakingTitle: "Bölüm 3: Birlikte Plan Yapma (İkili Görev)",
+    speakingDesc: "Ortak planlama görevini deneyimleyin. Resmi sınav konularını, interaktif kontrol listesini ve gerekli B1 kalıplarını (Redemittel) inceleyin.",
+    speakingTaskTitle: "Görev: Veda Partisi Planlama (Abschiedsparty)",
+    speakingTaskDesc: "İki haftalık tatil yaptınız ve bazı Alman arkadaşlar edindiniz. Tatil bitmeden önce bir veda partisi vermek istiyorsunuz. Partnerinizle birlikte partiyi planlayın.",
+    speakingChecklistHeader: "📋 Kararlaştırılacak Maddeler ve Kontrol Listesi:",
+    spWhen: "Wann? (Tarih, gün ve saat belirleme)",
+    spWhere: "Wo? (Buluşma yeri, oda, bahçe veya restoran)",
+    spFood: "Essen & Trinken? (Pasta, atıştırmalık, içecekler)",
+    spBudget: "Wer bezahlt wofür? (Masraf paylaşımı ve bütçe)",
+    redemittelHeader: "💡 Temel telc B1 Konuşma Kalıpları (Redemittel):",
+    rmPropose: "Öneri Yapma (Vorschläge machen)",
+    rmAgree: "Onaylama / Katılma (Zustimmen)",
+    rmDisagree: "Kibarca İtiraz Etme (Widersprechen)",
+    rmDecide: "Karara Bağlama (Vereinbaren)",
+    modalKicker: "TELC B1 SINAVINI GEÇİN",
+    modalTitle: "Pro Kartınızı Seçin",
+    modalDesc: "Canlı mektup puanlama, hata takibi ve sınav simülasyonunu etkinleştirin.",
+    fixLabel: "Düzeltme:"
+  },
+  ar: {
+    tabSample: "✨ تقرير التقييم النموذجي",
+    tabLive: "⚡ المصحح الفوري للرسائل بالذكاء الاصطناعي",
+    tabSpeaking: "🗣️ محاكي المحادثة - الجزء 3",
+    badgeOfficial: "✨ تقرير تقييم رسمي لنموذج telc B1",
+    titleReport: "📝 كتابة telc Deutsch B1 — تقرير الفاحص التفاعلي",
+    descReport: "يوضح هذا التقرير كيف يقيم <strong>المصحح الذكي</strong> رسائل الطلاب سطراً بسطر باستخدام <strong>معايير telc B1 الثلاثة الرسمية</strong> (الدرجة القصوى 45 نقطة).",
+    fromLabel: "من:",
+    subjectLabel: "الموضوع:",
+    leitpunkteHeader: "📋 فحص النقاط الإرشادية لـ telc B1 (4 نقاط إلزامية):",
+    pointLabel: "نقطة",
+    annotatedHeader: "📜 رسالة الطالب مع الشروحات التفصيلية",
+    annotatedHint: "مرر الفأرة أو اضغط على النص المظلل لعرض تصحيحات الفاحص والقواعد النحوية",
+    legendSyntax: "ترتيب الكلمات / تقديم الفعل",
+    legendSpelling: "الإملاء / حرف Eszett (ß)",
+    legendGrammar: "حروف الجر / القواعد",
+    rubricHeader: "📊 جدول ومعايير التقييم الرسمية لـ telc B1",
+    rubricFormulaHint: "المعادلة: (المعيار الأول + الثاني + الثالث) × 3 = الدرجة النهائية من 45",
+    ptsMax: "/ 45 نقطة",
+    passThresholdLabel: "تم اجتياز حد النجاح الأدنى (≥ 27 نقطة)",
+    scoreLabel: "الدرجة",
+    ptsRaw: "نقاط خام",
+    finalPts: "نقطة",
+    telcRuleNote: "💡 <strong>قاعدة telc B1 ('أولوية الفهم'):</strong> الأخطاء النحوية التي لا تعيق فهم الرسالة تنال الدرجة B (3 نقاط). الحصول على الدرجة A (5 نقاط) يتطلب غياب الأخطاء المنهجية وأسلوباً سلساً.",
+    upgradesHeader: "💡 ترقيات الجمل الاحترافية بمستوى B1",
+    upgradesSub: "تحويل الجمل البسيطة إلى تراكيب رسمية متقدمة ترفع درجاتك:",
+    upgradeOriginal: "جملة الطالب الأصلية:",
+    upgradeRecommended: "✨ توصية فاحص B1 المعتمد:",
+    upgradeWhy: "💡 لماذا تحصل هذه الصيغة على درجة أعلى:",
+    ctaKicker: "🚀 تفعيل مصحح الامتحانات بالذكاء الاصطناعي",
+    ctaTitle: "هل ترغب في الحصول على تصحيح سطر بسطر لرسائلك الخاصة في 15 ثانية؟",
+    ctaDesc: "احصل على درجات دقيقة بمعايير telc الرسمية، وتصحيح للأخطاء النحوية، ومتتبع شخصي لنقاط ضعفك.",
+    ctaBadge1: "⚡ تقييم فوري خلال 15 ثانية",
+    ctaBadge2: "🎯 معايير telc B1 الرسمية (I + II + III × 3)",
+    ctaBadge3: "🔒 خصوصية وأمان تام 100%",
+    ctaBtn: "⚡ فتح مصحح الامتحانات — ابتداءً من 29€",
+    ctaGuarantee: "اشتراك لمدة 30 يوماً • بدون تجديد تلقائي",
+    liveTitle: "⚡ المصحح الفوري لرسائل telc B1",
+    liveDesc: "الصق أو اكتب رسالتك التدريبية أدناه لتقييمها فوراً وفقاً للمعايير الرسمية.",
+    livePromptSelectLabel: "اختر موضوع الرسالة:",
+    livePromptMarianne: "الخيار 1 (غير رسمي): رسالة إلى ماريان (زيارة ألمانيا)",
+    livePromptHotel: "الخيار 2 (رسمي): رسالة شكوى لفندق Meeresblick",
+    livePromptVhs: "الخيار 3 (شبه رسمي): استفسار عن دورة لغات في VHS",
+    livePromptCustom: "موضوع مخصص (اكتب الموقف والنقاط بنفسك)",
+    liveTextareaLabel: "رسالتك التدريبية (20 كلمة على الأقل):",
+    liveTextareaPlaceholder: "Liebe Marianne, ich habe mich sehr über deine E-Mail gefreut! Es ist wirklich schön, dass du mich bald in Deutschland besuchen möchtest...",
+    liveWordCount: "الكلمات:",
+    liveCharCount: "الحروف:",
+    liveSubmitBtn: "⚡ تقييم رسالتي بالذكاء الاصطناعي (/45)",
+    speakingBadge: "🗣️ امتحان telc B1 الشفهي",
+    speakingTitle: "الجزء 3: التخطيط المشترك (مهمة ثنائية)",
+    speakingDesc: "حاكِ مهمة التخطيط المشترك. اطلع على مواضيع الامتحان وقوائم المراجعة التفاعلية والعبارات الجاهزة (Redemittel).",
+    speakingTaskTitle: "المهمة: التخطيط لحفلة وداع (Abschiedsparty)",
+    speakingTaskDesc: "قضيت عطلة لمدة أسبوعين وتعرفت على أصدقاء ألمان. ترغب قبل مغادرتك في تنظيم حفلة وداع. خطط للاحتفال مع شريكك.",
+    speakingChecklistHeader: "📋 النقاط المتفق عليها وقائمة التحقق:",
+    spWhen: "Wann? (تحديد التاريخ واليوم والوقت)",
+    spWhere: "Wo? (المكان، القاعة، الحديقة أو المطعم)",
+    spFood: "Essen & Trinken? (الحلوى، الوجبات الخفيفة، المشروبات)",
+    spBudget: "Wer bezahlt wofür? (تقسيم التكاليف والميزانية)",
+    redemittelHeader: "💡 عبارات المحادثة الأساسية لامتحان B1 (Redemittel):",
+    rmPropose: "تقديم المقترحات (Vorschläge machen)",
+    rmAgree: "الموافقة والقبول (Zustimmen)",
+    rmDisagree: "الاعتراض بلباقة (Widersprechen)",
+    rmDecide: "الاتفاق النهائي وتدوين الخطة (Vereinbaren)",
+    modalKicker: "اجتز امتحان TELC B1",
+    modalTitle: "اختر باقتك الاحترافية",
+    modalDesc: "فعّل التصحيح المباشر وتتبع الأخطاء ومحاكاة الامتحان.",
+    fixLabel: "التصحيح:"
+  },
+  uk: {
+    tabSample: "✨ Зразок звіту екзаменатора",
+    tabLive: "⚡ Живе оцінювання листів ШІ",
+    tabSpeaking: "🗣️ Симулятор мовлення Частина 3",
+    badgeOfficial: "✨ Офіційне оцінювання зразка telc B1",
+    titleReport: "📝 telc Deutsch B1 Письмо — Інтерактивний звіт екзаменатора",
+    descReport: "Цей звіт демонструє, як <strong>Pro AI Grader</strong> оцінює студентські листи рядок за рядком за офіційною <strong>3-критеріальною системою telc B1</strong> (макс. 45 балів).",
+    fromLabel: "Від:",
+    subjectLabel: "Тема:",
+    leitpunkteHeader: "📋 Перевірка опорних пунктів telc B1 (4 обов'язкові пункти):",
+    pointLabel: "Пункт",
+    annotatedHeader: "📜 Розбір студентського листа B1 з коментарями",
+    annotatedHint: "Наведіть курсор або торкніться виділеного тексту для перегляду виправлень та правил",
+    legendSyntax: "Порядок слів / Інверсія",
+    legendSpelling: "Правопис / Eszett (ß)",
+    legendGrammar: "Керування відмінками / Граматика",
+    rubricHeader: "📊 Офіційна шкала оцінювання та розрахунок telc B1",
+    rubricFormulaHint: "Формула: (Критерій I + II + III) × 3 = Підсумковий бал / 45",
+    ptsMax: "/ 45 балів",
+    passThresholdLabel: "Прохідний бар'єр подолано (≥27 балів)",
+    scoreLabel: "Бал",
+    ptsRaw: "сирих балів",
+    finalPts: "балів",
+    telcRuleNote: "💡 <strong>Правило telc B1 ('Пріоритет зрозумілості'):</strong> Граматичні помилки, що не перешкоджають розумінню, оцінюються балом B (3 бали). Оцінка A (5 балів) вимагає повної відсутності систематичних помилок.",
+    upgradesHeader: "💡 Покращення речень від екзаменатора B1",
+    upgradesSub: "Трансформація простих фраз у виразні офіційні структури B1:",
+    upgradeOriginal: "Оригінальна фраза студента:",
+    upgradeRecommended: "✨ Рекомендація екзаменатора B1:",
+    upgradeWhy: "💡 Чому це приносить вищий бал:",
+    ctaKicker: "🚀 РОЗБЛОКУЙТЕ ОЦІНЮВАННЯ ШТУЧНИМ ІНТЕЛЕКТОМ",
+    ctaTitle: "Бажаєте миттєвий порядковий аналіз ВЛАСНИХ тренувальних листів?",
+    ctaDesc: "Отримуйте оцінювання за офіційними критеріями telc B1, виправлення помилок та персональний трекер слабких місць за 15 секунд.",
+    ctaBadge1: "⚡ Миттєвий аналіз за 15 секунд",
+    ctaBadge2: "🎯 Офіційні критерії telc B1 (I + II + III × 3)",
+    ctaBadge3: "🔒 100% безпечно та конфіденційно",
+    ctaBtn: "⚡ Розблокувати перевірку ШІ — від €29",
+    ctaGuarantee: "Доступ на 30 днів • Без щомісячних списань",
+    liveTitle: "⚡ Онлайн-оцінювач листів telc B1 від ШІ",
+    liveDesc: "Вставте або напишіть свій тренувальний лист нижче для миттєвої перевірки.",
+    livePromptSelectLabel: "Виберіть екзаменаційне завдання:",
+    livePromptMarianne: "Варіант 1 (Неформальний): Лист Маріанні (Поїздка до Німеччини)",
+    livePromptHotel: "Варіант 2 (Офіційний): Скарга до готелю Meeresblick",
+    livePromptVhs: "Варіант 3 (Напівофіційний): Запит на мовний курс у VHS",
+    livePromptCustom: "Власне завдання (введіть свою ситуацію та пункти)",
+    liveTextareaLabel: "Ваш тренувальний лист (мінімум 20 слів):",
+    liveTextareaPlaceholder: "Liebe Marianne, ich habe mich sehr über deine E-Mail gefreut! Es ist wirklich schön, dass du mich bald in Deutschland besuchen möchtest...",
+    liveWordCount: "Слів:",
+    liveCharCount: "Символів:",
+    liveSubmitBtn: "⚡ Оцінити мій лист за допомогою ШІ (/45)",
+    speakingBadge: "🗣️ Усний іспит telc B1",
+    speakingTitle: "Частина 3: Спільне планування (Робота в парах)",
+    speakingDesc: "Симулюйте завдання спільного планування. Ознайомтеся з темами, чеклістом та ключовими мовними кліше (Redemittel).",
+    speakingTaskTitle: "Завдання: Організація прощальної вечірки (Abschiedsparty)",
+    speakingTaskDesc: "Ви провели двотижневу відпустку та познайомилися з німцями. Перед від'їздом ви хочете влаштувати прощальну вечірку. Сплануйте її разом із партнером.",
+    speakingChecklistHeader: "📋 Чекліст та пункти для узгодження:",
+    spWhen: "Wann? (Дата, день тижня та час)",
+    spWhere: "Wo? (Місце зустрічі, приміщення, сад чи ресторан)",
+    spFood: "Essen & Trinken? (Торт, закуски, напої)",
+    spBudget: "Wer bezahlt wofür? (Розподіл витрат і бюджет)",
+    redemittelHeader: "💡 Ключові розмовні фрази telc B1 (Redemittel):",
+    rmPropose: "Пропозиції (Vorschläge machen)",
+    rmAgree: "Згода (Zustimmen)",
+    rmDisagree: "Ввічлива незгода (Widersprechen)",
+    rmDecide: "Підсумок та домовленості (Vereinbaren)",
+    modalKicker: "СКЛАДІТЬ ІСПИТ TELC B1",
+    modalTitle: "Виберіть свій Pro абонемент",
+    modalDesc: "Отримайте живе оцінювання листів, трекінг помилок та симуляцію іспиту.",
+    fixLabel: "Виправлення:"
+  }
+};
+
+function getActiveLanguage() {
+  if (typeof currentLang !== 'undefined' && ['en', 'tr', 'ar', 'uk'].includes(currentLang)) {
+    return currentLang;
+  }
+  return 'en';
+}
+
+function getShowcaseText(key) {
+  const lang = getActiveLanguage();
+  return SHOWCASE_I18N[lang]?.[key] || SHOWCASE_I18N.en[key] || '';
+}
 
 function renderSchreibenShowcase(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
   const data = SAMPLE_B1_EVALUATION;
-  const isTr = typeof currentLang !== 'undefined' && currentLang === 'tr';
+  const lang = getActiveLanguage();
+  const langKey = lang.charAt(0).toUpperCase() + lang.slice(1);
+  const isAr = lang === 'ar';
+  const rtlAttr = isAr ? 'dir="rtl"' : 'dir="ltr"';
+  const t = getShowcaseText;
+
+  const promptTitle = data.prompt['title' + langKey] || data.prompt.titleEn;
+  const promptType = data.prompt['type' + langKey] || data.prompt.typeEn;
+  const rubricNote = data.scores['rubricNote' + langKey] || data.scores.rubricNoteEn;
 
   container.innerHTML = `
-    <div class="schreiben-showcase-wrapper">
+    <div class="schreiben-showcase-wrapper" ${rtlAttr}>
       <!-- Navigation Tabs Header -->
       <div class="schreiben-tab-bar">
         <button class="schreiben-tab-btn ${currentShowcaseTab === 'showcase' ? 'active' : ''}" onclick="switchSchreibenTab('showcase')">
-          ✨ Pre-Computed Sample Report
+          ${t('tabSample')}
         </button>
         <button class="schreiben-tab-btn ${currentShowcaseTab === 'live' ? 'active' : ''}" onclick="switchSchreibenTab('live')">
-          ⚡ Live AI Letter Grader (Pro)
+          ${t('tabLive')}
         </button>
         <button class="schreiben-tab-btn ${currentShowcaseTab === 'speaking' ? 'active' : ''}" onclick="switchSchreibenTab('speaking')">
-          🗣️ Sprechen Teil 3 Simulator
+          ${t('tabSpeaking')}
         </button>
       </div>
 
       <!-- TAB 1: SHOWCASE REPORT -->
       <div id="tab-content-showcase" class="tab-pane ${currentShowcaseTab === 'showcase' ? 'active' : ''}">
         <div class="showcase-header">
-          <div class="showcase-badge">✨ Official telc B1 Sample Evaluation</div>
-          <h2>📝 telc Deutsch B1 Schreiben — Interactive Examiner Report</h2>
-          <p>This report demonstrates how the <strong>Pro AI Exam Grader</strong> evaluates student letters line-by-line using the official <strong>telc B1 3-Criteria Rating System</strong> (Max 45 points).</p>
+          <div class="showcase-badge">${t('badgeOfficial')}</div>
+          <h2>${t('titleReport')}</h2>
+          <p>${t('descReport')}</p>
         </div>
 
         <!-- Prompt Info Card with Incoming E-Mail & 4 Leitpunkte -->
         <div class="showcase-prompt-card">
           <div class="prompt-header">
-            <span class="prompt-type">${data.prompt.type}</span>
+            <span class="prompt-type">${promptType}</span>
             <span class="prompt-word-count">⏱️ ${data.prompt.timeAllowed} • 📊 ${data.studentSubmission.wordCount} words</span>
           </div>
-          <h3 class="prompt-title">${data.prompt.title}</h3>
+          <h3 class="prompt-title">${promptTitle}</h3>
 
           <!-- Incoming E-Mail Box -->
           <div class="incoming-email-box">
             <div class="email-header">
-              <div><strong>From:</strong> ${data.prompt.incomingMessage.sender}</div>
-              <div><strong>Subject:</strong> ${data.prompt.incomingMessage.subject}</div>
+              <div><strong>${t('fromLabel')}</strong> ${data.prompt.incomingMessage.sender}</div>
+              <div><strong>${t('subjectLabel')}</strong> ${data.prompt.incomingMessage.subject}</div>
             </div>
-            <div class="email-body">${data.prompt.incomingMessage.text.replace(/\n/g, '<br>')}</div>
+            <div class="email-body" dir="ltr">${data.prompt.incomingMessage.text.replace(/\n/g, '<br>')}</div>
           </div>
 
           <!-- 4 Leitpunkte Checklist -->
           <div class="leitpunkte-checklist">
-            <h4>📋 telc B1 Leitpunkte Check (4 Guided Points Required):</h4>
+            <h4>${t('leitpunkteHeader')}</h4>
             <div class="leitpunkte-grid">
-              ${data.prompt.leitpunkte.map(lp => `
-                <div class="leitpunkt-item ${lp.status}">
-                  <span class="lp-icon">${lp.status === 'fulfilled' ? '✅' : '⚠️'}</span>
-                  <span class="lp-num">Point ${lp.id}:</span>
-                  <span class="lp-text">${isTr ? lp.textTr : lp.textEn}</span>
-                </div>
-              `).join('')}
+              ${data.prompt.leitpunkte.map(lp => {
+                const text = lp['text' + langKey] || lp.textEn;
+                return `
+                  <div class="leitpunkt-item ${lp.status}">
+                    <span class="lp-icon">${lp.status === 'fulfilled' ? '✅' : '⚠️'}</span>
+                    <span class="lp-num">${t('pointLabel')} ${lp.id}:</span>
+                    <span class="lp-text">${text}</span>
+                  </div>
+                `;
+              }).join('')}
             </div>
           </div>
         </div>
@@ -72,106 +375,113 @@ function renderSchreibenShowcase(containerId) {
           <!-- Left: Student Letter with Inline Highlighting -->
           <div class="showcase-column letter-column">
             <div class="column-header">
-              <h3>📜 Annotated B1 Student Letter</h3>
-              <span class="sub-hint">Hover or tap highlighted text to view examiner corrections & rule references</span>
+              <h3>${t('annotatedHeader')}</h3>
+              <span class="sub-hint">${t('annotatedHint')}</span>
             </div>
 
-            <div class="annotated-letter-box" id="annotated-letter-content">
-              ${renderAnnotatedText(data.studentSubmission.rawText, data.annotations)}
+            <div class="annotated-letter-box" id="annotated-letter-content" dir="ltr">
+              ${renderAnnotatedText(data.studentSubmission.rawText, data.annotations, lang)}
             </div>
 
             <div class="annotation-legend">
-              <span class="legend-item syntax"><span class="dot"></span> Word Order / Inversion</span>
-              <span class="legend-item spelling"><span class="dot"></span> Orthography / Eszett</span>
-              <span class="legend-item vocab"><span class="dot"></span> B1 Vocab & Register</span>
+              <span class="legend-item syntax"><span class="dot"></span> ${t('legendSyntax')}</span>
+              <span class="legend-item spelling"><span class="dot"></span> ${t('legendSpelling')}</span>
+              <span class="legend-item grammar"><span class="dot"></span> ${t('legendGrammar')}</span>
             </div>
           </div>
 
           <!-- Right: Official telc Rubric & Score calculation -->
           <div class="showcase-column rubric-column">
             <div class="column-header">
-              <h3>📊 Official telc B1 Rubric & Calculation</h3>
-              <span class="sub-hint">Formula: (Kriterium I + II + III) × 3 = Final Score / 45</span>
+              <h3>${t('rubricHeader')}</h3>
+              <span class="sub-hint">${t('rubricFormulaHint')}</span>
             </div>
 
             <!-- Total Score Card with Formula -->
             <div class="total-score-card">
               <div class="score-circle">
                 <span class="score-num">${data.scores.total}</span>
-                <span class="score-max">/ 45 pts</span>
+                <span class="score-max">${t('ptsMax')}</span>
               </div>
               <div class="score-details">
                 <div class="score-grade">${data.scores.grade} (${data.scores.percentage}%)</div>
                 <div class="score-formula">
                   <code>(${data.scores.criteria[0].ratingLetter} + ${data.scores.criteria[1].ratingLetter} + ${data.scores.criteria[2].ratingLetter}) = ${data.scores.rawSum}/15 × 3 = ${data.scores.total}/45</code>
                 </div>
-                <div class="score-status-pill">Pass Threshold Met (≥27 pts)</div>
+                <div class="score-status-pill">${t('passThresholdLabel')}</div>
               </div>
             </div>
 
             <!-- Individual Criteria Rating Cards -->
             <div class="criteria-list">
-              ${data.scores.criteria.map(c => `
-                <div class="criterion-item">
-                  <div class="criterion-header">
-                    <span class="criterion-title">${isTr ? c.titleTr : c.titleEn}</span>
-                    <span class="criterion-score">Score ${c.ratingLetter} (${c.rawScore}/5 raw &rarr; <strong>${c.finalScore}/15 pts</strong>)</span>
+              ${data.scores.criteria.map(c => {
+                const title = c['title' + langKey] || c.titleEn;
+                const summary = c['summary' + langKey] || c.summaryEn;
+                return `
+                  <div class="criterion-item">
+                    <div class="criterion-header">
+                      <span class="criterion-title">${title}</span>
+                      <span class="criterion-score">${t('scoreLabel')} ${c.ratingLetter} (${c.rawScore}/5 ${t('ptsRaw')} &rarr; <strong>${c.finalScore}/15 ${t('finalPts')}</strong>)</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                      <div class="progress-bar-fill ${c.status}" style="width: ${(c.rawScore / c.rawMax) * 100}%"></div>
+                    </div>
+                    <p class="criterion-summary">${summary}</p>
                   </div>
-                  <div class="progress-bar-bg">
-                    <div class="progress-bar-fill ${c.status}" style="width: ${(c.rawScore / c.rawMax) * 100}%"></div>
-                  </div>
-                  <p class="criterion-summary">${isTr ? c.summaryTr : c.summaryEn}</p>
-                </div>
-              `).join('')}
+                `;
+              }).join('')}
             </div>
 
             <!-- telc Rules Note -->
             <div class="telc-rules-note">
-              💡 <strong>telc B1 Rule ("Primat der Verständlichkeit"):</strong> Grammar errors that do not hinder understanding are graded Score B (3 pts). Full Score A (5 pts) requires zero systematic syntax errors and natural B1 register.
+              ${rubricNote}
             </div>
           </div>
         </div>
 
         <!-- B1 Vocabulary & Sentence Structure Upgrades -->
         <div class="upgrades-section">
-          <h3>💡 Examiner B1 Sentence Upgrades</h3>
-          <p class="upgrades-sub">Transforming basic expressions into high-scoring B1 formal structures:</p>
+          <h3>${t('upgradesHeader')}</h3>
+          <p class="upgrades-sub">${t('upgradesSub')}</p>
           <div class="upgrades-grid">
-            ${data.b1Upgrades.map(u => `
-              <div class="upgrade-card">
-                <div class="upgrade-original">
-                  <span class="label">Original Student Phrase:</span>
-                  <p>"${u.original}"</p>
+            ${data.b1Upgrades.map(u => {
+              const benefit = u['benefit' + langKey] || u.benefitEn;
+              return `
+                <div class="upgrade-card">
+                  <div class="upgrade-original">
+                    <span class="label">${t('upgradeOriginal')}</span>
+                    <p dir="ltr">"${u.original}"</p>
+                  </div>
+                  <div class="upgrade-improved">
+                    <span class="label">${t('upgradeRecommended')}</span>
+                    <p dir="ltr">"${u.upgrade}"</p>
+                  </div>
+                  <div class="upgrade-benefit">
+                    <span>${t('upgradeWhy')}</span> ${benefit}
+                  </div>
                 </div>
-                <div class="upgrade-improved">
-                  <span class="label">✨ B1 Examiner Recommendation:</span>
-                  <p>"${u.upgrade}"</p>
-                </div>
-                <div class="upgrade-benefit">
-                  <span>💡 Why this scores higher:</span> ${isTr ? u.benefitTr : u.benefitEn}
-                </div>
-              </div>
-            `).join('')}
+              `;
+            }).join('')}
           </div>
         </div>
 
         <!-- High-Converting CTA Banner -->
         <div class="pro-cta-banner">
           <div class="cta-content">
-            <span class="cta-kicker">🚀 UNLOCK THE AI EXAM GRADER</span>
-            <h2>Want instant, line-by-line feedback on your OWN practice letters?</h2>
-            <p>Get authentic telc B1 rubric scoring, syntax fixes, and personalized weak-spot tracking in 15 seconds.</p>
+            <span class="cta-kicker">${t('ctaKicker')}</span>
+            <h2>${t('ctaTitle')}</h2>
+            <p>${t('ctaDesc')}</p>
             <div class="cta-badges">
-              <span>⚡ Instant 15s Feedback</span>
-              <span>🎯 Official telc B1 Criteria (I + II + III × 3)</span>
-              <span>🔒 100% Secure & Private</span>
+              <span>${t('ctaBadge1')}</span>
+              <span>${t('ctaBadge2')}</span>
+              <span>${t('ctaBadge3')}</span>
             </div>
           </div>
           <div class="cta-action">
             <button class="cta-btn-primary" onclick="openProPricingModal()">
-              ⚡ Unlock AI Exam Grader — from €29
+              ${t('ctaBtn')}
             </button>
-            <div class="cta-guarantee">30-Day Pass • No recurring monthly subscription</div>
+            <div class="cta-guarantee">${t('ctaGuarantee')}</div>
           </div>
         </div>
       </div>
@@ -180,32 +490,32 @@ function renderSchreibenShowcase(containerId) {
       <div id="tab-content-live" class="tab-pane ${currentShowcaseTab === 'live' ? 'active' : ''}">
         <div class="live-grader-card">
           <div class="live-header">
-            <h2>⚡ Live telc B1 AI Exam Grader</h2>
-            <p>Paste or type your practice letter below to evaluate it instantly against official telc B1 criteria.</p>
+            <h2>${t('liveTitle')}</h2>
+            <p>${t('liveDesc')}</p>
           </div>
 
           <div class="live-form-group">
-            <label for="prompt-select-input"><strong>Choose Examination Prompt:</strong></label>
+            <label for="prompt-select-input"><strong>${t('livePromptSelectLabel')}</strong></label>
             <select id="prompt-select-input" class="styled-select" onchange="handlePromptSelectChange(this.value)">
-              <option value="marianne">Option 1 (Informel): E-Mail an Marianne (Besuch in Deutschland)</option>
-              <option value="hotel">Option 2 (Formel): Beschwerdebrief Hotel Meeresblick</option>
-              <option value="vhs">Option 3 (Halbformel): Anfrage Sprachkurs an Volkshochschule</option>
-              <option value="custom">Custom Prompt (Enter your own situation & Leitpunkte)</option>
+              <option value="marianne">${t('livePromptMarianne')}</option>
+              <option value="hotel">${t('livePromptHotel')}</option>
+              <option value="vhs">${t('livePromptVhs')}</option>
+              <option value="custom">${t('livePromptCustom')}</option>
             </select>
           </div>
 
           <div class="live-form-group">
-            <label for="student-letter-textarea"><strong>Your Practice Letter (Minimal 20 words):</strong></label>
-            <textarea id="student-letter-textarea" class="styled-textarea" rows="8" placeholder="Liebe Marianne, ich habe mich sehr über deine E-Mail gefreut..." oninput="updateWordCounter(this)"></textarea>
+            <label for="student-letter-textarea"><strong>${t('liveTextareaLabel')}</strong></label>
+            <textarea id="student-letter-textarea" class="styled-textarea" rows="8" dir="ltr" placeholder="${t('liveTextareaPlaceholder')}" oninput="updateWordCounter(this)"></textarea>
             <div class="textarea-counter-row">
-              <span id="letter-word-count">Words: 0</span>
-              <span id="letter-char-count">Characters: 0</span>
+              <span id="letter-word-count">${t('liveWordCount')} 0</span>
+              <span id="letter-char-count">${t('liveCharCount')} 0</span>
             </div>
           </div>
 
           <div class="live-action-row">
             <button class="cta-btn-primary" onclick="submitLiveLetterGrading()">
-              ⚡ Grade My Letter with AI (/45)
+              ${t('liveSubmitBtn')}
             </button>
           </div>
 
@@ -217,71 +527,71 @@ function renderSchreibenShowcase(containerId) {
       <div id="tab-content-speaking" class="tab-pane ${currentShowcaseTab === 'speaking' ? 'active' : ''}">
         <div class="speaking-sim-card">
           <div class="speaking-header">
-            <span class="showcase-badge">🗣️ telc B1 Mündliche Prüfung</span>
-            <h2>Teil 3: Gemeinsam etwas planen (Pair Task)</h2>
-            <p>Simulate the joint planning examination task. Review official exam topics, interactive checklists, and essential B1 conversation phrases (Redemittel).</p>
+            <span class="showcase-badge">${t('speakingBadge')}</span>
+            <h2>${t('speakingTitle')}</h2>
+            <p>${t('speakingDesc')}</p>
           </div>
 
           <!-- Prompt Selector for Speaking -->
           <div class="speaking-topic-card">
-            <h3>Aufgabe: Abschiedsparty planen</h3>
-            <p>Sie haben zwei Wochen Urlaub gemacht und einige nette Deutsche kennengelernt. Vor dem Ende des Urlaubs möchten Sie eine Abschiedsparty feiern. Planen Sie das Fest gemeinsam mit Ihrem Partner.</p>
+            <h3>${t('speakingTaskTitle')}</h3>
+            <p dir="ltr">${t('speakingTaskDesc')}</p>
           </div>
 
           <!-- Interactive Checklist -->
           <div class="speaking-checklist-box">
-            <h4>📋 Checklist & Task Points to Agree On:</h4>
+            <h4>${t('speakingChecklistHeader')}</h4>
             <div class="speaking-points-grid">
               <div class="sp-point">
                 <input type="checkbox" id="sp1" onchange="toggleSpeakingPoint('sp1', this.checked)">
-                <label for="sp1"><strong>Wann?</strong> (Datum, Wochentag & Uhrzeit festlegen)</label>
+                <label for="sp1"><strong>Wann?</strong> (${t('spWhen')})</label>
               </div>
               <div class="sp-point">
                 <input type="checkbox" id="sp2" onchange="toggleSpeakingPoint('sp2', this.checked)">
-                <label for="sp2"><strong>Wo?</strong> (Treffpunkt, Raum, Garten oder Restaurant)</label>
+                <label for="sp2"><strong>Wo?</strong> (${t('spWhere')})</label>
               </div>
               <div class="sp-point">
                 <input type="checkbox" id="sp3" onchange="toggleSpeakingPoint('sp3', this.checked)">
-                <label for="sp3"><strong>Essen & Trinken?</strong> (Kuchen, Fingerfood, Getränke kaufen)</label>
+                <label for="sp3"><strong>Essen & Trinken?</strong> (${t('spFood')})</label>
               </div>
               <div class="sp-point">
                 <input type="checkbox" id="sp4" onchange="toggleSpeakingPoint('sp4', this.checked)">
-                <label for="sp4"><strong>Wer bezahlt wofür?</strong> (Kosten verteilen & Budget)</label>
+                <label for="sp4"><strong>Wer bezahlt wofür?</strong> (${t('spBudget')})</label>
               </div>
             </div>
           </div>
 
           <!-- Essential B1 Speaking Phrases (Redemittel) -->
           <div class="redemittel-section">
-            <h4>💡 Essential telc B1 Redemittel (Conversation Phrases):</h4>
+            <h4>${t('redemittelHeader')}</h4>
             <div class="redemittel-grid">
               <div class="rm-card">
-                <h5>Vorschläge machen (Making Proposals)</h5>
-                <ul>
+                <h5>${t('rmPropose')}</h5>
+                <ul dir="ltr">
                   <li>"Ich schlage vor, dass wir..."</li>
                   <li>"Wie wäre es, wenn wir...?"</li>
                   <li>"Was hältst du davon, wenn...?"</li>
                 </ul>
               </div>
               <div class="rm-card">
-                <h5>Zustimmen (Agreeing)</h5>
-                <ul>
+                <h5>${t('rmAgree')}</h5>
+                <ul dir="ltr">
                   <li>"Das ist eine hervorragende Idee!"</li>
                   <li>"Ich bin ganz deiner Meinung."</li>
                   <li>"Genau so machen wir das."</li>
                 </ul>
               </div>
               <div class="rm-card">
-                <h5>Widersprechen & Gegenvorschlag (Countering)</h5>
-                <ul>
+                <h5>${t('rmDisagree')}</h5>
+                <ul dir="ltr">
                   <li>"Das ist zwar gut, aber vielleicht sollten wir..."</li>
                   <li>"Ich weiß nicht, ob das klappt. Besser wäre..."</li>
                   <li>"Tut mir leid, aber da bin ich skeptisch."</li>
                 </ul>
               </div>
               <div class="rm-card">
-                <h5>Vereinbaren & Festhalten (Deciding)</h5>
-                <ul>
+                <h5>${t('rmDecide')}</h5>
+                <ul dir="ltr">
                   <li>"Gut, dann halten wir das so fest!"</li>
                   <li>"Einverstanden! Wer kümmert sich um...?"</li>
                   <li>"Perfekt, abgemacht!"</li>
@@ -340,7 +650,7 @@ function switchSchreibenTab(tabName) {
   const targetBtn = Array.from(document.querySelectorAll('.schreiben-tab-btn')).find(b => b.getAttribute('onclick')?.includes(tabName));
   if (targetBtn) targetBtn.classList.add('active');
 
-  if (tabName === 'sprechen') {
+  if (tabName === 'speaking') {
     restoreSpeakingPoints();
   }
 }
@@ -353,10 +663,11 @@ function updateWordCounter(textarea) {
   const words = text ? text.split(/\s+/).length : 0;
   const chars = text.length;
 
+  const t = getShowcaseText;
   const wordEl = document.getElementById('letter-word-count');
   const charEl = document.getElementById('letter-char-count');
-  if (wordEl) wordEl.textContent = `Words: ${words}`;
-  if (charEl) charEl.textContent = `Characters: ${chars}`;
+  if (wordEl) wordEl.textContent = `${t('liveWordCount')} ${words}`;
+  if (charEl) charEl.textContent = `${t('liveCharCount')} ${chars}`;
 }
 
 /**
@@ -367,9 +678,11 @@ function handlePromptSelectChange(val) {
   if (!textarea) return;
 
   if (val === 'marianne') {
-    textarea.value = `Liebe Marianne,\n\nich habe mich sehr über deine E-Mail gefreut! Es ist super, dass du mich besuchen willst.\n\nDie beste Jahreszeit für eine Reise ist der Frühling...`;
+    textarea.value = `Liebe Marianne,\n\nich habe mich sehr über deine E-Mail gefreut! Es ist wirklich schön, dass du mich bald in Deutschland besuchen möchtest.\n\nDie beste Jahreszeit für deine Reise ist der Frühling, besonders der Mai...`;
   } else if (val === 'hotel') {
     textarea.value = `Sehr geehrte Damen und Herren,\n\nich schreibe Ihnen, weil ich mich über meinen Aufenthalt im Hotel Meeresblick beschweren möchte...`;
+  } else if (val === 'vhs') {
+    textarea.value = `Sehr geehrte Damen und Herren,\n\nich interessiere mich sehr für den Deutschkurs B2 an Ihrer Volkshochschule und hätte dazu einige Fragen...`;
   }
   updateWordCounter(textarea);
 }
@@ -382,7 +695,14 @@ function submitLiveLetterGrading() {
   const text = textarea ? textarea.value.trim() : '';
 
   if (!text || text.split(/\s+/).length < 20) {
-    alert('Please enter a practice letter with at least 20 words before submitting for AI grading.');
+    const lang = getActiveLanguage();
+    const alerts = {
+      en: 'Please enter a practice letter with at least 20 words before submitting for AI grading.',
+      tr: 'Lütfen yapay zeka puanlamasına göndermeden önce en az 20 kelimelik bir mektup yazın.',
+      ar: 'يرجى كتابة رسالة تدريبية تحتوي على 20 كلمة على الأقل قبل طلب التقييم.',
+      uk: 'Будь ласка, введіть тренувальний лист обсягом щонайменше 20 слів перед відправкою на оцінювання.'
+    };
+    alert(alerts[lang] || alerts.en);
     return;
   }
 
@@ -391,17 +711,23 @@ function submitLiveLetterGrading() {
 }
 
 /**
- * Helper to inject annotations into the student letter string
+ * Helper to inject annotations into the student letter string with localized popovers
  */
-function renderAnnotatedText(rawText, annotations) {
+function renderAnnotatedText(rawText, annotations, lang) {
   let html = rawText;
+  const activeLang = lang || getActiveLanguage();
+  const langKey = activeLang.charAt(0).toUpperCase() + activeLang.slice(1);
+  const fixWord = SHOWCASE_I18N[activeLang]?.fixLabel || SHOWCASE_I18N.en.fixLabel;
 
   annotations.forEach(ann => {
+    const explanation = ann['explanation' + langKey] || ann.explanationEn;
+    const ruleTitle = ann['rule' + langKey] || ann.ruleEn || ann.rule;
+
     const highlightSpan = `<mark class="annotation-mark ${ann.type}">
       ${ann.targetText}
-      <span class="ann-popover">
-        <strong>Fix: ${ann.correctedText}</strong><br>
-        <small>${ann.rule}: ${ann.explanationEn}</small>
+      <span class="ann-popover" ${activeLang === 'ar' ? 'dir="rtl" style="text-align:right;"' : 'dir="ltr"'}>
+        <strong>${fixWord} ${ann.correctedText}</strong><br>
+        <small><strong>${ruleTitle}:</strong> ${explanation}</small>
       </span>
     </mark>`;
 
@@ -412,7 +738,7 @@ function renderAnnotatedText(rawText, annotations) {
 }
 
 /**
- * Open Pricing Modal
+ * Open Pricing Modal with Quad-Lingual localization
  */
 function openProPricingModal() {
   let modal = document.getElementById('pro-pricing-modal');
@@ -424,38 +750,47 @@ function openProPricingModal() {
   }
 
   const tiers = SAMPLE_B1_EVALUATION.pricingTiers;
+  const lang = getActiveLanguage();
+  const langKey = lang.charAt(0).toUpperCase() + lang.slice(1);
+  const isAr = lang === 'ar';
+  const t = getShowcaseText;
 
   modal.innerHTML = `
-    <div class="modal-card pricing-modal-card">
+    <div class="modal-card pricing-modal-card" ${isAr ? 'dir="rtl"' : 'dir="ltr"'}>
       <button class="modal-close-btn" onclick="closeProPricingModal()">✕</button>
       <div class="modal-header">
-        <span class="modal-kicker">PASS THE TELC B1 EXAM</span>
-        <h2>Choose Your Pro Pass</h2>
-        <p>Unlock live AI letter grading, error tracking, and examination simulation.</p>
+        <span class="modal-kicker">${t('modalKicker')}</span>
+        <h2>${t('modalTitle')}</h2>
+        <p>${t('modalDesc')}</p>
       </div>
 
       <div class="pricing-tiers-grid">
-        ${tiers.map(t => `
-          <div class="pricing-tier-card ${t.id === 'citizenship' ? 'featured' : ''}">
-            ${t.badge ? `<div class="tier-badge">${t.badge}</div>` : ''}
-            <h3 class="tier-name">${t.name}</h3>
-            <div class="tier-price">
-              <span class="amount">${t.price}</span>
-              <span class="period">/ ${t.period}</span>
-            </div>
-            <div class="tier-credits">⚡ ${t.credits}</div>
-            <ul class="tier-features">
-              ${t.features.map(f => `<li>✓ ${f}</li>`).join('')}
-            </ul>
-            <button class="tier-cta-btn ${t.id === 'citizenship' ? 'featured' : ''}" onclick="selectProPlan('${t.id}')">
-              ${t.ctaText}
-            </button>
-          </div>
-        `).join('')}
-      </div>
+        ${tiers.map(tier => {
+          const name = tier['name' + langKey] || tier.nameEn;
+          const badge = tier['badge' + langKey] || tier.badgeEn;
+          const period = tier['period' + langKey] || tier.periodEn;
+          const credits = tier['credits' + langKey] || tier.creditsEn;
+          const features = tier['features' + langKey] || tier.featuresEn;
+          const ctaText = tier['ctaText' + langKey] || tier.ctaTextEn;
 
-      <div class="modal-footer-note">
-        🔒 Payments handled securely via Paddle / Lemon Squeezy. One-time payment, non-recurring.
+          return `
+            <div class="pricing-tier-card ${tier.id === 'citizenship' ? 'featured' : ''}">
+              ${badge ? `<div class="tier-badge">${badge}</div>` : ''}
+              <h3 class="tier-name">${name}</h3>
+              <div class="tier-price">
+                <span class="amount">${tier.price}</span>
+                <span class="period">/ ${period}</span>
+              </div>
+              <div class="tier-credits">⚡ ${credits}</div>
+              <ul class="tier-features">
+                ${features.map(f => `<li>✓ ${f}</li>`).join('')}
+              </ul>
+              <button class="tier-cta-btn ${tier.id === 'citizenship' ? 'featured' : ''}" onclick="selectProPlan('${tier.id}')">
+                ${ctaText}
+              </button>
+            </div>
+          `;
+        }).join('')}
       </div>
     </div>
   `;
@@ -469,44 +804,23 @@ function closeProPricingModal() {
 }
 
 function selectProPlan(planId) {
-  // Check if Paddle or Lemon Squeezy overlay checkout is configured
-  if (typeof window.Paddle !== 'undefined' && window.Paddle.Checkout) {
-    window.Paddle.Checkout.open({
-      items: [{ priceId: planId, quantity: 1 }]
-    });
-    return;
-  }
-  if (typeof window.createLemonSqueezyCheckout === 'function') {
-    window.createLemonSqueezyCheckout(planId);
-    return;
-  }
-
-  // Graceful checkout dialog
-  const modal = document.getElementById('pro-pricing-modal');
-  if (modal) {
-    const header = modal.querySelector('.modal-header');
-    if (header) {
-      header.innerHTML = `
-        <span class="modal-kicker">🔒 SECURE CHECKOUT INITIALIZED</span>
-        <h2>Proceed to Pro Activation</h2>
-        <p>Selected Plan: <strong>${planId.toUpperCase()} Pass</strong>. Complete payment via Merchant of Record to instantly receive your AI letter grading credits.</p>
-        <div style="background:rgba(217,119,6,0.12); border:1px solid var(--accent-gold); border-radius:8px; padding:12px; margin-top:10px; font-size:13px; color:var(--text-primary);">
-          ✨ <strong>Instant Quota Delivery:</strong> Upon checkout completion, your unique license token is automatically credited to your account via serverless webhook.
-        </div>
-      `;
-    }
-  }
+  const lang = getActiveLanguage();
+  const msgs = {
+    en: `Thank you for your interest in ${planId.toUpperCase()}! You will be redirected to the secure enrollment checkout.`,
+    tr: `${planId.toUpperCase()} paketine ilginiz için teşekkür ederiz! Güvenli kayıt sayfasına yönlendiriliyorsunuz.`,
+    ar: `شكراً لاهتمامك بباقة ${planId.toUpperCase()}! جاري تحويلك إلى صفحة الدفع الآمنة.`,
+    uk: `Дякуємо за інтерес до пакета ${planId.toUpperCase()}! Вас буде перенаправлено на безпечну сторінку оформлення.`
+  };
+  alert(msgs[lang] || msgs.en);
+  closeProPricingModal();
 }
 
-if (typeof window !== 'undefined') {
-  window.renderSchreibenShowcase = renderSchreibenShowcase;
-  window.switchSchreibenTab = switchSchreibenTab;
-  window.updateWordCounter = updateWordCounter;
-  window.handlePromptSelectChange = handlePromptSelectChange;
-  window.submitLiveLetterGrading = submitLiveLetterGrading;
-  window.openProPricingModal = openProPricingModal;
-  window.closeProPricingModal = closeProPricingModal;
-  window.selectProPlan = selectProPlan;
-  window.toggleSpeakingPoint = toggleSpeakingPoint;
-  window.restoreSpeakingPoints = restoreSpeakingPoints;
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    SHOWCASE_I18N,
+    renderSchreibenShowcase,
+    renderAnnotatedText,
+    getActiveLanguage,
+    getShowcaseText
+  };
 }

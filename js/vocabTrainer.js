@@ -1400,6 +1400,14 @@
 
       // Record in Session Manager
       this.sessionManager.recordResult(item.id, isCorrect);
+      if (!isCorrect && typeof window !== 'undefined' && typeof window.recordFehlerheftItem === 'function') {
+        window.recordFehlerheftItem({
+          word: item.de,
+          meaning: this.getMeaning(item) || '',
+          example: item.example || '',
+          mistakeType: 'vocab'
+        });
+      }
       if (this.settings.mode === 'sprint') {
         this.sprintCardsAnswered++;
         if (isCorrect) this.sprintCorrectCount++;
