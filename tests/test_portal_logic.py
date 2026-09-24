@@ -418,9 +418,40 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         # Check portal.js hooks
         self.assertIn("renderLiDChecklist('lid-checklist-container')", self.portal_js)
 
+    def test_sidebar_track_specific_isolation_and_compact_hero(self):
+        """Verify sidebar sub-navigation adapts per track and active bar is streamlined and compact."""
+        index_path = os.path.join(ROOT_DIR, "index.html")
+        with open(index_path, "r", encoding="utf-8") as f:
+            index_html = f.read()
+
+        # Check DOM IDs for header and stats
+        self.assertIn('id="sidebar-nav-header"', index_html)
+        self.assertIn('id="hero-stats"', index_html)
+        self.assertIn('id="hero-goal-strip"', index_html)
+
+        # Verify closeMarkdown(true) is invoked when switching tracks
+        self.assertIn("closeMarkdown(true);", self.portal_js)
+
+        # Verify navigation helpers are defined
+        for fn in ["openB1Module", "navigateToSection", "navigateToLiDStateMode", "navigateToLiDSimulation", "navigateToExaminerSuite"]:
+            self.assertIn(f"function {fn}", self.portal_js)
+            self.assertIn(f"window.{fn} = {fn}", self.portal_js)
+
+        # Verify renderSidebar has distinct track branches
+        self.assertIn("if (track === 'vocab')", self.portal_js)
+        self.assertIn("else if (track === 'lid')", self.portal_js)
+
+        # Verify CSS compact hero and sleek stats
+        css_path = os.path.join(ROOT_DIR, "css", "portal.css")
+        with open(css_path, "r", encoding="utf-8") as f:
+            portal_css = f.read()
+        self.assertIn(".sidebar-sub-divider", portal_css)
+        self.assertIn(".hero-stat .val", portal_css)
+
 
 if __name__ == "__main__":
     unittest.main()
+
 
 
 
