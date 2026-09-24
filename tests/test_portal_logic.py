@@ -448,6 +448,36 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn(".sidebar-sub-divider", portal_css)
         self.assertIn(".hero-stat .val", portal_css)
 
+    def test_minimalist_track_isolation_and_pastel_palette(self):
+        """Verify switchTrack syncs goal to active track and pastel tokens are properly defined."""
+        # 1. Goal synchronization in switchTrack
+        self.assertIn("currentGoalId = 'goal-lid';", self.portal_js)
+        self.assertIn("currentGoalId = 'goal-vocab';", self.portal_js)
+        self.assertIn("updateGoalDisplays();", self.portal_js)
+
+        # 2. Pre-synchronization in initEntranceGoal
+        self.assertIn("let targetTrack = 'b1';", self.portal_js)
+        self.assertIn("currentTrack = targetTrack;", self.portal_js)
+        self.assertIn("switchTrack(targetTrack);", self.portal_js)
+
+        # 3. Trending pastel CSS design tokens
+        css_path = os.path.join(ROOT_DIR, "css", "portal.css")
+        with open(css_path, "r", encoding="utf-8") as f:
+            portal_css = f.read()
+        self.assertIn("--pastel-sage", portal_css)
+        self.assertIn("--pastel-butter", portal_css)
+        self.assertIn("--pastel-lavender", portal_css)
+        self.assertIn("--pastel-peach", portal_css)
+        self.assertIn("--pastel-sky", portal_css)
+
+        # 4. Clean sidebar without persistent B1 text leakage
+        index_path = os.path.join(ROOT_DIR, "index.html")
+        with open(index_path, "r", encoding="utf-8") as f:
+            index_html = f.read()
+        self.assertNotIn("10 Modules & Plan", index_html)
+        self.assertNotIn(">30-Day B1 Exam Plan<", index_html)
+        self.assertNotIn("STUDY MODULES (10)", index_html)
+
 
 if __name__ == "__main__":
     unittest.main()
