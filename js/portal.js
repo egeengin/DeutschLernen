@@ -945,10 +945,26 @@ const savedLang = localStorage.getItem('site_lang') || localStorage.getItem('tel
 setLang(savedLang);
 
 // Active nav tracking
+function updateActivePillars(id) {
+  const b1Pillar = document.querySelector('.sidebar-pillar-link.pillar-b1');
+  const lidPillar = document.querySelector('.sidebar-pillar-link.pillar-lid');
+  if (!b1Pillar || !lidPillar) return;
+  if (id === 'lid-trainer-section') {
+    lidPillar.classList.add('active');
+    b1Pillar.classList.remove('active');
+  } else if (id === 'materials' || id === 'exam-guide' || id === 'home') {
+    b1Pillar.classList.add('active');
+    lidPillar.classList.remove('active');
+  } else {
+    lidPillar.classList.remove('active');
+  }
+}
+
 function showSection(id) {
   document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
   const active = document.querySelector(`.sidebar-nav a[href="#${id}"]`);
   if (active) active.classList.add('active');
+  updateActivePillars(id);
   // Close mobile sidebar
   document.querySelector('.sidebar').classList.remove('open');
 }
@@ -961,6 +977,7 @@ const observer = new IntersectionObserver(entries => {
       document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
       const match = document.querySelector(`.sidebar-nav a[href="#${id}"]`);
       if (match) match.classList.add('active');
+      updateActivePillars(id);
     }
   });
 }, { threshold: 0.3 });

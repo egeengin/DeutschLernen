@@ -56,6 +56,8 @@
       exportData: "Export Progress",
       importData: "Import Progress",
       dataManagement: "Backup & Restore (JSON)",
+      autoAudioPref: "Auto-Pronounce Questions",
+      autoAudioDesc: "Automatically play German audio when new word appears",
       resetConfirm: "Are you sure you want to reset your vocabulary progress?",
       correctToast: "Correct! Excellent recall.",
       wrongToast: "Incorrect! Added to your Mistakes Queue for review.",
@@ -160,6 +162,8 @@
       exportData: "İlerlemeyi Dışa Aktar",
       importData: "İlerlemeyi İçe Aktar",
       dataManagement: "Yedekleme ve Geri Yükleme (JSON)",
+      autoAudioPref: "Soruları Otomatik Seslendir",
+      autoAudioDesc: "Yeni kelime ekrana geldiğinde telaffuzu otomatik çal",
       resetConfirm: "Kelime ilerleme verilerinizi sıfırlamak istediğinize emin misiniz?",
       correctToast: "Tebrikler! Doğru cevap.",
       wrongToast: "Yanlış! Bu kelime tekrar edilmek üzere Hata Havuzunuza eklendi.",
@@ -264,6 +268,8 @@
       exportData: "تصدير التقدم",
       importData: "استيراد التقدم",
       dataManagement: "النسخ الاحتياطي واستعادة البيانات (JSON)",
+      autoAudioPref: "نطق الأسئلة تلقائياً",
+      autoAudioDesc: "تشغيل النطق الصوتي الألماني تلقائياً عند ظهور كلمة جديدة",
       resetConfirm: "هل أنت متأكد من رغبتك في إعادة تعيين تقدمك في المفردات؟",
       correctToast: "صحيح! تذكر ممتاز.",
       wrongToast: "غير صحيح! تمت الإضافة إلى قائمة مراجعة الأخطاء.",
@@ -368,6 +374,8 @@
       exportData: "Експорт прогресу",
       importData: "Імпорт прогресу",
       dataManagement: "Резервне копіювання та відновлення (JSON)",
+      autoAudioPref: "Автоматична вимова слів",
+      autoAudioDesc: "Автоматично вимовляти німецьке слово при появі нового запитання",
       resetConfirm: "Ви впевнені, що хочете скинути свій прогрес вивчення слів?",
       correctToast: "Правильно! Відмінна пам'ять.",
       wrongToast: "Неправильно! Додано до черги помилок для повторення.",
@@ -1154,7 +1162,7 @@
     updateAudioBtnState() {
       if (!this.dom.audioBtn) return;
       const texts = I18N[this.settings.lang] || I18N.en;
-      this.dom.audioBtn.innerHTML = this.settings.audio ? '🔊' : '🔇';
+      this.dom.audioBtn.innerHTML = this.settings.audio ? '🔊 ON' : '🔇 OFF';
       this.dom.audioBtn.title = this.settings.audio ? `Audio: ${texts.audioOn}` : `Audio: ${texts.audioOff}`;
       this.dom.audioBtn.setAttribute('aria-label', this.settings.audio ? texts.audioOn : texts.audioOff);
     }
