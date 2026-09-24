@@ -233,28 +233,40 @@ const LID_UI_TEXT = {
     uk: "Скасувати"
   },
   toggleTransOn: {
-    en: "🌐 Show Translation",
-    tr: "🌐 Çeviriyi Göster",
-    ar: "🌐 إظهار الترجمة",
-    uk: "🌐 Показати переклад"
+    en: "🌐 Show Translation (Tour 1)",
+    tr: "🌐 Çeviriyi Göster (1. Tur)",
+    ar: "🌐 إظهار الترجمة (الجولة 1)",
+    uk: "🌐 Показати переклад (1-й тур)"
   },
   toggleTransOff: {
-    en: "🌐 Hide Translation",
-    tr: "🌐 Çeviriyi Gizle",
-    ar: "🌐 إخفاء الترجمة",
-    uk: "🌐 Сховати переклад"
+    en: "🌐 Hide Translation (Tour 2)",
+    tr: "🌐 Çeviriyi Gizle (2. Tur)",
+    ar: "🌐 إخفاء الترجمة (الجولة 2)",
+    uk: "🌐 Сховати переклад (2-й тур)"
   },
   transActiveBadge: {
-    en: "🌐 Translation: ON",
-    tr: "🌐 Çeviri: AÇIK",
-    ar: "🌐 الترجمة: مفعّلة",
-    uk: "🌐 Переклад: УВІМК"
+    en: "🌐 Translation: ON (Tour 1 / Learning)",
+    tr: "🌐 Çeviri: AÇIK (1. Tur / Öğrenme)",
+    ar: "🌐 الترجمة: مفعّلة (الجولة 1 / تعلّم)",
+    uk: "🌐 Переклад: УВІМК (1-й тур / Навчання)"
   },
   transInactiveBadge: {
-    en: "🌐 Translation: OFF (Exam Immersion)",
-    tr: "🌐 Çeviri: KAPALI (Sınav Modu)",
-    ar: "🌐 الترجمة: معطّلة (محاكاة الامتحان)",
-    uk: "🌐 Переклад: ВИМК (Режим іспиту)"
+    en: "🌐 Translation: OFF (Tour 2 / Exam Prep)",
+    tr: "🌐 Çeviri: KAPALI (2. Tur / Sınav Pratiği)",
+    ar: "🌐 الترجمة: معطّلة (الجولة 2 / محاكاة الامتحان)",
+    uk: "🌐 Переклад: ВИМК (2-й тур / Іспит)"
+  },
+  transHintOpen: {
+    en: "🌐 Show Translation (Tour 1 / Learning)",
+    tr: "🌐 Türkçe Çeviriyi Göster (1. Tur)",
+    ar: "🌐 إظهار الترجمة (الجولة 1)",
+    uk: "🌐 Показати переклад (1-й тур)"
+  },
+  transHintClose: {
+    en: "✕ Hide (Tour 2)",
+    tr: "✕ Gizle (2. Tur)",
+    ar: "✕ إخفاء (الجولة 2)",
+    uk: "✕ Сховати (2-й тур)"
   }
 };
 
@@ -460,10 +472,21 @@ function renderSingleLiDQuestion(q) {
     
     <h3 class="lid-q-text">${q.questionDe}</h3>
     ${isLiDTranslationEnabled && qTrans ? `
-      <p class="lid-q-translation" ${isRtl ? 'dir="rtl" style="text-align:right;"' : ''} style="font-size:14px; color:var(--text-muted); margin-top:-6px; margin-bottom:14px; font-style:italic;">
-        ${qTrans}
-      </p>
-    ` : ''}
+      <div class="lid-q-translation-box" style="display:flex; justify-content:space-between; align-items:flex-start; background:rgba(59,130,246,0.08); border-left:3px solid #3b82f6; padding:8px 12px; border-radius:6px; margin-top:6px; margin-bottom:14px; gap:8px;">
+        <span class="lid-q-translation" ${isRtl ? 'dir="rtl" style="text-align:right;"' : ''} style="font-size:14px; color:var(--text-primary); font-style:italic; line-height:1.4;">
+          🌐 <strong>${transLangLabel}:</strong> ${qTrans}
+        </span>
+        <button class="lid-trans-quick-hide" onclick="toggleLiDTranslation()" style="background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:12px; white-space:nowrap; padding:2px 6px; border-radius:4px;" title="${getLiDTranslation('toggleTransOff', lang)}">
+          ${getLiDTranslation('transHintClose', lang)}
+        </button>
+      </div>
+    ` : (!isLiDTranslationEnabled && qTrans ? `
+      <div style="margin-top:4px; margin-bottom:12px;">
+        <button class="lid-trans-inline-hint-btn" onclick="toggleLiDTranslation()" title="${getLiDTranslation('toggleTransOn', lang)}">
+          ${getLiDTranslation('transHintOpen', lang)}
+        </button>
+      </div>
+    ` : '')}
 
     ${q.image ? `
       <div class="lid-q-image-container" style="text-align:center; margin:16px 0;">
@@ -695,6 +718,19 @@ function updateLiDView() {
   }
   if (label) {
     label.textContent = pool.length > 0 ? `${qLabel} ${currentLiDIndex + 1} ${ofLabel} ${pool.length}` : `${qLabel} 0 ${ofLabel} 0`;
+  }
+
+  const transModeBtn = document.getElementById('lid-trans-mode-btn');
+  if (transModeBtn) {
+    if (isLiDTranslationEnabled) {
+      transModeBtn.classList.add('active');
+      transModeBtn.textContent = getLiDTranslation('transActiveBadge', lang);
+      transModeBtn.title = getLiDTranslation('toggleTransOff', lang);
+    } else {
+      transModeBtn.classList.remove('active');
+      transModeBtn.textContent = getLiDTranslation('transInactiveBadge', lang);
+      transModeBtn.title = getLiDTranslation('toggleTransOn', lang);
+    }
   }
 }
 

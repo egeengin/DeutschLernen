@@ -37,7 +37,7 @@
   <header class="app-header">
     <div class="header-container">
       <div class="header-left">
-        <a href="index.html" class="back-link" data-i18n="portalBack">← Back to Portal</a>
+        <a href="index.html#vocab" class="back-link" data-i18n="portalBack">← Back to Portal</a>
         <div class="brand-title">
           <span>⚡</span>
           <span data-i18n="appTitle">Wortschatz Trainer</span>
@@ -73,6 +73,9 @@
         <button class="btn-icon" id="btn-lang-toggle" title="Switch UI language (EN / TR / AR / UK)">
           🌐 EN
         </button>
+        <a href="index.html#lid" class="btn-icon" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:12px; font-weight:600; padding:6px 10px;" title="Leben in Deutschland (LiD 310)">
+          🇩🇪 LiD
+        </a>
       </div>
     </div>
   </header>
@@ -436,7 +439,9 @@
   <footer class="app-footer">
     <div class="footer-content">
       <div class="footer-links">
-        <a href="index.html" data-i18n="portalBack">← Back to Portal</a>
+        <a href="index.html#vocab" data-i18n="portalBack">← Back to Portal</a>
+        <a href="index.html#lid">🇩🇪 Leben in Deutschland</a>
+        <a href="index.html#b1">📚 telc B1 Study Portal</a>
         <a href="legal.html" data-i18n="impressumLink">🇩🇪 Impressum (§ 5 DDG)</a>
         <a href="legal.html#tab-datenschutz" data-i18n="privacyLink">🔒 Privacy Policy (GDPR)</a>
         <a href="legal.html#tab-terms" data-i18n="termsLink">📜 Terms & Trademarks</a>
@@ -463,6 +468,11 @@
   </footer>
 
   <!-- Scripts: Firebase, Datasets followed by Trainer Logic -->
+  <script>
+    try {
+      localStorage.setItem('deutschlernen_track', 'vocab');
+    } catch(e) {}
+  </script>
   <script src="js/firebaseConfig.js"></script>
   <script src="js/firebaseService.js"></script>
   <script src="js/fehlerheft.js"></script>
