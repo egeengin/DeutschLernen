@@ -34,6 +34,27 @@ let lidExamSecondsLeft = 3600; // 60 minutes
 const LID_STARRED_STORAGE_KEY = 'deutschlernen_lid_starred';
 let isLiDStarredOnly = false;
 
+// On-Demand Translation Mode (Default: False for Pure German Immersion)
+const LID_SHOW_TRANS_STORAGE_KEY = 'deutschlernen_lid_show_trans';
+let isLiDTranslationEnabled = false;
+try {
+  if (typeof localStorage !== 'undefined') {
+    isLiDTranslationEnabled = localStorage.getItem(LID_SHOW_TRANS_STORAGE_KEY) === 'true';
+  }
+} catch (e) {
+  isLiDTranslationEnabled = false;
+}
+
+function toggleLiDTranslation() {
+  isLiDTranslationEnabled = !isLiDTranslationEnabled;
+  try {
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem(LID_SHOW_TRANS_STORAGE_KEY, isLiDTranslationEnabled ? 'true' : 'false');
+    }
+  } catch (e) {}
+  updateLiDView();
+}
+
 function getStarredLiDQuestionIds() {
   try {
     if (typeof localStorage === 'undefined') return [];
@@ -210,6 +231,30 @@ const LID_UI_TEXT = {
     tr: "Vazgeç",
     ar: "إلغاء",
     uk: "Скасувати"
+  },
+  toggleTransOn: {
+    en: "🌐 Show Translation",
+    tr: "🌐 Çeviriyi Göster",
+    ar: "🌐 إظهار الترجمة",
+    uk: "🌐 Показати переклад"
+  },
+  toggleTransOff: {
+    en: "🌐 Hide Translation",
+    tr: "🌐 Çeviriyi Gizle",
+    ar: "🌐 إخفاء الترجمة",
+    uk: "🌐 Сховати переклад"
+  },
+  transActiveBadge: {
+    en: "🌐 Translation: ON",
+    tr: "🌐 Çeviri: AÇIK",
+    ar: "🌐 الترجمة: مفعّلة",
+    uk: "🌐 Переклад: УВІМК"
+  },
+  transInactiveBadge: {
+    en: "🌐 Translation: OFF (Exam Immersion)",
+    tr: "🌐 Çeviri: KAPALI (Sınav Modu)",
+    ar: "🌐 الترجمة: معطّلة (محاكاة الامتحان)",
+    uk: "🌐 Переклад: ВИМК (Режим іспиту)"
   }
 };
 
@@ -262,9 +307,12 @@ function renderLiDTrainer(containerId) {
             <label for="lid-search-input"><strong>Search:</strong></label>
             <input type="text" id="lid-search-input" class="search-box" placeholder="${t('searchPlaceholder')}" onkeyup="filterLiDQuestions(this.value)">
           </div>
-          <div class="lid-control-group" style="display:flex; align-items:flex-end;">
+          <div class="lid-control-group" style="display:flex; align-items:flex-end; gap:8px;">
             <button id="lid-filter-starred-btn" class="lid-star-filter-btn ${isLiDStarredOnly ? 'active' : ''}" onclick="toggleLiDStarredFilter()" title="${t('filterStarred')}">
               ${t('filterStarred')} (<span id="lid-starred-count">${starredIds.length}</span>)
+            </button>
+            <button id="lid-trans-mode-btn" class="lid-star-filter-btn ${isLiDTranslationEnabled ? 'active' : ''}" onclick="toggleLiDTranslation()" title="${isLiDTranslationEnabled ? t('toggleTransOff') : t('toggleTransOn')}">
+              ${isLiDTranslationEnabled ? t('transActiveBadge') : t('transInactiveBadge')}
             </button>
           </div>
           ` : ''}
@@ -398,15 +446,20 @@ function renderSingleLiDQuestion(q) {
         <span class="lid-q-cat">📂 ${q.category || 'Staatsbürgerschaft & Recht'}</span>
         <span class="lid-q-id">${isLiDExamMode ? `Exam Q#${currentLiDIndex + 1}` : `BAMF Q#${q.id}`}</span>
       </div>
-      ${!isLiDExamMode ? `
-        <button class="lid-star-btn ${isStarred ? 'starred' : ''}" onclick="toggleLiDStar(${q.id}, this)" data-star-label="${starLabel}" data-starred-label="${starredLabel}" title="${isStarred ? starredLabel : starLabel}">
-          ${isStarred ? '⭐ ' + starredLabel : '☆ ' + starLabel}
+      <div style="display:flex; align-items:center; gap:8px;">
+        <button class="lid-trans-toggle-btn ${isLiDTranslationEnabled ? 'active' : ''}" onclick="toggleLiDTranslation()" title="${isLiDTranslationEnabled ? getLiDTranslation('toggleTransOff', lang) : getLiDTranslation('toggleTransOn', lang)}">
+          ${isLiDTranslationEnabled ? getLiDTranslation('toggleTransOff', lang) : getLiDTranslation('toggleTransOn', lang)}
         </button>
-      ` : ''}
+        ${!isLiDExamMode ? `
+          <button class="lid-star-btn ${isStarred ? 'starred' : ''}" onclick="toggleLiDStar(${q.id}, this)" data-star-label="${starLabel}" data-starred-label="${starredLabel}" title="${isStarred ? starredLabel : starLabel}">
+            ${isStarred ? '⭐ ' + starredLabel : '☆ ' + starLabel}
+          </button>
+        ` : ''}
+      </div>
     </div>
     
     <h3 class="lid-q-text">${q.questionDe}</h3>
-    ${qTrans ? `
+    ${isLiDTranslationEnabled && qTrans ? `
       <p class="lid-q-translation" ${isRtl ? 'dir="rtl" style="text-align:right;"' : ''} style="font-size:14px; color:var(--text-muted); margin-top:-6px; margin-bottom:14px; font-style:italic;">
         ${qTrans}
       </p>
@@ -431,7 +484,7 @@ function renderSingleLiDQuestion(q) {
             <span class="opt-letter">${String.fromCharCode(65 + idx)}.</span>
             <div style="flex:1;">
               <span class="opt-text">${opt}</span>
-              ${optTrans && optTrans !== opt ? `<span class="opt-trans" ${isRtl ? 'dir="rtl" style="text-align:right;"' : ''} style="display:block; font-size:12px; color:var(--text-muted); margin-top:2px;">${optTrans}</span>` : ''}
+              ${isLiDTranslationEnabled && optTrans && optTrans !== opt ? `<span class="opt-trans" ${isRtl ? 'dir="rtl" style="text-align:right;"' : ''} style="display:block; font-size:12px; color:var(--text-muted); margin-top:2px;">${optTrans}</span>` : ''}
             </div>
           </button>
         `;
@@ -442,9 +495,11 @@ function renderSingleLiDQuestion(q) {
     <div id="lid-explanation-${q.id}" class="lid-explanation-box" style="display:${isAnswered ? 'block' : 'none'};">
       <h4>💡 Official BAMF Explanation:</h4>
       <p class="exp-de"><strong>DE:</strong> ${q.explanationDe}</p>
+      ${isLiDTranslationEnabled && transExp ? `
       <p class="exp-trans" ${isRtl ? 'dir="rtl" style="text-align:right; font-family:system-ui, sans-serif;"' : ''}>
         <strong>${transLangLabel}:</strong> ${transExp}
       </p>
+      ` : ''}
       
       <!-- B1 Vocab Tags Cross-Link -->
       ${q.b1VocabTags && q.b1VocabTags.length > 0 ? `
@@ -769,6 +824,7 @@ if (typeof window !== 'undefined') {
   window.toggleLiDStar = toggleLiDStar;
   window.toggleLiDStarredFilter = toggleLiDStarredFilter;
   window.getStarredLiDQuestionIds = getStarredLiDQuestionIds;
+  window.toggleLiDTranslation = toggleLiDTranslation;
   window.LID_UI_TEXT = LID_UI_TEXT;
 }
 
@@ -791,6 +847,7 @@ if (typeof module !== 'undefined' && module.exports) {
     toggleLiDStar,
     toggleLiDStarredFilter,
     getStarredLiDQuestionIds,
+    toggleLiDTranslation,
     LID_UI_TEXT
   };
 }
