@@ -379,10 +379,10 @@ function renderSidebar() {
   if (header) {
     const headers = {
       b1: {
-        en: 'B1 STUDY MODULES (10)',
-        tr: 'B1 ÇALIŞMA MODÜLLERİ (10)',
-        ar: 'الوحدات الدراسية B1 (10)',
-        uk: 'НАВЧАЛЬНІ МОДУЛІ B1 (10)'
+        en: 'B1 STUDY MODULES',
+        tr: 'B1 ÇALIŞMA MODÜLLERİ',
+        ar: 'الوحدات الدراسية B1',
+        uk: 'НАВЧАЛЬНІ МОДУЛІ B1'
       },
       vocab: {
         en: 'VOCAB TRAINER SECTIONS',
@@ -1369,6 +1369,25 @@ function switchTrack(trackId) {
     localStorage.setItem('deutschlernen_track', trackId);
   } catch (e) {}
 
+  // Synchronize goal with active track so all titles, badges and sub-nav match
+  if (trackId === 'lid') {
+    currentGoalId = 'goal-lid';
+    currentGoalLevel = 'B1';
+  } else if (trackId === 'vocab') {
+    currentGoalId = 'goal-vocab';
+    currentGoalLevel = 'ALL';
+  } else {
+    // b1
+    if (!currentGoalId || currentGoalId === 'goal-lid' || currentGoalId === 'goal-vocab') {
+      currentGoalId = 'goal-b1';
+      currentGoalLevel = 'B1';
+    }
+  }
+  try {
+    localStorage.setItem('deutschlernen_goal', currentGoalId);
+    localStorage.setItem('deutschlernen_level', currentGoalLevel);
+  } catch (e) {}
+
   document.querySelectorAll('.track-tab-btn').forEach(btn => {
     const isThis = btn.id === `tab-track-${trackId}`;
     btn.classList.toggle('active', isThis);
@@ -1420,6 +1439,7 @@ function switchTrack(trackId) {
     if (lidPillar) lidPillar.classList.remove('active');
   }
 
+  updateGoalDisplays();
   updateHeroStats(trackId);
   renderSidebar();
 
@@ -1821,24 +1841,35 @@ function updateGoalDisplays() {
 }
 
 function initEntranceGoal() {
-  updateGoalDisplays();
   const storedGoal = localStorage.getItem('deutschlernen_goal');
   const storedTrack = localStorage.getItem('deutschlernen_track');
   const hash = (window.location.hash || '').toLowerCase();
 
-  if (hash === '#lid' || hash === '#lid-trainer-section' || hash === '#track-view-lid') {
-    switchTrack('lid');
-  } else if (hash === '#vocab' || hash === '#vocab-trainer-banner' || hash === '#track-view-vocab') {
-    switchTrack('vocab');
-  } else if (hash === '#b1' || hash === '#materials' || hash === '#track-view-b1') {
-    switchTrack('b1');
-  } else if (storedGoal === 'goal-lid' || storedTrack === 'lid') {
-    switchTrack('lid');
-  } else if (storedGoal === 'goal-vocab' || storedTrack === 'vocab') {
-    switchTrack('vocab');
-  } else {
-    switchTrack('b1');
+  let targetTrack = 'b1';
+  if (hash === '#lid' || hash === '#lid-trainer-section' || hash === '#track-view-lid' || storedGoal === 'goal-lid' || storedTrack === 'lid') {
+    targetTrack = 'lid';
+  } else if (hash === '#vocab' || hash === '#vocab-trainer-banner' || hash === '#track-view-vocab' || storedGoal === 'goal-vocab' || storedTrack === 'vocab') {
+    targetTrack = 'vocab';
+  } else if (hash === '#b1' || hash === '#materials' || hash === '#track-view-b1' || storedTrack === 'b1') {
+    targetTrack = 'b1';
+  } else if (storedGoal && GOAL_CONFIG[storedGoal]) {
+    targetTrack = (storedGoal === 'goal-lid') ? 'lid' : ((storedGoal === 'goal-vocab') ? 'vocab' : 'b1');
   }
+
+  // Pre-sync track and goal before initial render so no flash of other track
+  currentTrack = targetTrack;
+  if (targetTrack === 'lid') {
+    currentGoalId = 'goal-lid';
+    currentGoalLevel = 'B1';
+  } else if (targetTrack === 'vocab') {
+    currentGoalId = 'goal-vocab';
+    currentGoalLevel = 'ALL';
+  } else {
+    currentGoalId = (storedGoal && storedGoal.startsWith('goal-') && storedGoal !== 'goal-lid' && storedGoal !== 'goal-vocab') ? storedGoal : 'goal-b1';
+    currentGoalLevel = (GOAL_CONFIG[currentGoalId] ? GOAL_CONFIG[currentGoalId].level : 'B1');
+  }
+
+  switchTrack(targetTrack);
 
   if (!storedGoal && !hash) {
     // Show entrance modal on first visit
