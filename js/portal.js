@@ -1947,9 +1947,52 @@ function toggleSchreibenShowcase(forceOpen = null) {
     if (toggleBtnSpan) toggleBtnSpan.textContent = closedLabels[lang] || closedLabels.en;
   }
 }
+function initUrlParamsAndCheckoutReturn() {
+  if (typeof window === 'undefined' || !window.location || !window.location.search) return;
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const checkoutStatus = params.get('checkout') || params.get('order');
+    const tier = params.get('tier') || params.get('plan');
+    const voucher = params.get('voucher') || params.get('license');
+    const openPro = params.get('pro') || params.get('pricing');
+
+    let cleaned = false;
+
+    if (checkoutStatus === 'success' || checkoutStatus === 'completed') {
+      const tierId = tier || 'standard';
+      if (typeof window.confirmInstantDemoOrder === 'function') {
+        window.confirmInstantDemoOrder(tierId);
+      } else if (typeof window.grantLetterCredits === 'function') {
+        window.grantLetterCredits(30, tierId);
+      }
+      cleaned = true;
+    }
+
+    if (voucher && typeof window.redeemAccessCode === 'function') {
+      window.redeemAccessCode(voucher);
+      cleaned = true;
+    }
+
+    if ((openPro === '1' || openPro === 'true' || openPro === 'open') && typeof window.openProPricingModal === 'function') {
+      window.openProPricingModal();
+      cleaned = true;
+    }
+
+    if (cleaned && window.history && window.history.replaceState) {
+      const cleanUrl = window.location.pathname + window.location.hash;
+      window.history.replaceState({}, document.title, cleanUrl);
+    }
+  } catch (e) {
+    console.warn("Could not parse URL query parameters:", e);
+  }
+}
+
+// Run checkout return & URL parameter handler on startup
+initUrlParamsAndCheckoutReturn();
 
 if (typeof window !== 'undefined') {
   window.toggleSchreibenShowcase = toggleSchreibenShowcase;
+  window.initUrlParamsAndCheckoutReturn = initUrlParamsAndCheckoutReturn;
 }
 
 
