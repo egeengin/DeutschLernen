@@ -209,13 +209,17 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn("setLanguage(lang)", self.trainer_js)
 
     def test_portal_declaration_order_no_reference_error(self):
-        """Verify that ratingLabels is defined before setLang is invoked in portal.js to prevent TDZ ReferenceError."""
+        """Verify that ratingLabels and HERO_STATS_CONFIG are defined before setLang is invoked in portal.js to prevent TDZ ReferenceError."""
         rating_labels_pos = self.portal_js.find("const ratingLabels = {")
+        hero_stats_pos = self.portal_js.find("const HERO_STATS_CONFIG = {")
         set_lang_invoked_pos = self.portal_js.find("setLang(savedLang);")
         self.assertNotEqual(rating_labels_pos, -1, "ratingLabels must be declared in portal.js")
+        self.assertNotEqual(hero_stats_pos, -1, "HERO_STATS_CONFIG must be declared in portal.js")
         self.assertNotEqual(set_lang_invoked_pos, -1, "setLang(savedLang) must be invoked in portal.js")
         self.assertLess(rating_labels_pos, set_lang_invoked_pos,
                         "ratingLabels must be defined before setLang(savedLang) is executed to prevent ReferenceError")
+        self.assertLess(hero_stats_pos, set_lang_invoked_pos,
+                        "HERO_STATS_CONFIG must be defined before setLang(savedLang) is executed to prevent ReferenceError")
 
     def test_firebase_auth_resilience_and_redirect_methods(self):
         """Verify FirebaseService supports redirect sign-in, formatAuthError, and GoogleAuthProvider configuration."""
@@ -478,9 +482,31 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertNotIn(">30-Day B1 Exam Plan<", index_html)
         self.assertNotIn("STUDY MODULES (10)", index_html)
 
+    def test_dynamic_sidebar_all_tracks(self):
+        """Verify portal.js dynamically switches sidebar header, navigation links, and views for all tracks."""
+        # Check renderSidebar logic for each track
+        self.assertIn("function renderSidebar()", self.portal_js)
+        self.assertIn("track === 'lid'", self.portal_js)
+        self.assertIn("track === 'vocab'", self.portal_js)
+        self.assertIn("300 BAMF Questions", self.portal_js)
+        self.assertIn("160 State Questions", self.portal_js)
+        self.assertIn("2,000+ Words Drill", self.portal_js)
+        self.assertIn("Core 2,000 (A1–B1)", self.portal_js)
+        self.assertIn("Advanced B2 Deck", self.portal_js)
+        self.assertIn("Academic C1 Deck", self.portal_js)
+
+        # Check applyGoalSelection switches tracks cleanly on portal
+        apply_goal_match = re.search(r"function applyGoalSelection\(\)\s*\{(.*?)\n\}", self.portal_js, re.DOTALL)
+        self.assertIsNotNone(apply_goal_match)
+        apply_goal_code = apply_goal_match.group(1)
+        self.assertIn("switchTrack('vocab')", apply_goal_code)
+        self.assertIn("switchTrack('lid')", apply_goal_code)
+        self.assertIn("switchTrack('b1')", apply_goal_code)
+
 
 if __name__ == "__main__":
     unittest.main()
+
 
 
 
