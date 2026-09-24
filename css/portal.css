@@ -2666,6 +2666,30 @@ td strong, td b { color: var(--text-primary); }
 .track-view {
   animation: fadeIn 0.3s ease;
 }
+.lid-trans-inline-hint-btn {
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  padding: 5px 12px;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+.lid-trans-inline-hint-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  background: rgba(245, 158, 11, 0.08);
+}
+.lid-trans-quick-hide:hover {
+  color: var(--accent-gold) !important;
+  background: rgba(245, 158, 11, 0.1) !important;
+}
+
 
 
 

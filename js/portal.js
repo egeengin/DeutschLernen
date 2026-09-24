@@ -984,6 +984,10 @@ function setLang(lang) {
     const newUrl = currentActiveMaterial[lang] || currentActiveMaterial.en;
     openMarkdown(newUrl, true); // true = skip pushState
   }
+
+  if (typeof updateHeroStats === 'function') {
+    updateHeroStats(typeof currentTrack !== 'undefined' ? currentTrack : 'b1');
+  }
 }
 
 // --- Community Feedback Rating Display ---
@@ -1035,9 +1039,51 @@ function updateActivePillars(id) {
 // Track Switching & Module View Isolation
 let currentTrack = localStorage.getItem('deutschlernen_track') || 'b1';
 
+const HERO_STATS_CONFIG = {
+  b1: [
+    { val: '10', en: 'Study Modules', tr: 'Modül', ar: 'وحدات دراسية', uk: 'Навчальні модулі' },
+    { val: '30', en: 'Day Plan', tr: 'Günlük Plan', ar: 'خطة الأيام', uk: 'Денний план' },
+    { val: '2000+', en: 'Vocab Words', tr: 'Kelime', ar: 'كلمات', uk: 'Слів' },
+    { val: '180 / 300', en: 'Pass Threshold', tr: 'Geçme Barajı', ar: 'نسبة النجاح', uk: 'Прохідний бал' }
+  ],
+  vocab: [
+    { val: '2,000+', en: 'Vocab Words', tr: 'Kelime', ar: 'كلمة', uk: 'Слів' },
+    { val: '5', en: 'Quiz Modes', tr: 'Test Modu', ar: 'أوضاع اختبار', uk: 'Режимів тестів' },
+    { val: 'A1–C1', en: '4 CEFR Decks', tr: '4 Deste Seviyesi', ar: '4 مستويات', uk: '4 колоди рівнів' },
+    { val: '100%', en: 'Local & Private', tr: 'Cihaz İçi & Gizli', ar: 'محلي وخاص', uk: 'Локально і приватно' }
+  ],
+  lid: [
+    { val: '310', en: 'BAMF Questions', tr: 'BAMF Sorusu', ar: 'أسئلة BAMF', uk: 'Питань BAMF' },
+    { val: '16', en: 'German States', tr: 'Eyalet', ar: 'الولايات', uk: 'Федеральних земель' },
+    { val: '33', en: 'Timed Simulation', tr: 'Sınav Simülasyonu', ar: 'محاكاة الامتحان', uk: 'Симуляція іспиту' },
+    { val: '17 / 33', en: 'Pass Threshold', tr: 'Geçme Barajı', ar: 'نسبة النجاح', uk: 'Прохідний бал' }
+  ]
+};
+
+function updateHeroStats(trackId) {
+  const track = HERO_STATS_CONFIG[trackId] ? trackId : 'b1';
+  const stats = HERO_STATS_CONFIG[track];
+  const lang = typeof currentLang !== 'undefined' ? currentLang : 'en';
+
+  const container = document.getElementById('hero-stats');
+  if (!container) return;
+
+  container.innerHTML = stats.map((item, idx) => {
+    const label = item[lang] || item.en;
+    return `
+      <div class="hero-stat" id="hero-stat-${idx + 1}">
+        <div class="val">${item.val}</div>
+        <div class="label" data-en="${item.en}" data-tr="${item.tr}" data-ar="${item.ar}" data-uk="${item.uk}">${label}</div>
+      </div>
+    `;
+  }).join('');
+}
+
 function switchTrack(trackId) {
   currentTrack = trackId;
-  localStorage.setItem('deutschlernen_track', trackId);
+  try {
+    localStorage.setItem('deutschlernen_track', trackId);
+  } catch (e) {}
 
   document.querySelectorAll('.track-tab-btn').forEach(btn => {
     const isThis = btn.id === `tab-track-${trackId}`;
@@ -1047,22 +1093,34 @@ function switchTrack(trackId) {
 
   const b1View = document.getElementById('track-view-b1');
   const lidView = document.getElementById('track-view-lid');
+  const vocabView = document.getElementById('track-view-vocab');
   const vocabBanner = document.getElementById('vocab-trainer-banner');
 
   const b1Pillar = document.querySelector('.sidebar-pillar-link.pillar-b1');
+  const vocabPillar = document.querySelector('.sidebar-pillar-link.pillar-vocab');
   const lidPillar = document.querySelector('.sidebar-pillar-link.pillar-lid');
 
   if (trackId === 'lid') {
     if (b1View) b1View.style.display = 'none';
+    if (vocabView) vocabView.style.display = 'none';
     if (lidView) lidView.style.display = 'block';
-    if (vocabBanner) vocabBanner.style.display = 'none';
+    if (vocabBanner && !vocabView) vocabBanner.style.display = 'none';
     if (lidPillar) lidPillar.classList.add('active');
     if (b1Pillar) b1Pillar.classList.remove('active');
+    if (vocabPillar) vocabPillar.classList.remove('active');
+    if (typeof renderLiDTrainer === 'function') {
+      renderLiDTrainer('lid-trainer-container');
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   } else if (trackId === 'vocab') {
     if (b1View) b1View.style.display = 'none';
     if (lidView) lidView.style.display = 'none';
-    if (vocabBanner) vocabBanner.style.display = 'block';
+    if (vocabView) {
+      vocabView.style.display = 'block';
+    } else if (vocabBanner) {
+      vocabBanner.style.display = 'block';
+    }
+    if (vocabPillar) vocabPillar.classList.add('active');
     if (b1Pillar) b1Pillar.classList.remove('active');
     if (lidPillar) lidPillar.classList.remove('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1070,11 +1128,22 @@ function switchTrack(trackId) {
     // b1
     if (b1View) b1View.style.display = 'block';
     if (lidView) lidView.style.display = 'none';
-    if (vocabBanner) vocabBanner.style.display = 'block';
+    if (vocabView) vocabView.style.display = 'none';
+    if (vocabBanner && !vocabView) vocabBanner.style.display = 'block';
     if (b1Pillar) b1Pillar.classList.add('active');
+    if (vocabPillar) vocabPillar.classList.remove('active');
     if (lidPillar) lidPillar.classList.remove('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  updateHeroStats(trackId);
+
+  try {
+    if (window.location.hash !== `#${trackId}`) {
+      history.replaceState(null, '', `#${trackId}`);
+    }
+  } catch (e) {}
+
   const sidebar = document.querySelector('.sidebar');
   if (sidebar) sidebar.classList.remove('open');
 }
@@ -1324,12 +1393,16 @@ function applyGoalSelection() {
   localStorage.setItem('deutschlernen_level', currentGoalLevel);
 
   if (currentGoalId === 'goal-vocab') {
+    localStorage.setItem('deutschlernen_track', 'vocab');
+    currentTrack = 'vocab';
     closeGoalModal();
     window.location.href = `trainer.html?level=${encodeURIComponent(currentGoalLevel)}`;
     return;
   }
 
   if (currentGoalId === 'goal-lid') {
+    localStorage.setItem('deutschlernen_track', 'lid');
+    currentTrack = 'lid';
     closeGoalModal();
     updateGoalDisplays();
     renderSidebar();
@@ -1342,6 +1415,8 @@ function applyGoalSelection() {
     return;
   }
 
+  localStorage.setItem('deutschlernen_track', 'b1');
+  currentTrack = 'b1';
   switchTrack('b1');
   updateGoalDisplays();
   renderSidebar(); // Re-render sidebar in case goal or language was adjusted
@@ -1424,7 +1499,25 @@ function updateGoalDisplays() {
   if (stripHint) stripHint.textContent = goalHint;
   if (stripIcon) stripIcon.textContent = goal.icon;
   if (stripTrainerLink) {
-    stripTrainerLink.href = goal.trainerUrl || `trainer.html?level=${currentGoalLevel}`;
+    if (goal.id === 'goal-lid') {
+      stripTrainerLink.href = '#lid-trainer-section';
+      stripTrainerLink.onclick = (e) => {
+        e.preventDefault();
+        switchTrack('lid');
+        const lidEl = document.getElementById('lid-trainer-section');
+        if (lidEl) lidEl.scrollIntoView({ behavior: 'smooth' });
+      };
+    } else if (goal.id === 'goal-vocab') {
+      stripTrainerLink.href = goal.trainerUrl || `trainer.html?level=${currentGoalLevel}`;
+      stripTrainerLink.onclick = () => {
+        try {
+          localStorage.setItem('deutschlernen_track', 'vocab');
+        } catch (e) {}
+      };
+    } else {
+      stripTrainerLink.href = goal.trainerUrl || `trainer.html?level=${currentGoalLevel}`;
+      stripTrainerLink.onclick = null;
+    }
     const ctaText = getGoalText(goal, 'cta');
     if (ctaText) {
       stripTrainerLink.innerHTML = `<span>${ctaText}</span>`;
@@ -1436,21 +1529,40 @@ function initEntranceGoal() {
   updateGoalDisplays();
   const storedGoal = localStorage.getItem('deutschlernen_goal');
   const storedTrack = localStorage.getItem('deutschlernen_track');
-  if (storedGoal === 'goal-lid' || storedTrack === 'lid') {
+  const hash = (window.location.hash || '').toLowerCase();
+
+  if (hash === '#lid' || hash === '#lid-trainer-section' || hash === '#track-view-lid') {
     switchTrack('lid');
-  } else if (storedTrack === 'vocab') {
+  } else if (hash === '#vocab' || hash === '#vocab-trainer-banner' || hash === '#track-view-vocab') {
+    switchTrack('vocab');
+  } else if (hash === '#b1' || hash === '#materials' || hash === '#track-view-b1') {
+    switchTrack('b1');
+  } else if (storedGoal === 'goal-lid' || storedTrack === 'lid') {
+    switchTrack('lid');
+  } else if (storedGoal === 'goal-vocab' || storedTrack === 'vocab') {
     switchTrack('vocab');
   } else {
     switchTrack('b1');
   }
 
-  if (!storedGoal) {
+  if (!storedGoal && !hash) {
     // Show entrance modal on first visit
     setTimeout(() => {
       openGoalModal();
     }, 400);
   }
 }
+
+window.addEventListener('hashchange', () => {
+  const hash = (window.location.hash || '').toLowerCase();
+  if (hash === '#lid' || hash === '#lid-trainer-section') {
+    switchTrack('lid');
+  } else if (hash === '#vocab' || hash === '#vocab-trainer-banner') {
+    switchTrack('vocab');
+  } else if (hash === '#b1' || hash === '#materials') {
+    switchTrack('b1');
+  }
+});
 
 // Initialize components
 initFeedbackForm();

@@ -107,7 +107,7 @@
     </a>
 
     <!-- Pillar 2: Interactive 2,000 Vocab Trainer -->
-    <a href="trainer.html" class="sidebar-pillar-link pillar-vocab">
+    <a href="javascript:void(0)" class="sidebar-pillar-link pillar-vocab" onclick="switchTrack('vocab');">
       <span class="sidebar-pillar-icon">⚡</span>
       <div>
         <div class="sidebar-pillar-title" data-en="Vocab Trainer" data-tr="Kelime Antrenörü" data-ar="مدرب المفردات" data-uk="Тренажер слів">Vocab Trainer</div>
@@ -191,30 +191,77 @@
       </button>
     </div>
 
-    <!-- Feature Card: Wortschatz Trainer 2000 -->
-    <div class="section" id="vocab-trainer-banner" style="animation-delay:0s; margin-bottom: 40px;">
-      <div style="background: linear-gradient(135deg, rgba(245,158,11,0.15) 0%, rgba(239,68,68,0.12) 100%); border: 2px solid var(--accent-gold); border-radius: var(--radius); padding: 28px; box-shadow: 0 10px 30px rgba(245,158,11,0.15); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px;">
-        <div style="max-width: 580px;">
-          <div style="display:inline-flex; align-items:center; gap:6px; background:var(--accent-gold); color:#000000; font-size:11px; font-weight:800; padding:3px 10px; border-radius:12px; margin-bottom:12px; text-transform:uppercase; letter-spacing:0.05em;">
-            ⚡ NEW &bull; INTERACTIVE DRILL
+    <!-- Dedicated Track View: Interactive 2,000+ Vocab Trainer -->
+    <div id="track-view-vocab" class="track-view" style="display: none;">
+      <!-- Feature Card: Wortschatz Trainer 2000 -->
+      <div class="section" id="vocab-trainer-banner" style="animation-delay:0s; margin-bottom: 30px;">
+        <div style="background: linear-gradient(135deg, rgba(245,158,11,0.15) 0%, rgba(239,68,68,0.12) 100%); border: 2px solid var(--accent-gold); border-radius: var(--radius); padding: 28px; box-shadow: 0 10px 30px rgba(245,158,11,0.15); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px;">
+          <div style="max-width: 580px;">
+            <div style="display:inline-flex; align-items:center; gap:6px; background:var(--accent-gold); color:#000000; font-size:11px; font-weight:800; padding:3px 10px; border-radius:12px; margin-bottom:12px; text-transform:uppercase; letter-spacing:0.05em;">
+              ⚡ NEW &bull; INTERACTIVE DRILL
+            </div>
+            <h2 style="font-size: 24px; margin-bottom: 8px; color: var(--text-primary);" data-en="2,000+ German Words Vocabulary Trainer" data-tr="2.000+ Almanca Kelime Antrenörü" data-ar="مدرب مفردات اللغة الألمانية بأكثر من 2,000 كلمة" data-uk="Тренажер німецьких слів на 2000+ слів">
+              2,000+ German Words Vocabulary Trainer
+            </h2>
+            <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 14px;" data-en="Drill essential A1–B1 vocabulary and Advanced B2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes." data-tr="Temel A1–B1 ve İleri B2 kelimelerini çalışın. Akıllı tekrar algoritması, hata tekrar havuzu, sesli telaffuz, günlük seri takibi ve 5 farklı test modu içerir." data-ar="تدرب على مفردات A1–B1 الأساسية ومجموعات B2 المتقدمة. يشمل تكراراً ذكياً لمنع التكرار، قائمة مراجعة الأخطاء، نطقاً صوتياً، متابعة السلسلة و5 أوضاع اختبار." data-uk="Вивчайте базові слова A1–B1 та просунуту колоду B2. Розумна ротація без повторів, черга помилок, аудіовимова, відстеження серії днів та 5 режимів тестів.">
+              Drill essential A1–B1 vocabulary and Advanced B2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes.
+            </p>
+            <div style="display:flex; gap:16px; font-size:12px; color:var(--text-muted); font-weight:600; flex-wrap:wrap;">
+              <span data-en="🎯 5 Quiz Modes" data-tr="🎯 5 Test Modu" data-ar="🎯 5 أوضاع اختبار" data-uk="🎯 5 режимів тестів">🎯 5 Quiz Modes</span>
+              <span data-en="🔊 Native TTS Audio" data-tr="🔊 Sesli Telaffuz" data-ar="🔊 نطق صوتي أصلي" data-uk="🔊 Озвучення слів">🔊 Native TTS Audio</span>
+              <span data-en="🔥 Daily Streaks" data-tr="🔥 Günlük Seri" data-ar="🔥 سلسلة أيام يومية" data-uk="🔥 Щоденні серії">🔥 Daily Streaks</span>
+              <span data-en="🔒 100% Private (Local)" data-tr="🔒 %100 Cihaz İçi Gizlilik" data-ar="🔒 خصوصية 100% (محلي)" data-uk="🔒 100% конфіденційно (локально)">🔒 100% Private (Local)</span>
+            </div>
           </div>
-          <h2 style="font-size: 24px; margin-bottom: 8px; color: var(--text-primary);" data-en="2,000+ German Words Vocabulary Trainer" data-tr="2.000+ Almanca Kelime Antrenörü" data-ar="مدرب مفردات اللغة الألمانية بأكثر من 2,000 كلمة" data-uk="Тренажер німецьких слів на 2000+ слів">
-            2,000+ German Words Vocabulary Trainer
-          </h2>
-          <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 14px;" data-en="Drill essential A1–B1 vocabulary and Advanced B2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes." data-tr="Temel A1–B1 ve İleri B2 kelimelerini çalışın. Akıllı tekrar algoritması, hata tekrar havuzu, sesli telaffuz, günlük seri takibi ve 5 farklı test modu içerir." data-ar="تدرب على مفردات A1–B1 الأساسية ومجموعات B2 المتقدمة. يشمل تكراراً ذكياً لمنع التكرار، قائمة مراجعة الأخطاء، نطقاً صوتياً، متابعة السلسلة و5 أوضاع اختبار." data-uk="Вивчайте базові слова A1–B1 та просунуту колоду B2. Розумна ротація без повторів, черга помилок, аудіовимова, відстеження серії днів та 5 режимів тестів.">
-            Drill essential A1–B1 vocabulary and Advanced B2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes.
-          </p>
-          <div style="display:flex; gap:16px; font-size:12px; color:var(--text-muted); font-weight:600; flex-wrap:wrap;">
-            <span data-en="🎯 5 Quiz Modes" data-tr="🎯 5 Test Modu" data-ar="🎯 5 أوضاع اختبار" data-uk="🎯 5 режимів тестів">🎯 5 Quiz Modes</span>
-            <span data-en="🔊 Native TTS Audio" data-tr="🔊 Sesli Telaffuz" data-ar="🔊 نطق صوتي أصلي" data-uk="🔊 Озвучення слів">🔊 Native TTS Audio</span>
-            <span data-en="🔥 Daily Streaks" data-tr="🔥 Günlük Seri" data-ar="🔥 سلسلة أيام يومية" data-uk="🔥 Щоденні серії">🔥 Daily Streaks</span>
-            <span data-en="🔒 100% Private (Local)" data-tr="🔒 %100 Cihaz İçi Gizlilik" data-ar="🔒 خصوصية 100% (محلي)" data-uk="🔒 100% конфіденційно (локально)">🔒 100% Private (Local)</span>
+          <div>
+            <a href="trainer.html" class="card-link primary" style="padding: 14px 28px; font-size: 15px; font-weight: 700; border-radius: 10px; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 14px rgba(245,158,11,0.3); text-decoration:none;">
+              <span data-en="🚀 Launch Vocabulary Trainer →" data-tr="🚀 Kelime Antrenörünü Başlat →" data-ar="🚀 تشغيل مدرب المفردات ←" data-uk="🚀 Запустити тренажер слів →">🚀 Launch Vocabulary Trainer →</span>
+            </a>
           </div>
         </div>
-        <div>
-          <a href="trainer.html" class="card-link primary" style="padding: 14px 28px; font-size: 15px; font-weight: 700; border-radius: 10px; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 14px rgba(245,158,11,0.3); text-decoration:none;">
-            <span data-en="🚀 Launch Vocabulary Trainer →" data-tr="🚀 Kelime Antrenörünü Başlat →" data-ar="🚀 تشغيل مدرب المفردات ←" data-uk="🚀 Запустити тренажер слів →">🚀 Launch Vocabulary Trainer →</span>
+      </div>
+
+      <!-- Quick Deck Launcher Grid -->
+      <div class="section" style="margin-bottom: 30px;">
+        <div class="section-label" data-en="📦 Select Your Word Deck" data-tr="📦 Kelime Destenizi Seçin" data-ar="📦 اختر مجموعة الكلمات" data-uk="📦 Оберіть колоду слів">📦 Select Your Word Deck</div>
+        <h3 style="font-size:20px; margin-bottom:14px; color:var(--text-primary);" data-en="Start Directly With a Specific CEFR Deck" data-tr="Doğrudan Belirli Bir CEFR Destesiyle Başlayın" data-ar="ابدأ مباشرة مع مجموعة مستويات CEFR المحددة" data-uk="Почніть безпосередньо з потрібної колоди CEFR">Start Directly With a Specific CEFR Deck</h3>
+        <div class="vocab-deck-cards" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); gap:16px;">
+          <a href="trainer.html?deck=core" class="vocab-deck-card" style="display:block; text-decoration:none; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:20px; transition:all 0.2s ease;">
+            <div style="font-size:24px; margin-bottom:8px;">📦</div>
+            <h4 style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="Core 2,000 (A1–B1)" data-tr="Temel 2.000 (A1–B1)" data-ar="الأساسية 2000 (A1–B1)" data-uk="Базова 2000 (A1–B1)">Core 2,000 (A1–B1)</h4>
+            <p style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Foundational everyday vocabulary essential for the telc B1 exam." data-tr="telc B1 sınavı ve günlük yaşam için en gerekli temel kelimeler." data-ar="مفردات الحياة اليومية الأساسية لامتحان telc B1." data-uk="Базова лексика щоденного вжитку для іспиту telc B1.">Foundational everyday vocabulary essential for the telc B1 exam.</p>
+            <span style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
           </a>
+          <a href="trainer.html?deck=b2" class="vocab-deck-card" style="display:block; text-decoration:none; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:20px; transition:all 0.2s ease;">
+            <div style="font-size:24px; margin-bottom:8px;">💼</div>
+            <h4 style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="Advanced B2 Deck" data-tr="İleri B2 Destesi" data-ar="مجموعة B2 المتقدمة" data-uk="Просунута колода B2">Advanced B2 Deck</h4>
+            <p style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Professional expressions, complex sentence connectors & workplace terms." data-tr="İş yeri iletişimi, profesyonel kalıplar ve karmaşık bağlaçlar." data-ar="تعبيرات احترافية، أدوات ربط معقدة ومصطلحات بيئة العمل." data-uk="Професійні вирази, складні сполучники та терміни для роботи.">Professional expressions, complex sentence connectors & workplace terms.</p>
+            <span style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
+          </a>
+          <a href="trainer.html?deck=c1" class="vocab-deck-card" style="display:block; text-decoration:none; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:20px; transition:all 0.2s ease;">
+            <div style="font-size:24px; margin-bottom:8px;">🎓</div>
+            <h4 style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="Academic C1 Deck" data-tr="Akademik C1 Destesi" data-ar="مجموعة C1 الأكاديمية" data-uk="Академічна колода C1">Academic C1 Deck</h4>
+            <p style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Scientific literature, academic writing, and university level terminology." data-tr="Üniversite eğitimi, akademik makaleler ve bilimsel terminoloji." data-ar="مصطلحات علمية، كتابة أكاديمية ومفردات الدراسة الجامعية." data-uk="Наукова література, академічне письмо та університетська термінологія.">Scientific literature, academic writing, and university level terminology.</p>
+            <span style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
+          </a>
+          <a href="trainer.html?deck=all" class="vocab-deck-card" style="display:block; text-decoration:none; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:20px; transition:all 0.2s ease;">
+            <div style="font-size:24px; margin-bottom:8px;">🌐</div>
+            <h4 style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="All Combined" data-tr="Tümü Bir Arada" data-ar="الكل مجتمعاً" data-uk="Усі разом">All Combined</h4>
+            <p style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Complete 2,000+ words across all levels with randomized anti-repetition." data-tr="Tüm seviyelerdeki 2.000+ kelime ile kapsamlı hız ve tekrar antrenmanı." data-ar="أكثر من 2000 كلمة عبر جميع المستويات مع تكرار عشوائي ذكي." data-uk="Повні 2000+ слів усіх рівнів з розумним алгоритмом без повторів.">Complete 2,000+ words across all levels with randomized anti-repetition.</p>
+            <span style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 5 Quiz Modes Interactive Action Strip -->
+      <div class="section" style="margin-bottom: 40px;">
+        <div class="section-label" data-en="🎯 Interactive Quiz Modes" data-tr="🎯 İnteraktif Test Modları" data-ar="🎯 أوضاع الاختبار التفاعلية" data-uk="🎯 Інтерактивні режими тестів">🎯 Interactive Quiz Modes</div>
+        <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:10px;">
+          <a href="trainer.html?mode=mcq" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="🎯 Multiple Choice" data-tr="🎯 Çoktan Seçmeli" data-ar="🎯 الاختيار من متعدد" data-uk="🎯 Тести з вибором">🎯 Multiple Choice</a>
+          <a href="trainer.html?mode=flashcards" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="🃏 Spaced Flashcards" data-tr="🃏 Hafıza Kartları" data-ar="🃏 البطاقات التعليمية" data-uk="🃏 Картки для запам'ятовування">🃏 Spaced Flashcards</a>
+          <a href="trainer.html?mode=reverse" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="🔄 Reverse Meaning Drill" data-tr="🔄 Ters Çeviri Testi" data-ar="🔄 تدريب الترجمة العكسية" data-uk="🔄 Зворотний переклад">🔄 Reverse Meaning Drill</a>
+          <a href="trainer.html?mode=typein" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="⌨️ Spelling Type-In" data-tr="⌨️ Yazma & Yazım Testi" data-ar="⌨️ كتابة الكلمة وإملائها" data-uk="⌨️ Введення слова">⌨️ Spelling Type-In</a>
+          <a href="trainer.html?mode=sprint" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="⏱️ 2-Min Exam Sprint" data-tr="⏱️ 2 Dakikalık Hız Sprinti" data-ar="⏱️ سباق الدقيقتين" data-uk="⏱️ 2-хвилинний спринт">⏱️ 2-Min Exam Sprint</a>
         </div>
       </div>
     </div>
@@ -372,6 +419,8 @@
       <!-- Legal & Commercial Navigation Links -->
       <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap; margin:24px 0 16px;">
         <a href="trainer.html" style="font-size:13px; font-weight:600; color:var(--accent-gold);"><span data-en="⚡ Wortschatz Trainer" data-tr="⚡ Kelime Antrenörü" data-ar="⚡ مدرب المفردات" data-uk="⚡ Тренажер слів">⚡ Wortschatz Trainer</span></a>
+        <a href="javascript:void(0)" onclick="switchTrack('lid')" style="font-size:13px; font-weight:600; color:var(--text-primary);"><span data-en="🇩🇪 Leben in Deutschland" data-tr="🇩🇪 Leben in Deutschland" data-ar="🇩🇪 الحياة في ألمانيا" data-uk="🇩🇪 Життя в Німеччині">🇩🇪 Leben in Deutschland</span></a>
+        <a href="javascript:void(0)" onclick="switchTrack('b1')" style="font-size:13px; color:var(--text-secondary);"><span data-en="📚 telc B1 Study Portal" data-tr="📚 telc B1 Çalışma Portalı" data-ar="📚 بوابة دراسة telc B1" data-uk="📚 Портал telc B1">📚 telc B1 Study Portal</span></a>
         <a href="legal.html" style="font-size:13px; color:var(--text-secondary);"><span data-en="🇩🇪 Impressum (§ 5 DDG)" data-tr="🇩🇪 Yasal Künye (§ 5 DDG)" data-ar="🇩🇪 بيانات الناشر (§ 5 DDG)" data-uk="🇩🇪 Вихідні дані (§ 5 DDG)">🇩🇪 Impressum (§ 5 DDG)</span></a>
         <a href="legal.html#tab-datenschutz" style="font-size:13px; color:var(--text-secondary);"><span data-en="🔒 Privacy Policy (GDPR)" data-tr="🔒 Gizlilik Politikası (KVKK/GDPR)" data-ar="🔒 سياسة الخصوصية (GDPR)" data-uk="🔒 Політика конфіденційності (GDPR)">🔒 Privacy Policy (GDPR)</span></a>
         <a href="legal.html#tab-terms" style="font-size:13px; color:var(--text-secondary);"><span data-en="📜 Terms & Trademarks" data-tr="📜 Kullanım Şartları ve Markalar" data-ar="📜 الشروط والعلامات التجارية" data-uk="📜 Умови та торговельні марки">📜 Terms & Trademarks</span></a>

@@ -323,6 +323,56 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn('id="schreiben-showcase-drawer"', index_html, "Schreiben showcase must have a collapsible drawer")
         self.assertIn('id="btn-toggle-showcase"', index_html, "Toggle button must exist for clean collapsible approach")
 
+    def test_track_isolation_and_dynamic_hero_stats(self):
+        """Verify dedicated track views and dynamic hero stats prevent B1 clutter on Vocab & LiD tracks."""
+        index_path = os.path.join(ROOT_DIR, "index.html")
+        with open(index_path, "r", encoding="utf-8") as f:
+            index_html = f.read()
+
+        # Check track view containers
+        self.assertIn('id="track-view-b1"', index_html)
+        self.assertIn('id="track-view-vocab"', index_html)
+        self.assertIn('id="track-view-lid"', index_html)
+
+        # Check hero stats configuration and update function in portal.js
+        self.assertIn("const HERO_STATS_CONFIG = {", self.portal_js)
+        self.assertIn("function updateHeroStats(trackId)", self.portal_js)
+        self.assertIn("updateHeroStats(trackId)", self.portal_js)
+
+        # Check hash routing in portal.js
+        self.assertIn("window.addEventListener('hashchange'", self.portal_js)
+        self.assertIn("switchTrack('lid')", self.portal_js)
+        self.assertIn("switchTrack('vocab')", self.portal_js)
+
+        # Check back link in trainer.html points to index.html#vocab and persists vocab track
+        trainer_path = os.path.join(ROOT_DIR, "trainer.html")
+        with open(trainer_path, "r", encoding="utf-8") as f:
+            trainer_html = f.read()
+        self.assertIn('href="index.html#vocab"', trainer_html)
+        self.assertIn("localStorage.setItem('deutschlernen_track', 'vocab')", trainer_html)
+        self.assertIn('href="index.html#lid"', trainer_html)
+
+    def test_lid_link_and_tour_translation_controls(self):
+        """Verify Leben in Deutschland links work properly and tour 1 vs 2 translation controls exist."""
+        lid_path = os.path.join(ROOT_DIR, "js", "lidTrainer.js")
+        with open(lid_path, "r", encoding="utf-8") as f:
+            lid_js = f.read()
+
+        # Tour 1 & 2 UI text
+        self.assertIn("transHintOpen:", lid_js)
+        self.assertIn("transHintClose:", lid_js)
+        self.assertIn("transActiveBadge:", lid_js)
+        self.assertIn("transInactiveBadge:", lid_js)
+
+        # Inline toggle controls and translation box
+        self.assertIn("lid-trans-inline-hint-btn", lid_js)
+        self.assertIn("lid-q-translation-box", lid_js)
+        self.assertIn("lid-trans-mode-btn", lid_js)
+
+        # Goal action strip handles LiD switch
+        self.assertIn("switchTrack('lid')", self.portal_js)
+        self.assertIn("lid-trainer-section", self.portal_js)
+
 
 if __name__ == "__main__":
     unittest.main()
