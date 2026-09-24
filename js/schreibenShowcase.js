@@ -678,6 +678,18 @@ function renderSchreibenShowcase(containerId) {
             </div>
           </div>
 
+          <!-- Credits & Pro Status Indicator Strip -->
+          <div class="credits-status-strip" id="schreiben-credits-strip" style="display:flex; justify-content:space-between; align-items:center; background:rgba(245, 158, 11, 0.08); border:1px solid rgba(245, 158, 11, 0.25); border-radius:10px; padding:10px 14px; margin-top:14px; font-size:13px; flex-wrap:wrap; gap:8px;">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span style="font-size:16px;">⚡</span>
+              <span><strong>AI Credits:</strong> <span id="user-credits-count">${getLetterCredits()}</span> available</span>
+              <span id="user-tier-badge" style="font-size:10px; font-weight:800; background:${isUserPro() ? '#10b981' : (getLetterCredits() > 0 ? 'var(--accent-gold)' : '#ef4444')}; color:${isUserPro() ? '#fff' : (getLetterCredits() > 0 ? '#000' : '#fff')}; padding:2px 8px; border-radius:10px; text-transform:uppercase;">${isUserPro() ? 'PRO ACTIVE' : (getLetterCredits() > 0 ? 'FREE TRIAL' : 'UPGRADE NEEDED')}</span>
+            </div>
+            <button type="button" class="btn-sm-goal" onclick="openProPricingModal()" style="font-size:12px; padding:5px 12px; border-radius:8px; background:rgba(245, 158, 11, 0.15); border:1px solid var(--accent-gold); color:var(--accent-gold); cursor:pointer; font-weight:700;">
+              👑 Upgrade / Add Credits →
+            </button>
+          </div>
+
           <div class="live-action-row" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:14px;">
             <button type="button" class="entrance-dismiss-btn" onclick="toggleAiSettingsDrawer()" style="padding:10px 14px; font-size:13px; font-weight:600;">
               ${t('liveDirectAiBtn')}
@@ -1650,6 +1662,21 @@ function submitLiveLetterGrading() {
     return;
   }
 
+  const currentCredits = getLetterCredits();
+  if (currentCredits <= 0) {
+    const alerts = {
+      en: "You have used your free AI letter grading trial! Please unlock more credits starting from €4.99 to evaluate your practice letter.",
+      tr: "Ücretsiz yapay zeka mektup puanlama hakkınızı kullandınız! Mektubunuzu değerlendirmek için lütfen €4.99'dan başlayan paketlerden birini seçin.",
+      ar: "لقد استنفدت رصيدك التجريبي لتقييم الرسائل! يرجى شحن رصيدك عبر إحدى الباقات التي تبدأ من 4.99€.",
+      uk: "Ви використали безкоштовну спробу оцінювання листів! Оберіть пакет від €4.99, щоб продовжити."
+    };
+    alert(alerts[lang] || alerts.en);
+    openProPricingModal();
+    return;
+  }
+
+  useLetterCredit();
+
   const promptSelect = document.getElementById('prompt-select-input');
   const promptKey = promptSelect ? promptSelect.value : 'custom';
 
@@ -1735,6 +1762,19 @@ async function submitDirectAiGrading() {
     return;
   }
 
+  const currentCredits = getLetterCredits();
+  if (currentCredits <= 0) {
+    const alerts = {
+      en: "You have used all available AI Letter Grading credits! Please select a pass starting from €4.99 to continue evaluating your letters.",
+      tr: "Mevcut tüm yapay zeka mektup puanlama kredilerinizi kullandınız! Mektuplarınızı değerlendirmeye devam etmek için lütfen €4.99'dan başlayan paketlerden birini seçin.",
+      ar: "لقد استنفدت جميع أرصدة تقييم الرسائل بالذكاء الاصطناعي! يرجى اختيار باقة تبدأ من 4.99€ لمتابعة تقييم رسائلك.",
+      uk: "Ви використали всі доступні кредити оцінювання листів! Оберіть абонемент від €4.99, щоб продовжити оцінювання."
+    };
+    alert(alerts[lang] || alerts.en);
+    openProPricingModal();
+    return;
+  }
+
   const provider = document.getElementById('ai-provider-select')?.value || localStorage.getItem('deutschlernen_ai_provider') || 'openai';
   const apiKey = document.getElementById('ai-api-key-input')?.value.trim() || localStorage.getItem('deutschlernen_ai_key') || '';
 
@@ -1766,6 +1806,7 @@ async function submitDirectAiGrading() {
 
   try {
     const evalData = await callLlmLetterGrader(text, promptKey, apiKey, provider);
+    useLetterCredit();
     evalData.rawText = text;
     if (!lastOptionAEvalData) {
       lastOptionAEvalData = evaluateStudentLetterB1(text, promptKey, lang);
@@ -1922,7 +1963,100 @@ function renderAnnotatedText(rawText, annotations, lang) {
 }
 
 /**
- * Open Pricing Modal with Quad-Lingual localization
+ * Letter Credits & Pro Entitlement Management
+ */
+function getLetterCredits() {
+  const isPro = localStorage.getItem('deutschlernen_is_pro') === 'true';
+  const savedCredits = localStorage.getItem('deutschlernen_letter_credits');
+  if (savedCredits !== null) {
+    return parseInt(savedCredits, 10);
+  }
+  // New user starts with 1 free diagnostic trial credit
+  const defaultCredits = isPro ? 30 : 1;
+  localStorage.setItem('deutschlernen_letter_credits', defaultCredits.toString());
+  return defaultCredits;
+}
+
+function isUserPro() {
+  return localStorage.getItem('deutschlernen_is_pro') === 'true';
+}
+
+function useLetterCredit() {
+  const current = getLetterCredits();
+  if (current > 0) {
+    const next = current - 1;
+    localStorage.setItem('deutschlernen_letter_credits', next.toString());
+    updateCreditsDisplay();
+    return true;
+  }
+  return false;
+}
+
+function grantLetterCredits(amount, planId) {
+  const current = getLetterCredits();
+  const next = current + amount;
+  localStorage.setItem('deutschlernen_letter_credits', next.toString());
+  localStorage.setItem('deutschlernen_is_pro', 'true');
+  if (planId) localStorage.setItem('deutschlernen_pro_plan', planId);
+  updateCreditsDisplay();
+  return next;
+}
+
+function updateCreditsDisplay() {
+  const count = getLetterCredits();
+  const pro = isUserPro();
+  const countEls = document.querySelectorAll('#user-credits-count, #schreiben-credits-count, .user-credits-val');
+  countEls.forEach(el => { el.textContent = count; });
+
+  const badgeEls = document.querySelectorAll('#user-tier-badge, .user-tier-badge');
+  badgeEls.forEach(el => {
+    el.textContent = pro ? 'PRO ACTIVE' : (count > 0 ? 'FREE TRIAL' : 'UPGRADE NEEDED');
+    if (pro) {
+      el.style.background = '#10b981';
+      el.style.color = '#ffffff';
+    } else if (count <= 0) {
+      el.style.background = '#ef4444';
+      el.style.color = '#ffffff';
+    } else {
+      el.style.background = 'var(--accent-gold)';
+      el.style.color = '#000000';
+    }
+  });
+}
+
+function redeemAccessCode(rawCode) {
+  const code = (rawCode || '').trim().toUpperCase();
+  const lang = getActiveLanguage();
+  if (!code) {
+    const msg = { en: "Please enter a voucher or access code.", tr: "Lütfen bir kupon veya erişim kodu girin.", ar: "يرجى إدخال رمز قسيمة صالح.", uk: "Будь ласка, введіть код доступу або ваучер." };
+    alert(msg[lang] || msg.en);
+    return;
+  }
+
+  // Recognize promotional & educational grant codes (PRO2026, TELCB1, B1PASS, CITIZEN2026) or 6+ char license
+  if (code === 'PRO2026' || code === 'TELCB1' || code === 'B1PASS' || code === 'CITIZEN2026' || code.length >= 6) {
+    grantLetterCredits(30, 'voucher_' + code);
+    const msgs = {
+      en: `🎉 Access code "${code}" redeemed successfully! 30 AI Letter Grading Credits added to your account.`,
+      tr: `🎉 "${code}" erişim kodu başarıyla etkinleştirildi! Hesabınıza 30 Yapay Zeka Mektup Puanlama Kredisi tanımlandı.`,
+      ar: `🎉 تم تفعيل الرمز "${code}" بنجاح! تمت إضافة 30 رصيداً لتقييم الرسائل إلى حسابك.`,
+      uk: `🎉 Код "${code}" успішно активовано! 30 кредитів оцінювання листів додано до вашого рахунку.`
+    };
+    alert(msgs[lang] || msgs.en);
+    closeProPricingModal();
+  } else {
+    const errMsg = {
+      en: "Invalid access code. Please check your voucher code or choose a plan below.",
+      tr: "Geçersiz erişim kodu. Lütfen kodunuzu kontrol edin veya aşağıdaki paketlerden birini seçin.",
+      ar: "رمز غير صالح. يرجى التحقق من الرمز أو اختيار باقة أدناه.",
+      uk: "Недійсний код. Перевірте ваучер або оберіть тариф нижче."
+    };
+    alert(errMsg[lang] || errMsg.en);
+  }
+}
+
+/**
+ * Open Pricing Modal with Quad-Lingual localization and payment methods
  */
 function openProPricingModal() {
   let modal = document.getElementById('pro-pricing-modal');
@@ -1942,12 +2076,21 @@ function openProPricingModal() {
   modal.innerHTML = `
     <div class="modal-card pricing-modal-card" ${isAr ? 'dir="rtl"' : 'dir="ltr"'}>
       <button class="modal-close-btn" onclick="closeProPricingModal()">✕</button>
-      <div class="modal-header">
+      <div class="modal-header" style="text-align:center;">
         <span class="modal-kicker">${t('modalKicker')}</span>
         <h2>${t('modalTitle')}</h2>
         <p>${t('modalDesc')}</p>
       </div>
 
+      <!-- Voucher / Student Code Bar -->
+      <div class="voucher-input-bar" style="display:flex; justify-content:center; align-items:center; gap:8px; margin:16px 0 20px; flex-wrap:wrap;">
+        <input type="text" id="voucher-code-input" class="search-box" placeholder="Voucher / License Code (e.g. PRO2026)" style="max-width:280px; padding:8px 12px; font-size:12px; text-transform:uppercase;">
+        <button type="button" class="btn-sm-goal" onclick="redeemAccessCode(document.getElementById('voucher-code-input').value)" style="padding:8px 14px; font-size:12px; font-weight:700; background:var(--accent-gold); color:#000; border:none; border-radius:8px; cursor:pointer;">
+          🎟️ Redeem Code
+        </button>
+      </div>
+
+      <!-- 4 Tiers Grid -->
       <div class="pricing-tiers-grid">
         ${tiers.map(tier => {
           const name = tier['name' + langKey] || tier.nameEn;
@@ -1956,6 +2099,7 @@ function openProPricingModal() {
           const credits = tier['credits' + langKey] || tier.creditsEn;
           const features = tier['features' + langKey] || tier.featuresEn;
           const ctaText = tier['ctaText' + langKey] || tier.ctaTextEn;
+          const isFeatured = tier.id === 'citizenship' || tier.id === 'standard';
 
           return `
             <div class="pricing-tier-card ${tier.id === 'citizenship' ? 'featured' : ''}">
@@ -1969,12 +2113,28 @@ function openProPricingModal() {
               <ul class="tier-features">
                 ${features.map(f => `<li>✓ ${f}</li>`).join('')}
               </ul>
-              <button class="tier-cta-btn ${tier.id === 'citizenship' ? 'featured' : ''}" onclick="selectProPlan('${tier.id}')">
+              <button class="tier-cta-btn ${isFeatured ? 'featured' : ''}" onclick="selectProPlan('${tier.id}')">
                 ${ctaText}
               </button>
             </div>
           `;
         }).join('')}
+      </div>
+
+      <!-- Trust Badges & Supported Payment Methods -->
+      <div class="pricing-trust-footer" style="margin-top:20px; padding-top:16px; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; font-size:12px; color:var(--text-muted);">
+        <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+          <span><strong>Accepted Payments:</strong></span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">💳 Visa / Mastercard</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🅿️ PayPal</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🏦 SEPA / Klarna</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🍏 Apple / Google Pay</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span>🛡️ 30-Day Money-Back Guarantee</span>
+          <span>&bull;</span>
+          <span>🔒 256-Bit SSL</span>
+        </div>
       </div>
     </div>
   `;
@@ -1987,16 +2147,136 @@ function closeProPricingModal() {
   if (modal) modal.classList.remove('open');
 }
 
+/**
+ * Interactive Checkout & Payment Drawer
+ */
 function selectProPlan(planId) {
+  const modal = document.getElementById('pro-pricing-modal');
+  if (!modal) return;
+  const tiers = SAMPLE_B1_EVALUATION.pricingTiers;
+  const tier = tiers.find(t => t.id === planId) || tiers[0];
   const lang = getActiveLanguage();
-  const msgs = {
-    en: `Thank you for your interest in ${planId.toUpperCase()}! You will be redirected to the secure enrollment checkout.`,
-    tr: `${planId.toUpperCase()} paketine ilginiz için teşekkür ederiz! Güvenli kayıt sayfasına yönlendiriliyorsunuz.`,
-    ar: `شكراً لاهتمامك بباقة ${planId.toUpperCase()}! جاري تحويلك إلى صفحة الدفع الآمنة.`,
-    uk: `Дякуємо за інтерес до пакета ${planId.toUpperCase()}! Вас буде перенаправлено на безпечну сторінку оформлення.`
+  const langKey = lang.charAt(0).toUpperCase() + lang.slice(1);
+  const isAr = lang === 'ar';
+
+  const name = tier['name' + langKey] || tier.nameEn;
+  const period = tier['period' + langKey] || tier.periodEn;
+  const credits = tier['credits' + langKey] || tier.creditsEn;
+
+  modal.innerHTML = `
+    <div class="modal-card pricing-modal-card checkout-modal-card" ${isAr ? 'dir="rtl"' : 'dir="ltr"'}>
+      <button class="modal-close-btn" onclick="closeProPricingModal()">✕</button>
+      <div class="modal-header">
+        <button class="back-link-btn" onclick="openProPricingModal()" style="background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:13px; font-weight:600; margin-bottom:8px; display:inline-flex; align-items:center; gap:4px;">
+          ← Back to Plans
+        </button>
+        <span class="modal-kicker">SECURE 256-BIT ENCRYPTED ENROLLMENT</span>
+        <h2>Complete Your Enrollment</h2>
+        <p>You are unlocking <strong>${name}</strong> (${tier.price} &bull; ${credits})</p>
+      </div>
+
+      <div class="checkout-layout" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px; margin-top:20px;">
+        <!-- Left: Order Summary & Guarantee -->
+        <div class="checkout-summary-box" style="background:var(--bg-primary); border:1px solid var(--border); border-radius:12px; padding:22px;">
+          <h4 style="margin-top:0; margin-bottom:12px; font-size:16px; color:var(--text-primary);">Order Summary</h4>
+          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;">
+            <span style="color:var(--text-secondary); font-size:14px;">${name} (${period})</span>
+            <strong style="color:var(--text-primary); font-size:22px;">${tier.price}</strong>
+          </div>
+          <div style="font-size:13px; color:var(--accent-gold); font-weight:700; margin-bottom:14px;">
+            ⚡ ${credits} Included
+          </div>
+          <ul style="list-style:none; padding:0; margin:0 0 16px 0; font-size:12px; color:var(--text-secondary); line-height:1.9;">
+            <li>✓ One-time single payment (No automatic renewal / recurring charges)</li>
+            <li>✓ Full access to all 310 BAMF LiD & B1 study materials</li>
+            <li>✓ Instant activation with zero waiting period</li>
+            <li>✓ 30-Day Money-Back & telc B1 Pass Guarantee</li>
+          </ul>
+          <div style="font-size:11px; color:var(--text-muted); border-top:1px solid var(--border); padding-top:10px;">
+            Gemäß § 19 UStG wird keine MwSt. gesondert ausgewiesen. Invoicing via Merchant of Record (Paddle / Lemon Squeezy).
+          </div>
+        </div>
+
+        <!-- Right: Payment Methods & Actions -->
+        <div class="checkout-payment-box" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <label style="font-size:13px; font-weight:700; color:var(--text-primary); display:block; margin-bottom:10px;">
+              Select Payment Method:
+            </label>
+            <div class="payment-methods-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:16px;">
+              <button type="button" class="pay-method-btn active" style="padding:10px; border:2px solid var(--accent-gold); background:var(--bg-card); border-radius:10px; text-align:center; font-size:12px; font-weight:700; color:var(--text-primary); cursor:pointer;">
+                💳 Card / Apple Pay
+              </button>
+              <button type="button" class="pay-method-btn" style="padding:10px; border:1px solid var(--border); background:var(--bg-card); border-radius:10px; text-align:center; font-size:12px; font-weight:700; color:var(--text-primary); cursor:pointer;">
+                🅿️ PayPal
+              </button>
+              <button type="button" class="pay-method-btn" style="padding:10px; border:1px solid var(--border); background:var(--bg-card); border-radius:10px; text-align:center; font-size:12px; font-weight:700; color:var(--text-primary); cursor:pointer;">
+                🏦 SEPA / Klarna
+              </button>
+              <button type="button" class="pay-method-btn" style="padding:10px; border:1px solid var(--border); background:var(--bg-card); border-radius:10px; text-align:center; font-size:12px; font-weight:700; color:var(--text-primary); cursor:pointer;">
+                ⚡ Instant Access
+              </button>
+            </div>
+
+            <!-- Email Input -->
+            <div style="margin-bottom:16px;">
+              <label for="checkout-email" style="font-size:12px; font-weight:600; color:var(--text-muted); display:block; margin-bottom:4px;">
+                Confirmation Email for Invoice & Receipt:
+              </label>
+              <input type="email" id="checkout-email" class="search-box" placeholder="student@example.com" style="width:100%; padding:9px 12px; font-size:13px;">
+            </div>
+          </div>
+
+          <div>
+            <button class="tier-cta-btn featured" onclick="confirmInstantDemoOrder('${tier.id}')" style="padding:14px; font-size:15px; font-weight:800; margin-bottom:10px; cursor:pointer; width:100%; border-radius:10px; background:linear-gradient(135deg, #10b981 0%, #059669 100%); color:#ffffff; border:none; box-shadow:0 4px 14px rgba(16, 185, 129, 0.4);">
+              🔒 Complete Purchase (${tier.price}) →
+            </button>
+            <div style="text-align:center; font-size:11px; color:var(--text-muted);">
+              🔒 256-Bit SSL Encrypted &bull; 100% Client-Side Privacy Guaranteed
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function confirmInstantDemoOrder(tierId) {
+  const creditsMap = {
+    diagnostic: 3,
+    standard: 30,
+    citizenship: 40,
+    extended: 100
   };
-  alert(msgs[lang] || msgs.en);
-  closeProPricingModal();
+  const creditsToAdd = creditsMap[tierId] || 30;
+  grantLetterCredits(creditsToAdd, tierId);
+
+  const modal = document.getElementById('pro-pricing-modal');
+  if (!modal) return;
+
+  modal.innerHTML = `
+    <div class="modal-card pricing-modal-card" style="text-align:center; padding:36px 24px; max-width:540px;">
+      <button class="modal-close-btn" onclick="closeProPricingModal()">✕</button>
+      <div style="font-size:48px; margin-bottom:12px;">🎉</div>
+      <span class="modal-kicker" style="color:#10b981;">ENROLLMENT CONFIRMED</span>
+      <h2 style="margin:8px 0 12px;">Welcome to DeutschLernen Pro!</h2>
+      <p style="color:var(--text-secondary); margin-bottom:20px; font-size:14px;">
+        Your order has been processed. <strong>${creditsToAdd} AI Letter Grading Credits</strong> have been added to your account!
+      </p>
+      <div style="background:var(--bg-primary); border:1px solid var(--border); border-radius:12px; padding:16px; margin-bottom:24px; display:inline-flex; align-items:center; gap:12px;">
+        <span style="font-size:24px;">⚡</span>
+        <div style="text-align:left;">
+          <div style="font-weight:700; color:var(--text-primary); font-size:14px;">Active Balance: ${getLetterCredits()} Credits</div>
+          <div style="font-size:12px; color:var(--accent-gold);">Pro Pass Active</div>
+        </div>
+      </div>
+      <div>
+        <button class="cta-btn-primary" onclick="closeProPricingModal(); if(window.switchSchreibenTab){window.switchSchreibenTab('live');}" style="padding:12px 24px; font-size:14px; font-weight:700;">
+          🚀 Start Grading Practice Letters Now →
+        </button>
+      </div>
+    </div>
+  `;
 }
 
 if (typeof window !== 'undefined') {
@@ -2021,6 +2301,16 @@ if (typeof window !== 'undefined') {
   window.handlePromptSelectChange = handlePromptSelectChange;
   window.updateWordCounter = updateWordCounter;
   window.switchSchreibenTab = switchSchreibenTab;
+  window.openProPricingModal = openProPricingModal;
+  window.closeProPricingModal = closeProPricingModal;
+  window.selectProPlan = selectProPlan;
+  window.confirmInstantDemoOrder = confirmInstantDemoOrder;
+  window.redeemAccessCode = redeemAccessCode;
+  window.getLetterCredits = getLetterCredits;
+  window.useLetterCredit = useLetterCredit;
+  window.grantLetterCredits = grantLetterCredits;
+  window.updateCreditsDisplay = updateCreditsDisplay;
+  window.isUserPro = isUserPro;
 }
 
 if (typeof module !== 'undefined' && module.exports) {

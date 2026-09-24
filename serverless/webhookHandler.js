@@ -46,7 +46,9 @@ export async function handlePaymentWebhook(request, env, db) {
 
   // 4. Determine Credits by Plan Tier
   let creditsToGrant = 30; // Default Standard Pass
-  if (planId.includes('citizenship') || amountCents === 3900) {
+  if (planId.includes('diagnostic') || amountCents === 499) {
+    creditsToGrant = 3;
+  } else if (planId.includes('citizenship') || amountCents === 3900) {
     creditsToGrant = 40;
   } else if (planId.includes('extended') || amountCents === 4900) {
     creditsToGrant = 100;

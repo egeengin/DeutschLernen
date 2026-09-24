@@ -80,11 +80,36 @@ function renderFehlerheftDashboard(containerId) {
   const getT = (key) => t[key]?.[lang] || t[key]?.en || '';
 
   if (items.length === 0) {
+    const actionLabel = {
+      en: "⚡ Start 10-Word Quiz to Detect Weak Spots →",
+      tr: "⚡ Eksikleri Belirlemek İçin 10 Kelimelik Teste Başla →",
+      ar: "⚡ ابدأ اختباراً من 10 كلمات لاكتشاف نقاط ضعفك ←",
+      uk: "⚡ Почніть тест на 10 слів для виявлення слабких місць →"
+    }[lang] || "⚡ Start 10-Word Quiz to Detect Weak Spots →";
+
+    const guideLabel = {
+      en: "What gets automatically recorded here:",
+      tr: "Burada otomatik olarak kaydedilenler:",
+      ar: "ما يتم تسجيله وحفظه هنا تلقائياً:",
+      uk: "Що тут записується автоматично:"
+    }[lang] || "What gets automatically recorded here:";
+
     container.innerHTML = `
       <div class="fehlerheft-empty-card" ${isAr ? 'dir="rtl"' : ''}>
         <div class="empty-icon">🎉</div>
         <h3>${getT('emptyTitle')}</h3>
         <p>${getT('emptyDesc')}</p>
+        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap; margin:16px 0 20px; font-size:12px; color:var(--text-secondary);">
+          <span style="font-weight:600; color:var(--accent-gold);">💡 ${guideLabel}</span>
+          <span>• 📝 Missed Vocabulary & Articles</span>
+          <span>• ⚖️ Grammar Cases (Dativ/Akkusativ)</span>
+          <span>• 🔄 Syntax Inversion Slips</span>
+        </div>
+        <div>
+          <a href="trainer.html?mode=mcq" class="card-link primary" style="display:inline-flex; align-items:center; gap:8px; padding:10px 20px; font-size:13px; font-weight:700; border-radius:10px; text-decoration:none;">
+            ${actionLabel}
+          </a>
+        </div>
       </div>
     `;
     return;

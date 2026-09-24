@@ -215,6 +215,54 @@ Ali`,
   ],
   pricingTiers: [
     {
+      id: "diagnostic",
+      nameEn: "Quick Diagnostic",
+      nameTr: "Hızlı Teşhis Paketi",
+      nameAr: "باقة التقييم السريع",
+      nameUk: "Швидка діагностика",
+      badgeEn: "Low-Risk Trial",
+      badgeTr: "Başlangıç",
+      badgeAr: "تجربة سريعة",
+      badgeUk: "Пробний старт",
+      price: "€4.99",
+      periodEn: "Diagnostic Sprint",
+      periodTr: "Hızlı Deneme Paketi",
+      periodAr: "تجربة تقييم سريعة",
+      periodUk: "Швидкий пробний пакет",
+      creditsEn: "3 AI Letter Grading Credits",
+      creditsTr: "3 Yapay Zeka Mektup Puanlama Kredisi",
+      creditsAr: "3 أرصدة لتقييم الرسائل بالذكاء الاصطناعي",
+      creditsUk: "3 кредити оцінювання листів ШІ",
+      featuresEn: [
+        "3 Full AI Practice Letter Evaluations",
+        "Official telc B1 (I + II + III × 3) Formula",
+        "4 Leitpunkte Completion Check",
+        "Syntax & Word Order Breakdown"
+      ],
+      featuresTr: [
+        "3 Tam Yapay Zeka Mektup Değerlendirmesi",
+        "Resmi telc B1 (I + II + III × 3) Formülü",
+        "4 Leitpunkt Tamamlanma Kontrolü",
+        "Sözdizimi ve Cümle Yapısı Analizi"
+      ],
+      featuresAr: [
+        "3 تقييمات كاملة للرسائل بالذكاء الاصطناعي",
+        "معادلة telc B1 الرسمية (I + II + III × 3)",
+        "التحقق من النقاط الإرشادية الأربع",
+        "تحليل بناء الجملة والترتيب النحوي"
+      ],
+      featuresUk: [
+        "3 повні перевірки листів штучним інтелектом",
+        "Офіційна формула telc B1 (I + II + III × 3)",
+        "Перевірка виконання 4 опорних пунктів",
+        "Аналіз порядку слів та синтаксису"
+      ],
+      ctaTextEn: "Get 3 Letters for €4.99",
+      ctaTextTr: "3 Mektup Al (€4.99)",
+      ctaTextAr: "احصل على 3 رسائل بـ 4.99€",
+      ctaTextUk: "Отримати 3 листи за €4.99"
+    },
+    {
       id: "standard",
       nameEn: "Standard Pro Pass",
       nameTr: "Standart Pro Kart",

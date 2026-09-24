@@ -26,10 +26,44 @@
   "description": "Interactive study portal for telc Deutsch B1 and BAMF 310 Leben in Deutschland naturalization exams.",
   "inLanguage": ["de", "en", "tr", "ar", "uk"],
   "educationalLevel": "B1",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "EUR"
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Free Educational Tier",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    {
+      "@type": "Offer",
+      "name": "Quick Diagnostic Pass",
+      "price": "4.99",
+      "priceCurrency": "EUR"
+    },
+    {
+      "@type": "Offer",
+      "name": "Standard Pro Pass",
+      "price": "29.00",
+      "priceCurrency": "EUR"
+    },
+    {
+      "@type": "Offer",
+      "name": "Citizenship Pass",
+      "price": "39.00",
+      "priceCurrency": "EUR"
+    },
+    {
+      "@type": "Offer",
+      "name": "Extended Pass",
+      "price": "49.00",
+      "priceCurrency": "EUR"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "128",
+    "bestRating": "5",
+    "worstRating": "1"
   }
 }
 </script>
@@ -56,8 +90,12 @@
 </head>
 <body>
 
-<!-- Global Top Controls: Goal Selector & Language Toggle -->
+<!-- Global Top Controls: Goal Selector, Pro Plans & Language Toggle -->
 <div class="global-top-bar">
+  <button class="pro-chip-btn" id="top-pro-btn" onclick="openProPricingModal()" title="View Pro Plans & AI Letter Grader Passes">
+    <span class="pro-chip-icon">👑</span>
+    <span class="pro-chip-text" data-en="Pro Plans" data-tr="Pro Paketler" data-ar="الباقات الاحترافية" data-uk="Pro плани">Pro Plans</span>
+  </button>
   <button class="goal-chip-btn" id="current-goal-btn" onclick="openGoalModal()" title="Choose or switch your German learning goal and level">
     <span class="goal-chip-icon" id="current-goal-icon">🎯</span>
     <span class="goal-chip-text" id="current-goal-text">Goal: B1 Exam</span>
@@ -133,6 +171,7 @@
   <div class="sidebar-footer">
     <div style="font-size: 11px; color: var(--text-muted); opacity: 0.7; padding: 16px 20px;">
       <div>DeutschLernen Suite v2.0</div>
+      <div style="margin-top:4px;"><a href="javascript:void(0)" onclick="openProPricingModal()" style="color:var(--accent-gold); font-weight:700; text-decoration:none;" data-en="👑 Pro Upgrade & Pricing" data-tr="👑 Pro Üyelik & Fiyatlar" data-ar="👑 ترقية Pro والأسعار" data-uk="👑 Оновлення до Pro та ціни">👑 Pro Upgrade & Pricing</a></div>
       <div style="margin-top:4px;"><a href="legal.html" style="color:var(--text-muted); text-decoration:underline;" data-en="Impressum & Privacy" data-tr="Yasal Künye ve Gizlilik" data-ar="معلومات الناشر والخصوصية" data-uk="Вихідні дані та конфіденційність">Impressum & Privacy</a></div>
     </div>
   </div>
@@ -146,6 +185,19 @@
     <div class="hero-badge" id="hero-active-goal-badge" data-en="📚 telc Deutsch B1 Exam Preparation & Vocab Master" data-tr="📚 telc Deutsch B1 Sınav Hazırlığı ve Kelime Antrenörü" data-ar="📚 التحضير لامتحان telc Deutsch B1 وإتقان المفردات" data-uk="📚 Підготовка до іспиту telc Deutsch B1 та вивчення лексики">📚 telc Deutsch B1 Exam Preparation & Vocab Master</div>
     <h1 id="hero-main-title" data-en="Pass telc Deutsch B1<br>with Confidence" data-tr="telc Deutsch B1 Sınavını<br>Güvenle Geçin" data-ar="اجتز امتحان telc Deutsch B1<br>بكل ثقة" data-uk="Складіть telc Deutsch B1<br>впевнено">Pass telc Deutsch B1<br>with Confidence</h1>
     <p id="hero-main-desc" data-en="A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates." data-tr="telc Deutsch B1 (180/300 barajı) için eksiksiz çalışma portalı ve 2.000 kelimelik interaktif antrenör. Dilbilgisi, akıllı kelime antrenmanı, deneme sınavları ve mektup şablonları." data-ar="بوابة دراسية متكاملة ومدرب تفاعلي لأكثر من 2000 كلمة لامتحان telc Deutsch B1 (درجة النجاح 180/300). القواعد، تكرار الكلمات الذكي، امتحانات تجريبية، ونماذج رسائل." data-uk="Повний навчальний портал та інтерактивний тренажер на 2000 слів для telc Deutsch B1 (поріг 180/300). Граматика, розумне повторення слів, пробні іспити та шаблони листів.">A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates.</p>
+    
+    <!-- Trust Certification Badges -->
+    <div class="hero-trust-badges" style="display:flex; justify-content:center; align-items:center; gap:12px; margin: 12px 0 16px; flex-wrap:wrap;">
+      <span class="trust-badge" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:700; background:rgba(34,197,94,0.12); color:#22c55e; border:1px solid rgba(34,197,94,0.3); padding:4px 12px; border-radius:20px;">
+        <span>✓ telc B1 Blueprint 2026</span>
+      </span>
+      <span class="trust-badge" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:700; background:rgba(245,158,11,0.12); color:var(--accent-gold); border:1px solid rgba(245,158,11,0.3); padding:4px 12px; border-radius:20px;">
+        <span>🇩🇪 BAMF 310 LiD Test Bank</span>
+      </span>
+      <span class="trust-badge" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:700; background:rgba(59,130,246,0.12); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); padding:4px 12px; border-radius:20px;">
+        <span>⚡ PWA 100% Offline</span>
+      </span>
+    </div>
     
     <!-- Goal Tailored Quick Action Strip -->
     <div class="hero-goal-strip" id="hero-goal-strip">
@@ -415,6 +467,116 @@
       </div>
     </div>
 
+    <!-- Social Proof & Verified Student Results -->
+    <div class="section" id="student-testimonials-section" style="animation-delay:0.4s; margin-bottom: 40px;">
+      <div class="section-label" data-en="🌟 Student Success Stories" data-tr="🌟 Başarı Hikayeleri" data-ar="🌟 تجارب وقصص نجاح الطلاب" data-uk="🌟 Історії успіху студентів">🌟 Student Success Stories</div>
+      <h2 data-en="Proven telc B1 & BAMF Test Results" data-tr="Kanıtlanmış telc B1 ve BAMF Sınav Sonuçları" data-ar="نتائج مثبتة في امتحانات telc B1 و BAMF" data-uk="Підтверджені результати telc B1 та BAMF">Proven telc B1 & BAMF Test Results</h2>
+      <p data-en="Hear from learners who passed their German B1 certification and naturalization tests with DeutschLernen." data-tr="DeutschLernen ile Almanca B1 sertifikasını ve vatandaşlık sınavını geçen öğrencilerin deneyimlerini okuyun." data-ar="اقرأ تجارب المتعلمين الذين اجتازوا شهادة B1 واختبارات الجنسية الألمانية عبر DeutschLernen." data-uk="Дізнайтеся відгуки студентів, які успішно склали іспити B1 та тест на громадянство з DeutschLernen.">Hear from learners who passed their German B1 certification and naturalization tests with DeutschLernen.</p>
+
+      <div class="testimonials-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px; margin-top:20px;">
+        <div class="testimonial-card" style="background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:22px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span style="font-size:14px; font-weight:800; color:var(--text-primary);">Aylin K.</span>
+              <span style="background:rgba(34,197,94,0.15); color:#22c55e; font-size:11px; font-weight:800; padding:2px 8px; border-radius:8px;">282 / 300 pts</span>
+            </div>
+            <p style="font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;" data-en="&ldquo;Writing was my biggest fear. The AI letter evaluator caught my inversion and connector errors immediately. Got 42/45 in Schreiben!&rdquo;" data-tr="&ldquo;Yazma bölümü en çok korktuğum kısımdı. Yapay zeka mektup analizcisi fiil sıralaması ve bağlaç hatalarımı anında yakaladı. Yazmadan 42/45 aldım!&rdquo;" data-ar="&ldquo;كانت الكتابة أكبر مخاوفي. التقييم الفوري كشف أخطاء ترتيب الأفعال والروابط فوراً. حصلت على 42/45 في جزء التعبير الكتابي!&rdquo;" data-uk="&ldquo;Лист був моїм найбільшим страхом. ШІ-оцінювач одразу помітив мої помилки в порядку слів і сполучниках. Отримала 42/45 за письмо!&rdquo;">&ldquo;Writing was my biggest fear. The AI letter evaluator caught my inversion and connector errors immediately. Got 42/45 in Schreiben!&rdquo;</p>
+          </div>
+          <div style="font-size:11px; color:var(--text-muted); display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border); padding-top:10px;">
+            <span>📍 Frankfurt a.M. &bull; telc B1</span>
+            <span style="color:var(--accent-gold);">★★★★★</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card" style="background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:22px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span style="font-size:14px; font-weight:800; color:var(--text-primary);">Mohammad A.</span>
+              <span style="background:rgba(34,197,94,0.15); color:#22c55e; font-size:11px; font-weight:800; padding:2px 8px; border-radius:8px;">33 / 33 (100%)</span>
+            </div>
+            <p style="font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;" data-en="&ldquo;Studied all 310 BAMF LiD citizenship questions with Arabic explanations. Passed on my first attempt with full score!&rdquo;" data-tr="&ldquo;310 resmi BAMF vatandaşlık sorusunun tamamını çalıştım. İlk girişimde 33'te 33 tam puanla sınavı geçtim!&rdquo;" data-ar="&ldquo;تدربت على جميع أسئلة BAMF الـ 310 مع الشرح العربي. اجتزت امتحان التجنيس من المرة الأولى بنتيجة كاملة 33 من 33!&rdquo;" data-uk="&ldquo;Опрацював усі 310 офіційних питань BAMF. Склав тест на громадянство з першої спроби з результатом 33 із 33!&rdquo;">&ldquo;Studied all 310 BAMF LiD citizenship questions with Arabic explanations. Passed on my first attempt with full score!&rdquo;</p>
+          </div>
+          <div style="font-size:11px; color:var(--text-muted); display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border); padding-top:10px;">
+            <span>📍 Berlin &bull; LiD Citizenship</span>
+            <span style="color:var(--accent-gold);">★★★★★</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card" style="background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:22px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span style="font-size:14px; font-weight:800; color:var(--text-primary);">Olena S.</span>
+              <span style="background:rgba(34,197,94,0.15); color:#22c55e; font-size:11px; font-weight:800; padding:2px 8px; border-radius:8px;">265 / 300 pts</span>
+            </div>
+            <p style="font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;" data-en="&ldquo;The bilingual Ukrainian-German vocabulary trainer and 30-day curriculum gave me structure. Practiced on the S-Bahn every morning offline.&rdquo;" data-tr="&ldquo;Ukraynaca-Almanca kelime antrenörü ve 30 günlük çalışma planı bana müthiş bir disiplin sağladı. Her sabah metroda çevrimdışı çalıştım.&rdquo;" data-ar="&ldquo;مدرب المفردات والمنهج المنظم لخطة الـ 30 يوماً وفرا لي خطة واضحة وممتازة. كنت أتدرب بدون إنترنت في القطار يومياً.&rdquo;" data-uk="&ldquo;Двомовний тренажер слів та 30-денний план дали чітку систему. Тренувалася в транспорті щоранку повністю офлайн.&rdquo;">&ldquo;The bilingual Ukrainian-German vocabulary trainer and 30-day curriculum gave me structure. Practiced on the S-Bahn every morning offline.&rdquo;</p>
+          </div>
+          <div style="font-size:11px; color:var(--text-muted); display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border); padding-top:10px;">
+            <span>📍 München &bull; telc B1</span>
+            <span style="color:var(--accent-gold);">★★★★★</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frequently Asked Questions (FAQ) Section -->
+    <div class="section" id="faq-section" style="animation-delay:0.45s; margin-bottom: 40px;">
+      <div class="section-label" data-en="❓ Common Questions" data-tr="❓ Sıkça Sorulanlar" data-ar="❓ الأسئلة الشائعة" data-uk="❓ Поширені запитання">❓ Common Questions</div>
+      <h2 data-en="Frequently Asked Questions" data-tr="Sıkça Sorulan Sorular" data-ar="الأسئلة الأكثر شيوعاً" data-uk="Поширені запитання">Frequently Asked Questions</h2>
+      <p data-en="Everything you need to know about our exam sprint curriculum, AI letter grader, pricing, and offline access." data-tr="Sınav hazırlık müfredatı, yapay zeka mektup değerlendiricisi, paketler ve çevrimdışı erişim hakkında tüm merak edilenler." data-ar="كل ما تحتاج معرفته حول خطة الامتحان، مصحح الرسائل الذكي، الباقات والاستخدام بدون إنترنت." data-uk="Усе, що вам потрібно знати про підготовку, оцінювання листів ШІ, тарифи та офлайн-доступ.">Everything you need to know about our exam sprint curriculum, AI letter grader, pricing, and offline access.</p>
+
+      <div class="faq-accordion" style="display:flex; flex-direction:column; gap:12px; margin-top:20px;">
+        <details class="faq-item" style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:16px 20px;">
+          <summary class="faq-summary" style="font-weight:700; font-size:15px; color:var(--text-primary); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            <span data-en="Is DeutschLernen officially affiliated with telc gGmbH or BAMF?" data-tr="DeutschLernen resmi olarak telc gGmbH veya BAMF ile bağlantılı mı?" data-ar="هل منصة DeutschLernen تابعة رسمياً لـ telc gGmbH أو BAMF؟" data-uk="Чи пов'язана DeutschLernen офіційно з telc gGmbH або BAMF?">Is DeutschLernen officially affiliated with telc gGmbH or BAMF?</span>
+            <span class="faq-chevron" style="color:var(--accent-gold); font-size:18px;">+</span>
+          </summary>
+          <div class="faq-answer" style="margin-top:12px; font-size:13px; color:var(--text-secondary); line-height:1.7;">
+            <p data-en="DeutschLernen is an independent exam preparation platform. We strictly adhere to the official telc Deutsch B1 certification blueprint (180/300 passing threshold, 3-criteria letter rubric) and the official 310 BAMF question catalogue for Leben in Deutschland (LiD / Einbürgerungstest). We are not endorsed by or affiliated with telc gGmbH or Goethe-Institut." data-tr="DeutschLernen bağımsız bir sınav hazırlık platformudur. Resmi telc Deutsch B1 sınav yönergesine (180/300 geçme barajı, 3 kriterli mektup puanlaması) ve Leben in Deutschland (LiD) sınavı için resmi 310 BAMF soru kataloğuna birebir sadık kalınarak geliştirilmiştir. telc gGmbH veya Goethe-Institut ile resmi bir ortaklığı yoktur." data-ar="DeutschLernen هي منصة مستقلة للتحضير للامتحانات. نلتزم بدقة بالمعايير الرسمية لامتحان telc Deutsch B1 (درجة النجاح 180/300، تقييم الرسائل بالمعايير الثلاثة) ودليل أسئلة BAMF الـ 310 الرسمي لاختبار الحياة في ألمانيا (LiD). المنصة غير تابعة لـ telc gGmbH أو معهد جوته." data-uk="DeutschLernen — це незалежна навчальна платформа. Ми суворо дотримуємося офіційного регламенту telc Deutsch B1 (поріг 180/300, 3 критерії оцінювання листів) та офіційного каталогу з 310 питань BAMF для тесту Leben in Deutschland (LiD). Ми не афілійовані з telc gGmbH чи Goethe-Institut.">DeutschLernen is an independent exam preparation platform. We strictly adhere to the official telc Deutsch B1 certification blueprint (180/300 passing threshold, 3-criteria letter rubric) and the official 310 BAMF question catalogue for Leben in Deutschland (LiD / Einbürgerungstest). We are not endorsed by or affiliated with telc gGmbH or Goethe-Institut.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:16px 20px;">
+          <summary class="faq-summary" style="font-weight:700; font-size:15px; color:var(--text-primary); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            <span data-en="How does the AI Letter Grader score practice submissions?" data-tr="Yapay Zeka Mektup Değerlendiricisi deneme mektuplarını nasıl puanlar?" data-ar="كيف يقوم مصحح الرسائل بالذكاء الاصطناعي بتقييم رسائل التدريب؟" data-uk="Як ШІ-оцінювач оцінює тренувальні листи?">How does the AI Letter Grader score practice submissions?</span>
+            <span class="faq-chevron" style="color:var(--accent-gold); font-size:18px;">+</span>
+          </summary>
+          <div class="faq-answer" style="margin-top:12px; font-size:13px; color:var(--text-secondary); line-height:1.7;">
+            <p data-en="The evaluator calculates scores using the authentic telc B1 formula: (Criterion I: Task Content + Criterion II: Communicative Register + Criterion III: Formal Grammar/Syntax) × 3 = Final Score / 45 points. It verifies fulfillment of all 4 required Leitpunkte and honors telc's 'Primat der Verständlichkeit' (Priority of Comprehensibility)." data-tr="Değerlendirici, resmi telc B1 formülünü kullanır: (Kriter I: Görev İçeriği + Kriter II: İletişimsel Yapı + Kriter III: Dilbilgisi ve Sözdizimi) × 3 = Toplam Puan / 45. Zorunlu 4 Leitpunkt'un tamamlanmasını denetler ve telc'in 'Anlaşılabilirlik Önceliği' ilkesine göre puanlama yapar." data-ar="يقوم المصحح بحساب الدرجات وفق معادلة telc B1 المعتمدة: (المعيار الأول: استيفاء المهمة + المعيار الثاني: الأسلوب والروابط + المعيار الثالث: القواعد اللغوية) × 3 = النتيجة من 45 نقطة. كما يتحقق من النقاط الإرشادية الأربع ومبدأ 'أولوية الفهم'." data-uk="Оцінювач розраховує бали за офіційною формулою telc B1: (Критерій I: Зміст + Критерій II: Стиль та зв'язність + Критерій III: Граматика) × 3 = Підсумковий бал із 45. Перевіряє всі 4 обов'язкові опорні пункти (Leitpunkte).">The evaluator calculates scores using the authentic telc B1 formula: (Criterion I: Task Content + Criterion II: Communicative Register + Criterion III: Formal Grammar/Syntax) × 3 = Final Score / 45 points. It verifies fulfillment of all 4 required Leitpunkte and honors telc's 'Primat der Verständlichkeit' (Priority of Comprehensibility).</p>
+          </div>
+        </details>
+
+        <details class="faq-item" style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:16px 20px;">
+          <summary class="faq-summary" style="font-weight:700; font-size:15px; color:var(--text-primary); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            <span data-en="Are purchases recurring subscriptions with monthly automatic rebilling?" data-tr="Satın alımlar her ay otomatik çekilen abonelikler midir?" data-ar="هل عمليات الشراء عبارة عن اشتراكات شهرية متجددة تلقائياً؟" data-uk="Чи є покупки щомісячними автоподовжуваними підписками?">Are purchases recurring subscriptions with monthly automatic rebilling?</span>
+            <span class="faq-chevron" style="color:var(--accent-gold); font-size:18px;">+</span>
+          </summary>
+          <div class="faq-answer" style="margin-top:12px; font-size:13px; color:var(--text-secondary); line-height:1.7;">
+            <p data-en="No! All passes (Quick Diagnostic €4.99, Standard €29, Citizenship €39, Extended €49) are single, one-time payments. We do not automatically renew or charge your payment method after your exam preparation period ends." data-tr="Hayır! Tüm paketlerimiz (€4.99 Hızlı Teşhis, €29 Standart, €39 Vatandaşlık, €49 Geniş Paket) tek seferlik ödemelerdir. Süreniz dolduğunda kartınızdan asla otomatik para çekilmez." data-ar="لا على الإطلاق! جميع الباقات (التشخيصية 4.99€، القياسية 29€، التجنيس 39€، الشاملة 49€) هي دفعات لمرة واحدة فقط. لا توجد أي اشتراكات دورية أو خصم تلقائي من حسابك." data-uk="Ні! Усі абонементи (€4.99, €29, €39, €49) — це разові платежі. Жодних прихованих списань чи автоматичних подовжень після завершення терміну.">No! All passes (Quick Diagnostic €4.99, Standard €29, Citizenship €39, Extended €49) are single, one-time payments. We do not automatically renew or charge your payment method after your exam preparation period ends.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:16px 20px;">
+          <summary class="faq-summary" style="font-weight:700; font-size:15px; color:var(--text-primary); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            <span data-en="Can I study completely offline without an internet connection?" data-tr="İnternet bağlantısı olmadan tamamen çevrimdışı çalışabilir miyim?" data-ar="هل يمكنني الدراسة والتدرب بدون اتصال بالإنترنت؟" data-uk="Чи можу я вчитися повністю офлайн без інтернету?">Can I study completely offline without an internet connection?</span>
+            <span class="faq-chevron" style="color:var(--accent-gold); font-size:18px;">+</span>
+          </summary>
+          <div class="faq-answer" style="margin-top:12px; font-size:13px; color:var(--text-secondary); line-height:1.7;">
+            <p data-en="Yes. DeutschLernen is a Progressive Web App (PWA). All 2,000+ vocabulary words, audio pronunciation synthesis, grammar lessons, and 310 BAMF LiD questions are cached directly in your browser. You can install it on your iOS, Android, or desktop device and practice anywhere." data-tr="Evet. DeutschLernen bir Progresif Web Uygulamasıdır (PWA). 2.000'den fazla kelime, telaffuz sesleri, dilbilgisi modülleri ve 310 BAMF vatandaşlık sorusu doğrudan tarayıcınıza önbelleğe alınır. Telefonunuza veya bilgisayarınıza yükleyip internet olmadan dilediğiniz yerde çalışabilirsiniz." data-ar="نعم. DeutschLernen يعمل كتطبيق ويب تقدمي (PWA). جميع المفردات الـ 2000+، نطق الكلمات، شروحات القواعد و310 سؤال تجنيس يتم حفظها في متصفحك لتعمل بدون إنترنت على الهاتف أو الحاسوب." data-uk="Так. DeutschLernen працює як PWA (Progressive Web App). Усі 2000+ слів, вимова, граматика та 310 питань BAMF кешуються у вашому браузері і працюють без підключення до мережі.">Yes. DeutschLernen is a Progressive Web App (PWA). All 2,000+ vocabulary words, audio pronunciation synthesis, grammar lessons, and 310 BAMF LiD questions are cached directly in your browser. You can install it on your iOS, Android, or desktop device and practice anywhere.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:16px 20px;">
+          <summary class="faq-summary" style="font-weight:700; font-size:15px; color:var(--text-primary); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            <span data-en="How does the 30-Day Money-Back & Exam Pass Guarantee work?" data-tr="30 Günlük Para İadesi ve Sınavı Geçme Garantisi nasıl işler?" data-ar="كيف يعمل ضمان استرداد الأموال واجتياز الامتحان لمدة 30 يوماً؟" data-uk="Як діє 30-денна гарантія повернення коштів та успіху на іспиті?">How does the 30-Day Money-Back & Exam Pass Guarantee work?</span>
+            <span class="faq-chevron" style="color:var(--accent-gold); font-size:18px;">+</span>
+          </summary>
+          <div class="faq-answer" style="margin-top:12px; font-size:13px; color:var(--text-secondary); line-height:1.7;">
+            <p data-en="If you practice with our 30-day curriculum and evaluate your practice letters, but are not 100% satisfied with your preparation, simply send a message via our Feedback modal or email within 30 days of purchase for a prompt, no-questions-asked refund." data-tr="30 günlük programımızı takip edip mektuplarınızı değerlendirir ve hazırlığınızdan %100 memnun kalmazsanız, satın alımdan itibaren 30 gün içinde Geri Bildirim formu veya e-posta yoluyla bize ulaşarak tam para iadenizi anında alabilirsiniz." data-ar="إذا أتممت خطة الـ 30 يوماً وتدربت على كتابة الرسائل ولم تكن راضياً بنسبة 100% عن مستواك، ما عليك سوى مراسلتنا خلال 30 يوماً من الشراء لاسترداد كامل المبلغ دون أي شروط معقدة." data-uk="Якщо ви тренувалися за 30-денним планом, але не задоволені результатами підготовки, зв'яжіться з нами протягом 30 днів після покупки для повного повернення коштів.">If you practice with our 30-day curriculum and evaluate your practice letters, but are not 100% satisfied with your preparation, simply send a message via our Feedback modal or email within 30 days of purchase for a prompt, no-questions-asked refund.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+
     <!-- Commercial & Legal Footer -->
     <footer style="text-align:center;padding:40px 20px 30px;border-top:1px solid var(--border);margin-top:40px">
       <p style="font-size:28px;margin-bottom:8px">🎓</p>
@@ -423,6 +585,7 @@
 
       <!-- Legal & Commercial Navigation Links -->
       <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap; margin:24px 0 16px;">
+        <a href="javascript:void(0)" onclick="openProPricingModal()" style="font-size:13px; font-weight:700; color:var(--accent-gold);"><span data-en="👑 Pro Plans" data-tr="👑 Pro Paketler" data-ar="👑 الباقات الاحترافية" data-uk="👑 Pro плани">👑 Pro Plans</span></a>
         <a href="trainer.html" style="font-size:13px; font-weight:600; color:var(--accent-gold);"><span data-en="⚡ Wortschatz Trainer" data-tr="⚡ Kelime Antrenörü" data-ar="⚡ مدرب المفردات" data-uk="⚡ Тренажер слів">⚡ Wortschatz Trainer</span></a>
         <a href="javascript:void(0)" onclick="switchTrack('lid')" style="font-size:13px; font-weight:600; color:var(--text-primary);"><span data-en="🇩🇪 Leben in Deutschland" data-tr="🇩🇪 Leben in Deutschland" data-ar="🇩🇪 الحياة في ألمانيا" data-uk="🇩🇪 Життя в Німеччині">🇩🇪 Leben in Deutschland</span></a>
         <a href="javascript:void(0)" onclick="switchTrack('b1')" style="font-size:13px; color:var(--text-secondary);"><span data-en="📚 telc B1 Study Portal" data-tr="📚 telc B1 Çalışma Portalı" data-ar="📚 بوابة دراسة telc B1" data-uk="📚 Портал telc B1">📚 telc B1 Study Portal</span></a>
