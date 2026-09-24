@@ -4,6 +4,7 @@ let currentTheme = localStorage.getItem('deutschlernen_theme') || localStorage.g
 document.documentElement.setAttribute('data-theme', currentTheme);
 let currentMdUrl = null;
 let currentActiveMaterial = null;
+let currentTrack = localStorage.getItem('deutschlernen_track') || 'b1';
 
 // --- Community Feedback Rating Labels & Display ---
 const ratingLabels = {
@@ -287,25 +288,300 @@ let pendingGoalId = currentGoalId;
 let pendingGoalLevel = currentGoalLevel;
 
 const navIds = ['exam-guide', 'study-plan', 'grammar', 'reading', 'writing', 'diagnostic', 'final-exam', 'resources', 'vocab1', 'vocab2'];
+
+function openB1Module(index) {
+  closeMarkdown(true);
+  if (currentTrack !== 'b1') {
+    switchTrack('b1');
+  }
+  openMaterial(index);
+  const sidebar = document.querySelector('.sidebar');
+  if (sidebar) sidebar.classList.remove('open');
+}
+
+function navigateToSection(sectionId, trackId) {
+  closeMarkdown(true);
+  if (trackId && currentTrack !== trackId) {
+    switchTrack(trackId);
+  }
+  const sidebar = document.querySelector('.sidebar');
+  if (sidebar) sidebar.classList.remove('open');
+
+  setTimeout(() => {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 60);
+}
+
+function navigateToLiDStateMode() {
+  closeMarkdown(true);
+  if (currentTrack !== 'lid') {
+    switchTrack('lid');
+  }
+  const sidebar = document.querySelector('.sidebar');
+  if (sidebar) sidebar.classList.remove('open');
+
+  setTimeout(() => {
+    const el = document.getElementById('lid-trainer-section');
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const stateFilter = document.querySelector('.lid-filter-pill[data-filter="state"]') || document.getElementById('lid-state-select');
+    if (stateFilter) stateFilter.click();
+  }, 60);
+}
+
+function navigateToLiDSimulation() {
+  closeMarkdown(true);
+  if (currentTrack !== 'lid') {
+    switchTrack('lid');
+  }
+  const sidebar = document.querySelector('.sidebar');
+  if (sidebar) sidebar.classList.remove('open');
+
+  setTimeout(() => {
+    const el = document.getElementById('lid-trainer-section');
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const simBtn = document.getElementById('btn-lid-mode-simulation') || document.querySelector('.lid-mode-btn[data-mode="simulation"]');
+    if (simBtn) simBtn.click();
+  }, 60);
+}
+
+function navigateToExaminerSuite() {
+  closeMarkdown(true);
+  if (currentTrack !== 'b1') {
+    switchTrack('b1');
+  }
+  const drawer = document.getElementById('schreiben-showcase-drawer');
+  if (drawer && drawer.style.display === 'none') {
+    if (typeof toggleSchreibenShowcase === 'function') {
+      toggleSchreibenShowcase();
+    }
+  }
+  navigateToSection('schreiben-showcase-section', 'b1');
+}
+
+window.openB1Module = openB1Module;
+window.navigateToSection = navigateToSection;
+window.navigateToLiDStateMode = navigateToLiDStateMode;
+window.navigateToLiDSimulation = navigateToLiDSimulation;
+window.navigateToExaminerSuite = navigateToExaminerSuite;
+
 function renderSidebar() {
   const nav = document.getElementById('sidebar-nav');
+  const header = document.getElementById('sidebar-nav-header');
   if (!nav) return;
   nav.innerHTML = '';
-  materials.forEach((m, i) => {
-    const id = navIds[i];
-    const title = getMaterialField(m, 'title');
-    nav.innerHTML += `<a href="javascript:void(0)" onclick="openMaterial(${i}); showSection('${id}')">
-      <span class="icon">${m.icon}</span>
-      <span data-en="${m.title}" data-tr="${m.titleTr}" data-ar="${m.titleAr || ''}" data-uk="${m.titleUk || ''}">${title}</span>
-      <span class="num">${i+1}</span>
-    </a>`;
-  });
+
+  const track = currentTrack || 'b1';
+
+  // Update header text based on active track and current language
+  if (header) {
+    const headers = {
+      b1: {
+        en: 'B1 STUDY MODULES (10)',
+        tr: 'B1 ÇALIŞMA MODÜLLERİ (10)',
+        ar: 'الوحدات الدراسية B1 (10)',
+        uk: 'НАВЧАЛЬНІ МОДУЛІ B1 (10)'
+      },
+      vocab: {
+        en: 'VOCAB TRAINER SECTIONS',
+        tr: 'KELİME ANTRENÖRÜ BÖLÜMLERİ',
+        ar: 'أقسام مدرب المفردات',
+        uk: 'РОЗДІЛИ ТРЕНАЖЕРА СЛІВ'
+      },
+      lid: {
+        en: 'LEBEN IN DEUTSCHLAND',
+        tr: 'LEBEN IN DEUTSCHLAND BÖLÜMLERİ',
+        ar: 'أقسام الحياة في ألمانيا',
+        uk: 'РОЗДІЛИ ЖИТТЯ В НІМЕЧЧИНІ'
+      }
+    };
+    const h = headers[track] || headers.b1;
+    header.setAttribute('data-en', h.en);
+    header.setAttribute('data-tr', h.tr);
+    header.setAttribute('data-ar', h.ar);
+    header.setAttribute('data-uk', h.uk);
+    header.textContent = h[currentLang] || h.en;
+  }
+
+  if (track === 'vocab') {
+    const vocabLinks = [
+      {
+        icon: '⚡',
+        en: '2,000+ Words Drill',
+        tr: '2.000+ Kelime Antrenmanı',
+        ar: 'تدريب أكثر من 2000 كلمة',
+        uk: 'Тренування 2000+ слів',
+        action: "navigateToSection('vocab-trainer-banner', 'vocab')"
+      },
+      {
+        icon: '📦',
+        en: 'Core 2,000 (A1–B1)',
+        tr: 'Temel 2.000 (A1–B1)',
+        ar: 'الأساسية 2000 (A1–B1)',
+        uk: 'Базова 2000 (A1–B1)',
+        href: 'trainer.html?deck=core'
+      },
+      {
+        icon: '💼',
+        en: 'Advanced B2 Deck',
+        tr: 'İleri B2 Destesi',
+        ar: 'مجموعة B2 المتقدمة',
+        uk: 'Просунута колода B2',
+        href: 'trainer.html?deck=b2'
+      },
+      {
+        icon: '🎓',
+        en: 'Academic C1 Deck',
+        tr: 'Akademik C1 Destesi',
+        ar: 'مجموعة C1 الأكاديمية',
+        uk: 'Академічна колода C1',
+        href: 'trainer.html?deck=c1'
+      },
+      {
+        icon: '🎯',
+        en: '5 Quiz Modes',
+        tr: '5 Test Modu',
+        ar: '5 أوضاع اختبار',
+        uk: '5 режимів тестів',
+        action: "navigateToSection('track-view-vocab', 'vocab')"
+      },
+      {
+        icon: '🚀',
+        en: 'Launch Full Trainer ↗',
+        tr: 'Tam Ekran Antrenör ↗',
+        ar: 'تشغيل المدرب الكامل ↗',
+        uk: 'Повний тренажер ↗',
+        href: 'trainer.html',
+        highlight: true
+      }
+    ];
+
+    vocabLinks.forEach((item) => {
+      const title = item[currentLang] || item.en;
+      if (item.href) {
+        nav.innerHTML += `<a href="${item.href}" class="sidebar-nav-item ${item.highlight ? 'highlight-pill' : ''}" data-en="${item.en}" data-tr="${item.tr}" data-ar="${item.ar}" data-uk="${item.uk}">
+          <span class="icon">${item.icon}</span>
+          <span>${title}</span>
+        </a>`;
+      } else {
+        nav.innerHTML += `<a href="javascript:void(0)" class="sidebar-nav-item" onclick="${item.action}" data-en="${item.en}" data-tr="${item.tr}" data-ar="${item.ar}" data-uk="${item.uk}">
+          <span class="icon">${item.icon}</span>
+          <span>${title}</span>
+        </a>`;
+      }
+    });
+
+  } else if (track === 'lid') {
+    const lidLinks = [
+      {
+        icon: '🇩🇪',
+        en: '300 BAMF Questions',
+        tr: '300 Genel Soru',
+        ar: '300 سؤال عام',
+        uk: '300 загальних питань',
+        action: "navigateToSection('lid-trainer-section', 'lid')"
+      },
+      {
+        icon: '🏛️',
+        en: '160 State Questions',
+        tr: '160 Eyalet Sorusu',
+        ar: '160 سؤال للولايات',
+        uk: '160 питань земель',
+        action: "navigateToLiDStateMode()"
+      },
+      {
+        icon: '⏱️',
+        en: '33-Question Mock Exam',
+        tr: '33 Soruluk Deneme',
+        ar: 'محاكاة الامتحان (33 سؤالاً)',
+        uk: 'Симуляція іспиту (33 питання)',
+        action: "navigateToLiDSimulation()"
+      },
+      {
+        icon: '📋',
+        en: 'High-Yield Checklist',
+        tr: 'Sınav Kontrol Listesi',
+        ar: 'قائمة مراجعة الامتحان',
+        uk: 'Чеклист до іспиту',
+        action: "navigateToSection('lid-checklist-section', 'lid')"
+      }
+    ];
+
+    lidLinks.forEach((item) => {
+      const title = item[currentLang] || item.en;
+      nav.innerHTML += `<a href="javascript:void(0)" class="sidebar-nav-item" onclick="${item.action}" data-en="${item.en}" data-tr="${item.tr}" data-ar="${item.ar}" data-uk="${item.uk}">
+        <span class="icon">${item.icon}</span>
+        <span>${title}</span>
+      </a>`;
+    });
+
+  } else {
+    // b1 track: 10 Study Modules + Quick Tools
+    materials.forEach((m, i) => {
+      const id = navIds[i];
+      const title = getMaterialField(m, 'title');
+      nav.innerHTML += `<a href="javascript:void(0)" class="sidebar-nav-item" onclick="openB1Module(${i}); showSection('${id}')" data-en="${m.title}" data-tr="${m.titleTr}" data-ar="${m.titleAr || ''}" data-uk="${m.titleUk || ''}">
+        <span class="icon">${m.icon}</span>
+        <span>${title}</span>
+        <span class="num">${i+1}</span>
+      </a>`;
+    });
+
+    const b1Tools = [
+      {
+        icon: '🔍',
+        en: 'Sprachbausteine Quiz',
+        tr: 'Dil Yapıları Testi',
+        ar: 'اختبار تراكيب اللغة',
+        uk: 'Тест мовних структур',
+        action: "navigateToSection('diagnostic', 'b1')"
+      },
+      {
+        icon: '🗂️',
+        en: 'Quick Vocab Drill',
+        tr: 'Hızlı Kelime Pratiği',
+        ar: 'تدريب سريع للمفردات',
+        uk: 'Швидка практика слів',
+        action: "navigateToSection('flashcards', 'b1')"
+      },
+      {
+        icon: '✍️',
+        en: 'Examiner Suite',
+        tr: 'Değerlendirme Paketi',
+        ar: 'باقة التقييم',
+        uk: 'Комплекс оцінювання',
+        action: "navigateToExaminerSuite()"
+      },
+      {
+        icon: '📝',
+        en: 'Weak-Spot Notebook',
+        tr: 'Hata Defteri (Fehlerheft)',
+        ar: 'دفتر معالجة الأخطاء',
+        uk: 'Зошит слабких місць',
+        action: "navigateToSection('fehlerheft-section', 'b1')"
+      }
+    ];
+
+    nav.innerHTML += `<div class="sidebar-sub-divider"></div>`;
+    b1Tools.forEach((tool) => {
+      const title = tool[currentLang] || tool.en;
+      nav.innerHTML += `<a href="javascript:void(0)" class="sidebar-nav-item tool-link" onclick="${tool.action}" data-en="${tool.en}" data-tr="${tool.tr}" data-ar="${tool.ar}" data-uk="${tool.uk}">
+        <span class="icon">${tool.icon}</span>
+        <span>${title}</span>
+      </a>`;
+    });
+  }
 }
 
 // Open Material dynamically matching current language
 function openMaterial(index) {
   const m = materials[index];
   if (!m) return;
+  if (currentTrack !== 'b1') {
+    switchTrack('b1');
+  }
   const url = m[currentLang] || m.en;
   openMarkdown(url);
 }
@@ -630,6 +906,7 @@ function goBackOrClose() {
 }
 
 function openMarkdown(url, skipHistory = false) {
+  currentMdUrl = url;
   if (!skipHistory) {
     history.pushState({ mdOpen: true, url: url }, '', '#study-module');
   }
@@ -1026,22 +1303,25 @@ setLang(savedLang);
 // Active nav tracking
 function updateActivePillars(id) {
   const b1Pillar = document.querySelector('.sidebar-pillar-link.pillar-b1');
+  const vocabPillar = document.querySelector('.sidebar-pillar-link.pillar-vocab');
   const lidPillar = document.querySelector('.sidebar-pillar-link.pillar-lid');
   if (!b1Pillar || !lidPillar) return;
-  if (id === 'lid-trainer-section') {
+  if (id === 'lid-trainer-section' || id === 'lid-checklist-section') {
     lidPillar.classList.add('active');
     b1Pillar.classList.remove('active');
-  } else if (id === 'materials' || id === 'exam-guide' || id === 'home') {
+    if (vocabPillar) vocabPillar.classList.remove('active');
+  } else if (id === 'vocab-trainer-banner' || id === 'track-view-vocab') {
+    if (vocabPillar) vocabPillar.classList.add('active');
+    b1Pillar.classList.remove('active');
+    lidPillar.classList.remove('active');
+  } else if (id === 'materials' || id === 'exam-guide' || id === 'home' || id === 'diagnostic' || id === 'flashcards' || id === 'fehlerheft-section' || id === 'schreiben-showcase-section') {
     b1Pillar.classList.add('active');
     lidPillar.classList.remove('active');
-  } else {
-    lidPillar.classList.remove('active');
+    if (vocabPillar) vocabPillar.classList.remove('active');
   }
 }
 
 // Track Switching & Module View Isolation
-let currentTrack = localStorage.getItem('deutschlernen_track') || 'b1';
-
 const HERO_STATS_CONFIG = {
   b1: [
     { val: '10', en: 'Study Modules', tr: 'Modül', ar: 'وحدات دراسية', uk: 'Навчальні модулі' },
@@ -1083,6 +1363,7 @@ function updateHeroStats(trackId) {
 }
 
 function switchTrack(trackId) {
+  closeMarkdown(true);
   currentTrack = trackId;
   try {
     localStorage.setItem('deutschlernen_track', trackId);
@@ -1117,7 +1398,6 @@ function switchTrack(trackId) {
     if (typeof renderLiDChecklist === 'function') {
       renderLiDChecklist('lid-checklist-container');
     }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   } else if (trackId === 'vocab') {
     if (b1View) b1View.style.display = 'none';
     if (lidView) lidView.style.display = 'none';
@@ -1129,7 +1409,6 @@ function switchTrack(trackId) {
     if (vocabPillar) vocabPillar.classList.add('active');
     if (b1Pillar) b1Pillar.classList.remove('active');
     if (lidPillar) lidPillar.classList.remove('active');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   } else {
     // b1
     if (b1View) b1View.style.display = 'block';
@@ -1139,10 +1418,19 @@ function switchTrack(trackId) {
     if (b1Pillar) b1Pillar.classList.add('active');
     if (vocabPillar) vocabPillar.classList.remove('active');
     if (lidPillar) lidPillar.classList.remove('active');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   updateHeroStats(trackId);
+  renderSidebar();
+
+  // Smart smooth scrolling so switched content is immediately seen at first glance
+  const switcher = document.getElementById('track-switcher-bar');
+  if (switcher) {
+    const rect = switcher.getBoundingClientRect();
+    if (rect.top < 0 || window.scrollY > 200) {
+      switcher.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 
   try {
     if (window.location.hash !== `#${trackId}`) {
@@ -1156,11 +1444,12 @@ function switchTrack(trackId) {
 
 function showSection(id) {
   document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
-  const active = document.querySelector(`.sidebar-nav a[href="#${id}"]`);
+  const active = document.querySelector(`.sidebar-nav a[data-section="${id}"]`) || document.querySelector(`.sidebar-nav a[href="#${id}"]`);
   if (active) active.classList.add('active');
   updateActivePillars(id);
   // Close mobile sidebar
-  document.querySelector('.sidebar').classList.remove('open');
+  const sidebar = document.querySelector('.sidebar');
+  if (sidebar) sidebar.classList.remove('open');
 }
 
 // Intersection observer for active nav
