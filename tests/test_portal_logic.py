@@ -286,8 +286,46 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn("firestore.googleapis.com", sw_content)
         self.assertIn("securetoken.googleapis.com", sw_content)
 
+    def test_fehlerheft_localization_and_portal_clean_approach(self):
+        """Verify Fehlerheft exact Turkish translation and clean portal layout structure."""
+        fh_path = os.path.join(ROOT_DIR, "js", "fehlerheft.js")
+        with open(fh_path, "r", encoding="utf-8") as f:
+            fh_content = f.read()
+
+        # Check exact required Turkish text
+        self.assertIn('tr: "Hata defteriniz boş."', fh_content, "Fehlerheft must have exact Turkish text 'Hata defteriniz boş.'")
+        self.assertIn('en: "Your mistake notebook is empty."', fh_content, "Fehlerheft must have English translation")
+
+        # Verify setLang in portal.js calls renderFehlerheftDashboard
+        self.assertIn("renderFehlerheftDashboard('fehlerheft-container')", self.portal_js,
+                      "setLang in portal.js must trigger renderFehlerheftDashboard")
+
+        # Verify toggleSchreibenShowcase exists in portal.js
+        self.assertIn("function toggleSchreibenShowcase", self.portal_js)
+        self.assertIn("window.toggleSchreibenShowcase = toggleSchreibenShowcase", self.portal_js)
+
+        # Verify index.html clean layout: materials must appear before fehlerheft and schreiben-showcase in track-view-b1
+        index_path = os.path.join(ROOT_DIR, "index.html")
+        with open(index_path, "r", encoding="utf-8") as f:
+            index_html = f.read()
+
+        b1_pos = index_html.find('id="track-view-b1"')
+        materials_pos = index_html.find('id="materials"', b1_pos)
+        fehlerheft_pos = index_html.find('id="fehlerheft-section"', b1_pos)
+        showcase_pos = index_html.find('id="schreiben-showcase-section"', b1_pos)
+
+        self.assertNotEqual(materials_pos, -1, "materials must be in track-view-b1")
+        self.assertNotEqual(fehlerheft_pos, -1, "fehlerheft-section must be in track-view-b1")
+        self.assertNotEqual(showcase_pos, -1, "schreiben-showcase-section must be in track-view-b1")
+
+        self.assertLess(materials_pos, fehlerheft_pos, "Materials must come before Fehlerheft for a clean approach")
+        self.assertLess(materials_pos, showcase_pos, "Materials must come before Schreiben Showcase for a clean approach")
+        self.assertIn('id="schreiben-showcase-drawer"', index_html, "Schreiben showcase must have a collapsible drawer")
+        self.assertIn('id="btn-toggle-showcase"', index_html, "Toggle button must exist for clean collapsible approach")
+
 
 if __name__ == "__main__":
     unittest.main()
+
 
 

@@ -221,20 +221,9 @@
 
     <!-- Dedicated Track View: telc B1 Modules & Exam Prep -->
     <div id="track-view-b1" class="track-view">
-    <!-- Schreiben Sample Evaluation Report Showcase Container -->
-    <div class="section" id="schreiben-showcase-section" style="animation-delay:0.05s; margin-bottom: 40px;">
-      <div id="schreiben-showcase-container"></div>
-    </div>
-
-
-
-    <!-- Personalized Fehlerheft (Weak-Spot Notebook) Section -->
-    <div class="section" id="fehlerheft-section" style="animation-delay:0.1s; margin-bottom: 40px;">
-      <div id="fehlerheft-container"></div>
-    </div>
 
     <!-- Unified Study Materials & 5-Step Guided Roadmap -->
-    <div class="section" id="materials" style="animation-delay:0.1s">
+    <div class="section" id="materials" style="animation-delay:0.05s">
       <div id="quickstart" style="position:relative; top:-20px;"></div>
       <div class="section-label" data-en="🚀 5-Step Roadmap & Modules" data-tr="🚀 5 Adımlık Yol Haritası & Modüller" data-ar="🚀 خارطة الطريق والوحدات (5 خطوات)" data-uk="🚀 5 кроків плану та модулі">🚀 5-Step Roadmap & Modules</div>
       <h2 data-en="Study Materials & Guided Roadmap" data-tr="Çalışma Materyalleri ve Sınav Yol Haritası" data-ar="المواد الدراسية وخارطة الطريق" data-uk="Навчальні матеріали та план підготовки">Study Materials & Guided Roadmap</h2>
@@ -339,7 +328,32 @@
         </div>
         <div style="margin-top:12px; font-size:12px; color:var(--text-muted); font-weight: 600;" id="fc-count">1 / 20</div>
       </div>
-    </div><!-- End #track-view-b1 -->
+    </div>
+
+    <!-- Personalized Fehlerheft (Weak-Spot Notebook) Section -->
+    <div class="section" id="fehlerheft-section" style="animation-delay:0.3s; margin-bottom: 40px;">
+      <div id="fehlerheft-container"></div>
+    </div>
+
+    <!-- Personalized Schreiben & Sprechen Suite (Sample Report, Live Grader & Simulator) -->
+    <div class="section" id="schreiben-showcase-section" style="animation-delay:0.35s; margin-bottom: 40px;">
+      <div class="section-label" data-en="✍️ telc B1 Examiner Suite" data-tr="✍️ telc B1 Değerlendirme Paketi" data-ar="✍️ باقة فاحص telc B1" data-uk="✍️ Комплекс екзаменатора telc B1">✍️ telc B1 Examiner Suite</div>
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom:12px;">
+        <div style="max-width: 640px;">
+          <h2 data-en="Writing & Speaking Examiner Suite" data-tr="Yazma ve Konuşma Değerlendirme Paketi" data-ar="باقة تقييم الكتابة والمحادثة" data-uk="Комплекс оцінювання письма та мовлення">Writing & Speaking Examiner Suite</h2>
+          <p data-en="Review official examiner report with rubrics, grade practice letters with AI, or simulate the Teil 3 oral exam." data-tr="Kriterli resmi sınav değerlendirme raporunu inceleyin, mektuplarınızı yapay zeka ile puanlayın veya Teil 3 sözlü sınav simülasyonunu deneyin." data-ar="راجع تقرير الفاحص الرسمي مع معايير التقييم، أو قم بتصحيح رسائلك بالذكاء الاصطناعي، أو حاكِ الامتحان الشفوي." data-uk="Перегляньте офіційний звіт екзаменатора з критеріями, оцінюйте листи за допомогою ШІ або тренуйте усний іспит.">Review official examiner report with rubrics, grade practice letters with AI, or simulate the Teil 3 oral exam.</p>
+        </div>
+        <button class="card-link primary" id="btn-toggle-showcase" onclick="toggleSchreibenShowcase()" style="padding:10px 20px; font-size:14px; font-weight:700; border-radius:10px; display:inline-flex; align-items:center; gap:8px;">
+          <span id="showcase-toggle-text" data-en="📝 Open Examiner Suite ▼" data-tr="📝 Değerlendirme Paketini Aç ▼" data-ar="📝 فتح باقة التقييم ▼" data-uk="📝 Відкрити комплекс оцінювання ▼">📝 Open Examiner Suite ▼</span>
+        </button>
+      </div>
+
+      <!-- Collapsible Container for Suite -->
+      <div id="schreiben-showcase-drawer" class="showcase-drawer-collapsed" style="display: none;">
+        <div id="schreiben-showcase-container"></div>
+      </div>
+    </div>
+  </div><!-- End #track-view-b1 -->
 
     <!-- Dedicated Track View: Leben in Deutschland (LiD 310) -->
     <div id="track-view-lid" class="track-view" style="display: none;">

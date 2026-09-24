@@ -785,7 +785,7 @@ function finishLiDExam() {
             🔄 Retake Simulation
           </button>
           <a href="#fehlerheft-container" class="entrance-dismiss-btn" style="text-decoration:none; padding:10px 20px; display:inline-block;">
-            🧠 Review Fehlerheft Deck
+            ${(typeof currentLang !== 'undefined' && currentLang === 'tr') ? '🧠 Hata Defterini İncele' : ((typeof currentLang !== 'undefined' && currentLang === 'ar') ? '🧠 مراجعة دفتر الأخطاء' : ((typeof currentLang !== 'undefined' && currentLang === 'uk') ? '🧠 Переглянути зошит помилок' : '🧠 Review Mistake Deck'))}
           </a>
           <button class="entrance-dismiss-btn" onclick="exitLiDExamSimulation()" style="padding:10px 20px;">
             🚪 Exit to Full Question Browser

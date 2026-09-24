@@ -946,6 +946,31 @@ function setLang(lang) {
   if (typeof renderSchreibenShowcase === 'function') {
     renderSchreibenShowcase('schreiben-showcase-container');
   }
+  if (typeof renderFehlerheftDashboard === 'function') {
+    renderFehlerheftDashboard('fehlerheft-container');
+  }
+
+  // Update showcase toggle button label if present
+  const drawer = document.getElementById('schreiben-showcase-drawer');
+  const toggleBtnSpan = document.getElementById('showcase-toggle-text');
+  if (drawer && toggleBtnSpan) {
+    const isClosed = drawer.style.display === 'none';
+    const openLabels = {
+      en: "✕ Close Examiner Suite ▲",
+      tr: "✕ Değerlendirme Paketini Kapat ▲",
+      ar: "✕ إغلاق باقة التقييم ▲",
+      uk: "✕ Закрити комплекс ▲"
+    };
+    const closedLabels = {
+      en: "📝 Open Examiner Suite ▼",
+      tr: "📝 Değerlendirme Paketini Aç ▼",
+      ar: "📝 فتح باقة التقييم ▼",
+      uk: "📝 Відкрити комплекс оцінювання ▼"
+    };
+    toggleBtnSpan.textContent = isClosed 
+      ? (closedLabels[lang] || closedLabels.en)
+      : (openLabels[lang] || openLabels.en);
+  }
 
   // Update rating label text to match language
   const starsWrap = document.getElementById('feedback-stars');
@@ -1442,5 +1467,46 @@ if (typeof renderLiDTrainer === 'function') {
 if (typeof renderFehlerheftDashboard === 'function') {
   renderFehlerheftDashboard('fehlerheft-container');
 }
+
+function toggleSchreibenShowcase(forceOpen = null) {
+  const drawer = document.getElementById('schreiben-showcase-drawer');
+  const toggleBtnSpan = document.getElementById('showcase-toggle-text');
+  if (!drawer) return;
+
+  const isClosed = drawer.style.display === 'none' || drawer.classList.contains('showcase-drawer-collapsed');
+  const shouldOpen = (forceOpen !== null) ? forceOpen : isClosed;
+
+  const lang = typeof currentLang !== 'undefined' ? currentLang : 'en';
+  const openLabels = {
+    en: "✕ Close Examiner Suite ▲",
+    tr: "✕ Değerlendirme Paketini Kapat ▲",
+    ar: "✕ إغلاق باقة التقييم ▲",
+    uk: "✕ Закрити комплекс ▲"
+  };
+  const closedLabels = {
+    en: "📝 Open Examiner Suite ▼",
+    tr: "📝 Değerlendirme Paketini Aç ▼",
+    ar: "📝 فتح باقة التقييم ▼",
+    uk: "📝 Відкрити комплекс оцінювання ▼"
+  };
+
+  if (shouldOpen) {
+    drawer.style.display = 'block';
+    drawer.classList.remove('showcase-drawer-collapsed');
+    if (toggleBtnSpan) toggleBtnSpan.textContent = openLabels[lang] || openLabels.en;
+    if (typeof renderSchreibenShowcase === 'function') {
+      renderSchreibenShowcase('schreiben-showcase-container');
+    }
+  } else {
+    drawer.style.display = 'none';
+    drawer.classList.add('showcase-drawer-collapsed');
+    if (toggleBtnSpan) toggleBtnSpan.textContent = closedLabels[lang] || closedLabels.en;
+  }
+}
+
+if (typeof window !== 'undefined') {
+  window.toggleSchreibenShowcase = toggleSchreibenShowcase;
+}
+
 
 
