@@ -373,6 +373,51 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn("switchTrack('lid')", self.portal_js)
         self.assertIn("lid-trainer-section", self.portal_js)
 
+    def test_lid_exam_checklist_and_review_modes(self):
+        """Verify Leben in Deutschland high-yield checklist dataset, dual review modes, and DOM hooks."""
+        checklist_data_path = os.path.join(ROOT_DIR, "data", "lidChecklistData.js")
+        checklist_js_path = os.path.join(ROOT_DIR, "js", "lidChecklist.js")
+        index_path = os.path.join(ROOT_DIR, "index.html")
+
+        self.assertTrue(os.path.exists(checklist_data_path), "lidChecklistData.js must exist")
+        self.assertTrue(os.path.exists(checklist_js_path), "lidChecklist.js must exist")
+
+        with open(checklist_data_path, "r", encoding="utf-8") as f:
+            data_content = f.read()
+        with open(checklist_js_path, "r", encoding="utf-8") as f:
+            js_content = f.read()
+        with open(index_path, "r", encoding="utf-8") as f:
+            index_html = f.read()
+
+        # Check dataset coverage: 25 facts and 6 categories
+        self.assertIn("const LID_CHECKLIST_DATA = [", data_content)
+        self.assertIn("const LID_CHECKLIST_CATEGORIES = {", data_content)
+        for i in range(1, 26):
+            self.assertIn(f"id: {i},", data_content, f"Checklist must include fact #{i}")
+
+        # Check pureDe and multilingual mixed fields
+        for field in ["pureDe:", "mixedTr:", "mixedEn:", "mixedAr:", "mixedUk:", "keywords:", "bamfQuestions:"]:
+            count = len(re.findall(rf"\b{field}", data_content))
+            self.assertEqual(count, 25, f"All 25 facts must define {field}")
+
+        # Check dual review modes and methods in lidChecklist.js
+        self.assertIn("renderLiDChecklist", js_content)
+        self.assertIn("toggleLiDChecklistMode", js_content)
+        self.assertIn("toggleLiDChecklistItem", js_content)
+        self.assertIn("filterLiDChecklistByCategory", js_content)
+        self.assertIn("filterLiDChecklistBySearch", js_content)
+        self.assertIn("isLiDPureGermanMode", js_content)
+        self.assertIn("deutschlernen_lid_checklist_progress", js_content)
+
+        # Check DOM containers and scripts in index.html
+        self.assertIn('id="lid-checklist-section"', index_html)
+        self.assertIn('id="lid-checklist-container"', index_html)
+        self.assertIn('src="data/lidChecklistData.js"', index_html)
+        self.assertIn('src="js/lidChecklist.js"', index_html)
+
+        # Check portal.js hooks
+        self.assertIn("renderLiDChecklist('lid-checklist-container')", self.portal_js)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -943,6 +943,9 @@ function setLang(lang) {
   if (typeof renderLiDTrainer === 'function') {
     renderLiDTrainer('lid-trainer-container');
   }
+  if (typeof renderLiDChecklist === 'function') {
+    renderLiDChecklist('lid-checklist-container');
+  }
   if (typeof renderSchreibenShowcase === 'function') {
     renderSchreibenShowcase('schreiben-showcase-container');
   }
@@ -1110,6 +1113,9 @@ function switchTrack(trackId) {
     if (vocabPillar) vocabPillar.classList.remove('active');
     if (typeof renderLiDTrainer === 'function') {
       renderLiDTrainer('lid-trainer-container');
+    }
+    if (typeof renderLiDChecklist === 'function') {
+      renderLiDChecklist('lid-checklist-container');
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   } else if (trackId === 'vocab') {
@@ -1574,6 +1580,10 @@ if (typeof renderSchreibenShowcase === 'function') {
 
 if (typeof renderLiDTrainer === 'function') {
   renderLiDTrainer('lid-trainer-container');
+}
+
+if (typeof renderLiDChecklist === 'function') {
+  renderLiDChecklist('lid-checklist-container');
 }
 
 if (typeof renderFehlerheftDashboard === 'function') {

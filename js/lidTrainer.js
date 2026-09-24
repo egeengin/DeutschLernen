@@ -319,12 +319,15 @@ function renderLiDTrainer(containerId) {
             <label for="lid-search-input"><strong>Search:</strong></label>
             <input type="text" id="lid-search-input" class="search-box" placeholder="${t('searchPlaceholder')}" onkeyup="filterLiDQuestions(this.value)">
           </div>
-          <div class="lid-control-group" style="display:flex; align-items:flex-end; gap:8px;">
+          <div class="lid-control-group" style="display:flex; align-items:flex-end; gap:8px; flex-wrap:wrap;">
             <button id="lid-filter-starred-btn" class="lid-star-filter-btn ${isLiDStarredOnly ? 'active' : ''}" onclick="toggleLiDStarredFilter()" title="${t('filterStarred')}">
               ${t('filterStarred')} (<span id="lid-starred-count">${starredIds.length}</span>)
             </button>
             <button id="lid-trans-mode-btn" class="lid-star-filter-btn ${isLiDTranslationEnabled ? 'active' : ''}" onclick="toggleLiDTranslation()" title="${isLiDTranslationEnabled ? t('toggleTransOff') : t('toggleTransOn')}">
               ${isLiDTranslationEnabled ? t('transActiveBadge') : t('transInactiveBadge')}
+            </button>
+            <button id="lid-checklist-nav-btn" class="lid-star-filter-btn" onclick="document.getElementById('lid-checklist-section')?.scrollIntoView({ behavior: 'smooth' })" title="Jump to 25 High-Yield Facts & Checklist">
+              📋 ${lang === 'tr' ? 'Özet & Kontrol Listesi' : (lang === 'ar' ? 'ملخص الامتحان' : (lang === 'uk' ? 'Конспект & Чекліст' : 'Exam Checklist (25 Facts)'))}
             </button>
           </div>
           ` : ''}
