@@ -99,6 +99,41 @@ class TestLiDDataset(unittest.TestCase):
         for fn in ["changeLiDState", "openLiDStateModal", "closeLiDStateModal", "confirmLiDStateSelection", "getStoredLiDState"]:
             self.assertIn(fn, trainer_code)
 
+    def test_build_script_state_mapping(self):
+        """Verify STATE_MAPPING in build_lid_dataset.py matches all 16 states and codes."""
+        from scripts.build_lid_dataset import STATE_MAPPING
+        self.assertEqual(len(STATE_MAPPING), 16)
+        codes = {v["code"] for v in STATE_MAPPING.values()}
+        self.assertEqual(codes, EXPECTED_STATES)
+        for name, info in STATE_MAPPING.items():
+            self.assertIn("capital", info)
+            self.assertTrue(len(info["capital"]) > 0)
+
+    def test_build_script_helpers(self):
+        """Verify normalization and translation template helpers in build_lid_dataset.py."""
+        from scripts.build_lid_dataset import normalize_key, norm_keywords, get_state_template_translation
+        
+        # Test normalize_key
+        self.assertEqual(normalize_key("Baden-Württemberg!"), "badenwurttemberg")
+        self.assertEqual(normalize_key("München"), "munchen")
+        
+        # Test norm_keywords
+        kw = norm_keywords("Eine große Stadt in Deutschland")
+        self.assertIn("grosse", kw)
+        self.assertIn("stadt", kw)
+        self.assertNotIn("eine", kw)
+        self.assertNotIn("deutschland", kw)
+        
+        # Test get_state_template_translation
+        trans = get_state_template_translation("Welches Wappen gehört zum Bundesland Bayern?", "Bayern")
+        self.assertIsNotNone(trans)
+        self.assertIn("tr", trans)
+        self.assertIn("en", trans)
+        self.assertIn("ar", trans)
+        self.assertIn("uk", trans)
+        self.assertIn("Bayern", trans["en"])
+        self.assertIn("Bayern", trans["tr"])
+
 
 if __name__ == "__main__":
     unittest.main()
