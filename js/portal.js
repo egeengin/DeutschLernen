@@ -282,6 +282,47 @@ const GOAL_CONFIG = {
   }
 };
 
+// Track Switching & Module View Isolation Stats
+const HERO_STATS_CONFIG = {
+  b1: [
+    { val: '10', en: 'Study Modules', tr: 'Modül', ar: 'وحدات دراسية', uk: 'Навчальні модулі' },
+    { val: '30', en: 'Day Plan', tr: 'Günlük Plan', ar: 'خطة الأيام', uk: 'Денний план' },
+    { val: '2000+', en: 'Vocab Words', tr: 'Kelime', ar: 'كلمات', uk: 'Слів' },
+    { val: '180 / 300', en: 'Pass Threshold', tr: 'Geçme Barajı', ar: 'نسبة النجاح', uk: 'Прохідний бал' }
+  ],
+  vocab: [
+    { val: '2,000+', en: 'Vocab Words', tr: 'Kelime', ar: 'كلمة', uk: 'Слів' },
+    { val: '5', en: 'Quiz Modes', tr: 'Test Modu', ar: 'أوضاع اختبار', uk: 'Режимів тестів' },
+    { val: 'A1–C1', en: '4 CEFR Decks', tr: '4 Deste Seviyesi', ar: '4 مستويات', uk: '4 колоди рівнів' },
+    { val: '100%', en: 'Local & Private', tr: 'Cihaz İçi & Gizli', ar: 'محلي وخاص', uk: 'Локально і приватно' }
+  ],
+  lid: [
+    { val: '310', en: 'BAMF Questions', tr: 'BAMF Sorusu', ar: 'أسئلة BAMF', uk: 'Питань BAMF' },
+    { val: '16', en: 'German States', tr: 'Eyalet', ar: 'الولايات', uk: 'Федеральних земель' },
+    { val: '33', en: 'Timed Simulation', tr: 'Sınav Simülasyonu', ar: 'محاكاة الامتحان', uk: 'Симуляція іспиту' },
+    { val: '17 / 33', en: 'Pass Threshold', tr: 'Geçme Barajı', ar: 'نسبة النجاح', uk: 'Прохідний бал' }
+  ]
+};
+
+function updateHeroStats(trackId) {
+  const track = HERO_STATS_CONFIG[trackId] ? trackId : 'b1';
+  const stats = HERO_STATS_CONFIG[track];
+  const lang = typeof currentLang !== 'undefined' ? currentLang : 'en';
+
+  const container = document.getElementById('hero-stats');
+  if (!container) return;
+
+  container.innerHTML = stats.map((item, idx) => {
+    const label = item[lang] || item.en;
+    return `
+      <div class="hero-stat" id="hero-stat-${idx + 1}">
+        <div class="val">${item.val}</div>
+        <div class="label" data-en="${item.en}" data-tr="${item.tr}" data-ar="${item.ar}" data-uk="${item.uk}">${label}</div>
+      </div>
+    `;
+  }).join('');
+}
+
 let currentGoalId = localStorage.getItem('deutschlernen_goal') || 'goal-b1';
 let currentGoalLevel = localStorage.getItem('deutschlernen_level') || (GOAL_CONFIG[currentGoalId] ? GOAL_CONFIG[currentGoalId].level : 'B1');
 let pendingGoalId = currentGoalId;
@@ -1321,47 +1362,6 @@ function updateActivePillars(id) {
   }
 }
 
-// Track Switching & Module View Isolation
-const HERO_STATS_CONFIG = {
-  b1: [
-    { val: '10', en: 'Study Modules', tr: 'Modül', ar: 'وحدات دراسية', uk: 'Навчальні модулі' },
-    { val: '30', en: 'Day Plan', tr: 'Günlük Plan', ar: 'خطة الأيام', uk: 'Денний план' },
-    { val: '2000+', en: 'Vocab Words', tr: 'Kelime', ar: 'كلمات', uk: 'Слів' },
-    { val: '180 / 300', en: 'Pass Threshold', tr: 'Geçme Barajı', ar: 'نسبة النجاح', uk: 'Прохідний бал' }
-  ],
-  vocab: [
-    { val: '2,000+', en: 'Vocab Words', tr: 'Kelime', ar: 'كلمة', uk: 'Слів' },
-    { val: '5', en: 'Quiz Modes', tr: 'Test Modu', ar: 'أوضاع اختبار', uk: 'Режимів тестів' },
-    { val: 'A1–C1', en: '4 CEFR Decks', tr: '4 Deste Seviyesi', ar: '4 مستويات', uk: '4 колоди рівнів' },
-    { val: '100%', en: 'Local & Private', tr: 'Cihaz İçi & Gizli', ar: 'محلي وخاص', uk: 'Локально і приватно' }
-  ],
-  lid: [
-    { val: '310', en: 'BAMF Questions', tr: 'BAMF Sorusu', ar: 'أسئلة BAMF', uk: 'Питань BAMF' },
-    { val: '16', en: 'German States', tr: 'Eyalet', ar: 'الولايات', uk: 'Федеральних земель' },
-    { val: '33', en: 'Timed Simulation', tr: 'Sınav Simülasyonu', ar: 'محاكاة الامتحان', uk: 'Симуляція іспиту' },
-    { val: '17 / 33', en: 'Pass Threshold', tr: 'Geçme Barajı', ar: 'نسبة النجاح', uk: 'Прохідний бал' }
-  ]
-};
-
-function updateHeroStats(trackId) {
-  const track = HERO_STATS_CONFIG[trackId] ? trackId : 'b1';
-  const stats = HERO_STATS_CONFIG[track];
-  const lang = typeof currentLang !== 'undefined' ? currentLang : 'en';
-
-  const container = document.getElementById('hero-stats');
-  if (!container) return;
-
-  container.innerHTML = stats.map((item, idx) => {
-    const label = item[lang] || item.en;
-    return `
-      <div class="hero-stat" id="hero-stat-${idx + 1}">
-        <div class="val">${item.val}</div>
-        <div class="label" data-en="${item.en}" data-tr="${item.tr}" data-ar="${item.ar}" data-uk="${item.uk}">${label}</div>
-      </div>
-    `;
-  }).join('');
-}
-
 function switchTrack(trackId) {
   closeMarkdown(true);
   currentTrack = trackId;
@@ -1711,7 +1711,9 @@ function applyGoalSelection() {
     localStorage.setItem('deutschlernen_track', 'vocab');
     currentTrack = 'vocab';
     closeGoalModal();
-    window.location.href = `trainer.html?level=${encodeURIComponent(currentGoalLevel)}`;
+    updateGoalDisplays();
+    renderSidebar();
+    switchTrack('vocab');
     return;
   }
 
