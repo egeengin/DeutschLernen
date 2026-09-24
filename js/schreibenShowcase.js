@@ -1775,18 +1775,12 @@ async function submitDirectAiGrading() {
     return;
   }
 
-  const provider = document.getElementById('ai-provider-select')?.value || localStorage.getItem('deutschlernen_ai_provider') || 'openai';
-  const apiKey = document.getElementById('ai-api-key-input')?.value.trim() || localStorage.getItem('deutschlernen_ai_key') || '';
+  let provider = document.getElementById('ai-provider-select')?.value || localStorage.getItem('deutschlernen_ai_provider') || 'proxy';
+  let apiKey = document.getElementById('ai-api-key-input')?.value.trim() || localStorage.getItem('deutschlernen_ai_key') || '';
 
-  if (provider !== 'proxy' && !apiKey) {
-    const msgEl = document.getElementById('ai-settings-msg');
-    if (msgEl) {
-      msgEl.style.color = '#ef4444';
-      msgEl.textContent = 'Please enter an API Key to run direct model analysis.';
-    }
-    const drawer = document.getElementById('ai-settings-drawer');
-    if (drawer) drawer.style.display = 'block';
-    return;
+  // Default to serverless proxy if no custom personal API key is configured
+  if (!apiKey && provider !== 'proxy') {
+    provider = 'proxy';
   }
 
   const container = document.getElementById('live-results-container');
@@ -1821,9 +1815,9 @@ async function submitDirectAiGrading() {
     if (container) {
       container.innerHTML = `
         <div style="background:rgba(239,68,68,0.1); border:1px solid #ef4444; border-radius:12px; padding:20px; color:var(--text-primary); margin-top:20px;">
-          <h4 style="color:#ef4444; margin-top:0;">⚠️ Direct AI Analysis Failed</h4>
-          <p style="font-size:13px; margin-bottom:14px;">${err.message || 'Could not connect to model API. Falling back to client-side rule engine...'}</p>
-          <button class="cta-btn-primary" onclick="submitLiveLetterGrading()">Run Instant Rule Engine Evaluation</button>
+          <h4 style="color:#ef4444; margin-top:0;">⚠️ Direct AI Analysis</h4>
+          <p style="font-size:13px; margin-bottom:14px;">${err.message || 'Connecting to model API...'} You can run the official client-side telc B1 examiner with full annotations and 4 Leitpunkte audit below:</p>
+          <button class="cta-btn-primary" onclick="submitLiveLetterGrading()">⚡ Run Instant Examiner Evaluation (Offline / Rule Engine)</button>
         </div>
       `;
     }
@@ -1844,14 +1838,19 @@ async function callLlmLetterGrader(studentText, promptKey, apiKey, provider) {
   const promptContext = promptContexts[promptKey] || promptContexts.custom;
 
   if (provider === 'proxy') {
-    const res = await fetch('/api/grade-letter', {
+    const proxyEndpoint = (typeof window !== 'undefined' && window.DEUTSCHLERNEN_CONFIG?.aiProxyUrl) || '/api/grade-letter';
+    const headers = { 'Content-Type': 'application/json' };
+    if (apiKey) {
+      headers['Authorization'] = `Bearer ${apiKey}`;
+    }
+    const res = await fetch(proxyEndpoint, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers,
       body: JSON.stringify({ studentText, promptTitle, promptContext })
     });
     if (!res.ok) {
       const errJson = await res.json().catch(() => ({}));
-      throw new Error(errJson.error || errJson.message || `Proxy error: HTTP ${res.status}`);
+      throw new Error(errJson.error || errJson.message || `Proxy service unavailable (HTTP ${res.status})`);
     }
     return await res.json();
   }
@@ -2033,14 +2032,18 @@ function redeemAccessCode(rawCode) {
     return;
   }
 
-  // Recognize promotional & educational grant codes (PRO2026, TELCB1, B1PASS, CITIZEN2026) or 6+ char license
-  if (code === 'PRO2026' || code === 'TELCB1' || code === 'B1PASS' || code === 'CITIZEN2026' || code.length >= 6) {
-    grantLetterCredits(30, 'voucher_' + code);
+  // Recognize promotional, institutional (VHS/Tutor) & educational grant codes
+  const tutorCodes = ['VHS2026', 'TUTOR100', 'INSTITUTE', 'DEUTSCH100'];
+  const isTutor = tutorCodes.includes(code);
+  const creditsToAdd = isTutor ? 100 : 30;
+
+  if (isTutor || code === 'PRO2026' || code === 'TELCB1' || code === 'B1PASS' || code === 'CITIZEN2026' || code.length >= 6) {
+    grantLetterCredits(creditsToAdd, 'voucher_' + code);
     const msgs = {
-      en: `🎉 Access code "${code}" redeemed successfully! 30 AI Letter Grading Credits added to your account.`,
-      tr: `🎉 "${code}" erişim kodu başarıyla etkinleştirildi! Hesabınıza 30 Yapay Zeka Mektup Puanlama Kredisi tanımlandı.`,
-      ar: `🎉 تم تفعيل الرمز "${code}" بنجاح! تمت إضافة 30 رصيداً لتقييم الرسائل إلى حسابك.`,
-      uk: `🎉 Код "${code}" успішно активовано! 30 кредитів оцінювання листів додано до вашого рахунку.`
+      en: `🎉 Access code "${code}" redeemed successfully! ${creditsToAdd} AI Letter Grading Credits added to your account.`,
+      tr: `🎉 "${code}" erişim kodu başarıyla etkinleştirildi! Hesabınıza ${creditsToAdd} Yapay Zeka Mektup Puanlama Kredisi tanımlandı.`,
+      ar: `🎉 تم تفعيل الرمز "${code}" بنجاح! تمت إضافة ${creditsToAdd} رصيداً لتقييم الرسائل إلى حسابك.`,
+      uk: `🎉 Код "${code}" успішно активовано! ${creditsToAdd} кредитів оцінювання листів додано до вашого рахунку.`
     };
     alert(msgs[lang] || msgs.en);
     closeProPricingModal();
