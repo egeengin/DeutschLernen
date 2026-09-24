@@ -682,7 +682,42 @@ function openMarkdown(url, skipHistory = false) {
     .then(text => {
       // Set marked options for better standard rendering
       marked.setOptions({ breaks: true, gfm: true });
-      mdContent.innerHTML = marked.parse(text);
+      let heroHtml = '';
+      if (currentActiveMaterial) {
+        const modIdx = materials.indexOf(currentActiveMaterial) + 1;
+        const modTitle = getMaterialField(currentActiveMaterial, 'title');
+        const modDesc = getMaterialField(currentActiveMaterial, 'desc');
+        const levels = currentActiveMaterial.levels ? currentActiveMaterial.levels.join(' • ') : 'B1';
+        heroHtml = `
+          <div class="apple-module-hero">
+            <div class="apple-hero-pill-row">
+              <span class="apple-hero-pill badge-num">${currentActiveMaterial.icon} MODULE ${String(modIdx).padStart(2, '0')}</span>
+              <span class="apple-hero-pill badge-level">${levels}</span>
+              <span class="apple-hero-pill badge-track">telc Deutsch B1</span>
+            </div>
+            <h1 class="apple-hero-title">${modTitle}</h1>
+            <p class="apple-hero-desc">${modDesc}</p>
+            <div class="apple-hero-stats">
+              <div class="apple-stat-item">
+                <span class="apple-stat-icon">⏱️</span>
+                <span class="apple-stat-label">Estimated:</span>
+                <strong>20–30 min</strong>
+              </div>
+              <div class="apple-stat-item">
+                <span class="apple-stat-icon">🎯</span>
+                <span class="apple-stat-label">CEFR Target:</span>
+                <strong>B1 Standard</strong>
+              </div>
+              <div class="apple-stat-item">
+                <span class="apple-stat-icon">📚</span>
+                <span class="apple-stat-label">Interactive:</span>
+                <strong>Quizzes & Drills</strong>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+      mdContent.innerHTML = heroHtml + marked.parse(text);
       mdView.scrollTop = 0; // scroll to top when opened
       
       // Handle Mermaid charts explicitly
@@ -708,13 +743,25 @@ function openMarkdown(url, skipHistory = false) {
             let newTarget = href;
             // Route seamlessly to correct language file
             if (currentLang === 'tr') {
-              newTarget = newTarget.replace('/docs/en/', '/docs/tr/').replace('TELC_B1_Preparation', 'TELC_B1_Haz%C4%B1rl%C4%B1k').replace('TELC_B1_Hazırlık', 'TELC_B1_Haz%C4%B1rl%C4%B1k');
+              newTarget = newTarget.replace('/docs/en/', '/docs/tr/')
+                                   .replace('TELC_B1_Preparation', 'TELC_B1_Haz%C4%B1rl%C4%B1k')
+                                   .replace('TELC_B1_Hazırlık', 'TELC_B1_Haz%C4%B1rl%C4%B1k')
+                                   .replace('vocab_part1_verbs_adjectives.md', 'vocab_part1_fiiller_sifatlar.md')
+                                   .replace('vocab_part2_nouns_themes.md', 'vocab_part2_isimler_temalar.md');
             } else if (currentLang === 'ar') {
-              newTarget = newTarget.replace('/docs/en/', '/docs/ar/');
+              newTarget = newTarget.replace('/docs/en/', '/docs/ar/')
+                                   .replace('vocab_part1_fiiller_sifatlar.md', 'vocab_part1_verbs_adjectives.md')
+                                   .replace('vocab_part2_isimler_temalar.md', 'vocab_part2_nouns_themes.md');
             } else if (currentLang === 'uk') {
-              newTarget = newTarget.replace('/docs/en/', '/docs/uk/');
+              newTarget = newTarget.replace('/docs/en/', '/docs/uk/')
+                                   .replace('vocab_part1_fiiller_sifatlar.md', 'vocab_part1_verbs_adjectives.md')
+                                   .replace('vocab_part2_isimler_temalar.md', 'vocab_part2_nouns_themes.md');
             } else {
-              newTarget = newTarget.replace('/docs/tr/', '/docs/en/').replace('TELC_B1_Haz%C4%B1rl%C4%B1k', 'TELC_B1_Preparation').replace('TELC_B1_Hazırlık', 'TELC_B1_Preparation');
+              newTarget = newTarget.replace('/docs/tr/', '/docs/en/')
+                                   .replace('TELC_B1_Haz%C4%B1rl%C4%B1k', 'TELC_B1_Preparation')
+                                   .replace('TELC_B1_Hazırlık', 'TELC_B1_Preparation')
+                                   .replace('vocab_part1_fiiller_sifatlar.md', 'vocab_part1_verbs_adjectives.md')
+                                   .replace('vocab_part2_isimler_temalar.md', 'vocab_part2_nouns_themes.md');
             }
             openMarkdown(newTarget);
           };
