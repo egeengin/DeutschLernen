@@ -2335,9 +2335,32 @@ td strong, td b { color: var(--text-primary); }
 /* Fehlerheft Grid */
 .fehlerheft-empty-card {
   text-align: center;
-  padding: 40px 20px;
+  padding: 28px 24px;
+  background: var(--bg-card);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  max-width: 680px;
+  margin: 0 auto;
 }
-.empty-icon { font-size: 40px; margin-bottom: 12px; }
+.empty-icon { font-size: 36px; margin-bottom: 10px; }
+.fehlerheft-empty-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+.fehlerheft-empty-card p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Collapsible Schreiben & Sprechen Suite Drawer */
+.showcase-drawer-collapsed {
+  display: none !important;
+}
+
 .fehlerheft-items-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

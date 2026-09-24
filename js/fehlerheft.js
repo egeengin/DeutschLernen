@@ -38,21 +38,21 @@ function renderFehlerheftDashboard(containerId) {
   if (!container) return;
 
   const items = getFehlerheftItems();
-  const lang = typeof currentLang !== 'undefined' ? currentLang : 'en';
+  const lang = typeof currentLang !== 'undefined' ? currentLang : (typeof localStorage !== 'undefined' ? (localStorage.getItem('site_lang') || localStorage.getItem('telc_lang') || 'en') : 'en');
   const isAr = lang === 'ar';
 
   const t = {
     badge: {
-      en: "🧠 Personalized Review Deck",
+      en: "🧠 Personalized Mistake Deck",
       tr: "🧠 Kişiselleştirilmiş Hata Defteri",
       ar: "🧠 دفتر الأخطاء الشخصي",
       uk: "🧠 Персональний зошит помилок"
     },
     emptyTitle: {
-      en: "Dein Fehlerheft ist leer! (No Weak Spots Yet)",
-      tr: "Hata Defteriniz Boş! (Henüz Zayıf Nokta Yok)",
-      ar: "دفتر أخطائك فارغ! (لا توجد نقاط ضعف حتى الآن)",
-      uk: "Ваш зошит помилок порожній! (Слабких місць ще немає)"
+      en: "Your mistake notebook is empty.",
+      tr: "Hata defteriniz boş.",
+      ar: "دفتر أخطائك فارغ.",
+      uk: "Ваш зошит помилок порожній."
     },
     emptyDesc: {
       en: "As you take Vocabulary Trainer quizzes, grammar exercises, or BAMF citizenship questions, your mistakes will automatically collect here for targeted review.",
@@ -61,8 +61,8 @@ function renderFehlerheftDashboard(containerId) {
       uk: "Коли ви робите помилки у тренажері слів, граматиці або тесті на громадянство BAMF, вони автоматично з'являтимуться тут для цілеспрямованого повторення."
     },
     title: {
-      en: `Dein Digitales Fehlerheft (${items.length} Weak Spots)`,
-      tr: `Dijital Hata Defteriniz (${items.length} Zayıf Nokta)`,
+      en: `Personal Mistake Notebook (${items.length} Weak Spots)`,
+      tr: `Kişisel Hata Defteriniz (${items.length} Zayıf Nokta)`,
       ar: `دفتر الأخطاء الرقمي (${items.length} أخطاء مسجلة)`,
       uk: `Цифровий зошит помилок (${items.length} слабких місць)`
     },
