@@ -98,7 +98,7 @@
   <!-- Primary Navigation Pillars (3 Main Tracks) -->
   <div class="sidebar-pillars">
     <!-- Pillar 1: telc B1 Study Portal & Modules -->
-    <a href="#materials" class="sidebar-pillar-link pillar-b1" onclick="document.getElementById('materials')?.scrollIntoView({behavior:'smooth'});">
+    <a href="javascript:void(0)" class="sidebar-pillar-link pillar-b1 active" onclick="switchTrack('b1');">
       <span class="sidebar-pillar-icon">📚</span>
       <div>
         <div class="sidebar-pillar-title" data-en="B1 Study Portal" data-tr="B1 Sınav Portalı" data-ar="بوابة دراسة B1" data-uk="Портал навчання B1">B1 Study Portal</div>
@@ -116,7 +116,7 @@
     </a>
 
     <!-- Pillar 3: Leben in Deutschland 310 -->
-    <a href="#lid-trainer-section" class="sidebar-pillar-link pillar-lid" onclick="document.getElementById('lid-trainer-section')?.scrollIntoView({behavior:'smooth'});">
+    <a href="javascript:void(0)" class="sidebar-pillar-link pillar-lid" onclick="switchTrack('lid');">
       <span class="sidebar-pillar-icon">🇩🇪</span>
       <div>
         <div class="sidebar-pillar-title" data-en="Leben in Deutschland" data-tr="Leben in Deutschland" data-ar="الحياة في ألمانيا" data-uk="Життя в Німеччині">Leben in Deutschland</div>
@@ -175,6 +175,22 @@
 
   <div class="content">
 
+    <!-- Track Switcher Bar: Seamless Switching between B1 Exam, Leben in Deutschland, and Vocab Trainer -->
+    <div class="track-switcher-bar" id="track-switcher-bar" role="tablist">
+      <button class="track-tab-btn active" id="tab-track-b1" onclick="switchTrack('b1')" role="tab" aria-selected="true">
+        <span class="tab-icon">📚</span>
+        <span data-en="telc B1 Exam Track" data-tr="telc B1 Sınav Programı" data-ar="مسار امتحان telc B1" data-uk="Курс іспиту telc B1">telc B1 Exam Track</span>
+      </button>
+      <button class="track-tab-btn" id="tab-track-lid" onclick="switchTrack('lid')" role="tab" aria-selected="false">
+        <span class="tab-icon">🇩🇪</span>
+        <span data-en="Leben in Deutschland (LiD)" data-tr="Leben in Deutschland (LiD)" data-ar="الحياة في ألمانيا (LiD)" data-uk="Життя в Німеччині (LiD)">Leben in Deutschland (LiD)</span>
+      </button>
+      <button class="track-tab-btn" id="tab-track-vocab" onclick="switchTrack('vocab')" role="tab" aria-selected="false">
+        <span class="tab-icon">⚡</span>
+        <span data-en="Vocab Trainer (2,000+)" data-tr="Kelime Antrenörü (2.000+)" data-ar="مدرب المفردات (2,000+)" data-uk="Тренажер слів (2000+)">Vocab Trainer (2,000+)</span>
+      </button>
+    </div>
+
     <!-- Feature Card: Wortschatz Trainer 2000 -->
     <div class="section" id="vocab-trainer-banner" style="animation-delay:0s; margin-bottom: 40px;">
       <div style="background: linear-gradient(135deg, rgba(245,158,11,0.15) 0%, rgba(239,68,68,0.12) 100%); border: 2px solid var(--accent-gold); border-radius: var(--radius); padding: 28px; box-shadow: 0 10px 30px rgba(245,158,11,0.15); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px;">
@@ -203,15 +219,14 @@
       </div>
     </div>
 
+    <!-- Dedicated Track View: telc B1 Modules & Exam Prep -->
+    <div id="track-view-b1" class="track-view">
     <!-- Schreiben Sample Evaluation Report Showcase Container -->
     <div class="section" id="schreiben-showcase-section" style="animation-delay:0.05s; margin-bottom: 40px;">
       <div id="schreiben-showcase-container"></div>
     </div>
 
-    <!-- Leben in Deutschland (LiD 310) Citizenship Section -->
-    <div class="section" id="lid-trainer-section" style="animation-delay:0.08s; margin-bottom: 40px;">
-      <div id="lid-trainer-container"></div>
-    </div>
+
 
     <!-- Personalized Fehlerheft (Weak-Spot Notebook) Section -->
     <div class="section" id="fehlerheft-section" style="animation-delay:0.1s; margin-bottom: 40px;">
@@ -461,6 +476,14 @@
           <button class="card-link primary" onclick="nextCard()"><span data-en="Next Word" data-tr="Sonraki Kelime" data-ar="الكلمة التالية" data-uk="Наступне слово">Next Word</span> &rarr;</button>
         </div>
         <div style="margin-top:12px; font-size:12px; color:var(--text-muted); font-weight: 600;" id="fc-count">1 / 20</div>
+      </div>
+    </div><!-- End #track-view-b1 -->
+
+    <!-- Dedicated Track View: Leben in Deutschland (LiD 310) -->
+    <div id="track-view-lid" class="track-view" style="display: none;">
+      <!-- Leben in Deutschland (LiD 310) Citizenship Section -->
+      <div class="section" id="lid-trainer-section" style="animation-delay:0.08s; margin-bottom: 40px;">
+        <div id="lid-trainer-container"></div>
       </div>
     </div>
 
