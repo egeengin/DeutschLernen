@@ -1989,10 +1989,143 @@ td strong, td b { color: var(--text-primary); }
 /* Pay Method Buttons in Checkout */
 .pay-method-btn {
   transition: all 0.18s ease;
+  cursor: pointer;
 }
 .pay-method-btn:hover {
   border-color: var(--accent-gold) !important;
   background: var(--bg-card-hover) !important;
+}
+.pay-method-btn.active {
+  border: 2px solid var(--accent-gold) !important;
+  background: rgba(245, 158, 11, 0.08) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Dynamic Payment Method Panels */
+.pay-method-panel {
+  display: none;
+  animation: fadeIn 0.25s ease-out;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.pay-method-panel.active {
+  display: block;
+}
+.pay-input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.pay-input-group {
+  flex: 1;
+}
+.pay-input-group label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.pay-input-group input {
+  width: 100%;
+  padding: 9px 12px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 13px;
+  transition: border-color var(--transition);
+}
+.pay-input-group input:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+}
+
+/* Digital Invoice & Receipt Card */
+.digital-receipt-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+.receipt-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+.receipt-items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 13px;
+}
+.receipt-items-table th {
+  text-align: left;
+  color: var(--text-muted);
+  font-weight: 600;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.receipt-items-table td {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+}
+.receipt-tax-notice {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-top: 14px;
+  padding: 10px;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  border: 1px dashed var(--border);
+}
+
+/* Print Optimization for Invoices */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .modal-overlay,
+  .digital-receipt-card,
+  .digital-receipt-card * {
+    visibility: visible;
+  }
+  .modal-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #ffffff !important;
+  }
+  .digital-receipt-card {
+    border: 1px solid #ccc !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+  }
+  .receipt-tax-notice {
+    background: #f9f9f9 !important;
+    color: #333333 !important;
+    border-color: #cccccc !important;
+  }
+  .modal-close-btn,
+  .receipt-actions {
+    display: none !important;
+  }
 }
 
 /* Testimonials Grid & Cards */

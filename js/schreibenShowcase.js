@@ -2150,12 +2150,38 @@ function closeProPricingModal() {
   if (modal) modal.classList.remove('open');
 }
 
+function switchPaymentMethod(method) {
+  const modal = document.getElementById('pro-pricing-modal');
+  if (!modal) return;
+  const buttons = modal.querySelectorAll('.pay-method-btn');
+  buttons.forEach(btn => {
+    if (btn.getAttribute('data-method') === method) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+  const panels = modal.querySelectorAll('.pay-method-panel');
+  panels.forEach(p => {
+    if (p.id === 'panel-' + method) {
+      p.classList.add('active');
+    } else {
+      p.classList.remove('active');
+    }
+  });
+}
+
 /**
  * Interactive Checkout & Payment Drawer
  */
 function selectProPlan(planId) {
-  const modal = document.getElementById('pro-pricing-modal');
-  if (!modal) return;
+  let modal = document.getElementById('pro-pricing-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'pro-pricing-modal';
+    modal.className = 'modal-overlay';
+    document.body.appendChild(modal);
+  }
   const tiers = SAMPLE_B1_EVALUATION.pricingTiers;
   const tier = tiers.find(t => t.id === planId) || tiers[0];
   const lang = getActiveLanguage();
@@ -2196,7 +2222,7 @@ function selectProPlan(planId) {
             <li>✓ 30-Day Money-Back & telc B1 Pass Guarantee</li>
           </ul>
           <div style="font-size:11px; color:var(--text-muted); border-top:1px solid var(--border); padding-top:10px;">
-            Gemäß § 19 UStG wird keine MwSt. gesondert ausgewiesen. Invoicing via Merchant of Record (Paddle / Lemon Squeezy).
+            Gemäß § 19 UStG wird keine MwSt. gesondert ausgewiesen (Kleinunternehmerregelung). Official printable invoice provided immediately upon order.
           </div>
         </div>
 
@@ -2207,18 +2233,81 @@ function selectProPlan(planId) {
               Select Payment Method:
             </label>
             <div class="payment-methods-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:16px;">
-              <button type="button" class="pay-method-btn active" style="padding:10px; border:2px solid var(--accent-gold); background:var(--bg-card); border-radius:10px; text-align:center; font-size:12px; font-weight:700; color:var(--text-primary); cursor:pointer;">
+              <button type="button" class="pay-method-btn active" data-method="card" onclick="switchPaymentMethod('card')" style="padding:10px; border-radius:10px; text-align:center; font-size:12px; font-weight:700;">
                 💳 Card / Apple Pay
               </button>
-              <button type="button" class="pay-method-btn" style="padding:10px; border:1px solid var(--border); background:var(--bg-card); border-radius:10px; text-align:center; font-size:12px; font-weight:700; color:var(--text-primary); cursor:pointer;">
+              <button type="button" class="pay-method-btn" data-method="paypal" onclick="switchPaymentMethod('paypal')" style="padding:10px; border-radius:10px; text-align:center; font-size:12px; font-weight:700; border:1px solid var(--border); background:var(--bg-card); color:var(--text-primary);">
                 🅿️ PayPal
               </button>
-              <button type="button" class="pay-method-btn" style="padding:10px; border:1px solid var(--border); background:var(--bg-card); border-radius:10px; text-align:center; font-size:12px; font-weight:700; color:var(--text-primary); cursor:pointer;">
+              <button type="button" class="pay-method-btn" data-method="sepa" onclick="switchPaymentMethod('sepa')" style="padding:10px; border-radius:10px; text-align:center; font-size:12px; font-weight:700; border:1px solid var(--border); background:var(--bg-card); color:var(--text-primary);">
                 🏦 SEPA / Klarna
               </button>
-              <button type="button" class="pay-method-btn" style="padding:10px; border:1px solid var(--border); background:var(--bg-card); border-radius:10px; text-align:center; font-size:12px; font-weight:700; color:var(--text-primary); cursor:pointer;">
-                ⚡ Instant Access
+              <button type="button" class="pay-method-btn" data-method="instant" onclick="switchPaymentMethod('instant')" style="padding:10px; border-radius:10px; text-align:center; font-size:12px; font-weight:700; border:1px solid var(--border); background:var(--bg-card); color:var(--text-primary);">
+                ⚡ Instant Demo
               </button>
+            </div>
+
+            <!-- Dynamic Payment Panel 1: Card / Apple Pay -->
+            <div id="panel-card" class="pay-method-panel active">
+              <div class="pay-input-group" style="margin-bottom:10px;">
+                <label for="pay-cardholder">Cardholder Name</label>
+                <input type="text" id="pay-cardholder" placeholder="Max Mustermann">
+              </div>
+              <div class="pay-input-group" style="margin-bottom:10px;">
+                <label for="pay-cardnumber">Card Number</label>
+                <input type="text" id="pay-cardnumber" placeholder="4242 •••• •••• 4242" maxlength="19">
+              </div>
+              <div class="pay-input-row">
+                <div class="pay-input-group">
+                  <label for="pay-expiry">Expiry Date</label>
+                  <input type="text" id="pay-expiry" placeholder="MM/YY" maxlength="5">
+                </div>
+                <div class="pay-input-group">
+                  <label for="pay-cvc">CVC</label>
+                  <input type="text" id="pay-cvc" placeholder="123" maxlength="4">
+                </div>
+              </div>
+              <div style="display:flex; align-items:center; gap:8px; margin-top:8px; font-size:11px; color:var(--text-muted);">
+                <span>Express One-Tap:</span>
+                <span style="background:var(--bg-primary); padding:2px 6px; border-radius:4px; border:1px solid var(--border);">🍏 Apple Pay</span>
+                <span style="background:var(--bg-primary); padding:2px 6px; border-radius:4px; border:1px solid var(--border);">GPay</span>
+              </div>
+            </div>
+
+            <!-- Dynamic Payment Panel 2: PayPal -->
+            <div id="panel-paypal" class="pay-method-panel">
+              <div style="text-align:center; padding:12px 6px;">
+                <div style="font-size:24px; margin-bottom:6px;">🅿️</div>
+                <div style="font-size:13px; font-weight:700; margin-bottom:4px; color:var(--text-primary);">PayPal Express Checkout</div>
+                <p style="font-size:12px; color:var(--text-secondary); margin-bottom:12px; line-height:1.5;">
+                  Pay securely with your PayPal account or PayPal Pay in 30 Days. Full PayPal Buyer Protection applies.
+                </p>
+                <div style="display:inline-flex; align-items:center; gap:6px; background:#ffc439; color:#003087; font-weight:800; font-size:13px; padding:8px 18px; border-radius:20px; cursor:pointer;">
+                  <span>Pay with</span> <strong>PayPal</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dynamic Payment Panel 3: SEPA / Klarna -->
+            <div id="panel-sepa" class="pay-method-panel">
+              <div class="pay-input-group" style="margin-bottom:10px;">
+                <label for="pay-sepa-name">Account Holder Name</label>
+                <input type="text" id="pay-sepa-name" placeholder="Max Mustermann">
+              </div>
+              <div class="pay-input-group" style="margin-bottom:10px;">
+                <label for="pay-sepa-iban">IBAN</label>
+                <input type="text" id="pay-sepa-iban" placeholder="DE89 3704 0044 0532 0130 00">
+              </div>
+              <div style="font-size:11px; color:var(--text-muted); line-height:1.4;">
+                🔒 SEPA Core Direct Debit / Sofort by Klarna. Encrypted directly via EU banking standards.
+              </div>
+            </div>
+
+            <!-- Dynamic Payment Panel 4: Instant Demo -->
+            <div id="panel-instant" class="pay-method-panel">
+              <div style="font-size:12px; color:var(--text-secondary); line-height:1.5;">
+                ⚡ <strong>Instant Test Enrollment:</strong> Immediate verification mode for evaluating practice letters and exam materials. Instant fulfillment with test receipt generated.
+              </div>
             </div>
 
             <!-- Email Input -->
@@ -2226,7 +2315,7 @@ function selectProPlan(planId) {
               <label for="checkout-email" style="font-size:12px; font-weight:600; color:var(--text-muted); display:block; margin-bottom:4px;">
                 Confirmation Email for Invoice & Receipt:
               </label>
-              <input type="email" id="checkout-email" class="search-box" placeholder="student@example.com" style="width:100%; padding:9px 12px; font-size:13px;">
+              <input type="email" id="checkout-email" class="search-box" placeholder="student@example.com" value="student@deutschlernen.de" style="width:100%; padding:9px 12px; font-size:13px;">
             </div>
           </div>
 
@@ -2242,6 +2331,8 @@ function selectProPlan(planId) {
       </div>
     </div>
   `;
+
+  modal.classList.add('open');
 }
 
 function confirmInstantDemoOrder(tierId) {
@@ -2254,28 +2345,101 @@ function confirmInstantDemoOrder(tierId) {
   const creditsToAdd = creditsMap[tierId] || 30;
   grantLetterCredits(creditsToAdd, tierId);
 
+  const emailInput = document.getElementById('checkout-email');
+  const userEmail = emailInput && emailInput.value.trim() ? emailInput.value.trim() : 'student@deutschlernen.de';
+  const tiers = SAMPLE_B1_EVALUATION.pricingTiers;
+  const tier = tiers.find(t => t.id === tierId) || tiers[0];
+  const orderRef = 'DL-2026-' + Math.random().toString(36).substring(2, 8).toUpperCase();
+  const orderDate = new Date().toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+
+  // Persist invoice in localStorage for accounting/reprint
+  try {
+    const existingInvoices = JSON.parse(localStorage.getItem('deutschlernen_invoices') || '[]');
+    existingInvoices.unshift({
+      orderRef,
+      tierId,
+      tierName: tier.nameEn,
+      price: tier.price,
+      credits: creditsToAdd,
+      email: userEmail,
+      date: orderDate
+    });
+    localStorage.setItem('deutschlernen_invoices', JSON.stringify(existingInvoices.slice(0, 20)));
+  } catch (e) {
+    console.warn('Could not save invoice history', e);
+  }
+
   const modal = document.getElementById('pro-pricing-modal');
   if (!modal) return;
 
   modal.innerHTML = `
-    <div class="modal-card pricing-modal-card" style="text-align:center; padding:36px 24px; max-width:540px;">
+    <div class="modal-card pricing-modal-card" style="text-align:center; padding:32px 24px; max-width:620px;">
       <button class="modal-close-btn" onclick="closeProPricingModal()">✕</button>
-      <div style="font-size:48px; margin-bottom:12px;">🎉</div>
-      <span class="modal-kicker" style="color:#10b981;">ENROLLMENT CONFIRMED</span>
-      <h2 style="margin:8px 0 12px;">Welcome to DeutschLernen Pro!</h2>
-      <p style="color:var(--text-secondary); margin-bottom:20px; font-size:14px;">
-        Your order has been processed. <strong>${creditsToAdd} AI Letter Grading Credits</strong> have been added to your account!
+      <div style="font-size:44px; margin-bottom:8px;">🎉</div>
+      <span class="modal-kicker" style="color:#10b981;">ENROLLMENT CONFIRMED &bull; INVOICE READY</span>
+      <h2 style="margin:6px 0 10px;">Welcome to DeutschLernen Pro!</h2>
+      <p style="color:var(--text-secondary); margin-bottom:18px; font-size:14px;">
+        Your order has been activated. <strong>${creditsToAdd} AI Letter Grading Credits</strong> have been added to your balance.
       </p>
-      <div style="background:var(--bg-primary); border:1px solid var(--border); border-radius:12px; padding:16px; margin-bottom:24px; display:inline-flex; align-items:center; gap:12px;">
-        <span style="font-size:24px;">⚡</span>
-        <div style="text-align:left;">
-          <div style="font-weight:700; color:var(--text-primary); font-size:14px;">Active Balance: ${getLetterCredits()} Credits</div>
-          <div style="font-size:12px; color:var(--accent-gold);">Pro Pass Active</div>
+
+      <!-- Digital Receipt Card -->
+      <div class="digital-receipt-card" style="margin-bottom:20px;">
+        <div class="receipt-header-row">
+          <div>
+            <div style="font-size:16px; font-weight:800; color:var(--text-primary);">DeutschLernen Educational Suite</div>
+            <div style="font-size:12px; color:var(--text-muted);">Invoice / Beleg: <strong>${orderRef}</strong></div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-size:12px; font-weight:700; color:var(--text-primary);">${orderDate}</div>
+            <div style="font-size:11px; color:#10b981; font-weight:700;">✓ PAID / BEZAHLT</div>
+          </div>
+        </div>
+
+        <table class="receipt-items-table">
+          <thead>
+            <tr>
+              <th>Item / Leistungsbeschreibung</th>
+              <th style="text-align:center;">Qty</th>
+              <th style="text-align:right;">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>${tier.nameEn}</strong><br>
+                <span style="font-size:11px; color:var(--text-muted);">${tier.periodEn} &bull; ${creditsToAdd} AI Letter Credits</span>
+              </td>
+              <td style="text-align:center;">1</td>
+              <td style="text-align:right; font-weight:700;">${tier.price}</td>
+            </tr>
+            <tr>
+              <td style="color:var(--text-muted);">USt. / VAT (0% gem. § 19 UStG)</td>
+              <td style="text-align:center;">-</td>
+              <td style="text-align:right;">€0.00</td>
+            </tr>
+            <tr style="border-top:2px solid var(--border);">
+              <td style="font-weight:800; font-size:14px;">Gesamtbetrag / Total Paid</td>
+              <td></td>
+              <td style="text-align:right; font-weight:800; font-size:16px; color:var(--text-primary);">${tier.price}</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style="font-size:11px; color:var(--text-muted); margin-bottom:8px;">
+          Billed to: <strong>${userEmail}</strong> &bull; Merchant of Record: DeutschLernen (Frankfurt a.M.)
+        </div>
+
+        <div class="receipt-tax-notice">
+          Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung). Dies gilt als steuerlich anerkannter Zahlungsbeleg zur Vorlage beim Finanzamt (Fortbildungskosten).
         </div>
       </div>
-      <div>
-        <button class="cta-btn-primary" onclick="closeProPricingModal(); if(window.switchSchreibenTab){window.switchSchreibenTab('live');}" style="padding:12px 24px; font-size:14px; font-weight:700;">
-          🚀 Start Grading Practice Letters Now →
+
+      <div class="receipt-actions" style="display:flex; justify-content:center; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:12px;">
+        <button type="button" class="btn-sm-goal" onclick="window.print()" style="padding:10px 18px; font-size:13px; font-weight:700; background:var(--bg-card); border:1px solid var(--border); color:var(--text-primary); border-radius:8px; cursor:pointer;">
+          🖨️ Print / Save PDF Receipt
+        </button>
+        <button class="cta-btn-primary" onclick="closeProPricingModal(); if(window.switchSchreibenTab){window.switchSchreibenTab('live');}" style="padding:10px 20px; font-size:13px; font-weight:700;">
+          🚀 Start Grading Practice Letters →
         </button>
       </div>
     </div>
@@ -2304,6 +2468,7 @@ if (typeof window !== 'undefined') {
   window.handlePromptSelectChange = handlePromptSelectChange;
   window.updateWordCounter = updateWordCounter;
   window.switchSchreibenTab = switchSchreibenTab;
+  window.switchPaymentMethod = switchPaymentMethod;
   window.openProPricingModal = openProPricingModal;
   window.closeProPricingModal = closeProPricingModal;
   window.selectProPlan = selectProPlan;
@@ -2340,6 +2505,10 @@ if (typeof module !== 'undefined' && module.exports) {
     callLlmLetterGrader,
     handlePromptSelectChange,
     updateWordCounter,
-    switchSchreibenTab
+    switchSchreibenTab,
+    switchPaymentMethod,
+    selectProPlan,
+    confirmInstantDemoOrder,
+    redeemAccessCode
   };
 }
