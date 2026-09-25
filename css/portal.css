@@ -269,30 +269,60 @@ a:hover { color: var(--de-gold); }
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 .pro-chip-btn {
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(234, 88, 12, 0.2));
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.25));
   backdrop-filter: blur(10px);
-  border: 1px solid var(--accent-gold);
-  color: var(--accent-gold);
+  border: 1px solid #10b981;
+  color: #10b981;
   padding: 6px 13px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   gap: 6px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 800;
   cursor: pointer;
   transition: all var(--transition);
-  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.15);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.2);
 }
 .pro-chip-btn:hover {
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.35), rgba(234, 88, 12, 0.35));
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.35), rgba(5, 150, 105, 0.45));
   transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.35);
 }
 [data-theme="light"] .pro-chip-btn {
-  background: #fffbeb;
-  border-color: #d97706;
-  color: #b45309;
+  background: #ecfdf5;
+  border-color: #10b981;
+  color: #047857;
+}
+.quick-jump-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 0 16px 0;
+  margin-bottom: 20px;
+  scrollbar-width: none;
+}
+.quick-jump-strip::-webkit-scrollbar {
+  display: none;
+}
+.jump-pill {
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.jump-pill:hover {
+  color: var(--text-primary);
+  border-color: var(--accent-gold);
+  background: var(--bg-card-hover);
+  transform: translateY(-1px);
 }
 .global-lang-toggle {
   display: flex; gap: 6px; background: rgba(10, 14, 23, 0.75);
