@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deutschlernen-v27';
+const CACHE_NAME = 'deutschlernen-v28';
 const ASSETS = [
   './',
   './index.html',
