@@ -331,7 +331,8 @@
         <a href="#flashcards" class="jump-pill" data-en="🗂️ Flashcards" data-tr="🗂️ Kartlar" data-ar="🗂️ بطاقات" data-uk="🗂️ Картки">🗂️ Flashcards</a>
         <a href="#fehlerheft-section" class="jump-pill" data-en="📓 Fehlerheft" data-tr="📓 Hata Defteri" data-ar="📓 دفتر الأخطاء" data-uk="📓 Зошит помилок">📓 Fehlerheft</a>
         <a href="#schreiben-showcase-section" class="jump-pill" data-en="✍️ Examiner Suite" data-tr="✍️ Değerlendirme" data-ar="✍️ باقة التقييم" data-uk="✍️ Комплекс оцінювання">✍️ Examiner Suite</a>
-        <a href="#testimonials-section" class="jump-pill" data-en="⭐ Reviews" data-tr="⭐ Yorumlar" data-ar="⭐ التقييمات" data-uk="⭐ Відгуки">⭐ Reviews</a>
+        <a href="#pricing-section" class="jump-pill" data-en="👑 Pricing & Passes" data-tr="👑 Fiyatlar & Paketler" data-ar="👑 الأسعار والباقات" data-uk="👑 Тарифи та абонементи">👑 Pricing & Passes</a>
+        <a href="#student-testimonials-section" class="jump-pill" data-en="⭐ Reviews" data-tr="⭐ Yorumlar" data-ar="⭐ التقييمات" data-uk="⭐ Відгуки">⭐ Reviews</a>
         <a href="#faq-section" class="jump-pill" data-en="❓ FAQ" data-tr="❓ SSS" data-ar="❓ أسئلة شائعة" data-uk="❓ Часті питання">❓ FAQ</a>
       </div>
 
@@ -478,6 +479,125 @@
       <!-- High-Yield LiD Exam Review & Interactive Read List -->
       <div class="section" id="lid-checklist-section" style="animation-delay:0.12s; margin-bottom: 40px;">
         <div id="lid-checklist-container"></div>
+      </div>
+    </div>
+
+    <!-- Dedicated On-Page Pricing & Exam Passes Section -->
+    <div class="section" id="pricing-section" style="animation-delay:0.38s; margin-bottom: 40px;">
+      <div class="section-label" data-en="👑 Transparent, One-Time Investment" data-tr="👑 Şeffaf, Tek Seferlik Yatırım" data-ar="👑 استثمار شفاف لمرة واحدة" data-uk="👑 Прозора одноразова інвестиція">👑 Transparent, One-Time Investment</div>
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:16px;">
+        <div style="max-width:680px;">
+          <h2 data-en="Exam Preparation Passes & AI Letter Grader" data-tr="Sınav Hazırlık Paketleri & Yapay Zeka Mektup Puanlama" data-ar="باقات التحضير للامتحان ومصحح الرسائل الذكي" data-uk="Абонементи підготовки до іспиту та оцінювання листів ШІ">Exam Preparation Passes & AI Letter Grader</h2>
+          <p data-en="No recurring subscriptions. No hidden charges. 30-day money-back guarantee with authentic telc B1 & BAMF naturalization preparation." data-tr="Otomatik yenilenen abonelik yok. Gizli ücret yok. Resmi telc B1 ve BAMF vatandaşlık hazırlığı için 30 günlük para iade garantisi." data-ar="بدون اشتراكات شهرية متكررة. بدون رسوم خفية. ضمان استرداد الأموال لمدة 30 يوماً مع تحضير رسمي لامتحانات telc B1 و BAMF." data-uk="Жодних щомісячних автоподовжень. Без прихованих платежів. 30-денна гарантія повернення коштів для підготовки до telc B1 та BAMF.">No recurring subscriptions. No hidden charges. 30-day money-back guarantee with authentic telc B1 & BAMF naturalization preparation.</p>
+        </div>
+        <div class="voucher-input-bar" style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <input type="text" id="onpage-voucher-input" class="search-box" placeholder="Voucher / License Code (e.g. PRO2026)" style="max-width:240px; padding:8px 12px; font-size:12px; text-transform:uppercase;">
+          <button type="button" class="btn-sm-goal" onclick="redeemAccessCode(document.getElementById('onpage-voucher-input').value)" style="padding:8px 14px; font-size:12px; font-weight:700; background:var(--accent-gold); color:#000; border:none; border-radius:8px; cursor:pointer;">
+            🎟️ <span data-en="Redeem Code" data-tr="Kuponu Kullan" data-ar="تفعيل الرمز" data-uk="Активувати код">Redeem Code</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pricing Tiers Grid -->
+      <div class="pricing-tiers-grid">
+        <!-- Tier 1: Quick Diagnostic -->
+        <div class="pricing-tier-card">
+          <div class="tier-badge" data-en="Low-Risk Trial" data-tr="Başlangıç" data-ar="تجربة سريعة" data-uk="Пробний старт">Low-Risk Trial</div>
+          <h3 class="tier-name" data-en="Quick Diagnostic" data-tr="Hızlı Teşhis Paketi" data-ar="باقة التقييم السريع" data-uk="Швидка діагностика">Quick Diagnostic</h3>
+          <div class="tier-price">
+            <span class="amount">€4.99</span>
+            <span class="period" data-en="/ Diagnostic Sprint" data-tr="/ Hızlı Deneme Paketi" data-ar="/ تجربة تقييم سريعة" data-uk="/ Швидкий пробний пакет">/ Diagnostic Sprint</span>
+          </div>
+          <div class="tier-credits">⚡ <span data-en="3 AI Letter Grading Credits" data-tr="3 Yapay Zeka Mektup Puanlama Kredisi" data-ar="3 أرصدة لتقييم الرسائل بالذكاء الاصطناعي" data-uk="3 кредити оцінювання листів ШІ">3 AI Letter Grading Credits</span></div>
+          <ul class="tier-features">
+            <li data-en="✓ 3 Full AI Practice Letter Evaluations" data-tr="✓ 3 Tam Yapay Zeka Mektup Değerlendirmesi" data-ar="✓ 3 تقييمات كاملة للرسائل بالذكاء الاصطناعي" data-uk="✓ 3 повні перевірки листів штучним інтелектом">✓ 3 Full AI Practice Letter Evaluations</li>
+            <li data-en="✓ Official telc B1 (I + II + III × 3) Formula" data-tr="✓ Resmi telc B1 (I + II + III × 3) Formülü" data-ar="✓ معادلة telc B1 الرسمية (I + II + III × 3)" data-uk="✓ Офіційна формула telc B1 (I + II + III × 3)">✓ Official telc B1 (I + II + III × 3) Formula</li>
+            <li data-en="✓ 4 Leitpunkte Completion Check" data-tr="✓ 4 Leitpunkt Tamamlanma Kontrolü" data-ar="✓ التحقق من النقاط الإرشادية الأربع" data-uk="✓ Перевірка виконання 4 опорних пунктів">✓ 4 Leitpunkte Completion Check</li>
+            <li data-en="✓ Syntax & Word Order Breakdown" data-tr="✓ Sözdizimi ve Cümle Yapısı Analizi" data-ar="✓ تحليل بناء الجملة والترتيب النحوي" data-uk="✓ Аналіз порядку слів та синтаксису">✓ Syntax & Word Order Breakdown</li>
+          </ul>
+          <button class="tier-cta-btn" onclick="selectProPlan('diagnostic')">
+            <span data-en="Get 3 Letters for €4.99" data-tr="3 Mektup Al (€4.99)" data-ar="احصل على 3 رسائل بـ 4.99€" data-uk="Отримати 3 листи за €4.99">Get 3 Letters for €4.99</span>
+          </button>
+        </div>
+
+        <!-- Tier 2: Standard Pro Pass -->
+        <div class="pricing-tier-card">
+          <div class="tier-badge" data-en="Most Popular" data-tr="En Popüler" data-ar="الأكثر طلباً" data-uk="Найпопулярніший">Most Popular</div>
+          <h3 class="tier-name" data-en="Standard Pro Pass" data-tr="Standart Pro Kart" data-ar="الباقة الاحترافية القياسية" data-uk="Стандартний Pro абонемент">Standard Pro Pass</h3>
+          <div class="tier-price">
+            <span class="amount">€29</span>
+            <span class="period" data-en="/ 1-Month Intensive Pass" data-tr="/ 1 Aylık Yoğun Hazırlık" data-ar="/ اشتراك مكثف لمدة شهر" data-uk="/ Інтенсив на 1 місяць">/ 1-Month Intensive Pass</span>
+          </div>
+          <div class="tier-credits">⚡ <span data-en="30 AI Letter Grading Credits" data-tr="30 Yapay Zeka Mektup Puanlama Kredisi" data-ar="30 رصيداً لتقييم الرسائل بالذكاء الاصطناعي" data-uk="30 кредитів оцінювання листів ШІ">30 AI Letter Grading Credits</span></div>
+          <ul class="tier-features">
+            <li data-en="✓ Official telc B1 (I + II + III × 3) Scoring" data-tr="✓ Resmi telc B1 (I + II + III × 3) Puanlama Sistemi" data-ar="✓ تقييم telc B1 الرسمي بمعادلة (I + II + III × 3)" data-uk="✓ Офіційна система оцінювання telc B1 (I + II + III × 3)">✓ Official telc B1 (I + II + III × 3) Scoring</li>
+            <li data-en="✓ 4 Leitpunkte Fulfillment Verification" data-tr="✓ 4 Leitpunkt Eksiksizlik Doğrulaması" data-ar="✓ التحقق من تغطية النقاط الإرشادية الأربع" data-uk="✓ Перевірка виконання всіх 4 опорних пунктів">✓ 4 Leitpunkte Fulfillment Verification</li>
+            <li data-en="✓ Line-by-line syntax & grammar breakdown" data-tr="✓ Satır satır cümle yapısı ve dilbilgisi analizi" data-ar="✓ تحليل تفصيلي سطر بسطر للقواعد وبناء الجملة" data-uk="✓ Порядковий розбір синтаксису та граматики">✓ Line-by-line syntax & grammar breakdown</li>
+            <li data-en="✓ B1 Vocabulary & Connector Suggestions" data-tr="✓ B1 Kelime ve Bağlaç Zenginleştirme Önerileri" data-ar="✓ اقتراحات لمفردات وروابط المستوى B1" data-uk="✓ Рекомендації щодо лексики та сполучників B1">✓ B1 Vocabulary & Connector Suggestions</li>
+            <li data-en="✓ Instant 15-second AI evaluation" data-tr="✓ 15 saniyede anında yapay zeka değerlendirmesi" data-ar="✓ تقييم فوري خلال 15 ثانية بالذكاء الاصطناعي" data-uk="✓ Миттєве оцінювання штучним інтелектом за 15 секунд">✓ Instant 15-second AI evaluation</li>
+          </ul>
+          <button class="tier-cta-btn" onclick="selectProPlan('standard')">
+            <span data-en="Get Standard Pro Pass" data-tr="Standart Pro Kartı Al" data-ar="الحصول على الباقة القياسية" data-uk="Отримати стандартний Pro">Get Standard Pro Pass</span>
+          </button>
+        </div>
+
+        <!-- Tier 3: Citizenship Pass (Featured) -->
+        <div class="pricing-tier-card featured">
+          <div class="tier-badge" data-en="Best Value" data-tr="En Avantajlı" data-ar="أفضل قيمة" data-uk="Найкраща ціна">Best Value</div>
+          <h3 class="tier-name" data-en="Citizenship Pass" data-tr="Vatandaşlık Paketi" data-ar="باقة التجنيس الشاملة" data-uk="Пакет для громадянства">Citizenship Pass</h3>
+          <div class="tier-price">
+            <span class="amount">€39</span>
+            <span class="period" data-en="/ B1 Pro + LiD Weak-Spot Tracker" data-tr="/ B1 Pro + LiD Zayıf Nokta Takibi" data-ar="/ B1 احترافي + متتبع نقاط الضعف في LiD" data-uk="/ B1 Pro + трекер слабких місць LiD">/ B1 Pro + LiD Weak-Spot Tracker</span>
+          </div>
+          <div class="tier-credits">⚡ <span data-en="40 AI Letter Grading Credits" data-tr="40 Yapay Zeka Mektup Puanlama Kredisi" data-ar="40 رصيداً لتقييم الرسائل بالذكاء الاصطناعي" data-uk="40 кредитів оцінювання листів ШІ">40 AI Letter Grading Credits</span></div>
+          <ul class="tier-features">
+            <li data-en="✓ Everything in Standard Pro Pass" data-tr="✓ Standart Pro Karttaki her şey" data-ar="✓ جميع مزايا الباقة القياسية" data-uk="✓ Усе, що в стандартному абонементі">✓ Everything in Standard Pro Pass</li>
+            <li data-en="✓ Leben in Deutschland (LiD) 310 Tracker" data-tr="✓ Leben in Deutschland (LiD) 310 Soru Takipçisi" data-ar="✓ متتبع اختبار الحياة في ألمانيا (LiD 310)" data-uk="✓ Трекер тесту Життя в Німеччині (LiD 310)">✓ Leben in Deutschland (LiD) 310 Tracker</li>
+            <li data-en="✓ Personalized Fehlerheft (Weak-spot deck)" data-tr="✓ Kişiselleştirilmiş Hata Defteri (Fehlerheft)" data-ar="✓ دفتر الأخطاء الشخصي (Fehlerheft)" data-uk="✓ Персональний зошит помилок (Fehlerheft)">✓ Personalized Fehlerheft (Weak-spot deck)</li>
+            <li data-en="✓ Priority AI Processing Queue" data-tr="✓ Öncelikli Yapay Zeka İşleme Sırası" data-ar="✓ معالجة سريعة ذات أولوية بالذكاء الاصطناعي" data-uk="✓ Пріоритетна обробка запитів штучним інтелектом">✓ Priority AI Processing Queue</li>
+          </ul>
+          <button class="tier-cta-btn featured" onclick="selectProPlan('citizenship')">
+            <span data-en="Get Citizenship Bundle" data-tr="Vatandaşlık Paketini Al" data-ar="الحصول على باقة التجنيس" data-uk="Отримати пакет для громадянства">Get Citizenship Bundle</span>
+          </button>
+        </div>
+
+        <!-- Tier 4: Extended 6-Month Pass -->
+        <div class="pricing-tier-card">
+          <div class="tier-badge" data-en="Long-term Study" data-tr="Uzun Dönem" data-ar="دراسة طويلة الأمد" data-uk="Довгострокове навчання">Long-term Study</div>
+          <h3 class="tier-name" data-en="6-Month Pass" data-tr="6 Aylık Geniş Paket" data-ar="اشتراك 6 أشهر الكامل" data-uk="Абонемент на 6 місяців">6-Month Pass</h3>
+          <div class="tier-price">
+            <span class="amount">€49</span>
+            <span class="period" data-en="/ 6-Month Full Access" data-tr="/ 6 Ay Boyunca Tam Erişim" data-ar="/ وصول كامل لمدة 6 أشهر" data-uk="/ Повний доступ на 6 місяців">/ 6-Month Full Access</span>
+          </div>
+          <div class="tier-credits">⚡ <span data-en="100 AI Letter Grading Credits" data-tr="100 Yapay Zeka Mektup Puanlama Kredisi" data-ar="100 رصيد لتقييم الرسائل بالذكاء الاصطناعي" data-uk="100 кредитів оцінювання листів ШІ">100 AI Letter Grading Credits</span></div>
+          <ul class="tier-features">
+            <li data-en="✓ Everything in Citizenship Pass" data-tr="✓ Vatandaşlık Paketindeki her şey" data-ar="✓ جميع مزايا باقة التجنيس" data-uk="✓ Усе, що в пакеті для громадянства">✓ Everything in Citizenship Pass</li>
+            <li data-en="✓ 100 AI Letter Evaluations" data-tr="✓ 100 Yapay Zeka Mektup Değerlendirmesi" data-ar="✓ 100 تقييم للرسائل بالذكاء الاصطناعي" data-uk="✓ 100 перевірок листів штучним інтелектом">✓ 100 AI Letter Evaluations</li>
+            <li data-en="✓ B2/C1 Decks Preview Access" data-tr="✓ B2/C1 Deste Önizleme Erişimi" data-ar="✓ وصول استعراضي لمجموعات B2/C1" data-uk="✓ Доступ до попереднього перегляду колод B2/C1">✓ B2/C1 Decks Preview Access</li>
+            <li data-en="✓ Dedicated Email Support" data-tr="✓ Öncelikli E-Posta Desteği" data-ar="✓ دعم مباشر عبر البريد الإلكتروني" data-uk="✓ Пряма підтримка електронною поштою">✓ Dedicated Email Support</li>
+          </ul>
+          <button class="tier-cta-btn" onclick="selectProPlan('extended')">
+            <span data-en="Get 6-Month Pass" data-tr="6 Aylık Paketi Al" data-ar="الحصول على باقة 6 أشهر" data-uk="Отримати абонемент на 6 місяців">Get 6-Month Pass</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Trust Badges & Supported Payment Methods Strip -->
+      <div class="pricing-trust-footer" style="margin-top:20px; padding:16px 20px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; font-size:12px; color:var(--text-muted);">
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+          <span><strong>Accepted Payment Methods:</strong></span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">💳 Visa / Mastercard</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🅿️ PayPal</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🏦 SEPA / Klarna</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🍏 Apple / Google Pay</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; font-weight:600;">
+          <span style="color:#10b981;">🛡️ 30-Day Money-Back Guarantee</span>
+          <span>&bull;</span>
+          <span style="color:var(--text-primary);">🔒 256-Bit SSL Encrypted</span>
+          <span>&bull;</span>
+          <span>📜 § 19 UStG Tax Compliant</span>
+        </div>
       </div>
     </div>
 

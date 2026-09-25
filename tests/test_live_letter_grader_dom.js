@@ -32,6 +32,9 @@ global.fetch = async (url, opts) => {
 
 // Simple DOM node mock
 class MockElement {
+  get id() { return this._id || ''; }
+  set id(v) { this._id = v; if (v) domElementsById[v] = this; }
+
   constructor(tag, id = '', className = '') {
     this.tagName = (tag || 'DIV').toUpperCase();
     this.id = id;
@@ -46,9 +49,37 @@ class MockElement {
     this.children = [];
     this.parentElement = null;
     this.style = {};
-    this.innerHTML = '';
+    this._innerHTML = '';
     this.value = '';
     this.textContent = '';
+  }
+
+  get innerHTML() {
+    return this._innerHTML || '';
+  }
+
+  set innerHTML(html) {
+    this._innerHTML = String(html || '');
+    this.children = [];
+    const tagRegex = /<([a-z0-9]+)\s+([^>]*?)>/gi;
+    let match;
+    while ((match = tagRegex.exec(this._innerHTML)) !== null) {
+      const tagName = match[1];
+      const attrStr = match[2];
+      const idMatch = /id=["']([^"']+)["']/i.exec(attrStr);
+      const classMatch = /class=["']([^"']+)["']/i.exec(attrStr);
+      const dataMethodMatch = /data-method=["']([^"']+)["']/i.exec(attrStr);
+
+      const child = new MockElement(tagName, idMatch ? idMatch[1] : '', classMatch ? classMatch[1] : '');
+      if (dataMethodMatch) {
+        child.setAttribute('data-method', dataMethodMatch[1]);
+      }
+      child.parentElement = this;
+      this.children.push(child);
+      if (idMatch) {
+        domElementsById[idMatch[1]] = child;
+      }
+    }
   }
 
   getAttribute(attr) { return this.attributes[attr] || null; }
@@ -200,6 +231,7 @@ let lastAlert = '';
 global.alert = (msg) => { lastAlert = msg; };
 
 // 6. Test Short Failing Letter (Edge Case with >20 words but lacking B1 criteria)
+localStorage.setItem('deutschlernen_letter_credits', '10');
 textarea.value = "Hallo, ich bin müde. Ich habe keine Lust auf Reisen. Ich gehe jetzt nach Hause und ich esse eine Suppe. Das ist alles für heute. Auf Wiedersehen mein Freund.";
 submitLiveLetterGrading();
 const failHtml = resultsContainer.innerHTML;
@@ -264,4 +296,34 @@ assert.ok(compOutput.includes('Match'), 'Should note matching criteria');
 assert.strictEqual(comparisonContainer.style.display, 'block', 'Comparison container should be made visible');
 console.log('✅ Option B Side-by-Side Calibration & Comparison Matrix Verified.');
 
-console.log('🎉 All Live Letter Grader Tests Passed Successfully!');
+// 9. Test Interactive Checkout & Payment Method Switching
+selectProPlan('standard');
+const modal = domElementsById['pro-pricing-modal'] || document.getElementById('pro-pricing-modal');
+assert.ok(modal, 'Pricing modal should exist');
+assert.ok(modal.innerHTML.includes('Complete Your Enrollment'), 'Modal should display enrollment header');
+assert.ok(modal.innerHTML.includes('Standard Pro Pass'), 'Modal should display selected plan');
+assert.ok(modal.innerHTML.includes('panel-card'), 'Modal should contain Card payment panel');
+assert.ok(modal.innerHTML.includes('panel-sepa'), 'Modal should contain SEPA payment panel');
+assert.ok(modal.innerHTML.includes('panel-paypal'), 'Modal should contain PayPal payment panel');
+
+switchPaymentMethod('sepa');
+const sepaPanel = modal.querySelector('#panel-sepa');
+assert.ok(sepaPanel && sepaPanel.classList.contains('active'), 'SEPA panel should become active on switch');
+console.log('✅ Checkout & Dynamic Payment Panel Switching Verified.');
+
+// 10. Test Order Confirmation & Digital Invoice Generation
+const creditsBefore = getLetterCredits();
+confirmInstantDemoOrder('standard');
+assert.ok(modal.innerHTML.includes('ENROLLMENT CONFIRMED'), 'Confirmation screen should show enrolled banner');
+assert.ok(modal.innerHTML.includes('DL-2026-'), 'Invoice should have unique DL-2026 reference number');
+assert.ok(modal.innerHTML.includes('§ 19 UStG'), 'Invoice must include § 19 UStG Kleinunternehmer tax notice');
+assert.ok(modal.innerHTML.includes('Print / Save PDF Receipt'), 'Invoice should offer printable receipt action');
+assert.strictEqual(getLetterCredits(), creditsBefore + 30, 'Standard pass should grant exactly 30 credits');
+
+const storedInvoices = JSON.parse(localStorage.getItem('deutschlernen_invoices') || '[]');
+assert.ok(storedInvoices.length > 0, 'Completed invoice should be persisted in localStorage');
+assert.strictEqual(storedInvoices[0].tierId, 'standard', 'Persisted invoice should match tier ID');
+console.log('✅ Digital EU-Compliant Invoice & Accounting Persistence Verified.');
+
+console.log('🎉 All Live Letter Grader & Commercialization Tests Passed Successfully!');
+
