@@ -189,13 +189,13 @@
     <!-- Trust Certification Badges -->
     <div class="hero-trust-badges" style="display:flex; justify-content:center; align-items:center; gap:12px; margin: 12px 0 16px; flex-wrap:wrap;">
       <span class="trust-badge" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:700; background:rgba(34,197,94,0.12); color:#22c55e; border:1px solid rgba(34,197,94,0.3); padding:4px 12px; border-radius:20px;">
-        <span>✓ telc B1 Blueprint 2026</span>
+        <span data-en="✓ telc B1 Blueprint 2026" data-tr="✓ telc B1 Müfredatı 2026" data-ar="✓ معايير telc B1 2026" data-uk="✓ Стандарт telc B1 2026">✓ telc B1 Blueprint 2026</span>
       </span>
       <span class="trust-badge" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:700; background:rgba(245,158,11,0.12); color:var(--accent-gold); border:1px solid rgba(245,158,11,0.3); padding:4px 12px; border-radius:20px;">
-        <span>🇩🇪 BAMF 310 LiD Test Bank</span>
+        <span data-en="🇩🇪 BAMF 310 LiD Test Bank" data-tr="🇩🇪 BAMF 310 LiD Soru Havuzu" data-ar="🇩🇪 بنك أسئلة 310 LiD" data-uk="🇩🇪 Банк тестів 310 LiD">🇩🇪 BAMF 310 LiD Test Bank</span>
       </span>
       <span class="trust-badge" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:700; background:rgba(59,130,246,0.12); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); padding:4px 12px; border-radius:20px;">
-        <span>⚡ PWA 100% Offline</span>
+        <span data-en="⚡ PWA 100% Offline" data-tr="⚡ %100 Çevrimdışı PWA" data-ar="⚡ يعمل بدون إنترنت 100%" data-uk="⚡ 100% офлайн PWA">⚡ PWA 100% Offline</span>
       </span>
     </div>
     
@@ -818,6 +818,27 @@
       <button class="btn-secondary entrance-dismiss-btn" id="btn-dismiss-goal" onclick="closeGoalModal()">
         <span data-en="Explore All Materials" data-tr="Tüm Materyalleri İncele" data-ar="استكشاف جميع المواد" data-uk="Переглянути всі матеріали">Explore All Materials</span>
       </button>
+    </div>
+  </div>
+</div>
+
+<!-- Privacy & LocalStorage Notice (DSGVO / GDPR Compliance) -->
+<div id="privacy-consent-banner" class="privacy-consent-banner" style="display:none;" role="region" aria-label="Privacy and Cookie Notice">
+  <div class="privacy-consent-content">
+    <div class="privacy-consent-text">
+      <span class="privacy-icon">🔒</span>
+      <span data-en="Zero-Tracking Privacy: DeutschLernen saves all study progress locally on your device in compliance with DSGVO / GDPR. No advertising or profiling cookies used."
+            data-tr="Sıfır Takip Gizliliği: DeutschLernen, tüm çalışma ilerlemenizi KVKK / DSGVO uyumlu olarak yalnızca cihazınızda saklar. Reklam veya takip çerezi kullanılmaz."
+            data-ar="خصوصية بدون تعقب: يحفظ DeutschLernen تقدمك في الدراسة محلياً على جهازك وفقاً لقانون حماية البيانات الأوروبي (GDPR). لا توجد ملفات تعريف ارتباط للإعلانات."
+            data-uk="Повна конфіденційність: DeutschLernen зберігає прогрес виключно на вашому пристрої відповідно до норм GDPR. Жодних рекламних файлів cookie.">
+        Zero-Tracking Privacy: DeutschLernen saves all study progress locally on your device in compliance with DSGVO / GDPR. No advertising or profiling cookies used.
+      </span>
+    </div>
+    <div class="privacy-consent-actions">
+      <a href="legal.html#datenschutz" class="privacy-link" target="_blank"
+         data-en="Privacy Policy" data-tr="Gizlilik Politikası" data-ar="سياسة الخصوصية" data-uk="Політика конфіденційності">Privacy Policy</a>
+      <button type="button" class="btn-privacy-accept" onclick="dismissPrivacyBanner()"
+              data-en="✓ Got it" data-tr="✓ Anladım" data-ar="✓ حسناً" data-uk="✓ Зрозуміло">✓ Got it</button>
     </div>
   </div>
 </div>

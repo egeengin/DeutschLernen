@@ -1987,12 +1987,33 @@ function initUrlParamsAndCheckoutReturn() {
   }
 }
 
+function initPrivacyBanner() {
+  if (typeof window === 'undefined') return;
+  const acknowledged = localStorage.getItem('deutschlernen_privacy_acknowledged');
+  const banner = document.getElementById('privacy-consent-banner');
+  if (!acknowledged && banner) {
+    banner.style.display = 'block';
+  }
+}
+
+function dismissPrivacyBanner() {
+  localStorage.setItem('deutschlernen_privacy_acknowledged', 'true');
+  const banner = document.getElementById('privacy-consent-banner');
+  if (banner) {
+    banner.style.opacity = '0';
+    setTimeout(() => { banner.style.display = 'none'; }, 250);
+  }
+}
+
 // Run checkout return & URL parameter handler on startup
 initUrlParamsAndCheckoutReturn();
+initPrivacyBanner();
 
 if (typeof window !== 'undefined') {
   window.toggleSchreibenShowcase = toggleSchreibenShowcase;
   window.initUrlParamsAndCheckoutReturn = initUrlParamsAndCheckoutReturn;
+  window.dismissPrivacyBanner = dismissPrivacyBanner;
+  window.initPrivacyBanner = initPrivacyBanner;
 }
 
 
