@@ -1434,8 +1434,6 @@
         this.sessionWrong++;
       }
 
-      // Audio feedback chime or soft buzz
-      this.playAudioFeedback(isCorrect);
 
       // Update Accuracy Counter in live UI
       const totalAnswered = this.sessionCorrect + this.sessionWrong;
