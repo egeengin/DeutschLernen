@@ -1481,9 +1481,11 @@
       this.dom.nextButton.disabled = false;
       // Sadece explanation card görünür alanın dışındaysa kaydır,
       // böylece soru kartı ekrandan çıkmaz
-      const cardRect = this.dom.explanationCard.getBoundingClientRect();
-      if (cardRect.bottom > window.innerHeight) {
-        this.dom.explanationCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      if (typeof this.dom.explanationCard.getBoundingClientRect === 'function') {
+        const cardRect = this.dom.explanationCard.getBoundingClientRect();
+        if (cardRect.bottom > window.innerHeight) {
+          this.dom.explanationCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
       }
       this.dom.nextButton.focus({ preventScroll: true });
     }
@@ -1491,9 +1493,11 @@
     nextCard() {
       this.currentIndex++;
       // Sonraki soruya geçerken soru kartına yukarı scroll yap
-      const promptCard = document.querySelector('.prompt-card');
-      if (promptCard) {
-        promptCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (typeof document.querySelector === 'function') {
+        const promptCard = document.querySelector('.prompt-card');
+        if (promptCard) {
+          promptCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       }
       this.renderCurrentQuestion();
     }
