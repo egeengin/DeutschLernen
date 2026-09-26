@@ -794,6 +794,16 @@ body {
   box-shadow: none;
 }
 
+/* Aktif hale gelince pulse ile dikkat çek (focus() olmadan) */
+.btn-primary-action:not(:disabled) {
+  animation: btn-pulse-ready 1.8s ease-in-out 0.2s 2;
+}
+
+@keyframes btn-pulse-ready {
+  0%, 100% { box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3); }
+  50%       { box-shadow: 0 4px 28px rgba(245, 158, 11, 0.75); transform: scale(1.02); }
+}
+
 /* Dictionary Search Modal */
 .modal-backdrop {
   position: fixed;

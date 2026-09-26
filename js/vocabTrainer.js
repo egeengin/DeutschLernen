@@ -1494,16 +1494,19 @@
       this.dom.explanationCard.classList.remove('hidden');
       this.dom.nextButton.classList.remove('hidden');
       this.dom.nextButton.disabled = false;
-      this.dom.nextButton.focus({ preventScroll: true });
+      // NOT: focus() kasıtlı olarak kaldırıldı.
+      // focus() bazı tarayıcılarda preventScroll:true olsa bile
+      // next button viewport dışındaysa sayfayı aşağı kaydırıyor.
+      // Bunun yerine CSS ile dikkat çekiyoruz.
     }
 
     nextCard() {
       this.currentIndex++;
       this.renderCurrentQuestion();
-      // Render tamamlandıktan SONRA yukarı scroll et
-      // (render öncesi scroll yapılırsa DOM değişimi scroll'u iptal eder)
+      // setTimeout(0): browser'a render + layout'u bitirmesi için zaman tanır,
+      // sonra scroll yapılır. Böylece layout değişimi scroll'u iptal etmez.
       if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 0);
       }
     }
 
