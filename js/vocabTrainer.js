@@ -1479,27 +1479,17 @@
       this.dom.explanationCard.classList.remove('hidden');
       this.dom.nextButton.classList.remove('hidden');
       this.dom.nextButton.disabled = false;
-      // Sadece explanation card görünür alanın dışındaysa kaydır,
-      // böylece soru kartı ekrandan çıkmaz
-      if (typeof this.dom.explanationCard.getBoundingClientRect === 'function') {
-        const cardRect = this.dom.explanationCard.getBoundingClientRect();
-        if (cardRect.bottom > window.innerHeight) {
-          this.dom.explanationCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-      }
       this.dom.nextButton.focus({ preventScroll: true });
     }
 
     nextCard() {
       this.currentIndex++;
-      // Sonraki soruya geçerken soru kartına yukarı scroll yap
-      if (typeof document.querySelector === 'function') {
-        const promptCard = document.querySelector('.prompt-card');
-        if (promptCard) {
-          promptCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }
       this.renderCurrentQuestion();
+      // Render tamamlandıktan SONRA yukarı scroll et
+      // (render öncesi scroll yapılırsa DOM değişimi scroll'u iptal eder)
+      if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     }
 
     renderDeckCompletion() {
