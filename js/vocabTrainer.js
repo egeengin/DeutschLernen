@@ -1058,7 +1058,13 @@
       });
 
       // Next button
-      this.dom.nextButton.addEventListener('click', () => this.nextCard());
+      this.dom.nextButton.addEventListener('click', (e) => {
+        if (e && typeof e.preventDefault === 'function') e.preventDefault();
+        if (typeof document !== 'undefined' && document.activeElement && document.activeElement !== document.body && typeof document.activeElement.blur === 'function') {
+          document.activeElement.blur();
+        }
+        this.nextCard();
+      });
 
       // Keyboard navigation (1-4, Space, Enter, Escape)
       window.addEventListener('keydown', (e) => {
@@ -1123,7 +1129,12 @@
           const item = this.currentDeck[this.currentIndex];
           if (item) this.playSpeech(item.de);
         } else if (e.key === 'Enter') {
+          e.preventDefault();
+          e.stopPropagation();
           if (this.hasAnswered) {
+            if (typeof document !== 'undefined' && document.activeElement && document.activeElement !== document.body && typeof document.activeElement.blur === 'function') {
+              document.activeElement.blur();
+            }
             this.nextCard();
           }
         }
@@ -1504,12 +1515,39 @@
     }
 
     nextCard() {
+      if (typeof document !== 'undefined' && document.activeElement && document.activeElement !== document.body && typeof document.activeElement.blur === 'function') {
+        document.activeElement.blur();
+      }
       this.currentIndex++;
       this.renderCurrentQuestion();
-      // setTimeout(0): browser'a render + layout'u bitirmesi için zaman tanır,
-      // sonra scroll yapılır. Böylece layout değişimi scroll'u iptal etmez.
-      if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
-        setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 0);
+      this.scrollToQuestion();
+    }
+
+    scrollToQuestion() {
+      if (typeof window === 'undefined') return;
+      const doScroll = () => {
+        try {
+          if (typeof window.scrollTo === 'function') {
+            window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+          }
+          if (document.documentElement) document.documentElement.scrollTop = 0;
+          if (document.body) document.body.scrollTop = 0;
+        } catch (e) {
+          if (typeof window.scrollTo === 'function') window.scrollTo(0, 0);
+        }
+      };
+
+      // 1. Immediate scroll
+      doScroll();
+
+      // 2. Next animation frame after DOM update
+      if (typeof requestAnimationFrame === 'function') {
+        requestAnimationFrame(doScroll);
+      }
+
+      // 3. Fallback timeout for layout shifts
+      if (typeof setTimeout === 'function') {
+        setTimeout(doScroll, 20);
       }
     }
 
