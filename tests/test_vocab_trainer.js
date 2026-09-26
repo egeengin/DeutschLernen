@@ -241,6 +241,16 @@ assert.doesNotThrow(() => {
 
   global.VocabApp.playSpeech(', only trailing');
   assert.strictEqual(lastSpokenUtterance, null, 'String starting with comma should not invoke speech synthesis');
+
+  // Verify initial load does not auto-play speech
+  lastSpokenUtterance = null;
+  global.VocabApp.isInitialLoad = true;
+  global.VocabApp.settings.audio = true;
+  global.VocabApp.settings.mode = 'de_meaning';
+  global.VocabApp.currentIndex = 0;
+  global.VocabApp.renderCurrentQuestion();
+  assert.strictEqual(lastSpokenUtterance, null, 'Initial question render must not auto-play audio');
+  assert.strictEqual(global.VocabApp.isInitialLoad, false, 'isInitialLoad flag should be cleared after first render');
 }, 'playSpeech must never throw an uncaught exception');
 
 // 4. Test Quiz Modes & Distractor Generation

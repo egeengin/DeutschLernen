@@ -798,7 +798,9 @@
       this.sessionWrong = 0;
       this.selectedAnswer = null;
       this.hasAnswered = false;
+      this.isInitialLoad = true;
 
+      this.preloadVoices();
       this.initDomReferences();
       this.bindEvents();
       this.applyTheme(this.settings.theme);
@@ -1287,8 +1289,8 @@
       if (subhintEl) subhintEl.textContent = texts.arenaSubhint;
 
       // Word & Badges
-      this.dom.arenaPosBadge.textContent = item.pos.toUpperCase();
-      this.dom.arenaLevelBadge.textContent = item.level;
+      this.dom.arenaPosBadge.textContent = item.pos ? item.pos.toUpperCase() : '';
+      this.dom.arenaLevelBadge.textContent = item.level || 'B1';
       this.dom.arenaLevelBadge.className = 'badge-level badge-' + (item.level ? item.level.toLowerCase() : 'b1');
 
       // German Noun Gender Color Indicators (der=Blue, die=Pink/Red, das=Green)
@@ -1333,14 +1335,15 @@
       this.dom.arenaWordDe.textContent = promptTitle;
       this.dom.arenaWordDe.setAttribute('dir', (this.settings.lang === 'ar' && this.settings.mode === 'meaning_de') ? 'rtl' : 'ltr');
 
-      // Auto TTS if audio is on and prompt is German
-      if (this.settings.audio && (this.settings.mode === 'de_meaning' || this.settings.mode === 'synonyms' || this.settings.mode === 'antonyms' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint')) {
+      // Auto TTS if audio is on and prompt is German (skipped on initial entry to prevent robotic speech before user interaction)
+      if (!this.isInitialLoad && this.settings.audio && (this.settings.mode === 'de_meaning' || this.settings.mode === 'synonyms' || this.settings.mode === 'antonyms' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint')) {
         try {
           this.playSpeech(item.de);
         } catch (e) {
           console.warn("Auto TTS playback failed:", e);
         }
       }
+      this.isInitialLoad = false;
 
       // Generate 4 Distractor Options
       const options = this.generateOptions(item, correctAnswerText);
@@ -1629,6 +1632,21 @@
       // are spoken clearly together with the root word; do not strip hyphens or suffix extensions.
       clean = clean.split(',')[0].trim();
       return clean;
+    }
+
+    preloadVoices() {
+      try {
+        if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+          window.speechSynthesis.getVoices();
+          if (typeof window.speechSynthesis.onvoiceschanged !== 'undefined') {
+            window.speechSynthesis.onvoiceschanged = () => {
+              window.speechSynthesis.getVoices();
+            };
+          }
+        }
+      } catch (e) {
+        // Fallback for environments where speechSynthesis is restricted
+      }
     }
 
     cleanSpeechText(text) {
