@@ -673,11 +673,12 @@
 
       // Partition into Buckets with SRS due dates
       const todayIso = new Date().toISOString().slice(0, 10);
-      const dueReviewBucket = [];
-      const futureReviewBucket = [];
-      const unseenBucket = [];
-      const learningBucket = [];
-      const masteredBucket = [];
+      const dueReviewBucket = [];      // yanlış cevaplanmış, tekrar zamanı gelmiş
+      const futureReviewBucket = [];   // yanlış cevaplanmış ama tarih henüz gelmemiş
+      const unseenBucket = [];         // hiç görülmemiş
+      const dueLearningBucket = [];    // öğreniliyor ve tekrar zamanı gelmiş
+      const futureLearningBucket = []; // öğreniliyor ama tarih henüz gelmemiş
+      const masteredBucket = [];       // 3+ streak, biliniyor → normalde atlanır
 
       pool.forEach(item => {
         const state = progress[item.id];
@@ -690,13 +691,19 @@
             futureReviewBucket.push(item);
           }
         } else if (state.status === 'learning') {
-          learningBucket.push(item);
+          // Learning kelimeleri de nextReviewDate'e göre ayır
+          if (!state.nextReviewDate || state.nextReviewDate <= todayIso) {
+            dueLearningBucket.push(item);
+          } else {
+            futureLearningBucket.push(item);
+          }
         } else {
+          // mastered — normalde deck'e alınmaz
           masteredBucket.push(item);
         }
       });
 
-      // If user chose Review Mistakes mode: prioritize due items first
+      // Mistakes mode: sadece hatalı kelimeler
       if (mode === 'mistakes') {
         const sortedDue = this.shuffle(dueReviewBucket);
         if (sortedDue.length >= deckSize) {
@@ -705,16 +712,20 @@
         return [...sortedDue, ...this.shuffle(futureReviewBucket)].slice(0, deckSize);
       }
 
-      // If user chose Timed Sprint mode: rapid fire mix
+      // Sprint mode: hızlı karışım (review + unseen + due learning)
       if (mode === 'sprint') {
-        const sprintPool = this.shuffle([...dueReviewBucket, ...unseenBucket, ...learningBucket]);
+        const sprintPool = this.shuffle([...dueReviewBucket, ...unseenBucket, ...dueLearningBucket]);
         return sprintPool.slice(0, Math.max(30, deckSize));
       }
 
-      // Smart proportions for anti-repetition:
+      // Normal mode — akıllı öncelik sırası:
+      // 1. Önce hatalı ve tekrar zamanı gelmiş kelimeler (max %35)
+      // 2. Hiç görülmemiş kelimeler (max %50)
+      // 3. Kalan slotları: due learning, future learning, future review ile doldur
+      // 4. Son çare: mastered (zaten bilinen) — sadece havuz tamamen boşsa
       const combinedReview = [...dueReviewBucket, ...futureReviewBucket];
-      const targetReview = Math.min(combinedReview.length, Math.floor(deckSize * 0.35));
-      const targetUnseen = Math.min(unseenBucket.length, Math.floor(deckSize * 0.50));
+      const targetReview  = Math.min(combinedReview.length, Math.floor(deckSize * 0.35));
+      const targetUnseen  = Math.min(unseenBucket.length,   Math.floor(deckSize * 0.50));
       const remainingSlots = deckSize - (targetReview + targetUnseen);
 
       const deck = [];
@@ -725,8 +736,14 @@
       deck.push(...reviewSlice.slice(0, targetReview));
       deck.push(...this.shuffle(unseenBucket).slice(0, targetUnseen));
 
-      // Fill remaining from learning, then unseen, then mastered
-      const remainingPool = this.shuffle([...learningBucket, ...unseenBucket.slice(targetUnseen), ...masteredBucket]);
+      // Kalan slotlar: due learning > unseen fazlası > future learning > future review > mastered (son çare)
+      const remainingPool = this.shuffle([
+        ...dueLearningBucket,
+        ...unseenBucket.slice(targetUnseen),
+        ...futureLearningBucket,
+        ...futureReviewBucket,
+        ...masteredBucket   // bilinen kelimeler ancak başka seçenek kalmayınca girer
+      ]);
       deck.push(...remainingPool.slice(0, remainingSlots));
 
       return this.shuffle(deck);
