@@ -1,12 +1,16 @@
-const CACHE_NAME = 'deutschlernen-v29';
+const CACHE_NAME = 'deutschlernen-v30';
 const ASSETS = [
   './',
   './index.html',
   './trainer.html',
   './legal.html',
+  './sprechen.html',
   './css/portal.css',
   './css/trainer.css',
+  './css/sprechen.css',
   './js/portal.js',
+  './js/voiceExamEngine.js',
+  './js/sprechenApp.js',
   './js/firebaseConfig.js',
   './js/firebaseService.js',
   './js/lidTrainer.js',

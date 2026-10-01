@@ -215,6 +215,63 @@ Ali`,
   ],
   pricingTiers: [
     {
+      id: "free_lid",
+      isFree: true,
+      nameEn: "BAMF Einbürgerungstest (LiD)",
+      nameTr: "BAMF Vatandaşlık Sınavı (LiD)",
+      nameAr: "امتحان التجنيس الألماني (LiD)",
+      nameUk: "Тест на громадянство Німеччини (LiD)",
+      badgeEn: "100% Free Forever",
+      badgeTr: "%100 Ücretsiz",
+      badgeAr: "مجاني 100% دائماً",
+      badgeUk: "100% Безкоштовно",
+      price: "€0",
+      periodEn: "Free Public Access",
+      periodTr: "Sınırsız Ücretsiz Erişim",
+      periodAr: "وصول مجاني دائم",
+      periodUk: "Безкоштовний доступ",
+      creditsEn: "All 310 BAMF Questions Included",
+      creditsTr: "310 BAMF Sorusu Dahil",
+      creditsAr: "جميع أسئلة BAMF الـ 310 مشمولة",
+      creditsUk: "Усі 310 питань BAMF включено",
+      featuresEn: [
+        "Official 300 General + 160 State Questions",
+        "Authentic 33-Question Exam Simulator (60 min)",
+        "Quad-Lingual Translations (DE, EN, TR, AR, UK)",
+        "Audio Pronunciation & Offline PWA Mode",
+        "Fehlerheft Weak-Spot Review Deck",
+        "100% Free Forever — No Card Required"
+      ],
+      featuresTr: [
+        "Resmi 300 Genel + 160 Eyalet Sorusu",
+        "Resmi 33 Soruluk Sınav Simülatörü (60 dk)",
+        "4 Dilde Anında Çeviriler (DE, EN, TR, AR, UK)",
+        "Sesli Okuma ve Çevrimdışı PWA Desteği",
+        "Kişisel Hata Defteri (Fehlerheft) Takibi",
+        "%100 Ücretsiz — Kredi Kartı Gerekmez"
+      ],
+      featuresAr: [
+        "الأسئلة الرسمية 300 عامة + 160 لكل الولايات",
+        "محاكي الامتحان الرسمي 33 سؤالاً (60 دقيقة)",
+        "ترجمة بـ 4 لغات (DE, EN, TR, AR, UK)",
+        "نطق صوتي ودعم التشغيل دون اتصال PWA",
+        "دفتر الأخطاء الشخصي (Fehlerheft)",
+        "مجاني 100% للأبد — بدون أي بطاقة بنكية"
+      ],
+      featuresUk: [
+        "Офіційні 300 загальних + 160 земельних питань",
+        "Офіційний симулятор іспиту на 33 питання",
+        "4-мовні переклади (DE, EN, TR, AR, UK)",
+        "Озвучення та робота офлайн через PWA",
+        "Зошит помилок (Fehlerheft)",
+        "100% безкоштовно — без введення карти"
+      ],
+      ctaTextEn: "Practice Free Now →",
+      ctaTextTr: "Hemen Ücretsiz Başla →",
+      ctaTextAr: "ابدأ التدريب مجاناً الآن ←",
+      ctaTextUk: "Почати безкоштовно →"
+    },
+    {
       id: "diagnostic",
       nameEn: "Quick Diagnostic",
       nameTr: "Hızlı Teşhis Paketi",
@@ -315,63 +372,15 @@ Ali`,
       ctaTextUk: "Отримати стандартний Pro"
     },
     {
-      id: "citizenship",
-      nameEn: "Citizenship Pass",
-      nameTr: "Vatandaşlık Paketi",
-      nameAr: "باقة التجنيس الشاملة",
-      nameUk: "Пакет для громадянства",
+      id: "extended",
+      nameEn: "Intensive Pass",
+      nameTr: "Kapsamlı Hazırlık Paketi",
+      nameAr: "الباقة المكثفة الشاملة",
+      nameUk: "Інтенсивний повний абонемент",
       badgeEn: "Best Value",
       badgeTr: "En Avantajlı",
       badgeAr: "أفضل قيمة",
       badgeUk: "Найкраща ціна",
-      price: "€39",
-      periodEn: "B1 Pro + LiD Weak-Spot Tracker",
-      periodTr: "B1 Pro + LiD Zayıf Nokta Takibi",
-      periodAr: "B1 احترافي + متتبع نقاط الضعف في LiD",
-      periodUk: "B1 Pro + трекер слабких місць LiD",
-      creditsEn: "40 AI Letter Grading Credits",
-      creditsTr: "40 Yapay Zeka Mektup Puanlama Kredisi",
-      creditsAr: "40 رصيداً لتقييم الرسائل بالذكاء الاصطناعي",
-      creditsUk: "40 кредитів оцінювання листів ШІ",
-      featuresEn: [
-        "Everything in Standard Pro Pass",
-        "Leben in Deutschland (LiD) Tracker",
-        "Personalized Fehlerheft (Weak-spot deck)",
-        "Priority AI Processing"
-      ],
-      featuresTr: [
-        "Standart Pro Karttaki her şey",
-        "Leben in Deutschland (LiD) 310 Soru Takipçisi",
-        "Kişiselleştirilmiş Hata Defteri (Fehlerheft)",
-        "Öncelikli Yapay Zeka İşleme Sırası"
-      ],
-      featuresAr: [
-        "جميع مزايا الباقة القياسية",
-        "متتبع اختبار الحياة في ألمانيا (LiD 310)",
-        "دفتر الأخطاء الشخصي (Fehlerheft)",
-        "معالجة سريعة ذات أولوية بالذكاء الاصطناعي"
-      ],
-      featuresUk: [
-        "Усе, що в стандартному абонементі",
-        "Трекер тесту Життя в Німеччині (LiD 310)",
-        "Персональний зошит помилок (Fehlerheft)",
-        "Пріоритетна обробка запитів штучним інтелектом"
-      ],
-      ctaTextEn: "Get Citizenship Bundle",
-      ctaTextTr: "Vatandaşlık Paketini Al",
-      ctaTextAr: "الحصول على باقة التجنيس",
-      ctaTextUk: "Отримати пакет для громадянства"
-    },
-    {
-      id: "extended",
-      nameEn: "6-Month Pass",
-      nameTr: "6 Aylık Geniş Paket",
-      nameAr: "اشتراك 6 أشهر الكامل",
-      nameUk: "Абонемент на 6 місяців",
-      badgeEn: "Long-term Study",
-      badgeTr: "Uzun Dönem",
-      badgeAr: "دراسة طويلة الأمد",
-      badgeUk: "Довгострокове навчання",
       price: "€49",
       periodEn: "6-Month Full Access",
       periodTr: "6 Ay Boyunca Tam Erişim",
@@ -382,33 +391,37 @@ Ali`,
       creditsAr: "100 رصيد لتقييم الرسائل بالذكاء الاصطناعي",
       creditsUk: "100 кредитів оцінювання листів ШІ",
       featuresEn: [
-        "Everything in Citizenship Pass",
+        "Everything in Standard Pro Pass",
         "100 AI Letter Evaluations",
         "B2/C1 Decks Preview Access",
-        "Dedicated Email Support"
+        "Priority AI Processing Queue",
+        "Dedicated VIP Email Support"
       ],
       featuresTr: [
-        "Vatandaşlık Paketindeki her şey",
+        "Standart Pro Karttaki her şey",
         "100 Yapay Zeka Mektup Değerlendirmesi",
         "B2/C1 Deste Önizleme Erişimi",
-        "Öncelikli E-Posta Desteği"
+        "Öncelikli Yapay Zeka Sırası",
+        "Öncelikli VIP E-Posta Desteği"
       ],
       featuresAr: [
-        "جميع مزايا باقة التجنيس",
+        "جميع مزايا الباقة القياسية",
         "100 تقييم للرسائل بالذكاء الاصطناعي",
         "وصول استعراضي لمجموعات B2/C1",
-        "دعم مباشر عبر البريد الإلكتروني"
+        "معالجة سريعة ذات أولوية بالذكاء الاصطناعي",
+        "دعم مباشر ذو أولوية عبر البريد الإلكتروني"
       ],
       featuresUk: [
-        "Усе, що в пакеті для громадянства",
+        "Усе, що в стандартному абонементі",
         "100 перевірок листів штучним інтелектом",
         "Доступ до попереднього перегляду колод B2/C1",
-        "Пряма підтримка електронною поштою"
+        "Пріоритетна черга обробки запитів",
+        "Пряма VIP-підтримка електронною поштою"
       ],
-      ctaTextEn: "Get 6-Month Pass",
-      ctaTextTr: "6 Aylık Paketi Al",
-      ctaTextAr: "الحصول على باقة 6 أشهر",
-      ctaTextUk: "Отримати абонемент на 6 місяців"
+      ctaTextEn: "Get Intensive Pass",
+      ctaTextTr: "Kapsamlı Paketi Al",
+      ctaTextAr: "الحصول على الباقة المكثفة",
+      ctaTextUk: "Отримати інтенсивний абонемент"
     }
   ]
 };

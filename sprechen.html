@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🗣️ Mündliche Prüfung Studio & Audio Grader — telc Deutsch B1 / B2 | DeutschLernen</title>
+  <meta name="description" content="Interaktives Audio-Prüfungsstudio für die mündliche telc B1/B2 Prüfung (Sprechen). Echte Mikrofon-Sprachaufnahme, Web Speech API Transkription, Leitpunkte-Kontrolle und KI-Rubrikbewertung.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Sprechen Studio Styles -->
+  <link rel="stylesheet" href="css/sprechen.css">
+</head>
+<body class="sp-body">
+
+  <div class="sp-container">
+
+    <!-- Top Navigation Bar -->
+    <header class="sp-top-bar">
+      <div class="sp-brand-group">
+        <div class="sp-brand-icon">🎙️</div>
+        <div>
+          <h1 class="sp-brand-title">Sprechen Studio & Audio Grader</h1>
+          <p class="sp-brand-subtitle">telc Deutsch B1 / B2 Mündliche Prüfung • Sesli Sınav Kayıt & Kontrol Sistemi</p>
+        </div>
+      </div>
+      <nav class="sp-nav-links">
+        <a href="index.html" class="sp-nav-link">🏠 Hauptportal (Ana Sayfa)</a>
+        <a href="trainer.html" class="sp-nav-link">⚡ Wortschatz Trainer</a>
+        <a href="legal.html" class="sp-nav-link">⚖️ Impressum & Datenschutz</a>
+      </nav>
+    </header>
+
+    <!-- Oral Exam Part Tabs -->
+    <nav class="sp-part-tabs" aria-label="Prüfungsteile">
+      <button type="button" class="part-tab-btn" data-part="teil1" id="tab-btn-teil1">
+        <span>🗣️ Teil 1:</span> Sich vorstellen (Tanışma)
+      </button>
+      <button type="button" class="part-tab-btn" data-part="teil2" id="tab-btn-teil2">
+        <span>📊 Teil 2:</span> Thema präsentieren (Sunum)
+      </button>
+      <button type="button" class="part-tab-btn active" data-part="teil3" id="tab-btn-teil3">
+        <span>🤝 Teil 3:</span> Gemeinsam planen (Planlama)
+      </button>
+      <button type="button" class="part-tab-btn" data-part="freies_sprechen" id="tab-btn-free">
+        <span>🎙️ Freies Sprechen</span> (Serbest Konuşma)
+      </button>
+    </nav>
+
+    <!-- Main Speaking Task Card -->
+    <section class="sp-card" id="speaking-prompt-card">
+      <div class="sp-card-header">
+        <span class="sp-badge">Offizielle Prüfungsaufgabe (Resmi Sınav Yönergesi)</span>
+        <select id="topic-select" class="sp-select" aria-label="Thema auswählen"></select>
+      </div>
+
+      <h2 class="topic-title" id="topic-title">Thema wird geladen...</h2>
+      <div class="topic-desc" id="topic-desc"></div>
+
+      <!-- Leitpunkte (Rubric Targets) Checklist -->
+      <div class="leitpunkte-section">
+        <div class="leitpunkte-title">
+          <span>🎯 Geforderte Leitpunkte (Değinilmesi Gereken Noktalar):</span>
+        </div>
+        <div class="leitpunkte-grid" id="leitpunkte-list"></div>
+      </div>
+    </section>
+
+    <!-- Hardware Recording & Audio Visualizer Bar -->
+    <section class="sp-card recording-bar-card">
+      <div class="rec-btn-wrapper">
+        <button type="button" class="btn-record-main" id="btn-toggle-record" title="Aufnahme starten / stoppen (Taste R)">
+          <span id="record-btn-icon">🎙️</span>
+        </button>
+      </div>
+
+      <div class="rec-action-label" id="record-btn-text">Antwort einsprechen (Start)</div>
+      
+      <div class="rec-meta-row">
+        <div class="recording-timer" id="recording-timer">0:00</div>
+        
+        <!-- Live Audio Waveform (VU-Meter) -->
+        <div class="audio-wave-visualizer" id="audio-wave-visualizer" title="Echtzeit-Pegelanzeige (Mikrofon)">
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+        </div>
+
+        <div class="rec-status-badge" id="recording-status-badge">Bereit zur Aufnahme</div>
+      </div>
+
+      <!-- Secondary Controls & Diagnostics -->
+      <div class="rec-controls-sub">
+        <button type="button" class="lang-toggle-btn active" id="btn-lang-de">🇩🇪 Deutsch (de-DE)</button>
+        <button type="button" class="lang-toggle-btn" id="btn-lang-tr">🇹🇷 Türkçe (tr-TR)</button>
+        <button type="button" class="btn-secondary-tool" id="btn-toggle-diag">⚙️ Mikrofon Diagnose & Geräte</button>
+      </div>
+
+      <!-- Diagnostics Panel -->
+      <div class="diag-panel" id="mic-diag-panel" style="display: none;">
+        <div class="diag-title">
+          <span>🔧 Hardware & Spracherkennungs-Diagnose</span>
+          <small style="color:var(--sp-text-muted); font-size:11px;">Echtzeit-Hardware-Check</small>
+        </div>
+        <div class="diag-row">
+          <span>Web Speech API:</span>
+          <span class="diag-status" id="diag-speech-status">Wird geprüft...</span>
+        </div>
+        <div class="diag-row">
+          <span>Mikrofon-Berechtigung:</span>
+          <span class="diag-status" id="diag-perm-status">Wird geprüft...</span>
+        </div>
+        <div class="diag-row">
+          <span>Aktives Eingabegerät:</span>
+          <span id="diag-device-name" style="font-weight:600;">Standard</span>
+        </div>
+        <div class="diag-row">
+          <span>Gerät wechseln:</span>
+          <select id="diag-device-select" class="sp-select" style="font-size:11px; padding:4px 8px;"></select>
+        </div>
+        <div class="diag-row">
+          <span>Live Eingangspegel (VU):</span>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <div class="diag-vu-track">
+              <div class="diag-vu-fill" id="diag-vu-fill"></div>
+            </div>
+            <span id="diag-vu-label" style="font-family:monospace; font-size:11px; width:28px;">0%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transcribed Text Editor -->
+    <section class="sp-card transcript-card">
+      <div class="transcript-header">
+        <h3 style="margin:0; font-size:16px; font-weight:700;">✍️ Gesprochener Text & Transkription</h3>
+        <button type="button" class="btn-secondary-tool" id="btn-clear-transcript">🗑️ Text leeren</button>
+      </div>
+      <textarea id="spoken-transcript-input" class="transcript-textarea" placeholder="Sprechen Sie frei Ihre Antwort ein oder tippen / korrigieren Sie hier Ihre Stichpunkte..."></textarea>
+      
+      <!-- Audio Playback Box -->
+      <div class="playback-card" id="audio-playback-card">
+        <div class="playback-inner">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <span style="font-size:20px;">🎧</span>
+            <div>
+              <strong style="display:block; font-size:13px;">Ihre Original-Sprachaufnahme</strong>
+              <small style="color:var(--sp-text-muted); font-size:11px;">Hören Sie Ihre eigene Aussprache zur Selbstkontrolle an</small>
+            </div>
+          </div>
+          <audio id="audio-playback-elem" controls></audio>
+          <a id="btn-download-audio" class="btn-download-audio" download="telc_b1_sprechen.webm" href="#">⬇️ Audio (.webm) herunterladen</a>
+        </div>
+      </div>
+
+      <div class="transcript-actions">
+        <span style="font-size:12px; color:var(--sp-text-muted);">💡 Tipp: Nutzen Sie typische B1-Redemittel wie <em>"Ich schlage vor..."</em> oder <em>"Meiner Meinung nach..."</em>.</span>
+        <button type="button" class="btn-primary-action" id="btn-evaluate-speech">
+          <span>🎯 Antwort jetzt prüfen & bewerten</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Examination Evaluation Card (Hidden by default, revealed on evaluate) -->
+    <section class="sp-card eval-card" id="evaluation-result-card">
+      <div class="eval-top-row">
+        <div>
+          <span class="sp-badge" style="background:rgba(16,185,129,0.15); color:#34d399; border-color:rgba(16,185,129,0.3);">telc B1 Prüferbericht (Sınav Değerlendirmesi)</span>
+          <div class="eval-score-block" style="margin-top:8px;">
+            <span class="score-number" id="score-total-val">0</span>
+            <span class="score-max">/ 100 Punkte</span>
+          </div>
+        </div>
+        <div class="eval-pass-badge" id="eval-pass-badge">BESTANDEN</div>
+      </div>
+
+      <!-- 4 Core telc B1 Criteria -->
+      <div class="criteria-grid">
+        <div class="crit-card">
+          <div class="crit-name">1. Aufgabengerechtheit (Leitpunkte)</div>
+          <div class="crit-val" id="score-aufgabe">0 / 25</div>
+        </div>
+        <div class="crit-card">
+          <div class="crit-name">2. Redemittel & Struktur (Konnektoren)</div>
+          <div class="crit-val" id="score-struktur">0 / 25</div>
+        </div>
+        <div class="crit-card">
+          <div class="crit-name">3. Wortschatz (Lexikalische Vielfalt)</div>
+          <div class="crit-val" id="score-wortschatz">0 / 25</div>
+        </div>
+        <div class="crit-card">
+          <div class="crit-name">4. Flüssigkeit & Gesamteindruck</div>
+          <div class="crit-val" id="score-fluss">0 / 25</div>
+        </div>
+      </div>
+
+      <!-- Official Examiner Verdict -->
+      <div class="eval-verdict-box" id="eval-verdict-text"></div>
+
+      <!-- Tag Breakdowns -->
+      <div class="eval-tags-group">
+        <div class="eval-tags-label">✓ Abgedeckte Prüfungspunkte (Leitpunkte):</div>
+        <div class="eval-tags-wrap" id="eval-covered-tags"></div>
+      </div>
+
+      <div class="eval-tags-group">
+        <div class="eval-tags-label">⚠️ Ausgelassene Punkte (Fehlende Aspekte):</div>
+        <div class="eval-tags-wrap" id="eval-missed-tags"></div>
+      </div>
+
+      <div class="eval-tags-group">
+        <div class="eval-tags-label">🔗 Erkannte B1 / B2 Konnektoren (Redemittel):</div>
+        <div class="eval-tags-wrap" id="eval-redemittel-tags"></div>
+      </div>
+    </section>
+
+    <!-- Examination History -->
+    <section class="sp-card history-card-section">
+      <div class="history-section-header">
+        <h3 style="margin:0; font-size:17px; font-weight:700;">📜 Aufgenommene Prüfungsversuche & Historie</h3>
+        <button type="button" class="btn-secondary-tool" id="btn-clear-history">Historie leeren</button>
+      </div>
+      <div id="exam-history-list"></div>
+    </section>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/voiceExamEngine.js"></script>
+  <script src="js/sprechenApp.js"></script>
+</body>
+</html>

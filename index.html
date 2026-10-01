@@ -47,13 +47,13 @@
     },
     {
       "@type": "Offer",
-      "name": "Citizenship Pass",
-      "price": "39.00",
+      "name": "BAMF Einbürgerungstest & Free Public Access",
+      "price": "0",
       "priceCurrency": "EUR"
     },
     {
       "@type": "Offer",
-      "name": "Extended Pass",
+      "name": "Intensive All-Access Pass",
       "price": "49.00",
       "priceCurrency": "EUR"
     }
@@ -215,6 +215,9 @@
         <button class="btn-sm-goal" onclick="openGoalModal()">
           <span data-en="Switch Goal / Level" data-tr="Hedef / Seviye Değiştir" data-ar="تغيير الهدف / المستوى" data-uk="Змінити ціль / рівень">Switch Goal / Level</span>
         </button>
+        <a href="sprechen.html" class="btn-sm-trainer" id="hero-goal-sprechen-link" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); border-color: rgba(96, 165, 250, 0.6); color: #fff;">
+          <span data-en="🎙️ Oral Exam Studio →" data-tr="🎙️ Sesli Sınav Stüdyosu →" data-ar="🎙️ استوديو الامتحان الشفوي ←" data-uk="🎙️ Студія усного іспиту →">🎙️ Oral Exam Studio →</span>
+        </a>
         <a href="trainer.html" class="btn-sm-trainer" id="hero-goal-trainer-link">
           <span data-en="⚡ Start Vocab Drill →" data-tr="⚡ Kelime Antrenmanı →" data-ar="⚡ بدء تدريب المفردات ←" data-uk="⚡ Почати тренування слів →">⚡ Start Vocab Drill →</span>
         </a>
@@ -582,9 +585,14 @@
           <h2 data-en="Writing & Speaking Examiner Suite" data-tr="Yazma ve Konuşma Değerlendirme Paketi" data-ar="باقة تقييم الكتابة والمحادثة" data-uk="Комплекс оцінювання письма та мовлення">Writing & Speaking Examiner Suite</h2>
           <p data-en="Review official examiner report with rubrics, grade practice letters with AI, or simulate the Teil 3 oral exam." data-tr="Kriterli resmi sınav değerlendirme raporunu inceleyin, mektuplarınızı yapay zeka ile puanlayın veya Teil 3 sözlü sınav simülasyonunu deneyin." data-ar="راجع تقرير الفاحص الرسمي مع معايير التقييم، أو قم بتصحيح رسائلك بالذكاء الاصطناعي، أو حاكِ الامتحان الشفوي." data-uk="Перегляньте офіційний звіт екзаменатора з критеріями, оцінюйте листи за допомогою ШІ або тренуйте усний іспит.">Review official examiner report with rubrics, grade practice letters with AI, or simulate the Teil 3 oral exam.</p>
         </div>
-        <button class="card-link primary" id="btn-toggle-showcase" onclick="toggleSchreibenShowcase()" style="padding:10px 20px; font-size:14px; font-weight:700; border-radius:10px; display:inline-flex; align-items:center; gap:8px;">
-          <span id="showcase-toggle-text" data-en="📝 Open Examiner Suite ▼" data-tr="📝 Değerlendirme Paketini Aç ▼" data-ar="📝 فتح باقة التقييم ▼" data-uk="📝 Відкрити комплекс оцінювання ▼">📝 Open Examiner Suite ▼</span>
-        </button>
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+          <a href="sprechen.html" class="card-link" style="padding:10px 18px; font-size:14px; font-weight:700; border-radius:10px; display:inline-flex; align-items:center; gap:8px; text-decoration:none; background:linear-gradient(135deg,#2563eb,#1d4ed8); color:#fff; border:1px solid rgba(96,165,250,0.4); box-shadow:0 4px 14px rgba(37,99,235,0.3);">
+            <span>🎙️ <span data-en="Launch Voice Studio ↗" data-tr="Sesli Sınav Stüdyosu ↗" data-ar="فتح استوديو الصوت ↗" data-uk="Запустити голосову студію ↗">Launch Voice Studio ↗</span></span>
+          </a>
+          <button class="card-link primary" id="btn-toggle-showcase" onclick="toggleSchreibenShowcase()" style="padding:10px 20px; font-size:14px; font-weight:700; border-radius:10px; display:inline-flex; align-items:center; gap:8px;">
+            <span id="showcase-toggle-text" data-en="📝 Open Examiner Suite ▼" data-tr="📝 Değerlendirme Paketini Aç ▼" data-ar="📝 فتح باقة التقييم ▼" data-uk="📝 Відкрити комплекс оцінювання ▼">📝 Open Examiner Suite ▼</span>
+          </button>
+        </div>
       </div>
 
       <!-- Collapsible Container for Suite -->
@@ -596,6 +604,28 @@
 
     <!-- Dedicated Track View: Leben in Deutschland (LiD 310) -->
     <div id="track-view-lid" class="track-view" style="display: none;">
+      <!-- Free Traffic Magnet & B1 Cross-Sell Hero Banner -->
+      <div class="lid-free-traffic-hero" style="background:linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(15, 23, 42, 0.8) 100%); border:1px solid rgba(16, 185, 129, 0.4); border-radius:16px; padding:22px 24px; margin-bottom:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+        <div style="max-width:720px;">
+          <div style="display:inline-flex; align-items:center; gap:6px; background:#10b981; color:#ffffff; font-size:11px; font-weight:800; padding:2px 10px; border-radius:12px; margin-bottom:10px; text-transform:uppercase;">
+            🎉 100% KOSTENLOS & WERBEFREI &bull; BAMF EINBÜRGERUNGSTEST 2026
+          </div>
+          <h2 style="margin:0 0 8px 0; font-size:22px; color:var(--text-primary);">Leben in Deutschland (LiD 310) — Für immer kostenlos</h2>
+          <p style="margin:0 0 10px 0; font-size:13px; color:var(--text-secondary); line-height:1.6;">
+            Alle 310 offiziellen BAMF-Fragen (300 Allgemein + 160 für alle 16 Bundesländer), 33-Fragen Prüfungssimulation mit Timer und 4-sprachige Übersetzungen (DE, TR, AR, UK) stehen allen Zuwanderern komplett kostenlos und werbefrei zur Verfügung.
+          </p>
+          <div style="font-size:12px; color:var(--accent-gold); font-weight:600;">
+            🎓 <em>Wichtig für deinen deutschen Pass:</em> Neben dem LiD-Test ist das <strong>telc Deutsch B1 Zertifikat</strong> gesetzlich vorgeschrieben (§ 10 StAG). Sichere dein Bestehen im Prüfungsteil Schreiben mit unserem KI-Briefkorrektor:
+            <a href="javascript:void(0)" onclick="navigateToSection('schreiben-showcase-section', 'b1')" style="color:var(--accent-gold); text-decoration:underline; font-weight:700; margin-left:4px;">Zum telc B1 Schreib-Trainer →</a>
+          </div>
+        </div>
+        <div>
+          <button type="button" class="cta-btn-primary" onclick="if(window.startLiDExamSimulation){window.startLiDExamSimulation();} else { document.getElementById('lid-trainer-container')?.scrollIntoView({behavior:'smooth'}); }" style="padding:12px 22px; font-weight:800; font-size:14px; background:linear-gradient(135deg, #10b981 0%, #059669 100%); border:none; border-radius:10px; color:#ffffff; cursor:pointer;">
+            ⏱️ Simulation starten
+          </button>
+        </div>
+      </div>
+
       <!-- Leben in Deutschland (LiD 310) Citizenship Section -->
       <div class="section" id="lid-trainer-section" style="animation-delay:0.08s; margin-bottom: 40px;">
         <div id="lid-trainer-container"></div>

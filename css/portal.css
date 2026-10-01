@@ -1986,19 +1986,89 @@ td strong, td b { color: var(--text-primary); }
   transform: translateY(-1px);
 }
 
+/* Free Tier Styling in Pricing Grids */
+.pricing-tier-card.free-tier {
+  border-color: rgba(16, 185, 129, 0.5);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.12);
+  background: linear-gradient(180deg, rgba(16, 185, 129, 0.04) 0%, var(--bg-primary) 100%);
+}
+.pricing-tier-card.free-tier:hover {
+  border-color: #10b981;
+  box-shadow: 0 12px 32px rgba(16, 185, 129, 0.22);
+}
+.tier-badge.free-badge {
+  background: #10b981;
+  color: #ffffff;
+}
+.tier-credits.free-credits {
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.12);
+}
+.tier-cta-btn.free-cta-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  border: none;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+}
+.tier-cta-btn.free-cta-btn:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+  transform: translateY(-1px);
+}
+
 /* Pay Method Buttons in Checkout */
+.payment-methods-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+@media (max-width: 680px) {
+  .payment-methods-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .pay-method-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 6px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  text-align: center;
+  gap: 3px;
+  min-height: 72px;
   transition: all 0.18s ease;
   cursor: pointer;
 }
 .pay-method-btn:hover {
   border-color: var(--accent-gold) !important;
   background: var(--bg-card-hover) !important;
+  transform: translateY(-1px);
 }
 .pay-method-btn.active {
   border: 2px solid var(--accent-gold) !important;
   background: rgba(245, 158, 11, 0.08) !important;
   color: var(--text-primary) !important;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.15);
+}
+.pay-method-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+.pay-method-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.pay-method-sub {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-weight: 500;
 }
 
 /* Dynamic Payment Method Panels */
@@ -2007,8 +2077,8 @@ td strong, td b { color: var(--text-primary); }
   animation: fadeIn 0.25s ease-out;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 16px;
+  border-radius: 12px;
+  padding: 18px;
   margin-bottom: 16px;
 }
 .pay-method-panel.active {
@@ -2033,7 +2103,7 @@ td strong, td b { color: var(--text-primary); }
 }
 .pay-input-group input {
   width: 100%;
-  padding: 9px 12px;
+  padding: 10px 12px;
   background: var(--bg-primary);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -2045,6 +2115,7 @@ td strong, td b { color: var(--text-primary); }
 .pay-input-group input:focus {
   outline: none;
   border-color: var(--accent-gold);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
 }
 
 /* Digital Invoice & Receipt Card */

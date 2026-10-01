@@ -37,6 +37,13 @@
       "description": "Open study guide, grammar, and mock exams",
       "url": "./index.html",
       "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Sprechen Studio",
+      "short_name": "Sprechen",
+      "description": "Oral exam voice recording and live rubric grading studio",
+      "url": "./sprechen.html",
+      "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }]
     }
   ]
 }

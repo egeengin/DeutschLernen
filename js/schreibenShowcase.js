@@ -2093,7 +2093,7 @@ function openProPricingModal() {
         </button>
       </div>
 
-      <!-- 4 Tiers Grid -->
+      <!-- Pricing Tiers Grid -->
       <div class="pricing-tiers-grid">
         ${tiers.map(tier => {
           const name = tier['name' + langKey] || tier.nameEn;
@@ -2102,23 +2102,30 @@ function openProPricingModal() {
           const credits = tier['credits' + langKey] || tier.creditsEn;
           const features = tier['features' + langKey] || tier.featuresEn;
           const ctaText = tier['ctaText' + langKey] || tier.ctaTextEn;
-          const isFeatured = tier.id === 'citizenship' || tier.id === 'standard';
+          const isFeatured = tier.id === 'standard';
+          const isFree = tier.isFree || tier.id === 'free_lid';
 
           return `
-            <div class="pricing-tier-card ${tier.id === 'citizenship' ? 'featured' : ''}">
-              ${badge ? `<div class="tier-badge">${badge}</div>` : ''}
+            <div class="pricing-tier-card ${tier.id === 'standard' ? 'featured' : ''} ${isFree ? 'free-tier' : ''}">
+              ${badge ? `<div class="tier-badge ${isFree ? 'free-badge' : ''}">${badge}</div>` : ''}
               <h3 class="tier-name">${name}</h3>
               <div class="tier-price">
                 <span class="amount">${tier.price}</span>
                 <span class="period">/ ${period}</span>
               </div>
-              <div class="tier-credits">⚡ ${credits}</div>
+              <div class="tier-credits ${isFree ? 'free-credits' : ''}">⚡ ${credits}</div>
               <ul class="tier-features">
                 ${features.map(f => `<li>✓ ${f}</li>`).join('')}
               </ul>
-              <button class="tier-cta-btn ${isFeatured ? 'featured' : ''}" onclick="selectProPlan('${tier.id}')">
-                ${ctaText}
-              </button>
+              ${isFree ? `
+                <button class="tier-cta-btn free-cta-btn" onclick="closeProPricingModal(); if(typeof navigateToSection==='function'){navigateToSection('lid-trainer-section','lid');} else { window.location.hash='#lid'; }">
+                  ${ctaText}
+                </button>
+              ` : `
+                <button class="tier-cta-btn ${isFeatured ? 'featured' : ''}" onclick="selectProPlan('${tier.id}')">
+                  ${ctaText}
+                </button>
+              `}
             </div>
           `;
         }).join('')}
@@ -2126,12 +2133,13 @@ function openProPricingModal() {
 
       <!-- Trust Badges & Supported Payment Methods -->
       <div class="pricing-trust-footer" style="margin-top:20px; padding-top:16px; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; font-size:12px; color:var(--text-muted);">
-        <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
           <span><strong>Accepted Payments:</strong></span>
-          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">💳 Visa / Mastercard</span>
-          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🅿️ PayPal</span>
-          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🏦 SEPA / Klarna</span>
-          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🍏 Apple / Google Pay</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">💳 Visa / Mastercard / Amex</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🅿️ PayPal & Später zahlen</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🍏 Apple Pay / GPay</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🛍️ Klarna / Sofort</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🏦 SEPA-Lastschrift</span>
         </div>
         <div style="display:flex; align-items:center; gap:8px;">
           <span>🛡️ 30-Day Money-Back Guarantee</span>
@@ -2153,6 +2161,8 @@ function closeProPricingModal() {
 function switchPaymentMethod(method) {
   const modal = document.getElementById('pro-pricing-modal');
   if (!modal) return;
+  window._selectedPaymentMethod = method;
+
   const buttons = modal.querySelectorAll('.pay-method-btn');
   buttons.forEach(btn => {
     if (btn.getAttribute('data-method') === method) {
@@ -2169,6 +2179,45 @@ function switchPaymentMethod(method) {
       p.classList.remove('active');
     }
   });
+
+  const submitBtn = modal.querySelector('#checkout-submit-btn');
+  if (submitBtn) {
+    const tierId = window._currentCheckoutTierId || 'standard';
+    const tiers = SAMPLE_B1_EVALUATION.pricingTiers;
+    const tier = tiers.find(t => t.id === tierId) || { price: '€29' };
+    const labels = {
+      card: `🔒 Mit Karte zahlen (${tier.price}) →`,
+      paypal: `🅿️ Mit PayPal abschließen (${tier.price}) →`,
+      applepay: `🍏 Mit Apple Pay zahlen (${tier.price}) →`,
+      klarna: `🛍️ Über Klarna fortfahren (${tier.price}) →`,
+      sepa: `🏦 SEPA-Lastschrift autorisieren (${tier.price}) →`,
+      instant: `⚡ Sofort freischalten (${tier.price}) →`
+    };
+    submitBtn.textContent = labels[method] || `🔒 Jetzt sicher bestellen (${tier.price}) →`;
+  }
+}
+
+function formatCardInput(input) {
+  let val = input.value.replace(/\D/g, '').substring(0, 16);
+  let formatted = val.replace(/(.{4})/g, '$1 ').trim();
+  input.value = formatted;
+  const preview = document.getElementById('card-preview-number');
+  if (preview) {
+    preview.textContent = formatted || '•••• •••• •••• 4242';
+  }
+}
+
+function formatExpiryInput(input) {
+  let val = input.value.replace(/\D/g, '').substring(0, 4);
+  if (val.length >= 2) {
+    input.value = val.substring(0, 2) + '/' + val.substring(2);
+  } else {
+    input.value = val;
+  }
+  const preview = document.getElementById('card-preview-expiry');
+  if (preview) {
+    preview.textContent = input.value || '12/28';
+  }
 }
 
 /**
@@ -2182,8 +2231,24 @@ function selectProPlan(planId) {
     modal.className = 'modal-overlay';
     document.body.appendChild(modal);
   }
+
+  // Handle Free LiD tier directly
+  if (planId === 'free_lid') {
+    closeProPricingModal();
+    if (typeof navigateToSection === 'function') {
+      navigateToSection('lid-trainer-section', 'lid');
+    } else {
+      window.location.hash = '#lid';
+    }
+    return;
+  }
+
   const tiers = SAMPLE_B1_EVALUATION.pricingTiers;
-  const tier = tiers.find(t => t.id === planId) || tiers[0];
+  // Match tier or fallback
+  let tier = tiers.find(t => t.id === planId);
+  if (!tier) {
+    tier = tiers.find(t => t.id === 'standard') || tiers[1] || tiers[0];
+  }
   const lang = getActiveLanguage();
   const langKey = lang.charAt(0).toUpperCase() + lang.slice(1);
   const isAr = lang === 'ar';
@@ -2191,6 +2256,9 @@ function selectProPlan(planId) {
   const name = tier['name' + langKey] || tier.nameEn;
   const period = tier['period' + langKey] || tier.periodEn;
   const credits = tier['credits' + langKey] || tier.creditsEn;
+
+  window._currentCheckoutTierId = tier.id;
+  window._selectedPaymentMethod = 'card';
 
   modal.innerHTML = `
     <div class="modal-card pricing-modal-card checkout-modal-card" ${isAr ? 'dir="rtl"' : 'dir="ltr"'}>
@@ -2204,124 +2272,245 @@ function selectProPlan(planId) {
         <p>You are unlocking <strong>${name}</strong> (${tier.price} &bull; ${credits})</p>
       </div>
 
-      <div class="checkout-layout" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px; margin-top:20px;">
+      <div class="checkout-layout">
         <!-- Left: Order Summary & Guarantee -->
-        <div class="checkout-summary-box" style="background:var(--bg-primary); border:1px solid var(--border); border-radius:12px; padding:22px;">
-          <h4 style="margin-top:0; margin-bottom:12px; font-size:16px; color:var(--text-primary);">Order Summary</h4>
-          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;">
-            <span style="color:var(--text-secondary); font-size:14px;">${name} (${period})</span>
-            <strong style="color:var(--text-primary); font-size:22px;">${tier.price}</strong>
+        <div class="checkout-summary-box">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <h4 style="margin:0; font-size:16px; color:var(--text-primary);">Order Summary</h4>
+            <span style="font-size:11px; font-weight:800; background:rgba(16,185,129,0.15); color:#10b981; padding:2px 8px; border-radius:6px; text-transform:uppercase;">Einmalzahlung</span>
           </div>
-          <div style="font-size:13px; color:var(--accent-gold); font-weight:700; margin-bottom:14px;">
-            ⚡ ${credits} Included
+
+          <div class="checkout-summary-plan-details" style="background:var(--bg-card); border:1px solid var(--border); border-radius:10px; padding:14px; margin-bottom:14px;">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
+              <span style="color:var(--text-primary); font-size:14px; font-weight:700;">${name}</span>
+              <strong style="color:var(--text-primary); font-size:22px;">${tier.price}</strong>
+            </div>
+            <div style="font-size:12px; color:var(--text-muted); margin-bottom:8px;">
+              ${period}
+            </div>
+            <div style="font-size:12px; color:var(--accent-gold); font-weight:700;">
+              ⚡ ${credits} Included
+            </div>
           </div>
-          <ul style="list-style:none; padding:0; margin:0 0 16px 0; font-size:12px; color:var(--text-secondary); line-height:1.9;">
-            <li>✓ One-time single payment (No automatic renewal / recurring charges)</li>
-            <li>✓ Full access to all 310 BAMF LiD & B1 study materials</li>
-            <li>✓ Instant activation with zero waiting period</li>
-            <li>✓ 30-Day Money-Back & telc B1 Pass Guarantee</li>
+
+          <!-- Price Calculation Lines -->
+          <div style="font-size:12px; color:var(--text-secondary); margin-bottom:14px; border-bottom:1px solid var(--border); padding-bottom:10px;">
+            <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+              <span>Zwischensumme / Subtotal:</span>
+              <span>${tier.price}</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; color:var(--text-muted);">
+              <span>MwSt. / VAT (0% gem. § 19 UStG):</span>
+              <span>€0.00</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; margin-top:6px; font-weight:800; font-size:14px; color:var(--text-primary);">
+              <span>Gesamtbetrag / Total:</span>
+              <span style="color:var(--accent-gold);">${tier.price}</span>
+            </div>
+          </div>
+
+          <ul class="checkout-guarantees-list" style="list-style:none; padding:0; margin:0 0 16px 0; font-size:12px; color:var(--text-secondary); line-height:1.9;">
+            <li>✓ <strong>Keine Abo-Falle:</strong> Einmalige Zahlung, keine automatische Verlängerung</li>
+            <li>✓ <strong>Sofort-Aktivierung:</strong> In 10 Sekunden einsatzbereit</li>
+            <li>✓ <strong>Voller Zugriff:</strong> Alle B1-Prüfungsthemen & Fehlerkorrekturen</li>
+            <li>✓ <strong>30-Tage Geld-zurück-Garantie:</strong> 100% risikofrei testen</li>
           </ul>
-          <div style="font-size:11px; color:var(--text-muted); border-top:1px solid var(--border); padding-top:10px;">
-            Gemäß § 19 UStG wird keine MwSt. gesondert ausgewiesen (Kleinunternehmerregelung). Official printable invoice provided immediately upon order.
+
+          <div style="font-size:11px; color:var(--text-muted); border-top:1px solid var(--border); padding-top:10px; line-height:1.5;">
+            Gemäß § 19 UStG wird keine MwSt. gesondert ausgewiesen (Kleinunternehmerregelung). Offizieller, steuerlich anerkannter Zahlungsbeleg wird sofort nach Kauf als PDF bereitgestellt.
           </div>
         </div>
 
-        <!-- Right: Payment Methods & Actions -->
-        <div class="checkout-payment-box" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <!-- Right: Modern Redesigned Payment Methods & Actions -->
+        <div class="checkout-payment-box">
           <div>
-            <label style="font-size:13px; font-weight:700; color:var(--text-primary); display:block; margin-bottom:10px;">
-              Select Payment Method:
-            </label>
-            <div class="payment-methods-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:16px;">
-              <button type="button" class="pay-method-btn active" data-method="card" onclick="switchPaymentMethod('card')" style="padding:10px; border-radius:10px; text-align:center; font-size:12px; font-weight:700;">
-                💳 Card / Apple Pay
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+              <label style="font-size:13px; font-weight:700; color:var(--text-primary); margin:0;">
+                Zahlungsart wählen / Select Payment Method:
+              </label>
+              <span style="font-size:11px; color:#10b981; font-weight:600;">🔒 256-Bit SSL Verschlüsselt</span>
+            </div>
+
+            <!-- Redesigned Payment Grid Tabs -->
+            <div class="payment-methods-grid">
+              <button type="button" class="pay-method-btn active" data-method="card" onclick="switchPaymentMethod('card')">
+                <span class="pay-method-icon">💳</span>
+                <span class="pay-method-title">Kreditkarte</span>
+                <span class="pay-method-sub">Visa • MC • Amex</span>
               </button>
-              <button type="button" class="pay-method-btn" data-method="paypal" onclick="switchPaymentMethod('paypal')" style="padding:10px; border-radius:10px; text-align:center; font-size:12px; font-weight:700; border:1px solid var(--border); background:var(--bg-card); color:var(--text-primary);">
-                🅿️ PayPal
+
+              <button type="button" class="pay-method-btn" data-method="paypal" onclick="switchPaymentMethod('paypal')">
+                <span class="pay-method-icon">🅿️</span>
+                <span class="pay-method-title">PayPal</span>
+                <span class="pay-method-sub">Express & 30 Tage</span>
               </button>
-              <button type="button" class="pay-method-btn" data-method="sepa" onclick="switchPaymentMethod('sepa')" style="padding:10px; border-radius:10px; text-align:center; font-size:12px; font-weight:700; border:1px solid var(--border); background:var(--bg-card); color:var(--text-primary);">
-                🏦 SEPA / Klarna
+
+              <button type="button" class="pay-method-btn" data-method="applepay" onclick="switchPaymentMethod('applepay')">
+                <span class="pay-method-icon">🍏</span>
+                <span class="pay-method-title">Apple / GPay</span>
+                <span class="pay-method-sub">1-Klick Biometrie</span>
               </button>
-              <button type="button" class="pay-method-btn" data-method="instant" onclick="switchPaymentMethod('instant')" style="padding:10px; border-radius:10px; text-align:center; font-size:12px; font-weight:700; border:1px solid var(--border); background:var(--bg-card); color:var(--text-primary);">
-                ⚡ Instant Demo
+
+              <button type="button" class="pay-method-btn" data-method="klarna" onclick="switchPaymentMethod('klarna')">
+                <span class="pay-method-icon">🛍️</span>
+                <span class="pay-method-title">Klarna</span>
+                <span class="pay-method-sub">Sofort / Rechnung</span>
+              </button>
+
+              <button type="button" class="pay-method-btn" data-method="sepa" onclick="switchPaymentMethod('sepa')">
+                <span class="pay-method-icon">🏦</span>
+                <span class="pay-method-title">SEPA-Lastschrift</span>
+                <span class="pay-method-sub">EU-Bankeinzug</span>
+              </button>
+
+              <button type="button" class="pay-method-btn" data-method="instant" onclick="switchPaymentMethod('instant')">
+                <span class="pay-method-icon">⚡</span>
+                <span class="pay-method-title">Sofort-Test</span>
+                <span class="pay-method-sub">Express Simulation</span>
               </button>
             </div>
 
-            <!-- Dynamic Payment Panel 1: Card / Apple Pay -->
+            <!-- Dynamic Payment Panel 1: Card with Interactive Visual Preview -->
             <div id="panel-card" class="pay-method-panel active">
+              <div class="virtual-card-preview" style="background:linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:16px 20px; color:#ffffff; margin-bottom:14px; box-shadow:0 8px 20px rgba(0,0,0,0.3); position:relative; overflow:hidden;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px;">
+                  <span style="font-size:18px; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.4));">💳 CHIP</span>
+                  <span id="card-preview-brand" style="font-size:12px; font-weight:800; letter-spacing:0.1em; color:var(--accent-gold);">VISA / MASTERCARD</span>
+                </div>
+                <div id="card-preview-number" style="font-family:monospace; font-size:16px; letter-spacing:0.18em; margin-bottom:14px; text-shadow:0 2px 4px rgba(0,0,0,0.5);">
+                  •••• •••• •••• 4242
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+                  <div>
+                    <div style="font-size:9px; text-transform:uppercase; color:rgba(255,255,255,0.6); letter-spacing:0.06em;">Karteninhaber / Cardholder</div>
+                    <div id="card-preview-holder" style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em;">MAX MUSTERMANN</div>
+                  </div>
+                  <div style="text-align:right;">
+                    <div style="font-size:9px; text-transform:uppercase; color:rgba(255,255,255,0.6); letter-spacing:0.06em;">Gültig bis / Expiry</div>
+                    <div id="card-preview-expiry" style="font-family:monospace; font-size:12px; font-weight:700;">12/28</div>
+                  </div>
+                </div>
+              </div>
+
               <div class="pay-input-group" style="margin-bottom:10px;">
-                <label for="pay-cardholder">Cardholder Name</label>
-                <input type="text" id="pay-cardholder" placeholder="Max Mustermann">
+                <label for="pay-cardholder">Karteninhaber Name</label>
+                <input type="text" id="pay-cardholder" placeholder="Max Mustermann" oninput="const h = document.getElementById('card-preview-holder'); if(h) h.textContent = this.value || 'MAX MUSTERMANN';">
               </div>
               <div class="pay-input-group" style="margin-bottom:10px;">
-                <label for="pay-cardnumber">Card Number</label>
-                <input type="text" id="pay-cardnumber" placeholder="4242 •••• •••• 4242" maxlength="19">
+                <label for="pay-cardnumber">Kartennummer (16 Ziffern)</label>
+                <input type="text" id="pay-cardnumber" placeholder="4242 •••• •••• 4242" maxlength="19" oninput="formatCardInput(this)">
               </div>
               <div class="pay-input-row">
                 <div class="pay-input-group">
-                  <label for="pay-expiry">Expiry Date</label>
-                  <input type="text" id="pay-expiry" placeholder="MM/YY" maxlength="5">
+                  <label for="pay-expiry">Ablaufdatum (MM/JJ)</label>
+                  <input type="text" id="pay-expiry" placeholder="12/28" maxlength="5" oninput="formatExpiryInput(this)">
                 </div>
                 <div class="pay-input-group">
-                  <label for="pay-cvc">CVC</label>
+                  <label for="pay-cvc">CVC / Prüfziffer</label>
                   <input type="text" id="pay-cvc" placeholder="123" maxlength="4">
                 </div>
               </div>
               <div style="display:flex; align-items:center; gap:8px; margin-top:8px; font-size:11px; color:var(--text-muted);">
-                <span>Express One-Tap:</span>
-                <span style="background:var(--bg-primary); padding:2px 6px; border-radius:4px; border:1px solid var(--border);">🍏 Apple Pay</span>
-                <span style="background:var(--bg-primary); padding:2px 6px; border-radius:4px; border:1px solid var(--border);">GPay</span>
+                <span>🛡️ 3D Secure 2.0 Authentifizierung</span>
+                <span>&bull;</span>
+                <span>PCI-DSS Level 1 zertifiziert</span>
               </div>
             </div>
 
             <!-- Dynamic Payment Panel 2: PayPal -->
             <div id="panel-paypal" class="pay-method-panel">
-              <div style="text-align:center; padding:12px 6px;">
-                <div style="font-size:24px; margin-bottom:6px;">🅿️</div>
-                <div style="font-size:13px; font-weight:700; margin-bottom:4px; color:var(--text-primary);">PayPal Express Checkout</div>
-                <p style="font-size:12px; color:var(--text-secondary); margin-bottom:12px; line-height:1.5;">
-                  Pay securely with your PayPal account or PayPal Pay in 30 Days. Full PayPal Buyer Protection applies.
+              <div style="text-align:center; padding:16px 8px;">
+                <div style="display:inline-flex; align-items:center; justify-content:center; width:48px; height:48px; background:rgba(0, 112, 186, 0.1); border-radius:50%; font-size:24px; margin-bottom:8px;">🅿️</div>
+                <div style="font-size:15px; font-weight:800; margin-bottom:4px; color:var(--text-primary);">PayPal Express Checkout</div>
+                <p style="font-size:12px; color:var(--text-secondary); margin-bottom:14px; line-height:1.5;">
+                  Zahle einfach und sicher mit deinem PayPal-Guthaben, Bankkonto oder Kreditkarte.
                 </p>
-                <div style="display:inline-flex; align-items:center; gap:6px; background:#ffc439; color:#003087; font-weight:800; font-size:13px; padding:8px 18px; border-radius:20px; cursor:pointer;">
-                  <span>Pay with</span> <strong>PayPal</strong>
+                <div style="display:flex; flex-direction:column; gap:8px; max-width:320px; margin:0 auto 12px;">
+                  <button type="button" onclick="confirmInstantDemoOrder('${tier.id}', 'PayPal')" style="background:#ffc439; color:#003087; font-weight:800; font-size:14px; padding:12px 20px; border-radius:24px; border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:6px; box-shadow:0 2px 6px rgba(0,0,0,0.15);">
+                    <span>Pay with</span> <strong style="font-family:sans-serif;">PayPal</strong>
+                  </button>
+                  <button type="button" onclick="confirmInstantDemoOrder('${tier.id}', 'PayPal Später Bezahlen')" style="background:#ffffff; color:#003087; border:1px solid #d1d5db; font-weight:700; font-size:12px; padding:9px 16px; border-radius:20px; cursor:pointer;">
+                    💳 Später bezahlen in 30 Tagen (0% Zinsen)
+                  </button>
+                </div>
+                <div style="font-size:11px; color:#10b981; font-weight:600;">
+                  🛡️ Voller PayPal Käuferschutz & Geld-zurück-Garantie
                 </div>
               </div>
             </div>
 
-            <!-- Dynamic Payment Panel 3: SEPA / Klarna -->
-            <div id="panel-sepa" class="pay-method-panel">
-              <div class="pay-input-group" style="margin-bottom:10px;">
-                <label for="pay-sepa-name">Account Holder Name</label>
-                <input type="text" id="pay-sepa-name" placeholder="Max Mustermann">
-              </div>
-              <div class="pay-input-group" style="margin-bottom:10px;">
-                <label for="pay-sepa-iban">IBAN</label>
-                <input type="text" id="pay-sepa-iban" placeholder="DE89 3704 0044 0532 0130 00">
-              </div>
-              <div style="font-size:11px; color:var(--text-muted); line-height:1.4;">
-                🔒 SEPA Core Direct Debit / Sofort by Klarna. Encrypted directly via EU banking standards.
+            <!-- Dynamic Payment Panel 3: Apple Pay / Google Pay -->
+            <div id="panel-applepay" class="pay-method-panel">
+              <div style="text-align:center; padding:16px 8px;">
+                <div style="font-size:36px; margin-bottom:6px;">🍏</div>
+                <div style="font-size:15px; font-weight:800; margin-bottom:4px; color:var(--text-primary);">Apple Pay & Google Pay</div>
+                <p style="font-size:12px; color:var(--text-secondary); margin-bottom:14px; line-height:1.5;">
+                  Sekundenschnelle Bezahlung über deine im Gerät hinterlegte Standardkarte mit Touch ID oder Face ID.
+                </p>
+                <button type="button" onclick="confirmInstantDemoOrder('${tier.id}', 'Apple Pay')" style="background:#000000; color:#ffffff; font-weight:700; font-size:15px; padding:12px 28px; border-radius:24px; border:1px solid rgba(255,255,255,0.2); cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 4px 12px rgba(0,0,0,0.3);">
+                  <span>Pay / GPay Ein-Klick-Zahlung</span>
+                </button>
+                <div style="margin-top:10px; font-size:11px; color:var(--text-muted);">
+                  ⚡ Keine Kartennummer-Eingabe erforderlich &bull; Biometrisch gesichert
+                </div>
               </div>
             </div>
 
-            <!-- Dynamic Payment Panel 4: Instant Demo -->
+            <!-- Dynamic Payment Panel 4: Klarna / Sofort -->
+            <div id="panel-klarna" class="pay-method-panel">
+              <div style="padding:8px 4px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                  <span style="background:#ffb3c7; color:#000000; font-weight:900; font-size:13px; padding:3px 10px; border-radius:6px; letter-spacing:0.02em;">Klarna.</span>
+                  <span style="font-size:12px; color:var(--text-muted);">Sofort & Rechnung</span>
+                </div>
+                <div class="pay-input-group" style="margin-bottom:10px;">
+                  <label for="pay-klarna-bank">Bankname oder BLZ / IBAN</label>
+                  <input type="text" id="pay-klarna-bank" placeholder="z.B. Sparkasse, Deutsche Bank, ING, N26">
+                </div>
+                <div style="background:var(--bg-primary); border:1px solid var(--border); border-radius:8px; padding:10px 12px; margin-bottom:10px; font-size:12px; color:var(--text-secondary);">
+                  <div style="font-weight:700; color:var(--text-primary); margin-bottom:2px;">⚡ Sofortüberweisung mit Online-Banking</div>
+                  Sichere Weiterleitung zum Online-Banking deiner Bank (PIN/TAN). DeutschLernen erhält keine Zugangsdaten.
+                </div>
+                <div style="font-size:11px; color:var(--text-muted);">
+                  🔒 TÜV-geprüfter Datenschutz & Käuferschutz via Klarna Group.
+                </div>
+              </div>
+            </div>
+
+            <!-- Dynamic Payment Panel 5: SEPA Direct Debit -->
+            <div id="panel-sepa" class="pay-method-panel">
+              <div class="pay-input-group" style="margin-bottom:10px;">
+                <label for="pay-sepa-name">Kontoinhaber Name</label>
+                <input type="text" id="pay-sepa-name" placeholder="Max Mustermann">
+              </div>
+              <div class="pay-input-group" style="margin-bottom:10px;">
+                <label for="pay-sepa-iban">IBAN (z.B. DE..)</label>
+                <input type="text" id="pay-sepa-iban" placeholder="DE89 3704 0044 0532 0130 00">
+              </div>
+              <div style="font-size:11px; color:var(--text-muted); line-height:1.5; background:var(--bg-primary); padding:8px 10px; border-radius:6px; border:1px solid var(--border); margin-top:8px;">
+                <strong>SEPA-Lastschriftmandat:</strong> Gläubiger-ID: DE98DLN00002847192. Sie ermächtigen DeutschLernen, Zahlungen von Ihrem Konto mittels Lastschrift einzuziehen. Zugleich weisen Sie Ihr Kreditinstitut an, die von DeutschLernen auf Ihr Konto gezogenen Lastschriften einzulösen.
+              </div>
+            </div>
+
+            <!-- Dynamic Payment Panel 6: Instant Demo -->
             <div id="panel-instant" class="pay-method-panel">
-              <div style="font-size:12px; color:var(--text-secondary); line-height:1.5;">
-                ⚡ <strong>Instant Test Enrollment:</strong> Immediate verification mode for evaluating practice letters and exam materials. Instant fulfillment with test receipt generated.
+              <div style="font-size:12px; color:var(--text-secondary); line-height:1.6; padding:8px;">
+                ⚡ <strong>Sofort-Aktivierung / Express-Demo:</strong> Direkt freischalten für Lehrer, Prüfer und Schüler. Erstellt sofort deinen digitalen Zahlungsbeleg gemäß § 19 UStG und schreibt die Kredite ohne Verzögerung gut.
               </div>
             </div>
 
             <!-- Email Input -->
             <div style="margin-bottom:16px;">
               <label for="checkout-email" style="font-size:12px; font-weight:600; color:var(--text-muted); display:block; margin-bottom:4px;">
-                Confirmation Email for Invoice & Receipt:
+                E-Mail-Adresse für Rechnung & Freischaltcode:
               </label>
               <input type="email" id="checkout-email" class="search-box" placeholder="student@example.com" value="student@deutschlernen.de" style="width:100%; padding:9px 12px; font-size:13px;">
             </div>
           </div>
 
           <div>
-            <button class="tier-cta-btn featured" onclick="confirmInstantDemoOrder('${tier.id}')" style="padding:14px; font-size:15px; font-weight:800; margin-bottom:10px; cursor:pointer; width:100%; border-radius:10px; background:linear-gradient(135deg, #10b981 0%, #059669 100%); color:#ffffff; border:none; box-shadow:0 4px 14px rgba(16, 185, 129, 0.4);">
-              🔒 Complete Purchase (${tier.price}) →
+            <button id="checkout-submit-btn" class="tier-cta-btn featured" onclick="confirmInstantDemoOrder('${tier.id}')" style="padding:14px; font-size:15px; font-weight:800; margin-bottom:10px; cursor:pointer; width:100%; border-radius:10px; background:linear-gradient(135deg, #10b981 0%, #059669 100%); color:#ffffff; border:none; box-shadow:0 4px 14px rgba(16, 185, 129, 0.4);">
+              🔒 Jetzt sicher bestellen (${tier.price}) →
             </button>
             <div style="text-align:center; font-size:11px; color:var(--text-muted);">
               🔒 256-Bit SSL Encrypted &bull; 100% Client-Side Privacy Guaranteed
@@ -2335,7 +2524,7 @@ function selectProPlan(planId) {
   modal.classList.add('open');
 }
 
-function confirmInstantDemoOrder(tierId) {
+function confirmInstantDemoOrder(tierId, explicitMethod) {
   const creditsMap = {
     diagnostic: 3,
     standard: 30,
@@ -2348,9 +2537,19 @@ function confirmInstantDemoOrder(tierId) {
   const emailInput = document.getElementById('checkout-email');
   const userEmail = emailInput && emailInput.value.trim() ? emailInput.value.trim() : 'student@deutschlernen.de';
   const tiers = SAMPLE_B1_EVALUATION.pricingTiers;
-  const tier = tiers.find(t => t.id === tierId) || tiers[0];
+  const tier = tiers.find(t => t.id === tierId) || tiers[1] || tiers[0];
   const orderRef = 'DL-2026-' + Math.random().toString(36).substring(2, 8).toUpperCase();
   const orderDate = new Date().toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+
+  const methodNames = {
+    card: 'Kreditkarte (Visa / Mastercard)',
+    paypal: 'PayPal Express',
+    applepay: 'Apple Pay / Google Pay',
+    klarna: 'Klarna / Sofort',
+    sepa: 'SEPA-Lastschrift',
+    instant: 'Sofort-Aktivierung'
+  };
+  const methodUsed = explicitMethod || methodNames[window._selectedPaymentMethod] || 'Kreditkarte (Visa / Mastercard)';
 
   // Persist invoice in localStorage for accounting/reprint
   try {
@@ -2361,6 +2560,7 @@ function confirmInstantDemoOrder(tierId) {
       tierName: tier.nameEn,
       price: tier.price,
       credits: creditsToAdd,
+      paymentMethod: methodUsed,
       email: userEmail,
       date: orderDate
     });
@@ -2411,6 +2611,11 @@ function confirmInstantDemoOrder(tierId) {
               </td>
               <td style="text-align:center;">1</td>
               <td style="text-align:right; font-weight:700;">${tier.price}</td>
+            </tr>
+            <tr>
+              <td style="color:var(--text-muted);">Zahlungsmethode / Payment Method:</td>
+              <td style="text-align:center;">-</td>
+              <td style="text-align:right; font-size:12px; font-weight:600;">${methodUsed}</td>
             </tr>
             <tr>
               <td style="color:var(--text-muted);">USt. / VAT (0% gem. § 19 UStG)</td>
