@@ -495,7 +495,10 @@
 
     updateUIForRecording(true);
 
-    // 1. Hardware Mic Stream
+    // 1. Speech Recognizer Loop: Start immediately and synchronously within the user gesture!
+    startSpeechLoop();
+
+    // 2. Hardware Mic Stream for visualizer and recording
     try {
       await initMicrophoneHardware(state.selectedDeviceId);
       if (state.audioStream) {
@@ -504,13 +507,7 @@
       }
     } catch (err) {
       console.warn('Hardware mic error:', err);
-      alert('Mikrofon başlatılamadı. Lütfen mikrofon izinlerinizi ve bağlantınızı kontrol edin.');
-      stopRecording();
-      return;
     }
-
-    // 2. Speech Recognizer Loop
-    startSpeechLoop();
 
     // 3. Duration Timer
     state.startTime = Date.now();
