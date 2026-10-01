@@ -655,7 +655,29 @@
 
       <!-- Pricing Tiers Grid -->
       <div class="pricing-tiers-grid">
-        <!-- Tier 1: Quick Diagnostic -->
+        <!-- Tier 1: 100% Free Einbürgerungstest & Public Study -->
+        <div class="pricing-tier-card free-tier">
+          <div class="tier-badge free-badge" data-en="100% Free Forever" data-tr="%100 Ücretsiz" data-ar="مجاني 100% دائماً" data-uk="100% Безкоштовно">100% Free Forever</div>
+          <h3 class="tier-name" data-en="BAMF Einbürgerungstest (LiD)" data-tr="BAMF Vatandaşlık Sınavı (LiD)" data-ar="امتحان التجنيس الألماني (LiD)" data-uk="Тест на громадянство (LiD)">BAMF Einbürgerungstest (LiD)</h3>
+          <div class="tier-price">
+            <span class="amount">€0</span>
+            <span class="period" data-en="/ Free Public Access" data-tr="/ Sınırsız Ücretsiz Erişim" data-ar="/ وصول مجاني دائم" data-uk="/ Безкоштовний доступ">/ Free Public Access</span>
+          </div>
+          <div class="tier-credits free-credits">⚡ <span data-en="All 310 BAMF Questions Included" data-tr="310 BAMF Sorusu Dahil" data-ar="جميع أسئلة BAMF الـ 310 مشمولة" data-uk="Усі 310 питань BAMF включено">All 310 BAMF Questions Included</span></div>
+          <ul class="tier-features">
+            <li data-en="✓ Official 300 General + 160 State Questions" data-tr="✓ Resmi 300 Genel + 160 Eyalet Sorusu" data-ar="✓ الأسئلة الرسمية 300 عامة + 160 لكل الولايات" data-uk="✓ Офіційні 300 загальних + 160 земельних питань">✓ Official 300 General + 160 State Questions</li>
+            <li data-en="✓ Authentic 33-Question Exam Simulator (60 min)" data-tr="✓ Resmi 33 Soruluk Sınav Simülatörü (60 dk)" data-ar="✓ محاكي الامتحان الرسمي 33 سؤالاً (60 دقيقة)" data-uk="✓ Офіційний симулятор іспиту на 33 питання">✓ Authentic 33-Question Exam Simulator (60 min)</li>
+            <li data-en="✓ Quad-Lingual Translations (DE, EN, TR, AR, UK)" data-tr="✓ 4 Dilde Anında Çeviriler (DE, EN, TR, AR, UK)" data-ar="✓ ترجمة بـ 4 لغات (DE, EN, TR, AR, UK)" data-uk="✓ 4-мовні переклади (DE, EN, TR, AR, UK)">✓ Quad-Lingual Translations (DE, EN, TR, AR, UK)</li>
+            <li data-en="✓ Audio Pronunciation & Offline PWA Mode" data-tr="✓ Sesli Okuma ve Çevrimdışı PWA Desteği" data-ar="✓ نطق صوتي ودعم التشغيل دون اتصال PWA" data-uk="✓ Озвучення та робота офлайн через PWA">✓ Audio Pronunciation & Offline PWA Mode</li>
+            <li data-en="✓ Fehlerheft Weak-Spot Review Deck" data-tr="✓ Kişisel Hata Defteri (Fehlerheft) Takibi" data-ar="✓ دفتر الأخطاء الشخصي (Fehlerheft)" data-uk="✓ Зошит помилок (Fehlerheft)">✓ Fehlerheft Weak-Spot Review Deck</li>
+            <li data-en="✓ 100% Free Forever — No Card Required" data-tr="✓ %100 Ücretsiz — Kredi Kartı Gerekmez" data-ar="✓ مجاني 100% للأبد — بدون أي بطاقة بنكية" data-uk="✓ 100% безкоштовно — без введення карти">✓ 100% Free Forever — No Card Required</li>
+          </ul>
+          <button class="tier-cta-btn free-cta-btn" onclick="navigateToSection('lid-trainer-section', 'lid')">
+            <span data-en="Practice Free Now →" data-tr="Hemen Ücretsiz Başla →" data-ar="ابدأ التدريب مجاناً الآن ←" data-uk="Почати безкоштовно →">Practice Free Now →</span>
+          </button>
+        </div>
+
+        <!-- Tier 2: Quick Diagnostic -->
         <div class="pricing-tier-card">
           <div class="tier-badge" data-en="Low-Risk Trial" data-tr="Başlangıç" data-ar="تجربة سريعة" data-uk="Пробний старт">Low-Risk Trial</div>
           <h3 class="tier-name" data-en="Quick Diagnostic" data-tr="Hızlı Teşhis Paketi" data-ar="باقة التقييم السريع" data-uk="Швидка діагностика">Quick Diagnostic</h3>
@@ -675,8 +697,8 @@
           </button>
         </div>
 
-        <!-- Tier 2: Standard Pro Pass -->
-        <div class="pricing-tier-card">
+        <!-- Tier 3: Standard Pro Pass -->
+        <div class="pricing-tier-card featured">
           <div class="tier-badge" data-en="Most Popular" data-tr="En Popüler" data-ar="الأكثر طلباً" data-uk="Найпопулярніший">Most Popular</div>
           <h3 class="tier-name" data-en="Standard Pro Pass" data-tr="Standart Pro Kart" data-ar="الباقة الاحترافية القياسية" data-uk="Стандартний Pro абонемент">Standard Pro Pass</h3>
           <div class="tier-price">
@@ -686,53 +708,34 @@
           <div class="tier-credits">⚡ <span data-en="30 AI Letter Grading Credits" data-tr="30 Yapay Zeka Mektup Puanlama Kredisi" data-ar="30 رصيداً لتقييم الرسائل بالذكاء الاصطناعي" data-uk="30 кредитів оцінювання листів ШІ">30 AI Letter Grading Credits</span></div>
           <ul class="tier-features">
             <li data-en="✓ Official telc B1 (I + II + III × 3) Scoring" data-tr="✓ Resmi telc B1 (I + II + III × 3) Puanlama Sistemi" data-ar="✓ تقييم telc B1 الرسمي بمعادلة (I + II + III × 3)" data-uk="✓ Офіційна система оцінювання telc B1 (I + II + III × 3)">✓ Official telc B1 (I + II + III × 3) Scoring</li>
-            <li data-en="✓ 4 Leitpunkte Fulfillment Verification" data-tr="✓ 4 Leitpunkt Eksiksizlik Doğrulaması" data-ar="✓ التحقق من تغطية النقاط الإرشادية الأربع" data-uk="✓ Перевірка виконання всіх 4 опорних пунктів">✓ 4 Leitpunkte Fulfillment Verification</li>
+            <li data-en="✓ 4 Leitpunkte Fulfillment Verification" data-tr="✓ 4 Leitpunkt Eksiksizlik Doğrulaması" data-ar="✓ التحقق من تغطية النقاط الإرشادية الأربع" data-uk="✓ Перевірка виконання všech 4 опорних пунктів">✓ 4 Leitpunkte Fulfillment Verification</li>
             <li data-en="✓ Line-by-line syntax & grammar breakdown" data-tr="✓ Satır satır cümle yapısı ve dilbilgisi analizi" data-ar="✓ تحليل تفصيلي سطر بسطر للقواعد وبناء الجملة" data-uk="✓ Порядковий розбір синтаксису та граматики">✓ Line-by-line syntax & grammar breakdown</li>
             <li data-en="✓ B1 Vocabulary & Connector Suggestions" data-tr="✓ B1 Kelime ve Bağlaç Zenginleştirme Önerileri" data-ar="✓ اقتراحات لمفردات وروابط المستوى B1" data-uk="✓ Рекомендації щодо лексики та сполучників B1">✓ B1 Vocabulary & Connector Suggestions</li>
             <li data-en="✓ Instant 15-second AI evaluation" data-tr="✓ 15 saniyede anında yapay zeka değerlendirmesi" data-ar="✓ تقييم فوري خلال 15 ثانية بالذكاء الاصطناعي" data-uk="✓ Миттєве оцінювання штучним інтелектом за 15 секунд">✓ Instant 15-second AI evaluation</li>
           </ul>
-          <button class="tier-cta-btn" onclick="selectProPlan('standard')">
+          <button class="tier-cta-btn featured" onclick="selectProPlan('standard')">
             <span data-en="Get Standard Pro Pass" data-tr="Standart Pro Kartı Al" data-ar="الحصول على الباقة القياسية" data-uk="Отримати стандартний Pro">Get Standard Pro Pass</span>
           </button>
         </div>
 
-        <!-- Tier 3: Citizenship Pass (Featured) -->
-        <div class="pricing-tier-card featured">
-          <div class="tier-badge" data-en="Best Value" data-tr="En Avantajlı" data-ar="أفضل قيمة" data-uk="Найкраща ціна">Best Value</div>
-          <h3 class="tier-name" data-en="Citizenship Pass" data-tr="Vatandaşlık Paketi" data-ar="باقة التجنيس الشاملة" data-uk="Пакет для громадянства">Citizenship Pass</h3>
-          <div class="tier-price">
-            <span class="amount">€39</span>
-            <span class="period" data-en="/ B1 Pro + LiD Weak-Spot Tracker" data-tr="/ B1 Pro + LiD Zayıf Nokta Takibi" data-ar="/ B1 احترافي + متتبع نقاط الضعف في LiD" data-uk="/ B1 Pro + трекер слабких місць LiD">/ B1 Pro + LiD Weak-Spot Tracker</span>
-          </div>
-          <div class="tier-credits">⚡ <span data-en="40 AI Letter Grading Credits" data-tr="40 Yapay Zeka Mektup Puanlama Kredisi" data-ar="40 رصيداً لتقييم الرسائل بالذكاء الاصطناعي" data-uk="40 кредитів оцінювання листів ШІ">40 AI Letter Grading Credits</span></div>
-          <ul class="tier-features">
-            <li data-en="✓ Everything in Standard Pro Pass" data-tr="✓ Standart Pro Karttaki her şey" data-ar="✓ جميع مزايا الباقة القياسية" data-uk="✓ Усе, що в стандартному абонементі">✓ Everything in Standard Pro Pass</li>
-            <li data-en="✓ Leben in Deutschland (LiD) 310 Tracker" data-tr="✓ Leben in Deutschland (LiD) 310 Soru Takipçisi" data-ar="✓ متتبع اختبار الحياة في ألمانيا (LiD 310)" data-uk="✓ Трекер тесту Життя в Німеччині (LiD 310)">✓ Leben in Deutschland (LiD) 310 Tracker</li>
-            <li data-en="✓ Personalized Fehlerheft (Weak-spot deck)" data-tr="✓ Kişiselleştirilmiş Hata Defteri (Fehlerheft)" data-ar="✓ دفتر الأخطاء الشخصي (Fehlerheft)" data-uk="✓ Персональний зошит помилок (Fehlerheft)">✓ Personalized Fehlerheft (Weak-spot deck)</li>
-            <li data-en="✓ Priority AI Processing Queue" data-tr="✓ Öncelikli Yapay Zeka İşleme Sırası" data-ar="✓ معالجة سريعة ذات أولوية بالذكاء الاصطناعي" data-uk="✓ Пріоритетна обробка запитів штучним інтелектом">✓ Priority AI Processing Queue</li>
-          </ul>
-          <button class="tier-cta-btn featured" onclick="selectProPlan('citizenship')">
-            <span data-en="Get Citizenship Bundle" data-tr="Vatandaşlık Paketini Al" data-ar="الحصول على باقة التجنيس" data-uk="Отримати пакет для громадянства">Get Citizenship Bundle</span>
-          </button>
-        </div>
-
-        <!-- Tier 4: Extended 6-Month Pass -->
+        <!-- Tier 4: Intensive Pass -->
         <div class="pricing-tier-card">
-          <div class="tier-badge" data-en="Long-term Study" data-tr="Uzun Dönem" data-ar="دراسة طويلة الأمد" data-uk="Довгострокове навчання">Long-term Study</div>
-          <h3 class="tier-name" data-en="6-Month Pass" data-tr="6 Aylık Geniş Paket" data-ar="اشتراك 6 أشهر الكامل" data-uk="Абонемент на 6 місяців">6-Month Pass</h3>
+          <div class="tier-badge" data-en="Best Value" data-tr="En Avantajlı" data-ar="أفضل قيمة" data-uk="Найкраща ціна">Best Value</div>
+          <h3 class="tier-name" data-en="Intensive Pass" data-tr="Kapsamlı Hazırlık Paketi" data-ar="الباقة المكثفة الشاملة" data-uk="Інтенсивний повний абонемент">Intensive Pass</h3>
           <div class="tier-price">
             <span class="amount">€49</span>
             <span class="period" data-en="/ 6-Month Full Access" data-tr="/ 6 Ay Boyunca Tam Erişim" data-ar="/ وصول كامل لمدة 6 أشهر" data-uk="/ Повний доступ на 6 місяців">/ 6-Month Full Access</span>
           </div>
           <div class="tier-credits">⚡ <span data-en="100 AI Letter Grading Credits" data-tr="100 Yapay Zeka Mektup Puanlama Kredisi" data-ar="100 رصيد لتقييم الرسائل بالذكاء الاصطناعي" data-uk="100 кредитів оцінювання листів ШІ">100 AI Letter Grading Credits</span></div>
           <ul class="tier-features">
-            <li data-en="✓ Everything in Citizenship Pass" data-tr="✓ Vatandaşlık Paketindeki her şey" data-ar="✓ جميع مزايا باقة التجنيس" data-uk="✓ Усе, що в пакеті для громадянства">✓ Everything in Citizenship Pass</li>
+            <li data-en="✓ Everything in Standard Pro Pass" data-tr="✓ Standart Pro Karttaki her şey" data-ar="✓ جميع مزايا الباقة القياسية" data-uk="✓ Усе, що в стандартному абонементі">✓ Everything in Standard Pro Pass</li>
             <li data-en="✓ 100 AI Letter Evaluations" data-tr="✓ 100 Yapay Zeka Mektup Değerlendirmesi" data-ar="✓ 100 تقييم للرسائل بالذكاء الاصطناعي" data-uk="✓ 100 перевірок листів штучним інтелектом">✓ 100 AI Letter Evaluations</li>
             <li data-en="✓ B2/C1 Decks Preview Access" data-tr="✓ B2/C1 Deste Önizleme Erişimi" data-ar="✓ وصول استعراضي لمجموعات B2/C1" data-uk="✓ Доступ до попереднього перегляду колод B2/C1">✓ B2/C1 Decks Preview Access</li>
-            <li data-en="✓ Dedicated Email Support" data-tr="✓ Öncelikli E-Posta Desteği" data-ar="✓ دعم مباشر عبر البريد الإلكتروني" data-uk="✓ Пряма підтримка електронною поштою">✓ Dedicated Email Support</li>
+            <li data-en="✓ Priority AI Processing Queue" data-tr="✓ Öncelikli Yapay Zeka Sırası" data-ar="✓ معالجة سريعة ذات أولوية بالذكاء الاصطناعي" data-uk="✓ Пріоритетна черга обробки запитів">✓ Priority AI Processing Queue</li>
+            <li data-en="✓ Dedicated VIP Email Support" data-tr="✓ Öncelikli VIP E-Posta Desteği" data-ar="✓ دعم مباشر ذو أولوية عبر البريد الإلكتروني" data-uk="✓ Пряма VIP-підтримка електронною поштою">✓ Dedicated VIP Email Support</li>
           </ul>
           <button class="tier-cta-btn" onclick="selectProPlan('extended')">
-            <span data-en="Get 6-Month Pass" data-tr="6 Aylık Paketi Al" data-ar="الحصول على باقة 6 أشهر" data-uk="Отримати абонемент на 6 місяців">Get 6-Month Pass</span>
+            <span data-en="Get Intensive Pass" data-tr="Kapsamlı Paketi Al" data-ar="الحصول على الباقة المكثفة" data-uk="Отримати інтенсивний абонемент">Get Intensive Pass</span>
           </button>
         </div>
       </div>
@@ -741,10 +744,11 @@
       <div class="pricing-trust-footer" style="margin-top:20px; padding:16px 20px; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; font-size:12px; color:var(--text-muted);">
         <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
           <span><strong>Accepted Payment Methods:</strong></span>
-          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">💳 Visa / Mastercard</span>
-          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🅿️ PayPal</span>
-          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🏦 SEPA / Klarna</span>
-          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🍏 Apple / Google Pay</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">💳 Visa / Mastercard / Amex</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🅿️ PayPal & Später zahlen</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🍏 Apple Pay / Google Pay</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🛍️ Klarna / Sofort</span>
+          <span style="background:var(--bg-primary); border:1px solid var(--border); padding:3px 8px; border-radius:6px;">🏦 SEPA-Lastschrift</span>
         </div>
         <div style="display:flex; align-items:center; gap:12px; font-weight:600;">
           <span style="color:#10b981;">🛡️ 30-Day Money-Back Guarantee</span>
@@ -752,6 +756,8 @@
           <span style="color:var(--text-primary);">🔒 256-Bit SSL Encrypted</span>
           <span>&bull;</span>
           <span>📜 § 19 UStG Tax Compliant</span>
+          <span>&bull;</span>
+          <span style="color:#10b981;">🚫 Kein Abo (Einmalzahlung)</span>
         </div>
       </div>
     </div>
@@ -840,7 +846,7 @@
             <span class="faq-chevron" style="color:var(--accent-gold); font-size:18px;">+</span>
           </summary>
           <div class="faq-answer" style="margin-top:12px; font-size:13px; color:var(--text-secondary); line-height:1.7;">
-            <p data-en="No! All passes (Quick Diagnostic €4.99, Standard €29, Citizenship €39, Extended €49) are single, one-time payments. We do not automatically renew or charge your payment method after your exam preparation period ends." data-tr="Hayır! Tüm paketlerimiz (€4.99 Hızlı Teşhis, €29 Standart, €39 Vatandaşlık, €49 Geniş Paket) tek seferlik ödemelerdir. Süreniz dolduğunda kartınızdan asla otomatik para çekilmez." data-ar="لا على الإطلاق! جميع الباقات (التشخيصية 4.99€، القياسية 29€، التجنيس 39€، الشاملة 49€) هي دفعات لمرة واحدة فقط. لا توجد أي اشتراكات دورية أو خصم تلقائي من حسابك." data-uk="Ні! Усі абонементи (€4.99, €29, €39, €49) — це разові платежі. Жодних прихованих списань чи автоматичних подовжень після завершення терміну.">No! All passes (Quick Diagnostic €4.99, Standard €29, Citizenship €39, Extended €49) are single, one-time payments. We do not automatically renew or charge your payment method after your exam preparation period ends.</p>
+            <p data-en="No! The BAMF Einbürgerungstest (LiD 310) is 100% free forever for all users with no payment required. All telc B1 writing grading passes (Quick Diagnostic €4.99, Standard €29, Intensive €49) are single, one-time payments. We do not automatically renew or charge your payment method after your exam preparation period ends." data-tr="Hayır! BAMF Vatandaşlık Sınavı (LiD 310) tüm kullanıcılar için tamamen ve süresiz olarak %100 ücretsizdir, hiçbir ödeme gerekmez. Tüm telc B1 yazma değerlendirme paketlerimiz (€4.99 Hızlı Teşhis, €29 Standart, €49 Kapsamlı Paket) tek seferlik ödemelerdir. Asla otomatik abonelik yenilemesi veya gizli çekim yapılmaz." data-ar="لا على الإطلاق! امتحان التجنيس BAMF LiD مجاني 100% دائماً لجميع المستخدمين بدون أي بطاقة بنكية. جميع باقات تقييم الكتابة لامتحان telc B1 (التشخيصية 4.99€، القياسية 29€، المكثفة 49€) هي دفعات لمرة واحدة فقط وبدون أي اشتراكات متكررة." data-uk="Ні! Тест на громадянство BAMF (LiD 310) на 100% безкоштовний для всіх назавжди. Усі абонементи оцінювання листів telc B1 (€4.99, €29, €49) — це разові платежі без жодних щомісячних автоподовжень чи прихованих списань.">No! The BAMF Einbürgerungstest (LiD 310) is 100% free forever for all users with no payment required. All telc B1 writing grading passes (Quick Diagnostic €4.99, Standard €29, Intensive €49) are single, one-time payments. We do not automatically renew or charge your payment method after your exam preparation period ends.</p>
           </div>
         </details>
 

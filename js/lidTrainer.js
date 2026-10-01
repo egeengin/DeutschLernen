@@ -819,6 +819,24 @@ function finishLiDExam() {
           }
         </p>
 
+        <!-- Cross-sell Bridge to telc B1 Writing & Speaking -->
+        <div style="background:rgba(234, 179, 8, 0.08); border:1px solid rgba(234, 179, 8, 0.3); border-radius:12px; padding:16px 20px; max-width:600px; margin:0 auto 20px auto; text-align:left;">
+          <div style="font-weight:700; color:var(--accent-gold); font-size:14px; margin-bottom:4px; display:flex; align-items:center; gap:8px;">
+            <span>🎓 Gesetzliche Einbürgerungsvoraussetzung (§ 10 StAG)</span>
+          </div>
+          <p style="font-size:13px; color:var(--text-secondary); margin:0 0 10px 0; line-height:1.5;">
+            Für deinen deutschen Pass verlangt die Behörde neben dem Einbürgerungstest auch das <strong>B1 Sprachzertifikat</strong>. Trainiere den anspruchsvollen Prüfungsteil <em>Schreiben</em> mit sofortigem KI-Prüfer-Feedback nach offiziellen telc-Kriterien!
+          </p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="javascript:void(0)" onclick="if(window.navigateToSection){window.navigateToSection('schreiben-showcase-section', 'b1');} else { document.getElementById('schreiben-showcase-section')?.scrollIntoView({behavior:'smooth'}); }" class="card-link primary" style="padding:6px 14px; font-size:12px; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
+              ✍️ telc B1 Brief-Korrektor öffnen →
+            </a>
+            <a href="sprechen.html" class="card-link" style="padding:6px 14px; font-size:12px; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
+              🎙️ B1 Sprechen Voice Studio ↗
+            </a>
+          </div>
+        </div>
+
         <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:20px;">
           <button class="cta-btn-primary" onclick="startLiDExamSimulation()" style="padding:10px 20px;">
             🔄 Retake Simulation
