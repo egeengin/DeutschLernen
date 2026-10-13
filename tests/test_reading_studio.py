@@ -25,6 +25,15 @@ class TestReadingStudio(unittest.TestCase):
         self.assertIn("questions-container", content)
         self.assertIn("saved-words-list", content)
 
+    def test_lesen_reader_dom_js_passes(self):
+        """Execute node tests/test_lesen_reader_dom.js and verify exit code 0."""
+        import subprocess
+        script_path = os.path.join(ROOT_DIR, "tests", "test_lesen_reader_dom.js")
+        self.assertTrue(os.path.exists(script_path), "test_lesen_reader_dom.js must exist.")
+        result = subprocess.run(["node", script_path], capture_output=True, text=True, cwd=ROOT_DIR)
+        self.assertEqual(result.returncode, 0, f"Lesen DOM tests failed:\n{result.stderr}\n{result.stdout}")
+        self.assertIn("All 5 Lesen Studio headless JS unit tests passed successfully", result.stdout)
+
     def test_reading_css_integrity(self):
         """Verify css/lesen.css contains essential styling, dark/light theme, and RTL support."""
         path = os.path.join(ROOT_DIR, "css", "lesen.css")
