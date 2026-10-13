@@ -1455,6 +1455,7 @@
         }
         b.classList.add('disabled');
         b.disabled = true;
+        if (typeof b.blur === 'function') b.blur();
       });
 
       if (isCorrect) {

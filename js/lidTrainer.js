@@ -27,6 +27,7 @@ let hasAutoPromptedState = false;
 let isLiDExamMode = false;
 let lidExamQuestions = [];
 let lidExamAnswers = {}; // index -> boolean
+let lidExamSelected = {}; // index -> selected option index
 let lidExamTimerInterval = null;
 let lidExamSecondsLeft = 3600; // 60 minutes
 
@@ -502,7 +503,7 @@ function renderSingleLiDQuestion(q) {
         let extraClass = '';
         if (isAnswered) {
           if (idx === q.correctIndex) extraClass = ' correct';
-          else if (!lidExamAnswers[currentLiDIndex]) extraClass = ' wrong';
+          else if (lidExamSelected[currentLiDIndex] === idx || (lidExamSelected[currentLiDIndex] === undefined && !lidExamAnswers[currentLiDIndex])) extraClass = ' wrong';
         }
         const optTrans = transObj?.options?.[idx] || '';
         return `
@@ -575,7 +576,10 @@ function getActiveLiDQuestionsPool() {
 function checkLiDAnswer(selectedIdx, correctIdx, btnEl) {
   const parentContainer = btnEl.closest('.lid-options-list');
   const buttons = parentContainer.querySelectorAll('.lid-opt-btn');
-  buttons.forEach(b => b.disabled = true);
+  buttons.forEach(b => {
+    b.disabled = true;
+    if (typeof b.blur === 'function') b.blur();
+  });
 
   const isCorrect = (selectedIdx === correctIdx);
 
@@ -583,12 +587,14 @@ function checkLiDAnswer(selectedIdx, correctIdx, btnEl) {
     btnEl.classList.add('correct');
     if (isLiDExamMode) {
       lidExamAnswers[currentLiDIndex] = true;
+      lidExamSelected[currentLiDIndex] = selectedIdx;
     }
   } else {
     btnEl.classList.add('wrong');
     if (buttons[correctIdx]) buttons[correctIdx].classList.add('correct');
     if (isLiDExamMode) {
       lidExamAnswers[currentLiDIndex] = false;
+      lidExamSelected[currentLiDIndex] = selectedIdx;
     }
 
     // Automatically capture mistake into personal Fehlerheft review deck
@@ -672,15 +678,24 @@ function openLiDStateModal() {
     select.value = selectedLiDState;
   }
   modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
   requestAnimationFrame(() => {
     modal.classList.add('open');
   });
+
+  if (!modal._hasBackdropListener) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeLiDStateModal();
+    });
+    modal._hasBackdropListener = true;
+  }
 }
 
 function closeLiDStateModal() {
   const modal = document.getElementById('lid-state-modal');
   if (!modal) return;
   modal.classList.remove('open');
+  document.body.style.overflow = '';
   setTimeout(() => {
     modal.style.display = 'none';
   }, 250);
@@ -767,6 +782,7 @@ function startLiDExamSimulation() {
 
   lidExamQuestions = [...sampledGeneral, ...sampledState];
   lidExamAnswers = {};
+  lidExamSelected = {};
   isLiDExamMode = true;
   currentLiDIndex = 0;
   lidExamSecondsLeft = 3600; // 60 minutes
@@ -858,6 +874,7 @@ function exitLiDExamSimulation() {
   isLiDExamMode = false;
   lidExamQuestions = [];
   lidExamAnswers = {};
+  lidExamSelected = {};
   currentLiDIndex = 0;
   lidExamSecondsLeft = 3600;
   renderLiDTrainer('lid-trainer-container');

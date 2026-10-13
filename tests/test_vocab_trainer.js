@@ -121,7 +121,8 @@ function createMockElement(id = '', tag = 'div') {
       if (sel === '.opt-text') return { textContent: el._html || el.textContent };
       return null;
     },
-    focus: () => {}
+    focus: () => {},
+    blur: () => {}
   };
   return el;
 }

@@ -2070,6 +2070,13 @@ function openProPricingModal() {
     document.body.appendChild(modal);
   }
 
+  if (!modal._hasBackdropListener) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeProPricingModal();
+    });
+    modal._hasBackdropListener = true;
+  }
+
   const tiers = SAMPLE_B1_EVALUATION.pricingTiers;
   const lang = getActiveLanguage();
   const langKey = lang.charAt(0).toUpperCase() + lang.slice(1);
@@ -2150,12 +2157,14 @@ function openProPricingModal() {
     </div>
   `;
 
+  document.body.style.overflow = 'hidden';
   modal.classList.add('open');
 }
 
 function closeProPricingModal() {
   const modal = document.getElementById('pro-pricing-modal');
   if (modal) modal.classList.remove('open');
+  document.body.style.overflow = '';
 }
 
 function switchPaymentMethod(method) {

@@ -47,6 +47,7 @@ class TestMultilingualConsistency(unittest.TestCase):
             cwd=ROOT_DIR,
             capture_output=True,
             text=True,
+            encoding="utf-8",
             check=True
         )
         return json.loads(proc.stdout)
@@ -220,6 +221,7 @@ class TestMultilingualConsistency(unittest.TestCase):
             cwd=ROOT_DIR,
             capture_output=True,
             text=True,
+            encoding="utf-8",
             check=True
         )
         i18n = json.loads(proc.stdout)
@@ -242,6 +244,7 @@ class TestMultilingualConsistency(unittest.TestCase):
             cwd=ROOT_DIR,
             capture_output=True,
             text=True,
+            encoding="utf-8",
             check=True
         )
         ui_text = json.loads(proc.stdout)
@@ -271,6 +274,7 @@ class TestMultilingualConsistency(unittest.TestCase):
             cwd=ROOT_DIR,
             capture_output=True,
             text=True,
+            encoding="utf-8",
             check=True
         )
         res = json.loads(proc.stdout)

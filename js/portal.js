@@ -768,12 +768,13 @@ function renderQuiz() {
 
     let optsHtml = q.opts.map((o, oi) => {
       let extraClass = '';
-      if (quizAnswered[qi] !== undefined) {
+      const isAns = quizAnswered[qi] !== undefined;
+      if (isAns) {
         extraClass = ' disabled';
         if (oi === q.correct) extraClass += ' correct';
-        else if (quizAnswered[qi] === false) extraClass += ' wrong';
+        else if (quizAnswered[qi] === oi || (quizAnswered[qi] === false && oi !== q.correct)) extraClass += ' wrong';
       }
-      return `<button class="quiz-opt${extraClass}" onclick="checkAnswer(${qi},${oi})">${String.fromCharCode(97+oi)}) ${o}</button>`;
+      return `<button class="quiz-opt${extraClass}" ${isAns ? 'disabled' : ''} onclick="checkAnswer(${qi},${oi})">${String.fromCharCode(97+oi)}) ${o}</button>`;
     }).join('');
 
     const showExplainClass = quizAnswered[qi] !== undefined ? ' show' : '';
@@ -800,7 +801,7 @@ function checkAnswer(qi, oi) {
 
   const q = quizData[qi];
   const isCorrect = (oi === q.correct);
-  quizAnswered[qi] = isCorrect;
+  quizAnswered[qi] = isCorrect ? true : oi;
   localStorage.setItem('telc_quiz', JSON.stringify(quizAnswered));
 
   // If incorrect, record in Fehlerheft for targeted review
@@ -823,6 +824,8 @@ function checkAnswer(qi, oi) {
     const btns = quizEl.querySelectorAll('.quiz-opt');
     btns.forEach((btn, idx) => {
       btn.classList.add('disabled');
+      btn.disabled = true;
+      if (typeof btn.blur === 'function') btn.blur();
       if (idx === q.correct) btn.classList.add('correct');
       else if (idx === oi) btn.classList.add('wrong');
     });
@@ -871,7 +874,10 @@ function restoreQuiz() {
     const correct = quizData[qi].correct;
     btns.forEach((b, i) => {
       b.classList.add('disabled');
+      b.disabled = true;
+      if (typeof b.blur === 'function') b.blur();
       if (i === correct) b.classList.add('correct');
+      else if (quizAnswered[qi] === i || (quizAnswered[qi] === false && i !== correct)) b.classList.add('wrong');
     });
     document.getElementById(`explain-${qi}`).classList.add('show');
   });
@@ -1089,6 +1095,7 @@ function openMarkdown(url, skipHistory = false) {
       // Inject Interactive Markdown Quizzes
       mdContent.querySelectorAll('.md-quiz').forEach((el, index) => {
         const qId = `mdq-${index}`;
+        el.id = qId;
         const question = el.getAttribute('data-question');
         const options = el.getAttribute('data-options').split('|');
         const answer = parseInt(el.getAttribute('data-answer'));
@@ -1099,7 +1106,7 @@ function openMarkdown(url, skipHistory = false) {
         ).join('');
 
         el.innerHTML = `
-          <div class="interactive-quiz-box" style="margin: 24px 0; padding: 20px; background: rgba(0,0,0,0.2); border-radius: 12px; border: 1px solid var(--border);">
+          <div class="interactive-quiz-box" id="box-${qId}" style="margin: 24px 0; padding: 20px; background: rgba(0,0,0,0.2); border-radius: 12px; border: 1px solid var(--border);">
             <div style="font-weight:600; font-size:16px; margin-bottom:16px; color:var(--text-primary);">${question}</div>
             <div class="quiz-options" style="display:flex; flex-direction:column; gap:8px;">${optsHtml}</div>
             <div class="quiz-explain" id="exp-${qId}" style="display:none; margin-top:16px; padding:12px; border-radius:8px; background:rgba(245,158,11,0.05); border-left:4px solid var(--accent-gold); font-size:14px; color:var(--text-secondary);">
@@ -1115,24 +1122,28 @@ function openMarkdown(url, skipHistory = false) {
 }
 
 window.checkMdQuiz = function(qId, selectedIdx, correctIdx) {
-  const box = document.getElementById(qId);
+  const box = document.getElementById(qId) || document.getElementById(`box-${qId}`) || (typeof event !== 'undefined' && event?.target?.closest ? event.target.closest('.md-quiz, .interactive-quiz-box') : null);
   if (!box) return;
   const btns = box.querySelectorAll('.quiz-opt');
   btns.forEach((b, i) => {
     b.classList.add('disabled');
+    b.disabled = true;
     b.onclick = null;
+    if (typeof b.blur === 'function') b.blur();
     if (i === correctIdx) b.classList.add('correct');
     if (i === selectedIdx && i !== correctIdx) b.classList.add('wrong');
   });
-  const exp = document.getElementById(`exp-${qId}`);
+  const exp = document.getElementById(`exp-${qId}`) || box.querySelector('.quiz-explain');
   if (exp) {
     exp.style.display = 'block';
     exp.classList.add('animate');
     
     // Fix any potential data-tr elements inside explanation that need quick translation update
-    exp.querySelectorAll('[data-en]').forEach(el => {
-      el.innerHTML = el.getAttribute(`data-${currentLang}`);
-    });
+    if (typeof currentLang !== 'undefined') {
+      exp.querySelectorAll('[data-en]').forEach(el => {
+        el.innerHTML = el.getAttribute(`data-${currentLang}`) || el.innerHTML;
+      });
+    }
   }
 };
 
@@ -1163,15 +1174,28 @@ function updateThemeIcon() {
 }
 updateThemeIcon();
 
-// Keyboard accessibility: Dismiss modal & markdown reader on Escape
+// Keyboard accessibility: Dismiss modals & markdown reader on Escape
 window.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
-    if (document.getElementById('md-view').classList.contains('open')) {
+    const mdView = document.getElementById('md-view');
+    if (mdView && mdView.classList.contains('open')) {
       closeMarkdown();
     }
     const fbModal = document.getElementById('feedback-modal');
     if (fbModal && !fbModal.classList.contains('hidden')) {
       closeFeedbackModal();
+    }
+    const entranceModal = document.getElementById('entrance-modal');
+    if (entranceModal && (entranceModal.classList.contains('open') || entranceModal.style.display === 'flex')) {
+      closeGoalModal();
+    }
+    const pricingModal = document.getElementById('pro-pricing-modal');
+    if (pricingModal && pricingModal.classList.contains('open')) {
+      if (typeof closeProPricingModal === 'function') closeProPricingModal();
+    }
+    const lidStateModal = document.getElementById('lid-state-modal');
+    if (lidStateModal && (lidStateModal.classList.contains('open') || lidStateModal.style.display === 'flex')) {
+      if (typeof closeLiDStateModal === 'function') closeLiDStateModal();
     }
   }
 });
@@ -1530,6 +1554,7 @@ function openFeedbackModal() {
   const modal = document.getElementById('feedback-modal');
   if (!modal) return;
   modal.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
   
   const statusMsg = document.getElementById('feedback-status-msg');
   if (statusMsg) {
@@ -1552,6 +1577,7 @@ function openFeedbackModal() {
 function closeFeedbackModal() {
   const modal = document.getElementById('feedback-modal');
   if (modal) modal.classList.add('hidden');
+  document.body.style.overflow = '';
 }
 
 function initFeedbackForm() {
@@ -1664,9 +1690,17 @@ function openGoalModal() {
   const modal = document.getElementById('entrance-modal');
   if (!modal) return;
   modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
   requestAnimationFrame(() => {
     modal.classList.add('open');
   });
+
+  if (!modal._hasBackdropListener) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeGoalModal();
+    });
+    modal._hasBackdropListener = true;
+  }
 
   pendingGoalId = currentGoalId;
   pendingGoalLevel = currentGoalLevel;
@@ -1677,6 +1711,7 @@ function closeGoalModal() {
   const modal = document.getElementById('entrance-modal');
   if (!modal) return;
   modal.classList.remove('open');
+  document.body.style.overflow = '';
   setTimeout(() => {
     modal.style.display = 'none';
   }, 250);

@@ -503,6 +503,69 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn("switchTrack('lid')", apply_goal_code)
         self.assertIn("switchTrack('b1')", apply_goal_code)
 
+    def test_interactive_markdown_quiz_elements_and_engine(self):
+        """Verify md-quiz elements receive unique container IDs and checkMdQuiz executes independently per question."""
+        # Check ID assignment in markdown quiz rendering
+        self.assertIn("el.id = qId;", self.portal_js)
+        self.assertIn('id="box-${qId}"', self.portal_js)
+
+        # Check checkMdQuiz function and button states
+        self.assertIn("window.checkMdQuiz = function(qId, selectedIdx, correctIdx)", self.portal_js)
+        self.assertIn("box.querySelectorAll('.quiz-opt')", self.portal_js)
+        self.assertIn("b.disabled = true;", self.portal_js)
+        self.assertIn("b.blur()", self.portal_js)
+
+        # Check CSS rules for keeping answers visible and high-contrast
+        css_path = os.path.join(ROOT_DIR, "css", "portal.css")
+        with open(css_path, "r", encoding="utf-8") as f:
+            portal_css = f.read()
+        self.assertIn(".quiz-opt.disabled.correct, .quiz-opt.disabled.wrong", portal_css)
+
+    def test_portal_quiz_and_lid_selection_isolation(self):
+        """Verify portal quiz and LiD exam accurately isolate selected wrong choice and prevent focus retention."""
+        # 1. Portal Quiz selection precision and button locking
+        self.assertIn("quizAnswered[qi] = isCorrect ? true : oi;", self.portal_js)
+        self.assertIn("quizAnswered[qi] === oi", self.portal_js)
+        self.assertIn("btn.disabled = true;", self.portal_js)
+        self.assertIn("btn.blur()", self.portal_js)
+
+        # 2. LiD Trainer selection isolation
+        lid_path = os.path.join(ROOT_DIR, "js", "lidTrainer.js")
+        with open(lid_path, "r", encoding="utf-8") as f:
+            lid_js = f.read()
+        self.assertIn("lidExamSelected = {};", lid_js)
+        self.assertIn("lidExamSelected[currentLiDIndex] = selectedIdx;", lid_js)
+        self.assertIn("b.blur()", lid_js)
+
+        # 3. LiD CSS contrast and disabled rules
+        css_path = os.path.join(ROOT_DIR, "css", "portal.css")
+        with open(css_path, "r", encoding="utf-8") as f:
+            portal_css = f.read()
+        self.assertIn(".lid-opt-btn:disabled:not(.correct):not(.wrong)", portal_css)
+        self.assertIn(".lid-opt-btn.correct", portal_css)
+    def test_modal_dismissal_and_accessibility(self):
+        """Verify unified modal dismissals, backdrop handling, and keyboard accessibility."""
+        # 1. Escape key handling across all modals in portal.js
+        self.assertIn("closeGoalModal()", self.portal_js)
+        self.assertIn("closeProPricingModal()", self.portal_js)
+        self.assertIn("closeLiDStateModal()", self.portal_js)
+
+        # 2. Body scroll locking on modals
+        self.assertIn("document.body.style.overflow = 'hidden'", self.portal_js)
+        self.assertIn("document.body.style.overflow = ''", self.portal_js)
+
+        # 3. Backdrop click handling in entrance modal
+        self.assertIn("modal.addEventListener('click'", self.portal_js)
+        self.assertIn("if (e.target === modal) closeGoalModal()", self.portal_js)
+
+        # 4. Flashcard keyboard accessibility in index.html
+        index_path = os.path.join(ROOT_DIR, "index.html")
+        with open(index_path, "r", encoding="utf-8") as f:
+            index_html = f.read()
+        self.assertIn('tabindex="0"', index_html)
+        self.assertIn('role="button"', index_html)
+        self.assertIn('flipCard()', index_html)
+
 
 if __name__ == "__main__":
     unittest.main()

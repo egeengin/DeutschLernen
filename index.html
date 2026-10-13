@@ -546,7 +546,7 @@
       <p data-en="Test your memory with 20 essential B1 verbs. Click the card to flip and check translation!" data-tr="20 temel B1 fiiliyle hafızanızı test edin. Çevirisini görmek için karta tıklayın!" data-ar="اختبر ذاكرتك مع 20 فعلاً أساسياً لمستوى B1. انقر على البطاقة لقلبها!" data-uk="Перевірте свою пам'ять на 20 важливих дієсловах B1. Натисніть на картку, щоб перевернути!">Test your memory with 20 essential B1 verbs. Click the card to flip and check translation!</p>
 
       <div class="flashcard-container">
-        <div class="flashcard" id="flashcard" onclick="flipCard()">
+        <div class="flashcard" id="flashcard" onclick="flipCard()" tabindex="0" role="button" aria-label="Flashcard - press enter or space to flip" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();flipCard();}">
           <div class="fc-face fc-front">
             <div class="fc-hint" data-en="German" data-tr="Almanca" data-ar="الألمانية" data-uk="Німецька">German</div>
             <div class="fc-word" id="fc-de">arbeiten</div>
