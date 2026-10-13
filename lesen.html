@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📖 Lesen Studio & Interaktiver Reader — telc Deutsch B1 | DeutschLernen</title>
+  <meta name="description" content="Interaktives Lesestudio für die telc Deutsch B1 Prüfung. Readlang & Todaii German Stil: Klick-Wörterbuch mit Sofort-Übersetzung in 4 Sprachen (EN, TR, AR, UK), telc Prüfungsfragen und Vokabelheft.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#10b981">
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('deutschlernen_theme') || localStorage.getItem('telc_theme') || localStorage.getItem('site_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      if (savedTheme === 'light') {
+        document.documentElement.classList.add('light-mode');
+      }
+    })();
+  </script>
+
+  <!-- Lesen Studio Styles -->
+  <link rel="stylesheet" href="css/lesen.css">
+</head>
+<body class="ls-body">
+
+  <div class="ls-container">
+
+    <!-- Top Navigation Bar -->
+    <header class="ls-top-bar">
+      <div class="ls-brand-group">
+        <div class="ls-brand-icon">📖</div>
+        <div>
+          <h1 class="ls-brand-title" data-i18n="brandTitle">Lesen Studio & Exam Reader</h1>
+          <p class="ls-brand-subtitle" data-i18n="brandSub">telc Deutsch B1 Reading Comprehension • Interactive Readlang & Todaii Studio</p>
+        </div>
+      </div>
+      <div class="ls-nav-controls">
+        <nav style="display:flex; gap:8px; flex-wrap:wrap;">
+          <a href="index.html" class="ls-nav-link" data-i18n="homeLink">🏠 Hauptportal</a>
+          <a href="trainer.html" class="ls-nav-link" data-i18n="vocabLink">⚡ Wortschatz</a>
+          <a href="sprechen.html" class="ls-nav-link" data-i18n="sprechLink">🗣️ Sprechen</a>
+          <a href="legal.html" class="ls-nav-link" data-i18n="legalLink">⚖️ Impressum</a>
+        </nav>
+        <div class="ls-lang-toggle" aria-label="Language selection">
+          <button class="ls-lang-btn active" data-lang="en" onclick="setLesenLang('en')">
+            <img src="https://flagcdn.com/w20/us.png" width="16" alt="US" style="border-radius:2px;"> EN
+          </button>
+          <button class="ls-lang-btn" data-lang="tr" onclick="setLesenLang('tr')">
+            <img src="https://flagcdn.com/w20/tr.png" width="16" alt="TR" style="border-radius:2px;"> TR
+          </button>
+          <button class="ls-lang-btn" data-lang="ar" onclick="setLesenLang('ar')">
+            <img src="https://flagcdn.com/w20/sa.png" width="16" alt="SA" style="border-radius:2px;"> AR
+          </button>
+          <button class="ls-lang-btn" data-lang="uk" onclick="setLesenLang('uk')">
+            <img src="https://flagcdn.com/w20/ua.png" width="16" alt="UA" style="border-radius:2px;"> UK
+          </button>
+        </div>
+        <button class="ls-btn-icon" id="btn-theme-toggle" title="Toggle Light / Dark mode" aria-label="Toggle Theme">
+          ☀️
+        </button>
+      </div>
+    </header>
+
+    <!-- Reading Exam Part Tabs -->
+    <nav class="ls-part-tabs" id="part-tabs" aria-label="Exam parts navigation">
+      <!-- Injected dynamically by js/lesenApp.js -->
+    </nav>
+
+    <!-- Main Two-Column Layout (Split View) -->
+    <div class="ls-layout-grid">
+
+      <!-- LEFT COLUMN: Interactive Reading Passage (Readlang Mode) -->
+      <main class="ls-card" id="reader-card">
+        <div class="ls-reader-header">
+          <div class="ls-meta-badges">
+            <span class="ls-badge" id="badge-part">Teil 1</span>
+            <span class="ls-badge badge-level" id="badge-level">CEFR B1</span>
+            <span class="ls-badge badge-time" id="badge-time">⏱️ 12 Min.</span>
+          </div>
+          <div class="ls-reader-tools">
+            <button type="button" class="ls-tool-btn" id="btn-font-dec" title="Schriftgröße verkleinern">A-</button>
+            <button type="button" class="ls-tool-btn" id="btn-font-inc" title="Schriftgröße vergrößern">A+</button>
+            <button type="button" class="ls-tool-btn active" id="btn-toggle-glossary" title="B1 Vokabeln im Text markieren">
+              <span data-i18n="glossaryToggle">✨ Highlight B1 Vocab</span>
+            </button>
+            <button type="button" class="ls-tool-btn" id="btn-listen-text" title="Text mit Sprachausgabe anhören">
+              <span data-i18n="btnListen">🔊 Listen to Text</span>
+            </button>
+          </div>
+        </div>
+
+        <h2 class="ls-article-title" id="article-title">Text wird geladen...</h2>
+        <div class="ls-article-summary" id="article-summary"></div>
+
+        <!-- Tokenized Text Body with Click-to-Lookup -->
+        <article class="ls-article-body" id="article-body">
+          <!-- Rendered dynamically by js/lesenApp.js with span.w-tok tokens -->
+        </article>
+      </main>
+
+      <!-- RIGHT COLUMN: Todaii Exam Quiz & Saved Vocabulary Deck -->
+      <aside class="ls-card" id="studio-panel">
+
+        <!-- Panel Switcher Tabs -->
+        <div class="ls-studio-tabs" id="studio-tabs">
+          <button type="button" class="ls-studio-tab-btn active" data-tab="questions">
+            <span data-i18n="tabQuestions">📝 Exam Questions</span>
+          </button>
+          <button type="button" class="ls-studio-tab-btn" data-tab="vocab">
+            <span data-i18n="tabSavedWords">⭐ Saved Words</span>
+          </button>
+        </div>
+
+        <!-- Timer Strip -->
+        <div class="ls-timer-bar">
+          <div class="ls-timer-label">
+            <span>⏱️</span> <span data-i18n="timerLabel">Exam Timer</span>:
+            <span class="ls-timer-digits" id="timer-display">12:00</span>
+          </div>
+          <div style="display:flex; gap:6px;">
+            <button type="button" class="ls-timer-btn" id="btn-timer-toggle" data-i18n="btnStartTimer">Start</button>
+            <button type="button" class="ls-timer-btn" id="btn-timer-reset" data-i18n="btnResetTimer">Reset</button>
+          </div>
+        </div>
+
+        <!-- Tab 1: Questions Arena -->
+        <div id="questions-container">
+          <!-- Score Banner -->
+          <div id="score-banner" style="display:none; margin-bottom:14px; padding:12px; background:var(--ls-bg-input); border-radius:var(--ls-radius-md); border:1px solid var(--ls-border-card);"></div>
+          <!-- Injected questions -->
+        </div>
+
+        <!-- Tab 2: Saved Vocabulary Deck -->
+        <div id="vocab-container" style="display:none;">
+          <div class="ls-vocab-list" id="saved-words-list">
+            <!-- Injected saved words -->
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+  <!-- Readlang Floating Word Lookup Modal -->
+  <div class="ls-lookup-modal" id="lookup-modal" role="dialog" aria-modal="true" aria-label="Wortnachschlagewerk">
+    <div class="ls-lookup-header">
+      <div class="ls-lookup-word">
+        <span id="lookup-art-badge" class="ls-art-badge">der</span>
+        <span id="lookup-word">Wort</span>
+      </div>
+      <button type="button" class="ls-lookup-close" id="lookup-close" aria-label="Schließen">✕</button>
+    </div>
+    <div class="ls-lookup-trans" id="lookup-trans">Übersetzung</div>
+    <div class="ls-lookup-meta" id="lookup-meta">Grammatik & Beispiele</div>
+    <div class="ls-lookup-actions">
+      <button type="button" class="ls-btn-save-vocab" id="btn-save-vocab">
+        <span data-i18n="addWordBtn">⭐ Add to Vocabulary</span>
+      </button>
+      <button type="button" class="ls-btn-pronounce" id="btn-pronounce-word" title="Aussprache anhören">
+        🔊
+      </button>
+    </div>
+  </div>
+
+  <!-- Core Data & Application Scripts -->
+  <script src="data/vocab2000.js"></script>
+  <script src="data/readingData.js"></script>
+  <script src="js/lesenApp.js"></script>
+
+  <!-- PWA Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('Lesen SW registered:', reg.scope))
+          .catch(err => console.error('SW registration failed:', err));
+      });
+    }
+  </script>
+</body>
+</html>

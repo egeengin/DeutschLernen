@@ -1,16 +1,19 @@
-const CACHE_NAME = 'deutschlernen-v30';
+const CACHE_NAME = 'deutschlernen-v31';
 const ASSETS = [
   './',
   './index.html',
   './trainer.html',
   './legal.html',
   './sprechen.html',
+  './lesen.html',
   './css/portal.css',
   './css/trainer.css',
   './css/sprechen.css',
+  './css/lesen.css',
   './js/portal.js',
   './js/voiceExamEngine.js',
   './js/sprechenApp.js',
+  './js/lesenApp.js',
   './js/firebaseConfig.js',
   './js/firebaseService.js',
   './js/lidTrainer.js',
@@ -24,6 +27,7 @@ const ASSETS = [
   './data/vocab2000.js',
   './data/vocab_b2.js',
   './data/vocab_c1.js',
+  './data/readingData.js',
   './assets/icons/icon-192.png',
   './assets/icons/icon-512.png',
   './assets/icons/apple-touch-icon.png',
