@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    name: Run Test Suite & Compliance
+    name: Run Test Suite, E2E Simulation & Coverage
     runs-on: ubuntu-latest
 
     steps:
@@ -20,6 +20,24 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Run Test Suite
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Node.js Headless Test Suites
+        run: |
+          node tests/test_vocab_trainer.js
+          node tests/test_voice_exam_engine.js
+          node tests/test_live_letter_grader_dom.js
+          node tests/test_lesen_reader_dom.js
+          node tests/test_portal_dom.js
+          node tests/test_e2e_simulation.js
+
+      - name: Run Full Python Test Suite
         run: |
           python -m unittest discover -s tests -v
+
+      - name: Run Automated Zero-Dependency Coverage Report
+        run: |
+          python scripts/run_coverage.py

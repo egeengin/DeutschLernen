@@ -566,6 +566,15 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn('role="button"', index_html)
         self.assertIn('flipCard()', index_html)
 
+    def test_portal_dom_headless_passes(self):
+        """Execute node tests/test_portal_dom.js and verify exit code 0."""
+        import subprocess
+        script_path = os.path.join(ROOT_DIR, "tests", "test_portal_dom.js")
+        self.assertTrue(os.path.exists(script_path), "test_portal_dom.js must exist.")
+        result = subprocess.run(["node", script_path], capture_output=True, text=True, cwd=ROOT_DIR)
+        self.assertEqual(result.returncode, 0, f"Portal DOM tests failed:\n{result.stderr}\n{result.stdout}")
+        self.assertIn("All Portal DOM unit tests passed successfully", result.stdout)
+
 
 if __name__ == "__main__":
     unittest.main()

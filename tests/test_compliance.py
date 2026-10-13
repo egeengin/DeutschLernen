@@ -244,6 +244,15 @@ class TestCommercialAndLegalCompliance(unittest.TestCase):
             forbidden = [f for f in tracked if "__pycache__" in f or f.endswith((".pyc", ".pyo", ".DS_Store"))]
             self.assertEqual(forbidden, [], f"Forbidden cache or OS files tracked in git: {forbidden}")
 
+    def test_e2e_simulation_flow_passes(self):
+        """Execute node tests/test_e2e_simulation.js and ensure exit code 0 across the entire portal."""
+        import subprocess
+        script_path = os.path.join(ROOT_DIR, "tests", "test_e2e_simulation.js")
+        self.assertTrue(os.path.exists(script_path), "test_e2e_simulation.js must exist.")
+        result = subprocess.run(["node", script_path], capture_output=True, text=True, cwd=ROOT_DIR)
+        self.assertEqual(result.returncode, 0, f"E2E simulation tests failed:\n{result.stderr}\n{result.stdout}")
+        self.assertIn("End-to-End (E2E) Flow Simulation Completed Successfully", result.stdout)
+
 
 if __name__ == "__main__":
     unittest.main()

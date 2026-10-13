@@ -134,6 +134,110 @@ class TestLiDDataset(unittest.TestCase):
         self.assertIn("Bayern", trans["en"])
         self.assertIn("Bayern", trans["tr"])
 
+    def test_build_script_full_pipeline_mocked(self):
+        """Execute build_lid_dataset.main() with mocked network sources to ensure full pipeline coverage."""
+        from unittest.mock import patch, MagicMock
+        import tempfile
+        import scripts.build_lid_dataset as bld
+
+        sample_flex = [
+            {
+                "question": "In Deutschland gehören der Bundestag und der Bundesrat zur ...",
+                "answers": ["Legislative", "Judikative", "Exekutive", "Direktive"],
+                "correct": 0,
+                "category": "Allgemein"
+            },
+            {
+                "question": "Welches Wappen gehört zum Bundesland Bayern?",
+                "answers": ["1", "2", "3", "4"],
+                "correct": 1,
+                "category": "Bayern"
+            }
+        ]
+
+        sample_scrapper = [
+            {
+                "question": "In Deutschland gehören der Bundestag und der Bundesrat zur ...",
+                "a": "Legislative", "b": "Judikative", "c": "Exekutive", "d": "Direktive",
+                "translation": {
+                    "tr": {
+                        "question": "Almanya'da Federal Meclis...",
+                        "a": "Yasama", "b": "Yargı", "c": "Yürütme", "d": "Direktif"
+                    },
+                    "en": {
+                        "question": "In Germany the Bundestag...",
+                        "a": "Legislative", "b": "Judiciary", "c": "Executive", "d": "Directive"
+                    },
+                    "ar": {
+                        "question": "في ألمانيا...",
+                        "a": "تشريعية", "b": "قضائية", "c": "تنفيذية", "d": "توجيهية"
+                    },
+                    "uk": {
+                        "question": "У Німеччині...",
+                        "a": "Законодавча", "b": "Судова", "c": "Виконавча", "d": "Директива"
+                    }
+                }
+            }
+        ]
+
+        sample_junaidk = {
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "In Deutschland gehören der Bundestag und der Bundesrat zur ...",
+                    "translation": {
+                        "en": "In Germany...",
+                        "ar": "في ألمانيا..."
+                    }
+                }
+            ]
+        }
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            temp_output = os.path.join(tmpdir, "test_lid310.js")
+            
+            def mock_fetch(url):
+                if "flexsurfer" in url:
+                    return sample_flex
+                elif "scrapper" in url:
+                    return sample_scrapper
+                else:
+                    return sample_junaidk
+
+            with patch.object(bld, "OUTPUT_FILE", temp_output), \
+                 patch.object(bld, "fetch_json", side_effect=mock_fetch), \
+                 patch.object(bld, "download_file", return_value=True):
+                bld.main()
+
+            self.assertTrue(os.path.exists(temp_output), "Mocked build pipeline must generate output JS file.")
+            with open(temp_output, "r", encoding="utf-8") as f:
+                generated = f.read()
+            self.assertIn("const LID_QUESTIONS =", generated)
+            self.assertIn("const GERMAN_STATES =", generated)
+            self.assertIn("const LID_STATE_QUESTIONS =", generated)
+
+    def test_build_script_network_helpers_mocked(self):
+        """Verify fetch_json and download_file error handling and execution with mocks."""
+        from unittest.mock import patch, MagicMock
+        import tempfile
+        import scripts.build_lid_dataset as bld
+
+        # Test download_file with existing file
+        with tempfile.NamedTemporaryFile(delete=False) as tf:
+            tf.write(b"existing-bytes")
+            tf_path = tf.name
+        try:
+            self.assertTrue(bld.download_file("http://dummy.url", tf_path))
+        finally:
+            if os.path.exists(tf_path):
+                os.remove(tf_path)
+
+        # Test download_file failure handling
+        with patch("urllib.request.urlopen", side_effect=Exception("Simulated connection timeout")):
+            dummy_target = os.path.join(tempfile.gettempdir(), "non_existent_mock_target.png")
+            result = bld.download_file("http://broken.url/test.png", dummy_target)
+            self.assertFalse(result, "download_file must return False on network error")
+
 
 if __name__ == "__main__":
     unittest.main()
