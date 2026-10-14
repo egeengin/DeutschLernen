@@ -105,6 +105,83 @@ window.READING_DATASET = [
         "ar": "التزام / واجب",
         "uk": "зобов'язання / обов'язок",
         "example_de": "Eine Vereinsleitung bedeutet eine große zeitliche Verpflichtung."
+      },
+      {
+        "de": "die Feuerwehr",
+        "article": "die",
+        "plural": "die Feuerwehren",
+        "pos": "noun",
+        "en": "fire department / fire brigade",
+        "tr": "itfaiye",
+        "ar": "فرقة الإطفاء / إدارة المطافئ",
+        "uk": "пожежна команда / служба порятунку",
+        "example_de": "Er engagiert sich ehrenamtlich bei der Freiwilligen Feuerwehr."
+      },
+      {
+        "de": "der Verein",
+        "article": "der",
+        "plural": "die Vereine",
+        "pos": "noun",
+        "en": "club / association",
+        "tr": "dernek / kulüp",
+        "ar": "جمعية / نادٍ / رابطة",
+        "uk": "клуб / громадська організація / товариство",
+        "example_de": "Der lokale Sportverein bietet viele Kurse für Kinder an."
+      },
+      {
+        "de": "freiwillig",
+        "article": "",
+        "plural": "",
+        "pos": "adj",
+        "en": "voluntary / of one's own free will",
+        "tr": "gönüllü / isteğe bağlı",
+        "ar": "طوعي / تطوعي",
+        "uk": "добровільний / волонтерський",
+        "example_de": "Mehr als 28 Millionen Menschen arbeiten freiwillig in ihrer Freizeit."
+      },
+      {
+        "de": "die Unterstützung",
+        "article": "die",
+        "plural": "die Unterstützungen",
+        "pos": "noun",
+        "en": "support / assistance",
+        "tr": "destek / yardım",
+        "ar": "الدعم / المساعدة",
+        "uk": "підтримка / допомога",
+        "example_de": "Ältere Mitbürger benötigen oft praktische Unterstützung im Alltag."
+      },
+      {
+        "de": "die Herausforderung",
+        "article": "die",
+        "plural": "die Herausforderungen",
+        "pos": "noun",
+        "en": "challenge",
+        "tr": "zorluk / meydan okuma",
+        "ar": "تحدٍ / مهمة صعبة",
+        "uk": "виклик / складне завдання",
+        "example_de": "Viele Vereine stehen vor personellen Herausforderungen."
+      },
+      {
+        "de": "der Beitrag",
+        "article": "der",
+        "plural": "die Beiträge",
+        "pos": "noun",
+        "en": "contribution / membership fee",
+        "tr": "katkı / aidat",
+        "ar": "مساهمة / اشتراك",
+        "uk": "внесок / участь",
+        "example_de": "Jeder Bürger kann einen wertvollen Beitrag zur Gemeinschaft leisten."
+      },
+      {
+        "de": "die Freundschaft",
+        "article": "die",
+        "plural": "die Freundschaften",
+        "pos": "noun",
+        "en": "friendship",
+        "tr": "arkadaşlık / dostluk",
+        "ar": "صداقة / علاقة مودة",
+        "uk": "дружба / дружні стосунки",
+        "example_de": "Im Verein kann man schnell neue Freundschaften schließen."
       }
     ],
     "questions": [
@@ -328,6 +405,61 @@ window.READING_DATASET = [
         "ar": "يقاوم / يتصدى لـ / يكافح",
         "uk": "протидіяти / нейтралізувати",
         "example_de": "Unternehmen müssen der Isolation aktiv entgegenwirken."
+      },
+      {
+        "de": "das Homeoffice",
+        "article": "das",
+        "plural": "-",
+        "pos": "noun",
+        "en": "home office / working from home",
+        "tr": "evden çalışma / uzaktan çalışma",
+        "ar": "العمل من المنزل / المكتب المنزلي",
+        "uk": "дистанційна робота / робота з дому",
+        "example_de": "Das Homeoffice gehört für viele zum Berufsalltag."
+      },
+      {
+        "de": "die Arbeitswelt",
+        "article": "die",
+        "plural": "-",
+        "pos": "noun",
+        "en": "working world / labor market",
+        "tr": "çalışma hayatı / iş dünyası",
+        "ar": "عالم العمل والوظائف",
+        "uk": "сфера праці / світ зайнятості",
+        "example_de": "Die moderne Arbeitswelt hat sich grundlegend gewandelt."
+      },
+      {
+        "de": "die Entgrenzung",
+        "article": "die",
+        "plural": "-",
+        "pos": "noun",
+        "en": "blurring of boundaries (between work and life)",
+        "tr": "iş ile özel yaşam sınırlarının kaybolması",
+        "ar": "تلاشي الحدود بين العمل والحياة الخاصة",
+        "uk": "розмивання меж між роботою та особистим життям",
+        "example_de": "Psychologen warnen vor der Entgrenzung von Arbeits- und Freizeit."
+      },
+      {
+        "de": "das Arbeitszeitgesetz",
+        "article": "das",
+        "plural": "die Arbeitszeitgesetze",
+        "pos": "noun",
+        "en": "Working Hours Act / labor time regulations",
+        "tr": "çalışma saatleri kanunu",
+        "ar": "قانون ساعات العمل",
+        "uk": "закон про робочий час",
+        "example_de": "Das Arbeitszeitgesetz gilt in Deutschland auch im Homeoffice."
+      },
+      {
+        "de": "der Berufsalltag",
+        "article": "der",
+        "plural": "-",
+        "pos": "noun",
+        "en": "daily professional life",
+        "tr": "iş rutini / mesleki günlük yaşam",
+        "ar": "الروتين المهني اليومي",
+        "uk": "робочий побут / професійні будні",
+        "example_de": "Mobiles Arbeiten gehört mittlerweile zum Berufsalltag."
       }
     ],
     "questions": [
@@ -551,6 +683,61 @@ window.READING_DATASET = [
         "ar": "يسدد / يدفع المبلغ",
         "uk": "сплачувати / погашати рахунок",
         "example_de": "Sie können die Kaution in drei Raten begleichen."
+      },
+      {
+        "de": "die Warmmiete",
+        "article": "die",
+        "plural": "die Warmmieten",
+        "pos": "noun",
+        "en": "warm rent (gross rent including utilities)",
+        "tr": "sıcak kira (yan giderler dahil kira)",
+        "ar": "الإيجار الشامل (شامل التدفئة والخدمات)",
+        "uk": "повна орендна плата (з комунальними послугами)",
+        "example_de": "Die monatliche Warmmiete muss am Monatsanfang überwiesen werden."
+      },
+      {
+        "de": "der Vermieter",
+        "article": "der",
+        "plural": "die Vermieter",
+        "pos": "noun",
+        "en": "landlord / lessor",
+        "tr": "ev sahibi / kiraya veren",
+        "ar": "المؤجر / صاحب العقار",
+        "uk": "орендодавець / власник житла",
+        "example_de": "Der Vermieter verlangt eine Kaution als finanzielle Absicherung."
+      },
+      {
+        "de": "der Mieter",
+        "article": "der",
+        "plural": "die Mieter",
+        "pos": "noun",
+        "en": "tenant / renter",
+        "tr": "kiracı",
+        "ar": "المستأجر",
+        "uk": "орендар / наймач",
+        "example_de": "Mieter haben das Recht, die Kaution in drei Monatsraten zu zahlen."
+      },
+      {
+        "de": "der Mietvertrag",
+        "article": "der",
+        "plural": "die Mietverträge",
+        "pos": "noun",
+        "en": "tenancy agreement / lease contract",
+        "tr": "kira sözleşmesi",
+        "ar": "عقد الإيجار",
+        "uk": "договір оренди",
+        "example_de": "Die Hausordnung ist fester Bestandteil des Mietvertrags."
+      },
+      {
+        "de": "die Vorbereitung",
+        "article": "die",
+        "plural": "die Vorbereitungen",
+        "pos": "noun",
+        "en": "preparation",
+        "tr": "hazırlık",
+        "ar": "الاستعداد / التحضير",
+        "uk": "підготовка / підготовчі заходи",
+        "example_de": "Eine gründliche Vorbereitung ist bei der Wohnungssuche entscheidend."
       }
     ],
     "questions": [
@@ -774,6 +961,61 @@ window.READING_DATASET = [
         "ar": "يشغل الجهاز لأول مرة",
         "uk": "вводити в експлуатацію / запускати в роботу",
         "example_de": "Bitte lesen Sie die Anleitung, bevor Sie das Gerät in Betrieb nehmen."
+      },
+      {
+        "de": "der Wassertank",
+        "article": "der",
+        "plural": "die Wassertanks",
+        "pos": "noun",
+        "en": "water tank / water reservoir",
+        "tr": "su haznesi / su deposu",
+        "ar": "خزان الماء",
+        "uk": "резервуар для води",
+        "example_de": "Der Wassertank der gelieferten Kaffeemaschine ist undicht."
+      },
+      {
+        "de": "die Kaffeemaschine",
+        "article": "die",
+        "plural": "die Kaffeemaschinen",
+        "pos": "noun",
+        "en": "coffee machine",
+        "tr": "kahve makinesi",
+        "ar": "ماكينة القهوة",
+        "uk": "кавоварка / кавомашина",
+        "example_de": "Ich habe im Online-Shop eine neue Kaffeemaschine bestellt."
+      },
+      {
+        "de": "der Kaufvertrag",
+        "article": "der",
+        "plural": "die Kaufverträge",
+        "pos": "noun",
+        "en": "purchase agreement / sales contract",
+        "tr": "satış sözleşmesi / satın alma kontratı",
+        "ar": "عقد الشراء / عقد البيع",
+        "uk": "договір купівлі-продажу",
+        "example_de": "Hiermit trete ich fristgerecht vom Kaufvertrag zurück."
+      },
+      {
+        "de": "der Kundenservice",
+        "article": "der",
+        "plural": "-",
+        "pos": "noun",
+        "en": "customer service / support",
+        "tr": "müşteri hizmetleri",
+        "ar": "خدمة العملاء / الدعم الفني",
+        "uk": "служба підтримки клієнтів",
+        "example_de": "Der Kundenservice bearbeitete die Reklamation sofort."
+      },
+      {
+        "de": "undicht",
+        "article": "",
+        "plural": "",
+        "pos": "adj",
+        "en": "leaking / leaky",
+        "tr": "sızdıran / su kaçıran",
+        "ar": "غير محكم / يسرب السوائل",
+        "uk": "негерметичний / протікає",
+        "example_de": "Das Gerät ist leider undicht und das Wasser läuft aus."
       }
     ],
     "questions": [

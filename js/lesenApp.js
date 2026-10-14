@@ -435,9 +435,15 @@
       // Create lookup map of glossary entries
       const glossaryMap = new Set();
       (unitGlossary || []).forEach(g => {
-        // extract base word
-        const base = g.de.replace(/^(der|die|das)\s+/i, '').toLowerCase();
-        glossaryMap.add(base);
+        const cleanNoArt = g.de.replace(/^(der|die|das|sich)\s+/i, '');
+        const base = cleanNoArt.split(/[,(/]/)[0].trim().toLowerCase();
+        if (base) glossaryMap.add(base);
+        cleanNoArt.split(/[\s,/-]+/).forEach(w => {
+          const wClean = w.trim().toLowerCase();
+          if (wClean.length >= 3 && !['und', 'der', 'die', 'das', 'den', 'dem', 'des', 'von', 'vor', 'mit', 'auf', 'für', 'sich', 'in'].includes(wClean)) {
+            glossaryMap.add(wClean);
+          }
+        });
       });
 
       return tokens.map(tok => {
@@ -472,7 +478,8 @@
       if (!this.dom.lookupModal) return;
 
       const unit = this.dataset[this.currentUnitIndex];
-      const match = this.findWordData(cleanWord, unit.glossary);
+      const match = this.findWordData(cleanWord, unit ? unit.glossary : []);
+      if (!match) return;
 
       this.currentLookupData = match;
 
@@ -493,13 +500,16 @@
       }
 
       // Translation in user language
-      const trans = match[this.lang] || match.en || match.tr || "Almanca Sözcük";
+      const trans = match[this.lang] || match.en || match.tr || match.de;
       this.dom.lookupTrans.textContent = trans;
 
-      // Metadata (Plural, POS, examples)
-      let metaStr = match.pos ? `[${match.pos}] ` : '';
+      // Metadata (Plural, POS, level, examples with localized translation)
+      let metaStr = match.pos ? `[${match.pos}${match.level ? ' • ' + match.level : ''}] ` : '';
       if (match.plural && match.plural !== '-') metaStr += `Plural: ${match.plural}`;
-      if (match.example_de) metaStr += ` • Bsp: "${match.example_de}"`;
+      if (match.example_de) {
+        const exTrans = (this.lang !== 'de' && match['example_' + this.lang]) ? ` (${match['example_' + this.lang]})` : '';
+        metaStr += ` • Bsp: "${match.example_de}"${exTrans}`;
+      }
       this.dom.lookupMeta.textContent = metaStr;
 
       // Update save button state
@@ -540,65 +550,200 @@
     }
 
     findWordData(cleanWord, unitGlossary) {
+      if (!cleanWord) return null;
       const lower = cleanWord.toLowerCase();
 
-      // 1. Check unit glossary first
-      for (const item of (unitGlossary || [])) {
-        const itemClean = item.de.replace(/^(der|die|das)\s+/i, '').toLowerCase();
-        if (itemClean === lower || lower.startsWith(itemClean) || itemClean.startsWith(lower)) {
-          return {
-            de: item.de,
-            displayDe: item.de,
-            article: item.article || "",
-            plural: item.plural || "",
-            pos: item.pos || "",
-            en: item.en,
-            tr: item.tr,
-            ar: item.ar,
-            uk: item.uk,
-            example_de: item.example_de || ""
-          };
+      // Normalize any vocabulary entry
+      const parseEntry = (item, isGlossary) => {
+        const rawDe = (item.de || '').trim();
+        let article = item.article || '';
+        if (!article) {
+          const m = rawDe.match(/^(der|die|das)\s+/i);
+          if (m) article = m[1].toLowerCase();
+        }
+
+        const cleanNoArt = rawDe.replace(/^(der|die|das|sich)\s+/i, '');
+        const mainLemma = cleanNoArt.split(/[,(/]/)[0].trim();
+
+        const forms = new Set();
+        if (mainLemma) forms.add(mainLemma.toLowerCase());
+        forms.add(cleanNoArt.toLowerCase());
+        forms.add(rawDe.toLowerCase());
+
+        cleanNoArt.split(/[\s,/-]+/).forEach(part => {
+          const p = part.trim().toLowerCase();
+          if (p.length >= 3 && !['und', 'der', 'die', 'das', 'den', 'dem', 'des', 'von', 'vor', 'mit', 'auf', 'für', 'sich', 'in'].includes(p)) {
+            forms.add(p);
+          }
+        });
+
+        const paren = rawDe.match(/\(([^)]+)\)/);
+        if (paren) {
+          paren[1].split(/[,/\s]+/).forEach(p => {
+            const pClean = p.replace(/^(hat|ist)\s+/, '').trim().toLowerCase();
+            if (pClean && pClean.length >= 3 && !['sg.', 'pl.', 'nur'].includes(pClean)) {
+              forms.add(pClean);
+            }
+          });
+        }
+
+        if (rawDe.includes('/')) {
+          rawDe.split('/').forEach(part => {
+            const pClean = part.replace(/^(der|die|das|sich)\s+/i, '').split(/[,(/]/)[0].trim().toLowerCase();
+            if (pClean && pClean.length >= 3) forms.add(pClean);
+          });
+        }
+
+        return {
+          de: rawDe,
+          displayDe: mainLemma || rawDe,
+          article: article,
+          plural: item.plural || '',
+          pos: item.pos || '',
+          level: item.level || (isGlossary ? 'B1' : ''),
+          en: item.en || '',
+          tr: item.tr || '',
+          ar: item.ar || '',
+          uk: item.uk || '',
+          example_de: item.example_de || item.example || '',
+          example_tr: item.example_tr || '',
+          example_en: item.example_en || '',
+          example_ar: item.example_ar || '',
+          example_uk: item.example_uk || '',
+          forms: Array.from(forms)
+        };
+      };
+
+      // 1. Check unit glossary first (priority for the current reading unit)
+      const parsedGlossary = (unitGlossary || []).map(g => parseEntry(g, true));
+      for (const entry of parsedGlossary) {
+        if (entry.forms.includes(lower)) {
+          return entry;
         }
       }
 
-      // 2. Check global VOCAB_2000
-      if (window.VOCAB_2000 && Array.isArray(window.VOCAB_2000)) {
-        for (const item of window.VOCAB_2000) {
-          const itemClean = item.de.split(' ')[0].toLowerCase();
-          if (itemClean === lower || lower.startsWith(itemClean)) {
-            let article = "";
-            if (/^der\b/i.test(item.de)) article = "der";
-            else if (/^die\b/i.test(item.de)) article = "die";
-            else if (/^das\b/i.test(item.de)) article = "das";
+      // 2. Prepare dictionary pool (VOCAB_2000, VOCAB_B2, VOCAB_C1)
+      if (!this._cachedVocabPool) {
+        const pool = [];
+        if (window.VOCAB_2000 && Array.isArray(window.VOCAB_2000)) {
+          pool.push(...window.VOCAB_2000);
+        }
+        if (window.VOCAB_B2 && Array.isArray(window.VOCAB_B2)) {
+          pool.push(...window.VOCAB_B2);
+        }
+        if (window.VOCAB_C1 && Array.isArray(window.VOCAB_C1)) {
+          pool.push(...window.VOCAB_C1);
+        }
+        this._cachedVocabPool = pool.map(item => parseEntry(item, false));
+      }
 
-            return {
-              de: item.de,
-              displayDe: item.de,
-              article: article,
-              plural: item.plural || "",
-              pos: item.pos || "",
-              en: item.en,
-              tr: item.tr,
-              ar: item.ar,
-              uk: item.uk,
-              example_de: item.example || ""
-            };
+      for (const entry of this._cachedVocabPool) {
+        if (entry.forms.includes(lower)) {
+          return entry;
+        }
+      }
+
+      // 3. German inflection & morphological stemming candidates
+      const candidates = [];
+      const isNounSuffix = (lower.endsWith('schaften') || lower.endsWith('ungen') || lower.endsWith('heiten') || lower.endsWith('keiten') || lower.endsWith('innen'));
+
+      // A. Separable prefix with 'zu': entgegenzuwirken -> entgegenwirken, abzuschalten -> abschalten
+      if (lower.includes('zu') && lower.length >= 7) {
+        candidates.push(lower.replace('zu', ''));
+      }
+
+      // B. Noun feminine plurals: -innen -> -in, or base
+      if (lower.endsWith('innen') && lower.length >= 7) {
+        candidates.push(lower.slice(0, -5) + 'in');
+        candidates.push(lower.slice(0, -5));
+      }
+
+      // C. Suffixes -ungen, -heiten, -keiten, -schaften
+      if (lower.endsWith('ungen') && lower.length >= 6) candidates.push(lower.slice(0, -2));
+      if (lower.endsWith('schaften') && lower.length >= 9) candidates.push(lower.slice(0, -2));
+      if (lower.endsWith('heiten') && lower.length >= 7) candidates.push(lower.slice(0, -2));
+      if (lower.endsWith('keiten') && lower.length >= 7) candidates.push(lower.slice(0, -2));
+
+      // D. Common noun/adjective declensions: -en, -n, -er, -es, -em, -e, -s
+      if (lower.endsWith('en') && lower.length >= 4) {
+        candidates.push(lower.slice(0, -2));
+        candidates.push(lower.slice(0, -1));
+      }
+      if (lower.endsWith('em') && lower.length >= 4) candidates.push(lower.slice(0, -2));
+      if (lower.endsWith('er') && lower.length >= 4) candidates.push(lower.slice(0, -2));
+      if (lower.endsWith('es') && lower.length >= 4) {
+        candidates.push(lower.slice(0, -2));
+        candidates.push(lower.slice(0, -1));
+      }
+      if (lower.endsWith('e') && lower.length >= 4) candidates.push(lower.slice(0, -1));
+      if (lower.endsWith('s') && lower.length >= 4) candidates.push(lower.slice(0, -1));
+
+      // E. Verb past/3rd person (only if not a noun suffix): -te -> -en, -ten -> -en, -t -> -en
+      if (!isNounSuffix) {
+        if (lower.endsWith('te') && lower.length >= 5) candidates.push(lower.slice(0, -2) + 'en');
+        if (lower.endsWith('ten') && lower.length >= 6) candidates.push(lower.slice(0, -3) + 'en');
+        if (lower.endsWith('t') && lower.length >= 4) candidates.push(lower.slice(0, -1) + 'en');
+      }
+
+      // F. Umlaut stripping for stem variants (ä -> a, ö -> o, ü -> u)
+      const unumlaut = (s) => s.replace(/ä/g, 'a').replace(/ö/g, 'o').replace(/ü/g, 'u');
+      const umlautVariants = [];
+      candidates.forEach(c => {
+        const u = unumlaut(c);
+        if (u !== c) umlautVariants.push(u);
+      });
+      candidates.push(...umlautVariants);
+
+      // Check candidates against glossary first, then dictionary pool
+      for (const cand of candidates) {
+        if (!cand || cand.length < 3) continue;
+        for (const entry of parsedGlossary) {
+          if (entry.forms.includes(cand)) return entry;
+        }
+        for (const entry of this._cachedVocabPool) {
+          if (entry.forms.includes(cand)) return entry;
+        }
+      }
+
+      // 4. German Compound Noun Suffix (Kompositum) matching
+      // e.g. Sportverein ends with Verein, Berufsalltag ends with Alltag, Arbeitsmodell ends with Modell
+      if (lower.length >= 6) {
+        const compoundTargets = [lower, lower.endsWith('en') ? lower.slice(0, -2) : null, lower.endsWith('e') ? lower.slice(0, -1) : null, lower.endsWith('s') ? lower.slice(0, -1) : null].filter(Boolean);
+        for (const target of compoundTargets) {
+          for (const entry of parsedGlossary) {
+            if (entry.pos === 'noun') {
+              const base = entry.displayDe.toLowerCase();
+              if (base.length >= 4 && target.endsWith(base)) return entry;
+            }
+          }
+          for (const entry of this._cachedVocabPool) {
+            if (entry.pos === 'noun') {
+              const base = entry.displayDe.toLowerCase();
+              if (base.length >= 4 && target.endsWith(base)) return entry;
+            }
           }
         }
       }
 
-      // 3. Fallback generic entry
+      // 5. Fallback generic entry
+      const fallbacks = {
+        tr: `Almanca sözcük: ${cleanWord}`,
+        en: `German term: ${cleanWord}`,
+        ar: `كلمة ألمانية: ${cleanWord}`,
+        uk: `Німецьке слово: ${cleanWord}`
+      };
       return {
         de: cleanWord,
         displayDe: cleanWord,
-        article: "",
-        plural: "",
-        pos: "Wort",
-        en: `German term: ${cleanWord}`,
-        tr: `Almanca kelime: ${cleanWord}`,
-        ar: `كلمة ألمانية: ${cleanWord}`,
-        uk: `Німецьке слово: ${cleanWord}`,
-        example_de: ""
+        article: '',
+        plural: '',
+        pos: 'Wort',
+        level: '',
+        en: fallbacks.en,
+        tr: fallbacks.tr,
+        ar: fallbacks.ar,
+        uk: fallbacks.uk,
+        example_de: ''
       };
     }
 
@@ -979,15 +1124,26 @@
     }
   }
 
-  // Expose instance globally and auto-start on DOMContentLoaded
-  document.addEventListener('DOMContentLoaded', () => {
-    window.LesenAppInstance = new LesenApp();
-  });
+  // Expose class & instance globally and auto-start on DOMContentLoaded
+  if (typeof window !== 'undefined') {
+    window.LesenApp = LesenApp;
+    if (typeof document !== 'undefined' && document.addEventListener) {
+      document.addEventListener('DOMContentLoaded', () => {
+        window.LesenAppInstance = new LesenApp();
+      });
+    }
+  }
 
   // Global helper for language buttons
-  window.setLesenLang = function(lang) {
-    if (window.LesenAppInstance) {
-      window.LesenAppInstance.setLanguage(lang);
-    }
-  };
+  if (typeof window !== 'undefined') {
+    window.setLesenLang = function(lang) {
+      if (window.LesenAppInstance) {
+        window.LesenAppInstance.setLanguage(lang);
+      }
+    };
+  }
+
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { LesenApp };
+  }
 })();
