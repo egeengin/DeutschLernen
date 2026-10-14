@@ -114,4 +114,11 @@ assert.strictEqual(saved.length, 1);
 assert.strictEqual(saved[0].de, 'das Ehrenamt');
 console.log('✅ LocalStorage vocabulary deck persistence verified.');
 
-console.log('🎉 All 5 Lesen Studio headless JS unit tests passed successfully!');
+// 6. Test Exam Questions & Options German Target Language Integrity
+const appCode = fs.readFileSync(path.join(ROOT_DIR, 'js', 'lesenApp.js'), 'utf8');
+assert(appCode.includes('const optText = opt.de;'), 'Answer options must be German (opt.de)');
+assert(appCode.includes('const germanPrompt = q.prompt.de;'), 'Question prompt must have German as primary');
+assert(!appCode.includes('const optText = opt[this.lang] || opt.de;'), 'Banned: translating exam options to UI language');
+console.log('✅ Exam questions and options German target language integrity verified.');
+
+console.log('🎉 All 6 Lesen Studio headless JS unit tests passed successfully!');

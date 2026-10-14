@@ -712,14 +712,18 @@
 
       this.dom.questionsContainer.innerHTML = '';
       const texts = I18N[this.lang] || I18N.en;
+      const langFlags = { tr: '🇹🇷', en: '🇬🇧', ar: '🇸🇦', uk: '🇺🇦' };
+      const flag = langFlags[this.lang] || '🌐';
 
       unit.questions.forEach((q, qIndex) => {
         const qCard = document.createElement('div');
         qCard.className = 'ls-q-card';
         qCard.id = `q-card-${q.id}`;
 
-        const promptText = q.prompt[this.lang] || q.prompt.de;
-        const subPrompt = (this.lang !== 'de' && q.prompt.de !== promptText) ? `<div class="ls-q-prompt-sub">🇩🇪 ${q.prompt.de}</div>` : '';
+        const germanPrompt = q.prompt.de;
+        const transPrompt = (this.lang !== 'de' && q.prompt[this.lang] && q.prompt[this.lang] !== germanPrompt)
+          ? `<div class="ls-q-prompt-sub">${flag} ${q.prompt[this.lang]}</div>`
+          : '';
 
         qCard.innerHTML = `
           <div class="ls-q-header">
@@ -729,8 +733,8 @@
             </button>
           </div>
           <div class="ls-q-prompt">
-            ${promptText}
-            ${subPrompt}
+            <div class="ls-q-prompt-de">${germanPrompt}</div>
+            ${transPrompt}
           </div>
           <div class="ls-options-grid" id="opt-grid-${q.id}"></div>
           <div class="ls-explanation-box" id="exp-${q.id}" style="display:none;"></div>
@@ -742,12 +746,19 @@
         q.options.forEach((opt, optIndex) => {
           const optBtn = document.createElement('button');
           optBtn.className = 'ls-opt-btn';
-          const optText = opt[this.lang] || opt.de;
+          const optText = opt.de;
           const letter = q.type === 'true_false' ? (optIndex === 0 ? '✓' : '✗') : letters[optIndex];
+          const translationTooltip = (this.lang !== 'de' && opt[this.lang] && opt[this.lang] !== opt.de) ? opt[this.lang] : '';
+
+          if (translationTooltip) {
+            optBtn.title = translationTooltip;
+          }
 
           optBtn.innerHTML = `
             <span class="ls-opt-letter">${letter}</span>
-            <span>${optText}</span>
+            <div class="ls-opt-content">
+              <span class="ls-opt-text">${optText}</span>
+            </div>
           `;
 
           optBtn.addEventListener('click', () => this.handleAnswer(q, optIndex, qCard));
@@ -778,6 +789,18 @@
           btn.classList.add('selected-correct');
         } else if (idx === selectedIndex) {
           btn.classList.add('selected-wrong');
+        }
+
+        // Post-answer pedagogical feedback: reveal translation below German option once answered
+        const opt = question.options[idx];
+        if (this.lang !== 'de' && opt && opt[this.lang] && opt[this.lang] !== opt.de) {
+          const contentEl = btn.querySelector('.ls-opt-content');
+          if (contentEl && !contentEl.querySelector('.ls-opt-trans')) {
+            const transEl = document.createElement('span');
+            transEl.className = 'ls-opt-trans';
+            transEl.textContent = opt[this.lang];
+            contentEl.appendChild(transEl);
+          }
         }
       });
 

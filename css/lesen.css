@@ -579,7 +579,7 @@ body.ls-body {
   text-align: left;
   cursor: pointer;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   transition: var(--ls-transition);
   position: relative;
@@ -616,6 +616,29 @@ body.ls-body {
   font-size: 11px;
   font-weight: 800;
   flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.ls-opt-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+  text-align: left;
+}
+
+.ls-opt-text {
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--ls-text-main);
+}
+
+.ls-opt-trans {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--ls-text-muted);
+  line-height: 1.35;
 }
 
 .ls-explanation-box {
@@ -818,6 +841,17 @@ body[data-lang="ar"] .ls-article-summary {
 body[data-lang="ar"] .ls-opt-btn {
   text-align: right;
   flex-direction: row-reverse;
+}
+
+[dir="rtl"] .ls-opt-content,
+body[data-lang="ar"] .ls-opt-content {
+  text-align: right;
+}
+
+[dir="rtl"] .ls-opt-text,
+body[data-lang="ar"] .ls-opt-text {
+  direction: ltr;
+  text-align: left;
 }
 
 [dir="rtl"] .ls-explanation-box,
