@@ -419,6 +419,13 @@ body.ls-body {
   color: #ffffff;
 }
 
+.w-tok.active-lookup {
+  background: rgba(99, 102, 241, 0.38);
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.85);
+}
+
 /* Right Studio Panel: Tabs */
 .ls-studio-tabs {
   display: flex;
@@ -654,6 +661,7 @@ body.ls-body {
 
 /* Readlang Popover Dialog / Tooltip */
 .ls-lookup-modal {
+  box-sizing: border-box;
   position: fixed;
   z-index: 9999;
   background: var(--ls-bg-card);

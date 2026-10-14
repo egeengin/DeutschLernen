@@ -287,6 +287,28 @@
         }
       });
 
+      // Reposition modal dynamically on scroll or resize
+      if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
+        window.addEventListener('scroll', () => {
+          if (this.dom.lookupModal && this.dom.lookupModal.classList.contains('active') && this.activeWordElement) {
+            this.positionLookupModal(this.activeWordElement);
+          }
+        }, { passive: true });
+
+        window.addEventListener('resize', () => {
+          if (this.dom.lookupModal && this.dom.lookupModal.classList.contains('active') && this.activeWordElement) {
+            this.positionLookupModal(this.activeWordElement);
+          }
+        }, { passive: true });
+      }
+
+      // Close modal on Escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && this.dom.lookupModal && this.dom.lookupModal.classList.contains('active')) {
+          this.closeLookup();
+        }
+      });
+
       // Theme toggle
       if (this.dom.themeToggleBtn) {
         this.dom.themeToggleBtn.addEventListener('click', () => this.toggleTheme());
@@ -643,32 +665,99 @@
     }
 
     positionLookupModal(element) {
+      if (!element || !this.dom.lookupModal) return;
+
+      // Highlight active word token
+      if (this.activeWordElement && this.activeWordElement !== element) {
+        this.activeWordElement.classList.remove('active-lookup');
+      }
+      this.activeWordElement = element;
+      element.classList.add('active-lookup');
+
       const modal = this.dom.lookupModal;
+
+      // Make active and reset previous inline maxHeight to measure true rendered height
       modal.classList.add('active');
+      modal.style.maxHeight = '';
 
       const rect = element.getBoundingClientRect();
-      const modalWidth = 360;
-      const modalHeight = Math.min(modal.offsetHeight || 320, window.innerHeight * 0.85);
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const edgeMargin = 12;
+      const gap = 8;
 
-      let top = rect.bottom + window.scrollY + 8;
-      let left = rect.left + window.scrollX - (modalWidth / 2) + (rect.width / 2);
-
-      // Boundary checks
-      if (left < 10) left = 10;
-      if (left + modalWidth > window.innerWidth - 10) {
-        left = window.innerWidth - modalWidth - 10;
-      }
-      if (rect.bottom + modalHeight > window.innerHeight && rect.top > modalHeight) {
-        top = Math.max(10, rect.top + window.scrollY - modalHeight - 8);
+      // If word is scrolled off screen, close lookup
+      if (rect.bottom < 0 || rect.top > vh) {
+        this.closeLookup();
+        return;
       }
 
-      modal.style.top = `${top}px`;
-      modal.style.left = `${left}px`;
+      // Compute modal width and actual rendered height
+      const modalWidth = Math.min(modal.offsetWidth || 360, vw - (edgeMargin * 2));
+      const naturalHeight = modal.offsetHeight || 320;
+
+      const spaceAbove = rect.top - edgeMargin - gap;
+      const spaceBelow = vh - rect.bottom - edgeMargin - gap;
+
+      // Decision: place ABOVE ("kelimenin hemen üstünde") or BELOW
+      // We prefer placing above if it fits, or if spaceAbove >= spaceBelow (word in lower half)
+      let placeAbove = false;
+      if (spaceAbove >= naturalHeight) {
+        placeAbove = true;
+      } else if (spaceBelow >= naturalHeight) {
+        placeAbove = false;
+      } else {
+        placeAbove = spaceAbove >= spaceBelow;
+      }
+
+      let top;
+      if (placeAbove) {
+        if (naturalHeight > spaceAbove) {
+          const maxH = Math.max(160, Math.floor(spaceAbove));
+          modal.style.maxHeight = `${maxH}px`;
+          top = Math.max(edgeMargin, rect.top - maxH - gap);
+        } else {
+          top = rect.top - naturalHeight - gap;
+        }
+      } else {
+        if (naturalHeight > spaceBelow) {
+          const maxH = Math.max(160, Math.floor(spaceBelow));
+          modal.style.maxHeight = `${maxH}px`;
+          top = rect.bottom + gap;
+        } else {
+          top = rect.bottom + gap;
+        }
+      }
+
+      // Safety check: Ensure modal never overflows top or bottom of viewport
+      const currentHeight = modal.offsetHeight || naturalHeight;
+      if (top + currentHeight > vh - edgeMargin) {
+        top = Math.max(edgeMargin, vh - currentHeight - edgeMargin);
+      }
+      if (top < edgeMargin) {
+        top = edgeMargin;
+      }
+
+      // Horizontal centering relative to the word, clamped to viewport bounds
+      let left = rect.left + (rect.width / 2) - (modalWidth / 2);
+      if (left < edgeMargin) {
+        left = edgeMargin;
+      } else if (left + modalWidth > vw - edgeMargin) {
+        left = vw - modalWidth - edgeMargin;
+      }
+
+      modal.style.top = `${Math.round(top)}px`;
+      modal.style.left = `${Math.round(left)}px`;
     }
 
     closeLookup() {
+      if (this.activeWordElement) {
+        this.activeWordElement.classList.remove('active-lookup');
+        this.activeWordElement = null;
+      }
       if (this.dom.lookupModal) {
         this.dom.lookupModal.classList.remove('active');
+        this.dom.lookupModal.style.maxHeight = '';
       }
     }
 

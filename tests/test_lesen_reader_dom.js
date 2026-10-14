@@ -27,7 +27,11 @@ const docMock = {
 };
 
 const sandbox = {
-  window: {},
+  window: {
+    addEventListener: () => {},
+    innerWidth: 1024,
+    innerHeight: 768
+  },
   document: docMock,
   localStorage: {
     _data: {},
