@@ -160,7 +160,24 @@
       <button type="button" class="ls-lookup-close" id="lookup-close" aria-label="Schließen">✕</button>
     </div>
     <div class="ls-lookup-trans" id="lookup-trans">Übersetzung</div>
-    <div class="ls-lookup-meta" id="lookup-meta">Grammatik & Beispiele</div>
+    <div class="ls-lookup-meta" id="lookup-meta">Grammatik & Wortart</div>
+
+    <!-- Contextual Grammar Insight Box -->
+    <div class="ls-lookup-grammar" id="lookup-grammar" style="display: none;">
+      <div class="ls-lookup-section-title">
+        <span>💡</span> <span id="lookup-grammar-title">Grammatik-Hinweis</span>
+      </div>
+      <div class="ls-grammar-content" id="lookup-grammar-text"></div>
+    </div>
+
+    <!-- Multiple Example Sentences Section -->
+    <div class="ls-lookup-examples" id="lookup-examples" style="display: none;">
+      <div class="ls-lookup-section-title">
+        <span>📚</span> <span id="lookup-examples-title">Beispielsätze</span>
+      </div>
+      <div class="ls-examples-list" id="lookup-examples-list"></div>
+    </div>
+
     <div class="ls-lookup-actions">
       <button type="button" class="ls-btn-save-vocab" id="btn-save-vocab">
         <span data-i18n="addWordBtn">⭐ Add to Vocabulary</span>

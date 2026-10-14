@@ -204,6 +204,12 @@
         lookupArtBadge: document.getElementById('lookup-art-badge'),
         lookupTrans: document.getElementById('lookup-trans'),
         lookupMeta: document.getElementById('lookup-meta'),
+        lookupGrammar: document.getElementById('lookup-grammar'),
+        lookupGrammarTitle: document.getElementById('lookup-grammar-title'),
+        lookupGrammarText: document.getElementById('lookup-grammar-text'),
+        lookupExamples: document.getElementById('lookup-examples'),
+        lookupExamplesTitle: document.getElementById('lookup-examples-title'),
+        lookupExamplesList: document.getElementById('lookup-examples-list'),
         lookupClose: document.getElementById('lookup-close'),
         btnSaveVocab: document.getElementById('btn-save-vocab'),
         btnPronounceWord: document.getElementById('btn-pronounce-word'),
@@ -503,14 +509,79 @@
       const trans = match[this.lang] || match.en || match.tr || match.de;
       this.dom.lookupTrans.textContent = trans;
 
-      // Metadata (Plural, POS, level, examples with localized translation)
+      // Metadata (Plural, POS, level)
       let metaStr = match.pos ? `[${match.pos}${match.level ? ' • ' + match.level : ''}] ` : '';
       if (match.plural && match.plural !== '-') metaStr += `Plural: ${match.plural}`;
-      if (match.example_de) {
-        const exTrans = (this.lang !== 'de' && match['example_' + this.lang]) ? ` (${match['example_' + this.lang]})` : '';
-        metaStr += ` • Bsp: "${match.example_de}"${exTrans}`;
-      }
       this.dom.lookupMeta.textContent = metaStr;
+
+      // Contextual Grammar Insight Box
+      if (this.dom.lookupGrammar && this.dom.lookupGrammarText) {
+        if (match.grammar) {
+          const gramText = match.grammar[this.lang] || match.grammar.tr || match.grammar.en || '';
+          if (gramText) {
+            this.dom.lookupGrammarText.textContent = gramText;
+            if (this.dom.lookupGrammarTitle) {
+              const titles = {
+                tr: "💡 Gramer & Bağlam İpucu",
+                en: "💡 Grammar & Context Insight",
+                ar: "💡 لمحة نحوية وسياقية",
+                uk: "💡 Граматичний коментар"
+              };
+              this.dom.lookupGrammarTitle.textContent = titles[this.lang] || titles.en;
+            }
+            this.dom.lookupGrammar.style.display = 'block';
+          } else {
+            this.dom.lookupGrammar.style.display = 'none';
+          }
+        } else {
+          this.dom.lookupGrammar.style.display = 'none';
+        }
+      }
+
+      // Multiple Example Sentences Section
+      if (this.dom.lookupExamples && this.dom.lookupExamplesList) {
+        const exList = (match.examples && match.examples.length > 0) ? match.examples : (match.example_de ? [{
+          de: match.example_de,
+          tr: match.example_tr,
+          en: match.example_en,
+          ar: match.example_ar,
+          uk: match.example_uk
+        }] : []);
+
+        if (exList.length > 0) {
+          this.dom.lookupExamplesList.innerHTML = '';
+          exList.forEach((ex, idx) => {
+            const itemEl = document.createElement('div');
+            itemEl.className = 'ls-example-item';
+
+            const deEl = document.createElement('div');
+            deEl.className = 'ls-example-de';
+            deEl.innerHTML = `<span class="ls-example-idx">${idx + 1}</span><span>${ex.de}</span>`;
+
+            const transText = ex[this.lang] || ex.tr || ex.en || '';
+            const transEl = document.createElement('div');
+            transEl.className = 'ls-example-trans';
+            transEl.textContent = transText;
+
+            itemEl.appendChild(deEl);
+            if (transText) itemEl.appendChild(transEl);
+            this.dom.lookupExamplesList.appendChild(itemEl);
+          });
+
+          if (this.dom.lookupExamplesTitle) {
+            const exTitles = {
+              tr: `📚 Örnek Cümleler (${exList.length})`,
+              en: `📚 Example Sentences (${exList.length})`,
+              ar: `📚 جمل توضيحية (${exList.length})`,
+              uk: `📚 Приклади речень (${exList.length})`
+            };
+            this.dom.lookupExamplesTitle.textContent = exTitles[this.lang] || exTitles.en;
+          }
+          this.dom.lookupExamples.style.display = 'block';
+        } else {
+          this.dom.lookupExamples.style.display = 'none';
+        }
+      }
 
       // Update save button state
       this.updateSaveButtonUI(match.de);
@@ -524,8 +595,8 @@
       modal.classList.add('active');
 
       const rect = element.getBoundingClientRect();
-      const modalWidth = 320;
-      const modalHeight = 180;
+      const modalWidth = 360;
+      const modalHeight = Math.min(modal.offsetHeight || 320, window.innerHeight * 0.85);
 
       let top = rect.bottom + window.scrollY + 8;
       let left = rect.left + window.scrollX - (modalWidth / 2) + (rect.width / 2);
@@ -536,7 +607,7 @@
         left = window.innerWidth - modalWidth - 10;
       }
       if (rect.bottom + modalHeight > window.innerHeight && rect.top > modalHeight) {
-        top = rect.top + window.scrollY - modalHeight - 8;
+        top = Math.max(10, rect.top + window.scrollY - modalHeight - 8);
       }
 
       modal.style.top = `${top}px`;
@@ -572,6 +643,8 @@
           example_en: item.example_en || '',
           example_ar: item.example_ar || '',
           example_uk: item.example_uk || '',
+          grammar: item.grammar || null,
+          examples: item.examples || [],
           forms: [lower]
         };
       }

@@ -124,12 +124,17 @@ assert.strictEqual(matchMitbuergern.displayDe, 'Mitbürger', 'Mitbürgern lemma 
 assert.strictEqual(matchMitbuergern.article, 'der', 'Mitbürger must have article "der"');
 assert(matchMitbuergern.tr.includes('vatandaş') || matchMitbuergern.tr.includes('hemşehri'), 'Translation must be fellow citizen/vatandaş');
 assert(!matchMitbuergern.de.includes('mit (+ Dat)'), 'Mitbürgern must NEVER match preposition "mit (+ Dat)"');
+assert(matchMitbuergern.grammar && matchMitbuergern.grammar.tr.includes('-n'), 'Mitbürgern grammar must explain -n plural ending in Dativ');
+assert(Array.isArray(matchMitbuergern.examples) && matchMitbuergern.examples.length >= 2, 'Mitbürgern must have multiple example sentences');
 
-// 3g. Test älteren exact contextual translation
+// 3g. Test älteren exact contextual translation and grammar insight
 const matchAelteren = app.findWordData('älteren', unit1.glossary);
 assert(matchAelteren !== null, 'älteren must find an entry');
 assert.strictEqual(matchAelteren.displayDe, 'älter', 'älteren lemma must be älter');
 assert(matchAelteren.tr.includes('yaşlı'), 'älteren translation must be yaşlı');
+assert(matchAelteren.grammar, 'älteren must have grammar explanation');
+assert(matchAelteren.grammar.tr.includes('Dativ Plural') || matchAelteren.grammar.tr.includes('von'), 'älteren grammar must explain why it took -en (Dativ Plural nach von)');
+assert(Array.isArray(matchAelteren.examples) && matchAelteren.examples.length >= 3, 'älteren must have at least 3 example sentences');
 
 // 3h. Test Kaufpreis exact contextual translation (Must NOT match "der Reis" / pirinç)
 const matchKaufpreis = app.findWordData('Kaufpreis', dataset[3].glossary);
@@ -138,6 +143,8 @@ assert.strictEqual(matchKaufpreis.displayDe, 'Kaufpreis', 'Kaufpreis lemma must 
 assert.strictEqual(matchKaufpreis.article, 'der', 'Kaufpreis must have article "der"');
 assert(matchKaufpreis.tr.includes('satın alma') || matchKaufpreis.tr.includes('fiyat'), 'Kaufpreis translation must mean purchase price');
 assert(!matchKaufpreis.tr.includes('pirinç'), 'Kaufpreis must NEVER match der Reis (pirinç)!');
+assert(matchKaufpreis.grammar && (matchKaufpreis.grammar.tr.includes('Bileşik') || matchKaufpreis.grammar.tr.includes('Kompositum')), 'Kaufpreis must explain compound noun formation');
+assert(Array.isArray(matchKaufpreis.examples) && matchKaufpreis.examples.length >= 2, 'Kaufpreis must have multiple examples');
 
 // 3i. Test prepositions like "auf" (Must NOT match separable verb aufräumen)
 const matchAuf = app.findWordData('auf', unit1.glossary);
@@ -151,6 +158,7 @@ const matchWochenende = app.findWordData('Wochenende', unit1.glossary);
 assert(matchWochenende !== null, 'Wochenende must find an entry');
 assert.strictEqual(matchWochenende.article, 'das', 'Wochenende must have article "das"');
 assert.strictEqual(matchWochenende.tr, 'hafta sonu', 'Wochenende translation must be hafta sonu');
+assert(Array.isArray(matchWochenende.examples) && matchWochenende.examples.length >= 2, 'Wochenende must have multiple examples');
 
 // 3k. Test 100% token coverage across all 4 telc B1 reading texts
 let testedTokenCount = 0;
