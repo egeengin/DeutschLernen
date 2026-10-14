@@ -201,6 +201,7 @@
         btnTimerReset: document.getElementById('btn-timer-reset'),
         lookupModal: document.getElementById('lookup-modal'),
         lookupWord: document.getElementById('lookup-word'),
+        lookupFormBadge: document.getElementById('lookup-form-badge'),
         lookupArtBadge: document.getElementById('lookup-art-badge'),
         lookupTrans: document.getElementById('lookup-trans'),
         lookupMeta: document.getElementById('lookup-meta'),
@@ -514,6 +515,22 @@
       if (match.plural && match.plural !== '-') metaStr += `Plural: ${match.plural}`;
       this.dom.lookupMeta.textContent = metaStr;
 
+      // Context form badge (e.g. if lemma is "älter" but text is "älteren")
+      if (this.dom.lookupFormBadge) {
+        if (cleanWord.toLowerCase() !== (match.displayDe || '').toLowerCase()) {
+          const formLabels = {
+            tr: `Metinde: ${cleanWord}`,
+            en: `In text: ${cleanWord}`,
+            ar: `في النص: ${cleanWord}`,
+            uk: `У тексті: ${cleanWord}`
+          };
+          this.dom.lookupFormBadge.textContent = formLabels[this.lang] || formLabels.en;
+          this.dom.lookupFormBadge.style.display = 'inline-block';
+        } else {
+          this.dom.lookupFormBadge.style.display = 'none';
+        }
+      }
+
       // Contextual Grammar Insight Box
       if (this.dom.lookupGrammar && this.dom.lookupGrammarText) {
         if (match.grammar) {
@@ -521,13 +538,42 @@
           if (gramText) {
             this.dom.lookupGrammarText.textContent = gramText;
             if (this.dom.lookupGrammarTitle) {
-              const titles = {
-                tr: "💡 Gramer & Bağlam İpucu",
-                en: "💡 Grammar & Context Insight",
-                ar: "💡 لمحة نحوية وسياقية",
-                uk: "💡 Граматичний коментар"
-              };
-              this.dom.lookupGrammarTitle.textContent = titles[this.lang] || titles.en;
+              const lowerW = cleanWord.toLowerCase();
+              let titleText = "";
+              if (lowerW.endsWith('en') && (match.pos === 'adj' || (match.grammar.tr && match.grammar.tr.includes('-en')))) {
+                const titles = {
+                  tr: "💡 Neden \"-en\" takısı aldı? (Gramer İpucu)",
+                  en: "💡 Why the \"-en\" ending? (Grammar Insight)",
+                  ar: "💡 لماذا لاحقة \"-en\"؟ (لمحة نحوية)",
+                  uk: "💡 Чому закінчення \"-en\"? (Граматичний коментар)"
+                };
+                titleText = titles[this.lang] || titles.en;
+              } else if (lowerW.endsWith('s') && match.pos === 'noun') {
+                const titles = {
+                  tr: "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+                  en: "💡 Why the \"-s\" ending? (Genitive Insight)",
+                  ar: "💡 لماذا لاحقة \"-s\"؟ (إضافة Genitiv)",
+                  uk: "💡 Чому закінчення \"-s\"? (Родовий відмінок)"
+                };
+                titleText = titles[this.lang] || titles.en;
+              } else if (lowerW.endsWith('n') && match.pos === 'noun') {
+                const titles = {
+                  tr: "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+                  en: "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+                  ar: "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+                  uk: "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+                };
+                titleText = titles[this.lang] || titles.en;
+              } else {
+                const titles = {
+                  tr: "💡 Gramer & Bağlam İpucu",
+                  en: "💡 Grammar & Context Insight",
+                  ar: "💡 لمحة نحوية وسياقية",
+                  uk: "💡 Граматичний коментар"
+                };
+                titleText = titles[this.lang] || titles.en;
+              }
+              this.dom.lookupGrammarTitle.textContent = titleText;
             }
             this.dom.lookupGrammar.style.display = 'block';
           } else {
