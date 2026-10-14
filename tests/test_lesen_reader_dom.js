@@ -160,7 +160,61 @@ assert.strictEqual(matchWochenende.article, 'das', 'Wochenende must have article
 assert.strictEqual(matchWochenende.tr, 'hafta sonu', 'Wochenende translation must be hafta sonu');
 assert(Array.isArray(matchWochenende.examples) && matchWochenende.examples.length >= 2, 'Wochenende must have multiple examples');
 
-// 3k. Test 100% token coverage across all 4 telc B1 reading texts
+// 3k. Test Verb Conjugation: gilt (gelten -> gilt, e -> i)
+const matchGilt = app.findWordData('gilt', unit1.glossary);
+assert(matchGilt !== null, 'gilt must be found');
+assert.strictEqual(matchGilt.displayDe, 'gelten', 'gilt lemma must be gelten');
+assert(matchGilt.grammar && matchGilt.grammar.title, 'gilt must have grammar title');
+assert(matchGilt.grammar.title.tr.includes('Kök Değişimi') || matchGilt.grammar.title.tr.includes('gelten'), 'gilt title must mention stem change or gelten');
+assert(matchGilt.grammar.tr.includes('e -> i') || matchGilt.grammar.tr.includes('gelten'), 'gilt grammar must explain e -> i');
+['tr', 'en', 'ar', 'uk'].forEach(lang => {
+  assert(matchGilt.grammar.title[lang], `gilt missing title in ${lang}`);
+  assert(matchGilt.grammar[lang], `gilt missing grammar in ${lang}`);
+});
+
+// 3l. Test Verb Conjugation: wurde (Passiv Präteritum)
+const matchWurde = app.findWordData('wurde', unit1.glossary);
+assert(matchWurde !== null, 'wurde must be found');
+assert.strictEqual(matchWurde.displayDe, 'werden', 'wurde lemma must be werden');
+assert(matchWurde.grammar && matchWurde.grammar.tr.includes('Präteritum'), 'wurde grammar must explain Präteritum / Passiv');
+
+// 3m. Test Verb Conjugation: ausläuft (auslaufen, separable & irregular)
+const matchAuslaeuft = app.findWordData('ausläuft', unit1.glossary);
+assert(matchAuslaeuft !== null, 'ausläuft must be found');
+assert.strictEqual(matchAuslaeuft.displayDe, 'auslaufen', 'ausläuft lemma must be auslaufen');
+assert(matchAuslaeuft.grammar && matchAuslaeuft.grammar.tr.includes('auslaufen'), 'ausläuft grammar must explain auslaufen');
+
+// 3n. Test N-Deklination: experten (der Experte)
+const matchExperten = app.findWordData('Experten', unit1.glossary);
+assert(matchExperten !== null, 'Experten must be found');
+assert.strictEqual(matchExperten.displayDe, 'Experte', 'Experten lemma must be Experte');
+assert(matchExperten.grammar && matchExperten.grammar.title.tr.includes('N-Deklination'), 'Experten title must be N-Deklination');
+
+// 3o. Test Genitiv -ses: mietverhältnisses
+const matchMietverhaeltnisses = app.findWordData('Mietverhältnisses', dataset[3].glossary);
+assert(matchMietverhaeltnisses !== null, 'Mietverhältnisses must be found');
+assert.strictEqual(matchMietverhaeltnisses.displayDe, 'Mietverhältnis', 'Mietverhältnisses lemma must be Mietverhältnis');
+assert(matchMietverhaeltnisses.grammar && matchMietverhaeltnisses.grammar.tr.includes('-ses'), 'Mietverhältnisses must explain -ses ending');
+
+// 3p. Verify 100% 4-Language Completeness for all entries in window.READING_LEXICON
+const allLex = sandbox.window.READING_LEXICON;
+assert(allLex && Object.keys(allLex).length >= 417, 'READING_LEXICON must have all 417 words');
+Object.keys(allLex).forEach(token => {
+  const item = allLex[token];
+  ['tr', 'en', 'ar', 'uk'].forEach(l => {
+    assert(item[l], `Token ${token} missing main translation in ${l}`);
+    assert(item.grammar && item.grammar[l], `Token ${token} missing grammar text in ${l}`);
+    assert(item.grammar && item.grammar.title && item.grammar.title[l], `Token ${token} missing grammar title in ${l}`);
+  });
+  assert(Array.isArray(item.examples) && item.examples.length >= 2, `Token ${token} must have at least 2 examples`);
+  item.examples.forEach((ex, idx) => {
+    ['de', 'tr', 'en', 'ar', 'uk'].forEach(l => {
+      assert(ex[l], `Token ${token} example ${idx} missing ${l}`);
+    });
+  });
+});
+
+// 3q. Test 100% token coverage across all 4 telc B1 reading texts
 let testedTokenCount = 0;
 let fallbackCount = 0;
 const missingTokens = [];

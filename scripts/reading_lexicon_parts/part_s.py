@@ -120,7 +120,7 @@ PART_S = {
         "example_uk": "Час, який вони можуть присвятити відпочинку."
     },
     "sind": {
-        "de": "sein", "displayDe": "sind", "article": "", "plural": "", "pos": "verb", "level": "A1",
+        "de": "sein", "displayDe": "sein", "article": "", "plural": "", "pos": "verb", "level": "A1",
         "tr": "-dirler, -dırlar (olmak fiili çoğul)", "en": "are", "ar": "يكونون / هم", "uk": "є (множина)",
         "example_de": "Besonders beliebt sind Sportvereine.",
         "example_tr": "Özellikle spor kulüpleri çok sevilir.",
@@ -309,7 +309,7 @@ PART_S = {
         "example_uk": "Заощаджувати понад годину часу щодня."
     },
     "stunden": {
-        "de": "die Stunde", "displayDe": "Stunden", "article": "die", "plural": "die Stunden", "pos": "noun", "level": "A1",
+        "de": "die Stunde", "displayDe": "Stunde", "article": "die", "plural": "die Stunden", "pos": "noun", "level": "A1",
         "tr": "saatler", "en": "hours", "ar": "ساعات", "uk": "години",
         "example_de": "Nach sechs Stunden Arbeit.",
         "example_tr": "Altı saatlik çalışmanın ardından.",

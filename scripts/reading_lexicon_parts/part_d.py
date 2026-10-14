@@ -39,7 +39,7 @@ PART_D = {
         "example_uk": "Тому експерти рекомендують гнучкі проєкти."
     },
     "damen": {
-        "de": "die Dame", "displayDe": "Damen", "article": "die", "plural": "die Damen", "pos": "noun", "level": "A1",
+        "de": "die Dame", "displayDe": "Dame", "article": "die", "plural": "die Damen", "pos": "noun", "level": "A1",
         "tr": "bayanlar, hanımefendiler (Sehr geehrte Damen und Herren: Sayın Baylar ve Bayanlar)",
         "en": "ladies (Sehr geehrte Damen und Herren: Dear Sir or Madam)",
         "ar": "سيدات (سيداتي وسادتي)", "uk": "пані (Шановні пані та панове)",

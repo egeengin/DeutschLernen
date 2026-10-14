@@ -538,40 +538,46 @@
           if (gramText) {
             this.dom.lookupGrammarText.textContent = gramText;
             if (this.dom.lookupGrammarTitle) {
-              const lowerW = cleanWord.toLowerCase();
               let titleText = "";
-              if (lowerW.endsWith('en') && (match.pos === 'adj' || (match.grammar.tr && match.grammar.tr.includes('-en')))) {
-                const titles = {
-                  tr: "💡 Neden \"-en\" takısı aldı? (Gramer İpucu)",
-                  en: "💡 Why the \"-en\" ending? (Grammar Insight)",
-                  ar: "💡 لماذا لاحقة \"-en\"؟ (لمحة نحوية)",
-                  uk: "💡 Чому закінчення \"-en\"? (Граматичний коментар)"
-                };
-                titleText = titles[this.lang] || titles.en;
-              } else if (lowerW.endsWith('s') && match.pos === 'noun') {
-                const titles = {
-                  tr: "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
-                  en: "💡 Why the \"-s\" ending? (Genitive Insight)",
-                  ar: "💡 لماذا لاحقة \"-s\"؟ (إضافة Genitiv)",
-                  uk: "💡 Чому закінчення \"-s\"? (Родовий відмінок)"
-                };
-                titleText = titles[this.lang] || titles.en;
-              } else if (lowerW.endsWith('n') && match.pos === 'noun') {
-                const titles = {
-                  tr: "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
-                  en: "💡 Why the \"-n\" ending? (Dative Plural Insight)",
-                  ar: "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
-                  uk: "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
-                };
-                titleText = titles[this.lang] || titles.en;
+              if (match.grammar.title && match.grammar.title[this.lang]) {
+                titleText = match.grammar.title[this.lang];
+              } else if (match.grammar.title && (match.grammar.title.en || match.grammar.title.tr)) {
+                titleText = match.grammar.title.en || match.grammar.title.tr;
               } else {
-                const titles = {
-                  tr: "💡 Gramer & Bağlam İpucu",
-                  en: "💡 Grammar & Context Insight",
-                  ar: "💡 لمحة نحوية وسياقية",
-                  uk: "💡 Граматичний коментар"
-                };
-                titleText = titles[this.lang] || titles.en;
+                const lowerW = cleanWord.toLowerCase();
+                if (lowerW.endsWith('en') && (match.pos === 'adj' || (match.grammar.tr && match.grammar.tr.includes('-en')))) {
+                  const titles = {
+                    tr: "💡 Neden \"-en\" takısı aldı? (Gramer İpucu)",
+                    en: "💡 Why the \"-en\" ending? (Grammar Insight)",
+                    ar: "💡 لماذا لاحقة \"-en\"؟ (لمحة نحوية)",
+                    uk: "💡 Чому закінчення \"-en\"? (Граматичний коментар)"
+                  };
+                  titleText = titles[this.lang] || titles.en;
+                } else if (lowerW.endsWith('s') && match.pos === 'noun') {
+                  const titles = {
+                    tr: "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+                    en: "💡 Why the \"-s\" ending? (Genitive Insight)",
+                    ar: "💡 لماذا لاحقة \"-s\"؟ (إضافة Genitiv)",
+                    uk: "💡 Чому закінчення \"-s\"? (Родовий відмінок)"
+                  };
+                  titleText = titles[this.lang] || titles.en;
+                } else if (lowerW.endsWith('n') && match.pos === 'noun') {
+                  const titles = {
+                    tr: "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+                    en: "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+                    ar: "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+                    uk: "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+                  };
+                  titleText = titles[this.lang] || titles.en;
+                } else {
+                  const titles = {
+                    tr: "💡 Gramer & Bağlam İpucu",
+                    en: "💡 Grammar & Context Insight",
+                    ar: "💡 لمحة نحوية وسياقية",
+                    uk: "💡 Граматичний коментар"
+                  };
+                  titleText = titles[this.lang] || titles.en;
+                }
               }
               this.dom.lookupGrammarTitle.textContent = titleText;
             }

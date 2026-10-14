@@ -14,6 +14,7 @@ import re
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT_DIR, "scripts"))
 from build_reading_lexicon import ALL_LEXICON
+from curated_grammar_data import CURATED_GRAMMAR
 
 LEXICON_PATH = os.path.join(ROOT_DIR, "data", "readingLexicon.js")
 
@@ -695,18 +696,204 @@ def build_extra_examples(token, entry):
     return [ex1, {"de": ex2_de, "tr": ex2_tr, "en": ex2_en, "ar": ex2_ar, "uk": ex2_uk}]
 
 
+def resolve_grammar_title(token, entry, gram):
+    if isinstance(gram, dict) and 'title' in gram and isinstance(gram['title'], dict):
+        return gram['title']
+    
+    pos = entry.get('pos', '')
+    lower = token.lower()
+    tr_text = gram.get('tr', '') if isinstance(gram, dict) else ''
+
+    if 'Edat (Präposition)' in tr_text or pos == 'prep':
+        if 'DATIV' in tr_text:
+            return {
+                'tr': '💡 Edat Kuralı: Dativ (İsmin -e Hali) Gerektirir',
+                'en': '💡 Preposition Rule: Governs Dative Case',
+                'ar': '💡 قاعدة حرف الجر: يجر بالـ Dativ دائمًا',
+                'uk': '💡 Правило прийменника: Завжди вимагає Dativ'
+            }
+        elif 'AKKUSATIV' in tr_text:
+            return {
+                'tr': '💡 Edat Kuralı: Akkusativ (İsmin -i Hali) Gerektirir',
+                'en': '💡 Preposition Rule: Governs Accusative Case',
+                'ar': '💡 قاعدة حرف الجر: ينصب بالـ Akkusativ دائمًا',
+                'uk': '💡 Правило прийменника: Завжди вимагає Akkusativ'
+            }
+        elif 'Wechselpräposition' in tr_text or 'İki durumlu' in tr_text:
+            return {
+                'tr': '💡 İki Durumlu Edat (Wechselpräposition): Dativ / Akkusativ',
+                'en': '💡 Two-Way Preposition: Dative vs Accusative',
+                'ar': '💡 حرف جر ذو حالتين: Dativ أو Akkusativ',
+                'uk': '💡 Прийменник подвійного керування: Dativ / Akkusativ'
+            }
+        else:
+            return {
+                'tr': '💡 Edat Kuralı (Präposition)',
+                'en': '💡 Preposition Rule (Präposition)',
+                'ar': '💡 قاعدة حرف الجر',
+                'uk': '💡 Правило прийменника'
+            }
+    if 'Ayrılabilir fiil + \'zu\'' in tr_text or ('zu' in lower and lower.endswith('en')):
+        return {
+            'tr': '💡 Fiil Yapısı: Ayrılabilir Fiil + "zu" Mastarı',
+            'en': '💡 Verb Structure: Separable Verb + "zu" Infinitive',
+            'ar': '💡 بنية الفعل: فعل منفصل مع أداة المصدر "zu"',
+            'uk': '💡 Структура дієслова: Відокремлюване дієслово з "zu"'
+        }
+    if 'Konjunktiv II' in tr_text:
+        return {
+            'tr': '💡 Fiil Çekimi: Konjunktiv II (Şart / İhtimal Kipi)',
+            'en': '💡 Verb Form: Konjunktiv II (Subjunctive / Conditional)',
+            'ar': '💡 تصريف الفعل: صيغة الاحتمال والتمني (Konjunktiv II)',
+            'uk': '💡 Форма дієслова: Умовний спосіб (Konjunktiv II)'
+        }
+    if 'Passiv' in tr_text or 'Partizip II' in tr_text or 'Edilgen' in tr_text:
+        return {
+            'tr': '💡 Fiil Çekimi: Partizip II / Passiv (Edilgen)',
+            'en': '💡 Verb Form: Participle II / Passive Voice',
+            'ar': '💡 تصريف الفعل: اسم المفعول / المبني للمجهول',
+            'uk': '💡 Форма дієслова: Partizip II / Пасивний стан'
+        }
+    if 'Bileşik isim' in tr_text or 'Kompositum' in tr_text:
+        return {
+            'tr': '💡 Kelime Yapısı: Bileşik İsim (Kompositum)',
+            'en': '💡 Word Structure: Compound Noun (Kompositum)',
+            'ar': '💡 بنية الكلمة: اسم مركب (Kompositum)',
+            'uk': '💡 Будова слова: Складний іменник (Kompositum)'
+        }
+    if 'Genitiv' in tr_text or (lower.endswith('s') and pos == 'noun'):
+        return {
+            'tr': '💡 Neden "-s" takısı aldı? (Genitiv İpucu)',
+            'en': '💡 Why the "-s" ending? (Genitive Case)',
+            'ar': '💡 لماذا لاحقة "-s"؟ (حالة الإضافة Genitiv)',
+            'uk': '💡 Чому закінчення "-s"? (Родовий відмінок Genitiv)'
+        }
+    if 'Dativ Plural' in tr_text or (lower.endswith('n') and pos == 'noun'):
+        return {
+            'tr': '💡 Neden "-n" takısı aldı? (Dativ Plural İpucu)',
+            'en': '💡 Why the "-n" ending? (Dative Plural Insight)',
+            'ar': '💡 لماذا لاحقة "-n"؟ (جمع Dativ)',
+            'uk': '💡 Чому закінчення "-n"? (Давальний відмінок множини)'
+        }
+    if pos == 'adj':
+        if lower.endswith('en'):
+            return {
+                'tr': '💡 Neden "-en" takısı aldı? (Sıfat Çekimi)',
+                'en': '💡 Why the "-en" ending? (Adjective Declension)',
+                'ar': '💡 لماذا لاحقة "-en"؟ (تصريف الصفة)',
+                'uk': '💡 Чому закінчення "-en"? (Відмінювання прикметника)'
+            }
+        elif lower.endswith('es'):
+            return {
+                'tr': '💡 Neden "-es" takısı aldı? (Sıfat Çekimi)',
+                'en': '💡 Why the "-es" ending? (Adjective Declension)',
+                'ar': '💡 لماذا لاحقة "-es"؟ (تصريف الصفة)',
+                'uk': '💡 Чому закінчення "-es"? (Відмінювання прикметника)'
+            }
+        elif lower.endswith('e'):
+            return {
+                'tr': '💡 Neden "-e" takısı aldı? (Sıfat Çekimi)',
+                'en': '💡 Why the "-e" ending? (Adjective Declension)',
+                'ar': '💡 لماذا لاحقة "-e"؟ (تصريف الصفة)',
+                'uk': '💡 Чому закінчення "-e"? (Відмінювання прикметника)'
+            }
+        elif lower.endswith('er'):
+            return {
+                'tr': '💡 Neden "-er" takısı aldı? (Sıfat Çekimi / Komparativ)',
+                'en': '💡 Why the "-er" ending? (Adjective / Comparative)',
+                'ar': '💡 لماذا لاحقة "-er"؟ (تصريف الصفة أو المقارنة)',
+                'uk': '💡 Чому закінчення "-er"? (Відмінювання прикметника / Вищий ступінь)'
+            }
+        elif lower.endswith('em'):
+            return {
+                'tr': '💡 Neden "-em" takısı aldı? (Dativ Sıfat Çekimi)',
+                'en': '💡 Why the "-em" ending? (Dative Adjective Declension)',
+                'ar': '💡 لماذا لاحقة "-em"؟ (تصريف صفة بالـ Dativ)',
+                'uk': '💡 Чому закінчення "-em"? (Прикметник у Dativ)'
+            }
+    if 'Yan cümle bağlacı' in tr_text or pos == 'conj':
+        return {
+            'tr': '💡 Bağlaç Kuralı: Fiil Sonda (Nebensatz)',
+            'en': '💡 Subordinating Conjunction: Verb-Final Order',
+            'ar': '💡 رابط جملة جانبية: الفعل في نهاية الجملة',
+            'uk': '💡 Підрядний сполучник: Дієслово в кінці речення'
+        }
+    if 'Bağlantı zarfı' in tr_text:
+        return {
+            'tr': '💡 Bağlantı Zarfı: Fiil 2. Pozisyonda (Inversion)',
+            'en': '💡 Adverbial Connector: Verb-Second Word Order',
+            'ar': '💡 ظرف ربط: الفعل في الموقع الثاني',
+            'uk': '💡 Сполучниковий прислівник: Дієслово на 2-й позиції'
+        }
+    if 'Fiilden türemiş isim' in tr_text or 'Substantivierung' in tr_text:
+        return {
+            'tr': '💡 Dilbilgisi: Fiilden Türetilmiş İsim (Substantivierung)',
+            'en': '💡 Grammar: Nominalized Verb (Substantivierung)',
+            'ar': '💡 قاعدة نحوية: تحويل الفعل إلى اسم (Substantivierung)',
+            'uk': '💡 Граматика: Субстантивоване дієслово'
+        }
+    
+    disp = entry.get('displayDe', token)
+    if pos == 'noun':
+        art = entry.get('article', '')
+        art_s = f"{art} " if art else ""
+        return {
+            'tr': f'💡 İsim Yapısı ({art_s}{disp})',
+            'en': f'💡 Noun Structure ({art_s}{disp})',
+            'ar': f'💡 بنية الاسم ({art_s}{disp})',
+            'uk': f'💡 Структура іменника ({art_s}{disp})'
+        }
+    elif pos == 'verb':
+        return {
+            'tr': f'💡 Fiil Yapısı ({disp})',
+            'en': f'💡 Verb Structure ({disp})',
+            'ar': f'💡 بنية الفعل ({disp})',
+            'uk': f'💡 Структура дієслова ({disp})'
+        }
+    elif pos == 'adj':
+        return {
+            'tr': f'💡 Sıfat Yapısı ({disp})',
+            'en': f'💡 Adjective ({disp})',
+            'ar': f'💡 بنية الصفة ({disp})',
+            'uk': f'💡 Структура прикметника ({disp})'
+        }
+    elif pos == 'adv':
+        return {
+            'tr': f'💡 Zarf ({disp})',
+            'en': f'💡 Adverb ({disp})',
+            'ar': f'💡 ظرف ({disp})',
+            'uk': f'💡 Прислівник ({disp})'
+        }
+
+    return {
+        'tr': '💡 Gramer & Bağlam İpucu',
+        'en': '💡 Grammar & Context Insight',
+        'ar': '💡 لمحة نحوية وسياقية',
+        'uk': '💡 Граматичний коментар'
+    }
+
+
 def main():
     print(f"Enriching reading lexicon ({len(ALL_LEXICON)} words) with contextual grammar insights & multiple examples...")
     
+    # Merge curated grammar
+    full_special = dict(SPECIAL_GRAMMAR)
+    full_special.update(CURATED_GRAMMAR)
+
     enriched = {}
     for token, item in ALL_LEXICON.items():
         entry = dict(item)
+        lower = token.lower()
         
         # 1. Grammar insight
-        if token.lower() in SPECIAL_GRAMMAR:
-            entry['grammar'] = SPECIAL_GRAMMAR[token.lower()]
+        if lower in full_special:
+            gram_data = dict(full_special[lower])
         else:
-            entry['grammar'] = generate_default_grammar(token, entry)
+            gram_data = generate_default_grammar(token, entry)
+
+        # Guarantee title object exists with tr, en, ar, uk
+        gram_data['title'] = resolve_grammar_title(token, entry, gram_data)
+        entry['grammar'] = gram_data
             
         # 2. Multiple examples
         entry['examples'] = build_extra_examples(token, entry)
@@ -728,3 +915,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

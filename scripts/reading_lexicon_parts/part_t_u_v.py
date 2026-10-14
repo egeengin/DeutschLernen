@@ -13,7 +13,7 @@ PART_T_U_V = {
         "example_uk": "Заощаджувати понад годину на день."
     },
     "tagen": {
-        "de": "der Tag", "displayDe": "Tagen", "article": "der", "plural": "die Tage", "pos": "noun", "level": "A1",
+        "de": "der Tag", "displayDe": "Tag", "article": "der", "plural": "die Tage", "pos": "noun", "level": "A1",
         "tr": "günler (Dativ: gün içinde)", "en": "days", "ar": "أيام", "uk": "дні",
         "example_de": "Innerhalb von 14 Tagen antworten.",
         "example_tr": "14 gün içinde yanıt vermek.",
@@ -170,7 +170,7 @@ PART_T_U_V = {
         "example_uk": "Вступ до товариства полегшує інтеграцію."
     },
     "vereine": {
-        "de": "der Verein", "displayDe": "Vereine", "article": "der", "plural": "die Vereine", "pos": "noun", "level": "A2",
+        "de": "der Verein", "displayDe": "Verein", "article": "der", "plural": "die Vereine", "pos": "noun", "level": "A2",
         "tr": "dernekler, kulüpler", "en": "clubs / associations", "ar": "نوادٍ / جمعيات", "uk": "клуби / товариства",
         "example_de": "Vereine stehen vor personellen Herausforderungen.",
         "example_tr": "Dernekler personel temininde zorluklar yaşıyor.",

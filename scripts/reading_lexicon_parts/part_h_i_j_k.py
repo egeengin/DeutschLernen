@@ -103,7 +103,7 @@ PART_H_I_J_K = {
         "example_uk": "Клуби постають перед кадровими викликами."
     },
     "herren": {
-        "de": "der Herr", "displayDe": "Herren", "article": "der", "plural": "die Herren", "pos": "noun", "level": "A1",
+        "de": "der Herr", "displayDe": "Herr", "article": "der", "plural": "die Herren", "pos": "noun", "level": "A1",
         "tr": "beyler (Sehr geehrte Damen und Herren: Sayın Yetkili)", "en": "gentlemen", "ar": "سادة", "uk": "панове",
         "example_de": "Sehr geehrte Damen und Herren.",
         "example_tr": "Sayın Baylar ve Bayanlar / Sayın Yetkili.",
@@ -276,7 +276,7 @@ PART_H_I_J_K = {
         "example_uk": "Що може призвести до соціальної ізоляції."
     },
     "ist": {
-        "de": "sein", "displayDe": "ist", "article": "", "plural": "", "pos": "verb", "level": "A1",
+        "de": "sein", "displayDe": "sein", "article": "", "plural": "", "pos": "verb", "level": "A1",
         "tr": "-dir, -dır (olmak fiili)", "en": "is", "ar": "يكون", "uk": "є",
         "example_de": "Dieses Ehrenamt ist das Herzstück.",
         "example_tr": "Bu gönüllü görev can damarıdır.",
@@ -287,7 +287,7 @@ PART_H_I_J_K = {
 
     # === J ===
     "jahren": {
-        "de": "das Jahr", "displayDe": "Jahren", "article": "das", "plural": "die Jahre", "pos": "noun", "level": "A1",
+        "de": "das Jahr", "displayDe": "Jahr", "article": "das", "plural": "die Jahre", "pos": "noun", "level": "A1",
         "tr": "yıllar (seit einigen Jahren: birkaç yıldır)", "en": "years", "ar": "سنوات", "uk": "роки (протягом кількох років)",
         "example_de": "Seit einigen Jahren verändert sich die Arbeitswelt.",
         "example_tr": "Birkaç yıldır çalışma dünyası değişiyor.",
@@ -361,7 +361,7 @@ PART_H_I_J_K = {
         "example_uk": "Орендодавці вимагають грошову заставу для фінансової гарантії."
     },
     "kinder": {
-        "de": "das Kind", "displayDe": "Kinder", "article": "das", "plural": "die Kinder", "pos": "noun", "level": "A1",
+        "de": "das Kind", "displayDe": "Kind", "article": "das", "plural": "die Kinder", "pos": "noun", "level": "A1",
         "tr": "çocuklar", "en": "children", "ar": "أطفال", "uk": "діти",
         "example_de": "Vereine, in denen Kinder trainieren.",
         "example_tr": "Çocukların antrenman yaptığı kulüpler.",

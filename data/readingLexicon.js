@@ -25,7 +25,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Abende'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Abende'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Abende'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Abende'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Abende'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Abend)",
+        "en": "💡 Noun Structure (der Abend)",
+        "ar": "💡 بنية الاسم (der Abend)",
+        "uk": "💡 Структура іменника (der Abend)"
+      }
     },
     "examples": [
       {
@@ -64,7 +70,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'abends' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'abends' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'abends' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'abends' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'abends' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (abends)",
+        "en": "💡 Adverb (abends)",
+        "ar": "💡 ظرف (abends)",
+        "uk": "💡 Прислівник (abends)"
+      }
     },
     "examples": [
       {
@@ -103,7 +115,13 @@ window.READING_LEXICON = {
       "tr": "Fiilden türemiş isim (Substantivierung): 'abschalten' (dinlenmek/işi unutmak) fiili büyük harfle yazılarak nötr bir isme dönüştürülmüştür (das Abschalten). Almancada tüm mastardan türeyen isimler 'das' artikeli alır.",
       "en": "Nominalization (Substantivierung): The verb 'abschalten' is capitalized into a neutral gerund noun 'das Abschalten'. All infinitive-derived nouns take the article 'das'.",
       "ar": "تحويل الفعل إلى اسم (Substantivierung): تحول الفعل 'abschalten' إلى اسم محايد 'das Abschalten'. تأخذ جميع الأسماء المشتقة من المصادر أداة 'das'.",
-      "uk": "Субстантивація (перехід дієслова в іменник): інфінітив 'abschalten' пишеться з великої літери та стає іменником середнього роду 'das Abschalten'. Всі такі іменники мають артикль 'das'."
+      "uk": "Субстантивація (перехід дієслова в іменник): інфінітив 'abschalten' пишеться з великої літери та стає іменником середнього роду 'das Abschalten'. Всі такі іменники мають артикль 'das'.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -142,7 +160,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Absicherungen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Absicherungen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Absicherungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Absicherungen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Absicherungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Absicherung)",
+        "en": "💡 Noun Structure (die Absicherung)",
+        "ar": "💡 بنية الاسم (die Absicherung)",
+        "uk": "💡 Структура іменника (die Absicherung)"
+      }
     },
     "examples": [
       {
@@ -178,10 +202,16 @@ window.READING_LEXICON = {
     "example_ar": "وفقًا للاستطلاعات الحالية، يقدر الموظفون إلغاء طريق العمل.",
     "example_uk": "Згідно з актуальними опитуваннями, працівники цінують відсутність дороги на роботу.",
     "grammar": {
-      "tr": "Sıfat çekimi (Güçlü çekim): 'nach aktuellen Umfragen' yapısında 'nach' edatı her zaman Dativ gerektirir. 'Umfragen' çoğul ismi önünde artikel olmadığı için sıfat güçlü çekim Dativ Plural '-en' takısı almıştır.",
-      "en": "Strong adjective declension: In 'nach aktuellen Umfragen', the preposition 'nach' requires Dative. Without an article before the plural noun, the adjective takes strong Dative plural '-en'.",
-      "ar": "تصريف الصفة القوي: في 'nach aktuellen Umfragen'، حرف الجر 'nach' يجر بالـ Dativ دائمًا، وبدون أداة تعريف تأخذ الصفة لاحقة الـ Dativ للجمع '-en'.",
-      "uk": "Сильна відміна прикметника: у 'nach aktuellen Umfragen' прийменник 'nach' вимагає Dativ. Без артикля перед іменником у множині прикметник отримує '-en'."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Güçlü Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Strong Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة القوي)",
+        "uk": "💡 Чому закінчення \"-en\"? (Сильна відміна прикметника)"
+      },
+      "tr": "Güçlü sıfat çekimi (Starke Deklination): 'nach aktuellen Umfragen' yapısında 'nach' edatı Dativ gerektirir. 'Umfragen' çoğul isminin önünde artikel olmadığı için sıfat güçlü Dativ Plural '-en' takısı almıştır.",
+      "en": "Strong adjective declension: In 'nach aktuellen Umfragen', preposition 'nach' requires Dative. Without an article before the plural noun, the adjective takes strong Dative plural '-en'.",
+      "ar": "تصريف قوي: حرف الجر 'nach' يتطلب Dativ. لعدم وجود أداة قبل اسم الجمع 'Umfragen'، تأخذ الصفة لاحقة الـ Dativ للجمع '-en'.",
+      "uk": "Сильна відміна: прийменник 'nach' вимагає Dativ. Оскільки перед іменником у множині немає артикля, прикметник отримує сильне закінчення '-en'."
     },
     "examples": [
       {
@@ -217,10 +247,16 @@ window.READING_LEXICON = {
     "example_ar": "يقدر الموظفون قبل كل شيء إلغاء التنقل اليومي إلى العمل.",
     "example_uk": "Працівники перш за все цінують відсутність щоденної дороги на роботу.",
     "grammar": {
-      "tr": "Zarf (Adverb): 'vor allem' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
-      "en": "Adverb: 'vor allem' modifies a verb, adjective, or clause.",
-      "ar": "ظرف: 'vor allem' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'vor allem' вказує на час, місце, спосіб дії чи ступінь."
+      "title": {
+        "tr": "💡 Sabit Deyim: Dativ Nötr (vor allem)",
+        "en": "💡 Fixed Idiom: Dative Neuter (vor allem)",
+        "ar": "💡 تعبير اصطلاحي: Dativ محايد (vor allem)",
+        "uk": "💡 Стійкий вираз: Dativ середнього роду (vor allem)"
+      },
+      "tr": "Sabit edatlı deyim: 'vor allem' (özellikle, her şeyden önce) kalıbında 'vor' edatı Dativ gerektirir; 'alles' zamiri Dativ Nötr '-em' takısı alarak kalıplaşmıştır.",
+      "en": "Fixed idiom: 'vor allem' (above all / especially). Preposition 'vor' governs Dative; 'alles' takes Dative neuter ending '-em'.",
+      "ar": "تعبير اصطلاحي ثابت: 'vor allem' (خاصة / قبل كل شيء). يتطلب حرف الجر 'vor' حالة Dativ، فتأخذ 'alles' لاحقة '-em'.",
+      "uk": "Стійкий вираз: 'vor allem' (перш за все / особливо). Прийменник 'vor' вимагає Dativ, займенник 'alles' приймає '-em'."
     },
     "examples": [
       {
@@ -256,10 +292,16 @@ window.READING_LEXICON = {
     "example_ar": "أصبح العمل من المنزل جزءًا من الحياة اليومية لثلث جميع العاملين تقريبًا.",
     "example_uk": "Робота з дому стала повсякденністю для майже третини всіх працюючих.",
     "grammar": {
-      "tr": "Zamir (Pronomen): 'alle' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
-      "en": "Pronoun: 'alle' stands in place of a noun and reflects grammatical case.",
-      "ar": "ضمير: 'alle' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'alle' замінює іменник і змінюється за відмінками."
+      "title": {
+        "tr": "💡 Zamir Çekimi: Genitiv Plural (alle ➔ aller)",
+        "en": "💡 Pronoun Declension: Genitive Plural (alle ➔ aller)",
+        "ar": "💡 تصريف الضمير: جمع المضاف إليه (alle ➔ aller)",
+        "uk": "💡 Відмінювання займенника: Родовий відмінок множини (alle ➔ aller)"
+      },
+      "tr": "Belirteç/Zamir çekimi (Genitiv Plural): 'aller Beschäftigten' (tüm çalışanların) yapısında 'alle' zamiri çoğul Genitiv tamlayan olarak '-er' takısı almıştır.",
+      "en": "Quantifier declension (Genitive plural): In 'aller Beschäftigten' (of all employees), 'alle' takes Genitive plural ending '-er'.",
+      "ar": "تصريف اسم الإحاطة (جمع مضاف إليه): يأخذ 'alle' لاحقة الجمع للمضاف إليه '-er' في 'aller Beschäftigten'.",
+      "uk": "Відмінювання займенника: у 'aller Beschäftigten' займенник 'alle' приймає закінчення родового відмінка множини '-er'."
     },
     "examples": [
       {
@@ -298,7 +340,13 @@ window.READING_LEXICON = {
       "tr": "Konnektor / Zarf: Karşıtlık veya kısıtlama bildirir ('ancak, fakat, bununla birlikte'). Cümle başında geldiğinde fiil 2. pozisyonda yer alır (Allerdings stehen Vereine vor Herausforderungen).",
       "en": "Connector/adverb: Expresses contrast/limitation ('however, though'). Governs verb-second position when initial.",
       "ar": "ظرف ربط: يفيد الاستدراك ('مع ذلك / غير أن'). يأتي الفعل في الموقع الثاني.",
-      "uk": "Прислівник зв'язку: виражає обмеження ('проте / однак'). Дієслово на другій позиції."
+      "uk": "Прислівник зв'язку: виражає обмеження ('проте / однак'). Дієслово на другій позиції.",
+      "title": {
+        "tr": "💡 Zarf (allerdings)",
+        "en": "💡 Adverb (allerdings)",
+        "ar": "💡 ظرف (allerdings)",
+        "uk": "💡 Прислівник (allerdings)"
+      }
     },
     "examples": [
       {
@@ -337,7 +385,13 @@ window.READING_LEXICON = {
       "tr": "Bağlaç (Konjunktion): 'als' cümleleri veya kelimeleri birbirine bağlar ve cümledeki fiil pozisyonunu belirler.",
       "en": "Conjunction: 'als' connects clauses or words and dictates word order.",
       "ar": "حرف عطف أو رابط: 'als' يربط بين الجمل ويحدد موقع الفعل.",
-      "uk": "Сполучник: 'als' з'єднує речення або слова і визначає позицію дієслова."
+      "uk": "Сполучник: 'als' з'єднує речення або слова і визначає позицію дієслова.",
+      "title": {
+        "tr": "💡 Bağlaç Kuralı: Fiil Sonda (Nebensatz)",
+        "en": "💡 Subordinating Conjunction: Verb-Final Order",
+        "ar": "💡 رابط جملة جانبية: الفعل في نهاية الجملة",
+        "uk": "💡 Підрядний сполучник: Дієслово в кінці речення"
+      }
     },
     "examples": [
       {
@@ -376,7 +430,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'also' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'also' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'also' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'also' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'also' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (also)",
+        "en": "💡 Adverb (also)",
+        "ar": "💡 ظرف (also)",
+        "uk": "💡 Прислівник (also)"
+      }
     },
     "examples": [
       {
@@ -415,7 +475,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'am' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
       "en": "Preposition: 'am' governs the grammatical case (Dative/Accusative) of the following noun.",
       "ar": "حرف جر: 'am' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
-      "uk": "Прийменник: 'am' визначає відмінок іменника (Dativ чи Akkusativ)."
+      "uk": "Прийменник: 'am' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
     },
     "examples": [
       {
@@ -454,7 +520,13 @@ window.READING_LEXICON = {
       "tr": "İki durumlu edat (Wechselpräposition): Zaman bildirimlerinde (gün ve günün bölümleri) her zaman DATIV kullanılır (am [an dem] Abend, an zwei festen Tagen).",
       "en": "Two-way preposition: For time expressions (days, times of day), it always takes the DATIVE case (am Abend, an zwei Tagen).",
       "ar": "حرف جر ذو حالتين: مع التعبيرات الزمنية (الأيام وأوقات اليوم) يتطلب دائمًا حالة الـ Dativ (am Abend).",
-      "uk": "Прийменник подвійного керування: у часових виразах (дні, частини доби) завжди вживається з Dativ (am Abend, an zwei Tagen)."
+      "uk": "Прийменник подвійного керування: у часових виразах (дні, частини доби) завжди вживається з Dativ (am Abend, an zwei Tagen).",
+      "title": {
+        "tr": "💡 Edat Kuralı: Dativ (İsmin -e Hali) Gerektirir",
+        "en": "💡 Preposition Rule: Governs Dative Case",
+        "ar": "💡 قاعدة حرف الجر: يجر بالـ Dativ دائمًا",
+        "uk": "💡 Правило прийменника: Завжди вимагає Dativ"
+      }
     },
     "examples": [
       {
@@ -490,10 +562,16 @@ window.READING_LEXICON = {
     "example_ar": "تنظم لائحة البناية من بين أمور أخرى أوقات الهدوء القانونية.",
     "example_uk": "Правила будинку регулюють, серед іншого, законні години тиші.",
     "grammar": {
-      "tr": "Zarf (Adverb): 'unter anderem' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
-      "en": "Adverb: 'unter anderem' modifies a verb, adjective, or clause.",
-      "ar": "ظرف: 'unter anderem' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'unter anderem' вказує на час, місце, спосіб дії чи ступінь."
+      "title": {
+        "tr": "💡 Sabit Deyim: Dativ Nötr (unter anderem)",
+        "en": "💡 Fixed Idiom: Dative Neuter (unter anderem)",
+        "ar": "💡 تعبير اصطلاحي: Dativ محايد (unter anderem)",
+        "uk": "💡 Стійкий вираз: Dativ середнього роду (unter anderem)"
+      },
+      "tr": "Sabit deyim (Kısaltması: u.a.): 'unter anderem' (diğerlerinin yanı sıra, bu arada) kalıbında 'unter' edatı Dativ Nötr '-em' takısı alır.",
+      "en": "Fixed idiom (Abbr: u.a.): 'unter anderem' (among other things / including). Preposition 'unter' takes Dative neuter ending '-em'.",
+      "ar": "تعبير اصطلاحي (اختصاره u.a.): 'unter anderem' (من بين أمور أخرى).",
+      "uk": "Стійкий вираз (скорочено u.a.): 'unter anderem' (серед іншого / між іншим)."
     },
     "examples": [
       {
@@ -532,7 +610,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Anfänge'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Anfänge'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Anfänge'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Anfänge'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Anfänge'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Anfang)",
+        "en": "💡 Noun Structure (der Anfang)",
+        "ar": "💡 بنية الاسم (der Anfang)",
+        "uk": "💡 Структура іменника (der Anfang)"
+      }
     },
     "examples": [
       {
@@ -568,10 +652,16 @@ window.READING_LEXICON = {
     "example_ar": "بدون المتطوعين، لم تكن العديد من الخدمات العامة لتوجد.",
     "example_uk": "Без волонтерів багато громадських послуг просто не існувало б.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Angebote'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Angebote'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Angebote'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Angebote'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Çoğul Eki (das Angebot ➔ die Angebote)",
+        "en": "💡 Noun Declension: Plural Formation (das Angebot ➔ die Angebote)",
+        "ar": "💡 تصريف الأسماء: صيغة الجمع (das Angebot ➔ die Angebote)",
+        "uk": "💡 Творення множини: das Angebot ➔ die Angebote"
+      },
+      "tr": "Çoğul yapımı: 'das Angebot' (teklif / olanak) nötr bir isimdir ve çoğulda sonuna '-e' takısı alır (die Angebote; 'öffentliche Angebote' = kamuya açık olanaklar/hizmetler).",
+      "en": "Plural formation: 'das Angebot' is neuter and forms its plural with '-e' (die Angebote; 'öffentliche Angebote' = public offerings/programs).",
+      "ar": "صيغة الجمع: الاسم 'das Angebot' محايد ويجمع بإضافة '-e' (die Angebote = عروض / خدمات).",
+      "uk": "Творення множини: 'das Angebot' середнього роду, утворює множину за допомогою '-e' (die Angebote)."
     },
     "examples": [
       {
@@ -610,7 +700,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Anhänge'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Anhänge'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Anhänge'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Anhänge'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Anhänge'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Anhang)",
+        "en": "💡 Noun Structure (der Anhang)",
+        "ar": "💡 بنية الاسم (der Anhang)",
+        "uk": "💡 Структура іменника (der Anhang)"
+      }
     },
     "examples": [
       {
@@ -649,7 +745,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Arbeiten'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Arbeiten'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Arbeiten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Arbeiten'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Arbeiten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Arbeit)",
+        "en": "💡 Noun Structure (die Arbeit)",
+        "ar": "💡 بنية الاسم (die Arbeit)",
+        "uk": "💡 Структура іменника (die Arbeit)"
+      }
     },
     "examples": [
       {
@@ -688,7 +790,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'arbeiten' temel eylem bildiren fiildir.",
       "en": "Verb: 'arbeiten' denotes action, process, or state.",
       "ar": "فعل: 'arbeiten' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'arbeiten' позначає дію або стан."
+      "uk": "Дієслово: 'arbeiten' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (arbeiten)",
+        "en": "💡 Verb Structure (arbeiten)",
+        "ar": "💡 بنية الفعل (arbeiten)",
+        "uk": "💡 Структура дієслова (arbeiten)"
+      }
     },
     "examples": [
       {
@@ -724,10 +832,16 @@ window.READING_LEXICON = {
     "example_ar": "تعتمد المزيد من الشركات على نماذج العمل الهجينة.",
     "example_uk": "Дедалі більше компаній обирають гібридні моделі роботи.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Arbeitsmodelle'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Arbeitsmodelle'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Arbeitsmodelle'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Arbeitsmodelle'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Bileşik İsim Çoğulu (die Arbeitsmodelle)",
+        "en": "💡 Noun Declension: Compound Plural (die Arbeitsmodelle)",
+        "ar": "💡 تصريف الأسماء: جمع اسم مركب (die Arbeitsmodelle)",
+        "uk": "💡 Творення множини: Складний іменник (die Arbeitsmodelle)"
+      },
+      "tr": "Bileşik isim çoğulu: 'die Arbeit' + 'das Modell' (çoğulu: 'die Modelle'). Bileşik isimlerin çoğul eki ve artikeli sondaki temel kelimeden gelir ('hybride Arbeitsmodelle' = hibrit çalışma modelleri).",
+      "en": "Compound noun plural: 'die Arbeit' + 'das Modell' (plural: 'die Modelle'). Plural inflection follows the base word: 'hybride Arbeitsmodelle'.",
+      "ar": "جمع اسم مركب: يتبع الجمع الكلمة الأخيرة 'das Modell' (جمعها 'die Modelle'): 'hybride Arbeitsmodelle'.",
+      "uk": "Множина складного іменника: визначається за останнім словом 'das Modell' (множина 'die Modelle'): 'hybride Arbeitsmodelle'."
     },
     "examples": [
       {
@@ -763,10 +877,16 @@ window.READING_LEXICON = {
     "example_ar": "يحذر أخصائيو علم النفس المهني مما يسمى بتلاشي الحدود.",
     "example_uk": "Психологи праці застерігають від так званого розмивання меж.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Arbeitspsychologen'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Arbeitspsychologen'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Arbeitspsychologen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Arbeitspsychologen'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: N-Deklination (der Arbeitspsychologe)",
+        "en": "💡 Noun Declension: N-Declension (der Arbeitspsychologe)",
+        "ar": "💡 تصريف الأسماء: التصريف الضعيف (der Arbeitspsychologe)",
+        "uk": "💡 Відмінювання іменників: N-відміна (der Arbeitspsychologe)"
+      },
+      "tr": "N-Deklination Çoğul: Sonu '-oge' ile biten meslek adları zayıf çekimlenir ('der Psychologe' -> 'die Psychologen'). Çoğul öznedir: 'Psychologen und Arbeitspsychologen warnen...'",
+      "en": "N-Declension Plural: Professions ending in '-loge' are weak masculine nouns ('der Psychologe' -> 'die Psychologen'). Plural subject in text.",
+      "ar": "جمع التصريف الضعيف: أسماء المهن المنتهية بـ '-loge' أسماء مذكرة ضعيفة وتجمع بـ '-n' ('die Arbeitspsychologen').",
+      "uk": "N-відміна множини: назви професій на '-loge' відмінюються за слабкою відміною та мають закінчення '-n' у множині."
     },
     "examples": [
       {
@@ -802,10 +922,16 @@ window.READING_LEXICON = {
     "example_ar": "يجب أن تكون هناك إحدى عشرة ساعة من الراحة بين أيام العمل.",
     "example_uk": "Між робочими днями має бути одинадцять годин відпочинку.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Arbeitstage'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Arbeitstage'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Arbeitstage'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Arbeitstage'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-en\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-en\"? (Давальний відмінок множини)"
+      },
+      "tr": "Dativ Plural kuralı: 'der Arbeitstag' çoğulu 'die Arbeitstage'dir. 'an' edatı zaman bildirdiğinde Dativ gerektirir; çoğul isim Dativ durumunda sonuna zorunlu '-n' takısı alır: an zwei festen Arbeitstagen (iki sabit iş gününde).",
+      "en": "Dative plural rule: 'der Arbeitstag' plurals as 'die Arbeitstage'. After preposition 'an' (time = Dative), all plural nouns add '-n': an zwei Arbeitstagen.",
+      "ar": "قاعدة الـ Dativ للجمع: جمع 'der Arbeitstag' هو 'die Arbeitstage'. بعد حرف الجر 'an' الزمني (Dativ)، يضاف دائمًا حرف '-n' إلى نهاية اسم الجمع.",
+      "uk": "Правило Dativ у множині: множина від 'der Arbeitstag' — 'die Arbeitstage'. Після часового прийменника 'an' (Dativ) іменник у множині обов'язково отримує '-n'."
     },
     "examples": [
       {
@@ -844,7 +970,13 @@ window.READING_LEXICON = {
       "tr": "İsmin hali (Genitiv): Maskulin tekil isimler ('der Arbeitsweg') Genitiv halinde (ismin -in hali / tamlayan) sonlarına '-s' veya '-es' takısı alır (des täglichen Arbeitswegs = günlük iş yolunun). Belirli artikel de 'des' şekline dönüşür.",
       "en": "Genitive case: Masculine singular nouns ('der Arbeitsweg') take an '-s' or '-es' suffix in the Genitive case (des täglichen Arbeitswegs = of the daily commute). The article also changes to 'des'.",
       "ar": "حالة الإضافة (Genitiv): تأخذ الأسماء المذكرة المفردة ('der Arbeitsweg') لاحقة '-s' أو '-es' في حالة المضاف إليه، وتتحول أداة التعريف إلى 'des'.",
-      "uk": "Родовий відмінок (Genitiv): іменники чоловічого роду в однині ('der Arbeitsweg') у Genitiv отримують закінчення '-s' або '-es', а артикль змінюється на 'des'."
+      "uk": "Родовий відмінок (Genitiv): іменники чоловічого роду в однині ('der Arbeitsweg') у Genitiv отримують закінчення '-s' або '-es', а артикль змінюється на 'des'.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
     },
     "examples": [
       {
@@ -883,7 +1015,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Arbeitswelten'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Arbeitswelten'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Arbeitswelten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Arbeitswelten'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Arbeitswelten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Arbeitswelt)",
+        "en": "💡 Noun Structure (die Arbeitswelt)",
+        "ar": "💡 بنية الاسم (die Arbeitswelt)",
+        "uk": "💡 Структура іменника (die Arbeitswelt)"
+      }
     },
     "examples": [
       {
@@ -922,7 +1060,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Arbeitszeitgesetze'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Arbeitszeitgesetze'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Arbeitszeitgesetze'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Arbeitszeitgesetze'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Arbeitszeitgesetze'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Arbeitszeitgesetz)",
+        "en": "💡 Noun Structure (das Arbeitszeitgesetz)",
+        "ar": "💡 بنية الاسم (das Arbeitszeitgesetz)",
+        "uk": "💡 Структура іменника (das Arbeitszeitgesetz)"
+      }
     },
     "examples": [
       {
@@ -961,7 +1105,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'auch' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'auch' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'auch' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'auch' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'auch' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (auch)",
+        "en": "💡 Adverb (auch)",
+        "ar": "💡 ظرف (auch)",
+        "uk": "💡 Прислівник (auch)"
+      }
     },
     "examples": [
       {
@@ -1000,7 +1150,13 @@ window.READING_LEXICON = {
       "tr": "İki durumlu edat (Wechselpräposition): Hareket ve yönelme bildirdiğinde AKKUSATIV gerektirir ('auf mein Bankkonto erstatten' = banka hesabıma iade etmek).",
       "en": "Two-way preposition: Governs the Accusative case when indicating direction or transfer ('auf mein Bankkonto erstatten').",
       "ar": "حرف جر ذو حالتين: يتطلب Akkusativ عند الدلالة على الحركة أو التحويل ('auf mein Bankkonto').",
-      "uk": "Прийменник подвійного керування: вимагає Akkusativ при зазначенні напрямку переказу ('auf mein Bankkonto')."
+      "uk": "Прийменник подвійного керування: вимагає Akkusativ при зазначенні напрямку переказу ('auf mein Bankkonto').",
+      "title": {
+        "tr": "💡 Edat Kuralı: Akkusativ (İsmin -i Hali) Gerektirir",
+        "en": "💡 Preposition Rule: Governs Accusative Case",
+        "ar": "💡 قاعدة حرف الجر: ينصب بالـ Akkusativ دائمًا",
+        "uk": "💡 Правило прийменника: Завжди вимагає Akkusativ"
+      }
     },
     "examples": [
       {
@@ -1036,10 +1192,16 @@ window.READING_LEXICON = {
     "example_ar": "خزان المياه يسرب، بحيث يتدفق الماء على الفور.",
     "example_uk": "Резервуар для води протікає, тому вода одразу витікає.",
     "grammar": {
-      "tr": "Fiil (Verb): 'auslaufen' temel eylem bildiren fiildir.",
-      "en": "Verb: 'auslaufen' denotes action, process, or state.",
-      "ar": "فعل: 'auslaufen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'auslaufen' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Ayrılabilir Düzensiz Fiil (auslaufen ➔ läuft aus)",
+        "en": "💡 Verb Conjugation: Separable Strong Verb (auslaufen ➔ läuft aus)",
+        "ar": "💡 تصريف الفعل: فعل منفصل غير قياسي (auslaufen ➔ läuft aus)",
+        "uk": "💡 Дієвідмінювання: Відокремлюване сильне дієслово (auslaufen ➔ läuft aus)"
+      },
+      "tr": "Ayrılabilir düzensiz fiil çekimi: 'auslaufen' (süresi dolmak / akmak) fiilinin 3. tekil şahıs çekimidir (der Vertrag läuft aus). Kök harfi 'a' -> 'ä' umlaut alır, yan cümlede 'ausläuft' olarak bitişik ve sonda yer alır.",
+      "en": "Separable strong verb conjugation: 3rd person singular of 'auslaufen' (to expire). Stem vowel 'a' takes umlaut 'ä' (der Vertrag läuft aus). In subordinate clauses, prefix remains attached at the end: 'ausläuft'.",
+      "ar": "تصريف فعل منفصل غير قياسي: صيغة المفرد الغائب للفعل 'auslaufen' (تنتهي صلاحيته). يتحول 'a' إلى 'ä'، وفي الجمل الجانبية يثبت في نهاية الجملة متصلاً: 'ausläuft'.",
+      "uk": "Відокремлюване сильне дієслово: 3-тя особа однини від 'auslaufen' (закінчуватися). Голосна 'a' переходить в 'ä'; у підрядному реченні стоїть разом у кінці: 'ausläuft'."
     },
     "examples": [
       {
@@ -1078,7 +1240,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Ausnahmen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Ausnahmen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Ausnahmen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Ausnahmen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Ausnahmen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Ausnahme)",
+        "en": "💡 Noun Structure (die Ausnahme)",
+        "ar": "💡 بنية الاسم (die Ausnahme)",
+        "uk": "💡 Структура іменника (die Ausnahme)"
+      }
     },
     "examples": [
       {
@@ -1117,7 +1285,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Austausch)",
+        "en": "💡 Noun Structure (der Austausch)",
+        "ar": "💡 بنية الاسم (der Austausch)",
+        "uk": "💡 Структура іменника (der Austausch)"
+      }
     },
     "examples": [
       {
@@ -1156,7 +1330,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Auszüge'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Auszüge'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Auszüge'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Auszüge'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Auszüge'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Auszug)",
+        "en": "💡 Noun Structure (der Auszug)",
+        "ar": "💡 بنية الاسم (der Auszug)",
+        "uk": "💡 Структура іменника (der Auszug)"
+      }
     },
     "examples": [
       {
@@ -1195,7 +1375,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'außerdem' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'außerdem' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'außerdem' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'außerdem' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'außerdem' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (außerdem)",
+        "en": "💡 Adverb (außerdem)",
+        "ar": "💡 ظرف (außerdem)",
+        "uk": "💡 Прислівник (außerdem)"
+      }
     },
     "examples": [
       {
@@ -1234,7 +1420,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'baldmöglichst' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'baldmöglichst' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'baldmöglichst' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'baldmöglichst' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'baldmöglichst' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (baldmöglichst)",
+        "en": "💡 Adverb (baldmöglichst)",
+        "ar": "💡 ظرف (baldmöglichst)",
+        "uk": "💡 Прислівник (baldmöglichst)"
+      }
     },
     "examples": [
       {
@@ -1270,10 +1462,16 @@ window.READING_LEXICON = {
     "example_ar": "يتطلب البحث عن شقة في التجمعات الحضرية الألمانية صبرًا.",
     "example_uk": "Пошук житла у великих містах Німеччини вимагає терпіння.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Ballungsräume'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Ballungsräume'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Ballungsräume'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Ballungsräume'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı ve Umlaut aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-en\" ending and Umlaut? (Dative Plural)",
+        "ar": "💡 لماذا لاحقة \"-en\" والإمالة؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-en\" та умлаут? (Давальний відмінок множини)"
+      },
+      "tr": "Dativ Plural + Umlaut: 'der Ballungsraum' çoğulu 'die Ballungsräume'dir (au -> äu). 'in' edatı bulunma bildirdiğinde (Wo?) Dativ gerektirir ve çoğul isim sonuna '-n' alır: in Ballungsräumen (yoğun nüfuslu metropolitan bölgelerde).",
+      "en": "Dative plural with Umlaut: Plural of 'der Ballungsraum' is 'die Ballungsräume' (au -> äu). Preposition 'in' for location (Wo?) requires Dative, adding '-n': in Ballungsräumen.",
+      "ar": "جمع Dativ مع إمالة: جمع 'Ballungsraum' هو 'Ballungsräume'. حرف الجر 'in' للمكان يتطلب Dativ، فيضاف حرف '-n' للاسم الجمع: in Ballungsräumen.",
+      "uk": "Dativ множини з умлаутом: множина від 'Ballungsraum' — 'Ballungsräume'. Прийменник місця 'in' (де?) вимагає Dativ, тому додається '-n': in Ballungsräumen."
     },
     "examples": [
       {
@@ -1312,7 +1510,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Bankkonten'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Bankkonten'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Bankkonten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Bankkonten'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Bankkonten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Bankkonto)",
+        "en": "💡 Noun Structure (das Bankkonto)",
+        "ar": "💡 بنية الاسم (das Bankkonto)",
+        "uk": "💡 Структура іменника (das Bankkonto)"
+      }
     },
     "examples": [
       {
@@ -1351,7 +1555,13 @@ window.READING_LEXICON = {
       "tr": "Edilgen çatı (Vorgangspassiv): 'werden' yardımcı fiili ile birlikte kullanılır ('werden beantwortet' = yanıtlanır). 'beantworten' fiilinin Partizip II (3. hal) biçimidir.",
       "en": "Process passive (Vorgangspassiv): Combined with auxiliary 'werden' ('werden beantwortet' = are answered). It is the Participle II form of 'beantworten'.",
       "ar": "المبني للمجهول (Vorgangspassiv): يُستخدم مع الفعل المساعد 'werden' ('werden beantwortet' = يتم الرد عليها)، وهو اسم المفعول (Partizip II).",
-      "uk": "Пасивний стан (Vorgangspassiv): вживається з допоміжним дієсловом 'werden' ('werden beantwortet' = відповідають). Форма Partizip II."
+      "uk": "Пасивний стан (Vorgangspassiv): вживається з допоміжним дієсловом 'werden' ('werden beantwortet' = відповідають). Форма Partizip II.",
+      "title": {
+        "tr": "💡 Fiil Çekimi: Partizip II / Passiv (Edilgen)",
+        "en": "💡 Verb Form: Participle II / Passive Voice",
+        "ar": "💡 تصريف الفعل: اسم المفعول / المبني للمجهول",
+        "uk": "💡 Форма дієслова: Partizip II / Пасивний стан"
+      }
     },
     "examples": [
       {
@@ -1390,7 +1600,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -1429,7 +1645,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'begleichen' temel eylem bildiren fiildir.",
       "en": "Verb: 'begleichen' denotes action, process, or state.",
       "ar": "فعل: 'begleichen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'begleichen' позначає дію або стан."
+      "uk": "Дієслово: 'begleichen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (begleichen)",
+        "en": "💡 Verb Structure (begleichen)",
+        "ar": "💡 بنية الفعل (begleichen)",
+        "uk": "💡 Структура дієслова (begleichen)"
+      }
     },
     "examples": [
       {
@@ -1468,7 +1690,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'bei' edatı her zaman DATIV gerektirir. 'beim' = bei + dem (bei der Feuerwehr, beim Arbeiten).",
       "en": "Preposition: 'bei' always governs the DATIVE case. 'beim' contracts from 'bei + dem'.",
       "ar": "حرف جر: 'bei' يتطلب دائمًا حالة الـ DATIV. 'beim' = bei + dem.",
-      "uk": "Прийменник: 'bei' завжди вимагає DATIV. 'beim' = bei + dem."
+      "uk": "Прийменник: 'bei' завжди вимагає DATIV. 'beim' = bei + dem.",
+      "title": {
+        "tr": "💡 Edat Kuralı: Dativ (İsmin -e Hali) Gerektirir",
+        "en": "💡 Preposition Rule: Governs Dative Case",
+        "ar": "💡 قاعدة حرف الجر: يجر بالـ Dativ دائمًا",
+        "uk": "💡 Правило прийменника: Завжди вимагає Dativ"
+      }
     },
     "examples": [
       {
@@ -1507,7 +1735,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'beides' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'beides' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'beides' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'beides' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'beides' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -1543,10 +1777,16 @@ window.READING_LEXICON = {
     "example_ar": "نسخة من الفاتورة مرفقة بهذا البريد الإلكتروني.",
     "example_uk": "Копію рахунку додано до цього листа.",
     "grammar": {
-      "tr": "Fiil (Verb): 'beifügen' temel eylem bildiren fiildir.",
-      "en": "Verb: 'beifügen' denotes action, process, or state.",
-      "ar": "فعل: 'beifügen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'beifügen' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Ayrılabilir Fiil Partizip II (beifügen ➔ beigefügt)",
+        "en": "💡 Verb Form: Separable Participle II (beifügen ➔ beigefügt)",
+        "ar": "💡 تصريف الفعل: اسم المفعول لفعل منفصل (beifügen ➔ beigefügt)",
+        "uk": "💡 Форма дієслова: Partizip II відокремлюваного дієслова"
+      },
+      "tr": "Ayrılabilir fiil Partizip II: 'beifügen' (eklemek / iliştirmek) ayrılabilir bir fiildir. Partizip II yapılırken 'ge-' takısı önek ile fiil kökü arasına girer: bei-ge-fügt (eklenmiş / ilişikte). Metinde sıfat olarak: 'im beigefügten Foto'.",
+      "en": "Separable verb Participle II: In 'beifügen' (to attach/enclose), 'ge-' is inserted between prefix and stem: bei-ge-fügt (attached). Used as an adjective: 'im beigefügten Foto'.",
+      "ar": "اسم مفعول لفعل منفصل: في 'beifügen'، تدخل 'ge-' بين السابقة وجذر الفعل: bei-ge-fügt (مرفق). مستخدم كصفة: 'im beigefügten Foto' (في الصورة المرفقة).",
+      "uk": "Partizip II відокремлюваного дієслова: у 'beifügen' префікс 'ge-' вклинюється між основою та префіксом: bei-ge-fügt (доданий / прикріплений). Як прикметник: 'im beigefügten Foto'."
     },
     "examples": [
       {
@@ -1585,7 +1825,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'beim' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
       "en": "Preposition: 'beim' governs the grammatical case (Dative/Accusative) of the following noun.",
       "ar": "حرف جر: 'beim' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
-      "uk": "Прийменник: 'beim' визначає відмінок іменника (Dativ чи Akkusativ)."
+      "uk": "Прийменник: 'beim' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
     },
     "examples": [
       {
@@ -1624,7 +1870,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'beispielsweise' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'beispielsweise' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'beispielsweise' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'beispielsweise' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'beispielsweise' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (beispielsweise)",
+        "en": "💡 Adverb (beispielsweise)",
+        "ar": "💡 ظرف (beispielsweise)",
+        "uk": "💡 Прислівник (beispielsweise)"
+      }
     },
     "examples": [
       {
@@ -1663,7 +1915,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Beiträge'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Beiträge'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Beiträge'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Beiträge'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Beiträge'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Beitrag)",
+        "en": "💡 Noun Structure (der Beitrag)",
+        "ar": "💡 بنية الاسم (der Beitrag)",
+        "uk": "💡 Структура іменника (der Beitrag)"
+      }
     },
     "examples": [
       {
@@ -1702,7 +1960,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Beitritte'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Beitritte'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Beitritte'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Beitritte'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Beitritte'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Beitritt)",
+        "en": "💡 Noun Structure (der Beitritt)",
+        "ar": "💡 بنية الاسم (der Beitritt)",
+        "uk": "💡 Структура іменника (der Beitritt)"
+      }
     },
     "examples": [
       {
@@ -1741,7 +2005,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat (Adjektiv): 'beliebt' niteleme veya durum sıfatıdır.",
       "en": "Adjective: 'beliebt' describes quality or state.",
       "ar": "صفة: 'beliebt' تصف الحالة أو الخاصية.",
-      "uk": "Прикметник: 'beliebt' описує ознаку або стан."
+      "uk": "Прикметник: 'beliebt' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (beliebt)",
+        "en": "💡 Adjective (beliebt)",
+        "ar": "💡 بنية الصفة (beliebt)",
+        "uk": "💡 Структура прикметника (beliebt)"
+      }
     },
     "examples": [
       {
@@ -1780,7 +2050,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat (Adjektiv): 'bereit' niteleme veya durum sıfatıdır.",
       "en": "Adjective: 'bereit' describes quality or state.",
       "ar": "صفة: 'bereit' تصف الحالة أو الخاصية.",
-      "uk": "Прикметник: 'bereit' описує ознаку або стан."
+      "uk": "Прикметник: 'bereit' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (bereit)",
+        "en": "💡 Adjective (bereit)",
+        "ar": "💡 بنية الصفة (bereit)",
+        "uk": "💡 Структура прикметника (bereit)"
+      }
     },
     "examples": [
       {
@@ -1819,7 +2095,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'berichten' temel eylem bildiren fiildir.",
       "en": "Verb: 'berichten' denotes action, process, or state.",
       "ar": "فعل: 'berichten' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'berichten' позначає дію або стан."
+      "uk": "Дієслово: 'berichten' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (berichten)",
+        "en": "💡 Verb Structure (berichten)",
+        "ar": "💡 بنية الفعل (berichten)",
+        "uk": "💡 Структура дієслова (berichten)"
+      }
     },
     "examples": [
       {
@@ -1858,7 +2140,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Berufsalltag)",
+        "en": "💡 Noun Structure (der Berufsalltag)",
+        "ar": "💡 بنية الاسم (der Berufsalltag)",
+        "uk": "💡 Структура іменника (der Berufsalltag)"
+      }
     },
     "examples": [
       {
@@ -1897,7 +2185,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Berufstätigen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Berufstätigen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Berufstätigen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Berufstätigen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Berufstätigen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Berufstätige)",
+        "en": "💡 Noun Structure (der Berufstätige)",
+        "ar": "💡 بنية الاسم (der Berufstätige)",
+        "uk": "💡 Структура іменника (der Berufstätige)"
+      }
     },
     "examples": [
       {
@@ -1933,10 +2227,16 @@ window.READING_LEXICON = {
     "example_ar": "صورة لخزان المياه التالف.",
     "example_uk": "Фотографія пошкодженого резервуара для води.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'beschädigt' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
-      "en": "Adjective declension: 'beschädigt' is inflected with the '-en' ending in Dative or Accusative case.",
-      "ar": "تصريف الصفات: الصفة 'beschädigt' تصرف في الجملة بلاحقة '-en'.",
-      "uk": "Відмінювання прикметників: прикметник 'beschädigt' отримує закінчення '-en'."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Genitiv Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Genitive Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة في حالة الإضافة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Прикметник у родовому відмінку)"
+      },
+      "tr": "Zayıf sıfat çekimi (Genitiv): 'des beschädigten Wassertanks' (hasarlı su haznesinin) tamlamasında maskulin Genitiv artikel 'des'ten sonra sıfat zayıf çekim '-en' takısı alır.",
+      "en": "Weak adjective declension (Genitive): In 'des beschädigten Wassertanks' (of the damaged water tank), the adjective takes '-en' after masculine genitive article 'des'.",
+      "ar": "تصريف ضعيف في حالة الإضافة: بعد أداة المضاف إليه للمذكر 'des'، تأخذ الصفة لاحقة '-en' في 'des beschädigten Wassertanks'.",
+      "uk": "Слабка відміна (Genitiv): після артикля чоловічого роду в родовому відмінку 'des' прикметник приймає '-en' ('des beschädigten Wassertanks')."
     },
     "examples": [
       {
@@ -1975,7 +2275,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Beschäftigten'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Beschäftigten'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Beschäftigten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Beschäftigten'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Beschäftigten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Beschäftigte)",
+        "en": "💡 Noun Structure (der Beschäftigte)",
+        "ar": "💡 بنية الاسم (der Beschäftigte)",
+        "uk": "💡 Структура іменника (der Beschäftigte)"
+      }
     },
     "examples": [
       {
@@ -2014,7 +2320,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'besonders' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'besonders' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'besonders' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'besonders' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'besonders' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (besonders)",
+        "en": "💡 Adverb (besonders)",
+        "ar": "💡 ظرف (besonders)",
+        "uk": "💡 Прислівник (besonders)"
+      }
     },
     "examples": [
       {
@@ -2053,7 +2365,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Bestandteile'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Bestandteile'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Bestandteile'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Bestandteile'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Bestandteile'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Bestandteil)",
+        "en": "💡 Noun Structure (der Bestandteil)",
+        "ar": "💡 بنية الاسم (der Bestandteil)",
+        "uk": "💡 Структура іменника (der Bestandteil)"
+      }
     },
     "examples": [
       {
@@ -2092,7 +2410,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Bestellnummern'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Bestellnummern'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Bestellnummern'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Bestellnummern'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Bestellnummern'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Bestellnummer)",
+        "en": "💡 Noun Structure (die Bestellnummer)",
+        "ar": "💡 بنية الاسم (die Bestellnummer)",
+        "uk": "💡 Структура іменника (die Bestellnummer)"
+      }
     },
     "examples": [
       {
@@ -2131,7 +2455,13 @@ window.READING_LEXICON = {
       "tr": "Geçmiş zaman (Perfekt): 'haben' yardımcı fiili ile kurulur ('habe bestellt' = sipariş ettim). Düzenli fiil 'bestellen'in Partizip II biçimidir.",
       "en": "Perfect tense (Perfekt): Formed with 'haben' ('habe bestellt' = have ordered). Participle II of 'bestellen'.",
       "ar": "الماضي التام (Perfekt): يُصاغ مع 'haben' ('habe bestellt' = طلبتُ). اسم مفعول من 'bestellen'.",
-      "uk": "Минулий час (Perfekt): утворюється з 'haben' ('habe bestellt' = замовив). Partizip II від 'bestellen'."
+      "uk": "Минулий час (Perfekt): утворюється з 'haben' ('habe bestellt' = замовив). Partizip II від 'bestellen'.",
+      "title": {
+        "tr": "💡 Fiil Çekimi: Partizip II / Passiv (Edilgen)",
+        "en": "💡 Verb Form: Participle II / Passive Voice",
+        "ar": "💡 تصريف الفعل: اسم المفعول / المبني للمجهول",
+        "uk": "💡 Форма дієслова: Partizip II / Пасивний стан"
+      }
     },
     "examples": [
       {
@@ -2170,7 +2500,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'betragen' temel eylem bildiren fiildir.",
       "en": "Verb: 'betragen' denotes action, process, or state.",
       "ar": "فعل: 'betragen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'betragen' позначає дію або стан."
+      "uk": "Дієслово: 'betragen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (betragen)",
+        "en": "💡 Verb Structure (betragen)",
+        "ar": "💡 بنية الفعل (betragen)",
+        "uk": "💡 Структура дієслова (betragen)"
+      }
     },
     "examples": [
       {
@@ -2209,7 +2545,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Betriebe'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Betriebe'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Betriebe'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Betriebe'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Betriebe'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Betrieb)",
+        "en": "💡 Noun Structure (der Betrieb)",
+        "ar": "💡 بنية الاسم (der Betrieb)",
+        "uk": "💡 Структура іменника (der Betrieb)"
+      }
     },
     "examples": [
       {
@@ -2245,10 +2587,16 @@ window.READING_LEXICON = {
     "example_ar": "يشير الإيجار الأساسي إلى السعر الصافي لمساحة المعيشة.",
     "example_uk": "Холодна оренда позначає чисту вартість житлової площі.",
     "grammar": {
-      "tr": "Fiil (Verb): 'bezeichnen' temel eylem bildiren fiildir.",
-      "en": "Verb: 'bezeichnen' denotes action, process, or state.",
-      "ar": "فعل: 'bezeichnen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'bezeichnen' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Präsens 3. Tekil Şahıs (bezeichnen)",
+        "en": "💡 Verb Conjugation: 3rd Person Singular Present (bezeichnen)",
+        "ar": "💡 تصريف الفعل: المضارع للمفرد الغائب (bezeichnen)",
+        "uk": "💡 Дієвідмінювання: 3-тя особа однини теперішнього часу (bezeichnen)"
+      },
+      "tr": "Fiil çekimi: 'bezeichnen' (tanımlamak / ifade etmek) fiilinin 3. tekil şahıs şimdiki zamanıdır ('Die Kaltmiete bezeichnet den reinen Preis...' = Soğuk kira yalın fiyatı ifade eder).",
+      "en": "Verb conjugation: 3rd person singular present of 'bezeichnen' (to designate / denote). In text: 'Die Kaltmiete bezeichnet den reinen Preis...'",
+      "ar": "تصريف الفعل: صيغة المفرد الغائب المضارع للفعل 'bezeichnen' (يدل على / يعني). في النص: 'Die Kaltmiete bezeichnet...'.",
+      "uk": "Дієвідмінювання: 3-тя особа однини від 'bezeichnen' (позначати / означати). У тексті: 'Die Kaltmiete bezeichnet...'"
     },
     "examples": [
       {
@@ -2284,10 +2632,16 @@ window.READING_LEXICON = {
     "example_ar": "العمل في المنزل ينطوي أيضًا على مخاطر كبيرة.",
     "example_uk": "Робота вдома також криє в собі значні ризики.",
     "grammar": {
-      "tr": "Düzensiz fiil kök değişimi: 'bergen' (barındırmak, içinde taşımak) fiilinin 3. tekil şahıs şimdiki zaman çekimidir (er/sie/es birgt). Kök sesli harfi 'e' -> 'i' değişimine uğrar.",
-      "en": "Irregular verb stem change: 3rd person singular present tense of 'bergen' (er/sie/es birgt = entails/holds). The stem vowel changes from 'e' to 'i'.",
-      "ar": "تصريف فعل غير قياسي: صيغة المفرد الغائب المضارع للفعل 'bergen' (er/sie/es birgt = ينطوي على). يتحول حرف العلة من 'e' إلى 'i'.",
-      "uk": "Неправильне дієслово з чергуванням голосної: 3-тя особа однини теперішнього часу від 'bergen' (er/sie/es birgt). Голосна кореня змінюється з 'e' на 'i'."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Düzensiz Kök Değişimi (bergen ➔ birgt)",
+        "en": "💡 Verb Conjugation: Irregular Stem Change (bergen ➔ birgt)",
+        "ar": "💡 تصريف الفعل: تغيير حرف العلة في الجذر (bergen ➔ birgt)",
+        "uk": "💡 Дієвідмінювання: Чергування голосної кореня (bergen ➔ birgt)"
+      },
+      "tr": "Düzensiz fiil çekimi (Präsens 3. Tekil Şahıs): 'bergen' (içinde barındırmak, taşımak) fiili 3. tekil şahısta kök seslisi 'e' -> 'i' olur (er/sie/es birgt = barındırır). Metinde: 'birgt auch Risiken'.",
+      "en": "Irregular verb conjugation (3rd person singular present): 'bergen' (to entail / harbor) changes stem vowel from 'e' to 'i' (er/sie/es birgt = harbors/entails). In text: 'birgt auch Risiken'.",
+      "ar": "تصريف فعل غير قياسي (المضارع للمفرد الغائب): يتحول حرف العلة في 'bergen' من 'e' إلى 'i' (er/sie/es birgt = ينطوي على / يخفي). في النص: 'birgt auch Risiken'.",
+      "uk": "Неправильне дієслово (3-тя особа однини теперішнього часу): дієслово 'bergen' змінює голосну з 'e' на 'i' (er/sie/es birgt = приховує / несе в собі). У тексті: 'birgt auch Risiken'."
     },
     "examples": [
       {
@@ -2326,7 +2680,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'bis' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
       "en": "Preposition: 'bis' governs the grammatical case (Dative/Accusative) of the following noun.",
       "ar": "حرف جر: 'bis' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
-      "uk": "Прийменник: 'bis' визначає відмінок іменника (Dativ чи Akkusativ)."
+      "uk": "Прийменник: 'bis' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
     },
     "examples": [
       {
@@ -2365,7 +2725,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'bitte' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'bitte' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'bitte' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'bitte' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'bitte' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (bitte)",
+        "en": "💡 Adverb (bitte)",
+        "ar": "💡 ظرف (bitte)",
+        "uk": "💡 Прислівник (bitte)"
+      }
     },
     "examples": [
       {
@@ -2404,7 +2770,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Büros'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Büros'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Büros'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Büros'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Büros'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Büro)",
+        "en": "💡 Noun Structure (das Büro)",
+        "ar": "💡 بنية الاسم (das Büro)",
+        "uk": "💡 Структура іменника (das Büro)"
+      }
     },
     "examples": [
       {
@@ -2443,7 +2815,13 @@ window.READING_LEXICON = {
       "tr": "Bağlaç (Konjunktion): 'da' cümleleri veya kelimeleri birbirine bağlar ve cümledeki fiil pozisyonunu belirler.",
       "en": "Conjunction: 'da' connects clauses or words and dictates word order.",
       "ar": "حرف عطف أو رابط: 'da' يربط بين الجمل ويحدد موقع الفعل.",
-      "uk": "Сполучник: 'da' з'єднує речення або слова і визначає позицію дієслова."
+      "uk": "Сполучник: 'da' з'єднує речення або слова і визначає позицію дієслова.",
+      "title": {
+        "tr": "💡 Bağlaç Kuralı: Fiil Sonda (Nebensatz)",
+        "en": "💡 Subordinating Conjunction: Verb-Final Order",
+        "ar": "💡 رابط جملة جانبية: الفعل في نهاية الجملة",
+        "uk": "💡 Підрядний сполучник: Дієслово в кінці речення"
+      }
     },
     "examples": [
       {
@@ -2482,7 +2860,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'dabei' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'dabei' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'dabei' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'dabei' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'dabei' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (dabei)",
+        "en": "💡 Adverb (dabei)",
+        "ar": "💡 ظرف (dabei)",
+        "uk": "💡 Прислівник (dabei)"
+      }
     },
     "examples": [
       {
@@ -2521,7 +2905,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'dadurch' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'dadurch' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'dadurch' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'dadurch' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'dadurch' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (dadurch)",
+        "en": "💡 Adverb (dadurch)",
+        "ar": "💡 ظرف (dadurch)",
+        "uk": "💡 Прислівник (dadurch)"
+      }
     },
     "examples": [
       {
@@ -2560,7 +2950,13 @@ window.READING_LEXICON = {
       "tr": "Bağlantı zarfı (Konnektoraladverb): 'Bu nedenle' demektir. Cümle başında gelirse peşinden hemen çekimli fiil gelir (Fiil 2. pozisyondadır: 'Ich bitte Sie daher...' / 'Daher bitte ich Sie...').",
       "en": "Adverbial connector: Means 'therefore'. When placed at the start, the conjugated verb immediately follows in position 2.",
       "ar": "ظرف ربط: يعني 'لذلك'. عند البدء به، يأتي الفعل المصرف مباشرة في الموقع الثاني.",
-      "uk": "Сполучниковий прислівник: означає 'тому'. Після нього дієслово стоїть на 2-й позиції."
+      "uk": "Сполучниковий прислівник: означає 'тому'. Після нього дієслово стоїть на 2-й позиції.",
+      "title": {
+        "tr": "💡 Bağlantı Zarfı: Fiil 2. Pozisyonda (Inversion)",
+        "en": "💡 Adverbial Connector: Verb-Second Word Order",
+        "ar": "💡 ظرف ربط: الفعل في الموقع الثاني",
+        "uk": "💡 Сполучниковий прислівник: Дієслово на 2-й позиції"
+      }
     },
     "examples": [
       {
@@ -2581,7 +2977,7 @@ window.READING_LEXICON = {
   },
   "damen": {
     "de": "die Dame",
-    "displayDe": "Damen",
+    "displayDe": "Dame",
     "article": "die",
     "plural": "die Damen",
     "pos": "noun",
@@ -2599,7 +2995,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Damen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Damen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Damen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Damen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Damen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -2610,9 +3012,9 @@ window.READING_LEXICON = {
         "uk": "Шановні пані та панове."
       },
       {
-        "de": "Für viele Menschen in Deutschland spielt die Damen eine wichtige Rolle im Alltag.",
-        "tr": "Almanya'daki pek çok insan için Damen günlük yaşamda önemli bir rol oynar.",
-        "en": "For many people in Germany, Damen plays an important role in daily life.",
+        "de": "Für viele Menschen in Deutschland spielt die Dame eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Dame günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Dame plays an important role in daily life.",
         "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
         "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
       }
@@ -2638,7 +3040,13 @@ window.READING_LEXICON = {
       "tr": "Bağlaç (Konjunktion): 'damit' cümleleri veya kelimeleri birbirine bağlar ve cümledeki fiil pozisyonunu belirler.",
       "en": "Conjunction: 'damit' connects clauses or words and dictates word order.",
       "ar": "حرف عطف أو رابط: 'damit' يربط بين الجمل ويحدد موقع الفعل.",
-      "uk": "Сполучник: 'damit' з'єднує речення або слова і визначає позицію дієслова."
+      "uk": "Сполучник: 'damit' з'єднує речення або слова і визначає позицію дієслова.",
+      "title": {
+        "tr": "💡 Bağlaç Kuralı: Fiil Sonda (Nebensatz)",
+        "en": "💡 Subordinating Conjunction: Verb-Final Order",
+        "ar": "💡 رابط جملة جانبية: الفعل في نهاية الجملة",
+        "uk": "💡 Підрядний сполучник: Дієслово в кінці речення"
+      }
     },
     "examples": [
       {
@@ -2674,10 +3082,16 @@ window.READING_LEXICON = {
     "example_ar": "قانونًا، يجوز أن يبلغ هذا الضمان كحد أقصى ثلاثة أشهر من الإيجار الصافي.",
     "example_uk": "За законом, ця застава може становити максимум три чисті орендні плати.",
     "grammar": {
-      "tr": "Fiil (Verb): 'dürfen' temel eylem bildiren fiildir.",
-      "en": "Verb: 'dürfen' denotes action, process, or state.",
-      "ar": "فعل: 'dürfen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'dürfen' позначає дію або стан."
+      "title": {
+        "tr": "💡 Modal Fiil Çekimi: Präsens Tekil (dürfen ➔ darf)",
+        "en": "💡 Modal Verb Form: Present Singular (dürfen ➔ darf)",
+        "ar": "💡 تصريف الفعل المساعد: المضارع للمفرد (dürfen ➔ darf)",
+        "uk": "💡 Модальне дієслово: Теперішній час однини (dürfen ➔ darf)"
+      },
+      "tr": "Modal fiil tekil çekimi: 'dürfen' (izinli olmak / yasal hakka sahip olmak) fiili tekilde kök seslisini 'a' yapar ve ek almaz ('darf höchstens drei Nettokaltmieten betragen' = en fazla üç net kira tutarında olabilir).",
+      "en": "Modal verb singular conjugation: 'dürfen' (may / to be permitted) changes vowel to 'a' without personal ending in singular ('darf höchstens drei Nettokaltmieten betragen' = may amount to at most three cold rents).",
+      "ar": "تصريف الفعل المساعد: يتغير حرف العلة إلى 'a' في الفعل 'dürfen' (يُسمح به قانونًا) بدون لاحقة في المفرد ('darf höchstens...').",
+      "uk": "Відмінювання модального дієслова: 'dürfen' (мати дозвіл / право) змінює голосну на 'a' без закінчення в однині ('darf höchstens...')."
     },
     "examples": [
       {
@@ -2716,7 +3130,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: art. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: art.",
       "ar": "نوع الكلمة: art.",
-      "uk": "Частина мови: art."
+      "uk": "Частина мови: art.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -2755,7 +3175,13 @@ window.READING_LEXICON = {
       "tr": "Yan cümle bağlacı (Nebensatzkonjunktion): Açıklama veya dolaylı aktarma bildirir; çekimli fiil daima cümlenin en sonuna gider (z.B. '...dass Grenzen verschwimmen.').",
       "en": "Subordinating conjunction: Connects content clauses; the finite verb always moves to the end of the clause.",
       "ar": "رابط جملة جانبية: يربط الجمل التوضيحية ويضع الفعل في نهاية الجملة دائمًا.",
-      "uk": "Підрядний сполучник з'ясувальний: відмінюване дієслово завжди ставиться в кінець речення."
+      "uk": "Підрядний сполучник з'ясувальний: відмінюване дієслово завжди ставиться в кінець речення.",
+      "title": {
+        "tr": "💡 Bağlaç Kuralı: Fiil Sonda (Nebensatz)",
+        "en": "💡 Subordinating Conjunction: Verb-Final Order",
+        "ar": "💡 رابط جملة جانبية: الفعل في نهاية الجملة",
+        "uk": "💡 Підрядний сполучник: Дієслово в кінці речення"
+      }
     },
     "examples": [
       {
@@ -2794,7 +3220,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Dauer)",
+        "en": "💡 Noun Structure (die Dauer)",
+        "ar": "💡 بنية الاسم (die Dauer)",
+        "uk": "💡 Структура іменника (die Dauer)"
+      }
     },
     "examples": [
       {
@@ -2830,10 +3262,16 @@ window.READING_LEXICON = {
     "example_ar": "كيف يمكنني إعادة الجهاز المعطل.",
     "example_uk": "Як я можу повернути несправний пристрій.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'defekt' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'defekt' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'defekt' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'defekt' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Zayıf Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Weak Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة ضعيف)",
+        "uk": "💡 Чому закінчення \"-e\"? (Слабка відміна прикметника)"
+      },
+      "tr": "Zayıf sıfat çekimi: 'das defekte Gerät' yapısında nötr belirli artikel 'das'tan sonra Akkusativ nötr sıfat zayıf çekim '-e' takısı alır.",
+      "en": "Weak adjective declension: In 'das defekte Gerät', takes '-e' after neuter definite article 'das' in Accusative.",
+      "ar": "تصريف ضعيف: تأخذ الصفة لاحقة '-e' بعد أداة التعريف للمحايد 'das' في حالة النصب.",
+      "uk": "Слабка відміна: прикметник отримує '-e' після означеного артикля середнього роду 'das' у знахідному відмінку."
     },
     "examples": [
       {
@@ -2872,7 +3310,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: art. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: art.",
       "ar": "نوع الكلمة: art.",
-      "uk": "Частина мови: art."
+      "uk": "Частина мови: art.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -2911,7 +3355,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: art. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: art.",
       "ar": "نوع الكلمة: art.",
-      "uk": "Частина мови: art."
+      "uk": "Частина мови: art.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -2950,7 +3400,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'denen' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'denen' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'denen' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'denen' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'denen' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -2989,7 +3445,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: art. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: art.",
       "ar": "نوع الكلمة: art.",
-      "uk": "Частина мови: art."
+      "uk": "Частина мови: art.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -3028,7 +3490,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: art. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: art.",
       "ar": "نوع الكلمة: art.",
-      "uk": "Частина мови: art."
+      "uk": "Частина мови: art.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -3067,7 +3535,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi (Zayıf çekim): 'das deutsche Arbeitszeitgesetz' yapısında 'das' belirli artikelinden sonra nötr Nominativ sıfat zayıf çekim '-e' takısı alır.",
       "en": "Weak adjective declension: After neuter definite article 'das', takes Nominative neuter ending '-e'.",
       "ar": "تصريف ضعيف: بعد أداة التعريف للمحايد 'das'، تأخذ الصفة في حالة الرفع لاحقة '-e'.",
-      "uk": "Слабка відміна: після артикля середнього роду 'das' прикметник у називному відмінку отримує '-e'."
+      "uk": "Слабка відміна: після артикля середнього роду 'das' прикметник у називному відмінку отримує '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
     },
     "examples": [
       {
@@ -3103,10 +3577,16 @@ window.READING_LEXICON = {
     "example_ar": "في المناطق الحضرية الألمانية.",
     "example_uk": "У німецьких містах.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'deutsch' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
-      "en": "Adjective declension: 'deutsch' is inflected with the '-en' ending in Dative or Accusative case.",
-      "ar": "تصريف الصفات: الصفة 'deutsch' تصرف في الجملة بلاحقة '-en'.",
-      "uk": "Відмінювання прикметників: прикметник 'deutsch' отримує закінчення '-en'."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Dativ Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Dative Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف صفة لجمع Dativ)",
+        "uk": "💡 Чому закінчення \"-en\"? (Прикметник у Dativ Plural)"
+      },
+      "tr": "Sıfat çekimi: 'in deutschen Ballungsräumen' yapısında 'in' edatı bulunma (Dativ) gerektirir. Artikelsiz çoğul isim önündeki sıfat güçlü Dativ Plural '-en' takısı alır.",
+      "en": "Adjective declension: In 'in deutschen Ballungsräumen', 'in' governs Dative for location. Plural adjective without article takes Dative plural '-en'.",
+      "ar": "تصريف الصفات: في 'in deutschen Ballungsräumen'، حرف الجر 'in' للمكان يتطلب Dativ، وتأخذ الصفة لجمع بدون أداة لاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прийменник місця 'in' вимагає Dativ; прикметник у множині без артикля приймає закінчення '-en'."
     },
     "examples": [
       {
@@ -3145,7 +3625,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Deutschland)",
+        "en": "💡 Noun Structure (das Deutschland)",
+        "ar": "💡 بنية الاسم (das Deutschland)",
+        "uk": "💡 Структура іменника (das Deutschland)"
+      }
     },
     "examples": [
       {
@@ -3184,7 +3670,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: art. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: art.",
       "ar": "نوع الكلمة: art.",
-      "uk": "Частина мови: art."
+      "uk": "Частина мови: art.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -3220,10 +3712,16 @@ window.READING_LEXICON = {
     "example_ar": "رسائل البريد الإلكتروني الخاصة بالعمل بعد انتهاء الدوام.",
     "example_uk": "Службові електронні листи після закінчення робочого дня.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'dienstlich' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'dienstlich' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'dienstlich' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'dienstlich' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Nominativ Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Nominative Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة لجمع Nominativ)",
+        "uk": "💡 Чому закінчення \"-e\"? (Прикметник у називному множини)"
+      },
+      "tr": "Güçlü sıfat çekimi (Nominativ Plural): 'dienstliche E-Mails' yapısında çoğul isim önünde artikel olmadığı için sıfat güçlü Nominativ Plural '-e' takısı almıştır.",
+      "en": "Strong adjective declension (Nominative plural): In 'dienstliche E-Mails', plural noun without article takes strong Nominative plural '-e'.",
+      "ar": "تصريف قوي: تأخذ الصفة لاحقة الرفع للجمع بدون أداة '-e' في 'dienstliche E-Mails'.",
+      "uk": "Сильна відміна: перед іменником у множині без артикля прикметник приймає '-e' у називному відмінку."
     },
     "examples": [
       {
@@ -3262,7 +3760,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'diese' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'diese' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'diese' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'diese' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'diese' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -3301,7 +3805,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'diesen' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'diesen' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'diesen' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'diesen' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'diesen' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -3340,7 +3850,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'dieser' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'dieser' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'dieser' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'dieser' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'dieser' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -3379,7 +3895,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'dieses' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'dieses' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'dieses' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'dieses' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'dieses' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -3418,7 +3940,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'direkt' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'direkt' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'direkt' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'direkt' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'direkt' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (direkt)",
+        "en": "💡 Adverb (direkt)",
+        "ar": "💡 ظرف (direkt)",
+        "uk": "💡 Прислівник (direkt)"
+      }
     },
     "examples": [
       {
@@ -3457,7 +3985,13 @@ window.READING_LEXICON = {
       "tr": "Bağlaç (Konjunktion): 'doch' cümleleri veya kelimeleri birbirine bağlar ve cümledeki fiil pozisyonunu belirler.",
       "en": "Conjunction: 'doch' connects clauses or words and dictates word order.",
       "ar": "حرف عطف أو رابط: 'doch' يربط بين الجمل ويحدد موقع الفعل.",
-      "uk": "Сполучник: 'doch' з'єднує речення або слова і визначає позицію дієслова."
+      "uk": "Сполучник: 'doch' з'єднує речення або слова і визначає позицію дієслова.",
+      "title": {
+        "tr": "💡 Bağlaç Kuralı: Fiil Sonda (Nebensatz)",
+        "en": "💡 Subordinating Conjunction: Verb-Final Order",
+        "ar": "💡 رابط جملة جانبية: الفعل في نهاية الجملة",
+        "uk": "💡 Підрядний сполучник: Дієслово в кінці речення"
+      }
     },
     "examples": [
       {
@@ -3496,7 +4030,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: num. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: num.",
       "ar": "نوع الكلمة: num.",
-      "uk": "Частина мови: num."
+      "uk": "Частина мови: num.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -3535,7 +4075,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Drittel'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Drittel'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Drittel'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Drittel'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Drittel'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Drittel)",
+        "en": "💡 Noun Structure (das Drittel)",
+        "ar": "💡 بنية الاسم (das Drittel)",
+        "uk": "💡 Структура іменника (das Drittel)"
+      }
     },
     "examples": [
       {
@@ -3574,7 +4120,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'durchschnittlich' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'durchschnittlich' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'durchschnittlich' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'durchschnittlich' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'durchschnittlich' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (durchschnittlich)",
+        "en": "💡 Adverb (durchschnittlich)",
+        "ar": "💡 ظرف (durchschnittlich)",
+        "uk": "💡 Прислівник (durchschnittlich)"
+      }
     },
     "examples": [
       {
@@ -3610,10 +4162,16 @@ window.READING_LEXICON = {
     "example_ar": "يتم الرد على رسائل البريد الإلكتروني الخاصة بالعمل في وقت متأخر.",
     "example_uk": "На робочі електронні листи відповідають пізно ввечері.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die E-Mails'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die E-Mails'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die E-Mails'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die E-Mails'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 Kısaltma: E-Mail (Elektronische Post)",
+        "en": "💡 Abbreviation: E-Mail (Electronic Mail)",
+        "ar": "💡 اختصار: E-Mail (البريد الإلكتروني)",
+        "uk": "💡 Скорочення: E-Mail (Електронна пошта)"
+      },
+      "tr": "Kısaltma bileşeni: 'E-Mail' (elektronik posta) kelimesindeki 'E-' harfi 'elektronisch' kelimesini temsil eder. 'dienstliche E-Mails' = işle ilgili e-postalar.",
+      "en": "Abbreviation component: In 'E-Mail', 'E-' stands for 'electronic'. 'dienstliche E-Mails' = official/business emails.",
+      "ar": "مكون اختصار: يمثل الحرف 'E-' كلمة 'elektronisch' (إلكتروني) في 'E-Mail'.",
+      "uk": "Компонент скорочення: літера 'E-' означає 'elektronisch' (електронний) у слові 'E-Mail'."
     },
     "examples": [
       {
@@ -3652,7 +4210,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Ehrenämter'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Ehrenämter'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Ehrenämter'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Ehrenämter'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Ehrenämter'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Ehrenamt)",
+        "en": "💡 Noun Structure (das Ehrenamt)",
+        "ar": "💡 بنية الاسم (das Ehrenamt)",
+        "uk": "💡 Структура іменника (das Ehrenamt)"
+      }
     },
     "examples": [
       {
@@ -3688,10 +4252,16 @@ window.READING_LEXICON = {
     "example_ar": "العمل بين جدران المنزل الأربعة ينطوي على مخاطر.",
     "example_uk": "Робота у власних чотирьох стінах криє в собі ризики.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'eigen' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
-      "en": "Adjective declension: 'eigen' is inflected with the '-en' ending in Dative or Accusative case.",
-      "ar": "تصريف الصفات: الصفة 'eigen' تصرف في الجملة بلاحقة '-en'.",
-      "uk": "Відмінювання прикметників: прикметник 'eigen' отримує закінчення '-en'."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Dativ Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Dative Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف صفة لجمع Dativ)",
+        "uk": "💡 Чому закінчення \"-en\"? (Прикметник у Dativ Plural)"
+      },
+      "tr": "Zayıf sıfat çekimi: 'in den eigenen vier Wänden' (kendi dört duvarı arasında / kendi evinde) deyiminde 'den' Dativ Plural artikelinden sonra sıfat '-en' takısı alır.",
+      "en": "Weak adjective declension: In 'in den eigenen vier Wänden' (within one's own four walls), the adjective takes '-en' following Dative plural article 'den'.",
+      "ar": "تصريف صفة ضعيف: تأخذ الصفة '-en' بعد أداة الـ Dativ للجمع 'den' في التعبير 'in den eigenen vier Wänden'.",
+      "uk": "Слабка відміна: прикметник приймає '-en' після артикля давального відмінка множини 'den' у виразі 'in den eigenen vier Wänden'."
     },
     "examples": [
       {
@@ -3730,7 +4300,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: art. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: art.",
       "ar": "نوع الكلمة: art.",
-      "uk": "Частина мови: art."
+      "uk": "Частина мови: art.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -3769,7 +4345,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: art. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: art.",
       "ar": "نوع الكلمة: art.",
-      "uk": "Частина мови: art."
+      "uk": "Частина мови: art.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -3808,7 +4390,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: art. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: art.",
       "ar": "نوع الكلمة: art.",
-      "uk": "Частина мови: art."
+      "uk": "Частина мови: art.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -3847,7 +4435,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: art. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: art.",
       "ar": "نوع الكلمة: art.",
-      "uk": "Частина мови: art."
+      "uk": "Частина мови: art.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -3883,10 +4477,16 @@ window.READING_LEXICON = {
     "example_ar": "بعد ست ساعات يجب أخذ استراحة مدتها 30 دقيقة.",
     "example_uk": "Після шести годин необхідно зробити перерву на 30 хвилин.",
     "grammar": {
-      "tr": "Fiil (Verb): 'einlegen' temel eylem bildiren fiildir.",
-      "en": "Verb: 'einlegen' denotes action, process, or state.",
-      "ar": "فعل: 'einlegen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'einlegen' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Ayrılabilir Fiil Partizip II (einlegen ➔ eingelegt)",
+        "en": "💡 Verb Form: Separable Participle II (einlegen ➔ eingelegt)",
+        "ar": "💡 تصريف الفعل: اسم المفعول لفعل منفصل (einlegen ➔ eingelegt)",
+        "uk": "💡 Форма дієслова: Partizip II відокремлюваного дієслова"
+      },
+      "tr": "Ayrılabilir fiil Partizip II: 'einlegen' (mola vermek / itiraz etmek) fiilinde 'ge-' takısı araya girer: ein-ge-legt. Edilgen yapıda: 'muss eine Pause eingelegt werden' (bir mola verilmelidir).",
+      "en": "Separable verb Participle II: 'einlegen' places 'ge-' between prefix and verb stem: ein-ge-legt. In passive: 'muss eine Pause eingelegt werden' (a break must be taken).",
+      "ar": "اسم مفعول لفعل منفصل: في 'einlegen'، تأتي 'ge-' بين السابقة والجذر: ein-ge-legt. في المبني للمجهول: 'muss eine Pause eingelegt werden'.",
+      "uk": "Partizip II відокремлюваного дієслова: 'einlegen' ставить 'ge-' між префіксом та основою: ein-ge-legt. У пасивному стані: 'muss eine Pause eingelegt werden'."
     },
     "examples": [
       {
@@ -3922,10 +4522,16 @@ window.READING_LEXICON = {
     "example_ar": "منذ بضع سنوات، تغير عالم العمل.",
     "example_uk": "Уже кілька років як світ праці змінюється.",
     "grammar": {
-      "tr": "Zamir (Pronomen): 'einige' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
-      "en": "Pronoun: 'einige' stands in place of a noun and reflects grammatical case.",
-      "ar": "ضمير: 'einige' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'einige' замінює іменник і змінюється за відмінками."
+      "title": {
+        "tr": "💡 Zamir Çekimi: Dativ Plural (einige ➔ einigen)",
+        "en": "💡 Pronoun Declension: Dative Plural (einige ➔ einigen)",
+        "ar": "💡 تصريف الضمير: جمع Dativ (einige ➔ einigen)",
+        "uk": "💡 Відмінювання займенника: Dativ Plural (einige ➔ einigen)"
+      },
+      "tr": "Zamir çekimi (Dativ Plural): 'seit einigen Jahren' (birkaç yıldan beri) yapısında 'seit' edatı Dativ gerektirir; 'einige' belirsiz zamiri çoğulda Dativ '-en' takısı almıştır.",
+      "en": "Indefinite pronoun declension (Dative plural): In 'seit einigen Jahren' (for several years), 'seit' governs Dative; 'einige' takes Dative plural ending '-en'.",
+      "ar": "تصريف الضمير (جمع Dativ): بعد حرف الجر 'seit' (Dativ)، يأخذ الضمير المبهم 'einige' لاحقة الـ Dativ للجمع '-en'.",
+      "uk": "Відмінювання неозначеного займенника: після прийменника 'seit' (Dativ) займенник 'einige' приймає закінчення '-en' ('seit einigen Jahren')."
     },
     "examples": [
       {
@@ -3964,7 +4570,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Einstiege'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Einstiege'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Einstiege'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Einstiege'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Einstiege'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Einstieg)",
+        "en": "💡 Noun Structure (der Einstieg)",
+        "ar": "💡 بنية الاسم (der Einstieg)",
+        "uk": "💡 Структура іменника (der Einstieg)"
+      }
     },
     "examples": [
       {
@@ -4000,10 +4612,16 @@ window.READING_LEXICON = {
     "example_ar": "تقديم مهام أقصر للمتطوعين.",
     "example_uk": "Пропонувати коротші завдання для волонтерів.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Einsätze'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Einsätze'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Einsätze'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Einsätze'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Çoğul Eki ve Umlaut (der Einsatz ➔ die Einsätze)",
+        "en": "💡 Noun Declension: Plural with Umlaut (der Einsatz ➔ die Einsätze)",
+        "ar": "💡 تصريف الأسماء: جمع مع إمالة (der Einsatz ➔ die Einsätze)",
+        "uk": "💡 Творення множини з умлаутом (der Einsatz ➔ die Einsätze)"
+      },
+      "tr": "Çoğul ve Umlaut: 'der Einsatz' (görev, faaliyet) maskulin isminin çoğulu kökteki 'a' harfinin 'ä' olması ve sonuna '-e' eklenmesiyle kurulur (die Einsätze; 'kürzere Einsätze' = daha kısa süreli görevler).",
+      "en": "Plural with umlaut: 'der Einsatz' plurals with stem umlaut 'a -> ä' and suffix '-e' (die Einsätze; 'kürzere Einsätze' = shorter assignments).",
+      "ar": "جمع مع إمالة: يجمع 'der Einsatz' بتحويل 'a' إلى 'ä' وإضافة '-e' (die Einsätze = مهام / مشاركات).",
+      "uk": "Множина з умлаутом: 'der Einsatz' утворює множину чергуванням 'a -> ä' та суфіксом '-e' (die Einsätze)."
     },
     "examples": [
       {
@@ -4042,7 +4660,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi (Karışık çekim): 'ein einwandfreies Ersatzgerät' yapısında 'das Gerät' nötr bir isimdir. 'ein' belirsiz artikelinden sonra nötr Akkusativ sıfat '-es' takısı alır.",
       "en": "Mixed adjective declension: In 'ein einwandfreies Ersatzgerät', 'das Gerät' is neuter. After indefinite article 'ein', neuter Accusative adjective takes '-es'.",
       "ar": "تصريف مختلط: في 'ein einwandfreies Ersatzgerät'، الاسم محايد 'das Gerät'، وبعد أداة التنكير 'ein' تأخذ صفة النصب للمحايد لاحقة '-es'.",
-      "uk": "Мішана відміна: у 'ein einwandfreies Ersatzgerät' іменник 'das Gerät' середнього роду; після 'ein' у знахідному відмінку прикметник отримує '-es'."
+      "uk": "Мішана відміна: у 'ein einwandfreies Ersatzgerät' іменник 'das Gerät' середнього роду; після 'ein' у знахідному відмінку прикметник отримує '-es'.",
+      "title": {
+        "tr": "💡 Neden \"-es\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-es\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-es\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-es\"? (Відмінювання прикметника)"
+      }
     },
     "examples": [
       {
@@ -4081,7 +4705,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Einzüge'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Einzüge'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Einzüge'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Einzüge'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Einzüge'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Einzug)",
+        "en": "💡 Noun Structure (der Einzug)",
+        "ar": "💡 بنية الاسم (der Einzug)",
+        "uk": "💡 Структура іменника (der Einzug)"
+      }
     },
     "examples": [
       {
@@ -4120,7 +4750,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: num. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: num.",
       "ar": "نوع الكلمة: num.",
-      "uk": "Частина мови: num."
+      "uk": "Частина мови: num.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -4159,7 +4795,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'empfehlen' temel eylem bildiren fiildir.",
       "en": "Verb: 'empfehlen' denotes action, process, or state.",
       "ar": "فعل: 'empfehlen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'empfehlen' позначає дію або стан."
+      "uk": "Дієслово: 'empfehlen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (empfehlen)",
+        "en": "💡 Verb Structure (empfehlen)",
+        "ar": "💡 بنية الفعل (empfehlen)",
+        "uk": "💡 Структура дієслова (empfehlen)"
+      }
     },
     "examples": [
       {
@@ -4198,7 +4840,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'engagieren' temel eylem bildiren fiildir.",
       "en": "Verb: 'engagieren' denotes action, process, or state.",
       "ar": "فعل: 'engagieren' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'engagieren' позначає дію або стан."
+      "uk": "Дієслово: 'engagieren' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (engagieren)",
+        "en": "💡 Verb Structure (engagieren)",
+        "ar": "💡 بنية الفعل (engagieren)",
+        "uk": "💡 Структура дієслова (engagieren)"
+      }
     },
     "examples": [
       {
@@ -4237,7 +4885,13 @@ window.READING_LEXICON = {
       "tr": "Ayrılabilir fiil + 'zu' mastar yapısı: 'entgegenwirken' (karşı koymak, önlem almak) ayrılabilir bir fiildir. 'um ... zu' mastar cümlelerinde 'zu' parçacığı, ayrılabilir önek ('entgegen-') ile fiil kökü ('wirken') arasına girer: entgegen-zu-wirken.",
       "en": "Separable verb with 'zu' infinitive: 'entgegenwirken' is a separable verb. In 'um ... zu' clauses, 'zu' is placed between the separable prefix ('entgegen-') and the verb stem ('wirken'): entgegen-zu-wirken.",
       "ar": "المصدر مع 'zu' للأفعال المنفصلة: 'entgegenwirken' فعل منفصل. في تركيب 'um ... zu'، تأتي 'zu' بين السابقة المنفصلة وجذر الفعل: entgegen-zu-wirken.",
-      "uk": "Інфінітив з 'zu' для відокремлюваних дієслів: 'entgegenwirken' — відокремлюване дієслово. У конструкціях з 'zu' частка ставиться між префіксом та основою дієслова: entgegen-zu-wirken."
+      "uk": "Інфінітив з 'zu' для відокремлюваних дієслів: 'entgegenwirken' — відокремлюване дієслово. У конструкціях з 'zu' частка ставиться між префіксом та основою дієслова: entgegen-zu-wirken.",
+      "title": {
+        "tr": "💡 Fiil Yapısı: Ayrılabilir Fiil + \"zu\" Mastarı",
+        "en": "💡 Verb Structure: Separable Verb + \"zu\" Infinitive",
+        "ar": "💡 بنية الفعل: فعل منفصل مع أداة المصدر \"zu\"",
+        "uk": "💡 Структура дієслова: Відокремлюване дієслово з \"zu\""
+      }
     },
     "examples": [
       {
@@ -4276,7 +4930,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Entgrenzungen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Entgrenzungen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Entgrenzungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Entgrenzungen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Entgrenzungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Entgrenzung)",
+        "en": "💡 Noun Structure (die Entgrenzung)",
+        "ar": "💡 بنية الاسم (die Entgrenzung)",
+        "uk": "💡 Структура іменника (die Entgrenzung)"
+      }
     },
     "examples": [
       {
@@ -4312,10 +4972,16 @@ window.READING_LEXICON = {
     "example_ar": "يتطلب البحث عن شقة صبرًا واستعدادًا جيدًا.",
     "example_uk": "Пошук житла вимагає терпіння та гарної підготовки.",
     "grammar": {
-      "tr": "Fiil (Verb): 'erfordern' temel eylem bildiren fiildir.",
-      "en": "Verb: 'erfordern' denotes action, process, or state.",
-      "ar": "فعل: 'erfordern' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'erfordern' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Präsens 3. Tekil Şahıs (erfordern)",
+        "en": "💡 Verb Conjugation: 3rd Person Singular Present (erfordern)",
+        "ar": "💡 تصريف الفعل: المضارع للمفرد الغائب (erfordern)",
+        "uk": "💡 Дієвідмінювання: 3-тя особа однини теперішнього часу (erfordern)"
+      },
+      "tr": "Düzenli fiil çekimi (Präsens 3. Tekil Şahıs): 'erfordern' (gerektirmek) fiili özne tekil olduğunda '-t' şahıs eki alır ('Die Wohnungssuche erfordert Geduld' = Ev arayışı sabır gerektirir).",
+      "en": "Regular verb conjugation (3rd person singular present): 'erfordern' (to require/demand) takes '-t' ending with singular subject ('Die Wohnungssuche erfordert Geduld').",
+      "ar": "تصريف فعل قياسي (المضارع للمفرد الغائب): يأخذ الفعل 'erfordern' (يتطلب) لاحقة '-t' مع الفاعل المفرد ('Die Wohnungssuche erfordert Geduld').",
+      "uk": "Правильне дієслово (3-тя особа однини теперішнього часу): дієслово 'erfordern' (вимагати) приймає закінчення '-t' ('Die Wohnungssuche erfordert Geduld')."
     },
     "examples": [
       {
@@ -4351,10 +5017,16 @@ window.READING_LEXICON = {
     "example_ar": "كلاهما معًا فقط يشكلان الإيجار الإجمالي الحقيقي.",
     "example_uk": "Лише обидва компоненти разом складають фактичну теплу оренду.",
     "grammar": {
-      "tr": "Fiil (Verb): 'ergeben' temel eylem bildiren fiildir.",
-      "en": "Verb: 'ergeben' denotes action, process, or state.",
-      "ar": "فعل: 'ergeben' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'ergeben' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Düzensiz Kök Değişimi (ergeben ➔ ergibt)",
+        "en": "💡 Verb Conjugation: Irregular Stem Change (ergeben ➔ ergibt)",
+        "ar": "💡 تصريف الفعل: تغيير حرف العلة في الجذر (ergeben ➔ ergibt)",
+        "uk": "💡 Дієвідмінювання: Чергування голосної кореня (ergeben ➔ ergibt)"
+      },
+      "tr": "Düzensiz fiil çekimi (Präsens 3. Tekil Şahıs): 'ergeben' (sonuç vermek / ortaya çıkarmak) fiilinde 'e' -> 'i' olur (das ergibt = bu ... sonucunu verir). Metinde: 'Erst beides zusammen ergibt die tatsächliche Warmmiete.'",
+      "en": "Irregular verb conjugation (3rd person singular present): 'ergeben' (to result in / equal) changes 'e' to 'i' (das ergibt = that results in). In text: 'Erst beides zusammen ergibt die tatsächliche Warmmiete.'",
+      "ar": "تصريف فعل غير قياسي: يتحول 'e' إلى 'i' في الفعل 'ergeben' (das ergibt = يسفر عن / يساوي). في النص: 'Erst beides zusammen ergibt die tatsächliche Warmmiete.'",
+      "uk": "Неправильне дієслово: голосна 'e' змінюється на 'i' в 3-й особі однини (das ergibt = дає в результаті). У тексті: 'Erst beides zusammen ergibt die tatsächliche Warmmiete.'"
     },
     "examples": [
       {
@@ -4393,7 +5065,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi (Güçlü çekim): 'erhebliche Risiken' yapısında nötr çoğul isim önünde artikel olmadığı için sıfat Akkusativ Plural '-e' takısı almıştır.",
       "en": "Strong adjective declension: In 'erhebliche Risiken', plural noun without article takes Accusative plural ending '-e'.",
       "ar": "تصريف قوي: في 'erhebliche Risiken'، الاسم جمع بدون أداة، فتأخذ الصفة لاحقة النصب للجمع '-e'.",
-      "uk": "Сильна відміна: у 'erhebliche Risiken' іменник у множині без артикля, прикметник отримує закінчення '-e'."
+      "uk": "Сильна відміна: у 'erhebliche Risiken' іменник у множині без артикля, прикметник отримує закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
     },
     "examples": [
       {
@@ -4432,7 +5110,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Erholung)",
+        "en": "💡 Noun Structure (die Erholung)",
+        "ar": "💡 بنية الاسم (die Erholung)",
+        "uk": "💡 Структура іменника (die Erholung)"
+      }
     },
     "examples": [
       {
@@ -4468,10 +5152,16 @@ window.READING_LEXICON = {
     "example_ar": "سهل الانضمام البداية والاندماج بشكل كبير.",
     "example_uk": "Вступ значно полегшив перші кроки.",
     "grammar": {
-      "tr": "Fiil (Verb): 'erleichtern' temel eylem bildiren fiildir.",
-      "en": "Verb: 'erleichtern' denotes action, process, or state.",
-      "ar": "فعل: 'erleichtern' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'erleichtern' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Partizip II / Perfekt (erleichtern ➔ erleichtert)",
+        "en": "💡 Verb Form: Participle II / Perfekt (erleichtern ➔ erleichtert)",
+        "ar": "💡 تصريف الفعل: اسم المفعول (erleichtern ➔ erleichtert)",
+        "uk": "💡 Форма дієслова: Partizip II (erleichtern ➔ erleichtert)"
+      },
+      "tr": "Partizip II: 'erleichtern' (kolaylaştırmak) fiilinin 3. halidir. 'er-' öneki ayrılmaz olduğu için başına 'ge-' almaz; sonuna '-t' gelir. 'hat erleichtert' = kolaylaştırdı.",
+      "en": "Participle II: 3rd form of 'erleichtern' (to facilitate). Inseparable prefix 'er-' prevents 'ge-'; takes suffix '-t' ('hat erleichtert' = made easier).",
+      "ar": "اسم مفعول: التصريف الثالث للفعل 'erleichtern' (سهّل / يسّر). السابقة غير منفصلة فلا تأخذ 'ge-'، وتنتهي بـ '-t'.",
+      "uk": "Partizip II: третя форма дієслова 'erleichtern' (полегшувати). Невідокремлюваний префікс 'er-' не приймає 'ge-', закінчується на '-t'."
     },
     "examples": [
       {
@@ -4510,7 +5200,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Ersatzgeräte'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Ersatzgeräte'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Ersatzgeräte'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Ersatzgeräte'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Ersatzgeräte'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Ersatzgerät)",
+        "en": "💡 Noun Structure (das Ersatzgerät)",
+        "ar": "💡 بنية الاسم (das Ersatzgerät)",
+        "uk": "💡 Структура іменника (das Ersatzgerät)"
+      }
     },
     "examples": [
       {
@@ -4549,7 +5245,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'erst' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'erst' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'erst' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'erst' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'erst' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (erst)",
+        "en": "💡 Adverb (erst)",
+        "ar": "💡 ظرف (erst)",
+        "uk": "💡 Прислівник (erst)"
+      }
     },
     "examples": [
       {
@@ -4588,7 +5290,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'erstatten' temel eylem bildiren fiildir.",
       "en": "Verb: 'erstatten' denotes action, process, or state.",
       "ar": "فعل: 'erstatten' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'erstatten' позначає дію або стан."
+      "uk": "Дієслово: 'erstatten' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (erstatten)",
+        "en": "💡 Verb Structure (erstatten)",
+        "ar": "💡 بنية الفعل (erstatten)",
+        "uk": "💡 Структура дієслова (erstatten)"
+      }
     },
     "examples": [
       {
@@ -4627,7 +5335,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: num. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: num.",
       "ar": "نوع الكلمة: num.",
-      "uk": "Частина мови: num."
+      "uk": "Частина мови: num.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -4666,7 +5380,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: num. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: num.",
       "ar": "نوع الكلمة: num.",
-      "uk": "Частина мови: num."
+      "uk": "Частина мови: num.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -4705,7 +5425,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Erwachsenen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Erwachsenen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Erwachsenen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Erwachsenen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Erwachsenen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Erwachsene)",
+        "en": "💡 Noun Structure (der Erwachsene)",
+        "ar": "💡 بنية الاسم (der Erwachsene)",
+        "uk": "💡 Структура іменника (der Erwachsene)"
+      }
     },
     "examples": [
       {
@@ -4744,7 +5470,13 @@ window.READING_LEXICON = {
       "tr": "Sıfattan türemiş isim: 'aller Erwerbstätigen' (tüm çalışanların) yapısında 'aller' zamirinden sonra Genitiv Plural '-en' takısı almıştır.",
       "en": "Nominalized adjective: Takes the Genitive plural '-en' ending following the quantifier 'aller' (of all working people).",
       "ar": "اسم مشتق من صفة: يأخذ لاحقة الجمع للمضاف إليه '-en' بعد أداة الإضافة 'aller'.",
-      "uk": "Субстантивований прикметник: після займенника 'aller' приймає закінчення '-en' у родовому відмінку множини."
+      "uk": "Субстантивований прикметник: після займенника 'aller' приймає закінчення '-en' у родовому відмінку множини.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
     },
     "examples": [
       {
@@ -4783,7 +5515,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Euro'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Euro'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Euro'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Euro'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Euro'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Euro)",
+        "en": "💡 Noun Structure (der Euro)",
+        "ar": "💡 بنية الاسم (der Euro)",
+        "uk": "💡 Структура іменника (der Euro)"
+      }
     },
     "examples": [
       {
@@ -4822,7 +5560,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'existieren' temel eylem bildiren fiildir.",
       "en": "Verb: 'existieren' denotes action, process, or state.",
       "ar": "فعل: 'existieren' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'existieren' позначає дію або стан."
+      "uk": "Дієслово: 'existieren' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (existieren)",
+        "en": "💡 Verb Structure (existieren)",
+        "ar": "💡 بنية الفعل (existieren)",
+        "uk": "💡 Структура дієслова (existieren)"
+      }
     },
     "examples": [
       {
@@ -4858,10 +5602,16 @@ window.READING_LEXICON = {
     "example_ar": "يوصي الخبراء بأشكال أكثر مرونة من التطوع والعمل.",
     "example_uk": "Експерти рекомендують більш гнучкі форми залучення.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Experten'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Experten'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Experten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Experten'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: N-Deklination (Zayıf İsim)",
+        "en": "💡 Noun Declension: N-Declension (Weak Masculine Noun)",
+        "ar": "💡 تصريف الأسماء: التصريف الضعيف (N-Deklination)",
+        "uk": "💡 Відмінювання іменників: N-відміна (слабка відміна)"
+      },
+      "tr": "N-Deklination (Zayıf Maskulin İsim): 'der Experte' sonu '-e' ile biten zayıf bir erkek isimdir. Yalın tekil hali ('der Experte') dışındaki tüm hallerde (Akkusativ, Dativ, Genitiv) ve çoğulunda sonuna '-n' takısı alır (Experten empfehlen = Uzmanlar tavsiye ediyor).",
+      "en": "N-Declension (Weak masculine noun): 'der Experte' ends in '-e'. In all cases except Nominative singular, as well as in the plural, it must take the '-n' suffix (Experten empfehlen = Experts recommend).",
+      "ar": "التصريف الضعيف للمذكر (N-Deklination): الاسم 'der Experte' ينتهي بـ '-e'. في جميع الحالات الإعرابية ما عدا المفرد المرفوع، وكذلك في صيغة الجمع، يجب أن يأخذ لاحقة '-n'.",
+      "uk": "N-відміна (слабка відміна іменників чоловічого роду): 'der Experte' закінчується на '-e'. В усіх відмінках, крім називного однини, а також у множині отримує закінчення '-n'."
     },
     "examples": [
       {
@@ -4897,10 +5647,16 @@ window.READING_LEXICON = {
     "example_ar": "يصادف المرء على الفور مصطلحات تقنية مثل الإيجار الأساسي والإيجار الإجمالي.",
     "example_uk": "Одразу натрапляєш на такі терміни, як холодна та тепла оренда.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Fachbegriffe'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Fachbegriffe'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Fachbegriffe'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Fachbegriffe'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Bileşik İsim Çoğulu (die Fachbegriffe)",
+        "en": "💡 Noun Declension: Compound Plural (die Fachbegriffe)",
+        "ar": "💡 تصريف الأسماء: جمع اسم مركب (die Fachbegriffe)",
+        "uk": "💡 Творення множини: Складний іменник (die Fachbegriffe)"
+      },
+      "tr": "Bileşik isim çoğulu: 'das Fach' (uzmanlık alanı) + 'der Begriff' (çoğulu: 'die Begriffe'). 'Fachbegriffe' = uzmanlık terimleri / mesleki terimler.",
+      "en": "Compound plural: 'das Fach' + 'der Begriff' (plural: 'die Begriffe'). Means technical/specialist terms.",
+      "ar": "جمع اسم مركب: يتكون من 'das Fach' + 'der Begriff' (جمعها 'die Begriffe' = مصطلحات متخصصة).",
+      "uk": "Складний іменник у множині: 'das Fach' + 'der Begriff' (множина 'die Begriffe' = фахові терміни)."
     },
     "examples": [
       {
@@ -4939,7 +5695,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Familien'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Familien'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Familien'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Familien'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Familien'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Familie)",
+        "en": "💡 Noun Structure (die Familie)",
+        "ar": "💡 بنية الاسم (die Familie)",
+        "uk": "💡 Структура іменника (die Familie)"
+      }
     },
     "examples": [
       {
@@ -4978,7 +5740,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'fast' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'fast' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'fast' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'fast' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'fast' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (fast)",
+        "en": "💡 Adverb (fast)",
+        "ar": "💡 ظرف (fast)",
+        "uk": "💡 Прислівник (fast)"
+      }
     },
     "examples": [
       {
@@ -5017,7 +5785,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Feierabende'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Feierabende'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Feierabende'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Feierabende'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Feierabende'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Feierabend)",
+        "en": "💡 Noun Structure (der Feierabend)",
+        "ar": "💡 بنية الاسم (der Feierabend)",
+        "uk": "💡 Структура іменника (der Feierabend)"
+      }
     },
     "examples": [
       {
@@ -5053,10 +5827,16 @@ window.READING_LEXICON = {
     "example_ar": "تسري فترات الهدوء في أيام الآحاد والعطل الرسمية.",
     "example_uk": "У недільні та святкові дні діють години тиші.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Feiertage'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Feiertage'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Feiertage'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Feiertage'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-en\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-en\"? (Давальний відмінок множини)"
+      },
+      "tr": "Dativ Plural kuralı: 'der Feiertag' çoğulu 'die Feiertage'dir. 'an' edatı Dativ istediği için çoğul isim sonuna '-n' almıştır: an Sonn- und Feiertagen (pazar ve tatil günlerinde).",
+      "en": "Dative plural rule: 'der Feiertag' plurals as 'die Feiertage'. Governed by preposition 'an' (Dative), adding '-n': an Feiertagen.",
+      "ar": "قاعدة جمع الـ Dativ: جمع 'Feiertag' هو 'Feiertage'، ومع حرف الجر 'an' يأخذ الاسم الجمع لاحقة '-n'.",
+      "uk": "Правило Dativ у множині: множина від 'Feiertag' — 'Feiertage'. Прийменник 'an' вимагає Dativ, тому додається закінчення '-n'."
     },
     "examples": [
       {
@@ -5095,7 +5875,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi (Güçlü çekim): 'an zwei festen Tagen' yapısında 'an' zaman bildirdiği için Dativ gerektirir. Sayı sıfatından ('zwei') sonra çoğul sıfat Dativ Plural '-en' takısı alır.",
       "en": "Strong adjective declension: In 'an zwei festen Tagen', 'an' governs Dative for time. After numeral 'zwei', plural adjective takes Dative plural '-en'.",
       "ar": "تصريف قوي: في 'an zwei festen Tagen'، حرف الجر 'an' للزمان يتطلب Dativ، وبعد العدد 'zwei' تأخذ الصفة لاحقة الجمع '-en'.",
-      "uk": "Сильна відміна: у 'an zwei festen Tagen' прийменник часу 'an' вимагає Dativ. Після числівника 'zwei' прикметник у множині приймає '-en'."
+      "uk": "Сильна відміна: у 'an zwei festen Tagen' прийменник часу 'an' вимагає Dativ. Після числівника 'zwei' прикметник у множині приймає '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -5134,7 +5920,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'feststellen' temel eylem bildiren fiildir.",
       "en": "Verb: 'feststellen' denotes action, process, or state.",
       "ar": "فعل: 'feststellen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'feststellen' позначає дію або стан."
+      "uk": "Дієслово: 'feststellen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (feststellen)",
+        "en": "💡 Verb Structure (feststellen)",
+        "ar": "💡 بنية الفعل (feststellen)",
+        "uk": "💡 Структура дієслова (feststellen)"
+      }
     },
     "examples": [
       {
@@ -5173,7 +5965,13 @@ window.READING_LEXICON = {
       "tr": "Bileşik isim (Kompositum): 'das Feuer' (ateş/yangın) + 'die Wehr' (savunma/koruma). Artikeli sondaki 'die Wehr' isminden gelir (die Feuerwehr).",
       "en": "Compound noun: 'das Feuer' (fire) + 'die Wehr' (defense). Feminine gender from 'die Wehr'.",
       "ar": "اسم مركب: 'das Feuer' (نار) + 'die Wehr' (دفاع). مؤنث من 'die Wehr'.",
-      "uk": "Складний іменник: 'das Feuer' (вогонь) + 'die Wehr' (захист). Жіночий рід від 'die Wehr'."
+      "uk": "Складний іменник: 'das Feuer' (вогонь) + 'die Wehr' (захист). Жіночий рід від 'die Wehr'.",
+      "title": {
+        "tr": "💡 Kelime Yapısı: Bileşik İsim (Kompositum)",
+        "en": "💡 Word Structure: Compound Noun (Kompositum)",
+        "ar": "💡 بنية الكلمة: اسم مركب (Kompositum)",
+        "uk": "💡 Будова слова: Складний іменник (Kompositum)"
+      }
     },
     "examples": [
       {
@@ -5219,7 +6017,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi (Güçlü çekim): 'als finanzielle Absicherung' yapısında 'die Absicherung' feminin isminin önünde artikelsiz sıfat Akkusativ Feminin '-e' takısı almıştır.",
       "en": "Strong adjective declension: Before feminine noun 'die Absicherung' without article, takes Accusative feminine ending '-e'.",
       "ar": "تصريف قوي: قبل الاسم المؤنث بدون أداة 'die Absicherung'، تأخذ الصفة في حالة النصب لاحقة '-e'.",
-      "uk": "Сильна відміна: перед іменником жіночого роду без артикля прикметник отримує закінчення '-e'."
+      "uk": "Сильна відміна: перед іменником жіночого роду без артикля прикметник отримує закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
     },
     "examples": [
       {
@@ -5258,7 +6062,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
     },
     "examples": [
       {
@@ -5294,10 +6104,16 @@ window.READING_LEXICON = {
     "example_ar": "يوصي الخبراء بمشاريع مرنة للمتطوعين.",
     "example_uk": "Експерти радять гнучкі проєкти для волонтерів.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'flexibel' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'flexibel' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'flexibel' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'flexibel' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Akkusativ Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Accusative Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة لجمع Akkusativ)",
+        "uk": "💡 Чому закінчення \"-e\"? (Прикметник у знахідному множини)"
+      },
+      "tr": "Güçlü sıfat çekimi (Akkusativ Plural): 'flexible Projekte anbieten' yapısında artikelsiz çoğul isim önünde sıfat güçlü Akkusativ Plural '-e' takısı almıştır (ayrıca 'flexibel' sıfatındaki kök 'e' harfi çekimde düşer: flexibl-e).",
+      "en": "Strong adjective declension: In 'flexible Projekte', plural noun without article takes Accusative plural ending '-e' (stem vowel 'e' drops: flexibel -> flexibl-e).",
+      "ar": "تصريف قوي لجمع النصب: تأخذ الصفة لاحقة النصب للجمع '-e' في 'flexible Projekte' (يسقط حرف e من الجذر: flexibl-e).",
+      "uk": "Сильна відміна: у 'flexible Projekte' прикметник приймає '-e' у знахідному множини (голосна кореня 'e' випадає: flexibl-e)."
     },
     "examples": [
       {
@@ -5336,7 +6152,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Fotos'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Fotos'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Fotos'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Fotos'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Fotos'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Foto)",
+        "en": "💡 Noun Structure (das Foto)",
+        "ar": "💡 بنية الاسم (das Foto)",
+        "uk": "💡 Структура іменника (das Foto)"
+      }
     },
     "examples": [
       {
@@ -5375,7 +6197,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat (Adjektiv): 'freiwillig' niteleme veya durum sıfatıdır.",
       "en": "Adjective: 'freiwillig' describes quality or state.",
       "ar": "صفة: 'freiwillig' تصف الحالة أو الخاصية.",
-      "uk": "Прикметник: 'freiwillig' описує ознаку або стан."
+      "uk": "Прикметник: 'freiwillig' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (freiwillig)",
+        "en": "💡 Adjective (freiwillig)",
+        "ar": "💡 بنية الصفة (freiwillig)",
+        "uk": "💡 Структура прикметника (freiwillig)"
+      }
     },
     "examples": [
       {
@@ -5411,10 +6239,16 @@ window.READING_LEXICON = {
     "example_ar": "بدون المتطوعين والمتطوعات.",
     "example_uk": "Без волонтерів та помічників.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'freiwillig' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'freiwillig' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'freiwillig' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'freiwillig' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Akkusativ Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Accusative Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة لجمع Akkusativ)",
+        "uk": "💡 Чому закінчення \"-e\"? (Прикметник у знахідному множини)"
+      },
+      "tr": "Güçlü sıfat çekimi: 'ohne freiwillige Helferinnen' yapısında 'ohne' Akkusativ gerektirir; artikelsiz çoğul sıfat Akkusativ Plural '-e' takısı alır.",
+      "en": "Strong adjective declension: Governed by 'ohne' (Accusative); plural noun without article takes Accusative plural '-e'.",
+      "ar": "تصريف قوي: بعد حرف الجر 'ohne' (Akkusativ)، تأخذ الصفة لجمع بدون أداة لاحقة '-e'.",
+      "uk": "Сильна відміна: після 'ohne' (Akkusativ) прикметник у множині без артикля приймає '-e'."
     },
     "examples": [
       {
@@ -5453,7 +6287,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi (Zayıf çekim): 'bei der Freiwilligen Feuerwehr' yapısında 'bei' Dativ gerektirir; 'die Feuerwehr' feminin olduğundan 'der' olur ve sıfat zayıf çekim '-en' alır.",
       "en": "Weak adjective declension: In 'bei der Freiwilligen Feuerwehr', 'bei' requires Dative; feminine article becomes 'der' and adjective takes '-en'.",
       "ar": "تصريف ضعيف: في 'bei der Freiwilligen Feuerwehr'، 'bei' تتطلب Dativ، وتتحول الأداة المؤنثة إلى 'der' وتأخذ الصفة '-en'.",
-      "uk": "Слабка відміна: у 'bei der Freiwilligen Feuerwehr' прийменник 'bei' вимагає Dativ; артикль змінюється на 'der', прикметник приймає '-en'."
+      "uk": "Слабка відміна: у 'bei der Freiwilligen Feuerwehr' прийменник 'bei' вимагає Dativ; артикль змінюється на 'der', прикметник приймає '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -5492,7 +6332,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Freizeit)",
+        "en": "💡 Noun Structure (die Freizeit)",
+        "ar": "💡 بنية الاسم (die Freizeit)",
+        "uk": "💡 Структура іменника (die Freizeit)"
+      }
     },
     "examples": [
       {
@@ -5528,10 +6374,16 @@ window.READING_LEXICON = {
     "example_ar": "مع خالص التحيات، مارتينا فيبر.",
     "example_uk": "З щирою повагою, Мартіна Вебер.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'freundlich' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
-      "en": "Adjective declension: 'freundlich' is inflected with the '-en' ending in Dative or Accusative case.",
-      "ar": "تصريف الصفات: الصفة 'freundlich' تصرف في الجملة بلاحقة '-en'.",
-      "uk": "Відмінювання прикметників: прикметник 'freundlich' отримує закінчення '-en'."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Dativ Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Dative Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف صفة لجمع Dativ)",
+        "uk": "💡 Чому закінчення \"-en\"? (Прикметник у Dativ Plural)"
+      },
+      "tr": "Mektup kapanış kalıbı (Dativ Plural): 'Mit freundlichen Grüßen' (Saygılarımla / İyi dileklerimle) kalıbında 'mit' edatı Dativ gerektirir; 'die Grüße' çoğulunun önünde artikelsiz sıfat güçlü '-en' takısı alır.",
+      "en": "Letter closing formula (Dative plural): In 'Mit freundlichen Grüßen' (Sincerely / Best regards), 'mit' requires Dative; plural noun without article takes strong '-en'.",
+      "ar": "صيغة ختام الرسائل (جمع Dativ): في 'Mit freundlichen Grüßen' (مع أطيب التحيات)، يتطلب حرف الجر 'mit' حالة الـ Dativ، فتأخذ الصفة لاحقة الجمع '-en'.",
+      "uk": "Формула закінчення листа: у 'Mit freundlichen Grüßen' (З повагою) прийменник 'mit' вимагає Dativ; прикметник без артикля у множині отримує '-en'."
     },
     "examples": [
       {
@@ -5567,10 +6419,16 @@ window.READING_LEXICON = {
     "example_ar": "فرصة مهمة لعقد صداقات جديدة.",
     "example_uk": "Важлива нагода завести нових друзів.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Freundschaften'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Freundschaften'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Freundschaften'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Freundschaften'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Çoğul Eki (die Freundschaft ➔ Freundschaften)",
+        "en": "💡 Noun Declension: Plural Suffix (die Freundschaft ➔ Freundschaften)",
+        "ar": "💡 تصريف الأسماء: لاحقة الجمع (die Freundschaft ➔ Freundschaften)",
+        "uk": "💡 Творення множини (die Freundschaft ➔ Freundschaften)"
+      },
+      "tr": "Çoğul eki: '-schaft' ekiyle biten tüm isimler feminin ('die') artikeline sahiptir ve çoğulda sonlarına istisnasız '-en' takısı alır ('Freundschaften schließen' = dostluklar kurmak).",
+      "en": "Plural formation: All nouns ending in '-schaft' are feminine ('die') and consistently form their plural with '-en' ('Freundschaften schließen').",
+      "ar": "صيغة الجمع: جميع الأسماء المنتهية بـ '-schaft' مؤنثة وتجمع بلاحقة '-en' دائمًا ('Freundschaften schließen').",
+      "uk": "Творення множини: всі іменники на '-schaft' жіночого роду і завжди утворюють множину на '-en' ('Freundschaften schließen')."
     },
     "examples": [
       {
@@ -5609,7 +6467,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'früher' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'früher' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'früher' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'früher' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'früher' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (früher)",
+        "en": "💡 Adverb (früher)",
+        "ar": "💡 ظرف (früher)",
+        "uk": "💡 Прислівник (früher)"
+      }
     },
     "examples": [
       {
@@ -5648,7 +6512,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat (Adjektiv): 'fällig' niteleme veya durum sıfatıdır.",
       "en": "Adjective: 'fällig' describes quality or state.",
       "ar": "صفة: 'fällig' تصف الحالة أو الخاصية.",
-      "uk": "Прикметник: 'fällig' описує ознаку або стан."
+      "uk": "Прикметник: 'fällig' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (fällig)",
+        "en": "💡 Adjective (fällig)",
+        "ar": "💡 بنية الصفة (fällig)",
+        "uk": "💡 Структура прикметника (fällig)"
+      }
     },
     "examples": [
       {
@@ -5684,10 +6554,16 @@ window.READING_LEXICON = {
     "example_ar": "يصعب على الكثيرين نسيان هموم العمل في المساء.",
     "example_uk": "Багатьом важко розслабитися після закінчення робочого дня.",
     "grammar": {
-      "tr": "Düzensiz fiil çekimi: 'fallen' (düşmek) fiilinin 3. tekil şahıs çekimidir. Kök harfi 'a' -> 'ä' umlaut alır ('jemandem fällt etwas schwer' = birine bir şey zor gelir).",
-      "en": "Irregular verb with umlaut: 3rd person singular of 'fallen' (er/sie/es fällt). The stem vowel 'a' changes to 'ä' ('fällt schwer' = is difficult).",
-      "ar": "فعل غير قياسي مع إمالة (Umlaut): صيغة المفرد الغائب للفعل 'fallen'. يتحول حرف 'a' إلى 'ä' ('fällt schwer' = يصعب على).",
-      "uk": "Неправильне дієслово з умлаутом: 3-тя особа однини від 'fallen'. Голосна 'a' переходить в 'ä' ('fällt schwer' = дається важко)."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Umlaut Kök Değişimi (fallen ➔ fällt)",
+        "en": "💡 Verb Conjugation: Umlaut Stem Change (fallen ➔ fällt)",
+        "ar": "💡 تصريف الفعل: إمالة حرف العلة (fallen ➔ fällt)",
+        "uk": "💡 Дієвідмінювання: Умлаут у корені (fallen ➔ fällt)"
+      },
+      "tr": "Düzensiz fiil çekimi (Präsens 3. Tekil Şahıs): 'fallen' (düşmek) fiilinin kök harfi 'a' -> 'ä' umlaut alır ('schwerfallen' = birine zor gelmek; 'fällt vielen schwer' = birçok kişiye zor geliyor).",
+      "en": "Irregular verb with umlaut (3rd person singular present): 'fallen' changes 'a' to 'ä' ('schwerfallen' = to be difficult for someone; 'fällt vielen schwer' = is difficult for many).",
+      "ar": "تصريف فعل غير قياسي مع إمالة (Umlaut): يتحول حرف 'a' إلى 'ä' في الفعل 'fallen' ('fällt schwer' = يصعب على).",
+      "uk": "Неправильне дієслово з умлаутом: у дієслові 'fallen' голосна 'a' переходить в 'ä' ('fällt schwer' = дається важко)."
     },
     "examples": [
       {
@@ -5726,7 +6602,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'führen' temel eylem bildiren fiildir.",
       "en": "Verb: 'führen' denotes action, process, or state.",
       "ar": "فعل: 'führen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'führen' позначає дію або стан."
+      "uk": "Дієслово: 'führen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (führen)",
+        "en": "💡 Verb Structure (führen)",
+        "ar": "💡 بنية الفعل (führen)",
+        "uk": "💡 Структура дієслова (führen)"
+      }
     },
     "examples": [
       {
@@ -5765,7 +6647,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'für' edatı her zaman AKKUSATIV (ismin -i hali) gerektirir (für das Ehrenamt, für Pendler).",
       "en": "Preposition: 'für' always governs the ACCUSATIVE case (für das Ehrenamt, für Pendler).",
       "ar": "حرف جر: 'für' يتطلب دائمًا حالة الـ AKKUSATIV (المنصوب).",
-      "uk": "Прийменник: 'für' завжди вимагає знахідного відмінка (AKKUSATIV)."
+      "uk": "Прийменник: 'für' завжди вимагає знахідного відмінка (AKKUSATIV).",
+      "title": {
+        "tr": "💡 Edat Kuralı: Akkusativ (İsmin -i Hali) Gerektirir",
+        "en": "💡 Preposition Rule: Governs Accusative Case",
+        "ar": "💡 قاعدة حرف الجر: ينصب بالـ Akkusativ دائمًا",
+        "uk": "💡 Правило прийменника: Завжди вимагає Akkusativ"
+      }
     },
     "examples": [
       {
@@ -5804,7 +6692,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Gebrauch)",
+        "en": "💡 Noun Structure (der Gebrauch)",
+        "ar": "💡 بنية الاسم (der Gebrauch)",
+        "uk": "💡 Структура іменника (der Gebrauch)"
+      }
     },
     "examples": [
       {
@@ -5843,7 +6737,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Gebäude'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Gebäude'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Gebäude'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Gebäude'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Gebäude'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Gebäude)",
+        "en": "💡 Noun Structure (das Gebäude)",
+        "ar": "💡 بنية الاسم (das Gebäude)",
+        "uk": "💡 Структура іменника (das Gebäude)"
+      }
     },
     "examples": [
       {
@@ -5882,7 +6782,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Geduld)",
+        "en": "💡 Noun Structure (die Geduld)",
+        "ar": "💡 بنية الاسم (die Geduld)",
+        "uk": "💡 Структура іменника (die Geduld)"
+      }
     },
     "examples": [
       {
@@ -5918,10 +6824,16 @@ window.READING_LEXICON = {
     "example_ar": "سيداتي وسادتي الأفاضل.",
     "example_uk": "Шановні пані та панове.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'geehrt' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'geehrt' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'geehrt' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'geehrt' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Hitap / Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Salutation Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة لجمع النداء والتحية)",
+        "uk": "💡 Чому закінчення \"-e\"? (Прикметник у формулі звертання)"
+      },
+      "tr": "Mektup hitap kalıbı: 'Sehr geehrte Damen und Herren' (Saygıdeğer Hanımefendiler ve Beyefendiler) resmi hitabında artikelsiz çoğul sıfat güçlü '-e' takısı alır.",
+      "en": "Formal salutation: In 'Sehr geehrte Damen und Herren' (Dear Sir or Madam), the plural adjective without article takes strong ending '-e'.",
+      "ar": "صيغة التحية الرسمية: في 'Sehr geehrte Damen und Herren' (سيداتي وسادتي المحترمين)، تأخذ الصفة لجمع النداء لاحقة '-e'.",
+      "uk": "Офіційне звертання: у 'Sehr geehrte Damen und Herren' (Шановні пані та панове) прикметник у множині має закінчення '-e'."
     },
     "examples": [
       {
@@ -5957,10 +6869,16 @@ window.READING_LEXICON = {
     "example_ar": "أصبح العمل من المنزل جزءًا لا يتجزأ من روتين العمل اليومي.",
     "example_uk": "Робота з дому тепер є частиною робочого побуту.",
     "grammar": {
-      "tr": "Partizip II (Ortaç): 'gehören' fiilinin geçmiş zaman (Perfekt) veya edilgen (Passiv) yapımında kullanılan 3. halidir.",
-      "en": "Participle II: The 3rd form of verb 'gehören', used in Perfekt or Passiv constructions.",
-      "ar": "اسم المفعول (Partizip II): التصريف الثالث للفعل 'gehören'، يُستخدم في الماضي والمبني للمجهول.",
-      "uk": "Дієприкметник (Partizip II): третя форма дієслова 'gehören', вживається в Perfekt або пасиві."
+      "title": {
+        "tr": "💡 Fiil Yapısı: Edatlı Fiil (gehören zu + Dativ)",
+        "en": "💡 Verb Structure: Prepositional Verb (gehören zu + Dativ)",
+        "ar": "💡 بنية الفعل: فعل يتعدى بحرف جر (gehören zu + Dativ)",
+        "uk": "💡 Структура дієслова: Дієслово з прийменником (gehören zu + Dativ)"
+      },
+      "tr": "Edatlı fiil çekimi: 'gehören zu + Dativ' (bir şeyin parçası olmak / -e ait olmak) kalıbıdır ('Homeoffice gehört zum Berufsalltag' = Evden çalışma meslek hayatının bir parçasıdır).",
+      "en": "Prepositional verb: 'gehören zu + Dative' (to belong to / be part of). In text: 'Homeoffice gehört zum Berufsalltag' (Working from home is part of everyday working life).",
+      "ar": "فعل مع حرف جر: تركيب 'gehören zu + Dativ' (ينتمي إلى / يعد جزءًا من). في النص: 'Homeoffice gehört zum Berufsalltag'.",
+      "uk": "Дієслово з прийменником: конструкція 'gehören zu + Dativ' (належати до / бути частиною). У тексті: 'Homeoffice gehört zum Berufsalltag'."
     },
     "examples": [
       {
@@ -5999,7 +6917,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Gelegenheiten'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Gelegenheiten'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Gelegenheiten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Gelegenheiten'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Gelegenheiten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Gelegenheit)",
+        "en": "💡 Noun Structure (die Gelegenheit)",
+        "ar": "💡 بنية الاسم (die Gelegenheit)",
+        "uk": "💡 Структура іменника (die Gelegenheit)"
+      }
     },
     "examples": [
       {
@@ -6038,7 +6962,13 @@ window.READING_LEXICON = {
       "tr": "Edilgen geçmiş zaman (Passiv Präteritum): 'wurde geliefert' yapısında 'teslim edildi' anlamına gelir. 'liefern' fiilinin Partizip II halidir.",
       "en": "Past passive (Passiv Präteritum): Used in 'wurde geliefert' (= was delivered). Participle II of 'liefern'.",
       "ar": "الماضي المبني للمجهول: يُستخدم في 'wurde geliefert' (تم تسليمه / وصل). اسم مفعول من 'liefern'.",
-      "uk": "Минулий пасивний час: у звороті 'wurde geliefert' (було доставлено). Partizip II від 'liefern'."
+      "uk": "Минулий пасивний час: у звороті 'wurde geliefert' (було доставлено). Partizip II від 'liefern'.",
+      "title": {
+        "tr": "💡 Fiil Çekimi: Partizip II / Passiv (Edilgen)",
+        "en": "💡 Verb Form: Participle II / Passive Voice",
+        "ar": "💡 تصريف الفعل: اسم المفعول / المبني للمجهول",
+        "uk": "💡 Форма дієслова: Partizip II / Пасивний стан"
+      }
     },
     "examples": [
       {
@@ -6077,7 +7007,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'gemeinsam' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'gemeinsam' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'gemeinsam' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'gemeinsam' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'gemeinsam' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (gemeinsam)",
+        "en": "💡 Adverb (gemeinsam)",
+        "ar": "💡 ظرف (gemeinsam)",
+        "uk": "💡 Прислівник (gemeinsam)"
+      }
     },
     "examples": [
       {
@@ -6116,7 +7052,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Geräte'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Geräte'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Geräte'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Geräte'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Geräte'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Gerät)",
+        "en": "💡 Noun Structure (das Gerät)",
+        "ar": "💡 بنية الاسم (das Gerät)",
+        "uk": "💡 Структура іменника (das Gerät)"
+      }
     },
     "examples": [
       {
@@ -6155,7 +7097,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi: 'den gesamten Zeitraum' yapısında maskulin akkusativ 'den' sonrası sıfat '-en' takısı alır.",
       "en": "Adjective declension: In 'den gesamten Zeitraum', takes '-en' after masculine accusative 'den'.",
       "ar": "تصريف الصفات: في 'den gesamten Zeitraum'، تأخذ الصفة '-en' بعد أداة النصب 'den'.",
-      "uk": "Відмінювання прикметників: після артикля 'den' прикметник приймає '-en'."
+      "uk": "Відмінювання прикметників: після артикля 'den' прикметник приймає '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
     },
     "examples": [
       {
@@ -6191,10 +7139,16 @@ window.READING_LEXICON = {
     "example_ar": "جوهر التعايش المجتمعي.",
     "example_uk": "Серцевина суспільного співжиття.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'gesellschaftlich' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
-      "en": "Adjective declension: 'gesellschaftlich' is inflected with the '-en' ending in Dative or Accusative case.",
-      "ar": "تصريف الصفات: الصفة 'gesellschaftlich' تصرف في الجملة بلاحقة '-en'.",
-      "uk": "Відмінювання прикметників: прикметник 'gesellschaftlich' отримує закінчення '-en'."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Genitiv Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Genitive Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة في حالة الإضافة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Прикметник у родовому відмінку)"
+      },
+      "tr": "Zayıf sıfat çekimi (Genitiv): 'des gesellschaftlichen Zusammenlebens' (toplumsal birlikte yaşamanın) yapısında nötr Genitiv artikel 'des'ten sonra sıfat '-en' takısı alır.",
+      "en": "Weak adjective declension (Genitive): In 'des gesellschaftlichen Zusammenlebens', takes '-en' after neuter genitive article 'des'.",
+      "ar": "تصريف ضعيف في حالة الإضافة: تأخذ الصفة '-en' بعد أداة المضاف إليه للمحايد 'des'.",
+      "uk": "Слабка відміна: після артикля середнього роду в родовому відмінку 'des' прикметник приймає '-en'."
     },
     "examples": [
       {
@@ -6233,7 +7187,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'gesetzlich' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'gesetzlich' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'gesetzlich' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'gesetzlich' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'gesetzlich' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (gesetzlich)",
+        "en": "💡 Adverb (gesetzlich)",
+        "ar": "💡 ظرف (gesetzlich)",
+        "uk": "💡 Прислівник (gesetzlich)"
+      }
     },
     "examples": [
       {
@@ -6269,10 +7229,16 @@ window.READING_LEXICON = {
     "example_ar": "الالتزام بساعات الهدوء القانونية.",
     "example_uk": "Дотримуватися встановлених законом годин спокою.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'gesetzlich' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
-      "en": "Adjective declension: 'gesetzlich' is inflected with the '-en' ending in Dative or Accusative case.",
-      "ar": "تصريف الصفات: الصفة 'gesetzlich' تصرف في الجملة بلاحقة '-en'.",
-      "uk": "Відмінювання прикметників: прикметник 'gesetzlich' отримує закінчення '-en'."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Akkusativ Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Accusative Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف صفة لجمع النصب)",
+        "uk": "💡 Чому закінчення \"-en\"? (Прикметник у знахідному множини)"
+      },
+      "tr": "Zayıf sıfat çekimi (Akkusativ Plural): 'die gesetzlichen Ruhezeiten einhalten' yapısında çoğul belirli artikel 'die' sonrasında sıfat zayıf çekim '-en' takısı alır.",
+      "en": "Weak adjective declension (Accusative plural): In 'die gesetzlichen Ruhezeiten', takes '-en' after definite plural article 'die'.",
+      "ar": "تصريف ضعيف: تأخذ الصفة '-en' بعد أداة التعريف لجمع النصب 'die'.",
+      "uk": "Слабка відміна: прикметник приймає '-en' після означеного артикля множини 'die'."
     },
     "examples": [
       {
@@ -6311,7 +7277,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'gestern' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'gestern' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'gestern' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'gestern' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'gestern' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (gestern)",
+        "en": "💡 Adverb (gestern)",
+        "ar": "💡 ظرف (gestern)",
+        "uk": "💡 Прислівник (gestern)"
+      }
     },
     "examples": [
       {
@@ -6347,10 +7319,16 @@ window.READING_LEXICON = {
     "example_ar": "تحول عالم العمل بصورة جذرية.",
     "example_uk": "Світ праці докорінно змінився.",
     "grammar": {
-      "tr": "Partizip II (Ortaç): 'wandeln' fiilinin geçmiş zaman (Perfekt) veya edilgen (Passiv) yapımında kullanılan 3. halidir.",
-      "en": "Participle II: The 3rd form of verb 'wandeln', used in Perfekt or Passiv constructions.",
-      "ar": "اسم المفعول (Partizip II): التصريف الثالث للفعل 'wandeln'، يُستخدم في الماضي والمبني للمجهول.",
-      "uk": "Дієприкметник (Partizip II): третя форма дієслова 'wandeln', вживається в Perfekt або пасиві."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Dönüşlü Fiil Partizip II (sich wandeln ➔ gewandelt)",
+        "en": "💡 Verb Form: Reflexive Participle II (sich wandeln ➔ gewandelt)",
+        "ar": "💡 تصريف الفعل: اسم المفعول لفعل انعكاسي (sich wandeln ➔ gewandelt)",
+        "uk": "💡 Форма дієслова: Partizip II зворотного дієслова"
+      },
+      "tr": "Partizip II (Geçmiş Zaman): 'sich wandeln' (dönüşmek / değişmek) dönüşlü fiilinin 3. halidir. 'hat sich gewandelt' yapısında geçmiş zaman bildirir (çalışma hayatı dönüştü).",
+      "en": "Participle II: 3rd form of the reflexive verb 'sich wandeln' (to transform). Used in 'hat sich grundlegend gewandelt' (has fundamentally transformed).",
+      "ar": "اسم مفعول: التصريف الثالث للفعل الانعكاسي 'sich wandeln' (تغير / تحول). مستخدم في 'hat sich gewandelt'.",
+      "uk": "Partizip II: третя форма зворотного дієслова 'sich wandeln' (змінюватися). Використано в 'hat sich grundlegend gewandelt'."
     },
     "examples": [
       {
@@ -6389,7 +7367,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Gewährleistungsrechte'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Gewährleistungsrechte'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Gewährleistungsrechte'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Gewährleistungsrechte'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Gewährleistungsrechte'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Gewährleistungsrecht)",
+        "en": "💡 Noun Structure (das Gewährleistungsrecht)",
+        "ar": "💡 بنية الاسم (das Gewährleistungsrecht)",
+        "uk": "💡 Структура іменника (das Gewährleistungsrecht)"
+      }
     },
     "examples": [
       {
@@ -6425,10 +7409,16 @@ window.READING_LEXICON = {
     "example_ar": "يسري قانون أوقات العمل في العمل المنزلي أيضًا.",
     "example_uk": "Закон про робочий час діє також під час роботи вдома.",
     "grammar": {
-      "tr": "Fiil (Verb): 'gelten' temel eylem bildiren fiildir.",
-      "en": "Verb: 'gelten' denotes action, process, or state.",
-      "ar": "فعل: 'gelten' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'gelten' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Düzensiz Kök Değişimi (gelten ➔ gilt)",
+        "en": "💡 Verb Conjugation: Irregular Stem Change (gelten ➔ gilt)",
+        "ar": "💡 تصريف الفعل: تغيير حرف العلة في الجذر (gelten ➔ gilt)",
+        "uk": "💡 Дієвідмінювання: Чергування голосної кореня (gelten ➔ gilt)"
+      },
+      "tr": "Düzensiz fiil çekimi (Präsens 3. Tekil Şahıs): 'gelten' (geçerli olmak) fiilinin kök seslisi 3. tekil şahısta (er/sie/es) 'e' -> 'i' değişimine uğrar (es gilt = geçerlidir / sayılır). Metinde: 'Das Arbeitszeitgesetz gilt auch im Homeoffice.'",
+      "en": "Irregular verb conjugation (3rd person singular present): 'gelten' (to apply / be valid) changes its stem vowel from 'e' to 'i' in the 3rd person singular (es gilt = it applies). In text: 'Das Arbeitszeitgesetz gilt auch im Homeoffice.'",
+      "ar": "تصريف فعل غير قياسي (المضارع للمفرد الغائب): يغير الفعل 'gelten' (يسري / ينطبق) حرف العلة في الجذر من 'e' إلى 'i' مع المفرد الغائب (es gilt). في النص: 'Das Arbeitszeitgesetz gilt auch im Homeoffice.'",
+      "uk": "Неправильне дієслово (3-тя особа однини теперішнього часу): дієслово 'gelten' (діяти / бути чинним) змінює голосну кореня з 'e' на 'i' (es gilt). У тексті: 'Das Arbeitszeitgesetz gilt auch im Homeoffice.'"
     },
     "examples": [
       {
@@ -6464,10 +7454,16 @@ window.READING_LEXICON = {
     "example_ar": "السداد على ثلاثة أقساط شهرية متساوية.",
     "example_uk": "Сплатити трьома однаковими щомісячними платежами.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'gleich' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
-      "en": "Adjective declension: 'gleich' is inflected with the '-en' ending in Dative or Accusative case.",
-      "ar": "تصريف الصفات: الصفة 'gleich' تصرف في الجملة بلاحقة '-en'.",
-      "uk": "Відмінювання прикметників: прикметник 'gleich' отримує закінчення '-en'."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Dativ Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Dative Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف صفة لجمع Dativ)",
+        "uk": "💡 Чому закінчення \"-en\"? (Прикметник у Dativ Plural)"
+      },
+      "tr": "Güçlü sıfat çekimi: 'in drei gleichen Monatsraten' yapısında 'in' edatı Dativ gerektirir; sayı sıfatından ('drei') sonra çoğul sıfat Dativ Plural '-en' takısı alır.",
+      "en": "Strong adjective declension: In 'in drei gleichen Monatsraten', 'in' governs Dative; after numeral 'drei', plural adjective takes '-en'.",
+      "ar": "تصريف قوي: بعد حرف الجر 'in' والعدد 'drei'، تأخذ الصفة لاحقة الجمع بالـ Dativ '-en'.",
+      "uk": "Сильна відміна: після прийменника 'in' та числівника 'drei' прикметник у множині приймає '-en'."
     },
     "examples": [
       {
@@ -6506,7 +7502,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'grundlegend' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'grundlegend' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'grundlegend' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'grundlegend' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'grundlegend' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (grundlegend)",
+        "en": "💡 Adverb (grundlegend)",
+        "ar": "💡 ظرف (grundlegend)",
+        "uk": "💡 Прислівник (grundlegend)"
+      }
     },
     "examples": [
       {
@@ -6545,7 +7547,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Grüße'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Grüße'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Grüße'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Grüße'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Grüße'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -6581,10 +7589,16 @@ window.READING_LEXICON = {
     "example_ar": "التحضير الجيد مهم جدًا.",
     "example_uk": "Гарна підготовка має велике значення.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'gut' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'gut' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'gut' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'gut' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Nominativ Feminin Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Nominative Feminine Adjective)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة لمؤنث Nominativ)",
+        "uk": "💡 Чому закінчення \"-e\"? (Прикметник у називному жіночого роду)"
+      },
+      "tr": "Güçlü sıfat çekimi (Nominativ Feminin): 'die Vorbereitung' feminin bir isimdir; artikelsiz tekil kullanımda güçlü sıfat '-e' takısı alır: 'Geduld und gute Vorbereitung'.",
+      "en": "Strong adjective declension (Nominative feminine): 'die Vorbereitung' is feminine; without article it takes strong ending '-e'.",
+      "ar": "تصريف قوي للمؤنث: تأخذ الصفة لاحقة '-e' قبل الاسم المؤنث بدون أداة في 'gute Vorbereitung'.",
+      "uk": "Сильна відміна: перед іменником жіночого роду без артикля прикметник приймає закінчення '-e' ('gute Vorbereitung')."
     },
     "examples": [
       {
@@ -6620,10 +7634,16 @@ window.READING_LEXICON = {
     "example_ar": "لقد طلبت ماكينة لتحضير القهوة.",
     "example_uk": "Я замовила кавоварку.",
     "grammar": {
-      "tr": "Fiil (Verb): 'haben' temel eylem bildiren fiildir.",
-      "en": "Verb: 'haben' denotes action, process, or state.",
-      "ar": "فعل: 'haben' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'haben' позначає дію або стан."
+      "title": {
+        "tr": "💡 Yardımcı Fiil: Perfekt Zaman Kurucusu (haben ➔ habe)",
+        "en": "💡 Auxiliary Verb: Perfect Tense Formation (haben ➔ habe)",
+        "ar": "💡 فعل مساعد: صياغة الماضي التام (haben ➔ habe)",
+        "uk": "💡 Допоміжне дієслово: Утворення Perfekt (haben ➔ habe)"
+      },
+      "tr": "Yardımcı fiil (Hilfsverb): 'haben' fiilinin 1. tekil şahıs (ich) çekimidir. Cümlenin sonundaki Partizip II ('bestellt') ile birleşerek geçmiş zaman (Perfekt) kurar: 'Ich habe eine Kaffeemaschine bestellt' (Bir kahve makinesi sipariş ettim).",
+      "en": "Auxiliary verb: 1st person singular of 'haben'. Forms the conversational past (Perfekt) with Participle II ('bestellt') at sentence end: 'Ich habe ... bestellt' (I ordered / have ordered).",
+      "ar": "فعل مساعد: تصريف 'haben' مع المتكلم 'ich'. يقترن مع اسم المفعول في نهاية الجملة لصياغة الماضي التام: 'Ich habe ... bestellt' (طلبتُ).",
+      "uk": "Допоміжне дієслово: форма 1-ї особи однини від 'haben'. Утворює минулий час Perfekt з Partizip II у кінці: 'Ich habe ... bestellt' (Я замовив)."
     },
     "examples": [
       {
@@ -6662,7 +7682,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'haben' temel eylem bildiren fiildir.",
       "en": "Verb: 'haben' denotes action, process, or state.",
       "ar": "فعل: 'haben' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'haben' позначає дію або стан."
+      "uk": "Дієслово: 'haben' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (haben)",
+        "en": "💡 Verb Structure (haben)",
+        "ar": "💡 بنية الفعل (haben)",
+        "uk": "💡 Структура дієслова (haben)"
+      }
     },
     "examples": [
       {
@@ -6698,10 +7724,16 @@ window.READING_LEXICON = {
     "example_ar": "تُحظر أعمال الصيانة والإصلاح اليدوية خلال أوقات الراحة.",
     "example_uk": "Ремонтні роботи заборонені в години спокою.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'handwerklich' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'handwerklich' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'handwerklich' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'handwerklich' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Nominativ Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Nominative Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة لجمع Nominativ)",
+        "uk": "💡 Чому закінчення \"-e\"? (Прикметник у називному множини)"
+      },
+      "tr": "Güçlü sıfat çekimi (Nominativ Plural): 'die Arbeiten' çoğul isminin önünde artikel olmadığında sıfat güçlü çoğul '-e' takısı alır: 'Handwerkliche Arbeiten sind untersagt'.",
+      "en": "Strong adjective declension (Nominative plural): Plural noun without article takes strong '-e': 'Handwerkliche Arbeiten sind untersagt'.",
+      "ar": "تصريف قوي لجمع الرفع: تأخذ الصفة لاحقة الجمع بدون أداة '-e' في 'Handwerkliche Arbeiten'.",
+      "uk": "Сильна відміна: іменник у множині без артикля вимагає сильного закінчення '-e' ('Handwerkliche Arbeiten')."
     },
     "examples": [
       {
@@ -6737,10 +7769,16 @@ window.READING_LEXICON = {
     "example_ar": "لقد تغيرت بيئة العمل.",
     "example_uk": "Світ праці змінився.",
     "grammar": {
-      "tr": "Fiil (Verb): 'haben' temel eylem bildiren fiildir.",
-      "en": "Verb: 'haben' denotes action, process, or state.",
-      "ar": "فعل: 'haben' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'haben' позначає дію або стан."
+      "title": {
+        "tr": "💡 Yardımcı Fiil: Perfekt Zaman Kurucusu (haben ➔ hat)",
+        "en": "💡 Auxiliary Verb: Perfect Tense Formation (haben ➔ hat)",
+        "ar": "💡 فعل مساعد: صياغة الماضي التام (haben ➔ hat)",
+        "uk": "💡 Допоміжне дієслово: Утворення Perfekt (haben ➔ hat)"
+      },
+      "tr": "Yardımcı fiil: 'haben' fiilinin 3. tekil şahıs çekimidir. 'hat sich gewandelt' (dönüştü / değişti) yapısında geçmiş zaman (Perfekt) kurar.",
+      "en": "Auxiliary verb: 3rd person singular of 'haben'. Forms the Perfect tense in 'hat sich gewandelt' (has transformed).",
+      "ar": "فعل مساعد: صيغة المفرد الغائب من 'haben'. يُصاغ به الماضي التام: 'hat sich gewandelt' (تحول / تغير).",
+      "uk": "Допоміжне дієслово: 3-тя особа однини від 'haben'. Утворює час Perfekt: 'hat sich gewandelt' (змінився)."
     },
     "examples": [
       {
@@ -6779,7 +7817,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Hause)",
+        "en": "💡 Noun Structure (das Hause)",
+        "ar": "💡 بنية الاسم (das Hause)",
+        "uk": "💡 Структура іменника (das Hause)"
+      }
     },
     "examples": [
       {
@@ -6818,7 +7862,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Hausordnungen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Hausordnungen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Hausordnungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Hausordnungen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Hausordnungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Hausordnung)",
+        "en": "💡 Noun Structure (die Hausordnung)",
+        "ar": "💡 بنية الاسم (die Hausordnung)",
+        "uk": "💡 Структура іменника (die Hausordnung)"
+      }
     },
     "examples": [
       {
@@ -6857,7 +7907,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Hausreinigungen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Hausreinigungen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Hausreinigungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Hausreinigungen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Hausreinigungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Hausreinigung)",
+        "en": "💡 Noun Structure (die Hausreinigung)",
+        "ar": "💡 بنية الاسم (die Hausreinigung)",
+        "uk": "💡 Структура іменника (die Hausreinigung)"
+      }
     },
     "examples": [
       {
@@ -6896,7 +7952,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Heizungen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Heizungen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Heizungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Heizungen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Heizungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Heizung)",
+        "en": "💡 Noun Structure (die Heizung)",
+        "ar": "💡 بنية الاسم (die Heizung)",
+        "uk": "💡 Структура іменника (die Heizung)"
+      }
     },
     "examples": [
       {
@@ -6935,7 +7997,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Helfer'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Helfer'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Helfer'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Helfer'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Helfer'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Helfer)",
+        "en": "💡 Noun Structure (der Helfer)",
+        "ar": "💡 بنية الاسم (der Helfer)",
+        "uk": "💡 Структура іменника (der Helfer)"
+      }
     },
     "examples": [
       {
@@ -6971,10 +8039,16 @@ window.READING_LEXICON = {
     "example_ar": "بدون المتطوعين والمتطوعات المساعدين.",
     "example_uk": "Без помічниць та помічників-волонтерів.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Helferinnen'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Helferinnen'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Helferinnen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Helferinnen'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Dişil Çoğul Eki (die Helferin ➔ Helferinnen)",
+        "en": "💡 Noun Declension: Female Plural Suffix (die Helferin ➔ Helferinnen)",
+        "ar": "💡 تصريف الأسماء: جمع المؤنث (die Helferin ➔ Helferinnen)",
+        "uk": "💡 Творення множини жіночого роду (die Helferin ➔ Helferinnen)"
+      },
+      "tr": "Dişil isim çoğulu: Kadın meslek ve unvanlarını bildiren '-in' son ekli isimler çoğulda sonlarına '-nen' takısı alır ('die Helferin' -> 'die Helferinnen'; 'Helferinnen und Helfer' = kadın ve erkek yardımcılar).",
+      "en": "Feminine plural formation: Nouns with female suffix '-in' double the 'n' and add '-en' in the plural (-nen): die Helferin -> die Helferinnen.",
+      "ar": "جمع المؤنث: الأسماء المؤنثة المنتهية بـ '-in' تجمع بـ '-nen': die Helferin -> die Helferinnen.",
+      "uk": "Творення множини жіночого роду: іменники на '-in' у множині мають закінчення '-nen': die Helferin -> die Helferinnen."
     },
     "examples": [
       {
@@ -7010,10 +8084,16 @@ window.READING_LEXICON = {
     "example_ar": "تواجه الجمعيات تحديات تتعلق بنقص الكوادر.",
     "example_uk": "Клуби постають перед кадровими викликами.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Herausforderungen'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Herausforderungen'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Herausforderungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Herausforderungen'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Çoğul Eki (die Herausforderung ➔ Herausforderungen)",
+        "en": "💡 Noun Declension: Plural Suffix (Herausforderungen)",
+        "ar": "💡 تصريف الأسماء: لاحقة الجمع (التحديات)",
+        "uk": "💡 Творення множини: die Herausforderung ➔ Herausforderungen"
+      },
+      "tr": "Çoğul eki: '-ung' ekiyle biten tüm isimler feminin ('die') artikeline sahiptir ve çoğulda daima '-en' takısı alır ('vor personellen Herausforderungen stehen').",
+      "en": "Plural formation: All nouns ending in '-ung' are feminine ('die') and consistently take '-en' in the plural ('vor Herausforderungen stehen').",
+      "ar": "صيغة الجمع: جميع الأسماء المنتهية بـ '-ung' مؤنثة وتجمع بلاحقة '-en' دائمًا.",
+      "uk": "Творення множини: всі іменники на '-ung' жіночого роду і завжди мають закінчення '-en' у множині."
     },
     "examples": [
       {
@@ -7034,7 +8114,7 @@ window.READING_LEXICON = {
   },
   "herren": {
     "de": "der Herr",
-    "displayDe": "Herren",
+    "displayDe": "Herr",
     "article": "der",
     "plural": "die Herren",
     "pos": "noun",
@@ -7052,7 +8132,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Herren'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Herren'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Herren'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Herren'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Herren'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -7063,9 +8149,9 @@ window.READING_LEXICON = {
         "uk": "Шановні пані та панове."
       },
       {
-        "de": "Für viele Menschen in Deutschland spielt der Herren eine wichtige Rolle im Alltag.",
-        "tr": "Almanya'daki pek çok insan için Herren günlük yaşamda önemli bir rol oynar.",
-        "en": "For many people in Germany, Herren plays an important role in daily life.",
+        "de": "Für viele Menschen in Deutschland spielt der Herr eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Herr günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Herr plays an important role in daily life.",
         "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
         "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
       }
@@ -7091,7 +8177,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Herzstücke'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Herzstücke'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Herzstücke'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Herzstücke'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Herzstücke'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Herzstück)",
+        "en": "💡 Noun Structure (das Herzstück)",
+        "ar": "💡 بنية الاسم (das Herzstück)",
+        "uk": "💡 Структура іменника (das Herzstück)"
+      }
     },
     "examples": [
       {
@@ -7130,7 +8222,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'heute' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'heute' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'heute' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'heute' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'heute' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (heute)",
+        "en": "💡 Adverb (heute)",
+        "ar": "💡 ظرف (heute)",
+        "uk": "💡 Прислівник (heute)"
+      }
     },
     "examples": [
       {
@@ -7169,7 +8267,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'hiermit' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'hiermit' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'hiermit' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'hiermit' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'hiermit' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (hiermit)",
+        "en": "💡 Adverb (hiermit)",
+        "ar": "💡 ظرف (hiermit)",
+        "uk": "💡 Прислівник (hiermit)"
+      }
     },
     "examples": [
       {
@@ -7205,10 +8309,16 @@ window.READING_LEXICON = {
     "example_ar": "يضاف إلى ذلك المدفوعات الشهرية المسبقة للمصاريف الإضافية.",
     "example_uk": "До цього додаються щомісячні авансові комунальні платежі.",
     "grammar": {
-      "tr": "Fiil (Verb): 'hinzukommen' temel eylem bildiren fiildir.",
-      "en": "Verb: 'hinzukommen' denotes action, process, or state.",
-      "ar": "فعل: 'hinzukommen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'hinzukommen' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Yapısı: Ayrılabilir Fiil Öneki (hinzukommen)",
+        "en": "💡 Verb Structure: Separable Verb Prefix (hinzukommen)",
+        "ar": "💡 بنية الفعل: سابقة فعل منفصل (hinzukommen)",
+        "uk": "💡 Структура дієслова: Відокремлюваний префікс (hinzukommen)"
+      },
+      "tr": "Ayrılabilir fiil öneki: 'hinzukommen' (eklenmek / dahil olmak) fiilinin ayrılan önekidir. Cümle başında vurgu için kullanılmıştır: 'Hinzu kommen monatliche Nebenkostenvorauszahlungen' (Buna aylık yan gider avansları da eklenir).",
+      "en": "Separable verb prefix: The separable prefix of 'hinzukommen' (to be added). Fronted for emphasis: 'Hinzu kommen monatliche Nebenkostenvorauszahlungen' (Added to this are monthly advance utility payments).",
+      "ar": "سابقة فعل منفصل: سابقة الفعل 'hinzukommen' (يُضاف إلى ذلك). قُدمت للتأكيد: 'Hinzu kommen monatliche Nebenkostenvorauszahlungen'.",
+      "uk": "Відокремлюваний префікс: частина дієслова 'hinzukommen' (додаватися). Винесено на початок для наголошення: 'Hinzu kommen monatliche Nebenkostenvorauszahlungen'."
     },
     "examples": [
       {
@@ -7247,7 +8357,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Homeoffices'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Homeoffices'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Homeoffices'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Homeoffices'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Homeoffices'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Homeoffice)",
+        "en": "💡 Noun Structure (das Homeoffice)",
+        "ar": "💡 بنية الاسم (das Homeoffice)",
+        "uk": "💡 Структура іменника (das Homeoffice)"
+      }
     },
     "examples": [
       {
@@ -7283,10 +8399,16 @@ window.READING_LEXICON = {
     "example_ar": "تعتمد الشركات نماذج عمل هجينة.",
     "example_uk": "Компанії впроваджують гібридні моделі роботи.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'hybrid' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'hybrid' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'hybrid' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'hybrid' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Akkusativ Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Accusative Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة لجمع Akkusativ)",
+        "uk": "💡 Чому закінчення \"-e\"? (Прикметник у знахідному множини)"
+      },
+      "tr": "Güçlü sıfat çekimi (Akkusativ Plural): 'auf hybride Arbeitsmodelle setzen' yapısında 'auf' Akkusativ gerektirir; artikelsiz çoğul sıfat '-e' takısı alır.",
+      "en": "Strong adjective declension: In 'auf hybride Arbeitsmodelle', takes strong Accusative plural ending '-e'.",
+      "ar": "تصريف قوي: تأخذ الصفة لاحقة النصب للجمع '-e' في 'hybride Arbeitsmodelle'.",
+      "uk": "Сильна відміна: прикметник у множині без артикля приймає закінчення '-e' у знахідному відмінку."
     },
     "examples": [
       {
@@ -7325,7 +8447,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'häufig' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'häufig' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'häufig' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'häufig' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'häufig' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (häufig)",
+        "en": "💡 Adverb (häufig)",
+        "ar": "💡 ظرف (häufig)",
+        "uk": "💡 Прислівник (häufig)"
+      }
     },
     "examples": [
       {
@@ -7364,7 +8492,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'höchstens' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'höchstens' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'höchstens' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'höchstens' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'höchstens' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (höchstens)",
+        "en": "💡 Adverb (höchstens)",
+        "ar": "💡 ظرف (höchstens)",
+        "uk": "💡 Прислівник (höchstens)"
+      }
     },
     "examples": [
       {
@@ -7403,7 +8537,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'höflich' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'höflich' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'höflich' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'höflich' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'höflich' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (höflich)",
+        "en": "💡 Adverb (höflich)",
+        "ar": "💡 ظرف (höflich)",
+        "uk": "💡 Прислівник (höflich)"
+      }
     },
     "examples": [
       {
@@ -7442,7 +8582,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'ich' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'ich' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'ich' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'ich' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'ich' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -7481,7 +8627,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'ihnen' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'ihnen' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'ihnen' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'ihnen' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'ihnen' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -7520,7 +8672,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'Ihrem' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'Ihrem' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'Ihrem' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'Ihrem' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'Ihrem' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -7559,7 +8717,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'ihrer' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'ihrer' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'ihrer' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'ihrer' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'ihrer' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -7598,7 +8762,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'im' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
       "en": "Preposition: 'im' governs the grammatical case (Dative/Accusative) of the following noun.",
       "ar": "حرف جر: 'im' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
-      "uk": "Прийменник: 'im' визначає відмінок іменника (Dativ чи Akkusativ)."
+      "uk": "Прийменник: 'im' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
     },
     "examples": [
       {
@@ -7637,7 +8807,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'immer' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'immer' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'immer' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'immer' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'immer' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (immer)",
+        "en": "💡 Adverb (immer)",
+        "ar": "💡 ظرف (immer)",
+        "uk": "💡 Прислівник (immer)"
+      }
     },
     "examples": [
       {
@@ -7676,7 +8852,13 @@ window.READING_LEXICON = {
       "tr": "İki durumlu edat (Wechselpräposition): Bulunma/durum bildirirken DATIV (in einer Großstadt, im Büro); yönelme/hareket bildirirken AKKUSATIV (in die Wohnung) gerektirir.",
       "en": "Two-way preposition (Wechselpräposition): Governs Dative for location (Wo? in der Stadt) and Accusative for direction (Wohin? in die Stadt).",
       "ar": "حرف جر ذو حالتين: يتطلب Dativ للمكان الثابت (Wo?)، ويتطلب Akkusativ للحركة والاتجاه (Wohin?).",
-      "uk": "Прийменник подвійного керування: вимагає Dativ для місця (де? im Büro) та Akkusativ для напрямку (куди? in die Wohnung)."
+      "uk": "Прийменник подвійного керування: вимагає Dativ для місця (де? im Büro) та Akkusativ для напрямку (куди? in die Wohnung).",
+      "title": {
+        "tr": "💡 Edat Kuralı: Dativ (İsmin -e Hali) Gerektirir",
+        "en": "💡 Preposition Rule: Governs Dative Case",
+        "ar": "💡 قاعدة حرف الجر: يجر بالـ Dativ دائمًا",
+        "uk": "💡 Правило прийменника: Завжди вимагає Dativ"
+      }
     },
     "examples": [
       {
@@ -7715,7 +8897,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'innerhalb' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
       "en": "Preposition: 'innerhalb' governs the grammatical case (Dative/Accusative) of the following noun.",
       "ar": "حرف جر: 'innerhalb' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
-      "uk": "Прийменник: 'innerhalb' визначає відмінок іменника (Dativ чи Akkusativ)."
+      "uk": "Прийменник: 'innerhalb' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
     },
     "examples": [
       {
@@ -7754,7 +8942,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -7775,7 +8969,7 @@ window.READING_LEXICON = {
   },
   "ist": {
     "de": "sein",
-    "displayDe": "ist",
+    "displayDe": "sein",
     "article": "",
     "plural": "",
     "pos": "verb",
@@ -7790,10 +8984,16 @@ window.READING_LEXICON = {
     "example_ar": "هذا العمل التطوعي هو الجوهر.",
     "example_uk": "Це волонтерство є основою.",
     "grammar": {
-      "tr": "Fiil (Verb): 'ist' temel eylem bildiren fiildir.",
-      "en": "Verb: 'ist' denotes action, process, or state.",
-      "ar": "فعل: 'ist' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'ist' позначає дію або стан."
+      "tr": "Fiil (Verb): 'sein' temel eylem bildiren fiildir.",
+      "en": "Verb: 'sein' denotes action, process, or state.",
+      "ar": "فعل: 'sein' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'sein' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (sein)",
+        "en": "💡 Verb Structure (sein)",
+        "ar": "💡 بنية الفعل (sein)",
+        "uk": "💡 Структура дієслова (sein)"
+      }
     },
     "examples": [
       {
@@ -7804,7 +9004,7 @@ window.READING_LEXICON = {
         "uk": "Це волонтерство є основою."
       },
       {
-        "de": "In Deutschland kann man ist, um neue Erfahrungen zu sammeln.",
+        "de": "In Deutschland kann man sein, um neue Erfahrungen zu sammeln.",
         "tr": "Almanya'da yeni deneyimler kazanmak için -dir, -dır (olmak fiili) eylemi yapılabilir.",
         "en": "In Germany, one can is to gain new experience.",
         "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
@@ -7814,7 +9014,7 @@ window.READING_LEXICON = {
   },
   "jahren": {
     "de": "das Jahr",
-    "displayDe": "Jahren",
+    "displayDe": "Jahr",
     "article": "das",
     "plural": "die Jahre",
     "pos": "noun",
@@ -7832,7 +9032,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Jahre'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Jahre'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Jahre'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Jahre'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Jahre'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -7843,9 +9049,9 @@ window.READING_LEXICON = {
         "uk": "Уже кілька років як змінюється світ праці."
       },
       {
-        "de": "Für viele Menschen in Deutschland spielt das Jahren eine wichtige Rolle im Alltag.",
-        "tr": "Almanya'daki pek çok insan için Jahren günlük yaşamda önemli bir rol oynar.",
-        "en": "For many people in Germany, Jahren plays an important role in daily life.",
+        "de": "Für viele Menschen in Deutschland spielt das Jahr eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Jahr günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Jahr plays an important role in daily life.",
         "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
         "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
       }
@@ -7868,10 +9074,16 @@ window.READING_LEXICON = {
     "example_ar": "عدد أقل وأقل من فئة الشباب على استعداد.",
     "example_uk": "Дедалі менше молодих людей готові.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'jung' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'jung' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'jung' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'jung' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Sıfat Derecelendirmesi: Komparativ + Çekim Eki (jung ➔ jüngere)",
+        "en": "💡 Adjective Comparison: Comparative + Declension (jung ➔ jüngere)",
+        "ar": "💡 درجات الصفة: صيغة المقارنة والتصريف (jung ➔ jüngere)",
+        "uk": "💡 Ступені порівняння: Вищий ступінь + закінчення (jung ➔ jüngere)"
+      },
+      "tr": "Sıfat Karşılaştırma Derecesi (Komparativ): 'jung' (genç) sıfatı karşılaştırmada umlaut alarak 'jünger' (daha genç) olur. 'Immer weniger jüngere Menschen' yapısında artikelsiz çoğul Nominativ '-e' takısı almıştır.",
+      "en": "Comparative adjective with declension: 'jung' (young) forms comparative 'jünger' (younger) with umlaut. In 'jüngere Menschen', it takes strong Nominative plural ending '-e'.",
+      "ar": "صيغة المقارنة مع التصريف: 'jung' تصبح 'jünger' (أصغر سناً). في 'jüngere Menschen' تأخذ لاحقة الرفع للجمع '-e'.",
+      "uk": "Вищий ступінь порівняння: 'jung' утворює ступінь 'jünger' (молодший). У 'jüngere Menschen' приймає сильне закінчення називного відмінка множини '-e'."
     },
     "examples": [
       {
@@ -7910,7 +9122,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Kaffee)",
+        "en": "💡 Noun Structure (der Kaffee)",
+        "ar": "💡 بنية الاسم (der Kaffee)",
+        "uk": "💡 Структура іменника (der Kaffee)"
+      }
     },
     "examples": [
       {
@@ -7949,7 +9167,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Kaffeemaschinen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Kaffeemaschinen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Kaffeemaschinen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Kaffeemaschinen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Kaffeemaschinen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Kaffeemaschine)",
+        "en": "💡 Noun Structure (die Kaffeemaschine)",
+        "ar": "💡 بنية الاسم (die Kaffeemaschine)",
+        "uk": "💡 Структура іменника (die Kaffeemaschine)"
+      }
     },
     "examples": [
       {
@@ -7988,7 +9212,13 @@ window.READING_LEXICON = {
       "tr": "Bileşik isim (Kompositum): 'kalt' (soğuk) sıfatı + 'die Miete' (kira) isminden oluşur. Isınma ve yan giderler hariç dairenin net çıplak kirasını ifade eder.",
       "en": "Compound noun: 'kalt' (cold) + 'die Miete' (rent). Refers to net base rent excluding heating and operating utility costs.",
       "ar": "اسم مركب: 'kalt' (بارد) + 'die Miete' (إيجار). يشير إلى الإيجار الأساسي الصافي بدون تكاليف التدفئة والخدمات.",
-      "uk": "Складний іменник: 'kalt' (холодний) + 'die Miete' (оренда). Позначає чисту базову оренду без витрат на опалення та комунальні послуги."
+      "uk": "Складний іменник: 'kalt' (холодний) + 'die Miete' (оренда). Позначає чисту базову оренду без витрат на опалення та комунальні послуги.",
+      "title": {
+        "tr": "💡 Kelime Yapısı: Bileşik İsim (Kompositum)",
+        "en": "💡 Word Structure: Compound Noun (Kompositum)",
+        "ar": "💡 بنية الكلمة: اسم مركب (Kompositum)",
+        "uk": "💡 Будова слова: Складний іменник (Kompositum)"
+      }
     },
     "examples": [
       {
@@ -8024,10 +9254,16 @@ window.READING_LEXICON = {
     "example_ar": "مما قد يؤدي إلى العزلة الاجتماعية.",
     "example_uk": "Що може призвести до соціальної ізоляції.",
     "grammar": {
-      "tr": "Fiil (Verb): 'können' temel eylem bildiren fiildir.",
-      "en": "Verb: 'können' denotes action, process, or state.",
-      "ar": "فعل: 'können' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'können' позначає дію або стан."
+      "title": {
+        "tr": "💡 Modal Fiil Çekimi: Präsens Tekil (können ➔ kann)",
+        "en": "💡 Modal Verb Form: Present Singular (können ➔ kann)",
+        "ar": "💡 تصريف الفعل المساعد: المضارع للمفرد (können ➔ kann)",
+        "uk": "💡 Модальне дієслово: Теперішній час однини (können ➔ kann)"
+      },
+      "tr": "Modal fiil tekil çekimi: 'können' (yapabilmek / olasılık) fiili 1. ve 3. tekil şahısta (ich/er/sie/es) kök seslisini değiştirir ve şahıs eki almaz ('er kann' = yapabilir / yol açabilir). Metinde: 'was zu sozialer Isolation führen kann'.",
+      "en": "Modal verb singular conjugation: 'können' (can / to be able to) changes its vowel to 'a' and takes no personal ending in 1st/3rd singular ('er kann' = can). In text: 'was zu sozialer Isolation führen kann'.",
+      "ar": "تصريف الفعل المساعد (Modalverb): يغير الفعل 'können' حرف العلة إلى 'a' ولا يأخذ لاحقة فاعل مع المفرد (ich / er / sie / es kann). في النص: 'was zu sozialer Isolation führen kann'.",
+      "uk": "Відмінювання модального дієслова: 'können' (могти) змінює голосну на 'a' та не має закінчення в 1-й/3-й особах однини ('er kann'). У тексті: 'was zu sozialer Isolation führen kann'."
     },
     "examples": [
       {
@@ -8066,7 +9302,13 @@ window.READING_LEXICON = {
       "tr": "Bileşik isim (Kompositum): 'der Kauf' (satın alma) + 'der Preis' (fiyat). İsmin cinsiyeti ve artikeli her zaman sondaki temel kelimeye ('der Preis') göre belirlenir.",
       "en": "Compound noun (Kompositum): 'der Kauf' (purchase) + 'der Preis' (price). The gender and article are always determined by the last element ('der Preis').",
       "ar": "اسم مركب (Kompositum): يتكون من 'der Kauf' (شراء) + 'der Preis' (سعر). يحدد جنس الاسم وأداته دائمًا بالكلمة الأخيرة ('der Preis').",
-      "uk": "Складний іменник (Kompositum): утворений з 'der Kauf' (купівля) + 'der Preis' (ціна). Рід та артикль визначаються за останнім словом ('der Preis')."
+      "uk": "Складний іменник (Kompositum): утворений з 'der Kauf' (купівля) + 'der Preis' (ціна). Рід та артикль визначаються за останнім словом ('der Preis').",
+      "title": {
+        "tr": "💡 Kelime Yapısı: Bileşik İsim (Kompositum)",
+        "en": "💡 Word Structure: Compound Noun (Kompositum)",
+        "ar": "💡 بنية الكلمة: اسم مركب (Kompositum)",
+        "uk": "💡 Будова слова: Складний іменник (Kompositum)"
+      }
     },
     "examples": [
       {
@@ -8112,7 +9354,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Kautionen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Kautionen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Kautionen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Kautionen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Kautionen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -8133,7 +9381,7 @@ window.READING_LEXICON = {
   },
   "kinder": {
     "de": "das Kind",
-    "displayDe": "Kinder",
+    "displayDe": "Kind",
     "article": "das",
     "plural": "die Kinder",
     "pos": "noun",
@@ -8151,7 +9399,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Kinder'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Kinder'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Kinder'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Kinder'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Kinder'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Kind)",
+        "en": "💡 Noun Structure (das Kind)",
+        "ar": "💡 بنية الاسم (das Kind)",
+        "uk": "💡 Структура іменника (das Kind)"
+      }
     },
     "examples": [
       {
@@ -8162,9 +9416,9 @@ window.READING_LEXICON = {
         "uk": "Клуби, де тренуються діти."
       },
       {
-        "de": "Für viele Menschen in Deutschland spielt das Kinder eine wichtige Rolle im Alltag.",
-        "tr": "Almanya'daki pek çok insan için Kinder günlük yaşamda önemli bir rol oynar.",
-        "en": "For many people in Germany, Kinder plays an important role in daily life.",
+        "de": "Für viele Menschen in Deutschland spielt das Kind eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Kind günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Kind plays an important role in daily life.",
         "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
         "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
       }
@@ -8190,7 +9444,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): İsim. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article ''. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة ''. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль ''. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль ''. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (KM)",
+        "en": "💡 Noun Structure (KM)",
+        "ar": "💡 بنية الاسم (KM)",
+        "uk": "💡 Структура іменника (KM)"
+      }
     },
     "examples": [
       {
@@ -8229,7 +9489,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'knüpfen' temel eylem bildiren fiildir.",
       "en": "Verb: 'knüpfen' denotes action, process, or state.",
       "ar": "فعل: 'knüpfen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'knüpfen' позначає дію або стан."
+      "uk": "Дієслово: 'knüpfen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (knüpfen)",
+        "en": "💡 Verb Structure (knüpfen)",
+        "ar": "💡 بنية الفعل (knüpfen)",
+        "uk": "💡 Структура дієслова (knüpfen)"
+      }
     },
     "examples": [
       {
@@ -8265,10 +9531,16 @@ window.READING_LEXICON = {
     "example_ar": "التواصل مع الزملاء والزميلات في العمل.",
     "example_uk": "Спілкування з колегами.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Kollegen'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Kollegen'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Kollegen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Kollegen'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: N-Deklination (Zayıf İsim)",
+        "en": "💡 Noun Declension: N-Declension (Weak Masculine Noun)",
+        "ar": "💡 تصريف الأسماء: التصريف الضعيف (N-Deklination)",
+        "uk": "💡 Відмінювання іменників: N-відміна (слабка відміна)"
+      },
+      "tr": "N-Deklination (Zayıf İsim): 'der Kollege' (meslektaş) ismi zayıf maskulin çekime tabidir. 'mit Kolleginnen und Kollegen' yapısında 'mit' edatından ötürü Dativ Plural olarak '-n' takısı taşır.",
+      "en": "N-Declension: 'der Kollege' is a weak masculine noun. Governed by preposition 'mit' (Dative), it appears in the Dative plural taking '-n'.",
+      "ar": "تصريف ضعيف (N-Deklination): الاسم 'der Kollege' اسم مذكر ضعيف. بعد حرف الجر 'mit' (Dativ)، يأخذ لاحقة الجمع '-n'.",
+      "uk": "N-відміна: 'der Kollege' — іменник слабкої відміни. Після прийменника 'mit' (Dativ) у давальному відмінку множини має закінчення '-n'."
     },
     "examples": [
       {
@@ -8304,10 +9576,16 @@ window.READING_LEXICON = {
     "example_ar": "الحديث مع زميلات العمل.",
     "example_uk": "Спілкування з колежанками.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Kolleginnen'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Kolleginnen'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Kolleginnen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Kolleginnen'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Dişil Çoğul Eki (die Kollegin ➔ Kolleginnen)",
+        "en": "💡 Noun Declension: Female Plural Suffix (die Kollegin ➔ Kolleginnen)",
+        "ar": "💡 تصريف الأسماء: جمع المؤنث (die Kollegin ➔ Kolleginnen)",
+        "uk": "💡 Творення множини жіночого роду (die Kollegin ➔ Kolleginnen)"
+      },
+      "tr": "Dişil isim çoğulu: '-in' ile biten kadın unvanı çoğulda '-nen' alır ('die Kollegin' -> 'die Kolleginnen'; 'mit Kolleginnen und Kollegen').",
+      "en": "Feminine plural formation: Nouns ending in '-in' add '-nen' in plural: die Kollegin -> die Kolleginnen.",
+      "ar": "جمع المؤنث: الأسماء المنتهية بـ '-in' تجمع بـ '-nen': die Kollegin -> die Kolleginnen (الزميلات).",
+      "uk": "Творення множини жіночого роду: іменники на '-in' утворюють множину на '-nen': die Kollegin -> die Kolleginnen."
     },
     "examples": [
       {
@@ -8346,7 +9624,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'kommen' temel eylem bildiren fiildir.",
       "en": "Verb: 'kommen' denotes action, process, or state.",
       "ar": "فعل: 'kommen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'kommen' позначає дію або стан."
+      "uk": "Дієслово: 'kommen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (kommen)",
+        "en": "💡 Verb Structure (kommen)",
+        "ar": "💡 بنية الفعل (kommen)",
+        "uk": "💡 Структура дієслова (kommen)"
+      }
     },
     "examples": [
       {
@@ -8382,10 +9666,16 @@ window.READING_LEXICON = {
     "example_ar": "مهم لبناء معارف جديدة.",
     "example_uk": "Важливо для зав'язування нових контактів.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Kontakte'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Kontakte'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Kontakte'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Kontakte'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Çoğul Eki (der Kontakt ➔ die Kontakte)",
+        "en": "💡 Noun Declension: Plural Suffix (der Kontakt ➔ die Kontakte)",
+        "ar": "💡 تصريف الأسماء: صيغة الجمع (جهات الاتصال والمعارف)",
+        "uk": "💡 Творення множини: der Kontakt ➔ die Kontakte"
+      },
+      "tr": "Çoğul eki: 'der Kontakt' maskulin bir isimdir; çoğulda sonuna '-e' takısı alır ('neue Kontakte knüpfen' = yeni bağlantılar / dostluklar kurmak).",
+      "en": "Plural formation: 'der Kontakt' is masculine and forms its plural with '-e' ('neue Kontakte knüpfen' = to make new contacts/connections).",
+      "ar": "صيغة الجمع: يجمع الاسم المذكر 'der Kontakt' بـ '-e' ('Kontakte knüpfen' = ينسج علاقات ومعارف جديدة).",
+      "uk": "Творення множини: іменник чоловічого роду 'der Kontakt' має закінчення '-e' у множині ('neue Kontakte knüpfen' = зав'язувати нові контакти)."
     },
     "examples": [
       {
@@ -8424,7 +9714,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Kopien'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Kopien'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Kopien'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Kopien'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Kopien'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Kopie)",
+        "en": "💡 Noun Structure (die Kopie)",
+        "ar": "💡 بنية الاسم (die Kopie)",
+        "uk": "💡 Структура іменника (die Kopie)"
+      }
     },
     "examples": [
       {
@@ -8463,7 +9759,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat (Adjektiv): 'kostenfrei' niteleme veya durum sıfatıdır.",
       "en": "Adjective: 'kostenfrei' describes quality or state.",
       "ar": "صفة: 'kostenfrei' تصف الحالة أو الخاصية.",
-      "uk": "Прикметник: 'kostenfrei' описує ознаку або стан."
+      "uk": "Прикметник: 'kostenfrei' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (kostenfrei)",
+        "en": "💡 Adjective (kostenfrei)",
+        "ar": "💡 بنية الصفة (kostenfrei)",
+        "uk": "💡 Структура прикметника (kostenfrei)"
+      }
     },
     "examples": [
       {
@@ -8502,7 +9804,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Kulturen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Kulturen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Kulturen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Kulturen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Kulturen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Kultur)",
+        "en": "💡 Noun Structure (die Kultur)",
+        "ar": "💡 بنية الاسم (die Kultur)",
+        "uk": "💡 Структура іменника (die Kultur)"
+      }
     },
     "examples": [
       {
@@ -8541,7 +9849,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'können' temel eylem bildiren fiildir.",
       "en": "Verb: 'können' denotes action, process, or state.",
       "ar": "فعل: 'können' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'können' позначає дію або стан."
+      "uk": "Дієслово: 'können' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (können)",
+        "en": "💡 Verb Structure (können)",
+        "ar": "💡 بنية الفعل (können)",
+        "uk": "💡 Структура дієслова (können)"
+      }
     },
     "examples": [
       {
@@ -8577,10 +9891,16 @@ window.READING_LEXICON = {
     "example_ar": "مهام ذات مدة أقصر للمتطوعين.",
     "example_uk": "Коротші за часом завдання для волонтерів.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'kurz' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'kurz' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'kurz' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'kurz' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Sıfat Derecelendirmesi: Komparativ + Çekim Eki (kurz ➔ kürzere)",
+        "en": "💡 Adjective Comparison: Comparative + Declension (kurz ➔ kürzere)",
+        "ar": "💡 درجات الصفة: صيغة المقارنة والتصريف (kurz ➔ kürzere)",
+        "uk": "💡 Ступені порівняння: Вищий ступінь + закінчення (kurz ➔ kürzere)"
+      },
+      "tr": "Sıfat Karşılaştırma Derecesi (Komparativ): 'kurz' (kısa) sıfatı karşılaştırma derecesinde umlaut alarak 'kürzer' (daha kısa) olur. 'kürzere Einsätze' yapısında çoğul isim önünde artikelsiz Akkusativ Plural '-e' çekim eki almıştır.",
+      "en": "Comparative adjective with declension: 'kurz' (short) takes an umlaut in the comparative to become 'kürzer' (shorter). In 'kürzere Einsätze', it adds the strong Accusative plural ending '-e'.",
+      "ar": "صيغة المقارنة مع التصريف: الصفة 'kurz' تصبح 'kürzer' (أقصر) في المقارنة مع إمالة. في 'kürzere Einsätze'، تأخذ لاحقة النصب للجمع '-e'.",
+      "uk": "Вищий ступінь порівняння: прикметник 'kurz' отримує умлаут — 'kürzer' (коротший). У 'kürzere Einsätze' додається сильне закінчення знахідного відмінка множини '-e'."
     },
     "examples": [
       {
@@ -8616,10 +9936,16 @@ window.READING_LEXICON = {
     "example_ar": "تحمل التزامات طويلة الأجل مثل المناصب الإدارية.",
     "example_uk": "Брати на себе довгострокові зобов'язання, як-от посади в правлінні.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'langfristig' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'langfristig' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'langfristig' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'langfristig' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Akkusativ Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Accusative Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة لجمع Akkusativ)",
+        "uk": "💡 Чому закінчення \"-e\"? (Прикметник у знахідному множини)"
+      },
+      "tr": "Güçlü sıfat çekimi: 'langfristige Verpflichtungen übernehmen' yapısında artikelsiz çoğul isim önünde sıfat Akkusativ Plural '-e' takısı alır.",
+      "en": "Strong adjective declension: Plural noun without article takes strong Accusative plural ending '-e'.",
+      "ar": "تصريف قوي: تأخذ الصفة لاحقة النصب للجمع بدون أداة '-e' في 'langfristige Verpflichtungen'.",
+      "uk": "Сильна відміна: перед іменником у множині без артикля прикметник отримує '-e' у знахідному відмінку."
     },
     "examples": [
       {
@@ -8655,10 +9981,16 @@ window.READING_LEXICON = {
     "example_ar": "تُمنع الموسيقى الصاخبة في كامل المبنى.",
     "example_uk": "Гучна музика заборонена в усій будівлі.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'laut' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'laut' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'laut' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'laut' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Nominativ Feminin Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Nominative Feminine Adjective)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة لمؤنث Nominativ)",
+        "uk": "💡 Чому закінчення \"-e\"? (Прикметник у називному жіночого роду)"
+      },
+      "tr": "Güçlü sıfat çekimi: 'die Musik' feminin bir isimdir; 'laute Musik ist untersagt' cümlesinde artikelsiz feminin sıfat güçlü Nominativ '-e' takısı almıştır.",
+      "en": "Strong adjective declension: 'die Musik' is feminine; without article it takes strong Nominative feminine '-e'.",
+      "ar": "تصريف قوي للمؤنث: تأخذ الصفة لاحقة الرفع للمؤنث بدون أداة '-e' في 'laute Musik'.",
+      "uk": "Сильна відміна: перед іменником жіночого роду без артикля прикметник приймає '-e' у називному відмінку."
     },
     "examples": [
       {
@@ -8697,7 +10029,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'leider' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'leider' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'leider' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'leider' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'leider' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (leider)",
+        "en": "💡 Adverb (leider)",
+        "ar": "💡 ظرف (leider)",
+        "uk": "💡 Прислівник (leider)"
+      }
     },
     "examples": [
       {
@@ -8736,7 +10074,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'leisten' temel eylem bildiren fiildir.",
       "en": "Verb: 'leisten' denotes action, process, or state.",
       "ar": "فعل: 'leisten' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'leisten' позначає дію або стан."
+      "uk": "Дієслово: 'leisten' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (leisten)",
+        "en": "💡 Verb Structure (leisten)",
+        "ar": "💡 بنية الفعل (leisten)",
+        "uk": "💡 Структура дієслова (leisten)"
+      }
     },
     "examples": [
       {
@@ -8775,7 +10119,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'liegen' temel eylem bildiren fiildir.",
       "en": "Verb: 'liegen' denotes action, process, or state.",
       "ar": "فعل: 'liegen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'liegen' позначає дію або стан."
+      "uk": "Дієслово: 'liegen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (liegen)",
+        "en": "💡 Verb Structure (liegen)",
+        "ar": "💡 بنية الفعل (liegen)",
+        "uk": "💡 Структура дієслова (liegen)"
+      }
     },
     "examples": [
       {
@@ -8811,10 +10161,16 @@ window.READING_LEXICON = {
     "example_ar": "من يقرأ إعلان شقة يصادف مصطلحات تخصصية.",
     "example_uk": "Хто читає оголошення про оренду, стикається зі спеціальними термінами.",
     "grammar": {
-      "tr": "Fiil (Verb): 'lesen' temel eylem bildiren fiildir.",
-      "en": "Verb: 'lesen' denotes action, process, or state.",
-      "ar": "فعل: 'lesen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'lesen' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Düzensiz Kök Değişimi (lesen ➔ liest)",
+        "en": "💡 Verb Conjugation: Irregular Stem Change (lesen ➔ liest)",
+        "ar": "💡 تصريف الفعل: تغيير حرف العلة في الجذر (lesen ➔ liest)",
+        "uk": "💡 Дієвідмінювання: Подовження голосної кореня (lesen ➔ liest)"
+      },
+      "tr": "Düzensiz fiil çekimi (Präsens 3. Tekil Şahıs): 'lesen' (okumak) fiili 3. tekil şahısta 'e' -> 'ie' değişimine uğrar (er/sie liest = okur). Metinde: 'Wer eine Zeitungs- oder Onlineanzeige liest...'",
+      "en": "Irregular verb conjugation (3rd person singular present): 'lesen' (to read) changes stem vowel from 'e' to 'ie' (er/sie liest = reads). In text: 'Wer eine Anzeige liest...'",
+      "ar": "تصريف فعل غير قياسي: يتحول حرف 'e' إلى 'ie' في الفعل 'lesen' (er/sie liest = يقرأ). في النص: 'Wer eine Anzeige liest...'",
+      "uk": "Неправильне дієслово: голосна кореня 'e' подовжується в 'ie' у 3-й особі однини (er/sie liest = читає). У тексті: 'Wer eine Anzeige liest...'"
     },
     "examples": [
       {
@@ -8850,10 +10206,16 @@ window.READING_LEXICON = {
     "example_ar": "الانضمام إلى جمعية أو نادٍ محلي.",
     "example_uk": "Вступ до місцевого клубу.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'lokal' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
-      "en": "Adjective declension: 'lokal' is inflected with the '-en' ending in Dative or Accusative case.",
-      "ar": "تصريف الصفات: الصفة 'lokal' تصرف في الجملة بلاحقة '-en'.",
-      "uk": "Відмінювання прикметників: прикметник 'lokal' отримує закінчення '-en'."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Dativ Maskulin Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Dative Masculine Adjective)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف صفة لمذكر Dativ)",
+        "uk": "💡 Чому закінчення \"-en\"? (Прикметник у Dativ чоловічого роду)"
+      },
+      "tr": "Karışık sıfat çekimi (Dativ Maskulin): 'zu einem lokalen Verein' yapısında 'zu' edatı Dativ gerektirir; maskulin belirsiz artikel 'einem' sonrasında sıfat '-en' takısı alır.",
+      "en": "Mixed adjective declension: In 'zu einem lokalen Verein', preposition 'zu' requires Dative; masculine adjective following 'einem' takes '-en'.",
+      "ar": "تصريف مختلط: بعد حرف الجر 'zu' وأداة التنكير للمذكر 'einem'، تأخذ الصفة لاحقة '-en'.",
+      "uk": "Мішана відміна: після прийменника 'zu' та неозначеного артикля 'einem' прикметник чоловічого роду приймає '-en'."
     },
     "examples": [
       {
@@ -8892,7 +10254,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Lärm)",
+        "en": "💡 Noun Structure (der Lärm)",
+        "ar": "💡 بنية الاسم (der Lärm)",
+        "uk": "💡 Структура іменника (der Lärm)"
+      }
     },
     "examples": [
       {
@@ -8928,10 +10296,16 @@ window.READING_LEXICON = {
     "example_ar": "أنا أمارس حقي القانوني.",
     "example_uk": "Я користуюся своїм правом.",
     "grammar": {
-      "tr": "Fiil (Verb): 'machen' temel eylem bildiren fiildir.",
-      "en": "Verb: 'machen' denotes action, process, or state.",
-      "ar": "فعل: 'machen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'machen' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Präsens 1. Tekil Şahıs (machen)",
+        "en": "💡 Verb Conjugation: 1st Person Singular Present (machen)",
+        "ar": "💡 تصريف الفعل: المضارع للمتكلم المفرد (machen)",
+        "uk": "💡 Дієвідмінювання: 1-ша особа однини теперішнього часу (machen)"
+      },
+      "tr": "Fiil çekimi (1. Tekil Şahıs / Ich-Form): 'machen' fiilinin şimdiki zaman çekimidir. Kalıp ifade: 'von seinem Recht Gebrauch machen' (hakkını kullanmak; 'Ich mache von meinem Recht Gebrauch' = Hakkımı kullanıyorum).",
+      "en": "Verb conjugation (1st person singular): Present tense form of 'machen'. Idiom: 'von seinem Recht Gebrauch machen' (to exercise one's right; 'Ich mache von meinem Recht Gebrauch').",
+      "ar": "تصريف الفعل (صيغة المتكلم المفرد): صيغة المضارع مع 'ich' للفعل 'machen'. تركيب اصطلاحي: 'von seinem Recht Gebrauch machen' (يمارس حقه).",
+      "uk": "Дієвідмінювання (1-ша особа однини): теперішній час дієслова 'machen'. Ідіома: 'von seinem Recht Gebrauch machen' (використовувати своє право)."
     },
     "examples": [
       {
@@ -8970,7 +10344,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Mai)",
+        "en": "💡 Noun Structure (der Mai)",
+        "ar": "💡 بنية الاسم (der Mai)",
+        "uk": "💡 Структура іменника (der Mai)"
+      }
     },
     "examples": [
       {
@@ -9009,7 +10389,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Mails'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Mails'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Mails'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Mails'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Mails'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Mail)",
+        "en": "💡 Noun Structure (die Mail)",
+        "ar": "💡 بنية الاسم (die Mail)",
+        "uk": "💡 Структура іменника (die Mail)"
+      }
     },
     "examples": [
       {
@@ -9048,7 +10434,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Mails'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Mails'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Mails'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Mails'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Mails'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
     },
     "examples": [
       {
@@ -9087,7 +10479,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Male'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Male'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Male'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Male'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Male'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Mal)",
+        "en": "💡 Noun Structure (das Mal)",
+        "ar": "💡 بنية الاسم (das Mal)",
+        "uk": "💡 Структура іменника (das Mal)"
+      }
     },
     "examples": [
       {
@@ -9126,7 +10524,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat (Adjektiv): 'mangelhaft' niteleme veya durum sıfatıdır.",
       "en": "Adjective: 'mangelhaft' describes quality or state.",
       "ar": "صفة: 'mangelhaft' تصف الحالة أو الخاصية.",
-      "uk": "Прикметник: 'mangelhaft' описує ознаку або стан."
+      "uk": "Прикметник: 'mangelhaft' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (mangelhaft)",
+        "en": "💡 Adjective (mangelhaft)",
+        "ar": "💡 بنية الصفة (mangelhaft)",
+        "uk": "💡 Структура прикметника (mangelhaft)"
+      }
     },
     "examples": [
       {
@@ -9165,7 +10569,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): İsim. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article ''. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة ''. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль ''. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль ''. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (Martina)",
+        "en": "💡 Noun Structure (Martina)",
+        "ar": "💡 بنية الاسم (Martina)",
+        "uk": "💡 Структура іменника (Martina)"
+      }
     },
     "examples": [
       {
@@ -9204,7 +10614,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'mehr' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'mehr' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'mehr' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'mehr' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'mehr' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (mehr)",
+        "en": "💡 Adverb (mehr)",
+        "ar": "💡 ظرف (mehr)",
+        "uk": "💡 Прислівник (mehr)"
+      }
     },
     "examples": [
       {
@@ -9243,7 +10659,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'mein' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'mein' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'mein' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'mein' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'mein' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -9282,7 +10704,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'meinem' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'meinem' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'meinem' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'meinem' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'meinem' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -9321,7 +10749,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'meist' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'meist' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'meist' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'meist' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'meist' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (meist)",
+        "en": "💡 Adverb (meist)",
+        "ar": "💡 ظرف (meist)",
+        "uk": "💡 Прислівник (meist)"
+      }
     },
     "examples": [
       {
@@ -9357,10 +10791,16 @@ window.READING_LEXICON = {
     "example_ar": "ملايين الناس يشاركون في العمل التطوعي.",
     "example_uk": "Мільйони людей займаються волонтерством.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Menschen'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Menschen'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Menschen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Menschen'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: N-Deklination (der Mensch ➔ Menschen)",
+        "en": "💡 Noun Declension: N-Declension (der Mensch ➔ Menschen)",
+        "ar": "💡 تصريف الأسماء: التصريف الضعيف (der Mensch ➔ Menschen)",
+        "uk": "💡 Відмінювання іменників: N-відміна (der Mensch ➔ Menschen)"
+      },
+      "tr": "N-Deklination: 'der Mensch' (insan) zayıf bir isimdir. Tekil Nominativ hariç tüm durumlarda ve tüm çoğul hallerde '-en' takısı alır ('Millionen Menschen' = milyonlarca insan; 'mit älteren Menschen' = yaşlı insanlarla).",
+      "en": "N-Declension: 'der Mensch' (human/person) is a weak noun. Except for Nominative singular, it takes '-en' in all oblique singular cases and all plural forms ('Millionen Menschen').",
+      "ar": "التصريف الضعيف (N-Deklination): الاسم 'der Mensch' يأخذ لاحقة '-en' في جميع الحالات الإعرابية ما عدا المفرد المرفوع، وكذلك في الجمع ('Millionen Menschen').",
+      "uk": "N-відміна: 'der Mensch' (людина) — іменник слабкої відміни. Отримує закінчення '-en' в усіх формах, крім називного відмінка однини ('Millionen Menschen')."
     },
     "examples": [
       {
@@ -9399,7 +10839,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Mieter'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Mieter'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Mieter'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Mieter'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Mieter'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Mieter)",
+        "en": "💡 Noun Structure (der Mieter)",
+        "ar": "💡 بنية الاسم (der Mieter)",
+        "uk": "💡 Структура іменника (der Mieter)"
+      }
     },
     "examples": [
       {
@@ -9438,7 +10884,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Mietsicherheiten'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Mietsicherheiten'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Mietsicherheiten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Mietsicherheiten'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Mietsicherheiten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Mietsicherheit)",
+        "en": "💡 Noun Structure (die Mietsicherheit)",
+        "ar": "💡 بنية الاسم (die Mietsicherheit)",
+        "uk": "💡 Структура іменника (die Mietsicherheit)"
+      }
     },
     "examples": [
       {
@@ -9474,10 +10926,16 @@ window.READING_LEXICON = {
     "example_ar": "في بداية العلاقة الإيجارية.",
     "example_uk": "На початку орендних відносин.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Mietverhältnisse'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Mietverhältnisse'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Mietverhältnisse'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Mietverhältnisse'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 Neden \"-ses\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-ses\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-ses\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-ses\"? (Родовий відмінок Genitiv)"
+      },
+      "tr": "Genitiv Tekil Kuralı (-nis ile biten isimler): 'das Mietverhältnis' (kira ilişkisi) nötr bir isimdir. Almancada '-nis' son ekiyle biten isimler Genitiv halinde sonlarına fazladan bir 's' daha alarak '-ses' takısıyla biter (zu Beginn des Mietverhältnisses = kira ilişkisinin başlangıcında).",
+      "en": "Genitive singular rule (-nis nouns): 'das Mietverhältnis' is neuter. In German, nouns ending in '-nis' double the 's' in the Genitive to take '-ses' (zu Beginn des Mietverhältnisses = at the beginning of the tenancy).",
+      "ar": "قاعدة الإضافة للأسماء المنتهية بـ '-nis': الاسم 'das Mietverhältnis' محايد. تضاعف الأسماء المنتهية بـ '-nis' حرف الـ s في حالة المضاف إليه وتأخذ '-ses'.",
+      "uk": "Правило родового відмінка (іменники на '-nis'): 'das Mietverhältnis' середнього роду. Іменники на '-nis' у Genitiv подвоюють 's' і отримують закінчення '-ses'."
     },
     "examples": [
       {
@@ -9516,7 +10974,13 @@ window.READING_LEXICON = {
       "tr": "Genitiv tekil: 'der Mietvertrag' maskulin bir isimdir. Genitiv tamlama yapısında artikel 'des' olur ve ismin sonuna '-s' eklenir (Bestandteil des Mietvertrags = kira sözleşmesinin ayrılmaz parçası).",
       "en": "Genitive singular: 'der Mietvertrag' is masculine. In a genitive possessive structure, the article becomes 'des' and the noun adds '-s'.",
       "ar": "مفرد مضاف إليه: 'der Mietvertrag' اسم مذكر. في حالة الـ Genitiv تصبح الأداة 'des' وتضاف لاحقة '-s' إلى نهاية الاسم.",
-      "uk": "Родовий відмінок однини: 'der Mietvertrag' — іменник чоловічого роду. У Genitiv артикль змінюється на 'des', а іменник отримує закінчення '-s'."
+      "uk": "Родовий відмінок однини: 'der Mietvertrag' — іменник чоловічого роду. У Genitiv артикль змінюється на 'des', а іменник отримує закінчення '-s'.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
     },
     "examples": [
       {
@@ -9552,10 +11016,16 @@ window.READING_LEXICON = {
     "example_ar": "أكثر من 28 مليون مواطن.",
     "example_uk": "Понад 28 мільйонів громадян.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Millionen'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Millionen'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Millionen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Millionen'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Çoğul Eki (die Million ➔ Millionen)",
+        "en": "💡 Noun Declension: Plural Suffix (Millionen)",
+        "ar": "💡 تصريف الأسماء: صيغة الجمع (الملايين)",
+        "uk": "💡 Творення множини: die Million ➔ Millionen"
+      },
+      "tr": "Çoğul eki: 'die Million' feminin bir isimdir; birden fazla milyon söz konusu olduğunda çoğul '-en' takısı alır ('mehr als 28 Millionen Menschen' = 28 milyondan fazla insan).",
+      "en": "Plural formation: 'die Million' is feminine; takes '-en' in the plural for amounts greater than one ('mehr als 28 Millionen Menschen').",
+      "ar": "صيغة الجمع: الاسم 'die Million' مؤنث ويجمع بـ '-en': 'mehr als 28 Millionen Menschen' (أكثر من 28 مليون إنسان).",
+      "uk": "Творення множини: 'die Million' жіночого роду, у множині має закінчення '-en' ('mehr als 28 Millionen')."
     },
     "examples": [
       {
@@ -9594,7 +11064,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'mindestens' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'mindestens' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'mindestens' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'mindestens' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'mindestens' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (mindestens)",
+        "en": "💡 Adverb (mindestens)",
+        "ar": "💡 ظرف (mindestens)",
+        "uk": "💡 Прислівник (mindestens)"
+      }
     },
     "examples": [
       {
@@ -9630,10 +11106,16 @@ window.READING_LEXICON = {
     "example_ar": "30 دقيقة استراحة على الأقل.",
     "example_uk": "Щонайменше 30 хвилин перерви.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Minuten'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Minuten'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Minuten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Minuten'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Çoğul Eki (die Minute ➔ Minuten)",
+        "en": "💡 Noun Declension: Plural Suffix (Minuten)",
+        "ar": "💡 تصريف الأسماء: صيغة الجمع (الدقائق)",
+        "uk": "💡 Творення множини: die Minute ➔ Minuten"
+      },
+      "tr": "Çoğul eki: 'die Minute' feminin bir isimdir; çoğulda sonuna '-n' takısı alır ('mindestens 30 Minuten Pause' = en az 30 dakika mola).",
+      "en": "Plural formation: 'die Minute' is feminine and adds '-n' in plural ('mindestens 30 Minuten Pause' = at least 30 minutes break).",
+      "ar": "صيغة الجمع: يجمع الاسم المؤنث 'die Minute' بإضافة '-n': 'mindestens 30 Minuten Pause'.",
+      "uk": "Творення множини: іменник жіночого роду 'die Minute' у множині приймає '-n' ('mindestens 30 Minuten Pause')."
     },
     "examples": [
       {
@@ -9672,7 +11154,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'mir' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'mir' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'mir' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'mir' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'mir' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -9711,7 +11199,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'mit' edatı her zaman DATIV gerektirir (mit dem Bus, mit der Familie, mit Freunden). Birliktelik veya vasıta bildirir.",
       "en": "Preposition: 'mit' always governs the DATIVE case (mit dem Bus, mit der Familie). Indicates company or instrument.",
       "ar": "حرف جر: 'mit' يتطلب دائمًا حالة الـ DATIV (mit dem Bus). يفيد المعية أو الوسيلة.",
-      "uk": "Прийменник: 'mit' завжди вимагає DATIV (mit dem Bus, mit Freunden). Вказує на спільність або засіб."
+      "uk": "Прийменник: 'mit' завжди вимагає DATIV (mit dem Bus, mit Freunden). Вказує на спільність або засіб.",
+      "title": {
+        "tr": "💡 Edat Kuralı: Dativ (İsmin -e Hali) Gerektirir",
+        "en": "💡 Preposition Rule: Governs Dative Case",
+        "ar": "💡 قاعدة حرف الجر: يجر بالـ Dativ دائمًا",
+        "uk": "💡 Правило прийменника: Завжди вимагає Dativ"
+      }
     },
     "examples": [
       {
@@ -9750,7 +11244,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Mitarbeiter'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Mitarbeiter'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Mitarbeiter'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Mitarbeiter'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Mitarbeiter'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Mitarbeiter)",
+        "en": "💡 Noun Structure (der Mitarbeiter)",
+        "ar": "💡 بنية الاسم (der Mitarbeiter)",
+        "uk": "💡 Структура іменника (der Mitarbeiter)"
+      }
     },
     "examples": [
       {
@@ -9786,10 +11286,16 @@ window.READING_LEXICON = {
     "example_ar": "يقدر الموظفون والموظفات توفير وقت التنقل إلى العمل.",
     "example_uk": "Співробітниці та співробітники цінують відсутність дороги на роботу.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Mitarbeiterinnen'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Mitarbeiterinnen'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Mitarbeiterinnen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Mitarbeiterinnen'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Dişil Çoğul Eki (die Mitarbeiterin ➔ Mitarbeiterinnen)",
+        "en": "💡 Noun Declension: Female Plural Suffix",
+        "ar": "💡 تصريف الأسماء: جمع المؤنث (الموظفات)",
+        "uk": "💡 Творення множини жіночого роду (співробітниці)"
+      },
+      "tr": "Dişil isim çoğulu: 'die Mitarbeiterin' çoğulunda sonuna '-nen' takısı alır ('Mitarbeiterinnen und Mitarbeiter' = kadın ve erkek çalışanlar).",
+      "en": "Feminine plural formation: 'die Mitarbeiterin' adds '-nen' in plural: Mitarbeiterinnen und Mitarbeiter (female and male employees).",
+      "ar": "جمع المؤنث: يجمع الاسم 'die Mitarbeiterin' بـ '-nen': Mitarbeiterinnen und Mitarbeiter.",
+      "uk": "Творення множини: іменник 'die Mitarbeiterin' приймає закінчення '-nen': Mitarbeiterinnen und Mitarbeiter."
     },
     "examples": [
       {
@@ -9828,7 +11334,13 @@ window.READING_LEXICON = {
       "tr": "Dativ Plural kuralı: Almancada tüm çoğul isimler Dativ (ismin -e hali) durumunda sonlarına '-n' takısı alır (der Mitbürger -> die Mitbürger -> den Mitbürgern). 'von' edatı Dativ gerektirdiği için kelime '-n' almıştır.",
       "en": "Dative Plural rule: In German, all plural nouns take an '-n' suffix in the Dative case (unless they already end in -s or -n). Triggered here by the preposition 'von'.",
       "ar": "قاعدة الـ Dativ للجمع: تأخذ جميع أسماء الجمع في الألمانية لاحقة '-n' في حالة الـ Dativ. حرف الجر 'von' هو من يجرها بالـ Dativ.",
-      "uk": "Правило Dativ у множині: у німецькій мові всі іменники у множині в давальному відмінку отримують закінчення '-n'. Прийменник 'von' вимагає Dativ."
+      "uk": "Правило Dativ у множині: у німецькій мові всі іменники у множині в давальному відмінку отримують закінчення '-n'. Прийменник 'von' вимагає Dativ.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -9874,7 +11386,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'mittlerweile' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'mittlerweile' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'mittlerweile' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'mittlerweile' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'mittlerweile' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (mittlerweile)",
+        "en": "💡 Adverb (mittlerweile)",
+        "ar": "💡 ظرف (mittlerweile)",
+        "uk": "💡 Прислівник (mittlerweile)"
+      }
     },
     "examples": [
       {
@@ -9913,7 +11431,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi: 'den monatlichen Abschlag' yapısında maskulin akkusativ 'den' sonrası sıfat '-en' takısı alır.",
       "en": "Adjective declension: Takes '-en' following masculine accusative article 'den'.",
       "ar": "تصريف الصفات: تأخذ الصفة '-en' بعد أداة النصب 'den'.",
-      "uk": "Відмінювання прикметників: приймає '-en' після артикля 'den'."
+      "uk": "Відмінювання прикметників: приймає '-en' після артикля 'den'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
     },
     "examples": [
       {
@@ -9952,7 +11476,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Monatsanfänge'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Monatsanfänge'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Monatsanfänge'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Monatsanfänge'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Monatsanfänge'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Monatsanfang)",
+        "en": "💡 Noun Structure (der Monatsanfang)",
+        "ar": "💡 بنية الاسم (der Monatsanfang)",
+        "uk": "💡 Структура іменника (der Monatsanfang)"
+      }
     },
     "examples": [
       {
@@ -9988,10 +11518,16 @@ window.READING_LEXICON = {
     "example_ar": "السداد على ثلاثة أقساط شهرية متساوية.",
     "example_uk": "Сплатити трьома рівними щомісячними платежами.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Monatsraten'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Monatsraten'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Monatsraten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Monatsraten'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Bileşik İsim Çoğulu (die Monatsraten)",
+        "en": "💡 Noun Declension: Compound Plural (die Monatsraten)",
+        "ar": "💡 تصريف الأسماء: جمع اسم مركب (الأقساط الشهرية)",
+        "uk": "💡 Творення множини: Складний іменник (щомісячні внески)"
+      },
+      "tr": "Bileşik isim çoğulu: 'der Monat' + 'die Rate' (taksit/oran). Çoğulda son kelimeye göre '-n' alır: 'die Monatsraten' ('in drei gleichen Monatsraten' = üç eşit aylık taksitle).",
+      "en": "Compound plural: 'der Monat' + 'die Rate' (plural: 'die Raten'). Takes '-n': 'in drei gleichen Monatsraten' (in three equal monthly installments).",
+      "ar": "جمع اسم مركب: يتبع الكلمة الأخيرة 'die Rate' ويجمع بـ '-n' ('in drei Monatsraten').",
+      "uk": "Множина складного іменника: утворюється за останнім словом 'die Rate' (множина 'die Raten')."
     },
     "examples": [
       {
@@ -10030,7 +11566,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'morgens' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'morgens' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'morgens' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'morgens' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'morgens' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (morgens)",
+        "en": "💡 Adverb (morgens)",
+        "ar": "💡 ظرف (morgens)",
+        "uk": "💡 Прислівник (morgens)"
+      }
     },
     "examples": [
       {
@@ -10069,7 +11611,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Musik)",
+        "en": "💡 Noun Structure (die Musik)",
+        "ar": "💡 بنية الاسم (die Musik)",
+        "uk": "💡 Структура іменника (die Musik)"
+      }
     },
     "examples": [
       {
@@ -10105,10 +11653,16 @@ window.READING_LEXICON = {
     "example_ar": "يجب أخذ استراحة بعد ست ساعات.",
     "example_uk": "Після шести годин обов'язково треба зробити перерву.",
     "grammar": {
-      "tr": "Fiil (Verb): 'müssen' temel eylem bildiren fiildir.",
-      "en": "Verb: 'müssen' denotes action, process, or state.",
-      "ar": "فعل: 'müssen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'müssen' позначає дію або стан."
+      "title": {
+        "tr": "💡 Modal Fiil Çekimi: Präsens Tekil (müssen ➔ muss)",
+        "en": "💡 Modal Verb Form: Present Singular (müssen ➔ muss)",
+        "ar": "💡 تصريف الفعل المساعد: المضارع للمفرد (müssen ➔ muss)",
+        "uk": "💡 Модальне дієслово: Теперішній час однини (müssen ➔ muss)"
+      },
+      "tr": "Modal fiil tekil çekimi: 'müssen' (zorunda olmak) fiili 1. ve 3. tekil şahısta umlautını kaybeder ('u') ve şahıs eki almaz ('er/sie/es muss'). Metinde: 'muss eine Pause eingelegt werden' (bir mola verilmelidir).",
+      "en": "Modal verb singular conjugation: 'müssen' (must / to have to) loses its umlaut and takes no personal ending in 1st/3rd singular ('er/sie/es muss'). In text: 'muss eine Pause eingelegt werden'.",
+      "ar": "تصريف الفعل المساعد: يفقد الفعل 'müssen' الإمالة ولا يأخذ لاحقة مع المفرد الغائب ('muss'). في النص: 'muss eine Pause eingelegt werden' (يجب أخذ استراحة).",
+      "uk": "Відмінювання модального дієслова: 'müssen' (мусити) втрачає умлаут і не має особового закінчення в однині ('muss'). У тексті: 'muss eine Pause eingelegt werden'."
     },
     "examples": [
       {
@@ -10144,10 +11698,16 @@ window.READING_LEXICON = {
     "example_ar": "اضطررت للأسف إلى ملاحظة تسرب المياه من الخزان.",
     "example_uk": "На жаль, мені довелося виявити, що бак для води протікає.",
     "grammar": {
-      "tr": "Fiil (Verb): 'müssen' temel eylem bildiren fiildir.",
-      "en": "Verb: 'müssen' denotes action, process, or state.",
-      "ar": "فعل: 'müssen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'müssen' позначає дію або стан."
+      "title": {
+        "tr": "💡 Modal Fiil Çekimi: Präteritum / Geçmiş Zaman (müssen ➔ musste)",
+        "en": "💡 Modal Verb Form: Präteritum / Past Tense (müssen ➔ musste)",
+        "ar": "💡 ماضي الفعل المساعد: الماضي البسيط (müssen ➔ musste)",
+        "uk": "💡 Модальне дієслово: Минулий час Präteritum (müssen ➔ musste)"
+      },
+      "tr": "Modal fiil geçmiş zamanı (Präteritum): 'müssen' fiilinin geçmiş zaman çekimidir. Kök umlautı düşer ve '-te' geçmiş zaman eki gelir ('ich musste leider feststellen' = ne yazık ki tespit etmek zorunda kaldım / fark ettim).",
+      "en": "Modal verb past tense (Präteritum): Past tense form of 'müssen'. The umlaut is dropped and '-te' past suffix is added ('ich musste feststellen' = I unfortunately had to realize).",
+      "ar": "الماضي البسيط للفعل المساعد (Präteritum): تحذف الإمالة وتضاف اللاحقة '-te' للفعل 'müssen' ('ich musste feststellen' = اضطررت للأسف إلى ملاحظة).",
+      "uk": "Минулий час модального дієслова (Präteritum): умлаут зникає, додається суфікс '-te' ('ich musste feststellen' = я змушений був констатувати)."
     },
     "examples": [
       {
@@ -10186,7 +11746,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Müllabfuhr)",
+        "en": "💡 Noun Structure (die Müllabfuhr)",
+        "ar": "💡 بنية الاسم (die Müllabfuhr)",
+        "uk": "💡 Структура іменника (die Müllabfuhr)"
+      }
     },
     "examples": [
       {
@@ -10225,7 +11791,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'müssen' temel eylem bildiren fiildir.",
       "en": "Verb: 'müssen' denotes action, process, or state.",
       "ar": "فعل: 'müssen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'müssen' позначає дію або стан."
+      "uk": "Дієслово: 'müssen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (müssen)",
+        "en": "💡 Verb Structure (müssen)",
+        "ar": "💡 بنية الفعل (müssen)",
+        "uk": "💡 Структура дієслова (müssen)"
+      }
     },
     "examples": [
       {
@@ -10264,7 +11836,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'nach' edatı her zaman DATIV gerektirir. 'Sonra' veya 'göre' anlamı katar (nach aktuellen Umfragen, nach der Arbeit).",
       "en": "Preposition: 'nach' always governs the DATIVE case. Means 'after' or 'according to' (nach aktuellen Umfragen, nach der Arbeit).",
       "ar": "حرف جر: 'nach' يتطلب دائمًا حالة الـ DATIV. يعني 'بعد' أو 'وفقًا لـ'.",
-      "uk": "Прийменник: 'nach' завжди вимагає DATIV. Означає 'після' або 'згідно з'."
+      "uk": "Прийменник: 'nach' завжди вимагає DATIV. Означає 'після' або 'згідно з'.",
+      "title": {
+        "tr": "💡 Edat Kuralı: Dativ (İsmin -e Hali) Gerektirir",
+        "en": "💡 Preposition Rule: Governs Dative Case",
+        "ar": "💡 قاعدة حرف الجر: يجر بالـ Dativ دائمًا",
+        "uk": "💡 Правило прийменника: Завжди вимагає Dativ"
+      }
     },
     "examples": [
       {
@@ -10300,10 +11878,16 @@ window.READING_LEXICON = {
     "example_ar": "تضاف إلى ذلك الدفعات الشهرية المسبقة لفواتير الخدمات المشتركة.",
     "example_uk": "До цього додаються щомісячні авансові комунальні платежі.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Nebenkostenvorauszahlungen'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Nebenkostenvorauszahlungen'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Nebenkostenvorauszahlungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Nebenkostenvorauszahlungen'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Bileşik İsim Çoğulu (-ung ➔ -ungen)",
+        "en": "💡 Noun Declension: Compound Plural (-ung ➔ -ungen)",
+        "ar": "💡 تصريف الأسماء: جمع اسم مركب (دفعات مسبقة للمصاريف الإضافية)",
+        "uk": "💡 Творення множини: Складний іменник на -ung"
+      },
+      "tr": "Bileşik isim çoğulu: 'die Nebenkosten' (yan giderler) + 'die Vorauszahlung' (avans ödeme). '-ung' ile bittiği için çoğulda '-en' takısı alır (Nebenkostenvorauszahlungen = yan gider avans ödemeleri).",
+      "en": "Compound plural: 'Nebenkosten' (utilities) + 'Vorauszahlung' (advance payment). Nouns ending in '-ung' take '-en' in the plural.",
+      "ar": "جمع اسم مركب: ينتهي بـ '-ung' فيجمع بلاحقة '-en' (دفعات مسبقة لمصاريف السكن الإضافية).",
+      "uk": "Множина складного іменника: закінчується на '-ung', тому у множині приймає '-en' (авансові платежі за комунальні послуги)."
     },
     "examples": [
       {
@@ -10342,7 +11926,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'nehmen' temel eylem bildiren fiildir.",
       "en": "Verb: 'nehmen' denotes action, process, or state.",
       "ar": "فعل: 'nehmen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'nehmen' позначає дію або стан."
+      "uk": "Дієслово: 'nehmen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (nehmen)",
+        "en": "💡 Verb Structure (nehmen)",
+        "ar": "💡 بنية الفعل (nehmen)",
+        "uk": "💡 Структура дієслова (nehmen)"
+      }
     },
     "examples": [
       {
@@ -10378,10 +11968,16 @@ window.READING_LEXICON = {
     "example_ar": "لا يجوز أن يتجاوز مبلغ التأمين ثلاثة أشهر من صافي الإيجار الأساسي.",
     "example_uk": "Застава не повинна перевищувати трьох чистих щомісячних орендних плат.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Nettokaltmieten'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Nettokaltmieten'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Nettokaltmieten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Nettokaltmieten'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Bileşik İsim Çoğulu (die Nettokaltmieten)",
+        "en": "💡 Noun Declension: Compound Plural (die Nettokaltmieten)",
+        "ar": "💡 تصريف الأسماء: جمع اسم مركب (صافي الإيجارات الأساسية)",
+        "uk": "💡 Творення множини: Складний іменник (чисті базові орендні плати)"
+      },
+      "tr": "Bileşik isim çoğulu: 'netto' + 'kalt' + 'die Miete' (kira). Çoğulda '-n' takısı alır ('höchstens drei Nettokaltmieten' = en fazla üç net soğuk kira bedeli).",
+      "en": "Compound plural: 'netto' + 'kalt' + 'die Miete'. Takes '-n' in plural: 'drei Nettokaltmieten' (three net cold rents).",
+      "ar": "جمع اسم مركب: يتبع 'die Miete' ويجمع بـ '-n' ('drei Nettokaltmieten').",
+      "uk": "Множина складного іменника: визначається за 'die Miete' (множина 'die Mieten'): 'drei Nettokaltmieten'."
     },
     "examples": [
       {
@@ -10417,10 +12013,16 @@ window.READING_LEXICON = {
     "example_ar": "تكوين صداقات جديدة.",
     "example_uk": "Заводити нових друзів.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'neu' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'neu' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'neu' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'neu' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Akkusativ Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Accusative Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة لجمع Akkusativ)",
+        "uk": "💡 Чому закінчення \"-e\"? (Прикметник у знахідному множини)"
+      },
+      "tr": "Güçlü sıfat çekimi (Akkusativ Plural): 'neue Freundschaften schließen' yapısında çoğul isim önünde artikel olmadığı için sıfat Akkusativ Plural '-e' takısı almıştır.",
+      "en": "Strong adjective declension (Accusative plural): In 'neue Freundschaften schließen', plural noun without article takes strong Accusative plural '-e'.",
+      "ar": "تصريف قوي لجمع النصب: تأخذ الصفة لاحقة النصب للجمع بدون أداة '-e' في 'neue Freundschaften'.",
+      "uk": "Сильна відміна: перед іменником у множині без артикля прикметник приймає закінчення '-e' у знахідному відмінку."
     },
     "examples": [
       {
@@ -10459,7 +12061,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Neuzugezogenen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Neuzugezogenen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Neuzugezogenen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Neuzugezogenen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Neuzugezogenen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Neuzugezogene)",
+        "en": "💡 Noun Structure (der Neuzugezogene)",
+        "ar": "💡 بنية الاسم (der Neuzugezogene)",
+        "uk": "💡 Структура іменника (der Neuzugezogene)"
+      }
     },
     "examples": [
       {
@@ -10498,7 +12106,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'nicht' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'nicht' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'nicht' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'nicht' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'nicht' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (nicht)",
+        "en": "💡 Adverb (nicht)",
+        "ar": "💡 ظرف (nicht)",
+        "uk": "💡 Прислівник (nicht)"
+      }
     },
     "examples": [
       {
@@ -10537,7 +12151,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'noch' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'noch' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'noch' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'noch' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'noch' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (noch)",
+        "en": "💡 Adverb (noch)",
+        "ar": "💡 ظرف (noch)",
+        "uk": "💡 Прислівник (noch)"
+      }
     },
     "examples": [
       {
@@ -10576,7 +12196,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'nur' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'nur' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'nur' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'nur' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'nur' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (nur)",
+        "en": "💡 Adverb (nur)",
+        "ar": "💡 ظرف (nur)",
+        "uk": "💡 Прислівник (nur)"
+      }
     },
     "examples": [
       {
@@ -10615,7 +12241,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'nutzen' temel eylem bildiren fiildir.",
       "en": "Verb: 'nutzen' denotes action, process, or state.",
       "ar": "فعل: 'nutzen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'nutzen' позначає дію або стан."
+      "uk": "Дієслово: 'nutzen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (nutzen)",
+        "en": "💡 Verb Structure (nutzen)",
+        "ar": "💡 بنية الفعل (nutzen)",
+        "uk": "💡 Структура дієслова (nutzen)"
+      }
     },
     "examples": [
       {
@@ -10654,7 +12286,13 @@ window.READING_LEXICON = {
       "tr": "Bağlaç (Konjunktion): 'ob' cümleleri veya kelimeleri birbirine bağlar ve cümledeki fiil pozisyonunu belirler.",
       "en": "Conjunction: 'ob' connects clauses or words and dictates word order.",
       "ar": "حرف عطف أو رابط: 'ob' يربط بين الجمل ويحدد موقع الفعل.",
-      "uk": "Сполучник: 'ob' з'єднує речення або слова і визначає позицію дієслова."
+      "uk": "Сполучник: 'ob' з'єднує речення або слова і визначає позицію дієслова.",
+      "title": {
+        "tr": "💡 Bağlaç Kuralı: Fiil Sonda (Nebensatz)",
+        "en": "💡 Subordinating Conjunction: Verb-Final Order",
+        "ar": "💡 رابط جملة جانبية: الفعل في نهاية الجملة",
+        "uk": "💡 Підрядний сполучник: Дієслово в кінці речення"
+      }
     },
     "examples": [
       {
@@ -10693,7 +12331,13 @@ window.READING_LEXICON = {
       "tr": "Bağlaç (Konjunktion): 'oder' cümleleri veya kelimeleri birbirine bağlar ve cümledeki fiil pozisyonunu belirler.",
       "en": "Conjunction: 'oder' connects clauses or words and dictates word order.",
       "ar": "حرف عطف أو رابط: 'oder' يربط بين الجمل ويحدد موقع الفعل.",
-      "uk": "Сполучник: 'oder' з'єднує речення або слова і визначає позицію дієслова."
+      "uk": "Сполучник: 'oder' з'єднує речення або слова і визначає позицію дієслова.",
+      "title": {
+        "tr": "💡 Bağlaç Kuralı: Fiil Sonda (Nebensatz)",
+        "en": "💡 Subordinating Conjunction: Verb-Final Order",
+        "ar": "💡 رابط جملة جانبية: الفعل في نهاية الجملة",
+        "uk": "💡 Підрядний сполучник: Дієслово в кінці речення"
+      }
     },
     "examples": [
       {
@@ -10732,7 +12376,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'ohne' edatı her zaman AKKUSATIV (ismin -i hali) gerektirir (ohne ein solches Engagement).",
       "en": "Preposition: 'ohne' always governs the ACCUSATIVE case (ohne ein solches Engagement).",
       "ar": "حرف جر: 'ohne' يتطلب دائمًا حالة الـ AKKUSATIV (المنصوب).",
-      "uk": "Прийменник: 'ohne' завжди вимагає знахідного відмінка (AKKUSATIV)."
+      "uk": "Прийменник: 'ohne' завжди вимагає знахідного відмінка (AKKUSATIV).",
+      "title": {
+        "tr": "💡 Edat Kuralı: Akkusativ (İsmin -i Hali) Gerektirir",
+        "en": "💡 Preposition Rule: Governs Accusative Case",
+        "ar": "💡 قاعدة حرف الجر: ينصب بالـ Akkusativ دائمًا",
+        "uk": "💡 Правило прийменника: Завжди вимагає Akkusativ"
+      }
     },
     "examples": [
       {
@@ -10771,7 +12421,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi: 'online' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
       "en": "Adjective declension: 'online' takes the '-e' ending before a feminine singular or plural noun.",
       "ar": "تصريف الصفات: تأخذ الصفة 'online' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'online' приймає закінчення '-e'."
+      "uk": "Відмінювання прикметників: прикметник 'online' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
     },
     "examples": [
       {
@@ -10810,7 +12466,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Onlineanzeigen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Onlineanzeigen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Onlineanzeigen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Onlineanzeigen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Onlineanzeigen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Onlineanzeige)",
+        "en": "💡 Noun Structure (die Onlineanzeige)",
+        "ar": "💡 بنية الاسم (die Onlineanzeige)",
+        "uk": "💡 Структура іменника (die Onlineanzeige)"
+      }
     },
     "examples": [
       {
@@ -10846,10 +12508,16 @@ window.READING_LEXICON = {
     "example_ar": "بشرط أن تكون الشقة قد سُلمت في حالة سليمة ومطابقة للشروط.",
     "example_uk": "За умови, що квартира була передана в належному стані.",
     "grammar": {
-      "tr": "Sıfat (Adjektiv): 'ordnungsgemäß' niteleme veya durum sıfatıdır.",
-      "en": "Adjective: 'ordnungsgemäß' describes quality or state.",
-      "ar": "صفة: 'ordnungsgemäß' تصف الحالة أو الخاصية.",
-      "uk": "Прикметник: 'ordnungsgemäß' описує ознаку або стан."
+      "title": {
+        "tr": "💡 Neden \"-em\" takısı aldı? (Dativ Maskulin Sıfat Çekimi)",
+        "en": "💡 Why the \"-em\" ending? (Dative Masculine Strong Adjective)",
+        "ar": "💡 لماذا لاحقة \"-em\"؟ (تصريف قوي لمذكر Dativ)",
+        "uk": "💡 Чому закінчення \"-em\"? (Сильна відміна у Dativ чоловічого роду)"
+      },
+      "tr": "Güçlü sıfat çekimi (Dativ Maskulin): 'in ordnungsgemäßem Zustand' yapısında 'der Zustand' maskulin bir isimdir. 'in' edatı bulunma (Dativ) gerektirir; önünde artikel olmadığı için sıfat belirli artikelin ('dem') işlevini üstlenerek güçlü çekim '-em' takısı almıştır.",
+      "en": "Strong adjective declension (Dative masculine): In 'in ordnungsgemäßem Zustand' (in proper condition), 'in' governs Dative. Because there is no article, the adjective carries the case signal of 'dem' with the strong ending '-em'.",
+      "ar": "تصريف قوي للمذكر بالـ Dativ: في 'in ordnungsgemäßem Zustand'، حرف الجر 'in' يتطلب Dativ. لعدم وجود أداة تعريف، تأخذ الصفة لاحقة 'dem' القوية وهي '-em'.",
+      "uk": "Сильна відміна (Dativ чоловічого роду): у 'in ordnungsgemäßem Zustand' прийменник місця 'in' вимагає Dativ. Без артикля прикметник бере сильне закінчення '-em' (сигнал артикля 'dem')."
     },
     "examples": [
       {
@@ -10888,7 +12556,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Orte'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Orte'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Orte'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Orte'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Orte'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Ort)",
+        "en": "💡 Noun Structure (der Ort)",
+        "ar": "💡 بنية الاسم (der Ort)",
+        "uk": "💡 Структура іменника (der Ort)"
+      }
     },
     "examples": [
       {
@@ -10927,7 +12601,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Pakete'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Pakete'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Pakete'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Pakete'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Pakete'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Paket)",
+        "en": "💡 Noun Structure (das Paket)",
+        "ar": "💡 بنية الاسم (das Paket)",
+        "uk": "💡 Структура іменника (das Paket)"
+      }
     },
     "examples": [
       {
@@ -10966,7 +12646,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Pausen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Pausen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Pausen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Pausen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Pausen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Pause)",
+        "en": "💡 Noun Structure (die Pause)",
+        "ar": "💡 بنية الاسم (die Pause)",
+        "uk": "💡 Структура іменника (die Pause)"
+      }
     },
     "examples": [
       {
@@ -11005,7 +12691,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Pendler'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Pendler'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Pendler'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Pendler'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Pendler'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Pendler)",
+        "en": "💡 Noun Structure (der Pendler)",
+        "ar": "💡 بنية الاسم (der Pendler)",
+        "uk": "💡 Структура іменника (der Pendler)"
+      }
     },
     "examples": [
       {
@@ -11044,7 +12736,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi: 'vor personellen Herausforderungen' yapısında 'vor' edatı Dativ çoğul gerektirir; artikelsiz sıfat '-en' takısı almıştır.",
       "en": "Adjective declension: 'vor' governs Dative plural here; the adjective without article takes '-en'.",
       "ar": "تصريف الصفات: حرف الجر 'vor' يتطلب Dativ للجمع هنا؛ والصفة بدون أداة تأخذ '-en'.",
-      "uk": "Відмінювання прикметників: прийменник 'vor' вимагає Dativ множини; прикметник без артикля приймає '-en'."
+      "uk": "Відмінювання прикметників: прийменник 'vor' вимагає Dativ множини; прикметник без артикля приймає '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
     },
     "examples": [
       {
@@ -11083,7 +12781,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Preise'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Preise'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Preise'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Preise'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Preise'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
     },
     "examples": [
       {
@@ -11122,7 +12826,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'pro' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
       "en": "Preposition: 'pro' governs the grammatical case (Dative/Accusative) of the following noun.",
       "ar": "حرف جر: 'pro' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
-      "uk": "Прийменник: 'pro' визначає відмінок іменника (Dativ чи Akkusativ)."
+      "uk": "Прийменник: 'pro' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
     },
     "examples": [
       {
@@ -11158,10 +12868,16 @@ window.READING_LEXICON = {
     "example_ar": "للحد من هذه المشاكل والتغلب عليها.",
     "example_uk": "Для протидії цим проблемам.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Probleme'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Probleme'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Probleme'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Probleme'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-en\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-en\"? (Давальний відмінок множини)"
+      },
+      "tr": "Dativ Plural: 'das Problem' çoğulu 'die Probleme'dir. 'entgegenwirken' (önlem almak/karşı koymak) fiili her zaman Dativ bir nesne talep eder ('diesen Problemen entgegenwirken' = bu sorunların önüne geçmek). Çoğul isim '-n' almıştır.",
+      "en": "Dative plural: Plural of 'das Problem' is 'die Probleme'. The verb 'entgegenwirken' (to counteract) always governs a Dative object: 'diesen Problemen entgegenwirken'. Adds '-n'.",
+      "ar": "جمع Dativ: جمع 'das Problem' هو 'die Probleme'. الفعل 'entgegenwirken' يتطلب دائمًا مفعولاً في حالة الـ Dativ، لذا يضاف '-n' لاسم الجمع.",
+      "uk": "Dativ множини: множина від 'das Problem' — 'die Probleme'. Дієслово 'entgegenwirken' завжди вимагає Dativ: 'diesen Problemen entgegenwirken'."
     },
     "examples": [
       {
@@ -11197,10 +12913,16 @@ window.READING_LEXICON = {
     "example_ar": "تقديم مشاريع مرنة للراغبين في التطوع.",
     "example_uk": "Пропонувати гнучкі проєкти для волонтерів.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Projekte'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Projekte'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Projekte'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Projekte'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Çoğul Eki (das Projekt ➔ die Projekte)",
+        "en": "💡 Noun Declension: Plural Suffix (das Projekt ➔ die Projekte)",
+        "ar": "💡 تصريف الأسماء: صيغة الجمع (المشاريع)",
+        "uk": "💡 Творення множини: das Projekt ➔ die Projekte"
+      },
+      "tr": "Çoğul eki: 'das Projekt' nötr bir isimdir ve çoğulda sonuna '-e' takısı alır (die Projekte; 'flexible Projekte' = esnek projeler).",
+      "en": "Plural formation: 'das Projekt' is neuter and takes '-e' in plural: die Projekte (flexible projects).",
+      "ar": "صيغة الجمع: الاسم 'das Projekt' محايد ويجمع بـ '-e' (المشاريع).",
+      "uk": "Творення множини: 'das Projekt' середнього роду утворює множину на '-e' (die Projekte)."
     },
     "examples": [
       {
@@ -11239,7 +12961,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Raten'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Raten'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Raten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Raten'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Raten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Rate)",
+        "en": "💡 Noun Structure (die Rate)",
+        "ar": "💡 بنية الاسم (die Rate)",
+        "uk": "💡 Структура іменника (die Rate)"
+      }
     },
     "examples": [
       {
@@ -11278,7 +13006,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Rechnungen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Rechnungen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Rechnungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Rechnungen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Rechnungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Rechnung)",
+        "en": "💡 Noun Structure (die Rechnung)",
+        "ar": "💡 بنية الاسم (die Rechnung)",
+        "uk": "💡 Структура іменника (die Rechnung)"
+      }
     },
     "examples": [
       {
@@ -11317,7 +13051,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Rechte'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Rechte'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Rechte'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Rechte'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Rechte'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Recht)",
+        "en": "💡 Noun Structure (das Recht)",
+        "ar": "💡 بنية الاسم (das Recht)",
+        "uk": "💡 Структура іменника (das Recht)"
+      }
     },
     "examples": [
       {
@@ -11356,7 +13096,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Regeln'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Regeln'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Regeln'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Regeln'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Regeln'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Regel)",
+        "en": "💡 Noun Structure (die Regel)",
+        "ar": "💡 بنية الاسم (die Regel)",
+        "uk": "💡 Структура іменника (die Regel)"
+      }
     },
     "examples": [
       {
@@ -11392,10 +13138,16 @@ window.READING_LEXICON = {
     "example_ar": "مهام تدريبية دورية في النادي الرياضي.",
     "example_uk": "Регулярні тренерські обов'язки в клубі.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'regelmäßig' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'regelmäßig' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'regelmäßig' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'regelmäßig' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Akkusativ Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Accusative Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة لجمع Akkusativ)",
+        "uk": "💡 Чому закінчення \"-e\"? (Прикметник у знахідному множини)"
+      },
+      "tr": "Güçlü sıfat çekimi: 'regelmäßige Traineraufgaben übernehmen' yapısında artikelsiz çoğul sıfat Akkusativ Plural '-e' takısı alır.",
+      "en": "Strong adjective declension: In 'regelmäßige Traineraufgaben', plural noun without article takes strong Accusative plural '-e'.",
+      "ar": "تصريف قوي: تأخذ الصفة لاحقة النصب للجمع بدون أداة '-e' في 'regelmäßige Traineraufgaben'.",
+      "uk": "Сильна відміна: у знахідному відмінку множини без артикля прикметник отримує '-e'."
     },
     "examples": [
       {
@@ -11431,10 +13183,16 @@ window.READING_LEXICON = {
     "example_ar": "تنظم لائحة السكن مواعيد الهدوء.",
     "example_uk": "Правила будинку регулюють години тиші.",
     "grammar": {
-      "tr": "Fiil (Verb): 'regeln' temel eylem bildiren fiildir.",
-      "en": "Verb: 'regeln' denotes action, process, or state.",
-      "ar": "فعل: 'regeln' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'regeln' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Präsens 3. Tekil Şahıs (regeln)",
+        "en": "💡 Verb Conjugation: 3rd Person Singular Present (regeln)",
+        "ar": "💡 تصريف الفعل: المضارع للمفرد الغائب (regeln)",
+        "uk": "💡 Дієвідмінювання: 3-тя особа однини теперішнього часу (regeln)"
+      },
+      "tr": "Düzenli fiil çekimi: 'regeln' (düzenlemek / kurala bağlamak) fiilinin 3. tekil şahıs çekimidir ('Die Hausordnung regelt die Ruhezeiten' = Apartman kuralları dinlenme saatlerini düzenler).",
+      "en": "Regular verb conjugation: 3rd person singular present of 'regeln' (to regulate/govern). In text: 'Die Hausordnung regelt die Ruhezeiten'.",
+      "ar": "تصريف فعل قياسي: صيغة المفرد الغائب من الفعل 'regeln' (ينظم). في النص: 'Die Hausordnung regelt die Ruhezeiten'.",
+      "uk": "Правильне дієслово: 3-тя особа однини від 'regeln' (регулювати). У тексті: 'Die Hausordnung regelt die Ruhezeiten'."
     },
     "examples": [
       {
@@ -11473,7 +13231,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi: 'den reinen Preis' yapısında maskulin akkusativ 'den' belirli artikelinden sonra sıfat '-en' takısı alır.",
       "en": "Adjective declension: In 'den reinen Preis', the adjective takes '-en' after masculine accusative definite article 'den'.",
       "ar": "تصريف الصفات: في 'den reinen Preis'، تأخذ الصفة '-en' بعد أداة النصب للمذكر 'den'.",
-      "uk": "Відмінювання прикметників: у 'den reinen Preis' прикметник приймає '-en' після означеного артикля 'den'."
+      "uk": "Відмінювання прикметників: у 'den reinen Preis' прикметник приймає '-en' після означеного артикля 'den'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
     },
     "examples": [
       {
@@ -11509,10 +13273,16 @@ window.READING_LEXICON = {
     "example_ar": "العمل من المنزل في باقي أيام الأسبوع.",
     "example_uk": "Працювати з дому в решту днів.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'restlich' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
-      "en": "Adjective declension: 'restlich' is inflected with the '-en' ending in Dative or Accusative case.",
-      "ar": "تصريف الصفات: الصفة 'restlich' تصرف في الجملة بلاحقة '-en'.",
-      "uk": "Відмінювання прикметників: прикметник 'restlich' отримує закінчення '-en'."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Dativ Plural Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Dative Plural Adjective)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف صفة لجمع Dativ)",
+        "uk": "💡 Чому закінчення \"-en\"? (Прикметник у Dativ Plural)"
+      },
+      "tr": "Zayıf sıfat çekimi (Dativ Plural): 'an den restlichen Tagen' yapısında 'den' Dativ çoğul artikelinden sonra sıfat '-en' takısı alır.",
+      "en": "Weak adjective declension (Dative plural): In 'an den restlichen Tagen', takes '-en' after Dative plural article 'den'.",
+      "ar": "تصريف ضعيف: تأخذ الصفة '-en' بعد أداة الـ Dativ للجمع 'den'.",
+      "uk": "Слабка відміна: прикметник приймає '-en' після артикля давального відмінка множини 'den'."
     },
     "examples": [
       {
@@ -11548,10 +13318,16 @@ window.READING_LEXICON = {
     "example_ar": "العمل من المنزل ينطوي على مخاطر محتملة.",
     "example_uk": "Робота вдома також приховує певні ризики.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Risiken'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Risiken'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Risiken'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Risiken'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Yabancı Kökenli Düzensiz Çoğul (das Risiko ➔ Risiken)",
+        "en": "💡 Noun Declension: Foreign Irregular Plural (das Risiko ➔ Risiken)",
+        "ar": "💡 تصريف الأسماء: جمع شاذ لاسم دخيل (das Risiko ➔ Risiken)",
+        "uk": "💡 Творення множини: Неправильна множина (das Risiko ➔ Risiken)"
+      },
+      "tr": "Düzensiz çoğul: 'das Risiko' (risk) İtalyanca/Latince kökenli nötr bir isimdir. Çoğul yapılırken sonundaki '-o' düşer ve '-en' eki gelir: die Risiken ('birgt auch Risiken' = riskler de barındırır).",
+      "en": "Irregular foreign plural: 'das Risiko' (risk) drops the terminal '-o' and takes the plural suffix '-en': die Risiken ('birgt auch Risiken').",
+      "ar": "جمع شاذ لاسم دخيل: يحذف حرف '-o' من 'das Risiko' ويضاف '-en' في الجمع: die Risiken (مخاطر).",
+      "uk": "Неправильна іншомовна множина: іменник 'das Risiko' втрачає кінцеве '-o' та приймає закінчення '-en': die Risiken (ризики)."
     },
     "examples": [
       {
@@ -11587,10 +13363,16 @@ window.READING_LEXICON = {
     "example_ar": "يُحظر الضجيج المقلق للراحة.",
     "example_uk": "Шум, що порушує спокій, заборонено.",
     "grammar": {
-      "tr": "Sıfat çekimi / Karşılaştırma: 'ruhestörend' sıfatı maskulin nominativ halinde veya karşılaştırma (komparativ) derecesindedir.",
-      "en": "Adjective declension / Comparative: 'ruhestörend' is either in the masculine nominative or comparative form.",
-      "ar": "تصريف الصفات أو المقارنة: الصفة 'ruhestörend' بصيغة المذكر أو المقارنة.",
-      "uk": "Відмінювання або вищий ступінь: прикметник 'ruhestörend' у чоловічому роді або формі порівняння."
+      "title": {
+        "tr": "💡 Neden \"-er\" takısı aldı? (Nominativ Maskulin Sıfat Çekimi)",
+        "en": "💡 Why the \"-er\" ending? (Nominative Masculine Strong Adjective)",
+        "ar": "💡 لماذا لاحقة \"-er\"؟ (تصريف قوي لمذكر Nominativ)",
+        "uk": "💡 Чому закінчення \"-er\"? (Сильна відміна у називному чоловічого роду)"
+      },
+      "tr": "Güçlü sıfat çekimi (Nominativ Maskulin): 'der Lärm' maskulin bir isimdir. 'ruhestörender Lärm ist untersagt' cümlesinde önünde artikel olmadığı için sıfat 'der' artikelinin işaretini taşıyarak güçlü '-er' takısı almıştır.",
+      "en": "Strong adjective declension (Nominative masculine): 'der Lärm' is masculine. Without an article, the adjective carries the marker of 'der' with strong ending '-er': 'ruhestörender Lärm'.",
+      "ar": "تصريف قوي للمذكر في الرفع: لعدم وجود أداة قبل الاسم المذكر 'der Lärm'، تأخذ الصفة علامة الأداة '-er' في 'ruhestörender Lärm'.",
+      "uk": "Сильна відміна (називний відмінок чоловічого роду): перед іменником 'der Lärm' без артикля прикметник бере сильне закінчення '-er' (маркер артикля 'der')."
     },
     "examples": [
       {
@@ -11629,7 +13411,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Ruhezeiten'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Ruhezeiten'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Ruhezeiten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Ruhezeiten'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Ruhezeiten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Ruhezeit)",
+        "en": "💡 Noun Structure (die Ruhezeit)",
+        "ar": "💡 بنية الاسم (die Ruhezeit)",
+        "uk": "💡 Структура іменника (die Ruhezeit)"
+      }
     },
     "examples": [
       {
@@ -11668,7 +13456,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Ruhezeiten'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Ruhezeiten'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Ruhezeiten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Ruhezeiten'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Ruhezeiten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -11707,7 +13501,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'samt' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
       "en": "Preposition: 'samt' governs the grammatical case (Dative/Accusative) of the following noun.",
       "ar": "حرف جر: 'samt' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
-      "uk": "Прийменник: 'samt' визначає відмінок іменника (Dativ чи Akkusativ)."
+      "uk": "Прийменник: 'samt' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
     },
     "examples": [
       {
@@ -11746,7 +13546,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'schließen' temel eylem bildiren fiildir.",
       "en": "Verb: 'schließen' denotes action, process, or state.",
       "ar": "فعل: 'schließen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'schließen' позначає дію або стан."
+      "uk": "Дієслово: 'schließen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (schließen)",
+        "en": "💡 Verb Structure (schließen)",
+        "ar": "💡 بنية الفعل (schließen)",
+        "uk": "💡 Структура дієслова (schließen)"
+      }
     },
     "examples": [
       {
@@ -11785,7 +13591,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Schreibtische'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Schreibtische'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Schreibtische'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Schreibtische'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Schreibtische'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Schreibtisch)",
+        "en": "💡 Noun Structure (der Schreibtisch)",
+        "ar": "💡 بنية الاسم (der Schreibtisch)",
+        "uk": "💡 Структура іменника (der Schreibtisch)"
+      }
     },
     "examples": [
       {
@@ -11824,7 +13636,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi / Karşılaştırma: 'schwer' sıfatı maskulin nominativ halinde veya karşılaştırma (komparativ) derecesindedir.",
       "en": "Adjective declension / Comparative: 'schwer' is either in the masculine nominative or comparative form.",
       "ar": "تصريف الصفات أو المقارنة: الصفة 'schwer' بصيغة المذكر أو المقارنة.",
-      "uk": "Відмінювання або вищий ступінь: прикметник 'schwer' у чоловічому роді або формі порівняння."
+      "uk": "Відмінювання або вищий ступінь: прикметник 'schwer' у чоловічому роді або формі порівняння.",
+      "title": {
+        "tr": "💡 Neden \"-er\" takısı aldı? (Sıfat Çekimi / Komparativ)",
+        "en": "💡 Why the \"-er\" ending? (Adjective / Comparative)",
+        "ar": "💡 لماذا لاحقة \"-er\"؟ (تصريف الصفة أو المقارنة)",
+        "uk": "💡 Чому закінчення \"-er\"? (Відмінювання прикметника / Вищий ступінь)"
+      }
     },
     "examples": [
       {
@@ -11863,7 +13681,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'schätzen' temel eylem bildiren fiildir.",
       "en": "Verb: 'schätzen' denotes action, process, or state.",
       "ar": "فعل: 'schätzen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'schätzen' позначає дію або стан."
+      "uk": "Дієслово: 'schätzen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (schätzen)",
+        "en": "💡 Verb Structure (schätzen)",
+        "ar": "💡 بنية الفعل (schätzen)",
+        "uk": "💡 Структура дієслова (schätzen)"
+      }
     },
     "examples": [
       {
@@ -11902,7 +13726,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: num. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: num.",
       "ar": "نوع الكلمة: num.",
-      "uk": "Частина мови: num."
+      "uk": "Частина мови: num.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -11941,7 +13771,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'sehr' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'sehr' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'sehr' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'sehr' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'sehr' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (sehr)",
+        "en": "💡 Adverb (sehr)",
+        "ar": "💡 ظرف (sehr)",
+        "uk": "💡 Прислівник (sehr)"
+      }
     },
     "examples": [
       {
@@ -11980,7 +13816,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'seit' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
       "en": "Preposition: 'seit' governs the grammatical case (Dative/Accusative) of the following noun.",
       "ar": "حرف جر: 'seit' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
-      "uk": "Прийменник: 'seit' визначає відмінок іменника (Dativ чи Akkusativ)."
+      "uk": "Прийменник: 'seit' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
     },
     "examples": [
       {
@@ -12016,10 +13858,16 @@ window.READING_LEXICON = {
     "example_ar": "كان العمل من البيت في السابق استثناءً نادرًا.",
     "example_uk": "Робота з дому раніше була рідкісним винятком.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'selten' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'selten' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'selten' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'selten' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Karışık Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Mixed Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة مختلط)",
+        "uk": "💡 Чому закінчення \"-e\"? (Мішана відміна прикметника)"
+      },
+      "tr": "Karışık sıfat çekimi: 'eine seltene Ausnahme' yapısında 'die Ausnahme' feminin bir isimdir; 'eine' belirsiz artikelinden sonra Nominativ Feminin sıfat '-e' takısı alır.",
+      "en": "Mixed adjective declension: In 'eine seltene Ausnahme', feminine noun after indefinite article 'eine' takes Nominative feminine '-e'.",
+      "ar": "تصريف مختلط: بعد أداة التنكير المؤنثة 'eine'، تأخذ الصفة لاحقة الرفع للمؤنث '-e'.",
+      "uk": "Мішана відміна: після неозначеного артикля 'eine' перед іменником жіночого роду прикметник приймає '-e'."
     },
     "examples": [
       {
@@ -12058,7 +13906,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'setzen' temel eylem bildiren fiildir.",
       "en": "Verb: 'setzen' denotes action, process, or state.",
       "ar": "فعل: 'setzen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'setzen' позначає дію або стан."
+      "uk": "Дієслово: 'setzen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (setzen)",
+        "en": "💡 Verb Structure (setzen)",
+        "ar": "💡 بنية الفعل (setzen)",
+        "uk": "💡 Структура дієслова (setzen)"
+      }
     },
     "examples": [
       {
@@ -12097,7 +13951,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Shops'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Shops'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Shops'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Shops'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Shops'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Shop)",
+        "en": "💡 Noun Structure (der Shop)",
+        "ar": "💡 بنية الاسم (der Shop)",
+        "uk": "💡 Структура іменника (der Shop)"
+      }
     },
     "examples": [
       {
@@ -12136,7 +13996,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'sich' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'sich' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'sich' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'sich' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'sich' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -12175,7 +14041,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'sie' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'sie' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'sie' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'sie' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'sie' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -12196,7 +14068,7 @@ window.READING_LEXICON = {
   },
   "sind": {
     "de": "sein",
-    "displayDe": "sind",
+    "displayDe": "sein",
     "article": "",
     "plural": "",
     "pos": "verb",
@@ -12211,10 +14083,16 @@ window.READING_LEXICON = {
     "example_ar": "تحظى الأندية الرياضية بإقبال وشعبية واسعة.",
     "example_uk": "Особливо популярними є спортивні клуби.",
     "grammar": {
-      "tr": "Fiil (Verb): 'sind' temel eylem bildiren fiildir.",
-      "en": "Verb: 'sind' denotes action, process, or state.",
-      "ar": "فعل: 'sind' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'sind' позначає дію або стан."
+      "tr": "Fiil (Verb): 'sein' temel eylem bildiren fiildir.",
+      "en": "Verb: 'sein' denotes action, process, or state.",
+      "ar": "فعل: 'sein' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'sein' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (sein)",
+        "en": "💡 Verb Structure (sein)",
+        "ar": "💡 بنية الفعل (sein)",
+        "uk": "💡 Структура дієслова (sein)"
+      }
     },
     "examples": [
       {
@@ -12225,7 +14103,7 @@ window.READING_LEXICON = {
         "uk": "Особливо популярними є спортивні клуби."
       },
       {
-        "de": "In Deutschland kann man sind, um neue Erfahrungen zu sammeln.",
+        "de": "In Deutschland kann man sein, um neue Erfahrungen zu sammeln.",
         "tr": "Almanya'da yeni deneyimler kazanmak için -dirler, -dırlar (olmak fiili çoğul) eylemi yapılabilir.",
         "en": "In Germany, one can are to gain new experience.",
         "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
@@ -12253,7 +14131,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Smartphones'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Smartphones'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Smartphones'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Smartphones'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Smartphones'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Smartphone)",
+        "en": "💡 Noun Structure (das Smartphone)",
+        "ar": "💡 بنية الاسم (das Smartphone)",
+        "uk": "💡 Структура іменника (das Smartphone)"
+      }
     },
     "examples": [
       {
@@ -12292,7 +14176,13 @@ window.READING_LEXICON = {
       "tr": "Bağlaç (Konjunktion): 'sofern' cümleleri veya kelimeleri birbirine bağlar ve cümledeki fiil pozisyonunu belirler.",
       "en": "Conjunction: 'sofern' connects clauses or words and dictates word order.",
       "ar": "حرف عطف أو رابط: 'sofern' يربط بين الجمل ويحدد موقع الفعل.",
-      "uk": "Сполучник: 'sofern' з'єднує речення або слова і визначає позицію дієслова."
+      "uk": "Сполучник: 'sofern' з'єднує речення або слова і визначає позицію дієслова.",
+      "title": {
+        "tr": "💡 Bağlaç Kuralı: Fiil Sonda (Nebensatz)",
+        "en": "💡 Subordinating Conjunction: Verb-Final Order",
+        "ar": "💡 رابط جملة جانبية: الفعل في نهاية الجملة",
+        "uk": "💡 Підрядний сполучник: Дієслово в кінці речення"
+      }
     },
     "examples": [
       {
@@ -12331,7 +14221,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'sofort' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'sofort' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'sofort' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'sofort' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'sofort' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (sofort)",
+        "en": "💡 Adverb (sofort)",
+        "ar": "💡 ظرف (sofort)",
+        "uk": "💡 Прислівник (sofort)"
+      }
     },
     "examples": [
       {
@@ -12367,10 +14263,16 @@ window.READING_LEXICON = {
     "example_ar": "هذا العمل التطوعي المسمى هو الأساس.",
     "example_uk": "Ця так звана волонтерська діяльність є основою.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'sogenannt' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'sogenannt' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'sogenannt' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'sogenannt' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Zayıf Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Weak Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة ضعيف)",
+        "uk": "💡 Чому закінчення \"-e\"? (Слабка відміна прикметника)"
+      },
+      "tr": "Zayıf sıfat çekimi: 'dieses sogenannte Ehrenamt' yapısında 'dieses' işaret zamirinden sonra nötr Nominativ sıfat zayıf çekim '-e' takısı alır.",
+      "en": "Weak adjective declension: In 'dieses sogenannte Ehrenamt', neuter adjective takes '-e' following demonstrative determiner 'dieses'.",
+      "ar": "تصريف ضعيف: تأخذ الصفة لاحقة '-e' بعد اسم الإشارة للمحايد 'dieses'.",
+      "uk": "Слабка відміна: після вказівного займенника середнього роду 'dieses' прикметник приймає '-e'."
     },
     "examples": [
       {
@@ -12406,10 +14308,16 @@ window.READING_LEXICON = {
     "example_ar": "التحذير مما يسمى بتلاشي الحدود بين العمل والراحة.",
     "example_uk": "Застерігати від так званого стирання меж.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'sogenannt' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
-      "en": "Adjective declension: 'sogenannt' is inflected with the '-en' ending in Dative or Accusative case.",
-      "ar": "تصريف الصفات: الصفة 'sogenannt' تصرف في الجملة بلاحقة '-en'.",
-      "uk": "Відмінювання прикметників: прикметник 'sogenannt' отримує закінчення '-en'."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Dativ Feminin Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Dative Feminine Adjective)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف صفة لمؤنث Dativ)",
+        "uk": "💡 Чому закінчення \"-en\"? (Прикметник у Dativ жіночого роду)"
+      },
+      "tr": "Zayıf sıfat çekimi (Dativ Feminin): 'vor der sogenannten Entgrenzung' yapısında 'vor' edatı Dativ gerektirir; feminin artikel 'der' sonrasında sıfat '-en' takısı alır.",
+      "en": "Weak adjective declension: In 'vor der sogenannten Entgrenzung', 'vor' governs Dative; feminine adjective following 'der' takes '-en'.",
+      "ar": "تصريف ضعيف: بعد حرف الجر 'vor' والأداة المؤنثة في الـ Dativ 'der'، تأخذ الصفة '-en'.",
+      "uk": "Слабка відміна: після прийменника 'vor' та артикля жіночого роду в Dativ 'der' прикметник отримує '-en'."
     },
     "examples": [
       {
@@ -12448,7 +14356,13 @@ window.READING_LEXICON = {
       "tr": "Bağlaç (Konjunktion): 'sondern' cümleleri veya kelimeleri birbirine bağlar ve cümledeki fiil pozisyonunu belirler.",
       "en": "Conjunction: 'sondern' connects clauses or words and dictates word order.",
       "ar": "حرف عطف أو رابط: 'sondern' يربط بين الجمل ويحدد موقع الفعل.",
-      "uk": "Сполучник: 'sondern' з'єднує речення або слова і визначає позицію дієслова."
+      "uk": "Сполучник: 'sondern' з'єднує речення або слова і визначає позицію дієслова.",
+      "title": {
+        "tr": "💡 Bağlaç Kuralı: Fiil Sonda (Nebensatz)",
+        "en": "💡 Subordinating Conjunction: Verb-Final Order",
+        "ar": "💡 رابط جملة جانبية: الفعل في نهاية الجملة",
+        "uk": "💡 Підрядний сполучник: Дієслово в кінці речення"
+      }
     },
     "examples": [
       {
@@ -12484,10 +14398,16 @@ window.READING_LEXICON = {
     "example_ar": "يُحظر الضجيج في أيام الآحاد والعطلات الرسمية.",
     "example_uk": "У неділі та святкові дні шум заборонено.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Sonntage'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Sonntage'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Sonntage'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Sonntage'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 Yazım Kuralı: Kısa Çizgili Kelime Tasarrufu (Sonn- und Feiertage)",
+        "en": "💡 Orthography: Hyphenated Suffix-Sharing (Sonn- und Feiertage)",
+        "ar": "💡 قاعدة إملائية: اختصار اللاحقة المشتركة بالوصلة (Sonn- und Feiertage)",
+        "uk": "💡 Правопис: Скорочення спільної частини через дефіс"
+      },
+      "tr": "Kısa çizgili kelime tasarrufu (Ergänzungsstrich): 'an Sonn- und Feiertagen' ifadesinde 'Sonn-' kelimesi 'Sonntagen' (Pazar günleri) kelimesinin kısaltılmış halidir; ortak kök olan '-tage' tekrar edilmemiştir.",
+      "en": "Suspended hyphenation (Ergänzungsstrich): In 'an Sonn- und Feiertagen', 'Sonn-' stands for 'Sonntagen' (Sundays), avoiding repetition of the shared base word '-tagen'.",
+      "ar": "الوصلة المعلقة للاختصار: في 'an Sonn- und Feiertagen'، تشير 'Sonn-' إلى 'Sonntagen' (أيام الأحد) تفاديًا لتكرار الكلمة المشتركة '-tage'.",
+      "uk": "Дефіс для уникнення повторення спільної частини: у 'an Sonn- und Feiertagen' слово 'Sonn-' замінює 'Sonntagen' (недільні дні)."
     },
     "examples": [
       {
@@ -12526,7 +14446,13 @@ window.READING_LEXICON = {
       "tr": "Bağlaç (Konjunktion): 'sowie' cümleleri veya kelimeleri birbirine bağlar ve cümledeki fiil pozisyonunu belirler.",
       "en": "Conjunction: 'sowie' connects clauses or words and dictates word order.",
       "ar": "حرف عطف أو رابط: 'sowie' يربط بين الجمل ويحدد موقع الفعل.",
-      "uk": "Сполучник: 'sowie' з'єднує речення або слова і визначає позицію дієслова."
+      "uk": "Сполучник: 'sowie' з'єднує речення або слова і визначає позицію дієслова.",
+      "title": {
+        "tr": "💡 Bağlaç Kuralı: Fiil Sonda (Nebensatz)",
+        "en": "💡 Subordinating Conjunction: Verb-Final Order",
+        "ar": "💡 رابط جملة جانبية: الفعل في نهاية الجملة",
+        "uk": "💡 Підрядний сполучник: Дієслово в кінці речення"
+      }
     },
     "examples": [
       {
@@ -12562,10 +14488,16 @@ window.READING_LEXICON = {
     "example_ar": "مما قد يسبب العزلة الاجتماعية.",
     "example_uk": "Що може призвести до соціальної ізоляції.",
     "grammar": {
-      "tr": "Sıfat çekimi / Karşılaştırma: 'sozial' sıfatı maskulin nominativ halinde veya karşılaştırma (komparativ) derecesindedir.",
-      "en": "Adjective declension / Comparative: 'sozial' is either in the masculine nominative or comparative form.",
-      "ar": "تصريف الصفات أو المقارنة: الصفة 'sozial' بصيغة المذكر أو المقارنة.",
-      "uk": "Відмінювання або вищий ступінь: прикметник 'sozial' у чоловічому роді або формі порівняння."
+      "title": {
+        "tr": "💡 Neden \"-er\" takısı aldı? (Dativ Feminin Sıfat Çekimi)",
+        "en": "💡 Why the \"-er\" ending? (Dative Feminine Strong Adjective)",
+        "ar": "💡 لماذا لاحقة \"-er\"؟ (تصريف قوي لمؤنث Dativ)",
+        "uk": "💡 Чому закінчення \"-er\"? (Сильна відміна у Dativ жіночого роду)"
+      },
+      "tr": "Güçlü sıfat çekimi (Dativ Feminin): 'die Isolation' feminin bir isimdir. 'zu' edatı Dativ gerektirir; artikelsiz sıfat 'der' artikelinin sesini yansıtarak '-er' takısı almıştır: 'zu sozialer Isolation' (sosyal izolasyona).",
+      "en": "Strong adjective declension (Dative feminine): 'die Isolation' is feminine. Governed by 'zu' (Dative) without article, the adjective takes the signal ending of 'der' (-er): 'zu sozialer Isolation'.",
+      "ar": "تصريف قوي لمؤنث بالـ Dativ: حرف الجر 'zu' يتطلب Dativ. لعدم وجود أداة قبل 'die Isolation'، تأخذ الصفة علامة الأداة المؤنثة بالـ Dativ '-er': 'zu sozialer Isolation'.",
+      "uk": "Сильна відміна (Dativ жіночого роду): після прийменника 'zu' (Dativ) перед іменником без артикля прикметник отримує сильне закінчення '-er': 'zu sozialer Isolation'."
     },
     "examples": [
       {
@@ -12604,7 +14536,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'sparen' temel eylem bildiren fiildir.",
       "en": "Verb: 'sparen' denotes action, process, or state.",
       "ar": "فعل: 'sparen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'sparen' позначає дію або стан."
+      "uk": "Дієслово: 'sparen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (sparen)",
+        "en": "💡 Verb Structure (sparen)",
+        "ar": "💡 بنية الفعل (sparen)",
+        "uk": "💡 Структура дієслова (sparen)"
+      }
     },
     "examples": [
       {
@@ -12640,10 +14578,16 @@ window.READING_LEXICON = {
     "example_ar": "الافتقار إلى الأحاديث التلقائية عند شرب القهوة.",
     "example_uk": "Сумувати за невимушеним спілкуванням за кавою.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'spontan' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
-      "en": "Adjective declension: 'spontan' is inflected with the '-en' ending in Dative or Accusative case.",
-      "ar": "تصريف الصفات: الصفة 'spontan' تصرف في الجملة بلاحقة '-en'.",
-      "uk": "Відмінювання прикметників: прикметник 'spontan' отримує закінчення '-en'."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Akkusativ Maskulin Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Accusative Masculine Adjective)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف صفة لمذكر Akkusativ)",
+        "uk": "💡 Чому закінчення \"-en\"? (Прикметник у знахідному чоловічого роду)"
+      },
+      "tr": "Zayıf sıfat çekimi (Akkusativ Maskulin): 'den spontanen Austausch beim Kaffee vermissen' yapısında maskulin akkusativ 'den' sonrasında sıfat '-en' takısı alır.",
+      "en": "Weak adjective declension: In 'den spontanen Austausch', takes '-en' after masculine accusative definite article 'den'.",
+      "ar": "تصريف ضعيف: تأخذ الصفة '-en' بعد أداة النصب للمذكر 'den'.",
+      "uk": "Слабка відміна: прикметник отримує закінчення '-en' після артикля чоловічого роду в знахідному відмінку 'den'."
     },
     "examples": [
       {
@@ -12682,7 +14626,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Sport)",
+        "en": "💡 Noun Structure (der Sport)",
+        "ar": "💡 بنية الاسم (der Sport)",
+        "uk": "💡 Структура іменника (der Sport)"
+      }
     },
     "examples": [
       {
@@ -12721,7 +14671,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Sportvereine'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Sportvereine'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Sportvereine'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Sportvereine'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Sportvereine'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -12757,10 +14713,16 @@ window.READING_LEXICON = {
     "example_ar": "تحظى الأندية الرياضية بشعبية خاصة.",
     "example_uk": "Особливо популярними є спортивні клуби.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Sportvereine'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Sportvereine'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Sportvereine'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Sportvereine'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Bileşik İsim Çoğulu (die Sportvereine)",
+        "en": "💡 Noun Declension: Compound Plural (die Sportvereine)",
+        "ar": "💡 تصريف الأسماء: جمع اسم مركب (الأندية الرياضية)",
+        "uk": "💡 Творення множини: Складний іменник (спортивні клуби)"
+      },
+      "tr": "Bileşik isim çoğulu: 'der Sport' + 'der Verein' (çoğulu: 'die Vereine'). Sondaki temel kelimeye göre çoğulda '-e' takısı alır: 'Sportvereine sind besonders beliebt'.",
+      "en": "Compound plural: 'der Sport' + 'der Verein' (plural: 'die Vereine'). Follows base noun: 'Sportvereine sind besonders beliebt'.",
+      "ar": "جمع اسم مركب: يتبع الكلمة الأخيرة 'der Verein' ويجمع بـ '-e' (die Sportvereine = الأندية الرياضية).",
+      "uk": "Множина складного іменника: за останнім словом 'der Verein' (множина 'die Vereine'): 'Sportvereine sind beliebt'."
     },
     "examples": [
       {
@@ -12799,7 +14761,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Sprachen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Sprachen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Sprachen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Sprachen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Sprachen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Sprache)",
+        "en": "💡 Noun Structure (die Sprache)",
+        "ar": "💡 بنية الاسم (die Sprache)",
+        "uk": "💡 Структура іменника (die Sprache)"
+      }
     },
     "examples": [
       {
@@ -12838,7 +14806,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'spät' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'spät' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'spät' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'spät' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'spät' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (spät)",
+        "en": "💡 Adverb (spät)",
+        "ar": "💡 ظرف (spät)",
+        "uk": "💡 Прислівник (spät)"
+      }
     },
     "examples": [
       {
@@ -12877,7 +14851,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'spätestens' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'spätestens' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'spätestens' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'spätestens' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'spätestens' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (spätestens)",
+        "en": "💡 Adverb (spätestens)",
+        "ar": "💡 ظرف (spätestens)",
+        "uk": "💡 Прислівник (spätestens)"
+      }
     },
     "examples": [
       {
@@ -12916,7 +14896,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'stehen' temel eylem bildiren fiildir.",
       "en": "Verb: 'stehen' denotes action, process, or state.",
       "ar": "فعل: 'stehen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'stehen' позначає дію або стан."
+      "uk": "Дієслово: 'stehen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (stehen)",
+        "en": "💡 Verb Structure (stehen)",
+        "ar": "💡 بنية الفعل (stehen)",
+        "uk": "💡 Структура дієслова (stehen)"
+      }
     },
     "examples": [
       {
@@ -12952,10 +14938,16 @@ window.READING_LEXICON = {
     "example_ar": "إذا كان المكتب في غرفة المعيشة.",
     "example_uk": "Якщо стіл стоїть у вітальні.",
     "grammar": {
-      "tr": "Fiil (Verb): 'stehen' temel eylem bildiren fiildir.",
-      "en": "Verb: 'stehen' denotes action, process, or state.",
-      "ar": "فعل: 'stehen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'stehen' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Präsens 3. Tekil Şahıs (stehen)",
+        "en": "💡 Verb Conjugation: 3rd Person Singular Present (stehen)",
+        "ar": "💡 تصريف الفعل: المضارع للمفرد الغائب (stehen)",
+        "uk": "💡 Дієвідмінювання: 3-тя особа однини теперішнього часу (stehen)"
+      },
+      "tr": "Fiil çekimi (Präsens 3. Tekil Şahıs): 'stehen' (durmak / bulunmak) fiilinin 3. tekil şahıs çekimidir. Yan cümlede sonda yer alır: 'Wenn der Schreibtisch im Zimmer steht...'",
+      "en": "Verb conjugation (3rd person singular present): 3rd person singular of 'stehen' (to stand/be located). Verb-final in subordinate clause: 'Wenn der Schreibtisch im Zimmer steht...'",
+      "ar": "تصريف الفعل: صيغة المفرد الغائب من 'stehen' (يوجد / يقف). في نهاية الجملة الجانبية: 'Wenn der Schreibtisch im Zimmer steht...'",
+      "uk": "Дієвідмінювання: 3-тя особа однини від 'stehen' (стояти). У кінці підрядного речення: 'Wenn der Schreibtisch im Zimmer steht...'"
     },
     "examples": [
       {
@@ -12994,7 +14986,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Stunden'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Stunden'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Stunden'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Stunden'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Stunden'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Stunde)",
+        "en": "💡 Noun Structure (die Stunde)",
+        "ar": "💡 بنية الاسم (die Stunde)",
+        "uk": "💡 Структура іменника (die Stunde)"
+      }
     },
     "examples": [
       {
@@ -13015,7 +15013,7 @@ window.READING_LEXICON = {
   },
   "stunden": {
     "de": "die Stunde",
-    "displayDe": "Stunden",
+    "displayDe": "Stunde",
     "article": "die",
     "plural": "die Stunden",
     "pos": "noun",
@@ -13033,7 +15031,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Stunden'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Stunden'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Stunden'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Stunden'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Stunden'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -13044,9 +15048,9 @@ window.READING_LEXICON = {
         "uk": "Після шести годин праці."
       },
       {
-        "de": "Für viele Menschen in Deutschland spielt die Stunden eine wichtige Rolle im Alltag.",
-        "tr": "Almanya'daki pek çok insan için Stunden günlük yaşamda önemli bir rol oynar.",
-        "en": "For many people in Germany, Stunden plays an important role in daily life.",
+        "de": "Für viele Menschen in Deutschland spielt die Stunde eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Stunde günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Stunde plays an important role in daily life.",
         "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
         "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
       }
@@ -13069,10 +15073,16 @@ window.READING_LEXICON = {
     "example_ar": "يصادف القارئ على الفور مصطلحات مثل الإيجار الصافي.",
     "example_uk": "Одразу натрапляєш на такі поняття, як холодна оренда.",
     "grammar": {
-      "tr": "Fiil (Verb): 'stoßen' temel eylem bildiren fiildir.",
-      "en": "Verb: 'stoßen' denotes action, process, or state.",
-      "ar": "فعل: 'stoßen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'stoßen' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Umlaut Kök Değişimi (stoßen ➔ stößt)",
+        "en": "💡 Verb Conjugation: Umlaut Stem Change (stoßen ➔ stößt)",
+        "ar": "💡 تصريف الفعل: إمالة حرف العلة (stoßen ➔ stößt)",
+        "uk": "💡 Дієвідмінювання: Умлаут у корені (stoßen ➔ stößt)"
+      },
+      "tr": "Düzensiz fiil çekimi (Präsens 3. Tekil Şahıs): 'stoßen' (çarpmak / karşılaşmak) fiili 3. tekil şahısta 'o' -> 'ö' umlaut alır ('auf etwas stoßen' = bir şeyle karşılaşmak; 'stößt sofort auf Fachbegriffe').",
+      "en": "Irregular verb with umlaut (3rd person singular): 'stoßen' changes 'o' to 'ö' ('auf etwas stoßen' = to come across something; 'stößt sofort auf Fachbegriffe').",
+      "ar": "تصريف فعل غير قياسي مع إمالة: يتحول 'o' إلى 'ö' في الفعل 'stoßen' ('stößt auf' = يصادف / يواجه مصطلحات متخصصة).",
+      "uk": "Неправильне дієслово з умлаутом: у дієслові 'stoßen' голосна 'o' переходить в 'ö' ('stößt auf Fachbegriffe' = натрапляє на фахові терміни)."
     },
     "examples": [
       {
@@ -13111,7 +15121,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Summen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Summen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Summen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Summen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Summen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Summe)",
+        "en": "💡 Noun Structure (die Summe)",
+        "ar": "💡 بنية الاسم (die Summe)",
+        "uk": "💡 Структура іменника (die Summe)"
+      }
     },
     "examples": [
       {
@@ -13150,7 +15166,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Tage'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Tage'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Tage'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Tage'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Tage'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Tag)",
+        "en": "💡 Noun Structure (der Tag)",
+        "ar": "💡 بنية الاسم (der Tag)",
+        "uk": "💡 Структура іменника (der Tag)"
+      }
     },
     "examples": [
       {
@@ -13171,7 +15193,7 @@ window.READING_LEXICON = {
   },
   "tagen": {
     "de": "der Tag",
-    "displayDe": "Tagen",
+    "displayDe": "Tag",
     "article": "der",
     "plural": "die Tage",
     "pos": "noun",
@@ -13189,7 +15211,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Tage'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Tage'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Tage'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Tage'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Tage'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -13200,9 +15228,9 @@ window.READING_LEXICON = {
         "uk": "Відповісти протягом 14 днів."
       },
       {
-        "de": "Für viele Menschen in Deutschland spielt der Tagen eine wichtige Rolle im Alltag.",
-        "tr": "Almanya'daki pek çok insan için Tagen günlük yaşamda önemli bir rol oynar.",
-        "en": "For many people in Germany, Tagen plays an important role in daily life.",
+        "de": "Für viele Menschen in Deutschland spielt der Tag eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Tag günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Tag plays an important role in daily life.",
         "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
         "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
       }
@@ -13225,10 +15253,16 @@ window.READING_LEXICON = {
     "example_ar": "كلاهما معًا فقط يشكلان الإيجار الدافئ الفعلي.",
     "example_uk": "Лише разом вони складають фактичну теплу оренду.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'tatsächlich' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'tatsächlich' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'tatsächlich' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'tatsächlich' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Zayıf Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Weak Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة ضعيف)",
+        "uk": "💡 Чому закінчення \"-e\"? (Слабка відміна прикметника)"
+      },
+      "tr": "Zayıf sıfat çekimi: 'die tatsächliche Warmmiete' yapısında feminin belirli artikel 'die' sonrasında sıfat Nominativ Feminin '-e' takısı alır.",
+      "en": "Weak adjective declension: In 'die tatsächliche Warmmiete', takes '-e' after feminine definite article 'die'.",
+      "ar": "تصريف ضعيف: تأخذ الصفة لاحقة '-e' بعد أداة التعريف المؤنثة 'die'.",
+      "uk": "Слабка відміна: прикметник приймає '-e' після означеного артикля жіночого роду 'die'."
     },
     "examples": [
       {
@@ -13267,7 +15301,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'teilen' temel eylem bildiren fiildir.",
       "en": "Verb: 'teilen' denotes action, process, or state.",
       "ar": "فعل: 'teilen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'teilen' позначає дію або стан."
+      "uk": "Дієслово: 'teilen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (teilen)",
+        "en": "💡 Verb Structure (teilen)",
+        "ar": "💡 بنية الفعل (teilen)",
+        "uk": "💡 Структура дієслова (teilen)"
+      }
     },
     "examples": [
       {
@@ -13303,10 +15343,16 @@ window.READING_LEXICON = {
     "example_ar": "تولي مهام تدريبية منتظمة في النادي.",
     "example_uk": "Брати на себе регулярні тренерські обов'язки в клубі.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Traineraufgaben'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Traineraufgaben'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Traineraufgaben'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Traineraufgaben'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Bileşik İsim Çoğulu (die Traineraufgaben)",
+        "en": "💡 Noun Declension: Compound Plural (die Traineraufgaben)",
+        "ar": "💡 تصريف الأسماء: جمع اسم مركب (مهام التدريب)",
+        "uk": "💡 Творення множини: Складний іменник (тренерські завдання)"
+      },
+      "tr": "Bileşik isim çoğulu: 'der Trainer' (antrenör) + 'die Aufgabe' (görev). 'die Aufgabe' sonu '-e' ile biten bir isim olduğundan çoğulda '-n' takısı alır ('Traineraufgaben übernehmen' = antrenörlük görevleri üstlenmek).",
+      "en": "Compound plural: 'der Trainer' + 'die Aufgabe' (plural: 'die Aufgaben'). Plural ending '-n': 'Traineraufgaben übernehmen' (to take on coaching duties).",
+      "ar": "جمع اسم مركب: 'der Trainer' + 'die Aufgabe' (جمعها 'die Aufgaben' بـ '-n'): 'Traineraufgaben übernehmen'.",
+      "uk": "Множина складного іменника: 'der Trainer' + 'die Aufgabe' (множина на '-n' — 'die Aufgaben'): 'Traineraufgaben übernehmen'."
     },
     "examples": [
       {
@@ -13345,7 +15391,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'trainieren' temel eylem bildiren fiildir.",
       "en": "Verb: 'trainieren' denotes action, process, or state.",
       "ar": "فعل: 'trainieren' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'trainieren' позначає дію або стан."
+      "uk": "Дієслово: 'trainieren' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (trainieren)",
+        "en": "💡 Verb Structure (trainieren)",
+        "ar": "💡 بنية الفعل (trainieren)",
+        "uk": "💡 Структура дієслова (trainieren)"
+      }
     },
     "examples": [
       {
@@ -13381,10 +15433,16 @@ window.READING_LEXICON = {
     "example_ar": "توفير عناء التنقل اليومي إلى العمل.",
     "example_uk": "Скасування щоденної дороги на роботу.",
     "grammar": {
-      "tr": "Sıfat çekimi (Zayıf çekim): 'den täglichen Arbeitsweg' yapısında maskulin bir isim Akkusativ (ismin -i hali) olduğu için belirli artikel 'den' olur ve sıfat zayıf çekim '-en' takısı alır.",
-      "en": "Weak adjective declension: In 'den täglichen Arbeitsweg', the masculine noun is in the Accusative case with definite article 'den', requiring the adjective ending '-en'.",
-      "ar": "تصريف الصفة الضعيف: في 'den täglichen Arbeitsweg'، الاسم مذكر في حالة النصب (Akkusativ) مع أداة التعريف 'den'، مما يوجب لاحقة الصفة '-en'.",
-      "uk": "Слабка відміна прикметника: у 'den täglichen Arbeitsweg' іменник чоловічого роду стоїть у знахідному відмінку (Akkusativ) з означеним артиклем 'den', тому прикметник отримує '-en'."
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Zayıf Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Weak Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة الضعيف)",
+        "uk": "💡 Чому закінчення \"-en\"? (Слабка відміна прикметника)"
+      },
+      "tr": "Zayıf sıfat çekimi (Schwache Deklination): 'den täglichen Arbeitsweg' yapısında 'der Arbeitsweg' maskulin tekil bir isimdir. Akkusativ (ismin -i hali) durumunda belirli artikel 'den' olur ve belirli artikelden sonra sıfat daima '-en' takısı alır.",
+      "en": "Weak adjective declension: In 'den täglichen Arbeitsweg', the masculine singular noun is in the Accusative case preceded by definite article 'den'. Following 'den', adjectives always take '-en'.",
+      "ar": "تصريف الصفة الضعيف: في 'den täglichen Arbeitsweg'، الاسم مذكر في حالة النصب (Akkusativ) ومسبوق بأداة التعريف 'den'. تأخذ الصفة بعد 'den' لاحقة '-en' دائمًا.",
+      "uk": "Слабка відміна прикметника: у 'den täglichen Arbeitsweg' іменник чоловічого роду стоїть у знахідному відмінку (Akkusativ) після означеного артикля 'den'. Після 'den' прикметник завжди має закінчення '-en'."
     },
     "examples": [
       {
@@ -13423,7 +15481,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Uhren'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Uhren'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Uhren'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Uhren'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Uhren'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Uhr)",
+        "en": "💡 Noun Structure (die Uhr)",
+        "ar": "💡 بنية الاسم (die Uhr)",
+        "uk": "💡 Структура іменника (die Uhr)"
+      }
     },
     "examples": [
       {
@@ -13462,7 +15526,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'um' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
       "en": "Preposition: 'um' governs the grammatical case (Dative/Accusative) of the following noun.",
       "ar": "حرف جر: 'um' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
-      "uk": "Прийменник: 'um' визначає відмінок іменника (Dativ чи Akkusativ)."
+      "uk": "Прийменник: 'um' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
     },
     "examples": [
       {
@@ -13498,10 +15568,16 @@ window.READING_LEXICON = {
     "example_ar": "وفقًا لاستطلاعات الرأي الحديثة يقدر الموظفون العمل عن بعد.",
     "example_uk": "За даними останніх опитувань, співробітники цінують роботу з дому.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Umfragen'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Umfragen'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Umfragen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Umfragen'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Çoğul Eki (die Umfrage ➔ Umfragen)",
+        "en": "💡 Noun Declension: Plural Suffix (Umfragen)",
+        "ar": "💡 تصريف الأسماء: لاحقة الجمع (استطلاعات الرأي)",
+        "uk": "💡 Творення множини: die Umfrage ➔ Umfragen"
+      },
+      "tr": "Çoğul eki: 'die Umfrage' (anket / kamuoyu yoklaması) sonu '-e' ile biten feminin bir isimdir; çoğulda sonuna '-n' takısı alır ('nach aktuellen Umfragen' = güncel anketlere göre).",
+      "en": "Plural formation: Feminine noun 'die Umfrage' adds '-n' in plural ('nach aktuellen Umfragen' = according to recent surveys).",
+      "ar": "صيغة الجمع: الاسم المؤنث 'die Umfrage' ينتهي بـ '-e' ويجمع بـ '-n' ('nach aktuellen Umfragen').",
+      "uk": "Творення множини: іменник жіночого роду 'die Umfrage' у множині отримує закінчення '-n' ('nach aktuellen Umfragen')."
     },
     "examples": [
       {
@@ -13540,7 +15616,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Umweltschutz)",
+        "en": "💡 Noun Structure (der Umweltschutz)",
+        "ar": "💡 بنية الاسم (der Umweltschutz)",
+        "uk": "💡 Структура іменника (der Umweltschutz)"
+      }
     },
     "examples": [
       {
@@ -13579,7 +15661,13 @@ window.READING_LEXICON = {
       "tr": "Bağlaç (Konjunktion): 'und' cümleleri veya kelimeleri birbirine bağlar ve cümledeki fiil pozisyonunu belirler.",
       "en": "Conjunction: 'und' connects clauses or words and dictates word order.",
       "ar": "حرف عطف أو رابط: 'und' يربط بين الجمل ويحدد موقع الفعل.",
-      "uk": "Сполучник: 'und' з'єднує речення або слова і визначає позицію дієслова."
+      "uk": "Сполучник: 'und' з'єднує речення або слова і визначає позицію дієслова.",
+      "title": {
+        "tr": "💡 Bağlaç Kuralı: Fiil Sonda (Nebensatz)",
+        "en": "💡 Subordinating Conjunction: Verb-Final Order",
+        "ar": "💡 رابط جملة جانبية: الفعل في نهاية الجملة",
+        "uk": "💡 Підрядний сполучник: Дієслово в кінці речення"
+      }
     },
     "examples": [
       {
@@ -13618,7 +15706,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat (Adjektiv): 'undicht' niteleme veya durum sıfatıdır.",
       "en": "Adjective: 'undicht' describes quality or state.",
       "ar": "صفة: 'undicht' تصف الحالة أو الخاصية.",
-      "uk": "Прикметник: 'undicht' описує ознаку або стан."
+      "uk": "Прикметник: 'undicht' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (undicht)",
+        "en": "💡 Adjective (undicht)",
+        "ar": "💡 بنية الصفة (undicht)",
+        "uk": "💡 Структура прикметника (undicht)"
+      }
     },
     "examples": [
       {
@@ -13657,7 +15751,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'unter' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
       "en": "Preposition: 'unter' governs the grammatical case (Dative/Accusative) of the following noun.",
       "ar": "حرف جر: 'unter' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
-      "uk": "Прийменник: 'unter' визначає відмінок іменника (Dativ чи Akkusativ)."
+      "uk": "Прийменник: 'unter' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
     },
     "examples": [
       {
@@ -13696,7 +15796,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Unternehmen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Unternehmen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Unternehmen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Unternehmen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Unternehmen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -13735,7 +15841,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat (Adjektiv): 'untersagt' niteleme veya durum sıfatıdır.",
       "en": "Adjective: 'untersagt' describes quality or state.",
       "ar": "صفة: 'untersagt' تصف الحالة أو الخاصية.",
-      "uk": "Прикметник: 'untersagt' описує ознаку або стан."
+      "uk": "Прикметник: 'untersagt' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (untersagt)",
+        "en": "💡 Adjective (untersagt)",
+        "ar": "💡 بنية الصفة (untersagt)",
+        "uk": "💡 Структура прикметника (untersagt)"
+      }
     },
     "examples": [
       {
@@ -13774,7 +15886,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Unterstützungen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Unterstützungen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Unterstützungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Unterstützungen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Unterstützungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Unterstützung)",
+        "en": "💡 Noun Structure (die Unterstützung)",
+        "ar": "💡 بنية الاسم (die Unterstützung)",
+        "uk": "💡 Структура іменника (die Unterstützung)"
+      }
     },
     "examples": [
       {
@@ -13813,7 +15931,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Vereine'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Vereine'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Vereine'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Vereine'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Vereine'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -13834,7 +15958,7 @@ window.READING_LEXICON = {
   },
   "vereine": {
     "de": "der Verein",
-    "displayDe": "Vereine",
+    "displayDe": "Verein",
     "article": "der",
     "plural": "die Vereine",
     "pos": "noun",
@@ -13852,7 +15976,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Vereine'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Vereine'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Vereine'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Vereine'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Vereine'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Verein)",
+        "en": "💡 Noun Structure (der Verein)",
+        "ar": "💡 بنية الاسم (der Verein)",
+        "uk": "💡 Структура іменника (der Verein)"
+      }
     },
     "examples": [
       {
@@ -13863,9 +15993,9 @@ window.READING_LEXICON = {
         "uk": "Клуби стикаються з нестачею кадрів."
       },
       {
-        "de": "Für viele Menschen in Deutschland spielt der Vereine eine wichtige Rolle im Alltag.",
-        "tr": "Almanya'daki pek çok insan için Vereine günlük yaşamda önemli bir rol oynar.",
-        "en": "For many people in Germany, Vereine plays an important role in daily life.",
+        "de": "Für viele Menschen in Deutschland spielt der Verein eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Verein günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Verein plays an important role in daily life.",
         "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
         "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
       }
@@ -13891,7 +16021,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'verlangen' temel eylem bildiren fiildir.",
       "en": "Verb: 'verlangen' denotes action, process, or state.",
       "ar": "فعل: 'verlangen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'verlangen' позначає дію або стан."
+      "uk": "Дієслово: 'verlangen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (verlangen)",
+        "en": "💡 Verb Structure (verlangen)",
+        "ar": "💡 بنية الفعل (verlangen)",
+        "uk": "💡 Структура дієслова (verlangen)"
+      }
     },
     "examples": [
       {
@@ -13930,7 +16066,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Vermieter'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Vermieter'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Vermieter'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Vermieter'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Vermieter'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Vermieter)",
+        "en": "💡 Noun Structure (der Vermieter)",
+        "ar": "💡 بنية الاسم (der Vermieter)",
+        "uk": "💡 Структура іменника (der Vermieter)"
+      }
     },
     "examples": [
       {
@@ -13969,7 +16111,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'vermissen' temel eylem bildiren fiildir.",
       "en": "Verb: 'vermissen' denotes action, process, or state.",
       "ar": "فعل: 'vermissen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'vermissen' позначає дію або стан."
+      "uk": "Дієслово: 'vermissen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (vermissen)",
+        "en": "💡 Verb Structure (vermissen)",
+        "ar": "💡 بنية الفعل (vermissen)",
+        "uk": "💡 Структура дієслова (vermissen)"
+      }
     },
     "examples": [
       {
@@ -14005,10 +16153,16 @@ window.READING_LEXICON = {
     "example_ar": "تحمل التزامات طويلة الأجل في الجمعية.",
     "example_uk": "Брати на себе довгострокові обов'язки в товаристві.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Verpflichtungen'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Verpflichtungen'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Verpflichtungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Verpflichtungen'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 İsim Çekimi: Çoğul Eki (die Verpflichtung ➔ Verpflichtungen)",
+        "en": "💡 Noun Declension: Plural Suffix (Verpflichtungen)",
+        "ar": "💡 تصريف الأسماء: لاحقة الجمع (الالتزامات)",
+        "uk": "💡 Творення множини: die Verpflichtung ➔ Verpflichtungen"
+      },
+      "tr": "Çoğul eki: '-ung' ekiyle biten isim çoğulda '-en' takısı alır ('langfristige Verpflichtungen' = uzun vadeli sorumluluklar/yükümlülükler).",
+      "en": "Plural formation: Nouns in '-ung' take plural ending '-en' ('langfristige Verpflichtungen' = long-term commitments).",
+      "ar": "صيغة الجمع: تجمع الأسماء المنتهية بـ '-ung' بلاحقة '-en' (الالتزامات).",
+      "uk": "Творення множини: іменники на '-ung' мають закінчення '-en' у множині (зобов'язання)."
     },
     "examples": [
       {
@@ -14047,7 +16201,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'viele' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'viele' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'viele' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'viele' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'viele' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -14086,7 +16246,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'vielen' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'vielen' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'vielen' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'vielen' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'vielen' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -14125,7 +16291,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: num. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: num.",
       "ar": "نوع الكلمة: num.",
-      "uk": "Частина мови: num."
+      "uk": "Частина мови: num.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -14164,7 +16336,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi: 'den vollen Kaufpreis' yapısında maskulin akkusativ 'den' sonrasında sıfat zayıf çekim '-en' takısı alır.",
       "en": "Weak adjective declension: In 'den vollen Kaufpreis', takes '-en' after masculine accusative article 'den'.",
       "ar": "تصريف الصفات: تأخذ الصفة لاحقة '-en' بعد أداة النصب للمذكر 'den'.",
-      "uk": "Відмінювання прикметників: прикметник отримує '-en' після артикля 'den'."
+      "uk": "Відмінювання прикметників: прикметник отримує '-en' після артикля 'den'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
     },
     "examples": [
       {
@@ -14203,7 +16381,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'von' edatı her zaman DATIV (ismin -e hali) gerektirir. Örnek: 'von älteren Mitbürgern', 'vom [von dem] Bahnhof'.",
       "en": "Preposition: 'von' always governs the DATIVE case. Example: 'von älteren Mitbürgern', 'vom Bahnhof'.",
       "ar": "حرف جر: 'von' يتطلب دائمًا حالة الـ DATIV (المجرور). مثال: 'von älteren Mitbürgern'.",
-      "uk": "Прийменник: 'von' завжди вимагає давального відмінка (DATIV). Приклад: 'von älteren Mitbürgern'."
+      "uk": "Прийменник: 'von' завжди вимагає давального відмінка (DATIV). Приклад: 'von älteren Mitbürgern'.",
+      "title": {
+        "tr": "💡 Edat Kuralı: Dativ (İsmin -e Hali) Gerektirir",
+        "en": "💡 Preposition Rule: Governs Dative Case",
+        "ar": "💡 قاعدة حرف الجر: يجر بالـ Dativ دائمًا",
+        "uk": "💡 Правило прийменника: Завжди вимагає Dativ"
+      }
     },
     "examples": [
       {
@@ -14242,7 +16426,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'vor' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
       "en": "Preposition: 'vor' governs the grammatical case (Dative/Accusative) of the following noun.",
       "ar": "حرف جر: 'vor' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
-      "uk": "Прийменник: 'vor' визначає відмінок іменника (Dativ чи Akkusativ)."
+      "uk": "Прийменник: 'vor' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
     },
     "examples": [
       {
@@ -14281,7 +16471,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Vorbereitungen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Vorbereitungen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Vorbereitungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Vorbereitungen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Vorbereitungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Vorbereitung)",
+        "en": "💡 Noun Structure (die Vorbereitung)",
+        "ar": "💡 بنية الاسم (die Vorbereitung)",
+        "uk": "💡 Структура іменника (die Vorbereitung)"
+      }
     },
     "examples": [
       {
@@ -14320,7 +16516,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Vorstandsposten'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Vorstandsposten'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Vorstandsposten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Vorstandsposten'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Vorstandsposten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -14341,7 +16543,7 @@ window.READING_LEXICON = {
   },
   "war": {
     "de": "sein",
-    "displayDe": "war",
+    "displayDe": "sein",
     "article": "",
     "plural": "",
     "pos": "verb",
@@ -14356,10 +16558,16 @@ window.READING_LEXICON = {
     "example_ar": "بما أن الجهاز كان معيبًا منذ البداية.",
     "example_uk": "Оскільки прилад був несправним із самого початку.",
     "grammar": {
-      "tr": "Fiil (Verb): 'war' temel eylem bildiren fiildir.",
-      "en": "Verb: 'war' denotes action, process, or state.",
-      "ar": "فعل: 'war' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'war' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Präteritum / Geçmiş Zaman (sein ➔ war)",
+        "en": "💡 Verb Conjugation: Past Tense (sein ➔ war)",
+        "ar": "💡 تصريف الفعل: الماضي البسيط (sein ➔ war)",
+        "uk": "💡 Дієвідмінювання: Минулий час Präteritum (sein ➔ war)"
+      },
+      "tr": "Geçmiş zaman (Präteritum): 'sein' (olmak) fiilinin 1. ve 3. tekil şahıs Präteritum çekimidir ('Homeoffice war früher eine seltene Ausnahme' = Evden çalışma eskiden nadir bir istisnaydı).",
+      "en": "Past tense (Präteritum): 1st/3rd person singular past of 'sein' (to be). In text: 'Homeoffice war früher eine seltene Ausnahme' (Working from home used to be a rare exception).",
+      "ar": "الماضي البسيط (Präteritum): تصريف الفعل 'sein' (كان) مع المفرد. في النص: 'Homeoffice war früher eine seltene Ausnahme' (كان العمل من المنزل في السابق استثناءً نادرًا).",
+      "uk": "Минулий час (Präteritum): форма минулого часу дієслова 'sein' (бути). У тексті: 'Homeoffice war früher eine seltene Ausnahme' (Раніше робота з дому була рідкісним винятком)."
     },
     "examples": [
       {
@@ -14370,7 +16578,7 @@ window.READING_LEXICON = {
         "uk": "Оскільки прилад був несправним із самого початку."
       },
       {
-        "de": "In Deutschland kann man war, um neue Erfahrungen zu sammeln.",
+        "de": "In Deutschland kann man sein, um neue Erfahrungen zu sammeln.",
         "tr": "Almanya'da yeni deneyimler kazanmak için -idi, idi (sein geçmiş zamanı) eylemi yapılabilir.",
         "en": "In Germany, one can was to gain new experience.",
         "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
@@ -14398,7 +16606,13 @@ window.READING_LEXICON = {
       "tr": "Bileşik isim (Kompositum): 'warm' (sıcak) sıfatı + 'die Miete' (kira) isminden oluşur. Isınma ve yan giderlerin (Nebenkosten) dahil olduğu toplam kira bedelidir.",
       "en": "Compound noun: 'warm' (warm) + 'die Miete' (rent). Refers to total rent including heating and utilities (Nebenkosten).",
       "ar": "اسم مركب: 'warm' (دافئ) + 'die Miete' (إيجار). يشير إلى الإيجار الإجمالي متضمنًا التدفئة والخدمات الإضافية.",
-      "uk": "Складний іменник: 'warm' (теплий) + 'die Miete' (оренда). Означає повну орендну плату з урахуванням опалення та комунальних послуг."
+      "uk": "Складний іменник: 'warm' (теплий) + 'die Miete' (оренда). Означає повну орендну плату з урахуванням опалення та комунальних послуг.",
+      "title": {
+        "tr": "💡 Kelime Yapısı: Bileşik İsim (Kompositum)",
+        "en": "💡 Word Structure: Compound Noun (Kompositum)",
+        "ar": "💡 بنية الكلمة: اسم مركب (Kompositum)",
+        "uk": "💡 Будова слова: Складний іменник (Kompositum)"
+      }
     },
     "examples": [
       {
@@ -14437,7 +16651,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'warnen' temel eylem bildiren fiildir.",
       "en": "Verb: 'warnen' denotes action, process, or state.",
       "ar": "فعل: 'warnen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'warnen' позначає дію або стан."
+      "uk": "Дієслово: 'warnen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (warnen)",
+        "en": "💡 Verb Structure (warnen)",
+        "ar": "💡 بنية الفعل (warnen)",
+        "uk": "💡 Структура дієслова (warnen)"
+      }
     },
     "examples": [
       {
@@ -14476,7 +16696,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'was' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'was' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'was' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'was' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'was' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -14515,7 +16741,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Wasser)",
+        "en": "💡 Noun Structure (das Wasser)",
+        "ar": "💡 بنية الاسم (das Wasser)",
+        "uk": "💡 Структура іменника (das Wasser)"
+      }
     },
     "examples": [
       {
@@ -14554,7 +16786,13 @@ window.READING_LEXICON = {
       "tr": "Bileşik isim (Kompositum): 'das Wasser' (su) + 'der Tank' (hazne/depo). İsmin artikeli son kelimenin artikelidir (der Wassertank).",
       "en": "Compound noun: 'das Wasser' (water) + 'der Tank' (tank). Gender is masculine from 'der Tank'.",
       "ar": "اسم مركب: 'das Wasser' (ماء) + 'der Tank' (خزان). يتبع التذكير للكلمة الأخيرة 'der Tank'.",
-      "uk": "Складний іменник: 'das Wasser' (вода) + 'der Tank' (бак/резервуар). Чоловічого роду від 'der Tank'."
+      "uk": "Складний іменник: 'das Wasser' (вода) + 'der Tank' (бак/резервуар). Чоловічого роду від 'der Tank'.",
+      "title": {
+        "tr": "💡 Kelime Yapısı: Bileşik İsim (Kompositum)",
+        "en": "💡 Word Structure: Compound Noun (Kompositum)",
+        "ar": "💡 بنية الكلمة: اسم مركب (Kompositum)",
+        "uk": "💡 Будова слова: Складний іменник (Kompositum)"
+      }
     },
     "examples": [
       {
@@ -14575,7 +16813,7 @@ window.READING_LEXICON = {
   },
   "wassertanks": {
     "de": "der Wassertank",
-    "displayDe": "Wassertanks",
+    "displayDe": "Wassertank",
     "article": "der",
     "plural": "die Wassertanks",
     "pos": "noun",
@@ -14593,7 +16831,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Wassertanks'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Wassertanks'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Wassertanks'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Wassertanks'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Wassertanks'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
     },
     "examples": [
       {
@@ -14604,9 +16848,9 @@ window.READING_LEXICON = {
         "uk": "Фотографія пошкодженого бака для води."
       },
       {
-        "de": "Für viele Menschen in Deutschland spielt der Wassertanks eine wichtige Rolle im Alltag.",
-        "tr": "Almanya'daki pek çok insan için Wassertanks günlük yaşamda önemli bir rol oynar.",
-        "en": "For many people in Germany, Wassertanks plays an important role in daily life.",
+        "de": "Für viele Menschen in Deutschland spielt der Wassertank eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Wassertank günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Wassertank plays an important role in daily life.",
         "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
         "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
       }
@@ -14632,7 +16876,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): İsim. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article ''. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة ''. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль ''. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль ''. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (Weber)",
+        "en": "💡 Noun Structure (Weber)",
+        "ar": "💡 بنية الاسم (Weber)",
+        "uk": "💡 Структура іменника (Weber)"
+      }
     },
     "examples": [
       {
@@ -14671,7 +16921,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Wegfall)",
+        "en": "💡 Noun Structure (der Wegfall)",
+        "ar": "💡 بنية الاسم (der Wegfall)",
+        "uk": "💡 Структура іменника (der Wegfall)"
+      }
     },
     "examples": [
       {
@@ -14710,7 +16966,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat (Adjektiv): 'wenig' niteleme veya durum sıfatıdır.",
       "en": "Adjective: 'wenig' describes quality or state.",
       "ar": "صفة: 'wenig' تصف الحالة أو الخاصية.",
-      "uk": "Прикметник: 'wenig' описує ознаку або стан."
+      "uk": "Прикметник: 'wenig' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (wenig)",
+        "en": "💡 Adjective (wenig)",
+        "ar": "💡 بنية الصفة (wenig)",
+        "uk": "💡 Структура прикметника (wenig)"
+      }
     },
     "examples": [
       {
@@ -14749,7 +17011,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'weniger' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'weniger' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'weniger' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'weniger' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'weniger' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (weniger)",
+        "en": "💡 Adverb (weniger)",
+        "ar": "💡 ظرف (weniger)",
+        "uk": "💡 Прислівник (weniger)"
+      }
     },
     "examples": [
       {
@@ -14788,7 +17056,13 @@ window.READING_LEXICON = {
       "tr": "Şart/zaman bağlacı: Koşul veya zaman yan cümlesi kurar; çekimli fiil cümlenin en sonuna gider (z.B. 'Wenn der Schreibtisch im Zimmer steht,...').",
       "en": "Subordinating conditional/temporal conjunction: Sends the conjugated verb to the clause end.",
       "ar": "رابط شرطي وزمني: يضع الفعل المصرف في نهاية الجملة.",
-      "uk": "Умовний/часовий сполучник: відправляє дієслово в кінець речення."
+      "uk": "Умовний/часовий сполучник: відправляє дієслово в кінець речення.",
+      "title": {
+        "tr": "💡 Bağlaç Kuralı: Fiil Sonda (Nebensatz)",
+        "en": "💡 Subordinating Conjunction: Verb-Final Order",
+        "ar": "💡 رابط جملة جانبية: الفعل في نهاية الجملة",
+        "uk": "💡 Підрядний сполучник: Дієслово в кінці речення"
+      }
     },
     "examples": [
       {
@@ -14827,7 +17101,13 @@ window.READING_LEXICON = {
       "tr": "Zamir (Pronomen): 'wer' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
       "en": "Pronoun: 'wer' stands in place of a noun and reflects grammatical case.",
       "ar": "ضمير: 'wer' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
-      "uk": "Займенник: 'wer' замінює іменник і змінюється за відмінками."
+      "uk": "Займенник: 'wer' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -14866,7 +17146,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'werden' temel eylem bildiren fiildir.",
       "en": "Verb: 'werden' denotes action, process, or state.",
       "ar": "فعل: 'werden' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'werden' позначає дію або стан."
+      "uk": "Дієслово: 'werden' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (werden)",
+        "en": "💡 Verb Structure (werden)",
+        "ar": "💡 بنية الفعل (werden)",
+        "uk": "💡 Структура дієслова (werden)"
+      }
     },
     "examples": [
       {
@@ -14905,7 +17191,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'wesentlich' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'wesentlich' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'wesentlich' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'wesentlich' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'wesentlich' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (wesentlich)",
+        "en": "💡 Adverb (wesentlich)",
+        "ar": "💡 ظرف (wesentlich)",
+        "uk": "💡 Прислівник (wesentlich)"
+      }
     },
     "examples": [
       {
@@ -14944,7 +17236,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat (Adjektiv): 'wichtig' niteleme veya durum sıfatıdır.",
       "en": "Adjective: 'wichtig' describes quality or state.",
       "ar": "صفة: 'wichtig' تصف الحالة أو الخاصية.",
-      "uk": "Прикметник: 'wichtig' описує ознаку або стан."
+      "uk": "Прикметник: 'wichtig' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (wichtig)",
+        "en": "💡 Adjective (wichtig)",
+        "ar": "💡 بنية الصفة (wichtig)",
+        "uk": "💡 Структура прикметника (wichtig)"
+      }
     },
     "examples": [
       {
@@ -14980,10 +17278,16 @@ window.READING_LEXICON = {
     "example_ar": "فرصة هامة لتكوين المعارف.",
     "example_uk": "Важлива нагода знайти знайомих.",
     "grammar": {
-      "tr": "Sıfat çekimi: 'wichtig' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
-      "en": "Adjective declension: 'wichtig' takes the '-e' ending before a feminine singular or plural noun.",
-      "ar": "تصريف الصفات: تأخذ الصفة 'wichtig' لاحقة '-e' للمؤنث أو الجمع.",
-      "uk": "Відмінювання прикметників: прикметник 'wichtig' приймає закінчення '-e'."
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Karışık Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Mixed Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف صفة مختلط)",
+        "uk": "💡 Чому закінчення \"-e\"? (Мішана відміна прикметника)"
+      },
+      "tr": "Karışık sıfat çekimi: 'eine wichtige Gelegenheit' yapısında 'eine' belirsiz artikelinden sonra feminin sıfat Nominativ '-e' takısı alır.",
+      "en": "Mixed adjective declension: In 'eine wichtige Gelegenheit', takes '-e' after indefinite article 'eine' before feminine noun.",
+      "ar": "تصريف مختلط: تأخذ الصفة لاحقة '-e' بعد أداة التنكير 'eine' قبل الاسم المؤنث.",
+      "uk": "Мішана відміна: після неозначеного артикля 'eine' перед іменником жіночого роду прикметник приймає '-e'."
     },
     "examples": [
       {
@@ -15022,7 +17326,13 @@ window.READING_LEXICON = {
       "tr": "Bağlaç (Konjunktion): 'wie' cümleleri veya kelimeleri birbirine bağlar ve cümledeki fiil pozisyonunu belirler.",
       "en": "Conjunction: 'wie' connects clauses or words and dictates word order.",
       "ar": "حرف عطف أو رابط: 'wie' يربط بين الجمل ويحدد موقع الفعل.",
-      "uk": "Сполучник: 'wie' з'єднує речення або слова і визначає позицію дієслова."
+      "uk": "Сполучник: 'wie' з'єднує речення або слова і визначає позицію дієслова.",
+      "title": {
+        "tr": "💡 Bağlaç Kuralı: Fiil Sonda (Nebensatz)",
+        "en": "💡 Subordinating Conjunction: Verb-Final Order",
+        "ar": "💡 رابط جملة جانبية: الفعل في نهاية الجملة",
+        "uk": "💡 Підрядний сполучник: Дієслово в кінці речення"
+      }
     },
     "examples": [
       {
@@ -15061,7 +17371,13 @@ window.READING_LEXICON = {
       "tr": "Bileşik isim (Kompositum): 'die Woche' (hafta) + 'das Ende' (son). Cinsiyeti son kelimeden ötürü nötrdür (das Wochenende). 'am Wochenende' kalıbı 'an + dem' Dativ birleşimidir.",
       "en": "Compound noun: 'die Woche' (week) + 'das Ende' (end). Neuter gender from 'das Ende'. 'am Wochenende' contracts 'an + dem' (Dative).",
       "ar": "اسم مركب: 'die Woche' (أسبوع) + 'das Ende' (نهاية). محايد من 'das Ende'. 'am Wochenende' دمج لـ 'an + dem'.",
-      "uk": "Складний іменник: 'die Woche' (тиждень) + 'das Ende' (кінець). Середнього роду від 'das Ende'."
+      "uk": "Складний іменник: 'die Woche' (тиждень) + 'das Ende' (кінець). Середнього роду від 'das Ende'.",
+      "title": {
+        "tr": "💡 Kelime Yapısı: Bileşik İsim (Kompositum)",
+        "en": "💡 Word Structure: Compound Noun (Kompositum)",
+        "ar": "💡 بنية الكلمة: اسم مركب (Kompositum)",
+        "uk": "💡 Будова слова: Складний іменник (Kompositum)"
+      }
     },
     "examples": [
       {
@@ -15107,7 +17423,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Wohnflächen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Wohnflächen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Wohnflächen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Wohnflächen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Wohnflächen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Wohnfläche)",
+        "en": "💡 Noun Structure (die Wohnfläche)",
+        "ar": "💡 بنية الاسم (die Wohnfläche)",
+        "uk": "💡 Структура іменника (die Wohnfläche)"
+      }
     },
     "examples": [
       {
@@ -15146,7 +17468,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Wohnungen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Wohnungen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Wohnungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Wohnungen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Wohnungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Wohnung)",
+        "en": "💡 Noun Structure (die Wohnung)",
+        "ar": "💡 بنية الاسم (die Wohnung)",
+        "uk": "💡 Структура іменника (die Wohnung)"
+      }
     },
     "examples": [
       {
@@ -15185,7 +17513,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Wohnungssuche)",
+        "en": "💡 Noun Structure (die Wohnungssuche)",
+        "ar": "💡 بنية الاسم (die Wohnungssuche)",
+        "uk": "💡 Структура іменника (die Wohnungssuche)"
+      }
     },
     "examples": [
       {
@@ -15224,7 +17558,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Wohnzimmer'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Wohnzimmer'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Wohnzimmer'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Wohnzimmer'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Wohnzimmer'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Wohnzimmer)",
+        "en": "💡 Noun Structure (das Wohnzimmer)",
+        "ar": "💡 بنية الاسم (das Wohnzimmer)",
+        "uk": "💡 Структура іменника (das Wohnzimmer)"
+      }
     },
     "examples": [
       {
@@ -15260,10 +17600,16 @@ window.READING_LEXICON = {
     "example_ar": "عندما أردت البدء في استخدام الجهاز وتشغيله.",
     "example_uk": "Коли я хотіла запустити прилад в роботу.",
     "grammar": {
-      "tr": "Fiil (Verb): 'wollen' temel eylem bildiren fiildir.",
-      "en": "Verb: 'wollen' denotes action, process, or state.",
-      "ar": "فعل: 'wollen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'wollen' позначає дію або стан."
+      "title": {
+        "tr": "💡 Modal Fiil Çekimi: Präteritum / Geçmiş Zaman (wollen ➔ wollte)",
+        "en": "💡 Modal Verb Form: Präteritum / Past Tense (wollen ➔ wollte)",
+        "ar": "💡 ماضي الفعل المساعد: الماضي البسيط (wollen ➔ wollte)",
+        "uk": "💡 Модальне дієслово: Минулий час Präteritum (wollen ➔ wollte)"
+      },
+      "tr": "Modal fiil geçmiş zamanı (Präteritum): 'wollen' (istemek / niyet etmek) fiilinin geçmiş zamanıdır ('Als ich das Gerät in Betrieb nehmen wollte...' = Cihazı çalıştırmak / kullanıma almak istediğimde...).",
+      "en": "Modal verb past tense (Präteritum): Past tense of 'wollen' (to want/intend). In text: 'Als ich das Gerät in Betrieb nehmen wollte...' (When I wanted to put the device into operation...).",
+      "ar": "الماضي البسيط للفعل المساعد (Präteritum): ماضي الفعل 'wollen' (أراد / نوى). في النص: 'Als ich das Gerät in Betrieb nehmen wollte...' (عندما أردت تشغيل الجهاز...).",
+      "uk": "Минулий час модального дієслова (Präteritum): минулий час дієслова 'wollen' (хотіти). У тексті: 'Als ich das Gerät in Betrieb nehmen wollte...' (Коли я хотів ввести прилад в експлуатацію...)."
     },
     "examples": [
       {
@@ -15284,7 +17630,7 @@ window.READING_LEXICON = {
   },
   "wurde": {
     "de": "werden",
-    "displayDe": "wurde",
+    "displayDe": "werden",
     "article": "",
     "plural": "",
     "pos": "verb",
@@ -15299,10 +17645,16 @@ window.READING_LEXICON = {
     "example_ar": "تم تسليم الطرد بالأمس.",
     "example_uk": "Посилку було доставлено вчора.",
     "grammar": {
-      "tr": "Fiil (Verb): 'wurde' temel eylem bildiren fiildir.",
-      "en": "Verb: 'wurde' denotes action, process, or state.",
-      "ar": "فعل: 'wurde' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'wurde' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Präteritum / Edilgen Geçmiş (werden ➔ wurde)",
+        "en": "💡 Verb Conjugation: Past Passive Voice (werden ➔ wurde)",
+        "ar": "💡 تصريف الفعل: الماضي المبني للمجهول (werden ➔ wurde)",
+        "uk": "💡 Дієвідмінювання: Минулий пасивний стан (werden ➔ wurde)"
+      },
+      "tr": "Präteritum / Edilgen Çatı (Passiv Präteritum): 'werden' yardımcı fiilinin geçmiş zamanıdır. Bir ana fiilin Partizip II haliyle birleşerek geçmişte edilgen eylemi anlatır ('wurde geliefert' = teslim edildi; 'übergeben wurde' = teslim edilmişti).",
+      "en": "Past passive voice (Passiv Präteritum): Präteritum form of auxiliary 'werden'. Combined with Participle II to express past passive actions ('wurde geliefert' = was delivered; 'übergeben wurde' = was handed over).",
+      "ar": "الماضي المبني للمجهول (Passiv Präteritum): صيغة الماضي من الفعل المساعد 'werden'. يقترن باسم المفعول للتعبير عن المبني للمجهول في الماضي ('wurde geliefert' = تم تسليمه).",
+      "uk": "Минулий пасивний стан (Passiv Präteritum): форма минулого часу допоміжного дієслова 'werden'. У поєднанні з Partizip II виражає пасивну дію в минулому ('wurde geliefert' = було доставлено)."
     },
     "examples": [
       {
@@ -15313,7 +17665,7 @@ window.READING_LEXICON = {
         "uk": "Посилку було доставлено вчора."
       },
       {
-        "de": "In Deutschland kann man wurde, um neue Erfahrungen zu sammeln.",
+        "de": "In Deutschland kann man werden, um neue Erfahrungen zu sammeln.",
         "tr": "Almanya'da yeni deneyimler kazanmak için -ildi, teslim edildi (geçmiş zaman edilgen) eylemi yapılabilir.",
         "en": "In Germany, one can was (delivered) to gain new experience.",
         "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
@@ -15341,7 +17693,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'während' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
       "en": "Preposition: 'während' governs the grammatical case (Dative/Accusative) of the following noun.",
       "ar": "حرف جر: 'während' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
-      "uk": "Прийменник: 'während' визначає відмінок іменника (Dativ чи Akkusativ)."
+      "uk": "Прийменник: 'während' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
     },
     "examples": [
       {
@@ -15362,7 +17720,7 @@ window.READING_LEXICON = {
   },
   "wänden": {
     "de": "die Wand",
-    "displayDe": "Wänden",
+    "displayDe": "Wand",
     "article": "die",
     "plural": "die Wände",
     "pos": "noun",
@@ -15380,7 +17738,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Wände'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Wände'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Wände'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Wände'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Wände'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -15391,9 +17755,9 @@ window.READING_LEXICON = {
         "uk": "Праця у власних чотирьох стінах."
       },
       {
-        "de": "Für viele Menschen in Deutschland spielt die Wänden eine wichtige Rolle im Alltag.",
-        "tr": "Almanya'daki pek çok insan için Wänden günlük yaşamda önemli bir rol oynar.",
-        "en": "For many people in Germany, Wänden plays an important role in daily life.",
+        "de": "Für viele Menschen in Deutschland spielt die Wand eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Wand günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Wand plays an important role in daily life.",
         "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
         "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
       }
@@ -15419,7 +17783,13 @@ window.READING_LEXICON = {
       "tr": "Konjunktiv II 'würde' yapısı: 'werden' fiilinin Konjunktiv II halidir. Ana fiille birleşerek varsayımsal durumları anlatır ('würden fehlen' = eksik kalırlardı / yoklukları hissedilirdi).",
       "en": "Konjunktiv II with 'würde': Subjunctive of 'werden', used with main verbs to express hypothetical situations ('würden fehlen' = would be missing).",
       "ar": "صيغة Konjunktiv II مع 'würde': تستخدم للتعبير عن مواقف افتراضية ('würden fehlen' = لكانت غائبة).",
-      "uk": "Конструкція Konjunktiv II з 'würden': виражає умовну дію ('würden fehlen' = були б відсутніми)."
+      "uk": "Конструкція Konjunktiv II з 'würden': виражає умовну дію ('würden fehlen' = були б відсутніми).",
+      "title": {
+        "tr": "💡 Fiil Çekimi: Konjunktiv II (Şart / İhtimal Kipi)",
+        "en": "💡 Verb Form: Konjunktiv II (Subjunctive / Conditional)",
+        "ar": "💡 تصريف الفعل: صيغة الاحتمال والتمني (Konjunktiv II)",
+        "uk": "💡 Форма дієслова: Умовний спосіб (Konjunktiv II)"
+      }
     },
     "examples": [
       {
@@ -15458,7 +17828,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Zeit)",
+        "en": "💡 Noun Structure (die Zeit)",
+        "ar": "💡 بنية الاسم (die Zeit)",
+        "uk": "💡 Структура іменника (die Zeit)"
+      }
     },
     "examples": [
       {
@@ -15497,7 +17873,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Zeiten'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Zeiten'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Zeiten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Zeiten'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Zeiten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -15533,10 +17915,16 @@ window.READING_LEXICON = {
     "example_ar": "من يقرأ إعلانًا في جريدة أو عبر الإنترنت.",
     "example_uk": "Хто читає оголошення в газеті або в інтернеті.",
     "grammar": {
-      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Zeitungsanzeigen'. Almancada tüm isimler daima büyük harfle başlar.",
-      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Zeitungsanzeigen'. In German, all nouns are capitalized.",
-      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Zeitungsanzeigen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Zeitungsanzeigen'. Всі іменники в німецькій пишуться з великої літери."
+      "title": {
+        "tr": "💡 Yazım Kuralı: Bileşik Kelime Tasarrufu (Zeitungs- oder Onlineanzeige)",
+        "en": "💡 Orthography: Suspended Hyphenation (Zeitungs- oder Onlineanzeige)",
+        "ar": "💡 قاعدة إملائية: الوصلة المشتركة للاسم المركب",
+        "uk": "💡 Правопис: Скорочення спільного кореня через дефіс"
+      },
+      "tr": "Kısa çizgili tamlama tasarrufu: 'Zeitungs- oder Onlineanzeige' yapısında 'Zeitungs-' kelimesi 'Zeitungsanzeige' (gazete ilanı) tamlamasını ifade eder; ortak olan '-anzeige' kelimesi ikinci kısımda bir kez yazılmıştır.",
+      "en": "Suspended hyphenation: In 'Zeitungs- oder Onlineanzeige', 'Zeitungs-' stands for 'Zeitungsanzeige' (newspaper ad), sharing the base noun '-anzeige'.",
+      "ar": "وصلة الاختصار للأسماء المركبة: 'Zeitungs-' تدل على 'Zeitungsanzeige' (إعلان الجريدة)، مع كتابة الكلمة المشتركة '-anzeige' في النهاية فقط.",
+      "uk": "Дефіс для складноскладних слів: 'Zeitungs-' замінює 'Zeitungsanzeige' (газетне оголошення) зі спільним словом '-anzeige'."
     },
     "examples": [
       {
@@ -15575,7 +17963,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Zinsen'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Zinsen'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Zinsen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Zinsen'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Zinsen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -15614,7 +18008,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'zu' edatı her zaman DATIV gerektirir. Artikel ile birleşir: zu + dem = zum, zu + der = zur (zum Alltag, zur Arbeit).",
       "en": "Preposition: 'zu' always governs the DATIVE case. Contracts with articles: zu + dem = zum, zu + der = zur.",
       "ar": "حرف جر: 'zu' يتطلب دائمًا حالة الـ DATIV. يندمج مع الأداة: zu + dem = zum, zu + der = zur.",
-      "uk": "Прийменник: 'zu' завжди вимагає DATIV. Зливається з артиклями: zu + dem = zum, zu + der = zur."
+      "uk": "Прийменник: 'zu' завжди вимагає DATIV. Зливається з артиклями: zu + dem = zum, zu + der = zur.",
+      "title": {
+        "tr": "💡 Edat Kuralı: Dativ (İsmin -e Hali) Gerektirir",
+        "en": "💡 Preposition Rule: Governs Dative Case",
+        "ar": "💡 قاعدة حرف الجر: يجر بالـ Dativ دائمًا",
+        "uk": "💡 Правило прийменника: Завжди вимагає Dativ"
+      }
     },
     "examples": [
       {
@@ -15653,7 +18053,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'zudem' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'zudem' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'zudem' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'zudem' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'zudem' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (zudem)",
+        "en": "💡 Adverb (zudem)",
+        "ar": "💡 ظرف (zudem)",
+        "uk": "💡 Прислівник (zudem)"
+      }
     },
     "examples": [
       {
@@ -15692,7 +18098,13 @@ window.READING_LEXICON = {
       "tr": "Edat (Präposition): 'zum' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
       "en": "Preposition: 'zum' governs the grammatical case (Dative/Accusative) of the following noun.",
       "ar": "حرف جر: 'zum' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
-      "uk": "Прийменник: 'zum' визначає відмінок іменника (Dativ чи Akkusativ)."
+      "uk": "Прийменник: 'zum' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
     },
     "examples": [
       {
@@ -15731,7 +18143,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'zurücksenden' temel eylem bildiren fiildir.",
       "en": "Verb: 'zurücksenden' denotes action, process, or state.",
       "ar": "فعل: 'zurücksenden' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'zurücksenden' позначає дію або стан."
+      "uk": "Дієслово: 'zurücksenden' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı: Ayrılabilir Fiil + \"zu\" Mastarı",
+        "en": "💡 Verb Structure: Separable Verb + \"zu\" Infinitive",
+        "ar": "💡 بنية الفعل: فعل منفصل مع أداة المصدر \"zu\"",
+        "uk": "💡 Структура дієслова: Відокремлюване дієслово з \"zu\""
+      }
     },
     "examples": [
       {
@@ -15770,7 +18188,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'zurückzahlen' temel eylem bildiren fiildir.",
       "en": "Verb: 'zurückzahlen' denotes action, process, or state.",
       "ar": "فعل: 'zurückzahlen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'zurückzahlen' позначає дію або стан."
+      "uk": "Дієслово: 'zurückzahlen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı: Ayrılabilir Fiil + \"zu\" Mastarı",
+        "en": "💡 Verb Structure: Separable Verb + \"zu\" Infinitive",
+        "ar": "💡 بنية الفعل: فعل منفصل مع أداة المصدر \"zu\"",
+        "uk": "💡 Структура дієслова: Відокремлюване дієслово з \"zu\""
+      }
     },
     "examples": [
       {
@@ -15809,7 +18233,13 @@ window.READING_LEXICON = {
       "tr": "Zarf (Adverb): 'zusammen' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
       "en": "Adverb: 'zusammen' modifies a verb, adjective, or clause.",
       "ar": "ظرف: 'zusammen' يبين الزمان أو المكان أو الكيفية.",
-      "uk": "Прислівник: 'zusammen' вказує на час, місце, спосіб дії чи ступінь."
+      "uk": "Прислівник: 'zusammen' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Fiil Yapısı: Ayrılabilir Fiil + \"zu\" Mastarı",
+        "en": "💡 Verb Structure: Separable Verb + \"zu\" Infinitive",
+        "ar": "💡 بنية الفعل: فعل منفصل مع أداة المصدر \"zu\"",
+        "uk": "💡 Структура дієслова: Відокремлюване дієслово з \"zu\""
+      }
     },
     "examples": [
       {
@@ -15848,7 +18278,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Fiil Yapısı: Ayrılabilir Fiil + \"zu\" Mastarı",
+        "en": "💡 Verb Structure: Separable Verb + \"zu\" Infinitive",
+        "ar": "💡 بنية الفعل: فعل منفصل مع أداة المصدر \"zu\"",
+        "uk": "💡 Структура дієслова: Відокремлюване дієслово з \"zu\""
+      }
     },
     "examples": [
       {
@@ -15869,7 +18305,7 @@ window.READING_LEXICON = {
   },
   "zusammenlebens": {
     "de": "das Zusammenleben",
-    "displayDe": "Zusammenlebens",
+    "displayDe": "Zusammenleben",
     "article": "das",
     "plural": "-",
     "pos": "noun",
@@ -15887,7 +18323,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'das'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'das'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'das'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
     },
     "examples": [
       {
@@ -15898,9 +18340,9 @@ window.READING_LEXICON = {
         "uk": "Основа гармонійного суспільного життя."
       },
       {
-        "de": "Für viele Menschen in Deutschland spielt das Zusammenlebens eine wichtige Rolle im Alltag.",
-        "tr": "Almanya'daki pek çok insan için Zusammenlebens günlük yaşamda önemli bir rol oynar.",
-        "en": "For many people in Germany, Zusammenlebens plays an important role in daily life.",
+        "de": "Für viele Menschen in Deutschland spielt das Zusammenleben eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Zusammenleben günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Zusammenleben plays an important role in daily life.",
         "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
         "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
       }
@@ -15926,7 +18368,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Zustände'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Zustände'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Zustände'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Zustände'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Zustände'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Zustand)",
+        "en": "💡 Noun Structure (der Zustand)",
+        "ar": "💡 بنية الاسم (der Zustand)",
+        "uk": "💡 Структура іменника (der Zustand)"
+      }
     },
     "examples": [
       {
@@ -15965,7 +18413,13 @@ window.READING_LEXICON = {
       "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Zuwanderer'. Almancada tüm isimler daima büyük harfle başlar.",
       "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Zuwanderer'. In German, all nouns are capitalized.",
       "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Zuwanderer'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
-      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Zuwanderer'. Всі іменники в німецькій пишуться з великої літери."
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Zuwanderer'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Zuwanderer)",
+        "en": "💡 Noun Structure (der Zuwanderer)",
+        "ar": "💡 بنية الاسم (der Zuwanderer)",
+        "uk": "💡 Структура іменника (der Zuwanderer)"
+      }
     },
     "examples": [
       {
@@ -16004,7 +18458,13 @@ window.READING_LEXICON = {
       "tr": "Ayrılabilir fiil + 'zu' mastarı: 'zusenden' (göndermek/postalamak) fiilinde 'zu' önek ile birleşir: zu-zu-senden.",
       "en": "Separable verb with 'zu': 'zusenden' takes 'zu' between prefix and stem: zu-zu-senden.",
       "ar": "فعل منفصل مع 'zu': 'zusenden' يأخذ 'zu' بين السابقة والجذر: zu-zu-senden.",
-      "uk": "Відокремлюване дієслово з 'zu': 'zusenden' розміщує 'zu' між префіксом і основою: zu-zu-senden."
+      "uk": "Відокремлюване дієслово з 'zu': 'zusenden' розміщує 'zu' між префіксом і основою: zu-zu-senden.",
+      "title": {
+        "tr": "💡 Fiil Yapısı: Ayrılabilir Fiil + \"zu\" Mastarı",
+        "en": "💡 Verb Structure: Separable Verb + \"zu\" Infinitive",
+        "ar": "💡 بنية الفعل: فعل منفصل مع أداة المصدر \"zu\"",
+        "uk": "💡 Структура дієслова: Відокремлюване дієслово з \"zu\""
+      }
     },
     "examples": [
       {
@@ -16043,7 +18503,13 @@ window.READING_LEXICON = {
       "tr": "Sözcük türü: num. Cümle içinde anlam bütünlüğü sağlar.",
       "en": "Part of speech: num.",
       "ar": "نوع الكلمة: num.",
-      "uk": "Частина мови: num."
+      "uk": "Частина мови: num.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
     },
     "examples": [
       {
@@ -16082,7 +18548,13 @@ window.READING_LEXICON = {
       "tr": "İki durumlu edat: Zaman aralıklarında DATIV çoğul gerektirir ('zwischen 22:00 und 6:00 Uhr' = saat 22:00 ile 06:00 arasında).",
       "en": "Preposition: Governs Dative plural for time ranges ('zwischen 22:00 und 6:00 Uhr').",
       "ar": "حرف جر: يتطلب Dativ للفترات الزمنية ('zwischen 22:00 und 6:00 Uhr').",
-      "uk": "Прийменник: у часових проміжках вимагає Dativ ('zwischen 22:00 und 6:00 Uhr')."
+      "uk": "Прийменник: у часових проміжках вимагає Dativ ('zwischen 22:00 und 6:00 Uhr').",
+      "title": {
+        "tr": "💡 Edat Kuralı: Dativ (İsmin -e Hali) Gerektirir",
+        "en": "💡 Preposition Rule: Governs Dative Case",
+        "ar": "💡 قاعدة حرف الجر: يجر بالـ Dativ دائمًا",
+        "uk": "💡 Правило прийменника: Завжди вимагає Dativ"
+      }
     },
     "examples": [
       {
@@ -16121,7 +18593,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi (Adjektivdeklination): 'von' edatı her zaman Dativ (ismin -e hali) gerektirir. 'Mitbürger' çoğul isminin önünde belirli artikel (der/die/das) olmadığı için sıfat güçlü çekim Dativ Plural '-en' takısı almıştır (von älteren Mitbürgern = yaşlı vatandaşlara).",
       "en": "Adjective declension: The preposition 'von' always governs the Dative case. Because the plural noun 'Mitbürger' has no definite article, the adjective takes the strong Dative plural '-en' ending (von älteren Mitbürgern).",
       "ar": "تصريف الصفات: حرف الجر 'von' يتطلب دائمًا حالة الـ Dativ (المجرور). نظرًا لعدم وجود أداة تعريف قبل اسم الجمع 'Mitbürger'، تأخذ الصفة لاحقة الـ Dativ للجمع '-en'.",
-      "uk": "Відмінювання прикметників: прийменник 'von' завжди вимагає давального відмінка (Dativ). Оскільки перед іменником у множині 'Mitbürger' немає артикля, прикметник отримує сильне закінчення '-en' для Dativ Plural."
+      "uk": "Відмінювання прикметників: прийменник 'von' завжди вимагає давального відмінка (Dativ). Оскільки перед іменником у множині 'Mitbürger' немає артикля, прикметник отримує сильне закінчення '-en' для Dativ Plural.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
     },
     "examples": [
       {
@@ -16167,7 +18645,13 @@ window.READING_LEXICON = {
       "tr": "Sıfat çekimi (Güçlü çekim): 'öffentliche Angebote' yapısında çoğul isim önünde artikel olmadığı için sıfat Nominativ Plural '-e' takısı almıştır.",
       "en": "Strong adjective declension: Plural noun without article takes Nominative plural ending '-e'.",
       "ar": "تصريف قوي: الاسم جمع بدون أداة، تأخذ الصفة لاحقة الرفع للجمع '-e'.",
-      "uk": "Сильна відміна: іменник у множині без артикля приймає закінчення '-e'."
+      "uk": "Сильна відміна: іменник у множині без артикля приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
     },
     "examples": [
       {
@@ -16206,7 +18690,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'übergeben' temel eylem bildiren fiildir.",
       "en": "Verb: 'übergeben' denotes action, process, or state.",
       "ar": "فعل: 'übergeben' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'übergeben' позначає дію або стан."
+      "uk": "Дієслово: 'übergeben' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (übergeben)",
+        "en": "💡 Verb Structure (übergeben)",
+        "ar": "💡 بنية الفعل (übergeben)",
+        "uk": "💡 Структура дієслова (übergeben)"
+      }
     },
     "examples": [
       {
@@ -16245,7 +18735,13 @@ window.READING_LEXICON = {
       "tr": "Fiil (Verb): 'übernehmen' temel eylem bildiren fiildir.",
       "en": "Verb: 'übernehmen' denotes action, process, or state.",
       "ar": "فعل: 'übernehmen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'übernehmen' позначає дію або стан."
+      "uk": "Дієслово: 'übernehmen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (übernehmen)",
+        "en": "💡 Verb Structure (übernehmen)",
+        "ar": "💡 بنية الفعل (übernehmen)",
+        "uk": "💡 Структура дієслова (übernehmen)"
+      }
     },
     "examples": [
       {
@@ -16281,10 +18777,16 @@ window.READING_LEXICON = {
     "example_ar": "يجب تحويل الإيجار مصرفيًا في مستهل كل شهر.",
     "example_uk": "Орендна плата має перераховуватися на початку місяця.",
     "grammar": {
-      "tr": "Fiil (Verb): 'überweisen' temel eylem bildiren fiildir.",
-      "en": "Verb: 'überweisen' denotes action, process, or state.",
-      "ar": "فعل: 'überweisen' يدل على حدث أو حالة.",
-      "uk": "Дієслово: 'überweisen' позначає дію або стан."
+      "title": {
+        "tr": "💡 Fiil Çekimi: Ayrılmaz Fiil Partizip II (überweisen ➔ überwiesen)",
+        "en": "💡 Verb Form: Inseparable Participle II (überweisen ➔ überwiesen)",
+        "ar": "💡 تصريف الفعل: اسم المفعول لفعل غير منفصل (überweisen ➔ überwiesen)",
+        "uk": "💡 Форма дієслова: Partizip II невідокремлюваного дієслова"
+      },
+      "tr": "Düzensiz Partizip II: 'überweisen' (havale etmek) fiilinde 'über-' ayrılmaz önek olduğu için başına 'ge-' ALMAZ. Kök seslisi 'ei' -> 'ie' değişimine uğrar (überweisen -> überwiesen). Edilgen yapıda: 'muss überwiesen werden' (havale edilmelidir).",
+      "en": "Irregular Participle II: 'überweisen' (to wire/transfer) has an inseparable prefix 'über-', so it does NOT take 'ge-'. Stem vowel changes 'ei' to 'ie' (überwiesen). In passive: 'muss überwiesen werden'.",
+      "ar": "اسم مفعول غير قياسي: الفعل 'überweisen' سابقة غير منفصلة، لذا لا يأخذ 'ge-'. يتحول 'ei' إلى 'ie'. في المبني للمجهول: 'muss überwiesen werden' (يجب أن يتم تحويله).",
+      "uk": "Partizip II невідокремлюваного дієслова: 'überweisen' має невідокремлюваний префікс, тому НЕ отримує 'ge-'. Голосна кореня змінюється з 'ei' на 'ie'. У пасиві: 'muss überwiesen werden'."
     },
     "examples": [
       {

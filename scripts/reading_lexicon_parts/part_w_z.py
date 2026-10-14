@@ -4,7 +4,7 @@
 PART_W_Z = {
     # === W ===
     "war": {
-        "de": "sein", "displayDe": "war", "article": "", "plural": "", "pos": "verb", "level": "A1",
+        "de": "sein", "displayDe": "sein", "article": "", "plural": "", "pos": "verb", "level": "A1",
         "tr": "-idi, idi (sein geçmiş zamanı)", "en": "was", "ar": "كان", "uk": "був / була / було",
         "example_de": "Da das Gerät von Anfang an mangelhaft war.",
         "example_tr": "Cihaz en başından beri kusurlu olduğu için.",
@@ -58,7 +58,7 @@ PART_W_Z = {
         "example_uk": "Що резервуар для води протікає."
     },
     "wassertanks": {
-        "de": "der Wassertank", "displayDe": "Wassertanks", "article": "der", "plural": "die Wassertanks", "pos": "noun", "level": "A2",
+        "de": "der Wassertank", "displayDe": "Wassertank", "article": "der", "plural": "die Wassertanks", "pos": "noun", "level": "A2",
         "tr": "su haznesinin (Genitiv)", "en": "of the water tank", "ar": "لخزان المياه (مضاف إليه)", "uk": "резервуара для води (родовий відмінок)",
         "example_de": "Ein Foto des beschädigten Wassertanks.",
         "example_tr": "Hasarlı su haznesinin bir fotoğrafı.",
@@ -220,7 +220,7 @@ PART_W_Z = {
         "example_uk": "Коли я хотіла запустити прилад в роботу."
     },
     "wurde": {
-        "de": "werden", "displayDe": "wurde", "article": "", "plural": "", "pos": "verb", "level": "A2",
+        "de": "werden", "displayDe": "werden", "article": "", "plural": "", "pos": "verb", "level": "A2",
         "tr": "-ildi, teslim edildi (geçmiş zaman edilgen)", "en": "was (delivered)", "ar": "تم (تسليمه)", "uk": "було (доставлено)",
         "example_de": "Das Paket wurde gestern geliefert.",
         "example_tr": "Paket dün teslim edildi.",
@@ -238,7 +238,7 @@ PART_W_Z = {
         "example_uk": "Під час цих годин шуміти заборонено."
     },
     "wänden": {
-        "de": "die Wand", "displayDe": "Wänden", "article": "die", "plural": "die Wände", "pos": "noun", "level": "A2",
+        "de": "die Wand", "displayDe": "Wand", "article": "die", "plural": "die Wände", "pos": "noun", "level": "A2",
         "tr": "duvarlar (in den eigenen vier Wänden: kendi evinde)", "en": "walls (in one's own four walls: at home)", "ar": "جدران (بين جدران بيته الأربعة)", "uk": "стіни (у власних чотирьох стінах)",
         "example_de": "Das Arbeiten in den eigenen vier Wänden.",
         "example_tr": "Kendi evinde (kendi dört duvarı arasında) çalışmak.",
@@ -357,7 +357,7 @@ PART_W_Z = {
         "example_uk": "Важливо для гармонійного спільного проживання в будинку."
     },
     "zusammenlebens": {
-        "de": "das Zusammenleben", "displayDe": "Zusammenlebens", "article": "das", "plural": "-", "pos": "noun", "level": "B1",
+        "de": "das Zusammenleben", "displayDe": "Zusammenleben", "article": "das", "plural": "-", "pos": "noun", "level": "B1",
         "tr": "bir arada yaşamanın (Genitiv)", "en": "of coexistence / community life", "ar": "للتعايش المشترك (مضاف إليه)", "uk": "суспільного співжиття (родовий відмінок)",
         "example_de": "Das Herzstück des gesellschaftlichen Zusammenlebens.",
         "example_tr": "Toplumsal bir arada yaşamanın kalbi / can damarı.",
