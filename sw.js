@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deutschlernen-v31';
+const CACHE_NAME = 'deutschlernen-v32';
 const ASSETS = [
   './',
   './index.html',
@@ -27,6 +27,7 @@ const ASSETS = [
   './data/vocab2000.js',
   './data/vocab_b2.js',
   './data/vocab_c1.js',
+  './data/readingLexicon.js',
   './data/readingData.js',
   './assets/icons/icon-192.png',
   './assets/icons/icon-512.png',

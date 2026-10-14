@@ -553,6 +553,41 @@
       if (!cleanWord) return null;
       const lower = cleanWord.toLowerCase();
 
+      // 0. Dedicated Reading Studio Lexicon (Exact contextual definitions for 100% of reading words)
+      if (typeof window !== 'undefined' && window.READING_LEXICON && window.READING_LEXICON[lower]) {
+        const item = window.READING_LEXICON[lower];
+        return {
+          de: item.de || cleanWord,
+          displayDe: item.displayDe || item.de || cleanWord,
+          article: item.article || '',
+          plural: item.plural || '',
+          pos: item.pos || '',
+          level: item.level || 'B1',
+          en: item.en || '',
+          tr: item.tr || '',
+          ar: item.ar || '',
+          uk: item.uk || '',
+          example_de: item.example_de || '',
+          example_tr: item.example_tr || '',
+          example_en: item.example_en || '',
+          example_ar: item.example_ar || '',
+          example_uk: item.example_uk || '',
+          forms: [lower]
+        };
+      }
+
+      // Stopwords to prevent short particles, prepositions, and articles from being registered as search forms
+      const STOPWORDS = new Set([
+        'und', 'oder', 'aber', 'denn', 'doch', 'weil', 'dass', 'da',
+        'der', 'die', 'das', 'den', 'dem', 'des',
+        'ein', 'eine', 'einer', 'einem', 'einen', 'eines',
+        'von', 'vom', 'vor', 'mit', 'auf', 'für', 'sich', 'in', 'im',
+        'an', 'am', 'zu', 'zur', 'zum', 'aus', 'bei', 'beim', 'nach',
+        'über', 'unter', 'als', 'wie', 'nur', 'auch', 'nicht', 'so',
+        'ist', 'sind', 'war', 'hat', 'haben', 'hatte', 'wird', 'werden',
+        'sg.', 'pl.', 'nur'
+      ]);
+
       // Normalize any vocabulary entry
       const parseEntry = (item, isGlossary) => {
         const rawDe = (item.de || '').trim();
@@ -572,7 +607,7 @@
 
         cleanNoArt.split(/[\s,/-]+/).forEach(part => {
           const p = part.trim().toLowerCase();
-          if (p.length >= 3 && !['und', 'der', 'die', 'das', 'den', 'dem', 'des', 'von', 'vor', 'mit', 'auf', 'für', 'sich', 'in'].includes(p)) {
+          if (p.length >= 3 && !STOPWORDS.has(p)) {
             forms.add(p);
           }
         });
@@ -581,7 +616,7 @@
         if (paren) {
           paren[1].split(/[,/\s]+/).forEach(p => {
             const pClean = p.replace(/^(hat|ist)\s+/, '').trim().toLowerCase();
-            if (pClean && pClean.length >= 3 && !['sg.', 'pl.', 'nur'].includes(pClean)) {
+            if (pClean && pClean.length >= 3 && !STOPWORDS.has(pClean)) {
               forms.add(pClean);
             }
           });
@@ -590,7 +625,7 @@
         if (rawDe.includes('/')) {
           rawDe.split('/').forEach(part => {
             const pClean = part.replace(/^(der|die|das|sich)\s+/i, '').split(/[,(/]/)[0].trim().toLowerCase();
-            if (pClean && pClean.length >= 3) forms.add(pClean);
+            if (pClean && pClean.length >= 3 && !STOPWORDS.has(pClean)) forms.add(pClean);
           });
         }
 
@@ -705,24 +740,32 @@
         }
       }
 
-      // 4. German Compound Noun Suffix (Kompositum) matching
+      // 4. German Compound Noun Suffix (Kompositum) matching with longest-base selection
       // e.g. Sportverein ends with Verein, Berufsalltag ends with Alltag, Arbeitsmodell ends with Modell
+      // Prevents sub-word collisions (e.g. Kaufpreis must NOT match Reis)
       if (lower.length >= 6) {
         const compoundTargets = [lower, lower.endsWith('en') ? lower.slice(0, -2) : null, lower.endsWith('e') ? lower.slice(0, -1) : null, lower.endsWith('s') ? lower.slice(0, -1) : null].filter(Boolean);
+        let bestCompound = null;
+        let maxBaseLen = 0;
+
         for (const target of compoundTargets) {
-          for (const entry of parsedGlossary) {
+          const testEntry = (entry) => {
             if (entry.pos === 'noun') {
               const base = entry.displayDe.toLowerCase();
-              if (base.length >= 4 && target.endsWith(base)) return entry;
+              if (base.length >= 4 && (target.length - base.length >= 3) && target.endsWith(base)) {
+                if (base.length > maxBaseLen) {
+                  bestCompound = entry;
+                  maxBaseLen = base.length;
+                }
+              }
             }
-          }
-          for (const entry of this._cachedVocabPool) {
-            if (entry.pos === 'noun') {
-              const base = entry.displayDe.toLowerCase();
-              if (base.length >= 4 && target.endsWith(base)) return entry;
-            }
-          }
+          };
+
+          for (const entry of parsedGlossary) testEntry(entry);
+          for (const entry of this._cachedVocabPool) testEntry(entry);
         }
+
+        if (bestCompound) return bestCompound;
       }
 
       // 5. Fallback generic entry
