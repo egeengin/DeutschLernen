@@ -25,6 +25,7 @@ from reading_lexicon_parts.part_s import PART_S
 from reading_lexicon_parts.part_t_u_v import PART_T_U_V
 from reading_lexicon_parts.part_w_z import PART_W_Z
 from reading_lexicon_parts.part_units_5_6 import PART_UNITS_5_6
+from reading_lexicon_parts.part_units_7_10 import PART_UNITS_7_10
 
 # Letter A & B
 PART_A_B = {
@@ -601,6 +602,7 @@ ALL_LEXICON.update(PART_S)
 ALL_LEXICON.update(PART_T_U_V)
 ALL_LEXICON.update(PART_W_Z)
 ALL_LEXICON.update(PART_UNITS_5_6)
+ALL_LEXICON.update(PART_UNITS_7_10)
 
 def main():
     print(f"Total entries in comprehensive lexicon: {len(ALL_LEXICON)}")

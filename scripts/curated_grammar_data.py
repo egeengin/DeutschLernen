@@ -1358,5 +1358,125 @@ CURATED_GRAMMAR = {
         "en": "Participle II & Passive voice: 'wiederbefüllen' forms Participle II as 'wiederbefüllt'. In text: 'können wiederbefüllt werden' (can be refilled) is a passive modal construction.",
         "ar": "اسم المفعول والمبني للمجهول: يُصاغ اسم المفعول كـ 'wiederbefüllt'. التركيب 'können wiederbefüllt werden' هو مبني للمجهول مع فعل مساعد (يمكن إعادة تعبئتها).",
         "uk": "Дієприкметник II та пасивний стан: 'wiederbefüllen' утворює Partizip II як 'wiederbefüllt'. Конструкція 'können wiederbefüllt werden' означає 'можуть бути повторно наповнені'."
-}
+    },
+    "überweist": {
+        "title": {
+            "tr": "💡 Fiil Çekimi: Präsens 3. Tekil Şahıs (überweisen ➔ überweist)",
+            "en": "💡 Verb Conjugation: 3rd Person Present (überweisen ➔ überweist)",
+            "ar": "💡 تصريف الفعل: المضارع للمفرد الغائب (überweisen ➔ überweist)",
+            "uk": "💡 Дієвідмінювання: 3-тя особа однини теперішнього часу (überweisen ➔ überweist)"
+        },
+        "tr": "Fiil çekimi: 'überweisen' (sevk etmek / havale etmek). 'über-' ayrılmayan bir önektir (Inseparable prefix). 3. tekil şahısta (er/sie/es) '-t' takısı alır: 'überweist'. Metinde: 'überweist bei Bedarf an Fachärzte'.",
+        "en": "Verb conjugation: 'überweisen' (to refer / transfer money). 'über-' is an inseparable prefix here. Takes 3rd person singular ending '-t': 'überweist'. In text: 'überweist an Fachärzte'.",
+        "ar": "تصريف الفعل: 'überweisen' (يحول إلى طبيب أخصائي أو يحول مالاً). السابقة 'über-' هنا غير منفصلة، ويأخذ الفعل في صيغة المفرد الغائب لاحقة '-t'.",
+        "uk": "Дієвідмінювання: 'überweisen' (направляти до спеціаліста). Префікс 'über-' тут є невідокремлюваним. У 3-й особі однини отримує закінчення '-t': 'überweist'."
+    },
+    "verschreibt": {
+        "title": {
+            "tr": "💡 Fiil Çekimi: Ayrılmayan Önek (ver- + schreiben)",
+            "en": "💡 Verb Structure: Inseparable Prefix (ver- + schreiben)",
+            "ar": "💡 بنية الفعل: سابقة غير منفصلة (ver- + schreiben)",
+            "uk": "💡 Будова дієслова: Невідокремлюваний префікс (ver- + schreiben)"
+        },
+        "tr": "Ayrılmayan fiil çekimi: 'ver-' öneki Almancada asla ayrılmaz (Untrennbar). 'verschreibt' fiili reçete yazmak anlamına gelir ve 3. tekil şahıs takısı '-t' almıştır.",
+        "en": "Inseparable verb conjugation: The prefix 'ver-' is never separated in German. 'verschreibt' means to prescribe and takes 3rd person singular '-t'.",
+        "ar": "فعل غير منفصل: السابقة 'ver-' لا تنفصل أبداً في الألمانية. يعني الفعل كتابة وصفة طبية ويأخذ لاحقة المفرد الغائب '-t'.",
+        "uk": "Невідокремлюване дієслово: префікс 'ver-' ніколи не відокремлюється в німецькій мові. Означає 'виписувати рецепт' та має закінчення 3-ї особи однини '-t'."
+    },
+    "wahrnimmt": {
+        "title": {
+            "tr": "💡 Fiil Çekimi: Ayrılabilir Fiil + Kök Değişimi (wahr-nehmen, e ➔ i)",
+            "en": "💡 Verb Conjugation: Separable Verb + Stem Vowel Change (wahr-nehmen, e ➔ i)",
+            "ar": "💡 تصريف الفعل: فعل منفصل مع تغيير حرف العلة (wahr-nehmen, e ➔ i)",
+            "uk": "💡 Дієвідмінювання: Відокремлюване дієслово зі зміною голосної (wahr-nehmen, e ➔ i)"
+        },
+        "tr": "Düzensiz ve ayrılabilir fiil çekimi: 'wahrnehmen' (randevuya riayet etmek / katılmak). 3. tekil şahısta (er/sie/es) kök seslisi 'e' -> 'i' değişimine uğrar (nimmt wahr). Yan cümlede fiil sonda birleşik yazılır: 'wahrnimmt'.",
+        "en": "Irregular separable verb: 'wahrnehmen' (to attend an appointment). Undergoes stem vowel change 'e' -> 'i' in 3rd person singular (nimmt wahr). In a subordinate clause, it appears at the end combined as 'wahrnimmt'.",
+        "ar": "فعل شاذ منفصل: 'wahrnehmen' (الالتزام بالموعد). يتغير حرف العلة من 'e' إلى 'i' في المفرد الغائب، وفي الجملة الجانبية يُكتب متصلاً في النهاية: 'wahrnimmt'.",
+        "uk": "Неправильне відокремлюване дієслово: 'wahrnehmen' (відвідувати прийом). Змінює голосну кореня 'e' на 'i' в 3-й особі однини. У підрядному реченні стоїть у кінці разом: 'wahrnimmt'."
+    },
+    "stehenzulassen": {
+        "title": {
+            "tr": "💡 Mastar Yapısı: Ayrılabilir Fiil + 'zu' (stehen-zu-lassen)",
+            "en": "💡 Infinitive Clause: Separable Verb with 'zu' (stehen-zu-lassen)",
+            "ar": "💡 صيغة المصدر: فعل منفصل مع 'zu' (stehen-zu-lassen)",
+            "uk": "💡 Інфінітивна конструкція: Відокремлюване дієслово з 'zu' (stehen-zu-lassen)"
+        },
+        "tr": "Ayrılabilir fiil + 'zu' mastar yapısı: 'stehenlassen' (arabayı bırakmak / kullanmamak) ayrılabilir bir fiildir. Mastar cümlelerinde 'zu' edatı önek ile fiil kökü arasına girer: stehen-zu-lassen.",
+        "en": "Separable verb with 'zu' infinitive: 'stehenlassen' (to leave behind / avoid using car). In 'zu' infinitive clauses, 'zu' is inserted between prefix and verb: stehen-zu-lassen.",
+        "ar": "المصدر مع 'zu' للأفعال المنفصلة: في التراكيب المصدرية تأتي 'zu' بين السابقة المنفصلة والفعل: stehen-zu-lassen (ترك السيارة وعدم استخدامها).",
+        "uk": "Інфінітив з 'zu': у відокремлюваному дієслові 'stehenlassen' частка 'zu' вставляється між префіксом та основним дієсловом: stehen-zu-lassen."
+    },
+    "übernimmt": {
+        "title": {
+            "tr": "💡 Fiil Çekimi: Düzensiz Kök Değişimi (übernehmen, e ➔ i)",
+            "en": "💡 Verb Conjugation: Irregular Stem Change (übernehmen, e ➔ i)",
+            "ar": "💡 تصريف الفعل: تغيير حرف العلة في الجذر (übernehmen, e ➔ i)",
+            "uk": "💡 Дієвідмінювання: Чергування голосної кореня (übernehmen, e ➔ i)"
+        },
+        "tr": "Düzensiz fiil çekimi: 'übernehmen' (üstlenmek / masrafları karşılamak). 3. tekil şahısta (er/sie/es) kök seslisi 'e' -> 'i' olur (übernimmt). Metinde: 'da die Krankenkasse die Kosten übernimmt'.",
+        "en": "Irregular verb conjugation: 'übernehmen' (to cover costs). Stem vowel changes from 'e' to 'i' in the 3rd person singular (übernimmt). In text: 'da die Krankenkasse die Kosten übernimmt'.",
+        "ar": "تصريف فعل غير قياسي: يتغير حرف العلة من 'e' إلى 'i' في المفرد الغائب (übernimmt = يتكفل بـ / يغطي التكاليف).",
+        "uk": "Неправильне дієслово: дієслово 'übernehmen' змінює голосну 'e' на 'i' в 3-й особі однини (übernimmt = бере на себе витрати)."
+    },
+    "erhält": {
+        "title": {
+            "tr": "💡 Fiil Çekimi: Umlaut Kök Değişimi (erhalten, a ➔ ä)",
+            "en": "💡 Verb Conjugation: Umlaut Stem Change (erhalten, a ➔ ä)",
+            "ar": "💡 تصريف الفعل: إمالة حرف العلة في الجذر (erhalten, a ➔ ä)",
+            "uk": "💡 Дієвідмінювання: Умлаут у корені (erhalten, a ➔ ä)"
+        },
+        "tr": "Düzensiz fiil çekimi: 'erhalten' (almak, temin etmek) fiili 3. tekil şahısta kök harfi 'a' -> 'ä' umlaut alır (er/sie/es erhält = alır).",
+        "en": "Irregular verb with umlaut: 'erhalten' (to receive) changes stem vowel 'a' to 'ä' in 3rd person singular (erhält = receives).",
+        "ar": "تصريف فعل غير قياسي مع إمالة: يتحول حرف العلة من 'a' إلى 'ä' في صيغة المفرد الغائب للفعل 'erhalten' (erhält = يحصل على).",
+        "uk": "Неправильне дієслово з умлаутом: дієслово 'erhalten' змінює голосну 'a' на 'ä' у 3-й особі однини (erhält = отримує)."
+    },
+    "ausgezahlt": {
+        "title": {
+            "tr": "💡 Zaman & Çatı: Partizip II / Passiv (auszahlen)",
+            "en": "💡 Voice & Participle: Participle II / Passive (auszahlen)",
+            "ar": "💡 صيغة المبني للمجهول / اسم المفعول (auszahlen)",
+            "uk": "💡 Пасивний стан та дієприкметник: Partizip II (auszahlen)"
+        },
+        "tr": "Partizip II ve Edilgen çatı: 'auszahlen' (hesaba ödemek). Cümlede 'werden ausgezahlt' (ödenirler / hesaba yatırılırlar) edilgen kalıbıyla kullanılmıştır.",
+        "en": "Participle II & Passive voice: 'auszahlen' forms Participle II 'ausgezahlt'. Used in passive construction 'werden ausgezahlt' (are paid out).",
+        "ar": "اسم المفعول والمبني للمجهول: يُصاغ كـ 'ausgezahlt'. التركيب 'werden ausgezahlt' يعني (يتم صرفها / دفعها للمستفيدين).",
+        "uk": "Partizip II та пасивний стан: від 'auszahlen' утворюється 'ausgezahlt'. Зворот 'werden ausgezahlt' означає 'виплачуються'."
+    },
+    "hausarztes": {
+        "title": {
+            "tr": "💡 İsmin Hali: Genitiv Tekil (des Hausarztes)",
+            "en": "💡 Genitive Case: Masculine Singular (des Hausarztes)",
+            "ar": "💡 حالة الإضافة: مفرد مذكر (des Hausarztes)",
+            "uk": "💡 Родовий відмінок: Чоловічий рід однини (des Hausarztes)"
+        },
+        "tr": "Genitiv tekil kuralı: 'der Hausarzt' maskulin tekil bir isimdir. Genitiv tamlamada artikel 'des' olur; sert ünsüzle ('-zt') bittiği için kelime sonuna ses uyumu gereği '-es' eklenir: des Hausarztes (aile hekiminin).",
+        "en": "Genitive singular rule: 'der Hausarzt' is masculine. Takes article 'des', and because of the consonant cluster ending, adds '-es': des Hausarztes (of the family doctor).",
+        "ar": "قاعدة الـ Genitiv للمفرد: 'der Hausarzt' اسم مذكر. في حالة المضاف إليه تصبح الأداة 'des' وتضاف اللاحقة '-es': des Hausarztes (لطبيب الأسرة).",
+        "uk": "Родовий відмінок однини: 'der Hausarzt' — іменник чоловічого роду. У Genitiv отримує артикль 'des' та закінчення '-es': des Hausarztes (сімейного лікаря)."
+    },
+    "deutschlandtickets": {
+        "title": {
+            "tr": "💡 İsmin Hali: Genitiv Tekil (des Deutschlandtickets)",
+            "en": "💡 Genitive Case: Neuter Singular (des Deutschlandtickets)",
+            "ar": "💡 حالة الإضافة: محايد مفرد (des Deutschlandtickets)",
+            "uk": "💡 Родовий відмінок: Середній рід однини (des Deutschlandtickets)"
+        },
+        "tr": "Genitiv tekil kuralı: 'das Deutschlandticket' nötr bir isimdir. Genitiv tamlamada artikel 'des' olur ve ismin sonuna '-s' eklenir: des Deutschlandtickets (Almanya biletinin).",
+        "en": "Genitive singular: 'das Deutschlandticket' is neuter. In the genitive case, the article becomes 'des' and the noun adds '-s': des Deutschlandtickets.",
+        "ar": "حالة الإضافة للمحايد: 'das Deutschlandticket' اسم محايد. في حالة الـ Genitiv تصبح الأداة 'des' وتضاف لاحقة '-s' للاسم.",
+        "uk": "Родовий відмінок середнього роду: 'das Deutschlandticket' має артикль 'des' та закінчення '-s': des Deutschlandtickets (Дойчландтикету)."
+    },
+    "bussen": {
+        "title": {
+            "tr": "💡 İsmin Hali: Dativ Plural Kuralı (in allen Bussen)",
+            "en": "💡 Case Declension: Dative Plural (in allen Bussen)",
+            "ar": "💡 تصريف الجمع: قاعدة Dativ للجمع (in allen Bussen)",
+            "uk": "💡 Відмінювання: Давальний відмінок множини (in allen Bussen)"
+        },
+        "tr": "Dativ Plural kuralı: 'der Bus' çoğulu 'die Busse'dir. 'in' edatı nerede (wo?) sorusuna yanıt verdiğinde Dativ gerektirir; Almancada tüm çoğul isimler Dativ halinde zorunlu '-n' takısı alır: in allen Bussen.",
+        "en": "Dative Plural rule: 'der Bus' plurals to 'die Busse'. Governed by 'in' (location = Dative), all plural nouns must take an extra '-n': in allen Bussen.",
+        "ar": "قاعدة الـ Dativ للجمع: جمع 'der Bus' هو 'die Busse'. مع حرف الجر 'in' للمكان، تأخذ جميع أسماء الجمع لاحقة '-n' إجبارياً: in allen Bussen.",
+        "uk": "Правило Dativ у множині: множина від 'der Bus' — 'die Busse'. Після прийменника 'in' (де? = Dativ) іменники у множині обов'язково отримують закінчення '-n': in allen Bussen."
+    }
 }

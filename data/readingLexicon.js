@@ -26904,5 +26904,17825 @@ window.READING_LEXICON = {
         "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
       }
     ]
+  },
+  "abonnement": {
+    "de": "das Abonnement",
+    "displayDe": "Abonnement",
+    "article": "das",
+    "plural": "die Abonnements",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "abonelik",
+    "en": "subscription",
+    "ar": "اشتراك",
+    "uk": "абонемент / підписка",
+    "example_de": "Das Deutschlandticket ist als monatlich kündbares Abonnement konzipiert.",
+    "example_tr": "Almanya bileti aylık iptal edilebilir bir abonelik olarak tasarlanmıştır.",
+    "example_en": "The Deutschlandticket is designed as a monthly cancellable subscription.",
+    "example_ar": "صُممت تذكرة ألمانيا كاشتراك يمكن إلغاؤه شهرياً.",
+    "example_uk": "Німецький квиток розроблено як підписку з можливістю щомісячного скасування.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Abonnements'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Abonnements'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Abonnements'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Abonnements'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Abonnement)",
+        "en": "💡 Noun Structure (das Abonnement)",
+        "ar": "💡 بنية الاسم (das Abonnement)",
+        "uk": "💡 Структура іменника (das Abonnement)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Deutschlandticket ist als monatlich kündbares Abonnement konzipiert.",
+        "tr": "Almanya bileti aylık iptal edilebilir bir abonelik olarak tasarlanmıştır.",
+        "en": "The Deutschlandticket is designed as a monthly cancellable subscription.",
+        "ar": "صُممت تذكرة ألمانيا كاشتراك يمكن إلغاؤه شهرياً.",
+        "uk": "Німецький квиток розроблено як підписку з можливістю щомісячного скасування."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Abonnement eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Abonnement günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Abonnement plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "abschlusstest": {
+    "de": "der Abschlusstest",
+    "displayDe": "Abschlusstest",
+    "article": "der",
+    "plural": "die Abschlusstests",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "bitirme sınavı / seviye tespit testi",
+    "en": "final exam / test",
+    "ar": "اختبار نهائي",
+    "uk": "підсумковий тест",
+    "example_de": "Am Ende des Orientierungskurses steht ein offizieller Abschlusstest.",
+    "example_tr": "Uyum kursunun sonunda resmi bir bitirme sınavı yer alır.",
+    "example_en": "At the end of the orientation course, there is an official final test.",
+    "example_ar": "في نهاية دورة التوجيه يوجد اختبار نهائي رسمي.",
+    "example_uk": "Наприкінці орієнтаційного курсу проводиться офіційний підсумковий тест.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Abschlusstests'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Abschlusstests'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Abschlusstests'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Abschlusstests'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Abschlusstest)",
+        "en": "💡 Noun Structure (der Abschlusstest)",
+        "ar": "💡 بنية الاسم (der Abschlusstest)",
+        "uk": "💡 Структура іменника (der Abschlusstest)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Am Ende des Orientierungskurses steht ein offizieller Abschlusstest.",
+        "tr": "Uyum kursunun sonunda resmi bir bitirme sınavı yer alır.",
+        "en": "At the end of the orientation course, there is an official final test.",
+        "ar": "في نهاية دورة التوجيه يوجد اختبار نهائي رسمي.",
+        "uk": "Наприкінці орієнтаційного курсу проводиться офіційний підсумковий тест."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Abschlusstest eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Abschlusstest günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Abschlusstest plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "absolviert": {
+    "de": "absolvieren",
+    "displayDe": "absolvieren",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "başarıyla tamamlamak (kurs/eğitim)",
+    "en": "to complete (course/studies)",
+    "ar": "أتم / اجتاز بنجاح",
+    "uk": "успішно закінчити / пройти",
+    "example_de": "Wer den Kurs erfolgreich absolviert, erhält ein offizielles Zertifikat.",
+    "example_tr": "Kursu başarıyla tamamlayan kişi resmi bir sertifika alır.",
+    "example_en": "Whoever successfully completes the course receives an official certificate.",
+    "example_ar": "من يجتاز الدورة بنجاح يحصل على شهادة رسمية.",
+    "example_uk": "Той, хто успішно закінчить курс, отримує офіційний сертифікат.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'absolvieren' temel eylem bildiren fiildir.",
+      "en": "Verb: 'absolvieren' denotes action, process, or state.",
+      "ar": "فعل: 'absolvieren' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'absolvieren' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (absolvieren)",
+        "en": "💡 Verb Structure (absolvieren)",
+        "ar": "💡 بنية الفعل (absolvieren)",
+        "uk": "💡 Структура дієслова (absolvieren)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer den Kurs erfolgreich absolviert, erhält ein offizielles Zertifikat.",
+        "tr": "Kursu başarıyla tamamlayan kişi resmi bir sertifika alır.",
+        "en": "Whoever successfully completes the course receives an official certificate.",
+        "ar": "من يجتاز الدورة بنجاح يحصل على شهادة رسمية.",
+        "uk": "Той, хто успішно закінчить курс, отримує офіційний сертифікат."
+      },
+      {
+        "de": "In Deutschland kann man absolvieren, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için başarıyla tamamlamak (kurs/eğitim) eylemi yapılabilir.",
+        "en": "In Germany, one can to complete (course/studies) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "adressen": {
+    "de": "die Adresse",
+    "displayDe": "Adresse",
+    "article": "die",
+    "plural": "die Adressen",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "adresler",
+    "en": "addresses",
+    "ar": "عناوين",
+    "uk": "адреси",
+    "example_de": "Geben Sie persönliche Adressen niemals leichtfertig im Internet preis.",
+    "example_tr": "Kişisel adresleri internette asla dikkatsizce paylaşmayın.",
+    "example_en": "Never recklessly disclose personal addresses on the internet.",
+    "example_ar": "لا تفصح أبداً عن العناوين الشخصية بتهور على الإنترنت.",
+    "example_uk": "Ніколи легковажно не розголошуйте особисті адреси в інтернеті.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Adressen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Adressen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Adressen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Adressen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Geben Sie persönliche Adressen niemals leichtfertig im Internet preis.",
+        "tr": "Kişisel adresleri internette asla dikkatsizce paylaşmayın.",
+        "en": "Never recklessly disclose personal addresses on the internet.",
+        "ar": "لا تفصح أبداً عن العناوين الشخصية بتهور على الإنترنت.",
+        "uk": "Ніколи легковажно не розголошуйте особисті адреси в інтернеті."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Adresse eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Adresse günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Adresse plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "aktivierung": {
+    "de": "die Aktivierung",
+    "displayDe": "Aktivierung",
+    "article": "die",
+    "plural": "die Aktivierungen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "etkinleştirme, aktivasyon",
+    "en": "activation",
+    "ar": "تفعيل / تنشيط",
+    "uk": "активація",
+    "example_de": "Die Aktivierung der Zwei-Faktor-Authentifizierung schützt Benutzerkonten.",
+    "example_tr": "İki faktörlü kimlik doğrulamanın etkinleştirilmesi kullanıcı hesaplarını korur.",
+    "example_en": "The activation of two-factor authentication protects user accounts.",
+    "example_ar": "تفعيل المصادقة الثنائية يحمي حسابات المستخدمين.",
+    "example_uk": "Активація двофакторної автентифікації захищає облікові записи.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Aktivierungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Aktivierungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Aktivierungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Aktivierungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Aktivierung)",
+        "en": "💡 Noun Structure (die Aktivierung)",
+        "ar": "💡 بنية الاسم (die Aktivierung)",
+        "uk": "💡 Структура іменника (die Aktivierung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Aktivierung der Zwei-Faktor-Authentifizierung schützt Benutzerkonten.",
+        "tr": "İki faktörlü kimlik doğrulamanın etkinleştirilmesi kullanıcı hesaplarını korur.",
+        "en": "The activation of two-factor authentication protects user accounts.",
+        "ar": "تفعيل المصادقة الثنائية يحمي حسابات المستخدمين.",
+        "uk": "Активація двофакторної автентифікації захищає облікові записи."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Aktivierung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Aktivierung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Aktivierung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "allen": {
+    "de": "alle",
+    "displayDe": "alle",
+    "article": "",
+    "plural": "",
+    "pos": "pron",
+    "level": "A1",
+    "tr": "hepsine, tümüne (Dativ)",
+    "en": "all / to all",
+    "ar": "للجميع / لكل",
+    "uk": "усім",
+    "example_de": "Das Ticket gilt in allen Bussen und Regionalzügen.",
+    "example_tr": "Bilet tüm otobüslerde ve bölgesel trenlerde geçerlidir.",
+    "example_en": "The ticket is valid on all buses and regional trains.",
+    "example_ar": "التذكرة صالحة في جميع الحافلات والقطارات الإقليمية.",
+    "example_uk": "Квиток діє в усіх автобусах та регіональних поїздах.",
+    "grammar": {
+      "tr": "Zamir (Pronomen): 'alle' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
+      "en": "Pronoun: 'alle' stands in place of a noun and reflects grammatical case.",
+      "ar": "ضمير: 'alle' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
+      "uk": "Займенник: 'alle' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Ticket gilt in allen Bussen und Regionalzügen.",
+        "tr": "Bilet tüm otobüslerde ve bölgesel trenlerde geçerlidir.",
+        "en": "The ticket is valid on all buses and regional trains.",
+        "ar": "التذكرة صالحة في جميع الحافلات والقطارات الإقليمية.",
+        "uk": "Квиток діє в усіх автобусах та регіональних поїздах."
+      },
+      {
+        "de": "Das Wort 'alle' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'alle' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'alle' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'alle' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'alle' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "allgemeinen": {
+    "de": "allgemein",
+    "displayDe": "allgemein",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "genel (çekimli form)",
+    "en": "general (declined form)",
+    "ar": "عام / كلي",
+    "uk": "загальний",
+    "example_de": "Der allgemeine Check-up dient der frühzeitigen Erkennung von Krankheiten.",
+    "example_tr": "Genel sağlık kontrolü hastalıkların erken teşhisine hizmet eder.",
+    "example_en": "The general checkup serves the early detection of diseases.",
+    "example_ar": "الفحص الطبي العام يهدف إلى الكشف المبكر عن الأمراض.",
+    "example_uk": "Загальний чекап служить для раннього виявлення захворювань.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'allgemein' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'allgemein' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'allgemein' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'allgemein' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der allgemeine Check-up dient der frühzeitigen Erkennung von Krankheiten.",
+        "tr": "Genel sağlık kontrolü hastalıkların erken teşhisine hizmet eder.",
+        "en": "The general checkup serves the early detection of diseases.",
+        "ar": "الفحص الطبي العام يهدف إلى الكشف المبكر عن الأمراض.",
+        "uk": "Загальний чекап служить для раннього виявлення захворювань."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag allgemein zu sein.",
+        "tr": "İş ve günlük yaşamda genel (çekimli form) olmak son derece önemlidir.",
+        "en": "It is very important to be general (declined form) in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "allgemeiner": {
+    "de": "allgemein",
+    "displayDe": "allgemein",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "genel / daha genel",
+    "en": "general / more general",
+    "ar": "عام / أعم",
+    "uk": "загальний",
+    "example_de": "Ein allgemeiner Gesundheitscheck wird ab 35 Jahren empfohlen.",
+    "example_tr": "35 yaşından itibaren genel bir sağlık kontrolü önerilir.",
+    "example_en": "A general health check is recommended from age 35.",
+    "example_ar": "يوصى بإجراء فحص صحي عام ابتداءً من سن 35.",
+    "example_uk": "Загальний огляд здоров'я рекомендується після 35 років.",
+    "grammar": {
+      "tr": "Sıfat çekimi / Karşılaştırma: 'allgemein' sıfatı maskulin nominativ halinde veya karşılaştırma (komparativ) derecesindedir.",
+      "en": "Adjective declension / Comparative: 'allgemein' is either in the masculine nominative or comparative form.",
+      "ar": "تصريف الصفات أو المقارنة: الصفة 'allgemein' بصيغة المذكر أو المقارنة.",
+      "uk": "Відмінювання або вищий ступінь: прикметник 'allgemein' у чоловічому роді або формі порівняння.",
+      "title": {
+        "tr": "💡 Neden \"-er\" takısı aldı? (Sıfat Çekimi / Komparativ)",
+        "en": "💡 Why the \"-er\" ending? (Adjective / Comparative)",
+        "ar": "💡 لماذا لاحقة \"-er\"؟ (تصريف الصفة أو المقارنة)",
+        "uk": "💡 Чому закінчення \"-er\"? (Відмінювання прикметника / Вищий ступінь)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein allgemeiner Gesundheitscheck wird ab 35 Jahren empfohlen.",
+        "tr": "35 yaşından itibaren genel bir sağlık kontrolü önerilir.",
+        "en": "A general health check is recommended from age 35.",
+        "ar": "يوصى بإجراء فحص صحي عام ابتداءً من سن 35.",
+        "uk": "Загальний огляд здоров'я рекомендується після 35 років."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag allgemein zu sein.",
+        "tr": "İş ve günlük yaşamda genel / daha genel olmak son derece önemlidir.",
+        "en": "It is very important to be general / more general in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "allgemeinmedizinische": {
+    "de": "allgemeinmedizinisch",
+    "displayDe": "allgemeinmedizinisch",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "pratisyen / genel tıpla ilgili",
+    "en": "general medical / general practice",
+    "ar": "طب عام",
+    "uk": "загальномедичний",
+    "example_de": "Patienten wenden sich zuerst an eine allgemeinmedizinische Praxis.",
+    "example_tr": "Hastalar öncelikle bir genel pratisyen hekim muayenehanesine başvurur.",
+    "example_en": "Patients first turn to a general medical practice.",
+    "example_ar": "يتوجه المرضى أولاً إلى عيادة الطب العام.",
+    "example_uk": "Пацієнти спочатку звертаються до амбулаторії загальної практики.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'allgemeinmedizinisch' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'allgemeinmedizinisch' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'allgemeinmedizinisch' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'allgemeinmedizinisch' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Patienten wenden sich zuerst an eine allgemeinmedizinische Praxis.",
+        "tr": "Hastalar öncelikle bir genel pratisyen hekim muayenehanesine başvurur.",
+        "en": "Patients first turn to a general medical practice.",
+        "ar": "يتوجه المرضى أولاً إلى عيادة الطب العام.",
+        "uk": "Пацієнти спочатку звертаються до амбулаторії загальної практики."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag allgemeinmedizinisch zu sein.",
+        "tr": "İş ve günlük yaşamda pratisyen / genel tıpla ilgili olmak son derece önemlidir.",
+        "en": "It is very important to be general medical / general practice in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "alltagsgesprächen": {
+    "de": "das Alltagsgespräch",
+    "displayDe": "Alltagsgespräch",
+    "article": "das",
+    "plural": "die Alltagsgespräche",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "günlük konuşmalar (Dativ Plural)",
+    "en": "everyday conversations",
+    "ar": "محادثات الحياة اليومية",
+    "uk": "повсякденні розмови",
+    "example_de": "Im Kurs üben die Teilnehmer das Führen von Alltagsgesprächen.",
+    "example_tr": "Kursta katılımcılar günlük konuşmalar yapmayı pratik ederler.",
+    "example_en": "In the course, participants practice holding everyday conversations.",
+    "example_ar": "في الدورة يتدرب المشاركون على إجراء محادثات الحياة اليومية.",
+    "example_uk": "На курсі учасники тренуються вести повсякденні бесіди.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Alltagsgespräche'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Alltagsgespräche'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Alltagsgespräche'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Alltagsgespräche'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Kurs üben die Teilnehmer das Führen von Alltagsgesprächen.",
+        "tr": "Kursta katılımcılar günlük konuşmalar yapmayı pratik ederler.",
+        "en": "In the course, participants practice holding everyday conversations.",
+        "ar": "في الدورة يتدرب المشاركون على إجراء محادثات الحياة اليومية.",
+        "uk": "На курсі учасники тренуються вести повсякденні бесіди."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Alltagsgespräch eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Alltagsgespräch günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Alltagsgespräch plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "anbieters": {
+    "de": "der Anbieter",
+    "displayDe": "Anbieter",
+    "article": "der",
+    "plural": "die Anbieter",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "sağlayıcının, hizmet sunucusunun (Genitiv)",
+    "en": "provider's / supplier's (Genitive)",
+    "ar": "مقدم الخدمة (مضاف إليه)",
+    "uk": "провайдера / постачальника (родовий відмінок)",
+    "example_de": "Öffnen Sie stets die offizielle Website des Anbieters.",
+    "example_tr": "Hizmet sağlayıcısının her zaman resmi internet sitesini açın.",
+    "example_en": "Always open the provider's official website.",
+    "example_ar": "افتح دائمًا الموقع الرسمي لمزود الخدمة.",
+    "example_uk": "Завжди відкривайте офіційний веб-сайт провайдера.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Anbieter'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Anbieter'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Anbieter'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Anbieter'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Öffnen Sie stets die offizielle Website des Anbieters.",
+        "tr": "Hizmet sağlayıcısının her zaman resmi internet sitesini açın.",
+        "en": "Always open the provider's official website.",
+        "ar": "افتح دائمًا الموقع الرسمي لمزود الخدمة.",
+        "uk": "Завжди відкривайте офіційний веб-сайт провайдера."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Anbieter eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Anbieter günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Anbieter plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "angeboten": {
+    "de": "anbieten",
+    "displayDe": "anbieten",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "sunulan, teklif edilen (Partizip II)",
+    "en": "offered (Participle II)",
+    "ar": "معروض / مُقدم",
+    "uk": "запропонований",
+    "example_de": "Das Ticket wird bundesweit von vielen Verkehrsbetrieben angeboten.",
+    "example_tr": "Bilet ülke genelinde birçok ulaşım işletmesi tarafından sunulmaktadır.",
+    "example_en": "The ticket is offered nationwide by many transport companies.",
+    "example_ar": "يتم تقديم التذكرة على مستوى البلاد من قبل العديد من شركات النقل.",
+    "example_uk": "Квиток пропонується по всій країні багатьма транспортними підприємствами.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'anbieten' temel eylem bildiren fiildir.",
+      "en": "Verb: 'anbieten' denotes action, process, or state.",
+      "ar": "فعل: 'anbieten' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'anbieten' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (anbieten)",
+        "en": "💡 Verb Structure (anbieten)",
+        "ar": "💡 بنية الفعل (anbieten)",
+        "uk": "💡 Структура дієслова (anbieten)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Ticket wird bundesweit von vielen Verkehrsbetrieben angeboten.",
+        "tr": "Bilet ülke genelinde birçok ulaşım işletmesi tarafından sunulmaktadır.",
+        "en": "The ticket is offered nationwide by many transport companies.",
+        "ar": "يتم تقديم التذكرة على مستوى البلاد من قبل العديد من شركات النقل.",
+        "uk": "Квиток пропонується по всій країні багатьма транспортними підприємствами."
+      },
+      {
+        "de": "In Deutschland kann man anbieten, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için sunulan, teklif edilen (Partizip II) eylemi yapılabilir.",
+        "en": "In Germany, one can offered (Participle II) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "anstieg": {
+    "de": "der Anstieg",
+    "displayDe": "Anstieg",
+    "article": "der",
+    "plural": "die Anstiege",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "artış, yükseliş",
+    "en": "increase, rise",
+    "ar": "ارتفاع / زيادة",
+    "uk": "зростання / підйом",
+    "example_de": "Verkehrsbetriebe verzeichnen einen deutlichen Anstieg der Fahrgastzahlen.",
+    "example_tr": "Ulaşım işletmeleri yolcu sayılarında belirgin bir artış kaydediyor.",
+    "example_en": "Transport operators report a significant increase in passenger numbers.",
+    "example_ar": "تسجل شركات النقل زيادة ملحوظة في أعداد الركاب.",
+    "example_uk": "Транспортні компанії фіксують значне зростання пасажиропотоку.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Anstiege'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Anstiege'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Anstiege'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Anstiege'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Anstieg)",
+        "en": "💡 Noun Structure (der Anstieg)",
+        "ar": "💡 بنية الاسم (der Anstieg)",
+        "uk": "💡 Структура іменника (der Anstieg)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Verkehrsbetriebe verzeichnen einen deutlichen Anstieg der Fahrgastzahlen.",
+        "tr": "Ulaşım işletmeleri yolcu sayılarında belirgin bir artış kaydediyor.",
+        "en": "Transport operators report a significant increase in passenger numbers.",
+        "ar": "تسجل شركات النقل زيادة ملحوظة في أعداد الركاب.",
+        "uk": "Транспортні компанії фіксують значне зростання пасажиропотоку."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Anstieg eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Anstieg günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Anstieg plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "anwendet": {
+    "de": "anwenden",
+    "displayDe": "anwenden",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "uygulamak (er/sie/es anwendet)",
+    "en": "applies / uses",
+    "ar": "يطبق / يستخدم",
+    "uk": "застосовує",
+    "example_de": "Wer die gelernten Regeln anwendet, schützt seine Daten wirksam.",
+    "example_tr": "Öğrenilen kuralları uygulayan kişi verilerini etkili şekilde korur.",
+    "example_en": "Whoever applies the learned rules effectively protects their data.",
+    "example_ar": "من يطبق القواعد المتعلمة يحمي بياناته بفعالية.",
+    "example_uk": "Той, хто застосовує вивчені правила, надійно захищає свої дані.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'anwenden' temel eylem bildiren fiildir.",
+      "en": "Verb: 'anwenden' denotes action, process, or state.",
+      "ar": "فعل: 'anwenden' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'anwenden' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (anwenden)",
+        "en": "💡 Verb Structure (anwenden)",
+        "ar": "💡 بنية الفعل (anwenden)",
+        "uk": "💡 Структура дієслова (anwenden)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer die gelernten Regeln anwendet, schützt seine Daten wirksam.",
+        "tr": "Öğrenilen kuralları uygulayan kişi verilerini etkili şekilde korur.",
+        "en": "Whoever applies the learned rules effectively protects their data.",
+        "ar": "من يطبق القواعد المتعلمة يحمي بياناته بفعالية.",
+        "uk": "Той, хто застосовує вивчені правила, надійно захищає свої дані."
+      },
+      {
+        "de": "In Deutschland kann man anwenden, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için uygulamak (er/sie/es anwendet) eylemi yapılabilir.",
+        "en": "In Germany, one can applies / uses to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "apps": {
+    "de": "die App",
+    "displayDe": "App",
+    "article": "die",
+    "plural": "die Apps",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "mobil uygulamalar",
+    "en": "mobile apps",
+    "ar": "تطبيقات الهاتف",
+    "uk": "мобільні додатки",
+    "example_de": "Über Smartphone-Apps lassen sich Arzttermine bequem buchen.",
+    "example_tr": "Akıllı telefon uygulamaları üzerinden doktor randevuları rahatça alınabilir.",
+    "example_en": "Doctor appointments can be conveniently booked via smartphone apps.",
+    "example_ar": "يمكن حجز مواعيد الأطباء بسهولة عبر تطبيقات الهاتف الذكي.",
+    "example_uk": "Записатися до лікаря можна зручно через додатки на смартфоні.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Apps'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Apps'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Apps'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Apps'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Über Smartphone-Apps lassen sich Arzttermine bequem buchen.",
+        "tr": "Akıllı telefon uygulamaları üzerinden doktor randevuları rahatça alınabilir.",
+        "en": "Doctor appointments can be conveniently booked via smartphone apps.",
+        "ar": "يمكن حجز مواعيد الأطباء بسهولة عبر تطبيقات الهاتف الذكي.",
+        "uk": "Записатися до лікаря можна зручно через додатки на смартфоні."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die App eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için App günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, App plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "arbeitgeber": {
+    "de": "der Arbeitgeber",
+    "displayDe": "Arbeitgeber",
+    "article": "der",
+    "plural": "die Arbeitgeber",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "işveren",
+    "en": "employer",
+    "ar": "صاحب العمل / رب العمل",
+    "uk": "роботодавець",
+    "example_de": "Beschäftigte müssen den Arbeitgeber unverzüglich über die Krankheit informieren.",
+    "example_tr": "Çalışanlar işvereni hastalık konusunda gecikmeksizin bilgilendirmelidir.",
+    "example_en": "Employees must inform the employer immediately about illness.",
+    "example_ar": "يجب على الموظفين إبلاغ صاحب العمل فوراً بشأن المرض.",
+    "example_uk": "Працівники повинні негайно повідомити роботодавця про хворобу.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Arbeitgeber'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Arbeitgeber'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Arbeitgeber'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Arbeitgeber'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Arbeitgeber)",
+        "en": "💡 Noun Structure (der Arbeitgeber)",
+        "ar": "💡 بنية الاسم (der Arbeitgeber)",
+        "uk": "💡 Структура іменника (der Arbeitgeber)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Beschäftigte müssen den Arbeitgeber unverzüglich über die Krankheit informieren.",
+        "tr": "Çalışanlar işvereni hastalık konusunda gecikmeksizin bilgilendirmelidir.",
+        "en": "Employees must inform the employer immediately about illness.",
+        "ar": "يجب على الموظفين إبلاغ صاحب العمل فوراً بشأن المرض.",
+        "uk": "Працівники повинні негайно повідомити роботодавця про хворобу."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Arbeitgeber eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Arbeitgeber günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Arbeitgeber plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "arbeitsunfähigkeitsbescheinigung": {
+    "de": "die Arbeitsunfähigkeitsbescheinigung",
+    "displayDe": "Arbeitsunfähigkeitsbescheinigung",
+    "article": "die",
+    "plural": "die Arbeitsunfähigkeitsbescheinigungen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "iş göremezlik raporu / hastalık belgesi",
+    "en": "certificate of incapacity for work / sick note",
+    "ar": "شهادة العجز عن العمل / إجازة مرضية",
+    "uk": "довідка про непрацездатність / лікарняний лист",
+    "example_de": "Der Arzt stellt dem Patienten eine Arbeitsunfähigkeitsbescheinigung aus.",
+    "example_tr": "Doktor hastaya bir iş göremezlik raporu düzenler.",
+    "example_en": "The doctor issues a certificate of incapacity for work to the patient.",
+    "example_ar": "يُصدر الطبيب للمريض شهادة عجز عن العمل.",
+    "example_uk": "Лікар видає пацієнту довідку про непрацездатність.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Arbeitsunfähigkeitsbescheinigungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Arbeitsunfähigkeitsbescheinigungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Arbeitsunfähigkeitsbescheinigungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Arbeitsunfähigkeitsbescheinigungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Arbeitsunfähigkeitsbescheinigung)",
+        "en": "💡 Noun Structure (die Arbeitsunfähigkeitsbescheinigung)",
+        "ar": "💡 بنية الاسم (die Arbeitsunfähigkeitsbescheinigung)",
+        "uk": "💡 Структура іменника (die Arbeitsunfähigkeitsbescheinigung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Arzt stellt dem Patienten eine Arbeitsunfähigkeitsbescheinigung aus.",
+        "tr": "Doktor hastaya bir iş göremezlik raporu düzenler.",
+        "en": "The doctor issues a certificate of incapacity for work to the patient.",
+        "ar": "يُصدر الطبيب للمريض شهادة عجز عن العمل.",
+        "uk": "Лікар видає пацієнту довідку про непрацездатність."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Arbeitsunfähigkeitsbescheinigung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Arbeitsunfähigkeitsbescheinigung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Arbeitsunfähigkeitsbescheinigung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "arztbesuch": {
+    "de": "der Arztbesuch",
+    "displayDe": "Arztbesuch",
+    "article": "der",
+    "plural": "die Arztbesuche",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "doktor ziyareti / muayenesi",
+    "en": "doctor visit",
+    "ar": "زيارة الطبيب",
+    "uk": "візит до лікаря",
+    "example_de": "Beim Arztbesuch muss die Versichertenkarte vorgelegt werden.",
+    "example_tr": "Doktor ziyaretinde sigorta kartı ibraz edilmelidir.",
+    "example_en": "During a doctor visit, the insurance card must be presented.",
+    "example_ar": "عند زيارة الطبيب يجب تقديم بطاقة التأمين.",
+    "example_uk": "Під час візиту до лікаря необхідно пред'явити страхову картку.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Arztbesuche'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Arztbesuche'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Arztbesuche'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Arztbesuche'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Arztbesuch)",
+        "en": "💡 Noun Structure (der Arztbesuch)",
+        "ar": "💡 بنية الاسم (der Arztbesuch)",
+        "uk": "💡 Структура іменника (der Arztbesuch)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Beim Arztbesuch muss die Versichertenkarte vorgelegt werden.",
+        "tr": "Doktor ziyaretinde sigorta kartı ibraz edilmelidir.",
+        "en": "During a doctor visit, the insurance card must be presented.",
+        "ar": "عند زيارة الطبيب يجب تقديم بطاقة التأمين.",
+        "uk": "Під час візиту до лікаря необхідно пред'явити страхову картку."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Arztbesuch eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Arztbesuch günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Arztbesuch plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "arztpraxis": {
+    "de": "die Arztpraxis",
+    "displayDe": "Arztpraxis",
+    "article": "die",
+    "plural": "die Arztpraxen",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "doktor muayenehanesi",
+    "en": "doctor's practice / clinic",
+    "ar": "عيادة الطبيب",
+    "uk": "лікарський кабінет / амбулаторія",
+    "example_de": "Die Arztpraxis übermittelt die Krankmeldung digital an die Kasse.",
+    "example_tr": "Doktor muayenehanesi hastalık bildirimini dijital olarak sigorta kasasına iletir.",
+    "example_en": "The medical practice transmits the sick note digitally to the health insurer.",
+    "example_ar": "ترسل عيادة الطبيب الإشعار المرضي رقمياً إلى شركة التأمين.",
+    "example_uk": "Лікарський кабінет передає лікарняний в електронному вигляді до каси.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Arztpraxen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Arztpraxen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Arztpraxen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Arztpraxen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Arztpraxis übermittelt die Krankmeldung digital an die Kasse.",
+        "tr": "Doktor muayenehanesi hastalık bildirimini dijital olarak sigorta kasasına iletir.",
+        "en": "The medical practice transmits the sick note digitally to the health insurer.",
+        "ar": "ترسل عيادة الطبيب الإشعار المرضي رقمياً إلى شركة التأمين.",
+        "uk": "Лікарський кабінет передає лікарняний в електронному вигляді до каси."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Arztpraxis eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Arztpraxis günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Arztpraxis plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "arztterminen": {
+    "de": "der Arzttermin",
+    "displayDe": "Arzttermin",
+    "article": "der",
+    "plural": "die Arzttermine",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "doktor randevuları (Dativ Plural)",
+    "en": "doctor appointments",
+    "ar": "مواعيد الأطباء",
+    "uk": "прийоми у лікаря",
+    "example_de": "Bei dringenden Arztterminen hilft die bundesweite Servicenummer 116117.",
+    "example_tr": "Acil doktor randevularında 116117 numaralı ulusal hizmet hattı yardımcı olur.",
+    "example_en": "For urgent doctor appointments, nationwide service number 116117 helps.",
+    "example_ar": "في مواعيد الأطباء العاجلة، يساعد الرقم الموحد 116117.",
+    "example_uk": "При термінових записах до лікаря допомагає єдиний номер 116117.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Arzttermine'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Arzttermine'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Arzttermine'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Arzttermine'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Bei dringenden Arztterminen hilft die bundesweite Servicenummer 116117.",
+        "tr": "Acil doktor randevularında 116117 numaralı ulusal hizmet hattı yardımcı olur.",
+        "en": "For urgent doctor appointments, nationwide service number 116117 helps.",
+        "ar": "في مواعيد الأطباء العاجلة، يساعد الرقم الموحد 116117.",
+        "uk": "При термінових записах до лікаря допомагає єдиний номер 116117."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Arzttermin eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Arzttermin günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Arzttermin plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "aufrufen": {
+    "de": "aufrufen",
+    "displayDe": "aufrufen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "açmak (web sitesi), çağırmak",
+    "en": "to access / open (website)",
+    "ar": "فتح / استدعاء موقع",
+    "uk": "відкривати / завантажувати сайт",
+    "example_de": "Man sollte die Adresse des Online-Portals manuell im Browser aufrufen.",
+    "example_tr": "İnternet portalının adresi tarayıcıya elle yazılarak açılmalıdır.",
+    "example_en": "One should manually open the online portal address in the browser.",
+    "example_ar": "ينبغي فتح عنوان البوابة الإلكترونية يدوياً في المتصفح.",
+    "example_uk": "Слід відкривати адресу онлайн-порталу вручну в браузері.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'aufrufen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'aufrufen' denotes action, process, or state.",
+      "ar": "فعل: 'aufrufen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'aufrufen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (aufrufen)",
+        "en": "💡 Verb Structure (aufrufen)",
+        "ar": "💡 بنية الفعل (aufrufen)",
+        "uk": "💡 Структура дієслова (aufrufen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Man sollte die Adresse des Online-Portals manuell im Browser aufrufen.",
+        "tr": "İnternet portalının adresi tarayıcıya elle yazılarak açılmalıdır.",
+        "en": "One should manually open the online portal address in the browser.",
+        "ar": "ينبغي فتح عنوان البوابة الإلكترونية يدوياً في المتصفح.",
+        "uk": "Слід відкривати адресу онлайн-порталу вручну в браузері."
+      },
+      {
+        "de": "In Deutschland kann man aufrufen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için açmak (web sitesi), çağırmak eylemi yapılabilir.",
+        "en": "In Germany, one can to access / open (website) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "ausfälle": {
+    "de": "der Ausfall",
+    "displayDe": "Ausfall",
+    "article": "der",
+    "plural": "die Ausfälle",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "sefer iptalleri, aksaklıklar",
+    "en": "cancellations / failures",
+    "ar": "إلغاءات / أعطال",
+    "uk": "скасування рейсів / збої",
+    "example_de": "Fahrgäste beklagen häufige Zugausfälle im Regionalverkehr.",
+    "example_tr": "Yolcular bölgesel ulaşımda sık yaşanan tren iptallerinden şikayetçidir.",
+    "example_en": "Passengers complain about frequent train cancellations in regional transit.",
+    "example_ar": "يشكو الركاب من الإلغاء المتكرر للقطارات في النقل الإقليمي.",
+    "example_uk": "Пасажири скаржаться на часті скасування поїздів у регіональному русі.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Ausfälle'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Ausfälle'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Ausfälle'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Ausfälle'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Ausfall)",
+        "en": "💡 Noun Structure (der Ausfall)",
+        "ar": "💡 بنية الاسم (der Ausfall)",
+        "uk": "💡 Структура іменника (der Ausfall)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Fahrgäste beklagen häufige Zugausfälle im Regionalverkehr.",
+        "tr": "Yolcular bölgesel ulaşımda sık yaşanan tren iptallerinden şikayetçidir.",
+        "en": "Passengers complain about frequent train cancellations in regional transit.",
+        "ar": "يشكو الركاب من الإلغاء المتكرر للقطارات في النقل الإقليمي.",
+        "uk": "Пасажири скаржаться на часті скасування поїздів у регіональному русі."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Ausfall eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Ausfall günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Ausfall plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "ausgezahlt": {
+    "de": "auszahlen",
+    "displayDe": "auszahlen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "ödenen / hesaba yatırılan (Partizip II)",
+    "en": "paid out (Participle II)",
+    "ar": "صُرف / دُفع",
+    "uk": "виплачений",
+    "example_de": "Die Geldprämie wird am Jahresende auf das Konto ausgezahlt.",
+    "example_tr": "Nakit ikramiye yıl sonunda banka hesabına ödenir.",
+    "example_en": "The cash bonus is paid out to the account at the end of the year.",
+    "example_ar": "تُصرف المكافأة المالية إلى الحساب في نهاية العام.",
+    "example_uk": "Грошова премія виплачується на рахунок наприкінці року.",
+    "grammar": {
+      "title": {
+        "tr": "💡 Zaman & Çatı: Partizip II / Passiv (auszahlen)",
+        "en": "💡 Voice & Participle: Participle II / Passive (auszahlen)",
+        "ar": "💡 صيغة المبني للمجهول / اسم المفعول (auszahlen)",
+        "uk": "💡 Пасивний стан та дієприкметник: Partizip II (auszahlen)"
+      },
+      "tr": "Partizip II ve Edilgen çatı: 'auszahlen' (hesaba ödemek). Cümlede 'werden ausgezahlt' (ödenirler / hesaba yatırılırlar) edilgen kalıbıyla kullanılmıştır.",
+      "en": "Participle II & Passive voice: 'auszahlen' forms Participle II 'ausgezahlt'. Used in passive construction 'werden ausgezahlt' (are paid out).",
+      "ar": "اسم المفعول والمبني للمجهول: يُصاغ كـ 'ausgezahlt'. التركيب 'werden ausgezahlt' يعني (يتم صرفها / دفعها للمستفيدين).",
+      "uk": "Partizip II та пасивний стан: від 'auszahlen' утворюється 'ausgezahlt'. Зворот 'werden ausgezahlt' означає 'виплачуються'."
+    },
+    "examples": [
+      {
+        "de": "Die Geldprämie wird am Jahresende auf das Konto ausgezahlt.",
+        "tr": "Nakit ikramiye yıl sonunda banka hesabına ödenir.",
+        "en": "The cash bonus is paid out to the account at the end of the year.",
+        "ar": "تُصرف المكافأة المالية إلى الحساب في نهاية العام.",
+        "uk": "Грошова премія виплачується на рахунок наприкінці року."
+      },
+      {
+        "de": "In Deutschland kann man auszahlen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için ödenen / hesaba yatırılan (Partizip II) eylemi yapılabilir.",
+        "en": "In Germany, one can paid out (Participle II) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "authentifizierung": {
+    "de": "die Authentifizierung",
+    "displayDe": "Authentifizierung",
+    "article": "die",
+    "plural": "die Authentifizierungen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "kimlik doğrulama",
+    "en": "authentication",
+    "ar": "المصادقة / التحقق من الهوية",
+    "uk": "автентифікація",
+    "example_de": "Zwei-Faktor-Authentifizierung bietet einen zusätzlichen Schutz.",
+    "example_tr": "İki faktörlü kimlik doğrulama ek bir koruma sağlar.",
+    "example_en": "Two-factor authentication provides an extra layer of security.",
+    "example_ar": "توفر المصادقة الثنائية حماية إضافية.",
+    "example_uk": "Двофакторна автентифікація забезпечує додатковий захист.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Authentifizierungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Authentifizierungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Authentifizierungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Authentifizierungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Authentifizierung)",
+        "en": "💡 Noun Structure (die Authentifizierung)",
+        "ar": "💡 بنية الاسم (die Authentifizierung)",
+        "uk": "💡 Структура іменника (die Authentifizierung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Zwei-Faktor-Authentifizierung bietet einen zusätzlichen Schutz.",
+        "tr": "İki faktörlü kimlik doğrulama ek bir koruma sağlar.",
+        "en": "Two-factor authentication provides an extra layer of security.",
+        "ar": "توفر المصادقة الثنائية حماية إضافية.",
+        "uk": "Двофакторна автентифікація забезпечує додатковий захист."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Authentifizierung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Authentifizierung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Authentifizierung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "auto": {
+    "de": "das Auto",
+    "displayDe": "Auto",
+    "article": "das",
+    "plural": "die Autos",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "araba, otomobil",
+    "en": "car / automobile",
+    "ar": "سيارة",
+    "uk": "автомобіль",
+    "example_de": "Viele Pendler lassen das Auto stehen und nutzen die Bahn.",
+    "example_tr": "Birçok banliyö yolcusu arabayı bırakıp treni kullanıyor.",
+    "example_en": "Many commuters leave the car behind and take the train.",
+    "example_ar": "يترك العديد من المسافرين سياراتهم ويستخدمون القطار.",
+    "example_uk": "Багато пасажирів залишають авто вдома і користуються потягом.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Autos'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Autos'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Autos'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Autos'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Auto)",
+        "en": "💡 Noun Structure (das Auto)",
+        "ar": "💡 بنية الاسم (das Auto)",
+        "uk": "💡 Структура іменника (das Auto)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Viele Pendler lassen das Auto stehen und nutzen die Bahn.",
+        "tr": "Birçok banliyö yolcusu arabayı bırakıp treni kullanıyor.",
+        "en": "Many commuters leave the car behind and take the train.",
+        "ar": "يترك العديد من المسافرين سياراتهم ويستخدمون القطار.",
+        "uk": "Багато пасажирів залишають авто вдома і користуються потягом."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Auto eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Auto günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Auto plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "b": {
+    "de": "B",
+    "displayDe": "B1",
+    "article": "",
+    "plural": "",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "B (B1 seviyesi)",
+    "en": "B (B1 language level)",
+    "ar": "المستوى ب1",
+    "uk": "рівень В1",
+    "example_de": "Das Sprachniveau B1 ist Voraussetzung für die Einbürgerung.",
+    "example_tr": "B1 dil seviyesi vatandaşlığa geçiş için ön koşuldur.",
+    "example_en": "The B1 language level is a prerequisite for naturalization.",
+    "example_ar": "مستوى اللغة B1 شرط أساسي للحصول على الجنسية.",
+    "example_uk": "Мовний рівень B1 є передумовою для набуття громадянства.",
+    "grammar": {
+      "tr": "İsim (Substantiv): İsim. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article ''. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة ''. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль ''. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (B1)",
+        "en": "💡 Noun Structure (B1)",
+        "ar": "💡 بنية الاسم (B1)",
+        "uk": "💡 Структура іменника (B1)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Sprachniveau B1 ist Voraussetzung für die Einbürgerung.",
+        "tr": "B1 dil seviyesi vatandaşlığa geçiş için ön koşuldur.",
+        "en": "The B1 language level is a prerequisite for naturalization.",
+        "ar": "مستوى اللغة B1 شرط أساسي للحصول على الجنسية.",
+        "uk": "Мовний рівень B1 є передумовою для набуття громадянства."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt B1 eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için B1 günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, B1 plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "bahnen": {
+    "de": "die Bahn",
+    "displayDe": "Bahn",
+    "article": "die",
+    "plural": "die Bahnen",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "trenler, demiryolları",
+    "en": "trains / railways",
+    "ar": "القطارات / السكك الحديدية",
+    "uk": "поїзди / залізниці",
+    "example_de": "Das Ticket gilt bundesweit in allen Bussen und Bahnen des Nahverkehrs.",
+    "example_tr": "Bilet ülke genelinde yerel ulaşımın tüm otobüs ve trenlerinde geçerlidir.",
+    "example_en": "The ticket is valid nationwide on all local buses and trains.",
+    "example_ar": "التذكرة صالحة في جميع حافلات وقطارات النقل المحلي في ألمانيا.",
+    "example_uk": "Квиток діє по всій Німеччині в усіх автобусах та поїздах місцевого сполучення.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Bahnen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Bahnen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Bahnen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Bahnen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Ticket gilt bundesweit in allen Bussen und Bahnen des Nahverkehrs.",
+        "tr": "Bilet ülke genelinde yerel ulaşımın tüm otobüs ve trenlerinde geçerlidir.",
+        "en": "The ticket is valid nationwide on all local buses and trains.",
+        "ar": "التذكرة صالحة في جميع حافلات وقطارات النقل المحلي في ألمانيا.",
+        "uk": "Квиток діє по всій Німеччині в усіх автобусах та поїздах місцевого сполучення."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Bahn eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Bahn günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Bahn plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "bahnverkehr": {
+    "de": "der Bahnverkehr",
+    "displayDe": "Bahnverkehr",
+    "article": "der",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "demiryolu trafiği / ulaşımı",
+    "en": "rail traffic / rail transport",
+    "ar": "حركة القطارات / النقل بالسكك الحديدية",
+    "uk": "залізничний рух",
+    "example_de": "Für einen verlässlichen Bahnverkehr sind Investitionen ins Schienennetz nötig.",
+    "example_tr": "Güvenilir bir demiryolu ulaşımı için ray ağına yatırımlar gereklidir.",
+    "example_en": "Investments in the rail network are necessary for reliable rail transport.",
+    "example_ar": "الاستثمارات في شبكة السكك الحديدية ضرورية لحركة قطارات موثوقة.",
+    "example_uk": "Для надійного залізничного сполучення необхідні інвестиції в колійну мережу.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Bahnverkehr)",
+        "en": "💡 Noun Structure (der Bahnverkehr)",
+        "ar": "💡 بنية الاسم (der Bahnverkehr)",
+        "uk": "💡 Структура іменника (der Bahnverkehr)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Für einen verlässlichen Bahnverkehr sind Investitionen ins Schienennetz nötig.",
+        "tr": "Güvenilir bir demiryolu ulaşımı için ray ağına yatırımlar gereklidir.",
+        "en": "Investments in the rail network are necessary for reliable rail transport.",
+        "ar": "الاستثمارات في شبكة السكك الحديدية ضرورية لحركة قطارات موثوقة.",
+        "uk": "Для надійного залізничного сполучення необхідні інвестиції в колійну мережу."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Bahnverkehr eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Bahnverkehr günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Bahnverkehr plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "bamf": {
+    "de": "das BAMF",
+    "displayDe": "BAMF",
+    "article": "das",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "Federal Göç ve Mülteciler Dairesi",
+    "en": "Federal Office for Migration and Refugees (BAMF)",
+    "ar": "المكتب الاتحادي للهجرة واللاجئين",
+    "uk": "Федеральне відомство у справах міграції та біженців",
+    "example_de": "Das BAMF koordiniert und fördert die Integrationskurse in Deutschland.",
+    "example_tr": "BAMF Almanya'daki uyum kurslarını koordine eder ve finanse eder.",
+    "example_en": "The BAMF coordinates and funds integration courses in Germany.",
+    "example_ar": "يقوم BAMF بتنسيق ودعم دورات الاندماج في ألمانيا.",
+    "example_uk": "BAMF координує та фінансує інтеграційні курси в Німеччині.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das BAMF)",
+        "en": "💡 Noun Structure (das BAMF)",
+        "ar": "💡 بنية الاسم (das BAMF)",
+        "uk": "💡 Структура іменника (das BAMF)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das BAMF koordiniert und fördert die Integrationskurse in Deutschland.",
+        "tr": "BAMF Almanya'daki uyum kurslarını koordine eder ve finanse eder.",
+        "en": "The BAMF coordinates and funds integration courses in Germany.",
+        "ar": "يقوم BAMF بتنسيق ودعم دورات الاندماج في ألمانيا.",
+        "uk": "BAMF координує та фінансує інтеграційні курси в Німеччині."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das BAMF eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için BAMF günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, BAMF plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "banken": {
+    "de": "die Bank",
+    "displayDe": "Bank",
+    "article": "die",
+    "plural": "die Banken",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "bankalar",
+    "en": "banks",
+    "ar": "بنوك / مصارف",
+    "uk": "банки",
+    "example_de": "Seriöse Banken fragen Passwörter niemals per E-Mail ab.",
+    "example_tr": "Güvenilir bankalar parolaları asla e-posta ile sormaz.",
+    "example_en": "Reputable banks never ask for passwords via email.",
+    "example_ar": "البنوك الموثوقة لا تطلب كلمات المرور أبداً عبر البريد الإلكتروني.",
+    "example_uk": "Надійні банки ніколи не запитують паролі електронною поштою.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Banken'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Banken'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Banken'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Banken'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Seriöse Banken fragen Passwörter niemals per E-Mail ab.",
+        "tr": "Güvenilir bankalar parolaları asla e-posta ile sormaz.",
+        "en": "Reputable banks never ask for passwords via email.",
+        "ar": "البنوك الموثوقة لا تطلب كلمات المرور أبداً عبر البريد الإلكتروني.",
+        "uk": "Надійні банки ніколи не запитують паролі електронною поштою."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Bank eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Bank günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Bank plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "bares": {
+    "de": "bar",
+    "displayDe": "bar",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "nakit (bares Geld = nakit para)",
+    "en": "cash",
+    "ar": "نقدي",
+    "uk": "готівка",
+    "example_de": "Für Berufspendler bedeutet das günstige Ticket bares Geld.",
+    "example_tr": "İşe gidip gelen çalışanlar için bu uygun bilet doğrudan nakit tasarrufu demektir.",
+    "example_en": "For commuters, the cheap ticket means real cash savings.",
+    "example_ar": "بالنسبة للمتنقلين للعمل، التذكرة الرخيصة تعني توفير مال حقيقي.",
+    "example_uk": "Для щоденних пасажирів дешевий квиток означає чисту економію грошей.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'bar' sıfatı nötr isim önünde Nominativ veya Akkusativ halinde '-es' takısı almıştır.",
+      "en": "Adjective declension: 'bar' takes the neuter '-es' ending in Nominative or Accusative case.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'bar' لاحقة المحايد '-es'.",
+      "uk": "Відмінювання прикметників: прикметник 'bar' отримує закінчення '-es' для середнього роду.",
+      "title": {
+        "tr": "💡 Neden \"-es\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-es\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-es\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-es\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Für Berufspendler bedeutet das günstige Ticket bares Geld.",
+        "tr": "İşe gidip gelen çalışanlar için bu uygun bilet doğrudan nakit tasarrufu demektir.",
+        "en": "For commuters, the cheap ticket means real cash savings.",
+        "ar": "بالنسبة للمتنقلين للعمل، التذكرة الرخيصة تعني توفير مال حقيقي.",
+        "uk": "Для щоденних пасажирів дешевий квиток означає чисту економію грошей."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag bar zu sein.",
+        "tr": "İş ve günlük yaşamda nakit (bares Geld = nakit para) olmak son derece önemlidir.",
+        "en": "It is very important to be cash in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "basiert": {
+    "de": "basieren",
+    "displayDe": "basieren",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "dayanmak, temeline oturmak (basiert auf)",
+    "en": "is based on",
+    "ar": "يرتكز على / يعتمد على",
+    "uk": "базується на",
+    "example_de": "Das deutsche Gesundheitssystem basiert auf dem Hausarzt-Prinzip.",
+    "example_tr": "Alman sağlık sistemi aile hekimliği ilkesine dayanır.",
+    "example_en": "The German healthcare system is based on the family doctor principle.",
+    "example_ar": "يرتكز النظام الصحي الألماني على مبدأ طبيب الأسرة.",
+    "example_uk": "Німецька система охорони здоров'я базується на принципі сімейного лікаря.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'basieren' temel eylem bildiren fiildir.",
+      "en": "Verb: 'basieren' denotes action, process, or state.",
+      "ar": "فعل: 'basieren' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'basieren' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (basieren)",
+        "en": "💡 Verb Structure (basieren)",
+        "ar": "💡 بنية الفعل (basieren)",
+        "uk": "💡 Структура дієслова (basieren)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das deutsche Gesundheitssystem basiert auf dem Hausarzt-Prinzip.",
+        "tr": "Alman sağlık sistemi aile hekimliği ilkesine dayanır.",
+        "en": "The German healthcare system is based on the family doctor principle.",
+        "ar": "يرتكز النظام الصحي الألماني على مبدأ طبيب الأسرة.",
+        "uk": "Німецька система охорони здоров'я базується на принципі сімейного лікаря."
+      },
+      {
+        "de": "In Deutschland kann man basieren, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için dayanmak, temeline oturmak (basiert auf) eylemi yapılabilir.",
+        "en": "In Germany, one can is based on to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "baustein": {
+    "de": "der Baustein",
+    "displayDe": "Baustein",
+    "article": "der",
+    "plural": "die Bausteine",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "yapı taşı / temel unsur",
+    "en": "building block / component",
+    "ar": "عنصر أساسي / لبنة بناء",
+    "uk": "будівельний блок / складова частина",
+    "example_de": "Die Sprachprüfung ist ein unverzichtbarer Baustein für die Einbürgerung.",
+    "example_tr": "Dil sınavı vatandaşlık için vazgeçilmez bir yapı taşıdır.",
+    "example_en": "The language exam is an indispensable building block for naturalization.",
+    "example_ar": "امتحان اللغة عنصر أساسي لا غنى عنه للحصول على الجنسية.",
+    "example_uk": "Мовний іспит є невід'ємною складовою для набуття громадянства.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Bausteine'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Bausteine'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Bausteine'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Bausteine'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Sprachprüfung ist ein unverzichtbarer Baustein für die Einbürgerung.",
+        "tr": "Dil sınavı vatandaşlık için vazgeçilmez bir yapı taşıdır.",
+        "en": "The language exam is an indispensable building block for naturalization.",
+        "ar": "امتحان اللغة عنصر أساسي لا غنى عنه للحصول على الجنسية.",
+        "uk": "Мовний іспит є невід'ємною складовою для набуття громадянства."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Baustein eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Baustein günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Baustein plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "bearbeiten": {
+    "de": "bearbeiten",
+    "displayDe": "bearbeiten",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "işlemek / düzenlemek",
+    "en": "to process / edit",
+    "ar": "معالجة / تعديل",
+    "uk": "обробляти / опрацьовувати",
+    "example_de": "Die Kursteilnehmer bearbeiten praxisnahe Übungsaufgaben.",
+    "example_tr": "Kurs katılımcıları pratik alıştırma sorularını çözer ve işlerler.",
+    "example_en": "Course participants work through practical exercises.",
+    "example_ar": "يقوم المشاركون في الدورة بحل ومعالجة تمارين عملية.",
+    "example_uk": "Учасники курсу опрацьовують практичні навчальні завдання.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'bearbeiten' temel eylem bildiren fiildir.",
+      "en": "Verb: 'bearbeiten' denotes action, process, or state.",
+      "ar": "فعل: 'bearbeiten' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'bearbeiten' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (bearbeiten)",
+        "en": "💡 Verb Structure (bearbeiten)",
+        "ar": "💡 بنية الفعل (bearbeiten)",
+        "uk": "💡 Структура дієслова (bearbeiten)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Kursteilnehmer bearbeiten praxisnahe Übungsaufgaben.",
+        "tr": "Kurs katılımcıları pratik alıştırma sorularını çözer ve işlerler.",
+        "en": "Course participants work through practical exercises.",
+        "ar": "يقوم المشاركون في الدورة بحل ومعالجة تمارين عملية.",
+        "uk": "Учасники курсу опрацьовують практичні навчальні завдання."
+      },
+      {
+        "de": "In Deutschland kann man bearbeiten, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için işlemek / düzenlemek eylemi yapılabilir.",
+        "en": "In Germany, one can to process / edit to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "bedarf": {
+    "de": "der Bedarf",
+    "displayDe": "Bedarf",
+    "article": "der",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "ihtiyaç, gereksinim (bei Bedarf = gerektiğinde)",
+    "en": "need / demand (if needed)",
+    "ar": "حاجة / عند الحاجة",
+    "uk": "потреба (за потреби)",
+    "example_de": "Der Hausarzt überweist bei Bedarf an einen spezialisierten Facharzt.",
+    "example_tr": "Aile hekimi ihtiyaç durumunda uzman bir hekime sevk eder.",
+    "example_en": "The general practitioner refers to a specialist if needed.",
+    "example_ar": "يقوم طبيب الأسرة بالتحويل إلى طبيب مختص عند الحاجة.",
+    "example_uk": "Сімейний лікар за потреби направляє до профільного спеціаліста.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Bedarf)",
+        "en": "💡 Noun Structure (der Bedarf)",
+        "ar": "💡 بنية الاسم (der Bedarf)",
+        "uk": "💡 Структура іменника (der Bedarf)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Hausarzt überweist bei Bedarf an einen spezialisierten Facharzt.",
+        "tr": "Aile hekimi ihtiyaç durumunda uzman bir hekime sevk eder.",
+        "en": "The general practitioner refers to a specialist if needed.",
+        "ar": "يقوم طبيب الأسرة بالتحويل إلى طبيب مختص عند الحاجة.",
+        "uk": "Сімейний лікар за потреби направляє до профільного спеціаліста."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Bedarf eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Bedarf günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Bedarf plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "bedeutung": {
+    "de": "die Bedeutung",
+    "displayDe": "Bedeutung",
+    "article": "die",
+    "plural": "die Bedeutungen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "önem, anlam",
+    "en": "importance, significance",
+    "ar": "أهمية / معنى",
+    "uk": "значення / важливість",
+    "example_de": "Regelmäßige Kontrolluntersuchungen sind von zentraler Bedeutung.",
+    "example_tr": "Düzenli kontrol muayeneleri merkezi bir öneme sahiptir.",
+    "example_en": "Regular checkups are of central importance.",
+    "example_ar": "الفحوصات الدورية لها أهمية مركزية بالغة.",
+    "example_uk": "Регулярні профілактичні огляди мають вирішальне значення.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Bedeutungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Bedeutungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Bedeutungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Bedeutungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Bedeutung)",
+        "en": "💡 Noun Structure (die Bedeutung)",
+        "ar": "💡 بنية الاسم (die Bedeutung)",
+        "uk": "💡 Структура іменника (die Bedeutung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Regelmäßige Kontrolluntersuchungen sind von zentraler Bedeutung.",
+        "tr": "Düzenli kontrol muayeneleri merkezi bir öneme sahiptir.",
+        "en": "Regular checkups are of central importance.",
+        "ar": "الفحوصات الدورية لها أهمية مركزية بالغة.",
+        "uk": "Регулярні профілактичні огляди мають вирішальне значення."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Bedeutung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Bedeutung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Bedeutung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "befahrenen": {
+    "de": "befahren",
+    "displayDe": "befahren",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "yoğun kullanılan / trafiği olan (çekimli sıfat)",
+    "en": "busy / heavily traveled",
+    "ar": "مزدحم / كثير المرور",
+    "uk": "інтенсивно завантажений / проїзний",
+    "example_de": "Auf stark befahrenen Strecken kommt es zu Verspätungen.",
+    "example_tr": "Yoğun trafiği olan güzergahlarda gecikmeler yaşanır.",
+    "example_en": "Delays occur on heavily traveled routes.",
+    "example_ar": "تحدث التأخيرات على المسارات المزدحمة بحركة السير.",
+    "example_uk": "На лініях з інтенсивним рухом трапляються запізнення.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'befahren' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'befahren' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'befahren' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'befahren' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Auf stark befahrenen Strecken kommt es zu Verspätungen.",
+        "tr": "Yoğun trafiği olan güzergahlarda gecikmeler yaşanır.",
+        "en": "Delays occur on heavily traveled routes.",
+        "ar": "تحدث التأخيرات على المسارات المزدحمة بحركة السير.",
+        "uk": "На лініях з інтенсивним рухом трапляються запізнення."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag befahren zu sein.",
+        "tr": "İş ve günlük yaşamda yoğun kullanılan / trafiği olan (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be busy / heavily traveled in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "begrenzter": {
+    "de": "begrenzt",
+    "displayDe": "begrenzt",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "sınırlı",
+    "en": "limited",
+    "ar": "محدود",
+    "uk": "обмежений",
+    "example_de": "Die Teilnehmerzahl im Sprachkurs ist begrenzter Natur.",
+    "example_tr": "Dil kursundaki katılımcı sayısı sınırlıdır.",
+    "example_en": "The number of participants in the language course is limited.",
+    "example_ar": "عدد المشاركين في دورة اللغة محدود.",
+    "example_uk": "Кількість учасників на мовному курсі є обмеженою.",
+    "grammar": {
+      "tr": "Sıfat çekimi / Karşılaştırma: 'begrenzt' sıfatı maskulin nominativ halinde veya karşılaştırma (komparativ) derecesindedir.",
+      "en": "Adjective declension / Comparative: 'begrenzt' is either in the masculine nominative or comparative form.",
+      "ar": "تصريف الصفات أو المقارنة: الصفة 'begrenzt' بصيغة المذكر أو المقارنة.",
+      "uk": "Відмінювання або вищий ступінь: прикметник 'begrenzt' у чоловічому роді або формі порівняння.",
+      "title": {
+        "tr": "💡 Neden \"-er\" takısı aldı? (Sıfat Çekimi / Komparativ)",
+        "en": "💡 Why the \"-er\" ending? (Adjective / Comparative)",
+        "ar": "💡 لماذا لاحقة \"-er\"؟ (تصريف الصفة أو المقارنة)",
+        "uk": "💡 Чому закінчення \"-er\"? (Відмінювання прикметника / Вищий ступінь)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Teilnehmerzahl im Sprachkurs ist begrenzter Natur.",
+        "tr": "Dil kursundaki katılımcı sayısı sınırlıdır.",
+        "en": "The number of participants in the language course is limited.",
+        "ar": "عدد المشاركين في دورة اللغة محدود.",
+        "uk": "Кількість учасників на мовному курсі є обмеженою."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag begrenzt zu sein.",
+        "tr": "İş ve günlük yaşamda sınırlı olmak son derece önemlidir.",
+        "en": "It is very important to be limited in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "behandlungskosten": {
+    "de": "die Behandlungskosten",
+    "displayDe": "Behandlungskosten",
+    "article": "die",
+    "plural": "die Behandlungskosten (Pl.)",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "tedavi masrafları / giderleri",
+    "en": "treatment costs / medical expenses",
+    "ar": "تكاليف العلاج",
+    "uk": "витрати на лікування",
+    "example_de": "Die gesetzliche Krankenkasse übernimmt die notwendigen Behandlungskosten.",
+    "example_tr": "Yasal sağlık sigortası gerekli tedavi masraflarını karşılar.",
+    "example_en": "The statutory health insurer covers necessary treatment costs.",
+    "example_ar": "يغطي التأمين الصحي القانوني تكاليف العلاج اللازمة.",
+    "example_uk": "Державна каса медичного страхування покриває необхідні витрати на лікування.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Behandlungskosten (Pl.)'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Behandlungskosten (Pl.)'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Behandlungskosten (Pl.)'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Behandlungskosten (Pl.)'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die gesetzliche Krankenkasse übernimmt die notwendigen Behandlungskosten.",
+        "tr": "Yasal sağlık sigortası gerekli tedavi masraflarını karşılar.",
+        "en": "The statutory health insurer covers necessary treatment costs.",
+        "ar": "يغطي التأمين الصحي القانوني تكاليف العلاج اللازمة.",
+        "uk": "Державна каса медичного страхування покриває необхідні витрати на лікування."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Behandlungskosten eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Behandlungskosten günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Behandlungskosten plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "beherrschen": {
+    "de": "beherrschen",
+    "displayDe": "beherrschen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "hakim olmak (dile), iyi bilmek",
+    "en": "to master / command (language)",
+    "ar": "أتقن / أجاد لغة",
+    "uk": "опанувати / вільно володіти",
+    "example_de": "Wer die deutsche Sprache gut beherrscht, findet schneller Anschluss.",
+    "example_tr": "Almancaya iyi hakim olan kişi çevreye daha hızlı uyum sağlar.",
+    "example_en": "Whoever masters the German language finds connections more quickly.",
+    "example_ar": "من يتقن اللغة الألمانية يندمج بشكل أسرع.",
+    "example_uk": "Той, хто добре володіє німецькою мовою, швидше знаходить контакти.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'beherrschen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'beherrschen' denotes action, process, or state.",
+      "ar": "فعل: 'beherrschen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'beherrschen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (beherrschen)",
+        "en": "💡 Verb Structure (beherrschen)",
+        "ar": "💡 بنية الفعل (beherrschen)",
+        "uk": "💡 Структура дієслова (beherrschen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer die deutsche Sprache gut beherrscht, findet schneller Anschluss.",
+        "tr": "Almancaya iyi hakim olan kişi çevreye daha hızlı uyum sağlar.",
+        "en": "Whoever masters the German language finds connections more quickly.",
+        "ar": "من يتقن اللغة الألمانية يندمج بشكل أسرع.",
+        "uk": "Той, хто добре володіє німецькою мовою, швидше знаходить контакти."
+      },
+      {
+        "de": "In Deutschland kann man beherrschen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için hakim olmak (dile), iyi bilmek eylemi yapılabilir.",
+        "en": "In Germany, one can to master / command (language) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "behörden": {
+    "de": "die Behörde",
+    "displayDe": "Behörde",
+    "article": "die",
+    "plural": "die Behörden",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "resmi makamlar, kamu daireleri",
+    "en": "authorities / government agencies",
+    "ar": "السلطات / الدوائر الحكومية",
+    "uk": "державні органи / установи",
+    "example_de": "Im Alltag müssen Formulare bei verschiedenen Behörden eingereicht werden.",
+    "example_tr": "Günlük yaşamda farklı resmi makamlara formlar verilmelidir.",
+    "example_en": "In daily life, forms must be submitted to various authorities.",
+    "example_ar": "في الحياة اليومية يجب تقديم الاستمارات إلى مختلف الدوائر الرسمية.",
+    "example_uk": "У повсякденному житті форми необхідно подавати до різних органів влади.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Behörden'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Behörden'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Behörden'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Behörden'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Alltag müssen Formulare bei verschiedenen Behörden eingereicht werden.",
+        "tr": "Günlük yaşamda farklı resmi makamlara formlar verilmelidir.",
+        "en": "In daily life, forms must be submitted to various authorities.",
+        "ar": "في الحياة اليومية يجب تقديم الاستمارات إلى مختلف الدوائر الرسمية.",
+        "uk": "У повсякденному житті форми необхідно подавати до різних органів влади."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Behörde eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Behörde günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Behörde plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "bekannt": {
+    "de": "bekannt",
+    "displayDe": "bekannt",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "tanınmış, bilinen",
+    "en": "known / familiar",
+    "ar": "معروف / مشهور",
+    "uk": "відомий",
+    "example_de": "Das 49-Euro-Ticket ist bundesweit als Deutschlandticket bekannt.",
+    "example_tr": "49 euroluk bilet ülke genelinde Almanya bileti olarak bilinir.",
+    "example_en": "The 49-euro ticket is known nationwide as the Deutschlandticket.",
+    "example_ar": "تُعرف تذكرة 49 يورو على مستوى البلاد باسم تذكرة ألمانيا.",
+    "example_uk": "Квиток за 49 євро відомий у всій Німеччині як Дойчландтикет.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'bekannt' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'bekannt' describes quality or state.",
+      "ar": "صفة: 'bekannt' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'bekannt' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (bekannt)",
+        "en": "💡 Adjective (bekannt)",
+        "ar": "💡 بنية الصفة (bekannt)",
+        "uk": "💡 Структура прикметника (bekannt)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das 49-Euro-Ticket ist bundesweit als Deutschlandticket bekannt.",
+        "tr": "49 euroluk bilet ülke genelinde Almanya bileti olarak bilinir.",
+        "en": "The 49-euro ticket is known nationwide as the Deutschlandticket.",
+        "ar": "تُعرف تذكرة 49 يورو على مستوى البلاد باسم تذكرة ألمانيا.",
+        "uk": "Квиток за 49 євро відомий у всій Німеччині як Дойчландтикет."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag bekannt zu sein.",
+        "tr": "İş ve günlük yaşamda tanınmış, bilinen olmak son derece önemlidir.",
+        "en": "It is very important to be known / familiar in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "bekannter": {
+    "de": "bekannt",
+    "displayDe": "bekannt",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "daha bilinen / bir tanıdık",
+    "en": "more well-known / an acquaintance",
+    "ar": "أكثر شهرة / معارف",
+    "uk": "відоміший / знайомий",
+    "example_de": "Das Programm wurde unter einem neuen Namen noch bekannter.",
+    "example_tr": "Program yeni bir isimle daha da bilinir hale geldi.",
+    "example_en": "The program became even more well known under a new name.",
+    "example_ar": "أصبح البرنامج أكثر شهرة تحت اسم جديد.",
+    "example_uk": "Програма стала ще відомішою під новою назвою.",
+    "grammar": {
+      "tr": "Sıfat çekimi / Karşılaştırma: 'bekannt' sıfatı maskulin nominativ halinde veya karşılaştırma (komparativ) derecesindedir.",
+      "en": "Adjective declension / Comparative: 'bekannt' is either in the masculine nominative or comparative form.",
+      "ar": "تصريف الصفات أو المقارنة: الصفة 'bekannt' بصيغة المذكر أو المقارنة.",
+      "uk": "Відмінювання або вищий ступінь: прикметник 'bekannt' у чоловічому роді або формі порівняння.",
+      "title": {
+        "tr": "💡 Neden \"-er\" takısı aldı? (Sıfat Çekimi / Komparativ)",
+        "en": "💡 Why the \"-er\" ending? (Adjective / Comparative)",
+        "ar": "💡 لماذا لاحقة \"-er\"؟ (تصريف الصفة أو المقارنة)",
+        "uk": "💡 Чому закінчення \"-er\"? (Відмінювання прикметника / Вищий ступінь)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Programm wurde unter einem neuen Namen noch bekannter.",
+        "tr": "Program yeni bir isimle daha da bilinir hale geldi.",
+        "en": "The program became even more well known under a new name.",
+        "ar": "أصبح البرنامج أكثر شهرة تحت اسم جديد.",
+        "uk": "Програма стала ще відомішою під новою назвою."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag bekannt zu sein.",
+        "tr": "İş ve günlük yaşamda daha bilinen / bir tanıdık olmak son derece önemlidir.",
+        "en": "It is very important to be more well-known / an acquaintance in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "beklagen": {
+    "de": "beklagen",
+    "displayDe": "beklagen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "yakınmak, şikayet etmek",
+    "en": "to complain about / lament",
+    "ar": "اشتكى من / تذمر",
+    "uk": "скаржитися на",
+    "example_de": "Fahrgäste beklagen Verspätungen und überfüllte Züge.",
+    "example_tr": "Yolcular gecikmelerden ve aşırı kalabalık trenlerden yakınıyor.",
+    "example_en": "Passengers complain about delays and overcrowded trains.",
+    "example_ar": "يشكو الركاب من التأخيرات وازدحام القطارات.",
+    "example_uk": "Пасажири нарікають на запізнення та переповнені поїзди.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'beklagen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'beklagen' denotes action, process, or state.",
+      "ar": "فعل: 'beklagen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'beklagen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (beklagen)",
+        "en": "💡 Verb Structure (beklagen)",
+        "ar": "💡 بنية الفعل (beklagen)",
+        "uk": "💡 Структура дієслова (beklagen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Fahrgäste beklagen Verspätungen und überfüllte Züge.",
+        "tr": "Yolcular gecikmelerden ve aşırı kalabalık trenlerden yakınıyor.",
+        "en": "Passengers complain about delays and overcrowded trains.",
+        "ar": "يشكو الركاب من التأخيرات وازدحام القطارات.",
+        "uk": "Пасажири нарікають на запізнення та переповнені поїзди."
+      },
+      {
+        "de": "In Deutschland kann man beklagen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için yakınmak, şikayet etmek eylemi yapılabilir.",
+        "en": "In Germany, one can to complain about / lament to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "bereits": {
+    "de": "bereits",
+    "displayDe": "bereits",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "A2",
+    "tr": "zaten, çoktan, şimdiden",
+    "en": "already",
+    "ar": "بالفعل / مسبقاً",
+    "uk": "вже",
+    "example_de": "Millionen Bürger nutzen bereits das monatliche Nahverkehrsticket.",
+    "example_tr": "Milyonlarca vatandaş şimdiden aylık yerel ulaşım biletini kullanıyor.",
+    "example_en": "Millions of citizens already use the monthly local transit ticket.",
+    "example_ar": "يستخدم ملايين المواطنين بالفعل تذكرة النقل المحلي الشهرية.",
+    "example_uk": "Мільйони громадян вже користуються щомісячним квитком на транспорт.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'bereits' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'bereits' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'bereits' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'bereits' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (bereits)",
+        "en": "💡 Adverb (bereits)",
+        "ar": "💡 ظرف (bereits)",
+        "uk": "💡 Прислівник (bereits)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Millionen Bürger nutzen bereits das monatliche Nahverkehrsticket.",
+        "tr": "Milyonlarca vatandaş şimdiden aylık yerel ulaşım biletini kullanıyor.",
+        "en": "Millions of citizens already use the monthly local transit ticket.",
+        "ar": "يستخدم ملايين المواطنين بالفعل تذكرة النقل المحلي الشهرية.",
+        "uk": "Мільйони громадян вже користуються щомісячним квитком на транспорт."
+      },
+      {
+        "de": "Das Wort 'bereits' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'bereits' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'bereits' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'bereits' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'bereits' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "berufliche": {
+    "de": "beruflich",
+    "displayDe": "beruflich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "mesleki",
+    "en": "professional / vocational",
+    "ar": "مهني / وظيفي",
+    "uk": "професійний",
+    "example_de": "Gute Deutschkenntnisse eröffnen viele berufliche Chancen.",
+    "example_tr": "İyi Almanca bilgisi birçok mesleki fırsatın kapısını açar.",
+    "example_en": "Good German language skills open up many professional opportunities.",
+    "example_ar": "تفتح المعرفة الجيدة بالألمانية فرصاً مهنية عديدة.",
+    "example_uk": "Добре знання німецької мови відкриває численні професійні можливості.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'beruflich' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'beruflich' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'beruflich' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'beruflich' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Gute Deutschkenntnisse eröffnen viele berufliche Chancen.",
+        "tr": "İyi Almanca bilgisi birçok mesleki fırsatın kapısını açar.",
+        "en": "Good German language skills open up many professional opportunities.",
+        "ar": "تفتح المعرفة الجيدة بالألمانية فرصاً مهنية عديدة.",
+        "uk": "Добре знання німецької мови відкриває численні професійні можливості."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag beruflich zu sein.",
+        "tr": "İş ve günlük yaşamda mesleki olmak son derece önemlidir.",
+        "en": "It is very important to be professional / vocational in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "berufspendler": {
+    "de": "der Berufspendler",
+    "displayDe": "Berufspendler",
+    "article": "der",
+    "plural": "die Berufspendler",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "işi için düzenli seyahat eden kişi / banliyö yolcusu",
+    "en": "commuter / daily commuter",
+    "ar": "المتنقلون للعمل يومياً",
+    "uk": "щоденний пасажир до місця роботи",
+    "example_de": "Für Berufspendler bringt das Ticket eine spürbare finanzielle Entlastung.",
+    "example_tr": "İşe gidip gelenler için bilet hissedilir bir maddi rahatlama getiriyor.",
+    "example_en": "For commuters, the ticket brings noticeable financial relief.",
+    "example_ar": "يجلب الكرت تخفيفاً مالياً ملموساً للمسافرين يومياً للعمل.",
+    "example_uk": "Для людей, які їздять на роботу, квиток дає відчутне фінансове полегшення.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Berufspendler'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Berufspendler'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Berufspendler'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Berufspendler'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Berufspendler)",
+        "en": "💡 Noun Structure (der Berufspendler)",
+        "ar": "💡 بنية الاسم (der Berufspendler)",
+        "uk": "💡 Структура іменника (der Berufspendler)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Für Berufspendler bringt das Ticket eine spürbare finanzielle Entlastung.",
+        "tr": "İşe gidip gelenler için bilet hissedilir bir maddi rahatlama getiriyor.",
+        "en": "For commuters, the ticket brings noticeable financial relief.",
+        "ar": "يجلب الكرت تخفيفاً مالياً ملموساً للمسافرين يومياً للعمل.",
+        "uk": "Для людей, які їздять на роботу, квиток дає відчутне фінансове полегшення."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Berufspendler eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Berufspendler günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Berufspendler plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "berufsverkehr": {
+    "de": "der Berufsverkehr",
+    "displayDe": "Berufsverkehr",
+    "article": "der",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "iş giriş-çıkış trafiği / yoğun saat trafiği",
+    "en": "rush hour / commuter traffic",
+    "ar": "حركة المرور في أوقات الذروة",
+    "uk": "рух у години пік",
+    "example_de": "Im morgendlichen Berufsverkehr sind die Straßen oft verstopft.",
+    "example_tr": "Sabah iş trafiğinde yollar genellikle tıkanır.",
+    "example_en": "In morning commuter rush hour, roads are often congested.",
+    "example_ar": "في أوقات الذروة الصباحية غالباً ما تزدحم الطرقات.",
+    "example_uk": "У ранкові години пік дороги часто перевантажені.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Berufsverkehr)",
+        "en": "💡 Noun Structure (der Berufsverkehr)",
+        "ar": "💡 بنية الاسم (der Berufsverkehr)",
+        "uk": "💡 Структура іменника (der Berufsverkehr)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im morgendlichen Berufsverkehr sind die Straßen oft verstopft.",
+        "tr": "Sabah iş trafiğinde yollar genellikle tıkanır.",
+        "en": "In morning commuter rush hour, roads are often congested.",
+        "ar": "في أوقات الذروة الصباحية غالباً ما تزدحم الطرقات.",
+        "uk": "У ранкові години пік дороги часто перевантажені."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Berufsverkehr eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Berufsverkehr günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Berufsverkehr plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "beschwerden": {
+    "de": "die Beschwerde",
+    "displayDe": "Beschwerde",
+    "article": "die",
+    "plural": "die Beschwerden",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "sağlık şikayetleri / ağrılar",
+    "en": "physical complaints / symptoms",
+    "ar": "أعراض مرضية / شكاوى صحية",
+    "uk": "скарги на здоров'я / симптоми",
+    "example_de": "Bei gesundheitlichen Beschwerden geht man zuerst zum Hausarzt.",
+    "example_tr": "Sağlık şikayetlerinde ilk önce aile hekimine gidilir.",
+    "example_en": "For health complaints, one first goes to the general practitioner.",
+    "example_ar": "عند وجود أعراض صحية يتوجه المرء أولاً إلى طبيب الأسرة.",
+    "example_uk": "При скаргах на здоров'я спочатку йдуть до сімейного лікаря.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Beschwerden'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Beschwerden'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Beschwerden'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Beschwerden'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Bei gesundheitlichen Beschwerden geht man zuerst zum Hausarzt.",
+        "tr": "Sağlık şikayetlerinde ilk önce aile hekimine gidilir.",
+        "en": "For health complaints, one first goes to the general practitioner.",
+        "ar": "عند وجود أعراض صحية يتوجه المرء أولاً إلى طبيب الأسرة.",
+        "uk": "При скаргах на здоров'я спочатку йдуть до сімейного лікаря."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Beschwerde eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Beschwerde günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Beschwerde plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "besteht": {
+    "de": "bestehen",
+    "displayDe": "bestehen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "oluşmak / var olmak (besteht aus)",
+    "en": "consists of / exists",
+    "ar": "يتكون من / يوجد",
+    "uk": "складається з / існує",
+    "example_de": "Der Integrationskurs besteht aus Sprachkurs und Orientierungskurs.",
+    "example_tr": "Uyum kursu dil kursu ve yönlendirme kursundan oluşur.",
+    "example_en": "The integration course consists of a language course and orientation course.",
+    "example_ar": "تتكون دورة الاندماج من دورة لغة ودورة توجيهية.",
+    "example_uk": "Інтеграційний курс складається з мовного курсу та орієнтаційного курсу.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'bestehen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'bestehen' denotes action, process, or state.",
+      "ar": "فعل: 'bestehen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'bestehen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (bestehen)",
+        "en": "💡 Verb Structure (bestehen)",
+        "ar": "💡 بنية الفعل (bestehen)",
+        "uk": "💡 Структура дієслова (bestehen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Integrationskurs besteht aus Sprachkurs und Orientierungskurs.",
+        "tr": "Uyum kursu dil kursu ve yönlendirme kursundan oluşur.",
+        "en": "The integration course consists of a language course and orientation course.",
+        "ar": "تتكون دورة الاندماج من دورة لغة ودورة توجيهية.",
+        "uk": "Інтеграційний курс складається з мовного курсу та орієнтаційного курсу."
+      },
+      {
+        "de": "In Deutschland kann man bestehen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için oluşmak / var olmak (besteht aus) eylemi yapılabilir.",
+        "en": "In Germany, one can consists of / exists to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "besten": {
+    "de": "gut",
+    "displayDe": "am besten",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "en iyi (Superlativ)",
+    "en": "the best / best",
+    "ar": "الأفضل / على أفضل وجه",
+    "uk": "найкраще",
+    "example_de": "Der Hausarzt kennt die Krankengeschichte seiner Patienten am besten.",
+    "example_tr": "Aile hekimi hastalarının sağlık geçmişini en iyi bilir.",
+    "example_en": "The family doctor knows their patients' medical history best.",
+    "example_ar": "طبيب الأسرة يعرف السجل الصحي لمرضاه على أفضل وجه.",
+    "example_uk": "Сімейний лікар найкраще знає історію хвороб своїх пацієнтів.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'am besten' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'am besten' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'am besten' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'am besten' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Hausarzt kennt die Krankengeschichte seiner Patienten am besten.",
+        "tr": "Aile hekimi hastalarının sağlık geçmişini en iyi bilir.",
+        "en": "The family doctor knows their patients' medical history best.",
+        "ar": "طبيب الأسرة يعرف السجل الصحي لمرضاه على أفضل وجه.",
+        "uk": "Сімейний лікар найкраще знає історію хвороб своїх пацієнтів."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag am besten zu sein.",
+        "tr": "İş ve günlük yaşamda en iyi (Superlativ) olmak son derece önemlidir.",
+        "en": "It is very important to be the best / best in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "bestätigungscode": {
+    "de": "der Bestätigungscode",
+    "displayDe": "Bestätigungscode",
+    "article": "der",
+    "plural": "die Bestätigungscodes",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "onay kodu, doğrulama kodu",
+    "en": "confirmation code / verification code",
+    "ar": "رمز التأكيد / التحقق",
+    "uk": "код підтвердження",
+    "example_de": "Der Bestätigungscode wird per SMS an das Smartphone gesendet.",
+    "example_tr": "Onay kodu akıllı telefona kısa mesajla gönderilir.",
+    "example_en": "The confirmation code is sent to the smartphone via SMS.",
+    "example_ar": "يُرسل رمز التأكيد عبر رسالة نصية قصيرة إلى الهاتف الذكي.",
+    "example_uk": "Код підтвердження надсилається в SMS на смартфон.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Bestätigungscodes'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Bestätigungscodes'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Bestätigungscodes'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Bestätigungscodes'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Bestätigungscode)",
+        "en": "💡 Noun Structure (der Bestätigungscode)",
+        "ar": "💡 بنية الاسم (der Bestätigungscode)",
+        "uk": "💡 Структура іменника (der Bestätigungscode)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Bestätigungscode wird per SMS an das Smartphone gesendet.",
+        "tr": "Onay kodu akıllı telefona kısa mesajla gönderilir.",
+        "en": "The confirmation code is sent to the smartphone via SMS.",
+        "ar": "يُرسل رمز التأكيد عبر رسالة نصية قصيرة إلى الهاتف الذكي.",
+        "uk": "Код підтвердження надсилається в SMS на смартфон."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Bestätigungscode eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Bestätigungscode günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Bestätigungscode plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "betonen": {
+    "de": "betonen",
+    "displayDe": "betonen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "vurgulamak, önemini belirtmek",
+    "en": "to emphasize / stress",
+    "ar": "أكد على / شدد",
+    "uk": "наголошувати / підкреслювати",
+    "example_de": "Verkehrsexperten betonen die Notwendigkeit von Investitionen.",
+    "example_tr": "Ulaşım uzmanları yatırımların gerekliliğini vurguluyor.",
+    "example_en": "Transport experts emphasize the necessity of investments.",
+    "example_ar": "يؤكد خبراء النقل على ضرورة ضخ الاستثمارات.",
+    "example_uk": "Транспортні експерти наголошують на необхідності інвестицій.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'betonen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'betonen' denotes action, process, or state.",
+      "ar": "فعل: 'betonen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'betonen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (betonen)",
+        "en": "💡 Verb Structure (betonen)",
+        "ar": "💡 بنية الفعل (betonen)",
+        "uk": "💡 Структура дієслова (betonen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Verkehrsexperten betonen die Notwendigkeit von Investitionen.",
+        "tr": "Ulaşım uzmanları yatırımların gerekliliğini vurguluyor.",
+        "en": "Transport experts emphasize the necessity of investments.",
+        "ar": "يؤكد خبراء النقل على ضرورة ضخ الاستثمارات.",
+        "uk": "Транспортні експерти наголошують на необхідності інвестицій."
+      },
+      {
+        "de": "In Deutschland kann man betonen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için vurgulamak, önemini belirtmek eylemi yapılabilir.",
+        "en": "In Germany, one can to emphasize / stress to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "bewegt": {
+    "de": "bewegen",
+    "displayDe": "bewegen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "hareket ettirmek / etkilemek (sich bewegen)",
+    "en": "moves / exercises",
+    "ar": "يتحرك / يحرك",
+    "uk": "рухається / рухає",
+    "example_de": "Wer sich regelmäßig bewegt, stärkt sein Immunsystem.",
+    "example_tr": "Düzenli hareket eden kişi bağışıklık sistemini güçlendirir.",
+    "example_en": "Whoever exercises regularly strengthens their immune system.",
+    "example_ar": "من يتحرك بانتظام يقوي جهاز مناعته.",
+    "example_uk": "Той, хто регулярно рухається, зміцнює свій імунітет.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'bewegen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'bewegen' denotes action, process, or state.",
+      "ar": "فعل: 'bewegen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'bewegen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (bewegen)",
+        "en": "💡 Verb Structure (bewegen)",
+        "ar": "💡 بنية الفعل (bewegen)",
+        "uk": "💡 Структура дієслова (bewegen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer sich regelmäßig bewegt, stärkt sein Immunsystem.",
+        "tr": "Düzenli hareket eden kişi bağışıklık sistemini güçlendirir.",
+        "en": "Whoever exercises regularly strengthens their immune system.",
+        "ar": "من يتحرك بانتظام يقوي جهاز مناعته.",
+        "uk": "Той, хто регулярно рухається, зміцнює свій імунітет."
+      },
+      {
+        "de": "In Deutschland kann man bewegen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için hareket ettirmek / etkilemek (sich bewegen) eylemi yapılabilir.",
+        "en": "In Germany, one can moves / exercises to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "bewährten": {
+    "de": "bewährt",
+    "displayDe": "bewährt",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "kendini kanıtlamış, güvenilir",
+    "en": "proven / time-tested",
+    "ar": "مُجرَّب / أثبت كفاءته",
+    "uk": "перевірений часом / надійний",
+    "example_de": "Das deutsche Gesundheitssystem basiert auf dem bewährten Hausarzt-Prinzip.",
+    "example_tr": "Alman sağlık sistemi kendini kanıtlamış aile hekimliği ilkesine dayanır.",
+    "example_en": "The German healthcare system is based on the proven family doctor principle.",
+    "example_ar": "يرتكز النظام الصحي الألماني على مبدأ طبيب الأسرة المُجرّب.",
+    "example_uk": "Німецька система охорони здоров'я спирається на перевірений принцип сімейного лікаря.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'bewährt' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'bewährt' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'bewährt' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'bewährt' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das deutsche Gesundheitssystem basiert auf dem bewährten Hausarzt-Prinzip.",
+        "tr": "Alman sağlık sistemi kendini kanıtlamış aile hekimliği ilkesine dayanır.",
+        "en": "The German healthcare system is based on the proven family doctor principle.",
+        "ar": "يرتكز النظام الصحي الألماني على مبدأ طبيب الأسرة المُجرّب.",
+        "uk": "Німецька система охорони здоров'я спирається на перевірений принцип сімейного лікаря."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag bewährt zu sein.",
+        "tr": "İş ve günlük yaşamda kendini kanıtlamış, güvenilir olmak son derece önemlidir.",
+        "en": "It is very important to be proven / time-tested in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "bildet": {
+    "de": "bilden",
+    "displayDe": "bilden",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "oluşturmak (er/sie/es bildet)",
+    "en": "forms / constitutes",
+    "ar": "يشكل / يُكون",
+    "uk": "формує / становить",
+    "example_de": "Das Zertifikat Deutsch B1 bildet das Fundament für die Einbürgerung.",
+    "example_tr": "B1 Almanca sertifikası vatandaşlık için temel oluşturur.",
+    "example_en": "The B1 certificate forms the foundation for naturalization.",
+    "example_ar": "تشكل شهادة اللغة B1 الأساس للحصول على الجنسية.",
+    "example_uk": "Сертифікат B1 становить основу для отримання громадянства.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'bilden' temel eylem bildiren fiildir.",
+      "en": "Verb: 'bilden' denotes action, process, or state.",
+      "ar": "فعل: 'bilden' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'bilden' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (bilden)",
+        "en": "💡 Verb Structure (bilden)",
+        "ar": "💡 بنية الفعل (bilden)",
+        "uk": "💡 Структура дієслова (bilden)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Zertifikat Deutsch B1 bildet das Fundament für die Einbürgerung.",
+        "tr": "B1 Almanca sertifikası vatandaşlık için temel oluşturur.",
+        "en": "The B1 certificate forms the foundation for naturalization.",
+        "ar": "تشكل شهادة اللغة B1 الأساس للحصول على الجنسية.",
+        "uk": "Сертифікат B1 становить основу для отримання громадянства."
+      },
+      {
+        "de": "In Deutschland kann man bilden, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için oluşturmak (er/sie/es bildet) eylemi yapılabilir.",
+        "en": "In Germany, one can forms / constitutes to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "bleibt": {
+    "de": "bleiben",
+    "displayDe": "bleiben",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "kalmak (er/sie/es bleibt)",
+    "en": "remains / stays",
+    "ar": "يبقى / يظل",
+    "uk": "залишається",
+    "example_de": "Das Ticket bleibt für viele Bürger ein attraktives Angebot.",
+    "example_tr": "Bilet birçok vatandaş için cazip bir teklif olmaya devam ediyor.",
+    "example_en": "The ticket remains an attractive offer for many citizens.",
+    "example_ar": "تظل التذكرة عرضاً جذاباً للعديد من المواطنين.",
+    "example_uk": "Квиток залишається привабливою пропозицією для багатьох громадян.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'bleiben' temel eylem bildiren fiildir.",
+      "en": "Verb: 'bleiben' denotes action, process, or state.",
+      "ar": "فعل: 'bleiben' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'bleiben' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (bleiben)",
+        "en": "💡 Verb Structure (bleiben)",
+        "ar": "💡 بنية الفعل (bleiben)",
+        "uk": "💡 Структура дієслова (bleiben)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Ticket bleibt für viele Bürger ein attraktives Angebot.",
+        "tr": "Bilet birçok vatandaş için cazip bir teklif olmaya devam ediyor.",
+        "en": "The ticket remains an attractive offer for many citizens.",
+        "ar": "تظل التذكرة عرضاً جذاباً للعديد من المواطنين.",
+        "uk": "Квиток залишається привабливою пропозицією для багатьох громадян."
+      },
+      {
+        "de": "In Deutschland kann man bleiben, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için kalmak (er/sie/es bleibt) eylemi yapılabilir.",
+        "en": "In Germany, one can remains / stays to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "bonuspunkte": {
+    "de": "der Bonuspunkt",
+    "displayDe": "Bonuspunkt",
+    "article": "der",
+    "plural": "die Bonuspunkte",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "bonus puanlar, ödül puanları",
+    "en": "bonus points / reward points",
+    "ar": "نقاط المكافأة",
+    "uk": "бонусні бали",
+    "example_de": "Wer Vorsorgetermine wahrnimmt, sammelt wertvolle Bonuspunkte.",
+    "example_tr": "Kontrol muayenelerine gidenler değerli bonus puanlar toplar.",
+    "example_en": "Whoever attends checkups collects valuable bonus points.",
+    "example_ar": "من يلتزم بالفحوصات الوقائية يجمع نقاط مكافأة قيّمة.",
+    "example_uk": "Той, хто відвідує профілактичні огляди, накопичує цінні бонусні бали.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Bonuspunkte'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Bonuspunkte'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Bonuspunkte'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Bonuspunkte'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Bonuspunkt)",
+        "en": "💡 Noun Structure (der Bonuspunkt)",
+        "ar": "💡 بنية الاسم (der Bonuspunkt)",
+        "uk": "💡 Структура іменника (der Bonuspunkt)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer Vorsorgetermine wahrnimmt, sammelt wertvolle Bonuspunkte.",
+        "tr": "Kontrol muayenelerine gidenler değerli bonus puanlar toplar.",
+        "en": "Whoever attends checkups collects valuable bonus points.",
+        "ar": "من يلتزم بالفحوصات الوقائية يجمع نقاط مكافأة قيّمة.",
+        "uk": "Той, хто відвідує профілактичні огляди, накопичує цінні бонусні бали."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Bonuspunkt eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Bonuspunkt günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Bonuspunkt plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "browser": {
+    "de": "der Browser",
+    "displayDe": "Browser",
+    "article": "der",
+    "plural": "die Browser",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "web tarayıcısı",
+    "en": "web browser",
+    "ar": "متصفح الإنترنت",
+    "uk": "веб-браузер",
+    "example_de": "Geben Sie die Webadresse manuell in die Adresszeile des Browsers ein.",
+    "example_tr": "İnternet adresini tarayıcının adres çubuğuna elle yazın.",
+    "example_en": "Enter the web address manually into the browser address bar.",
+    "example_ar": "أدخل عنوان الويب يدوياً في شريط عناوين المتصفح.",
+    "example_uk": "Введіть веб-адресу вручну в рядок пошуку браузера.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Browser'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Browser'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Browser'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Browser'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Browser)",
+        "en": "💡 Noun Structure (der Browser)",
+        "ar": "💡 بنية الاسم (der Browser)",
+        "uk": "💡 Структура іменника (der Browser)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Geben Sie die Webadresse manuell in die Adresszeile des Browsers ein.",
+        "tr": "İnternet adresini tarayıcının adres çubuğuna elle yazın.",
+        "en": "Enter the web address manually into the browser address bar.",
+        "ar": "أدخل عنوان الويب يدوياً في شريط عناوين المتصفح.",
+        "uk": "Введіть веб-адресу вручну в рядок пошуку браузера."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Browser eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Browser günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Browser plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "buch": {
+    "de": "das Buch",
+    "displayDe": "Buch",
+    "article": "das",
+    "plural": "die Bücher",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "kitap",
+    "en": "book",
+    "ar": "كتاب",
+    "uk": "книга",
+    "example_de": "Im Unterricht arbeiten die Lernenden mit einem modernen Lehrbuch.",
+    "example_tr": "Derste öğrenciler modern bir ders kitabıyla çalışırlar.",
+    "example_en": "In class, learners work with a modern textbook.",
+    "example_ar": "في الفصل يعمل المتعلمون باستخدام كتاب مدرسي حديث.",
+    "example_uk": "На заняттях учні працюють за сучасним підручником.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Bücher'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Bücher'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Bücher'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Bücher'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Buch)",
+        "en": "💡 Noun Structure (das Buch)",
+        "ar": "💡 بنية الاسم (das Buch)",
+        "uk": "💡 Структура іменника (das Buch)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Unterricht arbeiten die Lernenden mit einem modernen Lehrbuch.",
+        "tr": "Derste öğrenciler modern bir ders kitabıyla çalışırlar.",
+        "en": "In class, learners work with a modern textbook.",
+        "ar": "في الفصل يعمل المتعلمون باستخدام كتاب مدرسي حديث.",
+        "uk": "На заняттях учні працюють за сучасним підручником."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Buch eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Buch günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Buch plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "buchen": {
+    "de": "buchen",
+    "displayDe": "buchen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "rezervasyon yapmak, bilet almak / randevu almak",
+    "en": "to book / reserve",
+    "ar": "حجز / اشترى تذكرة",
+    "uk": "бронювати / купувати квиток",
+    "example_de": "Patienten können Arzttermine rund um die Uhr online buchen.",
+    "example_tr": "Hastalar günün her saati internetten doktor randevusu alabilir.",
+    "example_en": "Patients can book doctor appointments online around the clock.",
+    "example_ar": "يمكن للمرضى حجز مواعيد الأطباء عبر الإنترنت على مدار الساعة.",
+    "example_uk": "Пацієнти можуть бронювати прийом до лікаря онлайн цілодобово.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'buchen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'buchen' denotes action, process, or state.",
+      "ar": "فعل: 'buchen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'buchen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (buchen)",
+        "en": "💡 Verb Structure (buchen)",
+        "ar": "💡 بنية الفعل (buchen)",
+        "uk": "💡 Структура дієслова (buchen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Patienten können Arzttermine rund um die Uhr online buchen.",
+        "tr": "Hastalar günün her saati internetten doktor randevusu alabilir.",
+        "en": "Patients can book doctor appointments online around the clock.",
+        "ar": "يمكن للمرضى حجز مواعيد الأطباء عبر الإنترنت على مدار الساعة.",
+        "uk": "Пацієнти можуть бронювати прийом до лікаря онлайн цілодобово."
+      },
+      {
+        "de": "In Deutschland kann man buchen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için rezervasyon yapmak, bilet almak / randevu almak eylemi yapılabilir.",
+        "en": "In Germany, one can to book / reserve to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "bundesamt": {
+    "de": "das Bundesamt",
+    "displayDe": "Bundesamt",
+    "article": "das",
+    "plural": "die Bundesämter",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "Federal Daire / Federal Kurum",
+    "en": "federal office / federal agency",
+    "ar": "المكتب الاتحادي",
+    "uk": "федеральне відомство",
+    "example_de": "Das Bundesamt für Migration ist für die Integrationskurse zuständig.",
+    "example_tr": "Federal Göç Dairesi uyum kurslarından sorumludur.",
+    "example_en": "The Federal Office for Migration is responsible for integration courses.",
+    "example_ar": "المكتب الاتحادي للهجرة هو المسؤول عن دورات الاندмаج.",
+    "example_uk": "Федеральне відомство з питань міграції відповідає за інтеграційні курси.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Bundesämter'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Bundesämter'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Bundesämter'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Bundesämter'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Bundesamt)",
+        "en": "💡 Noun Structure (das Bundesamt)",
+        "ar": "💡 بنية الاسم (das Bundesamt)",
+        "uk": "💡 Структура іменника (das Bundesamt)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Bundesamt für Migration ist für die Integrationskurse zuständig.",
+        "tr": "Federal Göç Dairesi uyum kurslarından sorumludur.",
+        "en": "The Federal Office for Migration is responsible for integration courses.",
+        "ar": "المكتب الاتحادي للهجرة هو المسؤول عن دورات الاندмаج.",
+        "uk": "Федеральне відомство з питань міграції відповідає за інтеграційні курси."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Bundesamt eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Bundesamt günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Bundesamt plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "bundesregierung": {
+    "de": "die Bundesregierung",
+    "displayDe": "Bundesregierung",
+    "article": "die",
+    "plural": "die Bundesregierungen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "Federal Hükümet",
+    "en": "Federal Government",
+    "ar": "الحكومة الاتحادية",
+    "uk": "Федеральний уряд",
+    "example_de": "Die Bundesregierung unterstützt die Finanzierung des Nahverkehrstickets.",
+    "example_tr": "Federal Hükümet yerel ulaşım biletinin finansmanını desteklemektedir.",
+    "example_en": "The Federal Government supports the financing of the local transit ticket.",
+    "example_ar": "تدعم الحكومة الاتحادية تمويل تذكرة النقل المحلي.",
+    "example_uk": "Федеральний уряд підтримує фінансування квитка на місцевий транспорт.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Bundesregierungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Bundesregierungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Bundesregierungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Bundesregierungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Bundesregierung)",
+        "en": "💡 Noun Structure (die Bundesregierung)",
+        "ar": "💡 بنية الاسم (die Bundesregierung)",
+        "uk": "💡 Структура іменника (die Bundesregierung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Bundesregierung unterstützt die Finanzierung des Nahverkehrstickets.",
+        "tr": "Federal Hükümet yerel ulaşım biletinin finansmanını desteklemektedir.",
+        "en": "The Federal Government supports the financing of the local transit ticket.",
+        "ar": "تدعم الحكومة الاتحادية تمويل تذكرة النقل المحلي.",
+        "uk": "Федеральний уряд підтримує фінансування квитка на місцевий транспорт."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Bundesregierung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Bundesregierung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Bundesregierung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "bundesweit": {
+    "de": "bundesweit",
+    "displayDe": "bundesweit",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "B1",
+    "tr": "ülke genelinde, tüm Almanya çapında",
+    "en": "nationwide / throughout Germany",
+    "ar": "على مستوى ألمانيا / في عموم البلاد",
+    "uk": "по всій Німеччині / загальнодержавний",
+    "example_de": "Das Ticket gilt bundesweit im regionalen Nahverkehr.",
+    "example_tr": "Bilet tüm Almanya genelinde bölgesel yerel ulaşımda geçerlidir.",
+    "example_en": "The ticket is valid nationwide in regional transit.",
+    "example_ar": "التذكرة صالحة في جميع أنحاء البلاد في النقل الإقليمي.",
+    "example_uk": "Квиток діє по всій країні в регіональному сполученні.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'bundesweit' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'bundesweit' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'bundesweit' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'bundesweit' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (bundesweit)",
+        "en": "💡 Adverb (bundesweit)",
+        "ar": "💡 ظرف (bundesweit)",
+        "uk": "💡 Прислівник (bundesweit)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Ticket gilt bundesweit im regionalen Nahverkehr.",
+        "tr": "Bilet tüm Almanya genelinde bölgesel yerel ulaşımda geçerlidir.",
+        "en": "The ticket is valid nationwide in regional transit.",
+        "ar": "التذكرة صالحة في جميع أنحاء البلاد في النقل الإقليمي.",
+        "uk": "Квиток діє по всій країні в регіональному сполученні."
+      },
+      {
+        "de": "Das Wort 'bundesweit' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'bundesweit' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'bundesweit' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'bundesweit' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'bundesweit' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "bundesweiten": {
+    "de": "bundesweit",
+    "displayDe": "bundesweit",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "ülke çapındaki (çekimli sıfat)",
+    "en": "nationwide (declined)",
+    "ar": "على مستوى البلاد",
+    "uk": "загальнонаціональний",
+    "example_de": "Über die bundesweite Rufnummer 116117 erhält man ärztliche Hilfe.",
+    "example_tr": "Ülke genelindeki 116117 numaralı hat üzerinden tıbbi yardım alınır.",
+    "example_en": "Medical assistance is available via the nationwide phone number 116117.",
+    "example_ar": "يمكن الحصول على المساعدة الطبية عبر الرقم الوطني 116117.",
+    "example_uk": "Медичну допомогу можна отримати за загальнонімецьким номером 116117.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'bundesweit' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'bundesweit' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'bundesweit' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'bundesweit' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Über die bundesweite Rufnummer 116117 erhält man ärztliche Hilfe.",
+        "tr": "Ülke genelindeki 116117 numaralı hat üzerinden tıbbi yardım alınır.",
+        "en": "Medical assistance is available via the nationwide phone number 116117.",
+        "ar": "يمكن الحصول على المساعدة الطبية عبر الرقم الوطني 116117.",
+        "uk": "Медичну допомогу можна отримати за загальнонімецьким номером 116117."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag bundesweit zu sein.",
+        "tr": "İş ve günlük yaşamda ülke çapındaki (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be nationwide (declined) in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "bussen": {
+    "de": "der Bus",
+    "displayDe": "Bus",
+    "article": "der",
+    "plural": "die Busse",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "otobüslerde (Dativ Plural)",
+    "en": "buses (Dative plural)",
+    "ar": "الحافلات (في الحافلات)",
+    "uk": "автобусах",
+    "example_de": "Das Ticket gilt in allen Bussen und Straßenbahnen der Stadt.",
+    "example_tr": "Bilet şehrin tüm otobüs ve tramvaylarında geçerlidir.",
+    "example_en": "The ticket is valid on all buses and trams in the city.",
+    "example_ar": "التذكرة صالحة في جميع حافلات المدينة وترامها.",
+    "example_uk": "Квиток діє в усіх міських автобусах та трамваях.",
+    "grammar": {
+      "title": {
+        "tr": "💡 İsmin Hali: Dativ Plural Kuralı (in allen Bussen)",
+        "en": "💡 Case Declension: Dative Plural (in allen Bussen)",
+        "ar": "💡 تصريف الجمع: قاعدة Dativ للجمع (in allen Bussen)",
+        "uk": "💡 Відмінювання: Давальний відмінок множини (in allen Bussen)"
+      },
+      "tr": "Dativ Plural kuralı: 'der Bus' çoğulu 'die Busse'dir. 'in' edatı nerede (wo?) sorusuna yanıt verdiğinde Dativ gerektirir; Almancada tüm çoğul isimler Dativ halinde zorunlu '-n' takısı alır: in allen Bussen.",
+      "en": "Dative Plural rule: 'der Bus' plurals to 'die Busse'. Governed by 'in' (location = Dative), all plural nouns must take an extra '-n': in allen Bussen.",
+      "ar": "قاعدة الـ Dativ للجمع: جمع 'der Bus' هو 'die Busse'. مع حرف الجر 'in' للمكان، تأخذ جميع أسماء الجمع لاحقة '-n' إجبارياً: in allen Bussen.",
+      "uk": "Правило Dativ у множині: множина від 'der Bus' — 'die Busse'. Після прийменника 'in' (де? = Dativ) іменники у множині обов'язково отримують закінчення '-n': in allen Bussen."
+    },
+    "examples": [
+      {
+        "de": "Das Ticket gilt in allen Bussen und Straßenbahnen der Stadt.",
+        "tr": "Bilet şehrin tüm otobüs ve tramvaylarında geçerlidir.",
+        "en": "The ticket is valid on all buses and trams in the city.",
+        "ar": "التذكرة صالحة في جميع حافلات المدينة وترامها.",
+        "uk": "Квиток діє в усіх міських автобусах та трамваях."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Bus eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Bus günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Bus plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "bürger": {
+    "de": "der Bürger",
+    "displayDe": "Bürger",
+    "article": "der",
+    "plural": "die Bürger",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "vatandaş / yurttaşlar",
+    "en": "citizens / citizen",
+    "ar": "مواطن / مواطنون",
+    "uk": "громадяни / громадянин",
+    "example_de": "Viele Bürger nutzen das Deutschlandticket für den täglichen Arbeitsweg.",
+    "example_tr": "Birçok vatandaş günlük iş yolu için Almanya biletini kullanıyor.",
+    "example_en": "Many citizens use the Deutschlandticket for their daily commute.",
+    "example_ar": "يستخدم العديد من المواطنين تذكرة ألمانيا للتنقل اليومي إلى العمل.",
+    "example_uk": "Багато громадян використовують Дойчландтикет для щоденних поїздок на роботу.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Bürger'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Bürger'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Bürger'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Bürger'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Bürger)",
+        "en": "💡 Noun Structure (der Bürger)",
+        "ar": "💡 بنية الاسم (der Bürger)",
+        "uk": "💡 Структура іменника (der Bürger)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Viele Bürger nutzen das Deutschlandticket für den täglichen Arbeitsweg.",
+        "tr": "Birçok vatandaş günlük iş yolu için Almanya biletini kullanıyor.",
+        "en": "Many citizens use the Deutschlandticket for their daily commute.",
+        "ar": "يستخدم العديد من المواطنين تذكرة ألمانيا للتنقل اليومي إلى العمل.",
+        "uk": "Багато громадян використовують Дойчландтикет для щоденних поїздок на роботу."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Bürger eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Bürger günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Bürger plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "check": {
+    "de": "der Check",
+    "displayDe": "Check",
+    "article": "der",
+    "plural": "die Checks",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "kontrol, çek (Check-up)",
+    "en": "check / checkup",
+    "ar": "فحص / تدقيق",
+    "uk": "перевірка / огляд",
+    "example_de": "Ein regelmäßiger Check beim Arzt schützt vor schweren Krankheiten.",
+    "example_tr": "Doktorda yapılacak düzenli bir kontrol ağır hastalıklardan korur.",
+    "example_en": "A regular checkup at the doctor protects against serious illness.",
+    "example_ar": "الفحص المنتظم عند الطبيب يحمي من الأمراض الخطيرة.",
+    "example_uk": "Регулярний огляд у лікаря захищає від серйозних захворювань.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Checks'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Checks'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Checks'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Checks'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Check)",
+        "en": "💡 Noun Structure (der Check)",
+        "ar": "💡 بنية الاسم (der Check)",
+        "uk": "💡 Структура іменника (der Check)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein regelmäßiger Check beim Arzt schützt vor schweren Krankheiten.",
+        "tr": "Doktorda yapılacak düzenli bir kontrol ağır hastalıklardan korur.",
+        "en": "A regular checkup at the doctor protects against serious illness.",
+        "ar": "الفحص المنتظم عند الطبيب يحمي من الأمراض الخطيرة.",
+        "uk": "Регулярний огляд у лікаря захищає від серйозних захворювань."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Check eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Check günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Check plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "dank": {
+    "de": "dank",
+    "displayDe": "dank",
+    "article": "",
+    "plural": "",
+    "pos": "prep",
+    "level": "B1",
+    "tr": "sayesinde (+ Gen / Dat)",
+    "en": "thanks to (+ Gen / Dat)",
+    "ar": "بفضل / بسببه",
+    "uk": "завдяки",
+    "example_de": "Dank der elektronischen Patientenakte haben Ärzte schnellen Einblick.",
+    "example_tr": "Elektronik hasta dosyası sayesinde doktorlar hızlıca bilgi edinebilir.",
+    "example_en": "Thanks to the electronic patient file, doctors have quick insight.",
+    "example_ar": "بفضل الملف الإلكتروني للمريض، يملك الأطباء وصولاً سريعاً للمعلومات.",
+    "example_uk": "Завдяки електронній медичній карті лікарі мають швидкий доступ до інформації.",
+    "grammar": {
+      "tr": "Edat (Präposition): 'dank' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
+      "en": "Preposition: 'dank' governs the grammatical case (Dative/Accusative) of the following noun.",
+      "ar": "حرف جر: 'dank' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
+      "uk": "Прийменник: 'dank' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
+    },
+    "examples": [
+      {
+        "de": "Dank der elektronischen Patientenakte haben Ärzte schnellen Einblick.",
+        "tr": "Elektronik hasta dosyası sayesinde doktorlar hızlıca bilgi edinebilir.",
+        "en": "Thanks to the electronic patient file, doctors have quick insight.",
+        "ar": "بفضل الملف الإلكتروني للمريض، يملك الأطباء وصولاً سريعاً للمعلومات.",
+        "uk": "Завдяки електронній медичній карті лікарі мають швидкий доступ до інформації."
+      },
+      {
+        "de": "Wir treffen uns dank der Arbeit zu einem kurzen Gespräch.",
+        "tr": "İşten sonra kısa bir görüşme için buluşuyoruz.",
+        "en": "We meet for a short conversation.",
+        "ar": "نلتقي لإجراء محادثة قصيرة.",
+        "uk": "Ми зустрічаємося для короткої розмови."
+      }
+    ]
+  },
+  "dar": {
+    "de": "darstellen",
+    "displayDe": "darstellen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "temsil etmek, oluşturmak (stellt ... dar)",
+    "en": "constitutes / represents",
+    "ar": "يمثل / يشكل",
+    "uk": "становить / представляє",
+    "example_de": "Die Prüfung stellt einen wichtigen Meilenstein im Integrationsprozess dar.",
+    "example_tr": "Sınav uyum sürecinde önemli bir dönüm noktası teşkil eder.",
+    "example_en": "The exam represents an important milestone in the integration process.",
+    "example_ar": "يمثل الامتحان محطة هامة في مسيرة الاندماج.",
+    "example_uk": "Іспит є важливою віхою в процесі інтеграції.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'darstellen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'darstellen' denotes action, process, or state.",
+      "ar": "فعل: 'darstellen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'darstellen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (darstellen)",
+        "en": "💡 Verb Structure (darstellen)",
+        "ar": "💡 بنية الفعل (darstellen)",
+        "uk": "💡 Структура дієслова (darstellen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Prüfung stellt einen wichtigen Meilenstein im Integrationsprozess dar.",
+        "tr": "Sınav uyum sürecinde önemli bir dönüm noktası teşkil eder.",
+        "en": "The exam represents an important milestone in the integration process.",
+        "ar": "يمثل الامتحان محطة هامة في مسيرة الاندماج.",
+        "uk": "Іспит є важливою віхою в процесі інтеграції."
+      },
+      {
+        "de": "In Deutschland kann man darstellen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için temsil etmek, oluşturmak (stellt ... dar) eylemi yapılabilir.",
+        "en": "In Germany, one can constitutes / represents to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "daten": {
+    "de": "die Daten",
+    "displayDe": "Daten",
+    "article": "die",
+    "plural": "die Daten (Pl.)",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "veriler, bilgiler",
+    "en": "data / information",
+    "ar": "بيانات / معلومات",
+    "uk": "дані / відомості",
+    "example_de": "Persönliche Daten müssen vor unbefugtem Zugriff geschützt werden.",
+    "example_tr": "Kişisel veriler yetkisiz erişime karşı korunmalıdır.",
+    "example_en": "Personal data must be protected against unauthorized access.",
+    "example_ar": "يجب حماية البيانات الشخصية من الوصول غير المصرح به.",
+    "example_uk": "Особисті дані мають бути захищені від несанкціонованого доступу.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Daten (Pl.)'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Daten (Pl.)'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Daten (Pl.)'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Daten (Pl.)'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Persönliche Daten müssen vor unbefugtem Zugriff geschützt werden.",
+        "tr": "Kişisel veriler yetkisiz erişime karşı korunmalıdır.",
+        "en": "Personal data must be protected against unauthorized access.",
+        "ar": "يجب حماية البيانات الشخصية من الوصول غير المصرح به.",
+        "uk": "Особисті дані мають бути захищені від несанкціонованого доступу."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Daten eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Daten günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Daten plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "datenschutz": {
+    "de": "der Datenschutz",
+    "displayDe": "Datenschutz",
+    "article": "der",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "veri koruma / kişisel verilerin gizliliği",
+    "en": "data protection / data privacy",
+    "ar": "حماية البيانات والخصوصية",
+    "uk": "захист персональних даних",
+    "example_de": "Der Datenschutz hat im digitalen Zeitalter höchste Priorität.",
+    "example_tr": "Veri koruma dijital çağda en yüksek önceliğe sahiptir.",
+    "example_en": "Data protection has the highest priority in the digital age.",
+    "example_ar": "تحظى حماية البيانات بالأولوية القصوى في العصر الرقمي.",
+    "example_uk": "Захист даних має найвищий пріоритет у цифрову епоху.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Datenschutz)",
+        "en": "💡 Noun Structure (der Datenschutz)",
+        "ar": "💡 بنية الاسم (der Datenschutz)",
+        "uk": "💡 Структура іменника (der Datenschutz)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Datenschutz hat im digitalen Zeitalter höchste Priorität.",
+        "tr": "Veri koruma dijital çağda en yüksek önceliğe sahiptir.",
+        "en": "Data protection has the highest priority in the digital age.",
+        "ar": "تحظى حماية البيانات بالأولوية القصوى في العصر الرقمي.",
+        "uk": "Захист даних має найвищий пріоритет у цифрову епоху."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Datenschutz eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Datenschutz günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Datenschutz plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "dauerhaft": {
+    "de": "dauerhaft",
+    "displayDe": "dauerhaft",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "kalıcı, sürekli",
+    "en": "permanent / lasting",
+    "ar": "دائم / طويل الأمد",
+    "uk": "тривалий / постійний",
+    "example_de": "Eine dauerhafte Finanzierung des öffentlichen Verkehrs ist erforderlich.",
+    "example_tr": "Toplu taşımanın kalıcı bir şekilde finanse edilmesi gereklidir.",
+    "example_en": "Permanent financing of public transit is required.",
+    "example_ar": "التمويل الدائم لوسائل النقل العام أمر ضروري.",
+    "example_uk": "Необхідне стабільне та постійне фінансування громадського транспорту.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'dauerhaft' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'dauerhaft' describes quality or state.",
+      "ar": "صفة: 'dauerhaft' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'dauerhaft' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (dauerhaft)",
+        "en": "💡 Adjective (dauerhaft)",
+        "ar": "💡 بنية الصفة (dauerhaft)",
+        "uk": "💡 Структура прикметника (dauerhaft)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Eine dauerhafte Finanzierung des öffentlichen Verkehrs ist erforderlich.",
+        "tr": "Toplu taşımanın kalıcı bir şekilde finanse edilmesi gereklidir.",
+        "en": "Permanent financing of public transit is required.",
+        "ar": "التمويل الدائم لوسائل النقل العام أمر ضروري.",
+        "uk": "Необхідне стабільне та постійне фінансування громадського транспорту."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag dauerhaft zu sein.",
+        "tr": "İş ve günlük yaşamda kalıcı, sürekli olmak son derece önemlidir.",
+        "en": "It is very important to be permanent / lasting in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "davon": {
+    "de": "davon",
+    "displayDe": "davon",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "A2",
+    "tr": "bundan, ondan, bunun hakkında",
+    "en": "from it / of that",
+    "ar": "من ذلك / عنه",
+    "uk": "з цього / від цього",
+    "example_de": "Viele Pendler profitieren finanziell davon.",
+    "example_tr": "Birçok banliyö yolcusu bundan maddi olarak faydalanıyor.",
+    "example_en": "Many commuters benefit financially from it.",
+    "example_ar": "يستفيد العديد من الركاب مادياً من ذلك.",
+    "example_uk": "Багато пасажирів отримують від цього фінансову вигоду.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'davon' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'davon' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'davon' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'davon' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (davon)",
+        "en": "💡 Adverb (davon)",
+        "ar": "💡 ظرف (davon)",
+        "uk": "💡 Прислівник (davon)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Viele Pendler profitieren finanziell davon.",
+        "tr": "Birçok banliyö yolcusu bundan maddi olarak faydalanıyor.",
+        "en": "Many commuters benefit financially from it.",
+        "ar": "يستفيد العديد من الركاب مادياً من ذلك.",
+        "uk": "Багато пасажирів отримують від цього фінансову вигоду."
+      },
+      {
+        "de": "Das Wort 'davon' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'davon' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'davon' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'davon' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'davon' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "davor": {
+    "de": "davor",
+    "displayDe": "davor",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "A2",
+    "tr": "bundan önce / buna karşı",
+    "en": "before that / against it",
+    "ar": "قبل ذلك / من ذلك",
+    "uk": "перед цим / від цього",
+    "example_de": "Experten warnen davor, unsichere Passwörter zu verwenden.",
+    "example_tr": "Uzmanlar güvensiz parolalar kullanılmasına karşı uyarıyor.",
+    "example_en": "Experts warn against using insecure passwords.",
+    "example_ar": "يحذر الخبراء من استخدام كلمات مرور غير آمنة.",
+    "example_uk": "Експерти застерігають від використання ненадійних паролів.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'davor' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'davor' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'davor' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'davor' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (davor)",
+        "en": "💡 Adverb (davor)",
+        "ar": "💡 ظرف (davor)",
+        "uk": "💡 Прислівник (davor)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Experten warnen davor, unsichere Passwörter zu verwenden.",
+        "tr": "Uzmanlar güvensiz parolalar kullanılmasına karşı uyarıyor.",
+        "en": "Experts warn against using insecure passwords.",
+        "ar": "يحذر الخبراء من استخدام كلمات مرور غير آمنة.",
+        "uk": "Експерти застерігають від використання ненадійних паролів."
+      },
+      {
+        "de": "Das Wort 'davor' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'davor' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'davor' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'davor' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'davor' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "dazu": {
+    "de": "dazu",
+    "displayDe": "dazu",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "A2",
+    "tr": "buna ek olarak, bunun için",
+    "en": "in addition / to this",
+    "ar": "بالإضافة إلى ذلك / لذلك",
+    "uk": "до цього / крім того",
+    "example_de": "Dazu gehören ein gültiger Personalausweis und die Krankenkassenkarte.",
+    "example_tr": "Bunun için geçerli bir kimlik kartı ve sigorta kartı gereklidir.",
+    "example_en": "This includes a valid identity card and health insurance card.",
+    "example_ar": "يشمل ذلك بطاقة هوية سارية وبطاقة التأمين الصحي.",
+    "example_uk": "Для цього потрібні дійсне посвідчення особи та картка медичного страхування.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'dazu' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'dazu' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'dazu' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'dazu' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (dazu)",
+        "en": "💡 Adverb (dazu)",
+        "ar": "💡 ظرف (dazu)",
+        "uk": "💡 Прислівник (dazu)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Dazu gehören ein gültiger Personalausweis und die Krankenkassenkarte.",
+        "tr": "Bunun için geçerli bir kimlik kartı ve sigorta kartı gereklidir.",
+        "en": "This includes a valid identity card and health insurance card.",
+        "ar": "يشمل ذلك بطاقة هوية سارية وبطاقة التأمين الصحي.",
+        "uk": "Для цього потрібні дійсне посвідчення особи та картка медичного страхування."
+      },
+      {
+        "de": "Das Wort 'dazu' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'dazu' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'dazu' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'dazu' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'dazu' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "deckmantel": {
+    "de": "der Deckmantel",
+    "displayDe": "Deckmantel",
+    "article": "der",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "maske, kisve, bahane (unter dem Deckmantel)",
+    "en": "guise / cloak / cover",
+    "ar": "ستار / غطاء مخادع",
+    "uk": "прикриття / ширма",
+    "example_de": "Betrüger agieren oft unter dem Deckmantel seriöser Banken.",
+    "example_tr": "Dolandırıcılar genellikle güvenilir bankaların kisvesi altında hareket eder.",
+    "example_en": "Fraudsters often operate under the guise of reputable banks.",
+    "example_ar": "غالباً ما ينشط المحتالون تحت ستار بنوك موثوقة.",
+    "example_uk": "Шахраї часто діють під прикриттям авторитетних банків.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Deckmantel)",
+        "en": "💡 Noun Structure (der Deckmantel)",
+        "ar": "💡 بنية الاسم (der Deckmantel)",
+        "uk": "💡 Структура іменника (der Deckmantel)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Betrüger agieren oft unter dem Deckmantel seriöser Banken.",
+        "tr": "Dolandırıcılar genellikle güvenilir bankaların kisvesi altında hareket eder.",
+        "en": "Fraudsters often operate under the guise of reputable banks.",
+        "ar": "غالباً ما ينشط المحتالون تحت ستار بنوك موثوقة.",
+        "uk": "Шахраї часто діють під прикриттям авторитетних банків."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Deckmantel eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Deckmantel günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Deckmantel plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "dennoch": {
+    "de": "dennoch",
+    "displayDe": "dennoch",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "B1",
+    "tr": "yine de, buna rağmen",
+    "en": "nevertheless / yet",
+    "ar": "مع ذلك / بالرغم من ذلك",
+    "uk": "проте / все ж таки",
+    "example_de": "Dennoch gibt es im Bahnverkehr noch Verbesserungsbedarf.",
+    "example_tr": "Yine de demiryolu ulaşımında iyileştirme ihtiyacı bulunmaktadır.",
+    "example_en": "Nevertheless, there is still room for improvement in rail transit.",
+    "example_ar": "مع ذلك لا تزال هناك حاجة للتحسين في حركة القطارات.",
+    "example_uk": "Проте в залізничному сполученні все ще є потреба в покращенні.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'dennoch' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'dennoch' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'dennoch' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'dennoch' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (dennoch)",
+        "en": "💡 Adverb (dennoch)",
+        "ar": "💡 ظرف (dennoch)",
+        "uk": "💡 Прислівник (dennoch)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Dennoch gibt es im Bahnverkehr noch Verbesserungsbedarf.",
+        "tr": "Yine de demiryolu ulaşımında iyileştirme ihtiyacı bulunmaktadır.",
+        "en": "Nevertheless, there is still room for improvement in rail transit.",
+        "ar": "مع ذلك لا تزال هناك حاجة للتحسين في حركة القطارات.",
+        "uk": "Проте в залізничному сполученні все ще є потреба в покращенні."
+      },
+      {
+        "de": "Das Wort 'dennoch' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'dennoch' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'dennoch' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'dennoch' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'dennoch' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "deutlichen": {
+    "de": "deutlich",
+    "displayDe": "deutlich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "belirgin, açık (çekimli sıfat)",
+    "en": "significant / clear",
+    "ar": "واضح / ملحوظ",
+    "uk": "значний / виразний",
+    "example_de": "Verkehrsunternehmen verzeichnen einen deutlichen Zuwachs.",
+    "example_tr": "Ulaşım işletmeleri belirgin bir artış kaydediyor.",
+    "example_en": "Transport companies record a significant growth.",
+    "example_ar": "تسجل شركات النقل زيادة ملحوظة.",
+    "example_uk": "Транспортні підприємства фіксують відчутний приріст.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'deutlich' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'deutlich' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'deutlich' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'deutlich' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Verkehrsunternehmen verzeichnen einen deutlichen Zuwachs.",
+        "tr": "Ulaşım işletmeleri belirgin bir artış kaydediyor.",
+        "en": "Transport companies record a significant growth.",
+        "ar": "تسجل شركات النقل زيادة ملحوظة.",
+        "uk": "Транспортні підприємства фіксують відчутний приріст."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag deutlich zu sein.",
+        "tr": "İş ve günlük yaşamda belirgin, açık (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be significant / clear in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "deutsch": {
+    "de": "deutsch",
+    "displayDe": "deutsch",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "Alman, Almanca",
+    "en": "German",
+    "ar": "ألماني",
+    "uk": "німецький",
+    "example_de": "Der Test Deutsch als Fremdsprache ist international anerkannt.",
+    "example_tr": "Yabancı dil olarak Almanca sınavı uluslararası alanda tanınmaktadır.",
+    "example_en": "The German as a foreign language test is internationally recognized.",
+    "example_ar": "اختبار الألمانية كلغة أجنبية معترف به دولياً.",
+    "example_uk": "Тест з німецької мови як іноземної визнаний на міжнародному рівні.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'deutsch' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'deutsch' describes quality or state.",
+      "ar": "صفة: 'deutsch' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'deutsch' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (deutsch)",
+        "en": "💡 Adjective (deutsch)",
+        "ar": "💡 بنية الصفة (deutsch)",
+        "uk": "💡 Структура прикметника (deutsch)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Test Deutsch als Fremdsprache ist international anerkannt.",
+        "tr": "Yabancı dil olarak Almanca sınavı uluslararası alanda tanınmaktadır.",
+        "en": "The German as a foreign language test is internationally recognized.",
+        "ar": "اختبار الألمانية كلغة أجنبية معترف به دولياً.",
+        "uk": "Тест з німецької мови як іноземної визнаний на міжнародному рівні."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag deutsch zu sein.",
+        "tr": "İş ve günlük yaşamda Alman, Almanca olmak son derece önemlidir.",
+        "en": "It is very important to be German in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "deutschlands": {
+    "de": "Deutschland",
+    "displayDe": "Deutschland",
+    "article": "",
+    "plural": "",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "Almanya'nın (Genitiv)",
+    "en": "Germany's",
+    "ar": "ألمانيا (مضاف إليه)",
+    "uk": "Німеччини",
+    "example_de": "Das Schienennetz Deutschlands muss modernisiert werden.",
+    "example_tr": "Almanya'nın demiryolu ağı modernize edilmelidir.",
+    "example_en": "Germany's rail network needs to be modernized.",
+    "example_ar": "يجب تحديث شبكة السكك الحديدية في ألمانيا.",
+    "example_uk": "Залізнична мережа Німеччини потребує модернізації.",
+    "grammar": {
+      "tr": "İsim (Substantiv): İsim. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article ''. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة ''. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль ''. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Schienennetz Deutschlands muss modernisiert werden.",
+        "tr": "Almanya'nın demiryolu ağı modernize edilmelidir.",
+        "en": "Germany's rail network needs to be modernized.",
+        "ar": "يجب تحديث شبكة السكك الحديدية في ألمانيا.",
+        "uk": "Залізнична мережа Німеччини потребує модернізації."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt Deutschland eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Deutschland günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Deutschland plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "deutschlandtickets": {
+    "de": "das Deutschlandticket",
+    "displayDe": "Deutschlandticket",
+    "article": "das",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "Almanya biletinin (Genitiv)",
+    "en": "Deutschlandticket's",
+    "ar": "تذكرة ألمانيا (مضاف إليه)",
+    "uk": "Дойчландтикету",
+    "example_de": "Der Erfolg des Deutschlandtickets zeigt die hohe Nachfrage.",
+    "example_tr": "Almanya biletinin başarısı yüksek talebi göstermektedir.",
+    "example_en": "The success of the Deutschlandticket shows high demand.",
+    "example_ar": "يُظهر نجاح تذكرة ألمانيا حجم الإقبال الكبير عليها.",
+    "example_uk": "Успіх Дойчландтикету свідчить про високий попит.",
+    "grammar": {
+      "title": {
+        "tr": "💡 İsmin Hali: Genitiv Tekil (des Deutschlandtickets)",
+        "en": "💡 Genitive Case: Neuter Singular (des Deutschlandtickets)",
+        "ar": "💡 حالة الإضافة: محايد مفرد (des Deutschlandtickets)",
+        "uk": "💡 Родовий відмінок: Середній рід однини (des Deutschlandtickets)"
+      },
+      "tr": "Genitiv tekil kuralı: 'das Deutschlandticket' nötr bir isimdir. Genitiv tamlamada artikel 'des' olur ve ismin sonuna '-s' eklenir: des Deutschlandtickets (Almanya biletinin).",
+      "en": "Genitive singular: 'das Deutschlandticket' is neuter. In the genitive case, the article becomes 'des' and the noun adds '-s': des Deutschlandtickets.",
+      "ar": "حالة الإضافة للمحايد: 'das Deutschlandticket' اسم محايد. في حالة الـ Genitiv تصبح الأداة 'des' وتضاف لاحقة '-s' للاسم.",
+      "uk": "Родовий відмінок середнього роду: 'das Deutschlandticket' має артикль 'des' та закінчення '-s': des Deutschlandtickets (Дойчландтикету)."
+    },
+    "examples": [
+      {
+        "de": "Der Erfolg des Deutschlandtickets zeigt die hohe Nachfrage.",
+        "tr": "Almanya biletinin başarısı yüksek talebi göstermektedir.",
+        "en": "The success of the Deutschlandticket shows high demand.",
+        "ar": "يُظهر نجاح تذكرة ألمانيا حجم الإقبال الكبير عليها.",
+        "uk": "Успіх Дойчландтикету свідчить про високий попит."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Deutschlandticket eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Deutschlandticket günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Deutschlandticket plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "deutschsprachiger": {
+    "de": "deutschsprachig",
+    "displayDe": "deutschsprachig",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "Almanca konuşulan / konuşan",
+    "en": "German-speaking",
+    "ar": "ناطق بالألمانية",
+    "uk": "німецькомовний",
+    "example_de": "Der Konsum deutschsprachiger Medien fördert den Spracherwerb.",
+    "example_tr": "Almanca medyanın takip edilmesi dil öğrenimini destekler.",
+    "example_en": "Consuming German-language media promotes language acquisition.",
+    "example_ar": "متابعة وسائل الإعلام الناطقة بالألمانية تدعم تعلم اللغة.",
+    "example_uk": "Споживання німецькомовного медіаконтенту сприяє вивченню мови.",
+    "grammar": {
+      "tr": "Sıfat çekimi / Karşılaştırma: 'deutschsprachig' sıfatı maskulin nominativ halinde veya karşılaştırma (komparativ) derecesindedir.",
+      "en": "Adjective declension / Comparative: 'deutschsprachig' is either in the masculine nominative or comparative form.",
+      "ar": "تصريف الصفات أو المقارنة: الصفة 'deutschsprachig' بصيغة المذكر أو المقارنة.",
+      "uk": "Відмінювання або вищий ступінь: прикметник 'deutschsprachig' у чоловічому роді або формі порівняння.",
+      "title": {
+        "tr": "💡 Neden \"-er\" takısı aldı? (Sıfat Çekimi / Komparativ)",
+        "en": "💡 Why the \"-er\" ending? (Adjective / Comparative)",
+        "ar": "💡 لماذا لاحقة \"-er\"؟ (تصريف الصفة أو المقارنة)",
+        "uk": "💡 Чому закінчення \"-er\"? (Відмінювання прикметника / Вищий ступінь)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Konsum deutschsprachiger Medien fördert den Spracherwerb.",
+        "tr": "Almanca medyanın takip edilmesi dil öğrenimini destekler.",
+        "en": "Consuming German-language media promotes language acquisition.",
+        "ar": "متابعة وسائل الإعلام الناطقة بالألمانية تدعم تعلم اللغة.",
+        "uk": "Споживання німецькомовного медіаконтенту сприяє вивченню мови."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag deutschsprachig zu sein.",
+        "tr": "İş ve günlük yaşamda Almanca konuşulan / konuşan olmak son derece önemlidir.",
+        "en": "It is very important to be German-speaking in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "diagnose": {
+    "de": "die Diagnose",
+    "displayDe": "Diagnose",
+    "article": "die",
+    "plural": "die Diagnosen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "teşhis, tanı",
+    "en": "diagnosis",
+    "ar": "تشخيص طبي",
+    "uk": "діагноз",
+    "example_de": "Eine frühzeitige Diagnose verbessert die Heilungschancen erheblich.",
+    "example_tr": "Erken teşhis iyileşme şansını önemli ölçüde artırır.",
+    "example_en": "An early diagnosis significantly improves chances of recovery.",
+    "example_ar": "التشخيص المبكر يحسن فرص الشفاء بشكل كبير.",
+    "example_uk": "Рання діагностика значно підвищує шанси на одужання.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Diagnosen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Diagnosen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Diagnosen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Diagnosen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Diagnose)",
+        "en": "💡 Noun Structure (die Diagnose)",
+        "ar": "💡 بنية الاسم (die Diagnose)",
+        "uk": "💡 Структура іменника (die Diagnose)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Eine frühzeitige Diagnose verbessert die Heilungschancen erheblich.",
+        "tr": "Erken teşhis iyileşme şansını önemli ölçüde artırır.",
+        "en": "An early diagnosis significantly improves chances of recovery.",
+        "ar": "التشخيص المبكر يحسن فرص الشفاء بشكل كبير.",
+        "uk": "Рання діагностика значно підвищує шанси на одужання."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Diagnose eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Diagnose günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Diagnose plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "dienstleister": {
+    "de": "der Dienstleister",
+    "displayDe": "Dienstleister",
+    "article": "der",
+    "plural": "die Dienstleister",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "hizmet sağlayıcı / servis şirketi",
+    "en": "service provider",
+    "ar": "مقدم خدمة",
+    "uk": "постачальник послуг",
+    "example_de": "Seriöse Dienstleister verlangen niemals sensible Passwörter per E-Mail.",
+    "example_tr": "Güvenilir hizmet sağlayıcıları asla e-postayla hassas parola istemez.",
+    "example_en": "Reputable service providers never ask for sensitive passwords by email.",
+    "example_ar": "لا يطلب مقدمو الخدمات الموثوقون أبداً كلمات المرور الحساسة عبر البريد.",
+    "example_uk": "Надійні постачальники послуг ніколи не вимагають конфіденційні паролі електронною поштою.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Dienstleister'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Dienstleister'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Dienstleister'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Dienstleister'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Dienstleister)",
+        "en": "💡 Noun Structure (der Dienstleister)",
+        "ar": "💡 بنية الاسم (der Dienstleister)",
+        "uk": "💡 Структура іменника (der Dienstleister)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Seriöse Dienstleister verlangen niemals sensible Passwörter per E-Mail.",
+        "tr": "Güvenilir hizmet sağlayıcıları asla e-postayla hassas parola istemez.",
+        "en": "Reputable service providers never ask for sensitive passwords by email.",
+        "ar": "لا يطلب مقدمو الخدمات الموثوقون أبداً كلمات المرور الحساسة عبر البريد.",
+        "uk": "Надійні постачальники послуг ніколи не вимагають конфіденційні паролі електронною поштою."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Dienstleister eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Dienstleister günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Dienstleister plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "digitale": {
+    "de": "digital",
+    "displayDe": "digital",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "dijital (çekimli sıfat)",
+    "en": "digital",
+    "ar": "رقمي",
+    "uk": "цифровий",
+    "example_de": "Digitale Medien erleichtern die Terminbuchung beim Arzt.",
+    "example_tr": "Dijital medya doktordan randevu almayı kolaylaştırıyor.",
+    "example_en": "Digital media facilitates appointment booking at the doctor.",
+    "example_ar": "الوسائط الرقمية تسهل حجز المواعيد لدى الطبيب.",
+    "example_uk": "Цифрові засоби спрощують запис на прийом до лікаря.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'digital' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'digital' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'digital' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'digital' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Digitale Medien erleichtern die Terminbuchung beim Arzt.",
+        "tr": "Dijital medya doktordan randevu almayı kolaylaştırıyor.",
+        "en": "Digital media facilitates appointment booking at the doctor.",
+        "ar": "الوسائط الرقمية تسهل حجز المواعيد لدى الطبيب.",
+        "uk": "Цифрові засоби спрощують запис на прийом до лікаря."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag digital zu sein.",
+        "tr": "İş ve günlük yaşamda dijital (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be digital in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "digitalen": {
+    "de": "digital",
+    "displayDe": "digital",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "dijital (çekimli form)",
+    "en": "digital",
+    "ar": "الرقمي",
+    "uk": "цифровий",
+    "example_de": "In der digitalen Welt ist ein sicheres Passwort unverzichtbar.",
+    "example_tr": "Dijital dünyada güvenli bir parola vazgeçilmezdir.",
+    "example_en": "In the digital world, a secure password is indispensable.",
+    "example_ar": "في العالم الرقمي، كلمة المرور الآمنة أمر لا غنى عنه.",
+    "example_uk": "У цифровому світі надійний пароль є обов'язковим.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'digital' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'digital' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'digital' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'digital' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "In der digitalen Welt ist ein sicheres Passwort unverzichtbar.",
+        "tr": "Dijital dünyada güvenli bir parola vazgeçilmezdir.",
+        "en": "In the digital world, a secure password is indispensable.",
+        "ar": "في العالم الرقمي، كلمة المرور الآمنة أمر لا غنى عنه.",
+        "uk": "У цифровому світі надійний пароль є обов'язковим."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag digital zu sein.",
+        "tr": "İş ve günlük yaşamda dijital (çekimli form) olmak son derece önemlidir.",
+        "en": "It is very important to be digital in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "digitalisierung": {
+    "de": "die Digitalisierung",
+    "displayDe": "Digitalisierung",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "dijitalleşme",
+    "en": "digitalization / digitization",
+    "ar": "التحول الرقمي / الرقمنة",
+    "uk": "цифровізація",
+    "example_de": "Die Digitalisierung des Gesundheitswesens spart Patienten viel Zeit.",
+    "example_tr": "Sağlık sisteminin dijitalleşmesi hastalara çok zaman kazandırıyor.",
+    "example_en": "The digitalization of the healthcare system saves patients a lot of time.",
+    "example_ar": "رقمنة قطاع الرعاية الصحية توفر على المرضى الكثير من الوقت.",
+    "example_uk": "Цифровізація системи охорони здоров'я заощаджує пацієнтам багато часу.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Digitalisierung)",
+        "en": "💡 Noun Structure (die Digitalisierung)",
+        "ar": "💡 بنية الاسم (die Digitalisierung)",
+        "uk": "💡 Структура іменника (die Digitalisierung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Digitalisierung des Gesundheitswesens spart Patienten viel Zeit.",
+        "tr": "Sağlık sisteminin dijitalleşmesi hastalara çok zaman kazandırıyor.",
+        "en": "The digitalization of the healthcare system saves patients a lot of time.",
+        "ar": "رقمنة قطاع الرعاية الصحية توفر على المرضى الكثير من الوقت.",
+        "uk": "Цифровізація системи охорони здоров'я заощаджує пацієнтам багато часу."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Digitalisierung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Digitalisierung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Digitalisierung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "dokument": {
+    "de": "das Dokument",
+    "displayDe": "Dokument",
+    "article": "das",
+    "plural": "die Dokumente",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "belge, evrak",
+    "en": "document",
+    "ar": "وثيقة / مستند",
+    "uk": "документ",
+    "example_de": "Das B1-Zertifikat ist ein wichtiges Dokument für die Behörden.",
+    "example_tr": "B1 sertifikası resmi makamlar için önemli bir belgedir.",
+    "example_en": "The B1 certificate is an important document for the authorities.",
+    "example_ar": "شهادة B1 هي وثيقة مهمة للسلطات الرسمية.",
+    "example_uk": "Сертифікат B1 є важливим документом для державних органів.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Dokumente'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Dokumente'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Dokumente'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Dokumente'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Dokument)",
+        "en": "💡 Noun Structure (das Dokument)",
+        "ar": "💡 بنية الاسم (das Dokument)",
+        "uk": "💡 Структура іменника (das Dokument)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das B1-Zertifikat ist ein wichtiges Dokument für die Behörden.",
+        "tr": "B1 sertifikası resmi makamlar için önemli bir belgedir.",
+        "en": "The B1 certificate is an important document for the authorities.",
+        "ar": "شهادة B1 هي وثيقة مهمة للسلطات الرسمية.",
+        "uk": "Сертифікат B1 є важливим документом для державних органів."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Dokument eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Dokument günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Dokument plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "dringend": {
+    "de": "dringend",
+    "displayDe": "dringend",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "acil, acilen",
+    "en": "urgent / pressing",
+    "ar": "عاجل / طارئ",
+    "uk": "терміновий / невідкладний",
+    "example_de": "Bei dringenden gesundheitlichen Beschwerden hilft der Notdienst.",
+    "example_tr": "Acil sağlık şikayetlerinde nöbetçi sağlık servisi yardımcı olur.",
+    "example_en": "In urgent medical cases, emergency on-call service helps.",
+    "example_ar": "في الحالات الصحية العاجلة تساعد خدمة الطوارئ الطبية.",
+    "example_uk": "При термінових скаргах на здоров'я допомагає чергова медична служба.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'dringend' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'dringend' describes quality or state.",
+      "ar": "صفة: 'dringend' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'dringend' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (dringend)",
+        "en": "💡 Adjective (dringend)",
+        "ar": "💡 بنية الصفة (dringend)",
+        "uk": "💡 Структура прикметника (dringend)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Bei dringenden gesundheitlichen Beschwerden hilft der Notdienst.",
+        "tr": "Acil sağlık şikayetlerinde nöbetçi sağlık servisi yardımcı olur.",
+        "en": "In urgent medical cases, emergency on-call service helps.",
+        "ar": "في الحالات الصحية العاجلة تساعد خدمة الطوارئ الطبية.",
+        "uk": "При термінових скаргах на здоров'я допомагає чергова медична служба."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag dringend zu sein.",
+        "tr": "İş ve günlük yaşamda acil, acilen olmak son derece önemlidir.",
+        "en": "It is very important to be urgent / pressing in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "dsgvo": {
+    "de": "die DSGVO",
+    "displayDe": "DSGVO",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "Genel Veri Koruma Tüzüğü (GDPR)",
+    "en": "General Data Protection Regulation (GDPR)",
+    "ar": "اللائحة العامة لحماية البيانات",
+    "uk": "Загальний регламент про захист даних (GDPR)",
+    "example_de": "Die europäische DSGVO schützt die Privatsphäre aller Internetnutzer.",
+    "example_tr": "Avrupa Genel Veri Koruma Tüzüğü tüm internet kullanıcılarının gizliliğini korur.",
+    "example_en": "The European GDPR protects the privacy of all internet users.",
+    "example_ar": "تحمي اللائحة العامة لحماية البيانات الأوروبية خصوصية جميع مستخدمي الإنترنت.",
+    "example_uk": "Європейський регламент GDPR захищає приватність усіх користувачів інтернету.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die DSGVO)",
+        "en": "💡 Noun Structure (die DSGVO)",
+        "ar": "💡 بنية الاسم (die DSGVO)",
+        "uk": "💡 Структура іменника (die DSGVO)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die europäische DSGVO schützt die Privatsphäre aller Internetnutzer.",
+        "tr": "Avrupa Genel Veri Koruma Tüzüğü tüm internet kullanıcılarının gizliliğini korur.",
+        "en": "The European GDPR protects the privacy of all internet users.",
+        "ar": "تحمي اللائحة العامة لحماية البيانات الأوروبية خصوصية جميع مستخدمي الإنترنت.",
+        "uk": "Європейський регламент GDPR захищає приватність усіх користувачів інтернету."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die DSGVO eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için DSGVO günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, DSGVO plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "dtz": {
+    "de": "der DTZ",
+    "displayDe": "DTZ",
+    "article": "der",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "Göçmenler İçin Almanca Testi",
+    "en": "Deutsch-Test für Zuwanderer (DTZ)",
+    "ar": "امتحان اللغة الألمانية للمهاجرين",
+    "uk": "тест з німецької мови для іммігрантів (DTZ)",
+    "example_de": "Die DTZ-Prüfung schließt den Integrationskurs auf B1-Niveau ab.",
+    "example_tr": "DTZ sınavı uyum kursunu B1 seviyesinde tamamlar.",
+    "example_en": "The DTZ exam concludes the integration course at B1 level.",
+    "example_ar": "يختتم اختبار DTZ دورة الاندماج بمستوى B1.",
+    "example_uk": "Іспит DTZ завершує інтеграційний курс на рівні B1.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der DTZ)",
+        "en": "💡 Noun Structure (der DTZ)",
+        "ar": "💡 بنية الاسم (der DTZ)",
+        "uk": "💡 Структура іменника (der DTZ)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die DTZ-Prüfung schließt den Integrationskurs auf B1-Niveau ab.",
+        "tr": "DTZ sınavı uyum kursunu B1 seviyesinde tamamlar.",
+        "en": "The DTZ exam concludes the integration course at B1 level.",
+        "ar": "يختتم اختبار DTZ دورة الاندماج بمستوى B1.",
+        "uk": "Іспит DTZ завершує інтеграційний курс на рівні B1."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der DTZ eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için DTZ günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, DTZ plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "durch": {
+    "de": "durch",
+    "displayDe": "durch",
+    "article": "",
+    "plural": "",
+    "pos": "prep",
+    "level": "A1",
+    "tr": "aracılığıyla, yoluyla, içinden (+ Akkusativ)",
+    "en": "through / by means of (+ Accusative)",
+    "ar": "من خلال / عبر",
+    "uk": "через / завдяки (+ Akkusativ)",
+    "example_de": "Durch regelmäßiges Üben erreicht man das Prüfungsziel.",
+    "example_tr": "Düzenli pratik yaparak sınav hedefine ulaşılır.",
+    "example_en": "Through regular practice, one achieves the exam goal.",
+    "example_ar": "من خلال التدريب المنتظم يصل المرء إلى هدف الامتحان.",
+    "example_uk": "Завдяки регулярним тренуванням досягається мета іспиту.",
+    "grammar": {
+      "tr": "Edat (Präposition): 'durch' edatı her zaman AKKUSATIV gerektirir (durch das Homeoffice = evden çalışma yoluyla).",
+      "en": "Preposition: 'durch' always governs the ACCUSATIVE case (durch das Homeoffice = through home office).",
+      "ar": "حرف جر: 'durch' يتطلب دائمًا حالة الـ AKKUSATIV.",
+      "uk": "Прийменник: 'durch' завжди вимагає знахідного відмінка (AKKUSATIV).",
+      "title": {
+        "tr": "💡 Edat Kuralı: Akkusativ (İsmin -i Hali) Gerektirir",
+        "en": "💡 Preposition Rule: Governs Accusative Case",
+        "ar": "💡 قاعدة حرف الجر: ينصب بالـ Akkusativ دائمًا",
+        "uk": "💡 Правило прийменника: Завжди вимагає Akkusativ"
+      }
+    },
+    "examples": [
+      {
+        "de": "Durch regelmäßiges Üben erreicht man das Prüfungsziel.",
+        "tr": "Düzenli pratik yaparak sınav hedefine ulaşılır.",
+        "en": "Through regular practice, one achieves the exam goal.",
+        "ar": "من خلال التدريب المنتظم يصل المرء إلى هدف الامتحان.",
+        "uk": "Завдяки регулярним тренуванням досягається мета іспиту."
+      },
+      {
+        "de": "Wir treffen uns durch der Arbeit zu einem kurzen Gespräch.",
+        "tr": "İşten sonra kısa bir görüşme için buluşuyoruz.",
+        "en": "We meet for a short conversation.",
+        "ar": "نلتقي لإجراء محادثة قصيرة.",
+        "uk": "Ми зустрічаємося для короткої розмови."
+      }
+    ]
+  },
+  "dürfen": {
+    "de": "dürfen",
+    "displayDe": "dürfen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "izinli olmak, yapabilmek (modal fiil)",
+    "en": "may / to be allowed to",
+    "ar": "يُسمح له / يجوز",
+    "uk": "мати дозвіл / могти",
+    "example_de": "Unternehmen dürfen Daten nur mit Einwilligung speichern.",
+    "example_tr": "Şirketler verileri ancak kullanıcının rızasıyla saklayabilir.",
+    "example_en": "Companies may only store data with explicit consent.",
+    "example_ar": "لا يجوز للشركات تخزين البيانات إلا بموافقة صريحة.",
+    "example_uk": "Компанії мають право зберігати дані лише за згодою користувача.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'dürfen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'dürfen' denotes action, process, or state.",
+      "ar": "فعل: 'dürfen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'dürfen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (dürfen)",
+        "en": "💡 Verb Structure (dürfen)",
+        "ar": "💡 بنية الفعل (dürfen)",
+        "uk": "💡 Структура дієслова (dürfen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Unternehmen dürfen Daten nur mit Einwilligung speichern.",
+        "tr": "Şirketler verileri ancak kullanıcının rızasıyla saklayabilir.",
+        "en": "Companies may only store data with explicit consent.",
+        "ar": "لا يجوز للشركات تخزين البيانات إلا بموافقة صريحة.",
+        "uk": "Компанії мають право зберігати дані лише за згодою користувача."
+      },
+      {
+        "de": "In Deutschland kann man dürfen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için izinli olmak, yapabilmek (modal fiil) eylemi yapılabilir.",
+        "en": "In Germany, one can may / to be allowed to to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "eau": {
+    "de": "die eAU",
+    "displayDe": "eAU",
+    "article": "die",
+    "plural": "die eAUs",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "elektronik iş göremezlik belgesi / dijital rapor",
+    "en": "electronic sick note (eAU)",
+    "ar": "الإشعار المرضي الإلكتروني",
+    "uk": "електронний лікарняний лист (eAU)",
+    "example_de": "Dank der eAU wird die Krankmeldung automatisch an die Kasse gesendet.",
+    "example_tr": "eAU sayesinde hastalık raporu otomatik olarak sigorta kasasına gönderilir.",
+    "example_en": "Thanks to eAU, the sick note is automatically sent to the insurer.",
+    "example_ar": "بفضل eAU يتم إرسال الإشعار المرضي تلقائياً إلى شركة التأمين.",
+    "example_uk": "Завдяки eAU лікарняний автоматично надсилається до лікарняної каси.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die eAUs'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die eAUs'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die eAUs'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die eAUs'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die eAU)",
+        "en": "💡 Noun Structure (die eAU)",
+        "ar": "💡 بنية الاسم (die eAU)",
+        "uk": "💡 Структура іменника (die eAU)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Dank der eAU wird die Krankmeldung automatisch an die Kasse gesendet.",
+        "tr": "eAU sayesinde hastalık raporu otomatik olarak sigorta kasasına gönderilir.",
+        "en": "Thanks to eAU, the sick note is automatically sent to the insurer.",
+        "ar": "بفضل eAU يتم إرسال الإشعار المرضي تلقائياً إلى شركة التأمين.",
+        "uk": "Завдяки eAU лікарняний автоматично надсилається до лікарняної каси."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die eAU eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için eAU günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, eAU plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "eigentlichen": {
+    "de": "eigentlich",
+    "displayDe": "eigentlich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "asıl, gerçek (çekimli sıfat)",
+    "en": "actual / real",
+    "ar": "الفعلي / الحقيقي",
+    "uk": "власне / справжній",
+    "example_de": "Dem eigentlichen Sprachkurs folgt ein Orientierungskurs.",
+    "example_tr": "Asıl dil kursunu bir yönlendirme kursu takip eder.",
+    "example_en": "The actual language course is followed by an orientation course.",
+    "example_ar": "تتبع دورة اللغة الأساسية دورة توجيهية.",
+    "example_uk": "За основним мовним курсом слідує орієнтаційний курс.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'eigentlich' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'eigentlich' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'eigentlich' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'eigentlich' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Dem eigentlichen Sprachkurs folgt ein Orientierungskurs.",
+        "tr": "Asıl dil kursunu bir yönlendirme kursu takip eder.",
+        "en": "The actual language course is followed by an orientation course.",
+        "ar": "تتبع دورة اللغة الأساسية دورة توجيهية.",
+        "uk": "За основним мовним курсом слідує орієнтаційний курс."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag eigentlich zu sein.",
+        "tr": "İş ve günlük yaşamda asıl, gerçek (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be actual / real in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "einbürgerung": {
+    "de": "die Einbürgerung",
+    "displayDe": "Einbürgerung",
+    "article": "die",
+    "plural": "die Einbürgerungen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "vatandaşlığa kabul, vatandaşlık alma",
+    "en": "naturalization / citizenship grant",
+    "ar": "الحصول على الجنسية / التجنيس",
+    "uk": "набуття громадянства / натуралізація",
+    "example_de": "Das Zertifikat B1 ist eine feste Voraussetzung für die Einbürgerung.",
+    "example_tr": "B1 sertifikası vatandaşlık alımı için kesin bir ön koşuldur.",
+    "example_en": "The B1 certificate is a firm prerequisite for naturalization.",
+    "example_ar": "شهادة B1 شرط أساسي للحصول على الجنسية الألمانية.",
+    "example_uk": "Сертифікат B1 є обов'язковою умовою для отримання громадянства.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Einbürgerungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Einbürgerungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Einbürgerungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Einbürgerungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Einbürgerung)",
+        "en": "💡 Noun Structure (die Einbürgerung)",
+        "ar": "💡 بنية الاسم (die Einbürgerung)",
+        "uk": "💡 Структура іменника (die Einbürgerung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Zertifikat B1 ist eine feste Voraussetzung für die Einbürgerung.",
+        "tr": "B1 sertifikası vatandaşlık alımı için kesin bir ön koşuldur.",
+        "en": "The B1 certificate is a firm prerequisite for naturalization.",
+        "ar": "شهادة B1 شرط أساسي للحصول على الجنسية الألمانية.",
+        "uk": "Сертифікат B1 є обов'язковою умовою для отримання громадянства."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Einbürgerung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Einbürgerung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Einbürgerung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "einer": {
+    "de": "ein",
+    "displayDe": "einer",
+    "article": "",
+    "plural": "",
+    "pos": "art",
+    "level": "A1",
+    "tr": "bir (Dativ Femininum / Genitiv)",
+    "en": "a / an (feminine Dative/Genitive)",
+    "ar": "لـ / إحدى",
+    "uk": "одній / однієї",
+    "example_de": "Er wendet sich an eine Praxis in seiner Nähe.",
+    "example_tr": "Yakınındaki bir muayenehaneye başvurur.",
+    "example_en": "He turns to a practice in his vicinity.",
+    "example_ar": "يتوجه إلى عيادة قريبة من منزله.",
+    "example_uk": "Він звертається до амбулаторії поблизу.",
+    "grammar": {
+      "tr": "Sözcük türü: art. Cümle içinde anlam bütünlüğü sağlar.",
+      "en": "Part of speech: art.",
+      "ar": "نوع الكلمة: art.",
+      "uk": "Частина мови: art.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
+    },
+    "examples": [
+      {
+        "de": "Er wendet sich an eine Praxis in seiner Nähe.",
+        "tr": "Yakınındaki bir muayenehaneye başvurur.",
+        "en": "He turns to a practice in his vicinity.",
+        "ar": "يتوجه إلى عيادة قريبة من منزله.",
+        "uk": "Він звертається до амбулаторії поблизу."
+      },
+      {
+        "de": "Das Wort 'einer' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'einer' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'einer' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'einer' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'einer' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "einfache": {
+    "de": "einfach",
+    "displayDe": "einfach",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "basit, kolay (çekimli sıfat)",
+    "en": "simple / easy",
+    "ar": "بسيط / سهل",
+    "uk": "простий",
+    "example_de": "Einfache Passwörter bieten keinen ausreichenden Schutz.",
+    "example_tr": "Basit parolalar yeterli bir koruma sağlamaz.",
+    "example_en": "Simple passwords do not offer sufficient protection.",
+    "example_ar": "كلمات المرور البسيطة لا توفر حماية كافية.",
+    "example_uk": "Прості паролі не забезпечують належного захисту.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'einfach' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'einfach' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'einfach' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'einfach' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Einfache Passwörter bieten keinen ausreichenden Schutz.",
+        "tr": "Basit parolalar yeterli bir koruma sağlamaz.",
+        "en": "Simple passwords do not offer sufficient protection.",
+        "ar": "كلمات المرور البسيطة لا توفر حماية كافية.",
+        "uk": "Прості паролі не забезпечують належного захисту."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag einfach zu sein.",
+        "tr": "İş ve günlük yaşamda basit, kolay (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be simple / easy in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "einführung": {
+    "de": "die Einführung",
+    "displayDe": "Einführung",
+    "article": "die",
+    "plural": "die Einführungen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "yürürlüğe koyma, başlatma, giriş",
+    "en": "introduction / rollout",
+    "ar": "إدخال / تطبيق / بدء العمل بـ",
+    "uk": "впровадження / введення",
+    "example_de": "Die Einführung des Deutschlandtickets gilt als Meilenstein der Verkehrswende.",
+    "example_tr": "Almanya biletinin yürürlüğe girmesi ulaşım devriminde bir dönüm noktası sayılır.",
+    "example_en": "The introduction of the Deutschlandticket is considered a milestone in mobility transition.",
+    "example_ar": "يُعتبر إطلاق تذكرة ألمانيا محطة فارقة في التحول نحو النقل المستدام.",
+    "example_uk": "Впровадження Дойчландтикету вважається важливою віхою в транспортній реформі.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Einführungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Einführungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Einführungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Einführungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Einführung)",
+        "en": "💡 Noun Structure (die Einführung)",
+        "ar": "💡 بنية الاسم (die Einführung)",
+        "uk": "💡 Структура іменника (die Einführung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Einführung des Deutschlandtickets gilt als Meilenstein der Verkehrswende.",
+        "tr": "Almanya biletinin yürürlüğe girmesi ulaşım devriminde bir dönüm noktası sayılır.",
+        "en": "The introduction of the Deutschlandticket is considered a milestone in mobility transition.",
+        "ar": "يُعتبر إطلاق تذكرة ألمانيا محطة فارقة في التحول نحو النقل المستدام.",
+        "uk": "Впровадження Дойчландтикету вважається важливою віхою в транспортній реформі."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Einführung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Einführung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Einführung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "eingabe": {
+    "de": "die Eingabe",
+    "displayDe": "Eingabe",
+    "article": "die",
+    "plural": "die Eingaben",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "giriş (veri/şifre girişi)",
+    "en": "input / entry",
+    "ar": "إدخال بيانات",
+    "uk": "введення даних",
+    "example_de": "Seriöse Banken fordern niemals per E-Mail zur Eingabe von Passwörtern auf.",
+    "example_tr": "Güvenilir bankalar asla e-posta yoluyla parola girilmesini istemez.",
+    "example_en": "Reputable banks never request the entry of passwords via email.",
+    "example_ar": "البنوك الموثوقة لا تطلب أبداً إدخال كلمات المرور عبر البريد الإلكتروني.",
+    "example_uk": "Надійні банки ніколи не вимагають введення паролів через електронні листи.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Eingaben'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Eingaben'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Eingaben'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Eingaben'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Eingabe)",
+        "en": "💡 Noun Structure (die Eingabe)",
+        "ar": "💡 بنية الاسم (die Eingabe)",
+        "uk": "💡 Структура іменника (die Eingabe)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Seriöse Banken fordern niemals per E-Mail zur Eingabe von Passwörtern auf.",
+        "tr": "Güvenilir bankalar asla e-posta yoluyla parola girilmesini istemez.",
+        "en": "Reputable banks never request the entry of passwords via email.",
+        "ar": "البنوك الموثوقة لا تطلب أبداً إدخال كلمات المرور عبر البريد الإلكتروني.",
+        "uk": "Надійні банки ніколи не вимагають введення паролів через електронні листи."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Eingabe eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Eingabe günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Eingabe plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "elektronischen": {
+    "de": "elektronisch",
+    "displayDe": "elektronisch",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "elektronik (çekimli sıfat)",
+    "en": "electronic",
+    "ar": "إلكتروني",
+    "uk": "електронний",
+    "example_de": "Das Vorzeigen der elektronischen Gesundheitskarte reicht beim Arzt aus.",
+    "example_tr": "Doktorda elektronik sağlık kartının gösterilmesi yeterlidir.",
+    "example_en": "Presenting the electronic health card is sufficient at the doctor's office.",
+    "example_ar": "إبراز بطاقة التأمين الصحي الإلكترونية كافٍ عند الطبيب.",
+    "example_uk": "Пред'явлення електронної картки здоров'я є достатнім у лікаря.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'elektronisch' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'elektronisch' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'elektronisch' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'elektronisch' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Vorzeigen der elektronischen Gesundheitskarte reicht beim Arzt aus.",
+        "tr": "Doktorda elektronik sağlık kartının gösterilmesi yeterlidir.",
+        "en": "Presenting the electronic health card is sufficient at the doctor's office.",
+        "ar": "إبراز بطاقة التأمين الصحي الإلكترونية كافٍ عند الطبيب.",
+        "uk": "Пред'явлення електронної картки здоров'я є достатнім у лікаря."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag elektronisch zu sein.",
+        "tr": "İş ve günlük yaşamda elektronik (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be electronic in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "empfiehlt": {
+    "de": "empfehlen",
+    "displayDe": "empfehlen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "tavsiye etmek, önermek (er/sie/es empfiehlt)",
+    "en": "recommends",
+    "ar": "ينصح بـ / يوصي",
+    "uk": "рекомендує",
+    "example_de": "Das Bundesamt empfiehlt lange Passwörter mit Sonderzeichen.",
+    "example_tr": "Federal kurum özel işaretler içeren uzun parolalar öneriyor.",
+    "example_en": "The federal agency recommends long passwords with special characters.",
+    "example_ar": "يوصي المكتب الاتحادي بكلمات مرور طويلة تحتوي على رموز خاصة.",
+    "example_uk": "Федеральне відомство рекомендує довгі паролі зі спеціальними символами.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'empfehlen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'empfehlen' denotes action, process, or state.",
+      "ar": "فعل: 'empfehlen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'empfehlen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (empfehlen)",
+        "en": "💡 Verb Structure (empfehlen)",
+        "ar": "💡 بنية الفعل (empfehlen)",
+        "uk": "💡 Структура дієслова (empfehlen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Bundesamt empfiehlt lange Passwörter mit Sonderzeichen.",
+        "tr": "Federal kurum özel işaretler içeren uzun parolalar öneriyor.",
+        "en": "The federal agency recommends long passwords with special characters.",
+        "ar": "يوصي المكتب الاتحادي بكلمات مرور طويلة تحتوي على رموز خاصة.",
+        "uk": "Федеральне відомство рекомендує довгі паролі зі спеціальними символами."
+      },
+      {
+        "de": "In Deutschland kann man empfehlen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için tavsiye etmek, önermek (er/sie/es empfiehlt) eylemi yapılabilir.",
+        "en": "In Germany, one can recommends to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "ende": {
+    "de": "das Ende",
+    "displayDe": "Ende",
+    "article": "das",
+    "plural": "die Enden",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "son, bitim",
+    "en": "end",
+    "ar": "نهاية",
+    "uk": "кінець",
+    "example_de": "Am Ende des Kurses legen alle Teilnehmer eine Prüfung ab.",
+    "example_tr": "Kursun sonunda tüm katılımcılar bir sınava girer.",
+    "example_en": "At the end of the course, all participants take an exam.",
+    "example_ar": "في نهاية الدورة يخضع جميع المشاركين لاختبار.",
+    "example_uk": "Наприкінці курсу всі учасники складають іспит.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Enden'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Enden'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Enden'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Enden'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Ende)",
+        "en": "💡 Noun Structure (das Ende)",
+        "ar": "💡 بنية الاسم (das Ende)",
+        "uk": "💡 Структура іменника (das Ende)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Am Ende des Kurses legen alle Teilnehmer eine Prüfung ab.",
+        "tr": "Kursun sonunda tüm katılımcılar bir sınava girer.",
+        "en": "At the end of the course, all participants take an exam.",
+        "ar": "في نهاية الدورة يخضع جميع المشاركين لاختبار.",
+        "uk": "Наприкінці курсу всі учасники складають іспит."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Ende eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Ende günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Ende plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "enthalten": {
+    "de": "enthalten",
+    "displayDe": "enthalten",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "içermek, kapsamak",
+    "en": "to contain / include",
+    "ar": "يحتوي على / يتضمن",
+    "uk": "містити / включати",
+    "example_de": "Ein sicheres Passwort sollte Zahlen und Sonderzeichen enthalten.",
+    "example_tr": "Güvenli bir parola rakamlar ve özel işaretler içermelidir.",
+    "example_en": "A secure password should contain numbers and special characters.",
+    "example_ar": "يجب أن تحتوي كلمة المرور الآمنة على أرقام ورموز خاصة.",
+    "example_uk": "Надійний пароль повинен містити цифри та спеціальні знаки.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'enthalten' temel eylem bildiren fiildir.",
+      "en": "Verb: 'enthalten' denotes action, process, or state.",
+      "ar": "فعل: 'enthalten' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'enthalten' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (enthalten)",
+        "en": "💡 Verb Structure (enthalten)",
+        "ar": "💡 بنية الفعل (enthalten)",
+        "uk": "💡 Структура дієслова (enthalten)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein sicheres Passwort sollte Zahlen und Sonderzeichen enthalten.",
+        "tr": "Güvenli bir parola rakamlar ve özel işaretler içermelidir.",
+        "en": "A secure password should contain numbers and special characters.",
+        "ar": "يجب أن تحتوي كلمة المرور الآمنة على أرقام ورموز خاصة.",
+        "uk": "Надійний пароль повинен містити цифри та спеціальні знаки."
+      },
+      {
+        "de": "In Deutschland kann man enthalten, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için içermek, kapsamak eylemi yapılabilir.",
+        "en": "In Germany, one can to contain / include to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "erbeuten": {
+    "de": "erbeuten",
+    "displayDe": "erbeuten",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "ele geçirmek (yasa dışı), gasp etmek",
+    "en": "to capture / loot / obtain fraudulently",
+    "ar": "يستولي على / ينهب بالاحتيال",
+    "uk": "заволодіти шахрайським шляхом",
+    "example_de": "Kriminelle versuchen über Phishing persönliche Daten zu erbeuten.",
+    "example_tr": "Suçlular oltalama yoluyla kişisel verileri ele geçirmeye çalışır.",
+    "example_en": "Criminals try to capture personal data through phishing.",
+    "example_ar": "يحاول المجرمون الاستيلاء على البيانات الشخصية عبر التصيد الاحتيالي.",
+    "example_uk": "Злочинці намагаються виманити особисті дані через фішинг.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'erbeuten' temel eylem bildiren fiildir.",
+      "en": "Verb: 'erbeuten' denotes action, process, or state.",
+      "ar": "فعل: 'erbeuten' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'erbeuten' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (erbeuten)",
+        "en": "💡 Verb Structure (erbeuten)",
+        "ar": "💡 بنية الفعل (erbeuten)",
+        "uk": "💡 Структура дієслова (erbeuten)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Kriminelle versuchen über Phishing persönliche Daten zu erbeuten.",
+        "tr": "Suçlular oltalama yoluyla kişisel verileri ele geçirmeye çalışır.",
+        "en": "Criminals try to capture personal data through phishing.",
+        "ar": "يحاول المجرمون الاستيلاء على البيانات الشخصية عبر التصيد الاحتيالي.",
+        "uk": "Злочинці намагаються виманити особисті дані через фішинг."
+      },
+      {
+        "de": "In Deutschland kann man erbeuten, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için ele geçirmek (yasa dışı), gasp etmek eylemi yapılabilir.",
+        "en": "In Germany, one can to capture / loot / obtain fraudulently to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "erfahren": {
+    "de": "erfahren",
+    "displayDe": "erfahren",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "öğrenmek, bilgi edinmek / tecrübeli",
+    "en": "to learn / find out / experienced",
+    "ar": "عَلِمَ / اكتشف / خبير",
+    "uk": "дізнатися / досвідчений",
+    "example_de": "Auf der Website erfahren Bürger alles über das Ticket.",
+    "example_tr": "Vatandaşlar internet sitesinde bilet hakkında her şeyi öğrenebilir.",
+    "example_en": "On the website, citizens find out everything about the ticket.",
+    "example_ar": "على الموقع الإلكتروني يتعرف المواطنون على كل شيء عن التذكرة.",
+    "example_uk": "На веб-сайті громадяни дізнаються все про квиток.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'erfahren' temel eylem bildiren fiildir.",
+      "en": "Verb: 'erfahren' denotes action, process, or state.",
+      "ar": "فعل: 'erfahren' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'erfahren' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (erfahren)",
+        "en": "💡 Verb Structure (erfahren)",
+        "ar": "💡 بنية الفعل (erfahren)",
+        "uk": "💡 Структура дієслова (erfahren)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Auf der Website erfahren Bürger alles über das Ticket.",
+        "tr": "Vatandaşlar internet sitesinde bilet hakkında her şeyi öğrenebilir.",
+        "en": "On the website, citizens find out everything about the ticket.",
+        "ar": "على الموقع الإلكتروني يتعرف المواطنون على كل شيء عن التذكرة.",
+        "uk": "На веб-сайті громадяни дізнаються все про квиток."
+      },
+      {
+        "de": "In Deutschland kann man erfahren, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için öğrenmek, bilgi edinmek / tecrübeli eylemi yapılabilir.",
+        "en": "In Germany, one can to learn / find out / experienced to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "erfolgs": {
+    "de": "der Erfolg",
+    "displayDe": "Erfolg",
+    "article": "der",
+    "plural": "die Erfolge",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "başarının (Genitiv)",
+    "en": "of success / success's",
+    "ar": "النجاح (مضاف إليه)",
+    "uk": "успіху",
+    "example_de": "Trotz des Erfolgs gibt es finanzielle Herausforderungen.",
+    "example_tr": "Başarıya rağmen finansal zorluklar bulunmaktadır.",
+    "example_en": "Despite the success, there are financial challenges.",
+    "example_ar": "على الرغم من النجاح، هناك تحديات مالية.",
+    "example_uk": "Незважаючи на успіх, існують фінансові виклики.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Erfolge'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Erfolge'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Erfolge'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Erfolge'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Trotz des Erfolgs gibt es finanzielle Herausforderungen.",
+        "tr": "Başarıya rağmen finansal zorluklar bulunmaktadır.",
+        "en": "Despite the success, there are financial challenges.",
+        "ar": "على الرغم من النجاح، هناك تحديات مالية.",
+        "uk": "Незважаючи на успіх, існують фінансові виклики."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Erfolg eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Erfolg günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Erfolg plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "erhält": {
+    "de": "erhalten",
+    "displayDe": "erhalten",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "almak, temin etmek (er/sie/es erhält)",
+    "en": "receives / obtains",
+    "ar": "يحصل على / يستلم",
+    "uk": "отримує",
+    "example_de": "Wer den Abschlusstest besteht, erhält das Zertifikat B1.",
+    "example_tr": "Bitirme sınavını geçen kişi B1 sertifikasını alır.",
+    "example_en": "Whoever passes the final test receives the B1 certificate.",
+    "example_ar": "من يجتاز الاختبار النهائي يحصل على شهادة B1.",
+    "example_uk": "Той, хто складає підсумковий тест, отримує сертифікат B1.",
+    "grammar": {
+      "title": {
+        "tr": "💡 Fiil Çekimi: Umlaut Kök Değişimi (erhalten, a ➔ ä)",
+        "en": "💡 Verb Conjugation: Umlaut Stem Change (erhalten, a ➔ ä)",
+        "ar": "💡 تصريف الفعل: إمالة حرف العلة في الجذر (erhalten, a ➔ ä)",
+        "uk": "💡 Дієвідмінювання: Умлаут у корені (erhalten, a ➔ ä)"
+      },
+      "tr": "Düzensiz fiil çekimi: 'erhalten' (almak, temin etmek) fiili 3. tekil şahısta kök harfi 'a' -> 'ä' umlaut alır (er/sie/es erhält = alır).",
+      "en": "Irregular verb with umlaut: 'erhalten' (to receive) changes stem vowel 'a' to 'ä' in 3rd person singular (erhält = receives).",
+      "ar": "تصريف فعل غير قياسي مع إمالة: يتحول حرف العلة من 'a' إلى 'ä' في صيغة المفرد الغائب للفعل 'erhalten' (erhält = يحصل على).",
+      "uk": "Неправильне дієслово з умлаутом: дієслово 'erhalten' змінює голосну 'a' на 'ä' у 3-й особі однини (erhält = отримує)."
+    },
+    "examples": [
+      {
+        "de": "Wer den Abschlusstest besteht, erhält das Zertifikat B1.",
+        "tr": "Bitirme sınavını geçen kişi B1 sertifikasını alır.",
+        "en": "Whoever passes the final test receives the B1 certificate.",
+        "ar": "من يجتاز الاختبار النهائي يحصل على شهادة B1.",
+        "uk": "Той, хто складає підсумковий тест, отримує сертифікат B1."
+      },
+      {
+        "de": "In Deutschland kann man erhalten, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için almak, temin etmek (er/sie/es erhält) eylemi yapılabilir.",
+        "en": "In Germany, one can receives / obtains to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "erkrankung": {
+    "de": "die Erkrankung",
+    "displayDe": "Erkrankung",
+    "article": "die",
+    "plural": "die Erkrankungen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "hastalık, rahatsızlık",
+    "en": "illness / disease",
+    "ar": "مرض / إصابة مرضية",
+    "uk": "захворювання / недуга",
+    "example_de": "Bei einer schweren Erkrankung ist ein Facharztbesuch ratsam.",
+    "example_tr": "Ciddi bir hastalık durumunda uzman hekim ziyareti tavsiye edilir.",
+    "example_en": "In case of a serious illness, visiting a specialist is advisable.",
+    "example_ar": "في حالة المرض الشديد يُنصح بزيارة طبيب مختص.",
+    "example_uk": "При тяжкому захворюванні рекомендується звернутися до профільного лікаря.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Erkrankungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Erkrankungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Erkrankungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Erkrankungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Erkrankung)",
+        "en": "💡 Noun Structure (die Erkrankung)",
+        "ar": "💡 بنية الاسم (die Erkrankung)",
+        "uk": "💡 Структура іменника (die Erkrankung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Bei einer schweren Erkrankung ist ein Facharztbesuch ratsam.",
+        "tr": "Ciddi bir hastalık durumunda uzman hekim ziyareti tavsiye edilir.",
+        "en": "In case of a serious illness, visiting a specialist is advisable.",
+        "ar": "في حالة المرض الشديد يُنصح بزيارة طبيب مختص.",
+        "uk": "При тяжкому захворюванні рекомендується звернутися до профільного лікаря."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Erkrankung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Erkrankung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Erkrankung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "erteilung": {
+    "de": "die Erteilung",
+    "displayDe": "Erteilung",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "verilme, tahsis edilme (izin/belge)",
+    "en": "granting / issuance (permit)",
+    "ar": "منح / إصدار تصريح",
+    "uk": "надання / видача дозволу",
+    "example_de": "Die Erteilung der Niederlassungserlaubnis setzt B1-Kenntnisse voraus.",
+    "example_tr": "Süresiz oturum izninin verilmesi B1 dil bilgisini şart koşar.",
+    "example_en": "The granting of a permanent settlement permit requires B1 knowledge.",
+    "example_ar": "منح إذن الإقامة الدائمة يتطلب إتقان الألمانية بمستوى B1.",
+    "example_uk": "Видача посвідки на постійне проживання вимагає знання мови на рівні B1.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Erteilung)",
+        "en": "💡 Noun Structure (die Erteilung)",
+        "ar": "💡 بنية الاسم (die Erteilung)",
+        "uk": "💡 Структура іменника (die Erteilung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Erteilung der Niederlassungserlaubnis setzt B1-Kenntnisse voraus.",
+        "tr": "Süresiz oturum izninin verilmesi B1 dil bilgisini şart koşar.",
+        "en": "The granting of a permanent settlement permit requires B1 knowledge.",
+        "ar": "منح إذن الإقامة الدائمة يتطلب إتقان الألمانية بمستوى B1.",
+        "uk": "Видача посвідки на постійне проживання вимагає знання мови на рівні B1."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Erteilung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Erteilung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Erteilung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "erworbene": {
+    "de": "erwerben",
+    "displayDe": "erworben",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "edinilen, kazanılan (bilgi/sertifika)",
+    "en": "acquired / gained",
+    "ar": "مكتسب / مُحصل عليه",
+    "uk": "набутий / здобутий",
+    "example_de": "Das erworbene Zertifikat ist unbegrenzt gültig.",
+    "example_tr": "Kazanılan sertifika süresiz olarak geçerlidir.",
+    "example_en": "The acquired certificate is valid indefinitely.",
+    "example_ar": "الشهادة المكتسبة صالحة إلى أجل غير مسمى.",
+    "example_uk": "Здобутий сертифікат має необмежений термін дії.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'erworben' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'erworben' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'erworben' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'erworben' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das erworbene Zertifikat ist unbegrenzt gültig.",
+        "tr": "Kazanılan sertifika süresiz olarak geçerlidir.",
+        "en": "The acquired certificate is valid indefinitely.",
+        "ar": "الشهادة المكتسبة صالحة إلى أجل غير مسمى.",
+        "uk": "Здобутий сертифікат має необмежений термін дії."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag erworben zu sein.",
+        "tr": "İş ve günlük yaşamda edinilen, kazanılan (bilgi/sertifika) olmak son derece önemlidir.",
+        "en": "It is very important to be acquired / gained in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "es": {
+    "de": "es",
+    "displayDe": "es",
+    "article": "",
+    "plural": "",
+    "pos": "pron",
+    "level": "A1",
+    "tr": "o (nötr zamir / zamir)",
+    "en": "it",
+    "ar": "هو / هي (للمحايد)",
+    "uk": "воно",
+    "example_de": "Es erleichtert den Zugang zu medizinischer Versorgung.",
+    "example_tr": "Tıbbi bakıma erişimi kolaylaştırır.",
+    "example_en": "It facilitates access to medical care.",
+    "example_ar": "يسهل ذلك الحصول على الرعاية الطبية.",
+    "example_uk": "Це полегшує доступ до медичного обслуговування.",
+    "grammar": {
+      "tr": "Zamir (Pronomen): 'es' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
+      "en": "Pronoun: 'es' stands in place of a noun and reflects grammatical case.",
+      "ar": "ضمير: 'es' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
+      "uk": "Займенник: 'es' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
+    },
+    "examples": [
+      {
+        "de": "Es erleichtert den Zugang zu medizinischer Versorgung.",
+        "tr": "Tıbbi bakıma erişimi kolaylaştırır.",
+        "en": "It facilitates access to medical care.",
+        "ar": "يسهل ذلك الحصول على الرعاية الطبية.",
+        "uk": "Це полегшує доступ до медичного обслуговування."
+      },
+      {
+        "de": "Das Wort 'es' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'es' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'es' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'es' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'es' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "europäischen": {
+    "de": "europäisch",
+    "displayDe": "europäisch",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "Avrupalı, Avrupa ile ilgili",
+    "en": "European",
+    "ar": "أوروبي",
+    "uk": "європейський",
+    "example_de": "Die europäischen Datenschutzregeln gelten als besonders streng.",
+    "example_tr": "Avrupa veri koruma kuralları son derece katı kabul edilir.",
+    "example_en": "European data protection rules are considered particularly strict.",
+    "example_ar": "تعتبر قواعد حماية البيانات الأوروبية صارمة للغاية.",
+    "example_uk": "Європейські правила захисту даних вважаються особливо суворими.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'europäisch' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'europäisch' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'europäisch' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'europäisch' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die europäischen Datenschutzregeln gelten als besonders streng.",
+        "tr": "Avrupa veri koruma kuralları son derece katı kabul edilir.",
+        "en": "European data protection rules are considered particularly strict.",
+        "ar": "تعتبر قواعد حماية البيانات الأوروبية صارمة للغاية.",
+        "uk": "Європейські правила захисту даних вважаються особливо суворими."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag europäisch zu sein.",
+        "tr": "İş ve günlük yaşamda Avrupalı, Avrupa ile ilgili olmak son derece önemlidir.",
+        "en": "It is very important to be European in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "fachärzte": {
+    "de": "der Facharzt",
+    "displayDe": "Facharzt",
+    "article": "der",
+    "plural": "die Fachärzte",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "uzman doktorlar",
+    "en": "medical specialists",
+    "ar": "الأطباء الأخصائيون",
+    "uk": "лікарі-спеціалісти / профільні лікарі",
+    "example_de": "Der Hausarzt überweist bei Bedarf an spezialisierte Fachärzte.",
+    "example_tr": "Aile hekimi gerektiğinde uzman doktorlara sevk eder.",
+    "example_en": "The family doctor refers to medical specialists when necessary.",
+    "example_ar": "يقوم طبيب الأسرة بالتحويل إلى أطباء أخصائيين عند الحاجة.",
+    "example_uk": "Сімейний лікар за потреби направляє до профільних лікарів.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Fachärzte'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Fachärzte'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Fachärzte'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Fachärzte'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Facharzt)",
+        "en": "💡 Noun Structure (der Facharzt)",
+        "ar": "💡 بنية الاسم (der Facharzt)",
+        "uk": "💡 Структура іменника (der Facharzt)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Hausarzt überweist bei Bedarf an spezialisierte Fachärzte.",
+        "tr": "Aile hekimi gerektiğinde uzman doktorlara sevk eder.",
+        "en": "The family doctor refers to medical specialists when necessary.",
+        "ar": "يقوم طبيب الأسرة بالتحويل إلى أطباء أخصائيين عند الحاجة.",
+        "uk": "Сімейний лікар за потреби направляє до профільних лікарів."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Facharzt eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Facharzt günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Facharzt plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "fahrgastzahlen": {
+    "de": "die Fahrgastzahl",
+    "displayDe": "Fahrgastzahl",
+    "article": "die",
+    "plural": "die Fahrgastzahlen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "yolcu sayıları",
+    "en": "passenger numbers",
+    "ar": "أعداد الركاب",
+    "uk": "кількість пасажирів",
+    "example_de": "Die Verkehrsverbünde verzeichnen steigende Fahrgastzahlen.",
+    "example_tr": "Ulaşım birlikleri artan yolcu sayıları bildiriyor.",
+    "example_en": "Transit associations report rising passenger numbers.",
+    "example_ar": "تسجل اتحادات النقل أعداد ركاب متزايدة باستمرار.",
+    "example_uk": "Транспортні об'єднання відзначають зростання кількості пасажирів.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Fahrgastzahlen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Fahrgastzahlen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Fahrgastzahlen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Fahrgastzahlen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Verkehrsverbünde verzeichnen steigende Fahrgastzahlen.",
+        "tr": "Ulaşım birlikleri artan yolcu sayıları bildiriyor.",
+        "en": "Transit associations report rising passenger numbers.",
+        "ar": "تسجل اتحادات النقل أعداد ركاب متزايدة باستمرار.",
+        "uk": "Транспортні об'єднання відзначають зростання кількості пасажирів."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Fahrgastzahl eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Fahrgastzahl günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Fahrgastzahl plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "fahrgäste": {
+    "de": "der Fahrgast",
+    "displayDe": "Fahrgast",
+    "article": "der",
+    "plural": "die Fahrgäste",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "yolcular",
+    "en": "passengers",
+    "ar": "ركاب",
+    "uk": "пасажири",
+    "example_de": "Viele Fahrgäste schätzen die einfache Handhabung des Tickets.",
+    "example_tr": "Birçok yolcu biletin kolay kullanımını takdir ediyor.",
+    "example_en": "Many passengers appreciate the easy handling of the ticket.",
+    "example_ar": "يقدر العديد من الركاب سهولة استخدام التذكرة.",
+    "example_uk": "Багато пасажирів цінують простоту користування квитком.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Fahrgäste'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Fahrgäste'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Fahrgäste'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Fahrgäste'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Fahrgast)",
+        "en": "💡 Noun Structure (der Fahrgast)",
+        "ar": "💡 بنية الاسم (der Fahrgast)",
+        "uk": "💡 Структура іменника (der Fahrgast)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Viele Fahrgäste schätzen die einfache Handhabung des Tickets.",
+        "tr": "Birçok yolcu biletin kolay kullanımını takdir ediyor.",
+        "en": "Many passengers appreciate the easy handling of the ticket.",
+        "ar": "يقدر العديد من الركاب سهولة استخدام التذكرة.",
+        "uk": "Багато пасажирів цінують простоту користування квитком."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Fahrgast eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Fahrgast günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Fahrgast plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "fahrzeuge": {
+    "de": "das Fahrzeug",
+    "displayDe": "Fahrzeug",
+    "article": "das",
+    "plural": "die Fahrzeuge",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "araçlar, taşıtlar",
+    "en": "vehicles",
+    "ar": "مركبات / وسائل نقل",
+    "uk": "транспортні засоби",
+    "example_de": "Moderne Fahrzeuge im Nahverkehr sind barrierefrei und komfortabel.",
+    "example_tr": "Yerel ulaşımdaki modern araçlar engelsiz ve konforludur.",
+    "example_en": "Modern vehicles in local transit are accessible and comfortable.",
+    "example_ar": "المركبات الحديثة في النقل المحلي مهيأة ومريحة.",
+    "example_uk": "Сучасні транспортні засоби в міському сполученні є безбар'єрними та комфортними.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Fahrzeuge'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Fahrzeuge'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Fahrzeuge'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Fahrzeuge'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Fahrzeug)",
+        "en": "💡 Noun Structure (das Fahrzeug)",
+        "ar": "💡 بنية الاسم (das Fahrzeug)",
+        "uk": "💡 Структура іменника (das Fahrzeug)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Moderne Fahrzeuge im Nahverkehr sind barrierefrei und komfortabel.",
+        "tr": "Yerel ulaşımdaki modern araçlar engelsiz ve konforludur.",
+        "en": "Modern vehicles in local transit are accessible and comfortable.",
+        "ar": "المركبات الحديثة في النقل المحلي مهيأة ومريحة.",
+        "uk": "Сучасні транспортні засоби в міському сполученні є безбар'єрними та комфортними."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Fahrzeug eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Fahrzeug günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Fahrzeug plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "faktor": {
+    "de": "der Faktor",
+    "displayDe": "Faktor",
+    "article": "der",
+    "plural": "die Faktoren",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "faktör, etken",
+    "en": "factor",
+    "ar": "عامل / عنصر",
+    "uk": "фактор / чинник",
+    "example_de": "Ein zweiter Faktor erhöht die Sicherheit beim Login deutlich.",
+    "example_tr": "İkinci bir faktör girişteki güvenliği belirgin şekilde artırır.",
+    "example_en": "A second factor significantly increases security during login.",
+    "example_ar": "يزيد العامل الثاني من مستوى الأمان عند تسجيل الدخول بشكل كبير.",
+    "example_uk": "Другий фактор значно підвищує безпеку під час входу.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Faktoren'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Faktoren'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Faktoren'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Faktoren'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Faktor)",
+        "en": "💡 Noun Structure (der Faktor)",
+        "ar": "💡 بنية الاسم (der Faktor)",
+        "uk": "💡 Структура іменника (der Faktor)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein zweiter Faktor erhöht die Sicherheit beim Login deutlich.",
+        "tr": "İkinci bir faktör girişteki güvenliği belirgin şekilde artırır.",
+        "en": "A second factor significantly increases security during login.",
+        "ar": "يزيد العامل الثاني من مستوى الأمان عند تسجيل الدخول بشكل كبير.",
+        "uk": "Другий фактор значно підвищує безпеку під час входу."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Faktor eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Faktor günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Faktor plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "fehlern": {
+    "de": "der Fehler",
+    "displayDe": "Fehler",
+    "article": "der",
+    "plural": "die Fehler",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "hatalardan (Dativ Plural)",
+    "en": "mistakes / errors",
+    "ar": "أخطاء (من الأخطاء)",
+    "uk": "помилок",
+    "example_de": "Man lernt aus Fehlern beim Sprechen.",
+    "example_tr": "Konuşurken yapılan hatalardan ders çıkarılır.",
+    "example_en": "One learns from mistakes when speaking.",
+    "example_ar": "يتعلم المرء من الأخطاء أثناء التحدث.",
+    "example_uk": "Людина вчиться на помилках під час мовлення.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Fehler'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Fehler'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Fehler'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Fehler'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Man lernt aus Fehlern beim Sprechen.",
+        "tr": "Konuşurken yapılan hatalardan ders çıkarılır.",
+        "en": "One learns from mistakes when speaking.",
+        "ar": "يتعلم المرء من الأخطاء أثناء التحدث.",
+        "uk": "Людина вчиться на помилках під час мовлення."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Fehler eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Fehler günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Fehler plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "fertigkeiten": {
+    "de": "die Fertigkeit",
+    "displayDe": "Fertigkeit",
+    "article": "die",
+    "plural": "die Fertigkeiten",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "beceriler, yetenekler",
+    "en": "skills / proficiencies",
+    "ar": "مهارات / كفاءات",
+    "uk": "навички / вміння",
+    "example_de": "Im Kurs trainieren die Lernenden alle vier sprachlichen Fertigkeiten.",
+    "example_tr": "Kursta öğrenciler dört dil becerisinin tümünü çalışırlar.",
+    "example_en": "In the course, learners train all four linguistic skills.",
+    "example_ar": "في الدورة يتدرب المتعلمون على المهارات اللغوية الأربع جميعها.",
+    "example_uk": "На курсі учні тренують усі чотири мовні навички.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Fertigkeiten'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Fertigkeiten'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Fertigkeiten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Fertigkeiten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Kurs trainieren die Lernenden alle vier sprachlichen Fertigkeiten.",
+        "tr": "Kursta öğrenciler dört dil becerisinin tümünü çalışırlar.",
+        "en": "In the course, learners train all four linguistic skills.",
+        "ar": "في الدورة يتدرب المتعلمون على المهارات اللغوية الأربع جميعها.",
+        "uk": "На курсі учні тренують усі чотири мовні навички."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Fertigkeit eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Fertigkeit günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Fertigkeit plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "festigen": {
+    "de": "festigen",
+    "displayDe": "festigen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "pekiştirmek, sağlamlaştırmak",
+    "en": "to consolidate / reinforce",
+    "ar": "رسخ / عزز / ثبّت",
+    "uk": "закріплювати / посилювати",
+    "example_de": "Tägliche Wiederholungen helfen dabei, den Wortschatz zu festigen.",
+    "example_tr": "Günlük tekrarlar kelime dağarcığını pekiştirmeye yardımcı olur.",
+    "example_en": "Daily repetitions help to reinforce vocabulary.",
+    "example_ar": "التكرار اليومي يساعد على ترسيخ المفردات.",
+    "example_uk": "Щоденні повторення допомагають закріплювати словниковий запас.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'festigen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'festigen' denotes action, process, or state.",
+      "ar": "فعل: 'festigen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'festigen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (festigen)",
+        "en": "💡 Verb Structure (festigen)",
+        "ar": "💡 بنية الفعل (festigen)",
+        "uk": "💡 Структура дієслова (festigen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Tägliche Wiederholungen helfen dabei, den Wortschatz zu festigen.",
+        "tr": "Günlük tekrarlar kelime dağarcığını pekiştirmeye yardımcı olur.",
+        "en": "Daily repetitions help to reinforce vocabulary.",
+        "ar": "التكرار اليومي يساعد على ترسيخ المفردات.",
+        "uk": "Щоденні повторення допомагають закріплювати словниковий запас."
+      },
+      {
+        "de": "In Deutschland kann man festigen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için pekiştirmek, sağlamlaştırmak eylemi yapılabilir.",
+        "en": "In Germany, one can to consolidate / reinforce to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "finanzieren": {
+    "de": "finanzieren",
+    "displayDe": "finanzieren",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "finanse etmek, masraflarını karşılamak",
+    "en": "to fund / finance",
+    "ar": "يمول / يغطي التكاليف",
+    "uk": "фінансувати / оплачувати",
+    "example_de": "Bund und Länder finanzieren das Ticket gemeinsam.",
+    "example_tr": "Federal devlet ve eyaletler bileti ortaklaşa finanse eder.",
+    "example_en": "The federal government and states finance the ticket jointly.",
+    "example_ar": "تمول الحكومة الاتحادية والولايات التذكرة بصورة مشتركة.",
+    "example_uk": "Федерація та землі спільно фінансують цей квиток.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'finanzieren' temel eylem bildiren fiildir.",
+      "en": "Verb: 'finanzieren' denotes action, process, or state.",
+      "ar": "فعل: 'finanzieren' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'finanzieren' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (finanzieren)",
+        "en": "💡 Verb Structure (finanzieren)",
+        "ar": "💡 بنية الفعل (finanzieren)",
+        "uk": "💡 Структура дієслова (finanzieren)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Bund und Länder finanzieren das Ticket gemeinsam.",
+        "tr": "Federal devlet ve eyaletler bileti ortaklaşa finanse eder.",
+        "en": "The federal government and states finance the ticket jointly.",
+        "ar": "تمول الحكومة الاتحادية والولايات التذكرة بصورة مشتركة.",
+        "uk": "Федерація та землі спільно фінансують цей квиток."
+      },
+      {
+        "de": "In Deutschland kann man finanzieren, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için finanse etmek, masraflarını karşılamak eylemi yapılabilir.",
+        "en": "In Germany, one can to fund / finance to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "flächendeckend": {
+    "de": "flächendeckend",
+    "displayDe": "flächendeckend",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "kapsamlı, tüm bölgeyi içine alan",
+    "en": "comprehensive / covering the entire area",
+    "ar": "شامل لكامل المنطقة / يغطي جميع الأنحاء",
+    "uk": "повсюдний / що охоплює всю територію",
+    "example_de": "Ein flächendeckendes Angebot ist für den Nahverkehr entscheidend.",
+    "example_tr": "Tüm bölgeyi kapsayan bir ulaşım ağı yerel ulaşım için belirleyicidir.",
+    "example_en": "A comprehensive network is decisive for local transit.",
+    "example_ar": "توفير شبكة تغطي جميع المناطق أمر حاسم للنقل العام.",
+    "example_uk": "Повне покриття маршрутами має вирішальне значення для транспорту.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'flächendeckend' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'flächendeckend' describes quality or state.",
+      "ar": "صفة: 'flächendeckend' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'flächendeckend' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (flächendeckend)",
+        "en": "💡 Adjective (flächendeckend)",
+        "ar": "💡 بنية الصفة (flächendeckend)",
+        "uk": "💡 Структура прикметника (flächendeckend)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein flächendeckendes Angebot ist für den Nahverkehr entscheidend.",
+        "tr": "Tüm bölgeyi kapsayan bir ulaşım ağı yerel ulaşım için belirleyicidir.",
+        "en": "A comprehensive network is decisive for local transit.",
+        "ar": "توفير شبكة تغطي جميع المناطق أمر حاسم للنقل العام.",
+        "uk": "Повне покриття маршрутами має вирішальне значення для транспорту."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag flächendeckend zu sein.",
+        "tr": "İş ve günlük yaşamda kapsamlı, tüm bölgeyi içine alan olmak son derece önemlidir.",
+        "en": "It is very important to be comprehensive / covering the entire area in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "flüchtlinge": {
+    "de": "der Flüchtling",
+    "displayDe": "Flüchtling",
+    "article": "der",
+    "plural": "die Flüchtlinge",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "mülteciler, sığınmacılar",
+    "en": "refugees",
+    "ar": "لاجئون",
+    "uk": "біженці",
+    "example_de": "Geflüchtete Menschen erhalten Unterstützung durch Integrationskurse.",
+    "example_tr": "Mülteciler uyum kursları aracılığıyla destek alırlar.",
+    "example_en": "Refugees receive support through integration courses.",
+    "example_ar": "يحصل اللاجئون على الدعم عبر دورات الاندماج.",
+    "example_uk": "Біженці отримують підтримку через інтеграційні курси.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Flüchtlinge'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Flüchtlinge'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Flüchtlinge'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Flüchtlinge'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Flüchtling)",
+        "en": "💡 Noun Structure (der Flüchtling)",
+        "ar": "💡 بنية الاسم (der Flüchtling)",
+        "uk": "💡 Структура іменника (der Flüchtling)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Geflüchtete Menschen erhalten Unterstützung durch Integrationskurse.",
+        "tr": "Mülteciler uyum kursları aracılığıyla destek alırlar.",
+        "en": "Refugees receive support through integration courses.",
+        "ar": "يحصل اللاجئون على الدعم عبر دورات الاندماج.",
+        "uk": "Біженці отримують підтримку через інтеграційні курси."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Flüchtling eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Flüchtling günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Flüchtling plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "fordern": {
+    "de": "fordern",
+    "displayDe": "fordern",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "talep etmek, istemek",
+    "en": "to demand / require",
+    "ar": "يطالب بـ / يقتضي",
+    "uk": "вимагати",
+    "example_de": "Verbraucherschützer fordern strenge Sicherheitsstandards.",
+    "example_tr": "Tüketici hakları savunucuları sıkı güvenlik standartları talep ediyor.",
+    "example_en": "Consumer advocates demand strict security standards.",
+    "example_ar": "يطالب المدافعون عن المستهلك بمعايير أمان صارمة.",
+    "example_uk": "Захисники прав споживачів вимагають суворих стандартів безпеки.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'fordern' temel eylem bildiren fiildir.",
+      "en": "Verb: 'fordern' denotes action, process, or state.",
+      "ar": "فعل: 'fordern' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'fordern' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (fordern)",
+        "en": "💡 Verb Structure (fordern)",
+        "ar": "💡 بنية الفعل (fordern)",
+        "uk": "💡 Структура дієслова (fordern)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Verbraucherschützer fordern strenge Sicherheitsstandards.",
+        "tr": "Tüketici hakları savunucuları sıkı güvenlik standartları talep ediyor.",
+        "en": "Consumer advocates demand strict security standards.",
+        "ar": "يطالب المدافعون عن المستهلك بمعايير أمان صارمة.",
+        "uk": "Захисники прав споживачів вимагають суворих стандартів безпеки."
+      },
+      {
+        "de": "In Deutschland kann man fordern, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için talep etmek, istemek eylemi yapılabilir.",
+        "en": "In Germany, one can to demand / require to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "freie": {
+    "de": "frei",
+    "displayDe": "frei",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "boş, serbest (freie Termine = boş randevular)",
+    "en": "free / available",
+    "ar": "متاح / شاغر",
+    "uk": "вільний / доступний",
+    "example_de": "Patienten können freie Termine online einsehen und buchen.",
+    "example_tr": "Hastalar boş randevuları internette görebilir ve ayırtabilir.",
+    "example_en": "Patients can view and book available appointments online.",
+    "example_ar": "يمكن للمرضى الاطلاع على المواعيد المتاحة وحجزها عبر الإنترنت.",
+    "example_uk": "Пацієнти можуть переглядати та бронювати вільні дати онлайн.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'frei' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'frei' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'frei' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'frei' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Patienten können freie Termine online einsehen und buchen.",
+        "tr": "Hastalar boş randevuları internette görebilir ve ayırtabilir.",
+        "en": "Patients can view and book available appointments online.",
+        "ar": "يمكن للمرضى الاطلاع على المواعيد المتاحة وحجزها عبر الإنترنت.",
+        "uk": "Пацієнти можуть переглядати та бронювати вільні дати онлайн."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag frei zu sein.",
+        "tr": "İş ve günlük yaşamda boş, serbest (freie Termine = boş randevular) olmak son derece önemlidir.",
+        "en": "It is very important to be free / available in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "frühzeitige": {
+    "de": "frühzeitig",
+    "displayDe": "frühzeitig",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "erken, zamanında yapılan",
+    "en": "early / timely",
+    "ar": "مبكر / في الوقت المناسب",
+    "uk": "своєчасний / ранній",
+    "example_de": "Eine frühzeitige Vorsorge verhindert schwere Krankheitsverläufe.",
+    "example_tr": "Zamanında yapılan bir kontrol hastalığın ağırlaşmasını önler.",
+    "example_en": "Timely prevention prevents severe courses of illness.",
+    "example_ar": "الوقاية المبكرة تمنع تطور الحالات المرضية الشديدة.",
+    "example_uk": "Рання профілактика запобігає важкому перебігу хвороб.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'frühzeitig' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'frühzeitig' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'frühzeitig' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'frühzeitig' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Eine frühzeitige Vorsorge verhindert schwere Krankheitsverläufe.",
+        "tr": "Zamanında yapılan bir kontrol hastalığın ağırlaşmasını önler.",
+        "en": "Timely prevention prevents severe courses of illness.",
+        "ar": "الوقاية المبكرة تمنع تطور الحالات المرضية الشديدة.",
+        "uk": "Рання профілактика запобігає важкому перебігу хвороб."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag frühzeitig zu sein.",
+        "tr": "İş ve günlük yaşamda erken, zamanında yapılan olmak son derece önemlidir.",
+        "en": "It is very important to be early / timely in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "frühzeitigen": {
+    "de": "frühzeitig",
+    "displayDe": "frühzeitig",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "erken (çekimli sıfat)",
+    "en": "early / timely (declined)",
+    "ar": "مبكر",
+    "uk": "ранній",
+    "example_de": "Wer von einer frühzeitigen Diagnose profitiert, lebt gesünder.",
+    "example_tr": "Erken teşhisten faydalanan kişi daha sağlıklı yaşar.",
+    "example_en": "Whoever benefits from an early diagnosis lives healthier.",
+    "example_ar": "من يستفيد من التشخيص المبكر يعيش بصحة أفضل.",
+    "example_uk": "Той, хто виграє від ранньої діагностики, живе здоровішим.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'frühzeitig' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'frühzeitig' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'frühzeitig' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'frühzeitig' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer von einer frühzeitigen Diagnose profitiert, lebt gesünder.",
+        "tr": "Erken teşhisten faydalanan kişi daha sağlıklı yaşar.",
+        "en": "Whoever benefits from an early diagnosis lives healthier.",
+        "ar": "من يستفيد من التشخيص المبكر يعيش بصحة أفضل.",
+        "uk": "Той, хто виграє від ранньої діагностики, живе здоровішим."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag frühzeitig zu sein.",
+        "tr": "İş ve günlük yaşamda erken (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be early / timely (declined) in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "führt": {
+    "de": "führen",
+    "displayDe": "führen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "yol açmak, götürmek (er/sie/es führt)",
+    "en": "leads to / conducts",
+    "ar": "يؤدي إلى / يقود",
+    "uk": "веде до / проводить",
+    "example_de": "Erfolgreiches Lernen führt zum B1-Zertifikat.",
+    "example_tr": "Başarılı bir öğrenim süreci B1 sertifikasına götürür.",
+    "example_en": "Successful learning leads to the B1 certificate.",
+    "example_ar": "التعلم الناجح يقود إلى الحصول على شهادة B1.",
+    "example_uk": "Успішне навчання веде до отримання сертифіката B1.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'führen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'führen' denotes action, process, or state.",
+      "ar": "فعل: 'führen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'führen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (führen)",
+        "en": "💡 Verb Structure (führen)",
+        "ar": "💡 بنية الفعل (führen)",
+        "uk": "💡 Структура дієслова (führen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Erfolgreiches Lernen führt zum B1-Zertifikat.",
+        "tr": "Başarılı bir öğrenim süreci B1 sertifikasına götürür.",
+        "en": "Successful learning leads to the B1 certificate.",
+        "ar": "التعلم الناجح يقود إلى الحصول على شهادة B1.",
+        "uk": "Успішне навчання веде до отримання сертифіката B1."
+      },
+      {
+        "de": "In Deutschland kann man führen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için yol açmak, götürmek (er/sie/es führt) eylemi yapılabilir.",
+        "en": "In Germany, one can leads to / conducts to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "fördert": {
+    "de": "fördern",
+    "displayDe": "fördern",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "desteklemek, teşvik etmek (er/sie/es fördert)",
+    "en": "promotes / funds / supports",
+    "ar": "يدعم / يشجع",
+    "uk": "підтримує / сприяє",
+    "example_de": "Der Staat fördert die Teilnahme an Integrationskursen finanziell.",
+    "example_tr": "Devlet uyum kurslarına katılımı maddi olarak destekler.",
+    "example_en": "The state financially supports participation in integration courses.",
+    "example_ar": "تدعم الدولة مادياً المشاركة في دورات الاندماج.",
+    "example_uk": "Держава фінансово підтримує участь в інтеграційних курсах.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'fördern' temel eylem bildiren fiildir.",
+      "en": "Verb: 'fördern' denotes action, process, or state.",
+      "ar": "فعل: 'fördern' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'fördern' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (fördern)",
+        "en": "💡 Verb Structure (fördern)",
+        "ar": "💡 بنية الفعل (fördern)",
+        "uk": "💡 Структура дієслова (fördern)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Staat fördert die Teilnahme an Integrationskursen finanziell.",
+        "tr": "Devlet uyum kurslarına katılımı maddi olarak destekler.",
+        "en": "The state financially supports participation in integration courses.",
+        "ar": "تدعم الدولة مادياً المشاركة في دورات الاندماج.",
+        "uk": "Держава фінансово підтримує участь в інтеграційних курсах."
+      },
+      {
+        "de": "In Deutschland kann man fördern, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için desteklemek, teşvik etmek (er/sie/es fördert) eylemi yapılabilir.",
+        "en": "In Germany, one can promotes / funds / supports to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "geburtstage": {
+    "de": "der Geburtstag",
+    "displayDe": "Geburtstag",
+    "article": "der",
+    "plural": "die Geburtstage",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "doğum günleri",
+    "en": "birthdays",
+    "ar": "أعياد ميلاد",
+    "uk": "дні народження",
+    "example_de": "Verwenden Sie niemals eigene Geburtstage als Passwort.",
+    "example_tr": "Kendi doğum günlerinizi asla parola olarak kullanmayın.",
+    "example_en": "Never use your own birthdays as a password.",
+    "example_ar": "لا تستخدم أبداً تواريخ أعياد الميلاد ككلمات مرور.",
+    "example_uk": "Ніколи не використовуйте власні дні народження як пароль.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Geburtstage'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Geburtstage'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Geburtstage'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Geburtstage'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Geburtstag)",
+        "en": "💡 Noun Structure (der Geburtstag)",
+        "ar": "💡 بنية الاسم (der Geburtstag)",
+        "uk": "💡 Структура іменника (der Geburtstag)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Verwenden Sie niemals eigene Geburtstage als Passwort.",
+        "tr": "Kendi doğum günlerinizi asla parola olarak kullanmayın.",
+        "en": "Never use your own birthdays as a password.",
+        "ar": "لا تستخدم أبداً تواريخ أعياد الميلاد ككلمات مرور.",
+        "uk": "Ніколи не використовуйте власні дні народження як пароль."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Geburtstag eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Geburtstag günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Geburtstag plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "gedanken": {
+    "de": "der Gedanke",
+    "displayDe": "Gedanke",
+    "article": "der",
+    "plural": "die Gedanken",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "düşünceler, fikirler",
+    "en": "thoughts / ideas",
+    "ar": "أفكار",
+    "uk": "думки",
+    "example_de": "Man sollte sich rechtzeitig Gedanken über sichere Passwörter machen.",
+    "example_tr": "Güvenli parolalar hakkında zamanında düşünmek gerekir.",
+    "example_en": "One should think about secure passwords in good time.",
+    "example_ar": "ينبغي للمرء أن يفكر في كلمات مرور آمنة في الوقت المناسب.",
+    "example_uk": "Слід завчасно замислитися над надійними паролями.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Gedanken'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Gedanken'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Gedanken'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Gedanken'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Man sollte sich rechtzeitig Gedanken über sichere Passwörter machen.",
+        "tr": "Güvenli parolalar hakkında zamanında düşünmek gerekir.",
+        "en": "One should think about secure passwords in good time.",
+        "ar": "ينبغي للمرء أن يفكر في كلمات مرور آمنة في الوقت المناسب.",
+        "uk": "Слід завчасно замислитися над надійними паролями."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Gedanke eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Gedanke günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Gedanke plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "gefahr": {
+    "de": "die Gefahr",
+    "displayDe": "Gefahr",
+    "article": "die",
+    "plural": "die Gefahren",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "tehlike",
+    "en": "danger / risk",
+    "ar": "خطر",
+    "uk": "небезпека",
+    "example_de": "Phishing-Nachrichten stellen eine große Gefahr im Internet dar.",
+    "example_tr": "Oltalama iletileri internette büyük bir tehlike oluşturur.",
+    "example_en": "Phishing messages pose a major danger on the internet.",
+    "example_ar": "تمثل رسائل التصيد خطراً كبيراً على الإنترنت.",
+    "example_uk": "Фішингові повідомлення становлять велику небезпеку в інтернеті.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Gefahren'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Gefahren'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Gefahren'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Gefahren'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Gefahr)",
+        "en": "💡 Noun Structure (die Gefahr)",
+        "ar": "💡 بنية الاسم (die Gefahr)",
+        "uk": "💡 Структура іменника (die Gefahr)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Phishing-Nachrichten stellen eine große Gefahr im Internet dar.",
+        "tr": "Oltalama iletileri internette büyük bir tehlike oluşturur.",
+        "en": "Phishing messages pose a major danger on the internet.",
+        "ar": "تمثل رسائل التصيد خطراً كبيراً على الإنترنت.",
+        "uk": "Фішингові повідомлення становлять велику небезпеку в інтернеті."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Gefahr eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Gefahr günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Gefahr plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "gefälschte": {
+    "de": "gefälscht",
+    "displayDe": "gefälscht",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "sahte (çekimli sıfat)",
+    "en": "fake / forged",
+    "ar": "مزور / وهمي",
+    "uk": "підроблений / фальшивий",
+    "example_de": "Betrüger leiten Opfer auf gefälschte Bank-Websites.",
+    "example_tr": "Dolandırıcılar mağdurları sahte banka web sitelerine yönlendirir.",
+    "example_en": "Fraudsters redirect victims to fake banking websites.",
+    "example_ar": "يوجه المحتالون الضحايا إلى مواقع مصرفية مزيفة.",
+    "example_uk": "Шахраї перенаправляють жертв на підроблені сайти банків.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'gefälscht' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'gefälscht' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'gefälscht' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'gefälscht' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Betrüger leiten Opfer auf gefälschte Bank-Websites.",
+        "tr": "Dolandırıcılar mağdurları sahte banka web sitelerine yönlendirir.",
+        "en": "Fraudsters redirect victims to fake banking websites.",
+        "ar": "يوجه المحتالون الضحايا إلى مواقع مصرفية مزيفة.",
+        "uk": "Шахраї перенаправляють жертв на підроблені сайти банків."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag gefälscht zu sein.",
+        "tr": "İş ve günlük yaşamda sahte (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be fake / forged in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "geführt": {
+    "de": "führen",
+    "displayDe": "führen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "yürütülen, yönlendirilen (Partizip II)",
+    "en": "led / guided (Participle II)",
+    "ar": "مُوجَّه / قِيدَ",
+    "uk": "проведений / скерований",
+    "example_de": "Die Gespräche werden im Kurs praxisnah geführt.",
+    "example_tr": "Görüşmeler kursta uygulamaya yönelik olarak yürütülür.",
+    "example_en": "Conversations in the course are conducted practically.",
+    "example_ar": "تُجرى المحادثات في الدورة بشكل عملي.",
+    "example_uk": "Розмови на курсі проводяться з орієнтацією на практику.",
+    "grammar": {
+      "tr": "Partizip II (Ortaç): 'führen' fiilinin geçmiş zaman (Perfekt) veya edilgen (Passiv) yapımında kullanılan 3. halidir.",
+      "en": "Participle II: The 3rd form of verb 'führen', used in Perfekt or Passiv constructions.",
+      "ar": "اسم المفعول (Partizip II): التصريف الثالث للفعل 'führen'، يُستخدم في الماضي والمبني للمجهول.",
+      "uk": "Дієприкметник (Partizip II): третя форма дієслова 'führen', вживається в Perfekt або пасиві.",
+      "title": {
+        "tr": "💡 Fiil Çekimi: Partizip II / Passiv (Edilgen)",
+        "en": "💡 Verb Form: Participle II / Passive Voice",
+        "ar": "💡 تصريف الفعل: اسم المفعول / المبني للمجهول",
+        "uk": "💡 Форма дієслова: Partizip II / Пасивний стан"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Gespräche werden im Kurs praxisnah geführt.",
+        "tr": "Görüşmeler kursta uygulamaya yönelik olarak yürütülür.",
+        "en": "Conversations in the course are conducted practically.",
+        "ar": "تُجرى المحادثات في الدورة بشكل عملي.",
+        "uk": "Розмови на курсі проводяться з орієнтацією на практику."
+      },
+      {
+        "de": "In Deutschland kann man führen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için yürütülen, yönlendirilen (Partizip II) eylemi yapılabilir.",
+        "en": "In Germany, one can led / guided (Participle II) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "geld": {
+    "de": "das Geld",
+    "displayDe": "Geld",
+    "article": "das",
+    "plural": "-",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "para",
+    "en": "money",
+    "ar": "مال / نقود",
+    "uk": "гроші",
+    "example_de": "Das Deutschlandticket spart Berufspendlern viel Geld.",
+    "example_tr": "Almanya bileti işe gidip gelenlere çok para tasarrufu sağlar.",
+    "example_en": "The Deutschlandticket saves commuters a lot of money.",
+    "example_ar": "توفر تذكرة ألمانيا الكثير من المال للمسافرين يومياً.",
+    "example_uk": "Дойчландтикет заощаджує пасажирам багато грошей.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Geld)",
+        "en": "💡 Noun Structure (das Geld)",
+        "ar": "💡 بنية الاسم (das Geld)",
+        "uk": "💡 Структура іменника (das Geld)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Deutschlandticket spart Berufspendlern viel Geld.",
+        "tr": "Almanya bileti işe gidip gelenlere çok para tasarrufu sağlar.",
+        "en": "The Deutschlandticket saves commuters a lot of money.",
+        "ar": "توفر تذكرة ألمانيا الكثير من المال للمسافرين يومياً.",
+        "uk": "Дойчландтикет заощаджує пасажирам багато грошей."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Geld eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Geld günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Geld plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "geldprämie": {
+    "de": "die Geldprämie",
+    "displayDe": "Geldprämie",
+    "article": "die",
+    "plural": "die Geldprämien",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "para ödülü, nakit ikramiye",
+    "en": "cash bonus / financial reward",
+    "ar": "مكافأة مالية",
+    "uk": "грошова премія",
+    "example_de": "Die Krankenkasse zahlt bei gesunder Lebensweise eine Geldprämie.",
+    "example_tr": "Sağlık sigortası sağlıklı yaşam tarzı için para ikramiyesi öder.",
+    "example_en": "The health insurance pays a cash bonus for a healthy lifestyle.",
+    "example_ar": "يدفع التأمين الصحي مكافأة مالية لاتباع نمط حياة صحي.",
+    "example_uk": "Лікарняна каса виплачує грошову премію за здоровий спосіб життя.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Geldprämien'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Geldprämien'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Geldprämien'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Geldprämien'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Geldprämie)",
+        "en": "💡 Noun Structure (die Geldprämie)",
+        "ar": "💡 بنية الاسم (die Geldprämie)",
+        "uk": "💡 Структура іменника (die Geldprämie)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Krankenkasse zahlt bei gesunder Lebensweise eine Geldprämie.",
+        "tr": "Sağlık sigortası sağlıklı yaşam tarzı için para ikramiyesi öder.",
+        "en": "The health insurance pays a cash bonus for a healthy lifestyle.",
+        "ar": "يدفع التأمين الصحي مكافأة مالية لاتباع نمط حياة صحي.",
+        "uk": "Лікарняна каса виплачує грошову премію за здоровий спосіб життя."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Geldprämie eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Geldprämie günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Geldprämie plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "gelungene": {
+    "de": "gelungen",
+    "displayDe": "gelungen",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "başarılı (çekimli sıfat)",
+    "en": "successful",
+    "ar": "ناجح",
+    "uk": "вдалий / успішний",
+    "example_de": "Eine gelungene Integration erfordert Sprache und soziale Teilhabe.",
+    "example_tr": "Başarılı bir uyum, dil ve sosyal katılım gerektirir.",
+    "example_en": "Successful integration requires language and social participation.",
+    "example_ar": "الاندماج الناجح يتطلب إتقان اللغة والمشاركة المجتمعية.",
+    "example_uk": "Успішна інтеграція вимагає мови та участі в суспільному житті.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'gelungen' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'gelungen' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'gelungen' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'gelungen' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Eine gelungene Integration erfordert Sprache und soziale Teilhabe.",
+        "tr": "Başarılı bir uyum, dil ve sosyal katılım gerektirir.",
+        "en": "Successful integration requires language and social participation.",
+        "ar": "الاندماج الناجح يتطلب إتقان اللغة والمشاركة المجتمعية.",
+        "uk": "Успішна інтеграція вимагає мови та участі в суспільному житті."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag gelungen zu sein.",
+        "tr": "İş ve günlük yaşamda başarılı (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be successful in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "gerne": {
+    "de": "gerne",
+    "displayDe": "gerne",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "A1",
+    "tr": "severek, isteyerek",
+    "en": "gladly / with pleasure",
+    "ar": "بسرور / برغبة",
+    "uk": "охоче / із задоволенням",
+    "example_de": "Viele Bürger nutzen das Ticket gerne für Ausflüge.",
+    "example_tr": "Birçok vatandaş bileti geziler için severek kullanıyor.",
+    "example_en": "Many citizens gladly use the ticket for excursions.",
+    "example_ar": "يستخدم العديد من المواطنين التذكرة برغبة للرحلات الترفيهية.",
+    "example_uk": "Багато громадян залюбки використовують квиток для заміських поїздок.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'gerne' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'gerne' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'gerne' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'gerne' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (gerne)",
+        "en": "💡 Adverb (gerne)",
+        "ar": "💡 ظرف (gerne)",
+        "uk": "💡 Прислівник (gerne)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Viele Bürger nutzen das Ticket gerne für Ausflüge.",
+        "tr": "Birçok vatandaş bileti geziler için severek kullanıyor.",
+        "en": "Many citizens gladly use the ticket for excursions.",
+        "ar": "يستخدم العديد من المواطنين التذكرة برغبة للرحلات الترفيهية.",
+        "uk": "Багато громадян залюбки використовують квиток для заміських поїздок."
+      },
+      {
+        "de": "Das Wort 'gerne' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'gerne' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'gerne' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'gerne' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'gerne' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "geschichte": {
+    "de": "die Geschichte",
+    "displayDe": "Geschichte",
+    "article": "die",
+    "plural": "die Geschichten",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "tarih, hikaye",
+    "en": "history / story",
+    "ar": "تاريخ / قصة",
+    "uk": "історія",
+    "example_de": "Im Orientierungskurs lernt man die deutsche Geschichte kennen.",
+    "example_tr": "Yönlendirme kursunda Alman tarihi öğrenilir.",
+    "example_en": "In the orientation course, one gets to know German history.",
+    "example_ar": "في الدورة التوجيهية يتعرف المرء على التاريخ الألماني.",
+    "example_uk": "На орієнтаційному курсі вивчають історію Німеччини.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Geschichten'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Geschichten'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Geschichten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Geschichten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Geschichte)",
+        "en": "💡 Noun Structure (die Geschichte)",
+        "ar": "💡 بنية الاسم (die Geschichte)",
+        "uk": "💡 Структура іменника (die Geschichte)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Orientierungskurs lernt man die deutsche Geschichte kennen.",
+        "tr": "Yönlendirme kursunda Alman tarihi öğrenilir.",
+        "en": "In the orientation course, one gets to know German history.",
+        "ar": "في الدورة التوجيهية يتعرف المرء على التاريخ الألماني.",
+        "uk": "На орієнтаційному курсі вивчають історію Німеччини."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Geschichte eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Geschichte günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Geschichte plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "gesellschaftliche": {
+    "de": "gesellschaftlich",
+    "displayDe": "gesellschaftlich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "toplumsal, sosyal",
+    "en": "social / societal",
+    "ar": "مجتمعي / اجتماعي",
+    "uk": "суспільний",
+    "example_de": "Sprachkenntnisse ermöglichen die gesellschaftliche Teilhabe.",
+    "example_tr": "Dil bilgisi toplumsal katılımı mümkün kılar.",
+    "example_en": "Language skills enable societal participation.",
+    "example_ar": "تمكن المهارات اللغوية من المشاركة المجتمعية.",
+    "example_uk": "Знання мови уможливлює участь у суспільному житті.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'gesellschaftlich' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'gesellschaftlich' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'gesellschaftlich' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'gesellschaftlich' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Sprachkenntnisse ermöglichen die gesellschaftliche Teilhabe.",
+        "tr": "Dil bilgisi toplumsal katılımı mümkün kılar.",
+        "en": "Language skills enable societal participation.",
+        "ar": "تمكن المهارات اللغوية من المشاركة المجتمعية.",
+        "uk": "Знання мови уможливлює участь у суспільному житті."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag gesellschaftlich zu sein.",
+        "tr": "İş ve günlük yaşamda toplumsal, sosyal olmak son derece önemlidir.",
+        "en": "It is very important to be social / societal in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "gesendet": {
+    "de": "senden",
+    "displayDe": "senden",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "gönderilen (Partizip II)",
+    "en": "sent (Participle II)",
+    "ar": "أُرسل / مرسل",
+    "uk": "надісланий",
+    "example_de": "Der Sicherheitscode wird direkt per SMS gesendet.",
+    "example_tr": "Güvenlik kodu doğrudan kısa mesajla gönderilir.",
+    "example_en": "The security code is sent directly via SMS.",
+    "example_ar": "يُرسل رمز الأمان مباشرة عبر رسالة نصية.",
+    "example_uk": "Код безпеки надсилається безпосередньо через SMS.",
+    "grammar": {
+      "tr": "Partizip II (Ortaç): 'senden' fiilinin geçmiş zaman (Perfekt) veya edilgen (Passiv) yapımında kullanılan 3. halidir.",
+      "en": "Participle II: The 3rd form of verb 'senden', used in Perfekt or Passiv constructions.",
+      "ar": "اسم المفعول (Partizip II): التصريف الثالث للفعل 'senden'، يُستخدم في الماضي والمبني للمجهول.",
+      "uk": "Дієприкметник (Partizip II): третя форма дієслова 'senden', вживається в Perfekt або пасиві.",
+      "title": {
+        "tr": "💡 Fiil Çekimi: Partizip II / Passiv (Edilgen)",
+        "en": "💡 Verb Form: Participle II / Passive Voice",
+        "ar": "💡 تصريف الفعل: اسم المفعول / المبني للمجهول",
+        "uk": "💡 Форма дієслова: Partizip II / Пасивний стан"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Sicherheitscode wird direkt per SMS gesendet.",
+        "tr": "Güvenlik kodu doğrudan kısa mesajla gönderilir.",
+        "en": "The security code is sent directly via SMS.",
+        "ar": "يُرسل رمز الأمان مباشرة عبر رسالة نصية.",
+        "uk": "Код безпеки надсилається безпосередньо через SMS."
+      },
+      {
+        "de": "In Deutschland kann man senden, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için gönderilen (Partizip II) eylemi yapılabilir.",
+        "en": "In Germany, one can sent (Participle II) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "gesetzliche": {
+    "de": "gesetzlich",
+    "displayDe": "gesetzlich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "yasal, kanuni",
+    "en": "statutory / legal",
+    "ar": "قانوني / إلزامي",
+    "uk": "законний / державний",
+    "example_de": "Die gesetzliche Krankenversicherung übernimmt viele Vorsorgekosten.",
+    "example_tr": "Yasal sağlık sigortası birçok koruyucu sağlık masrafını karşılar.",
+    "example_en": "Statutory health insurance covers many preventive care costs.",
+    "example_ar": "يغطي التأمين الصحي القانوني العديد من تكاليف الفحوصات الوقائية.",
+    "example_uk": "Державне медичне страхування покриває багато витрат на профілактику.",
+    "grammar": {
+      "tr": "Sıfat çekimi (Güçlü çekim): 'gesetzliche Ruhezeiten' yapısında çoğul isim önünde artikel olmadığı için sıfat Nominativ Plural '-e' takısı almıştır.",
+      "en": "Strong adjective declension: Plural noun without article takes Nominative plural ending '-e'.",
+      "ar": "تصريف قوي: الاسم جمع بدون أداة، تأخذ الصفة لاحقة الرفع للجمع '-e'.",
+      "uk": "Сильна відміна: іменник у множині без артикля, прикметник отримує закінчення '-e' у називному відмінку.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die gesetzliche Krankenversicherung übernimmt viele Vorsorgekosten.",
+        "tr": "Yasal sağlık sigortası birçok koruyucu sağlık masrafını karşılar.",
+        "en": "Statutory health insurance covers many preventive care costs.",
+        "ar": "يغطي التأمين الصحي القانوني العديد من تكاليف الفحوصات الوقائية.",
+        "uk": "Державне медичне страхування покриває багато витрат на профілактику."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag gesetzlich zu sein.",
+        "tr": "İş ve günlük yaşamda yasal, kanuni olmak son derece önemlidir.",
+        "en": "It is very important to be statutory / legal in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "gesetzt": {
+    "de": "setzen",
+    "displayDe": "setzen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "konulan, hedeflenen (Partizip II)",
+    "en": "set / placed",
+    "ar": "موضوع / محدد",
+    "uk": "поставлений / встановлений",
+    "example_de": "Es wurden neue Standards für den Datenschutz gesetzt.",
+    "example_tr": "Veri koruma için yeni standartlar belirlendi.",
+    "example_en": "New standards have been set for data protection.",
+    "example_ar": "تم وضع معايير جديدة لحماية البيانات.",
+    "example_uk": "Було встановлено нові стандарти захисту даних.",
+    "grammar": {
+      "tr": "Partizip II (Ortaç): 'setzen' fiilinin geçmiş zaman (Perfekt) veya edilgen (Passiv) yapımında kullanılan 3. halidir.",
+      "en": "Participle II: The 3rd form of verb 'setzen', used in Perfekt or Passiv constructions.",
+      "ar": "اسم المفعول (Partizip II): التصريف الثالث للفعل 'setzen'، يُستخدم في الماضي والمبني للمجهول.",
+      "uk": "Дієприкметник (Partizip II): третя форма дієслова 'setzen', вживається в Perfekt або пасиві.",
+      "title": {
+        "tr": "💡 Fiil Çekimi: Partizip II / Passiv (Edilgen)",
+        "en": "💡 Verb Form: Participle II / Passive Voice",
+        "ar": "💡 تصريف الفعل: اسم المفعول / المبني للمجهول",
+        "uk": "💡 Форма дієслова: Partizip II / Пасивний стан"
+      }
+    },
+    "examples": [
+      {
+        "de": "Es wurden neue Standards für den Datenschutz gesetzt.",
+        "tr": "Veri koruma için yeni standartlar belirlendi.",
+        "en": "New standards have been set for data protection.",
+        "ar": "تم وضع معايير جديدة لحماية البيانات.",
+        "uk": "Було встановлено нові стандарти захисту даних."
+      },
+      {
+        "de": "In Deutschland kann man setzen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için konulan, hedeflenen (Partizip II) eylemi yapılabilir.",
+        "en": "In Germany, one can set / placed to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "gespeichert": {
+    "de": "speichern",
+    "displayDe": "speichern",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "kaydedilen, saklanan (Partizip II)",
+    "en": "stored / saved",
+    "ar": "مخزن / محفوظ",
+    "uk": "збережений",
+    "example_de": "Passwörter dürfen niemals unverschlüsselt gespeichert werden.",
+    "example_tr": "Parolalar asla şifrelenmemiş şekilde saklanmamalıdır.",
+    "example_en": "Passwords must never be stored unencrypted.",
+    "example_ar": "يجب عدم تخزين كلمات المرور بدون تشفير أبداً.",
+    "example_uk": "Паролі ніколи не повинні зберігатися у незашифрованому вигляді.",
+    "grammar": {
+      "tr": "Partizip II (Ortaç): 'speichern' fiilinin geçmiş zaman (Perfekt) veya edilgen (Passiv) yapımında kullanılan 3. halidir.",
+      "en": "Participle II: The 3rd form of verb 'speichern', used in Perfekt or Passiv constructions.",
+      "ar": "اسم المفعول (Partizip II): التصريف الثالث للفعل 'speichern'، يُستخدم في الماضي والمبني للمجهول.",
+      "uk": "Дієприкметник (Partizip II): третя форма дієслова 'speichern', вживається в Perfekt або пасиві.",
+      "title": {
+        "tr": "💡 Fiil Çekimi: Partizip II / Passiv (Edilgen)",
+        "en": "💡 Verb Form: Participle II / Passive Voice",
+        "ar": "💡 تصريف الفعل: اسم المفعول / المبني للمجهول",
+        "uk": "💡 Форма дієслова: Partizip II / Пасивний стан"
+      }
+    },
+    "examples": [
+      {
+        "de": "Passwörter dürfen niemals unverschlüsselt gespeichert werden.",
+        "tr": "Parolalar asla şifrelenmemiş şekilde saklanmamalıdır.",
+        "en": "Passwords must never be stored unencrypted.",
+        "ar": "يجب عدم تخزين كلمات المرور بدون تشفير أبداً.",
+        "uk": "Паролі ніколи не повинні зберігатися у незашифрованому вигляді."
+      },
+      {
+        "de": "In Deutschland kann man speichern, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için kaydedilen, saklanan (Partizip II) eylemi yapılabilir.",
+        "en": "In Germany, one can stored / saved to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "gesundheitlichen": {
+    "de": "gesundheitlich",
+    "displayDe": "gesundheitlich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "sağlıkla ilgili (çekimli sıfat)",
+    "en": "health-related",
+    "ar": "صحي",
+    "uk": "пов'язаний зі здоров'ям",
+    "example_de": "Bei gesundheitlichen Problemen hilft der Hausarzt weiter.",
+    "example_tr": "Sağlıkla ilgili sorunlarda aile hekimi yardımcı olur.",
+    "example_en": "For health-related problems, the family doctor provides help.",
+    "example_ar": "في المشاكل الصحية يقدم طبيب الأسرة المساعدة.",
+    "example_uk": "При проблемах зі здоров'ям сімейний лікар допомагає далі.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'gesundheitlich' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'gesundheitlich' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'gesundheitlich' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'gesundheitlich' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Bei gesundheitlichen Problemen hilft der Hausarzt weiter.",
+        "tr": "Sağlıkla ilgili sorunlarda aile hekimi yardımcı olur.",
+        "en": "For health-related problems, the family doctor provides help.",
+        "ar": "في المشاكل الصحية يقدم طبيب الأسرة المساعدة.",
+        "uk": "При проблемах зі здоров'ям сімейний лікар допомагає далі."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag gesundheitlich zu sein.",
+        "tr": "İş ve günlük yaşamda sağlıkla ilgili (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be health-related in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "gesundheitskarte": {
+    "de": "die Gesundheitskarte",
+    "displayDe": "Gesundheitskarte",
+    "article": "die",
+    "plural": "die Gesundheitskarten",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "sağlık sigortası kartı",
+    "en": "health insurance card",
+    "ar": "بطاقة التأمين الصحي",
+    "uk": "картка медичного страхування",
+    "example_de": "Die elektronische Gesundheitskarte muss in der Praxis vorgelegt werden.",
+    "example_tr": "Elektronik sağlık kartı muayenehanede ibraz edilmelidir.",
+    "example_en": "The electronic health card must be presented at the practice.",
+    "example_ar": "يجب تقديم بطاقة التأمين الصحي الإلكترونية في العيادة.",
+    "example_uk": "Електронну медичну картку необхідно пред'явити в лікарському кабінеті.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Gesundheitskarten'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Gesundheitskarten'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Gesundheitskarten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Gesundheitskarten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Gesundheitskarte)",
+        "en": "💡 Noun Structure (die Gesundheitskarte)",
+        "ar": "💡 بنية الاسم (die Gesundheitskarte)",
+        "uk": "💡 Структура іменника (die Gesundheitskarte)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die elektronische Gesundheitskarte muss in der Praxis vorgelegt werden.",
+        "tr": "Elektronik sağlık kartı muayenehanede ibraz edilmelidir.",
+        "en": "The electronic health card must be presented at the practice.",
+        "ar": "يجب تقديم بطاقة التأمين الصحي الإلكترونية في العيادة.",
+        "uk": "Електронну медичну картку необхідно пред'явити в лікарському кабінеті."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Gesundheitskarte eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Gesundheitskarte günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Gesundheitskarte plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "gesundheitssystem": {
+    "de": "das Gesundheitssystem",
+    "displayDe": "Gesundheitssystem",
+    "article": "das",
+    "plural": "die Gesundheitssysteme",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "sağlık sistemi",
+    "en": "healthcare system",
+    "ar": "نظام الرعاية الصحية",
+    "uk": "система охорони здоров'я",
+    "example_de": "Das deutsche Gesundheitssystem basiert auf dem Hausarztprinzip.",
+    "example_tr": "Alman sağlık sistemi aile hekimliği ilkesine dayanır.",
+    "example_en": "The German healthcare system is based on the family doctor principle.",
+    "example_ar": "يرتكز النظام الصحي الألماني على مبدأ طبيب الأسرة.",
+    "example_uk": "Німецька система охорони здоров'я базується на принципі сімейного лікаря.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Gesundheitssysteme'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Gesundheitssysteme'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Gesundheitssysteme'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Gesundheitssysteme'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Gesundheitssystem)",
+        "en": "💡 Noun Structure (das Gesundheitssystem)",
+        "ar": "💡 بنية الاسم (das Gesundheitssystem)",
+        "uk": "💡 Структура іменника (das Gesundheitssystem)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das deutsche Gesundheitssystem basiert auf dem Hausarztprinzip.",
+        "tr": "Alman sağlık sistemi aile hekimliği ilkesine dayanır.",
+        "en": "The German healthcare system is based on the family doctor principle.",
+        "ar": "يرتكز النظام الصحي الألماني على مبدأ طبيب الأسرة.",
+        "uk": "Німецька система охорони здоров'я базується на принципі сімейного лікаря."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Gesundheitssystem eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Gesundheitssystem günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Gesundheitssystem plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "gewaltigen": {
+    "de": "gewaltig",
+    "displayDe": "gewaltig",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "muazzam, çok büyük",
+    "en": "enormous / immense",
+    "ar": "هائل / ضخم",
+    "uk": "величезний / колосальний",
+    "example_de": "Die Sanierung des Schienennetzes erfordert gewaltige Investitionen.",
+    "example_tr": "Ray ağının yenilenmesi muazzam yatırımlar gerektirir.",
+    "example_en": "Renovating the rail network requires enormous investments.",
+    "example_ar": "يتطلب تحديث شبكة السكك الحديدية استثمارات ضخمة.",
+    "example_uk": "Оновлення колійної мережі вимагає колосальних інвестицій.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'gewaltig' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'gewaltig' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'gewaltig' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'gewaltig' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Sanierung des Schienennetzes erfordert gewaltige Investitionen.",
+        "tr": "Ray ağının yenilenmesi muazzam yatırımlar gerektirir.",
+        "en": "Renovating the rail network requires enormous investments.",
+        "ar": "يتطلب تحديث شبكة السكك الحديدية استثمارات ضخمة.",
+        "uk": "Оновлення колійної мережі вимагає колосальних інвестицій."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag gewaltig zu sein.",
+        "tr": "İş ve günlük yaşamda muazzam, çok büyük olmak son derece önemlidir.",
+        "en": "It is very important to be enormous / immense in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "gewinnt": {
+    "de": "gewinnen",
+    "displayDe": "gewinnen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "kazanmak (er/sie/es gewinnt)",
+    "en": "gains / wins",
+    "ar": "يكتسب / يربح",
+    "uk": "здобуває / виграє",
+    "example_de": "Durch das Sprechen im Alltag gewinnt man Sicherheit.",
+    "example_tr": "Günlük yaşamda konuşarak insan özgüven kazanır.",
+    "example_en": "By speaking in daily life, one gains confidence.",
+    "example_ar": "يكتسب المرء الثقة من خلال التحدث في الحياة اليومية.",
+    "example_uk": "Завдяки щоденному спілкуванню людина здобуває впевненість.",
+    "grammar": {
+      "tr": "Partizip II (Ortaç): 'gewinnen' fiilinin geçmiş zaman (Perfekt) veya edilgen (Passiv) yapımında kullanılan 3. halidir.",
+      "en": "Participle II: The 3rd form of verb 'gewinnen', used in Perfekt or Passiv constructions.",
+      "ar": "اسم المفعول (Partizip II): التصريف الثالث للفعل 'gewinnen'، يُستخدم في الماضي والمبني للمجهول.",
+      "uk": "Дієприкметник (Partizip II): третя форма дієслова 'gewinnen', вживається в Perfekt або пасиві.",
+      "title": {
+        "tr": "💡 Fiil Çekimi: Partizip II / Passiv (Edilgen)",
+        "en": "💡 Verb Form: Participle II / Passive Voice",
+        "ar": "💡 تصريف الفعل: اسم المفعول / المبني للمجهول",
+        "uk": "💡 Форма дієслова: Partizip II / Пасивний стан"
+      }
+    },
+    "examples": [
+      {
+        "de": "Durch das Sprechen im Alltag gewinnt man Sicherheit.",
+        "tr": "Günlük yaşamda konuşarak insan özgüven kazanır.",
+        "en": "By speaking in daily life, one gains confidence.",
+        "ar": "يكتسب المرء الثقة من خلال التحدث في الحياة اليومية.",
+        "uk": "Завдяки щоденному спілкуванню людина здобуває впевненість."
+      },
+      {
+        "de": "In Deutschland kann man gewinnen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için kazanmak (er/sie/es gewinnt) eylemi yapılabilir.",
+        "en": "In Germany, one can gains / wins to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "gewissenhaft": {
+    "de": "gewissenhaft",
+    "displayDe": "gewissenhaft",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "özenli, vicdanlı, titiz",
+    "en": "conscientious / thorough",
+    "ar": "بضمير حي / بدقة وإتقان",
+    "uk": "сумлінний / ретельний",
+    "example_de": "Wer Vorsorgetermine gewissenhaft wahrnimmt, bleibt gesund.",
+    "example_tr": "Kontrol randevularına titizlikle riayet eden kişi sağlıklı kalır.",
+    "example_en": "Whoever conscientiously attends checkups stays healthy.",
+    "example_ar": "من يلتزم بالفحوصات الوقائية بدقة يحافظ على صحته.",
+    "example_uk": "Той, хто сумлінно відвідує огляди, зберігає здоров'я.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'gewissenhaft' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'gewissenhaft' describes quality or state.",
+      "ar": "صفة: 'gewissenhaft' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'gewissenhaft' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (gewissenhaft)",
+        "en": "💡 Adjective (gewissenhaft)",
+        "ar": "💡 بنية الصفة (gewissenhaft)",
+        "uk": "💡 Структура прикметника (gewissenhaft)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer Vorsorgetermine gewissenhaft wahrnimmt, bleibt gesund.",
+        "tr": "Kontrol randevularına titizlikle riayet eden kişi sağlıklı kalır.",
+        "en": "Whoever conscientiously attends checkups stays healthy.",
+        "ar": "من يلتزم بالفحوصات الوقائية بدقة يحافظ على صحته.",
+        "uk": "Той, хто сумлінно відвідує огляди, зберігає здоров'я."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag gewissenhaft zu sein.",
+        "tr": "İş ve günlük yaşamda özenli, vicdanlı, titiz olmak son derece önemlidir.",
+        "en": "It is very important to be conscientious / thorough in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "gewonnene": {
+    "de": "gewinnen",
+    "displayDe": "gewonnen",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "kazanılan (çekimli sıfat)",
+    "en": "gained / won",
+    "ar": "المكتسب",
+    "uk": "здобутий",
+    "example_de": "Die gewonnene Sprachkompetenz erleichtert den Berufseinstieg.",
+    "example_tr": "Kazanılan dil yetkinliği işe başlamayı kolaylaştırır.",
+    "example_en": "The gained language competence facilitates starting a job.",
+    "example_ar": "الكفاءة اللغوية المكتسبة تسهل الدخول إلى سوق العمل.",
+    "example_uk": "Здобута мовна компетентність полегшує старт у професії.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'gewonnen' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'gewonnen' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'gewonnen' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'gewonnen' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die gewonnene Sprachkompetenz erleichtert den Berufseinstieg.",
+        "tr": "Kazanılan dil yetkinliği işe başlamayı kolaylaştırır.",
+        "en": "The gained language competence facilitates starting a job.",
+        "ar": "الكفاءة اللغوية المكتسبة تسهل الدخول إلى سوق العمل.",
+        "uk": "Здобута мовна компетентність полегшує старт у професії."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag gewonnen zu sein.",
+        "tr": "İş ve günlük yaşamda kazanılan (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be gained / won in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "geworden": {
+    "de": "werden",
+    "displayDe": "werden",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "oldu / haline geldi (Partizip II)",
+    "en": "become (Participle II)",
+    "ar": "أصبح",
+    "uk": "став",
+    "example_de": "Das Ticket ist sehr populär geworden.",
+    "example_tr": "Bilet oldukça popüler hale geldi.",
+    "example_en": "The ticket has become very popular.",
+    "example_ar": "أصبحت التذكرة تحظى بشعبية كبيرة.",
+    "example_uk": "Квиток став надзвичайно популярним.",
+    "grammar": {
+      "tr": "Partizip II (Ortaç): 'werden' fiilinin geçmiş zaman (Perfekt) veya edilgen (Passiv) yapımında kullanılan 3. halidir.",
+      "en": "Participle II: The 3rd form of verb 'werden', used in Perfekt or Passiv constructions.",
+      "ar": "اسم المفعول (Partizip II): التصريف الثالث للفعل 'werden'، يُستخدم في الماضي والمبني للمجهول.",
+      "uk": "Дієприкметник (Partizip II): третя форма дієслова 'werden', вживається в Perfekt або пасиві.",
+      "title": {
+        "tr": "💡 Fiil Çekimi: Partizip II / Passiv (Edilgen)",
+        "en": "💡 Verb Form: Participle II / Passive Voice",
+        "ar": "💡 تصريف الفعل: اسم المفعول / المبني للمجهول",
+        "uk": "💡 Форма дієслова: Partizip II / Пасивний стан"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Ticket ist sehr populär geworden.",
+        "tr": "Bilet oldukça popüler hale geldi.",
+        "en": "The ticket has become very popular.",
+        "ar": "أصبحت التذكرة تحظى بشعبية كبيرة.",
+        "uk": "Квиток став надзвичайно популярним."
+      },
+      {
+        "de": "In Deutschland kann man werden, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için oldu / haline geldi (Partizip II) eylemi yapılabilir.",
+        "en": "In Germany, one can become (Participle II) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "gezielte": {
+    "de": "gezielt",
+    "displayDe": "gezielt",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "hedefe yönelik, amaçlı",
+    "en": "targeted / specific",
+    "ar": "موجه / هادف",
+    "uk": "цілеспрямований",
+    "example_de": "Gezielte Vorsorgeuntersuchungen helfen bei der Früherkennung.",
+    "example_tr": "Hedefe yönelik kontroller erken teşhiste yardımcı olur.",
+    "example_en": "Targeted checkups help with early detection.",
+    "example_ar": "تساعد الفحوصات الوقائية الموجهة في الكشف المبكر.",
+    "example_uk": "Цілеспрямовані огляди допомагають ранньому виявленню.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'gezielt' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'gezielt' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'gezielt' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'gezielt' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Gezielte Vorsorgeuntersuchungen helfen bei der Früherkennung.",
+        "tr": "Hedefe yönelik kontroller erken teşhiste yardımcı olur.",
+        "en": "Targeted checkups help with early detection.",
+        "ar": "تساعد الفحوصات الوقائية الموجهة في الكشف المبكر.",
+        "uk": "Цілеспрямовані огляди допомагають ранньому виявленню."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag gezielt zu sein.",
+        "tr": "İş ve günlük yaşamda hedefe yönelik, amaçlı olmak son derece önemlidir.",
+        "en": "It is very important to be targeted / specific in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "groß": {
+    "de": "groß",
+    "displayDe": "groß",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "büyük",
+    "en": "big / large",
+    "ar": "كبير",
+    "uk": "великий",
+    "example_de": "Das Interesse am Nahverkehrsticket ist sehr groß.",
+    "example_tr": "Yerel ulaşım biletine olan ilgi çok büyük.",
+    "example_en": "Interest in the local transit ticket is very large.",
+    "example_ar": "الإقبال على تذكرة النقل المحلي كبير جداً.",
+    "example_uk": "Інтерес до квитка на транспорт надзвичайно великий.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'groß' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'groß' describes quality or state.",
+      "ar": "صفة: 'groß' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'groß' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (groß)",
+        "en": "💡 Adjective (groß)",
+        "ar": "💡 بنية الصفة (groß)",
+        "uk": "💡 Структура прикметника (groß)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Interesse am Nahverkehrsticket ist sehr groß.",
+        "tr": "Yerel ulaşım biletine olan ilgi çok büyük.",
+        "en": "Interest in the local transit ticket is very large.",
+        "ar": "الإقبال على تذكرة النقل المحلي كبير جداً.",
+        "uk": "Інтерес до квитка на транспорт надзвичайно великий."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag groß zu sein.",
+        "tr": "İş ve günlük yaşamda büyük olmak son derece önemlidir.",
+        "en": "It is very important to be big / large in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "großen": {
+    "de": "groß",
+    "displayDe": "groß",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "büyük (çekimli sıfat)",
+    "en": "large / big (declined)",
+    "ar": "الكبير",
+    "uk": "великий",
+    "example_de": "Das Ticket stieß auf ein großes Interesse bei Pendlern.",
+    "example_tr": "Bilet yolcular arasında büyük bir ilgiyle karşılandı.",
+    "example_en": "The ticket met with great interest among commuters.",
+    "example_ar": "لاقت التذكرة اهتماماً كبيراً بين الركاب.",
+    "example_uk": "Квиток викликав великий інтерес серед пасажирів.",
+    "grammar": {
+      "tr": "Sıfat çekimi (Karışık çekim): 'in einer großen Stadt' yapısında 'in' edatı bulunma (Dativ) gerektirir. 'eine' belirsiz artikeli 'einer' olur ve sıfat '-en' takısı alır.",
+      "en": "Mixed adjective declension: In 'in einer großen Stadt', the preposition 'in' governs Dative (location). After indefinite article 'einer', the adjective takes '-en'.",
+      "ar": "تصريف مختلط: في 'in einer großen Stadt'، حرف الجر 'in' يتطلب Dativ للمكان، وبعد أداة التنكير 'einer' تأخذ الصفة لاحقة '-en'.",
+      "uk": "Мішана відміна: у 'in einer großen Stadt' прийменник 'in' вимагає давального відмінка для місцезнаходження, тому після 'einer' прикметник отримує '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Ticket stieß auf ein großes Interesse bei Pendlern.",
+        "tr": "Bilet yolcular arasında büyük bir ilgiyle karşılandı.",
+        "en": "The ticket met with great interest among commuters.",
+        "ar": "لاقت التذكرة اهتماماً كبيراً بين الركاب.",
+        "uk": "Квиток викликав великий інтерес серед пасажирів."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag groß zu sein.",
+        "tr": "İş ve günlük yaşamda büyük (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be large / big (declined) in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "grundlage": {
+    "de": "die Grundlage",
+    "displayDe": "Grundlage",
+    "article": "die",
+    "plural": "die Grundlagen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "temel, dayanak",
+    "en": "basis / foundation",
+    "ar": "أساس / قاعدة",
+    "uk": "основа / фундамент",
+    "example_de": "Die deutsche Sprache bildet die Grundlage für die Einbürgerung.",
+    "example_tr": "Almanca dili vatandaşlığa kabul için temel oluşturur.",
+    "example_en": "The German language forms the basis for naturalization.",
+    "example_ar": "تشكل اللغة الألمانية الأساس للتجنيس.",
+    "example_uk": "Німецька мова становить основу для натуралізації.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Grundlagen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Grundlagen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Grundlagen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Grundlagen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Grundlage)",
+        "en": "💡 Noun Structure (die Grundlage)",
+        "ar": "💡 بنية الاسم (die Grundlage)",
+        "uk": "💡 Структура іменника (die Grundlage)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die deutsche Sprache bildet die Grundlage für die Einbürgerung.",
+        "tr": "Almanca dili vatandaşlığa kabul için temel oluşturur.",
+        "en": "The German language forms the basis for naturalization.",
+        "ar": "تشكل اللغة الألمانية الأساس للتجنيس.",
+        "uk": "Німецька мова становить основу для натуралізації."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Grundlage eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Grundlage günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Grundlage plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "grundlagen": {
+    "de": "die Grundlagen",
+    "displayDe": "Grundlagen",
+    "article": "die",
+    "plural": "die Grundlagen (Pl.)",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "temel bilgiler, esaslar",
+    "en": "fundamentals / basics",
+    "ar": "أسس / مبادئ أساسية",
+    "uk": "основи / засади",
+    "example_de": "Im Kurs werden die rechtlichen Grundlagen vermittelt.",
+    "example_tr": "Kursta hukuki temel bilgiler aktarılır.",
+    "example_en": "The legal basics are taught in the course.",
+    "example_ar": "تُدرس الأسس القانونية في الدورة.",
+    "example_uk": "На курсі викладають правові основи.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Grundlagen (Pl.)'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Grundlagen (Pl.)'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Grundlagen (Pl.)'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Grundlagen (Pl.)'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Kurs werden die rechtlichen Grundlagen vermittelt.",
+        "tr": "Kursta hukuki temel bilgiler aktarılır.",
+        "en": "The legal basics are taught in the course.",
+        "ar": "تُدرس الأسس القانونية في الدورة.",
+        "uk": "На курсі викладають правові основи."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Grundlagen eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Grundlagen günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Grundlagen plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "grundlegender": {
+    "de": "grundlegend",
+    "displayDe": "grundlegend",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "temel, esaslı (Komparativ / Deklination)",
+    "en": "fundamental / basic",
+    "ar": "جوهري / أساسي",
+    "uk": "фундаментальний / базовий",
+    "example_de": "Ein grundlegender Baustein für die Integration ist die Sprache.",
+    "example_tr": "Uyum için temel bir yapı taşı dildir.",
+    "example_en": "A fundamental building block for integration is language.",
+    "example_ar": "اللغة هي الركيزة الأساسية للاندماج.",
+    "example_uk": "Базовим наріжним каменем для інтеграції є мова.",
+    "grammar": {
+      "tr": "Sıfat çekimi / Karşılaştırma: 'grundlegend' sıfatı maskulin nominativ halinde veya karşılaştırma (komparativ) derecesindedir.",
+      "en": "Adjective declension / Comparative: 'grundlegend' is either in the masculine nominative or comparative form.",
+      "ar": "تصريف الصفات أو المقارنة: الصفة 'grundlegend' بصيغة المذكر أو المقارنة.",
+      "uk": "Відмінювання або вищий ступінь: прикметник 'grundlegend' у чоловічому роді або формі порівняння.",
+      "title": {
+        "tr": "💡 Neden \"-er\" takısı aldı? (Sıfat Çekimi / Komparativ)",
+        "en": "💡 Why the \"-er\" ending? (Adjective / Comparative)",
+        "ar": "💡 لماذا لاحقة \"-er\"؟ (تصريف الصفة أو المقارنة)",
+        "uk": "💡 Чому закінчення \"-er\"? (Відмінювання прикметника / Вищий ступінь)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein grundlegender Baustein für die Integration ist die Sprache.",
+        "tr": "Uyum için temel bir yapı taşı dildir.",
+        "en": "A fundamental building block for integration is language.",
+        "ar": "اللغة هي الركيزة الأساسية للاندماج.",
+        "uk": "Базовим наріжним каменем для інтеграції є мова."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag grundlegend zu sein.",
+        "tr": "İş ve günlük yaşamda temel, esaslı (Komparativ / Deklination) olmak son derece önemlidir.",
+        "en": "It is very important to be fundamental / basic in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "grundverordnung": {
+    "de": "die Grundverordnung",
+    "displayDe": "Grundverordnung",
+    "article": "die",
+    "plural": "die Grundverordnungen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "genel tüzük (DSGVO)",
+    "en": "basic regulation (GDPR)",
+    "ar": "اللائحة العامة",
+    "uk": "базовий регламент",
+    "example_de": "Die Datenschutz-Grundverordnung schützt persönliche Rechte.",
+    "example_tr": "Genel Veri Koruma Tüzüğü kişisel hakları korur.",
+    "example_en": "The General Data Protection Regulation protects personal rights.",
+    "example_ar": "تحمي اللائحة العامة لحماية البيانات الحقوق الشخصية.",
+    "example_uk": "Загальний регламент захисту даних охороняє особисті права.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Grundverordnungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Grundverordnungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Grundverordnungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Grundverordnungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Grundverordnung)",
+        "en": "💡 Noun Structure (die Grundverordnung)",
+        "ar": "💡 بنية الاسم (die Grundverordnung)",
+        "uk": "💡 Структура іменника (die Grundverordnung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Datenschutz-Grundverordnung schützt persönliche Rechte.",
+        "tr": "Genel Veri Koruma Tüzüğü kişisel hakları korur.",
+        "en": "The General Data Protection Regulation protects personal rights.",
+        "ar": "تحمي اللائحة العامة لحماية البيانات الحقوق الشخصية.",
+        "uk": "Загальний регламент захисту даних охороняє особисті права."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Grundverordnung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Grundverordnung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Grundverordnung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "hausarzt": {
+    "de": "der Hausarzt",
+    "displayDe": "Hausarzt",
+    "article": "der",
+    "plural": "die Hausärzte",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "aile hekimi / pratisyen doktor",
+    "en": "family doctor / general practitioner",
+    "ar": "طبيب الأسرة",
+    "uk": "сімейний лікар",
+    "example_de": "Bei gesundheitlichen Beschwerden geht man zuerst zum Hausarzt.",
+    "example_tr": "Sağlık şikayetlerinde önce aile hekimine gidilir.",
+    "example_en": "For health complaints, one first visits the family doctor.",
+    "example_ar": "عند الشكوى الصحية يزور المرء طبيب الأسرة أولاً.",
+    "example_uk": "При скаргах на здоров'я спочатку звертаються до сімейного лікаря.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Hausärzte'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Hausärzte'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Hausärzte'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Hausärzte'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Hausarzt)",
+        "en": "💡 Noun Structure (der Hausarzt)",
+        "ar": "💡 بنية الاسم (der Hausarzt)",
+        "uk": "💡 Структура іменника (der Hausarzt)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Bei gesundheitlichen Beschwerden geht man zuerst zum Hausarzt.",
+        "tr": "Sağlık şikayetlerinde önce aile hekimine gidilir.",
+        "en": "For health complaints, one first visits the family doctor.",
+        "ar": "عند الشكوى الصحية يزور المرء طبيب الأسرة أولاً.",
+        "uk": "При скаргах на здоров'я спочатку звертаються до сімейного лікаря."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Hausarzt eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Hausarzt günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Hausarzt plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "hausarztes": {
+    "de": "der Hausarzt",
+    "displayDe": "Hausarzt",
+    "article": "der",
+    "plural": "die Hausärzte",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "aile hekiminin (Genitiv)",
+    "en": "of the family doctor",
+    "ar": "طبيب الأسرة (مضاف إليه)",
+    "uk": "сімейного лікаря",
+    "example_de": "Das System basiert auf dem Prinzip des Hausarztes.",
+    "example_tr": "Sistem aile hekimi ilkesine dayanmaktadır.",
+    "example_en": "The system is based on the principle of the family doctor.",
+    "example_ar": "يقوم النظام على مبدأ طبيب الأسرة.",
+    "example_uk": "Система спирається на принцип сімейного лікаря.",
+    "grammar": {
+      "title": {
+        "tr": "💡 İsmin Hali: Genitiv Tekil (des Hausarztes)",
+        "en": "💡 Genitive Case: Masculine Singular (des Hausarztes)",
+        "ar": "💡 حالة الإضافة: مفرد مذكر (des Hausarztes)",
+        "uk": "💡 Родовий відмінок: Чоловічий рід однини (des Hausarztes)"
+      },
+      "tr": "Genitiv tekil kuralı: 'der Hausarzt' maskulin tekil bir isimdir. Genitiv tamlamada artikel 'des' olur; sert ünsüzle ('-zt') bittiği için kelime sonuna ses uyumu gereği '-es' eklenir: des Hausarztes (aile hekiminin).",
+      "en": "Genitive singular rule: 'der Hausarzt' is masculine. Takes article 'des', and because of the consonant cluster ending, adds '-es': des Hausarztes (of the family doctor).",
+      "ar": "قاعدة الـ Genitiv للمفرد: 'der Hausarzt' اسم مذكر. في حالة المضاف إليه تصبح الأداة 'des' وتضاف اللاحقة '-es': des Hausarztes (لطبيب الأسرة).",
+      "uk": "Родовий відмінок однини: 'der Hausarzt' — іменник чоловічого роду. У Genitiv отримує артикль 'des' та закінчення '-es': des Hausarztes (сімейного лікаря)."
+    },
+    "examples": [
+      {
+        "de": "Das System basiert auf dem Prinzip des Hausarztes.",
+        "tr": "Sistem aile hekimi ilkesine dayanmaktadır.",
+        "en": "The system is based on the principle of the family doctor.",
+        "ar": "يقوم النظام على مبدأ طبيب الأسرة.",
+        "uk": "Система спирається на принцип сімейного лікаря."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Hausarzt eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Hausarzt günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Hausarzt plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "hohe": {
+    "de": "hoch",
+    "displayDe": "hoch",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "yüksek",
+    "en": "high",
+    "ar": "عالي / مرتفع",
+    "uk": "високий",
+    "example_de": "Die Nachfrage nach dem Ticket ist sehr hoch.",
+    "example_tr": "Bilete olan talep çok yüksek.",
+    "example_en": "The demand for the ticket is very high.",
+    "example_ar": "الطلب على التذكرة مرتفع للغاية.",
+    "example_uk": "Попит на цей квиток дуже високий.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'hoch' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'hoch' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'hoch' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'hoch' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Nachfrage nach dem Ticket ist sehr hoch.",
+        "tr": "Bilete olan talep çok yüksek.",
+        "en": "The demand for the ticket is very high.",
+        "ar": "الطلب على التذكرة مرتفع للغاية.",
+        "uk": "Попит на цей квиток дуже високий."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag hoch zu sein.",
+        "tr": "İş ve günlük yaşamda yüksek olmak son derece önemlidir.",
+        "en": "It is very important to be high in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "hyperlinks": {
+    "de": "der Hyperlink",
+    "displayDe": "Hyperlink",
+    "article": "der",
+    "plural": "die Hyperlinks",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "köprüler, internet bağlantı linkleri",
+    "en": "hyperlinks / web links",
+    "ar": "الروابط التشعبية",
+    "uk": "гіперпосилання",
+    "example_de": "Klicken Sie niemals auf unbekannte Hyperlinks in E-Mails.",
+    "example_tr": "E-postalardaki bilinmeyen köprülere asla tıklamayın.",
+    "example_en": "Never click on unknown hyperlinks in emails.",
+    "example_ar": "لا تنقر أبداً على الروابط التشعبية المجهولة في رسائل البريد.",
+    "example_uk": "Ніколи не переходьте за невідомими гіперпосиланнями в листах.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Hyperlinks'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Hyperlinks'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Hyperlinks'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Hyperlinks'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Klicken Sie niemals auf unbekannte Hyperlinks in E-Mails.",
+        "tr": "E-postalardaki bilinmeyen köprülere asla tıklamayın.",
+        "en": "Never click on unknown hyperlinks in emails.",
+        "ar": "لا تنقر أبداً على الروابط التشعبية المجهولة في رسائل البريد.",
+        "uk": "Ніколи не переходьте за невідомими гіперпосиланнями в листах."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Hyperlink eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Hyperlink günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Hyperlink plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "häufiger": {
+    "de": "häufig",
+    "displayDe": "häufig",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "A2",
+    "tr": "daha sık, sıklıkla",
+    "en": "more frequently / often",
+    "ar": "بشكل متكرر أكثر",
+    "uk": "частіше",
+    "example_de": "Fahrgäste beklagen häufiger Verspätungen im Zugverkehr.",
+    "example_tr": "Yolcular tren trafiğindeki gecikmelerden daha sık şikayet ediyor.",
+    "example_en": "Passengers more frequently complain about delays in train service.",
+    "example_ar": "يشكو الركاب بشكل متكرر أكثر من التأخيرات في حركة القطارات.",
+    "example_uk": "Пасажири частіше скаржаться на запізнення поїздів.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'häufig' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'häufig' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'häufig' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'häufig' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (häufig)",
+        "en": "💡 Adverb (häufig)",
+        "ar": "💡 ظرف (häufig)",
+        "uk": "💡 Прислівник (häufig)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Fahrgäste beklagen häufiger Verspätungen im Zugverkehr.",
+        "tr": "Yolcular tren trafiğindeki gecikmelerden daha sık şikayet ediyor.",
+        "en": "Passengers more frequently complain about delays in train service.",
+        "ar": "يشكو الركاب بشكل متكرر أكثر من التأخيرات في حركة القطارات.",
+        "uk": "Пасажири частіше скаржаться на запізнення поїздів."
+      },
+      {
+        "de": "Das Wort 'häufig' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'häufig' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'häufig' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'häufig' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'häufig' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "hören": {
+    "de": "hören",
+    "displayDe": "hören",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "dinlemek, duymak",
+    "en": "to listen / hear",
+    "ar": "استمع / سمع",
+    "uk": "слухати / чути",
+    "example_de": "Regelmäßiges Hören von Podcasts verbessert das Sprachverständnis.",
+    "example_tr": "Düzenli podcast dinlemek dil anlama yeteneğini geliştirir.",
+    "example_en": "Regularly listening to podcasts improves listening comprehension.",
+    "example_ar": "الاستماع المنتظم للبودكاست يطور فهم اللغة المسموعة.",
+    "example_uk": "Регулярне прослуховування подкастів покращує розуміння на слух.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'hören' temel eylem bildiren fiildir.",
+      "en": "Verb: 'hören' denotes action, process, or state.",
+      "ar": "فعل: 'hören' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'hören' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (hören)",
+        "en": "💡 Verb Structure (hören)",
+        "ar": "💡 بنية الفعل (hören)",
+        "uk": "💡 Структура дієслова (hören)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Regelmäßiges Hören von Podcasts verbessert das Sprachverständnis.",
+        "tr": "Düzenli podcast dinlemek dil anlama yeteneğini geliştirir.",
+        "en": "Regularly listening to podcasts improves listening comprehension.",
+        "ar": "الاستماع المنتظم للبودكاست يطور فهم اللغة المسموعة.",
+        "uk": "Регулярне прослуховування подкастів покращує розуміння на слух."
+      },
+      {
+        "de": "In Deutschland kann man hören, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için dinlemek, duymak eylemi yapılabilir.",
+        "en": "In Germany, one can to listen / hear to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "informationen": {
+    "de": "die Information",
+    "displayDe": "Information",
+    "article": "die",
+    "plural": "die Informationen",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "bilgiler",
+    "en": "information",
+    "ar": "معلومات",
+    "uk": "інформація / відомості",
+    "example_de": "Offizielle Informationen findet man auf der Website des Ministeriums.",
+    "example_tr": "Resmi bilgiler bakanlığın internet sitesinde bulunabilir.",
+    "example_en": "Official information can be found on the ministry's website.",
+    "example_ar": "يمكن العثور على المعلومات الرسمية على موقع الوزارة.",
+    "example_uk": "Офіційну інформацію можна знайти на сайті міністерства.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Informationen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Informationen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Informationen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Informationen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Offizielle Informationen findet man auf der Website des Ministeriums.",
+        "tr": "Resmi bilgiler bakanlığın internet sitesinde bulunabilir.",
+        "en": "Official information can be found on the ministry's website.",
+        "ar": "يمكن العثور على المعلومات الرسمية على موقع الوزارة.",
+        "uk": "Офіційну інформацію можна знайти на сайті міністерства."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Information eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Information günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Information plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "innenstadt": {
+    "de": "die Innenstadt",
+    "displayDe": "Innenstadt",
+    "article": "die",
+    "plural": "die Innenstädte",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "şehir merkezi",
+    "en": "city center / downtown",
+    "ar": "وسط المدينة",
+    "uk": "центр міста",
+    "example_de": "Mit der Bahn erreicht man die Innenstadt oft schneller als mit dem Auto.",
+    "example_tr": "Trenle şehir merkezine arabaya göre çoğu zaman daha hızlı ulaşılır.",
+    "example_en": "By train, one often reaches the city center faster than by car.",
+    "example_ar": "بالقطار يصل المرء إلى وسط المدينة غالباً أسرع من السيارة.",
+    "example_uk": "Потягом до центру міста часто можна дістатися швидше, ніж машиною.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Innenstädte'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Innenstädte'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Innenstädte'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Innenstädte'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Innenstadt)",
+        "en": "💡 Noun Structure (die Innenstadt)",
+        "ar": "💡 بنية الاسم (die Innenstadt)",
+        "uk": "💡 Структура іменника (die Innenstadt)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Mit der Bahn erreicht man die Innenstadt oft schneller als mit dem Auto.",
+        "tr": "Trenle şehir merkezine arabaya göre çoğu zaman daha hızlı ulaşılır.",
+        "en": "By train, one often reaches the city center faster than by car.",
+        "ar": "بالقطار يصل المرء إلى وسط المدينة غالباً أسرع من السيارة.",
+        "uk": "Потягом до центру міста часто можна дістатися швидше, ніж машиною."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Innenstadt eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Innenstadt günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Innenstadt plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "insgesamt": {
+    "de": "insgesamt",
+    "displayDe": "insgesamt",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "A2",
+    "tr": "toplamda, genel olarak",
+    "en": "in total / altogether",
+    "ar": "إجمالاً / في المجموع",
+    "uk": "загалом / усього",
+    "example_de": "Der Integrationskurs umfasst insgesamt 700 Unterrichtsstunden.",
+    "example_tr": "Uyum kursu toplamda 700 ders saatini kapsar.",
+    "example_en": "The integration course comprises a total of 700 instructional hours.",
+    "example_ar": "تشمل دورة الاندماج 700 ساعة دراسية إجمالاً.",
+    "example_uk": "Інтеграційний курс містить загалом 700 навчальних годин.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'insgesamt' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'insgesamt' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'insgesamt' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'insgesamt' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (insgesamt)",
+        "en": "💡 Adverb (insgesamt)",
+        "ar": "💡 ظرف (insgesamt)",
+        "uk": "💡 Прислівник (insgesamt)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Integrationskurs umfasst insgesamt 700 Unterrichtsstunden.",
+        "tr": "Uyum kursu toplamda 700 ders saatini kapsar.",
+        "en": "The integration course comprises a total of 700 instructional hours.",
+        "ar": "تشمل دورة الاندماج 700 ساعة دراسية إجمالاً.",
+        "uk": "Інтеграційний курс містить загалом 700 навчальних годин."
+      },
+      {
+        "de": "Das Wort 'insgesamt' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'insgesamt' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'insgesamt' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'insgesamt' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'insgesamt' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "integrationskurs": {
+    "de": "der Integrationskurs",
+    "displayDe": "Integrationskurs",
+    "article": "der",
+    "plural": "die Integrationskurse",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "uyum kursu / entegrasyon kursu",
+    "en": "integration course",
+    "ar": "دورة الاندماج",
+    "uk": "інтеграційний курс",
+    "example_de": "Der Integrationskurs hilft Zuwanderern beim Einleben in Deutschland.",
+    "example_tr": "Uyum kursu göçmenlerin Almanya'ya alışmasına yardımcı olur.",
+    "example_en": "The integration course helps immigrants settle in Germany.",
+    "example_ar": "تساعد دورة الاندماج المهاجرين على الاستقرار والعيش في ألمانيا.",
+    "example_uk": "Інтеграційний курс допомагає іммігрантам адаптуватися в Німеччині.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Integrationskurse'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Integrationskurse'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Integrationskurse'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Integrationskurse'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Integrationskurs hilft Zuwanderern beim Einleben in Deutschland.",
+        "tr": "Uyum kursu göçmenlerin Almanya'ya alışmasına yardımcı olur.",
+        "en": "The integration course helps immigrants settle in Germany.",
+        "ar": "تساعد دورة الاندماج المهاجرين على الاستقرار والعيش في ألمانيا.",
+        "uk": "Інтеграційний курс допомагає іммігрантам адаптуватися в Німеччині."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Integrationskurs eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Integrationskurs günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Integrationskurs plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "integrationskurse": {
+    "de": "der Integrationskurs",
+    "displayDe": "Integrationskurs",
+    "article": "der",
+    "plural": "die Integrationskurse",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "uyum kursları",
+    "en": "integration courses",
+    "ar": "دورات الاندماج",
+    "uk": "інтеграційні курси",
+    "example_de": "Integrationskurse werden vom Bundesamt für Migration gefördert.",
+    "example_tr": "Uyum kursları Federal Göç Dairesi tarafından desteklenmektedir.",
+    "example_en": "Integration courses are funded by the Federal Office for Migration.",
+    "example_ar": "تتلقى دورات الاندماج الدعم من المكتب الاتحادي للهجرة.",
+    "example_uk": "Інтеграційні курси фінансуються Федеральним відомством міграції.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Integrationskurse'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Integrationskurse'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Integrationskurse'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Integrationskurse'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Integrationskurs)",
+        "en": "💡 Noun Structure (der Integrationskurs)",
+        "ar": "💡 بنية الاسم (der Integrationskurs)",
+        "uk": "💡 Структура іменника (der Integrationskurs)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Integrationskurse werden vom Bundesamt für Migration gefördert.",
+        "tr": "Uyum kursları Federal Göç Dairesi tarafından desteklenmektedir.",
+        "en": "Integration courses are funded by the Federal Office for Migration.",
+        "ar": "تتلقى دورات الاندماج الدعم من المكتب الاتحادي للهجرة.",
+        "uk": "Інтеграційні курси фінансуються Федеральним відомством міграції."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Integrationskurs eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Integrationskurs günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Integrationskurs plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "internetnutzer": {
+    "de": "der Internetnutzer",
+    "displayDe": "Internetnutzer",
+    "article": "der",
+    "plural": "die Internetnutzer",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "internet kullanıcısı",
+    "en": "internet user",
+    "ar": "مستخدم الإنترنت",
+    "uk": "користувач інтернету",
+    "example_de": "Jeder Internetnutzer sollte auf starke Passwörter achten.",
+    "example_tr": "Her internet kullanıcısı güçlü parolalara dikkat etmelidir.",
+    "example_en": "Every internet user should pay attention to strong passwords.",
+    "example_ar": "يجب على كل مستخدم للإنترنت الانتباه إلى كلمات المرور القوية.",
+    "example_uk": "Кожен користувач інтернету повинен дбати про надійні паролі.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Internetnutzer'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Internetnutzer'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Internetnutzer'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Internetnutzer'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Internetnutzer)",
+        "en": "💡 Noun Structure (der Internetnutzer)",
+        "ar": "💡 بنية الاسم (der Internetnutzer)",
+        "uk": "💡 Структура іменника (der Internetnutzer)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Jeder Internetnutzer sollte auf starke Passwörter achten.",
+        "tr": "Her internet kullanıcısı güçlü parolalara dikkat etmelidir.",
+        "en": "Every internet user should pay attention to strong passwords.",
+        "ar": "يجب على كل مستخدم للإنترنت الانتباه إلى كلمات المرور القوية.",
+        "uk": "Кожен користувач інтернету повинен дбати про надійні паролі."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Internetnutzer eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Internetnutzer günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Internetnutzer plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "investitionen": {
+    "de": "die Investition",
+    "displayDe": "Investition",
+    "article": "die",
+    "plural": "die Investitionen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "yatırımlar",
+    "en": "investments",
+    "ar": "استثمارات",
+    "uk": "інвестиції",
+    "example_de": "Milliardeninvestitionen in die Schiene sind dringend erforderlich.",
+    "example_tr": "Demiryollarına milyarlarca liralık yatırım acilen gereklidir.",
+    "example_en": "Billion-dollar investments in rail are urgently needed.",
+    "example_ar": "الاستثمارات المليارية في السكك الحديدية مطلوبة بصورة عاجلة.",
+    "example_uk": "Мільярдні інвестиції в залізницю є терміново необхідними.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Investitionen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Investitionen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Investitionen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Investitionen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Milliardeninvestitionen in die Schiene sind dringend erforderlich.",
+        "tr": "Demiryollarına milyarlarca liralık yatırım acilen gereklidir.",
+        "en": "Billion-dollar investments in rail are urgently needed.",
+        "ar": "الاستثمارات المليارية في السكك الحديدية مطلوبة بصورة عاجلة.",
+        "uk": "Мільярдні інвестиції в залізницю є терміново необхідними."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Investition eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Investition günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Investition plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "it": {
+    "de": "die IT",
+    "displayDe": "IT",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "bilişim teknolojileri (BT)",
+    "en": "information technology (IT)",
+    "ar": "تكنولوجيا المعلومات",
+    "uk": "інформаційні технології (IT)",
+    "example_de": "Spezialisten für IT-Sicherheit warnen vor Cyberkriminalität.",
+    "example_tr": "Bilişim güvenliği uzmanları siber suçlara karşı uyarıyor.",
+    "example_en": "IT security specialists warn against cybercrime.",
+    "example_ar": "يحذر أخصائيو أمن تكنولوجيا المعلومات من الجرائم الإلكترونية.",
+    "example_uk": "Фахівці з IT-безпеки застерігають від кіберзлочинності.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die IT)",
+        "en": "💡 Noun Structure (die IT)",
+        "ar": "💡 بنية الاسم (die IT)",
+        "uk": "💡 Структура іменника (die IT)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Spezialisten für IT-Sicherheit warnen vor Cyberkriminalität.",
+        "tr": "Bilişim güvenliği uzmanları siber suçlara karşı uyarıyor.",
+        "en": "IT security specialists warn against cybercrime.",
+        "ar": "يحذر أخصائيو أمن تكنولوجيا المعلومات من الجرائم الإلكترونية.",
+        "uk": "Фахівці з IT-безпеки застерігають від кіберзлочинності."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die IT eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için IT günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, IT plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "jahresende": {
+    "de": "das Jahresende",
+    "displayDe": "Jahresende",
+    "article": "das",
+    "plural": "-",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "yıl sonu",
+    "en": "year-end / end of the year",
+    "ar": "نهاية العام",
+    "uk": "кінець року",
+    "example_de": "Am Jahresende werden Bonuspunkte als Prämie ausgezahlt.",
+    "example_tr": "Yıl sonunda bonus puanlar ikramiye olarak ödenir.",
+    "example_en": "At the end of the year, bonus points are paid out as a reward.",
+    "example_ar": "في نهاية العام تُصرف نقاط المكافأة كمكافأة مالية.",
+    "example_uk": "Наприкінці року бонусні бали виплачуються як премія.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Jahresende)",
+        "en": "💡 Noun Structure (das Jahresende)",
+        "ar": "💡 بنية الاسم (das Jahresende)",
+        "uk": "💡 Структура іменника (das Jahresende)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Am Jahresende werden Bonuspunkte als Prämie ausgezahlt.",
+        "tr": "Yıl sonunda bonus puanlar ikramiye olarak ödenir.",
+        "en": "At the end of the year, bonus points are paid out as a reward.",
+        "ar": "في نهاية العام تُصرف نقاط المكافأة كمكافأة مالية.",
+        "uk": "Наприкінці року бонусні бали виплачуються як премія."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Jahresende eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Jahresende günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Jahresende plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "jeden": {
+    "de": "jeder",
+    "displayDe": "jeder",
+    "article": "",
+    "plural": "",
+    "pos": "pron",
+    "level": "A1",
+    "tr": "her (Akkusativ Maskulinum)",
+    "en": "every / each",
+    "ar": "كل",
+    "uk": "кожен",
+    "example_de": "Er nutzt das Ticket jeden Tag auf dem Weg zur Arbeit.",
+    "example_tr": "Bileti her gün işe giderken kullanıyor.",
+    "example_en": "He uses the ticket every day on his way to work.",
+    "example_ar": "يستخدم التذكرة كل يوم في طريقه إلى العمل.",
+    "example_uk": "Він користується квитком щодня дорогою на роботу.",
+    "grammar": {
+      "tr": "Zamir (Pronomen): 'jeder' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
+      "en": "Pronoun: 'jeder' stands in place of a noun and reflects grammatical case.",
+      "ar": "ضمير: 'jeder' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
+      "uk": "Займенник: 'jeder' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
+    },
+    "examples": [
+      {
+        "de": "Er nutzt das Ticket jeden Tag auf dem Weg zur Arbeit.",
+        "tr": "Bileti her gün işe giderken kullanıyor.",
+        "en": "He uses the ticket every day on his way to work.",
+        "ar": "يستخدم التذكرة كل يوم في طريقه إلى العمل.",
+        "uk": "Він користується квитком щодня дорогою на роботу."
+      },
+      {
+        "de": "Das Wort 'jeder' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'jeder' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'jeder' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'jeder' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'jeder' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "jederzeit": {
+    "de": "jederzeit",
+    "displayDe": "jederzeit",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "A2",
+    "tr": "her zaman, günün her saatinde",
+    "en": "anytime / at any time",
+    "ar": "في أي وقت",
+    "uk": "у будь-який час",
+    "example_de": "Online-Termine können jederzeit gebucht werden.",
+    "example_tr": "İnternet randevuları her zaman alınabilir.",
+    "example_en": "Online appointments can be booked at any time.",
+    "example_ar": "يمكن حجز المواعيد عبر الإنترنت في أي وقت.",
+    "example_uk": "Онлайн-записи можна оформити в будь-який час.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'jederzeit' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'jederzeit' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'jederzeit' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'jederzeit' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (jederzeit)",
+        "en": "💡 Adverb (jederzeit)",
+        "ar": "💡 ظرف (jederzeit)",
+        "uk": "💡 Прислівник (jederzeit)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Online-Termine können jederzeit gebucht werden.",
+        "tr": "İnternet randevuları her zaman alınabilir.",
+        "en": "Online appointments can be booked at any time.",
+        "ar": "يمكن حجز المواعيد عبر الإنترنت في أي وقت.",
+        "uk": "Онлайн-записи можна оформити в будь-який час."
+      },
+      {
+        "de": "Das Wort 'jederzeit' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'jederzeit' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'jederzeit' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'jederzeit' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'jederzeit' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "jedoch": {
+    "de": "jedoch",
+    "displayDe": "jedoch",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "B1",
+    "tr": "ancak, ne var ki, fakat",
+    "en": "however / though",
+    "ar": "غير أن / إلا أن",
+    "uk": "однак / проте",
+    "example_de": "Das Ticket ist günstig, jedoch gibt es manchmal Verspätungen.",
+    "example_tr": "Bilet uygun fiyatlıdır ancak bazen gecikmeler yaşanır.",
+    "example_en": "The ticket is cheap, however there are sometimes delays.",
+    "example_ar": "التذكرة رخيصة، إلا أنه توجد تأخيرات أحياناً.",
+    "example_uk": "Квиток недорогий, проте іноді трапляються запізнення.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'jedoch' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'jedoch' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'jedoch' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'jedoch' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (jedoch)",
+        "en": "💡 Adverb (jedoch)",
+        "ar": "💡 ظرف (jedoch)",
+        "uk": "💡 Прислівник (jedoch)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Ticket ist günstig, jedoch gibt es manchmal Verspätungen.",
+        "tr": "Bilet uygun fiyatlıdır ancak bazen gecikmeler yaşanır.",
+        "en": "The ticket is cheap, however there are sometimes delays.",
+        "ar": "التذكرة رخيصة، إلا أنه توجد تأخيرات أحياناً.",
+        "uk": "Квиток недорогий, проте іноді трапляються запізнення."
+      },
+      {
+        "de": "Das Wort 'jedoch' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'jedoch' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'jedoch' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'jedoch' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'jedoch' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "jährliche": {
+    "de": "jährlich",
+    "displayDe": "jährlich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "yıllık, her yıl yapılan",
+    "en": "annual / yearly",
+    "ar": "سنوي",
+    "uk": "щорічний",
+    "example_de": "Die jährliche Zahnarztkontrolle wird von der Kasse bezahlt.",
+    "example_tr": "Yıllık diş hekimi kontrolü sigorta kasası tarafından ödenir.",
+    "example_en": "The annual dental checkup is paid for by the insurer.",
+    "example_ar": "يغطي التأمين الصحي تكاليف فحص الأسنان السنوي.",
+    "example_uk": "Щорічний огляд у стоматолога оплачується лікарняною касою.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'jährlich' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'jährlich' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'jährlich' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'jährlich' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die jährliche Zahnarztkontrolle wird von der Kasse bezahlt.",
+        "tr": "Yıllık diş hekimi kontrolü sigorta kasası tarafından ödenir.",
+        "en": "The annual dental checkup is paid for by the insurer.",
+        "ar": "يغطي التأمين الصحي تكاليف فحص الأسنان السنوي.",
+        "uk": "Щорічний огляд у стоматолога оплачується лікарняною касою."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag jährlich zu sein.",
+        "tr": "İş ve günlük yaşamda yıllık, her yıl yapılan olmak son derece önemlidir.",
+        "en": "It is very important to be annual / yearly in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "kardiologen": {
+    "de": "der Kardiologe",
+    "displayDe": "Kardiologe",
+    "article": "der",
+    "plural": "die Kardiologen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "kardiyologlar, kalp doktorları",
+    "en": "cardiologists",
+    "ar": "أطباء القلب",
+    "uk": "кардіологи",
+    "example_de": "Bei Herzproblemen überweist der Hausarzt an Kardiologen.",
+    "example_tr": "Kalp sorunlarında aile hekimi kardiyologlara sevk eder.",
+    "example_en": "For heart problems, the GP refers to cardiologists.",
+    "example_ar": "في مشاكل القلب يحول طبيب الأسرة إلى أخصائيي القلب.",
+    "example_uk": "При проблемах із серцем сімейний лікар направляє до кардіологів.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Kardiologen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Kardiologen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Kardiologen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Kardiologen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Bei Herzproblemen überweist der Hausarzt an Kardiologen.",
+        "tr": "Kalp sorunlarında aile hekimi kardiyologlara sevk eder.",
+        "en": "For heart problems, the GP refers to cardiologists.",
+        "ar": "في مشاكل القلب يحول طبيب الأسرة إلى أخصائيي القلب.",
+        "uk": "При проблемах із серцем сімейний лікар направляє до кардіологів."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Kardiologe eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Kardiologe günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Kardiologe plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "kassen": {
+    "de": "die Kasse",
+    "displayDe": "Kasse",
+    "article": "die",
+    "plural": "die Kassen",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "kasalar, sağlık sigortası kurumları (Krankenkassen)",
+    "en": "health insurers / health funds",
+    "ar": "صناديق التأمين الصحي",
+    "uk": "лікарняні каси / фонди страхування",
+    "example_de": "Viele Kassen belohnen sportliche Aktivitäten mit Prämien.",
+    "example_tr": "Birçok sigorta kasası sportif faaliyetleri primlerle ödüllendirir.",
+    "example_en": "Many health insurers reward sporting activities with bonuses.",
+    "example_ar": "تكافئ العديد من صناديق التأمين الأنشطة الرياضية بمكافآت.",
+    "example_uk": "Багато страхових кас заохочують спорт грошовими преміями.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Kassen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Kassen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Kassen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Kassen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Viele Kassen belohnen sportliche Aktivitäten mit Prämien.",
+        "tr": "Birçok sigorta kasası sportif faaliyetleri primlerle ödüllendirir.",
+        "en": "Many health insurers reward sporting activities with bonuses.",
+        "ar": "تكافئ العديد من صناديق التأمين الأنشطة الرياضية بمكافآت.",
+        "uk": "Багато страхових кас заохочують спорт грошовими преміями."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Kasse eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Kasse günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Kasse plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "keine": {
+    "de": "kein",
+    "displayDe": "keine",
+    "article": "",
+    "plural": "",
+    "pos": "pron",
+    "level": "A1",
+    "tr": "hiçbir, yok",
+    "en": "no / none",
+    "ar": "لا / ليس هناك",
+    "uk": "ніякий / жоден",
+    "example_de": "Es entstehen dem Versicherten keine zusätzlichen Kosten.",
+    "example_tr": "Sigortalıya hiçbir ek masraf çıkmaz.",
+    "example_en": "No additional costs are incurred by the insured person.",
+    "example_ar": "لا تنشأ أي تكاليف إضافية على المؤمن عليه.",
+    "example_uk": "Для застрахованої особи не виникає жодних додаткових витрат.",
+    "grammar": {
+      "tr": "Zamir (Pronomen): 'keine' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
+      "en": "Pronoun: 'keine' stands in place of a noun and reflects grammatical case.",
+      "ar": "ضمير: 'keine' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
+      "uk": "Займенник: 'keine' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
+    },
+    "examples": [
+      {
+        "de": "Es entstehen dem Versicherten keine zusätzlichen Kosten.",
+        "tr": "Sigortalıya hiçbir ek masraf çıkmaz.",
+        "en": "No additional costs are incurred by the insured person.",
+        "ar": "لا تنشأ أي تكاليف إضافية على المؤمن عليه.",
+        "uk": "Для застрахованої особи не виникає жодних додаткових витрат."
+      },
+      {
+        "de": "Das Wort 'keine' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'keine' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'keine' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'keine' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'keine' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "kennt": {
+    "de": "kennen",
+    "displayDe": "kennen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "tanımak, bilmek (er/sie/es kennt)",
+    "en": "knows / is familiar with",
+    "ar": "يعرف / يعلم",
+    "uk": "знає",
+    "example_de": "Der Hausarzt kennt seine Patienten seit vielen Jahren.",
+    "example_tr": "Aile hekimi hastalarını uzun yıllardır tanır.",
+    "example_en": "The family doctor has known their patients for many years.",
+    "example_ar": "يعرف طبيب الأسرة مرضاه منذ سنوات طويلة.",
+    "example_uk": "Сімейний лікар знає своїх пацієнтів багато років.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'kennen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'kennen' denotes action, process, or state.",
+      "ar": "فعل: 'kennen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'kennen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (kennen)",
+        "en": "💡 Verb Structure (kennen)",
+        "ar": "💡 بنية الفعل (kennen)",
+        "uk": "💡 Структура дієслова (kennen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Hausarzt kennt seine Patienten seit vielen Jahren.",
+        "tr": "Aile hekimi hastalarını uzun yıllardır tanır.",
+        "en": "The family doctor has known their patients for many years.",
+        "ar": "يعرف طبيب الأسرة مرضاه منذ سنوات طويلة.",
+        "uk": "Сімейний лікар знає своїх пацієнтів багато років."
+      },
+      {
+        "de": "In Deutschland kann man kennen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için tanımak, bilmek (er/sie/es kennt) eylemi yapılabilir.",
+        "en": "In Germany, one can knows / is familiar with to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "kenntnisse": {
+    "de": "die Kenntnis",
+    "displayDe": "Kenntnisse",
+    "article": "die",
+    "plural": "die Kenntnisse (Pl.)",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "bilgiler, dil bilgisi / birikim",
+    "en": "knowledge / skills",
+    "ar": "معارف / مهارات",
+    "uk": "знання / навички",
+    "example_de": "Gute Deutschkenntnisse sind der Schlüssel zum Erfolg.",
+    "example_tr": "İyi Almanca bilgisi başarının anahtarıdır.",
+    "example_en": "Good German language skills are the key to success.",
+    "example_ar": "المعرفة الجيدة بالألمانية هي مفتاح النجاح.",
+    "example_uk": "Добре знання німецької мови є ключем до успіху.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Kenntnisse (Pl.)'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Kenntnisse (Pl.)'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Kenntnisse (Pl.)'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Kenntnisse (Pl.)'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Kenntnisse)",
+        "en": "💡 Noun Structure (die Kenntnisse)",
+        "ar": "💡 بنية الاسم (die Kenntnisse)",
+        "uk": "💡 Структура іменника (die Kenntnisse)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Gute Deutschkenntnisse sind der Schlüssel zum Erfolg.",
+        "tr": "İyi Almanca bilgisi başarının anahtarıdır.",
+        "en": "Good German language skills are the key to success.",
+        "ar": "المعرفة الجيدة بالألمانية هي مفتاح النجاح.",
+        "uk": "Добре знання німецької мови є ключем до успіху."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Kenntnisse eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Kenntnisse günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Kenntnisse plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "klassenzimmer": {
+    "de": "das Klassenzimmer",
+    "displayDe": "Klassenzimmer",
+    "article": "das",
+    "plural": "die Klassenzimmer",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "sınıf, derslik",
+    "en": "classroom",
+    "ar": "غرفة الصف / الفصل الدراسي",
+    "uk": "класна кімната / аудиторія",
+    "example_de": "Im Klassenzimmer üben die Teilnehmer aktiv das Sprechen.",
+    "example_tr": "Derslikte katılımcılar aktif olarak konuşma pratiği yaparlar.",
+    "example_en": "In the classroom, participants actively practice speaking.",
+    "example_ar": "في الفصل الدراسي يتدرب المشاركون بنشاط على المحادثة.",
+    "example_uk": "В аудиторії учасники активно тренують розмовне мовлення.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Klassenzimmer'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Klassenzimmer'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Klassenzimmer'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Klassenzimmer'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Klassenzimmer)",
+        "en": "💡 Noun Structure (das Klassenzimmer)",
+        "ar": "💡 بنية الاسم (das Klassenzimmer)",
+        "uk": "💡 Структура іменника (das Klassenzimmer)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Klassenzimmer üben die Teilnehmer aktiv das Sprechen.",
+        "tr": "Derslikte katılımcılar aktif olarak konuşma pratiği yaparlar.",
+        "en": "In the classroom, participants actively practice speaking.",
+        "ar": "في الفصل الدراسي يتدرب المشاركون بنشاط على المحادثة.",
+        "uk": "В аудиторії учасники активно тренують розмовне мовлення."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Klassenzimmer eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Klassenzimmer günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Klassenzimmer plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "kleinbuchstaben": {
+    "de": "der Kleinbuchstabe",
+    "displayDe": "Kleinbuchstabe",
+    "article": "der",
+    "plural": "die Kleinbuchstaben",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "küçük harfler",
+    "en": "lowercase letters",
+    "ar": "الحروف الصغيرة",
+    "uk": "малі літери",
+    "example_de": "Passwörter sollten Groß- und Kleinbuchstaben kombinieren.",
+    "example_tr": "Parolalar büyük ve küçük harfleri birleştirmelidir.",
+    "example_en": "Passwords should combine uppercase and lowercase letters.",
+    "example_ar": "يجب أن تجمع كلمات المرور بين الحروف الكبيرة والصغيرة.",
+    "example_uk": "Паролі повинні поєднувати великі та малі літери.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Kleinbuchstaben'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Kleinbuchstaben'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Kleinbuchstaben'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Kleinbuchstaben'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Passwörter sollten Groß- und Kleinbuchstaben kombinieren.",
+        "tr": "Parolalar büyük ve küçük harfleri birleştirmelidir.",
+        "en": "Passwords should combine uppercase and lowercase letters.",
+        "ar": "يجب أن تجمع كلمات المرور بين الحروف الكبيرة والصغيرة.",
+        "uk": "Паролі повинні поєднувати великі та малі літери."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Kleinbuchstabe eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Kleinbuchstabe günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Kleinbuchstabe plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "klicken": {
+    "de": "klicken",
+    "displayDe": "klicken",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "tıklamak",
+    "en": "to click",
+    "ar": "نقر / ضغط على رابط",
+    "uk": "клацати / натискати",
+    "example_de": "Klicken Sie niemals auf verdächtige Verlinkungen.",
+    "example_tr": "Şüpheli bağlantılara asla tıklamayın.",
+    "example_en": "Never click on suspicious links.",
+    "example_ar": "لا تنقر أبداً على الروابط المشبوهة.",
+    "example_uk": "Ніколи не натискайте на підозрілі посилання.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'klicken' temel eylem bildiren fiildir.",
+      "en": "Verb: 'klicken' denotes action, process, or state.",
+      "ar": "فعل: 'klicken' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'klicken' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (klicken)",
+        "en": "💡 Verb Structure (klicken)",
+        "ar": "💡 بنية الفعل (klicken)",
+        "uk": "💡 Структура дієслова (klicken)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Klicken Sie niemals auf verdächtige Verlinkungen.",
+        "tr": "Şüpheli bağlantılara asla tıklamayın.",
+        "en": "Never click on suspicious links.",
+        "ar": "لا تنقر أبداً على الروابط المشبوهة.",
+        "uk": "Ніколи не натискайте на підозрілі посилання."
+      },
+      {
+        "de": "In Deutschland kann man klicken, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için tıklamak eylemi yapılabilir.",
+        "en": "In Germany, one can to click to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "komplizierte": {
+    "de": "kompliziert",
+    "displayDe": "kompliziert",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "karmaşık, karışık",
+    "en": "complicated / complex",
+    "ar": "معقد",
+    "uk": "складний",
+    "example_de": "Früher gab es viele komplizierte Tarifzonen im Nahverkehr.",
+    "example_tr": "Eskiden yerel ulaşımda çok karmaşık tarife bölgeleri vardı.",
+    "example_en": "Previously, there were many complicated fare zones in local transit.",
+    "example_ar": "سابقاً كانت هناك مناطق تعريفة معقدة في النقل العام.",
+    "example_uk": "Раніше в місцевому транспорті було багато складних тарифних зон.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'kompliziert' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'kompliziert' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'kompliziert' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'kompliziert' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Früher gab es viele komplizierte Tarifzonen im Nahverkehr.",
+        "tr": "Eskiden yerel ulaşımda çok karmaşık tarife bölgeleri vardı.",
+        "en": "Previously, there were many complicated fare zones in local transit.",
+        "ar": "سابقاً كانت هناك مناطق تعريفة معقدة في النقل العام.",
+        "uk": "Раніше в місцевому транспорті було багато складних тарифних зон."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag kompliziert zu sein.",
+        "tr": "İş ve günlük yaşamda karmaşık, karışık olmak son derece önemlidir.",
+        "en": "It is very important to be complicated / complex in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "kontodaten": {
+    "de": "die Kontodaten",
+    "displayDe": "Kontodaten",
+    "article": "die",
+    "plural": "die Kontodaten (Pl.)",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "banka hesap bilgileri",
+    "en": "bank account details",
+    "ar": "بيانات الحساب المصرفي",
+    "uk": "реквізити банківського рахунку",
+    "example_de": "Geben Sie vertrauliche Kontodaten niemals auf fremden Websites ein.",
+    "example_tr": "Gizli banka hesap bilgilerinizi asla yabancı web sitelerine girmeyin.",
+    "example_en": "Never enter confidential bank details on unfamiliar websites.",
+    "example_ar": "لا تدخل بيانات الحساب المصرفي السرية على مواقع غير معروفة.",
+    "example_uk": "Ніколи не вводьте конфіденційні банківські реквізити на підозрілих сайтах.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Kontodaten (Pl.)'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Kontodaten (Pl.)'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Kontodaten (Pl.)'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Kontodaten (Pl.)'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Geben Sie vertrauliche Kontodaten niemals auf fremden Websites ein.",
+        "tr": "Gizli banka hesap bilgilerinizi asla yabancı web sitelerine girmeyin.",
+        "en": "Never enter confidential bank details on unfamiliar websites.",
+        "ar": "لا تدخل بيانات الحساب المصرفي السرية على مواقع غير معروفة.",
+        "uk": "Ніколи не вводьте конфіденційні банківські реквізити на підозрілих сайтах."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Kontodaten eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Kontodaten günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Kontodaten plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "kontrolluntersuchungen": {
+    "de": "die Kontrolluntersuchung",
+    "displayDe": "Kontrolluntersuchung",
+    "article": "die",
+    "plural": "die Kontrolluntersuchungen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "kontrol muayeneleri, check-up",
+    "en": "routine checkups / follow-up examinations",
+    "ar": "فحوصات المتابعة والتدقيق",
+    "uk": "контрольні огляди",
+    "example_de": "Regelmäßige Kontrolluntersuchungen schützen die Gesundheit.",
+    "example_tr": "Düzenli kontrol muayeneleri sağlığı korur.",
+    "example_en": "Regular routine checkups protect health.",
+    "example_ar": "الفحوصات الطبية الدورية تحمي الصحة.",
+    "example_uk": "Регулярні контрольні огляди захищають здоров'я.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Kontrolluntersuchungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Kontrolluntersuchungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Kontrolluntersuchungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Kontrolluntersuchungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Regelmäßige Kontrolluntersuchungen schützen die Gesundheit.",
+        "tr": "Düzenli kontrol muayeneleri sağlığı korur.",
+        "en": "Regular routine checkups protect health.",
+        "ar": "الفحوصات الطبية الدورية تحمي الصحة.",
+        "uk": "Регулярні контрольні огляди захищають здоров'я."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Kontrolluntersuchung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Kontrolluntersuchung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Kontrolluntersuchung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "kostenfreie": {
+    "de": "kostenfrei",
+    "displayDe": "kostenfrei",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "ücretsiz (çekimli sıfat)",
+    "en": "free of charge",
+    "ar": "مجاني",
+    "uk": "безкоштовний",
+    "example_de": "Krankenkassen bieten viele kostenfreie Vorsorgeuntersuchungen an.",
+    "example_tr": "Sağlık sigortaları birçok ücretsiz kontrol muayenesi sunar.",
+    "example_en": "Health insurers offer many checkups free of charge.",
+    "example_ar": "تقدم شركات التأمين الصحي العديد من الفحوصات الوقائية المجانية.",
+    "example_uk": "Лікарняні каси пропонують багато безкоштовних оглядів.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'kostenfrei' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'kostenfrei' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'kostenfrei' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'kostenfrei' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Krankenkassen bieten viele kostenfreie Vorsorgeuntersuchungen an.",
+        "tr": "Sağlık sigortaları birçok ücretsiz kontrol muayenesi sunar.",
+        "en": "Health insurers offer many checkups free of charge.",
+        "ar": "تقدم شركات التأمين الصحي العديد من الفحوصات الوقائية المجانية.",
+        "uk": "Лікарняні каси пропонують багато безкоштовних оглядів."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag kostenfrei zu sein.",
+        "tr": "İş ve günlük yaşamda ücretsiz (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be free of charge in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "krankengeschichte": {
+    "de": "die Krankengeschichte",
+    "displayDe": "Krankengeschichte",
+    "article": "die",
+    "plural": "die Krankengeschichten",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "tıbbi geçmiş, hasta anamnezi",
+    "en": "medical history",
+    "ar": "السجل الطبي / التاريخ المرضي",
+    "uk": "історія хвороби / анамнез",
+    "example_de": "Der Hausarzt dokumentiert die Krankengeschichte seiner Patienten.",
+    "example_tr": "Aile hekimi hastalarının tıbbi geçmişini belgeler.",
+    "example_en": "The family doctor documents the medical history of their patients.",
+    "example_ar": "يوثق طبيب الأسرة التاريخ المرضي لمرضاه.",
+    "example_uk": "Сімейний лікар документує історію хвороби пацієнтів.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Krankengeschichten'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Krankengeschichten'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Krankengeschichten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Krankengeschichten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Krankengeschichte)",
+        "en": "💡 Noun Structure (die Krankengeschichte)",
+        "ar": "💡 بنية الاسم (die Krankengeschichte)",
+        "uk": "💡 Структура іменника (die Krankengeschichte)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Hausarzt dokumentiert die Krankengeschichte seiner Patienten.",
+        "tr": "Aile hekimi hastalarının tıbbi geçmişini belgeler.",
+        "en": "The family doctor documents the medical history of their patients.",
+        "ar": "يوثق طبيب الأسرة التاريخ المرضي لمرضاه.",
+        "uk": "Сімейний лікар документує історію хвороби пацієнтів."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Krankengeschichte eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Krankengeschichte günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Krankengeschichte plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "krankenkasse": {
+    "de": "die Krankenkasse",
+    "displayDe": "Krankenkasse",
+    "article": "die",
+    "plural": "die Krankenkassen",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "sağlık sigortası kurumu",
+    "en": "health insurance fund / company",
+    "ar": "صندوق التأمين الصحي",
+    "uk": "лікарняна каса / страхова компанія",
+    "example_de": "Die Krankenkasse übernimmt die Kosten für die ärztliche Behandlung.",
+    "example_tr": "Sağlık sigortası tıbbi tedavi masraflarını karşılar.",
+    "example_en": "The health insurer covers the costs of medical treatment.",
+    "example_ar": "تتكفل شركة التأمين الصحي بتكاليف العلاج الطبي.",
+    "example_uk": "Лікарняна каса покриває витрати на медичне лікування.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Krankenkassen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Krankenkassen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Krankenkassen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Krankenkassen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Krankenkasse)",
+        "en": "💡 Noun Structure (die Krankenkasse)",
+        "ar": "💡 بنية الاسم (die Krankenkasse)",
+        "uk": "💡 Структура іменника (die Krankenkasse)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Krankenkasse übernimmt die Kosten für die ärztliche Behandlung.",
+        "tr": "Sağlık sigortası tıbbi tedavi masraflarını karşılar.",
+        "en": "The health insurer covers the costs of medical treatment.",
+        "ar": "تتكفل شركة التأمين الصحي بتكاليف العلاج الطبي.",
+        "uk": "Лікарняна каса покриває витрати на медичне лікування."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Krankenkasse eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Krankenkasse günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Krankenkasse plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "krankenkassen": {
+    "de": "die Krankenkasse",
+    "displayDe": "Krankenkasse",
+    "article": "die",
+    "plural": "die Krankenkassen",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "sağlık sigortası kurumları (çoğul)",
+    "en": "health insurance companies",
+    "ar": "صناديق التأمين الصحي",
+    "uk": "лікарняні каси",
+    "example_de": "Gesetzliche Krankenkassen finanzieren jährliche Kontrolluntersuchungen.",
+    "example_tr": "Yasal sağlık sigortaları yıllık kontrol muayenelerini finanse eder.",
+    "example_en": "Statutory health insurers fund annual checkups.",
+    "example_ar": "تمول صناديق التأمين الصحي القانونية الفحوصات السنوية.",
+    "example_uk": "Державні лікарняні каси фінансують щорічні огляди.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Krankenkassen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Krankenkassen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Krankenkassen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Krankenkassen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Gesetzliche Krankenkassen finanzieren jährliche Kontrolluntersuchungen.",
+        "tr": "Yasal sağlık sigortaları yıllık kontrol muayenelerini finanse eder.",
+        "en": "Statutory health insurers fund annual checkups.",
+        "ar": "تمول صناديق التأمين الصحي القانونية الفحوصات السنوية.",
+        "uk": "Державні лікарняні каси фінансують щорічні огляди."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Krankenkasse eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Krankenkasse günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Krankenkasse plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "krankmeldung": {
+    "de": "die Krankmeldung",
+    "displayDe": "Krankmeldung",
+    "article": "die",
+    "plural": "die Krankmeldungen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "hastalık bildirimi / iş göremezlik belgesi",
+    "en": "sick note / notification of illness",
+    "ar": "إشعار مرضي / إجازة مرضية",
+    "uk": "повідомлення про хворобу / лікарняний",
+    "example_de": "Die elektronische Krankmeldung geht direkt an den Arbeitgeber.",
+    "example_tr": "Elektronik hastalık bildirimi doğrudan işverene gider.",
+    "example_en": "The electronic sick note goes directly to the employer.",
+    "example_ar": "يصل الإشعار المرضي الإلكتروني مباشرة إلى صاحب العمل.",
+    "example_uk": "Електронний лікарняний надходить безпосередньо роботодавцю.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Krankmeldungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Krankmeldungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Krankmeldungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Krankmeldungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Krankmeldung)",
+        "en": "💡 Noun Structure (die Krankmeldung)",
+        "ar": "💡 بنية الاسم (die Krankmeldung)",
+        "uk": "💡 Структура іменника (die Krankmeldung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die elektronische Krankmeldung geht direkt an den Arbeitgeber.",
+        "tr": "Elektronik hastalık bildirimi doğrudan işverene gider.",
+        "en": "The electronic sick note goes directly to the employer.",
+        "ar": "يصل الإشعار المرضي الإلكتروني مباشرة إلى صاحب العمل.",
+        "uk": "Електронний лікарняний надходить безпосередньо роботодавцю."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Krankmeldung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Krankmeldung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Krankmeldung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "krebsfrüherkennungen": {
+    "de": "die Krebsfrüherkennung",
+    "displayDe": "Krebsfrüherkennung",
+    "article": "die",
+    "plural": "die Krebsfrüherkennungen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "kanser erken teşhis taramaları",
+    "en": "early cancer detection screenings",
+    "ar": "فحوصات الكشف المبكر عن السرطان",
+    "uk": "скринінги раннього виявлення раку",
+    "example_de": "Regelmäßige Krebsfrüherkennungen retten viele Menschenleben.",
+    "example_tr": "Düzenli kanser erken teşhis taramaları birçok hayat kurtarır.",
+    "example_en": "Regular early cancer screenings save many lives.",
+    "example_ar": "فحوصات الكشف المبكر عن السرطان تنقذ حياة الكثيرين.",
+    "example_uk": "Регулярні огляди для раннього виявлення онкології рятують життя.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Krebsfrüherkennungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Krebsfrüherkennungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Krebsfrüherkennungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Krebsfrüherkennungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Regelmäßige Krebsfrüherkennungen retten viele Menschenleben.",
+        "tr": "Düzenli kanser erken teşhis taramaları birçok hayat kurtarır.",
+        "en": "Regular early cancer screenings save many lives.",
+        "ar": "فحوصات الكشف المبكر عن السرطان تنقذ حياة الكثيرين.",
+        "uk": "Регулярні огляди для раннього виявлення онкології рятують життя."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Krebsfrüherkennung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Krebsfrüherkennung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Krebsfrüherkennung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "kreditinstitute": {
+    "de": "das Kreditinstitut",
+    "displayDe": "Kreditinstitut",
+    "article": "das",
+    "plural": "die Kreditinstitute",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "kredi kuruluşları, bankalar",
+    "en": "credit institutions / banking institutions",
+    "ar": "مؤسسات الائتمان / المصارف",
+    "uk": "кредитні установи / банки",
+    "example_de": "Kreditinstitute verlangen strenge Authentifizierungsverfahren.",
+    "example_tr": "Kredi kuruluşları sıkı kimlik doğrulama yöntemleri uygular.",
+    "example_en": "Credit institutions require strict authentication procedures.",
+    "example_ar": "تطلب المؤسسات الائتمانية إجراءات مصادقة صارمة.",
+    "example_uk": "Кредитні установи вимагають суворих процедур автентифікації.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Kreditinstitute'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Kreditinstitute'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Kreditinstitute'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Kreditinstitute'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Kreditinstitut)",
+        "en": "💡 Noun Structure (das Kreditinstitut)",
+        "ar": "💡 بنية الاسم (das Kreditinstitut)",
+        "uk": "💡 Структура іменника (das Kreditinstitut)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Kreditinstitute verlangen strenge Authentifizierungsverfahren.",
+        "tr": "Kredi kuruluşları sıkı kimlik doğrulama yöntemleri uygular.",
+        "en": "Credit institutions require strict authentication procedures.",
+        "ar": "تطلب المؤسسات الائتمانية إجراءات مصادقة صارمة.",
+        "uk": "Кредитні установи вимагають суворих процедур автентифікації."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Kreditinstitut eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Kreditinstitut günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Kreditinstitut plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "kriminelle": {
+    "de": "kriminell",
+    "displayDe": "kriminell",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "suçlu, suçlular",
+    "en": "criminals / criminal",
+    "ar": "مجرمون / جنائي",
+    "uk": "злочинці / кримінальний",
+    "example_de": "Kriminelle versuchen über gefälschte E-Mails an Daten zu gelangen.",
+    "example_tr": "Suçlular sahte e-postalarla verilere ulaşmaya çalışırlar.",
+    "example_en": "Criminals try to obtain data via forged emails.",
+    "example_ar": "يحاول المجرمون الحصول على البيانات عبر رسائل بريد مزيفة.",
+    "example_uk": "Злочинці намагаються отримати доступ до даних через фальшиві листи.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'kriminell' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'kriminell' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'kriminell' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'kriminell' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Kriminelle versuchen über gefälschte E-Mails an Daten zu gelangen.",
+        "tr": "Suçlular sahte e-postalarla verilere ulaşmaya çalışırlar.",
+        "en": "Criminals try to obtain data via forged emails.",
+        "ar": "يحاول المجرمون الحصول على البيانات عبر رسائل بريد مزيفة.",
+        "uk": "Злочинці намагаються отримати доступ до даних через фальшиві листи."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag kriminell zu sein.",
+        "tr": "İş ve günlük yaşamda suçlu, suçlular olmak son derece önemlidir.",
+        "en": "It is very important to be criminals / criminal in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "kundschaft": {
+    "de": "die Kundschaft",
+    "displayDe": "Kundschaft",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "müşteri kitlesi, müşteriler",
+    "en": "clientele / customers",
+    "ar": "الزبائن / العملاء",
+    "uk": "клієнтура / покупці",
+    "example_de": "Verkehrsunternehmen möchten neue Kundschaft für Bus und Bahn gewinnen.",
+    "example_tr": "Ulaşım şirketleri otobüs ve tren için yeni müşteriler kazanmak istiyor.",
+    "example_en": "Transport companies want to win new customers for bus and train.",
+    "example_ar": "ترغب شركات النقل في كسب عملاء جدد للحافلات والقطارات.",
+    "example_uk": "Транспортні компанії прагнуть залучити нових клієнтів до громадського транспорту.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Kundschaft)",
+        "en": "💡 Noun Structure (die Kundschaft)",
+        "ar": "💡 بنية الاسم (die Kundschaft)",
+        "uk": "💡 Структура іменника (die Kundschaft)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Verkehrsunternehmen möchten neue Kundschaft für Bus und Bahn gewinnen.",
+        "tr": "Ulaşım şirketleri otobüs ve tren için yeni müşteriler kazanmak istiyor.",
+        "en": "Transport companies want to win new customers for bus and train.",
+        "ar": "ترغب شركات النقل في كسب عملاء جدد للحافلات والقطارات.",
+        "uk": "Транспортні компанії прагнуть залучити нових клієнтів до громадського транспорту."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Kundschaft eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Kundschaft günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Kundschaft plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "kurs": {
+    "de": "der Kurs",
+    "displayDe": "Kurs",
+    "article": "der",
+    "plural": "die Kurse",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "kurs, eğitim",
+    "en": "course / class",
+    "ar": "دورة / صف دراسي",
+    "uk": "курс",
+    "example_de": "Im Kurs trainieren die Teilnehmer Sprachfertigkeiten für den Alltag.",
+    "example_tr": "Kursta katılımcılar günlük yaşam için dil becerilerini geliştirirler.",
+    "example_en": "In the course, participants train language skills for daily life.",
+    "example_ar": "في الدورة يتدرب المشاركون على مهارات اللغة للحياة اليومية.",
+    "example_uk": "На курсі учасники розвивають мовні навички для повсякденного життя.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Kurse'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Kurse'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Kurse'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Kurse'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Kurs trainieren die Teilnehmer Sprachfertigkeiten für den Alltag.",
+        "tr": "Kursta katılımcılar günlük yaşam için dil becerilerini geliştirirler.",
+        "en": "In the course, participants train language skills for daily life.",
+        "ar": "في الدورة يتدرب المشاركون على مهارات اللغة للحياة اليومية.",
+        "uk": "На курсі учасники розвивають мовні навички для повсякденного життя."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Kurs eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Kurs günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Kurs plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "lang": {
+    "de": "lang",
+    "displayDe": "lang",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "uzun",
+    "en": "long",
+    "ar": "طويل",
+    "uk": "довгий",
+    "example_de": "Ein Passwort sollte mindestens zwölf Zeichen lang sein.",
+    "example_tr": "Bir parola en az on iki karakter uzunluğunda olmalıdır.",
+    "example_en": "A password should be at least twelve characters long.",
+    "example_ar": "يجب أن تكون كلمة المرور بطول اثني عشر حرفاً على الأقل.",
+    "example_uk": "Пароль повинен мати довжину щонайменше дванадцять символів.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'lang' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'lang' describes quality or state.",
+      "ar": "صفة: 'lang' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'lang' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (lang)",
+        "en": "💡 Adjective (lang)",
+        "ar": "💡 بنية الصفة (lang)",
+        "uk": "💡 Структура прикметника (lang)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein Passwort sollte mindestens zwölf Zeichen lang sein.",
+        "tr": "Bir parola en az on iki karakter uzunluğunda olmalıdır.",
+        "en": "A password should be at least twelve characters long.",
+        "ar": "يجب أن تكون كلمة المرور بطول اثني عشر حرفاً على الأقل.",
+        "uk": "Пароль повинен мати довжину щонайменше дванадцять символів."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag lang zu sein.",
+        "tr": "İş ve günlük yaşamda uzun olmak son derece önemlidir.",
+        "en": "It is very important to be long in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "leben": {
+    "de": "das Leben",
+    "displayDe": "Leben",
+    "article": "das",
+    "plural": "-",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "yaşam, hayat / yaşamak",
+    "en": "life / to live",
+    "ar": "حياة / يعيش",
+    "uk": "життя / жити",
+    "example_de": "Der Test 'Leben in Deutschland' prüft staatsbürgerliches Wissen.",
+    "example_tr": "'Almanya'da Yaşam' testi yurttaşlık bilgisini ölçer.",
+    "example_en": "The 'Life in Germany' test assesses civic knowledge.",
+    "example_ar": "يختبر امتحان 'الحياة في ألمانيا' المعرفة المدنية.",
+    "example_uk": "Тест 'Життя в Німеччині' перевіряє знання про державний устрій.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Test 'Leben in Deutschland' prüft staatsbürgerliches Wissen.",
+        "tr": "'Almanya'da Yaşam' testi yurttaşlık bilgisini ölçer.",
+        "en": "The 'Life in Germany' test assesses civic knowledge.",
+        "ar": "يختبر امتحان 'الحياة في ألمانيا' المعرفة المدنية.",
+        "uk": "Тест 'Життя в Німеччині' перевіряє знання про державний устрій."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Leben eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Leben günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Leben plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "legen": {
+    "de": "legen",
+    "displayDe": "legen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "koymak, yatırmak (Wert legen auf = önem vermek)",
+    "en": "to lay / put (Wert legen = attach value)",
+    "ar": "وضع / اهتم بـ",
+    "uk": "класти (Wert legen = надавати значення)",
+    "example_de": "Behörden legen großen Wert auf das Zertifikat B1.",
+    "example_tr": "Resmi makamlar B1 sertifikasına büyük önem verir.",
+    "example_en": "Authorities attach great importance to the B1 certificate.",
+    "example_ar": "تولي السلطات أهمية كبيرة لشهادة B1.",
+    "example_uk": "Органи влади надають великого значення сертифікату B1.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'legen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'legen' denotes action, process, or state.",
+      "ar": "فعل: 'legen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'legen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (legen)",
+        "en": "💡 Verb Structure (legen)",
+        "ar": "💡 بنية الفعل (legen)",
+        "uk": "💡 Структура дієслова (legen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Behörden legen großen Wert auf das Zertifikat B1.",
+        "tr": "Resmi makamlar B1 sertifikasına büyük önem verir.",
+        "en": "Authorities attach great importance to the B1 certificate.",
+        "ar": "تولي السلطات أهمية كبيرة لشهادة B1.",
+        "uk": "Органи влади надають великого значення сертифікату B1."
+      },
+      {
+        "de": "In Deutschland kann man legen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için koymak, yatırmak (Wert legen auf = önem vermek) eylemi yapılabilir.",
+        "en": "In Germany, one can to lay / put (Wert legen = attach value) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "lehrkräfte": {
+    "de": "die Lehrkraft",
+    "displayDe": "Lehrkraft",
+    "article": "die",
+    "plural": "die Lehrkräfte",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "öğretmenler, eğitmenler",
+    "en": "teachers / instructors",
+    "ar": "المعلمون / المدرسون",
+    "uk": "викладачі / вчителі",
+    "example_de": "Qualifizierte Lehrkräfte leiten die Integrationskurse.",
+    "example_tr": "Nitelikli öğretmenler uyum kurslarını yönetir.",
+    "example_en": "Qualified teachers lead the integration courses.",
+    "example_ar": "يدير دورات الاندماج معلمون مؤهلون.",
+    "example_uk": "Кваліфіковані викладачі проводять інтеграційні курси.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Lehrkräfte'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Lehrkräfte'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Lehrkräfte'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Lehrkräfte'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Lehrkraft)",
+        "en": "💡 Noun Structure (die Lehrkraft)",
+        "ar": "💡 بنية الاسم (die Lehrkraft)",
+        "uk": "💡 Структура іменника (die Lehrkraft)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Qualifizierte Lehrkräfte leiten die Integrationskurse.",
+        "tr": "Nitelikli öğretmenler uyum kurslarını yönetir.",
+        "en": "Qualified teachers lead the integration courses.",
+        "ar": "يدير دورات الاندماج معلمون مؤهلون.",
+        "uk": "Кваліфіковані викладачі проводять інтеграційні курси."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Lehrkraft eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Lehrkraft günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Lehrkraft plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "leichtfertig": {
+    "de": "leichtfertig",
+    "displayDe": "leichtfertig",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "dikkatsizce, hafifmeşrep, düşüncesizce",
+    "en": "recklessly / carelessly / thoughtlessly",
+    "ar": "باستهتار / بتسرع وخفة",
+    "uk": "легковажно / необачно",
+    "example_de": "Man sollte persönliche Zugangsdaten niemals leichtfertig preisgeben.",
+    "example_tr": "Kişisel erişim bilgileri asla düşüncesizce başkalarıyla paylaşılmamalıdır.",
+    "example_en": "One should never carelessly disclose personal access credentials.",
+    "example_ar": "لا ينبغي إطلاقاً الإفصاح عن بيانات الدخول باستهتار.",
+    "example_uk": "Ніколи не слід легковажно розголошувати особисті облікові дані.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'leichtfertig' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'leichtfertig' describes quality or state.",
+      "ar": "صفة: 'leichtfertig' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'leichtfertig' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (leichtfertig)",
+        "en": "💡 Adjective (leichtfertig)",
+        "ar": "💡 بنية الصفة (leichtfertig)",
+        "uk": "💡 Структура прикметника (leichtfertig)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Man sollte persönliche Zugangsdaten niemals leichtfertig preisgeben.",
+        "tr": "Kişisel erişim bilgileri asla düşüncesizce başkalarıyla paylaşılmamalıdır.",
+        "en": "One should never carelessly disclose personal access credentials.",
+        "ar": "لا ينبغي إطلاقاً الإفصاح عن بيانات الدخول باستهتار.",
+        "uk": "Ніколи не слід легковажно розголошувати особисті облікові дані."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag leichtfertig zu sein.",
+        "tr": "İş ve günlük yaşamda dikkatsizce, hafifmeşrep, düşüncesizce olmak son derece önemlidir.",
+        "en": "It is very important to be recklessly / carelessly / thoughtlessly in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "lernende": {
+    "de": "der Lernende",
+    "displayDe": "Lernende",
+    "article": "der",
+    "plural": "die Lernenden",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "öğrenenler, kursiyerler",
+    "en": "learners / students",
+    "ar": "المتعلمون / الدارسون",
+    "uk": "учні / слухачі курсів",
+    "example_de": "Lernende üben das Hörverstehen mit authentischen Radiotexten.",
+    "example_tr": "Kursiyerler otantik radyo metinleriyle dinlediğini anlama alıştırması yaparlar.",
+    "example_en": "Learners practice listening comprehension with authentic radio texts.",
+    "example_ar": "يتدرب الدارسون على فهم المسموع باستخدام نصوص إذاعية واقعية.",
+    "example_uk": "Учні тренують аудіювання за допомогою автентичних радіопередач.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Lernenden'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Lernenden'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Lernenden'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Lernenden'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Lernende)",
+        "en": "💡 Noun Structure (der Lernende)",
+        "ar": "💡 بنية الاسم (der Lernende)",
+        "uk": "💡 Структура іменника (der Lernende)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Lernende üben das Hörverstehen mit authentischen Radiotexten.",
+        "tr": "Kursiyerler otantik radyo metinleriyle dinlediğini anlama alıştırması yaparlar.",
+        "en": "Learners practice listening comprehension with authentic radio texts.",
+        "ar": "يتدرب الدارسون على فهم المسموع باستخدام نصوص إذاعية واقعية.",
+        "uk": "Учні тренують аудіювання за допомогою автентичних радіопередач."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Lernende eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Lernende günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Lernende plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "lesen": {
+    "de": "lesen",
+    "displayDe": "lesen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "okumak",
+    "en": "to read",
+    "ar": "قرأ",
+    "uk": "читати",
+    "example_de": "Im Leseteil der Prüfung müssen Teilnehmende kurze Artikel verstehen.",
+    "example_tr": "Sınavın okuma bölümünde katılımcılar kısa makaleleri anlamalıdır.",
+    "example_en": "In the reading section of the exam, participants must understand short articles.",
+    "example_ar": "في قسم القراءة بالامتحان، يجب على المشاركين فهم مقالات قصيرة.",
+    "example_uk": "У частині читання на іспиті учасники повинні розуміти короткі статті.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'lesen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'lesen' denotes action, process, or state.",
+      "ar": "فعل: 'lesen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'lesen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (lesen)",
+        "en": "💡 Verb Structure (lesen)",
+        "ar": "💡 بنية الفعل (lesen)",
+        "uk": "💡 Структура дієслова (lesen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Leseteil der Prüfung müssen Teilnehmende kurze Artikel verstehen.",
+        "tr": "Sınavın okuma bölümünde katılımcılar kısa makaleleri anlamalıdır.",
+        "en": "In the reading section of the exam, participants must understand short articles.",
+        "ar": "في قسم القراءة بالامتحان، يجب على المشاركين فهم مقالات قصيرة.",
+        "uk": "У частині читання на іспиті учасники повинні розуміти короткі статті."
+      },
+      {
+        "de": "In Deutschland kann man lesen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için okumak eylemi yapılabilir.",
+        "en": "In Germany, one can to read to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "löschung": {
+    "de": "die Löschung",
+    "displayDe": "Löschung",
+    "article": "die",
+    "plural": "die Löschungen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "silme, silinme (verilerin silinmesi)",
+    "en": "deletion / erasure",
+    "ar": "حذف البيانات / محو",
+    "uk": "видалення / стирання даних",
+    "example_de": "Bürger haben nach der DSGVO das Recht auf Löschung ihrer Daten.",
+    "example_tr": "Vatandaşların DSGVO uyarınca verilerinin silinmesini isteme hakkı vardır.",
+    "example_en": "Under GDPR, citizens have the right to erasure of their data.",
+    "example_ar": "يحق للمواطنين بموجب اللائحة طلب حذف بياناتهم.",
+    "example_uk": "Згідно з GDPR, громадяни мають право на видалення своїх даних.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Löschungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Löschungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Löschungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Löschungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Löschung)",
+        "en": "💡 Noun Structure (die Löschung)",
+        "ar": "💡 بنية الاسم (die Löschung)",
+        "uk": "💡 Структура іменника (die Löschung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Bürger haben nach der DSGVO das Recht auf Löschung ihrer Daten.",
+        "tr": "Vatandaşların DSGVO uyarınca verilerinin silinmesini isteme hakkı vardır.",
+        "en": "Under GDPR, citizens have the right to erasure of their data.",
+        "ar": "يحق للمواطنين بموجب اللائحة طلب حذف بياناتهم.",
+        "uk": "Згідно з GDPR, громадяни мають право на видалення своїх даних."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Löschung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Löschung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Löschung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "machen": {
+    "de": "machen",
+    "displayDe": "machen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "yapmak (sich Gedanken machen = düşünmek)",
+    "en": "to make / do",
+    "ar": "فعل / صنع",
+    "uk": "робити",
+    "example_de": "Man sollte sich rechtzeitig Gedanken über Datensicherheit machen.",
+    "example_tr": "Veri güvenliği hakkında zamanında düşünmek gerekir.",
+    "example_en": "One should think about data security in good time.",
+    "example_ar": "ينبغي التفكير في أمان البيانات في الوقت المناسب.",
+    "example_uk": "Слід завчасно замислитися над безпекою даних.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'machen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'machen' denotes action, process, or state.",
+      "ar": "فعل: 'machen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'machen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (machen)",
+        "en": "💡 Verb Structure (machen)",
+        "ar": "💡 بنية الفعل (machen)",
+        "uk": "💡 Структура дієслова (machen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Man sollte sich rechtzeitig Gedanken über Datensicherheit machen.",
+        "tr": "Veri güvenliği hakkında zamanında düşünmek gerekir.",
+        "en": "One should think about data security in good time.",
+        "ar": "ينبغي التفكير في أمان البيانات في الوقت المناسب.",
+        "uk": "Слід завчасно замислитися над безпекою даних."
+      },
+      {
+        "de": "In Deutschland kann man machen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için yapmak (sich Gedanken machen = düşünmek) eylemi yapılabilir.",
+        "en": "In Germany, one can to make / do to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "manuell": {
+    "de": "manuell",
+    "displayDe": "manuell",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "B1",
+    "tr": "elle, manuel olarak",
+    "en": "manually",
+    "ar": "يدوياً",
+    "uk": "вручну",
+    "example_de": "Rufen Sie die Website der Bank stets manuell im Browser auf.",
+    "example_tr": "Banka sitesini tarayıcıda her zaman elle yazarak açın.",
+    "example_en": "Always manually open the bank's website in the browser.",
+    "example_ar": "افتح موقع البنك دائماً يدوياً في المتصفح.",
+    "example_uk": "Завжди відкривайте сайт банку вручну в браузері.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'manuell' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'manuell' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'manuell' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'manuell' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (manuell)",
+        "en": "💡 Adverb (manuell)",
+        "ar": "💡 ظرف (manuell)",
+        "uk": "💡 Прислівник (manuell)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Rufen Sie die Website der Bank stets manuell im Browser auf.",
+        "tr": "Banka sitesini tarayıcıda her zaman elle yazarak açın.",
+        "en": "Always manually open the bank's website in the browser.",
+        "ar": "افتح موقع البنك دائماً يدوياً في المتصفح.",
+        "uk": "Завжди відкривайте сайт банку вручну в браузері."
+      },
+      {
+        "de": "Das Wort 'manuell' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'manuell' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'manuell' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'manuell' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'manuell' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "massive": {
+    "de": "massiv",
+    "displayDe": "massiv",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "büyük, ciddi, kitlesel",
+    "en": "massive / substantial",
+    "ar": "هائل / ضخم",
+    "uk": "масивний / масштабний",
+    "example_de": "Massive Investitionen in die Schiene sind dringend notwendig.",
+    "example_tr": "Demiryollarına büyük yatırımlar yapılması acilen gereklidir.",
+    "example_en": "Massive investments in rail infrastructure are urgently necessary.",
+    "example_ar": "الاستثمارات الضخمة في شبكة القطارات ضرورية للغاية.",
+    "example_uk": "Масштабні інвестиції в залізничну мережу є вкрай необхідними.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'massiv' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'massiv' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'massiv' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'massiv' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Massive Investitionen in die Schiene sind dringend notwendig.",
+        "tr": "Demiryollarına büyük yatırımlar yapılması acilen gereklidir.",
+        "en": "Massive investments in rail infrastructure are urgently necessary.",
+        "ar": "الاستثمارات الضخمة في شبكة القطارات ضرورية للغاية.",
+        "uk": "Масштабні інвестиції в залізничну мережу є вкрай необхідними."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag massiv zu sein.",
+        "tr": "İş ve günlük yaşamda büyük, ciddi, kitlesel olmak son derece önemlidir.",
+        "en": "It is very important to be massive / substantial in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "medikamente": {
+    "de": "das Medikament",
+    "displayDe": "Medikament",
+    "article": "das",
+    "plural": "die Medikamente",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "ilaçlar",
+    "en": "medications / medicines",
+    "ar": "أدوية / عقاقير",
+    "uk": "ліки / медикаменти",
+    "example_de": "Der Hausarzt verschreibt notwendige Medikamente auf Rezept.",
+    "example_tr": "Aile hekimi gerekli ilaçları reçeteye yazar.",
+    "example_en": "The family doctor prescribes necessary medications on prescription.",
+    "example_ar": "يصف طبيب الأسرة الأدوية اللازمة في الوصفة الطبية.",
+    "example_uk": "Сімейний лікар виписує необхідні ліки за рецептом.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Medikamente'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Medikamente'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Medikamente'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Medikamente'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Medikament)",
+        "en": "💡 Noun Structure (das Medikament)",
+        "ar": "💡 بنية الاسم (das Medikament)",
+        "uk": "💡 Структура іменника (das Medikament)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Hausarzt verschreibt notwendige Medikamente auf Rezept.",
+        "tr": "Aile hekimi gerekli ilaçları reçeteye yazar.",
+        "en": "The family doctor prescribes necessary medications on prescription.",
+        "ar": "يصف طبيب الأسرة الأدوية اللازمة في الوصفة الطبية.",
+        "uk": "Сімейний лікар виписує необхідні ліки за рецептом."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Medikament eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Medikament günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Medikament plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "medizin": {
+    "de": "die Medizin",
+    "displayDe": "Medizin",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "tıp, tıp bilimi",
+    "en": "medicine / medical science",
+    "ar": "الطب / علم الطب",
+    "uk": "медицина",
+    "example_de": "Ein zentraler Schwerpunkt der modernen Medizin ist die Vorsorge.",
+    "example_tr": "Modern tıbbın en önemli odak noktası koruyucu hekimliktir.",
+    "example_en": "A central focus of modern medicine is preventive care.",
+    "example_ar": "التركيز الأساسي للطب الحديث هو الرعاية الوقائية.",
+    "example_uk": "Головним пріоритетом сучасної медицини є профілактика.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein zentraler Schwerpunkt der modernen Medizin ist die Vorsorge.",
+        "tr": "Modern tıbbın en önemli odak noktası koruyucu hekimliktir.",
+        "en": "A central focus of modern medicine is preventive care.",
+        "ar": "التركيز الأساسي للطب الحديث هو الرعاية الوقائية.",
+        "uk": "Головним пріоритетом сучасної медицини є профілактика."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Medizin eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Medizin günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Medizin plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "meilenstein": {
+    "de": "der Meilenstein",
+    "displayDe": "Meilenstein",
+    "article": "der",
+    "plural": "die Meilensteine",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "dönüm noktası, kilometre taşı",
+    "en": "milestone",
+    "ar": "محطة فارقة / إنجاز بارز",
+    "uk": "віха / переломний момент",
+    "example_de": "Das Deutschlandticket gilt als Meilenstein der Mobilitätswende.",
+    "example_tr": "Almanya bileti ulaşım devriminde bir dönüm noktası kabul edilir.",
+    "example_en": "The Deutschlandticket is considered a milestone in mobility transition.",
+    "example_ar": "تعتبر تذكرة ألمانيا محطة فارقة في التحول نحو النقل المستدام.",
+    "example_uk": "Дойчландтикет вважається важливою віхою в модернізації транспорту.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Meilensteine'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Meilensteine'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Meilensteine'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Meilensteine'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Deutschlandticket gilt als Meilenstein der Mobilitätswende.",
+        "tr": "Almanya bileti ulaşım devriminde bir dönüm noktası kabul edilir.",
+        "en": "The Deutschlandticket is considered a milestone in mobility transition.",
+        "ar": "تعتبر تذكرة ألمانيا محطة فارقة في التحول نحو النقل المستدام.",
+        "uk": "Дойчландтикет вважається важливою віхою в модернізації транспорту."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Meilenstein eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Meilenstein günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Meilenstein plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "migration": {
+    "de": "die Migration",
+    "displayDe": "Migration",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "göç",
+    "en": "migration",
+    "ar": "الهجرة",
+    "uk": "міграція",
+    "example_de": "Das Bundesamt für Migration fördert die sprachliche Integration.",
+    "example_tr": "Federal Göç Dairesi dilsel uyumu desteklemektedir.",
+    "example_en": "The Federal Office for Migration promotes linguistic integration.",
+    "example_ar": "يدعم المكتب الاتحادي للهجرة الاندماج اللغوي.",
+    "example_uk": "Федеральне відомство з питань міграції підтримує мовну інтеграцію.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Bundesamt für Migration fördert die sprachliche Integration.",
+        "tr": "Federal Göç Dairesi dilsel uyumu desteklemektedir.",
+        "en": "The Federal Office for Migration promotes linguistic integration.",
+        "ar": "يدعم المكتب الاتحادي للهجرة الاندماج اللغوي.",
+        "uk": "Федеральне відомство з питань міграції підтримує мовну інтеграцію."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Migration eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Migration günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Migration plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "mischung": {
+    "de": "die Mischung",
+    "displayDe": "Mischung",
+    "article": "die",
+    "plural": "die Mischungen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "karışım",
+    "en": "mixture / combination",
+    "ar": "مزيج / خليط",
+    "uk": "суміш / поєднання",
+    "example_de": "Ein gutes Passwort ist eine Mischung aus Buchstaben und Zahlen.",
+    "example_tr": "İyi bir parola harfler ve rakamlardan oluşan bir karışımdır.",
+    "example_en": "A good password is a mixture of letters and numbers.",
+    "example_ar": "كلمة المرور الجيدة هي مزيج من الحروف والأرقام.",
+    "example_uk": "Надійний пароль є комбінацією літер і цифр.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Mischungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Mischungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Mischungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Mischungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Mischung)",
+        "en": "💡 Noun Structure (die Mischung)",
+        "ar": "💡 بنية الاسم (die Mischung)",
+        "uk": "💡 Структура іменника (die Mischung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein gutes Passwort ist eine Mischung aus Buchstaben und Zahlen.",
+        "tr": "İyi bir parola harfler ve rakamlardan oluşan bir karışımdır.",
+        "en": "A good password is a mixture of letters and numbers.",
+        "ar": "كلمة المرور الجيدة هي مزيج من الحروف والأرقام.",
+        "uk": "Надійний пароль є комбінацією літер і цифр."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Mischung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Mischung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Mischung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "moderne": {
+    "de": "modern",
+    "displayDe": "modern",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "modern, çağdaş",
+    "en": "modern / contemporary",
+    "ar": "حديث / عصري",
+    "uk": "сучасний",
+    "example_de": "Moderne Züge bieten Steckdosen und kostenfreies WLAN.",
+    "example_tr": "Modern trenler priz ve ücretsiz kablosuz internet sunar.",
+    "example_en": "Modern trains offer power outlets and free Wi-Fi.",
+    "example_ar": "توفر القطارات الحديثة مقابس كهربائية وإنترنت لاسلكي مجاني.",
+    "example_uk": "Сучасні поїзди пропонують розетки та безкоштовний Wi-Fi.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'modern' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'modern' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'modern' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'modern' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Moderne Züge bieten Steckdosen und kostenfreies WLAN.",
+        "tr": "Modern trenler priz ve ücretsiz kablosuz internet sunar.",
+        "en": "Modern trains offer power outlets and free Wi-Fi.",
+        "ar": "توفر القطارات الحديثة مقابس كهربائية وإنترنت لاسلكي مجاني.",
+        "uk": "Сучасні поїзди пропонують розетки та безкоштовний Wi-Fi."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag modern zu sein.",
+        "tr": "İş ve günlük yaşamda modern, çağdaş olmak son derece önemlidir.",
+        "en": "It is very important to be modern / contemporary in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "modernen": {
+    "de": "modern",
+    "displayDe": "modern",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "modern (çekimli sıfat)",
+    "en": "modern (declined)",
+    "ar": "الحديث",
+    "uk": "сучасний",
+    "example_de": "Ein Schwerpunkt der modernen Medizin ist die Vorsorge.",
+    "example_tr": "Modern tıbbın odak noktası koruyucu hekimliktir.",
+    "example_en": "A focus of modern medicine is prevention.",
+    "example_ar": "التركيز الأساسي للطب الحديث هو الوقاية.",
+    "example_uk": "Фокусом сучасної медицини є профілактика.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'modern' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'modern' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'modern' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'modern' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein Schwerpunkt der modernen Medizin ist die Vorsorge.",
+        "tr": "Modern tıbbın odak noktası koruyucu hekimliktir.",
+        "en": "A focus of modern medicine is prevention.",
+        "ar": "التركيز الأساسي للطب الحديث هو الوقاية.",
+        "uk": "Фокусом сучасної медицини є профілактика."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag modern zu sein.",
+        "tr": "İş ve günlük yaşamda modern (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be modern (declined) in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "monat": {
+    "de": "der Monat",
+    "displayDe": "Monat",
+    "article": "der",
+    "plural": "die Monate",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "ay",
+    "en": "month",
+    "ar": "شهر",
+    "uk": "місяць",
+    "example_de": "Das Ticket kostet derzeit 49 Euro pro Monat.",
+    "example_tr": "Bilet şu anda ayda 49 avroya mal olmaktadır.",
+    "example_en": "The ticket currently costs 49 euros per month.",
+    "example_ar": "تبلغ تكلفة التذكرة حالياً 49 يورو شهرياً.",
+    "example_uk": "Квиток наразі коштує 49 євро на місяць.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Monate'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Monate'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Monate'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Monate'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Monat)",
+        "en": "💡 Noun Structure (der Monat)",
+        "ar": "💡 بنية الاسم (der Monat)",
+        "uk": "💡 Структура іменника (der Monat)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Ticket kostet derzeit 49 Euro pro Monat.",
+        "tr": "Bilet şu anda ayda 49 avroya mal olmaktadır.",
+        "en": "The ticket currently costs 49 euros per month.",
+        "ar": "تبلغ تكلفة التذكرة حالياً 49 يورو شهرياً.",
+        "uk": "Квиток наразі коштує 49 євро на місяць."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Monat eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Monat günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Monat plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "nachbarn": {
+    "de": "der Nachbar",
+    "displayDe": "Nachbar",
+    "article": "der",
+    "plural": "die Nachbarn",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "komşular",
+    "en": "neighbors",
+    "ar": "جيران",
+    "uk": "сусіди",
+    "example_de": "Im Alltag spricht man häufig mit seinen Nachbarn auf Deutsch.",
+    "example_tr": "Günlük yaşamda komşularla sık sık Almanca konuşulur.",
+    "example_en": "In everyday life, one often speaks German with neighbors.",
+    "example_ar": "في الحياة اليومية يتحدث المرء مع جيرانه بالألمانية كثيراً.",
+    "example_uk": "У побуті з сусідами часто спілкуються німецькою мовою.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Nachbarn'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Nachbarn'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Nachbarn'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Nachbarn'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Alltag spricht man häufig mit seinen Nachbarn auf Deutsch.",
+        "tr": "Günlük yaşamda komşularla sık sık Almanca konuşulur.",
+        "en": "In everyday life, one often speaks German with neighbors.",
+        "ar": "في الحياة اليومية يتحدث المرء مع جيرانه بالألمانية كثيراً.",
+        "uk": "У побуті з сусідами часто спілкуються німецькою мовою."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Nachbar eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Nachbar günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Nachbar plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "nachhaltig": {
+    "de": "nachhaltig",
+    "displayDe": "nachhaltig",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "sürdürülebilir, kalıcı",
+    "en": "sustainable / lasting",
+    "ar": "مستدام",
+    "uk": "сталий / довготривалий",
+    "example_de": "Busse und Bahnen sind ein nachhaltiges Fortbewegungsmittel.",
+    "example_tr": "Otobüs ve trenler sürdürülebilir bir ulaşım aracıdır.",
+    "example_en": "Buses and trains are a sustainable means of transportation.",
+    "example_ar": "الحافلات والقطارات وسيلة نقل مستدامة وصديقة للبيئة.",
+    "example_uk": "Автобуси та поїзди є екологічно сталим видом транспорту.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'nachhaltig' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'nachhaltig' describes quality or state.",
+      "ar": "صفة: 'nachhaltig' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'nachhaltig' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (nachhaltig)",
+        "en": "💡 Adjective (nachhaltig)",
+        "ar": "💡 بنية الصفة (nachhaltig)",
+        "uk": "💡 Структура прикметника (nachhaltig)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Busse und Bahnen sind ein nachhaltiges Fortbewegungsmittel.",
+        "tr": "Otobüs ve trenler sürdürülebilir bir ulaşım aracıdır.",
+        "en": "Buses and trains are a sustainable means of transportation.",
+        "ar": "الحافلات والقطارات وسيلة نقل مستدامة وصديقة للبيئة.",
+        "uk": "Автобуси та поїзди є екологічно сталим видом транспорту."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag nachhaltig zu sein.",
+        "tr": "İş ve günlük yaşamda sürdürülebilir, kalıcı olmak son derece önemlidir.",
+        "en": "It is very important to be sustainable / lasting in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "nachrichten": {
+    "de": "die Nachricht",
+    "displayDe": "Nachricht",
+    "article": "die",
+    "plural": "die Nachrichten",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "haberler, iletiler, mesajlar",
+    "en": "messages / news",
+    "ar": "رسائل / أخبار",
+    "uk": "повідомлення / новини",
+    "example_de": "Löschen Sie verdächtige Nachrichten sofort aus dem Postfach.",
+    "example_tr": "Şüpheli iletileri gelen kutunuzdan hemen silin.",
+    "example_en": "Delete suspicious messages immediately from your inbox.",
+    "example_ar": "احذف الرسائل المشبوهة فوراً من صندوق الوارد.",
+    "example_uk": "Негайно видаляйте підозрілі повідомлення зі скриньки.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Nachrichten'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Nachrichten'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Nachrichten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Nachrichten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Löschen Sie verdächtige Nachrichten sofort aus dem Postfach.",
+        "tr": "Şüpheli iletileri gelen kutunuzdan hemen silin.",
+        "en": "Delete suspicious messages immediately from your inbox.",
+        "ar": "احذف الرسائل المشبوهة فوراً من صندوق الوارد.",
+        "uk": "Негайно видаляйте підозрілі повідомлення зі скриньки."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Nachricht eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Nachricht günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Nachricht plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "nachweis": {
+    "de": "der Nachweis",
+    "displayDe": "Nachweis",
+    "article": "der",
+    "plural": "die Nachweise",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "kanıt, belge, ispat",
+    "en": "proof / certificate",
+    "ar": "إثبات / دليل رسمي",
+    "uk": "доказ / посвідчення / підтвердження",
+    "example_de": "Das B1-Zertifikat dient als offizieller Nachweis der Sprachkenntnisse.",
+    "example_tr": "B1 sertifikası dil bilgisinin resmi kanıtı olarak hizmet eder.",
+    "example_en": "The B1 certificate serves as official proof of language skills.",
+    "example_ar": "تعتبر شهادة B1 إثباتاً رسمياً للمهارات اللغوية.",
+    "example_uk": "Сертифікат B1 є офіційним підтвердженням володіння мовою.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Nachweise'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Nachweise'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Nachweise'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Nachweise'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das B1-Zertifikat dient als offizieller Nachweis der Sprachkenntnisse.",
+        "tr": "B1 sertifikası dil bilgisinin resmi kanıtı olarak hizmet eder.",
+        "en": "The B1 certificate serves as official proof of language skills.",
+        "ar": "تعتبر شهادة B1 إثباتاً رسمياً للمهارات اللغوية.",
+        "uk": "Сертифікат B1 є офіційним підтвердженням володіння мовою."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Nachweis eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Nachweis günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Nachweis plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "nahverkehr": {
+    "de": "der Nahverkehr",
+    "displayDe": "Nahverkehr",
+    "article": "der",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "yerel toplu taşıma, banliyö ulaşımı",
+    "en": "local public transit / commuter transit",
+    "ar": "النقل العام المحلي",
+    "uk": "місцевий громадський транспорт",
+    "example_de": "Das Ticket gilt im gesamten öffentlichen Nahverkehr.",
+    "example_tr": "Bilet tüm yerel toplu taşımada geçerlidir.",
+    "example_en": "The ticket is valid in all local public transit.",
+    "example_ar": "التذكرة صالحة في جميع وسائل النقل العام المحلي.",
+    "example_uk": "Квиток діє в усьому місцевому громадському транспорті.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Nahverkehr)",
+        "en": "💡 Noun Structure (der Nahverkehr)",
+        "ar": "💡 بنية الاسم (der Nahverkehr)",
+        "uk": "💡 Структура іменника (der Nahverkehr)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Ticket gilt im gesamten öffentlichen Nahverkehr.",
+        "tr": "Bilet tüm yerel toplu taşımada geçerlidir.",
+        "en": "The ticket is valid in all local public transit.",
+        "ar": "التذكرة صالحة في جميع وسائل النقل العام المحلي.",
+        "uk": "Квиток діє в усьому місцевому громадському транспорті."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Nahverkehr eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Nahverkehr günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Nahverkehr plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "namen": {
+    "de": "der Name",
+    "displayDe": "Name",
+    "article": "der",
+    "plural": "die Namen",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "isimler, adlar",
+    "en": "names",
+    "ar": "أسماء",
+    "uk": "імена",
+    "example_de": "Eigene Namen sollten nicht als Passwörter gewählt werden.",
+    "example_tr": "Kişisel isimler parola olarak seçilmemelidir.",
+    "example_en": "One's own names should not be chosen as passwords.",
+    "example_ar": "لا ينبغي اختيار الأسماء الشخصية ككلمات مرور.",
+    "example_uk": "Власні імена не слід обирати як паролі.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Namen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Namen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Namen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Namen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Eigene Namen sollten nicht als Passwörter gewählt werden.",
+        "tr": "Kişisel isimler parola olarak seçilmemelidir.",
+        "en": "One's own names should not be chosen as passwords.",
+        "ar": "لا ينبغي اختيار الأسماء الشخصية ككلمات مرور.",
+        "uk": "Власні імена не слід обирати як паролі."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Name eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Name günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Name plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "neben": {
+    "de": "neben",
+    "displayDe": "neben",
+    "article": "",
+    "plural": "",
+    "pos": "prep",
+    "level": "A2",
+    "tr": "yanında, ek olarak (+ Dat)",
+    "en": "next to / in addition to (+ Dat)",
+    "ar": "بجانب / إلى جانب",
+    "uk": "поруч з / крім (+ Dat)",
+    "example_de": "Neben dem Sprachkurs gibt es einen Orientierungskurs.",
+    "example_tr": "Dil kursunun yanında bir de yönlendirme kursu bulunmaktadır.",
+    "example_en": "In addition to the language course, there is an orientation course.",
+    "example_ar": "إلى جانب دورة اللغة توجد دورة توجيهية.",
+    "example_uk": "Окрім мовного курсу, існує також орієнтаційний курс.",
+    "grammar": {
+      "tr": "Edat (Präposition): 'neben' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
+      "en": "Preposition: 'neben' governs the grammatical case (Dative/Accusative) of the following noun.",
+      "ar": "حرف جر: 'neben' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
+      "uk": "Прийменник: 'neben' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
+    },
+    "examples": [
+      {
+        "de": "Neben dem Sprachkurs gibt es einen Orientierungskurs.",
+        "tr": "Dil kursunun yanında bir de yönlendirme kursu bulunmaktadır.",
+        "en": "In addition to the language course, there is an orientation course.",
+        "ar": "إلى جانب دورة اللغة توجد دورة توجيهية.",
+        "uk": "Окрім мовного курсу, існує також орієнтаційний курс."
+      },
+      {
+        "de": "Wir treffen uns neben der Arbeit zu einem kurzen Gespräch.",
+        "tr": "İşten sonra kısa bir görüşme için buluşuyoruz.",
+        "en": "We meet for a short conversation.",
+        "ar": "نلتقي لإجراء محادثة قصيرة.",
+        "uk": "Ми зустрічаємося для короткої розмови."
+      }
+    ]
+  },
+  "netz": {
+    "de": "das Netz",
+    "displayDe": "Netz",
+    "article": "das",
+    "plural": "die Netze",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "ağ, şebeke, internet",
+    "en": "network / web",
+    "ar": "شبكة / إنترنت",
+    "uk": "мережа",
+    "example_de": "Das Schienennetz muss grundlegend saniert werden.",
+    "example_tr": "Demiryolu ağı esaslı bir şekilde yenilenmelidir.",
+    "example_en": "The rail network must be fundamentally renovated.",
+    "example_ar": "يجب تجديد شبكة السكك الحديدية بشكل جذري.",
+    "example_uk": "Залізничну мережу необхідно капітально модернізувати.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Netze'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Netze'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Netze'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Netze'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Netz)",
+        "en": "💡 Noun Structure (das Netz)",
+        "ar": "💡 بنية الاسم (das Netz)",
+        "uk": "💡 Структура іменника (das Netz)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Schienennetz muss grundlegend saniert werden.",
+        "tr": "Demiryolu ağı esaslı bir şekilde yenilenmelidir.",
+        "en": "The rail network must be fundamentally renovated.",
+        "ar": "يجب تجديد شبكة السكك الحديدية بشكل جذري.",
+        "uk": "Залізничну мережу необхідно капітально модернізувати."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Netz eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Netz günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Netz plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "netzwerken": {
+    "de": "das Netzwerk",
+    "displayDe": "Netzwerk",
+    "article": "das",
+    "plural": "die Netzwerke",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "sosyal ağlarda (Dativ Plural)",
+    "en": "networks (social networks)",
+    "ar": "شبكات (شبكات التواصل)",
+    "uk": "соціальних мережах",
+    "example_de": "In sozialen Netzwerken sollte man vorsichtig mit Fotos sein.",
+    "example_tr": "Sosyal ağlarda fotoğraflar konusunda dikkatli olunmalıdır.",
+    "example_en": "In social networks, one should be cautious with photos.",
+    "example_ar": "في شبكات التواصل الاجتماعي ينبغي الحذر عند مشاركة الصور.",
+    "example_uk": "У соціальних мережах слід бути обережним із фотографіями.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Netzwerke'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Netzwerke'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Netzwerke'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Netzwerke'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "In sozialen Netzwerken sollte man vorsichtig mit Fotos sein.",
+        "tr": "Sosyal ağlarda fotoğraflar konusunda dikkatli olunmalıdır.",
+        "en": "In social networks, one should be cautious with photos.",
+        "ar": "في شبكات التواصل الاجتماعي ينبغي الحذر عند مشاركة الصور.",
+        "uk": "У соціальних мережах слід бути обережним із фотографіями."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Netzwerk eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Netzwerk günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Netzwerk plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "neu": {
+    "de": "neu",
+    "displayDe": "neu",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "yeni",
+    "en": "new",
+    "ar": "جديد",
+    "uk": "новий",
+    "example_de": "Das neue Ticket vereinfacht das Reisen mit Bus und Bahn.",
+    "example_tr": "Yeni bilet otobüs ve trenle seyahat etmeyi kolaylaştırıyor.",
+    "example_en": "The new ticket simplifies traveling by bus and train.",
+    "example_ar": "تبسط التذكرة الجديدة السفر بالحافلات والقطارات.",
+    "example_uk": "Новий квиток спрощує поїздки автобусами та поїздами.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'neu' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'neu' describes quality or state.",
+      "ar": "صفة: 'neu' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'neu' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (neu)",
+        "en": "💡 Adjective (neu)",
+        "ar": "💡 بنية الصفة (neu)",
+        "uk": "💡 Структура прикметника (neu)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das neue Ticket vereinfacht das Reisen mit Bus und Bahn.",
+        "tr": "Yeni bilet otobüs ve trenle seyahat etmeyi kolaylaştırıyor.",
+        "en": "The new ticket simplifies traveling by bus and train.",
+        "ar": "تبسط التذكرة الجديدة السفر بالحافلات والقطارات.",
+        "uk": "Новий квиток спрощує поїздки автобусами та поїздами."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag neu zu sein.",
+        "tr": "İş ve günlük yaşamda yeni olmak son derece önemlidir.",
+        "en": "It is very important to be new in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "niederlassungserlaubnis": {
+    "de": "die Niederlassungserlaubnis",
+    "displayDe": "Niederlassungserlaubnis",
+    "article": "die",
+    "plural": "die Niederlassungserlaubnisse",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "süresiz yerleşim/oturum izni",
+    "en": "permanent settlement permit",
+    "ar": "تصريح الإقامة الدائمة",
+    "uk": "посвідка на постійне проживання",
+    "example_de": "Für die Niederlassungserlaubnis sind B1-Kenntnisse gesetzlich vorgeschrieben.",
+    "example_tr": "Süresiz yerleşim izni için B1 bilgisi yasayla zorunlu kılınmıştır.",
+    "example_en": "For the settlement permit, B1 skills are required by law.",
+    "example_ar": "للحصول على الإقامة الدائمة يُلزم القانون بإتقان B1.",
+    "example_uk": "Для посвідки на постійне проживання знання B1 вимагається законом.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Niederlassungserlaubnisse'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Niederlassungserlaubnisse'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Niederlassungserlaubnisse'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Niederlassungserlaubnisse'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Für die Niederlassungserlaubnis sind B1-Kenntnisse gesetzlich vorgeschrieben.",
+        "tr": "Süresiz yerleşim izni için B1 bilgisi yasayla zorunlu kılınmıştır.",
+        "en": "For the settlement permit, B1 skills are required by law.",
+        "ar": "للحصول على الإقامة الدائمة يُلزم القانون بإتقان B1.",
+        "uk": "Для посвідки на постійне проживання знання B1 вимагається законом."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Niederlassungserlaubnis eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Niederlassungserlaubnis günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Niederlassungserlaubnis plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "niemals": {
+    "de": "niemals",
+    "displayDe": "niemals",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "A2",
+    "tr": "asla, hiçbir zaman",
+    "en": "never / at no time",
+    "ar": "أبداً / إطلاقاً",
+    "uk": "ніколи",
+    "example_de": "Klicken Sie niemals auf unbekannte Links in suspekten E-Mails.",
+    "example_tr": "Şüpheli e-postalardaki bilinmeyen linklere asla tıklamayın.",
+    "example_en": "Never click on unknown links in suspicious emails.",
+    "example_ar": "لا تنقر أبداً على الروابط المجهولة في الرسائل المشبوهة.",
+    "example_uk": "Ніколи не переходьте за невідомими посиланнями в підозрілих листах.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'niemals' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'niemals' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'niemals' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'niemals' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (niemals)",
+        "en": "💡 Adverb (niemals)",
+        "ar": "💡 ظرف (niemals)",
+        "uk": "💡 Прислівник (niemals)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Klicken Sie niemals auf unbekannte Links in suspekten E-Mails.",
+        "tr": "Şüpheli e-postalardaki bilinmeyen linklere asla tıklamayın.",
+        "en": "Never click on unknown links in suspicious emails.",
+        "ar": "لا تنقر أبداً على الروابط المجهولة في الرسائل المشبوهة.",
+        "uk": "Ніколи не переходьте за невідомими посиланнями в підозрілих листах."
+      },
+      {
+        "de": "Das Wort 'niemals' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'niemals' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'niemals' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'niemals' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'niemals' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "niveau": {
+    "de": "das Niveau",
+    "displayDe": "Niveau",
+    "article": "das",
+    "plural": "die Niveaus",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "seviye, düzey",
+    "en": "level / standard",
+    "ar": "مستوى",
+    "uk": "рівень",
+    "example_de": "Das B1-Niveau bescheinigt eine selbstständige Sprachverwendung.",
+    "example_tr": "B1 seviyesi dili bağımsız kullanabilme yetkinliğini belgeler.",
+    "example_en": "The B1 level certifies independent language use.",
+    "example_ar": "يوثق المستوى B1 الاستخدام المستقل للغة.",
+    "example_uk": "Рівень B1 підтверджує самостійне володіння мовою.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Niveaus'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Niveaus'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Niveaus'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Niveaus'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Niveau)",
+        "en": "💡 Noun Structure (das Niveau)",
+        "ar": "💡 بنية الاسم (das Niveau)",
+        "uk": "💡 Структура іменника (das Niveau)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das B1-Niveau bescheinigt eine selbstständige Sprachverwendung.",
+        "tr": "B1 seviyesi dili bağımsız kullanabilme yetkinliğini belgeler.",
+        "en": "The B1 level certifies independent language use.",
+        "ar": "يوثق المستوى B1 الاستخدام المستقل للغة.",
+        "uk": "Рівень B1 підтверджує самостійне володіння мовою."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Niveau eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Niveau günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Niveau plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "notwendige": {
+    "de": "notwendig",
+    "displayDe": "notwendig",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "gerekli, zorunlu",
+    "en": "necessary / required",
+    "ar": "ضروري / لازم",
+    "uk": "необхідний",
+    "example_de": "Der Hausarzt verschreibt die notwendige Medizin.",
+    "example_tr": "Aile hekimi gerekli ilacı yazar.",
+    "example_en": "The family doctor prescribes the necessary medicine.",
+    "example_ar": "يصف طبيب الأسرة الدواء اللازم.",
+    "example_uk": "Сімейний лікар призначає необхідні ліки.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'notwendig' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'notwendig' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'notwendig' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'notwendig' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Hausarzt verschreibt die notwendige Medizin.",
+        "tr": "Aile hekimi gerekli ilacı yazar.",
+        "en": "The family doctor prescribes the necessary medicine.",
+        "ar": "يصف طبيب الأسرة الدواء اللازم.",
+        "uk": "Сімейний лікар призначає необхідні ліки."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag notwendig zu sein.",
+        "tr": "İş ve günlük yaşamda gerekli, zorunlu olmak son derece önemlidir.",
+        "en": "It is very important to be necessary / required in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "nummer": {
+    "de": "die Nummer",
+    "displayDe": "Nummer",
+    "article": "die",
+    "plural": "die Nummern",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "numara",
+    "en": "number",
+    "ar": "رقم",
+    "uk": "номер",
+    "example_de": "Die Servicenummer 116117 ist rund um die Uhr erreichbar.",
+    "example_tr": "116117 numaralı hizmet hattına 24 saat boyunca ulaşılabilir.",
+    "example_en": "The service number 116117 is available around the clock.",
+    "example_ar": "رقم الخدمة 116117 متاح على مدار الساعة.",
+    "example_uk": "Номер служби 116117 доступний цілодобово.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Nummern'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Nummern'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Nummern'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Nummern'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Nummer)",
+        "en": "💡 Noun Structure (die Nummer)",
+        "ar": "💡 بنية الاسم (die Nummer)",
+        "uk": "💡 Структура іменника (die Nummer)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Servicenummer 116117 ist rund um die Uhr erreichbar.",
+        "tr": "116117 numaralı hizmet hattına 24 saat boyunca ulaşılabilir.",
+        "en": "The service number 116117 is available around the clock.",
+        "ar": "رقم الخدمة 116117 متاح على مدار الساعة.",
+        "uk": "Номер служби 116117 доступний цілодобово."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Nummer eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Nummer günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Nummer plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "nummern": {
+    "de": "die Nummer",
+    "displayDe": "Nummer",
+    "article": "die",
+    "plural": "die Nummern",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "numaralar (PIN-Nummern)",
+    "en": "numbers",
+    "ar": "أرقام",
+    "uk": "номери",
+    "example_de": "Geben Sie vertrauliche PIN-Nummern niemals weiter.",
+    "example_tr": "Gizli PIN numaralarınızı asla başkasına vermeyin.",
+    "example_en": "Never pass on confidential PIN numbers.",
+    "example_ar": "لا تفصح أبداً عن أرقام PIN السرية للآخرين.",
+    "example_uk": "Ніколи не передавайте іншим конфіденційні PIN-коди.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Nummern'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Nummern'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Nummern'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Nummern'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Geben Sie vertrauliche PIN-Nummern niemals weiter.",
+        "tr": "Gizli PIN numaralarınızı asla başkasına vermeyin.",
+        "en": "Never pass on confidential PIN numbers.",
+        "ar": "لا تفصح أبداً عن أرقام PIN السرية للآخرين.",
+        "uk": "Ніколи не передавайте іншим конфіденційні PIN-коди."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Nummer eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Nummer günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Nummer plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "nähe": {
+    "de": "die Nähe",
+    "displayDe": "Nähe",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "yakınlık (in der Nähe = yakında)",
+    "en": "vicinity / proximity (in the vicinity)",
+    "ar": "قرب / بالقرب من",
+    "uk": "близькість (поблизу)",
+    "example_de": "Patienten suchen eine allgemeinmedizinische Praxis in ihrer Nähe auf.",
+    "example_tr": "Hastalar yakınlarındaki bir genel muayenehaneye giderler.",
+    "example_en": "Patients visit a general medical practice in their vicinity.",
+    "example_ar": "يتوجه المرضى إلى عيادة عامة بالقرب منهم.",
+    "example_uk": "Пацієнти відвідують амбулаторію поблизу місця проживання.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Nähe)",
+        "en": "💡 Noun Structure (die Nähe)",
+        "ar": "💡 بنية الاسم (die Nähe)",
+        "uk": "💡 Структура іменника (die Nähe)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Patienten suchen eine allgemeinmedizinische Praxis in ihrer Nähe auf.",
+        "tr": "Hastalar yakınlarındaki bir genel muayenehaneye giderler.",
+        "en": "Patients visit a general medical practice in their vicinity.",
+        "ar": "يتوجه المرضى إلى عيادة عامة بالقرب منهم.",
+        "uk": "Пацієнти відвідують амбулаторію поблизу місця проживання."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Nähe eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Nähe günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Nähe plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "offizielle": {
+    "de": "offiziell",
+    "displayDe": "offiziell",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "resmi (çekimli sıfat)",
+    "en": "official",
+    "ar": "رسمي",
+    "uk": "офіційний",
+    "example_de": "Nutzen Sie stets die offizielle Website der Krankenkasse.",
+    "example_tr": "Her zaman sağlık sigortasının resmi web sitesini kullanın.",
+    "example_en": "Always use the official website of the health insurer.",
+    "example_ar": "استخدم دائماً الموقع الرسمي لشركة التأمين الصحي.",
+    "example_uk": "Завжди користуйтеся офіційним веб-сайтом лікарняної каси.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'offiziell' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'offiziell' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'offiziell' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'offiziell' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Nutzen Sie stets die offizielle Website der Krankenkasse.",
+        "tr": "Her zaman sağlık sigortasının resmi web sitesini kullanın.",
+        "en": "Always use the official website of the health insurer.",
+        "ar": "استخدم دائماً الموقع الرسمي لشركة التأمين الصحي.",
+        "uk": "Завжди користуйтеся офіційним веб-сайтом лікарняної каси."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag offiziell zu sein.",
+        "tr": "İş ve günlük yaşamda resmi (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be official in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "organisation": {
+    "de": "die Organisation",
+    "displayDe": "Organisation",
+    "article": "die",
+    "plural": "die Organisationen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "organizasyon, düzenleme",
+    "en": "organization",
+    "ar": "تنظيم / إدارة",
+    "uk": "організація",
+    "example_de": "Die Digitalisierung erleichtert die Organisation von Arztterminen.",
+    "example_tr": "Dijitalleşme doktor randevularının organizasyonunu kolaylaştırır.",
+    "example_en": "Digitalization facilitates the organization of doctor visits.",
+    "example_ar": "تسهل الرقمنة تنظيم مواعيد الأطباء.",
+    "example_uk": "Цифровізація спрощує організацію візитів до лікаря.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Organisationen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Organisationen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Organisationen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Organisationen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Digitalisierung erleichtert die Organisation von Arztterminen.",
+        "tr": "Dijitalleşme doktor randevularının organizasyonunu kolaylaştırır.",
+        "en": "Digitalization facilitates the organization of doctor visits.",
+        "ar": "تسهل الرقمنة تنظيم مواعيد الأطباء.",
+        "uk": "Цифровізація спрощує організацію візитів до лікаря."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Organisation eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Organisation günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Organisation plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "orientierungskurs": {
+    "de": "der Orientierungskurs",
+    "displayDe": "Orientierungskurs",
+    "article": "der",
+    "plural": "die Orientierungskurse",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "yönlendirme kursu (Alman hukuku, tarihi ve toplumu)",
+    "en": "orientation course (German law, history, society)",
+    "ar": "دورة التوجيه المدني",
+    "uk": "орієнтаційний курс (історія, право Німеччини)",
+    "example_de": "Der Orientierungskurs vermittelt Kenntnisse über Politik und Geschichte.",
+    "example_tr": "Yönlendirme kursu politika ve tarih hakkında bilgi verir.",
+    "example_en": "The orientation course conveys knowledge about politics and history.",
+    "example_ar": "تنقل دورة التوجيه المعرفة حول السياسة والتاريخ الألماني.",
+    "example_uk": "Орієнтаційний курс надає знання про політику та історію.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Orientierungskurse'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Orientierungskurse'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Orientierungskurse'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Orientierungskurse'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Orientierungskurs vermittelt Kenntnisse über Politik und Geschichte.",
+        "tr": "Yönlendirme kursu politika ve tarih hakkında bilgi verir.",
+        "en": "The orientation course conveys knowledge about politics and history.",
+        "ar": "تنقل دورة التوجيه المعرفة حول السياسة والتاريخ الألماني.",
+        "uk": "Орієнтаційний курс надає знання про політику та історію."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Orientierungskurs eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Orientierungskurs günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Orientierungskurs plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "orthopäden": {
+    "de": "der Orthopäde",
+    "displayDe": "Orthopäde",
+    "article": "der",
+    "plural": "die Orthopäden",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "ortopedistler, ortopedi uzmanları",
+    "en": "orthopedists / orthopedic specialists",
+    "ar": "أطباء العظام",
+    "uk": "ортопеди",
+    "example_de": "Bei Gelenkschmerzen überweist der Hausarzt an Orthopäden.",
+    "example_tr": "Eklem ağrılarında aile hekimi ortopedistlere sevk eder.",
+    "example_en": "For joint pain, the GP refers patients to orthopedists.",
+    "example_ar": "عند آلام المفاصل يحول طبيب الأسرة إلى أخصائي العظام.",
+    "example_uk": "При болях у суглобах сімейний лікар направляє до ортопедів.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Orthopäden'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Orthopäden'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Orthopäden'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Orthopäden'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Bei Gelenkschmerzen überweist der Hausarzt an Orthopäden.",
+        "tr": "Eklem ağrılarında aile hekimi ortopedistlere sevk eder.",
+        "en": "For joint pain, the GP refers patients to orthopedists.",
+        "ar": "عند آلام المفاصل يحول طبيب الأسرة إلى أخصائي العظام.",
+        "uk": "При болях у суглобах сімейний лікар направляє до ортопедів."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Orthopäde eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Orthopäde günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Orthopäde plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "paketdienste": {
+    "de": "der Paketdienst",
+    "displayDe": "Paketdienst",
+    "article": "der",
+    "plural": "die Paketdienste",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "kargo servisleri, kurye şirketleri",
+    "en": "parcel services / delivery couriers",
+    "ar": "شركات توصيل الطرود",
+    "uk": "служби доставки посилок",
+    "example_de": "Betrüger versenden gefälschte SMS im Namen bekannter Paketdienste.",
+    "example_tr": "Dolandırıcılar tanınmış kargo firmaları adına sahte SMS gönderir.",
+    "example_en": "Fraudsters send fake text messages in the name of parcel services.",
+    "example_ar": "يرسل المحتالون رسائل نصية مزيفة باسم شركات الطرود المعروفة.",
+    "example_uk": "Шахраї надсилають фальшиві SMS від імені відомих служб доставки.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Paketdienste'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Paketdienste'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Paketdienste'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Paketdienste'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Paketdienst)",
+        "en": "💡 Noun Structure (der Paketdienst)",
+        "ar": "💡 بنية الاسم (der Paketdienst)",
+        "uk": "💡 Структура іменника (der Paketdienst)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Betrüger versenden gefälschte SMS im Namen bekannter Paketdienste.",
+        "tr": "Dolandırıcılar tanınmış kargo firmaları adına sahte SMS gönderir.",
+        "en": "Fraudsters send fake text messages in the name of parcel services.",
+        "ar": "يرسل المحتالون رسائل نصية مزيفة باسم شركات الطرود المعروفة.",
+        "uk": "Шахраї надсилають фальшиві SMS від імені відомих служб доставки."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Paketdienst eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Paketdienst günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Paketdienst plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "parkgebühren": {
+    "de": "die Parkgebühr",
+    "displayDe": "Parkgebühr",
+    "article": "die",
+    "plural": "die Parkgebühren",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "otopark ücretleri",
+    "en": "parking fees",
+    "ar": "رسوم مواقف السيارات",
+    "uk": "плата за паркування",
+    "example_de": "Wer mit der Bahn fährt, spart teure Parkgebühren in der City.",
+    "example_tr": "Trenle gidenler şehir merkezindeki pahalı otopark ücretlerinden tasarruf eder.",
+    "example_en": "Those who take the train save expensive parking fees downtown.",
+    "example_ar": "من يسافر بالقطار يوفر رسوم مواقف السيارات الباهظة في وسط المدينة.",
+    "example_uk": "Ті, хто їздить потягом, заощаджують на дорогій оплаті паркування в центрі.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Parkgebühren'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Parkgebühren'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Parkgebühren'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Parkgebühren'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer mit der Bahn fährt, spart teure Parkgebühren in der City.",
+        "tr": "Trenle gidenler şehir merkezindeki pahalı otopark ücretlerinden tasarruf eder.",
+        "en": "Those who take the train save expensive parking fees downtown.",
+        "ar": "من يسافر بالقطار يوفر رسوم مواقف السيارات الباهظة في وسط المدينة.",
+        "uk": "Ті, хто їздить потягом, заощаджують на дорогій оплаті паркування в центрі."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Parkgebühr eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Parkgebühr günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Parkgebühr plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "passwort": {
+    "de": "das Passwort",
+    "displayDe": "Passwort",
+    "article": "das",
+    "plural": "die Passwörter",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "parola, şifre",
+    "en": "password",
+    "ar": "كلمة المرور / كلمة السر",
+    "uk": "пароль",
+    "example_de": "Ein sicheres Passwort sollte mindestens zwölf Zeichen lang sein.",
+    "example_tr": "Güvenli bir parola en az 12 karakter uzunluğunda olmalıdır.",
+    "example_en": "A secure password should be at least twelve characters long.",
+    "example_ar": "يجب أن تتكون كلمة المرور الآمنة من اثني عشر حرفاً على الأقل.",
+    "example_uk": "Надійний пароль повинен містити щонайменше 12 символів.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Passwörter'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Passwörter'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Passwörter'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Passwörter'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Passwort)",
+        "en": "💡 Noun Structure (das Passwort)",
+        "ar": "💡 بنية الاسم (das Passwort)",
+        "uk": "💡 Структура іменника (das Passwort)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein sicheres Passwort sollte mindestens zwölf Zeichen lang sein.",
+        "tr": "Güvenli bir parola en az 12 karakter uzunluğunda olmalıdır.",
+        "en": "A secure password should be at least twelve characters long.",
+        "ar": "يجب أن تتكون كلمة المرور الآمنة من اثني عشر حرفاً على الأقل.",
+        "uk": "Надійний пароль повинен містити щонайменше 12 символів."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Passwort eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Passwort günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Passwort plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "passwörter": {
+    "de": "das Passwort",
+    "displayDe": "Passwort",
+    "article": "das",
+    "plural": "die Passwörter",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "parolalar, şifreler",
+    "en": "passwords",
+    "ar": "كلمات المرور",
+    "uk": "паролі",
+    "example_de": "Verwenden Sie für jeden Dienst unterschiedliche Passwörter.",
+    "example_tr": "Her hizmet için farklı parolalar kullanın.",
+    "example_en": "Use different passwords for each service.",
+    "example_ar": "استخدم كلمات مرور مختلفة لكل خدمة.",
+    "example_uk": "Використовуйте різні паролі для кожного сервісу.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Passwörter'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Passwörter'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Passwörter'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Passwörter'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Passwort)",
+        "en": "💡 Noun Structure (das Passwort)",
+        "ar": "💡 بنية الاسم (das Passwort)",
+        "uk": "💡 Структура іменника (das Passwort)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Verwenden Sie für jeden Dienst unterschiedliche Passwörter.",
+        "tr": "Her hizmet için farklı parolalar kullanın.",
+        "en": "Use different passwords for each service.",
+        "ar": "استخدم كلمات مرور مختلفة لكل خدمة.",
+        "uk": "Використовуйте різні паролі для кожного сервісу."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Passwort eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Passwort günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Passwort plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "passwörtern": {
+    "de": "das Passwort",
+    "displayDe": "Passwort",
+    "article": "das",
+    "plural": "die Passwörter",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "parolalarda (Dativ Plural)",
+    "en": "passwords (Dative)",
+    "ar": "كلمات المرور",
+    "uk": "паролях",
+    "example_de": "Bei schwachen Passwörtern droht Identitätsdiebstahl.",
+    "example_tr": "Zayıf parolalarda kimlik hırsızlığı riski doğar.",
+    "example_en": "With weak passwords, identity theft threatens.",
+    "example_ar": "مع كلمات المرور الضعيفة يكون هناك خطر سرقة الهوية.",
+    "example_uk": "При слабких паролях виникає загроза викрадення особистих даних.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Passwörter'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Passwörter'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Passwörter'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Passwörter'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Bei schwachen Passwörtern droht Identitätsdiebstahl.",
+        "tr": "Zayıf parolalarda kimlik hırsızlığı riski doğar.",
+        "en": "With weak passwords, identity theft threatens.",
+        "ar": "مع كلمات المرور الضعيفة يكون هناك خطر سرقة الهوية.",
+        "uk": "При слабких паролях виникає загроза викрадення особистих даних."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Passwort eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Passwort günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Passwort plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "patienten": {
+    "de": "der Patient",
+    "displayDe": "Patient",
+    "article": "der",
+    "plural": "die Patienten",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "hastalar / hasta (erkek)",
+    "en": "patients / patient",
+    "ar": "مرضى / مريض",
+    "uk": "пацієнти / пацієнт",
+    "example_de": "Patienten wenden sich zuerst an eine allgemeinmedizinische Praxis.",
+    "example_tr": "Hastalar öncelikle bir genel pratisyen hekim muayenehanesine başvurur.",
+    "example_en": "Patients first turn to a general medical practice.",
+    "example_ar": "يتوجه المرضى أولاً إلى عيادة الطب العام.",
+    "example_uk": "Пацієнти спочатку звертаються до кабінету загальної медицини.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Patienten'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Patienten'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Patienten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Patienten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Patienten wenden sich zuerst an eine allgemeinmedizinische Praxis.",
+        "tr": "Hastalar öncelikle bir genel pratisyen hekim muayenehanesine başvurur.",
+        "en": "Patients first turn to a general medical practice.",
+        "ar": "يتوجه المرضى أولاً إلى عيادة الطب العام.",
+        "uk": "Пацієнти спочатку звертаються до кабінету загальної медицини."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Patient eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Patient günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Patient plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "patientenservice": {
+    "de": "der Patientenservice",
+    "displayDe": "Patientenservice",
+    "article": "der",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "hasta danışma servisi / yardım hattı",
+    "en": "patient service / hotline",
+    "ar": "خدمة المرضى",
+    "uk": "служба підтримки пацієнтів",
+    "example_de": "Der ärztliche Patientenservice ist unter 116117 erreichbar.",
+    "example_tr": "Tıbbi hasta servisine 116117 numarasından ulaşılabilir.",
+    "example_en": "The medical patient service can be reached at 116117.",
+    "example_ar": "يمكن الوصول إلى خدمة المرضى الطبية على الرقم 116117.",
+    "example_uk": "До медичної служби підтримки пацієнтів можна зателефонувати за номером 116117.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Patientenservice)",
+        "en": "💡 Noun Structure (der Patientenservice)",
+        "ar": "💡 بنية الاسم (der Patientenservice)",
+        "uk": "💡 Структура іменника (der Patientenservice)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der ärztliche Patientenservice ist unter 116117 erreichbar.",
+        "tr": "Tıbbi hasta servisine 116117 numarasından ulaşılabilir.",
+        "en": "The medical patient service can be reached at 116117.",
+        "ar": "يمكن الوصول إلى خدمة المرضى الطبية على الرقم 116117.",
+        "uk": "До медичної служби підтримки пацієнтів можна зателефонувати за номером 116117."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Patientenservice eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Patientenservice günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Patientenservice plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "patientinnen": {
+    "de": "die Patientin",
+    "displayDe": "Patientin",
+    "article": "die",
+    "plural": "die Patientinnen",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "kadın hastalar",
+    "en": "female patients",
+    "ar": "مريضات",
+    "uk": "пацієнтки",
+    "example_de": "Patientinnen und Patienten werden in der Praxis gründlich untersucht.",
+    "example_tr": "Hastalar muayenehanede kapsamlı bir şekilde muayene edilir.",
+    "example_en": "Patients are examined thoroughly in the medical practice.",
+    "example_ar": "يتم فحص المرضى والمريضات بدقة في العيادة.",
+    "example_uk": "Пацієнток та пацієнтів ретельно оглядають в амбулаторії.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Patientinnen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Patientinnen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Patientinnen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Patientinnen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Patientinnen und Patienten werden in der Praxis gründlich untersucht.",
+        "tr": "Hastalar muayenehanede kapsamlı bir şekilde muayene edilir.",
+        "en": "Patients are examined thoroughly in the medical practice.",
+        "ar": "يتم فحص المرضى والمريضات بدقة في العيادة.",
+        "uk": "Пацієнток та пацієнтів ретельно оглядають в амбулаторії."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Patientin eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Patientin günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Patientin plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "pendlerinnen": {
+    "de": "die Pendlerin",
+    "displayDe": "Pendlerin",
+    "article": "die",
+    "plural": "die Pendlerinnen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "işe gidip gelen kadın yolcular",
+    "en": "female commuters",
+    "ar": "المتنقلات للعمل يومياً",
+    "uk": "пасажирки, які щодня їздять на роботу",
+    "example_de": "Viele Pendlerinnen und Pendler nutzen das günstige Monatsticket.",
+    "example_tr": "İşe gidip gelen birçok yolcu bu uygun aylık bileti kullanıyor.",
+    "example_en": "Many commuters use the affordable monthly ticket.",
+    "example_ar": "تستخدم العديد من المتنقلات للعمل هذه التذكرة الشهرية المناسبة.",
+    "example_uk": "Багато жінок-пасажирок користуються цим вигідним місячним квитком.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Pendlerinnen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Pendlerinnen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Pendlerinnen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Pendlerinnen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Viele Pendlerinnen und Pendler nutzen das günstige Monatsticket.",
+        "tr": "İşe gidip gelen birçok yolcu bu uygun aylık bileti kullanıyor.",
+        "en": "Many commuters use the affordable monthly ticket.",
+        "ar": "تستخدم العديد من المتنقلات للعمل هذه التذكرة الشهرية المناسبة.",
+        "uk": "Багато жінок-пасажирок користуються цим вигідним місячним квитком."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Pendlerin eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Pendlerin günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Pendlerin plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "per": {
+    "de": "per",
+    "displayDe": "per",
+    "article": "",
+    "plural": "",
+    "pos": "prep",
+    "level": "A2",
+    "tr": "ile, yoluyla (per E-Mail = e-posta yoluyla)",
+    "en": "via / by (per email)",
+    "ar": "عبر / بواسطة",
+    "uk": "через / електронною поштою",
+    "example_de": "Fragen Sie Passwörter niemals per E-Mail ab.",
+    "example_tr": "Parolaları asla e-posta yoluyla sormayın.",
+    "example_en": "Never ask for passwords via email.",
+    "example_ar": "لا تطلب كلمات المرور أبداً عبر البريد الإلكتروني.",
+    "example_uk": "Ніколи не запитуйте паролі електронною поштою.",
+    "grammar": {
+      "tr": "Edat (Präposition): 'per' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
+      "en": "Preposition: 'per' governs the grammatical case (Dative/Accusative) of the following noun.",
+      "ar": "حرف جر: 'per' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
+      "uk": "Прийменник: 'per' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
+    },
+    "examples": [
+      {
+        "de": "Fragen Sie Passwörter niemals per E-Mail ab.",
+        "tr": "Parolaları asla e-posta yoluyla sormayın.",
+        "en": "Never ask for passwords via email.",
+        "ar": "لا تطلب كلمات المرور أبداً عبر البريد الإلكتروني.",
+        "uk": "Ніколи не запитуйте паролі електронною поштою."
+      },
+      {
+        "de": "Wir treffen uns per der Arbeit zu einem kurzen Gespräch.",
+        "tr": "İşten sonra kısa bir görüşme için buluşuyoruz.",
+        "en": "We meet for a short conversation.",
+        "ar": "نلتقي لإجراء محادثة قصيرة.",
+        "uk": "Ми зустрічаємося для короткої розмови."
+      }
+    ]
+  },
+  "persönliche": {
+    "de": "persönlich",
+    "displayDe": "persönlich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "kişisel (çekimli sıfat)",
+    "en": "personal / private",
+    "ar": "شخصي",
+    "uk": "особистий / персональний",
+    "example_de": "Persönliche Daten müssen sorgfältig geschützt werden.",
+    "example_tr": "Kişisel veriler özenle korunmalıdır.",
+    "example_en": "Personal data must be carefully protected.",
+    "example_ar": "يجب حماية البيانات الشخصية بعناية فائقة.",
+    "example_uk": "Особисті дані мають бути ретельно захищені.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'persönlich' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'persönlich' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'persönlich' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'persönlich' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Persönliche Daten müssen sorgfältig geschützt werden.",
+        "tr": "Kişisel veriler özenle korunmalıdır.",
+        "en": "Personal data must be carefully protected.",
+        "ar": "يجب حماية البيانات الشخصية بعناية فائقة.",
+        "uk": "Особисті дані мають бути ретельно захищені."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag persönlich zu sein.",
+        "tr": "İş ve günlük yaşamda kişisel (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be personal / private in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "phishing": {
+    "de": "das Phishing",
+    "displayDe": "Phishing",
+    "article": "das",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "oltalama, yemleme dolandırıcılığı",
+    "en": "phishing",
+    "ar": "التصيد الاحتيالي",
+    "uk": "фішинг",
+    "example_de": "Phishing-Nachrichten enthalten oft gefälschte Internetlinks.",
+    "example_tr": "Oltalama iletileri genellikle sahte internet linkleri içerir.",
+    "example_en": "Phishing messages often contain fake internet links.",
+    "example_ar": "غالباً ما تحتوي رسائل التصيد الاحتيالي على روابط وهمية.",
+    "example_uk": "Фішингові повідомлення часто містять фальшиві інтернет-посилання.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Phishing)",
+        "en": "💡 Noun Structure (das Phishing)",
+        "ar": "💡 بنية الاسم (das Phishing)",
+        "uk": "💡 Структура іменника (das Phishing)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Phishing-Nachrichten enthalten oft gefälschte Internetlinks.",
+        "tr": "Oltalama iletileri genellikle sahte internet linkleri içerir.",
+        "en": "Phishing messages often contain fake internet links.",
+        "ar": "غالباً ما تحتوي رسائل التصيد الاحتيالي على روابط وهمية.",
+        "uk": "Фішингові повідомлення часто містять фальшиві інтернет-посилання."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Phishing eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Phishing günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Phishing plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "pin": {
+    "de": "die PIN",
+    "displayDe": "PIN",
+    "article": "die",
+    "plural": "die PINs",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "PIN kodu, gizli şifre",
+    "en": "PIN code",
+    "ar": "رمز PIN السري",
+    "uk": "PIN-код",
+    "example_de": "Geben Sie Ihre PIN niemals an unbekannte Dritte weiter.",
+    "example_tr": "PIN kodunuzu asla tanımadığınız üçüncü kişilere vermeyin.",
+    "example_en": "Never disclose your PIN to unknown third parties.",
+    "example_ar": "لا تعطِ رمز PIN الخاص بك لأطراف ثالثة مجهولة أبداً.",
+    "example_uk": "Ніколи не передавайте свій PIN стороннім особам.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die PINs'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die PINs'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die PINs'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die PINs'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Geben Sie Ihre PIN niemals an unbekannte Dritte weiter.",
+        "tr": "PIN kodunuzu asla tanımadığınız üçüncü kişilere vermeyin.",
+        "en": "Never disclose your PIN to unknown third parties.",
+        "ar": "لا تعطِ رمز PIN الخاص بك لأطراف ثالثة مجهولة أبداً.",
+        "uk": "Ніколи не передавайте свій PIN стороннім особам."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die PIN eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için PIN günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, PIN plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "podcasts": {
+    "de": "der Podcast",
+    "displayDe": "Podcast",
+    "article": "der",
+    "plural": "die Podcasts",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "podcast yayınları",
+    "en": "podcasts",
+    "ar": "بودكاست / برامج صوتية",
+    "uk": "подкасти",
+    "example_de": "Deutsche Podcasts helfen beim Verbessern des Hörverstehens.",
+    "example_tr": "Almanca podcastler dinlediğini anlamayı geliştirmede yardımcı olur.",
+    "example_en": "German podcasts help improve listening comprehension.",
+    "example_ar": "تساعد البودكاستات الألمانية على تحسين فهم اللغة المسموعة.",
+    "example_uk": "Німецькі подкасти допомагають покращити сприйняття на слух.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Podcasts'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Podcasts'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Podcasts'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Podcasts'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Deutsche Podcasts helfen beim Verbessern des Hörverstehens.",
+        "tr": "Almanca podcastler dinlediğini anlamayı geliştirmede yardımcı olur.",
+        "en": "German podcasts help improve listening comprehension.",
+        "ar": "تساعد البودكاستات الألمانية على تحسين فهم اللغة المسموعة.",
+        "uk": "Німецькі подкасти допомагають покращити сприйняття на слух."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Podcast eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Podcast günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Podcast plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "portale": {
+    "de": "das Portal",
+    "displayDe": "Portal",
+    "article": "das",
+    "plural": "die Portale",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "portallar, internet siteleri",
+    "en": "portals / websites",
+    "ar": "بوابات إلكترونية",
+    "uk": "онлайн-портали",
+    "example_de": "Online-Portale ermöglichen die einfache Buchung von Terminen.",
+    "example_tr": "İnternet portalları randevuların kolayca alınmasını sağlar.",
+    "example_en": "Online portals enable simple appointment booking.",
+    "example_ar": "تتيح البوابات الإلكترونية حجز المواعيد بسهولة.",
+    "example_uk": "Онлайн-портали забезпечують просте бронювання прийомів.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Portale'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Portale'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Portale'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Portale'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Portal)",
+        "en": "💡 Noun Structure (das Portal)",
+        "ar": "💡 بنية الاسم (das Portal)",
+        "uk": "💡 Структура іменника (das Portal)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Online-Portale ermöglichen die einfache Buchung von Terminen.",
+        "tr": "İnternet portalları randevuların kolayca alınmasını sağlar.",
+        "en": "Online portals enable simple appointment booking.",
+        "ar": "تتيح البوابات الإلكترونية حجز المواعيد بسهولة.",
+        "uk": "Онлайн-портали забезпечують просте бронювання прийомів."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Portal eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Portal günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Portal plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "prinzip": {
+    "de": "das Prinzip",
+    "displayDe": "Prinzip",
+    "article": "das",
+    "plural": "die Prinzipien",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "ilke, prensip",
+    "en": "principle",
+    "ar": "مبدأ",
+    "uk": "принцип",
+    "example_de": "Das deutsche Gesundheitssystem basiert auf dem Hausarzt-Prinzip.",
+    "example_tr": "Alman sağlık sistemi aile hekimliği prensibine dayanır.",
+    "example_en": "The German healthcare system is based on the GP principle.",
+    "example_ar": "يرتكز النظام الصحي الألماني على مبدأ طبيب الأسرة.",
+    "example_uk": "Німецька система охорони здоров'я базується на принципі сімейного лікаря.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Prinzipien'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Prinzipien'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Prinzipien'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Prinzipien'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Prinzip)",
+        "en": "💡 Noun Structure (das Prinzip)",
+        "ar": "💡 بنية الاسم (das Prinzip)",
+        "uk": "💡 Структура іменника (das Prinzip)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das deutsche Gesundheitssystem basiert auf dem Hausarzt-Prinzip.",
+        "tr": "Alman sağlık sistemi aile hekimliği prensibine dayanır.",
+        "en": "The German healthcare system is based on the GP principle.",
+        "ar": "يرتكز النظام الصحي الألماني على مبدأ طبيب الأسرة.",
+        "uk": "Німецька система охорони здоров'я базується на принципі сімейного лікаря."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Prinzip eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Prinzip günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Prinzip plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "privaten": {
+    "de": "privat",
+    "displayDe": "privat",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "özel (çekimli sıfat)",
+    "en": "private",
+    "ar": "خاص",
+    "uk": "приватний",
+    "example_de": "Im privaten Bereich sollte man vertrauliche Daten schützen.",
+    "example_tr": "Özel alanda gizli veriler korunmalıdır.",
+    "example_en": "In the private realm, confidential data should be protected.",
+    "example_ar": "في المجال الخاص ينبغي حماية البيانات السرية.",
+    "example_uk": "У приватному житті слід захищати конфіденційні дані.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'privat' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'privat' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'privat' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'privat' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im privaten Bereich sollte man vertrauliche Daten schützen.",
+        "tr": "Özel alanda gizli veriler korunmalıdır.",
+        "en": "In the private realm, confidential data should be protected.",
+        "ar": "في المجال الخاص ينبغي حماية البيانات السرية.",
+        "uk": "У приватному житті слід захищати конфіденційні дані."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag privat zu sein.",
+        "tr": "İş ve günlük yaşamda özel (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be private in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "profitiert": {
+    "de": "profitieren",
+    "displayDe": "profitieren",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "yararlanmak, faydalanmak (er/sie/es profitiert)",
+    "en": "benefits / profits",
+    "ar": "يستفيد من",
+    "uk": "отримує користь / виграє",
+    "example_de": "Wer Vorsorgetermine wahrnimmt, profitiert von frühzeitiger Diagnose.",
+    "example_tr": "Kontrollere giden kişi erken teşhis imkanından faydalanır.",
+    "example_en": "Whoever attends checkups benefits from early diagnosis.",
+    "example_ar": "من يلتزم بالفحوصات يستفيد من التشخيص المبكر.",
+    "example_uk": "Той, хто проходить огляди, виграє від ранньої діагностики.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'profitieren' temel eylem bildiren fiildir.",
+      "en": "Verb: 'profitieren' denotes action, process, or state.",
+      "ar": "فعل: 'profitieren' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'profitieren' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (profitieren)",
+        "en": "💡 Verb Structure (profitieren)",
+        "ar": "💡 بنية الفعل (profitieren)",
+        "uk": "💡 Структура дієслова (profitieren)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer Vorsorgetermine wahrnimmt, profitiert von frühzeitiger Diagnose.",
+        "tr": "Kontrollere giden kişi erken teşhis imkanından faydalanır.",
+        "en": "Whoever attends checkups benefits from early diagnosis.",
+        "ar": "من يلتزم بالفحوصات يستفيد من التشخيص المبكر.",
+        "uk": "Той, хто проходить огляди, виграє від ранньої діагностики."
+      },
+      {
+        "de": "In Deutschland kann man profitieren, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için yararlanmak, faydalanmak (er/sie/es profitiert) eylemi yapılabilir.",
+        "en": "In Germany, one can benefits / profits to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "prüfung": {
+    "de": "die Prüfung",
+    "displayDe": "Prüfung",
+    "article": "die",
+    "plural": "die Prüfungen",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "sınav",
+    "en": "examination / exam",
+    "ar": "امتحان / اختبار",
+    "uk": "іспит",
+    "example_de": "Die Prüfung 'Deutsch-Test für Zuwanderer' schließt den Kurs ab.",
+    "example_tr": "'Göçmenler İçin Almanca Testi' sınavı kursu tamamlar.",
+    "example_en": "The 'German Test for Immigrants' examination concludes the course.",
+    "example_ar": "يختتم اختبار 'الألمانية للمهاجرين' الدورة التدريبية.",
+    "example_uk": "Іспит 'Deutsch-Test für Zuwanderer' завершує навчальний курс.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Prüfungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Prüfungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Prüfungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Prüfungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Prüfung)",
+        "en": "💡 Noun Structure (die Prüfung)",
+        "ar": "💡 بنية الاسم (die Prüfung)",
+        "uk": "💡 Структура іменника (die Prüfung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Prüfung 'Deutsch-Test für Zuwanderer' schließt den Kurs ab.",
+        "tr": "'Göçmenler İçin Almanca Testi' sınavı kursu tamamlar.",
+        "en": "The 'German Test for Immigrants' examination concludes the course.",
+        "ar": "يختتم اختبار 'الألمانية للمهاجرين' الدورة التدريبية.",
+        "uk": "Іспит 'Deutsch-Test für Zuwanderer' завершує навчальний курс."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Prüfung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Prüfung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Prüfung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "radiobeiträgen": {
+    "de": "der Radiobeitrag",
+    "displayDe": "Radiobeitrag",
+    "article": "der",
+    "plural": "die Radiobeiträge",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "radyo programları / yayınları (Dativ Plural)",
+    "en": "radio segments / broadcasts",
+    "ar": "تقارير إذاعية",
+    "uk": "радіорепортажі / радіопередачі",
+    "example_de": "Das Hören von Radiobeiträgen schult das Sprachgefühl.",
+    "example_tr": "Radyo programlarını dinlemek dil hissini geliştirir.",
+    "example_en": "Listening to radio broadcasts trains language intuition.",
+    "example_ar": "الاستماع إلى التقارير الإذاعية ينمي الحس اللغوي.",
+    "example_uk": "Прослуховування радіопередач розвиває мовне чуття.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Radiobeiträge'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Radiobeiträge'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Radiobeiträge'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Radiobeiträge'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Hören von Radiobeiträgen schult das Sprachgefühl.",
+        "tr": "Radyo programlarını dinlemek dil hissini geliştirir.",
+        "en": "Listening to radio broadcasts trains language intuition.",
+        "ar": "الاستماع إلى التقارير الإذاعية ينمي الحس اللغوي.",
+        "uk": "Прослуховування радіопередач розвиває мовне чуття."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Radiobeitrag eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Radiobeitrag günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Radiobeitrag plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "raten": {
+    "de": "raten",
+    "displayDe": "raten",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "tavsiye etmek, öğüt vermek",
+    "en": "to advise / recommend",
+    "ar": "نصح بـ / أشار على",
+    "uk": "радити / рекомендувати",
+    "example_de": "Verbraucherschützer raten zu langen Passwörtern mit Sonderzeichen.",
+    "example_tr": "Tüketici hakları savunucuları özel işaretli uzun parolaları tavsiye ediyor.",
+    "example_en": "Consumer advocates advise using long passwords with special characters.",
+    "example_ar": "ينصح خبراء حماية المستهلك بكلمات مرور طويلة برموز خاصة.",
+    "example_uk": "Захисники прав споживачів радять довгі паролі зі спецсимволами.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'raten' temel eylem bildiren fiildir.",
+      "en": "Verb: 'raten' denotes action, process, or state.",
+      "ar": "فعل: 'raten' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'raten' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (raten)",
+        "en": "💡 Verb Structure (raten)",
+        "ar": "💡 بنية الفعل (raten)",
+        "uk": "💡 Структура дієслова (raten)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Verbraucherschützer raten zu langen Passwörtern mit Sonderzeichen.",
+        "tr": "Tüketici hakları savunucuları özel işaretli uzun parolaları tavsiye ediyor.",
+        "en": "Consumer advocates advise using long passwords with special characters.",
+        "ar": "ينصح خبراء حماية المستهلك بكلمات مرور طويلة برموز خاصة.",
+        "uk": "Захисники прав споживачів радять довгі паролі зі спецсимволами."
+      },
+      {
+        "de": "In Deutschland kann man raten, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için tavsiye etmek, öğüt vermek eylemi yapılabilir.",
+        "en": "In Germany, one can to advise / recommend to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "rechtsordnung": {
+    "de": "die Rechtsordnung",
+    "displayDe": "Rechtsordnung",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "hukuk düzeni",
+    "en": "legal system / legal order",
+    "ar": "النظام القانوني",
+    "uk": "правопорядок / правова система",
+    "example_de": "Im Orientierungskurs lernen Teilnehmer die deutsche Rechtsordnung kennen.",
+    "example_tr": "Yönlendirme kursunda katılımcılar Alman hukuk düzenini öğrenir.",
+    "example_en": "In the orientation course, participants learn about the German legal system.",
+    "example_ar": "في الدورة يتعرف المشاركون على النظام القانوني الألماني.",
+    "example_uk": "На орієнтаційному курсі учасники знайомляться з німецьким правопорядком.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Rechtsordnung)",
+        "en": "💡 Noun Structure (die Rechtsordnung)",
+        "ar": "💡 بنية الاسم (die Rechtsordnung)",
+        "uk": "💡 Структура іменника (die Rechtsordnung)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Orientierungskurs lernen Teilnehmer die deutsche Rechtsordnung kennen.",
+        "tr": "Yönlendirme kursunda katılımcılar Alman hukuk düzenini öğrenir.",
+        "en": "In the orientation course, participants learn about the German legal system.",
+        "ar": "في الدورة يتعرف المشاركون على النظام القانوني الألماني.",
+        "uk": "На орієнтаційному курсі учасники знайомляться з німецьким правопорядком."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Rechtsordnung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Rechtsordnung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Rechtsordnung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "redemittel": {
+    "de": "das Redemittel",
+    "displayDe": "Redemittel",
+    "article": "das",
+    "plural": "die Redemittel",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "kalıp ifadeler, konuşma kalıpları",
+    "en": "idiomatic phrases / speech patterns",
+    "ar": "تعبيرات محادثة / قوالب لغوية",
+    "uk": "мовні засоби / фрази для спілкування",
+    "example_de": "Wichtige Redemittel helfen beim Bestehen der mündlichen B1-Prüfung.",
+    "example_tr": "Önemli konuşma kalıpları sözlü B1 sınavını geçmede yardımcı olur.",
+    "example_en": "Important phrases help in passing the oral B1 exam.",
+    "example_ar": "تساعد التعبيرات اللغوية الهامة على اجتياز الامتحان الشفوي B1.",
+    "example_uk": "Важливі мовні звороти допомагають успішно скласти усний іспит B1.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Redemittel'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Redemittel'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Redemittel'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Redemittel'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Redemittel)",
+        "en": "💡 Noun Structure (das Redemittel)",
+        "ar": "💡 بنية الاسم (das Redemittel)",
+        "uk": "💡 Структура іменника (das Redemittel)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wichtige Redemittel helfen beim Bestehen der mündlichen B1-Prüfung.",
+        "tr": "Önemli konuşma kalıpları sözlü B1 sınavını geçmede yardımcı olur.",
+        "en": "Important phrases help in passing the oral B1 exam.",
+        "ar": "تساعد التعبيرات اللغوية الهامة على اجتياز الامتحان الشفوي B1.",
+        "uk": "Важливі мовні звороти допомагають успішно скласти усний іспит B1."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Redemittel eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Redemittel günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Redemittel plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "regelmäßig": {
+    "de": "regelmäßig",
+    "displayDe": "regelmäßig",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "A2",
+    "tr": "düzenli olarak",
+    "en": "regularly",
+    "ar": "بانتظام / بصورة دورية",
+    "uk": "регулярно",
+    "example_de": "Man sollte Passwörter regelmäßig auf Aktualität überprüfen.",
+    "example_tr": "Parolaların güncelliği düzenli olarak kontrol edilmelidir.",
+    "example_en": "One should regularly check passwords for security.",
+    "example_ar": "ينبغي التحقق من كلمات المرور بانتظام.",
+    "example_uk": "Слід регулярно перевіряти актуальність паролів.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'regelmäßig' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'regelmäßig' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'regelmäßig' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'regelmäßig' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (regelmäßig)",
+        "en": "💡 Adverb (regelmäßig)",
+        "ar": "💡 ظرف (regelmäßig)",
+        "uk": "💡 Прислівник (regelmäßig)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Man sollte Passwörter regelmäßig auf Aktualität überprüfen.",
+        "tr": "Parolaların güncelliği düzenli olarak kontrol edilmelidir.",
+        "en": "One should regularly check passwords for security.",
+        "ar": "ينبغي التحقق من كلمات المرور بانتظام.",
+        "uk": "Слід регулярно перевіряти актуальність паролів."
+      },
+      {
+        "de": "Das Wort 'regelmäßig' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'regelmäßig' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'regelmäßig' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'regelmäßig' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'regelmäßig' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "reicht": {
+    "de": "reichen",
+    "displayDe": "reichen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "yetmek, yeterli olmak (er/sie/es reicht)",
+    "en": "is enough / suffices",
+    "ar": "يكفي / يفي بالغرض",
+    "uk": "вистачає / є достатнім",
+    "example_de": "Beim Arztbesuch reicht das Vorzeigen der Gesundheitskarte.",
+    "example_tr": "Doktor muayenesinde sağlık kartının gösterilmesi yeterlidir.",
+    "example_en": "Presenting the health card is sufficient at the doctor visit.",
+    "example_ar": "عند زيارة الطبيب يكفي إبراز بطاقة التأمين الصحي.",
+    "example_uk": "Під час візиту до лікаря достатньо пред'явити медичну картку.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'reichen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'reichen' denotes action, process, or state.",
+      "ar": "فعل: 'reichen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'reichen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (reichen)",
+        "en": "💡 Verb Structure (reichen)",
+        "ar": "💡 بنية الفعل (reichen)",
+        "uk": "💡 Структура дієслова (reichen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Beim Arztbesuch reicht das Vorzeigen der Gesundheitskarte.",
+        "tr": "Doktor muayenesinde sağlık kartının gösterilmesi yeterlidir.",
+        "en": "Presenting the health card is sufficient at the doctor visit.",
+        "ar": "عند زيارة الطبيب يكفي إبراز بطاقة التأمين الصحي.",
+        "uk": "Під час візиту до лікаря достатньо пред'явити медичну картку."
+      },
+      {
+        "de": "In Deutschland kann man reichen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için yetmek, yeterli olmak (er/sie/es reicht) eylemi yapılabilir.",
+        "en": "In Germany, one can is enough / suffices to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "ruhe": {
+    "de": "die Ruhe",
+    "displayDe": "Ruhe",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "sessizlik, huzur, dinlenme",
+    "en": "peace / quiet / rest",
+    "ar": "هدوء / راحة",
+    "uk": "спокій / тиша",
+    "example_de": "Am Wochenende schätzen viele Bürger Ruhe und Erholung.",
+    "example_tr": "Hafta sonu birçok vatandaş huzur ve dinlenmeye değer verir.",
+    "example_en": "On weekends, many citizens value peace and relaxation.",
+    "example_ar": "في عطلة نهاية الأسبوع يقدر العديد من المواطنين الهدوء والاسترخاء.",
+    "example_uk": "На вихідних багато громадян цінують спокій та відпочинок.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Ruhe)",
+        "en": "💡 Noun Structure (die Ruhe)",
+        "ar": "💡 بنية الاسم (die Ruhe)",
+        "uk": "💡 Структура іменника (die Ruhe)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Am Wochenende schätzen viele Bürger Ruhe und Erholung.",
+        "tr": "Hafta sonu birçok vatandaş huzur ve dinlenmeye değer verir.",
+        "en": "On weekends, many citizens value peace and relaxation.",
+        "ar": "في عطلة نهاية الأسبوع يقدر العديد من المواطنين الهدوء والاسترخاء.",
+        "uk": "На вихідних багато громадян цінують спокій та відпочинок."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Ruhe eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Ruhe günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Ruhe plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "rund": {
+    "de": "rund",
+    "displayDe": "rund",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "A2",
+    "tr": "yaklaşık / (rund um die Uhr = 24 saat)",
+    "en": "around / roughly (rund um die Uhr = 24/7)",
+    "ar": "حوالي / على مدار الساعة",
+    "uk": "приблизно / цілодобово",
+    "example_de": "Online-Termine können rund um die Uhr gebucht werden.",
+    "example_tr": "İnternet randevuları günün her saati alınabilir.",
+    "example_en": "Online appointments can be booked around the clock.",
+    "example_ar": "يمكن حجز المواعيد عبر الإنترنت على مدار الساعة.",
+    "example_uk": "Онлайн-запис на прийом можна здійснити цілодобово.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'rund' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'rund' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'rund' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'rund' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (rund)",
+        "en": "💡 Adverb (rund)",
+        "ar": "💡 ظرف (rund)",
+        "uk": "💡 Прислівник (rund)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Online-Termine können rund um die Uhr gebucht werden.",
+        "tr": "İnternet randevuları günün her saati alınabilir.",
+        "en": "Online appointments can be booked around the clock.",
+        "ar": "يمكن حجز المواعيد عبر الإنترنت على مدار الساعة.",
+        "uk": "Онлайн-запис на прийом можна здійснити цілодобово."
+      },
+      {
+        "de": "Das Wort 'rund' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'rund' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'rund' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'rund' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'rund' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "s": {
+    "de": "es",
+    "displayDe": "'s",
+    "article": "",
+    "plural": "",
+    "pos": "pron",
+    "level": "A1",
+    "tr": "o (kısaltılmış nötr zamir)",
+    "en": "it (short form 's)",
+    "ar": "هو / هي (للمحايد)",
+    "uk": "воно (скорочено)",
+    "example_de": "Wie geht's Ihnen heute beim Arztbesuch?",
+    "example_tr": "Doktor muayenesinde bugün nasılsınız?",
+    "example_en": "How are you doing today at the doctor visit?",
+    "example_ar": "كيف حالك اليوم عند زيارة الطبيب؟",
+    "example_uk": "Як ви себе почуваєте сьогодні на прийомі в лікаря?",
+    "grammar": {
+      "tr": "Zamir (Pronomen): ''s' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
+      "en": "Pronoun: ''s' stands in place of a noun and reflects grammatical case.",
+      "ar": "ضمير: ''s' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
+      "uk": "Займенник: ''s' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wie geht's Ihnen heute beim Arztbesuch?",
+        "tr": "Doktor muayenesinde bugün nasılsınız?",
+        "en": "How are you doing today at the doctor visit?",
+        "ar": "كيف حالك اليوم عند زيارة الطبيب؟",
+        "uk": "Як ви себе почуваєте сьогодні на прийомі в лікаря?"
+      },
+      {
+        "de": "Das Wort ''s' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "''s' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word ''s' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة ''s' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово ''s' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "sammelt": {
+    "de": "sammeln",
+    "displayDe": "sammeln",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "toplamak, biriktirmek (er/sie/es sammelt)",
+    "en": "collects / gathers",
+    "ar": "يجمع / يحصد",
+    "uk": "збирає / накопичує",
+    "example_de": "Wer Sport treibt, sammelt Bonuspunkte bei der Krankenkasse.",
+    "example_tr": "Spor yapan kişi sigorta kasasında bonus puan toplar.",
+    "example_en": "Whoever exercises collects bonus points with their health insurer.",
+    "example_ar": "من يمارس الرياضة يجمع نقاط مكافأة لدى شركة التأمين.",
+    "example_uk": "Той, хто займається спортом, накопичує бонусні бали в лікарняній касі.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'sammeln' temel eylem bildiren fiildir.",
+      "en": "Verb: 'sammeln' denotes action, process, or state.",
+      "ar": "فعل: 'sammeln' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'sammeln' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (sammeln)",
+        "en": "💡 Verb Structure (sammeln)",
+        "ar": "💡 بنية الفعل (sammeln)",
+        "uk": "💡 Структура дієслова (sammeln)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer Sport treibt, sammelt Bonuspunkte bei der Krankenkasse.",
+        "tr": "Spor yapan kişi sigorta kasasında bonus puan toplar.",
+        "en": "Whoever exercises collects bonus points with their health insurer.",
+        "ar": "من يمارس الرياضة يجمع نقاط مكافأة لدى شركة التأمين.",
+        "uk": "Той, хто займається спортом, накопичує бонусні бали в лікарняній касі."
+      },
+      {
+        "de": "In Deutschland kann man sammeln, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için toplamak, biriktirmek (er/sie/es sammelt) eylemi yapılabilir.",
+        "en": "In Germany, one can collects / gathers to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "scheu": {
+    "de": "die Scheu",
+    "displayDe": "Scheu",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "çekingenlik, çekinme",
+    "en": "shyness / hesitation",
+    "ar": "خجل / تردد",
+    "uk": "сором'язливість / побоювання",
+    "example_de": "Im Sprachkurs verlieren Lernende schnell die Scheu vor dem Sprechen.",
+    "example_tr": "Dil kursunda öğrenciler konuşma çekingenliğini hızla yenerler.",
+    "example_en": "In the language course, learners quickly lose their hesitation to speak.",
+    "example_ar": "في دورة اللغة يتخلص الدارسون سريعاً من الخجل من التحدث.",
+    "example_uk": "На мовному курсі учні швидко долають страх говорити.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Scheu)",
+        "en": "💡 Noun Structure (die Scheu)",
+        "ar": "💡 بنية الاسم (die Scheu)",
+        "uk": "💡 Структура іменника (die Scheu)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Sprachkurs verlieren Lernende schnell die Scheu vor dem Sprechen.",
+        "tr": "Dil kursunda öğrenciler konuşma çekingenliğini hızla yenerler.",
+        "en": "In the language course, learners quickly lose their hesitation to speak.",
+        "ar": "في دورة اللغة يتخلص الدارسون سريعاً من الخجل من التحدث.",
+        "uk": "На мовному курсі учні швидко долають страх говорити."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Scheu eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Scheu günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Scheu plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "schiene": {
+    "de": "die Schiene",
+    "displayDe": "Schiene",
+    "article": "die",
+    "plural": "die Schienen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "ray, demiryolu hattı",
+    "en": "rail / track",
+    "ar": "سكة حديدية / قضيب",
+    "uk": "колія / залізниця",
+    "example_de": "Mehr Verkehr soll von der Straße auf die Schiene verlagert werden.",
+    "example_tr": "Daha fazla ulaşımın karayolundan demiryoluna kaydırılması hedefleniyor.",
+    "example_en": "More traffic should be shifted from road to rail.",
+    "example_ar": "ينبغي نقل المزيد من حركة المرور من الطرق إلى السكك الحديدية.",
+    "example_uk": "Більше перевезень має бути переведено з автодоріг на залізницю.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Schienen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Schienen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Schienen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Schienen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Schiene)",
+        "en": "💡 Noun Structure (die Schiene)",
+        "ar": "💡 بنية الاسم (die Schiene)",
+        "uk": "💡 Структура іменника (die Schiene)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Mehr Verkehr soll von der Straße auf die Schiene verlagert werden.",
+        "tr": "Daha fazla ulaşımın karayolundan demiryoluna kaydırılması hedefleniyor.",
+        "en": "More traffic should be shifted from road to rail.",
+        "ar": "ينبغي نقل المزيد من حركة المرور من الطرق إلى السكك الحديدية.",
+        "uk": "Більше перевезень має бути переведено з автодоріг на залізницю."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Schiene eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Schiene günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Schiene plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "schienen": {
+    "de": "die Schiene",
+    "displayDe": "Schiene",
+    "article": "die",
+    "plural": "die Schienen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "raylar",
+    "en": "rails / tracks",
+    "ar": "قضبان السكك الحديدية",
+    "uk": "рейки / залізничні колії",
+    "example_de": "Moderne Schienen ermöglichen einen schnellen Zugverkehr.",
+    "example_tr": "Modern raylar hızlı bir tren ulaşımına imkan tanır.",
+    "example_en": "Modern tracks enable fast train traffic.",
+    "example_ar": "تتيح القضبان الحديثة حركة قطارات سريعة.",
+    "example_uk": "Сучасні колії уможливлюють швидкісний рух поїздів.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Schienen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Schienen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Schienen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Schienen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Moderne Schienen ermöglichen einen schnellen Zugverkehr.",
+        "tr": "Modern raylar hızlı bir tren ulaşımına imkan tanır.",
+        "en": "Modern tracks enable fast train traffic.",
+        "ar": "تتيح القضبان الحديثة حركة قطارات سريعة.",
+        "uk": "Сучасні колії уможливлюють швидкісний рух поїздів."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Schiene eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Schiene günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Schiene plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "schlüssel": {
+    "de": "der Schlüssel",
+    "displayDe": "Schlüssel",
+    "article": "der",
+    "plural": "die Schlüssel",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "anahtar (mecazi ve gerçek)",
+    "en": "key",
+    "ar": "مفتاح",
+    "uk": "ключ",
+    "example_de": "Die deutsche Sprache ist der Schlüssel zur erfolgreichen Integration.",
+    "example_tr": "Almanca dili başarılı bir uyumun anahtarıdır.",
+    "example_en": "The German language is the key to successful integration.",
+    "example_ar": "اللغة الألمانية هي المفتاح للاندماج الناجح.",
+    "example_uk": "Німецька мова є ключем до успішної інтеграції.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Schlüssel'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Schlüssel'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Schlüssel'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Schlüssel'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Schlüssel)",
+        "en": "💡 Noun Structure (der Schlüssel)",
+        "ar": "💡 بنية الاسم (der Schlüssel)",
+        "uk": "💡 Структура іменника (der Schlüssel)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die deutsche Sprache ist der Schlüssel zur erfolgreichen Integration.",
+        "tr": "Almanca dili başarılı bir uyumun anahtarıdır.",
+        "en": "The German language is the key to successful integration.",
+        "ar": "اللغة الألمانية هي المفتاح للاندماج الناجح.",
+        "uk": "Німецька мова є ключем до успішної інтеграції."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Schlüssel eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Schlüssel günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Schlüssel plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "schnell": {
+    "de": "schnell",
+    "displayDe": "schnell",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "hızlı, çabuk",
+    "en": "fast / quick",
+    "ar": "سريع",
+    "uk": "швидкий / швидко",
+    "example_de": "Mit dem Regionalexpress gelangt man schnell ans Ziel.",
+    "example_tr": "Bölgesel ekspres trenle hedefe hızlıca varılır.",
+    "example_en": "With the regional express, one reaches the destination quickly.",
+    "example_ar": "بالقطار الإقليمي السريع يصل المرء سريعاً إلى وجهته.",
+    "example_uk": "Регіональним експресом можна швидко дістатися місця призначення.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'schnell' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'schnell' describes quality or state.",
+      "ar": "صفة: 'schnell' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'schnell' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (schnell)",
+        "en": "💡 Adjective (schnell)",
+        "ar": "💡 بنية الصفة (schnell)",
+        "uk": "💡 Структура прикметника (schnell)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Mit dem Regionalexpress gelangt man schnell ans Ziel.",
+        "tr": "Bölgesel ekspres trenle hedefe hızlıca varılır.",
+        "en": "With the regional express, one reaches the destination quickly.",
+        "ar": "بالقطار الإقليمي السريع يصل المرء سريعاً إلى وجهته.",
+        "uk": "Регіональним експресом можна швидко дістатися місця призначення."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag schnell zu sein.",
+        "tr": "İş ve günlük yaşamda hızlı, çabuk olmak son derece önemlidir.",
+        "en": "It is very important to be fast / quick in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "schonen": {
+    "de": "schonen",
+    "displayDe": "schonen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "korumak, gözetmek (çevreyi/bütçeyi)",
+    "en": "to protect / spare / conserve",
+    "ar": "حافظ على / وفّر",
+    "uk": "берегти / заощаджувати",
+    "example_de": "Fahrgäste schonen mit Bus und Bahn die Umwelt und den Geldbeutel.",
+    "example_tr": "Yolcular otobüs ve trenle çevreyi ve bütçelerini korurlar.",
+    "example_en": "Passengers protect the environment and their wallet by bus and train.",
+    "example_ar": "يحافظ الركاب بالحافلات والقطارات على البيئة وميزانيتهم.",
+    "example_uk": "Пасажири автобусів і поїздів бережуть довкілля та власний гаманець.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'schonen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'schonen' denotes action, process, or state.",
+      "ar": "فعل: 'schonen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'schonen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (schonen)",
+        "en": "💡 Verb Structure (schonen)",
+        "ar": "💡 بنية الفعل (schonen)",
+        "uk": "💡 Структура дієслова (schonen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Fahrgäste schonen mit Bus und Bahn die Umwelt und den Geldbeutel.",
+        "tr": "Yolcular otobüs ve trenle çevreyi ve bütçelerini korurlar.",
+        "en": "Passengers protect the environment and their wallet by bus and train.",
+        "ar": "يحافظ الركاب بالحافلات والقطارات على البيئة وميزانيتهم.",
+        "uk": "Пасажири автобусів і поїздів бережуть довкілля та власний гаманець."
+      },
+      {
+        "de": "In Deutschland kann man schonen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için korumak, gözetmek (çevreyi/bütçeyi) eylemi yapılabilir.",
+        "en": "In Germany, one can to protect / spare / conserve to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "schreiben": {
+    "de": "schreiben",
+    "displayDe": "schreiben",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "yazmak",
+    "en": "to write",
+    "ar": "كتب",
+    "uk": "писати",
+    "example_de": "In der B1-Prüfung muss man einen kurzen Brief schreiben.",
+    "example_tr": "B1 sınavında kısa bir mektup yazmak gerekir.",
+    "example_en": "In the B1 exam, one must write a short letter.",
+    "example_ar": "في امتحان B1 يجب على المرء كتابة رسالة قصيرة.",
+    "example_uk": "На іспиті B1 необхідно написати короткого листа.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'schreiben' temel eylem bildiren fiildir.",
+      "en": "Verb: 'schreiben' denotes action, process, or state.",
+      "ar": "فعل: 'schreiben' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'schreiben' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (schreiben)",
+        "en": "💡 Verb Structure (schreiben)",
+        "ar": "💡 بنية الفعل (schreiben)",
+        "uk": "💡 Структура дієслова (schreiben)"
+      }
+    },
+    "examples": [
+      {
+        "de": "In der B1-Prüfung muss man einen kurzen Brief schreiben.",
+        "tr": "B1 sınavında kısa bir mektup yazmak gerekir.",
+        "en": "In the B1 exam, one must write a short letter.",
+        "ar": "في امتحان B1 يجب على المرء كتابة رسالة قصيرة.",
+        "uk": "На іспиті B1 необхідно написати короткого листа."
+      },
+      {
+        "de": "In Deutschland kann man schreiben, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için yazmak eylemi yapılabilir.",
+        "en": "In Germany, one can to write to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "schwerpunkt": {
+    "de": "der Schwerpunkt",
+    "displayDe": "Schwerpunkt",
+    "article": "der",
+    "plural": "die Schwerpunkte",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "odak noktası, ağırlık merkezi",
+    "en": "focal point / emphasis",
+    "ar": "نقطة التركيز / محور رئيسي",
+    "uk": "головний акцент / пріоритет",
+    "example_de": "Ein zentraler Schwerpunkt der modernen Medizin ist die Vorsorge.",
+    "example_tr": "Modern tıbbın merkezi odak noktası koruyucu hekimliktir.",
+    "example_en": "A central focal point of modern medicine is prevention.",
+    "example_ar": "محور التركيز الأساسي في الطب الحديث هو الوقاية.",
+    "example_uk": "Головним акцентом сучасної медицини є профілактика.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Schwerpunkte'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Schwerpunkte'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Schwerpunkte'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Schwerpunkte'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Schwerpunkt)",
+        "en": "💡 Noun Structure (der Schwerpunkt)",
+        "ar": "💡 بنية الاسم (der Schwerpunkt)",
+        "uk": "💡 Структура іменника (der Schwerpunkt)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein zentraler Schwerpunkt der modernen Medizin ist die Vorsorge.",
+        "tr": "Modern tıbbın merkezi odak noktası koruyucu hekimliktir.",
+        "en": "A central focal point of modern medicine is prevention.",
+        "ar": "محور التركيز الأساسي في الطب الحديث هو الوقاية.",
+        "uk": "Головним акцентом сучасної медицини є профілактика."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Schwerpunkt eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Schwerpunkt günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Schwerpunkt plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "sein": {
+    "de": "sein",
+    "displayDe": "sein",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "olmak / onun (iyelik)",
+    "en": "to be / his",
+    "ar": "كان / له",
+    "uk": "бути / його",
+    "example_de": "Passwörter sollten lang und sicher sein.",
+    "example_tr": "Parolalar uzun ve güvenli olmalıdır.",
+    "example_en": "Passwords should be long and secure.",
+    "example_ar": "يجب أن تكون كلمات المرور طويلة وآمنة.",
+    "example_uk": "Паролі повинні бути довгими та надійними.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'sein' temel eylem bildiren fiildir.",
+      "en": "Verb: 'sein' denotes action, process, or state.",
+      "ar": "فعل: 'sein' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'sein' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (sein)",
+        "en": "💡 Verb Structure (sein)",
+        "ar": "💡 بنية الفعل (sein)",
+        "uk": "💡 Структура дієслова (sein)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Passwörter sollten lang und sicher sein.",
+        "tr": "Parolalar uzun ve güvenli olmalıdır.",
+        "en": "Passwords should be long and secure.",
+        "ar": "يجب أن تكون كلمات المرور طويلة وآمنة.",
+        "uk": "Паролі повинні бути довгими та надійними."
+      },
+      {
+        "de": "In Deutschland kann man sein, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için olmak / onun (iyelik) eylemi yapılabilir.",
+        "en": "In Germany, one can to be / his to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "seiner": {
+    "de": "sein",
+    "displayDe": "seiner",
+    "article": "",
+    "plural": "",
+    "pos": "pron",
+    "level": "A1",
+    "tr": "onun (Dativ/Genitiv)",
+    "en": "his / of his",
+    "ar": "له / خاصته",
+    "uk": "його",
+    "example_de": "Der Arzt kennt die Krankengeschichte seiner Patienten am besten.",
+    "example_tr": "Doktor hastalarının sağlık geçmişini en iyi bilir.",
+    "example_en": "The doctor knows his patients' medical history best.",
+    "example_ar": "طبيب الأسرة يعرف التاريخ المرضي لمرضاه على أفضل وجه.",
+    "example_uk": "Лікар найкраще знає історію хвороб своїх пацієнтів.",
+    "grammar": {
+      "tr": "Zamir (Pronomen): 'seiner' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
+      "en": "Pronoun: 'seiner' stands in place of a noun and reflects grammatical case.",
+      "ar": "ضمير: 'seiner' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
+      "uk": "Займенник: 'seiner' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Arzt kennt die Krankengeschichte seiner Patienten am besten.",
+        "tr": "Doktor hastalarının sağlık geçmişini en iyi bilir.",
+        "en": "The doctor knows his patients' medical history best.",
+        "ar": "طبيب الأسرة يعرف التاريخ المرضي لمرضاه على أفضل وجه.",
+        "uk": "Лікар найкраще знає історію хвороб своїх пацієнтів."
+      },
+      {
+        "de": "Das Wort 'seiner' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'seiner' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'seiner' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'seiner' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'seiner' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "selbstsicherheit": {
+    "de": "die Selbstsicherheit",
+    "displayDe": "Selbstsicherheit",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "özgüven, kendine güven",
+    "en": "self-confidence / assurance",
+    "ar": "الثقة بالنفس",
+    "uk": "впевненість у собі",
+    "example_de": "Durch aktives Üben gewinnt man Selbstsicherheit beim Sprechen.",
+    "example_tr": "Aktif pratik yaparak konuşurken özgüven kazanılır.",
+    "example_en": "Through active practice, one gains self-confidence in speaking.",
+    "example_ar": "يكتسب المرء الثقة بالنفس عند التحدث من خلال الممارسة النشطة.",
+    "example_uk": "Завдяки активній практиці людина набуває впевненості у мовленні.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Selbstsicherheit)",
+        "en": "💡 Noun Structure (die Selbstsicherheit)",
+        "ar": "💡 بنية الاسم (die Selbstsicherheit)",
+        "uk": "💡 Структура іменника (die Selbstsicherheit)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Durch aktives Üben gewinnt man Selbstsicherheit beim Sprechen.",
+        "tr": "Aktif pratik yaparak konuşurken özgüven kazanılır.",
+        "en": "Through active practice, one gains self-confidence in speaking.",
+        "ar": "يكتسب المرء الثقة بالنفس عند التحدث من خلال الممارسة النشطة.",
+        "uk": "Завдяки активній практиці людина набуває впевненості у мовленні."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Selbstsicherheit eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Selbstsicherheit günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Selbstsicherheit plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "selbstständigen": {
+    "de": "selbstständig",
+    "displayDe": "selbstständig",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "bağımsız (dil kullanımı) / serbest çalışan",
+    "en": "independent (language use)",
+    "ar": "مستقل",
+    "uk": "самостійний",
+    "example_de": "Das B1-Zertifikat bescheinigt die selbstständige Sprachverwendung.",
+    "example_tr": "B1 sertifikası bağımsız dil kullanımını belgeler.",
+    "example_en": "The B1 certificate confirms independent language use.",
+    "example_ar": "توثق شهادة B1 الاستخدام المستقل للغة.",
+    "example_uk": "Сертифікат B1 засвідчує самостійне використання мови.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'selbstständig' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'selbstständig' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'selbstständig' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'selbstständig' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das B1-Zertifikat bescheinigt die selbstständige Sprachverwendung.",
+        "tr": "B1 sertifikası bağımsız dil kullanımını belgeler.",
+        "en": "The B1 certificate confirms independent language use.",
+        "ar": "توثق شهادة B1 الاستخدام المستقل للغة.",
+        "uk": "Сертифікат B1 засвідчує самостійне використання мови."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag selbstständig zu sein.",
+        "tr": "İş ve günlük yaşamda bağımsız (dil kullanımı) / serbest çalışan olmak son derece önemlidir.",
+        "en": "It is very important to be independent (language use) in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "seriöse": {
+    "de": "seriös",
+    "displayDe": "seriös",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "güvenilir, saygın, ciddi",
+    "en": "reputable / serious / trustworthy",
+    "ar": "موثوق / جاد / ذو سمعة حسنة",
+    "uk": "надійний / солідний / авторитетний",
+    "example_de": "Seriöse Banken fragen niemals Zugangsdaten per E-Mail ab.",
+    "example_tr": "Güvenilir bankalar asla e-posta ile giriş bilgileri sormaz.",
+    "example_en": "Reputable banks never request login credentials via email.",
+    "example_ar": "البنوك الموثوقة لا تطلب بيانات الدخول عبر البريد الإلكتروني أبداً.",
+    "example_uk": "Надійні банки ніколи не запитують дані для входу електронною поштою.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'seriös' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'seriös' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'seriös' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'seriös' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Seriöse Banken fragen niemals Zugangsdaten per E-Mail ab.",
+        "tr": "Güvenilir bankalar asla e-posta ile giriş bilgileri sormaz.",
+        "en": "Reputable banks never request login credentials via email.",
+        "ar": "البنوك الموثوقة لا تطلب بيانات الدخول عبر البريد الإلكتروني أبداً.",
+        "uk": "Надійні банки ніколи не запитують дані для входу електронною поштою."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag seriös zu sein.",
+        "tr": "İş ve günlük yaşamda güvenilir, saygın, ciddi olmak son derece önemlidir.",
+        "en": "It is very important to be reputable / serious / trustworthy in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "sicheres": {
+    "de": "sicher",
+    "displayDe": "sicher",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "güvenli (çekimli sıfat)",
+    "en": "secure / safe",
+    "ar": "آمن",
+    "uk": "надійний / безпечний",
+    "example_de": "Ein sicheres Passwort schützt vor Identitätsdiebstahl.",
+    "example_tr": "Güvenli bir parola kimlik hırsızlığına karşı korur.",
+    "example_en": "A secure password protects against identity theft.",
+    "example_ar": "كلمة المرور الآمنة تحمي من سرقة الهوية.",
+    "example_uk": "Надійний пароль захищає від викрадення особистих даних.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'sicher' sıfatı nötr isim önünde Nominativ veya Akkusativ halinde '-es' takısı almıştır.",
+      "en": "Adjective declension: 'sicher' takes the neuter '-es' ending in Nominative or Accusative case.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'sicher' لاحقة المحايد '-es'.",
+      "uk": "Відмінювання прикметників: прикметник 'sicher' отримує закінчення '-es' для середнього роду.",
+      "title": {
+        "tr": "💡 Neden \"-es\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-es\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-es\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-es\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein sicheres Passwort schützt vor Identitätsdiebstahl.",
+        "tr": "Güvenli bir parola kimlik hırsızlığına karşı korur.",
+        "en": "A secure password protects against identity theft.",
+        "ar": "كلمة المرور الآمنة تحمي من سرقة الهوية.",
+        "uk": "Надійний пароль захищає від викрадення особистих даних."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag sicher zu sein.",
+        "tr": "İş ve günlük yaşamda güvenli (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be secure / safe in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "sicherheit": {
+    "de": "die Sicherheit",
+    "displayDe": "Sicherheit",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "güvenlik, emniyet",
+    "en": "security / safety",
+    "ar": "الأمان / السلامة",
+    "uk": "безпека",
+    "example_de": "Die Sicherheit persönlicher Daten hat oberste Priorität.",
+    "example_tr": "Kişisel verilerin güvenliği en yüksek önceliğe sahiptir.",
+    "example_en": "The security of personal data has top priority.",
+    "example_ar": "أمان البيانات الشخصية يحظى بالأولوية القصوى.",
+    "example_uk": "Безпека персональних даних має найвищий пріоритет.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Sicherheit)",
+        "en": "💡 Noun Structure (die Sicherheit)",
+        "ar": "💡 بنية الاسم (die Sicherheit)",
+        "uk": "💡 Структура іменника (die Sicherheit)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Sicherheit persönlicher Daten hat oberste Priorität.",
+        "tr": "Kişisel verilerin güvenliği en yüksek önceliğe sahiptir.",
+        "en": "The security of personal data has top priority.",
+        "ar": "أمان البيانات الشخصية يحظى بالأولوية القصوى.",
+        "uk": "Безпека персональних даних має найвищий пріоритет."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Sicherheit eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Sicherheit günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Sicherheit plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "sicherheitsexperten": {
+    "de": "der Sicherheitsexperte",
+    "displayDe": "Sicherheitsexperte",
+    "article": "der",
+    "plural": "die Sicherheitsexperten",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "güvenlik uzmanları",
+    "en": "security experts",
+    "ar": "خبراء الأمان",
+    "uk": "експерти з безпеки",
+    "example_de": "Sicherheitsexperten raten zur Zwei-Faktor-Authentifizierung.",
+    "example_tr": "Güvenlik uzmanları iki faktörlü kimlik doğrulamayı tavsiye ediyor.",
+    "example_en": "Security experts advise using two-factor authentication.",
+    "example_ar": "ينصح خبراء الأمان باستخدام المصادقة الثنائية.",
+    "example_uk": "Експерти з безпеки радять використовувати двофакторну автентифікацію.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Sicherheitsexperten'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Sicherheitsexperten'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Sicherheitsexperten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Sicherheitsexperten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Sicherheitsexperten raten zur Zwei-Faktor-Authentifizierung.",
+        "tr": "Güvenlik uzmanları iki faktörlü kimlik doğrulamayı tavsiye ediyor.",
+        "en": "Security experts advise using two-factor authentication.",
+        "ar": "ينصح خبراء الأمان باستخدام المصادقة الثنائية.",
+        "uk": "Експерти з безпеки радять використовувати двофакторну автентифікацію."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Sicherheitsexperte eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Sicherheitsexperte günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Sicherheitsexperte plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "smartphones": {
+    "de": "das Smartphone",
+    "displayDe": "Smartphone",
+    "article": "das",
+    "plural": "die Smartphones",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "akıllı telefonlar",
+    "en": "smartphones",
+    "ar": "هواتف ذكية",
+    "uk": "смартфони",
+    "example_de": "Über Smartphones lassen sich Arzttermine einfach verwalten.",
+    "example_tr": "Akıllı telefonlar üzerinden doktor randevuları kolayca yönetilebilir.",
+    "example_en": "Doctor appointments can be easily managed via smartphones.",
+    "example_ar": "يمكن إدارة مواعيد الأطباء بسهولة عبر الهواتف الذكية.",
+    "example_uk": "Записи до лікаря можна легко вести через смартфони.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Smartphones'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Smartphones'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Smartphones'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Smartphones'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Über Smartphones lassen sich Arzttermine einfach verwalten.",
+        "tr": "Akıllı telefonlar üzerinden doktor randevuları kolayca yönetilebilir.",
+        "en": "Doctor appointments can be easily managed via smartphones.",
+        "ar": "يمكن إدارة مواعيد الأطباء بسهولة عبر الهواتف الذكية.",
+        "uk": "Записи до лікаря можна легко вести через смартфони."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Smartphone eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Smartphone günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Smartphone plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "sogenanntes": {
+    "de": "sogenannt",
+    "displayDe": "sogenannt",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "sözde, tabir edilen, adlandırılan",
+    "en": "so-called",
+    "ar": "ما يسمى بـ / المعروف بـ",
+    "uk": "так званий",
+    "example_de": "Das sogenannte Deutschlandticket gilt bundesweit.",
+    "example_tr": "Almanya bileti olarak adlandırılan bilet ülke genelinde geçerlidir.",
+    "example_en": "The so-called Deutschlandticket is valid nationwide.",
+    "example_ar": "تعتبر ما تسمى بتذكرة ألمانيا صالحة في عموم البلاد.",
+    "example_uk": "Так званий Дойчландтикет діє по всій країні.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'sogenannt' sıfatı nötr isim önünde Nominativ veya Akkusativ halinde '-es' takısı almıştır.",
+      "en": "Adjective declension: 'sogenannt' takes the neuter '-es' ending in Nominative or Accusative case.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'sogenannt' لاحقة المحايد '-es'.",
+      "uk": "Відмінювання прикметників: прикметник 'sogenannt' отримує закінчення '-es' для середнього роду.",
+      "title": {
+        "tr": "💡 Neden \"-es\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-es\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-es\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-es\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das sogenannte Deutschlandticket gilt bundesweit.",
+        "tr": "Almanya bileti olarak adlandırılan bilet ülke genelinde geçerlidir.",
+        "en": "The so-called Deutschlandticket is valid nationwide.",
+        "ar": "تعتبر ما تسمى بتذكرة ألمانيا صالحة في عموم البلاد.",
+        "uk": "Так званий Дойчландтикет діє по всій країні."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag sogenannt zu sein.",
+        "tr": "İş ve günlük yaşamda sözde, tabir edilen, adlandırılan olmak son derece önemlidir.",
+        "en": "It is very important to be so-called in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "sollte": {
+    "de": "sollen",
+    "displayDe": "sollen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "-meli, yapmalı (tavsiye kipi)",
+    "en": "should",
+    "ar": "ينبغي / يجب",
+    "uk": "слід / варто було б",
+    "example_de": "Ein Passwort sollte mindestens zwölf Zeichen enthalten.",
+    "example_tr": "Bir parola en az on iki karakter içermelidir.",
+    "example_en": "A password should contain at least twelve characters.",
+    "example_ar": "يجب أن تحتوي كلمة المرور على 12 حرفاً على الأقل.",
+    "example_uk": "Пароль повинен містити щонайменше 12 символів.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'sollen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'sollen' denotes action, process, or state.",
+      "ar": "فعل: 'sollen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'sollen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (sollen)",
+        "en": "💡 Verb Structure (sollen)",
+        "ar": "💡 بنية الفعل (sollen)",
+        "uk": "💡 Структура дієслова (sollen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein Passwort sollte mindestens zwölf Zeichen enthalten.",
+        "tr": "Bir parola en az on iki karakter içermelidir.",
+        "en": "A password should contain at least twelve characters.",
+        "ar": "يجب أن تحتوي كلمة المرور على 12 حرفاً على الأقل.",
+        "uk": "Пароль повинен містити щонайменше 12 символів."
+      },
+      {
+        "de": "In Deutschland kann man sollen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için -meli, yapmalı (tavsiye kipi) eylemi yapılabilir.",
+        "en": "In Germany, one can should to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "sonderzeichen": {
+    "de": "das Sonderzeichen",
+    "displayDe": "Sonderzeichen",
+    "article": "das",
+    "plural": "die Sonderzeichen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "özel işaretler / özel karakterler",
+    "en": "special characters",
+    "ar": "الرموز الخاصة",
+    "uk": "спеціальні символи",
+    "example_de": "Ein starkes Passwort enthält Zahlen und Sonderzeichen.",
+    "example_tr": "Güçlü bir parola rakamlar ve özel işaretler içerir.",
+    "example_en": "A strong password contains numbers and special characters.",
+    "example_ar": "تحتوي كلمة المرور القوية على أرقام ورموز خاصة.",
+    "example_uk": "Надійний пароль містить цифри та спеціальні символи.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Sonderzeichen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Sonderzeichen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Sonderzeichen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Sonderzeichen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein starkes Passwort enthält Zahlen und Sonderzeichen.",
+        "tr": "Güçlü bir parola rakamlar ve özel işaretler içerir.",
+        "en": "A strong password contains numbers and special characters.",
+        "ar": "تحتوي كلمة المرور القوية على أرقام ورموز خاصة.",
+        "uk": "Надійний пароль містить цифри та спеціальні символи."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Sonderzeichen eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Sonderzeichen günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Sonderzeichen plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "sozialen": {
+    "de": "sozial",
+    "displayDe": "sozial",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "sosyal, toplumsal",
+    "en": "social",
+    "ar": "اجتماعي",
+    "uk": "соціальний",
+    "example_de": "Sprachkenntnisse fördern die Integration in sozialen Bereichen.",
+    "example_tr": "Dil bilgisi sosyal alanlarda uyumu destekler.",
+    "example_en": "Language skills promote integration in social areas.",
+    "example_ar": "تدعم المهارات اللغوية الاندماج في المجالات الاجتماعية.",
+    "example_uk": "Мовні знання сприяють інтеграції в соціальній сфері.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'sozial' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'sozial' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'sozial' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'sozial' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Sprachkenntnisse fördern die Integration in sozialen Bereichen.",
+        "tr": "Dil bilgisi sosyal alanlarda uyumu destekler.",
+        "en": "Language skills promote integration in social areas.",
+        "ar": "تدعم المهارات اللغوية الاندماج في المجالات الاجتماعية.",
+        "uk": "Мовні знання сприяють інтеграції в соціальній сфері."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag sozial zu sein.",
+        "tr": "İş ve günlük yaşamda sosyal, toplumsal olmak son derece önemlidir.",
+        "en": "It is very important to be social in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "spart": {
+    "de": "sparen",
+    "displayDe": "sparen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "tasarruf etmek, biriktirmek (er/sie/es spart)",
+    "en": "saves (money/time)",
+    "ar": "يوفر / يدخر",
+    "uk": "заощаджує",
+    "example_de": "Das Monatsticket spart Pendlern viel Geld.",
+    "example_tr": "Aylık bilet çalışanlara çok para tasarrufu sağlar.",
+    "example_en": "The monthly ticket saves commuters a lot of money.",
+    "example_ar": "توفر التذكرة الشهرية على الركاب الكثير من المال.",
+    "example_uk": "Місячний квиток заощаджує пасажирам багато грошей.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'sparen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'sparen' denotes action, process, or state.",
+      "ar": "فعل: 'sparen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'sparen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (sparen)",
+        "en": "💡 Verb Structure (sparen)",
+        "ar": "💡 بنية الفعل (sparen)",
+        "uk": "💡 Структура дієслова (sparen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Monatsticket spart Pendlern viel Geld.",
+        "tr": "Aylık bilet çalışanlara çok para tasarrufu sağlar.",
+        "en": "The monthly ticket saves commuters a lot of money.",
+        "ar": "توفر التذكرة الشهرية على الركاب الكثير من المال.",
+        "uk": "Місячний квиток заощаджує пасажирам багато грошей."
+      },
+      {
+        "de": "In Deutschland kann man sparen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için tasarruf etmek, biriktirmek (er/sie/es spart) eylemi yapılabilir.",
+        "en": "In Germany, one can saves (money/time) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "spezialisierte": {
+    "de": "spezialisiert",
+    "displayDe": "spezialisiert",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "uzmanlaşmış (çekimli sıfat)",
+    "en": "specialized",
+    "ar": "مختص / متمرس",
+    "uk": "спеціалізований",
+    "example_de": "Der Hausarzt überweist an spezialisierte Fachärzte.",
+    "example_tr": "Aile hekimi uzmanlaşmış doktorlara sevk eder.",
+    "example_en": "The GP refers patients to specialized medical experts.",
+    "example_ar": "يحول طبيب الأسرة المرضى إلى أطباء أخصائيين.",
+    "example_uk": "Сімейний лікар направляє до профільних спеціалістів.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'spezialisiert' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'spezialisiert' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'spezialisiert' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'spezialisiert' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Hausarzt überweist an spezialisierte Fachärzte.",
+        "tr": "Aile hekimi uzmanlaşmış doktorlara sevk eder.",
+        "en": "The GP refers patients to specialized medical experts.",
+        "ar": "يحول طبيب الأسرة المرضى إلى أطباء أخصائيين.",
+        "uk": "Сімейний лікар направляє до профільних спеціалістів."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag spezialisiert zu sein.",
+        "tr": "İş ve günlük yaşamda uzmanlaşmış (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be specialized in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "sprachkurs": {
+    "de": "der Sprachkurs",
+    "displayDe": "Sprachkurs",
+    "article": "der",
+    "plural": "die Sprachkurse",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "dil kursu",
+    "en": "language course",
+    "ar": "دورة لغة",
+    "uk": "мовний курс",
+    "example_de": "Der Sprachkurs umfasst 600 Unterrichtsstunden.",
+    "example_tr": "Dil kursu 600 ders saatini kapsar.",
+    "example_en": "The language course comprises 600 lesson units.",
+    "example_ar": "تشمل دورة اللغة 600 ساعة تدريسية.",
+    "example_uk": "Мовний курс складається з 600 навчальних годин.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Sprachkurse'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Sprachkurse'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Sprachkurse'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Sprachkurse'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Sprachkurs umfasst 600 Unterrichtsstunden.",
+        "tr": "Dil kursu 600 ders saatini kapsar.",
+        "en": "The language course comprises 600 lesson units.",
+        "ar": "تشمل دورة اللغة 600 ساعة تدريسية.",
+        "uk": "Мовний курс складається з 600 навчальних годин."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Sprachkurs eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Sprachkurs günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Sprachkurs plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "sprachkurses": {
+    "de": "der Sprachkurs",
+    "displayDe": "Sprachkurs",
+    "article": "der",
+    "plural": "die Sprachkurse",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "dil kursunun (Genitiv)",
+    "en": "of the language course",
+    "ar": "دورة اللغة (مضاف إليه)",
+    "uk": "мовного курсу",
+    "example_de": "Am Ende des Sprachkurses steht die DTZ-Prüfung.",
+    "example_tr": "Dil kursunun sonunda DTZ sınavı yer alır.",
+    "example_en": "At the end of the language course, there is the DTZ examination.",
+    "example_ar": "في نهاية دورة اللغة يقام اختبار DTZ.",
+    "example_uk": "Наприкінці мовного курсу проводиться іспит DTZ.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Sprachkurse'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Sprachkurse'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Sprachkurse'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Sprachkurse'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Am Ende des Sprachkurses steht die DTZ-Prüfung.",
+        "tr": "Dil kursunun sonunda DTZ sınavı yer alır.",
+        "en": "At the end of the language course, there is the DTZ examination.",
+        "ar": "في نهاية دورة اللغة يقام اختبار DTZ.",
+        "uk": "Наприкінці мовного курсу проводиться іспит DTZ."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Sprachkurs eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Sprachkurs günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Sprachkurs plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "sprachlicher": {
+    "de": "sprachlich",
+    "displayDe": "sprachlich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "dilsel, lisanla ilgili",
+    "en": "linguistic / language-related",
+    "ar": "لغوي",
+    "uk": "мовний",
+    "example_de": "Die Förderung sprachlicher Fertigkeiten ist der Schwerpunkt des Kurses.",
+    "example_tr": "Dilsel becerilerin geliştirilmesi kursun odak noktasıdır.",
+    "example_en": "The promotion of language skills is the main focus of the course.",
+    "example_ar": "تنمية المهارات اللغوية هي التركيز الأساسي للدورة.",
+    "example_uk": "Розвиток мовних навичок є головним пріоритетом курсу.",
+    "grammar": {
+      "tr": "Sıfat çekimi / Karşılaştırma: 'sprachlich' sıfatı maskulin nominativ halinde veya karşılaştırma (komparativ) derecesindedir.",
+      "en": "Adjective declension / Comparative: 'sprachlich' is either in the masculine nominative or comparative form.",
+      "ar": "تصريف الصفات أو المقارنة: الصفة 'sprachlich' بصيغة المذكر أو المقارنة.",
+      "uk": "Відмінювання або вищий ступінь: прикметник 'sprachlich' у чоловічому роді або формі порівняння.",
+      "title": {
+        "tr": "💡 Neden \"-er\" takısı aldı? (Sıfat Çekimi / Komparativ)",
+        "en": "💡 Why the \"-er\" ending? (Adjective / Comparative)",
+        "ar": "💡 لماذا لاحقة \"-er\"؟ (تصريف الصفة أو المقارنة)",
+        "uk": "💡 Чому закінчення \"-er\"? (Відмінювання прикметника / Вищий ступінь)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Förderung sprachlicher Fertigkeiten ist der Schwerpunkt des Kurses.",
+        "tr": "Dilsel becerilerin geliştirilmesi kursun odak noktasıdır.",
+        "en": "The promotion of language skills is the main focus of the course.",
+        "ar": "تنمية المهارات اللغوية هي التركيز الأساسي للدورة.",
+        "uk": "Розвиток мовних навичок є головним пріоритетом курсу."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag sprachlich zu sein.",
+        "tr": "İş ve günlük yaşamda dilsel, lisanla ilgili olmak son derece önemlidir.",
+        "en": "It is very important to be linguistic / language-related in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "sprechen": {
+    "de": "sprechen",
+    "displayDe": "sprechen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "konuşmak",
+    "en": "to speak",
+    "ar": "تحدث",
+    "uk": "говорити",
+    "example_de": "Im Kurs üben die Teilnehmer aktiv das freie Sprechen.",
+    "example_tr": "Kursta katılımcılar serbest konuşma pratiği yaparlar.",
+    "example_en": "In the course, participants actively practice free speech.",
+    "example_ar": "في الدورة يتدرب المشاركون بنشاط على التحدث بطلاقة.",
+    "example_uk": "На курсі учні активно тренують вільне мовлення.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'sprechen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'sprechen' denotes action, process, or state.",
+      "ar": "فعل: 'sprechen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'sprechen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (sprechen)",
+        "en": "💡 Verb Structure (sprechen)",
+        "ar": "💡 بنية الفعل (sprechen)",
+        "uk": "💡 Структура дієслова (sprechen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Kurs üben die Teilnehmer aktiv das freie Sprechen.",
+        "tr": "Kursta katılımcılar serbest konuşma pratiği yaparlar.",
+        "en": "In the course, participants actively practice free speech.",
+        "ar": "في الدورة يتدرب المشاركون بنشاط على التحدث بطلاقة.",
+        "uk": "На курсі учні активно тренують вільне мовлення."
+      },
+      {
+        "de": "In Deutschland kann man sprechen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için konuşmak eylemi yapılabilir.",
+        "en": "In Germany, one can to speak to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "spürbar": {
+    "de": "spürbar",
+    "displayDe": "spürbar",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "hissedilir, belirgin",
+    "en": "noticeable / perceptible",
+    "ar": "ملموس / ملحوظ",
+    "uk": "відчутний / помітний",
+    "example_de": "Das Ticket bringt Pendlern eine spürbare Entlastung.",
+    "example_tr": "Bilet yolculara hissedilir bir rahatlama getiriyor.",
+    "example_en": "The ticket brings commuters noticeable financial relief.",
+    "example_ar": "تجلب التذكرة تخفيفاً ملموساً للمسافرين.",
+    "example_uk": "Квиток дає пасажирам відчутне полегшення.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'spürbar' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'spürbar' describes quality or state.",
+      "ar": "صفة: 'spürbar' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'spürbar' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (spürbar)",
+        "en": "💡 Adjective (spürbar)",
+        "ar": "💡 بنية الصفة (spürbar)",
+        "uk": "💡 Структура прикметника (spürbar)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Ticket bringt Pendlern eine spürbare Entlastung.",
+        "tr": "Bilet yolculara hissedilir bir rahatlama getiriyor.",
+        "en": "The ticket brings commuters noticeable financial relief.",
+        "ar": "تجلب التذكرة تخفيفاً ملموساً للمسافرين.",
+        "uk": "Квиток дає пасажирам відчутне полегшення."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag spürbar zu sein.",
+        "tr": "İş ve günlük yaşamda hissedilir, belirgin olmak son derece önemlidir.",
+        "en": "It is very important to be noticeable / perceptible in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "stark": {
+    "de": "stark",
+    "displayDe": "stark",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "güçlü, yoğun",
+    "en": "strong / heavy",
+    "ar": "قوي / كثيف",
+    "uk": "сильний / інтенсивний",
+    "example_de": "Auf stark befahrenen Strecken kommt es zu Verspätungen.",
+    "example_tr": "Yoğun trafiği olan hatlarda gecikmeler yaşanır.",
+    "example_en": "Delays occur on heavily traveled routes.",
+    "example_ar": "تحدث التأخيرات على المسارات المزدحمة بشدة.",
+    "example_uk": "На завантажених лініях трапляються запізнення.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'stark' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'stark' describes quality or state.",
+      "ar": "صفة: 'stark' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'stark' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (stark)",
+        "en": "💡 Adjective (stark)",
+        "ar": "💡 بنية الصفة (stark)",
+        "uk": "💡 Структура прикметника (stark)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Auf stark befahrenen Strecken kommt es zu Verspätungen.",
+        "tr": "Yoğun trafiği olan hatlarda gecikmeler yaşanır.",
+        "en": "Delays occur on heavily traveled routes.",
+        "ar": "تحدث التأخيرات على المسارات المزدحمة بشدة.",
+        "uk": "На завантажених лініях трапляються запізнення."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag stark zu sein.",
+        "tr": "İş ve günlük yaşamda güçlü, yoğun olmak son derece önemlidir.",
+        "en": "It is very important to be strong / heavy in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "starken": {
+    "de": "stark",
+    "displayDe": "stark",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "güçlü, yoğun (çekimli sıfat)",
+    "en": "strong / heavy (declined)",
+    "ar": "القوي",
+    "uk": "сильний",
+    "example_de": "Trotz des starken Zuwachses gibt es Probleme im Netz.",
+    "example_tr": "Güçlü artışa rağmen ağda sorunlar bulunmaktadır.",
+    "example_en": "Despite the strong growth, there are network issues.",
+    "example_ar": "رغم النمو القوي، توجد مشاكل في الشبكة.",
+    "example_uk": "Незважаючи на потужний приріст, у мережі є проблеми.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'stark' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'stark' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'stark' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'stark' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Trotz des starken Zuwachses gibt es Probleme im Netz.",
+        "tr": "Güçlü artışa rağmen ağda sorunlar bulunmaktadır.",
+        "en": "Despite the strong growth, there are network issues.",
+        "ar": "رغم النمو القوي، توجد مشاكل في الشبكة.",
+        "uk": "Незважаючи на потужний приріст, у мережі є проблеми."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag stark zu sein.",
+        "tr": "İş ve günlük yaşamda güçlü, yoğun (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be strong / heavy (declined) in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "staus": {
+    "de": "der Stau",
+    "displayDe": "Stau",
+    "article": "der",
+    "plural": "die Staus",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "trafik sıkışıklıkları, trafik tıkaları",
+    "en": "traffic jams",
+    "ar": "ازدحامات مرورية",
+    "uk": "затори на дорогах",
+    "example_de": "Wer mit der Bahn fährt, vermeidet lange Staus auf der Autobahn.",
+    "example_tr": "Trenle seyahat edenler otobandaki uzun trafik sıkışıklıklarından kaçınır.",
+    "example_en": "Those who travel by train avoid long traffic jams on the highway.",
+    "example_ar": "من يسافر بالقطار يتفادى الازدحامات المرورية الطويلة على الطرق السريعة.",
+    "example_uk": "Ті, хто їздить поїздом, уникають довгих заторів на автобанах.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Staus'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Staus'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Staus'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Staus'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer mit der Bahn fährt, vermeidet lange Staus auf der Autobahn.",
+        "tr": "Trenle seyahat edenler otobandaki uzun trafik sıkışıklıklarından kaçınır.",
+        "en": "Those who travel by train avoid long traffic jams on the highway.",
+        "ar": "من يسافر بالقطار يتفادى الازدحامات المرورية الطويلة على الطرق السريعة.",
+        "uk": "Ті, хто їздить поїздом, уникають довгих заторів на автобанах."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Stau eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Stau günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Stau plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "stehenzulassen": {
+    "de": "stehenlassen",
+    "displayDe": "stehenlassen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "bırakmak (arabayı evde/garajda bırakmak)",
+    "en": "to leave standing / leave behind (car)",
+    "ar": "ترك السيارة دون استخدام",
+    "uk": "залишати (авто) / не користуватися",
+    "example_de": "Das günstige Ticket motiviert Pendler, das Auto stehenzulassen.",
+    "example_tr": "Uygun bilet yolcuları arabayı evde bırakmaya motive ediyor.",
+    "example_en": "The affordable ticket motivates commuters to leave the car at home.",
+    "example_ar": "تحفز التذكرة الرخيصة الركاب على ترك سياراتهم في المنزل.",
+    "example_uk": "Вигідний квиток мотивує пасажирів залишати авто вдома.",
+    "grammar": {
+      "title": {
+        "tr": "💡 Mastar Yapısı: Ayrılabilir Fiil + 'zu' (stehen-zu-lassen)",
+        "en": "💡 Infinitive Clause: Separable Verb with 'zu' (stehen-zu-lassen)",
+        "ar": "💡 صيغة المصدر: فعل منفصل مع 'zu' (stehen-zu-lassen)",
+        "uk": "💡 Інфінітивна конструкція: Відокремлюване дієслово з 'zu' (stehen-zu-lassen)"
+      },
+      "tr": "Ayrılabilir fiil + 'zu' mastar yapısı: 'stehenlassen' (arabayı bırakmak / kullanmamak) ayrılabilir bir fiildir. Mastar cümlelerinde 'zu' edatı önek ile fiil kökü arasına girer: stehen-zu-lassen.",
+      "en": "Separable verb with 'zu' infinitive: 'stehenlassen' (to leave behind / avoid using car). In 'zu' infinitive clauses, 'zu' is inserted between prefix and verb: stehen-zu-lassen.",
+      "ar": "المصدر مع 'zu' للأفعال المنفصلة: في التراكيب المصدرية تأتي 'zu' بين السابقة المنفصلة والفعل: stehen-zu-lassen (ترك السيارة وعدم استخدامها).",
+      "uk": "Інфінітив з 'zu': у відокремлюваному дієслові 'stehenlassen' частка 'zu' вставляється між префіксом та основним дієсловом: stehen-zu-lassen."
+    },
+    "examples": [
+      {
+        "de": "Das günstige Ticket motiviert Pendler, das Auto stehenzulassen.",
+        "tr": "Uygun bilet yolcuları arabayı evde bırakmaya motive ediyor.",
+        "en": "The affordable ticket motivates commuters to leave the car at home.",
+        "ar": "تحفز التذكرة الرخيصة الركاب على ترك سياراتهم في المنزل.",
+        "uk": "Вигідний квиток мотивує пасажирів залишати авто вдома."
+      },
+      {
+        "de": "In Deutschland kann man stehenlassen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için bırakmak (arabayı evde/garajda bırakmak) eylemi yapılabilir.",
+        "en": "In Germany, one can to leave standing / leave behind (car) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "stellen": {
+    "de": "stellen",
+    "displayDe": "stellen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "koymak / oluşturmak (eine Frage stellen / dar stellen)",
+    "en": "to place / pose",
+    "ar": "وضع / طرح",
+    "uk": "ставити",
+    "example_de": "Teilnehmer können im Kurs jederzeit Fragen stellen.",
+    "example_tr": "Katılımcılar kursta her zaman soru sorabilir.",
+    "example_en": "Participants can ask questions at any time during the course.",
+    "example_ar": "يمكن للمشاركين طرح الأسئلة في أي وقت أثناء الدورة.",
+    "example_uk": "Учасники можуть у будь-який час ставити запитання на курсі.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'stellen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'stellen' denotes action, process, or state.",
+      "ar": "فعل: 'stellen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'stellen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (stellen)",
+        "en": "💡 Verb Structure (stellen)",
+        "ar": "💡 بنية الفعل (stellen)",
+        "uk": "💡 Структура дієслова (stellen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Teilnehmer können im Kurs jederzeit Fragen stellen.",
+        "tr": "Katılımcılar kursta her zaman soru sorabilir.",
+        "en": "Participants can ask questions at any time during the course.",
+        "ar": "يمكن للمشاركين طرح الأسئلة في أي وقت أثناء الدورة.",
+        "uk": "Учасники можуть у будь-який час ставити запитання на курсі."
+      },
+      {
+        "de": "In Deutschland kann man stellen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için koymak / oluşturmak (eine Frage stellen / dar stellen) eylemi yapılabilir.",
+        "en": "In Germany, one can to place / pose to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "stets": {
+    "de": "stets",
+    "displayDe": "stets",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "B1",
+    "tr": "daima, her zaman",
+    "en": "always / constantly",
+    "ar": "دائماً / باستمرار",
+    "uk": "завжди / постійно",
+    "example_de": "Geben Sie sensible Daten stets mit großer Vorsicht ein.",
+    "example_tr": "Hassas verileri daima büyük bir dikkatle girin.",
+    "example_en": "Always enter sensitive data with great caution.",
+    "example_ar": "أدخل البيانات الحساسة دائماً بحذر شديد.",
+    "example_uk": "Завжди вводьте конфіденційні дані з великою обережністю.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'stets' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'stets' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'stets' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'stets' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (stets)",
+        "en": "💡 Adverb (stets)",
+        "ar": "💡 ظرف (stets)",
+        "uk": "💡 Прислівник (stets)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Geben Sie sensible Daten stets mit großer Vorsicht ein.",
+        "tr": "Hassas verileri daima büyük bir dikkatle girin.",
+        "en": "Always enter sensitive data with great caution.",
+        "ar": "أدخل البيانات الحساسة دائماً بحذر شديد.",
+        "uk": "Завжди вводьте конфіденційні дані з великою обережністю."
+      },
+      {
+        "de": "Das Wort 'stets' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'stets' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'stets' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'stets' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'stets' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "stoßzeiten": {
+    "de": "die Stoßzeit",
+    "displayDe": "Stoßzeit",
+    "article": "die",
+    "plural": "die Stoßzeiten",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "yoğun saatler, iş çıkış saatleri",
+    "en": "peak hours / rush hours",
+    "ar": "ساعات الذروة",
+    "uk": "години пік",
+    "example_de": "Zu den Stoßzeiten sind viele Züge voll besetzt.",
+    "example_tr": "Yoğun saatlerde birçok tren tamamen doludur.",
+    "example_en": "During rush hours, many trains are fully packed.",
+    "example_ar": "في ساعات الذروة تكون العديد من القطارات ممتلئة تماماً.",
+    "example_uk": "У години пік багато поїздів заповнені вщент.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Stoßzeiten'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Stoßzeiten'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Stoßzeiten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Stoßzeiten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Zu den Stoßzeiten sind viele Züge voll besetzt.",
+        "tr": "Yoğun saatlerde birçok tren tamamen doludur.",
+        "en": "During rush hours, many trains are fully packed.",
+        "ar": "في ساعات الذروة تكون العديد من القطارات ممتلئة تماماً.",
+        "uk": "У години пік багато поїздів заповнені вщент."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Stoßzeit eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Stoßzeit günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Stoßzeit plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "straßenbahnen": {
+    "de": "die Straßenbahn",
+    "displayDe": "Straßenbahn",
+    "article": "die",
+    "plural": "die Straßenbahnen",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "tramvaylar",
+    "en": "trams / streetcars",
+    "ar": "ترام / قطارات الشوارع",
+    "uk": "трамваї",
+    "example_de": "Das Ticket gilt in Bussen, U-Bahnen und Straßenbahnen.",
+    "example_tr": "Bilet otobüslerde, metrolarda ve tramvaylarda geçerlidir.",
+    "example_en": "The ticket is valid on buses, subways, and streetcars.",
+    "example_ar": "التذكرة صالحة في الحافلات ومترو الأنفاق والترام.",
+    "example_uk": "Квиток діє в автобусах, метро та трамваях.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Straßenbahnen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Straßenbahnen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Straßenbahnen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Straßenbahnen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Ticket gilt in Bussen, U-Bahnen und Straßenbahnen.",
+        "tr": "Bilet otobüslerde, metrolarda ve tramvaylarda geçerlidir.",
+        "en": "The ticket is valid on buses, subways, and streetcars.",
+        "ar": "التذكرة صالحة في الحافلات ومترو الأنفاق والترام.",
+        "uk": "Квиток діє в автобусах, метро та трамваях."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Straßenbahn eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Straßenbahn günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Straßenbahn plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "strecken": {
+    "de": "die Strecke",
+    "displayDe": "Strecke",
+    "article": "die",
+    "plural": "die Strecken",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "hatlar, güzergahlar",
+    "en": "routes / stretches of line",
+    "ar": "مسارات / خطوط سير",
+    "uk": "маршрути / ділянки шляху",
+    "example_de": "Auf vielen Strecken müssen alte Schienen erneuert werden.",
+    "example_tr": "Birçok güzergahta eski rayların yenilenmesi gerekmektedir.",
+    "example_en": "On many routes, old tracks must be replaced.",
+    "example_ar": "على العديد من الخطوط يجب تجديد القضبان القديمة.",
+    "example_uk": "На багатьох маршрутах необхідно замінити старі колії.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Strecken'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Strecken'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Strecken'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Strecken'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Auf vielen Strecken müssen alte Schienen erneuert werden.",
+        "tr": "Birçok güzergahta eski rayların yenilenmesi gerekmektedir.",
+        "en": "On many routes, old tracks must be replaced.",
+        "ar": "على العديد من الخطوط يجب تجديد القضبان القديمة.",
+        "uk": "На багатьох маршрутах необхідно замінити старі колії."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Strecke eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Strecke günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Strecke plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "strenge": {
+    "de": "streng",
+    "displayDe": "streng",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "katı, sıkı",
+    "en": "strict / rigorous",
+    "ar": "صارم / مشدد",
+    "uk": "суворий",
+    "example_de": "Die europäische DSGVO setzt strenge Regeln für Datenschutz.",
+    "example_tr": "Avrupa DSGVO'su veri koruma için katı kurallar koyar.",
+    "example_en": "The European GDPR sets strict rules for data protection.",
+    "example_ar": "تضع اللائحة العامة لحماية البيانات قواعد صارمة.",
+    "example_uk": "Європейський регламент GDPR встановлює суворі правила захисту даних.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'streng' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'streng' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'streng' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'streng' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die europäische DSGVO setzt strenge Regeln für Datenschutz.",
+        "tr": "Avrupa DSGVO'su veri koruma için katı kurallar koyar.",
+        "en": "The European GDPR sets strict rules for data protection.",
+        "ar": "تضع اللائحة العامة لحماية البيانات قواعد صارمة.",
+        "uk": "Європейський регламент GDPR встановлює суворі правила захисту даних."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag streng zu sein.",
+        "tr": "İş ve günlük yaşamda katı, sıkı olmak son derece önemlidir.",
+        "en": "It is very important to be strict / rigorous in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "systematisch": {
+    "de": "systematisch",
+    "displayDe": "systematisch",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "sistemli, sistematik",
+    "en": "systematic",
+    "ar": "منهجي / منظم",
+    "uk": "систематичний",
+    "example_de": "Im Kurs wird der Wortschatz systematisch aufgebaut.",
+    "example_tr": "Kursta kelime dağarcığı sistemli bir şekilde inşa edilir.",
+    "example_en": "In the course, vocabulary is systematically built up.",
+    "example_ar": "يتم بناء المفردات اللغوية في الدورة بشكل منهجي.",
+    "example_uk": "На курсі словниковий запас формується систематично.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'systematisch' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'systematisch' describes quality or state.",
+      "ar": "صفة: 'systematisch' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'systematisch' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (systematisch)",
+        "en": "💡 Adjective (systematisch)",
+        "ar": "💡 بنية الصفة (systematisch)",
+        "uk": "💡 Структура прикметника (systematisch)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Kurs wird der Wortschatz systematisch aufgebaut.",
+        "tr": "Kursta kelime dağarcığı sistemli bir şekilde inşa edilir.",
+        "en": "In the course, vocabulary is systematically built up.",
+        "ar": "يتم بناء المفردات اللغوية في الدورة بشكل منهجي.",
+        "uk": "На курсі словниковий запас формується систематично."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag systematisch zu sein.",
+        "tr": "İş ve günlük yaşamda sistemli, sistematik olmak son derece önemlidir.",
+        "en": "It is very important to be systematic in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "tarifzonen": {
+    "de": "die Tarifzone",
+    "displayDe": "Tarifzone",
+    "article": "die",
+    "plural": "die Tarifzonen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "tarife bölgeleri, bilet bölgeleri",
+    "en": "fare zones / tariff zones",
+    "ar": "مناطق التعريفة / نطاقات الأسعار",
+    "uk": "тарифні зони",
+    "example_de": "Früher gab es einen unübersichtlichen Tarifdschungel mit vielen Tarifzonen.",
+    "example_tr": "Eskiden birçok tarife bölgesi içeren karmaşık bir tarife ormanı vardı.",
+    "example_en": "Previously, there was a confusing fare jungle with many tariff zones.",
+    "example_ar": "سابقاً كانت هناك غابة من التعريفات المعقدة ومناطق الأسعار الكثيرة.",
+    "example_uk": "Раніше існували заплутані тарифні нетрі з багатьма зонами.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Tarifzonen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Tarifzonen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Tarifzonen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Tarifzonen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Früher gab es einen unübersichtlichen Tarifdschungel mit vielen Tarifzonen.",
+        "tr": "Eskiden birçok tarife bölgesi içeren karmaşık bir tarife ormanı vardı.",
+        "en": "Previously, there was a confusing fare jungle with many tariff zones.",
+        "ar": "سابقاً كانت هناك غابة من التعريفات المعقدة ومناطق الأسعار الكثيرة.",
+        "uk": "Раніше існували заплутані тарифні нетрі з багатьма зонами."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Tarifzone eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Tarifzone günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Tarifzone plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "technische": {
+    "de": "technisch",
+    "displayDe": "technisch",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "teknik",
+    "en": "technical",
+    "ar": "تقني / فني",
+    "uk": "технічний",
+    "example_de": "Technische Störungen können zu Verspätungen im Bahnverkehr führen.",
+    "example_tr": "Teknik arızalar tren ulaşımında gecikmelere yol açabilir.",
+    "example_en": "Technical faults can lead to delays in rail traffic.",
+    "example_ar": "يمكن أن تؤدي الأعطال الفنية إلى تأخيرات في حركة القطارات.",
+    "example_uk": "Технічні несправності можуть призводити до запізнень поїздів.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'technisch' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'technisch' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'technisch' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'technisch' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Technische Störungen können zu Verspätungen im Bahnverkehr führen.",
+        "tr": "Teknik arızalar tren ulaşımında gecikmelere yol açabilir.",
+        "en": "Technical faults can lead to delays in rail traffic.",
+        "ar": "يمكن أن تؤدي الأعطال الفنية إلى تأخيرات في حركة القطارات.",
+        "uk": "Технічні несправності можуть призводити до запізнень поїздів."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag technisch zu sein.",
+        "tr": "İş ve günlük yaşamda teknik olmak son derece önemlidir.",
+        "en": "It is very important to be technical in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "teilhabe": {
+    "de": "die Teilhabe",
+    "displayDe": "Teilhabe",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "katılım, toplumsal paydaşlık",
+    "en": "participation (societal/civic)",
+    "ar": "المشاركة المجتمعية",
+    "uk": "участь у житті суспільства",
+    "example_de": "Gute Deutschkenntnisse ermöglichen die gesellschaftliche Teilhabe.",
+    "example_tr": "İyi Almanca bilgisi toplumsal katılımı mümkün kılar.",
+    "example_en": "Good German skills enable social and civic participation.",
+    "example_ar": "تتيح المعرفة الجيدة بالألمانية المشاركة المجتمعية الفعالة.",
+    "example_uk": "Добре знання німецької мови забезпечує активну участь у житті суспільства.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Teilhabe)",
+        "en": "💡 Noun Structure (die Teilhabe)",
+        "ar": "💡 بنية الاسم (die Teilhabe)",
+        "uk": "💡 Структура іменника (die Teilhabe)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Gute Deutschkenntnisse ermöglichen die gesellschaftliche Teilhabe.",
+        "tr": "İyi Almanca bilgisi toplumsal katılımı mümkün kılar.",
+        "en": "Good German skills enable social and civic participation.",
+        "ar": "تتيح المعرفة الجيدة بالألمانية المشاركة المجتمعية الفعالة.",
+        "uk": "Добре знання німецької мови забезпечує активну участь у житті суспільства."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Teilhabe eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Teilhabe günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Teilhabe plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "teilnehmenden": {
+    "de": "der Teilnehmende",
+    "displayDe": "Teilnehmende",
+    "article": "der",
+    "plural": "die Teilnehmenden",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "katılımcılar",
+    "en": "participants",
+    "ar": "المشاركون",
+    "uk": "учасники",
+    "example_de": "Die Teilnehmenden üben Alltagssituationen wie Behördengänge.",
+    "example_tr": "Katılımcılar resmi daire işleri gibi günlük durumları çalışırlar.",
+    "example_en": "Participants practice everyday situations such as visits to authorities.",
+    "example_ar": "يتدرب المشاركون على مواقف الحياة اليومية مثل مراجعة الدوائر الرسمية.",
+    "example_uk": "Учасники відпрацьовують щоденні ситуації, як-от візити до відомств.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Teilnehmenden'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Teilnehmenden'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Teilnehmenden'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Teilnehmenden'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Teilnehmenden üben Alltagssituationen wie Behördengänge.",
+        "tr": "Katılımcılar resmi daire işleri gibi günlük durumları çalışırlar.",
+        "en": "Participants practice everyday situations such as visits to authorities.",
+        "ar": "يتدرب المشاركون على مواقف الحياة اليومية مثل مراجعة الدوائر الرسمية.",
+        "uk": "Учасники відпрацьовують щоденні ситуації, як-от візити до відомств."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Teilnehmende eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Teilnehmende günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Teilnehmende plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "termine": {
+    "de": "der Termin",
+    "displayDe": "Termin",
+    "article": "der",
+    "plural": "die Termine",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "randevular",
+    "en": "appointments",
+    "ar": "مواعيد",
+    "uk": "прийоми / зустрічі",
+    "example_de": "Viele Bürger nutzen Apps, um freie Arzttermine zu buchen.",
+    "example_tr": "Birçok vatandaş boş doktor randevuları almak için uygulamaları kullanıyor.",
+    "example_en": "Many citizens use apps to book available doctor appointments.",
+    "example_ar": "يستخدم العديد من المواطنين التطبيقات لحجز مواعيد الأطباء المتاحة.",
+    "example_uk": "Багато громадян використовують додатки для запису до лікаря.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Termine'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Termine'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Termine'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Termine'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Termin)",
+        "en": "💡 Noun Structure (der Termin)",
+        "ar": "💡 بنية الاسم (der Termin)",
+        "uk": "💡 Структура іменника (der Termin)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Viele Bürger nutzen Apps, um freie Arzttermine zu buchen.",
+        "tr": "Birçok vatandaş boş doktor randevuları almak için uygulamaları kullanıyor.",
+        "en": "Many citizens use apps to book available doctor appointments.",
+        "ar": "يستخدم العديد من المواطنين التطبيقات لحجز مواعيد الأطباء المتاحة.",
+        "uk": "Багато громадян використовують додатки для запису до лікаря."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Termin eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Termin günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Termin plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "test": {
+    "de": "der Test",
+    "displayDe": "Test",
+    "article": "der",
+    "plural": "die Tests",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "test, sınav",
+    "en": "test / exam",
+    "ar": "اختبار / فحص",
+    "uk": "тест / іспит",
+    "example_de": "Der Test 'Leben in Deutschland' umfasst 33 Fragen zur Rechtsordnung.",
+    "example_tr": "'Almanya'da Yaşam' testi hukuk düzenine dair 33 soru içerir.",
+    "example_en": "The 'Life in Germany' test comprises 33 questions on the legal system.",
+    "example_ar": "يشمل اختبار 'الحياة في ألمانيا' 33 سؤالاً حول النظام القانوني.",
+    "example_uk": "Тест 'Життя в Німеччині' містить 33 питання про правовий устрій.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Tests'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Tests'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Tests'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Tests'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Test)",
+        "en": "💡 Noun Structure (der Test)",
+        "ar": "💡 بنية الاسم (der Test)",
+        "uk": "💡 Структура іменника (der Test)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Test 'Leben in Deutschland' umfasst 33 Fragen zur Rechtsordnung.",
+        "tr": "'Almanya'da Yaşam' testi hukuk düzenine dair 33 soru içerir.",
+        "en": "The 'Life in Germany' test comprises 33 questions on the legal system.",
+        "ar": "يشمل اختبار 'الحياة في ألمانيا' 33 سؤالاً حول النظام القانوني.",
+        "uk": "Тест 'Життя в Німеччині' містить 33 питання про правовий устрій."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Test eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Test günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Test plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "textnachrichten": {
+    "de": "die Textnachricht",
+    "displayDe": "Textnachricht",
+    "article": "die",
+    "plural": "die Textnachrichten",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "kısa mesajlar, SMS'ler",
+    "en": "text messages / SMS",
+    "ar": "رسائل نصية",
+    "uk": "текстові повідомлення / SMS",
+    "example_de": "Kriminelle verschicken betrügerische Textnachrichten an Smartphones.",
+    "example_tr": "Suçlular akıllı telefonlara dolandırıcılık amaçlı kısa mesajlar gönderir.",
+    "example_en": "Criminals send fraudulent text messages to smartphones.",
+    "example_ar": "يرسل المجرمون رسائل نصية احتيالية إلى الهواتف الذكية.",
+    "example_uk": "Злочинці розсилають шахрайські текстові повідомлення на смартфони.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Textnachrichten'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Textnachrichten'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Textnachrichten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Textnachrichten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Kriminelle verschicken betrügerische Textnachrichten an Smartphones.",
+        "tr": "Suçlular akıllı telefonlara dolandırıcılık amaçlı kısa mesajlar gönderir.",
+        "en": "Criminals send fraudulent text messages to smartphones.",
+        "ar": "يرسل المجرمون رسائل نصية احتيالية إلى الهواتف الذكية.",
+        "uk": "Злочинці розсилають шахрайські текстові повідомлення на смартфони."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Textnachricht eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Textnachricht günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Textnachricht plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "ticket": {
+    "de": "das Ticket",
+    "displayDe": "Ticket",
+    "article": "das",
+    "plural": "die Tickets",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "bilet",
+    "en": "ticket",
+    "ar": "تذكرة",
+    "uk": "квиток",
+    "example_de": "Das Ticket ist als monatliches Abonnement erhältlich.",
+    "example_tr": "Bilet aylık bir abonelik olarak temin edilebilir.",
+    "example_en": "The ticket is available as a monthly subscription.",
+    "example_ar": "التذكرة متاحة كاشتراك شهري.",
+    "example_uk": "Квиток доступний у вигляді щомісячної підписки.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Tickets'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Tickets'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Tickets'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Tickets'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Ticket)",
+        "en": "💡 Noun Structure (das Ticket)",
+        "ar": "💡 بنية الاسم (das Ticket)",
+        "uk": "💡 Структура іменника (das Ticket)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Ticket ist als monatliches Abonnement erhältlich.",
+        "tr": "Bilet aylık bir abonelik olarak temin edilebilir.",
+        "en": "The ticket is available as a monthly subscription.",
+        "ar": "التذكرة متاحة كاشتراك شهري.",
+        "uk": "Квиток доступний у вигляді щомісячної підписки."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Ticket eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Ticket günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Ticket plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "trotz": {
+    "de": "trotz",
+    "displayDe": "trotz",
+    "article": "",
+    "plural": "",
+    "pos": "prep",
+    "level": "B1",
+    "tr": "-e rağmen (+ Gen / Dat)",
+    "en": "despite / in spite of",
+    "ar": "رغم / على الرغم من",
+    "uk": "незважаючи на / попри",
+    "example_de": "Trotz des Erfolgs gibt es Kritik an Verspätungen.",
+    "example_tr": "Başarıya rağmen gecikmeler konusunda eleştiriler bulunmaktadır.",
+    "example_en": "Despite the success, there is criticism of delays.",
+    "example_ar": "على الرغم من النجاح توجد انتقادات بشأن التأخيرات.",
+    "example_uk": "Незважаючи на успіх, лунає критика щодо запізнень.",
+    "grammar": {
+      "tr": "Edat (Präposition): 'trotz' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
+      "en": "Preposition: 'trotz' governs the grammatical case (Dative/Accusative) of the following noun.",
+      "ar": "حرف جر: 'trotz' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
+      "uk": "Прийменник: 'trotz' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
+    },
+    "examples": [
+      {
+        "de": "Trotz des Erfolgs gibt es Kritik an Verspätungen.",
+        "tr": "Başarıya rağmen gecikmeler konusunda eleştiriler bulunmaktadır.",
+        "en": "Despite the success, there is criticism of delays.",
+        "ar": "على الرغم من النجاح توجد انتقادات بشأن التأخيرات.",
+        "uk": "Незважаючи на успіх, лунає критика щодо запізнень."
+      },
+      {
+        "de": "Wir treffen uns trotz der Arbeit zu einem kurzen Gespräch.",
+        "tr": "İşten sonra kısa bir görüşme için buluşuyoruz.",
+        "en": "We meet for a short conversation.",
+        "ar": "نلتقي لإجراء محادثة قصيرة.",
+        "uk": "Ми зустрічаємося для короткої розмови."
+      }
+    ]
+  },
+  "u": {
+    "de": "die U-Bahn",
+    "displayDe": "U-Bahn",
+    "article": "die",
+    "plural": "die U-Bahnen",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "metro (U-Bahn)",
+    "en": "underground / subway (U-Bahn)",
+    "ar": "مترو الأنفاق",
+    "uk": "метро (U-Bahn)",
+    "example_de": "Das Ticket gilt in Bussen, Straßenbahnen und U-Bahnen.",
+    "example_tr": "Bilet otobüslerde, tramvaylarda ve metrolarda geçerlidir.",
+    "example_en": "The ticket is valid on buses, trams, and subways.",
+    "example_ar": "التذكرة صالحة في الحافلات والترام ومترو الأنفاق.",
+    "example_uk": "Квиток діє в автобусах, трамваях та метро.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die U-Bahnen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die U-Bahnen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die U-Bahnen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die U-Bahnen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die U-Bahn)",
+        "en": "💡 Noun Structure (die U-Bahn)",
+        "ar": "💡 بنية الاسم (die U-Bahn)",
+        "uk": "💡 Структура іменника (die U-Bahn)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Ticket gilt in Bussen, Straßenbahnen und U-Bahnen.",
+        "tr": "Bilet otobüslerde, tramvaylarda ve metrolarda geçerlidir.",
+        "en": "The ticket is valid on buses, trams, and subways.",
+        "ar": "التذكرة صالحة في الحافلات والترام ومترو الأنفاق.",
+        "uk": "Квиток діє в автобусах, трамваях та метро."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die U-Bahn eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için U-Bahn günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, U-Bahn plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "umfasst": {
+    "de": "umfassen",
+    "displayDe": "umfassen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "kapsamak, içermek (er/sie/es umfasst)",
+    "en": "comprises / encompasses",
+    "ar": "يشمل / يتضمن",
+    "uk": "охоплює / включає в себе",
+    "example_de": "Der gesamte Integrationskurs umfasst 700 Unterrichtsstunden.",
+    "example_tr": "Tüm uyum kursu 700 ders saatini kapsar.",
+    "example_en": "The entire integration course encompasses 700 instruction hours.",
+    "example_ar": "تشمل دورة الاندماج الكاملة 700 ساعة دراسية.",
+    "example_uk": "Повний інтеграційний курс охоплює 700 навчальних годин.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'umfassen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'umfassen' denotes action, process, or state.",
+      "ar": "فعل: 'umfassen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'umfassen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (umfassen)",
+        "en": "💡 Verb Structure (umfassen)",
+        "ar": "💡 بنية الفعل (umfassen)",
+        "uk": "💡 Структура дієслова (umfassen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der gesamte Integrationskurs umfasst 700 Unterrichtsstunden.",
+        "tr": "Tüm uyum kursu 700 ders saatini kapsar.",
+        "en": "The entire integration course encompasses 700 instruction hours.",
+        "ar": "تشمل دورة الاندماج الكاملة 700 ساعة دراسية.",
+        "uk": "Повний інтеграційний курс охоплює 700 навчальних годин."
+      },
+      {
+        "de": "In Deutschland kann man umfassen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için kapsamak, içermek (er/sie/es umfasst) eylemi yapılabilir.",
+        "en": "In Germany, one can comprises / encompasses to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "umgehen": {
+    "de": "umgehen",
+    "displayDe": "umgehen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "başa çıkmak, kullanabilmek (mit Daten umgehen)",
+    "en": "to handle / deal with (data/safety)",
+    "ar": "يتعامل مع",
+    "uk": "поводитися з / обходитися",
+    "example_de": "Man muss lernen, sicher mit sensiblen Daten umzugehen.",
+    "example_tr": "Hassas verilerle güvenli bir şekilde başa çıkmayı öğrenmek gerekir.",
+    "example_en": "One must learn to handle sensitive data securely.",
+    "example_ar": "يجب على المرء أن يتعلم التعامل الآمن مع البيانات الحساسة.",
+    "example_uk": "Потрібно навчитися безпечно поводитися з конфіденційними даними.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'umgehen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'umgehen' denotes action, process, or state.",
+      "ar": "فعل: 'umgehen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'umgehen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (umgehen)",
+        "en": "💡 Verb Structure (umgehen)",
+        "ar": "💡 بنية الفعل (umgehen)",
+        "uk": "💡 Структура дієслова (umgehen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Man muss lernen, sicher mit sensiblen Daten umzugehen.",
+        "tr": "Hassas verilerle güvenli bir şekilde başa çıkmayı öğrenmek gerekir.",
+        "en": "One must learn to handle sensitive data securely.",
+        "ar": "يجب على المرء أن يتعلم التعامل الآمن مع البيانات الحساسة.",
+        "uk": "Потрібно навчитися безпечно поводитися з конфіденційними даними."
+      },
+      {
+        "de": "In Deutschland kann man umgehen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için başa çıkmak, kullanabilmek (mit Daten umgehen) eylemi yapılabilir.",
+        "en": "In Germany, one can to handle / deal with (data/safety) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "umstieg": {
+    "de": "der Umstieg",
+    "displayDe": "Umstieg",
+    "article": "der",
+    "plural": "die Umstiege",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "geçiş (arabadan toplu taşımaya), aktarma",
+    "en": "modal shift / transfer",
+    "ar": "التحول (من السيارة إلى القطار) / تبديل",
+    "uk": "перехід (з авто на поїзд) / пересадка",
+    "example_de": "Der Umstieg vom Auto auf die Schiene schont das Klima.",
+    "example_tr": "Arabayı bırakıp trene geçmek iklimi korur.",
+    "example_en": "Switching from car to rail protects the climate.",
+    "example_ar": "التحول من السيارة إلى القطار يحمي المناخ.",
+    "example_uk": "Перехід з автомобіля на поїзд захищає клімат.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Umstiege'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Umstiege'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Umstiege'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Umstiege'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Umstieg)",
+        "en": "💡 Noun Structure (der Umstieg)",
+        "ar": "💡 بنية الاسم (der Umstieg)",
+        "uk": "💡 Структура іменника (der Umstieg)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Umstieg vom Auto auf die Schiene schont das Klima.",
+        "tr": "Arabayı bırakıp trene geçmek iklimi korur.",
+        "en": "Switching from car to rail protects the climate.",
+        "ar": "التحول من السيارة إلى القطار يحمي المناخ.",
+        "uk": "Перехід з автомобіля на поїзд захищає клімат."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Umstieg eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Umstieg günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Umstieg plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "umwelt": {
+    "de": "die Umwelt",
+    "displayDe": "Umwelt",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "çevre, doğa",
+    "en": "environment",
+    "ar": "البيئة",
+    "uk": "довкілля / навколишнє середовище",
+    "example_de": "Fahrten mit Bus und Bahn entlasten die Umwelt.",
+    "example_tr": "Otobüs ve tren yolculukları çevreyi rahatlatır.",
+    "example_en": "Trips by bus and train relieve the environment.",
+    "example_ar": "الرحلات بالحافلات والقطارات تخفف العبء عن البيئة.",
+    "example_uk": "Поїздки автобусами та поїздами зменшують навантаження на довкілля.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Umwelt)",
+        "en": "💡 Noun Structure (die Umwelt)",
+        "ar": "💡 بنية الاسم (die Umwelt)",
+        "uk": "💡 Структура іменника (die Umwelt)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Fahrten mit Bus und Bahn entlasten die Umwelt.",
+        "tr": "Otobüs ve tren yolculukları çevreyi rahatlatır.",
+        "en": "Trips by bus and train relieve the environment.",
+        "ar": "الرحلات بالحافلات والقطارات تخفف العبء عن البيئة.",
+        "uk": "Поїздки автобусами та поїздами зменшують навантаження на довкілля."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Umwelt eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Umwelt günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Umwelt plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "unbekannte": {
+    "de": "unbekannt",
+    "displayDe": "unbekannt",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "bilinmeyen (çekimli sıfat)",
+    "en": "unknown / unfamiliar",
+    "ar": "مجهول / غير معروف",
+    "uk": "невідомий",
+    "example_de": "Klicken Sie niemals auf unbekannte Hyperlinks in E-Mails.",
+    "example_tr": "E-postalardaki bilinmeyen köprülere asla tıklamayın.",
+    "example_en": "Never click on unknown hyperlinks in emails.",
+    "example_ar": "لا تنقر أبداً على الروابط التشعبية المجهولة في رسائل البريد.",
+    "example_uk": "Ніколи не переходьте за невідомими гіперпосиланнями в електронних листах.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'unbekannt' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'unbekannt' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'unbekannt' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'unbekannt' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Klicken Sie niemals auf unbekannte Hyperlinks in E-Mails.",
+        "tr": "E-postalardaki bilinmeyen köprülere asla tıklamayın.",
+        "en": "Never click on unknown hyperlinks in emails.",
+        "ar": "لا تنقر أبداً على الروابط التشعبية المجهولة في رسائل البريد.",
+        "uk": "Ніколи не переходьте за невідомими гіперпосиланнями в електронних листах."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag unbekannt zu sein.",
+        "tr": "İş ve günlük yaşamda bilinmeyen (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be unknown / unfamiliar in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "union": {
+    "de": "die Union",
+    "displayDe": "Union",
+    "article": "die",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "Birlik (Europäische Union = Avrupa Birliği)",
+    "en": "Union (European Union)",
+    "ar": "الاتحاد (الاتحاد الأوروبي)",
+    "uk": "Союз (Європейський Союз)",
+    "example_de": "Die Europäische Union schützt die Daten ihrer Bürger.",
+    "example_tr": "Avrupa Birliği vatandaşlarının verilerini korur.",
+    "example_en": "The European Union protects the data of its citizens.",
+    "example_ar": "يحمي الاتحاد الأوروبي بيانات مواطنيه.",
+    "example_uk": "Європейський Союз захищає персональні дані своїх громадян.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Europäische Union schützt die Daten ihrer Bürger.",
+        "tr": "Avrupa Birliği vatandaşlarının verilerini korur.",
+        "en": "The European Union protects the data of its citizens.",
+        "ar": "يحمي الاتحاد الأوروبي بيانات مواطنيه.",
+        "uk": "Європейський Союз захищає персональні дані своїх громадян."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Union eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Union günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Union plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "unschätzbarer": {
+    "de": "unschätzbar",
+    "displayDe": "unschätzbar",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "paha biçilmez (çekimli sıfat)",
+    "en": "invaluable / priceless",
+    "ar": "لا يقدر بثمن",
+    "uk": "неоціненний",
+    "example_de": "Sprachkenntnisse sind von unschätzbarem Wert für die Integration.",
+    "example_tr": "Dil bilgisi uyum için paha biçilmez bir değere sahiptir.",
+    "example_en": "Language skills are of invaluable worth for integration.",
+    "example_ar": "المهارات اللغوية ذات قيمة لا تقدر بثمن للاندماج.",
+    "example_uk": "Знання мови має неоціненне значення для інтеграції.",
+    "grammar": {
+      "tr": "Sıfat çekimi / Karşılaştırma: 'unschätzbar' sıfatı maskulin nominativ halinde veya karşılaştırma (komparativ) derecesindedir.",
+      "en": "Adjective declension / Comparative: 'unschätzbar' is either in the masculine nominative or comparative form.",
+      "ar": "تصريف الصفات أو المقارنة: الصفة 'unschätzbar' بصيغة المذكر أو المقارنة.",
+      "uk": "Відмінювання або вищий ступінь: прикметник 'unschätzbar' у чоловічому роді або формі порівняння.",
+      "title": {
+        "tr": "💡 Neden \"-er\" takısı aldı? (Sıfat Çekimi / Komparativ)",
+        "en": "💡 Why the \"-er\" ending? (Adjective / Comparative)",
+        "ar": "💡 لماذا لاحقة \"-er\"؟ (تصريف الصفة أو المقارنة)",
+        "uk": "💡 Чому закінчення \"-er\"? (Відмінювання прикметника / Вищий ступінь)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Sprachkenntnisse sind von unschätzbarem Wert für die Integration.",
+        "tr": "Dil bilgisi uyum için paha biçilmez bir değere sahiptir.",
+        "en": "Language skills are of invaluable worth for integration.",
+        "ar": "المهارات اللغوية ذات قيمة لا تقدر بثمن للاندماج.",
+        "uk": "Знання мови має неоціненне значення для інтеграції."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag unschätzbar zu sein.",
+        "tr": "İş ve günlük yaşamda paha biçilmez (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be invaluable / priceless in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "unterricht": {
+    "de": "der Unterricht",
+    "displayDe": "Unterricht",
+    "article": "der",
+    "plural": "-",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "ders, eğitim",
+    "en": "instruction / lesson / class",
+    "ar": "الدرس / التعليم",
+    "uk": "заняття / уроки",
+    "example_de": "Der Unterricht findet von Montag bis Freitag statt.",
+    "example_tr": "Dersler pazartesiden cumaya kadar yapılır.",
+    "example_en": "Lessons take place from Monday to Friday.",
+    "example_ar": "تُقام الدروس من الاثنين إلى الجمعة.",
+    "example_uk": "Заняття проходять з понеділка по п'ятницю.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Unterricht)",
+        "en": "💡 Noun Structure (der Unterricht)",
+        "ar": "💡 بنية الاسم (der Unterricht)",
+        "uk": "💡 Структура іменника (der Unterricht)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Unterricht findet von Montag bis Freitag statt.",
+        "tr": "Dersler pazartesiden cumaya kadar yapılır.",
+        "en": "Lessons take place from Monday to Friday.",
+        "ar": "تُقام الدروس من الاثنين إلى الجمعة.",
+        "uk": "Заняття проходять з понеділка по п'ятницю."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Unterricht eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Unterricht günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Unterricht plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "unterrichtsstunden": {
+    "de": "die Unterrichtsstunde",
+    "displayDe": "Unterrichtsstunde",
+    "article": "die",
+    "plural": "die Unterrichtsstunden",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "ders saatleri",
+    "en": "teaching hours / lesson units",
+    "ar": "ساعات دراسية",
+    "uk": "навчальні години",
+    "example_de": "Der Kurs umfasst 600 Unterrichtsstunden Sprachunterricht.",
+    "example_tr": "Kurs 600 ders saati dil eğitimi içerir.",
+    "example_en": "The course comprises 600 hours of language instruction.",
+    "example_ar": "تتضمن الدورة 600 ساعة دراسية لتعليم اللغة.",
+    "example_uk": "Курс містить 600 навчальних годин вивчення мови.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Unterrichtsstunden'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Unterrichtsstunden'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Unterrichtsstunden'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Unterrichtsstunden'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Kurs umfasst 600 Unterrichtsstunden Sprachunterricht.",
+        "tr": "Kurs 600 ders saati dil eğitimi içerir.",
+        "en": "The course comprises 600 hours of language instruction.",
+        "ar": "تتضمن الدورة 600 ساعة دراسية لتعليم اللغة.",
+        "uk": "Курс містить 600 навчальних годин вивчення мови."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Unterrichtsstunde eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Unterrichtsstunde günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Unterrichtsstunde plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "unterschiedliche": {
+    "de": "unterschiedlich",
+    "displayDe": "unterschiedlich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "farklı, çeşitli",
+    "en": "different / varied",
+    "ar": "مختلف / متنوع",
+    "uk": "різний / різноманітний",
+    "example_de": "Verwenden Sie unterschiedliche Passwörter für verschiedene Dienste.",
+    "example_tr": "Farklı hizmetler için farklı parolalar kullanın.",
+    "example_en": "Use different passwords for different services.",
+    "example_ar": "استخدم كلمات مرور مختلفة للخدمات المتعددة.",
+    "example_uk": "Використовуйте різні паролі для різних сервісів.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'unterschiedlich' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'unterschiedlich' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'unterschiedlich' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'unterschiedlich' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Verwenden Sie unterschiedliche Passwörter für verschiedene Dienste.",
+        "tr": "Farklı hizmetler için farklı parolalar kullanın.",
+        "en": "Use different passwords for different services.",
+        "ar": "استخدم كلمات مرور مختلفة للخدمات المتعددة.",
+        "uk": "Використовуйте різні паролі для різних сервісів."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag unterschiedlich zu sein.",
+        "tr": "İş ve günlük yaşamda farklı, çeşitli olmak son derece önemlidir.",
+        "en": "It is very important to be different / varied in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "unvorhersehbare": {
+    "de": "unvorhersehbar",
+    "displayDe": "unvorhersehbar",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "tahmin edilemez (şifre kombinasyonu)",
+    "en": "unpredictable",
+    "ar": "غير متوقع / يصعب التنبؤ به",
+    "uk": "непередбачуваний",
+    "example_de": "Ein Passwort sollte eine unvorhersehbare Mischung aus Zeichen sein.",
+    "example_tr": "Bir parola karakterlerden oluşan tahmin edilemez bir karışım olmalıdır.",
+    "example_en": "A password should be an unpredictable mix of characters.",
+    "example_ar": "يجب أن تكون كلمة المرور مزيجاً غير متوقع من الرموز.",
+    "example_uk": "Пароль повинен бути непередбачуваною комбінацією символів.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'unvorhersehbar' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'unvorhersehbar' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'unvorhersehbar' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'unvorhersehbar' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein Passwort sollte eine unvorhersehbare Mischung aus Zeichen sein.",
+        "tr": "Bir parola karakterlerden oluşan tahmin edilemez bir karışım olmalıdır.",
+        "en": "A password should be an unpredictable mix of characters.",
+        "ar": "يجب أن تكون كلمة المرور مزيجاً غير متوقع من الرموز.",
+        "uk": "Пароль повинен бути непередбачуваною комбінацією символів."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag unvorhersehbar zu sein.",
+        "tr": "İş ve günlük yaşamda tahmin edilemez (şifre kombinasyonu) olmak son derece önemlidir.",
+        "en": "It is very important to be unpredictable in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "up": {
+    "de": "der Check-up",
+    "displayDe": "Check-up",
+    "article": "der",
+    "plural": "die Check-ups",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "sağlık kontrolü (Check-up)",
+    "en": "checkup",
+    "ar": "فحص طبي شامل",
+    "uk": "чекап / медогляд",
+    "example_de": "Der allgemeine Check-up ab 35 wird von den Kassen bezahlt.",
+    "example_tr": "35 yaşından sonraki genel check-up sigorta kasaları tarafından karşılanır.",
+    "example_en": "The general checkup from age 35 is paid for by health funds.",
+    "example_ar": "تغطي صناديق التأمين تكلفة الفحص الطبي العام ابتداءً من سن 35.",
+    "example_uk": "Загальний чекап після 35 років оплачується страховими касами.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Check-ups'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Check-ups'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Check-ups'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Check-ups'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Check-up)",
+        "en": "💡 Noun Structure (der Check-up)",
+        "ar": "💡 بنية الاسم (der Check-up)",
+        "uk": "💡 Структура іменника (der Check-up)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der allgemeine Check-up ab 35 wird von den Kassen bezahlt.",
+        "tr": "35 yaşından sonraki genel check-up sigorta kasaları tarafından karşılanır.",
+        "en": "The general checkup from age 35 is paid for by health funds.",
+        "ar": "تغطي صناديق التأمين تكلفة الفحص الطبي العام ابتداءً من سن 35.",
+        "uk": "Загальний чекап після 35 років оплачується страховими касами."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Check-up eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Check-up günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Check-up plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "urlaubsfotos": {
+    "de": "das Urlaubsfoto",
+    "displayDe": "Urlaubsfoto",
+    "article": "das",
+    "plural": "die Urlaubsfotos",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "tatil fotoğrafları",
+    "en": "vacation photos",
+    "ar": "صور العطلة والإجازة",
+    "uk": "фотографії з відпустки",
+    "example_de": "Seien Sie vorsichtig beim Teilen privater Urlaubsfotos im Internet.",
+    "example_tr": "İnternette özel tatil fotoğrafları paylaşırken dikkatli olun.",
+    "example_en": "Be cautious when sharing private vacation photos online.",
+    "example_ar": "كن حذراً عند مشاركة صور الإجازة الشخصية على الإنترنت.",
+    "example_uk": "Будьте обачні, публікуючи приватні фото з відпустки в інтернеті.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Urlaubsfotos'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Urlaubsfotos'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Urlaubsfotos'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Urlaubsfotos'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Seien Sie vorsichtig beim Teilen privater Urlaubsfotos im Internet.",
+        "tr": "İnternette özel tatil fotoğrafları paylaşırken dikkatli olun.",
+        "en": "Be cautious when sharing private vacation photos online.",
+        "ar": "كن حذراً عند مشاركة صور الإجازة الشخصية على الإنترنت.",
+        "uk": "Будьте обачні, публікуючи приватні фото з відпустки в інтернеті."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Urlaubsfoto eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Urlaubsfoto günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Urlaubsfoto plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "verbleibenden": {
+    "de": "verbleibend",
+    "displayDe": "verbleibend",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "geriye kalan",
+    "en": "remaining",
+    "ar": "المتبقي",
+    "uk": "той, що залишився",
+    "example_de": "Die verbleibenden 100 Stunden widmen sich dem Orientierungskurs.",
+    "example_tr": "Geriye kalan 100 saat yönlendirme kursuna ayrılır.",
+    "example_en": "The remaining 100 hours are dedicated to the orientation course.",
+    "example_ar": "تُخصص الـ 100 ساعة المتبقية لدورة التوجيه.",
+    "example_uk": "Решта 100 годин присвячені орієнтаційному курсу.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'verbleibend' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'verbleibend' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'verbleibend' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'verbleibend' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die verbleibenden 100 Stunden widmen sich dem Orientierungskurs.",
+        "tr": "Geriye kalan 100 saat yönlendirme kursuna ayrılır.",
+        "en": "The remaining 100 hours are dedicated to the orientation course.",
+        "ar": "تُخصص الـ 100 ساعة المتبقية لدورة التوجيه.",
+        "uk": "Решта 100 годин присвячені орієнтаційному курсу."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag verbleibend zu sein.",
+        "tr": "İş ve günlük yaşamda geriye kalan olmak son derece önemlidir.",
+        "en": "It is very important to be remaining in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "verbraucherschützer": {
+    "de": "der Verbraucherschützer",
+    "displayDe": "Verbraucherschützer",
+    "article": "der",
+    "plural": "die Verbraucherschützer",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "tüketici hakları savunucuları",
+    "en": "consumer advocates / protection officers",
+    "ar": "حماة المستهلك",
+    "uk": "захисники прав споживачів",
+    "example_de": "Verbraucherschützer warnen vor gefälschten SMS-Nachrichten.",
+    "example_tr": "Tüketici savunucuları sahte SMS mesajlarına karşı uyarıyor.",
+    "example_en": "Consumer protection advocates warn against fake SMS messages.",
+    "example_ar": "يحذر حماة المستهلك من الرسائل النصية الاحتيالية.",
+    "example_uk": "Захисники прав споживачів застерігають від підроблених SMS.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Verbraucherschützer'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Verbraucherschützer'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Verbraucherschützer'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Verbraucherschützer'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Verbraucherschützer)",
+        "en": "💡 Noun Structure (der Verbraucherschützer)",
+        "ar": "💡 بنية الاسم (der Verbraucherschützer)",
+        "uk": "💡 Структура іменника (der Verbraucherschützer)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Verbraucherschützer warnen vor gefälschten SMS-Nachrichten.",
+        "tr": "Tüketici savunucuları sahte SMS mesajlarına karşı uyarıyor.",
+        "en": "Consumer protection advocates warn against fake SMS messages.",
+        "ar": "يحذر حماة المستهلك من الرسائل النصية الاحتيالية.",
+        "uk": "Захисники прав споживачів застерігають від підроблених SMS."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Verbraucherschützer eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Verbraucherschützer günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Verbraucherschützer plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "verdächtige": {
+    "de": "verdächtig",
+    "displayDe": "verdächtig",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "şüpheli (çekimli sıfat)",
+    "en": "suspicious",
+    "ar": "مشبوه / مريب",
+    "uk": "підозрілий",
+    "example_de": "Wer verdächtige Nachrichten erhält, sollte keine Links öffnen.",
+    "example_tr": "Şüpheli iletiler alan kişiler hiçbir bağlantıyı açmamalıdır.",
+    "example_en": "Whoever receives suspicious messages should not open any links.",
+    "example_ar": "من يتلقى رسائل مشبوهة ينبغي ألا يفتح أي روابط.",
+    "example_uk": "Той, хто отримує підозрілі повідомлення, не повинен відкривати посилання.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'verdächtig' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'verdächtig' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'verdächtig' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'verdächtig' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer verdächtige Nachrichten erhält, sollte keine Links öffnen.",
+        "tr": "Şüpheli iletiler alan kişiler hiçbir bağlantıyı açmamalıdır.",
+        "en": "Whoever receives suspicious messages should not open any links.",
+        "ar": "من يتلقى رسائل مشبوهة ينبغي ألا يفتح أي روابط.",
+        "uk": "Той, хто отримує підозрілі повідомлення, не повинен відкривати посилання."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag verdächtig zu sein.",
+        "tr": "İş ve günlük yaşamda şüpheli (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be suspicious in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "vereinfacht": {
+    "de": "vereinfachen",
+    "displayDe": "vereinfachen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "kolaylaştırmak, basitleştirmek (er/sie/es vereinfacht)",
+    "en": "simplifies",
+    "ar": "يبسط / يسهل",
+    "uk": "спрощує",
+    "example_de": "Die Digitalisierung vereinfacht viele Behördengänge.",
+    "example_tr": "Dijitalleşme birçok resmi daire işlemini kolaylaştırıyor.",
+    "example_en": "Digitalization simplifies many interactions with authorities.",
+    "example_ar": "تبسط الرقمنة العديد من المعاملات الرسمية.",
+    "example_uk": "Цифровізація спрощує багато візитів до відомств.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'vereinfachen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'vereinfachen' denotes action, process, or state.",
+      "ar": "فعل: 'vereinfachen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'vereinfachen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (vereinfachen)",
+        "en": "💡 Verb Structure (vereinfachen)",
+        "ar": "💡 بنية الفعل (vereinfachen)",
+        "uk": "💡 Структура дієслова (vereinfachen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Digitalisierung vereinfacht viele Behördengänge.",
+        "tr": "Dijitalleşme birçok resmi daire işlemini kolaylaştırıyor.",
+        "en": "Digitalization simplifies many interactions with authorities.",
+        "ar": "تبسط الرقمنة العديد من المعاملات الرسمية.",
+        "uk": "Цифровізація спрощує багато візитів до відомств."
+      },
+      {
+        "de": "In Deutschland kann man vereinfachen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için kolaylaştırmak, basitleştirmek (er/sie/es vereinfacht) eylemi yapılabilir.",
+        "en": "In Germany, one can simplifies to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "verkehrsexperten": {
+    "de": "der Verkehrsexperte",
+    "displayDe": "Verkehrsexperte",
+    "article": "der",
+    "plural": "die Verkehrsexperten",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "ulaşım uzmanları",
+    "en": "transport experts",
+    "ar": "خبراء النقل والمواصلات",
+    "uk": "транспортні експерти",
+    "example_de": "Verkehrsexperten fordern eine dauerhafte Finanzierung der Schiene.",
+    "example_tr": "Ulaşım uzmanları demiryolunun kalıcı olarak finanse edilmesini talep ediyor.",
+    "example_en": "Transport experts call for sustainable rail financing.",
+    "example_ar": "يطالب خبراء النقل بتمويل دائم لقطاع السكك الحديدية.",
+    "example_uk": "Транспортні експерти вимагають стабільного фінансування залізниці.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Verkehrsexperten'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Verkehrsexperten'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Verkehrsexperten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Verkehrsexperten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Verkehrsexperten fordern eine dauerhafte Finanzierung der Schiene.",
+        "tr": "Ulaşım uzmanları demiryolunun kalıcı olarak finanse edilmesini talep ediyor.",
+        "en": "Transport experts call for sustainable rail financing.",
+        "ar": "يطالب خبراء النقل بتمويل دائم لقطاع السكك الحديدية.",
+        "uk": "Транспортні експерти вимагають стабільного фінансування залізниці."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Verkehrsexperte eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Verkehrsexperte günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Verkehrsexperte plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "verkehrsmitteln": {
+    "de": "das Verkehrsmittel",
+    "displayDe": "Verkehrsmittel",
+    "article": "das",
+    "plural": "die Verkehrsmittel",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "ulaşım araçlarında (Dativ Plural)",
+    "en": "means of transport (Dative)",
+    "ar": "وسائل النقل",
+    "uk": "транспортних засобах",
+    "example_de": "Mit modernen Verkehrsmitteln schützt man die Umwelt.",
+    "example_tr": "Modern ulaşım araçlarıyla çevre korunur.",
+    "example_en": "With modern means of transport, one protects the environment.",
+    "example_ar": "بوسائل النقل الحديثة يحافظ المرء على البيئة.",
+    "example_uk": "Сучасними транспортними засобами зберігають довкілля.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Verkehrsmittel'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Verkehrsmittel'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Verkehrsmittel'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Verkehrsmittel'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Mit modernen Verkehrsmitteln schützt man die Umwelt.",
+        "tr": "Modern ulaşım araçlarıyla çevre korunur.",
+        "en": "With modern means of transport, one protects the environment.",
+        "ar": "بوسائل النقل الحديثة يحافظ المرء على البيئة.",
+        "uk": "Сучасними транспортними засобами зберігають довкілля."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Verkehrsmittel eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Verkehrsmittel günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Verkehrsmittel plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "verkehrsverbünde": {
+    "de": "der Verkehrsverbund",
+    "displayDe": "Verkehrsverbund",
+    "article": "der",
+    "plural": "die Verkehrsverbünde",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "toplu taşıma birlikleri",
+    "en": "transport associations / transit authorities",
+    "ar": "اتحادات شركات النقل",
+    "uk": "транспортні об'єднання",
+    "example_de": "Deutsche Verkehrsverbünde kooperieren beim Deutschlandticket.",
+    "example_tr": "Alman toplu taşıma birlikleri Almanya biletinde işbirliği yapıyor.",
+    "example_en": "German transit authorities cooperate on the Deutschlandticket.",
+    "example_ar": "تتعاون اتحادات النقل الألمانية في تطبيق تذكرة ألمانيا.",
+    "example_uk": "Німецькі транспортні об'єднання співпрацюють щодо Дойчландтикету.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Verkehrsverbünde'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Verkehrsverbünde'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Verkehrsverbünde'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Verkehrsverbünde'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Verkehrsverbund)",
+        "en": "💡 Noun Structure (der Verkehrsverbund)",
+        "ar": "💡 بنية الاسم (der Verkehrsverbund)",
+        "uk": "💡 Структура іменника (der Verkehrsverbund)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Deutsche Verkehrsverbünde kooperieren beim Deutschlandticket.",
+        "tr": "Alman toplu taşıma birlikleri Almanya biletinde işbirliği yapıyor.",
+        "en": "German transit authorities cooperate on the Deutschlandticket.",
+        "ar": "تتعاون اتحادات النقل الألمانية في تطبيق تذكرة ألمانيا.",
+        "uk": "Німецькі транспортні об'єднання співпрацюють щодо Дойчландтикету."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Verkehrsverbund eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Verkehrsverbund günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Verkehrsverbund plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "verliert": {
+    "de": "verlieren",
+    "displayDe": "verlieren",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "kaybetmek (er/sie/es verliert)",
+    "en": "loses",
+    "ar": "يفقد / يخسر",
+    "uk": "втрачає",
+    "example_de": "Durch regelmäßiges Üben verliert man die Angst vor Fehlern.",
+    "example_tr": "Düzenli pratik yaparak hata yapma korkusu kaybolur.",
+    "example_en": "Through regular practice, one loses the fear of mistakes.",
+    "example_ar": "بالممارسة المنتظمة يفقد المرء الخوف من ارتكاب الأخطاء.",
+    "example_uk": "Завдяки регулярній практиці людина втрачає страх перед помилками.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'verlieren' temel eylem bildiren fiildir.",
+      "en": "Verb: 'verlieren' denotes action, process, or state.",
+      "ar": "فعل: 'verlieren' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'verlieren' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (verlieren)",
+        "en": "💡 Verb Structure (verlieren)",
+        "ar": "💡 بنية الفعل (verlieren)",
+        "uk": "💡 Структура дієслова (verlieren)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Durch regelmäßiges Üben verliert man die Angst vor Fehlern.",
+        "tr": "Düzenli pratik yaparak hata yapma korkusu kaybolur.",
+        "en": "Through regular practice, one loses the fear of mistakes.",
+        "ar": "بالممارسة المنتظمة يفقد المرء الخوف من ارتكاب الأخطاء.",
+        "uk": "Завдяки регулярній практиці людина втрачає страх перед помилками."
+      },
+      {
+        "de": "In Deutschland kann man verlieren, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için kaybetmek (er/sie/es verliert) eylemi yapılabilir.",
+        "en": "In Germany, one can loses to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "vermeidet": {
+    "de": "vermeiden",
+    "displayDe": "vermeiden",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "kaçınmak, önlemek (er/sie/es vermeidet)",
+    "en": "avoids",
+    "ar": "يتجنب / يتفادى",
+    "uk": "уникає",
+    "example_de": "Wer mit der Bahn reist, vermeidet lästige Staus.",
+    "example_tr": "Trenle seyahat eden kişi can sıkıcı trafik sıkışıklıklarından kaçınır.",
+    "example_en": "Whoever travels by train avoids annoying traffic jams.",
+    "example_ar": "من يسافر بالقطار يتجنب الازدحامات المزعجة.",
+    "example_uk": "Той, хто їздить поїздом, уникає настирливих заторів.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'vermeiden' temel eylem bildiren fiildir.",
+      "en": "Verb: 'vermeiden' denotes action, process, or state.",
+      "ar": "فعل: 'vermeiden' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'vermeiden' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (vermeiden)",
+        "en": "💡 Verb Structure (vermeiden)",
+        "ar": "💡 بنية الفعل (vermeiden)",
+        "uk": "💡 Структура дієслова (vermeiden)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer mit der Bahn reist, vermeidet lästige Staus.",
+        "tr": "Trenle seyahat eden kişi can sıkıcı trafik sıkışıklıklarından kaçınır.",
+        "en": "Whoever travels by train avoids annoying traffic jams.",
+        "ar": "من يسافر بالقطار يتجنب الازدحامات المزعجة.",
+        "uk": "Той, хто їздить поїздом, уникає настирливих заторів."
+      },
+      {
+        "de": "In Deutschland kann man vermeiden, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için kaçınmak, önlemek (er/sie/es vermeidet) eylemi yapılabilir.",
+        "en": "In Germany, one can avoids to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "verschreibt": {
+    "de": "verschreiben",
+    "displayDe": "verschreiben",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "reçeteye yazmak (er/sie/es verschreibt)",
+    "en": "prescribes",
+    "ar": "يصف دواءً في روشتة",
+    "uk": "виписує (ліки за рецептом)",
+    "example_de": "Der Hausarzt verschreibt notwendige Medikamente.",
+    "example_tr": "Aile hekimi gerekli ilaçları reçeteye yazar.",
+    "example_en": "The family doctor prescribes necessary medications.",
+    "example_ar": "يصف طبيب الأسرة الأدوية اللازمة للمريض.",
+    "example_uk": "Сімейний лікар виписує необхідні ліки.",
+    "grammar": {
+      "title": {
+        "tr": "💡 Fiil Çekimi: Ayrılmayan Önek (ver- + schreiben)",
+        "en": "💡 Verb Structure: Inseparable Prefix (ver- + schreiben)",
+        "ar": "💡 بنية الفعل: سابقة غير منفصلة (ver- + schreiben)",
+        "uk": "💡 Будова дієслова: Невідокремлюваний префікс (ver- + schreiben)"
+      },
+      "tr": "Ayrılmayan fiil çekimi: 'ver-' öneki Almancada asla ayrılmaz (Untrennbar). 'verschreibt' fiili reçete yazmak anlamına gelir ve 3. tekil şahıs takısı '-t' almıştır.",
+      "en": "Inseparable verb conjugation: The prefix 'ver-' is never separated in German. 'verschreibt' means to prescribe and takes 3rd person singular '-t'.",
+      "ar": "فعل غير منفصل: السابقة 'ver-' لا تنفصل أبداً في الألمانية. يعني الفعل كتابة وصفة طبية ويأخذ لاحقة المفرد الغائب '-t'.",
+      "uk": "Невідокремлюване дієслово: префікс 'ver-' ніколи не відокремлюється в німецькій мові. Означає 'виписувати рецепт' та має закінчення 3-ї особи однини '-t'."
+    },
+    "examples": [
+      {
+        "de": "Der Hausarzt verschreibt notwendige Medikamente.",
+        "tr": "Aile hekimi gerekli ilaçları reçeteye yazar.",
+        "en": "The family doctor prescribes necessary medications.",
+        "ar": "يصف طبيب الأسرة الأدوية اللازمة للمريض.",
+        "uk": "Сімейний лікар виписує необхідні ліки."
+      },
+      {
+        "de": "In Deutschland kann man verschreiben, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için reçeteye yazmak (er/sie/es verschreibt) eylemi yapılabilir.",
+        "en": "In Germany, one can prescribes to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "versicherte": {
+    "de": "der Versicherte",
+    "displayDe": "Versicherte",
+    "article": "der",
+    "plural": "die Versicherten",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "sigortalılar / sigortalı kişi",
+    "en": "insured persons / insured",
+    "ar": "المؤمن عليهم",
+    "uk": "застраховані особи",
+    "example_de": "Gesetzlich Versicherte müssen beim Arzt die Gesundheitskarte vorlegen.",
+    "example_tr": "Yasal sağlık sigortalıları muayenede sağlık kartını ibraz etmelidir.",
+    "example_en": "Statutorily insured individuals must present their health card.",
+    "example_ar": "يجب على المؤمن عليهم قانونياً إبراز بطاقة التأمين عند الطبيب.",
+    "example_uk": "Державно застраховані особи повинні пред'явити картку в лікаря.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Versicherten'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Versicherten'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Versicherten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Versicherten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Versicherte)",
+        "en": "💡 Noun Structure (der Versicherte)",
+        "ar": "💡 بنية الاسم (der Versicherte)",
+        "uk": "💡 Структура іменника (der Versicherte)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Gesetzlich Versicherte müssen beim Arzt die Gesundheitskarte vorlegen.",
+        "tr": "Yasal sağlık sigortalıları muayenede sağlık kartını ibraz etmelidir.",
+        "en": "Statutorily insured individuals must present their health card.",
+        "ar": "يجب على المؤمن عليهم قانونياً إبراز بطاقة التأمين عند الطبيب.",
+        "uk": "Державно застраховані особи повинні пред'явити картку в лікаря."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Versicherte eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Versicherte günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Versicherte plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "verspätungen": {
+    "de": "die Verspätung",
+    "displayDe": "Verspätung",
+    "article": "die",
+    "plural": "die Verspätungen",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "gecikmeler, rötarlar",
+    "en": "delays",
+    "ar": "تأخيرات",
+    "uk": "запізнення / затримки рейсів",
+    "example_de": "Fahrgäste ärgern sich über häufige Verspätungen der Bahn.",
+    "example_tr": "Yolcular trenin sık yaşanan gecikmelerine kızıyor.",
+    "example_en": "Passengers are annoyed by frequent train delays.",
+    "example_ar": "يستاء الركاب من التأخيرات المتكررة للقطارات.",
+    "example_uk": "Пасажири обурюються через часті запізнення поїздів.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Verspätungen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Verspätungen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Verspätungen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Verspätungen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Fahrgäste ärgern sich über häufige Verspätungen der Bahn.",
+        "tr": "Yolcular trenin sık yaşanan gecikmelerine kızıyor.",
+        "en": "Passengers are annoyed by frequent train delays.",
+        "ar": "يستاء الركاب من التأخيرات المتكررة للقطارات.",
+        "uk": "Пасажири обурюються через часті запізнення поїздів."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Verspätung eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Verspätung günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Verspätung plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "versuchen": {
+    "de": "versuchen",
+    "displayDe": "versuchen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "denemek, teşebbüs etmek",
+    "en": "to try / attempt",
+    "ar": "حاول / جرب",
+    "uk": "намагатися / пробувати",
+    "example_de": "Betrüger versuchen, an sensible Zugangsdaten zu gelangen.",
+    "example_tr": "Dolandırıcılar hassas giriş bilgilerine ulaşmaya çalışırlar.",
+    "example_en": "Fraudsters try to obtain sensitive access credentials.",
+    "example_ar": "يحاول المحتالون الوصول إلى بيانات الدخول الحساسة.",
+    "example_uk": "Шахраї намагаються отримати доступ до конфіденційних даних.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'versuchen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'versuchen' denotes action, process, or state.",
+      "ar": "فعل: 'versuchen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'versuchen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (versuchen)",
+        "en": "💡 Verb Structure (versuchen)",
+        "ar": "💡 بنية الفعل (versuchen)",
+        "uk": "💡 Структура дієслова (versuchen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Betrüger versuchen, an sensible Zugangsdaten zu gelangen.",
+        "tr": "Dolandırıcılar hassas giriş bilgilerine ulaşmaya çalışırlar.",
+        "en": "Fraudsters try to obtain sensitive access credentials.",
+        "ar": "يحاول المحتالون الوصول إلى بيانات الدخول الحساسة.",
+        "uk": "Шахраї намагаються отримати доступ до конфіденційних даних."
+      },
+      {
+        "de": "In Deutschland kann man versuchen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için denemek, teşebbüs etmek eylemi yapılabilir.",
+        "en": "In Germany, one can to try / attempt to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "vertrauliche": {
+    "de": "vertraulich",
+    "displayDe": "vertraulich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "gizli, mahrem (çekimli sıfat)",
+    "en": "confidential",
+    "ar": "سري / موثوق",
+    "uk": "конфіденційний",
+    "example_de": "Geben Sie vertrauliche Passwörter niemals an Dritte weiter.",
+    "example_tr": "Gizli parolalarınızı asla üçüncü kişilere vermeyin.",
+    "example_en": "Never pass on confidential passwords to third parties.",
+    "example_ar": "لا تفصح أبداً عن كلمات المرور السرية لأطراف ثالثة.",
+    "example_uk": "Ніколи не передавайте конфіденційні паролі третім особам.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'vertraulich' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'vertraulich' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'vertraulich' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'vertraulich' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Geben Sie vertrauliche Passwörter niemals an Dritte weiter.",
+        "tr": "Gizli parolalarınızı asla üçüncü kişilere vermeyin.",
+        "en": "Never pass on confidential passwords to third parties.",
+        "ar": "لا تفصح أبداً عن كلمات المرور السرية لأطراف ثالثة.",
+        "uk": "Ніколи не передавайте конфіденційні паролі третім особам."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag vertraulich zu sein.",
+        "tr": "İş ve günlük yaşamda gizli, mahrem (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be confidential in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "verwenden": {
+    "de": "verwenden",
+    "displayDe": "verwenden",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A2",
+    "tr": "kullanmak",
+    "en": "to use / utilize",
+    "ar": "استخدم / استعمل",
+    "uk": "використовувати",
+    "example_de": "Man sollte für jeden Online-Dienst ein eigenes Passwort verwenden.",
+    "example_tr": "Her çevrimiçi hizmet için ayrı bir parola kullanılmalıdır.",
+    "example_en": "One should use a separate password for each online service.",
+    "example_ar": "ينبغي استخدام كلمة مرور منفصلة لكل خدمة عبر الإنترنت.",
+    "example_uk": "Для кожного онлайн-сервісу слід використовувати окремий пароль.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'verwenden' temel eylem bildiren fiildir.",
+      "en": "Verb: 'verwenden' denotes action, process, or state.",
+      "ar": "فعل: 'verwenden' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'verwenden' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (verwenden)",
+        "en": "💡 Verb Structure (verwenden)",
+        "ar": "💡 بنية الفعل (verwenden)",
+        "uk": "💡 Структура дієслова (verwenden)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Man sollte für jeden Online-Dienst ein eigenes Passwort verwenden.",
+        "tr": "Her çevrimiçi hizmet için ayrı bir parola kullanılmalıdır.",
+        "en": "One should use a separate password for each online service.",
+        "ar": "ينبغي استخدام كلمة مرور منفصلة لكل خدمة عبر الإنترنت.",
+        "uk": "Для кожного онлайн-сервісу слід використовувати окремий пароль."
+      },
+      {
+        "de": "In Deutschland kann man verwenden, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için kullanmak eylemi yapılabilir.",
+        "en": "In Germany, one can to use / utilize to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "vieles": {
+    "de": "viel",
+    "displayDe": "vieles",
+    "article": "",
+    "plural": "",
+    "pos": "pron",
+    "level": "A1",
+    "tr": "birçok şey",
+    "en": "much / many things",
+    "ar": "الكثير من الأشياء",
+    "uk": "багато чого",
+    "example_de": "Die Digitalisierung hat vieles im Alltag vereinfacht.",
+    "example_tr": "Dijitalleşme günlük yaşamda birçok şeyi kolaylaştırdı.",
+    "example_en": "Digitalization has simplified many things in daily life.",
+    "example_ar": "بسطت الرقمنة الكثير من الأمور في الحياة اليومية.",
+    "example_uk": "Цифровізація спростила багато речей у повсякденному житті.",
+    "grammar": {
+      "tr": "Zamir (Pronomen): 'vieles' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
+      "en": "Pronoun: 'vieles' stands in place of a noun and reflects grammatical case.",
+      "ar": "ضمير: 'vieles' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
+      "uk": "Займенник: 'vieles' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Digitalisierung hat vieles im Alltag vereinfacht.",
+        "tr": "Dijitalleşme günlük yaşamda birçok şeyi kolaylaştırdı.",
+        "en": "Digitalization has simplified many things in daily life.",
+        "ar": "بسطت الرقمنة الكثير من الأمور في الحياة اليومية.",
+        "uk": "Цифровізація спростила багато речей у повсякденному житті."
+      },
+      {
+        "de": "Das Wort 'vieles' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'vieles' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'vieles' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'vieles' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'vieles' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "vollautomatisch": {
+    "de": "vollautomatisch",
+    "displayDe": "vollautomatisch",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "B1",
+    "tr": "tam otomatik olarak",
+    "en": "fully automatically",
+    "ar": "بشكل أوتوماتيكي بالكامل",
+    "uk": "повністю автоматично",
+    "example_de": "Die eAU übermittelt die Daten vollautomatisch an die Krankenkasse.",
+    "example_tr": "eAU verileri tam otomatik olarak sağlık sigortasına iletir.",
+    "example_en": "The eAU transmits data fully automatically to the health insurer.",
+    "example_ar": "يرسل النظام الإلكتروني البيانات أوتوماتيكياً بالكامل إلى التأمين.",
+    "example_uk": "Система eAU передає дані повністю автоматично до лікарняної каси.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'vollautomatisch' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'vollautomatisch' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'vollautomatisch' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'vollautomatisch' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (vollautomatisch)",
+        "en": "💡 Adverb (vollautomatisch)",
+        "ar": "💡 ظرف (vollautomatisch)",
+        "uk": "💡 Прислівник (vollautomatisch)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die eAU übermittelt die Daten vollautomatisch an die Krankenkasse.",
+        "tr": "eAU verileri tam otomatik olarak sağlık sigortasına iletir.",
+        "en": "The eAU transmits data fully automatically to the health insurer.",
+        "ar": "يرسل النظام الإلكتروني البيانات أوتوماتيكياً بالكامل إلى التأمين.",
+        "uk": "Система eAU передає дані повністю автоматично до лікарняної каси."
+      },
+      {
+        "de": "Das Wort 'vollautomatisch' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'vollautomatisch' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'vollautomatisch' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'vollautomatisch' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'vollautomatisch' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "vollständige": {
+    "de": "vollständig",
+    "displayDe": "vollständig",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "eksiksiz, tam",
+    "en": "complete / full",
+    "ar": "كامل / تام",
+    "uk": "повний",
+    "example_de": "Eine vollständige Bewerbung enthält alle Sprachzertifikate.",
+    "example_tr": "Eksiksiz bir başvuru tüm dil sertifikalarını içerir.",
+    "example_en": "A complete application contains all language certificates.",
+    "example_ar": "يحتوي الطلب المكتمل على جميع الشهادات اللغوية.",
+    "example_uk": "Повний пакет документів містить усі мовні сертифікати.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'vollständig' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'vollständig' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'vollständig' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'vollständig' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Eine vollständige Bewerbung enthält alle Sprachzertifikate.",
+        "tr": "Eksiksiz bir başvuru tüm dil sertifikalarını içerir.",
+        "en": "A complete application contains all language certificates.",
+        "ar": "يحتوي الطلب المكتمل على جميع الشهادات اللغوية.",
+        "uk": "Повний пакет документів містить усі мовні сертифікати."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag vollständig zu sein.",
+        "tr": "İş ve günlük yaşamda eksiksiz, tam olmak son derece önemlidir.",
+        "en": "It is very important to be complete / full in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "vorlegen": {
+    "de": "vorlegen",
+    "displayDe": "vorlegen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "ibraz etmek, sunmak (belge/rapor)",
+    "en": "to present / submit (document)",
+    "ar": "قدم / أبرز مستنداً",
+    "uk": "пред'являти / надавати (документ)",
+    "example_de": "Beschäftigte müssen dem Arbeitgeber eine Krankmeldung vorlegen.",
+    "example_tr": "Çalışanlar işverene bir hastalık raporu sunmalıdır.",
+    "example_en": "Employees must submit a sick note to their employer.",
+    "example_ar": "يجب على الموظفين تقديم إشعار الإجازة المرضية لرب العمل.",
+    "example_uk": "Працівники повинні надати роботодавцю лікарняний лист.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'vorlegen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'vorlegen' denotes action, process, or state.",
+      "ar": "فعل: 'vorlegen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'vorlegen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (vorlegen)",
+        "en": "💡 Verb Structure (vorlegen)",
+        "ar": "💡 بنية الفعل (vorlegen)",
+        "uk": "💡 Структура дієслова (vorlegen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Beschäftigte müssen dem Arbeitgeber eine Krankmeldung vorlegen.",
+        "tr": "Çalışanlar işverene bir hastalık raporu sunmalıdır.",
+        "en": "Employees must submit a sick note to their employer.",
+        "ar": "يجب على الموظفين تقديم إشعار الإجازة المرضية لرب العمل.",
+        "uk": "Працівники повинні надати роботодавцю лікарняний лист."
+      },
+      {
+        "de": "In Deutschland kann man vorlegen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için ibraz etmek, sunmak (belge/rapor) eylemi yapılabilir.",
+        "en": "In Germany, one can to present / submit (document) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "vorsorge": {
+    "de": "die Vorsorge",
+    "displayDe": "Vorsorge",
+    "article": "die",
+    "plural": "die Vorsorgen",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "koruyucu hekimlik, önleyici kontrol",
+    "en": "prevention / preventive care",
+    "ar": "الرعاية الوقائية / الفحص الدوري",
+    "uk": "профілактика / профілактичний огляд",
+    "example_de": "Ein zentraler Schwerpunkt der Medizin ist die frühzeitige Vorsorge.",
+    "example_tr": "Tıbbın en önemli odak noktası erken koruyucu kontroldür.",
+    "example_en": "A central focus of medicine is early prevention.",
+    "example_ar": "التركيز الأساسي للطب هو الوقاية المبكرة من الأمراض.",
+    "example_uk": "Головним пріоритетом медицини є рання профілактика.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Vorsorgen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Vorsorgen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Vorsorgen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Vorsorgen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Vorsorge)",
+        "en": "💡 Noun Structure (die Vorsorge)",
+        "ar": "💡 بنية الاسم (die Vorsorge)",
+        "uk": "💡 Структура іменника (die Vorsorge)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein zentraler Schwerpunkt der Medizin ist die frühzeitige Vorsorge.",
+        "tr": "Tıbbın en önemli odak noktası erken koruyucu kontroldür.",
+        "en": "A central focus of medicine is early prevention.",
+        "ar": "التركيز الأساسي للطب هو الوقاية المبكرة من الأمراض.",
+        "uk": "Головним пріоритетом медицини є рання профілактика."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Vorsorge eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Vorsorge günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Vorsorge plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "vorsorgetermine": {
+    "de": "der Vorsorgetermin",
+    "displayDe": "Vorsorgetermin",
+    "article": "der",
+    "plural": "die Vorsorgetermine",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "koruyucu sağlık muayenesi randevuları",
+    "en": "preventive checkup appointments",
+    "ar": "مواعيد الفحوصات الوقائية",
+    "uk": "записи на профілактичні огляди",
+    "example_de": "Wer diese Vorsorgetermine gewissenhaft wahrnimmt, sammelt Punkte.",
+    "example_tr": "Bu kontrol randevularına titizlikle riayet eden kişi puan toplar.",
+    "example_en": "Whoever conscientiously attends these checkup appointments earns points.",
+    "example_ar": "من يلتزم بمواعيد الفحص الوقائي يجمع نقاط مكافأة.",
+    "example_uk": "Той, хто сумлінно відвідує профілактичні прийоми, накопичує бали.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Vorsorgetermine'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Vorsorgetermine'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Vorsorgetermine'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Vorsorgetermine'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Vorsorgetermin)",
+        "en": "💡 Noun Structure (der Vorsorgetermin)",
+        "ar": "💡 بنية الاسم (der Vorsorgetermin)",
+        "uk": "💡 Структура іменника (der Vorsorgetermin)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer diese Vorsorgetermine gewissenhaft wahrnimmt, sammelt Punkte.",
+        "tr": "Bu kontrol randevularına titizlikle riayet eden kişi puan toplar.",
+        "en": "Whoever conscientiously attends these checkup appointments earns points.",
+        "ar": "من يلتزم بمواعيد الفحص الوقائي يجمع نقاط مكافأة.",
+        "uk": "Той, хто сумлінно відвідує профілактичні прийоми, накопичує бали."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Vorsorgetermin eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Vorsorgetermin günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Vorsorgetermin plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "vorzeigen": {
+    "de": "das Vorzeigen",
+    "displayDe": "Vorzeigen",
+    "article": "das",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "gösterme, ibraz etme",
+    "en": "presenting / showing (card)",
+    "ar": "إبراز / إظهار البطاقة",
+    "uk": "пред'явлення (картки)",
+    "example_de": "Das Vorzeigen der elektronischen Gesundheitskarte reicht beim Arzt aus.",
+    "example_tr": "Doktorda elektronik sağlık kartının ibraz edilmesi yeterlidir.",
+    "example_en": "Presenting the electronic health card is sufficient at the doctor's.",
+    "example_ar": "إبراز بطاقة التأمين الصحي الإلكترونية كافٍ لدى الطبيب.",
+    "example_uk": "Пред'явлення електронної медичної картки є достатнім у лікаря.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Vorzeigen der elektronischen Gesundheitskarte reicht beim Arzt aus.",
+        "tr": "Doktorda elektronik sağlık kartının ibraz edilmesi yeterlidir.",
+        "en": "Presenting the electronic health card is sufficient at the doctor's.",
+        "ar": "إبراز بطاقة التأمين الصحي الإلكترونية كافٍ لدى الطبيب.",
+        "uk": "Пред'явлення електронної медичної картки є достатнім у лікаря."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Vorzeigen eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Vorzeigen günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Vorzeigen plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "vorzeitige": {
+    "de": "vorzeitig",
+    "displayDe": "vorzeitig",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "vaktinden önce, erken",
+    "en": "premature / early",
+    "ar": "مبكر / قبل الأوان",
+    "uk": "достроковий / передчасний",
+    "example_de": "Mit dem B1-Zertifikat ist eine vorzeitige Einbürgerung möglich.",
+    "example_tr": "B1 sertifikası ile süresinden önce vatandaşlığa geçiş mümkündür.",
+    "example_en": "With the B1 certificate, early naturalization is possible.",
+    "example_ar": "مع شهادة B1 يصبح التجنيس المبكر ممكناً.",
+    "example_uk": "Із сертифікатом B1 можливе дострокове отримання громадянства.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'vorzeitig' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'vorzeitig' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'vorzeitig' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'vorzeitig' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Mit dem B1-Zertifikat ist eine vorzeitige Einbürgerung möglich.",
+        "tr": "B1 sertifikası ile süresinden önce vatandaşlığa geçiş mümkündür.",
+        "en": "With the B1 certificate, early naturalization is possible.",
+        "ar": "مع شهادة B1 يصبح التجنيس المبكر ممكناً.",
+        "uk": "Із сертифікатом B1 можливе дострокове отримання громадянства."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag vorzeitig zu sein.",
+        "tr": "İş ve günlük yaşamda vaktinden önce, erken olmak son derece önemlidir.",
+        "en": "It is very important to be premature / early in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "wachsende": {
+    "de": "wachsend",
+    "displayDe": "wachsend",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "büyüyen, artan",
+    "en": "growing / increasing",
+    "ar": "متزايد / نامٍ",
+    "uk": "зростаючий",
+    "example_de": "Die wachsende Nachfrage erfordert mehr Züge.",
+    "example_tr": "Artan talep daha fazla tren seferi gerektiriyor.",
+    "example_en": "Growing demand requires more trains.",
+    "example_ar": "يتطلب الطلب المتزايد تسيير المزيد من القطارات.",
+    "example_uk": "Зростаючий попит вимагає більшої кількості поїздів.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'wachsend' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'wachsend' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'wachsend' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'wachsend' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die wachsende Nachfrage erfordert mehr Züge.",
+        "tr": "Artan talep daha fazla tren seferi gerektiriyor.",
+        "en": "Growing demand requires more trains.",
+        "ar": "يتطلب الطلب المتزايد تسيير المزيد من القطارات.",
+        "uk": "Зростаючий попит вимагає більшої кількості поїздів."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag wachsend zu sein.",
+        "tr": "İş ve günlük yaşamda büyüyen, artan olmak son derece önemlidir.",
+        "en": "It is very important to be growing / increasing in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "wahl": {
+    "de": "die Wahl",
+    "displayDe": "Wahl",
+    "article": "die",
+    "plural": "die Wahlen",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "seçim / tercih",
+    "en": "choice / election",
+    "ar": "اختيار / انتخاب",
+    "uk": "вибір / вибори",
+    "example_de": "Die Wahl des Hausarztes ist in Deutschland frei.",
+    "example_tr": "Almanya'da aile hekimi seçimi serbesttir.",
+    "example_en": "The choice of family doctor is free in Germany.",
+    "example_ar": "اختيار طبيب الأسرة حر في ألمانيا.",
+    "example_uk": "Вибір сімейного лікаря в Німеччині є вільним.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Wahlen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Wahlen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Wahlen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Wahlen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Wahl)",
+        "en": "💡 Noun Structure (die Wahl)",
+        "ar": "💡 بنية الاسم (die Wahl)",
+        "uk": "💡 Структура іменника (die Wahl)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Wahl des Hausarztes ist in Deutschland frei.",
+        "tr": "Almanya'da aile hekimi seçimi serbesttir.",
+        "en": "The choice of family doctor is free in Germany.",
+        "ar": "اختيار طبيب الأسرة حر في ألمانيا.",
+        "uk": "Вибір сімейного лікаря в Німеччині є вільним."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Wahl eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Wahl günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Wahl plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "wahrnimmt": {
+    "de": "wahrnehmen",
+    "displayDe": "wahrnehmen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "riayet etmek, randevuya gitmek (er/sie/es nimmt wahr)",
+    "en": "attends / exercises (appointment)",
+    "ar": "يلتزم بالموعد / يحضر",
+    "uk": "відвідує / користується (можливістю)",
+    "example_de": "Wer Vorsorgetermine wahrnimmt, schützt seine Gesundheit.",
+    "example_tr": "Kontrol muayenelerine giden kişi sağlığını korur.",
+    "example_en": "Whoever attends preventive appointments protects their health.",
+    "example_ar": "من يحضر مواعيد الفحص الوقائي يحمي صحته.",
+    "example_uk": "Той, хто відвідує профілактичні огляди, дбає про здоров'я.",
+    "grammar": {
+      "title": {
+        "tr": "💡 Fiil Çekimi: Ayrılabilir Fiil + Kök Değişimi (wahr-nehmen, e ➔ i)",
+        "en": "💡 Verb Conjugation: Separable Verb + Stem Vowel Change (wahr-nehmen, e ➔ i)",
+        "ar": "💡 تصريف الفعل: فعل منفصل مع تغيير حرف العلة (wahr-nehmen, e ➔ i)",
+        "uk": "💡 Дієвідмінювання: Відокремлюване дієслово зі зміною голосної (wahr-nehmen, e ➔ i)"
+      },
+      "tr": "Düzensiz ve ayrılabilir fiil çekimi: 'wahrnehmen' (randevuya riayet etmek / katılmak). 3. tekil şahısta (er/sie/es) kök seslisi 'e' -> 'i' değişimine uğrar (nimmt wahr). Yan cümlede fiil sonda birleşik yazılır: 'wahrnimmt'.",
+      "en": "Irregular separable verb: 'wahrnehmen' (to attend an appointment). Undergoes stem vowel change 'e' -> 'i' in 3rd person singular (nimmt wahr). In a subordinate clause, it appears at the end combined as 'wahrnimmt'.",
+      "ar": "فعل شاذ منفصل: 'wahrnehmen' (الالتزام بالموعد). يتغير حرف العلة من 'e' إلى 'i' في المفرد الغائب، وفي الجملة الجانبية يُكتب متصلاً في النهاية: 'wahrnimmt'.",
+      "uk": "Неправильне відокремлюване дієслово: 'wahrnehmen' (відвідувати прийом). Змінює голосну кореня 'e' на 'i' в 3-й особі однини. У підрядному реченні стоїть у кінці разом: 'wahrnimmt'."
+    },
+    "examples": [
+      {
+        "de": "Wer Vorsorgetermine wahrnimmt, schützt seine Gesundheit.",
+        "tr": "Kontrol muayenelerine giden kişi sağlığını korur.",
+        "en": "Whoever attends preventive appointments protects their health.",
+        "ar": "من يحضر مواعيد الفحص الوقائي يحمي صحته.",
+        "uk": "Той, хто відвідує профілактичні огляди, дбає про здоров'я."
+      },
+      {
+        "de": "In Deutschland kann man wahrnehmen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için riayet etmek, randevuya gitmek (er/sie/es nimmt wahr) eylemi yapılabilir.",
+        "en": "In Germany, one can attends / exercises (appointment) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "website": {
+    "de": "die Website",
+    "displayDe": "Website",
+    "article": "die",
+    "plural": "die Websites",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "web sitesi, internet sayfası",
+    "en": "website",
+    "ar": "موقع إلكتروني",
+    "uk": "веб-сайт",
+    "example_de": "Rufen Sie die Website des Anbieters stets manuell auf.",
+    "example_tr": "Hizmet sağlayıcısının web sitesini her zaman elle yazarak açın.",
+    "example_en": "Always open the provider's website manually.",
+    "example_ar": "افتح موقع مزود الخدمة دائماً بشكل يدوي.",
+    "example_uk": "Завжди відкривайте сайт провайдера вручну.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Websites'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Websites'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Websites'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Websites'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (die Website)",
+        "en": "💡 Noun Structure (die Website)",
+        "ar": "💡 بنية الاسم (die Website)",
+        "uk": "💡 Структура іменника (die Website)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Rufen Sie die Website des Anbieters stets manuell auf.",
+        "tr": "Hizmet sağlayıcısının web sitesini her zaman elle yazarak açın.",
+        "en": "Always open the provider's website manually.",
+        "ar": "افتح موقع مزود الخدمة دائماً بشكل يدوي.",
+        "uk": "Завжди відкривайте сайт провайдера вручну."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Website eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Website günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Website plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "welche": {
+    "de": "welcher",
+    "displayDe": "welche",
+    "article": "",
+    "plural": "",
+    "pos": "pron",
+    "level": "A1",
+    "tr": "hangi / hangileri",
+    "en": "which / who",
+    "ar": "أي / التي",
+    "uk": "який / які",
+    "example_de": "Prüfen Sie, welche Daten im Profil gespeichert sind.",
+    "example_tr": "Profilde hangi verilerin saklandığını kontrol edin.",
+    "example_en": "Check which data is stored in the profile.",
+    "example_ar": "تحقق من البيانات المخزنة في الملف الشخصي.",
+    "example_uk": "Перевірте, які дані збережені у вашому профілі.",
+    "grammar": {
+      "tr": "Zamir (Pronomen): 'welche' bir ismin yerini tutar ve cümlenin durumuna göre çekimlenir.",
+      "en": "Pronoun: 'welche' stands in place of a noun and reflects grammatical case.",
+      "ar": "ضمير: 'welche' يحل محل الاسم ويعرب حسب موقعه في الجملة.",
+      "uk": "Займенник: 'welche' замінює іменник і змінюється за відмінками.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
+    },
+    "examples": [
+      {
+        "de": "Prüfen Sie, welche Daten im Profil gespeichert sind.",
+        "tr": "Profilde hangi verilerin saklandığını kontrol edin.",
+        "en": "Check which data is stored in the profile.",
+        "ar": "تحقق من البيانات المخزنة في الملف الشخصي.",
+        "uk": "Перевірте, які дані збережені у вашому профілі."
+      },
+      {
+        "de": "Das Wort 'welche' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'welche' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'welche' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'welche' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'welche' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "wenden": {
+    "de": "wenden",
+    "displayDe": "wenden",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "başvurmak, müracaat etmek (sich wenden an)",
+    "en": "to turn to / contact",
+    "ar": "توجه إلى / راجع",
+    "uk": "звертатися до",
+    "example_de": "Patienten wenden sich zuerst an ihren Hausarzt.",
+    "example_tr": "Hastalar öncelikle aile hekimlerine başvururlar.",
+    "example_en": "Patients first turn to their family doctor.",
+    "example_ar": "يتوجه المرضى أولاً إلى طبيب الأسرة الخاص بهم.",
+    "example_uk": "Пацієнти спочатку звертаються до свого сімейного лікаря.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'wenden' temel eylem bildiren fiildir.",
+      "en": "Verb: 'wenden' denotes action, process, or state.",
+      "ar": "فعل: 'wenden' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'wenden' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (wenden)",
+        "en": "💡 Verb Structure (wenden)",
+        "ar": "💡 بنية الفعل (wenden)",
+        "uk": "💡 Структура дієслова (wenden)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Patienten wenden sich zuerst an ihren Hausarzt.",
+        "tr": "Hastalar öncelikle aile hekimlerine başvururlar.",
+        "en": "Patients first turn to their family doctor.",
+        "ar": "يتوجه المرضى أولاً إلى طبيب الأسرة الخاص بهم.",
+        "uk": "Пацієнти спочатку звертаються до свого сімейного лікаря."
+      },
+      {
+        "de": "In Deutschland kann man wenden, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için başvurmak, müracaat etmek (sich wenden an) eylemi yapılabilir.",
+        "en": "In Germany, one can to turn to / contact to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "wertvolle": {
+    "de": "wertvoll",
+    "displayDe": "wertvoll",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "değerli, kıymetli",
+    "en": "valuable / worthwhile",
+    "ar": "قيّم / ثمين",
+    "uk": "цінний",
+    "example_de": "Wer zur Vorsorge geht, sammelt wertvolle Bonuspunkte.",
+    "example_tr": "Kontrole giden kişi değerli bonus puanlar toplar.",
+    "example_en": "Whoever goes for checkups collects valuable bonus points.",
+    "example_ar": "من يذهب للفحص الوقائي يجمع نقاط مكافأة قيّمة.",
+    "example_uk": "Той, хто проходить огляди, накопичує цінні бонусні бали.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'wertvoll' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'wertvoll' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'wertvoll' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'wertvoll' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wer zur Vorsorge geht, sammelt wertvolle Bonuspunkte.",
+        "tr": "Kontrole giden kişi değerli bonus puanlar toplar.",
+        "en": "Whoever goes for checkups collects valuable bonus points.",
+        "ar": "من يذهب للفحص الوقائي يجمع نقاط مكافأة قيّمة.",
+        "uk": "Той, хто проходить огляди, накопичує цінні бонусні бали."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag wertvoll zu sein.",
+        "tr": "İş ve günlük yaşamda değerli, kıymetli olmak son derece önemlidir.",
+        "en": "It is very important to be valuable / worthwhile in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "wertvollen": {
+    "de": "wertvoll",
+    "displayDe": "wertvoll",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "değerli (çekimli sıfat)",
+    "en": "valuable (declined)",
+    "ar": "القيّم",
+    "uk": "цінний",
+    "example_de": "Sprachkurse leisten einen wertvollen Beitrag zur Integration.",
+    "example_tr": "Dil kursları uyuma değerli bir katkı sağlar.",
+    "example_en": "Language courses make a valuable contribution to integration.",
+    "example_ar": "تقدم دورات اللغة مساهمة قيّمة في الاندماج.",
+    "example_uk": "Мовні курси роблять цінний внесок у процес інтеграції.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'wertvoll' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'wertvoll' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'wertvoll' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'wertvoll' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Sprachkurse leisten einen wertvollen Beitrag zur Integration.",
+        "tr": "Dil kursları uyuma değerli bir katkı sağlar.",
+        "en": "Language courses make a valuable contribution to integration.",
+        "ar": "تقدم دورات اللغة مساهمة قيّمة في الاندماج.",
+        "uk": "Мовні курси роблять цінний внесок у процес інтеграції."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag wertvoll zu sein.",
+        "tr": "İş ve günlük yaşamda değerli (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be valuable (declined) in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "wichtigste": {
+    "de": "wichtig",
+    "displayDe": "wichtigste",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A1",
+    "tr": "en önemli (Superlativ)",
+    "en": "most important",
+    "ar": "الأهم",
+    "uk": "найважливіший",
+    "example_de": "Die Sprache ist die wichtigste Voraussetzung für die Einbürgerung.",
+    "example_tr": "Dil vatandaşlığa geçişin en önemli ön koşuludur.",
+    "example_en": "Language is the most important prerequisite for naturalization.",
+    "example_ar": "اللغة هي أهم شرط للحصول على الجنسية.",
+    "example_uk": "Мова є найважливішою передумовою для набуття громадянства.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'wichtigste' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'wichtigste' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'wichtigste' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'wichtigste' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Sprache ist die wichtigste Voraussetzung für die Einbürgerung.",
+        "tr": "Dil vatandaşlığa geçişin en önemli ön koşuludur.",
+        "en": "Language is the most important prerequisite for naturalization.",
+        "ar": "اللغة هي أهم شرط للحصول على الجنسية.",
+        "uk": "Мова є найважливішою передумовою для набуття громадянства."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag wichtigste zu sein.",
+        "tr": "İş ve günlük yaşamda en önemli (Superlativ) olmak son derece önemlidir.",
+        "en": "It is very important to be most important in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "widmen": {
+    "de": "widmen",
+    "displayDe": "widmen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "adamak, tahsis etmek (sich widmen = vakit ayırmak)",
+    "en": "to dedicate / devote",
+    "ar": "كرس / خصص لـ",
+    "uk": "присвячувати",
+    "example_de": "Die letzten 100 Stunden widmen sich dem Orientierungskurs.",
+    "example_tr": "Son 100 saat yönlendirme kursuna ayrılmıştır.",
+    "example_en": "The final 100 hours are dedicated to the orientation course.",
+    "example_ar": "تُخصص آخر 100 ساعة لدورة التوجيه.",
+    "example_uk": "Останні 100 годин присвячені орієнтаційному курсу.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'widmen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'widmen' denotes action, process, or state.",
+      "ar": "فعل: 'widmen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'widmen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (widmen)",
+        "en": "💡 Verb Structure (widmen)",
+        "ar": "💡 بنية الفعل (widmen)",
+        "uk": "💡 Структура дієслова (widmen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die letzten 100 Stunden widmen sich dem Orientierungskurs.",
+        "tr": "Son 100 saat yönlendirme kursuna ayrılmıştır.",
+        "en": "The final 100 hours are dedicated to the orientation course.",
+        "ar": "تُخصص آخر 100 ساعة لدورة التوجيه.",
+        "uk": "Останні 100 годин присвячені орієнтаційному курсу."
+      },
+      {
+        "de": "In Deutschland kann man widmen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için adamak, tahsis etmek (sich widmen = vakit ayırmak) eylemi yapılabilir.",
+        "en": "In Germany, one can to dedicate / devote to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "wiederkehrende": {
+    "de": "wiederkehrend",
+    "displayDe": "wiederkehrend",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "tekrarlayan, periyodik",
+    "en": "recurring",
+    "ar": "متكرر / دوري",
+    "uk": "періодичний / повторюваний",
+    "example_de": "Wiederkehrende Kontrollen helfen bei chronischen Krankheiten.",
+    "example_tr": "Periyodik kontroller kronik hastalıklarda yardımcı olur.",
+    "example_en": "Recurring checkups help with chronic illnesses.",
+    "example_ar": "تساعد الفحوصات الدورية المتكررة في علاج الأمراض المزمنة.",
+    "example_uk": "Періодичні огляди допомагають при хронічних захворюваннях.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'wiederkehrend' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'wiederkehrend' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'wiederkehrend' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'wiederkehrend' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Wiederkehrende Kontrollen helfen bei chronischen Krankheiten.",
+        "tr": "Periyodik kontroller kronik hastalıklarda yardımcı olur.",
+        "en": "Recurring checkups help with chronic illnesses.",
+        "ar": "تساعد الفحوصات الدورية المتكررة في علاج الأمراض المزمنة.",
+        "uk": "Періодичні огляди допомагають при хронічних захворюваннях."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag wiederkehrend zu sein.",
+        "tr": "İş ve günlük yaşamda tekrarlayan, periyodik olmak son derece önemlidir.",
+        "en": "It is very important to be recurring in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "wird": {
+    "de": "werden",
+    "displayDe": "werden",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "olmak / -ecek (Passiv / Futur)",
+    "en": "will / becomes / is being (Passive)",
+    "ar": "سوف / يصبح / يُفعل به",
+    "uk": "буде / стає",
+    "example_de": "Die eAU wird direkt an die Krankenkasse übermittelt.",
+    "example_tr": "eAU doğrudan sağlık sigortasına iletilir.",
+    "example_en": "The eAU is transmitted directly to the health insurer.",
+    "example_ar": "يتم إرسال الإشعار الإلكتروني مباشرة إلى التأمين.",
+    "example_uk": "Електронний лікарняний надсилається безпосередньо до каси.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'werden' temel eylem bildiren fiildir.",
+      "en": "Verb: 'werden' denotes action, process, or state.",
+      "ar": "فعل: 'werden' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'werden' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (werden)",
+        "en": "💡 Verb Structure (werden)",
+        "ar": "💡 بنية الفعل (werden)",
+        "uk": "💡 Структура дієслова (werden)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die eAU wird direkt an die Krankenkasse übermittelt.",
+        "tr": "eAU doğrudan sağlık sigortasına iletilir.",
+        "en": "The eAU is transmitted directly to the health insurer.",
+        "ar": "يتم إرسال الإشعار الإلكتروني مباشرة إلى التأمين.",
+        "uk": "Електронний лікарняний надсилається безпосередньо до каси."
+      },
+      {
+        "de": "In Deutschland kann man werden, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için olmak / -ecek (Passiv / Futur) eylemi yapılabilir.",
+        "en": "In Germany, one can will / becomes / is being (Passive) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "wirtschaftsgut": {
+    "de": "das Wirtschaftsgut",
+    "displayDe": "Wirtschaftsgut",
+    "article": "das",
+    "plural": "die Wirtschaftsgüter",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "ekonomik değer / ticari mal (Daten als Wirtschaftsgut)",
+    "en": "economic asset / commodity",
+    "ar": "سلعة اقتصادية / أصل مالي",
+    "uk": "економічне благо / комерційний актив",
+    "example_de": "Persönliche Daten gelten heute als wertvolles Wirtschaftsgut.",
+    "example_tr": "Kişisel veriler günümüzde değerli bir ekonomik varlık kabul edilir.",
+    "example_en": "Personal data is considered a valuable economic asset today.",
+    "example_ar": "تعتبر البيانات الشخصية اليوم سلعة اقتصادية قيّمة.",
+    "example_uk": "Особисті дані сьогодні вважаються цінним економічним активом.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Wirtschaftsgüter'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Wirtschaftsgüter'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Wirtschaftsgüter'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Wirtschaftsgüter'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Wirtschaftsgut)",
+        "en": "💡 Noun Structure (das Wirtschaftsgut)",
+        "ar": "💡 بنية الاسم (das Wirtschaftsgut)",
+        "uk": "💡 Структура іменника (das Wirtschaftsgut)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Persönliche Daten gelten heute als wertvolles Wirtschaftsgut.",
+        "tr": "Kişisel veriler günümüzde değerli bir ekonomik varlık kabul edilir.",
+        "en": "Personal data is considered a valuable economic asset today.",
+        "ar": "تعتبر البيانات الشخصية اليوم سلعة اقتصادية قيّمة.",
+        "uk": "Особисті дані сьогодні вважаються цінним економічним активом."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Wirtschaftsgut eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Wirtschaftsgut günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Wirtschaftsgut plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "wo": {
+    "de": "wo",
+    "displayDe": "wo",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "A1",
+    "tr": "nerede, nereye",
+    "en": "where",
+    "ar": "أين / حيث",
+    "uk": "де",
+    "example_de": "Hier erfahren Sie, wo Sie den nächsten Sprachkurs finden.",
+    "example_tr": "En yakın dil kursunu nerede bulacağınızı buradan öğrenebilirsiniz.",
+    "example_en": "Here you can find out where to find the nearest language course.",
+    "example_ar": "هنا يمكنك معرفة أين تجد أقرب دورة لغة.",
+    "example_uk": "Тут ви дізнаєтеся, де знайти найближчий мовний курс.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'wo' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'wo' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'wo' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'wo' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (wo)",
+        "en": "💡 Adverb (wo)",
+        "ar": "💡 ظرف (wo)",
+        "uk": "💡 Прислівник (wo)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Hier erfahren Sie, wo Sie den nächsten Sprachkurs finden.",
+        "tr": "En yakın dil kursunu nerede bulacağınızı buradan öğrenebilirsiniz.",
+        "en": "Here you can find out where to find the nearest language course.",
+        "ar": "هنا يمكنك معرفة أين تجد أقرب دورة لغة.",
+        "uk": "Тут ви дізнаєтеся, де знайти найближчий мовний курс."
+      },
+      {
+        "de": "Das Wort 'wo' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'wo' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'wo' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'wo' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'wo' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "wortschatz": {
+    "de": "der Wortschatz",
+    "displayDe": "Wortschatz",
+    "article": "der",
+    "plural": "die Wortschätze",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "kelime dağarcığı, sözcük hazinesi",
+    "en": "vocabulary",
+    "ar": "المفردات اللغوية / الثروة اللفظية",
+    "uk": "словниковий запас",
+    "example_de": "Im B1-Kurs erweitern die Lernenden ihren Wortschatz kontinuierlich.",
+    "example_tr": "B1 kursunda öğrenciler kelime dağarcıklarını sürekli genişletirler.",
+    "example_en": "In the B1 course, learners continuously expand their vocabulary.",
+    "example_ar": "في دورة B1 يوسع المتعلمون ثروتهم اللفظية باستمرار.",
+    "example_uk": "На курсі B1 учні постійно розширюють свій словниковий запас.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Wortschätze'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Wortschätze'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Wortschätze'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Wortschätze'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Wortschatz)",
+        "en": "💡 Noun Structure (der Wortschatz)",
+        "ar": "💡 بنية الاسم (der Wortschatz)",
+        "uk": "💡 Структура іменника (der Wortschatz)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im B1-Kurs erweitern die Lernenden ihren Wortschatz kontinuierlich.",
+        "tr": "B1 kursunda öğrenciler kelime dağarcıklarını sürekli genişletirler.",
+        "en": "In the B1 course, learners continuously expand their vocabulary.",
+        "ar": "في دورة B1 يوسع المتعلمون ثروتهم اللفظية باستمرار.",
+        "uk": "На курсі B1 учні постійно розширюють свій словниковий запас."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Wortschatz eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Wortschatz günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Wortschatz plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "zahnarztkontrollen": {
+    "de": "die Zahnarztkontrolle",
+    "displayDe": "Zahnarztkontrolle",
+    "article": "die",
+    "plural": "die Zahnarztkontrollen",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "diş hekimi kontrolleri",
+    "en": "dental checkups",
+    "ar": "فحوصات طبيب الأسنان",
+    "uk": "огляди у стоматолога",
+    "example_de": "Jährliche Zahnarztkontrollen werden von den Krankenkassen belohnt.",
+    "example_tr": "Yıllık diş hekimi kontrolleri sigorta kasaları tarafından ödüllendirilir.",
+    "example_en": "Annual dental checkups are rewarded by health insurers.",
+    "example_ar": "تكافئ شركات التأمين الصحي الفحوصات السنوية للأسنان.",
+    "example_uk": "Щорічні огляди у стоматолога заохочуються лікарняними касами.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Zahnarztkontrollen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Zahnarztkontrollen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Zahnarztkontrollen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Zahnarztkontrollen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Jährliche Zahnarztkontrollen werden von den Krankenkassen belohnt.",
+        "tr": "Yıllık diş hekimi kontrolleri sigorta kasaları tarafından ödüllendirilir.",
+        "en": "Annual dental checkups are rewarded by health insurers.",
+        "ar": "تكافئ شركات التأمين الصحي الفحوصات السنوية للأسنان.",
+        "uk": "Щорічні огляди у стоматолога заохочуються лікарняними касами."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Zahnarztkontrolle eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Zahnarztkontrolle günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Zahnarztkontrolle plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "zeichen": {
+    "de": "das Zeichen",
+    "displayDe": "Zeichen",
+    "article": "das",
+    "plural": "die Zeichen",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "karakter, işaret (şifredeki harf/rakam)",
+    "en": "characters / signs",
+    "ar": "حروف ورموز",
+    "uk": "символи / знаки",
+    "example_de": "Ein Passwort sollte mindestens zwölf Zeichen enthalten.",
+    "example_tr": "Bir parola en az on iki karakter içermelidir.",
+    "example_en": "A password should contain at least twelve characters.",
+    "example_ar": "يجب أن تحتوي كلمة المرور على 12 حرفاً ورمزاً على الأقل.",
+    "example_uk": "Пароль має містити щонайменше дванадцять символів.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Zeichen'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Zeichen'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Zeichen'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Zeichen'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-n\" takısı aldı? (Dativ Plural İpucu)",
+        "en": "💡 Why the \"-n\" ending? (Dative Plural Insight)",
+        "ar": "💡 لماذا لاحقة \"-n\"؟ (جمع Dativ)",
+        "uk": "💡 Чому закінчення \"-n\"? (Давальний відмінок множини)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein Passwort sollte mindestens zwölf Zeichen enthalten.",
+        "tr": "Bir parola en az on iki karakter içermelidir.",
+        "en": "A password should contain at least twelve characters.",
+        "ar": "يجب أن تحتوي كلمة المرور على 12 حرفاً ورمزاً على الأقل.",
+        "uk": "Пароль має містити щонайменше дванадцять символів."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Zeichen eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Zeichen günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Zeichen plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "zeigen": {
+    "de": "zeigen",
+    "displayDe": "zeigen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "A1",
+    "tr": "göstermek",
+    "en": "to show / demonstrate",
+    "ar": "أظهر / أبان",
+    "uk": "показувати",
+    "example_de": "Die Zahlen zeigen den großen Erfolg des Deutschlandtickets.",
+    "example_tr": "Rakamlar Almanya biletinin büyük başarısını gösteriyor.",
+    "example_en": "The figures show the great success of the Deutschlandticket.",
+    "example_ar": "تظهر الأرقام النجاح الكبير لتذكرة ألمانيا.",
+    "example_uk": "Цифри демонструють великий успіх Дойчландтикету.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'zeigen' temel eylem bildiren fiildir.",
+      "en": "Verb: 'zeigen' denotes action, process, or state.",
+      "ar": "فعل: 'zeigen' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'zeigen' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (zeigen)",
+        "en": "💡 Verb Structure (zeigen)",
+        "ar": "💡 بنية الفعل (zeigen)",
+        "uk": "💡 Структура дієслова (zeigen)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Zahlen zeigen den großen Erfolg des Deutschlandtickets.",
+        "tr": "Rakamlar Almanya biletinin büyük başarısını gösteriyor.",
+        "en": "The figures show the great success of the Deutschlandticket.",
+        "ar": "تظهر الأرقام النجاح الكبير لتذكرة ألمانيا.",
+        "uk": "Цифри демонструють великий успіх Дойчландтикету."
+      },
+      {
+        "de": "In Deutschland kann man zeigen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için göstermek eylemi yapılabilir.",
+        "en": "In Germany, one can to show / demonstrate to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "zeitlich": {
+    "de": "zeitlich",
+    "displayDe": "zeitlich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "zamansal, süre bakımından",
+    "en": "in terms of time / chronological",
+    "ar": "زمنياً / من حيث الوقت",
+    "uk": "у часі / за часом",
+    "example_de": "Die Prüfung ist zeitlich genau gegliedert.",
+    "example_tr": "Sınav zamansal olarak tam planlanmıştır.",
+    "example_en": "The exam is precisely structured in terms of time.",
+    "example_ar": "الامتحان مقسم زمنياً بدقة.",
+    "example_uk": "Іспит чітко розбитий за часовими інтервалами.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'zeitlich' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'zeitlich' describes quality or state.",
+      "ar": "صفة: 'zeitlich' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'zeitlich' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (zeitlich)",
+        "en": "💡 Adjective (zeitlich)",
+        "ar": "💡 بنية الصفة (zeitlich)",
+        "uk": "💡 Структура прикметника (zeitlich)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Prüfung ist zeitlich genau gegliedert.",
+        "tr": "Sınav zamansal olarak tam planlanmıştır.",
+        "en": "The exam is precisely structured in terms of time.",
+        "ar": "الامتحان مقسم زمنياً بدقة.",
+        "uk": "Іспит чітко розбитий за часовими інтервалами."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag zeitlich zu sein.",
+        "tr": "İş ve günlük yaşamda zamansal, süre bakımından olmak son derece önemlidir.",
+        "en": "It is very important to be in terms of time / chronological in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "zeitungsartikel": {
+    "de": "der Zeitungsartikel",
+    "displayDe": "Zeitungsartikel",
+    "article": "der",
+    "plural": "die Zeitungsartikel",
+    "pos": "noun",
+    "level": "A2",
+    "tr": "gazete makaleleri / yazıları",
+    "en": "newspaper articles",
+    "ar": "مقالات صحفية",
+    "uk": "газетні статті",
+    "example_de": "Das Lesen deutscher Zeitungsartikel bereitet optimal auf die Prüfung vor.",
+    "example_tr": "Almanca gazete makaleleri okumak sınava en iyi şekilde hazırlar.",
+    "example_en": "Reading German newspaper articles prepares optimally for the exam.",
+    "example_ar": "قراءة المقالات الصحفية الألمانية تحضر للامتحان على أفضل وجه.",
+    "example_uk": "Читання німецьких газетних статей чудово готує до іспиту.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Zeitungsartikel'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Zeitungsartikel'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Zeitungsartikel'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Zeitungsartikel'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Zeitungsartikel)",
+        "en": "💡 Noun Structure (der Zeitungsartikel)",
+        "ar": "💡 بنية الاسم (der Zeitungsartikel)",
+        "uk": "💡 Структура іменника (der Zeitungsartikel)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Lesen deutscher Zeitungsartikel bereitet optimal auf die Prüfung vor.",
+        "tr": "Almanca gazete makaleleri okumak sınava en iyi şekilde hazırlar.",
+        "en": "Reading German newspaper articles prepares optimally for the exam.",
+        "ar": "قراءة المقالات الصحفية الألمانية تحضر للامتحان على أفضل وجه.",
+        "uk": "Читання німецьких газетних статей чудово готує до іспиту."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Zeitungsartikel eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Zeitungsartikel günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Zeitungsartikel plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "zentraler": {
+    "de": "zentral",
+    "displayDe": "zentral",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "merkezi, kilit önemde",
+    "en": "central / key",
+    "ar": "مركزي / محوري",
+    "uk": "центральний / ключовий",
+    "example_de": "Ein zentraler Baustein der Integration ist der Spracherwerb.",
+    "example_tr": "Uyumun merkezi bir yapı taşı dil edinimidir.",
+    "example_en": "A central building block of integration is language acquisition.",
+    "example_ar": "الركيزة المركزية للاندماج هي اكتساب اللغة.",
+    "example_uk": "Ключовим наріжним каменем інтеграції є вивчення мови.",
+    "grammar": {
+      "tr": "Sıfat çekimi / Karşılaştırma: 'zentral' sıfatı maskulin nominativ halinde veya karşılaştırma (komparativ) derecesindedir.",
+      "en": "Adjective declension / Comparative: 'zentral' is either in the masculine nominative or comparative form.",
+      "ar": "تصريف الصفات أو المقارنة: الصفة 'zentral' بصيغة المذكر أو المقارنة.",
+      "uk": "Відмінювання або вищий ступінь: прикметник 'zentral' у чоловічому роді або формі порівняння.",
+      "title": {
+        "tr": "💡 Neden \"-er\" takısı aldı? (Sıfat Çekimi / Komparativ)",
+        "en": "💡 Why the \"-er\" ending? (Adjective / Comparative)",
+        "ar": "💡 لماذا لاحقة \"-er\"؟ (تصريف الصفة أو المقارنة)",
+        "uk": "💡 Чому закінчення \"-er\"? (Відмінювання прикметника / Вищий ступінь)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein zentraler Baustein der Integration ist der Spracherwerb.",
+        "tr": "Uyumun merkezi bir yapı taşı dil edinimidir.",
+        "en": "A central building block of integration is language acquisition.",
+        "ar": "الركيزة المركزية للاندماج هي اكتساب اللغة.",
+        "uk": "Ключовим наріжним каменем інтеграції є вивчення мови."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag zentral zu sein.",
+        "tr": "İş ve günlük yaşamda merkezi, kilit önemde olmak son derece önemlidir.",
+        "en": "It is very important to be central / key in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "zertifikat": {
+    "de": "das Zertifikat",
+    "displayDe": "Zertifikat",
+    "article": "das",
+    "plural": "die Zertifikate",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "sertifika, resmi belge",
+    "en": "certificate",
+    "ar": "شهادة رسمية",
+    "uk": "сертифікат",
+    "example_de": "Das Zertifikat B1 ist unbegrenzt gültig.",
+    "example_tr": "B1 sertifikası süresiz olarak geçerlidir.",
+    "example_en": "The B1 certificate is valid indefinitely.",
+    "example_ar": "شهادة B1 صالحة إلى أجل غير مسمى.",
+    "example_uk": "Сертифікат B1 має необмежений термін дії.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das', çoğulu 'die Zertifikate'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das', çoğulu 'die Zertifikate'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das', çoğulu 'die Zertifikate'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das', çoğulu 'die Zertifikate'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Zertifikat)",
+        "en": "💡 Noun Structure (das Zertifikat)",
+        "ar": "💡 بنية الاسم (das Zertifikat)",
+        "uk": "💡 Структура іменника (das Zertifikat)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Das Zertifikat B1 ist unbegrenzt gültig.",
+        "tr": "B1 sertifikası süresiz olarak geçerlidir.",
+        "en": "The B1 certificate is valid indefinitely.",
+        "ar": "شهادة B1 صالحة إلى أجل غير مسمى.",
+        "uk": "Сертифікат B1 має необмежений термін дії."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Zertifikat eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Zertifikat günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Zertifikat plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "zuerst": {
+    "de": "zuerst",
+    "displayDe": "zuerst",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "A1",
+    "tr": "ilk önce, ilkin",
+    "en": "first / at first",
+    "ar": "أولاً / في البداية",
+    "uk": "спочатку / спершу",
+    "example_de": "Bei Beschwerden geht man zuerst zum Hausarzt.",
+    "example_tr": "Şikayetlerde ilk önce aile hekimine gidilir.",
+    "example_en": "For complaints, one first visits the family doctor.",
+    "example_ar": "عند الشكوى يتوجه المرء أولاً إلى طبيب الأسرة.",
+    "example_uk": "При скаргах спочатку йдуть до сімейного лікаря.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'zuerst' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'zuerst' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'zuerst' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'zuerst' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (zuerst)",
+        "en": "💡 Adverb (zuerst)",
+        "ar": "💡 ظرف (zuerst)",
+        "uk": "💡 Прислівник (zuerst)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Bei Beschwerden geht man zuerst zum Hausarzt.",
+        "tr": "Şikayetlerde ilk önce aile hekimine gidilir.",
+        "en": "For complaints, one first visits the family doctor.",
+        "ar": "عند الشكوى يتوجه المرء أولاً إلى طبيب الأسرة.",
+        "uk": "При скаргах спочатку йдуть до сімейного лікаря."
+      },
+      {
+        "de": "Das Wort 'zuerst' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'zuerst' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'zuerst' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'zuerst' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'zuerst' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "zug": {
+    "de": "der Zug",
+    "displayDe": "Zug",
+    "article": "der",
+    "plural": "die Züge",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "tren",
+    "en": "train",
+    "ar": "قطار",
+    "uk": "поїзд / потяг",
+    "example_de": "Mit dem Zug reist man komfortabel durch ganz Deutschland.",
+    "example_tr": "Trenle tüm Almanya boyunca konforlu şekilde seyahat edilir.",
+    "example_en": "By train, one travels comfortably across Germany.",
+    "example_ar": "بالقطار يسافر المرء براحة عبر جميع أنحاء ألمانيا.",
+    "example_uk": "Потягом комфортно подорожувати всією Німеччиною.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Züge'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Züge'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Züge'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Züge'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Zug)",
+        "en": "💡 Noun Structure (der Zug)",
+        "ar": "💡 بنية الاسم (der Zug)",
+        "uk": "💡 Структура іменника (der Zug)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Mit dem Zug reist man komfortabel durch ganz Deutschland.",
+        "tr": "Trenle tüm Almanya boyunca konforlu şekilde seyahat edilir.",
+        "en": "By train, one travels comfortably across Germany.",
+        "ar": "بالقطار يسافر المرء براحة عبر جميع أنحاء ألمانيا.",
+        "uk": "Потягом комфортно подорожувати всією Німеччиною."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Zug eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Zug günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Zug plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "zugangsdaten": {
+    "de": "die Zugangsdaten",
+    "displayDe": "Zugangsdaten",
+    "article": "die",
+    "plural": "die Zugangsdaten (Pl.)",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "erişim bilgileri, giriş verileri",
+    "en": "access data / login credentials",
+    "ar": "بيانات تسجيل الدخول",
+    "uk": "облікові дані / дані для доступу",
+    "example_de": "Geben Sie persönliche Zugangsdaten niemals an Dritte weiter.",
+    "example_tr": "Kişisel erişim bilgilerinizi asla üçüncü şahıslarla paylaşmayın.",
+    "example_en": "Never disclose personal access data to third parties.",
+    "example_ar": "لا تعطِ بيانات الدخول الشخصية لأطراف ثالثة أبداً.",
+    "example_uk": "Ніколи не передавайте особисті дані доступу третім особам.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'die', çoğulu 'die Zugangsdaten (Pl.)'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'die', çoğulu 'die Zugangsdaten (Pl.)'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'die', çoğulu 'die Zugangsdaten (Pl.)'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'die', çoğulu 'die Zugangsdaten (Pl.)'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Fiil Yapısı: Ayrılabilir Fiil + \"zu\" Mastarı",
+        "en": "💡 Verb Structure: Separable Verb + \"zu\" Infinitive",
+        "ar": "💡 بنية الفعل: فعل منفصل مع أداة المصدر \"zu\"",
+        "uk": "💡 Структура дієслова: Відокремлюване дієслово з \"zu\""
+      }
+    },
+    "examples": [
+      {
+        "de": "Geben Sie persönliche Zugangsdaten niemals an Dritte weiter.",
+        "tr": "Kişisel erişim bilgilerinizi asla üçüncü şahıslarla paylaşmayın.",
+        "en": "Never disclose personal access data to third parties.",
+        "ar": "لا تعطِ بيانات الدخول الشخصية لأطراف ثالثة أبداً.",
+        "uk": "Ніколи не передавайте особисті дані доступу третім особам."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt die Zugangsdaten eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Zugangsdaten günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Zugangsdaten plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "zugewanderte": {
+    "de": "der Zugewanderte",
+    "displayDe": "Zugewanderte",
+    "article": "der",
+    "plural": "die Zugewanderten",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "göçmenler, göç etmiş kişiler",
+    "en": "immigrants",
+    "ar": "المهاجرون / القادمون الجدد",
+    "uk": "іммігранти / новоприбулі",
+    "example_de": "Integrationskurse richten sich an Zugewanderte aus aller Welt.",
+    "example_tr": "Uyum kursları dünyanın her yerinden gelen göçmenlere yöneliktir.",
+    "example_en": "Integration courses are aimed at immigrants from all over the world.",
+    "example_ar": "تستهدف دورات الاندماج المهاجرين من جميع أنحاء العالم.",
+    "example_uk": "Інтеграційні курси розраховані на іммігрантів з усього світу.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Zugewanderten'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Zugewanderten'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Zugewanderten'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Zugewanderten'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Zugewanderte)",
+        "en": "💡 Noun Structure (der Zugewanderte)",
+        "ar": "💡 بنية الاسم (der Zugewanderte)",
+        "uk": "💡 Структура іменника (der Zugewanderte)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Integrationskurse richten sich an Zugewanderte aus aller Welt.",
+        "tr": "Uyum kursları dünyanın her yerinden gelen göçmenlere yöneliktir.",
+        "en": "Integration courses are aimed at immigrants from all over the world.",
+        "ar": "تستهدف دورات الاندماج المهاجرين من جميع أنحاء العالم.",
+        "uk": "Інтеграційні курси розраховані на іммігрантів з усього світу."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Zugewanderte eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Zugewanderte günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Zugewanderte plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "zugpersonal": {
+    "de": "das Zugpersonal",
+    "displayDe": "Zugpersonal",
+    "article": "das",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "tren personeli, kondüktörler",
+    "en": "train crew / staff",
+    "ar": "طاقم عمل القطار",
+    "uk": "поїзна бригада / персонал поїзда",
+    "example_de": "Bei der Fahrscheinkontrolle zeigt man das Ticket dem Zugpersonal.",
+    "example_tr": "Bilet kontrolünde bilet tren personeline gösterilir.",
+    "example_en": "During ticket inspection, one shows the ticket to the train staff.",
+    "example_ar": "عند فحص التذاكر يُبرز المسافر التذكرة لطاقم القطار.",
+    "example_uk": "Під час контролю квиток пред'являють поїзній бригаді.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (das Zugpersonal)",
+        "en": "💡 Noun Structure (das Zugpersonal)",
+        "ar": "💡 بنية الاسم (das Zugpersonal)",
+        "uk": "💡 Структура іменника (das Zugpersonal)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Bei der Fahrscheinkontrolle zeigt man das Ticket dem Zugpersonal.",
+        "tr": "Bilet kontrolünde bilet tren personeline gösterilir.",
+        "en": "During ticket inspection, one shows the ticket to the train staff.",
+        "ar": "عند فحص التذاكر يُبرز المسافر التذكرة لطاقم القطار.",
+        "uk": "Під час контролю квиток пред'являють поїзній бригаді."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Zugpersonal eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Zugpersonal günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Zugpersonal plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "zuschuss": {
+    "de": "der Zuschuss",
+    "displayDe": "Zuschuss",
+    "article": "der",
+    "plural": "die Zuschüsse",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "ödenek, katkı payı, hibe",
+    "en": "subsidy / grant / allowance",
+    "ar": "دعم مالي / إعانة مالية",
+    "uk": "дотація / субсидія / грошова допомога",
+    "example_de": "Arbeitgeber zahlen oft einen Zuschuss zum Deutschlandticket.",
+    "example_tr": "İşverenler genellikle Almanya biletine katkı payı öderler.",
+    "example_en": "Employers often pay an allowance for the Deutschlandticket.",
+    "example_ar": "غالباً ما يقدم أرباب العمل دعماً مالياً لتذكرة ألمانيا.",
+    "example_uk": "Роботодавці часто виплачують субсидію на придбання Дойчландтикету.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Zuschüsse'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Zuschüsse'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Zuschüsse'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Zuschüsse'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Arbeitgeber zahlen oft einen Zuschuss zum Deutschlandticket.",
+        "tr": "İşverenler genellikle Almanya biletine katkı payı öderler.",
+        "en": "Employers often pay an allowance for the Deutschlandticket.",
+        "ar": "غالباً ما يقدم أرباب العمل دعماً مالياً لتذكرة ألمانيا.",
+        "uk": "Роботодавці часто виплачують субсидію на придбання Дойчландтикету."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Zuschuss eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Zuschuss günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Zuschuss plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "zuständige": {
+    "de": "zuständig",
+    "displayDe": "zuständig",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "B1",
+    "tr": "yetkili, sorumlu",
+    "en": "responsible / competent",
+    "ar": "المسؤول / المختص",
+    "uk": "відповідальний / уповноважений",
+    "example_de": "Die Arztpraxis sendet die Krankmeldung an die zuständige Krankenkasse.",
+    "example_tr": "Muayenehane hastalık raporunu yetkili sağlık sigortasına gönderir.",
+    "example_en": "The medical practice sends the sick note to the competent health insurer.",
+    "example_ar": "ترسل العيادة الإشعار المرضي إلى صندوق التأمين الصحي المختص.",
+    "example_uk": "Лікарський кабінет надсилає лікарняний до уповноваженої лікарняної каси.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'zuständig' sıfatı cümlede feminin tekil veya çoğul isim önünde '-e' takısı almıştır.",
+      "en": "Adjective declension: 'zuständig' takes the '-e' ending before a feminine singular or plural noun.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'zuständig' لاحقة '-e' للمؤنث أو الجمع.",
+      "uk": "Відмінювання прикметників: прикметник 'zuständig' приймає закінчення '-e'.",
+      "title": {
+        "tr": "💡 Neden \"-e\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-e\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-e\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-e\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Arztpraxis sendet die Krankmeldung an die zuständige Krankenkasse.",
+        "tr": "Muayenehane hastalık raporunu yetkili sağlık sigortasına gönderir.",
+        "en": "The medical practice sends the sick note to the competent health insurer.",
+        "ar": "ترسل العيادة الإشعار المرضي إلى صندوق التأمين الصحي المختص.",
+        "uk": "Лікарський кабінет надсилає лікарняний до уповноваженої лікарняної каси."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag zuständig zu sein.",
+        "tr": "İş ve günlük yaşamda yetkili, sorumlu olmak son derece önemlidir.",
+        "en": "It is very important to be responsible / competent in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "zusätzlich": {
+    "de": "zusätzlich",
+    "displayDe": "zusätzlich",
+    "article": "",
+    "plural": "",
+    "pos": "adv",
+    "level": "A2",
+    "tr": "ayrıca, ek olarak",
+    "en": "additionally / in addition",
+    "ar": "إضافياً / علاوة على ذلك",
+    "uk": "додатково",
+    "example_de": "Die Zwei-Faktor-Authentifizierung schützt Konten zusätzlich.",
+    "example_tr": "İki faktörlü kimlik doğrulama hesapları ayrıca korur.",
+    "example_en": "Two-factor authentication protects accounts additionally.",
+    "example_ar": "توفر المصادقة الثنائية حماية إضافية للحسابات.",
+    "example_uk": "Двофакторна автентифікація додатково захищає облікові записи.",
+    "grammar": {
+      "tr": "Zarf (Adverb): 'zusätzlich' eylemin zamanını, yerini, tarzını veya derecesini belirtir.",
+      "en": "Adverb: 'zusätzlich' modifies a verb, adjective, or clause.",
+      "ar": "ظرف: 'zusätzlich' يبين الزمان أو المكان أو الكيفية.",
+      "uk": "Прислівник: 'zusätzlich' вказує на час, місце, спосіб дії чи ступінь.",
+      "title": {
+        "tr": "💡 Zarf (zusätzlich)",
+        "en": "💡 Adverb (zusätzlich)",
+        "ar": "💡 ظرف (zusätzlich)",
+        "uk": "💡 Прислівник (zusätzlich)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Zwei-Faktor-Authentifizierung schützt Konten zusätzlich.",
+        "tr": "İki faktörlü kimlik doğrulama hesapları ayrıca korur.",
+        "en": "Two-factor authentication protects accounts additionally.",
+        "ar": "توفر المصادقة الثنائية حماية إضافية للحسابات.",
+        "uk": "Двофакторна автентифікація додатково захищає облікові записи."
+      },
+      {
+        "de": "Das Wort 'zusätzlich' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'zusätzlich' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'zusätzlich' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'zusätzlich' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'zusätzlich' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "zusätzliches": {
+    "de": "zusätzlich",
+    "displayDe": "zusätzlich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "ek, ilave (nötr sıfat)",
+    "en": "additional (neuter)",
+    "ar": "إضافي",
+    "uk": "додатковий",
+    "example_de": "Ein zusätzliches Passwort erhöht die Sicherheit beim Login.",
+    "example_tr": "Ek bir parola girişte güvenliği artırır.",
+    "example_en": "An additional password increases security during login.",
+    "example_ar": "تزيد كلمة المرور الإضافية من الأمان عند تسجيل الدخول.",
+    "example_uk": "Додатковий пароль підвищує безпеку при вході.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'zusätzlich' sıfatı nötr isim önünde Nominativ veya Akkusativ halinde '-es' takısı almıştır.",
+      "en": "Adjective declension: 'zusätzlich' takes the neuter '-es' ending in Nominative or Accusative case.",
+      "ar": "تصريف الصفات: تأخذ الصفة 'zusätzlich' لاحقة المحايد '-es'.",
+      "uk": "Відмінювання прикметників: прикметник 'zusätzlich' отримує закінчення '-es' для середнього роду.",
+      "title": {
+        "tr": "💡 Neden \"-es\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-es\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-es\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-es\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein zusätzliches Passwort erhöht die Sicherheit beim Login.",
+        "tr": "Ek bir parola girişte güvenliği artırır.",
+        "en": "An additional password increases security during login.",
+        "ar": "تزيد كلمة المرور الإضافية من الأمان عند تسجيل الدخول.",
+        "uk": "Додатковий пароль підвищує безпеку при вході."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag zusätzlich zu sein.",
+        "tr": "İş ve günlük yaşamda ek, ilave (nötr sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be additional (neuter) in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "zwölf": {
+    "de": "zwölf",
+    "displayDe": "zwölf",
+    "article": "",
+    "plural": "",
+    "pos": "num",
+    "level": "A1",
+    "tr": "on iki (12)",
+    "en": "twelve (12)",
+    "ar": "اثنا عشر (12)",
+    "uk": "дванадцять (12)",
+    "example_de": "Ein sicheres Passwort sollte mindestens zwölf Zeichen umfassen.",
+    "example_tr": "Güvenli bir parola en az 12 karakter içermelidir.",
+    "example_en": "A secure password should comprise at least twelve characters.",
+    "example_ar": "يجب أن تتكون كلمة المرور الآمنة من 12 رمزاً على الأقل.",
+    "example_uk": "Надійний пароль повинен складатися щонайменше з 12 знаків.",
+    "grammar": {
+      "tr": "Sözcük türü: num. Cümle içinde anlam bütünlüğü sağlar.",
+      "en": "Part of speech: num.",
+      "ar": "نوع الكلمة: num.",
+      "uk": "Частина мови: num.",
+      "title": {
+        "tr": "💡 Gramer & Bağlam İpucu",
+        "en": "💡 Grammar & Context Insight",
+        "ar": "💡 لمحة نحوية وسياقية",
+        "uk": "💡 Граматичний коментар"
+      }
+    },
+    "examples": [
+      {
+        "de": "Ein sicheres Passwort sollte mindestens zwölf Zeichen umfassen.",
+        "tr": "Güvenli bir parola en az 12 karakter içermelidir.",
+        "en": "A secure password should comprise at least twelve characters.",
+        "ar": "يجب أن تتكون كلمة المرور الآمنة من 12 رمزاً على الأقل.",
+        "uk": "Надійний пароль повинен складатися щонайменше з 12 знаків."
+      },
+      {
+        "de": "Das Wort 'zwölf' wird in der telc B1 Prüfung häufig verwendet.",
+        "tr": "'zwölf' sözcüğü telc B1 sınavında sıklıkla kullanılır.",
+        "en": "The word 'zwölf' is frequently used in the telc B1 examination.",
+        "ar": "تستخدم كلمة 'zwölf' بشكل متكرر في امتحان telc B1.",
+        "uk": "Слово 'zwölf' часто використовується на іспиті telc B1."
+      }
+    ]
+  },
+  "züge": {
+    "de": "der Zug",
+    "displayDe": "Zug",
+    "article": "der",
+    "plural": "die Züge",
+    "pos": "noun",
+    "level": "A1",
+    "tr": "trenler",
+    "en": "trains",
+    "ar": "قطارات",
+    "uk": "поїзди",
+    "example_de": "Zu den Stoßzeiten sind viele Züge überfüllt.",
+    "example_tr": "Yoğun saatlerde birçok tren aşırı kalabalıktır.",
+    "example_en": "During rush hours, many trains are overcrowded.",
+    "example_ar": "في ساعات الذروة تكون العديد من القطارات مزدحمة.",
+    "example_uk": "У години пік багато поїздів переповнені.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'der', çoğulu 'die Züge'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'der', çoğulu 'die Züge'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'der', çoğulu 'die Züge'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'der', çoğulu 'die Züge'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 İsim Yapısı (der Zug)",
+        "en": "💡 Noun Structure (der Zug)",
+        "ar": "💡 بنية الاسم (der Zug)",
+        "uk": "💡 Структура іменника (der Zug)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Zu den Stoßzeiten sind viele Züge überfüllt.",
+        "tr": "Yoğun saatlerde birçok tren aşırı kalabalıktır.",
+        "en": "During rush hours, many trains are overcrowded.",
+        "ar": "في ساعات الذروة تكون العديد من القطارات مزدحمة.",
+        "uk": "У години пік багато поїздів переповнені."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt der Zug eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Zug günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Zug plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "öffentlich": {
+    "de": "öffentlich",
+    "displayDe": "öffentlich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "kamusal, halka açık",
+    "en": "public",
+    "ar": "عام / حكومي",
+    "uk": "громадський / публічний",
+    "example_de": "Der öffentliche Nahverkehr ist unverzichtbar für die Mobilitätswende.",
+    "example_tr": "Yerel toplu taşıma ulaşım dönüşümü için vazgeçilmezdir.",
+    "example_en": "Public local transit is indispensable for mobility transition.",
+    "example_ar": "النقل العام المحلي لا غنى عنه للتحول نحو النقل المستدام.",
+    "example_uk": "Громадський транспорт є незамінним для модернізації мобільності.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'öffentlich' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'öffentlich' describes quality or state.",
+      "ar": "صفة: 'öffentlich' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'öffentlich' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (öffentlich)",
+        "en": "💡 Adjective (öffentlich)",
+        "ar": "💡 بنية الصفة (öffentlich)",
+        "uk": "💡 Структура прикметника (öffentlich)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der öffentliche Nahverkehr ist unverzichtbar für die Mobilitätswende.",
+        "tr": "Yerel toplu taşıma ulaşım dönüşümü için vazgeçilmezdir.",
+        "en": "Public local transit is indispensable for mobility transition.",
+        "ar": "النقل العام المحلي لا غنى عنه للتحول نحو النقل المستدام.",
+        "uk": "Громадський транспорт є незамінним для модернізації мобільності."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag öffentlich zu sein.",
+        "tr": "İş ve günlük yaşamda kamusal, halka açık olmak son derece önemlidir.",
+        "en": "It is very important to be public in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "öffentlichen": {
+    "de": "öffentlich",
+    "displayDe": "öffentlich",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "kamusal, halka açık (çekimli sıfat)",
+    "en": "public (declined)",
+    "ar": "العام",
+    "uk": "громадський",
+    "example_de": "Im öffentlichen Nahverkehr gilt das Ticket bundesweit.",
+    "example_tr": "Yerel toplu taşımada bilet ülke genelinde geçerlidir.",
+    "example_en": "In local public transit, the ticket is valid nationwide.",
+    "example_ar": "في النقل العام المحلي تسري التذكرة على مستوى البلاد.",
+    "example_uk": "У громадському транспорті квиток діє по всій країні.",
+    "grammar": {
+      "tr": "Sıfat çekimi: 'öffentlich' sıfatı cümlede Dativ veya Akkusativ halinde çekimlenerek '-en' takısı almıştır.",
+      "en": "Adjective declension: 'öffentlich' is inflected with the '-en' ending in Dative or Accusative case.",
+      "ar": "تصريف الصفات: الصفة 'öffentlich' تصرف في الجملة بلاحقة '-en'.",
+      "uk": "Відмінювання прикметників: прикметник 'öffentlich' отримує закінчення '-en'.",
+      "title": {
+        "tr": "💡 Neden \"-en\" takısı aldı? (Sıfat Çekimi)",
+        "en": "💡 Why the \"-en\" ending? (Adjective Declension)",
+        "ar": "💡 لماذا لاحقة \"-en\"؟ (تصريف الصفة)",
+        "uk": "💡 Чому закінчення \"-en\"? (Відмінювання прикметника)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im öffentlichen Nahverkehr gilt das Ticket bundesweit.",
+        "tr": "Yerel toplu taşımada bilet ülke genelinde geçerlidir.",
+        "en": "In local public transit, the ticket is valid nationwide.",
+        "ar": "في النقل العام المحلي تسري التذكرة على مستوى البلاد.",
+        "uk": "У громадському транспорті квиток діє по всій країні."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag öffentlich zu sein.",
+        "tr": "İş ve günlük yaşamda kamusal, halka açık (çekimli sıfat) olmak son derece önemlidir.",
+        "en": "It is very important to be public (declined) in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "übens": {
+    "de": "das Üben",
+    "displayDe": "Üben",
+    "article": "das",
+    "plural": "-",
+    "pos": "noun",
+    "level": "B1",
+    "tr": "pratik yapmanın, alıştırma yapmanın (Genitiv)",
+    "en": "of practicing / practice's",
+    "ar": "التدريب والممارسة (مضاف إليه)",
+    "uk": "тренування / практики",
+    "example_de": "Die Bedeutung des täglichen Übens ist für den Lernerfolg groß.",
+    "example_tr": "Günlük pratik yapmanın önemi öğrenme başarısı için büyüktür.",
+    "example_en": "The importance of daily practice is great for learning success.",
+    "example_ar": "أهمية التدريب اليومي كبيرة لنجاح التعلم.",
+    "example_uk": "Значення щоденної практики є великим для успіху в навчанні.",
+    "grammar": {
+      "tr": "İsim (Substantiv): Artikeli 'das'. Almancada tüm isimler daima büyük harfle başlar.",
+      "en": "Noun (Substantiv): Gender article 'das'. In German, all nouns are capitalized.",
+      "ar": "اسم (Substantiv): الأداة 'das'. تبدأ جميع الأسماء في الألمانية بحرف كبير.",
+      "uk": "Іменник (Substantiv): артикль 'das'. Всі іменники в німецькій пишуться з великої літери.",
+      "title": {
+        "tr": "💡 Neden \"-s\" takısı aldı? (Genitiv İpucu)",
+        "en": "💡 Why the \"-s\" ending? (Genitive Case)",
+        "ar": "💡 لماذا لاحقة \"-s\"؟ (حالة الإضافة Genitiv)",
+        "uk": "💡 Чому закінчення \"-s\"? (Родовий відмінок Genitiv)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Bedeutung des täglichen Übens ist für den Lernerfolg groß.",
+        "tr": "Günlük pratik yapmanın önemi öğrenme başarısı için büyüktür.",
+        "en": "The importance of daily practice is great for learning success.",
+        "ar": "أهمية التدريب اليومي كبيرة لنجاح التعلم.",
+        "uk": "Значення щоденної практики є великим для успіху в навчанні."
+      },
+      {
+        "de": "Für viele Menschen in Deutschland spielt das Üben eine wichtige Rolle im Alltag.",
+        "tr": "Almanya'daki pek çok insan için Üben günlük yaşamda önemli bir rol oynar.",
+        "en": "For many people in Germany, Üben plays an important role in daily life.",
+        "ar": "بالنسبة للكثيرين في ألمانيا، يلعب هذا دورًا مهمًا في الحياة اليومية.",
+        "uk": "Для багатьох людей у Німеччині це відіграє важливу роль у повсякденному житті."
+      }
+    ]
+  },
+  "über": {
+    "de": "über",
+    "displayDe": "über",
+    "article": "",
+    "plural": "",
+    "pos": "prep",
+    "level": "A1",
+    "tr": "hakkında / üzerinden / üzerinde (+ Akk/Dat)",
+    "en": "about / over / via (+ Acc/Dat)",
+    "ar": "عن / فوق / عبر",
+    "uk": "про / через / над",
+    "example_de": "Der Orientierungskurs informiert über die deutsche Rechtsordnung.",
+    "example_tr": "Yönlendirme kursu Alman hukuk düzeni hakkında bilgi verir.",
+    "example_en": "The orientation course informs about the German legal system.",
+    "example_ar": "تقدم الدورة التوجيهية معلومات عن النظام القانوني الألماني.",
+    "example_uk": "Орієнтаційний курс інформує про німецький правовий устрій.",
+    "grammar": {
+      "tr": "Edat (Präposition): 'über' kendisinden sonra gelen ismin halini (Kasus: Dativ/Akkusativ) belirler.",
+      "en": "Preposition: 'über' governs the grammatical case (Dative/Accusative) of the following noun.",
+      "ar": "حرف جر: 'über' يحدد الحالة الإعرابية (Dativ أو Akkusativ) للاسم الذي يليه.",
+      "uk": "Прийменник: 'über' визначає відмінок іменника (Dativ чи Akkusativ).",
+      "title": {
+        "tr": "💡 Edat Kuralı (Präposition)",
+        "en": "💡 Preposition Rule (Präposition)",
+        "ar": "💡 قاعدة حرف الجر",
+        "uk": "💡 Правило прийменника"
+      }
+    },
+    "examples": [
+      {
+        "de": "Der Orientierungskurs informiert über die deutsche Rechtsordnung.",
+        "tr": "Yönlendirme kursu Alman hukuk düzeni hakkında bilgi verir.",
+        "en": "The orientation course informs about the German legal system.",
+        "ar": "تقدم الدورة التوجيهية معلومات عن النظام القانوني الألماني.",
+        "uk": "Орієнтаційний курс інформує про німецький правовий устрій."
+      },
+      {
+        "de": "Wir treffen uns über der Arbeit zu einem kurzen Gespräch.",
+        "tr": "İşten sonra kısa bir görüşme için buluşuyoruz.",
+        "en": "We meet for a short conversation.",
+        "ar": "نلتقي لإجراء محادثة قصيرة.",
+        "uk": "Ми зустрічаємося для короткої розмови."
+      }
+    ]
+  },
+  "überfüllt": {
+    "de": "überfüllt",
+    "displayDe": "überfüllt",
+    "article": "",
+    "plural": "",
+    "pos": "adj",
+    "level": "A2",
+    "tr": "aşırı kalabalık, tıklım tıklım",
+    "en": "overcrowded",
+    "ar": "مكتظ / مزدحم للغاية",
+    "uk": "переповнений",
+    "example_de": "Im Berufsverkehr sind viele Regionalbahnen überfüllt.",
+    "example_tr": "İş trafiğinde birçok bölgesel tren tıklım tıklımdır.",
+    "example_en": "In rush hour, many regional trains are overcrowded.",
+    "example_ar": "في أوقات الذروة تكون العديد من القطارات الإقليمية مكتظة بالركاب.",
+    "example_uk": "У години пік багато регіональних поїздів переповнені.",
+    "grammar": {
+      "tr": "Sıfat (Adjektiv): 'überfüllt' niteleme veya durum sıfatıdır.",
+      "en": "Adjective: 'überfüllt' describes quality or state.",
+      "ar": "صفة: 'überfüllt' تصف الحالة أو الخاصية.",
+      "uk": "Прикметник: 'überfüllt' описує ознаку або стан.",
+      "title": {
+        "tr": "💡 Sıfat Yapısı (überfüllt)",
+        "en": "💡 Adjective (überfüllt)",
+        "ar": "💡 بنية الصفة (überfüllt)",
+        "uk": "💡 Структура прикметника (überfüllt)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Im Berufsverkehr sind viele Regionalbahnen überfüllt.",
+        "tr": "İş trafiğinde birçok bölgesel tren tıklım tıklımdır.",
+        "en": "In rush hour, many regional trains are overcrowded.",
+        "ar": "في أوقات الذروة تكون العديد من القطارات الإقليمية مكتظة بالركاب.",
+        "uk": "У години пік багато регіональних поїздів переповнені."
+      },
+      {
+        "de": "Es ist sehr wichtig, im Beruf und im Alltag überfüllt zu sein.",
+        "tr": "İş ve günlük yaşamda aşırı kalabalık, tıklım tıklım olmak son derece önemlidir.",
+        "en": "It is very important to be overcrowded in professional and daily life.",
+        "ar": "من المهم جدًا التحلي بهذه الصفة في العمل والحياة اليومية.",
+        "uk": "Дуже важливо бути таким у роботі та повсякденному житті."
+      }
+    ]
+  },
+  "übermittelt": {
+    "de": "übermitteln",
+    "displayDe": "übermitteln",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "iletmek, aktarmak (er/sie/es übermittelt)",
+    "en": "transmits / sends",
+    "ar": "يرسل / يحول بيانات",
+    "uk": "передає / надсилає",
+    "example_de": "Die Arztpraxis übermittelt die eAU direkt an die Kasse.",
+    "example_tr": "Muayenehane eAU'yu doğrudan sigorta kasasına iletir.",
+    "example_en": "The medical practice transmits the eAU directly to the insurer.",
+    "example_ar": "ترسل العيادة الإشعار الطبي الإلكتروني مباشرة إلى التأمين.",
+    "example_uk": "Амбулаторія надсилає електронний лікарняний безпосередньо до каси.",
+    "grammar": {
+      "tr": "Fiil (Verb): 'übermitteln' temel eylem bildiren fiildir.",
+      "en": "Verb: 'übermitteln' denotes action, process, or state.",
+      "ar": "فعل: 'übermitteln' يدل على حدث أو حالة.",
+      "uk": "Дієслово: 'übermitteln' позначає дію або стан.",
+      "title": {
+        "tr": "💡 Fiil Yapısı (übermitteln)",
+        "en": "💡 Verb Structure (übermitteln)",
+        "ar": "💡 بنية الفعل (übermitteln)",
+        "uk": "💡 Структура дієслова (übermitteln)"
+      }
+    },
+    "examples": [
+      {
+        "de": "Die Arztpraxis übermittelt die eAU direkt an die Kasse.",
+        "tr": "Muayenehane eAU'yu doğrudan sigorta kasasına iletir.",
+        "en": "The medical practice transmits the eAU directly to the insurer.",
+        "ar": "ترسل العيادة الإشعار الطبي الإلكتروني مباشرة إلى التأمين.",
+        "uk": "Амбулаторія надсилає електронний лікарняний безпосередньо до каси."
+      },
+      {
+        "de": "In Deutschland kann man übermitteln, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için iletmek, aktarmak (er/sie/es übermittelt) eylemi yapılabilir.",
+        "en": "In Germany, one can transmits / sends to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "übernimmt": {
+    "de": "übernehmen",
+    "displayDe": "übernehmen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "üstlenmek, karşılamak (masrafları)",
+    "en": "covers / assumes (costs)",
+    "ar": "يتكفل بـ / يغطي التكاليف",
+    "uk": "покриває / бере на себе витрати",
+    "example_de": "Die Krankenkasse übernimmt die notwendigen Behandlungskosten.",
+    "example_tr": "Sağlık sigortası gerekli tedavi masraflarını karşılar.",
+    "example_en": "The health insurance covers the necessary treatment costs.",
+    "example_ar": "يتكفل التأمين الصحي بتكاليف العلاج اللازمة.",
+    "example_uk": "Лікарняна каса бере на себе необхідні витрати на лікування.",
+    "grammar": {
+      "title": {
+        "tr": "💡 Fiil Çekimi: Düzensiz Kök Değişimi (übernehmen, e ➔ i)",
+        "en": "💡 Verb Conjugation: Irregular Stem Change (übernehmen, e ➔ i)",
+        "ar": "💡 تصريف الفعل: تغيير حرف العلة في الجذر (übernehmen, e ➔ i)",
+        "uk": "💡 Дієвідмінювання: Чергування голосної кореня (übernehmen, e ➔ i)"
+      },
+      "tr": "Düzensiz fiil çekimi: 'übernehmen' (üstlenmek / masrafları karşılamak). 3. tekil şahısta (er/sie/es) kök seslisi 'e' -> 'i' olur (übernimmt). Metinde: 'da die Krankenkasse die Kosten übernimmt'.",
+      "en": "Irregular verb conjugation: 'übernehmen' (to cover costs). Stem vowel changes from 'e' to 'i' in the 3rd person singular (übernimmt). In text: 'da die Krankenkasse die Kosten übernimmt'.",
+      "ar": "تصريف فعل غير قياسي: يتغير حرف العلة من 'e' إلى 'i' في المفرد الغائب (übernimmt = يتكفل بـ / يغطي التكاليف).",
+      "uk": "Неправильне дієслово: дієслово 'übernehmen' змінює голосну 'e' на 'i' в 3-й особі однини (übernimmt = бере на себе витрати)."
+    },
+    "examples": [
+      {
+        "de": "Die Krankenkasse übernimmt die notwendigen Behandlungskosten.",
+        "tr": "Sağlık sigortası gerekli tedavi masraflarını karşılar.",
+        "en": "The health insurance covers the necessary treatment costs.",
+        "ar": "يتكفل التأمين الصحي بتكاليف العلاج اللازمة.",
+        "uk": "Лікарняна каса бере на себе необхідні витрати на лікування."
+      },
+      {
+        "de": "In Deutschland kann man übernehmen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için üstlenmek, karşılamak (masrafları) eylemi yapılabilir.",
+        "en": "In Germany, one can covers / assumes (costs) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
+  },
+  "überweist": {
+    "de": "überweisen",
+    "displayDe": "überweisen",
+    "article": "",
+    "plural": "",
+    "pos": "verb",
+    "level": "B1",
+    "tr": "sevk etmek (doktor), havale etmek (para)",
+    "en": "refers (to specialist) / transfers (money)",
+    "ar": "يحول إلى أخصائي / يحول مالياً",
+    "uk": "направляє (до лікаря) / переказує кошти",
+    "example_de": "Der Hausarzt überweist bei Bedarf an spezialisierte Fachärzte.",
+    "example_tr": "Aile hekimi gerektiğinde uzman doktorlara sevk eder.",
+    "example_en": "The GP refers patients to specialized medical experts when needed.",
+    "example_ar": "يقوم طبيب الأسرة بتحويل المريض إلى طبيب أخصائي عند الحاجة.",
+    "example_uk": "Сімейний лікар за потреби направляє пацієнта до профільних спеціалістів.",
+    "grammar": {
+      "title": {
+        "tr": "💡 Fiil Çekimi: Präsens 3. Tekil Şahıs (überweisen ➔ überweist)",
+        "en": "💡 Verb Conjugation: 3rd Person Present (überweisen ➔ überweist)",
+        "ar": "💡 تصريف الفعل: المضارع للمفرد الغائب (überweisen ➔ überweist)",
+        "uk": "💡 Дієвідмінювання: 3-тя особа однини теперішнього часу (überweisen ➔ überweist)"
+      },
+      "tr": "Fiil çekimi: 'überweisen' (sevk etmek / havale etmek). 'über-' ayrılmayan bir önektir (Inseparable prefix). 3. tekil şahısta (er/sie/es) '-t' takısı alır: 'überweist'. Metinde: 'überweist bei Bedarf an Fachärzte'.",
+      "en": "Verb conjugation: 'überweisen' (to refer / transfer money). 'über-' is an inseparable prefix here. Takes 3rd person singular ending '-t': 'überweist'. In text: 'überweist an Fachärzte'.",
+      "ar": "تصريف الفعل: 'überweisen' (يحول إلى طبيب أخصائي أو يحول مالاً). السابقة 'über-' هنا غير منفصلة، ويأخذ الفعل في صيغة المفرد الغائب لاحقة '-t'.",
+      "uk": "Дієвідмінювання: 'überweisen' (направляти до спеціаліста). Префікс 'über-' тут є невідокремлюваним. У 3-й особі однини отримує закінчення '-t': 'überweist'."
+    },
+    "examples": [
+      {
+        "de": "Der Hausarzt überweist bei Bedarf an spezialisierte Fachärzte.",
+        "tr": "Aile hekimi gerektiğinde uzman doktorlara sevk eder.",
+        "en": "The GP refers patients to specialized medical experts when needed.",
+        "ar": "يقوم طبيب الأسرة بتحويل المريض إلى طبيب أخصائي عند الحاجة.",
+        "uk": "Сімейний лікар за потреби направляє пацієнта до профільних спеціалістів."
+      },
+      {
+        "de": "In Deutschland kann man überweisen, um neue Erfahrungen zu sammeln.",
+        "tr": "Almanya'da yeni deneyimler kazanmak için sevk etmek (doktor), havale etmek (para) eylemi yapılabilir.",
+        "en": "In Germany, one can refers (to specialist) / transfers (money) to gain new experience.",
+        "ar": "في ألمانيا، يمكن للمرء أن يمارس هذا النشاط لاكتساب خبرات جديدة.",
+        "uk": "У Німеччині можна практикувати це для отримання нового досвіду."
+      }
+    ]
   }
 };
