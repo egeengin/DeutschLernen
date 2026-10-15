@@ -62,14 +62,70 @@
       </div>
 
       <h2 class="topic-title" id="topic-title">Thema wird geladen...</h2>
-      <div class="topic-desc" id="topic-desc"></div>
 
-      <!-- Leitpunkte (Rubric Targets) Checklist -->
-      <div class="leitpunkte-section">
-        <div class="leitpunkte-title">
-          <span>🎯 Geforderte Leitpunkte (Değinilmesi Gereken Noktalar):</span>
+      <!-- View Selector Pills -->
+      <div class="sp-view-pills" role="tablist">
+        <button type="button" class="sp-view-pill active" id="pill-view-task">🎯 Prüfungsaufgabe & Leitpunkte</button>
+        <button type="button" class="sp-view-pill" id="pill-view-model">💡 Musterantwort (Model Cevap & Ses)</button>
+        <button type="button" class="sp-view-pill" id="pill-view-phrases">⚡ B1 Redemittel & Wortschatz</button>
+      </div>
+
+      <!-- View 1: Task Description & Leitpunkte -->
+      <div class="sp-subview-panel active" id="view-task-panel">
+        <div class="topic-desc" id="topic-desc"></div>
+        <div class="leitpunkte-section">
+          <div class="leitpunkte-title">
+            <span>🎯 Geforderte Leitpunkte (Değinilmesi Gereken Noktalar):</span>
+          </div>
+          <div class="leitpunkte-grid" id="leitpunkte-list"></div>
         </div>
-        <div class="leitpunkte-grid" id="leitpunkte-list"></div>
+      </div>
+
+      <!-- View 2: Model Answer (Musterantwort) with TTS, Copy, and Multi-language Translation -->
+      <div class="sp-subview-panel" id="view-model-panel" style="display: none;">
+        <div class="model-answer-toolbar">
+          <div class="model-tts-controls">
+            <button type="button" class="btn-tts-action" id="btn-model-tts-play" title="Model cevabı sesli dinle (Almanca telaffuz)">
+              <span id="model-tts-icon">🔊</span> <span id="model-tts-label">Model Cevabı Dinle (TTS)</span>
+            </button>
+            <button type="button" class="btn-tts-action secondary" id="btn-model-tts-stop" style="display:none;" title="Seslendirmeyi durdur">
+              <span>⏹️ Durdur</span>
+            </button>
+          </div>
+          <div class="model-lang-toggle">
+            <span class="model-lang-hint">Çeviri:</span>
+            <button type="button" class="model-lang-btn active" data-lang="tr">🇹🇷 TR</button>
+            <button type="button" class="model-lang-btn" data-lang="en">🇬🇧 EN</button>
+            <button type="button" class="model-lang-btn" data-lang="ar">🇸🇦 AR</button>
+            <button type="button" class="model-lang-btn" data-lang="uk">🇺🇦 UK</button>
+          </div>
+        </div>
+
+        <div class="model-speech-box" id="model-answer-de"></div>
+        <div class="model-translation-box" id="model-answer-trans"></div>
+
+        <div class="model-action-footer">
+          <button type="button" class="btn-copy-model" id="btn-copy-model-text" title="Model metni konuşma alanına kopyalayarak telaffuz çalışın">
+            📋 Bu Metni Çalışma / Transkripsiyon Alanına Kopyala
+          </button>
+          <small class="model-copy-hint">İpucu: Metni kopyalayarak sesli okuma pratiği yapabilir ve kendi durumunuza göre kişiselleştirebilirsiniz.</small>
+        </div>
+      </div>
+
+      <!-- View 3: Redemittel & Vocabulary Box -->
+      <div class="sp-subview-panel" id="view-phrases-panel" style="display: none;">
+        <div class="phrases-section-wrap">
+          <div class="phrases-header">
+            <h4>💡 Sınavda Kullanılabilecek Anahtar Redemittel (Tıklayarak Ekleyin):</h4>
+            <small style="color:var(--sp-text-muted);">Herhangi bir kalıba tıkladığınızda konuşma metninize otomatik eklenir.</small>
+          </div>
+          <div class="phrases-chips-grid" id="topic-redemittel-chips"></div>
+
+          <div class="phrases-header" style="margin-top:20px;">
+            <h4>📚 Bu Konuya Özel B1 Kelime Dağarcığı (Wortschatz):</h4>
+          </div>
+          <div class="topic-vocab-grid" id="topic-vocab-cards"></div>
+        </div>
       </div>
     </section>
 
@@ -238,7 +294,7 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/voiceExamEngine.js"></script>
-  <script src="js/sprechenApp.js"></script>
+  <script src="js/voiceExamEngine.js?v=38"></script>
+  <script src="js/sprechenApp.js?v=38"></script>
 </body>
 </html>

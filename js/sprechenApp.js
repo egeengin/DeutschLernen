@@ -30,7 +30,10 @@
     hasDetectedSound: false,
     silenceCounter: 0,
     selectedDeviceId: '',
-    examHistory: []
+    examHistory: [],
+    activeView: 'task',
+    modelLang: 'tr',
+    isSpeakingTTS: false
   };
 
   // DOM Elements cache
@@ -45,6 +48,26 @@
       topicDesc: document.getElementById('topic-desc'),
       leitpunkteContainer: document.getElementById('leitpunkte-list'),
       promptCard: document.getElementById('speaking-prompt-card'),
+
+      // Subview pills & panels
+      pills: document.querySelectorAll('.sp-view-pill'),
+      panelTask: document.getElementById('view-task-panel'),
+      panelModel: document.getElementById('view-model-panel'),
+      panelPhrases: document.getElementById('view-phrases-panel'),
+
+      // Model Answer Controls
+      btnTtsPlay: document.getElementById('btn-model-tts-play'),
+      btnTtsStop: document.getElementById('btn-model-tts-stop'),
+      ttsLabel: document.getElementById('model-tts-label'),
+      ttsIcon: document.getElementById('model-tts-icon'),
+      modelAnswerDe: document.getElementById('model-answer-de'),
+      modelAnswerTrans: document.getElementById('model-answer-trans'),
+      btnCopyModel: document.getElementById('btn-copy-model-text'),
+      modelLangBtns: document.querySelectorAll('.model-lang-btn'),
+
+      // Phrases & Vocab containers
+      chipsContainer: document.getElementById('topic-redemittel-chips'),
+      vocabContainer: document.getElementById('topic-vocab-cards'),
 
       // Recording & Controls
       btnToggleRecord: document.getElementById('btn-toggle-record'),
@@ -194,8 +217,167 @@
       `).join('');
     }
 
+    // Render Model Answer, Phrases and Vocab
+    renderModelAnswer();
+    renderPhrasesAndVocab();
+    switchPromptView(state.activeView || 'task');
+
     // Reset evaluation card
     if (dom.evalCard) dom.evalCard.style.display = 'none';
+  }
+
+  // --- SUBVIEW SWITCHING (Task, Model Answer, Phrases) ---
+  function switchPromptView(viewName) {
+    state.activeView = viewName;
+    if (dom.pills) {
+      dom.pills.forEach(p => {
+        p.classList.toggle('active', p.id === `pill-view-${viewName}`);
+      });
+    }
+
+    if (dom.panelTask) dom.panelTask.style.display = (viewName === 'task') ? 'block' : 'none';
+    if (dom.panelModel) dom.panelModel.style.display = (viewName === 'model') ? 'block' : 'none';
+    if (dom.panelPhrases) dom.panelPhrases.style.display = (viewName === 'phrases') ? 'block' : 'none';
+
+    if (viewName !== 'model' && state.isSpeakingTTS) {
+      stopModelAnswerTTS();
+    }
+  }
+
+  // --- RENDER MODEL ANSWER (MUSTERANTWORT) ---
+  function renderModelAnswer() {
+    if (!state.activeTopic || !state.activeTopic.modelAnswer) return;
+    const ans = state.activeTopic.modelAnswer;
+
+    if (dom.modelAnswerDe) {
+      const rawDe = ans.de || '';
+      const formatted = escapeHtml(rawDe).replace(/(Partner [AB]:)/g, '<span class="dialogue-speaker">$1</span>');
+      dom.modelAnswerDe.innerHTML = formatted;
+    }
+
+    if (dom.modelAnswerTrans) {
+      const transText = ans[state.modelLang] || ans.tr || ans.en || '';
+      const formattedTrans = escapeHtml(transText).replace(/(Partner [AB]:|Şريك [أب]:|Партнер [АБ]:)/g, '<strong style="color:#60a5fa; display:block; margin-top:8px;">$1</strong>');
+      dom.modelAnswerTrans.innerHTML = formattedTrans;
+    }
+  }
+
+  // --- RENDER REDEMITTEL & VOCABULARY ---
+  function renderPhrasesAndVocab() {
+    if (!state.activeTopic) return;
+    const phrases = state.activeTopic.redemittel || [];
+    const vocab = state.activeTopic.keyVocab || [];
+
+    if (dom.chipsContainer) {
+      if (phrases.length === 0) {
+        dom.chipsContainer.innerHTML = '<p style="color:var(--sp-text-muted); font-size:12px;">Bu konu için genel B1 kalıplarını kullanabilirsiniz.</p>';
+      } else {
+        dom.chipsContainer.innerHTML = phrases.map(rm => {
+          const trans = rm[state.modelLang] || rm.tr || rm.en || '';
+          return `
+            <div class="phrase-chip-item" data-phrase="${escapeHtml(rm.phrase)}" title="Tıkla ve konuşma alanına ekle">
+              <span class="phrase-chip-text">${escapeHtml(rm.phrase)}</span>
+              <span class="phrase-chip-meaning">${escapeHtml(trans)}</span>
+            </div>
+          `;
+        }).join('');
+
+        // Wire click to insert phrase
+        dom.chipsContainer.querySelectorAll('.phrase-chip-item').forEach(chip => {
+          chip.addEventListener('click', () => {
+            const phrase = chip.getAttribute('data-phrase');
+            insertPhraseIntoTranscript(phrase);
+          });
+        });
+      }
+    }
+
+    if (dom.vocabContainer) {
+      if (vocab.length === 0) {
+        dom.vocabContainer.innerHTML = '<p style="color:var(--sp-text-muted); font-size:12px;">Standart kelime haznenizi kullanın.</p>';
+      } else {
+        dom.vocabContainer.innerHTML = vocab.map(v => {
+          const trans = v[state.modelLang] || v.tr || v.en || '';
+          return `
+            <div class="topic-vocab-card">
+              <span class="topic-vocab-word">${escapeHtml(v.de)}</span>
+              <span class="topic-vocab-plural">${escapeHtml(v.plural || '-')}</span>
+              <span class="topic-vocab-trans">${escapeHtml(trans)}</span>
+            </div>
+          `;
+        }).join('');
+      }
+    }
+  }
+
+  function insertPhraseIntoTranscript(phrase) {
+    if (!dom.transcriptInput) return;
+    const input = dom.transcriptInput;
+    const start = input.selectionStart || input.value.length;
+    const end = input.selectionEnd || input.value.length;
+    const val = input.value;
+    input.value = val.substring(0, start) + (start > 0 && !val[start - 1].match(/\s/) ? ' ' : '') + phrase + ' ' + val.substring(end);
+    input.focus();
+    const newPos = start + phrase.length + 2;
+    input.setSelectionRange(newPos, newPos);
+    checkRealtimeLeitpunkte(input.value);
+  }
+
+  // --- TEXT-TO-SPEECH (TTS) FOR MODEL ANSWER ---
+  function playModelAnswerTTS() {
+    if (!state.activeTopic || !state.activeTopic.modelAnswer || !('speechSynthesis' in window)) {
+      alert('Tarayıcınız sesli sentezlemeyi (SpeechSynthesis) desteklemiyor.');
+      return;
+    }
+
+    window.speechSynthesis.cancel();
+    state.isSpeakingTTS = true;
+
+    if (dom.btnTtsPlay) dom.btnTtsPlay.style.display = 'none';
+    if (dom.btnTtsStop) dom.btnTtsStop.style.display = 'inline-flex';
+
+    const textToSpeak = state.activeTopic.modelAnswer.de;
+    const utter = new SpeechSynthesisUtterance(textToSpeak);
+    utter.lang = 'de-DE';
+    utter.rate = 0.95;
+
+    // Pick German voice if available
+    const voices = window.speechSynthesis.getVoices();
+    const deVoice = voices.find(v => v.lang.startsWith('de')) || null;
+    if (deVoice) utter.voice = deVoice;
+
+    utter.onend = () => {
+      stopModelAnswerTTS();
+    };
+
+    utter.onerror = () => {
+      stopModelAnswerTTS();
+    };
+
+    window.speechSynthesis.speak(utter);
+  }
+
+  function stopModelAnswerTTS() {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+    }
+    state.isSpeakingTTS = false;
+    if (dom.btnTtsPlay) dom.btnTtsPlay.style.display = 'inline-flex';
+    if (dom.btnTtsStop) dom.btnTtsStop.style.display = 'none';
+  }
+
+  function copyModelToTranscript() {
+    if (!state.activeTopic || !state.activeTopic.modelAnswer || !dom.transcriptInput) return;
+    dom.transcriptInput.value = state.activeTopic.modelAnswer.de;
+    checkRealtimeLeitpunkte(dom.transcriptInput.value);
+
+    if (dom.btnCopyModel) {
+      const origText = dom.btnCopyModel.textContent;
+      dom.btnCopyModel.textContent = '✅ Metin Kopyalandı! Şimdi Ses Kaydı Alabilir veya Telaffuz Çalışabilirsiniz.';
+      setTimeout(() => {
+        dom.btnCopyModel.textContent = origText;
+      }, 3000);
+    }
   }
 
   // --- HARDWARE & MICROPHONE SETUP ---
@@ -848,6 +1030,42 @@
           try { localStorage.removeItem('deutschlernen_speaking_history'); } catch (e) {}
           renderHistory();
         }
+      });
+    }
+
+    // Subview Pills (Task, Model, Phrases)
+    if (dom.pills) {
+      dom.pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          const viewName = pill.id.replace('pill-view-', '');
+          switchPromptView(viewName);
+        });
+      });
+    }
+
+    // Model Answer TTS Controls
+    if (dom.btnTtsPlay) {
+      dom.btnTtsPlay.addEventListener('click', playModelAnswerTTS);
+    }
+    if (dom.btnTtsStop) {
+      dom.btnTtsStop.addEventListener('click', stopModelAnswerTTS);
+    }
+
+    // Model Answer Copy Button
+    if (dom.btnCopyModel) {
+      dom.btnCopyModel.addEventListener('click', copyModelToTranscript);
+    }
+
+    // Model Answer Language Toggle
+    if (dom.modelLangBtns) {
+      dom.modelLangBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          dom.modelLangBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          state.modelLang = btn.getAttribute('data-lang') || 'tr';
+          renderModelAnswer();
+          renderPhrasesAndVocab();
+        });
       });
     }
 
