@@ -133,7 +133,7 @@ class TestReadingStudio(unittest.TestCase):
                     self.assertTrue(gloss[lang].strip(), f"Empty {lang} translation in glossary {gloss['de']}")
 
             # Verify questions
-            self.assertGreaterEqual(len(unit['questions']), 3, f"Unit {unit['id']} needs >=3 questions")
+            self.assertEqual(len(unit['questions']), 5, f"Unit {unit['id']} needs exactly 5 questions")
             for q in unit['questions']:
                 self.assertIn('id', q)
                 self.assertIn('paragraphRef', q)

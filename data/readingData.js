@@ -306,6 +306,85 @@ window.READING_DATASET = [
           "ar": "الفقرة 3 توضح: 'عدد أقل من الشباب على استعداد لتحمل التزامات طويلة الأجل مثل تولي مناصب في مجالس الإدارة.'",
           "uk": "Абзац 3 підкреслює: 'Дедалі менше молодих людей готові брати на себе довгострокові обов'язки, такі як посади в правлінні.'"
         }
+      }      ,
+      {
+          "id": "q4",
+          "paragraphRef": "p2",
+          "type": "multiple_choice",
+          "prompt": {
+              "de": "Was schätzen viele Menschen neben der sportlichen Aktivität besonders an einem Vereinsbeitritt?",
+              "en": "What do many people especially appreciate about joining a club besides the athletic activity?",
+              "tr": "İnsanlar spor aktivitesinin yanında dernek üyeliğinin özellikle hangi yönünü değerli bulmaktadır?",
+              "ar": "ما الذي يقدره كثير من الناس بشكل خاص عند الانضمام إلى جمعية إلى جانب النشاط الرياضي؟",
+              "uk": "Що особливо цінують люди у вступі до клубу, окрім занять спортом?"
+          },
+          "options": [
+              {
+                  "de": "Dass man neue Freundschaften schließen und wertvolle persönliche Kontakte knüpfen kann.",
+                  "en": "That one can make new friends and establish valuable personal contacts.",
+                  "tr": "Yeni arkadaşlıklar kurabilmeyi ve değerli sosyal çevreler edinebilmeyi.",
+                  "ar": "إمكانية تكوين صداقات جديدة وبناء علاقات شخصية قيّمة.",
+                  "uk": "Можливість заводити нових друзів та налагоджувати цінні контакти."
+              },
+              {
+                  "de": "Dass man verpflichtet wird, täglich an professionellen Wettkämpfen teilzunehmen.",
+                  "en": "That one is obligated to participate in professional competitions every single day.",
+                  "tr": "Her gün profesyonel yarışmalara zorunlu olarak katılmak zorunda kalmayı.",
+                  "ar": "إلزام العضو بالمشاركة يومياً في مسابقات احترافية.",
+                  "uk": "Обов'язок щодня брати участь у професійних змаганнях."
+              },
+              {
+                  "de": "Dass man teure Marken-Sportkleidung kostenlos geschenkt bekommt.",
+                  "en": "That one receives expensive branded sportswear for free as a gift.",
+                  "tr": "Pahalı markalı spor kıyafetlerinin ücretsiz hediye edilmesini.",
+                  "ar": "الحصول على ملابس رياضية فاخرة مجاناً كهدية.",
+                  "uk": "Отримання дорогого брендового спортивного одягу безкоштовно."
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 2 hebt hervor: 'Für viele Menschen ist der Sportverein nicht nur ein Ort für Fitness, sondern auch eine wichtige Gelegenheit, neue Freundschaften zu schließen und Kontakte zu knüpfen.'",
+              "en": "Paragraph 2 emphasizes: For many, the sports club is an important opportunity to forge friendships and network.",
+              "tr": "2. paragrafta vurgulanıyor: Birçok insan için spor kulübü sadece fitness yeri değil, yeni arkadaşlıklar ve çevre edinmek için önemli bir fırsattır.",
+              "ar": "الفقرة 2 توضح: بالنسبة للكثيرين، لا يقتصر النادي الرياضي على اللياقة البدنية، بل هو فرصة ثمينة لتكوين الصداقات وبناء العلاقات.",
+              "uk": "Абзац 2 наголошує: для багатьох людей спортивний клуб — це насамперед нагода знайти нових друзів і встановити контакти."
+          }
+      },
+      {
+          "id": "q5",
+          "paragraphRef": "p3",
+          "type": "true_false",
+          "prompt": {
+              "de": "Experten raten Vereinen, kürzere und flexiblere Einsätze anzubieten, damit auch vielbeschäftigte Berufstätige mithelfen können.",
+              "en": "Experts advise clubs to offer shorter and more flexible assignments so that busy professionals can also contribute.",
+              "tr": "Uzmanlar, yoğun çalışan meslek sahiplerinin de katkıda bulunabilmesi için derneklere daha esnek ve kısa süreli projeler sunmalarını tavsiye etmektedir.",
+              "ar": "ينصح الخبراء الجمعيات بتقديم مهام مرنة وقصيرة حتى يتمكن المهنيون المشغولون من المشاركة والمساعدة.",
+              "uk": "Експерти радять клубам пропонувати гнучкі та короткострокові завдання, щоб зайняті працівники також могли допомагати."
+          },
+          "options": [
+              {
+                  "de": "Richtig",
+                  "en": "True",
+                  "tr": "Doğru",
+                  "ar": "صحيح",
+                  "uk": "Правильно"
+              },
+              {
+                  "de": "Falsch",
+                  "en": "False",
+                  "tr": "Yanlış",
+                  "ar": "خطأ",
+                  "uk": "Неправильно"
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 3 bestätigt: 'Experten empfehlen daher flexible Projekte und kürzere Einsätze, damit auch Berufstätige mit wenig Zeit einen Beitrag leisten können.'",
+              "en": "Paragraph 3 confirms: Experts recommend flexible projects and shorter assignments so that working people with limited time can contribute.",
+              "tr": "3. paragrafta teyit ediliyor: Uzmanlar, zamanı az olan çalışanların da katkıda bulunabilmesi için esnek ve kısa süreli projeler önermektedir.",
+              "ar": "الفقرة 3 تؤكد: يوصي الخبراء بمشاريع مرنة ومهام أقصر لتمكين العاملين ذوي الوقت المحدود من تقديم مساهماتهم.",
+              "uk": "Абзац 3 підтверджує: експерти радять впроваджувати гнучкі проєкти та коротші залучення для зайнятих людей."
+          }
       }
     ]
   },
@@ -584,6 +663,85 @@ window.READING_DATASET = [
           "ar": "الفقرة 3 تؤكد: 'بعد ست ساعات عمل كحد أقصى، يجب أخذ استراحة لا تقل عن 30 دقيقة'.",
           "uk": "Абзац 3 підтверджує: 'Не пізніше ніж через шість годин роботи необхідно зробити перерву щонайменше на 30 хвилин'."
         }
+      }      ,
+      {
+          "id": "q4",
+          "paragraphRef": "p1",
+          "type": "multiple_choice",
+          "prompt": {
+              "de": "Welchen klaren Vorteil bietet das Arbeiten von zu Hause laut dem ersten Absatz?",
+              "en": "What clear advantage does working from home offer according to the first paragraph?",
+              "tr": "İlk paragrafa göre evden çalışmanın sunduğu en belirgin avantaj hangisidir?",
+              "ar": "ما هي الميزة الواضحة للعمل من المنزل وفقاً للفقرة الأولى؟",
+              "uk": "Яку чітку перевагу надає робота з дому згідно з першим абзацом?"
+          },
+          "options": [
+              {
+                  "de": "Der Wegfall des täglichen Arbeitswegs spart Zeit und Familie und Beruf lassen sich besser vereinbaren.",
+                  "en": "Eliminating the daily commute saves time, and family and career can be balanced better.",
+                  "tr": "Günlük işe gidiş-geliş yolunun kalkması zaman kazandırır ve aile ile iş hayatı daha iyi dengelenir.",
+                  "ar": "التخلص من عناء التنقل اليومي يوفر الوقت ويتيح التوفيق بشكل أفضل بين العمل والأسرة.",
+                  "uk": "Відсутність щоденних поїздок на роботу економить час і допомагає поєднувати сім'ю та кар'єру."
+              },
+              {
+                  "de": "Man muss im Homeoffice überhaupt keine Fristen oder Absprachen mehr einhalten.",
+                  "en": "One no longer has to meet any deadlines or agreements in the home office.",
+                  "tr": "Evden çalışırken hiçbir teslim tarihine veya iş anlaşmasına uymak gerekmez.",
+                  "ar": "عدم الالتزام بأي مواعيد نهائية أو تواصل تنظيمي أثناء العمل من المنزل.",
+                  "uk": "У домашньому офісі більше не потрібно дотримуватися дедлайнів."
+              },
+              {
+                  "de": "Alle Beschäftigten erhalten im Homeoffice automatisch den doppelten Monatslohn.",
+                  "en": "All employees automatically receive double their monthly salary in the home office.",
+                  "tr": "Tüm çalışanlara evden çalıştıkları için otomatik olarak çift maaş ödenir.",
+                  "ar": "يحصل جميع الموظفين تلقائياً على ضعف الراتب الشهري عند العمل من المنزل.",
+                  "uk": "Усі працівники в домашньому офісі автоматично отримують подвійну зарплату."
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 1 betont: 'Der Wegfall des täglichen Arbeitswegs spart wertvolle Zeit, und viele Beschäftigte schätzen die flexiblere Einteilung des Tages, um Familie und Beruf zu vereinbaren.'",
+              "en": "Paragraph 1 highlights: Eliminating the commute saves time and allows better work-family balance.",
+              "tr": "1. paragrafta belirtiliyor: Günlük iş yolunun ortadan kalkması zaman kazandırır ve çalışanlar aile ile mesleği bağdaştırmayı takdir eder.",
+              "ar": "الفقرة 1 توضح: توفير وقت التنقل يمنح الموظفين مرونة أكبر للموازنة بين التزاماتهم الأسرية والمهنية.",
+              "uk": "Абзац 1 зазначає: економія часу на дорогу дозволяє гармонійно поєднувати роботу та сімейні обов'язки."
+          }
+      },
+      {
+          "id": "q5",
+          "paragraphRef": "p3",
+          "type": "true_false",
+          "prompt": {
+              "de": "Im hybriden Arbeitsmodell arbeiten Beschäftigte an zwei bis drei Tagen zu Hause und an den anderen Tagen vor Ort im Büro.",
+              "en": "In the hybrid work model, employees work two to three days at home and the other days on-site in the office.",
+              "tr": "Hibrit çalışma modelinde çalışanlar haftada iki ila üç gün evden, diğer günlerde ise bizzat ofisten çalışmaktadır.",
+              "ar": "في نموذج العمل الهجين، يعمل الموظفون يومين إلى ثلاثة أيام من المنزل وبقية الأيام في مقر العمل المكتبي.",
+              "uk": "У гібридній моделі працівники працюють 2–3 дні вдома, а решту днів — безпосередньо в офісі."
+          },
+          "options": [
+              {
+                  "de": "Richtig",
+                  "en": "True",
+                  "tr": "Doğru",
+                  "ar": "صحيح",
+                  "uk": "Правильно"
+              },
+              {
+                  "de": "Falsch",
+                  "en": "False",
+                  "tr": "Yanlış",
+                  "ar": "خطأ",
+                  "uk": "Неправильно"
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 3 bestätigt: 'Dabei arbeiten Beschäftigte zwei bis drei Tage zu Hause und die restlichen Tage im Büro.'",
+              "en": "Paragraph 3 confirms: Employees work two to three days at home and the remaining days in the office.",
+              "tr": "3. paragrafta teyit ediliyor: Çalışanlar iki ila üç gün evde, kalan günlerde ise ofiste görev yapmaktadır.",
+              "ar": "الفقرة 3 تؤكد: يقضي الموظفون يومين أو ثلاثة في المنزل والأيام المتبقية في مقر الشركة.",
+              "uk": "Абзац 3 підтверджує: співробітники поєднують 2–3 дні роботи вдома з роботою в офісі."
+          }
       }
     ]
   },
@@ -862,6 +1020,85 @@ window.READING_DATASET = [
           "ar": "الفقرة 3 توضح أن أيام الأحد والعطلات الرسمية تخضع للهدوء التام ويُمنع فيها إحداث ضجيج أو أعمال صيانة.",
           "uk": "Абзац 3 зазначає, що в неділю та святкові дні будь-який шум і ремонтні роботи заборонені цілий день."
         }
+      }      ,
+      {
+          "id": "q4",
+          "paragraphRef": "p1",
+          "type": "multiple_choice",
+          "prompt": {
+              "de": "Was bedeutet der Begriff 'Kaltmiete' (KM) in einer Wohnungsanzeige?",
+              "en": "What does the term 'Kaltmiete' (cold rent / KM) mean in a housing advertisement?",
+              "tr": "Bir konut ilanında geçen 'Kaltmiete' (KM - soğuk kira) terimi ne anlama gelir?",
+              "ar": "ماذا يعني مصطلح 'Kaltmiete' (KM - الإيجار الأساسي) في إعلانات السكن؟",
+              "uk": "Що означає термін 'Kaltmiete' (KM - базова оренда) в оголошенні про оренду житла?"
+          },
+          "options": [
+              {
+                  "de": "Der Mietpreis für den reinen Wohnraum ohne Heizungs- und sonstige Betriebskosten.",
+                  "en": "The rent for the living space alone, excluding heating and other utility costs.",
+                  "tr": "Isınma ve diğer yan giderler hariç, yalnızca konutun kendi çıplak kullanım bedeli.",
+                  "ar": "قيمة إيجار المسكن فقط دون احتساب تكاليف التدفئة والخدمات الإضافية.",
+                  "uk": "Вартість оренди житла без урахування опалення та комунальних послуг."
+              },
+              {
+                  "de": "Die Miete inklusive Strom, schnellem WLAN und teurer Luxusmöbel.",
+                  "en": "The rent including electricity, high-speed Wi-Fi, and expensive luxury furniture.",
+                  "tr": "Elektrik, hızlı internet ve lüks mobilyalar dahil toplam kira bedeli.",
+                  "ar": "الإيجار الإجمالي متضمناً الكهرباء والإنترنت والأثاث الفاخر.",
+                  "uk": "Оренда з урахуванням електроенергії, інтернету та меблів."
+              },
+              {
+                  "de": "Eine Sonderzahlung, die man nur in den kalten Wintermonaten leisten muss.",
+                  "en": "A special surcharge that one only has to pay during cold winter months.",
+                  "tr": "Yalnızca soğuk kış aylarında ödenmesi gereken özel bir ek ücret.",
+                  "ar": "مبلغ إضافي يُدفع فقط في أشهر الشتاء الباردة.",
+                  "uk": "Спеціальна доплата, яку платять лише в холодні зимові місяці."
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 1 stellt klar: 'KM steht für Kaltmiete (ohne Heizung und Betriebskosten), während WM die Warmmiete bezeichnet.'",
+              "en": "Paragraph 1 clarifies: KM stands for cold rent without heating and operating costs.",
+              "tr": "1. paragrafta açıklanıyor: KM (Kaltmiete), ısıtma ve işletme giderleri hariç çıplak kira bedelidir.",
+              "ar": "الفقرة 1 توضح: KM تعني الإيجار الخالص دون تكاليف التدفئة والمصاريف التشغيلية.",
+              "uk": "Абзац 1 пояснює: KM — це орендна плата без опалення та комунальних послуг."
+          }
+      },
+      {
+          "id": "q5",
+          "paragraphRef": "p3",
+          "type": "true_false",
+          "prompt": {
+              "de": "Die Hausordnung verpflichtet Bewohner in der Regel dazu, ab 22:00 Uhr die Nachtruhe einzuhalten.",
+              "en": "The house rules generally oblige residents to observe night quiet hours starting at 10:00 PM.",
+              "tr": "Apartman kuralları (Hausordnung), sakinleri genellikle saat 22:00'den itibaren gece sessizliğine uymaya mecbur kılar.",
+              "ar": "تلزم اللائحة الداخلية للمبنى (Hausordnung) السكان عادة بمراعاة الهدوء الليلي بدءاً من الساعة 22:00.",
+              "uk": "Правила внутрішнього розпорядку зобов'язують мешканців дотримуватися нічної тиші з 22:00."
+          },
+          "options": [
+              {
+                  "de": "Richtig",
+                  "en": "True",
+                  "tr": "Doğru",
+                  "ar": "صحيح",
+                  "uk": "Правильно"
+              },
+              {
+                  "de": "Falsch",
+                  "en": "False",
+                  "tr": "Yanlış",
+                  "ar": "خطأ",
+                  "uk": "Неправильно"
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 3 bestätigt: 'Sie regelt unter anderem feste Ruhezeiten wie die Nachtruhe von 22:00 bis 07:00 Uhr sowie die ordnungsgemäße Mülltrennung.'",
+              "en": "Paragraph 3 confirms: It regulates quiet hours such as night rest from 10 PM to 7 AM.",
+              "tr": "3. paragrafta teyit ediliyor: Apartman kuralları 22:00 ile 07:00 arasındaki gece sessizliğini ve çöp ayrıştırmasını düzenler.",
+              "ar": "الفقرة 3 تؤكد: تحدد اللائحة أوقات الهدوء مثل فترة الليل من العاشرة مساءً حتى السابعة صباحاً.",
+              "uk": "Абзац 3 підтверджує: правила визначають години тиші, зокрема нічний час з 22:00 до 07:00."
+          }
       }
     ]
   },
@@ -1140,6 +1377,85 @@ window.READING_DATASET = [
           "ar": "الفقرة 3 توضح عكس ذلك: تطلب معرفة كيفية إعادة الجهاز المعيب 'مجاناً وبدون تكلفة' (kostenfrei).",
           "uk": "Абзац 3 говорить протилежне: вона просить повідомити, як відправити дефектний товар безкоштовно (kostenfrei)."
         }
+      }      ,
+      {
+          "id": "q4",
+          "paragraphRef": "p1",
+          "type": "multiple_choice",
+          "prompt": {
+              "de": "Welche konkreten technischen Mängel weist das gelieferte Gerät auf?",
+              "en": "What specific technical defects does the delivered appliance exhibit?",
+              "tr": "Teslim edilen cihaz hangi somut teknik arızaları göstermektedir?",
+              "ar": "ما هي العيوب الفنية المحددة التي ظهرت في الجهاز المسلّم؟",
+              "uk": "Які конкретні технічні несправності виявлено в доставленому приладі?"
+          },
+          "options": [
+              {
+                  "de": "Wasser tropft aus dem Tank auf die Arbeitsplatte und das Display zeigt Fehlercode E-04.",
+                  "en": "Water leaks from the tank onto the worktop and the display shows error code E-04.",
+                  "tr": "Su haznesinden tezgaha su damlatıyor ve ekranda E-04 hata kodu görünüyor.",
+                  "ar": "تسرب الماء من الخزان إلى سطح المطبخ وظهور رمز الخطأ E-04 على الشاشة.",
+                  "uk": "Вода капає з резервуара на стільницю, а на екрані з'являється код помилки E-04."
+              },
+              {
+                  "de": "Die Maschine wurde versehentlich in roter statt silberner Farbe verschickt.",
+                  "en": "The machine was accidentally shipped in red rather than silver color.",
+                  "tr": "Makine gümüş renk yerine yanlışlıkla kırmızı renkte gönderilmiştir.",
+                  "ar": "تم إرسال الآلة باللون الأحمر بالخطأ بدلاً من اللون الفضي.",
+                  "uk": "Кавомашину помилково надіслали червоного кольору замість сріблястого."
+              },
+              {
+                  "de": "Der Originalkarton fehlte und es lag überhaupt keine Bedienungsanleitung bei.",
+                  "en": "The original box was missing and no user manual was included at all.",
+                  "tr": "Orijinal kutu eksikti ve kutuda hiçbir kullanım kılavuzu bulunmuyordu.",
+                  "ar": "الصندوق الأصلي كان مفقوداً ولم يكن هناك أي دليل استخدام مرفق.",
+                  "uk": "Оригінальна коробка була відсутня і не було жодної інструкції."
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 1 beschreibt die Mängel exakt: 'Schon bei der ersten Inbetriebnahme musste ich feststellen, dass Wasser aus dem Tank tropft... Zudem erscheint auf dem Display die Fehlermeldung E-04.'",
+              "en": "Paragraph 1 describes: Water leaks from the tank and error code E-04 is displayed.",
+              "tr": "1. paragrafta belirtiliyor: İlk çalıştırmada suyun depodan aktığı ve ekranda E-04 hata kodunun çıktığı görülmüştür.",
+              "ar": "الفقرة 1 توضح: عند التشغيل الأول تبين تسرب الماء من الخزان وظهور رمز الخطأ E-04.",
+              "uk": "Абзац 1 описує проблему: вода витікає з резервуара, а на дисплеї горить помилка E-04."
+          }
+      },
+      {
+          "id": "q5",
+          "paragraphRef": "p3",
+          "type": "true_false",
+          "prompt": {
+              "de": "Die Kundin bittet darum, ihr für den Rückversand einen kostenlosen Retourenschein zuzusenden.",
+              "en": "The customer requests that a free return shipping label be sent to her for the return.",
+              "tr": "Müşteri, ürünü geri gönderebilmek için kendisine ücretsiz bir iade kargo etiketi (Retourenschein) iletilmesini rica etmektedir.",
+              "ar": "تطلب العميلة إرسال قسيمة إرجاع مجانية (Retourenschein) لإعادة شحن الجهاز المعيب.",
+              "uk": "Клієнтка просить надіслати їй безкоштовну зворотну накладну для повернення товару."
+          },
+          "options": [
+              {
+                  "de": "Richtig",
+                  "en": "True",
+                  "tr": "Doğru",
+                  "ar": "صحيح",
+                  "uk": "Правильно"
+              },
+              {
+                  "de": "Falsch",
+                  "en": "False",
+                  "tr": "Yanlış",
+                  "ar": "خطأ",
+                  "uk": "Неправильно"
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 3 bestätigt: 'Bitte teilen Sie mir zeitnah mit, wie der Rückversand erfolgt, und senden Sie mir einen Retourenschein zu.'",
+              "en": "Paragraph 3 confirms: Please let me know promptly how the return shipment is handled and send me a return label.",
+              "tr": "3. paragrafta teyit ediliyor: 'İadenin nasıl yapılacağını lütfen bildiriniz ve tarafıma bir iade etiketi gönderiniz.'",
+              "ar": "الفقرة 3 تؤكد: 'يرجى إبلاغي بكيفية الإرجاع في أقرب وقت وإرسال قسيمة الإرجاع (Retourenschein) لي.'",
+              "uk": "Абзац 3 підтверджує прохання надіслати зворотний ярлик для безкоштовної пересилки."
+          }
       }
     ]
   }
@@ -1419,6 +1735,85 @@ window.READING_DATASET = [
           "ar": "الفقرة 3 توضح: من ينهي تدريبه بنجاح يحظى بفرص ممتازة للتثبيت الدائم والتأهيل لدرجة الماستر المهني.",
           "uk": "Абзац 3 пояснює: випускники мають чудові шанси на постійний контракт та навчання на майстра."
         }
+      }      ,
+      {
+          "id": "q4",
+          "paragraphRef": "p1",
+          "type": "multiple_choice",
+          "prompt": {
+              "de": "Wie ist der Ablauf der dualen Ausbildung in der Regel zeitlich organisiert?",
+              "en": "How is the dual vocational training schedule typically organized in terms of time?",
+              "tr": "İkili meslek eğitiminin (Duale Ausbildung) zaman dağılımı tipik olarak nasıl organize edilir?",
+              "ar": "كيف يتم تنظيم الجدول الزمني للتدريب المهني المزدوج عادة؟",
+              "uk": "Як зазвичай розподіляється час у системі дуальної професійної освіти?"
+          },
+          "options": [
+              {
+                  "de": "Drei bis vier Tage praktische Arbeit im Betrieb und ein bis zwei Tage theoretischer Unterricht in der Berufsschule.",
+                  "en": "Three to four days of practical work in the company and one to two days of theory classes in vocational school.",
+                  "tr": "İşletmede üç ila dört gün pratik çalışma ve meslek okulunda bir ila iki gün teorik eğitim.",
+                  "ar": "ثلاثة إلى أربعة أيام تدريب عملي في الشركة ويوم إلى يومين دراسة نظرية في المدرسة المهنية.",
+                  "uk": "3–4 дні практики на підприємстві та 1–2 дні теоретичних занять у професійній школі."
+              },
+              {
+                  "de": "Man besucht fünf Jahre lang ausschließlich Universitätsvorlesungen ohne jede praktische Erfahrung.",
+                  "en": "One attends only university lectures for five years without any practical experience.",
+                  "tr": "Hiçbir pratik yapmadan beş yıl boyunca sadece üniversite derslerine girilir.",
+                  "ar": "حضور محاضرات جامعية فقط لمدة خمس سنوات دون أي خبرة عملية.",
+                  "uk": "Відвідування виключно лекцій в університеті протягом 5 років без практики."
+              },
+              {
+                  "de": "Die Ausbildung findet nur an Sonn- und Feiertagen über das Internet statt.",
+                  "en": "The training takes place exclusively on Sundays and public holidays over the internet.",
+                  "tr": "Eğitim yalnızca pazar ve bayram günlerinde internet üzerinden verilir.",
+                  "ar": "يتم التدريب فقط في أيام الأحد والعطلات الرسمية عبر الإنترنت.",
+                  "uk": "Навчання проходить лише в неділю та святкові дні онлайн."
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 1 stellt fest: 'In der Regel verbringen die Auszubildenden drei bis vier Tage pro Woche im Betrieb... An den restlichen Tagen besuchen sie die Berufsschule.'",
+              "en": "Paragraph 1 states: Apprentices usually spend 3–4 days in the company and the remaining days at vocational school.",
+              "tr": "1. paragrafta belirtiliyor: Stajyerler haftada 3-4 gün işletmede pratik yapar, kalan günlerde meslek okuluna gider.",
+              "ar": "الفقرة 1 توضح: يقضي المتدربون عادة 3 إلى 4 أيام في المنشأة وباقي الأيام في المدرسة المهنية.",
+              "uk": "Абзац 1 зазначає: стажери зазвичай проводять 3–4 дні на підприємстві, а решту — у профшколі."
+          }
+      },
+      {
+          "id": "q5",
+          "paragraphRef": "p3",
+          "type": "true_false",
+          "prompt": {
+              "de": "Aufgrund des Mangels an Fachkräften haben Absolventen einer dualen Ausbildung hervorragende Chancen auf eine Festanstellung.",
+              "en": "Due to the shortage of skilled workers, graduates of dual vocational training have outstanding chances of permanent employment.",
+              "tr": "Nitelikli eleman açığı nedeniyle ikili meslek eğitimini bitiren mezunların kalıcı işe alınma şansı son derece yüksektir.",
+              "ar": "نظراً لنقص العمالة الماهرة، يتمتع خريجو التدريب المهني المزدوج بفرص ممتازة للحصول على وظائف دائمة.",
+              "uk": "Через дефіцит кваліфікованих кадрів випускники дуальної освіти мають чудові шанси на постійне працевлаштування."
+          },
+          "options": [
+              {
+                  "de": "Richtig",
+                  "en": "True",
+                  "tr": "Doğru",
+                  "ar": "صحيح",
+                  "uk": "Правильно"
+              },
+              {
+                  "de": "Falsch",
+                  "en": "False",
+                  "tr": "Yanlış",
+                  "ar": "خطأ",
+                  "uk": "Неправильно"
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 3 bestätigt: 'Die Chancen, nach bestandener Abschlussprüfung direkt vom Ausbildungsbetrieb in eine Festanstellung übernommen zu werden, stehen aktuell so gut wie selten zuvor.'",
+              "en": "Paragraph 3 confirms: Chances of being hired permanently right after graduation are currently better than ever.",
+              "tr": "3. paragrafta teyit ediliyor: Sınavı geçtikten sonra işletmede doğrudan kadroya geçme şansı şu an her zamankinden yüksektir.",
+              "ar": "الفقرة 3 تؤكد: فرص التثبيت في وظيفة دائمة مباشرة بعد التخرج ممتازة وغير مسبوقة.",
+              "uk": "Абзац 3 підтверджує: шанси отримати постійну роботу одразу після випуску зараз високі як ніколи."
+          }
       }
     ]
   },
@@ -1697,6 +2092,85 @@ window.READING_DATASET = [
           "ar": "الفقرة 3 توضح صراحة: يمكن تنظيف الزجاجات وإعادة تعبئتها حتى خمسين مرة.",
           "uk": "Абзац 3 прямо пояснює: скляні та багаторазові пляшки очищуються і можуть бути повторно наповнені до 50 разів."
         }
+      }      ,
+      {
+          "id": "q4",
+          "paragraphRef": "p2",
+          "type": "multiple_choice",
+          "prompt": {
+              "de": "Wie läuft der Einkauf in einem sogenannten 'Unverpackt-Laden' ab?",
+              "en": "How does shopping in a so-called 'packaging-free store' (Unverpackt-Laden) work?",
+              "tr": "'Unverpackt-Laden' (ambalajsız dükkan) olarak adlandırılan marketlerde alışveriş nasıl yapılır?",
+              "ar": "كيف يتم التسوق في متاجر المنتجات غير المغلفة (Unverpackt-Laden)؟",
+              "uk": "Як відбувається покупка в магазині без пакування (Unverpackt-Laden)?"
+          },
+          "options": [
+              {
+                  "de": "Kunden bringen eigene Behälter wie Gläser oder Dosen mit, wiegen diese leer ab und füllen die Ware selbst ab.",
+                  "en": "Customers bring their own containers such as jars or tins, weigh them empty, and fill the goods themselves.",
+                  "tr": "Müşteriler kavanoz ve kap gibi kendi kaplarını getirir, boşken tartar ve ürünleri kendileri doldurur.",
+                  "ar": "يحضر الزبائن أوعيتهم الخاصة مثل البرطمانات، ويزنونها فارغة ثم يملؤونها بالبضائع بأنفسهم.",
+                  "uk": "Покупці приносять свої банки або контейнери, зважують їх порожніми та самі насипають товар."
+              },
+              {
+                  "de": "Alle Waren sind in dicke Plastikfolie dreifach verschweißt, um Müll zu vermeiden.",
+                  "en": "All goods are triple-sealed in thick plastic film to avoid waste.",
+                  "tr": "Çöpü önlemek amacıyla tüm ürünler kalın plastik folyoyla üç kat sarılmıştır.",
+                  "ar": "تكون جميع البضائع مغلفة بثلاث طبقات من البلاستيك السميك لتجنب التلف.",
+                  "uk": "Усі товари тричі запаковані в товсту плівку."
+              },
+              {
+                  "de": "Man darf dort ausschließlich tiefgekühlte Fleischprodukte in Großpackungen erwerben.",
+                  "en": "One may only purchase frozen meat products in bulk packs there.",
+                  "tr": "Orada yalnızca dondurulmuş et ürünleri büyük paketler halinde satın alınabilir.",
+                  "ar": "يُسمح هناك فقط بشراء اللحوم المجمدة بكميات كبيرة.",
+                  "uk": "Там дозволено купувати лише заморожене м'ясо у великих упаковках."
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 2 erklärt: 'Kunden bringen eigene Gläser, Dosen oder Stoffbeutel mit, wiegen diese vor dem Befüllen ab und zahlen exakt nach Gewicht.'",
+              "en": "Paragraph 2 explains: Customers bring their own jars/containers, weigh them prior to filling, and pay by weight.",
+              "tr": "2. paragrafta açıklanıyor: Müşteriler kendi kaplarını ve bez torbalarını getirir, doldurmadan önce tartar ve gramajına göre öder.",
+              "ar": "الفقرة 2 توضح: يحضر المشترون أوعيتهم الخاصة ويزنونها قبل التعبئة ويدفعون ثمن الوزن الدقيق.",
+              "uk": "Абзац 2 пояснює: покупці приносять власну тару, зважують її перед насипанням і платять за вагою."
+          }
+      },
+      {
+          "id": "q5",
+          "paragraphRef": "p3",
+          "type": "true_false",
+          "prompt": {
+              "de": "Mehrwegflaschen aus Glas oder stabilem Kunststoff können im Pfandsystem bis zu 50-mal gereinigt und wiederbefüllt werden.",
+              "en": "Reusable bottles made of glass or sturdy plastic can be cleaned and refilled up to 50 times in the deposit system.",
+              "tr": "Depozito sisteminde cam veya dayanıklı plastikten yapılan depozitolu şişeler 50 defaya kadar temizlenip yeniden doldurulabilmektedir.",
+              "ar": "يمكن تنظيف الزجاجات متعددة الاستخدام وإعادة تعبئتها حتى 50 مرة ضمن نظام الوديعة (Pfand).",
+              "uk": "Багаторазові пляшки в системі Pfand можна мити та наповнювати повторно до 50 разів."
+          },
+          "options": [
+              {
+                  "de": "Richtig",
+                  "en": "True",
+                  "tr": "Doğru",
+                  "ar": "صحيح",
+                  "uk": "Правильно"
+              },
+              {
+                  "de": "Falsch",
+                  "en": "False",
+                  "tr": "Yanlış",
+                  "ar": "خطأ",
+                  "uk": "Неправильно"
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 3 bestätigt: 'Mehrwegflaschen aus Glas oder stabilem Kunststoff werden bis zu 50-mal gereinigt und neu befüllt, was enorme Mengen an Energie und Rohstoffen einspart.'",
+              "en": "Paragraph 3 confirms: Reusable bottles are cleaned and refilled up to 50 times, saving immense amounts of resources.",
+              "tr": "3. paragrafta teyit ediliyor: Cam veya dayanıklı plastik şişeler 50 defaya kadar temizlenip tekrar doldurulur, bu da büyük hammadde tasarrufu sağlar.",
+              "ar": "الفقرة 3 تؤكد: يُعاد غسل الزجاجات وتعبئتها حتى 50 مرة، مما يوفر طاقة وموارد هائلة.",
+              "uk": "Абзац 3 підтверджує: багаторазова тара використовується повторно до 50 разів, заощаджуючи ресурси."
+          }
       }
     ]
   },
@@ -1931,8 +2405,87 @@ window.READING_DATASET = [
         "ar": "الفقرة 3 توضح: 'بفضل الإجازة المرضية الإلكترونية (eAU)، ترسل عيادة الطبيب الإشعار تلقائياً ومباشرة إلى صندوق التأمين.'",
         "uk": "Абзац 3 пояснює: 'Завдяки електронному лікарняному (eAU) амбулаторія передає повідомлення повністю автоматично безпосередньо до каси.'"
       }
-    }
-  ]
+    }      ,
+      {
+          "id": "q4",
+          "paragraphRef": "p1",
+          "type": "multiple_choice",
+          "prompt": {
+              "de": "Welche zentrale Rolle übernimmt der Hausarzt im deutschen Gesundheitssystem?",
+              "en": "What central role does the family doctor (Hausarzt) play in the German healthcare system?",
+              "tr": "Alman sağlık sisteminde aile hekimi (Hausarzt) hangi temel görevi üstlenir?",
+              "ar": "ما هو الدور المحوري الذي يؤديه طبيب الأسرة (Hausarzt) في نظام الرعاية الصحية الألماني؟",
+              "uk": "Яку ключову роль відіграє сімейний лікар (Hausarzt) у системі охорони здоров'я Німеччини?"
+          },
+          "options": [
+              {
+                  "de": "Er ist die erste Anlaufstelle für Patienten, führt die Basisdiagnostik durch und überweist bei Bedarf an Fachärzte.",
+                  "en": "He is the first point of contact for patients, conducts baseline diagnostics, and refers to specialists if needed.",
+                  "tr": "Hastaların ilk başvuru noktasıdır, temel teşhisi koyar ve gerektiğinde uzman hekimlere sevk eder.",
+                  "ar": "يعد نقطة الاتصال الأولى للمرضى، ويجري التشخيص الأساسي ويحيل إلى الأطباء الأخصائيين عند الضرورة.",
+                  "uk": "Він є первинною ланкою для пацієнтів, проводить базову діагностику та за потреби направляє до вузьких спеціалістів."
+              },
+              {
+                  "de": "Er arbeitet ausschließlich auf der Intensivstation und führt nur schwere Operationen durch.",
+                  "en": "He works exclusively in the intensive care unit and only performs major surgeries.",
+                  "tr": "Sadece yoğun bakımda çalışır ve yalnızca ağır ameliyatları gerçekleştirir.",
+                  "ar": "يعمل حصرياً في وحدات العناية المركزة ويجري العمليات الجراحية الكبرى فقط.",
+                  "uk": "Він працює виключно у реанімації та проводить лише складні операції."
+              },
+              {
+                  "de": "Er verkauft verschreibungspflichtige Medikamente direkt in bar an der Praxistür.",
+                  "en": "He sells prescription drugs directly for cash at the practice door.",
+                  "tr": "Reçeteli ilaçları doğrudan muayenehane kapısında nakit parayla satar.",
+                  "ar": "يقوم ببيع الأدوية الموصوفة نقدياً مباشرة عند باب العيادة.",
+                  "uk": "Він продає ліки за готівку прямо біля дверей кабінету."
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 1 stellt fest: 'Er kennt die Krankengeschichte seiner Patientinnen und Patienten meist seit vielen Jahren und koordiniert die gesamte Behandlung. Bei speziellen Fragestellungen stellt er eine Überweisung zu Fachärzten... aus.'",
+              "en": "Paragraph 1 states: He knows the patient history and coordinates treatment, referring to specialists as required.",
+              "tr": "1. paragrafta belirtiliyor: Hastaların geçmişini bilir, tüm tedaviyi koordine eder ve uzman doktora sevk yazar.",
+              "ar": "الفقرة 1 توضح: ينسق طبيب الأسرة خطة العلاج بفضل معرفته بتاريخ المريض ويصدر الإحالات للأخصائيين.",
+              "uk": "Абзац 1 пояснює: сімейний лікар веде історію хвороби, координує лікування та направляє до спеціалістів."
+          }
+      },
+      {
+          "id": "q5",
+          "paragraphRef": "p3",
+          "type": "true_false",
+          "prompt": {
+              "de": "Außerhalb der regulären Praxisöffnungszeiten, wie nachts oder am Wochenende, hilft der ärztliche Bereitschaftsdienst unter 116 117.",
+              "en": "Outside regular office hours, such as at night or on weekends, the on-call medical service is available at 116 117.",
+              "tr": "Mesai saatleri dışında, örneğin gece veya hafta sonlarında, 116 117 nolu nöbetçi doktor servisi hastalara yardımcı olur.",
+              "ar": "خارج أوقات العمل الرسمية للعيادات، كالليل أو عطلة نهاية الأسبوع، يقدم مركز الخدمة الطبية المناوبة المساعدة عبر الرقم 116 117.",
+              "uk": "У неробочий час, наприклад вночі чи у вихідні, чергова медична служба допомагає за номером 116 117."
+          },
+          "options": [
+              {
+                  "de": "Richtig",
+                  "en": "True",
+                  "tr": "Doğru",
+                  "ar": "صحيح",
+                  "uk": "Правильно"
+              },
+              {
+                  "de": "Falsch",
+                  "en": "False",
+                  "tr": "Yanlış",
+                  "ar": "خطأ",
+                  "uk": "Неправильно"
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 3 bestätigt: 'Unter der kostenlosen Telefonnummer 116 117 erfährt man rund um die Uhr, welche Notfallpraxis in der Nähe geöffnet hat, wenn die reguläre Praxis geschlossen ist.'",
+              "en": "Paragraph 3 confirms: Dialing 116 117 connects to on-call services around the clock when regular clinics are closed.",
+              "tr": "3. paragrafta teyit ediliyor: Ücretsiz 116 117 numarası ile mesai dışı zamanlarda açık olan nöbetçi muayenehaneler öğrenilebilir.",
+              "ar": "الفقرة 3 تؤكد: يوفر الرقم المجاني 116 117 على مدار الساعة معلومات عن العيادات المناوبة عند إغلاق العيادات المعتادة.",
+              "uk": "Абзац 3 підтверджує: безкоштовний номер 116 117 працює цілодобово для пошуку чергового лікаря."
+          }
+      }
+    ]
 },
 {
   "id": "lese-teil1-mobilitaet",
@@ -2165,8 +2718,87 @@ window.READING_DATASET = [
         "ar": "الفقرة 3 توضح: يشكو الركاب من القطارات المزدحمة والتأخير، ويطالب الخبراء باستثمارات ضخمة في السكك والقطارات والموظفين.",
         "uk": "Абзац 3 підтверджує: пасажири нарікають на переповнені поїзди та затримки, а експерти вимагають інвестицій у залізницю, потяги та персонал."
       }
-    }
-  ]
+    }      ,
+      {
+          "id": "q4",
+          "paragraphRef": "p1",
+          "type": "multiple_choice",
+          "prompt": {
+              "de": "Für welche Verkehrsmittel ist das Deutschlandticket bundesweit gültig?",
+              "en": "For which means of transport is the Deutschlandticket valid nationwide?",
+              "tr": "Almanya Bileti (Deutschlandticket) ülke genelinde hangi toplu taşıma araçlarında geçerlidir?",
+              "ar": "ما هي وسائل النقل التي يسري عليها تذكرة ألمانيا (Deutschlandticket) على مستوى البلاد؟",
+              "uk": "На які види транспорту діє Deutschlandticket по всій Німеччині?"
+          },
+          "options": [
+              {
+                  "de": "Für alle Verkehrsmittel des Nah- und Regionalverkehrs wie Busse, Straßenbahnen, U-Bahnen und Regionalzüge (RB/RE).",
+                  "en": "For all local and regional public transport such as buses, trams, subways, and regional trains (RB/RE).",
+                  "tr": "Otobüs, tramvay, metro ve bölgesel trenler (RB/RE) gibi tüm yerel ve bölgesel toplu taşıma araçlarında.",
+                  "ar": "لجميع وسائل النقل العام والمحلي مثل الحافلات والترام ومترو الأنفاق والقطارات الإقليمية (RB/RE).",
+                  "uk": "Для всього міського та приміського транспорту: автобусів, трамваїв, метро та регіональних поїздів (RB/RE)."
+              },
+              {
+                  "de": "Nur für Luxus-Taxis und private Limousinen in deutschen Großstädten.",
+                  "en": "Only for luxury taxis and private limousines in major German cities.",
+                  "tr": "Sadece büyük Alman şehirlerindeki lüks taksilerde ve özel limuzinlerde.",
+                  "ar": "لسيارات الأجرة الفاخرة وسيارات الليموزين الخاصة في المدن الكبرى فقط.",
+                  "uk": "Лише для таксі та приватних лімузинів у великих містах."
+              },
+              {
+                  "de": "Ausschließlich für innerdeutsche Inlandsflüge und ICE-Schnellzüge.",
+                  "en": "Exclusively for domestic flights within Germany and ICE high-speed trains.",
+                  "tr": "Yalnızca Almanya içi uçak seferlerinde ve hızlı ICE trenlerinde.",
+                  "ar": "للرحلات الجوية الداخلية وقطارات السرعة العالية (ICE) فقط.",
+                  "uk": "Виключно для внутрішніх авіаперельотів та швидкісних поїздів ICE."
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 1 stellt klar: 'Für einen festen monatlichen Betrag können Bürgerinnen und Bürger bundesweit alle Verkehrsmittel des Nah- und Regionalverkehrs nutzen – von Bussen und Straßenbahnen über U-Bahnen bis hin zu Regional-Express-Zügen.'",
+              "en": "Paragraph 1 clarifies: Valid nationwide on all local and regional transport (buses, trams, subways, RE trains).",
+              "tr": "1. paragrafta açıkça belirtiliyor: Otobüs, tramvay, metro ve Regional-Express trenleri dahil tüm yerel ve bölgesel ulaşımda geçerlidir.",
+              "ar": "الفقرة 1 توضح: تتيح التذكرة استخدام كافة حافلات وقطارات النقل المحلي والإقليمي في عموم ألمانيا.",
+              "uk": "Абзац 1 пояснює: квиток діє на всі види приміського транспорту, включно з автобусами, трамваями та потягами RE."
+          }
+      },
+      {
+          "id": "q5",
+          "paragraphRef": "p3",
+          "type": "true_false",
+          "prompt": {
+              "de": "Durch die stark gestiegenen Fahrgastzahlen stoßen viele Bahnstrecken an Kapazitätsgrenzen, sodass Verspätungen und überfüllte Züge vorkommen.",
+              "en": "Due to sharply increased passenger numbers, many railway lines are reaching capacity limits, resulting in delays and crowded trains.",
+              "tr": "Yolcu sayısının aşırı artması nedeniyle birçok demiryolu hattı kapasite sınırına dayanmış, gecikmeler ve kalabalık trenler görülmeye başlanmıştır.",
+              "ar": "بسبب الزيادة الكبيرة في أعداد الركاب، وصلت العديد من خطوط السكك الحديدية إلى أقصى طاقتها الاستيعابية مما أدى إلى تأخيرات وازدحام.",
+              "uk": "Через різке зростання пасажиропотоку багато залізничних маршрутів працюють на межі можливостей, що спричиняє запізнення та переповнені вагони."
+          },
+          "options": [
+              {
+                  "de": "Richtig",
+                  "en": "True",
+                  "tr": "Doğru",
+                  "ar": "صحيح",
+                  "uk": "Правильно"
+              },
+              {
+                  "de": "Falsch",
+                  "en": "False",
+                  "tr": "Yanlış",
+                  "ar": "خطأ",
+                  "uk": "Неправильно"
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 3 bestätigt: 'Durch den deutlichen Anstieg der Fahrgastzahlen stoßen viele Bahnstrecken an ihre Kapazitätsgrenzen. Überfüllte Waggons und Verspätungen sind... keine Seltenheit.'",
+              "en": "Paragraph 3 confirms: Surge in passengers pushes tracks to capacity limits, making delays and crowded cars common.",
+              "tr": "3. paragrafta teyit ediliyor: Yolcu sayısındaki artış hatları zorlamakta; kalabalık vagonlar ve rötarlar sıkça yaşanmaktadır.",
+              "ar": "الفقرة 3 تؤكد: ارتفاع أعداد الركاب دفع الخطوط إلى حدود طاقتها القصوى، والازدحام والتأخير ليسا أمراً نادراً.",
+              "uk": "Абзац 3 підтверджує: переповнені вагони та запізнення є наслідком суттєвого зростання кількості пасажирів."
+          }
+      }
+    ]
 },
 {
   "id": "lese-teil3-integration",
@@ -2399,8 +3031,87 @@ window.READING_DATASET = [
         "ar": "الفقرة 3 توضح: من يطبق العبارات المكتسبة مباشرة في المحادثات اليومية يفقد الخوف من الخطأ ويكتسب الثقة بالنفس.",
         "uk": "Абзац 3 підтверджує: хто одразу вживає нові фрази в житті, швидко втрачає страх помилок і здобуває впевненість."
       }
-    }
-  ]
+    }      ,
+      {
+          "id": "q4",
+          "paragraphRef": "p1",
+          "type": "multiple_choice",
+          "prompt": {
+              "de": "Welche Themen werden im 100-stündigen Orientierungskurs des Integrationskurses vermittelt?",
+              "en": "Which topics are taught in the 100-hour orientation course portion of the integration course?",
+              "tr": "Uyum kursunun 100 saatlik oryantasyon bölümünde hangi konular işlenir?",
+              "ar": "ما هي الموضوعات التي يتم تدريسها في دورة التوجيه (Orientierungskurs) الممتدة لمائة ساعة؟",
+              "uk": "Які теми розглядаються в 100-годинному орієнтаційному курсі?"
+          },
+          "options": [
+              {
+                  "de": "Grundlegendes Wissen über die deutsche Rechtsordnung, Geschichte, Kultur und demokratische Werte.",
+                  "en": "Foundational knowledge about the German legal system, history, culture, and democratic values.",
+                  "tr": "Alman hukuk sistemi, tarihi, kültürü ve demokratik değerleri üzerine temel bilgiler.",
+                  "ar": "المعرفة الأساسية بالنظام القانوني الألماني والتاريخ والثقافة والقيم الديمقراطية.",
+                  "uk": "Базові знання про німецьке законодавство, історію, культуру та демократичні цінності."
+              },
+              {
+                  "de": "Eine vollständige Ausbildung im Programmieren von Smartphone-Apps.",
+                  "en": "Complete vocational training in programming mobile smartphone apps.",
+                  "tr": "Akıllı telefon uygulamaları geliştirmek için tam kapsamlı yazılım eğitimi.",
+                  "ar": "تدريب تقني متكامل على برمجة تطبيقات الهواتف الذكية.",
+                  "uk": "Повний курс програмування додатків для смартфонів."
+              },
+              {
+                  "de": "Ausschließlich theoretischer Unterricht für den deutschen Pkw-Führerschein.",
+                  "en": "Exclusively theoretical classes for obtaining a German passenger car driver's license.",
+                  "tr": "Yalnızca Alman ehliyeti almak için gereken teorik trafik kuralları dersi.",
+                  "ar": "دروس نظرية فقط للحصول على رخصة قيادة السيارات الألمانية.",
+                  "uk": "Виключно теорія правил дорожнього руху для отримання водійських прав."
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 1 erklärt: 'Der Kurs besteht aus zwei Teilen... Daran schließt sich ein 100-stündiger Orientierungskurs an, der grundlegendes Wissen über die deutsche Rechtsordnung, Geschichte und Kultur vermittelt.'",
+              "en": "Paragraph 1 explains: The 100-hour orientation course conveys knowledge about German law, history, and culture.",
+              "tr": "1. paragrafta belirtiliyor: 100 saatlik oryantasyon kursu Alman hukuk düzeni, tarihi ve kültürü hakkında temel bilgiler verir.",
+              "ar": "الفقرة 1 توضح: يركز مساق التوجيه على إعطاء معلومات أساسية عن القوانين والتاريخ والثقافة في ألمانيا.",
+              "uk": "Абзац 1 пояснює: курс дає фундаментальні знання про правовий устрій, історію та культуру Німеччини."
+          }
+      },
+      {
+          "id": "q5",
+          "paragraphRef": "p3",
+          "type": "true_false",
+          "prompt": {
+              "de": "Lehrkräfte betonen, dass man vor kleinen grammatikalischen Fehlern keine Angst haben und jede Gelegenheit zum Sprechen nutzen sollte.",
+              "en": "Teachers emphasize that one should not be afraid of minor grammatical mistakes and should seize every opportunity to speak.",
+              "tr": "Öğretmenler, küçük gramer hatalarından korkulmaması ve konuşmak için her fırsatın aktif olarak değerlendirilmesi gerektiğini vurgulamaktadır.",
+              "ar": "يؤكد المعلمون على ضرورة عدم الخوف من الأخطاء النحوية البسيطة واغتنام كل فرصة للتحدث باللغة.",
+              "uk": "Викладачі наголошують, що не слід боятися дрібних помилок, а варто використовувати будь-яку нагоду говорити."
+          },
+          "options": [
+              {
+                  "de": "Richtig",
+                  "en": "True",
+                  "tr": "Doğru",
+                  "ar": "صحيح",
+                  "uk": "Правильно"
+              },
+              {
+                  "de": "Falsch",
+                  "en": "False",
+                  "tr": "Yanlış",
+                  "ar": "خطأ",
+                  "uk": "Неправильно"
+              }
+          ],
+          "correct": 0,
+          "explanation": {
+              "de": "Absatz 3 bestätigt: 'Entscheidend sei, keine Angst vor grammatikalischen Fehlern zu haben, sondern jede Gelegenheit zum freien Sprechen aktiv zu nutzen.'",
+              "en": "Paragraph 3 confirms: Crucial is not having fear of grammar mistakes, but using every opportunity to speak freely.",
+              "tr": "3. paragrafta teyit ediliyor: En kritik nokta hata yapmaktan çekinmemek ve her fırsatta konuşmaya çalışmaktır.",
+              "ar": "الفقرة 3 تؤكد: الأهم هو كسر حاجز الخوف من ارتكاب الأخطاء اللغوية والتحدث بطلاقة في كل مناسبة.",
+              "uk": "Абзац 3 підтверджує: головне — не боятися граматичних помилок і активно спілкуватися за кожної можливості."
+          }
+      }
+    ]
 },
 {
   "id": "lese-teil4-datenschutz",
@@ -2632,6 +3343,85 @@ window.READING_DATASET = [
         "tr": "3. paragrafta uyarılıyor: Ciddi bankalar asla e-posta yoluyla PIN istemez. Şüpheli iletilerdeki linklere asla tıklanmamalı, sitenin adresi tarayıcıya bizzat yazılmalıdır.",
         "ar": "الفقرة 3 تحذر: لا تطلب البنوك الموثوقة أبداً أرقام PIN عبر البريد؛ ينبغي عدم النقر على الروابط وفتح الموقع الرسمي يدوياً.",
         "uk": "Абзац 3 застерігає: надійні банки ніколи не вимагають введення PIN-кодів електронною поштою; підозрілі посилання відкривати заборонено."
+      }
+    },
+    {
+      "id": "q4",
+      "paragraphRef": "p2",
+      "type": "multiple_choice",
+      "prompt": {
+        "de": "Welche zusätzliche Schutzmaßnahme für Online-Konten empfehlen IT-Sicherheitsexperten neben sicheren Passwörtern?",
+        "en": "What additional security measure for online accounts do IT experts recommend besides secure passwords?",
+        "tr": "Bilişim güvenliği uzmanları güçlü şifrelerin yanı sıra internet hesapları için hangi ilave güvenlik önlemini tavsiye etmektedir?",
+        "ar": "ما هو الإجراء الأمني الإضافي الذي يوصي به خبراء أمن المعلومات إلى جانب كلمات المرور القوية؟",
+        "uk": "Який додатковий захід безпеки онлайн-акаунтів рекомендують експерти з кібербезпеки, крім надійних паролів?"
+      },
+      "options": [
+        {
+          "de": "Die Aktivierung der Zwei-Faktor-Authentifizierung (2FA) und den Einsatz eines zuverlässigen Passwortmanagers.",
+          "en": "Activating two-factor authentication (2FA) and using a reliable password manager.",
+          "tr": "İki faktörlü kimlik doğrulamanın (2FA) açılmasını ve güvenilir bir şifre yöneticisi kullanılmasını.",
+          "ar": "تفعيل ميزة المصادقة الثنائية (2FA) واستخدام برنامج موثوق لإدارة كلمات المرور.",
+          "uk": "Активацію двофакторної автентифікації (2FA) та використання надійного менеджера паролів."
+        },
+        {
+          "de": "Das Aufschreiben aller Passwörter auf einen Zettel, der gut sichtbar an den Monitor geklebt wird.",
+          "en": "Writing down all passwords on a sticky note pasted visibly onto the monitor.",
+          "tr": "Bütün şifreleri bir kağıda yazıp monitörün üzerine herkesin görebileceği şekilde yapıştırmayı.",
+          "ar": "كتابة جميع كلمات المرور على ورقة ولصقها بشكل واضح على شاشة الحاسوب.",
+          "uk": "Записування всіх паролів на стікері, прикріпленому до монітора."
+        },
+        {
+          "de": "Dasselbe einfache Geburtsdatum als universelles Passwort für alle Konten zu verwenden.",
+          "en": "Using the same simple birthdate as a universal password across all accounts.",
+          "tr": "Bütün hesaplarda evrensel şifre olarak aynı basit doğum tarihini kullanmayı.",
+          "ar": "استخدام تاريخ ميلاد بسيط ككلمة مرور موحدة لجميع الحسابات.",
+          "uk": "Використання однакової дати народження для всіх облікових записів."
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "de": "Absatz 2 hebt hervor: 'Zur Verwaltung komplexer Zugangsdaten empfehlen Fachleute Passwortmanager sowie die Aktivierung der Zwei-Faktor-Authentifizierung (2FA)...'",
+        "en": "Paragraph 2 highlights: Experts recommend password managers and two-factor authentication (2FA).",
+        "tr": "2. paragrafta vurgulanıyor: Uzmanlar karmaşık şifreleri yönetmek için şifre yöneticilerini ve iki faktörlü doğrulamayı (2FA) tavsiye etmektedir.",
+        "ar": "الفقرة 2 توضح: يوصي المختصون باستخدام برامج حفظ كلمات المرور وتفعيل خاصية المصادقة الثنائية (2FA).",
+        "uk": "Абзац 2 наголошує: експерти радять менеджери паролів та обов'язкову двофакторну автентифікацію (2FA)."
+      }
+    },
+    {
+      "id": "q5",
+      "paragraphRef": "p3",
+      "type": "true_false",
+      "prompt": {
+        "de": "Seriöse Geldinstitute und Behörden fordern ihre Kunden niemals per E-Mail oder SMS auf, vertrauliche PIN-Nummern über einen Link einzugeben.",
+        "en": "Reputable financial institutions and authorities never ask customers via email or SMS to enter confidential PIN numbers through a link.",
+        "tr": "Güvenilir bankalar ve resmi kurumlar müşterilerinden asla e-posta veya SMS içindeki bir link üzerinden gizli PIN şifrelerini girmelerini istemez.",
+        "ar": "لا تطلب المؤسسات المالية الموثوقة أو الجهات الحكومية إطلاقاً من العملاء إدخال أرقام PIN السرية عبر روابط في البريد أو الرسائل.",
+        "uk": "Надійні фінансові установи та органи влади ніколи не просять клієнтів вводити конфіденційні PIN-коди за посиланнями в листах чи SMS."
+      },
+      "options": [
+        {
+          "de": "Richtig",
+          "en": "True",
+          "tr": "Doğru",
+          "ar": "صحيح",
+          "uk": "Правильно"
+        },
+        {
+          "de": "Falsch",
+          "en": "False",
+          "tr": "Yanlış",
+          "ar": "خطأ",
+          "uk": "Неправильно"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "de": "Absatz 3 bestätigt: 'Weder seriöse Geldinstitute noch Behörden fordern Kunden per E-Mail oder SMS dazu auf, vertrauliche Zugangsdaten oder PINs über einen Link einzugeben.'",
+        "en": "Paragraph 3 confirms: Neither reputable banks nor authorities ask customers to enter credentials or PINs via a link.",
+        "tr": "3. paragrafta teyit ediliyor: Ne güvenilir finans kuruluşları ne de resmi daireler müşterilerden link üzerinden şifre/PIN girmelerini talep eder.",
+        "ar": "الفقرة 3 تؤكد: لا تطلب البنوك المحترمة ولا الدوائر الحكومية أبداً البيانات الحساسة أو أرقام PIN عبر الروابط الإلكترونية.",
+        "uk": "Абзац 3 підтверджує: надійні установи ніколи не надсилають запитів на введення PIN-кодів через посилання."
       }
     }
   ]

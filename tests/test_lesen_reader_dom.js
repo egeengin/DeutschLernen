@@ -71,7 +71,7 @@ dataset.forEach(unit => {
   });
   assert(unit.contentParagraphs.length >= 2, `Unit ${unit.id} must have paragraphs`);
   assert(unit.glossary.length >= 4, `Unit ${unit.id} must have glossary`);
-  assert(unit.questions.length >= 3, `Unit ${unit.id} must have questions`);
+  assert.strictEqual(unit.questions.length, 5, `Unit ${unit.id} must have exactly 5 questions`);
 });
 console.log('✅ Dataset multilingual parity verified across all units.');
 
