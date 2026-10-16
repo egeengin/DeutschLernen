@@ -32,7 +32,34 @@ class TestReadingStudio(unittest.TestCase):
         self.assertTrue(os.path.exists(script_path), "test_lesen_reader_dom.js must exist.")
         result = subprocess.run(["node", script_path], capture_output=True, text=True, cwd=ROOT_DIR)
         self.assertEqual(result.returncode, 0, f"Lesen DOM tests failed:\n{result.stderr}\n{result.stdout}")
-        self.assertIn("All 6 Lesen Studio headless JS unit tests passed successfully", result.stdout)
+        self.assertIn("headless JS unit tests passed successfully", result.stdout)
+
+    def test_sprachbausteine_js_passes(self):
+        """Execute node tests/test_sprachbausteine.js and verify exit code 0."""
+        import subprocess
+        script_path = os.path.join(ROOT_DIR, "tests", "test_sprachbausteine.js")
+        self.assertTrue(os.path.exists(script_path), "test_sprachbausteine.js must exist.")
+        result = subprocess.run(["node", script_path], capture_output=True, text=True, cwd=ROOT_DIR)
+        self.assertEqual(result.returncode, 0, f"Sprachbausteine tests failed:\n{result.stderr}\n{result.stdout}")
+        self.assertIn("All Sprachbausteine tests passed successfully", result.stdout)
+
+    def test_hoeren_dom_js_passes(self):
+        """Execute node tests/test_hoeren_dom.js and verify exit code 0."""
+        import subprocess
+        script_path = os.path.join(ROOT_DIR, "tests", "test_hoeren_dom.js")
+        self.assertTrue(os.path.exists(script_path), "test_hoeren_dom.js must exist.")
+        result = subprocess.run(["node", script_path], capture_output=True, text=True, encoding="utf-8", cwd=ROOT_DIR)
+        self.assertEqual(result.returncode, 0, f"Hören tests failed:\n{result.stderr}\n{result.stdout}")
+        self.assertIn("unit tests passed successfully", result.stdout)
+
+    def test_round3_syntax_and_predictor_passes(self):
+        """Execute node tests/test_round3_syntax_and_predictor.js and verify exit code 0."""
+        import subprocess
+        script_path = os.path.join(ROOT_DIR, "tests", "test_round3_syntax_and_predictor.js")
+        self.assertTrue(os.path.exists(script_path), "test_round3_syntax_and_predictor.js must exist.")
+        result = subprocess.run(["node", script_path], capture_output=True, text=True, encoding="utf-8", cwd=ROOT_DIR)
+        self.assertEqual(result.returncode, 0, f"Round 3 tests failed:\n{result.stderr}\n{result.stdout}")
+        self.assertIn("tests passed successfully", result.stdout)
 
     def test_reading_css_integrity(self):
         """Verify css/lesen.css contains essential styling, dark/light theme, and RTL support."""

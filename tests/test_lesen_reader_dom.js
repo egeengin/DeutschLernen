@@ -13,6 +13,7 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 // Load all vocabulary and app datasets into sandbox
 const readingDataCode = fs.readFileSync(path.join(ROOT_DIR, 'data', 'readingData.js'), 'utf8');
 const readingLexiconCode = fs.readFileSync(path.join(ROOT_DIR, 'data', 'readingLexicon.js'), 'utf8');
+const sprachbausteineCode = fs.readFileSync(path.join(ROOT_DIR, 'data', 'sprachbausteineData.js'), 'utf8');
 const vocabDataCode = fs.readFileSync(path.join(ROOT_DIR, 'data', 'vocab2000.js'), 'utf8');
 const vocabB2Code = fs.readFileSync(path.join(ROOT_DIR, 'data', 'vocab_b2.js'), 'utf8');
 const vocabC1Code = fs.readFileSync(path.join(ROOT_DIR, 'data', 'vocab_c1.js'), 'utf8');
@@ -53,6 +54,7 @@ runInSandbox(vocabB2Code, sandbox);
 runInSandbox(vocabC1Code, sandbox);
 runInSandbox(readingLexiconCode, sandbox);
 runInSandbox(readingDataCode, sandbox);
+runInSandbox(sprachbausteineCode, sandbox);
 runInSandbox(appCode, sandbox);
 
 const dataset = sandbox.window.READING_DATASET;
@@ -278,4 +280,25 @@ assert(appCode.includes('const germanPrompt = q.prompt.de;'), 'Question prompt m
 assert(!appCode.includes('const optText = opt[this.lang] || opt.de;'), 'Banned: translating exam options to UI language');
 console.log('✅ Exam questions and options German target language integrity verified.');
 
-console.log('🎉 All 6 Lesen Studio headless JS unit tests passed successfully!');
+// 7. Test Sprachbausteine Track Switching & Interactive Logic
+assert(sandbox.window.SPRACHBAUSTEINE_DATASET, 'SPRACHBAUSTEINE_DATASET must be defined');
+assert(sandbox.window.SPRACHBAUSTEINE_DATASET.length >= 2, 'Must have at least 2 Sprachbausteine sets');
+app.switchTrack('sprachbausteine');
+assert.strictEqual(app.activeTrack, 'sprachbausteine', 'Active track must switch to sprachbausteine');
+assert.strictEqual(app.timerSeconds, 20 * 60, 'Sprachbausteine timer must be 20 minutes (telc B1 standard)');
+
+app.loadSbSet(0, 'teil1');
+assert.strictEqual(app.currentSbSetIndex, 0);
+assert.strictEqual(app.currentSbSubpart, 'teil1');
+
+// Test gap selection
+app.selectSbAnswer(21, 'b');
+assert.strictEqual(app.sbAnswers[21], 'b', 'Selected answer must be recorded');
+
+// Test switching back to reading
+app.switchTrack('lesen');
+assert.strictEqual(app.activeTrack, 'lesen', 'Active track must switch back to lesen');
+assert.strictEqual(app.timerSeconds, 12 * 60, 'Lesen timer must return to 12 minutes');
+console.log('✅ Sprachbausteine track switching, gap selection, and timer transitions verified.');
+
+console.log('🎉 All 7 Lesen Studio & Sprachbausteine headless JS unit tests passed successfully!');

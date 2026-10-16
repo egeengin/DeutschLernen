@@ -973,3 +973,229 @@ body[data-lang="ar"] .ls-explanation-box {
   border-left: none;
   border-right: 3px solid var(--ls-accent-primary);
 }
+
+/* ==========================================================================
+   SPRACHBAUSTEINE & TRACK SWITCHER STYLES
+   ========================================================================== */
+.ls-track-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: var(--ls-bg-card);
+  border: 1px solid var(--ls-border-card);
+  border-radius: var(--ls-radius-md);
+  padding: 8px 12px;
+  margin-bottom: 16px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.ls-track-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ls-track-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--ls-bg-input);
+  border: 1px solid var(--ls-border-card);
+  border-radius: var(--ls-radius-full);
+  color: var(--ls-text-muted);
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--ls-transition);
+}
+
+.ls-track-pill:hover {
+  color: var(--ls-text-main);
+  border-color: var(--ls-border-accent);
+}
+
+.ls-track-pill.active {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border-color: #3b82f6;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+}
+
+.ls-track-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ls-text-gold);
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.25);
+  padding: 5px 12px;
+  border-radius: var(--ls-radius-full);
+}
+
+/* Inline Gap Pill in Text Template */
+.sb-gap-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  height: 28px;
+  padding: 2px 10px;
+  margin: 0 4px;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1.5px dashed var(--ls-accent-primary);
+  border-radius: var(--ls-radius-sm);
+  color: var(--ls-accent-primary);
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: var(--ls-transition);
+}
+
+.sb-gap-pill:hover, .sb-gap-pill.focused {
+  background: rgba(59, 130, 246, 0.25);
+  border-style: solid;
+  transform: translateY(-1px);
+}
+
+.sb-gap-pill.filled {
+  border-style: solid;
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+}
+
+.sb-gap-pill.correct {
+  border-color: var(--ls-accent-success);
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+}
+
+.sb-gap-pill.incorrect {
+  border-color: var(--ls-accent-danger);
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+}
+
+/* Word Bank Chips (Teil 2) */
+.sb-wordbank-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding: 14px;
+  background: var(--ls-bg-input);
+  border: 1px solid var(--ls-border-card);
+  border-radius: var(--ls-radius-md);
+}
+
+.sb-word-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--ls-bg-card);
+  border: 1px solid var(--ls-border-card);
+  border-radius: var(--ls-radius-sm);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ls-text-main);
+  cursor: pointer;
+  transition: var(--ls-transition);
+}
+
+.sb-word-chip:hover {
+  border-color: var(--ls-accent-primary);
+  background: rgba(59, 130, 246, 0.15);
+}
+
+.sb-word-chip.used {
+  opacity: 0.45;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.sb-word-chip .chip-key {
+  color: var(--ls-accent-primary);
+  font-size: 11px;
+}
+
+/* Question / Item Card in Sidebar */
+.sb-item-card {
+  background: var(--ls-bg-input);
+  border: 1px solid var(--ls-border-card);
+  border-radius: var(--ls-radius-md);
+  padding: 14px;
+  margin-bottom: 12px;
+  transition: var(--ls-transition);
+}
+
+.sb-item-card.active-focus {
+  border-color: var(--ls-accent-primary);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.25);
+}
+
+.sb-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: var(--ls-text-muted);
+}
+
+.sb-options-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.sb-opt-pill {
+  padding: 8px 10px;
+  background: var(--ls-bg-card);
+  border: 1px solid var(--ls-border-card);
+  border-radius: var(--ls-radius-sm);
+  color: var(--ls-text-main);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  transition: var(--ls-transition);
+}
+
+.sb-opt-pill:hover {
+  border-color: var(--ls-border-accent);
+}
+
+.sb-opt-pill.selected {
+  background: var(--ls-accent-primary);
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.sb-opt-pill.opt-correct {
+  background: rgba(16, 185, 129, 0.25);
+  border-color: var(--ls-accent-success);
+  color: #34d399;
+}
+
+.sb-opt-pill.opt-wrong {
+  background: rgba(239, 68, 68, 0.25);
+  border-color: var(--ls-accent-danger);
+  color: #f87171;
+}
+
+.sb-rule-box {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: rgba(251, 191, 36, 0.08);
+  border-left: 3px solid var(--ls-accent-warning);
+  border-radius: 4px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ls-text-main);
+}
+

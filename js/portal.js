@@ -1294,6 +1294,9 @@ function setLang(lang) {
   if (typeof renderFehlerheftDashboard === 'function') {
     renderFehlerheftDashboard('fehlerheft-container');
   }
+  if (typeof TelcCalculator !== 'undefined' && typeof TelcCalculator.renderTelcCalculator === 'function') {
+    TelcCalculator.renderTelcCalculator('telc-calculator-container');
+  }
 
   // Update showcase toggle button label if present
   const drawer = document.getElementById('schreiben-showcase-drawer');
@@ -1945,6 +1948,9 @@ if (typeof renderLiDChecklist === 'function') {
 
 if (typeof renderFehlerheftDashboard === 'function') {
   renderFehlerheftDashboard('fehlerheft-container');
+}
+if (typeof TelcCalculator !== 'undefined' && typeof TelcCalculator.renderTelcCalculator === 'function') {
+  TelcCalculator.renderTelcCalculator('telc-calculator-container');
 }
 
 function toggleSchreibenShowcase(forceOpen = null) {

@@ -170,6 +170,15 @@
         <div class="sidebar-pillar-sub" data-en="Readlang & Exam Reader" data-tr="İnteraktif Sınav Okuması" data-ar="قارئ تفاعلي للامتحان" data-uk="Інтерактивне читання">Readlang & Exam Reader</div>
       </div>
     </a>
+
+    <!-- Pillar 5: Interaktives Hören Studio -->
+    <a href="hoeren.html" class="sidebar-pillar-link pillar-hoeren" style="text-decoration:none;">
+      <span class="sidebar-pillar-icon">🎧</span>
+      <div>
+        <div class="sidebar-pillar-title" data-en="Listening Studio" data-tr="Dinleme Stüdyosu" data-ar="استوديو الاستماع" data-uk="Студія аудіювання">Listening Studio</div>
+        <div class="sidebar-pillar-sub" data-en="75 Pts • Audio Simulator" data-tr="75 Puan • Ses Simülatörü" data-ar="75 نقطة • محاكي صوتي" data-uk="75 балів • Аудіо-симулятор">75 Pts • Audio Simulator</div>
+      </div>
+    </a>
   </div>
 
   <div class="sidebar-nav-header" id="sidebar-nav-header" data-en="STUDY MODULES" data-tr="ÇALIŞMA MODÜLLERİ" data-ar="الوحدات الدراسية" data-uk="НАВЧАЛЬНІ МОДУЛІ">STUDY MODULES</div>
@@ -471,6 +480,7 @@
         <a href="#flashcards" class="jump-pill" data-en="🗂️ Flashcards" data-tr="🗂️ Kartlar" data-ar="🗂️ بطاقات" data-uk="🗂️ Картки">🗂️ Flashcards</a>
         <a href="#fehlerheft-section" class="jump-pill" data-en="📓 Fehlerheft" data-tr="📓 Hata Defteri" data-ar="📓 دفتر الأخطاء" data-uk="📓 Зошит помилок">📓 Fehlerheft</a>
         <a href="#schreiben-showcase-section" class="jump-pill" data-en="✍️ Examiner Suite" data-tr="✍️ Değerlendirme" data-ar="✍️ باقة التقييم" data-uk="✍️ Комплекс оцінювання">✍️ Examiner Suite</a>
+        <a href="#telc-b1-calculator-section" class="jump-pill" data-en="🎯 Pass Predictor" data-tr="🎯 Not Hesaplayıcı" data-ar="🎯 حاسبة الاجتياز" data-uk="🎯 Калькулятор балів">🎯 Pass Predictor</a>
         <a href="#pricing-section" class="jump-pill" data-en="👑 Pricing & Passes" data-tr="👑 Fiyatlar & Paketler" data-ar="👑 الأسعار والباقات" data-uk="👑 Тарифи та абонементи">👑 Pricing & Passes</a>
         <a href="#student-testimonials-section" class="jump-pill" data-en="⭐ Reviews" data-tr="⭐ Yorumlar" data-ar="⭐ التقييمات" data-uk="⭐ Відгуки">⭐ Reviews</a>
         <a href="#faq-section" class="jump-pill" data-en="❓ FAQ" data-tr="❓ SSS" data-ar="❓ أسئلة شائعة" data-uk="❓ Часті питання">❓ FAQ</a>
@@ -611,6 +621,12 @@
       <div id="schreiben-showcase-drawer" class="showcase-drawer-collapsed" style="display: none;">
         <div id="schreiben-showcase-container"></div>
       </div>
+    </div>
+
+    <!-- Personalized telc B1 Pass Predictor & Composite Score Calculator -->
+    <div class="section" id="telc-b1-calculator-section" style="animation-delay:0.38s; margin-bottom: 40px;">
+      <div class="section-label" data-en="🎯 Exam Pass Predictor" data-tr="🎯 Sınav Not Hesaplayıcı" data-ar="🎯 حاسبة اجتياز الامتحان" data-uk="🎯 Калькулятор складання іспиту">🎯 Exam Pass Predictor</div>
+      <div id="telc-calculator-container"></div>
     </div>
   </div><!-- End #track-view-b1 -->
 
@@ -1159,6 +1175,7 @@
 <script src="js/fehlerheft.js"></script>
 <script src="js/sampleEvaluationData.js"></script>
 <script src="js/schreibenShowcase.js"></script>
+<script src="js/telcCalculator.js"></script>
 <script src="js/portal.js?v=2.5"></script>
 </body>
 </html>

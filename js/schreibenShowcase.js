@@ -104,7 +104,13 @@ const SHOWCASE_I18N = {
     comparisonTitle: "⚖️ Option A vs. Option B Calibration & Comparison",
     ruleEngineLabel: "Option A (Rule Engine)",
     deepAiLabel: "Option B (Deep LLM)",
-    scoreDeltaLabel: "Score Agreement:"
+    scoreDeltaLabel: "Score Agreement:",
+    liveSyntaxGuardTitle: "⚡ Real-Time telc B1 Syntax & Style Guard",
+    liveSyntaxGuardClean: "✨ Perfect! No V2 inversion or Nebensatz verb-order violations detected.",
+    liveSyntaxGuardAlert: "⚠️ Syntax Attention Needed:",
+    liveV2RuleHint: "V2 Word Order: Verb must be in Position 2 after adverbs/temporal clauses.",
+    liveNebensatzRuleHint: "Nebensatz: Conjugated verb must go to the end after weil/dass/obwohl/wenn.",
+    liveRegisterMismatchHint: "Register: Ensure your salutation and closing match (both formal or both informal)."
   },
   tr: {
     tabSample: "✨ Örnek Değerlendirme Raporu",
@@ -203,7 +209,13 @@ const SHOWCASE_I18N = {
     comparisonTitle: "⚖️ Seçenek A ve Seçenek B Kalibrasyon & Karşılaştırma",
     ruleEngineLabel: "Seçenek A (Kural Motoru)",
     deepAiLabel: "Seçenek B (Derin LLM)",
-    scoreDeltaLabel: "Puan Uyumu:"
+    scoreDeltaLabel: "Puan Uyumu:",
+    liveSyntaxGuardTitle: "⚡ Gerçek Zamanlı telc B1 Sözdizimi ve Yazım Kılavuzu",
+    liveSyntaxGuardClean: "✨ Harika! V2 inversiyon veya yan cümle fiil düzeni hatası tespit edilmedi.",
+    liveSyntaxGuardAlert: "⚠️ Dikkat Edilmesi Gereken Sözdizimi Noktaları:",
+    liveV2RuleHint: "V2 Cümle Düzeni: Zarf veya zaman bildiren ifadelerden sonra fiil 2. pozisyonda olmalıdır.",
+    liveNebensatzRuleHint: "Yan Cümle Düzeni: weil/dass/obwohl/wenn bağlaçlarından sonra çekimli fiil cümlenin en sonuna gider.",
+    liveRegisterMismatchHint: "Üslup Uyumu: Hitap ve kapanışınızın birbiriyle uyumlu olduğundan emin olun (ikisi de resmi veya ikisi de samimi)."
   },
   ar: {
     tabSample: "✨ تقرير التقييم النموذجي",
@@ -302,7 +314,13 @@ const SHOWCASE_I18N = {
     comparisonTitle: "⚖️ مقارنة ومعايرة النتائج بين الخيار A والخيار B",
     ruleEngineLabel: "الخيار A (محرك القواعد)",
     deepAiLabel: "الخيار B (نموذج LLM المعمق)",
-    scoreDeltaLabel: "نسبة توافق الدرجات:"
+    scoreDeltaLabel: "نسبة توافق الدرجات:",
+    liveSyntaxGuardTitle: "⚡ حارس القواعد والتراكيب الفوري لمستوى telc B1",
+    liveSyntaxGuardClean: "✨ ممتاز! لم يتم العثور على أخطاء في ترتيب الفعل (V2) أو الجمل التابعة.",
+    liveSyntaxGuardAlert: "⚠️ تنبيهات نحوية وتركيبية تحتاج لانتباهك:",
+    liveV2RuleHint: "موقع الفعل (V2): يجب أن يأتي الفعل في الموقع الثاني فوراً بعد الظروف والعبارات الزمنية.",
+    liveNebensatzRuleHint: "الجمل التابعة: يجب وضع الفعل المصرف في نهاية الجملة بعد أدوات الربط (weil/dass/obwohl/wenn).",
+    liveRegisterMismatchHint: "تناسق الأسلوب: تأكد من تطابق التحية مع الختام (كلاهما رسمي أو كلاهما غير رسمي)."
   },
   uk: {
     tabSample: "✨ Зразок звіту екзаменатора",
@@ -401,7 +419,13 @@ const SHOWCASE_I18N = {
     comparisonTitle: "⚖️ Порівняння та калібрування Варіанту A та Варіанту B",
     ruleEngineLabel: "Варіант A (Алгоритмічний рушій)",
     deepAiLabel: "Варіант B (Глибинний LLM)",
-    scoreDeltaLabel: "Узгодженість балів:"
+    scoreDeltaLabel: "Узгодженість балів:",
+    liveSyntaxGuardTitle: "⚡ Онлайн-контроль синтаксису та стилю telc B1",
+    liveSyntaxGuardClean: "✨ Чудово! Помилок у правилі V2 або порядку слів у підрядних реченнях не виявлено.",
+    liveSyntaxGuardAlert: "⚠️ Зверніть увагу на структуру речень:",
+    liveV2RuleHint: "Правило V2: Після прислівників та обставин часу дієслово має стояти на другій позиції.",
+    liveNebensatzRuleHint: "Підрядні речення: Після сполучників weil/dass/obwohl/wenn відмінюване дієслово йде в самий кінець.",
+    liveRegisterMismatchHint: "Відповідність стилю: Переконайтеся, що привітання та прощання мають однаковий рівень офіційності."
   }
 };
 
@@ -675,6 +699,16 @@ function renderSchreibenShowcase(containerId) {
             <div class="textarea-counter-row">
               <span id="letter-word-count">${t('liveWordCount')} 0</span>
               <span id="letter-char-count">${t('liveCharCount')} 0</span>
+            </div>
+
+            <!-- Real-Time telc B1 Syntax & Word-Order Guard -->
+            <div id="live-syntax-guard" class="live-syntax-guard-box" style="margin-top:10px; font-size:12px; border-radius:10px; padding:10px 14px; background:var(--bg-card); border:1px solid var(--border); transition:all 0.2s ease;">
+              <div style="font-weight:700; color:var(--text-primary); margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                <span>${t('liveSyntaxGuardTitle')}</span>
+              </div>
+              <div id="live-syntax-guard-content" style="color:var(--text-muted); line-height:1.4;">
+                ${t('liveSyntaxGuardClean')}
+              </div>
             </div>
           </div>
 
@@ -966,6 +1000,49 @@ function updateWordCounter(textarea) {
       ? `<span>${t('connectorsUsedLabel')} <strong>${found.length}</strong> (${found.join(', ')})</span>`
       : `<span>${t('connectorsUsedLabel')} 0</span>`;
   }
+
+  // Real-time Syntax & Word-Order Guard Scanner
+  const guardBox = document.getElementById('live-syntax-guard');
+  const guardContent = document.getElementById('live-syntax-guard-content');
+  if (guardContent) {
+    const alerts = [];
+    if (words >= 5) {
+      // 1. V2 word order violation after sentence-initial adverbial
+      const v2Match = text.match(/(?:^|[.!?,]\s*|\n+)(Gestern|Heute|Morgen|Am\s+(?:Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag|Sonntag)|Leider|Deshalb|Trotzdem|Außerdem|Danach|Später|Vor\s+einigen\s+Tagen|Jetzt|Nun|Zuerst|Schließlich)\s+(ich|du|er|sie|es|wir|ihr|Sie)\s+([a-zäöü]+)\b/i);
+      if (v2Match) {
+        alerts.push(`<strong>${t('liveV2RuleHint')}</strong> ("${v2Match[1]} ${v2Match[2]} ..." → "${v2Match[1]} [Verb] ${v2Match[2]}")`);
+      }
+
+      // 2. Subordinate clause verb-final word order check
+      const nebensatzMatch = text.match(/\b(weil|dass|obwohl|wenn)\s+(ich|du|er|sie|es|wir|ihr|Sie)\s+(bin|habe|kann|muss|will|möchte|werde|ist|hat|sind|haben|können|müssen)\s+([a-zäöüA-ZÄÖÜß]+)/i);
+      if (nebensatzMatch) {
+        alerts.push(`<strong>${t('liveNebensatzRuleHint')}</strong> ("${nebensatzMatch[1]} ${nebensatzMatch[2]} ${nebensatzMatch[3]} ..." → "${nebensatzMatch[1]} ${nebensatzMatch[2]} ... ${nebensatzMatch[3]}")`);
+      }
+
+      // 3. Register Mismatch check
+      const hasFormalSal = /Sehr geehrte(r)?\s+(Damen und Herren|Frau|Herr)/i.test(text);
+      const hasInformalSal = /(Liebe[r]?|Hallo)\s+[A-ZÄÖÜa-zäöü]+/i.test(text);
+      const hasFormalClose = /Mit freundlichen Grüßen/i.test(text);
+      const hasInformalClose = /(Viele Grüße|Liebe Grüße|Herzliche Grüße|Dein[e]?\b)/i.test(text);
+      if ((hasFormalSal && hasInformalClose) || (hasInformalSal && hasFormalClose)) {
+        alerts.push(`<strong>${t('liveRegisterMismatchHint')}</strong>`);
+      }
+    }
+
+    if (alerts.length > 0) {
+      guardContent.innerHTML = `<span style="color:#d97706; font-weight:700;">${t('liveSyntaxGuardAlert')}</span><ul style="margin:4px 0 0 16px; padding:0; color:var(--text-primary); font-size:12px;">${alerts.map(a => `<li style="margin-bottom:3px;">${a}</li>`).join('')}</ul>`;
+      if (guardBox) {
+        guardBox.style.borderColor = 'rgba(245, 158, 11, 0.5)';
+        guardBox.style.background = 'rgba(245, 158, 11, 0.08)';
+      }
+    } else {
+      guardContent.innerHTML = `<span style="color:#10b981;">${t('liveSyntaxGuardClean')}</span>`;
+      if (guardBox) {
+        guardBox.style.borderColor = 'var(--border)';
+        guardBox.style.background = 'var(--bg-card)';
+      }
+    }
+  }
 }
 
 /**
@@ -1142,6 +1219,70 @@ function evaluateStudentLetterB1(rawText, promptKey, lang) {
       explanationTr: "Almanca'da 'dass', 'weil', 'obwohl' gibi bağlaçlarla başlayan yan cümlelerin önüne mutlaka virgül konulmalıdır.",
       explanationAr: "في اللغة الألمانية، يجب دائماً وضع فاصلة قبل الجمل التابعة التي تبدأ بأدوات مثل 'dass' أو 'weil'.",
       explanationUk: "У німецькій мові підрядні речення, що починаються з 'dass', 'weil', 'obwohl', завжди виділяються комою."
+    });
+  }
+
+  // Inversion error after sentence-initial adverbial (V2 rule)
+  const v2AdverbMatch = rawText.match(/(?:^|[.!?,]\s*|\n+)(Gestern|Heute|Morgen|Am\s+(?:Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag|Sonntag)|Leider|Deshalb|Trotzdem|Außerdem|Danach|Später|Vor\s+einigen\s+Tagen|Jetzt|Nun|Zuerst|Schließlich)\s+(ich|du|er|sie|es|wir|ihr|Sie)\s+(habe|hatte|bin|war|kann|konnte|muss|musste|will|wollte|möchte|werde|würde|gehe|ging|fahre|fuhr|schreibe|arbeite|hat|sind|ist)\b/i);
+  if (v2AdverbMatch) {
+    const adv = v2AdverbMatch[1];
+    const pronoun = v2AdverbMatch[2];
+    const verb = v2AdverbMatch[3];
+    annotations.push({
+      targetText: `${adv} ${pronoun} ${verb}`,
+      correctedText: `${adv} ${verb} ${pronoun}`,
+      type: "syntax",
+      rule: "Verb-Zweitstellung (V2-Regel nach Adverbial)",
+      ruleEn: "Verb-Second Rule (V2 Inversion after Adverbial)",
+      ruleTr: "Fiilin İkinci Pozisyonu Kuralı (Zarf Sonrası İnversiyon)",
+      ruleAr: "قاعدة الفعل في الموقع الثاني (V2) بعد الظرف",
+      ruleUk: "Правило другого місця для дієслова (інверсія після прислівника)",
+      explanationEn: `In German main clauses, when an adverbial like '${adv}' occupies Position 1, the finite verb ('${verb}') must immediately occupy Position 2, followed by the subject ('${pronoun}').`,
+      explanationTr: `Almanca ana cümlelerde '${adv}' gibi bir zarf 1. pozisyonda yer aldığında, çekimli fiil ('${verb}') mutlaka 2. pozisyona gelmeli ve özne ('${pronoun}') fiilden sonra yazılmalıdır.`,
+      explanationAr: `في الجملة الرئيسية الألمانية، عندما يحتل ظرف مثل '${adv}' الموقع الأول، يجب أن يأتي الفعل المصرف ('${verb}') في الموقع الثاني متبوعاً بالفاعل ('${pronoun}').`,
+      explanationUk: `У головному німецькому реченні, коли прислівник '${adv}' стоїть на 1-й позиції, дієслово ('${verb}') обов'язково займає 2-гу позицію, а підмет ('${pronoun}') іде після нього.`
+    });
+  }
+
+  // Subordinate clause verb-final word order check
+  const nebensatzMatch = rawText.match(/\b(weil|dass|obwohl|wenn)\s+(ich|du|er|sie|es|wir|ihr|Sie)\s+(bin|habe|kann|muss|will|möchte|werde|ist|hat|sind|haben|können|müssen)\s+([a-zäöüA-ZÄÖÜß]+(?:\s+[a-zäöüA-ZÄÖÜß]+){0,3})/i);
+  if (nebensatzMatch) {
+    const fullSnippet = nebensatzMatch[0];
+    const conj = nebensatzMatch[1];
+    const subj = nebensatzMatch[2];
+    const verb = nebensatzMatch[3];
+    const rest = nebensatzMatch[4];
+    annotations.push({
+      targetText: fullSnippet,
+      correctedText: `${conj} ${subj} ${rest} ${verb}`,
+      type: "syntax",
+      rule: "Verb-Letztstellung im Nebensatz",
+      ruleEn: "Verb-Final Order in Subordinate Clause",
+      ruleTr: "Yan Cümlede Fiilin Sonda Olması Kuralı",
+      ruleAr: "موقع الفعل في نهاية الجملة التابعة (Nebensatz)",
+      ruleUk: "Дієслово в кінці підрядного речення (Nebensatz)",
+      explanationEn: `Subordinating conjunctions like '${conj}' push the conjugated verb ('${verb}') to the absolute end of the clause.`,
+      explanationTr: `'${conj}' gibi yan cümle bağlaçları, çekimli fiili ('${verb}') cümlenin en sonuna öteler.`,
+      explanationAr: `أدوات الربط التابعة مثل '${conj}' تنقل الفعل المصرف ('${verb}') إلى نهاية الجملة التابعة تماماً.`,
+      explanationUk: `Підрядні сполучники такі як '${conj}' переміщують відмінюване дієслово ('${verb}') у самий кінець підрядного речення.`
+    });
+  }
+
+  // Register Mismatch (Formal salutation with informal closing, or vice versa)
+  if ((hasFormalSalutation && hasInformalClosing) || (hasInformalSalutation && hasFormalClosing)) {
+    annotations.push({
+      targetText: hasFormalSalutation ? "Sehr geehrte... + Informelle Grußformel" : "Liebe... + Formelle Grußformel",
+      correctedText: hasFormalSalutation ? "Mit freundlichen Grüßen" : "Liebe Grüße / Viele Grüße",
+      type: "syntax",
+      rule: "Register-Konsistenz (Anrede & Grußformel)",
+      ruleEn: "Register Consistency (Salutation & Sign-off)",
+      ruleTr: "Hitap ve Kapanış Uyumu (Resmi/Samimi)",
+      ruleAr: "اتساق الأسلوب (بين التحية والختام)",
+      ruleUk: "Відповідність стилю (привітання та прощання)",
+      explanationEn: "Do not mix formal salutations ('Sehr geehrte Damen und Herren') with informal closings ('Viele Grüße'), or informal salutations ('Liebe Marianne') with formal closings ('Mit freundlichen Grüßen').",
+      explanationTr: "Resmi hitapları ('Sehr geehrte...') samimi kapanışlarla ('Viele Grüße') veya samimi hitapları ('Liebe Marianne') resmi kapanışlarla ('Mit freundlichen Grüßen') karıştırmayınız.",
+      explanationAr: "لا تخلط بين التحيات الرسمية ('Sehr geehrte...') والخواتيم غير الرسمية ('Viele Grüße')، أو العكس.",
+      explanationUk: "Не змішуйте офіційне привітання ('Sehr geehrte...') з неофіційним прощанням ('Viele Grüße') або навпаки."
     });
   }
 

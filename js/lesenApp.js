@@ -38,7 +38,17 @@
       clearAllSaved: "🗑️ Clear All Saved",
       activeLevel: "Level B1",
       estTime: "12 min standard",
-      allRightsReserved: "Educational preparation suite for telc Deutsch B1 candidates."
+      allRightsReserved: "Educational preparation suite for telc Deutsch B1 candidates.",
+      trackLesen: "Reading Comprehension (Parts 1–3 • 75 Pts)",
+      trackSprachbausteine: "Language Elements (Parts 1–2 • 30 Pts)",
+      sbTeil1Tab: "Part 1: Letter (21–30)",
+      sbTeil2Tab: "Part 2: Text (31–40)",
+      sbCheckBtn: "✓ Check Answers",
+      sbResetBtn: "↺ Reset",
+      sbScorePassed: "Passed! (telc B1 Standard >= 60%)",
+      sbScoreFail: "Review Needed (< 60%). Study the grammar explanations!",
+      sbWordBankHeading: "Word Bank (a–o): Select matching word for each gap",
+      sbSelectPlaceholder: "-- Select word --"
     },
     tr: {
       brandTitle: "Okuma Stüdyosu & Sınav Okuyucu",
@@ -69,7 +79,17 @@
       clearAllSaved: "🗑️ Tümünü Temizle",
       activeLevel: "Seviye B1",
       estTime: "12 dk standart süre",
-      allRightsReserved: "telc Deutsch B1 adayları için kapsamlı eğitim stüdyosu."
+      allRightsReserved: "telc Deutsch B1 adayları için kapsamlı eğitim stüdyosu.",
+      trackLesen: "Okuduğunu Anlama (Bölüm 1–3 • 75 Puan)",
+      trackSprachbausteine: "Dilbilgisi / Dil Öğeleri (Bölüm 1–2 • 30 Puan)",
+      sbTeil1Tab: "Bölüm 1: Mektup (21–30)",
+      sbTeil2Tab: "Bölüm 2: Metin (31–40)",
+      sbCheckBtn: "✓ Cevapları Kontrol Et",
+      sbResetBtn: "↺ Sıfırla",
+      sbScorePassed: "Tebrikler! telc B1 Barajı Geçildi (>= %60)",
+      sbScoreFail: "Barajın Altında (< %60). Dilbilgisi açıklamalarını inceleyiniz!",
+      sbWordBankHeading: "Kelime Kutusu (a–o): Her boşluk için uygun kelimeyi seçiniz",
+      sbSelectPlaceholder: "-- Kelime seçiniz --"
     },
     ar: {
       brandTitle: "استوديو القراءة وقارئ الامتحان",
@@ -100,7 +120,17 @@
       clearAllSaved: "🗑️ مسح الكل",
       activeLevel: "المستوى B1",
       estTime: "الوقت القياسي 12 دقيقة",
-      allRightsReserved: "مجموعة تدريب تعليمية لمرشحي امتحان telc Deutsch B1."
+      allRightsReserved: "مجموعة تدريب تعليمية لمرشحي امتحان telc Deutsch B1.",
+      trackLesen: "فهم المقروء (الأجزاء 1–3 • 75 نقطة)",
+      trackSprachbausteine: "تراكيب اللغة (الأجزاء 1–2 • 30 نقطة)",
+      sbTeil1Tab: "الجزء 1: الرسالة (21–30)",
+      sbTeil2Tab: "الجزء 2: النص (31–40)",
+      sbCheckBtn: "✓ التحقق من الإجابات",
+      sbResetBtn: "↺ إعادة ضبط",
+      sbScorePassed: "ناجح! (معيار telc B1 >= 60%)",
+      sbScoreFail: "بحاجة للمراجعة (< 60%). ادرس الشروحات النحوية!",
+      sbWordBankHeading: "صندوق الكلمات (a–o): اختر الكلمة المناسبة لكل فراغ",
+      sbSelectPlaceholder: "-- اختر الكلمة --"
     },
     uk: {
       brandTitle: "Студія читання та екзаменаційний рідер",
@@ -131,7 +161,17 @@
       clearAllSaved: "🗑️ Очистити все",
       activeLevel: "Рівень B1",
       estTime: "12 хв стандарт",
-      allRightsReserved: "Навчальний комплекс для підготовки до іспиту telc Deutsch B1."
+      allRightsReserved: "Навчальний комплекс для підготовки до іспиту telc Deutsch B1.",
+      trackLesen: "Розуміння прочитаного (Частини 1–3 • 75 балів)",
+      trackSprachbausteine: "Мовні елементи (Частини 1–2 • 30 балів)",
+      sbTeil1Tab: "Частина 1: Лист (21–30)",
+      sbTeil2Tab: "Частина 2: Текст (31–40)",
+      sbCheckBtn: "✓ Перевірити відповіді",
+      sbResetBtn: "↺ Скинути",
+      sbScorePassed: "Складено! (Стандарт telc B1 >= 60%)",
+      sbScoreFail: "Потрібно повторити (< 60%). Опрацюйте пояснення!",
+      sbWordBankHeading: "Банк слів (a–o): Оберіть відповідне слово для кожного пропуску",
+      sbSelectPlaceholder: "-- Оберіть слово --"
     }
   };
 
@@ -151,8 +191,16 @@
       // Saved words state
       this.savedWords = this.loadSavedWords();
 
-      // Quiz state
+      // Quiz state (Leseverstehen)
       this.userAnswers = {}; // { questionId: selectedIndex }
+
+      // Sprachbausteine state
+      this.activeTrack = 'lesen'; // 'lesen' or 'sprachbausteine'
+      this.sbDataset = (typeof window !== 'undefined' && window.SPRACHBAUSTEINE_DATASET) ? window.SPRACHBAUSTEINE_DATASET : [];
+      this.currentSbSetIndex = 0;
+      this.currentSbSubpart = 'teil1'; // 'teil1' or 'teil2'
+      this.sbAnswers = {}; // { [itemId]: selectedKey }
+      this.sbChecked = false;
 
       // Timer state
       this.timerSeconds = 12 * 60; // 12 min default
@@ -161,7 +209,7 @@
       this.timerInterval = null;
 
       // Audio state
-      this.speechSynth = window.speechSynthesis || null;
+      this.speechSynth = (typeof window !== 'undefined' && window.speechSynthesis) ? window.speechSynthesis : null;
       this.isSpeaking = false;
       this.activeUtterance = null;
 
@@ -180,6 +228,8 @@
 
     bindElements() {
       this.dom = {
+        btnTrackLesen: document.getElementById('btn-track-lesen'),
+        btnTrackSprachbausteine: document.getElementById('btn-track-sprachbausteine'),
         partTabs: document.getElementById('part-tabs'),
         articleTitle: document.getElementById('article-title'),
         articleSummary: document.getElementById('article-summary'),
@@ -219,6 +269,14 @@
     }
 
     bindEvents() {
+      // Track Switching (Lesen vs Sprachbausteine)
+      if (this.dom.btnTrackLesen) {
+        this.dom.btnTrackLesen.addEventListener('click', () => this.switchTrack('lesen'));
+      }
+      if (this.dom.btnTrackSprachbausteine) {
+        this.dom.btnTrackSprachbausteine.addEventListener('click', () => this.switchTrack('sprachbausteine'));
+      }
+
       // Audio full text toggle
       if (this.dom.btnListenText) {
         this.dom.btnListenText.addEventListener('click', () => this.toggleTextAudio());
@@ -358,8 +416,13 @@
       });
 
       // Update units and current view
-      this.renderPartTabs();
-      this.renderCurrentUnit();
+      if (this.activeTrack === 'sprachbausteine') {
+        this.renderSbTabs();
+        this.renderSbCurrent();
+      } else {
+        this.renderPartTabs();
+        this.renderCurrentUnit();
+      }
       this.renderSavedWordsList();
     }
 
@@ -1365,6 +1428,444 @@
 
         this.dom.savedWordsList.appendChild(itemEl);
       });
+    }
+
+    /* ==========================================================================
+       SPRACHBAUSTEINE METHODS
+       ========================================================================== */
+    switchTrack(track) {
+      if (track !== 'lesen' && track !== 'sprachbausteine') return;
+      this.activeTrack = track;
+
+      if (this.dom.btnTrackLesen) {
+        this.dom.btnTrackLesen.classList.toggle('active', track === 'lesen');
+      }
+      if (this.dom.btnTrackSprachbausteine) {
+        this.dom.btnTrackSprachbausteine.classList.toggle('active', track === 'sprachbausteine');
+      }
+
+      if (this.isSpeaking) {
+        this.stopTextAudio();
+      }
+
+      if (track === 'sprachbausteine') {
+        this.timerSeconds = 20 * 60;
+        this.timerInitial = 20 * 60;
+        this.updateTimerDisplay();
+        this.renderSbTabs();
+        this.loadSbSet(this.currentSbSetIndex || 0, this.currentSbSubpart || 'teil1');
+      } else {
+        this.timerSeconds = 12 * 60;
+        this.timerInitial = 12 * 60;
+        this.updateTimerDisplay();
+        this.renderPartTabs();
+        this.loadUnit(this.currentUnitIndex || 0);
+      }
+    }
+
+    renderSbTabs() {
+      if (!this.dom.partTabs) return;
+      this.dom.partTabs.innerHTML = '';
+
+      if (!this.sbDataset || this.sbDataset.length === 0) {
+        if (typeof window !== 'undefined' && window.SPRACHBAUSTEINE_DATASET) {
+          this.sbDataset = window.SPRACHBAUSTEINE_DATASET;
+        }
+      }
+
+      this.sbDataset.forEach((set, sIdx) => {
+        // Teil 1 Tab
+        const btn1 = document.createElement('button');
+        const isAct1 = sIdx === this.currentSbSetIndex && this.currentSbSubpart === 'teil1';
+        btn1.className = `ls-part-btn ${isAct1 ? 'active' : ''}`;
+        btn1.innerHTML = `<span>🧩 Test ${sIdx + 1}:</span> Teil 1 (Brief)`;
+        btn1.addEventListener('click', () => this.loadSbSet(sIdx, 'teil1'));
+        this.dom.partTabs.appendChild(btn1);
+
+        // Teil 2 Tab
+        const btn2 = document.createElement('button');
+        const isAct2 = sIdx === this.currentSbSetIndex && this.currentSbSubpart === 'teil2';
+        btn2.className = `ls-part-btn ${isAct2 ? 'active' : ''}`;
+        btn2.innerHTML = `<span>🧩 Test ${sIdx + 1}:</span> Teil 2 (Text)`;
+        btn2.addEventListener('click', () => this.loadSbSet(sIdx, 'teil2'));
+        this.dom.partTabs.appendChild(btn2);
+      });
+    }
+
+    loadSbSet(setIdx, subpart) {
+      if (setIdx < 0 || setIdx >= this.sbDataset.length) return;
+      this.currentSbSetIndex = setIdx;
+      this.currentSbSubpart = subpart || 'teil1';
+      this.sbAnswers = {};
+      this.sbChecked = false;
+
+      if (this.dom.scoreBanner) {
+        this.dom.scoreBanner.style.display = 'none';
+        this.dom.scoreBanner.innerHTML = '';
+      }
+
+      this.renderSbTabs();
+      this.renderSbCurrent();
+    }
+
+    renderSbCurrent() {
+      const set = this.sbDataset[this.currentSbSetIndex];
+      if (!set) return;
+      const task = set[this.currentSbSubpart];
+      if (!task) return;
+
+      if (this.dom.badgePart) {
+        this.dom.badgePart.textContent = (task.title && task.title[this.lang]) || task.title.de;
+      }
+      if (this.dom.badgeLevel) {
+        this.dom.badgeLevel.textContent = "telc B1 • 15 Pkt";
+      }
+      if (this.dom.badgeTime) {
+        this.dom.badgeTime.textContent = "⏱️ 10 Min.";
+      }
+      if (this.dom.articleTitle) {
+        const setT = (set.title && set.title[this.lang]) || set.title.de;
+        const taskT = (task.title && task.title[this.lang]) || task.title.de;
+        this.dom.articleTitle.textContent = `${setT} — ${taskT}`;
+      }
+      if (this.dom.articleSummary) {
+        this.dom.articleSummary.textContent = (task.instruction && task.instruction[this.lang]) || task.instruction.de;
+      }
+
+      this.renderSbArticleBody(task);
+      this.renderSbQuestions(task);
+    }
+
+    renderSbArticleBody(task) {
+      if (!this.dom.articleBody || !task || !task.textTemplate) return;
+      this.dom.articleBody.innerHTML = '';
+
+      const paragraphs = task.textTemplate.split('\n\n');
+
+      paragraphs.forEach((paraText, pIdx) => {
+        const pEl = document.createElement('div');
+        pEl.className = 'ls-paragraph';
+        pEl.id = `sb-para-${pIdx + 1}`;
+
+        // Split paragraph by gaps: e.g. {21}, {22}, etc.
+        const parts = paraText.split(/(\{\d+\})/g);
+
+        parts.forEach(part => {
+          const gapMatch = part.match(/^\{(\d+)\}$/);
+          if (gapMatch) {
+            const gapId = parseInt(gapMatch[1], 10);
+            const chosenKey = this.sbAnswers[gapId];
+            let displayText = '____';
+
+            if (chosenKey) {
+              if (task.wordBank) {
+                const wObj = task.wordBank.find(w => w.key === chosenKey);
+                if (wObj) displayText = wObj.word;
+              } else {
+                const it = task.items.find(i => i.id === gapId);
+                if (it) {
+                  const opt = it.options.find(o => o.key === chosenKey);
+                  if (opt) displayText = opt.text;
+                }
+              }
+            }
+
+            const pill = document.createElement('span');
+            pill.className = `sb-gap-pill ${chosenKey ? 'filled' : ''}`;
+            pill.id = `sb-gap-${gapId}`;
+            pill.setAttribute('data-gap', gapId);
+            pill.innerHTML = `[ <strong>${gapId}:</strong> <span class="gap-text">${displayText}</span> ]`;
+
+            pill.addEventListener('click', () => {
+              const targetCard = document.getElementById(`sb-item-card-${gapId}`);
+              if (targetCard) {
+                targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                targetCard.classList.add('active-focus');
+                setTimeout(() => targetCard.classList.remove('active-focus'), 1600);
+              }
+            });
+
+            pEl.appendChild(pill);
+          } else if (part.trim().length > 0) {
+            // Normal text chunk: tokenize so Readlang tap-to-translate works!
+            const tokenized = this.tokenizeText(part, []);
+            const spanChunk = document.createElement('span');
+            spanChunk.innerHTML = tokenized;
+            pEl.appendChild(spanChunk);
+          } else {
+            pEl.appendChild(document.createTextNode(part));
+          }
+        });
+
+        this.dom.articleBody.appendChild(pEl);
+      });
+
+      // Bind click on word tokens
+      this.dom.articleBody.querySelectorAll('.w-tok').forEach(tok => {
+        tok.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const cleanWord = tok.getAttribute('data-clean');
+          const fullToken = tok.textContent.trim();
+          this.openWordLookup(cleanWord, fullToken, tok);
+        });
+      });
+    }
+
+    renderSbQuestions(task) {
+      if (!this.dom.questionsContainer || !task) return;
+      this.dom.questionsContainer.innerHTML = '';
+      const texts = I18N[this.lang] || I18N.en;
+
+      // Score Banner placeholder
+      const scoreBanner = document.createElement('div');
+      scoreBanner.id = 'sb-score-banner';
+      scoreBanner.style.display = this.sbChecked ? 'block' : 'none';
+      this.dom.questionsContainer.appendChild(scoreBanner);
+
+      // Teil 2 Word Bank Header
+      if (task.wordBank && Array.isArray(task.wordBank)) {
+        const wbCard = document.createElement('div');
+        wbCard.className = 'sb-wordbank-container';
+        wbCard.innerHTML = `<div style="width:100%; font-size:12px; font-weight:800; color:var(--ls-text-gold); margin-bottom:6px;">📦 ${texts.sbWordBankHeading}</div>`;
+
+        task.wordBank.forEach(wObj => {
+          const isUsed = Object.values(this.sbAnswers).includes(wObj.key);
+          const chip = document.createElement('span');
+          chip.className = `sb-word-chip ${isUsed ? 'used' : ''}`;
+          chip.innerHTML = `<span class="chip-key">${wObj.key.toUpperCase()}</span> <span>${wObj.word}</span>`;
+          wbCard.appendChild(chip);
+        });
+
+        this.dom.questionsContainer.appendChild(wbCard);
+      }
+
+      // Render Each Item
+      task.items.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'sb-item-card';
+        card.id = `sb-item-card-${item.id}`;
+
+        const isAnswered = Boolean(this.sbAnswers[item.id]);
+        const chosen = this.sbAnswers[item.id];
+        const isCorrect = chosen === item.correct;
+
+        let optionsHTML = '';
+
+        if (item.options) {
+          // Teil 1: 3 options (a, b, c)
+          optionsHTML = `<div class="sb-options-row">`;
+          item.options.forEach(opt => {
+            const isSel = chosen === opt.key;
+            let statusClass = '';
+            if (this.sbChecked) {
+              if (opt.key === item.correct) statusClass = 'opt-correct';
+              else if (isSel && !isCorrect) statusClass = 'opt-wrong';
+            }
+            optionsHTML += `
+              <button type="button" class="sb-opt-pill ${isSel ? 'selected' : ''} ${statusClass}" data-key="${opt.key}">
+                <strong>${opt.key})</strong> ${opt.text}
+              </button>
+            `;
+          });
+          optionsHTML += `</div>`;
+        } else if (task.wordBank) {
+          // Teil 2: Select Dropdown with 15 words
+          optionsHTML = `<div style="display:flex; gap:8px; align-items:center;">
+            <select class="sb-select-pill" style="flex:1; padding:8px 12px; background:var(--ls-bg-card); color:var(--ls-text-main); border:1px solid var(--ls-border-card); border-radius:var(--ls-radius-sm); font-size:13px; font-weight:700;">
+              <option value="">${texts.sbSelectPlaceholder}</option>
+              ${task.wordBank.map(w => `<option value="${w.key}" ${chosen === w.key ? 'selected' : ''}>${w.key.toUpperCase()}: ${w.word}</option>`).join('')}
+            </select>
+          </div>`;
+        }
+
+        // Rule Explanation Box (visible after checking)
+        let ruleHTML = '';
+        if (this.sbChecked) {
+          const ruleText = (item.rule && item.rule[this.lang]) || (item.rule && item.rule.de) || '';
+          ruleHTML = `
+            <div class="sb-rule-box">
+              <div style="font-weight:800; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                <span>${isCorrect ? '✅' : '❌'}</span>
+                <span>${isCorrect ? 'Richtig' : 'Korrekt: ' + (item.correctWord || item.correct).toUpperCase()}</span>
+              </div>
+              <div>${ruleText}</div>
+            </div>
+          `;
+        }
+
+        card.innerHTML = `
+          <div class="sb-item-header">
+            <span>Lücke ${item.id}</span>
+            <span style="font-size:11px; color:var(--ls-text-gold);">1.5 Pkt</span>
+          </div>
+          ${optionsHTML}
+          ${ruleHTML}
+        `;
+
+        // Bind Option Button Clicks (Teil 1)
+        card.querySelectorAll('.sb-opt-pill').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const k = btn.getAttribute('data-key');
+            this.selectSbAnswer(item.id, k);
+          });
+        });
+
+        // Bind Dropdown Changes (Teil 2)
+        const selEl = card.querySelector('.sb-select-pill');
+        if (selEl) {
+          selEl.addEventListener('change', (e) => {
+            this.selectSbAnswer(item.id, e.target.value);
+          });
+        }
+
+        this.dom.questionsContainer.appendChild(card);
+      });
+
+      // Check & Reset Buttons
+      const actionsDiv = document.createElement('div');
+      actionsDiv.style.cssText = 'display:flex; gap:10px; margin-top:20px;';
+      actionsDiv.innerHTML = `
+        <button type="button" class="ls-btn-save-vocab" id="btn-check-sb" style="flex:2; padding:12px; font-weight:800;">
+          ${texts.sbCheckBtn}
+        </button>
+        <button type="button" class="ls-tool-btn" id="btn-reset-sb" style="flex:1; padding:12px;">
+          ${texts.sbResetBtn}
+        </button>
+      `;
+
+      actionsDiv.querySelector('#btn-check-sb').addEventListener('click', () => this.checkSbAnswers());
+      actionsDiv.querySelector('#btn-reset-sb').addEventListener('click', () => this.resetSbAnswers());
+
+      this.dom.questionsContainer.appendChild(actionsDiv);
+
+      if (this.sbChecked) {
+        this.updateSbScoreBanner();
+      }
+    }
+
+    selectSbAnswer(itemId, key) {
+      if (!key) {
+        delete this.sbAnswers[itemId];
+      } else {
+        this.sbAnswers[itemId] = key;
+      }
+
+      const task = this.sbDataset[this.currentSbSetIndex][this.currentSbSubpart];
+
+      // Update Inline Gap Pill
+      const pill = document.getElementById(`sb-gap-${itemId}`);
+      if (pill) {
+        const textSpan = pill.querySelector('.gap-text');
+        if (textSpan) {
+          if (!key) {
+            textSpan.textContent = '____';
+            pill.classList.remove('filled');
+          } else {
+            let wordText = key;
+            if (task.wordBank) {
+              const wObj = task.wordBank.find(w => w.key === key);
+              if (wObj) wordText = wObj.word;
+            } else if (task.items) {
+              const it = task.items.find(i => i.id === itemId);
+              if (it) {
+                const opt = it.options.find(o => o.key === key);
+                if (opt) wordText = opt.text;
+              }
+            }
+            textSpan.textContent = wordText;
+            pill.classList.add('filled');
+          }
+        }
+      }
+
+      // Re-render questions to update wordBank chips & selected states
+      this.renderSbQuestions(task);
+    }
+
+    checkSbAnswers() {
+      this.sbChecked = true;
+      const set = this.sbDataset[this.currentSbSetIndex];
+      const task = set[this.currentSbSubpart];
+
+      // Update inline pills with .correct or .incorrect
+      task.items.forEach(item => {
+        const pill = document.getElementById(`sb-gap-${item.id}`);
+        if (pill) {
+          const chosen = this.sbAnswers[item.id];
+          const isCorrect = chosen === item.correct;
+          pill.classList.remove('correct', 'incorrect');
+          pill.classList.add(isCorrect ? 'correct' : 'incorrect');
+
+          const textSpan = pill.querySelector('.gap-text');
+          if (textSpan) {
+            if (isCorrect) {
+              // keep chosen word
+            } else {
+              let correctWord = item.correctWord || '';
+              if (!correctWord && item.options) {
+                const o = item.options.find(opt => opt.key === item.correct);
+                if (o) correctWord = o.text;
+              }
+              textSpan.innerHTML = `<del>${textSpan.textContent}</del> → <strong>${correctWord}</strong>`;
+            }
+          }
+        }
+      });
+
+      this.renderSbQuestions(task);
+      this.updateSbScoreBanner();
+
+      const banner = document.getElementById('sb-score-banner');
+      if (banner) {
+        banner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    updateSbScoreBanner() {
+      const banner = document.getElementById('sb-score-banner');
+      if (!banner) return;
+      const texts = I18N[this.lang] || I18N.en;
+      const set = this.sbDataset[this.currentSbSetIndex];
+      const task = set[this.currentSbSubpart];
+
+      let correctCount = 0;
+      task.items.forEach(it => {
+        if (this.sbAnswers[it.id] === it.correct) {
+          correctCount++;
+        }
+      });
+
+      const pointsEarned = Math.round(correctCount * 1.5 * 10) / 10;
+      const maxPoints = 15.0;
+      const isPassed = pointsEarned >= 9.0; // 60% of 15 pts = 9.0
+
+      banner.style.display = 'block';
+      banner.style.marginBottom = '16px';
+      banner.style.padding = '14px 16px';
+      banner.style.borderRadius = 'var(--ls-radius-md)';
+      banner.style.border = `1px solid ${isPassed ? 'var(--ls-accent-success)' : 'var(--ls-accent-danger)'}`;
+      banner.style.background = isPassed ? 'rgba(16, 185, 129, 0.15)' : 'rgba(239, 68, 68, 0.15)';
+
+      banner.innerHTML = `
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+          <span style="font-weight:900; font-size:15px; color:${isPassed ? 'var(--ls-accent-success)' : 'var(--ls-accent-danger)'};">
+            ${isPassed ? '🏆 ' + texts.sbScorePassed : '⚠️ ' + texts.sbScoreFail}
+          </span>
+          <span style="font-weight:900; font-size:18px;">${pointsEarned} / ${maxPoints} Pkt</span>
+        </div>
+        <div style="font-size:12.5px; color:var(--ls-text-muted);">
+          ${correctCount} von 10 Lücken korrekt beantwortet • telc B1 Bestehensgrenze: 9.0 / 15.0 Punkte (60%)
+        </div>
+      `;
+    }
+
+    resetSbAnswers() {
+      this.sbAnswers = {};
+      this.sbChecked = false;
+      const set = this.sbDataset[this.currentSbSetIndex];
+      const task = set[this.currentSbSubpart];
+      this.renderSbArticleBody(task);
+      this.renderSbQuestions(task);
     }
 
     toggleTheme() {
