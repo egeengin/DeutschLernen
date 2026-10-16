@@ -127,6 +127,49 @@ body.hr-body {
   background: var(--hr-bg-input);
 }
 
+/* Test Selector Bar */
+.hr-test-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.hr-test-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.hr-test-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: var(--hr-bg-card);
+  border: 1px solid var(--hr-border-card);
+  border-radius: var(--hr-radius-md);
+  color: var(--hr-text-muted);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--hr-transition);
+}
+
+.hr-test-btn:hover {
+  border-color: var(--hr-border-accent);
+  color: var(--hr-text-main);
+}
+
+.hr-test-btn.active {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  border-color: #60a5fa;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+}
+
 /* Part Tabs Bar */
 .hr-part-tabs {
   display: flex;

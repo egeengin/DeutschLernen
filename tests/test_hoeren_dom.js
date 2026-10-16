@@ -54,64 +54,79 @@ runInSandbox(hoerenDataCode, sandbox);
 runInSandbox(hoerenAppCode, sandbox);
 
 const dataset = sandbox.window.HOEREN_DATASET;
-assert(Array.isArray(dataset) && dataset.length >= 1, 'HOEREN_DATASET must contain at least 1 test');
+assert(Array.isArray(dataset) && dataset.length === 3, 'HOEREN_DATASET must contain exactly 3 full test sets');
 
-const test1 = dataset[0];
 const REQUIRED_LANGS = ['de', 'en', 'tr', 'ar', 'uk'];
 
-// 1. Validate Teil 1 (5 items, maxPlays = 1)
-assert(test1.teil1, 'Teil 1 must exist');
-assert.strictEqual(test1.teil1.items.length, 5, 'Teil 1 must have exactly 5 items (41-45)');
-assert.strictEqual(test1.teil1.maxPlays, 1, 'Teil 1 must enforce 1x play only (telc rule)');
+dataset.forEach((test, testIdx) => {
+  const testNum = testIdx + 1;
+  // 1. Validate Teil 1 (5 items, maxPlays = 1)
+  assert(test.teil1, `Test ${testNum} Teil 1 must exist`);
+  assert.strictEqual(test.teil1.items.length, 5, `Test ${testNum} Teil 1 must have exactly 5 items (41-45)`);
+  assert.strictEqual(test.teil1.maxPlays, 1, `Test ${testNum} Teil 1 must enforce 1x play only (telc rule)`);
 
-test1.teil1.items.forEach((item, idx) => {
-  const expectedId = 41 + idx;
-  assert.strictEqual(item.id, expectedId);
-  assert(['richtig', 'falsch'].includes(item.correct), `Item ${item.id} answer must be richtig/falsch`);
-  REQUIRED_LANGS.forEach(lang => {
-    assert(item.statement[lang], `Teil 1 Item ${item.id} missing ${lang} statement`);
-    assert(item.explanation[lang], `Teil 1 Item ${item.id} missing ${lang} explanation`);
+  test.teil1.items.forEach((item, idx) => {
+    const expectedId = 41 + idx;
+    assert.strictEqual(item.id, expectedId, `Test ${testNum} Teil 1 item ${idx} id mismatch`);
+    assert(['richtig', 'falsch'].includes(item.correct), `Test ${testNum} Item ${item.id} answer must be richtig/falsch`);
+    REQUIRED_LANGS.forEach(lang => {
+      assert(item.statement[lang], `Test ${testNum} Teil 1 Item ${item.id} missing ${lang} statement`);
+      assert(item.explanation[lang], `Test ${testNum} Teil 1 Item ${item.id} missing ${lang} explanation`);
+    });
   });
-});
-console.log('✅ Teil 1 (Items 41–45) schema, maxPlays=1, and 4-language parity verified.');
 
-// 2. Validate Teil 2 (10 items, maxPlays = 2)
-assert(test1.teil2, 'Teil 2 must exist');
-assert.strictEqual(test1.teil2.items.length, 10, 'Teil 2 must have exactly 10 items (46-55)');
-assert.strictEqual(test1.teil2.maxPlays, 2, 'Teil 2 must allow 2x plays (telc rule)');
+  // 2. Validate Teil 2 (10 items, maxPlays = 2)
+  assert(test.teil2, `Test ${testNum} Teil 2 must exist`);
+  assert.strictEqual(test.teil2.items.length, 10, `Test ${testNum} Teil 2 must have exactly 10 items (46-55)`);
+  assert.strictEqual(test.teil2.maxPlays, 2, `Test ${testNum} Teil 2 must allow 2x plays (telc rule)`);
+  assert(test.teil2.audioText && test.teil2.audioText.length > 50, `Test ${testNum} Teil 2 must have audioText`);
 
-test1.teil2.items.forEach((item, idx) => {
-  const expectedId = 46 + idx;
-  assert.strictEqual(item.id, expectedId);
-  assert(['richtig', 'falsch'].includes(item.correct), `Item ${item.id} answer must be richtig/falsch`);
-  REQUIRED_LANGS.forEach(lang => {
-    assert(item.statement[lang], `Teil 2 Item ${item.id} missing ${lang} statement`);
-    assert(item.explanation[lang], `Teil 2 Item ${item.id} missing ${lang} explanation`);
+  test.teil2.items.forEach((item, idx) => {
+    const expectedId = 46 + idx;
+    assert.strictEqual(item.id, expectedId, `Test ${testNum} Teil 2 item ${idx} id mismatch`);
+    assert(['richtig', 'falsch'].includes(item.correct), `Test ${testNum} Item ${item.id} answer must be richtig/falsch`);
+    REQUIRED_LANGS.forEach(lang => {
+      assert(item.statement[lang], `Test ${testNum} Teil 2 Item ${item.id} missing ${lang} statement`);
+      assert(item.explanation[lang], `Test ${testNum} Teil 2 Item ${item.id} missing ${lang} explanation`);
+    });
   });
-});
-console.log('✅ Teil 2 (Items 46–55) schema, maxPlays=2, and 4-language parity verified.');
 
-// 3. Validate Teil 3 (5 items, maxPlays = 2, a/b/c)
-assert(test1.teil3, 'Teil 3 must exist');
-assert.strictEqual(test1.teil3.items.length, 5, 'Teil 3 must have exactly 5 items (56-60)');
-assert.strictEqual(test1.teil3.maxPlays, 2, 'Teil 3 must allow 2x plays (telc rule)');
+  // 3. Validate Teil 3 (5 items, maxPlays = 2, a/b/c)
+  assert(test.teil3, `Test ${testNum} Teil 3 must exist`);
+  assert.strictEqual(test.teil3.items.length, 5, `Test ${testNum} Teil 3 must have exactly 5 items (56-60)`);
+  assert.strictEqual(test.teil3.maxPlays, 2, `Test ${testNum} Teil 3 must allow 2x plays (telc rule)`);
 
-test1.teil3.items.forEach((item, idx) => {
-  const expectedId = 56 + idx;
-  assert.strictEqual(item.id, expectedId);
-  assert(item.options && item.options.length === 3, `Teil 3 Item ${item.id} must have 3 options`);
-  assert(['a', 'b', 'c'].includes(item.correct), `Item ${item.id} answer must be a/b/c`);
-  REQUIRED_LANGS.forEach(lang => {
-    assert(item.question[lang], `Teil 3 Item ${item.id} missing ${lang} question`);
-    assert(item.explanation[lang], `Teil 3 Item ${item.id} missing ${lang} explanation`);
+  test.teil3.items.forEach((item, idx) => {
+    const expectedId = 56 + idx;
+    assert.strictEqual(item.id, expectedId, `Test ${testNum} Teil 3 item ${idx} id mismatch`);
+    assert(item.options && item.options.length === 3, `Test ${testNum} Teil 3 Item ${item.id} must have 3 options`);
+    assert(['a', 'b', 'c'].includes(item.correct), `Test ${testNum} Item ${item.id} answer must be a/b/c`);
+    REQUIRED_LANGS.forEach(lang => {
+      assert(item.question[lang], `Test ${testNum} Teil 3 Item ${item.id} missing ${lang} question`);
+      assert(item.explanation[lang], `Test ${testNum} Teil 3 Item ${item.id} missing ${lang} explanation`);
+    });
   });
+
+  console.log(`✅ Test ${testNum} (20 items: 41–60) schema, play counts, and 5-language parity verified.`);
 });
-console.log('✅ Teil 3 (Items 56–60) schema, maxPlays=2, and 4-language parity verified.');
 
 // 4. Test Application State Machine & Scoring Logic
+const test1 = dataset[0];
 const app = new sandbox.window.HoerenApp();
 assert.strictEqual(app.timerSeconds, 30 * 60, 'Exam timer must start at 30 minutes');
 assert.strictEqual(app.currentPart, 'teil1');
+
+// Test Test-Selection switching
+app.selectTest(1);
+assert.strictEqual(app.currentTestIndex, 1, 'Should switch to Test 2');
+assert.strictEqual(app.getAudioTargetKey(), 'test2_teil1_item_0');
+app.loadPart('teil2');
+assert.strictEqual(app.getAudioTargetKey(), 'test2_teil2');
+app.selectTest(2);
+assert.strictEqual(app.currentTestIndex, 2, 'Should switch to Test 3');
+app.selectTest(0);
+assert.strictEqual(app.currentTestIndex, 0, 'Should switch back to Test 1');
+console.log('✅ Multi-Test set switching and dynamic audio keys verified.');
 
 // Test perfect score (20/20 correct * 3.75 = 75 pts)
 test1.teil1.items.forEach(it => app.userAnswers[it.id] = it.correct);

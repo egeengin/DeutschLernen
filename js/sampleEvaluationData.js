@@ -426,6 +426,219 @@ Ali`,
   ]
 };
 
+const B1_MODEL_LETTERS = [
+  {
+    id: "marianne",
+    titleEn: "Option 1 (Informal): E-Mail to Marianne (Visit to Germany & Excursion)",
+    titleTr: "Seçenek 1 (Samimi): Marianne'ye E-Posta (Almanya Gezisi & Planlama)",
+    titleAr: "الخيار 1 (غير رسمي): رسالة إلى ماريان (زيارة ألمانيا والأنشطة)",
+    titleUk: "Варіант 1 (Неформальний): Лист Маріанні (Поїздка до Німеччини)",
+    typeEn: "Informal E-Mail (Friend / Invitation)",
+    typeTr: "Samimi E-Posta (Arkadaş / Davet)",
+    typeAr: "بريد إلكتروني غير رسمي (صديقة / دعوة)",
+    typeUk: "Неформальний електронний лист (Друзі)",
+    targetScore: "45 / 45 Pts • Note A (Sehr Gut)",
+    wordCount: 168,
+    text: `Liebe Marianne,
+
+ich habe mich sehr über deine E-Mail gefreut! Es ist wirklich schön, dass du mich bald in Deutschland besuchen möchtest.
+
+Die beste Jahreszeit für deine Reise ist der Frühling, besonders der Mai. Im Juli und August kann es hier nämlich sehr heiß werden, aber im Frühling ist das Wetter angenehm mild und sonnig.
+
+Wenn du hier bist, können wir zusammen einen Ausflug nach Berlin machen. Dort gibt es viele berühmte Museen und schöne Parks. Außerdem möchte ich dir unseren großen See zeigen, an dem wir spazieren gehen und schwimmen können.
+
+Für die Reise solltest du unbedingt feste Schuhe und eine warme Jacke mitbringen, weil die Abende manchmal noch frisch sind.
+
+Zur Vorbereitung empfehle ich dir, deine Fahrkarten für den Zug möglichst früh online zu buchen, damit sie billiger sind. Lade dir auch die DB-App auf dein Handy herunter.
+
+Ich freue mich schon sehr auf deinen Besuch! Schreib mir bald zurück.
+
+Viele Grüße,
+Ali`,
+    leitpunkte: [
+      { de: "Aktivitäten & Ausflüge (Berlin, Museen, See)", en: "Activities & Trips (Berlin, museums, lake)" },
+      { de: "Beste Reisezeit & Wetter (Frühling, Mai)", en: "Best season & weather (Spring, May)" },
+      { de: "Kleidung zum Einpacken (Feste Schuhe, Jacke)", en: "Clothes to pack (Sturdy shoes, jacket)" },
+      { de: "Reisevorbereitung & Tickets (DB-App, Online-Buchung)", en: "Travel prep & tickets (DB app, early booking)" }
+    ],
+    examinerRemarksEn: "Full 15/15 across all criteria. Natural informal tone, logical paragraphing with connectors (weil, damit, wenn, außerdem).",
+    examinerRemarksTr: "Tüm kriterlerde tam 15/15 puan. Doğal samimi üslup, zengin B1 bağlaçları (weil, damit, wenn, außerdem) ve kusursuz V2 kuralı."
+  },
+  {
+    id: "hotel",
+    titleEn: "Option 2 (Formal): Complaint Letter to Hotel Meeresblick (Refund & Defect)",
+    titleTr: "Seçenek 2 (Resmi): Hotel Meeresblick Şikayet Mektubu (Geri Ödeme & Mazeret)",
+    titleAr: "الخيار 2 (رسمي): رسالة شكوى لفندق Meeresblick (تعويض وعيوب)",
+    titleUk: "Варіант 2 (Офіційний): Скарга до готелю Meeresblick (Компенсація)",
+    typeEn: "Formal Complaint Letter (Consumer / Travel)",
+    typeTr: "Resmi Şikayet Mektubu (Tüketici / Seyahat)",
+    typeAr: "رسالة شكوى رسمية (حماية المستهلك / فندقة)",
+    typeUk: "Офіційний лист-скарга (Готель)",
+    targetScore: "45 / 45 Pts • Note A (Sehr Gut)",
+    wordCount: 162,
+    text: `Sehr geehrte Damen und Herren,
+
+ich schreibe Ihnen, weil ich mich über meinen Aufenthalt im Hotel Meeresblick vom 10. bis 17. August beschweren möchte.
+
+In Ihrer Anzeige im Internet stand, dass alle Zimmer einen Blick auf das Meer haben und es sehr ruhig ist. Als ich ankam, lag mein Zimmer jedoch direkt über der lauten Hotelküche, und ich konnte das Meer überhaupt nicht sehen.
+
+Außerdem war die Klimaanlage während meines gesamten Aufenthalts kaputt, obwohl es draußen über 30 Grad warm war. An der Rezeption habe ich mich mehrmals beschwert, aber niemand hat das Problem gelöst.
+
+Aus diesen Gründen erwarte ich, dass Sie mir 30 Prozent der Reisekosten zurückerstatten. Bitte überweisen Sie den Betrag innerhalb von zwei Wochen auf mein Bankkonto.
+
+Mit freundlichen Grüßen,
+Mehmet Yılmaz`,
+    leitpunkte: [
+      { de: "Grund des Schreibens & Zimmerlage (Lärm, kein Meerblick)", en: "Reason & room situation (Noise, no sea view)" },
+      { de: "Defekte Klimaanlage bei Hitze", en: "Broken A/C during extreme heat" },
+      { de: "Erfolglose Beschwerden an Rezeption", en: "Unsuccessful complaints at front desk" },
+      { de: "Forderung nach 30% Erstattung & Fristsetzung", en: "30% refund demand with 2-week deadline" }
+    ],
+    examinerRemarksEn: "Flawless formal business tone. Specific dates, clear demands with deadlines, and proper past tense structures (Perfekt/Präteritum).",
+    examinerRemarksTr: "Kusursuz resmi iş dili. Tarihler, somut talepler, 2 haftalık mühlet ve geçmiş zaman yapıları tam puan getirir."
+  },
+  {
+    id: "vhs",
+    titleEn: "Option 3 (Semi-formal): Inquiry to Adult Education Center (B2 Intensive Course)",
+    titleTr: "Seçenek 3 (Yarı Resmi): Halk Eğitim Kurs Bilgi Talebi (B2 Yoğun Kurs)",
+    titleAr: "الخيار 3 (شبه رسمي): استفسار عن دورة لغات متقدمة B2 في VHS",
+    titleUk: "Варіант 3 (Напівофіційний): Запит на мовний курс B2 у VHS",
+    typeEn: "Semi-formal Inquiry (Education & Schedule)",
+    typeTr: "Yarı Resmi Danışma (Eğitim & Ders Saatleri)",
+    typeAr: "طلب استفسار شبه رسمي (تعليم وجداول)",
+    typeUk: "Напівофіційний запит (Курси)",
+    targetScore: "45 / 45 Pts • Note A (Sehr Gut)",
+    text: `Sehr geehrte Damen und Herren,
+
+ich interessiere mich sehr für den Deutschkurs B2 an Ihrer Volkshochschule und hätte dazu einige wichtige Fragen.
+
+Vor zwei Monaten habe ich meine telc B1-Prüfung erfolgreich bestanden. Da ich mich beruflich weiterentwickeln möchte und eine feste Anstellung in Deutschland anstrebe, brauche ich nun das B2-Zertifikat. Findet der Intensivkurs am Vormittag oder am Abend statt? Da ich tagsüber als Pflegeassistent arbeite, wäre ein Abendkurs für mich ideal.
+
+Könnten Sie mir bitte auch mitteilen, welche Lehrbücher im Unterricht verwendet werden und wie hoch die Kursgebühren sind? Obwohl ich fleißig spare, ist mein Budget derzeit noch begrenzt. Deshalb möchte ich mich erkundigen, ob die Möglichkeit besteht, die Gebühr in monatlichen Raten zu bezahlen, damit ich die Kosten besser planen kann.
+
+Über eine baldige Auskunft und Zusendung des Anmeldeformulars würde ich mich sehr freuen.
+
+Mit freundlichen Grüßen,
+Olena Kovalenko`,
+    leitpunkte: [
+      { de: "Interesse & beruflicher Hintergrund (B1 bestanden, B2 nötig)", en: "Interest & B1 background for career growth" },
+      { de: "Kurszeiten (Vormittag oder Abend)", en: "Schedule & class timing" },
+      { de: "Unterrichtsmaterialien & Bücher", en: "Course textbooks & materials" },
+      { de: "Kursgebühren & Ratenzahlung", en: "Tuition fees & monthly installments" }
+    ],
+    examinerRemarksEn: "Polite modal structures using Konjunktiv II ('hätte', 'könnten Sie', 'würde ich mich freuen'). Exemplary semi-formal etiquette.",
+    examinerRemarksTr: "Konjunktiv II kibarlık kalıpları ('hätte', 'könnten Sie', 'würde mich freuen') yarı resmi mektupta en yüksek puanı garanti eder."
+  },
+  {
+    id: "bewerbung",
+    titleEn: "Option 4 (Formal): Job / Internship Application (Sales / Customer Support)",
+    titleTr: "Seçenek 4 (Resmi): İş / Staj Başvuru Mektubu (Satış & Müşteri Hizmetleri)",
+    titleAr: "الخيار 4 (رسمي): طلب وظيفة أو تدريب مهني في المبيعات وخدمة العملاء",
+    titleUk: "Варіант 4 (Офіційний): Заява про прийом на роботу (Продажі та сервіс)",
+    typeEn: "Formal Application (Career & Employment)",
+    typeTr: "Resmi İş Başvurusu (Kariyer & İstihdam)",
+    typeAr: "طلب عمل رسمي (سيرة ذاتية وتوظيف)",
+    typeUk: "Офіційна заява на працевлаштування",
+    targetScore: "45 / 45 Pts • Note A (Sehr Gut)",
+    wordCount: 172,
+    text: `Sehr geehrte Damen und Herren,
+
+mit großem Interesse habe ich Ihre Stellenanzeige auf dem Online-Portal der Bundesagentur für Arbeit gelesen. Da ich mich beruflich neu orientieren möchte und viel Erfahrung im Kundenkontakt mitbringe, bewerbe ich mich hiermit um die ausgeschriebene Stelle als Mitarbeiter im Verkauf.
+
+In meinem Heimatland habe ich bereits vier Jahre in einem großen Einzelhandelsgeschäft gearbeitet und kenne mich mit Warenpräsentation und Kassenabrechnungen bestens aus. Vor drei Monaten habe ich die telc Deutsch B1-Prüfung mit dem Prädikat „Gut“ bestanden, sodass ich mich problemlos auf Deutsch mit Ihren Kundinnen und Kunden verständigen kann.
+
+Ihr Unternehmen ist mir für hervorragenden Service und freundliche Beratung bekannt. Ich schätze Teamarbeit sehr und bin es gewohnt, auch in stressigen Phasen zuverlässig und freundlich zu arbeiten.
+
+Ab dem 1. des nächsten Monats stehe ich Ihnen flexibel in Vollzeit oder Teilzeit zur Verfügung. Über die Einladung zu einem persönlichen Vorstellungsgespräch würde ich mich sehr freuen.
+
+Mit freundlichen Grüßen,
+Samir Mansour`,
+    leitpunkte: [
+      { de: "Bezug auf Stellenanzeige & Bewerbungsgrund", en: "Reference to job ad & application reason" },
+      { de: "Berufserfahrung im Heimatland & Deutschkenntnisse", en: "Prior retail experience & B1 German proficiency" },
+      { de: "Stärken & Motivation für das Unternehmen", en: "Key strengths (teamwork, calm under stress) & motivation" },
+      { de: "Möglicher Arbeitsbeginn & Bitte um Vorstellungsgespräch", en: "Earliest start date & interview request" }
+    ],
+    examinerRemarksEn: "Textbook B1 formal job application. Perfect introductory formula ('bewerbe ich mich hiermit um'), clear temporal markers, and professional closing.",
+    examinerRemarksTr: "telc B1 için ders kitabı niteliğinde resmi iş başvurusu. 'bewerbe ich mich hiermit um' açılışı, somut tecrübeler ve kibar mülakat talebi."
+  },
+  {
+    id: "wohnung",
+    titleEn: "Option 5 (Formal): Apartment Viewing & Heating Defect (Wohnung & Vermieter)",
+    titleTr: "Seçenek 5 (Resmi): Ev Kiralama Başvurusu & Kalorifer Arıza Bildirimi",
+    titleAr: "الخيار 5 (رسمي): طلب معاينة شقة وإشعار المالك بعطل التدفئة",
+    titleUk: "Варіант 5 (Офіційний): Оренда квартири та скарга на несправність опалення",
+    typeEn: "Formal Housing Application & Tenant Notice",
+    typeTr: "Resmi Ev Kiralama & Kiracı Bildirimi",
+    typeAr: "طلب سكن رسمي وإخطار المالك",
+    typeUk: "Офіційний лист щодо оренди житла",
+    targetScore: "45 / 45 Pts • Note A (Sehr Gut)",
+    wordCount: 178,
+    text: `Sehr geehrte Frau Müller,
+
+ich schreibe Ihnen heute, da ich mich für die von Ihnen inserierte 2-Zimmer-Wohnung in der Goethestraße 14 interessiere und mich um einen Besichtigungstermin bewerben möchte.
+
+Mein Name ist Tarkan Demir, ich bin 32 Jahre alt und arbeite seit zwei Jahren als festangestellter Ingenieur bei einem Maschinenbauunternehmen in Hamburg. Da mein bisheriger Arbeitsweg sehr lang ist, suche ich eine ruhige und verkehrsgünstig gelegene Wohnung für mich und meine Frau. Wir haben keine Haustiere und sind Nichtraucher.
+
+Alle erforderlichen Unterlagen wie die letzten drei Gehaltsabrechnungen, eine aktuelle Schufa-Auskunft sowie eine Mietschuldenfreiheitsbescheinigung meines bisherigen Vermieters liegen vollständig vor.
+
+Außerdem möchte ich darauf hinweisen, dass in meiner aktuellen Mietwohnung seit drei Tagen die Heizung ausgefallen ist. Obwohl ich den Notdienst bereits verständigt habe, ist die Reparatur noch nicht erfolgt, weshalb ein baldiger Umzug für uns sehr wichtig wäre.
+
+Ich würde mich sehr freuen, wenn Sie mir einen passenden Termin für eine Besichtigung mitteilen könnten.
+
+Mit freundlichen Grüßen,
+Tarkan Demir`,
+    leitpunkte: [
+      { de: "Wohnungsinteresse & Bezug auf Inserat", en: "Apartment interest & listing reference" },
+      { de: "Persönliche Vorstellung (Beruf, Haushalt, Haustiere)", en: "Tenant profile (engineer, non-smoker, no pets)" },
+      { de: "Vorhandene Bonitätsunterlagen (Schufa, Gehalt)", en: "Complete financial proof documents available" },
+      { de: "Dringlichkeit (Heizungsausfall) & Terminbitte", en: "Urgency due to heating defect & viewing appointment" }
+    ],
+    examinerRemarksEn: "Addresses the exact realities of renting in Germany (Schufa, Gehaltsabrechnung) while maintaining high stylistic elegance.",
+    examinerRemarksTr: "Almanya'da ev kiralama gerçeklerini (Schufa, maaş bordrosu, borçsuzluk belgesi) ve kibar hak arama üslubunu kusursuz yansıtır."
+  },
+  {
+    id: "termin",
+    titleEn: "Option 6 (Semi-formal): Doctor Appointment Rescheduling / Apology (Terminabsage Arzt)",
+    titleTr: "Seçenek 6 (Yarı Resmi): Doktor Randevusu Erteleme & Özür (Terminabsage)",
+    titleAr: "الخيار 6 (شبه رسمي): تأجيل موعد طبيب واعتذار لظرف طارئ",
+    titleUk: "Варіант 6 (Напівофіційний): Скасування візиту до лікаря через хворобу",
+    typeEn: "Semi-formal Rescheduling & Medical Apology",
+    typeTr: "Yarı Resmi Randevu Değişikliği & Mazeret",
+    typeAr: "اعتذار وتعديل موعد طبي",
+    typeUk: "Перенесення медичного прийому",
+    targetScore: "45 / 45 Pts • Note A (Sehr Gut)",
+    wordCount: 158,
+    text: `Sehr geehrte Frau Dr. Schneider,
+
+ich schreibe Ihnen, weil ich meinen vereinbarten Kontrolltermin am kommenden Donnerstag, dem 24. Oktober um 10:30 Uhr, leider kurzfristig absagen muss.
+
+Seit gestern Abend habe ich hohes Fieber und starke Halsschmerzen, sodass ich das Bett zurzeit nicht verlassen kann. Mein Hausarzt hat mir Bettruhe verordnet, damit ich andere Personen in der Praxis nicht anstecke.
+
+Ich entschuldige mich vielmals für die kurzfristige Benachrichtigung und die dadurch entstandenen Unannehmlichkeiten.
+
+Sobald es mir besser geht, möchte ich den Termin gerne nachholen. Wäre es möglich, einen neuen Ausweichtermin in der ersten Novemberwoche, vorzugsweise an einem Dienstag oder Donnerstag vormittags, zu vereinbaren?
+
+Bitte geben Sie mir kurz per E-Mail oder telefonisch Bescheid, ob dieser Zeitraum für Sie passt. Vielen Dank für Ihr Verständnis!
+
+Mit freundlichen Grüßen,
+Olena Kovalenko`,
+    leitpunkte: [
+      { de: "Genauer Termin & Absagegrund (Fieber, Bettruhe)", en: "Specific appointment & cancellation reason (Fever)" },
+      { de: "Ausdrückliche Entschuldigung für Kurzfristigkeit", en: "Sincere apology for short-notice cancellation" },
+      { de: "Konkreter Vorschlag für Nachholtermin (November)", en: "Specific alternative timeframe proposal (November)" },
+      { de: "Bitte um kurze Rückmeldung & Dank", en: "Request for confirmation & polite thanks" }
+    ],
+    examinerRemarksEn: "Concise, respectful, and crystal-clear. Demonstrates practical everyday communication required for the telc B1 certificate.",
+    examinerRemarksTr: "Kısa, net ve son derece saygılı. telc B1 sınav komisyonunun aradığı günlük pratik iletişim becerisini eksiksiz sergiler."
+  }
+];
+
+if (typeof window !== 'undefined') {
+  window.SAMPLE_B1_EVALUATION = SAMPLE_B1_EVALUATION;
+  window.B1_MODEL_LETTERS = B1_MODEL_LETTERS;
+}
+
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { SAMPLE_B1_EVALUATION };
+  module.exports = { SAMPLE_B1_EVALUATION, B1_MODEL_LETTERS };
 }

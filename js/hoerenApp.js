@@ -39,7 +39,8 @@
       correctLabel: "Correct Answer",
       evidenceLabel: "Audio Evidence:",
       rightChoice: "Richtig (True)",
-      wrongChoice: "Falsch (False)"
+      wrongChoice: "Falsch (False)",
+      testLabel: "Practice Test"
     },
     tr: {
       brandTitle: "Dinleme Stüdyosu & Sesli Sınav",
@@ -68,7 +69,8 @@
       correctLabel: "Doğru Cevap",
       evidenceLabel: "Ses Metnindeki Kanıt:",
       rightChoice: "Richtig (Doğru)",
-      wrongChoice: "Falsch (Yanlış)"
+      wrongChoice: "Falsch (Yanlış)",
+      testLabel: "Deneme Sınavı"
     },
     ar: {
       brandTitle: "استوديو الاستماع والامتحان الصوتي",
@@ -97,7 +99,8 @@
       correctLabel: "الإجابة الصحيحة",
       evidenceLabel: "الدليل من النص المسموع:",
       rightChoice: "Richtig (صحيح)",
-      wrongChoice: "Falsch (خاطئ)"
+      wrongChoice: "Falsch (خاطئ)",
+      testLabel: "الاختبار التدريبي"
     },
     uk: {
       brandTitle: "Студія аудіювання та звуковий іспит",
@@ -126,7 +129,8 @@
       correctLabel: "Правильна відповідь",
       evidenceLabel: "Цитата з аудіо:",
       rightChoice: "Richtig (Правильно)",
-      wrongChoice: "Falsch (Неправильно)"
+      wrongChoice: "Falsch (Неправильно)",
+      testLabel: "Тренувальний тест"
     }
   };
 
@@ -165,6 +169,7 @@
       this.bindElements();
       this.bindEvents();
       this.renderLanguage();
+      this.renderTestSelector();
       this.renderPartTabs();
       this.loadPart('teil1');
       this.updateTimerDisplay();
@@ -172,6 +177,7 @@
 
     bindElements() {
       this.dom = {
+        testPills: document.getElementById('hr-test-pills'),
         partTabs: document.getElementById('hr-part-tabs'),
         testTitle: document.getElementById('hr-test-title'),
         partInstruction: document.getElementById('hr-part-instruction'),
@@ -233,6 +239,42 @@
         });
       }
 
+      this.renderTestSelector();
+      this.renderPartTabs();
+      this.renderCurrentView();
+    }
+
+    renderTestSelector() {
+      if (!this.dom.testPills) return;
+      this.dom.testPills.innerHTML = '';
+      const texts = I18N[this.lang] || I18N.en;
+
+      this.dataset.forEach((test, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = `hr-test-btn ${this.currentTestIndex === idx ? 'active' : ''}`;
+        const pillText = `${texts.testLabel || 'Test'} ${idx + 1}`;
+        btn.innerHTML = `<span>🎯</span> <strong>${pillText}</strong>`;
+        btn.title = (test.title && (test.title[this.lang] || test.title.de)) || pillText;
+        btn.setAttribute('role', 'tab');
+        btn.setAttribute('aria-selected', this.currentTestIndex === idx ? 'true' : 'false');
+        btn.addEventListener('click', () => this.selectTest(idx));
+        this.dom.testPills.appendChild(btn);
+      });
+    }
+
+    selectTest(idx) {
+      if (idx === this.currentTestIndex && !this.isGraded) return;
+      this.stopAudio();
+      this.currentTestIndex = idx;
+      this.currentPart = 'teil1';
+      this.activeItemIndex = 0;
+      this.userAnswers = {};
+      this.isGraded = false;
+      if (this.dom.scoreBanner) {
+        this.dom.scoreBanner.style.display = 'none';
+      }
+      this.renderTestSelector();
       this.renderPartTabs();
       this.renderCurrentView();
     }
@@ -308,10 +350,11 @@
     }
 
     getAudioTargetKey() {
+      const prefix = `test${this.currentTestIndex + 1}`;
       if (this.currentPart === 'teil2') {
-        return `test1_teil2`;
+        return `${prefix}_teil2`;
       }
-      return `test1_${this.currentPart}_item_${this.activeItemIndex}`;
+      return `${prefix}_${this.currentPart}_item_${this.activeItemIndex}`;
     }
 
     updatePlayerControls(partData) {

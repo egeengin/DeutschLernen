@@ -10,6 +10,7 @@ const SHOWCASE_I18N = {
   en: {
     tabSample: "✨ Pre-Computed Sample Report",
     tabLive: "⚡ Live AI Letter Grader (Pro)",
+    tabModels: "📚 Model Letters (45/45)",
     tabSpeaking: "🗣️ Sprechen Teil 3 Simulator",
     badgeOfficial: "✨ Official telc B1 Sample Evaluation",
     titleReport: "📝 telc Deutsch B1 Schreiben — Interactive Examiner Report",
@@ -50,7 +51,13 @@ const SHOWCASE_I18N = {
     livePromptMarianne: "Option 1 (Informal): E-Mail to Marianne (Visit to Germany)",
     livePromptHotel: "Option 2 (Formal): Complaint Letter to Hotel Meeresblick",
     livePromptVhs: "Option 3 (Semi-formal): Inquiry to Adult Education Center (VHS)",
+    livePromptBewerbung: "Option 4 (Formal): Job / Internship Application (Bewerbung)",
+    livePromptWohnung: "Option 5 (Formal): Apartment Viewing & Heating Defect (Wohnung)",
+    livePromptTermin: "Option 6 (Semi-formal): Doctor Appointment Rescheduling / Apology (Terminabsage)",
     livePromptCustom: "Custom Prompt (Enter your own situation & Leitpunkte)",
+    loadModelBtn: "⚡ Load into Live Grader",
+    modelsSectionTitle: "📚 telc Deutsch B1 Gold-Standard Model Letters (45/45 Pts)",
+    modelsSectionSub: "Study official Grade A sample letters across the 6 most common exam topics. Review examiner criteria annotations and load them directly into the AI Grader to practice.",
     connectorsPaletteLabel: "⚡ B1 Connectors Quick-Insert:",
     connectorsUsedLabel: "B1 Connectors used:",
     liveTextareaLabel: "Your Practice Letter (Minimal 20 words):",
@@ -115,6 +122,7 @@ const SHOWCASE_I18N = {
   tr: {
     tabSample: "✨ Örnek Değerlendirme Raporu",
     tabLive: "⚡ Canlı Yapay Zeka Mektup Puanlayıcı",
+    tabModels: "📚 Musterschreiben (45/45)",
     tabSpeaking: "🗣️ Konuşma Bölüm 3 Simülatörü",
     badgeOfficial: "✨ Resmi telc B1 Örnek Değerlendirmesi",
     titleReport: "📝 telc Deutsch B1 Yazma — İnteraktif Sınav Raporu",
@@ -155,7 +163,13 @@ const SHOWCASE_I18N = {
     livePromptMarianne: "Seçenek 1 (Samimi): Marianne'ye E-Posta (Almanya Ziyareti)",
     livePromptHotel: "Seçenek 2 (Resmi): Hotel Meeresblick Şikayet Mektubu",
     livePromptVhs: "Seçenek 3 (Yarı Resmi): Halk Eğitim Kurs Bilgi Talebi",
+    livePromptBewerbung: "Seçenek 4 (Resmi): İş / Staj Başvuru Mektubu (Bewerbung)",
+    livePromptWohnung: "Seçenek 5 (Resmi): Ev Kiralama & Kalorifer Arıza Bildirimi (Wohnung)",
+    livePromptTermin: "Seçenek 6 (Yarı Resmi): Doktor Randevusu Erteleme & Özür (Terminabsage)",
     livePromptCustom: "Özel Görev (Kendi konunuzu ve kılavuz noktalarınızı yazın)",
+    loadModelBtn: "⚡ Editöre Yükle ve Puanla",
+    modelsSectionTitle: "📚 telc Deutsch B1 Tam Puanlık Model Mektup Kütüphanesi (45/45 Puan)",
+    modelsSectionSub: "Sınavda en çok çıkan 6 konuda 45/45 tam puanlık model mektupları inceleyin. Sınav uzmanı açıklamalarını okuyun ve tek tıkla yapay zeka editörüne aktararak pratik yapın.",
     connectorsPaletteLabel: "⚡ B1 Bağlaç Hızlı Ekleme:",
     connectorsUsedLabel: "Kullanılan B1 Bağlaçları:",
     liveTextareaLabel: "Alıştırma Mektubunuz (En az 20 kelime):",
@@ -220,6 +234,7 @@ const SHOWCASE_I18N = {
   ar: {
     tabSample: "✨ تقرير التقييم النموذجي",
     tabLive: "⚡ المصحح الفوري للرسائل بالذكاء الاصطناعي",
+    tabModels: "📚 نماذج الرسائل الكاملة (45/45)",
     tabSpeaking: "🗣️ محاكي المحادثة - الجزء 3",
     badgeOfficial: "✨ تقرير تقييم رسمي لنموذج telc B1",
     titleReport: "📝 كتابة telc Deutsch B1 — تقرير الفاحص التفاعلي",
@@ -260,7 +275,13 @@ const SHOWCASE_I18N = {
     livePromptMarianne: "الخيار 1 (غير رسمي): رسالة إلى ماريان (زيارة ألمانيا)",
     livePromptHotel: "الخيار 2 (رسمي): رسالة شكوى لفندق Meeresblick",
     livePromptVhs: "الخيار 3 (شبه رسمي): استفسار عن دورة لغات في VHS",
+    livePromptBewerbung: "الخيار 4 (رسمي): طلب وظيفة أو تدريب مهني (Bewerbung)",
+    livePromptWohnung: "الخيار 5 (رسمي): معاينة شقة وإبلاغ المالك عن عطل التدفئة (Wohnung)",
+    livePromptTermin: "الخيار 6 (شبه رسمي): تأجيل موعد طبيب واعتذار (Terminabsage)",
     livePromptCustom: "موضوع مخصص (اكتب الموقف والنقاط بنفسك)",
+    loadModelBtn: "⚡ تحميل إلى المحاكي والتصحيح",
+    modelsSectionTitle: "📚 مكتبة نماذج رسائل telc B1 النموذجية الحاصلة على الدرجة الكاملة (45/45)",
+    modelsSectionSub: "اطلع على نماذج رسائل حاصلة على أعلى الدرجات في المواضيع الستة الأكثر تكراراً في الامتحان. اقرأ ملاحظات الفاحص وحملها إلى المصحح للتدريب.",
     connectorsPaletteLabel: "⚡ إدراج روابط B1 بنقرة واحدة:",
     connectorsUsedLabel: "الروابط المستخدمة:",
     liveTextareaLabel: "رسالتك التدريبية (20 كلمة على الأقل):",
@@ -325,6 +346,7 @@ const SHOWCASE_I18N = {
   uk: {
     tabSample: "✨ Зразок звіту екзаменатора",
     tabLive: "⚡ Живе оцінювання листів ШІ",
+    tabModels: "📚 Зразкові листи (45/45)",
     tabSpeaking: "🗣️ Симулятор мовлення Частина 3",
     badgeOfficial: "✨ Офіційне оцінювання зразка telc B1",
     titleReport: "📝 telc Deutsch B1 Письмо — Інтерактивний звіт екзаменатора",
@@ -365,7 +387,13 @@ const SHOWCASE_I18N = {
     livePromptMarianne: "Варіант 1 (Неформальний): Лист Маріанні (Поїздка до Німеччини)",
     livePromptHotel: "Варіант 2 (Офіційний): Скарга до готелю Meeresblick",
     livePromptVhs: "Варіант 3 (Напівофіційний): Запит на мовний курс у VHS",
+    livePromptBewerbung: "Варіант 4 (Офіційний): Заява на роботу або практику (Bewerbung)",
+    livePromptWohnung: "Варіант 5 (Офіційний): Оренда квартири та скарга на опалення (Wohnung)",
+    livePromptTermin: "Варіант 6 (Напівофіційний): Скасування візиту до лікаря через хворобу (Terminabsage)",
     livePromptCustom: "Власне завдання (введіть свою ситуацію та пункти)",
+    loadModelBtn: "⚡ Завантажити в редактор і перевірити",
+    modelsSectionTitle: "📚 Зразкова бібліотека листів telc Deutsch B1 на повний бал (45/45)",
+    modelsSectionSub: "Вивчайте зразкові листи на найвищий бал A за 6 найпопулярнішими темами іспиту. Читайте коментарі екзаменатора та завантажуйте їх безпосередньо в редактор для практики.",
     connectorsPaletteLabel: "⚡ Швидка вставка сполучників B1:",
     connectorsUsedLabel: "Використані сполучники B1:",
     liveTextareaLabel: "Ваш тренувальний лист (мінімум 20 слів):",
@@ -497,6 +525,9 @@ function renderSchreibenShowcase(containerId) {
         </button>
         <button class="schreiben-tab-btn ${currentShowcaseTab === 'live' ? 'active' : ''}" onclick="switchSchreibenTab('live')">
           ${t('tabLive')}
+        </button>
+        <button class="schreiben-tab-btn ${currentShowcaseTab === 'models' ? 'active' : ''}" onclick="switchSchreibenTab('models')">
+          ${t('tabModels')}
         </button>
         <button class="schreiben-tab-btn ${currentShowcaseTab === 'speaking' ? 'active' : ''}" onclick="switchSchreibenTab('speaking')">
           ${t('tabSpeaking')}
@@ -676,6 +707,9 @@ function renderSchreibenShowcase(containerId) {
               <option value="marianne">${t('livePromptMarianne')}</option>
               <option value="hotel">${t('livePromptHotel')}</option>
               <option value="vhs">${t('livePromptVhs')}</option>
+              <option value="bewerbung">${t('livePromptBewerbung')}</option>
+              <option value="wohnung">${t('livePromptWohnung')}</option>
+              <option value="termin">${t('livePromptTermin')}</option>
               <option value="custom">${t('livePromptCustom')}</option>
             </select>
           </div>
@@ -781,7 +815,70 @@ function renderSchreibenShowcase(containerId) {
         </div>
       </div>
 
-      <!-- TAB 3: SPRECHEN TEIL 3 SIMULATOR -->
+      <!-- TAB 3: MUSTERSCHREIBEN / MODEL LETTERS ARCHIVE (45/45) -->
+      <div id="tab-content-models" class="tab-pane ${currentShowcaseTab === 'models' ? 'active' : ''}">
+        <div class="models-header" style="margin-bottom:24px; border-bottom:1px solid var(--border); padding-bottom:16px;">
+          <div class="showcase-badge" style="background:rgba(245,158,11,0.15); color:var(--accent-gold); border:1px solid rgba(245,158,11,0.3); font-size:11px; font-weight:800; padding:4px 10px; border-radius:20px; display:inline-block; margin-bottom:8px;">🏆 telc B1 Note A (45/45 Pkt)</div>
+          <h2 style="font-size:22px; font-weight:800; color:var(--text-primary); margin:0 0 6px 0;">${t('modelsSectionTitle')}</h2>
+          <p style="font-size:13px; color:var(--text-secondary); line-height:1.5; margin:0;">${t('modelsSectionSub')}</p>
+        </div>
+
+        <div class="models-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:20px;">
+          ${(typeof window !== 'undefined' && window.B1_MODEL_LETTERS ? window.B1_MODEL_LETTERS : (typeof B1_MODEL_LETTERS !== 'undefined' ? B1_MODEL_LETTERS : [])).map((m) => {
+            const title = m['title' + langKey] || m.titleEn;
+            const type = m['type' + langKey] || m.typeEn;
+            const remarks = m['examinerRemarks' + langKey] || m.examinerRemarksEn;
+            return `
+              <div class="model-card" style="background:var(--bg-primary); border:1px solid var(--border); border-radius:14px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
+                <div>
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:8px;">
+                    <span class="showcase-badge" style="background:rgba(34,197,94,0.15); color:#22c55e; border-color:rgba(34,197,94,0.3); font-size:10px; font-weight:800; padding:3px 8px; border-radius:12px;">
+                      ${m.targetScore}
+                    </span>
+                    <span style="font-size:11px; font-weight:700; color:var(--text-muted);">
+                      📊 ${m.wordCount} Wörter
+                    </span>
+                  </div>
+                  <h4 style="margin:0 0 4px 0; font-size:15px; color:var(--text-primary); font-weight:800; line-height:1.35;">
+                    ${title}
+                  </h4>
+                  <div style="font-size:11.5px; color:var(--accent-gold); font-weight:700; margin-bottom:12px;">
+                    📌 ${type}
+                  </div>
+
+                  <!-- Letter Text Box -->
+                  <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:10px; padding:12px 14px; font-family:var(--font-mono, monospace); font-size:12px; line-height:1.6; color:var(--text-primary); white-space:pre-wrap; max-height:220px; overflow-y:auto; margin-bottom:14px;" dir="ltr">
+${m.text}
+                  </div>
+
+                  <!-- Leitpunkte Checklist summary -->
+                  <div style="margin-bottom:12px;">
+                    <div style="font-size:10.5px; font-weight:800; text-transform:uppercase; color:var(--text-muted); margin-bottom:6px;">
+                      📋 Leitpunkte:
+                    </div>
+                    <ul style="margin:0 0 0 16px; padding:0; font-size:11.5px; color:var(--text-secondary); line-height:1.4;">
+                      ${m.leitpunkte.map(lp => `<li>${lp[lang] || lp.de || lp.en}</li>`).join('')}
+                    </ul>
+                  </div>
+
+                  <!-- Examiner Verdict -->
+                  <div style="background:rgba(245,158,11,0.08); border-left:3px solid var(--accent-gold); padding:8px 12px; border-radius:6px; font-size:11.5px; color:var(--text-primary); margin-bottom:16px; line-height:1.45;">
+                    <strong>💡 telc B1 Examiner:</strong> ${remarks}
+                  </div>
+                </div>
+
+                <div style="display:flex; gap:10px; align-items:center; border-top:1px solid var(--border); padding-top:14px;">
+                  <button type="button" class="cta-btn-primary" onclick="loadModelLetterIntoGrader('${m.id}')" style="width:100%; font-size:12px; padding:8px 12px; font-weight:700; display:flex; align-items:center; justify-content:center; gap:6px; cursor:pointer;">
+                    ${t('loadModelBtn')}
+                  </button>
+                </div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+
+      <!-- TAB 4: SPRECHEN TEIL 3 SIMULATOR -->
       <div id="tab-content-speaking" class="tab-pane ${currentShowcaseTab === 'speaking' ? 'active' : ''}">
         <div class="speaking-sim-card">
           <div class="speaking-header">
@@ -1057,7 +1154,13 @@ function handlePromptSelectChange(val) {
   } else if (val === 'hotel') {
     textarea.value = `Sehr geehrte Damen und Herren,\n\nich schreibe Ihnen, weil ich mich über meinen Aufenthalt im Hotel Meeresblick vom 10. bis 17. August beschweren möchte.\n\nIn Ihrer Anzeige im Internet stand, dass alle Zimmer einen Blick auf das Meer haben und es sehr ruhig ist. Als ich ankam, lag mein Zimmer jedoch direkt über der lauten Hotelküche, und ich konnte das Meer überhaupt nicht sehen.\n\nAußerdem war die Klimaanlage während meines gesamten Aufenthalts kaputt, obwohl es draußen über 30 Grad warm war. An der Rezeption habe ich mich mehrmals beschwert, aber niemand hat das Problem gelöst.\n\nAus diesen Gründen erwarte ich, dass Sie mir 30 Prozent der Reisekosten zurückerstatten. Bitte überweisen Sie den Betrag innerhalb von zwei Wochen auf mein Bankkonto.\n\nMit freundlichen Grüßen,\nMehmet Yılmaz`;
   } else if (val === 'vhs') {
-    textarea.value = `Sehr geehrte Damen und Herren,\n\nich interessiere mich sehr für den Deutschkurs B2 an Ihrer Volkshochschule und hätte dazu einige wichtige Fragen.\n\nIch habe vor zwei Monaten meine B1-Prüfung mit gutem Erfolg bestanden. Da ich mich beruflich weiterentwickeln möchte, brauche ich nun das B2-Zertifikat. Findet der Intensivkurs am Vormittag oder am Abend statt?\n\nKönnten Sie mir bitte auch mitteilen, welche Lehrbücher im Unterricht verwendet werden und wie hoch die Kursgebühren sind? Besteht die Möglichkeit, die Kurskosten in monatlichen Raten zu bezahlen?\n\nÜber eine baldige Auskunft würde ich mich sehr freuen.\n\nMit freundlichen Grüßen,\nOlena Kovalenko`;
+    textarea.value = `Sehr geehrte Damen und Herren,\n\nich interessiere mich sehr für den Deutschkurs B2 an Ihrer Volkshochschule und hätte dazu einige wichtige Fragen.\n\nVor zwei Monaten habe ich meine telc B1-Prüfung erfolgreich bestanden. Da ich mich beruflich weiterentwickeln möchte und eine feste Anstellung in Deutschland anstrebe, brauche ich nun das B2-Zertifikat. Findet der Intensivkurs am Vormittag oder am Abend statt? Da ich tagsüber als Pflegeassistent arbeite, wäre ein Abendkurs für mich ideal.\n\nKönnten Sie mir bitte auch mitteilen, welche Lehrbücher im Unterricht verwendet werden und wie hoch die Kursgebühren sind? Obwohl ich fleißig spare, ist mein Budget derzeit noch begrenzt. Deshalb möchte ich mich erkundigen, ob die Möglichkeit besteht, die Gebühr in monatlichen Raten zu bezahlen, damit ich die Kosten besser planen kann.\n\nÜber eine baldige Auskunft und Zusendung des Anmeldeformulars würde ich mich sehr freuen.\n\nMit freundlichen Grüßen,\nOlena Kovalenko`;
+  } else if (val === 'bewerbung') {
+    textarea.value = `Sehr geehrte Damen und Herren,\n\nmit großem Interesse habe ich Ihre Stellenanzeige auf dem Online-Portal der Bundesagentur für Arbeit gelesen. Da ich mich beruflich neu orientieren möchte und viel Erfahrung im Kundenkontakt mitbringe, bewerbe ich mich hiermit um die ausgeschriebene Stelle als Mitarbeiter im Verkauf.\n\nIn meinem Heimatland habe ich bereits vier Jahre in einem großen Einzelhandelsgeschäft gearbeitet und kenne mich mit Warenpräsentation und Kassenabrechnungen bestens aus. Vor drei Monaten habe ich die telc Deutsch B1-Prüfung mit dem Prädikat „Gut“ bestanden, sodass ich mich problemlos auf Deutsch mit Ihren Kundinnen und Kunden verständigen kann.\n\nIhr Unternehmen ist mir für hervorragenden Service und freundliche Beratung bekannt. Ich schätze Teamarbeit sehr und bin es gewohnt, auch in stressigen Phasen zuverlässig und freundlich zu arbeiten.\n\nAb dem 1. des nächsten Monats stehe ich Ihnen flexibel in Vollzeit oder Teilzeit zur Verfügung. Über die Einladung zu einem persönlichen Vorstellungsgespräch würde ich mich sehr freuen.\n\nMit freundlichen Grüßen,\nSamir Mansour`;
+  } else if (val === 'wohnung') {
+    textarea.value = `Sehr geehrte Frau Müller,\n\nich schreibe Ihnen heute, da ich mich für die von Ihnen inserierte 2-Zimmer-Wohnung in der Goethestraße 14 interessiere und mich um einen Besichtigungstermin bewerben möchte.\n\nMein Name ist Tarkan Demir, ich bin 32 Jahre alt und arbeite seit zwei Jahren als festangestellter Ingenieur bei einem Maschinenbauunternehmen in Hamburg. Da mein bisheriger Arbeitsweg sehr lang ist, suche ich eine ruhige und verkehrsgünstig gelegene Wohnung für mich und meine Frau. Wir haben keine Haustiere und sind Nichtraucher.\n\nAlle erforderlichen Unterlagen wie die letzten drei Gehaltsabrechnungen, eine aktuelle Schufa-Auskunft sowie eine Mietschuldenfreiheitsbescheinigung meines bisherigen Vermieters liegen vollständig vor.\n\nAußerdem möchte ich darauf hinweisen, dass in meiner aktuellen Mietwohnung seit drei Tagen die Heizung ausgefallen ist. Obwohl ich den Notdienst bereits verständigt habe, ist die Reparatur noch nicht erfolgt, weshalb ein baldiger Umzug für uns sehr wichtig wäre.\n\nIch würde mich sehr freuen, wenn Sie mir einen passenden Termin für eine Besichtigung mitteilen könnten.\n\nMit freundlichen Grüßen,\nTarkan Demir`;
+  } else if (val === 'termin') {
+    textarea.value = `Sehr geehrte Frau Dr. Schneider,\n\nich schreibe Ihnen, weil ich meinen vereinbarten Kontrolltermin am kommenden Donnerstag, dem 24. Oktober um 10:30 Uhr, leider kurzfristig absagen muss.\n\nSeit gestern Abend habe ich hohes Fieber und starke Halsschmerzen, sodass ich das Bett zurzeit nicht verlassen kann. Mein Hausarzt hat mir Bettruhe verordnet, damit ich andere Personen in der Praxis nicht anstecke.\n\nIch entschuldige mich vielmals für die kurzfristige Benachrichtigung und die dadurch entstandenen Unannehmlichkeiten.\n\nSobald es mir besser geht, möchte ich den Termin gerne nachholen. Wäre es möglich, einen neuen Ausweichtermin in der ersten Novemberwoche, vorzugsweise an einem Dienstag oder Donnerstag vormittags, zu vereinbaren?\n\nBitte geben Sie mir kurz per E-Mail oder telefonisch Bescheid, ob dieser Zeitraum für Sie passt. Vielen Dank für Ihr Verständnis!\n\nMit freundlichen Grüßen,\nOlena Kovalenko`;
   } else if (val === 'custom') {
     textarea.value = '';
   }
@@ -1079,7 +1182,7 @@ function evaluateStudentLetterB1(rawText, promptKey, lang) {
   const wordCount = words.length;
   const paragraphs = rawText.split(/\n+/).map(p => p.trim()).filter(Boolean);
 
-  const isFormal = promptKey === 'hotel' || promptKey === 'vhs' || /Sehr geehrte/i.test(rawText);
+  const isFormal = promptKey === 'hotel' || promptKey === 'vhs' || promptKey === 'bewerbung' || promptKey === 'wohnung' || promptKey === 'termin' || /Sehr geehrte/i.test(rawText);
 
   // 1. Leitpunkte & Keyword Coverage
   const leitpunkteResults = [];
@@ -1115,6 +1218,42 @@ function evaluateStudentLetterB1(rawText, promptKey, lang) {
       { id: 2, regex: /\b(vormittag|abend|uhrzeit|termin|wann|zeiten)\b/i, name: "Course schedule & timing" },
       { id: 3, regex: /\b(lehrbuch|lehrbücher|buch|bücher|material|unterricht)\b/i, name: "Textbooks & materials" },
       { id: 4, regex: /\b(kosten|gebühr|gebühren|raten|monatlich|bezahlen)\b/i, name: "Course fees & payment in installments" }
+    ];
+    lpDefs.forEach(lp => {
+      const hit = lp.regex.test(rawText);
+      if (hit) lpCoveredCount++;
+      leitpunkteResults.push({ id: lp.id, name: lp.name, fulfilled: hit });
+    });
+  } else if (promptKey === 'bewerbung') {
+    const lpDefs = [
+      { id: 1, regex: /\b(stellenanzeige|stelle|bewerbe|bewerbung|mitarbeiter|verkauf|praktikum|arbeit)\b/i, name: "Reference to job ad & application" },
+      { id: 2, regex: /\b(erfahrung|gearbeitet|heimatland|prüfung|b1|deutsch|zertifikat|ausbildung)\b/i, name: "Work experience & German skills" },
+      { id: 3, regex: /\b(unternehmen|service|beratung|teamarbeit|schätze|zuverlässig|kunden)\b/i, name: "Motivation & personal strengths" },
+      { id: 4, regex: /\b(verfügung|vollzeit|teilzeit|monat|beginn|vorstellungsgespräch|gespräch|freuen)\b/i, name: "Availability date & interview request" }
+    ];
+    lpDefs.forEach(lp => {
+      const hit = lp.regex.test(rawText);
+      if (hit) lpCoveredCount++;
+      leitpunkteResults.push({ id: lp.id, name: lp.name, fulfilled: hit });
+    });
+  } else if (promptKey === 'wohnung') {
+    const lpDefs = [
+      { id: 1, regex: /\b(wohnung|inseriert|goethestraße|zimmer|besichtigung|besichtigungstermin|interessiere)\b/i, name: "Apartment interest & viewing request" },
+      { id: 2, regex: /\b(name|jahre|angestellt|ingenieur|beruf|gehalt|arbeit|frau|haustiere|nichtraucher)\b/i, name: "Tenant introduction & household" },
+      { id: 3, regex: /\b(unterlagen|gehaltsabrechnung|schufa|bescheinigung|vermieter)\b/i, name: "Proof documents (Schufa / Salary)" },
+      { id: 4, regex: /\b(heizung|ausgefallen|notdienst|reparatur|umzug|termin|mitteilen)\b/i, name: "Heating defect & urgent appointment" }
+    ];
+    lpDefs.forEach(lp => {
+      const hit = lp.regex.test(rawText);
+      if (hit) lpCoveredCount++;
+      leitpunkteResults.push({ id: lp.id, name: lp.name, fulfilled: hit });
+    });
+  } else if (promptKey === 'termin') {
+    const lpDefs = [
+      { id: 1, regex: /\b(termin|kontrolltermin|donnerstag|uhr|absagen|absage)\b/i, name: "Appointment cancellation notice" },
+      { id: 2, regex: /\b(fieber|halsschmerzen|bett|bettruhe|hausarzt|krank|erkrankung|anstecken)\b/i, name: "Illness reason & medical context" },
+      { id: 3, regex: /\b(entschuldige|entschuldigung|kurzfristig|unannehmlichkeiten|leid)\b/i, name: "Polite apology for short notice" },
+      { id: 4, regex: /\b(nachholen|ausweichtermin|november|dienstag|donnerstag|bescheid|bestätigung)\b/i, name: "Proposed reschedule date & confirmation" }
     ];
     lpDefs.forEach(lp => {
       const hit = lp.regex.test(rawText);
@@ -2807,6 +2946,23 @@ function confirmInstantDemoOrder(tierId, explicitMethod) {
   `;
 }
 
+/**
+ * Load Model Letter from Archive directly into Live Grader
+ */
+function loadModelLetterIntoGrader(promptKey) {
+  switchSchreibenTab('live');
+  const sel = document.getElementById('prompt-select-input');
+  if (sel) {
+    sel.value = promptKey;
+  }
+  handlePromptSelectChange(promptKey);
+  const textarea = document.getElementById('student-letter-textarea');
+  if (textarea) {
+    textarea.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    textarea.focus();
+  }
+}
+
 if (typeof window !== 'undefined') {
   window.SHOWCASE_I18N = SHOWCASE_I18N;
   window.renderSchreibenShowcase = renderSchreibenShowcase;
@@ -2840,6 +2996,7 @@ if (typeof window !== 'undefined') {
   window.grantLetterCredits = grantLetterCredits;
   window.updateCreditsDisplay = updateCreditsDisplay;
   window.isUserPro = isUserPro;
+  window.loadModelLetterIntoGrader = loadModelLetterIntoGrader;
 }
 
 if (typeof module !== 'undefined' && module.exports) {
@@ -2870,6 +3027,7 @@ if (typeof module !== 'undefined' && module.exports) {
     switchPaymentMethod,
     selectProPlan,
     confirmInstantDemoOrder,
-    redeemAccessCode
+    redeemAccessCode,
+    loadModelLetterIntoGrader
   };
 }

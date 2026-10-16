@@ -1142,6 +1142,761 @@
           }
         ]
       }
+    },
+// ==========================================
+    // SET 4: Krankenkasse Kostenerstattung & Hausmitteilung
+    // ==========================================
+    {
+      id: "sb-set-4",
+      title: {
+        de: "Übungstest 4: Sprachbausteine (Teil 1 & Teil 2)",
+        en: "Practice Test 4: Language Elements (Part 1 & Part 2)",
+        tr: "Deneme Sınavı 4: Dil Öğeleri / Dilbilgisi Boşluk Doldurma",
+        ar: "الاختبار التدريبي 4: تراكيب اللغة (الجزء 1 والجزء 2)",
+        uk: "Тренувальний тест 4: Мовні елементи (Частина 1 та 2)"
+      },
+      timeEstimateMin: 20,
+      badge: "telc B1 30 Punkte",
+
+      // TEIL 1: E-Mail an die Krankenkasse
+      teil1: {
+        id: "sb-4-teil1",
+        title: {
+          de: "Teil 1: E-Mail an die Krankenkasse",
+          en: "Part 1: Email to Health Insurance Fund",
+          tr: "Bölüm 1: Sağlık Sigortasına E-Posta",
+          ar: "الجزء 1: رسالة إلى التأمين الصحي",
+          uk: "Частина 1: Лист до лікарняної каси"
+        },
+        instruction: {
+          de: "Lesen Sie den folgenden Text und entscheiden Sie, welches Wort (a, b oder c) in die jeweilige Lücke (21–30) passt.",
+          en: "Read the following text and decide which word (a, b or c) fits into each gap (21–30).",
+          tr: "Aşağıdaki metni okuyunuz ve her boşluğa (21-30) hangi kelimenin (a, b veya c) uygun geldiğine karar veriniz.",
+          ar: "اقرأ النص التالي وحدد الكلمة (a أو b أو c) المناسبة لكل فراغ (21-30).",
+          uk: "Прочитайте наступний текст і визначте, яке слово (a, b або c) підходить для кожного пропуску (21–30)."
+        },
+        context: "Kostenübernahme für Zahnersatz und Einreichung des Heil- und Kostenplans",
+        textTemplate: "Sehr geehrte Damen und Herren,\n\nich wende mich an Sie, {21} bei mir demnächst eine größere Zahnbehandlung notwendig ist. Mein Zahnarzt hat mir geraten, einen Zuschuss bei meiner Krankenkasse zu {22}.\n\nIch möchte mich daher {23} den genauen Voraussetzungen erkundigen. In welchem Umfang {24} die Kosten für die geplante Krone von der Kasse erstattet? Im Anhang finden Sie den Heil- und Kostenplan von {25} behandelnden Ärztin.\n\nKönnten Sie mir bitte mitteilen, {26} ich die Behandlung vorab genehmigen lassen muss oder ob ich direkt {27} den Terminen beginnen kann? Außerdem wäre ich dankbar, wenn Sie mir {28}, wie lange die Bearbeitung meines Antrags voraussichtlich dauert.\n\nÜber Ihre freundliche Unterstützung würde ich {29} sehr freuen.\n\nMit freundlichen {30}\nMurat Güler",
+        items: [
+          {
+            id: 21,
+            label: "Lücke 21",
+            correct: "b",
+            options: [
+              { key: "a", text: "denn" },
+              { key: "b", text: "weil" },
+              { key: "c", text: "deshalb" }
+            ],
+            rule: {
+              de: "Nebensatz mit Subjunktion 'weil': Das konjugierte Hilfsverb 'ist' steht am Satzende.",
+              en: "Subordinate clause with 'weil': Verb 'ist' moves to the end of the clause.",
+              tr: "'weil' bağlacı yan cümle kurar ve 'ist' fiilini cümlenin sonuna taşır. 'denn' cümlenin normal dizilimini korur.",
+              ar: "جملة تابعة مع 'weil': ينتقل الفعل 'ist' إلى نهاية الجملة.",
+              uk: "Підрядне речення з 'weil': дієслово 'ist' переноситься в кінець речення."
+            }
+          },
+          {
+            id: 22,
+            label: "Lücke 22",
+            correct: "a",
+            options: [
+              { key: "a", text: "beantragen" },
+              { key: "b", text: "antragen" },
+              { key: "c", text: "erfragen" }
+            ],
+            rule: {
+              de: "Feste Wendung im Behördendeutsch: 'einen Zuschuss / eine Kostenübernahme beantragen'.",
+              en: "Standard administrative idiom: 'einen Zuschuss beantragen' (to apply for a subsidy).",
+              tr: "Resmi işlem kalıbı: 'einen Zuschuss beantragen' (maddi yardım/destek talep etmek/başvurmak).",
+              ar: "تعبير رسمي معتاد: 'einen Zuschuss beantragen' (تقديم طلب دعم مالي).",
+              uk: "Офіційний вираз: 'einen Zuschuss beantragen' (подати заяву на субсидію/допомогу)."
+            }
+          },
+          {
+            id: 23,
+            label: "Lücke 23",
+            correct: "c",
+            options: [
+              { key: "a", text: "zu" },
+              { key: "b", text: "für" },
+              { key: "c", text: "nach" }
+            ],
+            rule: {
+              de: "Feste Verb-Präposition-Verbindung: 'sich erkundigen nach' + Dativ ('nach den genauen Voraussetzungen').",
+              en: "Fixed verb-preposition: 'sich erkundigen nach' + Dative (to inquire about requirements).",
+              tr: "Sabit fiil-edat tamlaması: 'sich erkundigen nach' + Dativ (bir şeyi/şartları sormak, bilgi edinmek).",
+              ar: "ارتباط فعلي بحرف جر: 'sich erkundigen nach' + حالة Dativ (للاستفسار عن الشروط).",
+              uk: "Стале дієслівне керування: 'sich erkundigen nach' + Dativ (довідуватися про вимоги)."
+            }
+          },
+          {
+            id: 24,
+            label: "Lücke 24",
+            correct: "b",
+            options: [
+              { key: "a", text: "werden" },
+              { key: "b", text: "werden" },
+              { key: "c", text: "worden" }
+            ],
+            rule: {
+              de: "Vorgangspassiv Präsens: 'werden die Kosten erstattet'.",
+              en: "Present passive voice: 'werden die Kosten erstattet' (costs are reimbursed).",
+              tr: "Edilgen çatı (Passiv): Çoğul özne 'die Kosten' için 'werden ... erstattet'.",
+              ar: "المبني للمجهول في الحاضر: 'werden die Kosten erstattet'.",
+              uk: "Пасивний стан теперішнього часу: 'werden die Kosten erstattet'."
+            }
+          },
+          {
+            id: 25,
+            label: "Lücke 25",
+            correct: "a",
+            options: [
+              { key: "a", text: "meiner" },
+              { key: "b", text: "meine" },
+              { key: "c", text: "meinem" }
+            ],
+            rule: {
+              de: "Dativ feminin nach Präposition 'von': 'von meiner behandelnden Ärztin'.",
+              en: "Dative feminine after 'von': 'von meiner behandelnden Ärztin'.",
+              tr: "'von' edatı daima Dativ gerektirir; dişil isim 'Ärztin' için artikel 'meiner' olur.",
+              ar: "مجرور مؤنث بعد حرف الجر 'von': 'von meiner behandelnden Ärztin'.",
+              uk: "Давальний відмінок жіночого роду після 'von': 'von meiner behandelnden Ärztin'."
+            }
+          },
+          {
+            id: 26,
+            label: "Lücke 26",
+            correct: "c",
+            options: [
+              { key: "a", text: "dass" },
+              { key: "b", text: "wenn" },
+              { key: "c", text: "ob" }
+            ],
+            rule: {
+              de: "Indirekte Ja/Nein-Frage verlangt die Subjunktion 'ob': '... mitteilen, ob ich die Behandlung vorab genehmigen lassen muss'.",
+              en: "Indirect whether-question requires 'ob'.",
+              tr: "İki ihtimalli dolaylı soru 'ob' (-ip -mediği) bağlacını gerektirir.",
+              ar: "سؤال غير مباشر يتطلب أداة الربط 'ob' (عما إذا كان يجب...).",
+              uk: "Непряме питання з часткою 'чи' вимагає сполучника 'ob'."
+            }
+          },
+          {
+            id: 27,
+            label: "Lücke 27",
+            correct: "b",
+            options: [
+              { key: "a", text: "an" },
+              { key: "b", text: "mit" },
+              { key: "c", text: "bei" }
+            ],
+            rule: {
+              de: "Feste Verb-Präposition-Verbindung: 'beginnen mit' + Dativ ('mit den Terminen beginnen').",
+              en: "Fixed preposition: 'beginnen mit' + Dative (to begin with).",
+              tr: "Sabit fiil-edat: 'beginnen mit' + Dativ (bir şeye başlamak).",
+              ar: "ارتباط فعلي: 'beginnen mit' + Dativ (البدء بـ).",
+              uk: "Дієслівне керування: 'beginnen mit' + Dativ (починати з)."
+            }
+          },
+          {
+            id: 28,
+            label: "Lücke 28",
+            correct: "a",
+            options: [
+              { key: "a", text: "mitteilten" },
+              { key: "b", text: "mitteilen" },
+              { key: "c", text: "mitgeteilt" }
+            ],
+            rule: {
+              de: "Konjunktiv II Präteritum im 'wenn'-Satz: 'wenn Sie mir mitteilten' bzw. Höflichkeitsform.",
+              en: "Polite subjunctive in conditional clause: 'wenn Sie mir mitteilten'.",
+              tr: "'wenn' şart cümlesinde kibar Konjunktiv II yapısı.",
+              ar: "صيغة الطلب المهذب في Konjunktiv II بعد 'wenn'.",
+              uk: "Ввічлива форма умовного способу Konjunktiv II."
+            }
+          },
+          {
+            id: 29,
+            label: "Lücke 29",
+            correct: "b",
+            options: [
+              { key: "a", text: "mir" },
+              { key: "b", text: "mich" },
+              { key: "c", text: "sich" }
+            ],
+            rule: {
+              de: "Reflexivpronomen Akkusativ bei 'sich freuen': 'ich würde mich sehr freuen'.",
+              en: "Accusative reflexive pronoun with 'sich freuen': 'ich würde mich sehr freuen'.",
+              tr: "'sich freuen' dönüşlü fiili birinci tekil şahısta Akkusativ 'mich' gerektirir.",
+              ar: "ضمير انعكاسي منصوب Akkusativ مع الفعل 'sich freuen': 'ich würde mich freuen'.",
+              uk: "Зворотний займенник Akkusativ для 'sich freuen': 'ich würde mich sehr freuen'."
+            }
+          },
+          {
+            id: 30,
+            label: "Lücke 30",
+            correct: "c",
+            options: [
+              { key: "a", text: "Grüße" },
+              { key: "b", text: "Gruß" },
+              { key: "c", text: "Grüßen" }
+            ],
+            rule: {
+              de: "Dativ Plural Substantiv-Endung nach Präposition 'mit': 'Mit freundlichen Grüßen'.",
+              en: "Dative plural noun ending: 'Mit freundlichen Grüßen'.",
+              tr: "'mit' edatından sonra çoğul isim Dativ -n eki alır: 'Mit freundlichen Grüßen'.",
+              ar: "لاحقة الجمع المجرور في ختام الرسالة: 'Mit freundlichen Grüßen'.",
+              uk: "Закінчення давального відмінка множини: 'Mit freundlichen Grüßen'."
+            }
+          }
+        ]
+      },
+
+      // TEIL 2: Informationstext / Hausordnung
+      teil2: {
+        id: "sb-4-teil2",
+        title: {
+          de: "Teil 2: Hausmitteilung zur Mülltrennung und Ruhezeiten",
+          en: "Part 2: House Notice on Waste Separation and Quiet Hours",
+          tr: "Bölüm 2: Bina Yönetimi Çöp Ayrıştırma ve Sessizlik Duyurusu",
+          ar: "الجزء 2: تعميم سكني حول فرز النفايات وساعات الهدوء",
+          uk: "Частина 2: Оголошення для мешканців щодо сортування сміття та тиші"
+        },
+        instruction: {
+          de: "Lesen Sie den folgenden Text und entscheiden Sie, welches Wort aus dem Kasten (a–o) in die jeweilige Lücke (31–40) passt. Jedes Wort darf nur einmal verwendet werden.",
+          en: "Read the following text and decide which word from the box (a–o) fits into each gap (31–40). Each word may only be used once.",
+          tr: "Aşağıdaki metni okuyunuz ve kelime kutusundaki (a-o) hangi kelimenin her boşluğa (31-40) uyduğuna karar veriniz. Her kelime yalnızca bir kez kullanılabilir.",
+          ar: "اقرأ النص التالي وحدد الكلمة من الصندوق (a-o) المناسبة لكل فراغ (31-40). يمكن استخدام كل كلمة مرة واحدة فقط.",
+          uk: "Прочитайте наступний текст і визначте, яке слово з рамки (a–o) підходить для кожного пропуску (31–40). Кожне слово можна використати лише один раз."
+        },
+        wordBank: [
+          { key: "a", word: "AUCH" },
+          { key: "b", word: "BEI" },
+          { key: "c", word: "DASS" },
+          { key: "d", word: "DESHALB" },
+          { key: "e", word: "DURCH" },
+          { key: "f", word: "FÜR" },
+          { key: "g", word: "JEDOCH" },
+          { key: "h", word: "MIT" },
+          { key: "i", word: "NACH" },
+          { key: "j", word: "NICHT" },
+          { key: "k", word: "ODER" },
+          { key: "l", word: "SONDERN" },
+          { key: "m", word: "TROTZDEM" },
+          { key: "n", word: "WÄHREND" },
+          { key: "o", word: "WENN" }
+        ],
+        textTemplate: "Liebe Hausbewohnerinnen und Hausbewohner,\n\naus aktuellem Anlass möchten wir Sie an die geltenden Regeln unserer Hausordnung erinnern. Diese Regeln sind {31} ein angenehmes und sicheres Zusammenleben unerlässlich.\n\nIn den letzten Wochen kam es vermehrt zu Beschwerden über Lärmbelästigungen {32} der gesetzlichen Ruhezeiten zwischen 22:00 Uhr und 07:00 Uhr. Bitte nehmen Sie Rücksicht auf Ihre Nachbarn. Das Musikhören in hoher Lautstärke ist zu diesen Zeiten {33} gestattet.\n\nEin weiteres wichtiges Thema ist die Mülltrennung. Bitte werfen Sie Plastikverpackungen nicht in den Restmüll, {34} in die dafür vorgesehenen gelben Tonnen im Innenhof. Falsch sortierter Müll führt zu hohen Zusatzkosten, die {35} alle Mieter getragen werden müssen.\n\n{36} bitten wir Sie eindringlich, die Tonnen sorgfältig zu befüllen. Sollten Sie Fragen zur korrekten Entsorgung haben, finden Sie {37} der Hausverwaltung einen detaillierten Leitfaden.\n\n{38} Sie Sperrmüll oder alte Möbel entsorgen möchten, melden Sie dies bitte rechtzeitig bei der Stadtreinigung an. Das Abstellen im Flur ist {39} streng verboten, da Rettungswege frei bleiben müssen.\n\nWir bedanken uns herzlich für Ihr Verständnis und Ihre Kooperation.\n\n{40} freundlichen Grüßen\nIhre Hausverwaltung",
+        items: [
+          {
+            id: 31,
+            label: "Lücke 31",
+            correct: "f",
+            correctWord: "FÜR",
+            rule: {
+              de: "Präposition 'für' + Akkusativ ('unerlässlich für ein angenehmes Zusammenleben').",
+              en: "Preposition 'für' indicates purpose / necessity.",
+              tr: "Amaç bildiren 'für' (huzurlu bir birlikte yaşam için zorunludur).",
+              ar: "حرف جر يفيد الغاية: 'für' (ضروري من أجل تعايش مريح).",
+              uk: "Прийменник 'für' зі значенням мети: 'für ein angenehmes Zusammenleben'."
+            }
+          },
+          {
+            id: 32,
+            label: "Lücke 32",
+            correct: "n",
+            correctWord: "WÄHREND",
+            rule: {
+              de: "Temporale Präposition 'während' + Genitiv ('während der gesetzlichen Ruhezeiten').",
+              en: "Temporal preposition 'während' + Genitive (during quiet hours).",
+              tr: "Zaman bildiren 'während' + Genitiv (yasal dinlenme saatleri sırasında/esnasında).",
+              ar: "حرف جر زمني مع حالة المضاف إليه: 'während' (خلال ساعات الهدوء القانونية).",
+              uk: "Часовий прийменник 'während' + Genitiv (під час годин тиші)."
+            }
+          },
+          {
+            id: 33,
+            label: "Lücke 33",
+            correct: "j",
+            correctWord: "NICHT",
+            rule: {
+              de: "Negationspartikel 'nicht': 'ist zu diesen Zeiten nicht gestattet' (nicht erlaubt).",
+              en: "Negation: 'nicht gestattet' (not permitted).",
+              tr: "Olumsuzluk eki: 'nicht gestattet' (izin verilmemektedir).",
+              ar: "أداة النفي 'nicht': 'nicht gestattet' (غير مسموح به).",
+              uk: "Заперечна частка 'nicht': 'nicht gestattet' (не дозволяється)."
+            }
+          },
+          {
+            id: 34,
+            label: "Lücke 34",
+            correct: "l",
+            correctWord: "SONDERN",
+            rule: {
+              de: "Konnektor nach Negation: 'nicht in den Restmüll, sondern in die gelben Tonnen'.",
+              en: "Adversative coordinator after negation: 'nicht ..., sondern ...' (not ... but rather ...).",
+              tr: "Önceki olumsuzluğu düzelten zıtlık bağlacı: 'nicht ..., sondern ...' (oraya değil, aksine sarı bidonlara).",
+              ar: "أداة الاستدراك بعد النفي: 'nicht ..., sondern ...' (ليس في القمامة العامة، بل في الحاويات الصفراء).",
+              uk: "Протиставний сполучник після заперечення: 'nicht ..., sondern ...' (не ..., а ...)."
+            }
+          },
+          {
+            id: 35,
+            label: "Lücke 35",
+            correct: "e",
+            correctWord: "DURCH",
+            rule: {
+              de: "Präposition 'durch' drückt den Urheber im Passiv aus: 'durch alle Mieter getragen werden'.",
+              en: "Preposition 'durch' denotes agency in passive constructions.",
+              tr: "Edilgen yapıda aracılık/özne belirten 'durch' (tüm kiracılar tarafından üstlenilmelidir).",
+              ar: "حرف جر يفيد الفاعل في المبني للمجهول: 'durch' (من قِبل جميع المستأجرين).",
+              uk: "Прийменник 'durch' у пасивному стані: 'через/усіма орендарями'."
+            }
+          },
+          {
+            id: 36,
+            label: "Lücke 36",
+            correct: "d",
+            correctWord: "DESHALB",
+            rule: {
+              de: "Kausales Satzadverb mit Inversion (Position 1): 'Deshalb bitten wir Sie...'.",
+              en: "Causal connector with verb inversion: 'Deshalb bitten wir Sie...'.",
+              tr: "Neden-sonuç bildiren cümle zarfı: 'Deshalb bitten wir Sie...' (Bu nedenle sizden rica ediyoruz).",
+              ar: "ظرف سببي في بداية الجملة مع تقديم الفعل: 'Deshalb bitten wir Sie...' (لذلك نرجو منكم).",
+              uk: "Причиновий прислівник з інверсією: 'Deshalb bitten wir Sie...' (Тому ми просимо вас)."
+            }
+          },
+          {
+            id: 37,
+            label: "Lücke 37",
+            correct: "b",
+            correctWord: "BEI",
+            rule: {
+              de: "Lokale Präposition 'bei' + Dativ für Ansprechpartner/Institutionen: 'bei der Hausverwaltung'.",
+              en: "Preposition 'bei' + Dative for points of contact / management offices.",
+              tr: "Kurum/yetkili kişi yanında bulunma edatı: 'bei der Hausverwaltung' (bina yönetiminde).",
+              ar: "حرف جر مكاني للمؤسسات والجهات: 'bei der Hausverwaltung' (لدى إدارة المبنى).",
+              uk: "Прийменник 'bei' для контакту з установою: 'bei der Hausverwaltung'."
+            }
+          },
+          {
+            id: 38,
+            label: "Lücke 38",
+            correct: "o",
+            correctWord: "WENN",
+            rule: {
+              de: "Konditionale Subjunktion 'wenn' leitet die Bedingung ein ('Wenn Sie Sperrmüll entsorgen möchten...').",
+              en: "Conditional conjunction 'wenn' introduces the condition (if you wish to dispose of bulky waste).",
+              tr: "Koşul yan cümlesi başlatan 'wenn' (Eğer kaba atık atmak isterseniz...).",
+              ar: "أداة الشرط 'wenn' (إذا كنتم ترغبون في التخلص من النفايات الكبيرة...).",
+              uk: "Умовний сполучник 'wenn' (Якщо ви бажаєте викинути великогабаритне сміття...)."
+            }
+          },
+          {
+            id: 39,
+            label: "Lücke 39",
+            correct: "g",
+            correctWord: "JEDOCH",
+            rule: {
+              de: "Adversatives Verbindungswort 'jedoch' schränkt ein: 'Das Abstellen im Flur ist jedoch streng verboten'.",
+              en: "Adversative particle 'jedoch' (however) signals prohibition.",
+              tr: "Kısıtlama ve zıtlık bildiren 'jedoch' (Koridorda bekletmek ise kesinlikle yasaktır).",
+              ar: "أداة حصر واستدراك: 'jedoch' (غير أن وضعها في الممر ممنوع تماماً).",
+              uk: "Протиставне слово 'jedoch' (проте/однак)."
+            }
+          },
+          {
+            id: 40,
+            label: "Lücke 40",
+            correct: "h",
+            correctWord: "MIT",
+            rule: {
+              de: "Feste Grußformel am Briefende: 'Mit freundlichen Grüßen'.",
+              en: "Standard letter closing formula: 'Mit freundlichen Grüßen'.",
+              tr: "Standart mektup kapanış edatı: 'Mit freundlichen Grüßen'.",
+              ar: "صيغة الختام المعتادة: 'Mit freundlichen Grüßen'.",
+              uk: "Стандартна завершальна формула: 'Mit freundlichen Grüßen'."
+            }
+          }
+        ]
+      }
+    },
+
+    // ==========================================
+    // SET 5: Arbeitswelt & Vorstellungsgespräch
+    // ==========================================
+    {
+      id: "sb-set-5",
+      title: {
+        de: "Übungstest 5: Sprachbausteine (Teil 1 & Teil 2)",
+        en: "Practice Test 5: Language Elements (Part 1 & Part 2)",
+        tr: "Deneme Sınavı 5: Dil Öğeleri / Dilbilgisi Boşluk Doldurma",
+        ar: "الاختبار التدريبي 5: تراكيب اللغة (الجزء 1 والجزء 2)",
+        uk: "Тренувальний тест 5: Мовні елементи (Частина 1 та 2)"
+      },
+      timeEstimateMin: 20,
+      badge: "telc B1 30 Punkte",
+
+      // TEIL 1: E-Mail an den Abteilungsleiter
+      teil1: {
+        id: "sb-5-teil1",
+        title: {
+          de: "Teil 1: Antrag auf Bildungsurlaub",
+          en: "Part 1: Educational Leave Request",
+          tr: "Bölüm 1: Eğitim İzni ve Seminer Talebi",
+          ar: "الجزء 1: طلب إجازة تعليمية",
+          uk: "Частина 1: Заява на навчальну відпустку"
+        },
+        instruction: {
+          de: "Lesen Sie den folgenden Text und entscheiden Sie, welches Wort (a, b oder c) in die jeweilige Lücke (21–30) passt.",
+          en: "Read the following text and decide which word (a, b or c) fits into each gap (21–30).",
+          tr: "Aşağıdaki metni okuyunuz ve her boşluğa (21-30) hangi kelimenin (a, b veya c) uygun geldiğine karar veriniz.",
+          ar: "اقرأ النص التالي وحدد الكلمة (a أو b أو c) المناسبة لكل فراغ (21-30).",
+          uk: "Прочитайте наступний текст і визначте, яке слово (a, b або c) підходить для кожного пропуску (21–30)."
+        },
+        context: "Antrag auf gesetzlichen Bildungsurlaub und Kostenbeteiligung für ein Fachseminar",
+        textTemplate: "Sehr geehrter Herr Direktor Lehmann,\n\nich schreibe Ihnen heute, {21} ich mich beruflich weiterqualifizieren möchte. Ich arbeite nun schon {22} drei Jahren sehr gerne in unserem Logistik-Team.\n\nUm meine Fachkenntnisse im Bereich digitales Warenwirtschaftssystem zu vertiefen, möchte ich gern {23} einem fünftägigen IHK-Seminar teilnehmen. Diese Weiterbildung ist in unserem Bundesland als gesetzlicher Bildungsurlaub anerkannt.\n\nIch habe mich bereits ausführlich {24} die genauen Seminarzeiten informiert. Die Fortbildung findet im nächsten Monat statt, {25} unserem Team in diesem Zeitraum keine personellen Engpässe drohen. Meine Kollegin Frau Meier hat sich bereit erklärt, meine Aufgaben während dieser Tage zu {26}.\n\nGibt es in unserem Betrieb die Möglichkeit, {27} die Seminargebühren bezuschusst werden? Gerne würde ich die erworbenen Kenntnisse anschließend in unserem Team präsentieren, {28} auch meine Kollegen davon profitieren.\n\nÜber ein kurzes Gespräch zu diesem Thema {29} ich mich sehr freuen.\n\nMit {30} Grüßen\nAndreas Novak",
+        items: [
+          {
+            id: 21,
+            label: "Lücke 21",
+            correct: "b",
+            options: [
+              { key: "a", text: "denn" },
+              { key: "b", text: "weil" },
+              { key: "c", text: "deshalb" }
+            ],
+            rule: {
+              de: "Nebensatz mit 'weil': Das konjugierte finite Verb ('möchte') steht am Satzende.",
+              en: "Subordinate clause with 'weil': Finite modal verb 'möchte' is at the end.",
+              tr: "Sebep yan cümlesi 'weil' çekimli modal fiili ('möchte') cümlenin en sonuna atar.",
+              ar: "جملة سببية مع 'weil': ينتقل الفعل المصرف 'möchte' إلى نهاية الجملة.",
+              uk: "Підрядне речення з 'weil': дієслово 'möchte' стоїть у кінці речення."
+            }
+          },
+          {
+            id: 22,
+            label: "Lücke 22",
+            correct: "c",
+            options: [
+              { key: "a", text: "vor" },
+              { key: "b", text: "für" },
+              { key: "c", text: "seit" }
+            ],
+            rule: {
+              de: "Zeitraum, der in der Vergangenheit begann und andauert: 'seit drei Jahren'.",
+              en: "Ongoing duration starting in the past: 'seit' + Dative.",
+              tr: "Geçmişte başlayıp hala devam eden süre için 'seit' + Dativ (-den beri).",
+              ar: "فترة زمنية بدأت في الماضي ومستمرة: 'seit' + Dativ.",
+              uk: "Дія, що почалася в минулому і триває: 'seit' + Dativ."
+            }
+          },
+          {
+            id: 23,
+            label: "Lücke 23",
+            correct: "a",
+            options: [
+              { key: "a", text: "an" },
+              { key: "b", text: "in" },
+              { key: "c", text: "bei" }
+            ],
+            rule: {
+              de: "Feste Verb-Präposition-Verbindung: 'teilnehmen an' + Dativ ('an einem Seminar').",
+              en: "Fixed verb-preposition: 'teilnehmen an' + Dative.",
+              tr: "Sabit fiil tamlaması: 'teilnehmen an' + Dativ (seminere katılmak).",
+              ar: "ارتباط فعلي: 'teilnehmen an' + Dativ (المشاركة في ندوة).",
+              uk: "Дієслівне сполучення: 'teilnehmen an' + Dativ (брати участь у семінарі)."
+            }
+          },
+          {
+            id: 24,
+            label: "Lücke 24",
+            correct: "b",
+            options: [
+              { key: "a", text: "für" },
+              { key: "b", text: "über" },
+              { key: "c", text: "von" }
+            ],
+            rule: {
+              de: "Reflexives Verb mit Präposition: 'sich informieren über' + Akkusativ.",
+              en: "Reflexive verb with preposition: 'sich informieren über' + Accusative.",
+              tr: "Sabit dönüşlü fiil: 'sich informieren über' + Akkusativ (bir şey hakkında bilgi almak).",
+              ar: "فعل انعكاسي مع حرف الجر: 'sich informieren über' + Akkusativ (الاستعلام عن).",
+              uk: "Зворотне дієслово з прийменником: 'sich informieren über' + Akkusativ."
+            }
+          },
+          {
+            id: 25,
+            label: "Lücke 25",
+            correct: "a",
+            options: [
+              { key: "a", text: "sodass" },
+              { key: "b", text: "obwohl" },
+              { key: "c", text: "trotzdem" }
+            ],
+            rule: {
+              de: "Konsekutive Konjunktion 'sodass' drückt die Folge aus (keine Engpässe drohen).",
+              en: "Consecutive conjunction 'sodass' expresses the resulting consequence.",
+              tr: "Sonuç bildiren yan cümle bağlacı: 'sodass' (böylelikle / bunun sonucunda).",
+              ar: "أداة ربط للنتيجة: 'sodass' (بحيث / مما يعني عدم وجود نقص في الكادر).",
+              uk: "Сполучник наслідку: 'sodass' (так що / завдяки чому)."
+            }
+          },
+          {
+            id: 26,
+            label: "Lücke 26",
+            correct: "b",
+            options: [
+              { key: "a", text: "übernehmen" },
+              { key: "b", text: "übernehmen" },
+              { key: "c", text: "übernommen" }
+            ],
+            rule: {
+              de: "Infinitiv mit 'zu': 'bereit erklärt, meine Aufgaben zu übernehmen'.",
+              en: "Infinitive clause with 'zu': 'zu übernehmen'.",
+              tr: "İnfinitiv mit 'zu' yapısı: 'bereit erklärt, ... zu übernehmen' (görevleri devralmaya hazır olduğunu bildirdi).",
+              ar: "صيغة المصدر مع zu: 'zu übernehmen'.",
+              uk: "Інфінітивна конструкція з 'zu': 'zu übernehmen'."
+            }
+          },
+          {
+            id: 27,
+            label: "Lücke 27",
+            correct: "c",
+            options: [
+              { key: "a", text: "wenn" },
+              { key: "b", text: "weil" },
+              { key: "c", text: "dass" }
+            ],
+            rule: {
+              de: "Substantiv-Ergänzungssatz mit 'dass': 'die Möglichkeit, dass...'.",
+              en: "Complement clause with 'dass': 'die Möglichkeit, dass...'.",
+              tr: "İsim tamamlama cümlesi: 'die Möglichkeit, dass...' (... olması ihtimali/olanağı).",
+              ar: "جملة موصولة متممة للاسم: 'die Möglichkeit, dass...'.",
+              uk: "Підрядне з'ясувальне зі сполучником 'dass'."
+            }
+          },
+          {
+            id: 28,
+            label: "Lücke 28",
+            correct: "a",
+            options: [
+              { key: "a", text: "damit" },
+              { key: "b", text: "weil" },
+              { key: "c", text: "denn" }
+            ],
+            rule: {
+              de: "Finaler Nebensatz mit 'damit' bei Subjektwechsel (ich präsentiere -> Kollegen profitieren).",
+              en: "Final purpose clause with 'damit' due to subject switch.",
+              tr: "Farklı özneli amaç cümlesi 'damit' (-sin diye, faydalansınlar diye).",
+              ar: "جملة غائية مع اختلاف الفاعل: 'damit' (لكي / حتى يستفيد زملائي أيضاً).",
+              uk: "Цільове підрядне речення при зміні підмета: 'damit'."
+            }
+          },
+          {
+            id: 29,
+            label: "Lücke 29",
+            correct: "c",
+            options: [
+              { key: "a", text: "habe" },
+              { key: "b", text: "werde" },
+              { key: "c", text: "würde" }
+            ],
+            rule: {
+              de: "Höflicher Konjunktiv II: 'würde ich mich sehr freuen'.",
+              en: "Polite subjunctive II: 'würde ich mich sehr freuen'.",
+              tr: "Kibar rica/sevinç kalıbı (Konjunktiv II): 'würde ich mich freuen'.",
+              ar: "صيغة Konjunktiv II المهذبة: 'würde ich mich freuen'.",
+              uk: "Ввічлива форма Konjunktiv II: 'würde ich mich sehr freuen'."
+            }
+          },
+          {
+            id: 30,
+            label: "Lücke 30",
+            correct: "b",
+            options: [
+              { key: "a", text: "freundliche" },
+              { key: "b", text: "freundlichen" },
+              { key: "c", text: "freundlicher" }
+            ],
+            rule: {
+              de: "Adjektivendung im Dativ Plural nach 'mit': 'mit freundlichen Grüßen'.",
+              en: "Dative plural adjective ending: -en in 'mit freundlichen Grüßen'.",
+              tr: "'mit' edatından sonra çoğul sıfat tamlaması -en alır: 'mit freundlichen Grüßen'.",
+              ar: "إعراب الصفة في المجرور الجمع: 'mit freundlichen Grüßen'.",
+              uk: "Закінчення прикметника в давальному відмінку множини: -en."
+            }
+          }
+        ]
+      },
+
+      // TEIL 2: Ratgebertext Vorstellungsgespräch
+      teil2: {
+        id: "sb-5-teil2",
+        title: {
+          de: "Teil 2: Tipps für das Vorstellungsgespräch",
+          en: "Part 2: Job Interview Success Strategies",
+          tr: "Bölüm 2: Almanya'da İş Görüşmesi Başarı Rehberi",
+          ar: "الجزء 2: نصائح لاجتياز المقابلة الوظيفية في ألمانيا",
+          uk: "Частина 2: Поради для успішної співбесіди в Німеччині"
+        },
+        instruction: {
+          de: "Lesen Sie den folgenden Text und entscheiden Sie, welches Wort aus dem Kasten (a–o) in die jeweilige Lücke (31–40) passt. Jedes Wort darf nur einmal verwendet werden.",
+          en: "Read the following text and decide which word from the box (a–o) fits into each gap (31–40). Each word may only be used once.",
+          tr: "Aşağıdaki metni okuyunuz ve kelime kutusundaki (a-o) hangi kelimenin her boşluğa (31-40) uyduğuna karar veriniz. Her kelime yalnızca bir kez kullanılabilir.",
+          ar: "اقرأ النص التالي وحدد الكلمة من الصندوق (a-o) المناسبة لكل فراغ (31-40). يمكن استخدام كل كلمة مرة واحدة فقط.",
+          uk: "Прочитайте наступний текст і визначте, яке слово з рамки (a–o) підходить для кожного пропуску (31–40). Кожне слово можна використати лише один раз."
+        },
+        wordBank: [
+          { key: "a", word: "ABER" },
+          { key: "b", word: "AUF" },
+          { key: "c", word: "AUS" },
+          { key: "d", word: "DAHER" },
+          { key: "e", word: "DAMIT" },
+          { key: "f", word: "DASS" },
+          { key: "g", word: "DENN" },
+          { key: "h", word: "IN" },
+          { key: "i", word: "NACH" },
+          { key: "j", word: "OHNE" },
+          { key: "k", word: "SEIT" },
+          { key: "l", word: "TROTZDEM" },
+          { key: "m", word: "ÜBER" },
+          { key: "n", word: "UM" },
+          { key: "o", word: "VOR" }
+        ],
+        textTemplate: "Ein Vorstellungsgespräch ist für viele Bewerber eine aufregende Situation. Mit einer gezielten Vorbereitung können Sie Ihre Nervosität deutlich senken.\n\nBereits einige Tage {31} dem Termin sollten Sie sich ausführlich {32} das Unternehmen und seine Produkte informieren. Wer die Firmenphilosophie kennt, hinterlässt einen kompetenten Eindruck.\n\nAchten Sie am Tag des Gesprächs ganz besonders {33} pünktliches Erscheinen. Planen Sie ausreichend Zeit für die Anfahrt ein, {34} Sie auch bei Stau oder Zugausfällen rechtzeitig ankommen.\n\nIm Gespräch selbst ist ein sicheres, {35} dennoch bescheidenes Auftreten von Vorteil. Hören Sie den Fragen aufmerksam zu. {36} können Sie präzise und überzeugend antworten, {37} den Faden zu verlieren.\n\n{38} Deutschland ist es zudem üblich, am Ende eigene Fragen zur Arbeitsorganisation oder Einarbeitung zu stellen.\n\nEin paar Tage {39} dem Vorstellungsgespräch empfiehlt sich eine kurze, freundliche Dankes-E-Mail, {40} das signalisiert echtes Interesse an der offenen Position.",
+        items: [
+          {
+            id: 31,
+            label: "Lücke 31",
+            correct: "o",
+            correctWord: "VOR",
+            rule: {
+              de: "Temporale Präposition 'vor' + Dativ ('vor dem Termin').",
+              en: "Temporal preposition 'vor' + Dative (before the appointment).",
+              tr: "Zaman edatı: 'vor dem Termin' (randevudan önce).",
+              ar: "حرف جر زمني: 'vor dem Termin' (قبل الموعد).",
+              uk: "Часовий прийменник: 'vor dem Termin' (перед зустріччю)."
+            }
+          },
+          {
+            id: 32,
+            label: "Lücke 32",
+            correct: "m",
+            correctWord: "ÜBER",
+            rule: {
+              de: "Präpositionalobjekt: 'sich informieren über' + Akkusativ ('über das Unternehmen').",
+              en: "Fixed preposition: 'sich informieren über' (about the company).",
+              tr: "Sabit edat: 'sich informieren über' (şirket hakkında bilgi edinmek).",
+              ar: "حرف جر مرتبط بالفعل: 'sich informieren über' (عن الشركة).",
+              uk: "Дієслівне керування: 'sich informieren über' (про компанію)."
+            }
+          },
+          {
+            id: 33,
+            label: "Lücke 33",
+            correct: "b",
+            correctWord: "AUF",
+            rule: {
+              de: "Feste Verb-Präposition-Verbindung: 'achten auf' + Akkusativ ('achten Sie auf pünktliches Erscheinen').",
+              en: "Fixed idiom: 'achten auf' + Accusative (pay attention to punctuality).",
+              tr: "Sabit tamlama: 'achten auf' + Akkusativ (dakikliğe dikkat etmek).",
+              ar: "ارتباط فعلي: 'achten auf' (الحرص على الحضور في الموعد).",
+              uk: "Стале сполучення: 'achten auf' (звертати увагу на пунктуальність)."
+            }
+          },
+          {
+            id: 34,
+            label: "Lücke 34",
+            correct: "e",
+            correctWord: "DAMIT",
+            rule: {
+              de: "Finaler Konnektor 'damit' drückt den Zweck aus ('damit Sie rechtzeitig ankommen').",
+              en: "Final purpose subjunction 'damit' (so that you arrive on time).",
+              tr: "Amaç bildiren bağlaç: 'damit' (vaktinde varabilmeniz amacıyla/için).",
+              ar: "أداة ربط تفيد الغاية: 'damit' (لكي تصلوا في الوقت المحدد).",
+              uk: "Цільовий сполучник: 'damit' (щоб ви прибули вчасно)."
+            }
+          },
+          {
+            id: 35,
+            label: "Lücke 35",
+            correct: "a",
+            correctWord: "ABER",
+            rule: {
+              de: "Adversative Konjunktion 'aber' (sicher, aber dennoch bescheiden).",
+              en: "Adversative coordinator 'aber' (confident, but still humble).",
+              tr: "Zıtlık bağlacı 'aber' (özgüvenli ancak yine de mütevazı).",
+              ar: "حرف عطف للاستدراك: 'aber' (واثق ولكن متواضع).",
+              uk: "Протиставний сполучник 'aber' (впевнено, але стримано)."
+            }
+          },
+          {
+            id: 36,
+            label: "Lücke 36",
+            correct: "d",
+            correctWord: "DAHER",
+            rule: {
+              de: "Kausales Adverb 'daher' mit Inversion ('Daher können Sie präzise antworten').",
+              en: "Causal adverb 'daher' with verb inversion (therefore you can answer precisely).",
+              tr: "Neden-sonuç bağlacı 'daher' (Bu sayede/Bu nedenle kesin cevap verebilirsiniz).",
+              ar: "ظرف سببي: 'daher' (لذلك يمكنكم الإجابة بدقة).",
+              uk: "Причиновий прислівник: 'daher' (тому ви можете відповісти точно)."
+            }
+          },
+          {
+            id: 37,
+            label: "Lücke 37",
+            correct: "j",
+            correctWord: "OHNE",
+            rule: {
+              de: "Infinitivkonstruktion mit 'ohne ... zu': 'ohne den Faden zu verlieren'.",
+              en: "Infinitive clause: 'ohne ... zu' (without losing the thread).",
+              tr: "'ohne ... zu' kalıbı (konunun ipini kaçırmadan).",
+              ar: "صيغة المصدر المنفي: 'ohne ... zu' (دون أن تفقد تسلسل الأفكار).",
+              uk: "Інфінітивна конструкція: 'ohne ... zu' (не втрачаючи нитки розмови)."
+            }
+          },
+          {
+            id: 38,
+            label: "Lücke 38",
+            correct: "h",
+            correctWord: "IN",
+            rule: {
+              de: "Lokale Präposition 'in' für Länder ('In Deutschland ist es üblich').",
+              en: "Preposition 'in' for country location.",
+              tr: "Yer bildiren 'in' (Almanya'da yaygındır/adettendir).",
+              ar: "حرف جر للمكان: 'in Deutschland' (في ألمانيا).",
+              uk: "Прийменник місця: 'in Deutschland' (у Німеччині)."
+            }
+          },
+          {
+            id: 39,
+            label: "Lücke 39",
+            correct: "i",
+            correctWord: "NACH",
+            rule: {
+              de: "Temporale Präposition 'nach' + Dativ ('nach dem Vorstellungsgespräch').",
+              en: "Temporal preposition 'nach' + Dative (after the interview).",
+              tr: "Zaman edatı: 'nach dem Vorstellungsgespräch' (mülakattan sonra).",
+              ar: "حرف جر زمني: 'nach dem Vorstellungsgespräch' (بعد المقابلة).",
+              uk: "Часовий прийменник: 'nach dem Vorstellungsgespräch' (після співбесіди)."
+            }
+          },
+          {
+            id: 40,
+            label: "Lücke 40",
+            correct: "g",
+            correctWord: "DENN",
+            rule: {
+              de: "Kausale Konjunktion 'denn' (Position 0): 'denn das signalisiert echtes Interesse'.",
+              en: "Causal coordinator 'denn' introducing explanation without inversion.",
+              tr: "Açıklayıcı sebep bağlacı: 'denn' (çünkü bu, açık pozisyona gerçek ilginizi gösterir).",
+              ar: "حرف عطف سببي: 'denn' (لأن ذلك يوضح الاهتمام الحقيقي بالمنصب).",
+              uk: "Сурядний сполучник причини: 'denn' (адже це свідчить про щирий інтерес)."
+            }
+          }
+        ]
+      }
     }
   ];
 
