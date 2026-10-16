@@ -163,12 +163,20 @@ assert.strictEqual(global.VOCAB_2000.length, 2000, 'VOCAB_2000 must contain exac
 console.log('▶ Evaluating data/vocab_b2.js...');
 eval(fs.readFileSync(path.join(ROOT_DIR, 'data', 'vocab_b2.js'), 'utf8'));
 assert(Array.isArray(global.VOCAB_B2), 'VOCAB_B2 must be an array');
-assert(global.VOCAB_B2.length >= 50, 'VOCAB_B2 must contain >= 50 items');
+assert.strictEqual(global.VOCAB_B2.length, 150, 'VOCAB_B2 must contain exactly 150 items');
+global.VOCAB_B2.forEach(item => {
+  assert(item.tr && item.en && item.ar && item.uk, `Missing translation in B2 item: ${item.de}`);
+  assert(item.example_tr && item.example_en && item.example_ar && item.example_uk, `Missing example translation in B2 item: ${item.de}`);
+});
 
 console.log('▶ Evaluating data/vocab_c1.js...');
 eval(fs.readFileSync(path.join(ROOT_DIR, 'data', 'vocab_c1.js'), 'utf8'));
 assert(Array.isArray(global.VOCAB_C1), 'VOCAB_C1 must be an array');
-assert(global.VOCAB_C1.length >= 40, 'VOCAB_C1 must contain >= 40 items');
+assert.strictEqual(global.VOCAB_C1.length, 100, 'VOCAB_C1 must contain exactly 100 items');
+global.VOCAB_C1.forEach(item => {
+  assert(item.tr && item.en && item.ar && item.uk, `Missing translation in C1 item: ${item.de}`);
+  assert(item.example_tr && item.example_en && item.example_ar && item.example_uk, `Missing example translation in C1 item: ${item.de}`);
+});
 
 console.log('▶ Evaluating js/vocabTrainer.js...');
 eval(fs.readFileSync(path.join(ROOT_DIR, 'js', 'vocabTrainer.js'), 'utf8'));

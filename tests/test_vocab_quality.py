@@ -16,6 +16,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.abspath(os.path.join(BASE_DIR, ".."))
 VOCAB2000_PATH = os.path.join(ROOT_DIR, "data", "vocab2000.js")
 VOCAB_B2_PATH = os.path.join(ROOT_DIR, "data", "vocab_b2.js")
+VOCAB_C1_PATH = os.path.join(ROOT_DIR, "data", "vocab_c1.js")
 
 def load_js_vocab(file_path, var_name):
     if not os.path.exists(file_path):
@@ -32,6 +33,7 @@ class TestVocabQuality(unittest.TestCase):
     def setUpClass(cls):
         cls.vocab2000 = load_js_vocab(VOCAB2000_PATH, "window.VOCAB_2000")
         cls.vocab_b2 = load_js_vocab(VOCAB_B2_PATH, "window.VOCAB_B2")
+        cls.vocab_c1 = load_js_vocab(VOCAB_C1_PATH, "window.VOCAB_C1")
 
     def test_vocab2000_total_count(self):
         """Verify exactly 2000 entries exist in Core dataset."""
@@ -39,7 +41,11 @@ class TestVocabQuality(unittest.TestCase):
 
     def test_vocab_b2_count(self):
         """Verify B2 Advanced study deck has valid entries."""
-        self.assertGreaterEqual(len(self.vocab_b2), 50, f"Expected at least 50 B2 entries, found {len(self.vocab_b2)}")
+        self.assertEqual(len(self.vocab_b2), 150, f"Expected exactly 150 B2 entries, found {len(self.vocab_b2)}")
+
+    def test_vocab_c1_count(self):
+        """Verify C1 Academic study deck has valid entries."""
+        self.assertEqual(len(self.vocab_c1), 100, f"Expected exactly 100 C1 entries, found {len(self.vocab_c1)}")
 
     def test_bilingual_parity_and_schema(self):
         """Verify 100% bilingual parity (TR & EN) and complete schema for every single item."""
@@ -93,15 +99,34 @@ class TestVocabQuality(unittest.TestCase):
         self.assertEqual(invalid_level, 0, f"Found {invalid_level} items with invalid CEFR level")
 
     def test_b2_deck_schema(self):
-        """Verify B2 Advanced study deck items adhere to quality schema."""
+        """Verify B2 Advanced study deck items adhere to quality schema and 5-language parity."""
         for item in self.vocab_b2:
             self.assertTrue(item.get("de"))
-            self.assertTrue(item.get("tr"))
-            self.assertTrue(item.get("en"))
-            self.assertTrue(item.get("example"))
-            self.assertTrue(item.get("example_tr"))
-            self.assertTrue(item.get("example_en"))
+            self.assertTrue(item.get("tr"), f"Missing tr in B2: {item.get('de')}")
+            self.assertTrue(item.get("en"), f"Missing en in B2: {item.get('de')}")
+            self.assertTrue(item.get("ar"), f"Missing ar in B2: {item.get('de')}")
+            self.assertTrue(item.get("uk"), f"Missing uk in B2: {item.get('de')}")
+            self.assertTrue(item.get("example"), f"Missing example in B2: {item.get('de')}")
+            self.assertTrue(item.get("example_tr"), f"Missing example_tr in B2: {item.get('de')}")
+            self.assertTrue(item.get("example_en"), f"Missing example_en in B2: {item.get('de')}")
+            self.assertTrue(item.get("example_ar"), f"Missing example_ar in B2: {item.get('de')}")
+            self.assertTrue(item.get("example_uk"), f"Missing example_uk in B2: {item.get('de')}")
             self.assertEqual(item.get("level"), "B2")
+
+    def test_c1_deck_schema(self):
+        """Verify C1 Academic study deck items adhere to quality schema and 5-language parity."""
+        for item in self.vocab_c1:
+            self.assertTrue(item.get("de"))
+            self.assertTrue(item.get("tr"), f"Missing tr in C1: {item.get('de')}")
+            self.assertTrue(item.get("en"), f"Missing en in C1: {item.get('de')}")
+            self.assertTrue(item.get("ar"), f"Missing ar in C1: {item.get('de')}")
+            self.assertTrue(item.get("uk"), f"Missing uk in C1: {item.get('de')}")
+            self.assertTrue(item.get("example"), f"Missing example in C1: {item.get('de')}")
+            self.assertTrue(item.get("example_tr"), f"Missing example_tr in C1: {item.get('de')}")
+            self.assertTrue(item.get("example_en"), f"Missing example_en in C1: {item.get('de')}")
+            self.assertTrue(item.get("example_ar"), f"Missing example_ar in C1: {item.get('de')}")
+            self.assertTrue(item.get("example_uk"), f"Missing example_uk in C1: {item.get('de')}")
+            self.assertEqual(item.get("level"), "C1")
 
     def test_distractor_pool_coverage(self):
         """Ensure adequate word pools exist per level & POS for 4-choice quiz distractors."""
