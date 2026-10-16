@@ -1433,6 +1433,12 @@ function renderLiveGradingResults(evalData, isLLM = false) {
     lastOptionAEvalData = evalData;
   }
 
+  try {
+    localStorage.setItem('telc_letter_score', evalData.totalScore);
+  } catch (e) {
+    console.warn('Could not save telc_letter_score:', e);
+  }
+
   const lang = getActiveLanguage();
   const langKey = lang.charAt(0).toUpperCase() + lang.slice(1);
   const t = getShowcaseText;

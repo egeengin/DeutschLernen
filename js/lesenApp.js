@@ -1308,6 +1308,13 @@
       const isComplete = answeredKeys.length === total;
       const isPassed = correctCount >= Math.ceil(total * 0.6); // 60% telc threshold
 
+      if (isComplete) {
+        try {
+          const scaledLesen = Math.round((correctCount / total) * 75 * 10) / 10;
+          localStorage.setItem('telc_lesen_score', scaledLesen);
+        } catch (e) {}
+      }
+
       this.dom.scoreBanner.style.display = 'block';
       this.dom.scoreBanner.innerHTML = `
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
@@ -1838,6 +1845,11 @@
       const pointsEarned = Math.round(correctCount * 1.5 * 10) / 10;
       const maxPoints = 15.0;
       const isPassed = pointsEarned >= 9.0; // 60% of 15 pts = 9.0
+
+      try {
+        const scaledSb = Math.round((pointsEarned / maxPoints) * 30 * 10) / 10;
+        localStorage.setItem('telc_sprachbausteine_score', scaledSb);
+      } catch (e) {}
 
       banner.style.display = 'block';
       banner.style.marginBottom = '16px';

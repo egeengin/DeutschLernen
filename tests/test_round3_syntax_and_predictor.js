@@ -131,4 +131,30 @@ const mismatchAnn = evalMismatch.annotations.find(a => a.rule.includes('Register
 assert.ok(mismatchAnn, 'Must detect register mismatch between formal salutation and informal sign-off');
 console.log('✅ telc B1 V2 Inversion, Subjunction Verb-Final, and Register Mismatch diagnostics verified.');
 
+// 7. Studio Practice to Pass Predictor LocalStorage Integration
+global.localStorage = {
+  _store: {},
+  getItem: function(k) { return this._store[k] !== undefined ? this._store[k] : null; },
+  setItem: function(k, v) { this._store[k] = String(v); },
+  removeItem: function(k) { delete this._store[k]; }
+};
+
+localStorage.setItem('telc_lesen_score', '52.5');
+localStorage.setItem('telc_sprachbausteine_score', '21');
+localStorage.setItem('telc_hoeren_score', '60');
+localStorage.setItem('telc_letter_score', '33');
+localStorage.setItem('telc_voice_score', '56.25');
+
+const loadedResult = calculateTelcB1ExamResult({
+  lesen: parseFloat(localStorage.getItem('telc_lesen_score')),
+  sprachbausteine: parseFloat(localStorage.getItem('telc_sprachbausteine_score')),
+  hoeren: parseFloat(localStorage.getItem('telc_hoeren_score')),
+  schreiben: parseFloat(localStorage.getItem('telc_letter_score')),
+  sprechen: parseFloat(localStorage.getItem('telc_voice_score'))
+});
+assert.strictEqual(loadedResult.overall.passed, true);
+assert.strictEqual(loadedResult.overall.total, 222.8);
+assert.strictEqual(loadedResult.overall.gradeCode, 'befriedigend');
+console.log('✅ End-to-end Studio Practice to Pass Predictor LocalStorage pipeline verified.');
+
 console.log('🎉 All Round 3 Syntax Guard & Pass Predictor tests passed successfully!');

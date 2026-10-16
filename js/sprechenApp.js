@@ -879,6 +879,13 @@
       wordCount: report.wordCount,
       transcriptSnippet: spokenText.length > 140 ? spokenText.slice(0, 140) + '...' : spokenText
     });
+
+    try {
+      const scaledSprechen = Math.round((report.scores.total / 100) * 75 * 10) / 10;
+      localStorage.setItem('telc_voice_score', scaledSprechen);
+    } catch (e) {
+      console.warn('Could not save telc_voice_score:', e);
+    }
   }
 
   // --- MICROPHONE DIAGNOSTICS MODAL/PANEL ---

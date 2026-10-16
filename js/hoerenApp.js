@@ -591,6 +591,12 @@
       const points = Math.round(totalCorrect * 3.75 * 10) / 10;
       const isPassed = points >= 45.0;
 
+      try {
+        localStorage.setItem('telc_hoeren_score', points);
+      } catch (e) {
+        console.warn('Could not save telc_hoeren_score:', e);
+      }
+
       this.dom.scoreBanner.style.display = 'block';
       this.dom.scoreBanner.style.marginBottom = '20px';
       this.dom.scoreBanner.style.padding = '16px 20px';
