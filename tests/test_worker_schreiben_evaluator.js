@@ -82,7 +82,9 @@ Dein Freund`;
   assert.ok(freePayload.free_preview.criteria_breakdown.formale_richtigkeit, 'Formale Richtigkeit must be present');
 
   // CRITICAL SECURITY ASSERTION: DevTools Inspection Prevention
+  assert.strictEqual(freePayload.pro_locked_content.locked, true, 'pro_locked_content.locked must be true');
   assert.strictEqual(freePayload.pro_locked_content.is_locked, true, 'pro_locked_content.is_locked must be true');
+  assert.ok(typeof freePayload.pro_locked_content.teaser_rewrite_preview === 'string', 'teaser_rewrite_preview must be provided');
   assert.strictEqual(freePayload.pro_locked_content.model_rewrite_45_points, null, 'CRITICAL: model_rewrite_45_points MUST BE REDACTED (null) on server');
   assert.strictEqual(freePayload.pro_locked_content.missing_leitpunkt_injection, null, 'CRITICAL: missing_leitpunkt_injection MUST BE REDACTED (null)');
   assert.strictEqual(freePayload.pro_locked_content.b1_power_phrases_to_memorize, null, 'CRITICAL: b1_power_phrases MUST BE REDACTED (null)');

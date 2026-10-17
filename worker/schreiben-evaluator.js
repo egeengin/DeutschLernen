@@ -425,6 +425,9 @@ function applyServerSidePaywall(evaluation, isPro, uiLanguage, env) {
     UK: 'Повний аудит помилок та зразковий лист на 45/45 заблоковані у Pro-пакеті.'
   };
 
+  const fullRewrite = evaluation.pro_locked_content?.model_rewrite_45_points || '';
+  const teaserPreview = fullRewrite ? (fullRewrite.substring(0, 45) + '...') : 'Liebe Marianne, ich habe mich sehr über deine...';
+
   return {
     meta: {
       ...evaluation.meta,
@@ -438,9 +441,11 @@ function applyServerSidePaywall(evaluation, isPro, uiLanguage, env) {
       hidden_errors_count: hiddenCount
     },
     pro_locked_content: {
+      locked: true,
       is_locked: true,
-      message: upgradePromoMessages[lang] || upgradePromoMessages.EN,
+      teaser_rewrite_preview: teaserPreview,
       hidden_errors_count: hiddenCount,
+      message: upgradePromoMessages[lang] || upgradePromoMessages.EN,
       all_remaining_errors: null,             // REDACTED
       model_rewrite_45_points: null,          // REDACTED
       missing_leitpunkt_injection: null,      // REDACTED

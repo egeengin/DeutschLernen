@@ -1,0 +1,640 @@
+/**
+ * Modern High-Converting Styles for telc B1 Schreiben AI Examiner & Freemium Paywall
+ * Glassmorphic design, responsive layout, diff highlighting, and blurred paywall aesthetics.
+ */
+
+:root {
+  --sch-bg: #0f172a;
+  --sch-card-bg: rgba(30, 41, 59, 0.7);
+  --sch-card-border: rgba(148, 163, 184, 0.15);
+  --sch-accent-gold: #f59e0b;
+  --sch-accent-green: #10b981;
+  --sch-accent-red: #ef4444;
+  --sch-accent-blue: #3b82f6;
+  --sch-text-main: #f8fafc;
+  --sch-text-muted: #94a3b8;
+  --sch-radius: 12px;
+}
+
+/* Container */
+.schreiben-examiner-container {
+  max-width: 1040px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--sch-text-main);
+}
+
+/* Header & Scenario Selector */
+.sch-scenario-card {
+  background: var(--sch-card-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--sch-card-border);
+  border-radius: var(--sch-radius);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.sch-scenario-title {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sch-scenario-select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid var(--sch-card-border);
+  color: var(--sch-text-main);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.sch-scenario-select:focus {
+  border-color: var(--sch-accent-gold);
+}
+
+/* Scenario Briefing & 4 Leitpunkte Box */
+.sch-briefing-box {
+  background: rgba(15, 23, 42, 0.6);
+  border-left: 4px solid var(--sch-accent-gold);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-top: 16px;
+}
+
+.sch-briefing-situation {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #e2e8f0;
+}
+
+.sch-leitpunkte-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.sch-leitpunkt-item {
+  background: rgba(30, 41, 59, 0.5);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+/* Editor Toolbar (Timer, Umlauts, Word Counter) */
+.sch-editor-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  background: rgba(15, 23, 42, 0.7);
+  border-radius: 8px;
+  border: 1px solid var(--sch-card-border);
+}
+
+.sch-timer-widget {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sch-timer-display {
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--sch-accent-gold);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.sch-timer-btn {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid var(--sch-card-border);
+  color: var(--sch-text-main);
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sch-timer-btn:hover {
+  background: var(--sch-accent-blue);
+  color: #fff;
+}
+
+.sch-umlaut-bar {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.sch-umlaut-btn {
+  background: rgba(30, 41, 59, 0.9);
+  border: 1px solid var(--sch-card-border);
+  color: var(--sch-text-main);
+  padding: 6px 11px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s, background 0.2s;
+}
+
+.sch-umlaut-btn:hover {
+  background: var(--sch-accent-gold);
+  color: #0f172a;
+  transform: translateY(-1px);
+}
+
+.sch-word-counter-badge {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(148, 163, 184, 0.15);
+  color: var(--sch-text-muted);
+}
+
+.sch-word-counter-badge.optimal {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--sch-accent-green);
+}
+
+.sch-word-counter-badge.warning {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--sch-accent-red);
+}
+
+/* Textarea */
+.sch-textarea {
+  width: 100%;
+  min-height: 220px;
+  padding: 16px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid var(--sch-card-border);
+  border-radius: var(--sch-radius);
+  color: var(--sch-text-main);
+  font-size: 15px;
+  line-height: 1.7;
+  font-family: inherit;
+  resize: vertical;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.sch-textarea:focus {
+  border-color: var(--sch-accent-gold);
+}
+
+/* Action Submit Row */
+.sch-submit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.sch-submit-btn {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #0f172a;
+  font-weight: 800;
+  font-size: 16px;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.sch-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45);
+}
+
+.sch-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ========================================================
+   DIAGNOSTIC SCORECARD (FREE VIEW)
+   ======================================================== */
+.sch-scorecard-card {
+  background: var(--sch-card-bg);
+  border: 1px solid var(--sch-card-border);
+  border-radius: var(--sch-radius);
+  padding: 24px;
+  margin-top: 28px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.sch-gauge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--sch-card-border);
+}
+
+.sch-gauge-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sch-gauge-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(var(--sch-accent-gold) calc(var(--score-pct, 70) * 1%), rgba(148, 163, 184, 0.2) 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sch-gauge-inner {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: #0f172a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sch-gauge-score {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--sch-text-main);
+  line-height: 1;
+}
+
+.sch-gauge-max {
+  font-size: 11px;
+  color: var(--sch-text-muted);
+}
+
+.sch-pass-pill {
+  font-size: 13px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sch-pass-pill.passed {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--sch-accent-green);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.sch-pass-pill.failed {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--sch-accent-red);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+/* 4 Leitpunkte Status Pills */
+.sch-leitpunkte-status-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.sch-lp-pill {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sch-lp-pill.covered {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: var(--sch-accent-green);
+}
+
+.sch-lp-pill.partial {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: var(--sch-accent-gold);
+}
+
+.sch-lp-pill.missing {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: var(--sch-accent-red);
+}
+
+/* 3 Criteria Cards Grid */
+.sch-criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.sch-criterion-card {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--sch-card-border);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.sch-criterion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.sch-criterion-grade {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--sch-accent-gold);
+}
+
+.sch-criterion-pts {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--sch-text-muted);
+}
+
+.sch-criterion-desc {
+  font-size: 13px;
+  color: #cbd5e1;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Visible First 2 Grammar Errors (Diff Display) */
+.sch-errors-section {
+  margin-top: 24px;
+}
+
+.sch-errors-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sch-diff-card {
+  background: rgba(15, 23, 42, 0.7);
+  border-radius: 8px;
+  border-left: 4px solid var(--sch-accent-red);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.sch-diff-body {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.diff-del {
+  background: rgba(239, 68, 68, 0.25);
+  color: #fca5a5;
+  text-decoration: line-through;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.diff-ins {
+  background: rgba(16, 185, 129, 0.25);
+  color: #86efac;
+  text-decoration: none;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.sch-diff-expl {
+  font-size: 12px;
+  color: var(--sch-text-muted);
+}
+
+/* ========================================================
+   THE BLURRED PAYWALL CONVERSION BOX (isPro === false)
+   ======================================================== */
+.sch-paywall-box {
+  position: relative;
+  margin-top: 20px;
+  border-radius: var(--sch-radius);
+  overflow: hidden;
+  border: 2px solid var(--sch-accent-gold);
+}
+
+/* Blurred Background Dummy Error Cards */
+.sch-blurred-backdrop {
+  filter: blur(6px);
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.6;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.95);
+}
+
+.sch-dummy-error-card {
+  background: rgba(30, 41, 59, 0.8);
+  border-left: 4px solid #f59e0b;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.sch-teaser-model-rewrite {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px dashed rgba(245, 158, 11, 0.4);
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+/* High-Converting CTA Overlay Card */
+.sch-cta-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.82);
+  padding: 24px;
+  text-align: center;
+}
+
+.sch-cta-card-content {
+  max-width: 580px;
+}
+
+.sch-cta-headline {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+}
+
+.sch-cta-value-anchor {
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.sch-cta-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.sch-primary-unlock-btn {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 800;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.4);
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sch-primary-unlock-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(245, 158, 11, 0.55);
+}
+
+.sch-secondary-license-btn {
+  background: none;
+  border: none;
+  color: var(--sch-text-muted);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.sch-secondary-license-btn:hover {
+  color: var(--sch-accent-gold);
+}
+
+/* ========================================================
+   UNLOCKED PRO VIEW (isPro === true)
+   ======================================================== */
+.sch-unlocked-card {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(6, 95, 70, 0.12) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  border-radius: var(--sch-radius);
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.sch-unlocked-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sch-unlocked-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--sch-accent-green);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.sch-model-text {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid var(--sch-card-border);
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #f8fafc;
+  white-space: pre-wrap;
+}
+
+.sch-injection-box {
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: rgba(30, 41, 59, 0.7);
+  border-left: 3px solid #38bdf8;
+  border-radius: 8px;
+}
+
+.sch-power-phrases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.sch-power-phrase-item {
+  background: rgba(15, 23, 42, 0.7);
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  color: #e2e8f0;
+}
