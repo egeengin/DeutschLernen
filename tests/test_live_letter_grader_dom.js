@@ -325,5 +325,113 @@ assert.ok(storedInvoices.length > 0, 'Completed invoice should be persisted in l
 assert.strictEqual(storedInvoices[0].tierId, 'standard', 'Persisted invoice should match tier ID');
 console.log('✅ Digital EU-Compliant Invoice & Accounting Persistence Verified.');
 
+// 11. Test Cloudflare Worker AI Examiner Payload & Freemium Paywall Rendering
+const mockWorkerFreePayload = {
+  rawText: "Liebe Marianne,\n\nGestern ich habe einen Brief geschrieben weil ich bin krank.\n\nViele Grüße,\nAli",
+  meta: {
+    word_count: 145,
+    passed: true,
+    total_score: 36,
+    max_score: 45,
+    pass_threshold: 27,
+    points_missing_to_pass: 0
+  },
+  free_preview: {
+    examiner_verdict: "Hervorragende Bearbeitung aller vier Leitpunkte. Vereinzelte Wortstellungsfehler nach Nebensätzen kosten wenige Punkte.",
+    criteria_breakdown: {
+      aufgabenbewaeltigung: {
+        grade: "A",
+        raw_points: 5,
+        weighted_points: 15,
+        leitpunkte_check: [
+          { point: "Anlass des Schreibens", status: "covered" },
+          { point: "Ausflugsvorschlag", status: "covered" },
+          { point: "Kleidung & Vorbereitung", status: "covered" },
+          { point: "Ankunftszeit / Abholung", status: "covered" }
+        ],
+        reason: "Alle 4 Leitpunkte wurden ausführlich auf B1-Niveau behandelt."
+      },
+      kommunikative_gestaltung: {
+        grade: "B",
+        raw_points: 3,
+        weighted_points: 9,
+        reason: "Guter Einsatz von B1 Konnektoren."
+      },
+      formale_richtigkeit: {
+        grade: "B",
+        raw_points: 3,
+        weighted_points: 9,
+        error_count: 4,
+        reason: "Nebensatz-Inversionen."
+      }
+    },
+    visible_errors_sample: [
+      {
+        original_snippet: "Gestern ich habe",
+        corrected_snippet: "Gestern habe ich",
+        rule_category: "Inversion",
+        explanation: "Verb auf Position 2."
+      },
+      {
+        original_snippet: "weil ich bin krank",
+        corrected_snippet: "weil ich krank bin",
+        rule_category: "Nebensatz",
+        explanation: "Verb ans Satzende."
+      }
+    ],
+    hidden_errors_count: 2
+  },
+  pro_locked_content: {
+    is_locked: true,
+    all_remaining_errors: null,
+    model_rewrite_45_points: null,
+    missing_leitpunkt_injection: null,
+    b1_power_phrases_to_memorize: null
+  }
+};
+
+renderLiveGradingResults(mockWorkerFreePayload, true);
+const workerHtml = resultsContainer.innerHTML;
+assert.ok(workerHtml.includes('Offizielles Prüferurteil'), 'Should render official examiner verdict banner');
+assert.ok(workerHtml.includes('Leitpunkte Check'), 'Should render 4 Leitpunkte checklist');
+assert.ok(workerHtml.includes('DIAGNOSTIC PREVIEW ONLY'), 'Should render Freemium paywall gate header');
+assert.ok(workerHtml.includes('30-Tage Exam Pass (24€)'), 'Should offer 30-Day Exam Pass (24€)');
+assert.ok(workerHtml.includes('90-Tage Voll-Pass (39€)'), 'Should offer 90-Day Full Pass (39€)');
+assert.ok(workerHtml.includes('Weitere Fehler verborgen'), 'Should display hidden errors count');
+console.log('✅ AI Examiner Free Preview & Freemium Paywall Gate Rendering Verified.');
+
+// 12. Test Pro Unlocked Payload Rendering
+const mockWorkerProPayload = {
+  ...mockWorkerFreePayload,
+  pro_locked_content: {
+    is_locked: false,
+    all_remaining_errors: [],
+    model_rewrite_45_points: "Liebe Marianne, ich habe mich sehr über deine Nachricht gefreut...",
+    missing_leitpunkt_injection: "Könntest du mir bitte bald mitteilen, wann dein Flug landet?",
+    b1_power_phrases_to_memorize: ["Ich habe mich sehr gefreut", "Aus diesem Grund schlage ich vor"]
+  }
+};
+renderLiveGradingResults(mockWorkerProPayload, true);
+const proHtml = resultsContainer.innerHTML;
+assert.ok(proHtml.includes('45/45 telc B1 Gold-Standard Musterlösung'), 'Should render unlocked 45/45 model rewrite header');
+assert.ok(proHtml.includes('pro-model-text'), 'Should render model rewrite container');
+assert.ok(proHtml.includes('Musterbrief kopieren'), 'Should provide copy button for model letter');
+assert.ok(proHtml.includes('Fehlender Leitpunkt'), 'Should render Leitpunkt injection card');
+console.log('✅ AI Examiner Pro Unlocked 45/45 Model Rewrite Rendering Verified.');
+
+// 13. Test LemonSqueezy Checkout Opener
+let openedUrl = '';
+global.window.LemonSqueezy = {
+  Url: {
+    Open: (url) => { openedUrl = url; }
+  }
+};
+openLemonSqueezyCheckout('pass-30');
+assert.strictEqual(openedUrl, 'https://deutschlernen.lemonsqueezy.com/buy/exam-pass-30', 'Should trigger LemonSqueezy checkout for 30-day pass');
+openLemonSqueezyCheckout('pass-90');
+assert.strictEqual(openedUrl, 'https://deutschlernen.lemonsqueezy.com/buy/exam-pass-90', 'Should trigger LemonSqueezy checkout for 90-day pass');
+console.log('✅ LemonSqueezy Overlay Checkout Integration Verified.');
+
 console.log('🎉 All Live Letter Grader & Commercialization Tests Passed Successfully!');
+
 

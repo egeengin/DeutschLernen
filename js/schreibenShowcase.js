@@ -1568,6 +1568,95 @@ function renderLiveGradingResults(evalData, isLLM = false) {
   const container = document.getElementById('live-results-container');
   if (!container) return;
 
+  // Normalize Cloudflare Worker { meta, free_preview, pro_locked_content } format
+  if (evalData && evalData.meta && evalData.free_preview) {
+    const meta = evalData.meta;
+    const fp = evalData.free_preview;
+    const cb = fp.criteria_breakdown || {};
+    const pro = evalData.pro_locked_content || {};
+
+    evalData.totalScore = meta.total_score;
+    evalData.maxTotal = meta.max_score || 45;
+    evalData.passed = meta.passed;
+    evalData.grade = meta.passed ? 'Bestanden (Passed)' : 'Nicht bestanden';
+    evalData.percentage = Math.round((meta.total_score / 45) * 100);
+    evalData.examinerVerdict = fp.examiner_verdict;
+
+    const rawAuf = cb.aufgabenbewaeltigung?.raw_points ?? (meta.passed ? 4 : 2);
+    const rawKomm = cb.kommunikative_gestaltung?.raw_points ?? (meta.passed ? 4 : 2);
+    const rawForm = cb.formale_richtigkeit?.raw_points ?? (meta.passed ? 3 : 1);
+    evalData.rawSum = rawAuf + rawKomm + rawForm;
+
+    evalData.criteria = [
+      {
+        id: "inhalt",
+        titleEn: "Criterion I: Aufgabenbewältigung (Content & Leitpunkte)",
+        titleTr: "Kriter I: Görev Tamamlama ve Kılavuz Noktalar",
+        titleDe: "Kriterium I: Aufgabenbewältigung (Inhalt & Leitpunkte)",
+        rawScore: rawAuf,
+        rawMax: 5,
+        ratingLetter: cb.aufgabenbewaeltigung?.grade || 'B',
+        finalScore: cb.aufgabenbewaeltigung?.weighted_points || rawAuf * 3,
+        finalMax: 15,
+        status: rawAuf >= 4 ? "excellent" : (rawAuf >= 3 ? "good" : "needs-work"),
+        summaryEn: cb.aufgabenbewaeltigung?.reason || ''
+      },
+      {
+        id: "sprache",
+        titleEn: "Criterion II: Kommunikative Gestaltung (Cohesion & Register)",
+        titleTr: "Kriter II: İletişimsel Düzen ve Bağlaçlar",
+        titleDe: "Kriterium II: Kommunikative Gestaltung (Register & Konnektoren)",
+        rawScore: rawKomm,
+        rawMax: 5,
+        ratingLetter: cb.kommunikative_gestaltung?.grade || 'B',
+        finalScore: cb.kommunikative_gestaltung?.weighted_points || rawKomm * 3,
+        finalMax: 15,
+        status: rawKomm >= 4 ? "excellent" : (rawKomm >= 3 ? "good" : "needs-work"),
+        summaryEn: cb.kommunikative_gestaltung?.reason || ''
+      },
+      {
+        id: "korrektheit",
+        titleEn: "Criterion III: Formale Richtigkeit (Grammar & Orthography)",
+        titleTr: "Kriter III: Dilbilgisi ve Doğruluk",
+        titleDe: "Kriterium III: Formale Richtigkeit (Grammatik & Orthographie)",
+        rawScore: rawForm,
+        rawMax: 5,
+        ratingLetter: cb.formale_richtigkeit?.grade || 'B',
+        finalScore: cb.formale_richtigkeit?.weighted_points || rawForm * 3,
+        finalMax: 15,
+        status: rawForm >= 4 ? "excellent" : (rawForm >= 3 ? "good" : "needs-work"),
+        summaryEn: cb.formale_richtigkeit?.reason || ''
+      }
+    ];
+
+    const errorList = [
+      ...(fp.visible_errors_sample || []),
+      ...(pro.all_remaining_errors || [])
+    ];
+    evalData.annotations = errorList.map((err, idx) => ({
+      id: 'ann-ai-' + idx,
+      targetText: err.original_snippet,
+      correctedText: err.corrected_snippet,
+      type: 'syntax',
+      rule: err.rule_category,
+      ruleEn: err.rule_category,
+      explanationEn: err.explanation
+    }));
+
+    evalData.b1Upgrades = (pro.b1_power_phrases_to_memorize || []).map((ph, idx) => ({
+      original: `telc B1 Redemittel #${idx + 1}`,
+      upgrade: ph,
+      benefitEn: "Official high-scoring B1 phrase to secure Criterion II Score A."
+    }));
+
+    evalData.leitpunkteCheck = cb.aufgabenbewaeltigung?.leitpunkte_check || [];
+    evalData.proLocked = !!pro.is_locked;
+    evalData.hiddenErrorsCount = fp.hidden_errors_count || pro.hidden_errors_count || 0;
+    evalData.modelRewrite = pro.model_rewrite_45_points;
+    evalData.missingLeitpunktInjection = pro.missing_leitpunkt_injection;
+    evalData.powerPhrases = pro.b1_power_phrases_to_memorize;
+  }
+
   if (!isLLM) {
     lastOptionAEvalData = evalData;
   }
@@ -1592,6 +1681,31 @@ function renderLiveGradingResults(evalData, isLLM = false) {
           ${evalData.passed ? t('livePassBadge') : t('liveFailBadge')}
         </span>
       </div>
+
+      ${evalData.examinerVerdict ? `
+        <!-- Examiner Verdict Callout -->
+        <div class="examiner-verdict-banner" style="margin-bottom:20px; padding:16px 20px; background:linear-gradient(135deg, rgba(30,41,59,0.9), rgba(15,23,42,0.95)); border-left:4px solid ${evalData.passed ? '#22c55e' : '#f59e0b'}; border-radius:8px;">
+          <div style="font-size:12px; font-weight:800; text-transform:uppercase; color:${evalData.passed ? '#22c55e' : '#f59e0b'}; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+            <span>👨‍🏫</span> telc Deutsch B1 Offizielles Prüferurteil
+          </div>
+          <p style="margin:0; font-size:14px; color:#f8fafc; line-height:1.6;">${evalData.examinerVerdict}</p>
+        </div>
+      ` : ''}
+
+      ${evalData.leitpunkteCheck && evalData.leitpunkteCheck.length > 0 ? `
+        <!-- Leitpunkte 4-Point Coverage Check -->
+        <div class="leitpunkte-audit-card" style="margin-bottom:20px; padding:14px 18px; background:var(--bg-card); border:1px solid var(--border); border-radius:10px;">
+          <div style="font-size:13px; font-weight:700; color:var(--text-primary); margin-bottom:10px;">📋 telc B1 Leitpunkte Check (4 Guided Points):</div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:10px;">
+            ${evalData.leitpunkteCheck.map((lp, idx) => `
+              <div style="font-size:12px; display:flex; align-items:center; gap:6px; background:rgba(30,41,59,0.4); padding:8px 10px; border-radius:6px;">
+                <span>${lp.status === 'covered' ? '✅' : (lp.status === 'partial' ? '⚠️' : '❌')}</span>
+                <span style="font-weight:600; color:${lp.status === 'covered' ? '#22c55e' : (lp.status === 'partial' ? '#f59e0b' : '#ef4444')};">Punkt ${idx+1}: ${lp.point}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
 
       <!-- Main Showcase Grid (Letter + Rubric) -->
       <div class="showcase-grid">
@@ -1691,6 +1805,68 @@ function renderLiveGradingResults(evalData, isLLM = false) {
         </div>
       </div>
       ` : ''}
+
+      <!-- Pro Paywall Gate or Unlocked Model Rewrite -->
+      ${evalData.proLocked ? `
+        <div class="pro-paywall-gate-card" style="margin-top:28px; padding:24px; border-radius:14px; background:linear-gradient(135deg, rgba(30,41,59,0.95), rgba(15,23,42,0.98)); border:2px solid #f59e0b; box-shadow:0 8px 30px rgba(245,158,11,0.15);">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px;">
+            <div style="flex:1; min-width:280px;">
+              <span style="background:rgba(245,158,11,0.2); color:#f59e0b; padding:4px 10px; border-radius:20px; font-size:11px; font-weight:700; text-transform:uppercase;">🔒 DIAGNOSTIC PREVIEW ONLY</span>
+              <h3 style="margin:10px 0 6px 0; font-size:18px; color:#fff;">
+                ${evalData.hiddenErrorsCount > 0 ? `+${evalData.hiddenErrorsCount} Weitere Fehler verborgen & 45/45 Musterlösung gesperrt` : '45/45 telc B1 Musterlösung & Prüfer-Redemittel freischalten'}
+              </h3>
+              <p style="margin:0 0 16px 0; font-size:13px; color:#94a3b8; line-height:1.6;">
+                Sie sehen die kostenlose Vorschau (erste 2 Fehler). Schalten Sie den Exam Pass frei, um alle Fehlerkorrekturen, fehlende Leitpunkt-Sätze und die 45/45 Musterlösung freizuschalten.
+              </p>
+
+              <!-- Blurred 45/45 Model Rewrite Teaser -->
+              <div style="position:relative; background:rgba(15,23,42,0.85); border:1px dashed rgba(245,158,11,0.4); border-radius:8px; padding:16px; margin-bottom:16px; overflow:hidden;">
+                <div style="filter:blur(4px); user-select:none; color:#cbd5e1; font-size:13px; line-height:1.6;">
+                  Liebe Marianne, ich habe mich sehr über deine Nachricht gefreut. Es ist wirklich wunderbar, dass du mich bald besuchen möchtest. Wenn du im Mai kommst, können wir eine tolle Fahrradtour machen...
+                </div>
+                <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(15,23,42,0.65);">
+                  <span style="background:#f59e0b; color:#0f172a; font-weight:800; font-size:12px; padding:6px 14px; border-radius:20px; box-shadow:0 2px 10px rgba(0,0,0,0.5);">
+                    🔒 45/45 telc B1 Musterlösung (Pro Only)
+                  </span>
+                </div>
+              </div>
+
+              <!-- Buy Buttons -->
+              <div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
+                <button class="cta-btn-primary" onclick="openLemonSqueezyCheckout('pass-30')" style="background:linear-gradient(135deg, #f59e0b, #d97706); color:#0f172a; font-weight:800; border:none; padding:12px 20px; border-radius:8px; cursor:pointer; font-size:14px; box-shadow:0 4px 14px rgba(245,158,11,0.35);">
+                  ⚡ 30-Tage Exam Pass (24€)
+                </button>
+                <button class="cta-btn-secondary" onclick="openLemonSqueezyCheckout('pass-90')" style="background:rgba(30,41,59,0.8); border:1px solid rgba(245,158,11,0.5); color:#f8fafc; font-weight:700; padding:12px 18px; border-radius:8px; cursor:pointer; font-size:13px;">
+                  👑 90-Tage Voll-Pass (39€)
+                </button>
+                <button onclick="openLicenseActivationModal()" style="background:none; border:none; color:#94a3b8; font-size:12px; cursor:pointer; text-decoration:underline;">
+                  Lizenzschlüssel eingeben
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      ` : (evalData.modelRewrite ? `
+        <div class="pro-unlocked-card" style="margin-top:28px; padding:24px; border-radius:14px; background:linear-gradient(135deg, rgba(16,185,129,0.08), rgba(6,95,70,0.12)); border:1px solid rgba(16,185,129,0.4);">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span style="font-size:22px;">🏆</span>
+              <h4 style="margin:0; font-size:16px; color:#10b981; font-weight:700;">45/45 telc B1 Gold-Standard Musterlösung</h4>
+            </div>
+            <button onclick="navigator.clipboard && navigator.clipboard.writeText(document.getElementById('pro-model-text').innerText); alert('Musterbrief in Zwischenablage kopiert!');" style="background:rgba(16,185,129,0.2); border:1px solid #10b981; color:#10b981; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer;">
+              📋 Musterbrief kopieren
+            </button>
+          </div>
+          <div id="pro-model-text" style="background:var(--bg-card); padding:16px; border-radius:8px; border:1px solid var(--border); font-size:14px; line-height:1.7; color:var(--text-primary); white-space:pre-wrap;" dir="ltr">${evalData.modelRewrite}</div>
+
+          ${evalData.missingLeitpunktInjection ? `
+            <div style="margin-top:14px; padding:12px 16px; background:rgba(30,41,59,0.6); border-radius:8px; border-left:3px solid #38bdf8;">
+              <div style="font-size:12px; font-weight:700; color:#38bdf8; margin-bottom:4px;">💡 Fehlender Leitpunkt – Empfohlener Ergänzungssatz:</div>
+              <p style="margin:0; font-size:13px; color:#f8fafc; font-style:italic;" dir="ltr">${evalData.missingLeitpunktInjection}</p>
+            </div>
+          ` : ''}
+        </div>
+      ` : '')}
 
       <!-- Option B: Check Afterwards with Deep AI Callout Card -->
       <div class="option-b-verify-card" style="margin-top:28px; padding:22px; border-radius:14px; background:linear-gradient(135deg, rgba(99,102,241,0.06) 0%, rgba(168,85,247,0.06) 100%); border:1px solid rgba(99,102,241,0.25); box-shadow:0 4px 20px rgba(0,0,0,0.04);">
@@ -2111,6 +2287,100 @@ async function submitDirectAiGrading() {
 }
 
 /**
+ * LemonSqueezy Checkout & Paywall Management
+ */
+function openLemonSqueezyCheckout(tierId = 'pass-30') {
+  const checkoutUrls = {
+    'pass-30': 'https://deutschlernen.lemonsqueezy.com/buy/exam-pass-30',
+    'pass-90': 'https://deutschlernen.lemonsqueezy.com/buy/exam-pass-90'
+  };
+  const url = checkoutUrls[tierId] || checkoutUrls['pass-30'];
+  if (typeof window !== 'undefined' && window.LemonSqueezy && typeof window.LemonSqueezy.Url?.Open === 'function') {
+    window.LemonSqueezy.Url.Open(url);
+  } else if (typeof window !== 'undefined') {
+    window.open(url, '_blank');
+  }
+}
+
+function openLicenseActivationModal() {
+  const currentKey = (typeof StorageService !== 'undefined') ? StorageService.getLicenseKey() : (localStorage.getItem('deutschlernen_pro_license') || '');
+  const key = prompt('Enter your LemonSqueezy License Key from your purchase confirmation email:', currentKey);
+  if (key !== null) {
+    const trimmed = key.trim();
+    if (trimmed) {
+      if (typeof StorageService !== 'undefined') {
+        StorageService.setLicenseKey(trimmed);
+      } else {
+        localStorage.setItem('deutschlernen_pro_license', trimmed);
+      }
+      alert('✅ Pro Exam Pass License activated! Your evaluations are now fully unlocked.');
+      const textarea = document.getElementById('student-letter-textarea');
+      if (textarea && textarea.value.trim().length > 20) {
+        submitDirectAiGrading();
+      }
+    } else {
+      if (typeof StorageService !== 'undefined') {
+        StorageService.setLicenseKey('');
+      } else {
+        localStorage.removeItem('deutschlernen_pro_license');
+      }
+      alert('License removed.');
+    }
+  }
+}
+
+function renderPaywallExhaustedModal(errJson) {
+  let modal = document.getElementById('pro-pricing-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'pro-pricing-modal';
+    modal.className = 'modal-overlay';
+    document.body.appendChild(modal);
+  }
+
+  modal.innerHTML = `
+    <div class="modal-card pricing-modal-card" style="max-width:540px; text-align:center;">
+      <button class="modal-close-btn" onclick="closeProPricingModal()">✕</button>
+      <div style="font-size:42px; margin-bottom:12px;">🔒</div>
+      <span class="modal-kicker">FREE EVALUATION QUOTA EXHAUSTED</span>
+      <h2 style="margin:8px 0 12px 0;">Unlock Your telc B1 Exam Pass</h2>
+      <p style="color:var(--text-secondary); font-size:14px; line-height:1.6; margin-bottom:24px;">
+        ${errJson?.message || 'You have used your 1 free diagnostic evaluation. Upgrade now to get unlimited B1 evaluations, full error breakdown, and the 45/45 model rewrite.'}
+      </p>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:24px;">
+        <div style="padding:16px; border:2px solid #f59e0b; border-radius:12px; background:rgba(245,158,11,0.05); text-align:center;">
+          <h4 style="margin:0 0 6px 0; color:var(--text-primary);">30-Day Exam Pass</h4>
+          <div style="font-size:24px; font-weight:800; color:#f59e0b; margin-bottom:6px;">24€</div>
+          <p style="font-size:12px; color:var(--text-muted); margin:0 0 12px 0;">One-time payment • No recurring fee</p>
+          <button class="cta-btn-primary" onclick="openLemonSqueezyCheckout('pass-30')" style="width:100%; padding:10px; font-size:13px; font-weight:700;">
+            ⚡ Buy 30-Day Pass
+          </button>
+        </div>
+
+        <div style="padding:16px; border:1px solid var(--border); border-radius:12px; background:var(--bg-card); text-align:center;">
+          <span style="font-size:10px; font-weight:800; background:rgba(16,185,129,0.15); color:#10b981; padding:2px 8px; border-radius:10px; text-transform:uppercase;">Best Value</span>
+          <h4 style="margin:6px 0 6px 0; color:var(--text-primary);">90-Day Full Pass</h4>
+          <div style="font-size:24px; font-weight:800; color:var(--text-primary); margin-bottom:6px;">39€</div>
+          <p style="font-size:12px; color:var(--text-muted); margin:0 0 12px 0;">One-time payment • All modules</p>
+          <button class="cta-btn-secondary" onclick="openLemonSqueezyCheckout('pass-90')" style="width:100%; padding:10px; font-size:13px; font-weight:700;">
+            👑 Buy 90-Day Pass
+          </button>
+        </div>
+      </div>
+
+      <div style="font-size:12px; color:var(--text-muted);">
+        Already have a License Key from your purchase email?
+        <button onclick="openLicenseActivationModal()" style="background:none; border:none; color:var(--accent-gold); cursor:pointer; text-decoration:underline; font-weight:600;">
+          Enter License Key
+        </button>
+      </div>
+    </div>
+  `;
+  modal.style.display = 'flex';
+}
+
+/**
  * Call OpenAI, Gemini, or Serverless Proxy for Deep LLM Grading
  */
 async function callLlmLetterGrader(studentText, promptKey, apiKey, provider) {
@@ -2123,17 +2393,44 @@ async function callLlmLetterGrader(studentText, promptKey, apiKey, provider) {
   const promptTitle = promptKey === 'marianne' ? 'Marianne E-Mail' : (promptKey === 'hotel' ? 'Hotel Meeresblick Beschwerde' : (promptKey === 'vhs' ? 'VHS Kursanfrage' : 'Freier B1 Brief'));
   const promptContext = promptContexts[promptKey] || promptContexts.custom;
 
-  if (provider === 'proxy') {
-    const proxyEndpoint = (typeof window !== 'undefined' && window.DEUTSCHLERNEN_CONFIG?.aiProxyUrl) || '/api/grade-letter';
-    const headers = { 'Content-Type': 'application/json' };
+  if (provider === 'proxy' || provider === 'worker') {
+    const proxyEndpoint = (typeof window !== 'undefined' && (window.DEUTSCHLERNEN_CONFIG?.aiEvaluatorUrl || window.DEUTSCHLERNEN_CONFIG?.aiProxyUrl)) || '/api/evaluate-letter';
+    const activeLang = (typeof getActiveLanguage === 'function' ? getActiveLanguage() : 'en').toUpperCase();
+    const deviceId = (typeof StorageService !== 'undefined') ? StorageService.getDeviceId() : (localStorage.getItem('deutschlernen_device_id') || 'dev-fp-1');
+    const licenseKey = (typeof StorageService !== 'undefined') ? StorageService.getLicenseKey() : (localStorage.getItem('deutschlernen_pro_license') || '');
+
+    const headers = {
+      'Content-Type': 'application/json',
+      'X-License-Key': licenseKey,
+      'X-Device-Fingerprint': deviceId
+    };
     if (apiKey) {
       headers['Authorization'] = `Bearer ${apiKey}`;
     }
+
+    const payload = {
+      task_prompt: `${promptTitle}: ${promptContext}`,
+      student_text: studentText,
+      ui_language: activeLang,
+      device_fingerprint: deviceId,
+      license_key: licenseKey,
+      studentText,
+      promptTitle,
+      promptContext
+    };
+
     const res = await fetch(proxyEndpoint, {
       method: 'POST',
       headers,
-      body: JSON.stringify({ studentText, promptTitle, promptContext })
+      body: JSON.stringify(payload)
     });
+
+    if (res.status === 402) {
+      const errJson = await res.json().catch(() => ({}));
+      renderPaywallExhaustedModal(errJson);
+      throw new Error(errJson.message || 'Free evaluation quota used up. Please upgrade to continue.');
+    }
+
     if (!res.ok) {
       const errJson = await res.json().catch(() => ({}));
       throw new Error(errJson.error || errJson.message || `Proxy service unavailable (HTTP ${res.status})`);
@@ -2224,12 +2521,14 @@ Return ONLY a valid JSON object matching this schema:
  * Helper to inject annotations into the student letter string with localized popovers
  */
 function renderAnnotatedText(rawText, annotations, lang) {
-  let html = rawText;
+  let html = rawText || '';
+  if (!annotations || !Array.isArray(annotations)) return html;
   const activeLang = lang || getActiveLanguage();
   const langKey = activeLang.charAt(0).toUpperCase() + activeLang.slice(1);
   const fixWord = SHOWCASE_I18N[activeLang]?.fixLabel || SHOWCASE_I18N.en.fixLabel;
 
   annotations.forEach(ann => {
+    if (!ann || !ann.targetText) return;
     const explanation = ann['explanation' + langKey] || ann.explanationEn;
     const ruleTitle = ann['rule' + langKey] || ann.ruleEn || ann.rule;
 
@@ -2997,6 +3296,9 @@ if (typeof window !== 'undefined') {
   window.updateCreditsDisplay = updateCreditsDisplay;
   window.isUserPro = isUserPro;
   window.loadModelLetterIntoGrader = loadModelLetterIntoGrader;
+  window.openLemonSqueezyCheckout = openLemonSqueezyCheckout;
+  window.openLicenseActivationModal = openLicenseActivationModal;
+  window.renderPaywallExhaustedModal = renderPaywallExhaustedModal;
 }
 
 if (typeof module !== 'undefined' && module.exports) {
@@ -3028,6 +3330,9 @@ if (typeof module !== 'undefined' && module.exports) {
     selectProPlan,
     confirmInstantDemoOrder,
     redeemAccessCode,
-    loadModelLetterIntoGrader
+    loadModelLetterIntoGrader,
+    openLemonSqueezyCheckout,
+    openLicenseActivationModal,
+    renderPaywallExhaustedModal
   };
 }

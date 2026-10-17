@@ -8,6 +8,13 @@ let currentTrack = localStorage.getItem('deutschlernen_track') || 'b1';
 
 // --- Community Feedback Rating Labels & Display ---
 const ratingLabels = {
+  de: {
+    5: "5/5 — Ausgezeichnet",
+    4: "4/5 — Sehr gut",
+    3: "3/5 — Gut",
+    2: "2/5 — Ausbaufähig",
+    1: "1/5 — Mangelhaft"
+  },
   en: {
     5: "5/5 — Excellent",
     4: "4/5 — Very Good",
@@ -54,6 +61,7 @@ const materials = [
 
 function getMaterialField(m, field) {
   if (!m) return '';
+  if (currentLang === 'de') return m[field + 'De'] || m[field] || '';
   if (currentLang === 'tr') return m[field + 'Tr'] || m[field] || '';
   if (currentLang === 'ar') return m[field + 'Ar'] || m[field] || '';
   if (currentLang === 'uk') return m[field + 'Uk'] || m[field] || '';
@@ -285,22 +293,22 @@ const GOAL_CONFIG = {
 // Track Switching & Module View Isolation Stats
 const HERO_STATS_CONFIG = {
   b1: [
-    { val: '10', en: 'Study Modules', tr: 'Modül', ar: 'وحدات دراسية', uk: 'Навчальні модулі' },
-    { val: '30', en: 'Day Plan', tr: 'Günlük Plan', ar: 'خطة الأيام', uk: 'Денний план' },
-    { val: '2000+', en: 'Vocab Words', tr: 'Kelime', ar: 'كلمات', uk: 'Слів' },
-    { val: '180 / 300', en: 'Pass Threshold', tr: 'Geçme Barajı', ar: 'نسبة النجاح', uk: 'Прохідний бал' }
+    { val: '10', de: 'Lernmodule', en: 'Study Modules', tr: 'Modül', ar: 'وحدات دراسية', uk: 'Навчальні модулі' },
+    { val: '30', de: 'Tage-Plan', en: 'Day Plan', tr: 'Günlük Plan', ar: 'خطة الأيام', uk: 'Денний план' },
+    { val: '2000+', de: 'Vokabeln', en: 'Vocab Words', tr: 'Kelime', ar: 'كلمات', uk: 'Слів' },
+    { val: '180 / 300', de: 'Bestehensgrenze', en: 'Pass Threshold', tr: 'Geçme Barajı', ar: 'نسبة النجاح', uk: 'Прохідний бал' }
   ],
   vocab: [
-    { val: '2,000+', en: 'Vocab Words', tr: 'Kelime', ar: 'كلمة', uk: 'Слів' },
-    { val: '5', en: 'Quiz Modes', tr: 'Test Modu', ar: 'أوضاع اختبار', uk: 'Режимів тестів' },
-    { val: 'A1–C1', en: '4 CEFR Decks', tr: '4 Deste Seviyesi', ar: '4 مستويات', uk: '4 колоди рівнів' },
-    { val: '100%', en: 'Local & Private', tr: 'Cihaz İçi & Gizli', ar: 'محلي وخاص', uk: 'Локально і приватно' }
+    { val: '2,000+', de: 'Vokabeln', en: 'Vocab Words', tr: 'Kelime', ar: 'كلمة', uk: 'Слів' },
+    { val: '5', de: 'Quiz-Modi', en: 'Quiz Modes', tr: 'Test Modu', ar: 'أوضاع اختبار', uk: 'Режимів тестів' },
+    { val: 'A1–C1', de: '4 GER-Stufen', en: '4 CEFR Decks', tr: '4 Deste Seviyesi', ar: '4 مستويات', uk: '4 колоди рівнів' },
+    { val: '100%', de: 'Lokal & Privat', en: 'Local & Private', tr: 'Cihaz İçi & Gizli', ar: 'محلي وخاص', uk: 'Локально і приватно' }
   ],
   lid: [
-    { val: '310', en: 'BAMF Questions', tr: 'BAMF Sorusu', ar: 'أسئلة BAMF', uk: 'Питань BAMF' },
-    { val: '16', en: 'German States', tr: 'Eyalet', ar: 'الولايات', uk: 'Федеральних земель' },
-    { val: '33', en: 'Timed Simulation', tr: 'Sınav Simülasyonu', ar: 'محاكاة الامتحان', uk: 'Симуляція іспиту' },
-    { val: '17 / 33', en: 'Pass Threshold', tr: 'Geçme Barajı', ar: 'نسبة النجاح', uk: 'Прохідний бал' }
+    { val: '310', de: 'BAMF-Fragen', en: 'BAMF Questions', tr: 'BAMF Sorusu', ar: 'أسئلة BAMF', uk: 'Питань BAMF' },
+    { val: '16', de: 'Bundesländer', en: 'German States', tr: 'Eyalet', ar: 'الولايات', uk: 'Федеральних земель' },
+    { val: '33', de: 'Prüfungssimulation', en: 'Timed Simulation', tr: 'Sınav Simülasyonu', ar: 'محاكاة الامتحان', uk: 'Симуляція іспиту' },
+    { val: '17 / 33', de: 'Bestehensgrenze', en: 'Pass Threshold', tr: 'Geçme Barajı', ar: 'نسبة النجاح', uk: 'Прохідний бал' }
   ]
 };
 
@@ -317,7 +325,7 @@ function updateHeroStats(trackId) {
     return `
       <div class="hero-stat" id="hero-stat-${idx + 1}">
         <div class="val">${item.val}</div>
-        <div class="label" data-en="${item.en}" data-tr="${item.tr}" data-ar="${item.ar}" data-uk="${item.uk}">${label}</div>
+        <div class="label" data-de="${item.de || item.en}" data-en="${item.en}" data-tr="${item.tr}" data-ar="${item.ar}" data-uk="${item.uk}">${label}</div>
       </div>
     `;
   }).join('');
@@ -1235,6 +1243,7 @@ function setLang(lang) {
   currentLang = lang;
   localStorage.setItem('site_lang', lang);
   localStorage.setItem('telc_lang', lang);
+  localStorage.setItem('deutschlernen_lang', lang);
   try {
     const vs = JSON.parse(localStorage.getItem('deutschlernen_vocab_settings') || '{}');
     vs.lang = lang;
@@ -1246,7 +1255,7 @@ function setLang(lang) {
                     document.querySelector(`.lang-btn:${lang === 'en' ? 'first-child' : 'last-child'}`);
   if (activeBtn) activeBtn.classList.add('active');
   
-  ['en', 'tr', 'ar', 'uk'].forEach(l => {
+  ['de', 'en', 'tr', 'ar', 'uk'].forEach(l => {
     const btn = document.getElementById(`fc-btn-${l}`);
     if (btn) {
       if (l === lang) btn.classList.add('primary');

@@ -94,14 +94,15 @@
 <div class="global-top-bar">
   <button class="pro-chip-btn" id="top-pro-btn" onclick="openProPricingModal()" title="View Pro Plans & AI Letter Grader Passes">
     <span class="pro-chip-icon">👑</span>
-    <span class="pro-chip-text" data-en="Pro Plans" data-tr="Pro Paketler" data-ar="الباقات الاحترافية" data-uk="Pro плани">Pro Plans</span>
+    <span class="pro-chip-text" data-de="Pro-Pläne" data-en="Pro Plans" data-tr="Pro Paketler" data-ar="الباقات الاحترافية" data-uk="Pro плани">Pro Plans</span>
   </button>
   <button class="goal-chip-btn" id="current-goal-btn" onclick="openGoalModal()" title="Choose or switch your German learning goal and level">
     <span class="goal-chip-icon" id="current-goal-icon">🎯</span>
     <span class="goal-chip-text" id="current-goal-text">Goal: B1 Exam</span>
-    <span class="goal-chip-action" data-en="Change" data-tr="Değiştir" data-ar="تغيير" data-uk="Змінити">Change</span>
+    <span class="goal-chip-action" data-de="Ändern" data-en="Change" data-tr="Değiştir" data-ar="تغيير" data-uk="Змінити">Change</span>
   </button>
   <div class="global-lang-toggle">
+    <button class="lang-btn" onclick="setLang('de')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/de.png" width="16" alt="DE" style="border-radius:2px;"> DE</button>
     <button class="lang-btn active" onclick="setLang('en')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/us.png" width="16" alt="US" style="border-radius:2px;"> EN</button>
     <button class="lang-btn" onclick="setLang('tr')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/tr.png" width="16" alt="TR" style="border-radius:2px;"> TR</button>
     <button class="lang-btn" onclick="setLang('ar')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/sa.png" width="16" alt="AR" style="border-radius:2px;"> AR</button>
@@ -349,25 +350,35 @@
           <!-- Header -->
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;flex-wrap:wrap;">
             <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(139,92,246,0.2);border:1px solid rgba(139,92,246,0.4);color:#c4b5fd;font-size:10px;font-weight:800;padding:3px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:0.08em;">
-              🧠 SMART LEARNING ENGINE
+              <span data-de="🧠 SM-2 LERN-ALGORITHMUS"
+                    data-en="🧠 SMART LEARNING ENGINE"
+                    data-tr="🧠 AKILLI ÖĞRENME MOTORU"
+                    data-ar="🧠 محرك التعلم الذكي"
+                    data-uk="🧠 РОЗУМНИЙ АЛГОРИТМ НАВЧАННЯ">🧠 SMART LEARNING ENGINE</span>
             </div>
             <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.3);color:#fbbf24;font-size:10px;font-weight:800;padding:3px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:0.08em;">
-              ✨ YENİ
+              <span data-de="✨ NEU"
+                    data-en="✨ NEW"
+                    data-tr="✨ YENİ"
+                    data-ar="✨ جديد"
+                    data-uk="✨ НОВЕ">✨ NEW</span>
             </div>
           </div>
           <h3 style="font-size:22px;font-weight:800;color:#f8fafc;margin-bottom:8px;line-height:1.3;"
+              data-de="Dein Lernfortschritt bleibt im Gedächtnis. Für immer."
               data-en="Your Progress is Remembered. Forever."
               data-tr="Neyi Bildiğini Hatırlıyoruz. Her Zaman."
               data-ar="تقدمك محفوظ دائماً."
               data-uk="Ваш прогрес запам'ятовується назавжди.">
-            Neyi Bildiğini Hatırlıyoruz. Her Zaman.
+            Your Progress is Remembered. Forever.
           </h3>
           <p style="font-size:14px;color:#94a3b8;margin-bottom:28px;max-width:560px;line-height:1.65;"
+             data-de="Unser SM-2 Spaced-Repetition-Algorithmus erfasst jede Vokabel. Wörter, die du beherrschst, werden für Wochen pausiert. Schwierige Wörter kommen morgen wieder. Keine unnötigen Wiederholungen — nur das, was du wirklich brauchst."
              data-en="Our SM-2 spaced repetition engine tracks every word you answer. Words you know get pushed back weeks. Words you struggle with come back tomorrow. No wasted repetition — only what you actually need."
              data-tr="SM-2 aralıklı tekrar motorumuz her cevapladığın kelimeyi takip eder. Bildiğin kelimeler haftalar sonraya ertelenir. Zorlandıkların ertesi gün tekrar gelir. Gereksiz tekrar yok — sadece ihtiyacın olanlar."
              data-ar="محرك التكرار المتباعد SM-2 يتتبع كل كلمة تجيب عليها. الكلمات التي تعرفها تُؤجَّل لأسابيع. الكلمات الصعبة تعود غداً. لا تكرار مضيَّع — فقط ما تحتاجه فعلاً."
              data-uk="Наш алгоритм SM-2 відстежує кожне слово, яке ви відповіли. Слова, які ви знаєте, відкладаються на тижні. Важкі слова повертаються завтра. Жодного зайвого повторення — лише те, що вам справді потрібно.">
-            SM-2 aralıklı tekrar motorumuz her cevapladığın kelimeyi takip eder. Bildiğin kelimeler haftalar sonraya ertelenir. Zorlandıkların ertesi gün tekrar gelir. Gereksiz tekrar yok — sadece ihtiyacın olanlar.
+            Our SM-2 spaced repetition engine tracks every word you answer. Words you know get pushed back weeks. Words you struggle with come back tomorrow. No wasted repetition — only what you actually need.
           </p>
 
           <!-- 5-step journey pills -->
@@ -375,40 +386,40 @@
             <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:10px 14px;">
               <span style="font-size:20px;">👁️</span>
               <div>
-                <div style="font-size:11px;font-weight:700;color:#e2e8f0;" data-en="Unseen" data-tr="Görülmemiş" data-ar="غير مرئي" data-uk="Не бачене">Görülmemiş</div>
-                <div style="font-size:10px;color:#64748b;" data-en="First encounter" data-tr="İlk karşılaşma" data-ar="أول لقاء" data-uk="Перша зустріч">İlk karşılaşma</div>
+                <div style="font-size:11px;font-weight:700;color:#e2e8f0;" data-de="Neu" data-en="Unseen" data-tr="Görülmemiş" data-ar="غير مرئي" data-uk="Не бачене">Unseen</div>
+                <div style="font-size:10px;color:#64748b;" data-de="Erste Begegnung" data-en="First encounter" data-tr="İlk karşılaşma" data-ar="أول لقاء" data-uk="Перша зустріч">First encounter</div>
               </div>
             </div>
             <div style="color:#475569;font-size:16px;">→</div>
             <div style="display:flex;align-items:center;gap:8px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.25);border-radius:10px;padding:10px 14px;">
               <span style="font-size:20px;">📖</span>
               <div>
-                <div style="font-size:11px;font-weight:700;color:#fbbf24;" data-en="Learning" data-tr="Öğreniliyor" data-ar="قيد التعلم" data-uk="Вивчається">Öğreniliyor</div>
-                <div style="font-size:10px;color:#92400e;" data-en="1–2 correct" data-tr="1–2 doğru" data-ar="1–2 صحيح" data-uk="1–2 правильно">1–2 doğru</div>
+                <div style="font-size:11px;font-weight:700;color:#fbbf24;" data-de="Im Lernprozess" data-en="Learning" data-tr="Öğreniliyor" data-ar="قيد التعلم" data-uk="Вивчається">Learning</div>
+                <div style="font-size:10px;color:#92400e;" data-de="1–2 richtig" data-en="1–2 correct" data-tr="1–2 doğru" data-ar="1–2 صحيح" data-uk="1–2 правильно">1–2 correct</div>
               </div>
             </div>
             <div style="color:#475569;font-size:16px;">→</div>
             <div style="display:flex;align-items:center;gap:8px;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.25);border-radius:10px;padding:10px 14px;">
               <span style="font-size:20px;">✅</span>
               <div>
-                <div style="font-size:11px;font-weight:700;color:#4ade80;" data-en="Mastered" data-tr="Öğrenildi" data-ar="متقن" data-uk="Засвоєно">Öğrenildi</div>
-                <div style="font-size:10px;color:#166534;" data-en="3+ in a row" data-tr="3+ üst üste" data-ar="3+ متتالية" data-uk="3+ поспіль">3+ üst üste</div>
+                <div style="font-size:11px;font-weight:700;color:#4ade80;" data-de="Gemeistert" data-en="Mastered" data-tr="Öğrenildi" data-ar="متقن" data-uk="Засвоєно">Mastered</div>
+                <div style="font-size:10px;color:#166534;" data-de="3+ in Folge richtig" data-en="3+ in a row" data-tr="3+ üst üste" data-ar="3+ متتالية" data-uk="3+ поспіль">3+ in a row</div>
               </div>
             </div>
             <div style="color:#475569;font-size:16px;">→</div>
             <div style="display:flex;align-items:center;gap:8px;background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.25);border-radius:10px;padding:10px 14px;">
               <span style="font-size:20px;">📅</span>
               <div>
-                <div style="font-size:11px;font-weight:700;color:#c4b5fd;" data-en="Scheduled" data-tr="Ertelendi" data-ar="مجدول" data-uk="Заплановано">Ertelendi</div>
-                <div style="font-size:10px;color:#4c1d95;" data-en="Returns in 7–60 days" data-tr="7–60 gün sonra" data-ar="يعود خلال 7–60 يوماً" data-uk="Повернеться через 7–60 днів">7–60 gün sonra</div>
+                <div style="font-size:11px;font-weight:700;color:#c4b5fd;" data-de="Geplant" data-en="Scheduled" data-tr="Ertelendi" data-ar="مجدول" data-uk="Заплановано">Scheduled</div>
+                <div style="font-size:10px;color:#4c1d95;" data-de="Wiederholung in 7–60 Tagen" data-en="Returns in 7–60 days" data-tr="7–60 gün sonra" data-ar="يعود خلال 7–60 يوماً" data-uk="Повернеться через 7–60 днів">Returns in 7–60 days</div>
               </div>
             </div>
             <div style="color:#475569;font-size:16px;">→</div>
             <div style="display:flex;align-items:center;gap:8px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.25);border-radius:10px;padding:10px 14px;">
               <span style="font-size:20px;">⚠️</span>
               <div>
-                <div style="font-size:11px;font-weight:700;color:#f87171;" data-en="Review" data-tr="Tekrar Et" data-ar="مراجعة" data-uk="Перегляд">Tekrar Et</div>
-                <div style="font-size:10px;color:#7f1d1d;" data-en="Wrong → back tomorrow" data-tr="Yanlış → yarın tekrar" data-ar="خطأ ← يعود غداً" data-uk="Помилка → завтра знову">Yanlış → yarın tekrar</div>
+                <div style="font-size:11px;font-weight:700;color:#f87171;" data-de="Fehler-Review" data-en="Review" data-tr="Tekrar Et" data-ar="مراجعة" data-uk="Перегляд">Review</div>
+                <div style="font-size:10px;color:#7f1d1d;" data-de="Falsch → morgen erneut" data-en="Wrong → back tomorrow" data-tr="Yanlış → yarın tekrar" data-ar="خطأ ← يعود غداً" data-uk="Помилка → завтра знову">Wrong → back tomorrow</div>
               </div>
             </div>
           </div>
@@ -419,23 +430,23 @@
               <span style="font-size:22px;">🧠</span>
               <div>
                 <div style="font-size:18px;font-weight:800;color:#f8fafc;">SM-2</div>
-                <div style="font-size:11px;color:#64748b;" data-en="Algorithm" data-tr="Algoritma" data-ar="خوارزمية" data-uk="Алгоритм">Algoritma</div>
+                <div style="font-size:11px;color:#64748b;" data-de="Algorithmus" data-en="Algorithm" data-tr="Algoritma" data-ar="خوارزمية" data-uk="Алгоритм">Algorithm</div>
               </div>
             </div>
             <div style="width:1px;background:rgba(255,255,255,0.08);"></div>
             <div style="display:flex;align-items:center;gap:8px;">
               <span style="font-size:22px;">💾</span>
               <div>
-                <div style="font-size:18px;font-weight:800;color:#f8fafc;" data-en="Local" data-tr="Cihazında" data-ar="محلي" data-uk="Локально">Cihazında</div>
-                <div style="font-size:11px;color:#64748b;" data-en="100% private, offline" data-tr="Gizli, çevrimdışı" data-ar="خصوصي 100%، بدون إنترنت" data-uk="100% конфіденційно, офлайн">Gizli, çevrimdışı</div>
+                <div style="font-size:18px;font-weight:800;color:#f8fafc;" data-de="Lokal" data-en="Local" data-tr="Cihazında" data-ar="محلي" data-uk="Локально">Local</div>
+                <div style="font-size:11px;color:#64748b;" data-de="100% privat & offline" data-en="100% private, offline" data-tr="Gizli, çevrimdışı" data-ar="خصوصي 100%، بدون إنترنت" data-uk="100% конфіденційно, офлайн">100% private, offline</div>
               </div>
             </div>
             <div style="width:1px;background:rgba(255,255,255,0.08);"></div>
             <div style="display:flex;align-items:center;gap:8px;">
               <span style="font-size:22px;">🚫</span>
               <div>
-                <div style="font-size:18px;font-weight:800;color:#f8fafc;" data-en="No waste" data-tr="Tekrar Yok" data-ar="لا هدر" data-uk="Без зайвого">Tekrar Yok</div>
-                <div style="font-size:11px;color:#64748b;" data-en="Known words skipped" data-tr="Bilinen kelimeler atlanır" data-ar="الكلمات المعروفة تُتجاوز" data-uk="Відомі слова пропускаються">Bilinen kelimeler atlanır</div>
+                <div style="font-size:18px;font-weight:800;color:#f8fafc;" data-de="Kein Ballast" data-en="No waste" data-tr="Tekrar Yok" data-ar="لا هدر" data-uk="Без зайвого">No waste</div>
+                <div style="font-size:11px;color:#64748b;" data-de="Gekonnte Wörter übersprungen" data-en="Known words skipped" data-tr="Bilinen kelimeler atlanır" data-ar="الكلمات المعروفة تُتجاوز" data-uk="Відомі слова пропускаються">Known words skipped</div>
               </div>
             </div>
             <div style="width:1px;background:rgba(255,255,255,0.08);"></div>
@@ -443,14 +454,14 @@
               <span style="font-size:22px;">📈</span>
               <div>
                 <div style="font-size:18px;font-weight:800;color:#f8fafc;">2,000+</div>
-                <div style="font-size:11px;color:#64748b;" data-en="Words tracked" data-tr="Kelime takipte" data-ar="كلمة يتم تتبعها" data-uk="Слів відстежується">Kelime takipte</div>
+                <div style="font-size:11px;color:#64748b;" data-de="Wörter getrackt" data-en="Words tracked" data-tr="Kelime takipte" data-ar="كلمة يتم تتبعها" data-uk="Слів відстежується">Words tracked</div>
               </div>
             </div>
             <div style="flex:1;display:flex;align-items:center;justify-content:flex-end;min-width:160px;">
               <a href="trainer.html" style="display:inline-flex;align-items:center;gap:8px;padding:11px 22px;background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#fff;border-radius:10px;font-weight:700;font-size:13px;text-decoration:none;border:1px solid rgba(139,92,246,0.5);box-shadow:0 4px 20px rgba(139,92,246,0.3);transition:all 0.2s;"
                  onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 28px rgba(139,92,246,0.45)'"
                  onmouseout="this.style.transform='';this.style.boxShadow='0 4px 20px rgba(139,92,246,0.3)'">
-                <span data-en="🚀 Try Smart Trainer →" data-tr="🚀 Akıllı Antrenörü Dene →" data-ar="🚀 جرّب المدرب الذكي ←" data-uk="🚀 Спробуй розумний тренажер →">🚀 Akıllı Antrenörü Dene →</span>
+                <span data-de="🚀 Smart Trainer starten →" data-en="🚀 Try Smart Trainer →" data-tr="🚀 Akıllı Antrenörü Dene →" data-ar="🚀 جرّب المدرب الذكي ←" data-uk="🚀 Спробуй розумний тренажер →">🚀 Try Smart Trainer →</span>
               </a>
             </div>
           </div>
@@ -583,6 +594,7 @@
         <div class="fc-controls" style="align-items: center;">
           <button class="card-link" onclick="prevCard()">&larr; <span data-en="Prev" data-tr="Önceki" data-ar="السابق" data-uk="Попередня">Prev</span></button>
           <div style="display:flex; gap:6px; margin:0 8px; flex-wrap:wrap; justify-content:center;">
+            <button class="card-link" id="fc-btn-de" onclick="setLang('de')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/de.png" width="14" alt="DE" style="border-radius:2px;"> DE</button>
             <button class="card-link" id="fc-btn-en" onclick="setLang('en')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/us.png" width="14" alt="US" style="border-radius:2px;"> EN</button>
             <button class="card-link" id="fc-btn-tr" onclick="setLang('tr')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/tr.png" width="14" alt="TR" style="border-radius:2px;"> TR</button>
             <button class="card-link" id="fc-btn-ar" onclick="setLang('ar')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/sa.png" width="14" alt="AR" style="border-radius:2px;"> AR</button>
@@ -636,20 +648,52 @@
       <div class="lid-free-traffic-hero" style="background:linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(15, 23, 42, 0.8) 100%); border:1px solid rgba(16, 185, 129, 0.4); border-radius:16px; padding:22px 24px; margin-bottom:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
         <div style="max-width:720px;">
           <div style="display:inline-flex; align-items:center; gap:6px; background:#10b981; color:#ffffff; font-size:11px; font-weight:800; padding:2px 10px; border-radius:12px; margin-bottom:10px; text-transform:uppercase;">
-            🎉 100% KOSTENLOS & WERBEFREI &bull; BAMF EINBÜRGERUNGSTEST 2026
+            <span data-de="🎉 100% KOSTENLOS & WERBEFREI &bull; BAMF EINBÜRGERUNGSTEST 2026"
+                  data-en="🎉 100% FREE & AD-FREE &bull; BAMF CITIZENSHIP TEST 2026"
+                  data-tr="🎉 %100 ÜCRETSİZ & REKLAMSIZ &bull; BAMF VATANDAŞLIK SINAVI 2026"
+                  data-ar="🎉 100% مجاني وبدون إعلانات &bull; اختبار الجنسية BAMF 2026"
+                  data-uk="🎉 100% БЕЗКОШТОВНО І БЕЗ РЕКЛАМИ &bull; ТЕСТ НА ГРОМАДЯНСТВО BAMF 2026">
+              🎉 100% FREE & AD-FREE &bull; BAMF CITIZENSHIP TEST 2026
+            </span>
           </div>
-          <h2 style="margin:0 0 8px 0; font-size:22px; color:var(--text-primary);">Leben in Deutschland (LiD 310) — Für immer kostenlos</h2>
-          <p style="margin:0 0 10px 0; font-size:13px; color:var(--text-secondary); line-height:1.6;">
-            Alle 310 offiziellen BAMF-Fragen (300 Allgemein + 160 für alle 16 Bundesländer), 33-Fragen Prüfungssimulation mit Timer und 4-sprachige Übersetzungen (DE, TR, AR, UK) stehen allen Zuwanderern komplett kostenlos und werbefrei zur Verfügung.
+          <h2 style="margin:0 0 8px 0; font-size:22px; color:var(--text-primary);"
+              data-de="Leben in Deutschland (LiD 310) — Für immer kostenlos"
+              data-en="Leben in Deutschland (LiD 310) — 100% Free Forever"
+              data-tr="Leben in Deutschland (LiD 310) — Sonsuza Kadar Ücretsiz"
+              data-ar="الحياة في ألمانيا (LiD 310) — مجاناً دائماً"
+              data-uk="Життя в Німеччині (LiD 310) — Назавжди безкоштовно">
+            Leben in Deutschland (LiD 310) — 100% Free Forever
+          </h2>
+          <p style="margin:0 0 10px 0; font-size:13px; color:var(--text-secondary); line-height:1.6;"
+             data-de="Alle 310 offiziellen BAMF-Fragen (300 Allgemein + 160 für alle 16 Bundesländer), 33-Fragen Prüfungssimulation mit Timer und 4-sprachige Übersetzungen (DE, TR, AR, UK) stehen allen Zuwanderern komplett kostenlos und werbefrei zur Verfügung."
+             data-en="All 310 official BAMF questions (300 general + 160 across all 16 federal states), 33-question timed exam simulation, and multilingual translations (DE, TR, AR, UK) are available 100% free with no ads."
+             data-tr="310 resmi BAMF sorusunun tamamı (300 Genel + 16 eyalet için 160 soru), zaman ayarlı 33 soruluk sınav simülasyonu ve çok dilli çeviriler (DE, TR, AR, UK) tüm adaylar için tamamen ücretsiz ve reklamsızdır."
+             data-ar="جميع أسئلة BAMF الرسمية الـ 310 (300 عامة + 160 لكافة الولايات الـ 16) ومحاكاة امتحان بوقت محدد وترجمات بعدة لغات متاحة مجاناً 100% وبدون إعلانات."
+             data-uk="Усі 310 офіційних питань BAMF (300 загальних + 160 для всіх 16 земель), симуляція іспиту на 33 питання з таймером та переклади доступні 100% безкоштовно і без реклами.">
+            All 310 official BAMF questions (300 general + 160 across all 16 federal states), 33-question timed exam simulation, and multilingual translations (DE, TR, AR, UK) are available 100% free with no ads.
           </p>
           <div style="font-size:12px; color:var(--accent-gold); font-weight:600;">
-            🎓 <em>Wichtig für deinen deutschen Pass:</em> Neben dem LiD-Test ist das <strong>telc Deutsch B1 Zertifikat</strong> gesetzlich vorgeschrieben (§ 10 StAG). Sichere dein Bestehen im Prüfungsteil Schreiben mit unserem KI-Briefkorrektor:
-            <a href="javascript:void(0)" onclick="navigateToSection('schreiben-showcase-section', 'b1')" style="color:var(--accent-gold); text-decoration:underline; font-weight:700; margin-left:4px;">Zum telc B1 Schreib-Trainer →</a>
+            <span data-de="🎓 <em>Wichtig für deinen deutschen Pass:</em> Neben dem LiD-Test ist das <strong>telc Deutsch B1 Zertifikat</strong> gesetzlich vorgeschrieben (§ 10 StAG). Sichere dein Bestehen im Prüfungsteil Schreiben mit unserem KI-Briefkorrektor:"
+                  data-en="🎓 <em>Essential for German Naturalization:</em> Alongside LiD, the <strong>telc Deutsch B1 Certificate</strong> is legally mandatory (§ 10 StAG). Secure your passing score in Writing with our AI Letter Grader:"
+                  data-tr="🎓 <em>Alman Vatandaşlığı İçin Önemli:</em> LiD testine ek olarak <strong>telc Deutsch B1 Sertifikası</strong> yasal zorunluluktur (§ 10 StAG). Yazma bölümünü yapay zeka mektup değerlendiricimizle garantileyin:"
+                  data-ar="🎓 <em>مهم للحصول على الجواز الألماني:</em> بالإضافة لاختبار LiD، شهادة <strong>telc Deutsch B1</strong> مطلوبة قانونياً (§ 10 StAG). اضمن اجتياز الكتابة مع مصحح الرسائل:"
+                  data-uk="🎓 <em>Важливо для громадянства:</em> Окрім LiD, сертифікат <strong>telc Deutsch B1</strong> є обов'язковим за законом (§ 10 StAG). Забезпечте складання частини Письмо:">
+              🎓 <em>Essential for German Naturalization:</em> Alongside LiD, the <strong>telc Deutsch B1 Certificate</strong> is legally mandatory (§ 10 StAG). Secure your passing score in Writing with our AI Letter Grader:
+            </span>
+            <a href="javascript:void(0)" onclick="navigateToSection('schreiben-showcase-section', 'b1')" style="color:var(--accent-gold); text-decoration:underline; font-weight:700; margin-left:4px;">
+              <span data-de="Zum telc B1 Schreib-Trainer →"
+                    data-en="To telc B1 Writing Trainer →"
+                    data-tr="telc B1 Yazma Antrenörüne Git →"
+                    data-ar="إلى مدرب كتابة telc B1 ←"
+                    data-uk="До тренажера письма telc B1 →">
+                To telc B1 Writing Trainer →
+              </span>
+            </a>
           </div>
         </div>
         <div>
           <button type="button" class="cta-btn-primary" onclick="if(window.startLiDExamSimulation){window.startLiDExamSimulation();} else { document.getElementById('lid-trainer-container')?.scrollIntoView({behavior:'smooth'}); }" style="padding:12px 22px; font-weight:800; font-size:14px; background:linear-gradient(135deg, #10b981 0%, #059669 100%); border:none; border-radius:10px; color:#ffffff; cursor:pointer;">
-            ⏱️ Simulation starten
+            <span data-de="⏱️ Simulation starten" data-en="⏱️ Start Simulation" data-tr="⏱️ Simülasyonu Başlat" data-ar="⏱️ بدء المحاكاة" data-uk="⏱️ Почати симуляцію">⏱️ Start Simulation</span>
           </button>
         </div>
       </div>
@@ -920,6 +964,9 @@
       </div>
       
       <div style="margin-top: 24px; font-size: 12px; color: var(--text-muted); opacity: 0.85; line-height: 1.6; max-width: 680px; margin-left: auto; margin-right: auto; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; text-align: left;">
+        <p style="margin-bottom: 8px; font-weight: 600; color: var(--text-primary);">
+          Unabhängiges Lernportal. „telc“ ist eine eingetragene Marke der telc gGmbH. Dieses Portal steht in keiner offiziellen Verbindung zur telc gGmbH.
+        </p>
         <p style="margin-bottom: 8px;">
           <strong>Trademark Disclaimer:</strong> <em>telc®</em> is a registered trademark of telc gGmbH (Frankfurt am Main). <em>Goethe-Zertifikat®</em> is a registered trademark of Goethe-Institut e.V. (Munich). This portal is an independent study tool and is not affiliated with, endorsed by, or sponsored by telc gGmbH or Goethe-Institut e.V.
         </p>
@@ -1125,6 +1172,7 @@
       <div class="entrance-control-group">
         <label for="entrance-lang-select" data-en="Learning from language:" data-tr="Açıklama / Hedef diliniz:" data-ar="لغة الشرح والتعلم منها:" data-uk="Мова навчання та підказок:">Learning from language:</label>
         <select id="entrance-lang-select" class="styled-select" onchange="setLang(this.value)">
+          <option value="de">🇩🇪 Deutsch</option>
           <option value="en">🇬🇧 English</option>
           <option value="tr">🇹🇷 Türkçe</option>
           <option value="ar">🇸🇦 العربية (Arabic)</option>
@@ -1166,6 +1214,8 @@
   </div>
 </div>
 
+<script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+<script src="js/storageService.js"></script>
 <script src="js/firebaseConfig.js"></script>
 <script src="js/firebaseService.js"></script>
 <script src="data/lid310.js"></script>

@@ -22,6 +22,7 @@ const ASSETS = [
   './js/lidTrainer.js',
   './js/lidChecklist.js',
   './js/fehlerheft.js',
+  './js/storageService.js',
   './js/sampleEvaluationData.js',
   './js/schreibenShowcase.js',
   './js/telcCalculator.js',
