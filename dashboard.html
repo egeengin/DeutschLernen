@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeutschLernen — Student App Workspace (telc Deutsch B1 & BAMF LiD)</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#f59e0b">
+<meta name="description" content="Dedicated, distraction-free student app workspace for telc Deutsch B1 and BAMF Leben in Deutschland exam prep. Featuring AI letter grader, spaced repetition vocabulary, mock tests, and pass calculator.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  // Apply saved theme immediately to prevent FOUC
+  (function() {
+    const savedTheme = localStorage.getItem('deutschlernen_theme') || localStorage.getItem('telc_theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  })();
+</script>
+<link rel="stylesheet" href="css/portal.css?v=2.5">
+<link rel="stylesheet" href="css/schreiben.css?v=2.5">
+<link rel="stylesheet" href="css/dashboard.css?v=2.5">
+</head>
+<body>
+
+<!-- Dashboard App Header -->
+<header class="dash-header">
+  <div class="dash-header-inner">
+    <div style="display:flex; align-items:center; gap:16px;">
+      <a href="index.html" class="dash-brand" title="Return to Landing Page">
+        <span class="dash-brand-icon">🏆</span>
+        <div>
+          <div class="dash-brand-title">DeutschLernen</div>
+          <div style="font-size:11px; color:var(--text-muted); font-weight:600;">Student Workspace</div>
+        </div>
+      </a>
+      <span class="dash-brand-badge">telc B1 & LiD</span>
+    </div>
+
+    <!-- User Metrics in Header -->
+    <div class="dash-metrics-bar">
+      <div class="dash-metric-pill streak" title="Current Daily Streak">
+        🔥 <span id="dash-streak-val">0</span> <span data-en="Day Streak" data-tr="Günlük Seri" data-ar="أيام متتالية" data-uk="Днів поспіль">Day Streak</span>
+      </div>
+      <div class="dash-metric-pill words" title="SM-2 Vocabulary Learned">
+        ⚡ <span id="dash-words-val">0</span> / 2,000 <span data-en="Words" data-tr="Kelime" data-ar="كلمة" data-uk="Слів">Words</span>
+      </div>
+      <div class="dash-metric-pill pro-badge" id="dash-pro-pill" onclick="handleDashboardProClick()" title="Click to view Pro pass status or activate license">
+        👑 <strong>Free Diagnostic (1 Test Left)</strong> &bull; <span style="text-decoration:underline;">Upgrade</span>
+      </div>
+    </div>
+
+    <!-- Header Actions -->
+    <div class="dash-header-actions">
+      <!-- Global Language Switcher -->
+      <div class="global-lang-toggle" style="margin:0;">
+        <button class="lang-btn" onclick="setLang('de')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/de.png" width="16" alt="DE" style="border-radius:2px;"> DE</button>
+        <button class="lang-btn active" onclick="setLang('en')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/us.png" width="16" alt="US" style="border-radius:2px;"> EN</button>
+        <button class="lang-btn" onclick="setLang('tr')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/tr.png" width="16" alt="TR" style="border-radius:2px;"> TR</button>
+        <button class="lang-btn" onclick="setLang('ar')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/sa.png" width="16" alt="AR" style="border-radius:2px;"> AR</button>
+        <button class="lang-btn" onclick="setLang('uk')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/ua.png" width="16" alt="UK" style="border-radius:2px;"> UK</button>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn" aria-label="Toggle dark mode">☀️</button>
+      <a href="index.html" class="dash-btn-secondary" style="font-size:12px; padding:6px 12px; text-decoration:none;">
+        <span>🏠 <span data-en="Landing Page" data-tr="Ana Sayfa" data-ar="الصفحة الرئيسية" data-uk="Головна">Landing Page</span></span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="dash-container">
+
+  <!-- Welcome Hero -->
+  <div class="dash-welcome-hero">
+    <div class="dash-welcome-content">
+      <div class="dash-welcome-kicker" data-en="🎯 Personal Exam Cockpit" data-tr="🎯 Kişisel Sınav Kokpiti" data-ar="🎯 لوحة تحكم الامتحان الشخصية" data-uk="🎯 Окремий робочий кабінет">🎯 Personal Exam Cockpit</div>
+      <h1 class="dash-welcome-title" data-en="Welcome to your telc B1 Study Workspace" data-tr="telc B1 Çalışma Alanınıza Hoş Geldiniz" data-ar="مرحباً بك في مساحة دراسة telc B1" data-uk="Ласкаво просимо до навчального кабінету telc B1">Welcome to your telc B1 Study Workspace</h1>
+      <p class="dash-welcome-desc" data-en="Everything you need to surpass the official 180 / 300 points threshold. Drill high-frequency vocabulary, evaluate practice letters with official rubrics, and simulate the oral exam." data-tr="180 / 300 resmi geçme barajını aşmanız için gereken her şey tek ekranda. Kritik kelimeleri pekiştirin, mektuplarınızı yapay zeka ile puanlayın ve sözlü sınava hazırlanın." data-ar="كل ما تحتاجه لتجاوز درجة النجاح الرسمية 180 / 300. تدرب على المفردات الشائعة، صحح رسائلك بالمعايير الرسمية، وحاكِ الامتحان الشفوي." data-uk="Усе необхідне для подолання офіційного порогу 180 / 300 балів. Тренуйте лексику, перевіряйте листи та готуйтеся до усного іспиту.">Everything you need to surpass the official 180 / 300 points threshold. Drill high-frequency vocabulary, evaluate practice letters with official rubrics, and simulate the oral exam.</p>
+      
+      <div class="dash-quick-actions">
+        <a href="#section-examiner" class="dash-btn-primary">
+          <span>✍️ <span data-en="Write Practice Letter (AI)" data-tr="Mektup Yaz & Değerlendir (AI)" data-ar="كتابة رسالة تدريبية (AI)" data-uk="Написати тренувальний лист (ШІ)">Write Practice Letter (AI)</span></span>
+        </a>
+        <a href="trainer.html" class="dash-btn-secondary">
+          <span>⚡ <span data-en="10-Min Vocab Sprint" data-tr="10 Dk Kelime Antrenmanı" data-ar="تدريب مفردات سريع 10 دقائق" data-uk="10-хвилинний спринт слів">10-Min Vocab Sprint</span></span>
+        </a>
+        <a href="sprechen.html" class="dash-btn-secondary">
+          <span>🎙️ <span data-en="Oral Exam Studio" data-tr="Sözlü Sınav Stüdyosu" data-ar="استوديو الامتحان الشفوي" data-uk="Студія усного іспиту">Oral Exam Studio</span></span>
+        </a>
+        <a href="lesen.html" class="dash-btn-secondary">
+          <span>📖 <span data-en="Reading & Grammar" data-tr="Okuma & Dilbilgisi" data-ar="القراءة والقواعد" data-uk="Читання та граматика">Reading & Grammar</span></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Workspace Navigation Strip -->
+  <nav class="dash-nav-tabs" aria-label="Workspace Sections">
+    <a href="#section-roadmap" class="dash-tab-link active">🚀 <span data-en="Roadmap" data-tr="Yol Haritası" data-ar="خارطة الطريق" data-uk="План">Roadmap</span></a>
+    <a href="#section-studios" class="dash-tab-link">🏢 <span data-en="Studios Grid" data-tr="Çalışma Stüdyoları" data-ar="الاستوديوهات" data-uk="Студії">Studios Grid</span></a>
+    <a href="#section-examiner" class="dash-tab-link">✍️ <span data-en="AI Schreiben Examiner" data-tr="Yazma Değerlendiricisi" data-ar="مصحح الكتابة" data-uk="Оцінювач письма">AI Schreiben Examiner</span></a>
+    <a href="#section-flashcards" class="dash-tab-link">🗂️ <span data-en="Daily Flashcards" data-tr="Günlük Kelime Kartları" data-ar="بطاقات المفردات" data-uk="Картки слів">Daily Flashcards</span></a>
+    <a href="#section-quiz" class="dash-tab-link">🔍 <span data-en="Grammar Quiz" data-tr="Dilbilgisi Testi" data-ar="اختبار القواعد" data-uk="Тест з граматики">Grammar Quiz</span></a>
+    <a href="#section-fehlerheft" class="dash-tab-link">📓 <span data-en="Fehlerheft" data-tr="Hata Defteri" data-ar="دفتر الأخطاء" data-uk="Зошит помилок">Fehlerheft</span></a>
+    <a href="#section-calculator" class="dash-tab-link">🎯 <span data-en="Pass Predictor (180/300)" data-tr="Not Hesaplayıcı (180/300)" data-ar="حاسبة الدرجات (180/300)" data-uk="Калькулятор балів (180/300)">Pass Predictor (180/300)</span></a>
+  </nav>
+
+  <!-- Section 1: 5-Step telc B1 Master Roadmap -->
+  <section class="dash-section" id="section-roadmap">
+    <div class="dash-section-header">
+      <div class="dash-section-title-wrap">
+        <div class="dash-section-kicker" data-en="Step-by-Step Curriculum" data-tr="Adım Adım Müfredat" data-ar="المنهج خطوة بخطوة" data-uk="Покрокова програма">Step-by-Step Curriculum</div>
+        <h2 class="dash-section-title" data-en="5-Step telc B1 & LiD Master Roadmap" data-tr="5 Adımlık telc B1 & LiD Başarı Haritası" data-ar="خارطة طريق telc B1 و LiD في 5 خطوات" data-uk="5 кроків успіху telc B1 та LiD">5-Step telc B1 & LiD Master Roadmap</h2>
+        <p class="dash-section-sub" data-en="Complete these 5 focused milestones to guarantee your B1 certification and naturalization test pass." data-tr="B1 sertifikanızı ve vatandaşlık sınavınızı garantilemek için bu 5 temel adımı sırayla tamamlayın." data-ar="أكمل هذه المراحل الخمس لضمان اجتياز امتحان B1 واختبار الجنسية." data-uk="Пройдіть ці 5 етапів для гарантованого складання B1 та тесту на громадянство.">Complete these 5 focused milestones to guarantee your B1 certification and naturalization test pass.</p>
+      </div>
+    </div>
+
+    <!-- 5 Steps Grid -->
+    <div class="steps-roadmap">
+      <div class="step-milestone" onclick="location.href='index.html#quickstart'" title="Step 1: Exam Structure & Blueprint" tabindex="0" role="button">
+        <div class="step-milestone-header">
+          <span class="step-milestone-num">1</span>
+          <span class="step-milestone-arrow">→</span>
+        </div>
+        <h4 data-en="Exam Blueprint" data-tr="Sınav Yönergesi" data-ar="دليل الامتحان" data-uk="Регламент іспиту">Exam Blueprint</h4>
+        <p data-en="telc B1 rules & 180 pts bar" data-tr="telc B1 kuralları & 180 puan" data-ar="قواعد الامتحان ودرجة 180" data-uk="Правила telc B1 та 180 балів">telc B1 rules & 180 pts bar</p>
+      </div>
+
+      <div class="step-milestone" onclick="location.href='trainer.html'" title="Step 2: Core 2,000 Vocab Sprint" tabindex="0" role="button">
+        <div class="step-milestone-header">
+          <span class="step-milestone-num">2</span>
+          <span class="step-milestone-arrow">→</span>
+        </div>
+        <h4 data-en="Vocab 2000 Sprint" data-tr="2.000 Kelime Antrenmanı" data-ar="تدريب 2000 كلمة" data-uk="Спринт 2000 слів">Vocab 2000 Sprint</h4>
+        <p data-en="SM-2 spaced retention drill" data-tr="Aralıklı tekrar algoritması" data-ar="تكرار متباعد ذكي SM-2" data-uk="Інтервальне повторення SM-2">SM-2 spaced retention drill</p>
+      </div>
+
+      <div class="step-milestone" onclick="location.href='lesen.html'" title="Step 3: Reading & Sprachbausteine" tabindex="0" role="button">
+        <div class="step-milestone-header">
+          <span class="step-milestone-num">3</span>
+          <span class="step-milestone-arrow">→</span>
+        </div>
+        <h4 data-en="Lesen & Grammar" data-tr="Okuma & Dil Yapıları" data-ar="القراءة وقواعد اللغة" data-uk="Читання та граматика">Lesen & Grammar</h4>
+        <p data-en="Interactive exam reader & gaps" data-tr="İnteraktif okuma ve boşluklar" data-ar="قارئ تفاعلي وفراغات قواعد" data-uk="Інтерактивне читання">Interactive exam reader & gaps</p>
+      </div>
+
+      <div class="step-milestone" onclick="location.href='#section-examiner'" title="Step 4: AI Letter Grader (Schreiben)" tabindex="0" role="button">
+        <div class="step-milestone-header">
+          <span class="step-milestone-num">4</span>
+          <span class="step-milestone-arrow">→</span>
+        </div>
+        <h4 data-en="Writing Rubric /45" data-tr="Yazma Kriterleri /45" data-ar="معايير الكتابة /45" data-uk="Оцінювання письма /45">Writing Rubric /45</h4>
+        <p data-en="4 Leitpunkte & 3 criteria AI" data-tr="4 Leitpunkt & 3 kriter analizi" data-ar="النقاط الأربع وتصحيح AI" data-uk="4 пункти та оцінка ШІ">4 Leitpunkte & 3 criteria AI</p>
+      </div>
+
+      <div class="step-milestone" onclick="location.href='sprechen.html'" title="Step 5: Oral Exam & LiD Mock Test" tabindex="0" role="button">
+        <div class="step-milestone-header">
+          <span class="step-milestone-num">5</span>
+          <span class="step-milestone-arrow">→</span>
+        </div>
+        <h4 data-en="Sprechen & LiD Test" data-tr="Konuşma & LiD Sınavı" data-ar="المحادثة واختبار LiD" data-uk="Мовлення та LiD тест">Sprechen & LiD Test</h4>
+        <p data-en="Teil 3 oral simulator & 310 BAMF" data-tr="Teil 3 simülatörü & 310 soru" data-ar="محاكي الشفوي و310 أسئلة BAMF" data-uk="Симулятор усного та 310 питань">Teil 3 oral simulator & 310 BAMF</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Studio Modules Grid -->
+  <section class="dash-section" id="section-studios">
+    <div class="dash-section-header">
+      <div class="dash-section-title-wrap">
+        <div class="dash-section-kicker" data-en="Dedicated Training Studios" data-tr="Özel Çalışma Stüdyoları" data-ar="استوديوهات التدريب المخصصة" data-uk="Спеціалізовані навчальні студії">Dedicated Training Studios</div>
+        <h2 class="dash-section-title" data-en="Independent Interactive Practice Studios" data-tr="Bağımsız İnteraktif Çalışma Stüdyoları" data-ar="استوديوهات التدريب التفاعلية المستقلة" data-uk="Окремі інтерактивні тренувальні студії">Independent Interactive Practice Studios</h2>
+        <p class="dash-section-sub" data-en="Launch individual skill studios directly with offline support and zero distraction." data-tr="Becerilerinizi geliştirmek için doğrudan ilgili stüdyoya girin; çevrimdışı destek ve reklamsız ortam." data-ar="انتقل مباشرة إلى استوديو المهارة المطلوبة مع دعم كامل دون اتصال بالإنترنت." data-uk="Запускайте потрібні студії безпосередньо з підтримкою роботи офлайн.">Launch individual skill studios directly with offline support and zero distraction.</p>
+      </div>
+    </div>
+
+    <div class="dash-studios-grid">
+      <!-- Studio 1: Vocab Trainer -->
+      <a href="trainer.html" class="dash-studio-card">
+        <div>
+          <div class="dash-studio-icon">⚡</div>
+          <div class="dash-studio-title" data-en="Wortschatz Trainer 2000" data-tr="Kelime Antrenörü 2000" data-ar="مدرب المفردات 2000" data-uk="Тренажер слів 2000">Wortschatz Trainer 2000</div>
+          <div class="dash-studio-desc" data-en="SM-2 Leitner spaced repetition engine with 2,000+ essential A1–B1 words, native TTS audio, and 5 quiz drill modes." data-tr="2.000+ temel A1-B1 kelimesi, sesli telaffuz ve 5 farklı quiz moduyla akıllı aralıklı tekrar antrenörü." data-ar="خوارزمية SM-2 للتكرار المتباعد مع أكثر من 2000 كلمة ونطق صوتي و5 أوضاع اختبار." data-uk="Розумний алгоритм повторення SM-2 з 2000+ словами A1–B1, вимовою та 5 режимами тестів.">SM-2 Leitner spaced repetition engine with 2,000+ essential A1–B1 words, native TTS audio, and 5 quiz drill modes.</div>
+        </div>
+        <div class="dash-studio-cta">
+          <span data-en="Launch Vocab Trainer →" data-tr="Kelime Antrenörünü Başlat →" data-ar="بدء تدريب المفردات ←" data-uk="Запустити тренажер слів →">Launch Vocab Trainer →</span>
+        </div>
+      </a>
+
+      <!-- Studio 2: Lesen Studio -->
+      <a href="lesen.html" class="dash-studio-card">
+        <div>
+          <div class="dash-studio-icon">📖</div>
+          <div class="dash-studio-title" data-en="Lesen & Sprachbausteine" data-tr="Okuma & Dil Yapıları" data-ar="استوديو القراءة والتراكيب" data-uk="Читання та мовні структури">Lesen & Sprachbausteine</div>
+          <div class="dash-studio-desc" data-en="Interactive exam reading passages with instant click-to-lookup dictionary, Sprachbausteine Teil 1 & 2 grammar gaps, and scoring." data-tr="Tıklamayla anında sözlük çevirisi sunan interaktif okuma parçaları ve Sprachbausteine Teil 1-2 boşluk doldurma testleri." data-ar="نصوص قراءة تفاعلية مع ترجمة فورية بالنقر، واختبارات ملء فراغات القواعد وتحديد الدرجات." data-uk="Інтерактивні тексти для читання з миттєвим перекладом слів у клік та вправами на граматику.">Interactive exam reading passages with instant click-to-lookup dictionary, Sprachbausteine Teil 1 & 2 grammar gaps, and scoring.</div>
+        </div>
+        <div class="dash-studio-cta">
+          <span data-en="Launch Reading Studio →" data-tr="Okuma Stüdyosunu Başlat →" data-ar="فتح استوديو القراءة ←" data-uk="Запустити студію читання →">Launch Reading Studio →</span>
+        </div>
+      </a>
+
+      <!-- Studio 3: Hoeren Studio -->
+      <a href="hoeren.html" class="dash-studio-card">
+        <div>
+          <div class="dash-studio-icon">🎧</div>
+          <div class="dash-studio-title" data-en="Hörverstehen Studio" data-tr="Dinleme Stüdyosu" data-ar="استوديو فهم المسموع" data-uk="Студія аудіювання">Hörverstehen Studio</div>
+          <div class="dash-studio-desc" data-en="Official telc B1 listening audio simulator covering Teil 1, 2, and 3 with authentic accents, timed playback, and question sets." data-tr="Resmi telc B1 dinleme simülatörü: Teil 1, 2 ve 3 için özgün ses kayıtları, zaman ayarlı oynatma ve sorular." data-ar="محاكي الاستماع الرسمي لـ telc B1 بأصوات ولهجات واقعية واختبارات الأجزاء 1 و 2 و 3." data-uk="Офіційний симулятор аудіювання telc B1 з реалістичними діалогами для частин 1, 2 і 3.">Official telc B1 listening audio simulator covering Teil 1, 2, and 3 with authentic accents, timed playback, and question sets.</div>
+        </div>
+        <div class="dash-studio-cta">
+          <span data-en="Launch Listening Studio →" data-tr="Dinleme Stüdyosunu Başlat →" data-ar="فتح استوديو الاستماع ←" data-uk="Запустити студію аудіювання →">Launch Listening Studio →</span>
+        </div>
+      </a>
+
+      <!-- Studio 4: Sprechen Studio -->
+      <a href="sprechen.html" class="dash-studio-card">
+        <div>
+          <div class="dash-studio-icon">🎙️</div>
+          <div class="dash-studio-title" data-en="Sprechen Oral Studio" data-tr="Konuşma Sınavı Stüdyosu" data-ar="استوديو الامتحان الشفوي" data-uk="Студія усного мовлення">Sprechen Oral Studio</div>
+          <div class="dash-studio-desc" data-en="Teil 1, 2, and 3 oral exam simulator with speech recognition, automated B1 Redemittel detection, and score evaluation." data-tr="Konuşma tanıma, B1 kalıpları (Redemittel) tespiti ve anında puanlama içeren Teil 1-2-3 sözlü sınav simülatörü." data-ar="محاكي الامتحان الشفوي لأجزاء 1 و 2 و 3 مع التعرف الصوتي واكتشاف روابط B1 وتقييم النتيجة." data-uk="Симулятор усного іспиту з розпізнаванням мови, виявленням зв'язок B1 та оцінюванням.">Teil 1, 2, and 3 oral exam simulator with speech recognition, automated B1 Redemittel detection, and score evaluation.</div>
+        </div>
+        <div class="dash-studio-cta">
+          <span data-en="Launch Oral Studio →" data-tr="Konuşma Stüdyosunu Başlat →" data-ar="فتح استوديو المحادثة ←" data-uk="Запустити усну студію →">Launch Oral Studio →</span>
+        </div>
+      </a>
+
+      <!-- Studio 5: Leben in Deutschland 310 -->
+      <a href="index.html#track-view-lid" class="dash-studio-card" style="border-color:rgba(16,185,129,0.3);">
+        <div>
+          <div class="dash-studio-icon">🇩🇪</div>
+          <div class="dash-studio-title" data-en="Leben in Deutschland (LiD 310)" data-tr="Leben in Deutschland (LiD 310)" data-ar="الحياة في ألمانيا (LiD 310)" data-uk="Життя в Німеччині (LiD 310)">Leben in Deutschland (LiD 310)</div>
+          <div class="dash-studio-desc" data-en="All 310 official BAMF questions (300 general + 160 state questions), 33-question timed exam simulation, and multilingual guides (100% Free)." data-tr="310 resmi BAMF sorusu (300 genel + 16 eyalet sorusu), 33 soruluk sınav simülasyonu ve çok dilli çeviriler (%100 Ücretsiz)." data-ar="جميع أسئلة BAMF الرسمية الـ 310 ومحاكاة امتحان من 33 سؤالاً مع ترجمات بـ 4 لغات مجاناً 100%." data-uk="Усі 310 офіційних питань BAMF, симуляція іспиту на 33 питання та 4-мовні переклади (100% безкоштовно).">All 310 official BAMF questions (300 general + 160 state questions), 33-question timed exam simulation, and multilingual guides (100% Free).</div>
+        </div>
+        <div class="dash-studio-cta" style="color:#10b981;">
+          <span data-en="Open Free LiD Test Bank →" data-tr="Ücretsiz LiD Testlerini Aç →" data-ar="فتح بنك أسئلة LiD المجاني ←" data-uk="Відкрити банк тестів LiD →">Open Free LiD Test Bank →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Section 3: Embedded AI Schreiben Examiner Suite -->
+  <section class="dash-section" id="section-examiner">
+    <div class="dash-section-header">
+      <div class="dash-section-title-wrap">
+        <div class="dash-section-kicker" data-en="telc B1 Schriftlicher Ausdruck" data-tr="telc B1 Yazılı Anlatım" data-ar="التعبير الكتابي telc B1" data-uk="Письмове висловлювання telc B1">telc B1 Schriftlicher Ausdruck</div>
+        <h2 class="dash-section-title" data-en="Interactive AI Schreiben Examiner & Rubric Engine" data-tr="İnteraktif Yapay Zeka Mektup Değerlendiricisi" data-ar="مصحح الكتابة الذكي ومعايير التقييم الرسمية" data-uk="Інтерактивний ШІ-оцінювач листів та критерії">Interactive AI Schreiben Examiner & Rubric Engine</h2>
+        <p class="dash-section-sub" data-en="Select an authentic exam scenario, type your letter with virtual umlaut keys, and receive instant grading against the official 45-point rubric." data-tr="Gerçekçi sınav senaryolarından birini seçin, Türkçe veya standart klavyeyle özel karakterleri yazın ve resmi 45 puanlık kritere göre anında değerlendirme alın." data-ar="اختر سيناريو واقعي للامتحان، اكتب رسالتك مع أزرار الحروف الألمانية الخاصة، واحصل على تصحيح فوري وفق معايير الـ 45 نقطة الرسمية." data-uk="Оберіть екзаменаційний сценарій, напишіть лист із віртуальними умлаутами та отримайте миттєву оцінку за 45-бальною шкалою.">Select an authentic exam scenario, type your letter with virtual umlaut keys, and receive instant grading against the official 45-point rubric.</p>
+      </div>
+      <div>
+        <button class="dash-btn-secondary" onclick="handleDashboardProClick()">
+          <span>👑 <span data-en="Pro Pass Details" data-tr="Pro Paket Detayları" data-ar="تفاصيل باقة Pro" data-uk="Деталі Pro абонемента">Pro Pass Details</span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mount Target for Standalone SchreibenExaminer UI Component -->
+    <div id="schreiben-examiner-mount"></div>
+  </section>
+
+  <!-- Section 4: Daily Flashcard Drill -->
+  <section class="dash-section" id="section-flashcards">
+    <div class="dash-section-header">
+      <div class="dash-section-title-wrap">
+        <div class="dash-section-kicker" data-en="Leitner Spaced Repetition" data-tr="Leitner Aralıklı Tekrar" data-ar="التكرار المتباعد لايتنر" data-uk="Інтервальне повторення Лейтнера">Leitner Spaced Repetition</div>
+        <h2 class="dash-section-title" data-en="Quick Daily Vocab Flashcard Drill" data-tr="Günlük Hızlı Kelime Kartı Alıştırması" data-ar="تدريب بطاقات الكلمات اليومي السريع" data-uk="Щоденні тренувальні картки слів">Quick Daily Vocab Flashcard Drill</h2>
+        <p class="dash-section-sub" data-en="Test your active recall with 20 high-yield telc B1 verbs. Flip the card to inspect example sentences and translations." data-tr="20 temel telc B1 fiili ile hafızanızı test edin. Örnek cümleleri ve çevirileri görmek için karta tıklayın." data-ar="اختبر استرجاعك السريع مع 20 فعلاً مهماً لمستوى B1. انقر على البطاقة لمشاهدة جمل الأمثلة والترجمة." data-uk="Перевірте пам'ять на 20 ключових дієсловах B1. Натисніть на картку, щоб побачити приклад речення та переклад.">Test your active recall with 20 high-yield telc B1 verbs. Flip the card to inspect example sentences and translations.</p>
+      </div>
+    </div>
+
+    <div class="flashcard-container" id="flashcards">
+      <div class="flashcard" id="flashcard" onclick="flipCard()" tabindex="0" role="button" aria-label="Flashcard - press enter or space to flip" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();flipCard();}">
+        <div class="fc-face fc-front">
+          <div class="fc-hint" data-en="German" data-tr="Almanca" data-ar="الألمانية" data-uk="Німецька">German</div>
+          <div class="fc-word" id="fc-de">arbeiten</div>
+          <div style="font-size:11px; color:var(--text-muted); position:absolute; bottom:16px;" data-en="(Click to flip)" data-tr="(Çevirmek için tıklayın)" data-ar="(انقر للقلب)" data-uk="(Натисніть, щоб перевернути)">(Click to flip)</div>
+        </div>
+        <div class="fc-face fc-back">
+          <div class="fc-hint" data-en="Translation" data-tr="Çeviri" data-ar="الترجمة" data-uk="Переклад">Translation</div>
+          <div class="fc-word" id="fc-tr" data-en="to work" data-tr="çalışmak" data-ar="يعمل" data-uk="працювати">to work</div>
+          <div class="fc-example" id="fc-ex">Ich arbeite jeden Tag von 8 bis 17 Uhr.</div>
+        </div>
+      </div>
+      <div class="fc-controls" style="align-items: center; justify-content:center;">
+        <button class="card-link" onclick="prevCard()">&larr; <span data-en="Prev" data-tr="Önceki" data-ar="السابق" data-uk="Попередня">Prev</span></button>
+        <div style="display:flex; gap:6px; margin:0 8px; flex-wrap:wrap; justify-content:center;">
+          <button class="card-link" id="fc-btn-de" onclick="setLang('de')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/de.png" width="14" alt="DE" style="border-radius:2px;"> DE</button>
+          <button class="card-link" id="fc-btn-en" onclick="setLang('en')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/us.png" width="14" alt="US" style="border-radius:2px;"> EN</button>
+          <button class="card-link" id="fc-btn-tr" onclick="setLang('tr')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/tr.png" width="14" alt="TR" style="border-radius:2px;"> TR</button>
+          <button class="card-link" id="fc-btn-ar" onclick="setLang('ar')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/sa.png" width="14" alt="AR" style="border-radius:2px;"> AR</button>
+          <button class="card-link" id="fc-btn-uk" onclick="setLang('uk')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/ua.png" width="14" alt="UK" style="border-radius:2px;"> UK</button>
+        </div>
+        <button class="card-link primary" onclick="nextCard()"><span data-en="Next Word →" data-tr="Sonraki Kelime →" data-ar="الكلمة التالية ←" data-uk="Наступне слово →">Next Word →</span></button>
+      </div>
+      <div style="margin-top:12px; font-size:12px; color:var(--text-muted); font-weight: 600;" id="fc-count">1 / 20</div>
+    </div>
+  </section>
+
+  <!-- Section 5: Sprachbausteine Quiz -->
+  <section class="dash-section" id="section-quiz">
+    <div class="dash-section-header">
+      <div class="dash-section-title-wrap">
+        <div class="dash-section-kicker" data-en="Grammar & Sentence Structure" data-tr="Dilbilgisi & Cümle Yapısı" data-ar="القواعد وبنية الجملة" data-uk="Граматика та структура речень">Grammar & Sentence Structure</div>
+        <h2 class="dash-section-title" data-en="Sprachbausteine Diagnostic Quiz" data-tr="Dil Yapıları Hızlı Testi" data-ar="اختبار تراكيب اللغة السريع" data-uk="Швидкий тест мовних структур">Sprachbausteine Diagnostic Quiz</h2>
+        <p class="dash-section-sub" data-en="Solve 8 official-style grammar gap questions covering conjunctions, prepositions, and adjectival endings." data-tr="Bağlaçlar, edatlar ve sıfat çekimlerini içeren 8 kritik dilbilgisi sorusunu çözün." data-ar="أجب عن 8 أسئلة لقواعد اللغة تشمل أدوات الربط، حروف الجر ونهايات الصفات." data-uk="Розв'яжіть 8 граматичних завдань на сполучники, прийменники та закінчення прикметників.">Solve 8 official-style grammar gap questions covering conjunctions, prepositions, and adjectival endings.</p>
+      </div>
+    </div>
+
+    <div class="quiz-score" style="margin-bottom:18px;">
+      <div><div class="score-text" data-en="Your Score" data-tr="Puanınız" data-ar="نتيجتك" data-uk="Ваш результат">Your Score</div></div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="score-num" id="quiz-score-display">0/8</div>
+        <button class="reset-btn" onclick="resetQuiz()" data-en="Reset" data-tr="Sıfırla" data-ar="إعادة ضبط" data-uk="Скинути">Reset</button>
+      </div>
+    </div>
+    <div id="quiz-container">
+      <!-- Quiz injected by portal.js -->
+    </div>
+  </section>
+
+  <!-- Section 6: Fehlerheft (Error Notebook) -->
+  <section class="dash-section" id="section-fehlerheft">
+    <div class="dash-section-header">
+      <div class="dash-section-title-wrap">
+        <div class="dash-section-kicker" data-en="Adaptive Weak-Spot Notebook" data-tr="Kişisel Zayıf Nokta Defteri" data-ar="دفتر الملاحظات ونقاط الضعف" data-uk="Адаптивний зошит слабких місць">Adaptive Weak-Spot Notebook</div>
+        <h2 class="dash-section-title" data-en="Personal Fehlerheft" data-tr="Kişisel Hata Defteri (Fehlerheft)" data-ar="دفتر الأخطاء الشخصي (Fehlerheft)" data-uk="Особистий зошит помилок (Fehlerheft)">Personal Fehlerheft</h2>
+        <p class="dash-section-sub" data-en="Mistakes made in writing, grammar, or vocabulary are systematically catalogued here for targeted review." data-tr="Yazma, dilbilgisi veya kelime çalışmalarınızda yapılan hatalar sistemli şekilde burada toplanır." data-ar="الأخطاء التي ترتكبها في الكتابة أو القواعد أو المفردات تُحفظ هنا تلقائياً لمراجعتها." data-uk="Помилки у письмі, граматиці чи словах систематично збираються тут для опрацювання.">Mistakes made in writing, grammar, or vocabulary are systematically catalogued here for targeted review.</p>
+      </div>
+    </div>
+
+    <div id="fehlerheft-container"></div>
+  </section>
+
+  <!-- Section 7: Pass Predictor Calculator -->
+  <section class="dash-section" id="section-calculator">
+    <div class="dash-section-header">
+      <div class="dash-section-title-wrap">
+        <div class="dash-section-kicker" data-en="Official telc Scoring Formula" data-tr="Resmi telc Puanlama Formülü" data-ar="معادلة درجات telc الرسمية" data-uk="Офіційна формула балів telc">Official telc Scoring Formula</div>
+        <h2 class="dash-section-title" data-en="telc B1 Exam Pass Predictor (180 / 300 Pts)" data-tr="telc B1 Sınav Notu Hesaplayıcı (180 / 300 Puan)" data-ar="حاسبة اجتياز امتحان telc B1 (180 / 300 نقطة)" data-uk="Калькулятор балів telc B1 (180 / 300 балів)">telc B1 Exam Pass Predictor (180 / 300 Pts)</h2>
+        <p class="dash-section-sub" data-en="Input your practice scores across all 5 sub-sections to see your predicted final grade and distinction level." data-tr="Tüm 5 bölümden aldığınız çalışma puanlarını girerek tahmini sınav sonucunuzu ve geçme derecenizi görün." data-ar="أدخل درجاتك التدريبية في الأقسام الخمسة لمعرفة النتيجة المتوقعة وتقدير النجاح." data-uk="Введіть тренувальні бали у всіх 5 частинах, щоб побачити прогноз успіху на іспиті.">Input your practice scores across all 5 sub-sections to see your predicted final grade and distinction level.</p>
+      </div>
+    </div>
+
+    <div id="telc-calculator-container"></div>
+  </section>
+
+  <!-- Legal & Commercial Footer -->
+  <footer style="text-align:center;padding:40px 20px 30px;border-top:1px solid var(--border);margin-top:40px">
+    <p style="font-size:28px;margin-bottom:8px">🎓</p>
+    <p style="font-size:15px;font-weight:700;color:var(--text-primary)" data-en="DeutschLernen — Comprehensive telc Deutsch B1 Study Portal & Student Workspace" data-tr="DeutschLernen — Kapsamlı telc Deutsch B1 Çalışma Portalı ve Öğrenci Çalışma Alanı" data-ar="DeutschLernen — مساحة العمل الدراسية الشاملة لـ telc Deutsch B1" data-uk="DeutschLernen — Комплексний робочий простір для підготовки до telc Deutsch B1">DeutschLernen — Comprehensive telc Deutsch B1 Study Portal & Student Workspace</p>
+    <p style="font-size:13px;color:var(--text-muted);margin-top:4px" data-en="Good luck with your exam preparation!" data-tr="Sınav hazırlığınızda başarılar dileriz!" data-ar="نتمنى لك التوفيق في تحضيرك للامتحان!" data-uk="Успіхів у підготовці до іспиту!">Good luck with your exam preparation!</p>
+
+    <!-- Navigation Links -->
+    <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap; margin:24px 0 16px;">
+      <a href="index.html" style="font-size:13px; font-weight:700; color:var(--accent-gold);"><span data-en="🏠 Landing Page" data-tr="🏠 Ana Sayfa" data-ar="🏠 الرئيسية" data-uk="🏠 Головна">🏠 Landing Page</span></a>
+      <a href="trainer.html" style="font-size:13px; font-weight:600; color:var(--accent-gold);"><span data-en="⚡ Wortschatz Trainer" data-tr="⚡ Kelime Antrenörü" data-ar="⚡ مدرب المفردات" data-uk="⚡ Тренажер слів">⚡ Wortschatz Trainer</span></a>
+      <a href="lesen.html" style="font-size:13px; font-weight:600; color:var(--text-primary);"><span data-en="📖 Reading Studio" data-tr="📖 Okuma Stüdyosu" data-ar="📖 استوديو القراءة" data-uk="📖 Студія читання">📖 Reading Studio</span></a>
+      <a href="sprechen.html" style="font-size:13px; font-weight:600; color:var(--text-primary);"><span data-en="🎙️ Speaking Studio" data-tr="🎙️ Konuşma Stüdyosu" data-ar="🎙️ استوديو المحادثة" data-uk="🎙️ Студія мовлення">🎙️ Speaking Studio</span></a>
+      <a href="legal.html" style="font-size:13px; color:var(--text-secondary);"><span data-en="🇩🇪 Impressum (§ 5 DDG)" data-tr="🇩🇪 Yasal Künye (§ 5 DDG)" data-ar="🇩🇪 بيانات الناشر (§ 5 DDG)" data-uk="🇩🇪 Вихідні дані (§ 5 DDG)">🇩🇪 Impressum (§ 5 DDG)</span></a>
+      <a href="legal.html#tab-datenschutz" style="font-size:13px; color:var(--text-secondary);"><span data-en="🔒 Privacy Policy (GDPR)" data-tr="🔒 Gizlilik Politikası (KVKK/GDPR)" data-ar="🔒 سياسة الخصوصية (GDPR)" data-uk="🔒 Політика конфіденційності (GDPR)">🔒 Privacy Policy (GDPR)</span></a>
+      <a href="legal.html#tab-terms" style="font-size:13px; color:var(--text-secondary);"><span data-en="📜 Terms & Trademarks" data-tr="📜 Kullanım Şartları ve Markalar" data-ar="📜 الشروط والعلامات التجارية" data-uk="📜 Умови та торговельні марки">📜 Terms & Trademarks</span></a>
+      <a href="javascript:void(0)" onclick="openFeedbackModal()" style="font-size:13px; color:var(--text-secondary);"><span data-en="💬 Feedback" data-tr="💬 Geri Bildirim" data-ar="💬 ملاحظات" data-uk="💬 Відгук">💬 Feedback</span></a>
+    </div>
+
+    <div style="margin-top: 24px; font-size: 12px; color: var(--text-muted); opacity: 0.85; line-height: 1.6; max-width: 680px; margin-left: auto; margin-right: auto; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; text-align: left;">
+      <p style="margin-bottom: 8px; font-weight: 600; color: var(--text-primary);">
+        Unabhängiges Lernportal. „telc“ ist eine eingetragene Marke der telc gGmbH. Dieses Portal steht in keiner offiziellen Verbindung zur telc gGmbH.
+      </p>
+      <p style="margin-bottom: 8px;">
+        <strong>Trademark Disclaimer:</strong> <em>telc®</em> is a registered trademark of telc gGmbH (Frankfurt am Main). <em>Goethe-Zertifikat®</em> is a registered trademark of Goethe-Institut e.V. (Munich). This portal is an independent study tool and is not affiliated with, endorsed by, or sponsored by telc gGmbH or Goethe-Institut e.V.
+      </p>
+      <p>
+        <strong data-en="Created by" data-tr="Geliştirici:" data-ar="تم الإنشاء بواسطة" data-uk="Створено">Created by</strong> 
+        <a href="https://www.linkedin.com/in/egeengin/" target="_blank" rel="noopener noreferrer" style="color:var(--text-primary); text-decoration:underline;">Ege Engin</a>. 
+        <span data-en="Open-source educational suite licensed under the MIT License." data-tr="MIT Lisansı altında lisanslanmış açık kaynaklı eğitim paketi." data-ar="حزمة تعليمية مفتوحة المصدر مرخصة بموجب رخصة MIT." data-uk="Освітній комплекс із відкритим кодом під ліцензією MIT.">Open-source educational suite licensed under the MIT License.</span>
+      </p>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Floating Feedback Button -->
+<button class="btn-floating-feedback" id="btn-floating-feedback" title="Give Feedback / Geri Bildirim" onclick="openFeedbackModal()">
+  💬 <span data-en="Feedback" data-tr="Geri Bildirim" data-ar="ملاحظات" data-uk="Відгук">Feedback</span>
+</button>
+
+<!-- Community Feedback Modal Dialog -->
+<div class="modal-backdrop hidden" id="feedback-modal" role="dialog" aria-modal="true" aria-labelledby="feedback-modal-title">
+  <div class="modal-dialog" style="max-width: 480px;">
+    <div class="modal-header">
+      <h2 id="feedback-modal-title">💬 <span data-en="Send Feedback & Suggestions" data-tr="Geri Bildirim ve Öneriler" data-ar="إرسال الملاحظات والاقتراحات" data-uk="Надіслати відгук та пропозиції">Send Feedback & Suggestions</span></h2>
+      <button class="modal-close-btn" onclick="closeFeedbackModal()" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-scroll-area">
+      <div id="feedback-status-msg" class="auth-notice-msg" style="display:none;"></div>
+      
+      <form id="feedback-form" onsubmit="return false;">
+        <div class="auth-form-group">
+          <label for="feedback-username" data-en="Name / Nickname" data-tr="İsim / Takma Ad" data-ar="الاسم / اللقب" data-uk="Ім'я / Псевдонім">Name / Nickname</label>
+          <input type="text" id="feedback-username" class="auth-input-field" placeholder="Anonymous or your name" data-en="Anonymous or your name" data-tr="Anonim veya isminiz" data-ar="مجهول أو اسمك" data-uk="Анонімно або ваше ім'я">
+        </div>
+
+        <div class="auth-form-group">
+          <label for="feedback-location" data-en="Location (Auto-detected)" data-tr="Konum (Otomatik Tespit)" data-ar="الموقع (تلقائي)" data-uk="Місцезнаходження (авто)">Location (Auto-detected)</label>
+          <input type="text" id="feedback-location" class="auth-input-field" placeholder="Detecting location..." data-en="Detecting location..." data-tr="Konum tespit ediliyor..." data-ar="جاري تحديد الموقع..." data-uk="Визначення місця..." readonly>
+        </div>
+
+        <div class="auth-form-group">
+          <label for="feedback-category" data-en="Category" data-tr="Kategori" data-ar="الفئة" data-uk="Категорія">Category</label>
+          <select id="feedback-category" class="feedback-select-field">
+            <option value="General" data-en="💡 General Feedback / Suggestion" data-tr="💡 Genel Geri Bildirim / Öneri" data-ar="💡 ملاحظات / اقتراحات عامة" data-uk="💡 Загальний відгук / пропозиція">💡 General Feedback / Suggestion</option>
+            <option value="VocabCorrection" data-en="📝 Vocabulary / Translation Correction" data-tr="📝 Kelime / Çeviri Düzeltmesi" data-ar="📝 تصحيح مفردات / ترجمة" data-uk="📝 Виправлення слова / перекладу">📝 Vocabulary / Translation Correction</option>
+            <option value="FeatureRequest" data-en="✨ Feature Request" data-tr="✨ Yeni Özellik İsteği" data-ar="✨ طلب ميزة جديدة" data-uk="✨ Запит на нову функцію">✨ Feature Request</option>
+            <option value="BugReport" data-en="🐛 Bug Report" data-tr="🐛 Hata Bildirimi" data-ar="🐛 إبلاغ عن خطأ" data-uk="🐛 Звіт про помилку">🐛 Bug Report</option>
+          </select>
+        </div>
+
+        <div class="auth-form-group">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <label data-en="Your Rating" data-tr="Puanınız" data-ar="تقييمك" data-uk="Ваша оцінка">Your Rating</label>
+            <span id="feedback-rating-text" style="font-size: 13px; font-weight: 700; color: var(--accent-gold);">5/5 — Excellent</span>
+          </div>
+          <div class="star-rating-wrap" id="feedback-stars" data-rating="5" role="radiogroup" aria-label="Rating">
+            <span data-star="1" class="selected" role="radio" aria-checked="true" tabindex="0" title="1 star / 1 yıldız">★</span>
+            <span data-star="2" class="selected" role="radio" aria-checked="true" tabindex="0" title="2 stars / 2 yıldız">★</span>
+            <span data-star="3" class="selected" role="radio" aria-checked="true" tabindex="0" title="3 stars / 3 yıldız">★</span>
+            <span data-star="4" class="selected" role="radio" aria-checked="true" tabindex="0" title="4 stars / 4 yıldız">★</span>
+            <span data-star="5" class="selected" role="radio" aria-checked="true" tabindex="0" title="5 stars / 5 yıldız">★</span>
+          </div>
+        </div>
+
+        <div class="auth-form-group">
+          <label for="feedback-message" data-en="Your Message" data-tr="Mesajınız" data-ar="رسالتك" data-uk="Ваше повідомлення">Your Message</label>
+          <textarea id="feedback-message" class="feedback-textarea" rows="4" placeholder="Tell us what we can improve or report an issue..." data-en="Tell us what we can improve or report an issue..." data-tr="Neleri geliştirebileceğimizi bize iletin veya bir hata bildirin..." data-ar="أخبرنا بما يمكننا تحسينه أو أبلغ عن مشكلة..." data-uk="Розкажіть, що можна покращити, або повідомте про проблему..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-feedback-submit" id="btn-submit-feedback">
+          🚀 <span data-en="Submit Feedback" data-tr="Geri Bildirimi Gönder" data-ar="إرسال الملاحظات" data-uk="Надіслати відгук">Submit Feedback</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+<script src="js/storageService.js"></script>
+<script src="js/firebaseConfig.js"></script>
+<script src="js/firebaseService.js"></script>
+<script src="data/lid310.js"></script>
+<script src="data/lidChecklistData.js"></script>
+<script src="js/lidTrainer.js"></script>
+<script src="js/lidChecklist.js"></script>
+<script src="js/fehlerheft.js"></script>
+<script src="js/sampleEvaluationData.js"></script>
+<script src="js/schreiben.js"></script>
+<script src="js/schreibenShowcase.js"></script>
+<script src="js/telcCalculator.js"></script>
+<script src="js/portal.js?v=2.5"></script>
+<script src="js/dashboard.js?v=2.5"></script>
+</body>
+</html>

@@ -2055,12 +2055,20 @@ function dismissPrivacyBanner() {
   }
 }
 
+function toggleTeaserDiagnosticResult() {
+  const el = document.getElementById('teaser-diagnostic-result');
+  if (el) {
+    el.style.display = (el.style.display === 'none' || !el.style.display) ? 'block' : 'none';
+  }
+}
+
 // Run checkout return & URL parameter handler on startup
 initUrlParamsAndCheckoutReturn();
 initPrivacyBanner();
 
 if (typeof window !== 'undefined') {
   window.toggleSchreibenShowcase = toggleSchreibenShowcase;
+  window.toggleTeaserDiagnosticResult = toggleTeaserDiagnosticResult;
   window.initUrlParamsAndCheckoutReturn = initUrlParamsAndCheckoutReturn;
   window.dismissPrivacyBanner = dismissPrivacyBanner;
   window.initPrivacyBanner = initPrivacyBanner;

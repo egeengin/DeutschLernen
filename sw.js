@@ -1,7 +1,8 @@
-const CACHE_NAME = 'deutschlernen-v44';
+const CACHE_NAME = 'deutschlernen-v45';
 const ASSETS = [
   './',
   './index.html',
+  './dashboard.html',
   './trainer.html',
   './legal.html',
   './sprechen.html',
@@ -13,7 +14,9 @@ const ASSETS = [
   './css/lesen.css',
   './css/hoeren.css',
   './css/schreiben.css',
+  './css/dashboard.css',
   './js/portal.js',
+  './js/dashboard.js',
   './js/voiceExamEngine.js',
   './js/sprechenApp.js',
   './js/lesenApp.js',

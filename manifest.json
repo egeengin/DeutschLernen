@@ -39,6 +39,13 @@
       "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }]
     },
     {
+      "name": "Student Workspace",
+      "short_name": "Workspace",
+      "description": "Open distraction-free student exam prep workspace",
+      "url": "./dashboard.html",
+      "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
       "name": "Sprechen Studio",
       "short_name": "Sprechen",
       "description": "Oral exam voice recording and live rubric grading studio",

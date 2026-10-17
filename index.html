@@ -92,6 +92,10 @@
 
 <!-- Global Top Controls: Goal Selector, Pro Plans & Language Toggle -->
 <div class="global-top-bar">
+  <a href="dashboard.html" class="dash-chip-btn" id="top-dashboard-btn" style="display:inline-flex; align-items:center; gap:6px; background:linear-gradient(135deg, #2563eb, #1d4ed8); color:#fff; font-weight:800; font-size:12px; padding:6px 14px; border-radius:20px; text-decoration:none; border:1px solid rgba(96,165,250,0.5); box-shadow:0 2px 8px rgba(37,99,235,0.3);">
+    <span class="dash-chip-icon">🚀</span>
+    <span class="dash-chip-text" data-de="Studenten-Dashboard" data-en="Student Dashboard" data-tr="Öğrenci Paneli" data-ar="لوحة الطالب" data-uk="Панель студента">Student Dashboard</span>
+  </a>
   <button class="pro-chip-btn" id="top-pro-btn" onclick="openProPricingModal()" title="View Pro Plans & AI Letter Grader Passes">
     <span class="pro-chip-icon">👑</span>
     <span class="pro-chip-text" data-de="Pro-Pläne" data-en="Pro Plans" data-tr="Pro Paketler" data-ar="الباقات الاحترافية" data-uk="Pro плани">Pro Plans</span>
@@ -134,8 +138,17 @@
     </div>
   </div>
 
-  <!-- Primary Navigation Pillars (3 Main Tracks) -->
+  <!-- Primary Navigation Pillars (3 Main Tracks + Student Workspace) -->
   <div class="sidebar-pillars">
+    <!-- Pillar 0: Student Workspace -->
+    <a href="dashboard.html" class="sidebar-pillar-link pillar-dash" style="text-decoration:none; border-color:rgba(59,130,246,0.35);">
+      <span class="sidebar-pillar-icon">🚀</span>
+      <div>
+        <div class="sidebar-pillar-title" data-en="Student Workspace" data-tr="Öğrenci Çalışma Alanı" data-ar="مساحة عمل الطالب" data-uk="Робочий простір студента">Student Workspace</div>
+        <div class="sidebar-pillar-sub" data-en="Distraction-Free App" data-tr="Konsantre Çalışma" data-ar="تطبيق بدون تشتيت" data-uk="Зручний додаток">Distraction-Free App</div>
+      </div>
+    </a>
+
     <!-- Pillar 1: telc B1 Study Portal & Modules -->
     <a href="javascript:void(0)" class="sidebar-pillar-link pillar-b1 active" onclick="switchTrack('b1');">
       <span class="sidebar-pillar-icon">📚</span>
@@ -231,6 +244,9 @@
         </div>
       </div>
       <div class="hero-goal-actions">
+        <a href="dashboard.html" class="btn-sm-trainer" id="hero-goal-dashboard-link" style="background: linear-gradient(135deg, var(--accent-gold), #d97706); border-color: rgba(245, 158, 11, 0.8); color: #000; font-weight: 800; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);">
+          <span data-en="🚀 Launch Student Dashboard →" data-tr="🚀 Öğrenci Panelini Başlat →" data-ar="🚀 فتح لوحة تحكم الطالب ←" data-uk="🚀 Відкрити панель студента →">🚀 Launch Student Dashboard →</span>
+        </a>
         <button class="btn-sm-goal" onclick="openGoalModal()">
           <span data-en="Switch Goal / Level" data-tr="Hedef / Seviye Değiştir" data-ar="تغيير الهدف / المستوى" data-uk="Змінити ціль / рівень">Switch Goal / Level</span>
         </button>
@@ -254,6 +270,100 @@
   </header>
 
   <div class="content">
+
+    <!-- Interactive Miniature Teaser: AI Letter Grader & SM-2 Spaced Repetition Engine -->
+    <div class="section" id="interactive-demo-teaser" style="margin-bottom: 28px;">
+      <div style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%); border: 1px solid rgba(245, 158, 11, 0.35); border-radius: 18px; padding: 26px 28px; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px; margin-bottom:18px;">
+          <div style="max-width: 720px;">
+            <div style="display:inline-flex; align-items:center; gap:6px; background:rgba(245, 158, 11, 0.15); border:1px solid rgba(245, 158, 11, 0.4); color:var(--accent-gold); font-size:11px; font-weight:800; padding:3px 10px; border-radius:12px; margin-bottom:10px; text-transform:uppercase;">
+              <span>⚡ <span data-en="LIVE INTERACTIVE DEMO &bull; TELC B1 RUBRIC" data-tr="CANLI İNTERAKTİF DEMO &bull; TELC B1 KRİTERLERİ" data-ar="عرض تفاعلي مباشر &bull; معايير TELC B1" data-uk="ЖИВА ІНТЕРАКТИВНА ДЕМОНСТРАЦІЯ &bull; КРИТЕРІЇ TELC B1">LIVE INTERACTIVE DEMO &bull; TELC B1 RUBRIC</span></span>
+            </div>
+            <h2 style="font-size: 22px; color: #ffffff; margin-bottom: 8px;" data-en="Try the AI Examiner: Real Student Letter Diagnostic" data-tr="Yapay Zeka Değerlendiricisini Deneyin: Gerçek Öğrenci Mektubu Analizi" data-ar="جرب مصحح الذكاء الاصطناعي: تحليل لرسالة طالب حقيقية" data-uk="Спробуйте ШІ-оцінювача: діагностика реального листа">
+              Try the AI Examiner: Real Student Letter Diagnostic
+            </h2>
+            <p style="font-size: 13px; color: #cbd5e1; line-height: 1.6;" data-en="Click below to see how our AI evaluates a B1 complaint letter against the official 45-point telc rubric with error diffs and Leitpunkte tracking." data-tr="Yapay zekanın B1 şikayet mektubunu 45 puanlık resmi telc kriterlerine, Leitpunkt kontrolüne ve hata düzeltmelerine göre nasıl değerlendirdiğini görmek için tıklayın." data-ar="انقر أدناه لترى كيف يصحح الذكاء الاصطناعي رسالة شكوى B1 وفق المعايير الرسمية لـ 45 نقطة مع كشف الأخطاء." data-uk="Натисніть нижче, щоб побачити, як ШІ оцінює лист-скаргу B1 за офіційною 45-бальною шкалою telc з виправленнями.">
+              Click below to see how our AI evaluates a B1 complaint letter against the official 45-point telc rubric with error diffs and Leitpunkte tracking.
+            </p>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+            <a href="dashboard.html" class="dash-btn-primary" style="text-decoration:none; padding:9px 16px; font-size:12px;">
+              <span>🚀 <span data-en="Open Full Student Workspace →" data-tr="Tam Öğrenci Çalışma Alanını Aç →" data-ar="فتح مساحة عمل الطالب الكاملة ←" data-uk="Відкрити повний робочий простір →">Open Full Student Workspace →</span></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sample Letter Box with Interactive Run Button -->
+        <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 18px; margin-bottom: 16px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; font-size:12px; color:var(--text-muted);">
+            <span><strong>Aufgabe:</strong> Beschwerdebrief (Online-Kauf: Defekte Kaffeemaschine)</span>
+            <span style="color:var(--accent-gold); font-weight:700;">Leitpunkte: 4 / 4</span>
+          </div>
+          <div style="font-family: monospace; font-size: 13px; color: #e2e8f0; line-height: 1.7; background: rgba(0,0,0,0.3); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+            Sehr geehrte Damen und Herren,<br>
+            ich habe gestern eine neue Kaffeemaschine bei Ihnen im Online-Shop gekauft. Leider funktioniert das Gerät gar nicht.<br>
+            <span style="background:rgba(239,68,68,0.22); border-bottom:2px solid #ef4444;" title="Inversion / Verbstellung">Wenn ich schalte das Gerät an</span>, kommt leider kein Kaffee heraus. Aus diesem Grund bitte ich Sie höflich um eine schnelle Reparatur oder eine vollständige Rückerstattung des Kaufpreises.<br>
+            Mit freundlichen Grüßen,<br>
+            Ahmet Yilmaz
+          </div>
+          <div style="margin-top: 14px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+            <button type="button" class="dash-btn-primary" onclick="toggleTeaserDiagnosticResult()" id="btn-run-teaser" style="font-size:13px; padding:9px 18px;">
+              <span>⚡ <span data-en="Evaluate Letter Now (34/45 Preview) ↓" data-tr="Mektubu Hemen Değerlendir (34/45 Önizleme) ↓" data-ar="تقييم الرسالة الآن (معاينة 34/45) ↓" data-uk="Оцінити лист зараз (попередній перегляд 34/45) ↓">Evaluate Letter Now (34/45 Preview) ↓</span></span>
+            </button>
+            <span style="font-size:12px; color:#94a3b8;" data-en="✓ 0 Tokens required for preview" data-tr="✓ Önizleme için kredi gerekmez" data-ar="✓ لا يتطلب رصيداً للمعاينة" data-uk="✓ Не потребує кредитів для перегляду">✓ 0 Tokens required for preview</span>
+          </div>
+        </div>
+
+        <!-- Teaser Diagnostic Result Container (Collapsible) -->
+        <div id="teaser-diagnostic-result" style="display:none; margin-top:16px;">
+          <div style="background:var(--bg-card); border:1px solid rgba(34,197,94,0.3); border-radius:12px; padding:20px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:14px;">
+              <div style="display:flex; align-items:center; gap:12px;">
+                <div style="font-size:26px; font-weight:800; color:#22c55e;">34 / 45 Pts</div>
+                <div>
+                  <div style="font-size:12px; font-weight:800; color:#22c55e; text-transform:uppercase;">✓ Bestanden (Passed • 75%)</div>
+                  <div style="font-size:11px; color:var(--text-muted);">telc B1 Passing Bar: 27/45 Pts</div>
+                </div>
+              </div>
+              <div style="display:flex; gap:8px;">
+                <span style="font-size:11px; background:rgba(34,197,94,0.12); color:#22c55e; border:1px solid rgba(34,197,94,0.3); padding:4px 10px; border-radius:8px; font-weight:700;">Crit. I: 4/5</span>
+                <span style="font-size:11px; background:rgba(59,130,246,0.12); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); padding:4px 10px; border-radius:8px; font-weight:700;">Crit. II: 3.5/5</span>
+                <span style="font-size:11px; background:rgba(245,158,11,0.12); color:#fbbf24; border:1px solid rgba(245,158,11,0.3); padding:4px 10px; border-radius:8px; font-weight:700;">Crit. III: 3.8/5</span>
+              </div>
+            </div>
+
+            <!-- Visible Errors Sample -->
+            <div style="background:rgba(239,68,68,0.06); border:1px solid rgba(239,68,68,0.25); border-radius:8px; padding:12px; margin-bottom:14px;">
+              <div style="font-size:12px; font-weight:800; color:#ef4444; margin-bottom:4px;">⚠️ Sample Correction (1 of 2):</div>
+              <div style="font-size:13px; color:var(--text-primary);">
+                <del class="diff-del" style="background:rgba(239,68,68,0.2); color:#fca5a5; text-decoration:line-through; padding:2px 6px; border-radius:4px;">Wenn ich schalte das Gerät an</del>
+                &rarr;
+                <ins class="diff-ins" style="background:rgba(34,197,94,0.2); color:#86efac; text-decoration:none; padding:2px 6px; border-radius:4px; font-weight:700;">Wenn ich das Gerät anschalte</ins>
+              </div>
+              <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">Rule: Subordinate clauses introduced by "wenn" require verb-final placement (Konnektor + Subjekt + ... + finites Verb am Ende).</div>
+            </div>
+
+            <!-- Blurred Pro Teaser Gate -->
+            <div style="position:relative; border-radius:10px; overflow:hidden; border:1px dashed rgba(245,158,11,0.4); padding:18px; text-align:center; background:linear-gradient(135deg, rgba(245,158,11,0.05), rgba(15,23,42,0.85));">
+              <div style="filter:blur(4px); user-select:none; opacity:0.6; font-size:12px; line-height:1.6; margin-bottom:10px;">
+                Sehr geehrte Damen und Herren, am gestrigen Tage erwarb ich in Ihrem Webshop das Modell CoffeeMaster 3000. Zu meinem Bedauern musste ich bei der ersten Inbetriebnahme feststellen, dass der Brühvorgang trotz ordnungsgemäßer Handhabung nicht startet...
+              </div>
+              <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:12px; background:rgba(15,23,42,0.75);">
+                <div style="font-size:13px; font-weight:800; color:var(--accent-gold); margin-bottom:6px;">🔒 Unlock Full 45/45 Model Rewrite & In-Depth Coaching</div>
+                <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:center;">
+                  <button type="button" class="dash-btn-primary" onclick="if(window.openLemonSqueezyCheckout){openLemonSqueezyCheckout('pass-30');}else{selectProPlan('standard');}" style="padding:8px 16px; font-size:12px;">
+                    <span>👑 <span data-en="Get 30-Day Pass (24€)" data-tr="30 Günlük Kart Al (24€)" data-ar="احصل على اشتراك 30 يوماً (24€)" data-uk="Отримати абонемент на 30 днів (24€)">Get 30-Day Pass (24€)</span></span>
+                  </button>
+                  <a href="dashboard.html#section-examiner" class="dash-btn-secondary" style="text-decoration:none; padding:8px 14px; font-size:12px;">
+                    <span>✍️ <span data-en="Try in Dashboard →" data-tr="Panoda Dene →" data-ar="جرب في لوحة التحكم ←" data-uk="Спробувати в панелі →">Try in Dashboard →</span></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Track Switcher Bar: Seamless Switching between B1 Exam, Leben in Deutschland, and Vocab Trainer -->
     <div class="track-switcher-bar" id="track-switcher-bar" role="tablist">
@@ -769,45 +879,45 @@
           </button>
         </div>
 
-        <!-- Tier 3: Standard Pro Pass -->
+        <!-- Tier 3: 30-Day Exam Pass (Most Popular) -->
         <div class="pricing-tier-card featured">
           <div class="tier-badge" data-en="Most Popular" data-tr="En Popüler" data-ar="الأكثر طلباً" data-uk="Найпопулярніший">Most Popular</div>
-          <h3 class="tier-name" data-en="Standard Pro Pass" data-tr="Standart Pro Kart" data-ar="الباقة الاحترافية القياسية" data-uk="Стандартний Pro абонемент">Standard Pro Pass</h3>
+          <h3 class="tier-name" data-en="30-Day Exam Pass" data-tr="30 Günlük Sınav Kartı" data-ar="اشتراك الامتحان 30 يوماً" data-uk="30-денний абонемент">30-Day Exam Pass</h3>
           <div class="tier-price">
-            <span class="amount">€29</span>
-            <span class="period" data-en="/ 1-Month Intensive Pass" data-tr="/ 1 Aylık Yoğun Hazırlık" data-ar="/ اشتراك مكثف لمدة شهر" data-uk="/ Інтенсив на 1 місяць">/ 1-Month Intensive Pass</span>
+            <span class="amount">€24</span>
+            <span class="period" data-en="/ 30-Day Intensive Pass" data-tr="/ 30 Günlük Yoğun Hazırlık" data-ar="/ اشتراك مكثف لمدة 30 يوماً" data-uk="/ Інтенсив на 30 днів">/ 30-Day Intensive Pass</span>
           </div>
-          <div class="tier-credits">⚡ <span data-en="30 AI Letter Grading Credits" data-tr="30 Yapay Zeka Mektup Puanlama Kredisi" data-ar="30 رصيداً لتقييم الرسائل بالذكاء الاصطناعي" data-uk="30 кредитів оцінювання листів ШІ">30 AI Letter Grading Credits</span></div>
+          <div class="tier-credits">⚡ <span data-en="Unlimited AI Letter Evaluations" data-tr="Sınırsız Yapay Zeka Mektup Değerlendirmesi" data-ar="تقييم رسائل غير محدود بالذكاء الاصطناعي" data-uk="Необмежені перевірки листів ШІ">Unlimited AI Letter Evaluations</span></div>
           <ul class="tier-features">
             <li data-en="✓ Official telc B1 (I + II + III × 3) Scoring" data-tr="✓ Resmi telc B1 (I + II + III × 3) Puanlama Sistemi" data-ar="✓ تقييم telc B1 الرسمي بمعادلة (I + II + III × 3)" data-uk="✓ Офіційна система оцінювання telc B1 (I + II + III × 3)">✓ Official telc B1 (I + II + III × 3) Scoring</li>
-            <li data-en="✓ 4 Leitpunkte Fulfillment Verification" data-tr="✓ 4 Leitpunkt Eksiksizlik Doğrulaması" data-ar="✓ التحقق من تغطية النقاط الإرشادية الأربع" data-uk="✓ Перевірка виконання všech 4 опорних пунктів">✓ 4 Leitpunkte Fulfillment Verification</li>
+            <li data-en="✓ Full 45/45 Model Letter Rewrites" data-tr="✓ 45/45 Tam Puanlık Model Mektup Yeniden Yazımı" data-ar="✓ إعادة صياغة نموذجية للرسالة بدرجة 45/45" data-uk="✓ Зразковий перепис листа на 45/45 балів">✓ Full 45/45 Model Letter Rewrites</li>
+            <li data-en="✓ 4 Leitpunkte Fulfillment Verification" data-tr="✓ 4 Leitpunkt Eksiksizlik Doğrulaması" data-ar="✓ التحقق من تغطية النقاط الإرشادية الأربع" data-uk="✓ Перевірка виконання wszystkich 4 опорних пунктів">✓ 4 Leitpunkte Fulfillment Verification</li>
             <li data-en="✓ Line-by-line syntax & grammar breakdown" data-tr="✓ Satır satır cümle yapısı ve dilbilgisi analizi" data-ar="✓ تحليل تفصيلي سطر بسطر للقواعد وبناء الجملة" data-uk="✓ Порядковий розбір синтаксису та граматики">✓ Line-by-line syntax & grammar breakdown</li>
-            <li data-en="✓ B1 Vocabulary & Connector Suggestions" data-tr="✓ B1 Kelime ve Bağlaç Zenginleştirme Önerileri" data-ar="✓ اقتراحات لمفردات وروابط المستوى B1" data-uk="✓ Рекомендації щодо лексики та сполучників B1">✓ B1 Vocabulary & Connector Suggestions</li>
-            <li data-en="✓ Instant 15-second AI evaluation" data-tr="✓ 15 saniyede anında yapay zeka değerlendirmesi" data-ar="✓ تقييم فوري خلال 15 ثانية بالذكاء الاصطناعي" data-uk="✓ Миттєве оцінювання штучним інтелектом за 15 секунд">✓ Instant 15-second AI evaluation</li>
+            <li data-en="✓ Sprechen Oral Simulator & Fehlerheft Export" data-tr="✓ Konuşma Simülatörü ve Hata Defteri Dışa Aktarma" data-ar="✓ محاكي الشفوي وتصدير دفتر الأخطاء" data-uk="✓ Симулятор усного мовлення та експорт помилок">✓ Sprechen Oral Simulator & Fehlerheft Export</li>
           </ul>
-          <button class="tier-cta-btn featured" onclick="selectProPlan('standard')">
-            <span data-en="Get Standard Pro Pass" data-tr="Standart Pro Kartı Al" data-ar="الحصول على الباقة القياسية" data-uk="Отримати стандартний Pro">Get Standard Pro Pass</span>
+          <button class="tier-cta-btn featured" onclick="if(window.openLemonSqueezyCheckout){openLemonSqueezyCheckout('pass-30');}else{selectProPlan('standard');}">
+            <span data-en="Get 30-Day Pass (€24)" data-tr="30 Günlük Kartı Al (€24)" data-ar="احصل على اشتراك 30 يوماً (24€)" data-uk="Отримати абонемент на 30 днів (€24)">Get 30-Day Pass (€24)</span>
           </button>
         </div>
 
-        <!-- Tier 4: Intensive Pass -->
+        <!-- Tier 4: 90-Day All-Access Pass -->
         <div class="pricing-tier-card">
           <div class="tier-badge" data-en="Best Value" data-tr="En Avantajlı" data-ar="أفضل قيمة" data-uk="Найкраща ціна">Best Value</div>
-          <h3 class="tier-name" data-en="Intensive Pass" data-tr="Kapsamlı Hazırlık Paketi" data-ar="الباقة المكثفة الشاملة" data-uk="Інтенсивний повний абонемент">Intensive Pass</h3>
+          <h3 class="tier-name" data-en="90-Day Full Pass" data-tr="90 Günlük Tam Paket" data-ar="الباقة الشاملة 90 يوماً" data-uk="Повний абонемент 90 днів">90-Day Full Pass</h3>
           <div class="tier-price">
-            <span class="amount">€49</span>
-            <span class="period" data-en="/ 6-Month Full Access" data-tr="/ 6 Ay Boyunca Tam Erişim" data-ar="/ وصول كامل لمدة 6 أشهر" data-uk="/ Повний доступ на 6 місяців">/ 6-Month Full Access</span>
+            <span class="amount">€39</span>
+            <span class="period" data-en="/ 3-Month Full Access" data-tr="/ 3 Ay Boyunca Tam Erişim" data-ar="/ وصول كامل لمدة 3 أشهر" data-uk="/ Повний доступ на 3 місяці">/ 3-Month Full Access</span>
           </div>
-          <div class="tier-credits">⚡ <span data-en="100 AI Letter Grading Credits" data-tr="100 Yapay Zeka Mektup Puanlama Kredisi" data-ar="100 رصيد لتقييم الرسائل بالذكاء الاصطناعي" data-uk="100 кредитів оцінювання листів ШІ">100 AI Letter Grading Credits</span></div>
+          <div class="tier-credits">⚡ <span data-en="Unlimited Evaluations & Priority Queue" data-tr="Sınırsız Değerlendirme & Öncelikli Sıra" data-ar="تقييمات غير محدودة ومعالجة فورية" data-uk="Необмежені оцінки та пріоритетна черга">Unlimited Evaluations & Priority Queue</span></div>
           <ul class="tier-features">
-            <li data-en="✓ Everything in Standard Pro Pass" data-tr="✓ Standart Pro Karttaki her şey" data-ar="✓ جميع مزايا الباقة القياسية" data-uk="✓ Усе, що в стандартному абонементі">✓ Everything in Standard Pro Pass</li>
-            <li data-en="✓ 100 AI Letter Evaluations" data-tr="✓ 100 Yapay Zeka Mektup Değerlendirmesi" data-ar="✓ 100 تقييم للرسائل بالذكاء الاصطناعي" data-uk="✓ 100 перевірок листів штучним інтелектом">✓ 100 AI Letter Evaluations</li>
-            <li data-en="✓ B2/C1 Decks Preview Access" data-tr="✓ B2/C1 Deste Önizleme Erişimi" data-ar="✓ وصول استعراضي لمجموعات B2/C1" data-uk="✓ Доступ до попереднього перегляду колод B2/C1">✓ B2/C1 Decks Preview Access</li>
+            <li data-en="✓ Everything in 30-Day Exam Pass" data-tr="✓ 30 Günlük Sınav Kartındaki her şey" data-ar="✓ جميع مزايا باقة الـ 30 يوماً" data-uk="✓ Усе, що в 30-денному абонементі">✓ Everything in 30-Day Exam Pass</li>
+            <li data-en="✓ 90 Days Unlimited AI Letter Grading" data-tr="✓ 90 Gün Boyunca Sınırsız AI Mektup Puanlama" data-ar="✓ 90 يوماً تصحيح رسائل غير محدود بالذكاء الاصطناعي" data-uk="✓ 90 днів безлімітної перевірки листів ШІ">✓ 90 Days Unlimited AI Letter Grading</li>
+            <li data-en="✓ B2 & C1 Decks Full Access" data-tr="✓ B2 ve C1 Destelerine Tam Erişim" data-ar="✓ وصول كامل لمجموعات B2 و C1" data-uk="✓ Повний доступ до колод B2 та C1">✓ B2 & C1 Decks Full Access</li>
+            <li data-en="✓ Multi-Scenario Exam Simulations" data-tr="✓ Çok Senaryolu Sınav Simülasyonları" data-ar="✓ محاكاة امتحانات بسيناريوهات متعددة" data-uk="✓ Багатосценарні симуляції іспиту">✓ Multi-Scenario Exam Simulations</li>
             <li data-en="✓ Priority AI Processing Queue" data-tr="✓ Öncelikli Yapay Zeka Sırası" data-ar="✓ معالجة سريعة ذات أولوية بالذكاء الاصطناعي" data-uk="✓ Пріоритетна черга обробки запитів">✓ Priority AI Processing Queue</li>
-            <li data-en="✓ Dedicated VIP Email Support" data-tr="✓ Öncelikli VIP E-Posta Desteği" data-ar="✓ دعم مباشر ذو أولوية عبر البريد الإلكتروني" data-uk="✓ Пряма VIP-підтримка електронною поштою">✓ Dedicated VIP Email Support</li>
           </ul>
-          <button class="tier-cta-btn" onclick="selectProPlan('extended')">
-            <span data-en="Get Intensive Pass" data-tr="Kapsamlı Paketi Al" data-ar="الحصول على الباقة المكثفة" data-uk="Отримати інтенсивний абонемент">Get Intensive Pass</span>
+          <button class="tier-cta-btn" onclick="if(window.openLemonSqueezyCheckout){openLemonSqueezyCheckout('pass-90');}else{selectProPlan('extended');}">
+            <span data-en="Get 90-Day Pass (€39)" data-tr="90 Günlük Paketi Al (€39)" data-ar="احصل على اشتراك 90 يوماً (39€)" data-uk="Отримати абонемент на 90 днів (€39)">Get 90-Day Pass (€39)</span>
           </button>
         </div>
       </div>
