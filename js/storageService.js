@@ -112,6 +112,10 @@
       return key.length > 5;
     }
 
+    static isPro() {
+      return this.isProUser();
+    }
+
     static getLetterCredits() {
       const raw = safeStorage.getItem(KEYS.CREDITS);
       if (raw === null) return 1; // 1 free credit by default

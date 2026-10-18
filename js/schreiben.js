@@ -141,6 +141,7 @@
       lpMissing: "❌ Fehlend (-6 Pkt.)",
       criteriaHeader: "Offizielle 3 telc Kriterien (je 15 Pkt. max):",
       firstErrorsTitle: "Die ersten 2 Grammatik- & Stilfehler (Vorschau):",
+      allErrorsTitle: "Alle Grammatik- & Stilfehler (Vollständige Prüfung):",
       diffOriginal: "Ihr Text:",
       diffCorrection: "Korrektur:",
       hiddenErrorsBadge: "🔍 Weitere Grammatik- & Registerfehler in Ihrem Text erkannt",
@@ -175,6 +176,7 @@
       lpMissing: "❌ Missing (-6 pts)",
       criteriaHeader: "Official 3 telc Criteria (Max 15 pts each):",
       firstErrorsTitle: "First 2 Grammar & Style Errors (Free Preview):",
+      allErrorsTitle: "All Grammar & Style Errors (Full Audit):",
       diffOriginal: "Your draft:",
       diffCorrection: "Corrected:",
       hiddenErrorsBadge: "🔍 More Grammar & Register Errors Detected in Your Text",
@@ -209,6 +211,7 @@
       lpMissing: "❌ Eksik (-6 Puan)",
       criteriaHeader: "Resmi 3 telc Kriteri (Her biri maks. 15 puan):",
       firstErrorsTitle: "Tespit Edilen İlk 2 Dilbilgisi Hatası (Önizleme):",
+      allErrorsTitle: "Tüm Dilbilgisi ve Üslup Hataları (Tam İnceleme):",
       diffOriginal: "Yazdığınız:",
       diffCorrection: "Düzeltme:",
       hiddenErrorsBadge: "🔍 Metninizde Daha Fazla Dilbilgisi ve Üslup Hatası Tespit Edildi",
@@ -243,6 +246,7 @@
       lpMissing: "❌ مفقود (-6 نقاط)",
       criteriaHeader: "معايير telc الثلاثة الرسمية (15 نقطة لكل منها كحد أقصى):",
       firstErrorsTitle: "أول خطأين نحويين وأسلوبيين (معاينة مجانية):",
+      allErrorsTitle: "جميع الأخطاء النحوية والأسلوبية (تدقيق كامل):",
       diffOriginal: "النص الأصلي:",
       diffCorrection: "التصحيح:",
       hiddenErrorsBadge: "🔍 تم اكتشاف المزيد من الأخطاء النحوية والأسلوبية في نصك",
@@ -277,6 +281,7 @@
       lpMissing: "❌ Відсутній (-6 б.)",
       criteriaHeader: "Офіційні 3 критерії telc (макс. 15 балів кожен):",
       firstErrorsTitle: "Перші 2 граматичні та стилістичні помилки (попередній перегляд):",
+      allErrorsTitle: "Всі граматичні та стилістичні помилки (повний аудит):",
       diffOriginal: "Ваш текст:",
       diffCorrection: "Виправлення:",
       hiddenErrorsBadge: "🔍 У вашому тексті виявлено додаткові помилки",
@@ -292,12 +297,14 @@
   class SchreibenExaminer {
     constructor(mountElementId = 'schreiben-examiner-mount', options = {}) {
       this.mountEl = typeof document !== 'undefined' ? document.getElementById(mountElementId) : null;
+      this.options = options;
       this.currentLang = options.lang || this.detectLanguage();
       this.currentScenarioId = options.scenarioId || 'einladung';
       this.timerSeconds = 30 * 60; // 30 minutes
       this.timerInterval = null;
       this.timerRunning = false;
       this.lastEvaluation = null;
+      SchreibenExaminer.instance = this;
     }
 
     detectLanguage() {
@@ -523,14 +530,57 @@
         }
 
         const data = await res.json();
+        this.handleEvaluationSuccess(data);
         this.renderScorecard(data, text);
       } catch (err) {
         console.error('AI evaluation failed:', err);
         // Fallback to local heuristic simulation if worker endpoint unavailable
         const fallback = this.generateLocalFallbackEvaluation(text);
+        this.handleEvaluationSuccess(fallback);
         this.renderScorecard(fallback, text);
       } finally {
         if (submitBtn) submitBtn.disabled = false;
+      }
+    }
+
+    handleEvaluationSuccess(data) {
+      if (!data || !data.meta) return;
+      this.lastEvaluation = data;
+      if (typeof localStorage !== 'undefined' && data.meta.total_score !== undefined) {
+        localStorage.setItem('telc_letter_score', String(data.meta.total_score));
+      }
+      if (typeof StorageService !== 'undefined' && typeof StorageService.saveLastEvaluation === 'function') {
+        StorageService.saveLastEvaluation(data);
+      }
+
+      // Collect detected errors for Fehlerheft
+      const detectedErrors = [
+        ...(data.free_preview?.visible_errors_sample || []),
+        ...(data.pro_locked_content?.all_remaining_errors || [])
+      ];
+
+      detectedErrors.forEach(err => {
+        const item = {
+          word: err.original_snippet || 'Grammatikfehler',
+          meaning: err.corrected_snippet || '',
+          example: err.explanation || '',
+          mistakeType: (err.rule_category || 'grammar').toLowerCase(),
+          timestamp: Date.now()
+        };
+        if (typeof recordFehlerheftItem === 'function') {
+          recordFehlerheftItem(item);
+        } else if (typeof window !== 'undefined' && typeof window.recordFehlerheftItem === 'function') {
+          window.recordFehlerheftItem(item);
+        }
+        if (typeof StorageService !== 'undefined' && typeof StorageService.addFehlerItem === 'function') {
+          StorageService.addFehlerItem(item);
+        }
+      });
+
+      if (typeof updateDashboardMetrics === 'function') {
+        updateDashboardMetrics();
+      } else if (typeof window !== 'undefined' && typeof window.updateDashboardMetrics === 'function') {
+        window.updateDashboardMetrics();
       }
     }
 
@@ -556,6 +606,9 @@
       ];
 
       const visibleErrors = fp.visible_errors_sample || [];
+      const allErrors = isPro && Array.isArray(pro.all_remaining_errors) && pro.all_remaining_errors.length
+        ? [...visibleErrors, ...pro.all_remaining_errors]
+        : visibleErrors;
       const hiddenErrorsCount = fp.hidden_errors_count || pro.hidden_errors_count || 3;
       const teaserRewrite = pro.teaser_rewrite_preview || "Liebe Marianne, ich habe mich sehr über deine Nachricht gefreut...";
 
@@ -627,10 +680,10 @@
             </div>
           </div>
 
-          <!-- First 2 Grammar Errors with Strikethrough Red -> Green Diff -->
+          <!-- Grammar Errors with Strikethrough Red -> Green Diff -->
           <div class="sch-errors-section">
-            <h4 class="sch-errors-title">🔍 ${this.t('firstErrorsTitle')}</h4>
-            ${visibleErrors.map(err => `
+            <h4 class="sch-errors-title">🔍 ${isPro ? this.t('allErrorsTitle') : this.t('firstErrorsTitle')}</h4>
+            ${allErrors.map(err => `
               <div class="sch-diff-card">
                 <div class="sch-diff-body">
                   <del class="diff-del">${err.original_snippet}</del>
@@ -714,6 +767,10 @@
     }
 
     openCheckout(tierId = 'pass-30') {
+      if (this.options && typeof this.options.onProCheckout === 'function') {
+        this.options.onProCheckout(tierId);
+        return;
+      }
       const checkoutUrls = {
         'pass-30': 'https://deutschlernen.lemonsqueezy.com/buy/exam-pass-30',
         'pass-90': 'https://deutschlernen.lemonsqueezy.com/buy/exam-pass-90'
@@ -753,28 +810,46 @@
     }
 
     generateLocalFallbackEvaluation(text) {
+      const isPro = typeof StorageService !== 'undefined' ? StorageService.isProUser() : false;
       const words = text.trim().split(/\s+/).filter(Boolean).length;
       const score = words >= 80 ? 36 : 21;
+      const finalScore = isPro ? 45 : score;
+
+      const sampleErrors = [
+        { original_snippet: "Gestern ich habe", corrected_snippet: "Gestern habe ich", rule_category: "Inversion", explanation: "Verb an Position 2." },
+        { original_snippet: "weil ich bin müde", corrected_snippet: "weil ich müde bin", rule_category: "Nebensatz", explanation: "Verb ans Satzende nach 'weil'." },
+        { original_snippet: "Ich hoffe dass du kommst", corrected_snippet: "Ich hoffe, dass du kommst", rule_category: "Kommasetzung", explanation: "Komma vor der Subjunktion 'dass'." },
+        { original_snippet: "wegen dem schlechten Wetter", corrected_snippet: "wegen des schlechten Wetters", rule_category: "Genitiv", explanation: "Präposition 'wegen' verlangt den Genitiv." }
+      ];
+
       return {
-        meta: { word_count: words, total_score: score, passed: score >= 27 },
+        meta: { word_count: words, total_score: finalScore, passed: finalScore >= 27 },
+        unlocked: isPro,
         free_preview: {
-          examiner_verdict: score >= 27
+          examiner_verdict: finalScore >= 27
             ? "Erfolgreich bestanden. Gute inhaltliche Bearbeitung mit kleinen formalen Schwächen."
             : "Nicht bestanden. Wortanzahl und Grammatikstrukturen erfüllen noch nicht den B1-Standard.",
           criteria_breakdown: {
-            aufgabenbewaeltigung: { grade: score >= 27 ? 'A' : 'C', raw_points: score >= 27 ? 5 : 2, weighted_points: score >= 27 ? 15 : 6, reason: 'Leitpunkte wurden bearbeitet.' },
-            kommunikative_gestaltung: { grade: 'B', raw_points: 3, weighted_points: 9, reason: 'B1 Konnektoren angewendet.' },
-            formale_richtigkeit: { grade: score >= 27 ? 'B' : 'D', raw_points: score >= 27 ? 3 : 1, weighted_points: score >= 27 ? 9 : 3, reason: 'Verbposition und Satzstellung.' }
+            aufgabenbewaeltigung: { grade: finalScore >= 27 ? 'A' : 'C', raw_points: finalScore >= 27 ? 5 : 2, weighted_points: finalScore >= 27 ? 15 : 6, reason: 'Leitpunkte wurden bearbeitet.' },
+            kommunikative_gestaltung: { grade: isPro ? 'A' : 'B', raw_points: isPro ? 5 : 3, weighted_points: isPro ? 15 : 9, reason: 'B1 Konnektoren angewendet.' },
+            formale_richtigkeit: { grade: isPro ? 'A' : (finalScore >= 27 ? 'B' : 'D'), raw_points: isPro ? 5 : (finalScore >= 27 ? 3 : 1), weighted_points: isPro ? 15 : (finalScore >= 27 ? 9 : 3), reason: 'Verbposition und Satzstellung.' }
           },
-          visible_errors_sample: [
-            { original_snippet: "Gestern ich habe", corrected_snippet: "Gestern habe ich", rule_category: "Inversion", explanation: "Verb an Position 2." },
-            { original_snippet: "weil ich bin müde", corrected_snippet: "weil ich müde bin", rule_category: "Nebensatz", explanation: "Verb ans Satzende nach 'weil'." }
-          ],
-          hidden_errors_count: 3
+          visible_errors_sample: sampleErrors.slice(0, 2),
+          hidden_errors_count: isPro ? 0 : 2
         },
         pro_locked_content: {
-          locked: true,
-          teaser_rewrite_preview: "Liebe Marianne, ich habe mich sehr über deine Nachricht gefreut..."
+          locked: !isPro,
+          teaser_rewrite_preview: "Liebe Marianne, ich habe mich sehr über deine Nachricht gefreut...",
+          model_rewrite_45_points: isPro
+            ? "Lieber Markus, vielen Dank für die herzliche Einladung zu deiner Feier. Leider habe ich am Wochenende eine dringende Familienfeier und kann nicht kommen. Es tut mir sehr leid. Dein Geschenk bringe ich dir bald vorbei. Wie wäre es, wenn wir uns nächste Woche auf einen Kaffee treffen? Liebe Grüße"
+            : undefined,
+          missing_leitpunkt_injection: isPro
+            ? "Ich hoffe sehr, dass wir uns bald wiedersehen können."
+            : undefined,
+          b1_power_phrases_to_memorize: isPro
+            ? ["Ich habe mich riesig über deine Einladung gefreut.", "Lass uns unbedingt bald wiedersehen!"]
+            : undefined,
+          all_remaining_errors: isPro ? sampleErrors.slice(2) : []
         }
       };
     }

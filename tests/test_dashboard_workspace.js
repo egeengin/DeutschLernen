@@ -44,17 +44,19 @@ assert(dashHtml.includes('js/schreiben.js'), 'Must reference js/schreiben.js');
 assert(dashHtml.includes('js/storageService.js'), 'Must reference js/storageService.js');
 console.log('✅ Test 3 Passed: Modular script & stylesheet dependencies verified.');
 
-// 4. Verify multilingual attribute parity
+// 4. Verify multilingual attribute parity (5 languages: DE, EN, TR, AR, UK)
 const enMatches = dashHtml.match(/data-en="[^"]*"/g) || [];
+const deMatches = dashHtml.match(/data-de="[^"]*"/g) || [];
 const trMatches = dashHtml.match(/data-tr="[^"]*"/g) || [];
 const arMatches = dashHtml.match(/data-ar="[^"]*"/g) || [];
 const ukMatches = dashHtml.match(/data-uk="[^"]*"/g) || [];
 
+assert.strictEqual(enMatches.length, deMatches.length, 'data-de count must equal data-en');
 assert.strictEqual(enMatches.length, trMatches.length, 'data-tr count must equal data-en');
 assert.strictEqual(enMatches.length, arMatches.length, 'data-ar count must equal data-en');
 assert.strictEqual(enMatches.length, ukMatches.length, 'data-uk count must equal data-en');
 assert(enMatches.length >= 40, `Expected at least 40 multilingual tags in dashboard.html, found ${enMatches.length}`);
-console.log(`✅ Test 4 Passed: 4-language i18n parity verified across ${enMatches.length} translatable elements.`);
+console.log(`✅ Test 4 Passed: 5-language i18n parity verified across ${enMatches.length} translatable elements.`);
 
 // 5. Verify Service Worker ASSETS includes dashboard assets
 const swPath = path.join(ROOT_DIR, 'sw.js');
@@ -69,5 +71,22 @@ const manifestData = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 const hasWorkspaceShortcut = manifestData.shortcuts.some(s => s.url.includes('dashboard.html'));
 assert(hasWorkspaceShortcut, 'manifest.json shortcuts must include dashboard.html');
 console.log('✅ Test 5 Passed: Offline PWA Service Worker caching and manifest shortcut verified.');
+
+// 7. Verify StorageService.isPro() alias works identically to isProUser()
+const StorageService = require('../js/storageService.js');
+assert.strictEqual(typeof StorageService.isPro, 'function', 'StorageService must define static isPro()');
+assert.strictEqual(typeof StorageService.isProUser, 'function', 'StorageService must define static isProUser()');
+
+// Ensure starting state
+StorageService.setLicenseKey(null);
+assert.strictEqual(StorageService.isPro(), false);
+assert.strictEqual(StorageService.isPro(), StorageService.isProUser());
+StorageService.setLicenseKey('TELC-PRO-TEST-PASS');
+assert.strictEqual(StorageService.isPro(), true);
+assert.strictEqual(StorageService.isPro(), StorageService.isProUser());
+StorageService.setLicenseKey(null);
+assert.strictEqual(StorageService.isPro(), false);
+assert.strictEqual(StorageService.isPro(), StorageService.isProUser());
+console.log('✅ Test 6 Passed: StorageService.isPro() alias works identically to StorageService.isProUser().');
 
 console.log('🎉 All Student App Workspace (dashboard.html) tests passed successfully!');

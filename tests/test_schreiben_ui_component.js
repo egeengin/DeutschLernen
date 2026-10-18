@@ -96,15 +96,26 @@ async function runTests() {
   assert.ok(renderedHtml.includes('Target: 80–120 words'), 'Should display target word count');
   console.log('✅ Test 1 Passed: Initial component layout, timer, umlauts, and briefing verified.');
 
-  // Test 2: Multilingual Parity across DE, EN, TR, AR, UK
+  // Test 2: Multilingual Parity across DE, EN, TR, AR, UK & setLang() sync
   const langs = ['de', 'en', 'tr', 'ar', 'uk'];
   for (const lang of langs) {
     examiner.setLanguage(lang);
+    assert.strictEqual(SchreibenExaminer.instance.currentLang, lang, `SchreibenExaminer.instance.currentLang should update to ${lang}`);
     const html = mountEl.innerHTML;
     assert.ok(html.length > 200, `Rendered HTML for ${lang} should be populated`);
   }
-  examiner.setLanguage('en');
-  console.log('✅ Test 2 Passed: 5-language localization verified.');
+
+  // Verify portal setLang() helper synchronization
+  function setLang(lang) {
+    if (typeof SchreibenExaminer !== 'undefined' && SchreibenExaminer.instance) {
+      SchreibenExaminer.instance.setLanguage(lang);
+    }
+  }
+  setLang('tr');
+  assert.strictEqual(SchreibenExaminer.instance.currentLang, 'tr', 'portal setLang() should update SchreibenExaminer.instance.currentLang to tr');
+  setLang('en');
+  assert.strictEqual(SchreibenExaminer.instance.currentLang, 'en', 'portal setLang() should update SchreibenExaminer.instance.currentLang to en');
+  console.log('✅ Test 2 Passed: 5-language localization and setLang() instance sync verified.');
 
   // Test 3: Umlaut Insertion
   const textarea = domElementsById['sch-student-textarea'];
@@ -163,7 +174,7 @@ async function runTests() {
   assert.ok(scorecardHtml.includes('Already have an Exam Pass? Enter License Key'), 'Should display Secondary CTA');
   console.log('✅ Test 4 Passed: Diagnostic scorecard, diff rendering, and blurred paywall conversion box verified.');
 
-  // Test 5: Unlocked Pro View (isPro === true)
+  // Test 5: Unlocked Pro View (isPro === true) with all_remaining_errors
   const mockProResponse = {
     meta: { word_count: 105, total_score: 42, max_score: 45, passed: true },
     unlocked: true,
@@ -172,7 +183,10 @@ async function runTests() {
       locked: false,
       model_rewrite_45_points: "Lieber Markus, vielen Dank für die Einladung zu deinem Geburtstag...",
       missing_leitpunkt_injection: "Ich hoffe, wir können uns nächste Woche zum Kaffee treffen.",
-      b1_power_phrases_to_memorize: ["Ich habe mich riesig gefreut", "Lass uns bald treffen"]
+      b1_power_phrases_to_memorize: ["Ich habe mich riesig gefreut", "Lass uns bald treffen"],
+      all_remaining_errors: [
+        { original_snippet: "Ich freue mich auf dich", corrected_snippet: "Ich freue mich auf dein Fest", rule_category: "Präpositionalobjekt", explanation: "Passendes Bezugswort für Fest." }
+      ]
     }
   };
 
@@ -181,8 +195,26 @@ async function runTests() {
   assert.ok(proScorecardHtml.includes('45/45 Gold-Standard telc B1 Model Rewrite'), 'Should render unlocked rewrite header');
   assert.ok(proScorecardHtml.includes('Missing Leitpunkt Injection'), 'Should render injection box');
   assert.ok(proScorecardHtml.includes('Ich habe mich riesig gefreut'), 'Should render power phrases');
+  assert.ok(proScorecardHtml.includes('Ich freue mich auf dich'), 'Should render snippet from all_remaining_errors in Pro scorecard');
+  assert.ok(proScorecardHtml.includes('Präpositionalobjekt'), 'Should render category from all_remaining_errors in Pro scorecard');
   assert.ok(!proScorecardHtml.includes('Unlock 30-Day Exam Pass — 24€'), 'Paywall CTA must NOT appear in Pro view');
-  console.log('✅ Test 5 Passed: Unlocked Pro view with 45/45 model rewrite and power phrases verified.');
+  console.log('✅ Test 5 Passed: Unlocked Pro view with 45/45 model rewrite, power phrases, and all_remaining_errors verified.');
+
+  // Test 6: StorageService.isPro() and telc_letter_score persistence upon letter evaluation
+  const StorageService = require('../js/storageService.js');
+  global.StorageService = StorageService;
+  assert.strictEqual(StorageService.isPro(), false);
+  assert.strictEqual(StorageService.isPro(), StorageService.isProUser());
+  StorageService.setLicenseKey('PRO_TEST_12345');
+  assert.strictEqual(StorageService.isPro(), true);
+  assert.strictEqual(StorageService.isPro(), StorageService.isProUser());
+  StorageService.setLicenseKey(null);
+
+  examiner.handleEvaluationSuccess(mockProResponse);
+  assert.strictEqual(global.localStorage.getItem('telc_letter_score'), '42', 'telc_letter_score must be persisted in localStorage');
+  const cachedEval = StorageService.getLastEvaluation();
+  assert.strictEqual(cachedEval && cachedEval.meta && cachedEval.meta.total_score, 42, 'Cached evaluation in StorageService should match 42');
+  console.log('✅ Test 6 Passed: StorageService.isPro() alias and telc_letter_score persistence verified.');
 
   console.log('🎉 All SchreibenExaminer UI Component Tests Passed Successfully!');
 }

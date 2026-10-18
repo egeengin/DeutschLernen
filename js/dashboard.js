@@ -53,7 +53,7 @@
 
     if (typeof SchreibenExaminer === 'function') {
       window.dashboardExaminer = new SchreibenExaminer('schreiben-examiner-mount', {
-        initialScenarioIndex: 0,
+        scenarioId: 'einladung',
         onProCheckout: function () {
           if (typeof window.openLemonSqueezyCheckout === 'function') {
             window.openLemonSqueezyCheckout('pass-30');
@@ -102,8 +102,13 @@
     }
 
     // Render telc Calculator if container present
-    if (typeof window.initTelcCalculator === 'function' && document.getElementById('telc-calculator-container')) {
-      window.initTelcCalculator('telc-calculator-container');
+    if (document.getElementById('telc-calculator-container')) {
+      if (typeof window.initTelcCalculator === 'function') {
+        window.initTelcCalculator('telc-calculator-container');
+      }
+      if (typeof TelcCalculator !== 'undefined' && typeof TelcCalculator.renderTelcCalculator === 'function') {
+        TelcCalculator.renderTelcCalculator('telc-calculator-container');
+      }
     }
   });
 

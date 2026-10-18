@@ -29,32 +29,26 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "Free Educational Tier",
+      "name": "Free Tier",
       "price": "0",
       "priceCurrency": "EUR"
     },
     {
       "@type": "Offer",
-      "name": "Quick Diagnostic Pass",
+      "name": "Quick Diagnostic",
       "price": "4.99",
       "priceCurrency": "EUR"
     },
     {
       "@type": "Offer",
-      "name": "Standard Pro Pass",
-      "price": "29.00",
+      "name": "30-Day Exam Pass",
+      "price": "24.00",
       "priceCurrency": "EUR"
     },
     {
       "@type": "Offer",
-      "name": "BAMF Einbürgerungstest & Free Public Access",
-      "price": "0",
-      "priceCurrency": "EUR"
-    },
-    {
-      "@type": "Offer",
-      "name": "Intensive All-Access Pass",
-      "price": "49.00",
+      "name": "90-Day Full Pass",
+      "price": "39.00",
       "priceCurrency": "EUR"
     }
   ],
@@ -124,14 +118,14 @@
       <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn" aria-label="Toggle dark mode">☀️</button>
     </div>
     <h2 id="sidebar-portal-title">🏆 telc B1 Study Portal</h2>
-    <p id="sidebar-plan-label" data-en="Curriculum & Practice" data-tr="Müfredat ve Pratik" data-ar="المنهج والتدريب" data-uk="Програма та практика">Curriculum & Practice</p>
-    <input type="text" id="search-input" class="search-box" data-en="Search materials..." data-tr="Materyal ara..." data-ar="ابحث في المواد..." data-uk="Пошук матеріалів..." placeholder="Search materials..." onkeyup="filterCards()">
+    <p data-de="Lehrplan & Praxis" id="sidebar-plan-label" data-en="Curriculum & Practice" data-tr="Müfredat ve Pratik" data-ar="المنهج والتدريب" data-uk="Програма та практика">Curriculum & Practice</p>
+    <input data-de="Materialien durchsuchen..." type="text" id="search-input" class="search-box" data-en="Search materials..." data-tr="Materyal ara..." data-ar="ابحث في المواد..." data-uk="Пошук матеріалів..." placeholder="Search materials..." onkeyup="filterCards()">
     
     <!-- Sidebar Goal Card -->
     <div class="sidebar-goal-badge" onclick="openGoalModal()" title="Click to change your target level or wish" data-en-title="Click to change your target level or wish" data-tr-title="Hedef seviyenizi veya modunuzu değiştirmek için tıklayın" data-ar-title="انقر لتغيير مستواك المستهدف أو رغبتك" data-uk-title="Натисніть, щоб змінити цільовий рівень або мету">
       <div class="sidebar-goal-row">
-        <span class="sidebar-goal-kicker" data-en="ACTIVE GOAL" data-tr="AKTİF HEDEF" data-ar="الهدف النشط" data-uk="АКТИВНА ЦІЛЬ">ACTIVE GOAL</span>
-        <span class="sidebar-goal-edit" data-en="Change ⚙️" data-tr="Değiştir ⚙️" data-ar="تغيير ⚙️" data-uk="Змінити ⚙️">Change ⚙️</span>
+        <span data-de="AKTIVES ZIEL" class="sidebar-goal-kicker" data-en="ACTIVE GOAL" data-tr="AKTİF HEDEF" data-ar="الهدف النشط" data-uk="АКТИВНА ЦІЛЬ">ACTIVE GOAL</span>
+        <span data-de="Ändern ⚙️" class="sidebar-goal-edit" data-en="Change ⚙️" data-tr="Değiştir ⚙️" data-ar="تغيير ⚙️" data-uk="Змінити ⚙️">Change ⚙️</span>
       </div>
       <div class="sidebar-goal-name" id="sidebar-goal-name">telc B1 Exam</div>
       <div class="sidebar-goal-sub" id="sidebar-goal-sub">Level: B1 Intermediate</div>
@@ -144,8 +138,8 @@
     <a href="dashboard.html" class="sidebar-pillar-link pillar-dash" style="text-decoration:none; border-color:rgba(59,130,246,0.35);">
       <span class="sidebar-pillar-icon">🚀</span>
       <div>
-        <div class="sidebar-pillar-title" data-en="Student Workspace" data-tr="Öğrenci Çalışma Alanı" data-ar="مساحة عمل الطالب" data-uk="Робочий простір студента">Student Workspace</div>
-        <div class="sidebar-pillar-sub" data-en="Distraction-Free App" data-tr="Konsantre Çalışma" data-ar="تطبيق بدون تشتيت" data-uk="Зручний додаток">Distraction-Free App</div>
+        <div data-de="Lernbereich" class="sidebar-pillar-title" data-en="Student Workspace" data-tr="Öğrenci Çalışma Alanı" data-ar="مساحة عمل الطالب" data-uk="Робочий простір студента">Student Workspace</div>
+        <div data-de="Ablenkungsfreie App" class="sidebar-pillar-sub" data-en="Distraction-Free App" data-tr="Konsantre Çalışma" data-ar="تطبيق بدون تشتيت" data-uk="Зручний додаток">Distraction-Free App</div>
       </div>
     </a>
 
@@ -153,8 +147,8 @@
     <a href="javascript:void(0)" class="sidebar-pillar-link pillar-b1 active" onclick="switchTrack('b1');">
       <span class="sidebar-pillar-icon">📚</span>
       <div>
-        <div class="sidebar-pillar-title" data-en="B1 Study Portal" data-tr="B1 Sınav Portalı" data-ar="بوابة دراسة B1" data-uk="Портал навчання B1">B1 Study Portal</div>
-        <div class="sidebar-pillar-sub" data-en="Exam Preparation" data-tr="Sınav Hazırlığı" data-ar="التحضير للامتحان" data-uk="Підготовка до іспиту">Exam Preparation</div>
+        <div data-de="B1-Lernportal" class="sidebar-pillar-title" data-en="B1 Study Portal" data-tr="B1 Sınav Portalı" data-ar="بوابة دراسة B1" data-uk="Портал навчання B1">B1 Study Portal</div>
+        <div data-de="Prüfungsvorbereitung" class="sidebar-pillar-sub" data-en="Exam Preparation" data-tr="Sınav Hazırlığı" data-ar="التحضير للامتحان" data-uk="Підготовка до іспиту">Exam Preparation</div>
       </div>
     </a>
 
@@ -162,8 +156,8 @@
     <a href="javascript:void(0)" class="sidebar-pillar-link pillar-vocab" onclick="switchTrack('vocab');">
       <span class="sidebar-pillar-icon">⚡</span>
       <div>
-        <div class="sidebar-pillar-title" data-en="Vocab Trainer" data-tr="Kelime Antrenörü" data-ar="مدرب المفردات" data-uk="Тренажер слів">Vocab Trainer</div>
-        <div class="sidebar-pillar-sub" data-en="2,000+ Words & Quiz" data-tr="2.000+ Kelime & Test" data-ar="أكثر من 2000 كلمة" data-uk="2 000+ слів та тести">2,000+ Words & Quiz</div>
+        <div data-de="Vokabeltrainer" class="sidebar-pillar-title" data-en="Vocab Trainer" data-tr="Kelime Antrenörü" data-ar="مدرب المفردات" data-uk="Тренажер слів">Vocab Trainer</div>
+        <div data-de="2.000+ Wörter & Quiz" class="sidebar-pillar-sub" data-en="2,000+ Words & Quiz" data-tr="2.000+ Kelime & Test" data-ar="أكثر من 2000 كلمة" data-uk="2 000+ слів та тести">2,000+ Words & Quiz</div>
       </div>
     </a>
 
@@ -171,8 +165,8 @@
     <a href="javascript:void(0)" class="sidebar-pillar-link pillar-lid" onclick="switchTrack('lid');">
       <span class="sidebar-pillar-icon">🇩🇪</span>
       <div>
-        <div class="sidebar-pillar-title" data-en="Leben in Deutschland" data-tr="Leben in Deutschland" data-ar="الحياة في ألمانيا" data-uk="Життя в Німеччині">Leben in Deutschland</div>
-        <div class="sidebar-pillar-sub" data-en="310 BAMF Questions" data-tr="310 Resmi Sınav Sorusu" data-ar="310 سؤال رسمي" data-uk="310 питань BAMF">310 BAMF Questions</div>
+        <div data-de="Leben in Deutschland" class="sidebar-pillar-title" data-en="Leben in Deutschland" data-tr="Leben in Deutschland" data-ar="الحياة في ألمانيا" data-uk="Життя в Німеччині">Leben in Deutschland</div>
+        <div data-de="310 BAMF-Fragen" class="sidebar-pillar-sub" data-en="310 BAMF Questions" data-tr="310 Resmi Sınav Sorusu" data-ar="310 سؤال رسمي" data-uk="310 питань BAMF">310 BAMF Questions</div>
       </div>
     </a>
 
@@ -180,8 +174,8 @@
     <a href="lesen.html" class="sidebar-pillar-link pillar-lesen" style="text-decoration:none;">
       <span class="sidebar-pillar-icon">📖</span>
       <div>
-        <div class="sidebar-pillar-title" data-en="Reading Studio" data-tr="Okuma Stüdyosu" data-ar="استوديو القراءة" data-uk="Студія читання">Reading Studio</div>
-        <div class="sidebar-pillar-sub" data-en="Readlang & Exam Reader" data-tr="İnteraktif Sınav Okuması" data-ar="قارئ تفاعلي للامتحان" data-uk="Інтерактивне читання">Readlang & Exam Reader</div>
+        <div data-de="Lesestudio" class="sidebar-pillar-title" data-en="Reading Studio" data-tr="Okuma Stüdyosu" data-ar="استوديو القراءة" data-uk="Студія читання">Reading Studio</div>
+        <div data-de="Readlang & Prüfungsleser" class="sidebar-pillar-sub" data-en="Readlang & Exam Reader" data-tr="İnteraktif Sınav Okuması" data-ar="قارئ تفاعلي للامتحان" data-uk="Інтерактивне читання">Readlang & Exam Reader</div>
       </div>
     </a>
 
@@ -189,13 +183,13 @@
     <a href="hoeren.html" class="sidebar-pillar-link pillar-hoeren" style="text-decoration:none;">
       <span class="sidebar-pillar-icon">🎧</span>
       <div>
-        <div class="sidebar-pillar-title" data-en="Listening Studio" data-tr="Dinleme Stüdyosu" data-ar="استوديو الاستماع" data-uk="Студія аудіювання">Listening Studio</div>
-        <div class="sidebar-pillar-sub" data-en="75 Pts • Audio Simulator" data-tr="75 Puan • Ses Simülatörü" data-ar="75 نقطة • محاكي صوتي" data-uk="75 балів • Аудіо-симулятор">75 Pts • Audio Simulator</div>
+        <div data-de="Hörstudio" class="sidebar-pillar-title" data-en="Listening Studio" data-tr="Dinleme Stüdyosu" data-ar="استوديو الاستماع" data-uk="Студія аудіювання">Listening Studio</div>
+        <div data-de="75 Pkt. • Audiosimulator" class="sidebar-pillar-sub" data-en="75 Pts • Audio Simulator" data-tr="75 Puan • Ses Simülatörü" data-ar="75 نقطة • محاكي صوتي" data-uk="75 балів • Аудіо-симулятор">75 Pts • Audio Simulator</div>
       </div>
     </a>
   </div>
 
-  <div class="sidebar-nav-header" id="sidebar-nav-header" data-en="STUDY MODULES" data-tr="ÇALIŞMA MODÜLLERİ" data-ar="الوحدات الدراسية" data-uk="НАВЧАЛЬНІ МОДУЛІ">STUDY MODULES</div>
+  <div data-de="LERNMODULE" class="sidebar-nav-header" id="sidebar-nav-header" data-en="STUDY MODULES" data-tr="ÇALIŞMA MODÜLLERİ" data-ar="الوحدات الدراسية" data-uk="НАВЧАЛЬНІ МОДУЛІ">STUDY MODULES</div>
 
   <div class="sidebar-nav" id="sidebar-nav">
     <!-- Links generated by JS -->
@@ -203,8 +197,8 @@
   <div class="sidebar-footer">
     <div style="font-size: 11px; color: var(--text-muted); opacity: 0.7; padding: 16px 20px;">
       <div>DeutschLernen Suite v2.0</div>
-      <div style="margin-top:4px;"><a href="javascript:void(0)" onclick="openProPricingModal()" style="color:var(--accent-gold); font-weight:700; text-decoration:none;" data-en="👑 Pro Upgrade & Pricing" data-tr="👑 Pro Üyelik & Fiyatlar" data-ar="👑 ترقية Pro والأسعار" data-uk="👑 Оновлення до Pro та ціни">👑 Pro Upgrade & Pricing</a></div>
-      <div style="margin-top:4px;"><a href="legal.html" style="color:var(--text-muted); text-decoration:underline;" data-en="Impressum & Privacy" data-tr="Yasal Künye ve Gizlilik" data-ar="معلومات الناشر والخصوصية" data-uk="Вихідні дані та конфіденційність">Impressum & Privacy</a></div>
+      <div style="margin-top:4px;"><a data-de="👑 Pro-Upgrade & Preise" href="javascript:void(0)" onclick="openProPricingModal()" style="color:var(--accent-gold); font-weight:700; text-decoration:none;" data-en="👑 Pro Upgrade & Pricing" data-tr="👑 Pro Üyelik & Fiyatlar" data-ar="👑 ترقية Pro والأسعار" data-uk="👑 Оновлення до Pro та ціни">👑 Pro Upgrade & Pricing</a></div>
+      <div style="margin-top:4px;"><a data-de="Impressum & Datenschutz" href="legal.html" style="color:var(--text-muted); text-decoration:underline;" data-en="Impressum & Privacy" data-tr="Yasal Künye ve Gizlilik" data-ar="معلومات الناشر والخصوصية" data-uk="Вихідні дані та конфіденційність">Impressum & Privacy</a></div>
     </div>
   </div>
 </nav>
@@ -214,23 +208,23 @@
 
   <!-- Hero -->
   <header class="hero" id="home">
-    <div class="hero-badge" id="hero-active-goal-badge" data-en="📚 telc Deutsch B1 Exam Preparation & Vocab Master" data-tr="📚 telc Deutsch B1 Sınav Hazırlığı ve Kelime Antrenörü" data-ar="📚 التحضير لامتحان telc Deutsch B1 وإتقان المفردات" data-uk="📚 Підготовка до іспиту telc Deutsch B1 та вивчення лексики">📚 telc Deutsch B1 Exam Preparation & Vocab Master</div>
-    <h1 id="hero-main-title" data-en="Pass telc Deutsch B1<br>with Confidence" data-tr="telc Deutsch B1 Sınavını<br>Güvenle Geçin" data-ar="اجتز امتحان telc Deutsch B1<br>بكل ثقة" data-uk="Складіть telc Deutsch B1<br>впевнено">Pass telc Deutsch B1<br>with Confidence</h1>
-    <p id="hero-main-desc" data-en="A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates." data-tr="telc Deutsch B1 (180/300 barajı) için eksiksiz çalışma portalı ve 2.000 kelimelik interaktif antrenör. Dilbilgisi, akıllı kelime antrenmanı, deneme sınavları ve mektup şablonları." data-ar="بوابة دراسية متكاملة ومدرب تفاعلي لأكثر من 2000 كلمة لامتحان telc Deutsch B1 (درجة النجاح 180/300). القواعد، تكرار الكلمات الذكي، امتحانات تجريبية، ونماذج رسائل." data-uk="Повний навчальний портал та інтерактивний тренажер на 2000 слів для telc Deutsch B1 (поріг 180/300). Граматика, розумне повторення слів, пробні іспити та шаблони листів.">A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates.</p>
+    <div data-de="📚 telc Deutsch B1 Prüfungsvorbereitung & Wortschatzmeister" class="hero-badge" id="hero-active-goal-badge" data-en="📚 telc Deutsch B1 Exam Preparation & Vocab Master" data-tr="📚 telc Deutsch B1 Sınav Hazırlığı ve Kelime Antrenörü" data-ar="📚 التحضير لامتحان telc Deutsch B1 وإتقان المفردات" data-uk="📚 Підготовка до іспиту telc Deutsch B1 та вивчення лексики">📚 telc Deutsch B1 Exam Preparation & Vocab Master</div>
+    <h1 id="hero-main-title" data-de="telc Deutsch B1<br>sicher bestehen" data-en="Pass telc Deutsch B1<br>with Confidence" data-tr="telc Deutsch B1 Sınavını<br>Güvenle Geçin" data-ar="اجتز امتحان telc Deutsch B1<br>بكل ثقة" data-uk="Складіть telc Deutsch B1<br>впевнено">Pass telc Deutsch B1<br>with Confidence</h1>
+    <p data-de="Das vollständige Lernportal und interaktiver 2.000-Wörter-Trainer für telc Deutsch B1 (180/300 Punkte Bestehensgrenze). Grammatik, intelligenter Karteikasten, Modellprüfungen und Briefvorlagen." id="hero-main-desc" data-en="A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates." data-tr="telc Deutsch B1 (180/300 barajı) için eksiksiz çalışma portalı ve 2.000 kelimelik interaktif antrenör. Dilbilgisi, akıllı kelime antrenmanı, deneme sınavları ve mektup şablonları." data-ar="بوابة دراسية متكاملة ومدرب تفاعلي لأكثر من 2000 كلمة لامتحان telc Deutsch B1 (درجة النجاح 180/300). القواعد، تكرار الكلمات الذكي، امتحانات تجريبية، ونماذج رسائل." data-uk="Повний навчальний портал та інтерактивний тренажер на 2000 слів для telc Deutsch B1 (поріг 180/300). Граматика, розумне повторення слів, пробні іспити та шаблони листів.">A complete study portal and 2,000-word interactive trainer for telc Deutsch B1 (180/300 pass threshold). Grammar, smart spaced vocabulary drill, mock exams, and letter templates.</p>
     
     <!-- Trust Certification Badges -->
     <div class="hero-trust-badges" style="display:flex; justify-content:center; align-items:center; gap:12px; margin: 12px 0 16px; flex-wrap:wrap;">
       <span class="trust-badge" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:700; background:rgba(34,197,94,0.12); color:#22c55e; border:1px solid rgba(34,197,94,0.3); padding:4px 12px; border-radius:20px;">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-        <span data-en="✓ telc B1 Blueprint 2026" data-tr="✓ telc B1 Müfredatı 2026" data-ar="✓ معايير telc B1 2026" data-uk="✓ Стандарт telc B1 2026">✓ telc B1 Blueprint 2026</span>
+        <span data-de="✓ telc B1 Richtlinie 2026" data-en="✓ telc B1 Blueprint 2026" data-tr="✓ telc B1 Müfredatı 2026" data-ar="✓ معايير telc B1 2026" data-uk="✓ Стандарт telc B1 2026">✓ telc B1 Blueprint 2026</span>
       </span>
       <span class="trust-badge" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:700; background:rgba(245,158,11,0.12); color:var(--accent-gold); border:1px solid rgba(245,158,11,0.3); padding:4px 12px; border-radius:20px;">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M3 21h18M3 10h18M5 10v11M19 10v11M9 10v11M15 10v11M12 2 2 7h20L12 2z"/></svg>
-        <span data-en="🇩🇪 BAMF 310 LiD Test Bank" data-tr="🇩🇪 BAMF 310 LiD Soru Havuzu" data-ar="🇩🇪 بنك أسئلة 310 LiD" data-uk="🇩🇪 Банк тестів 310 LiD">🇩🇪 BAMF 310 LiD Test Bank</span>
+        <span data-de="🇩🇪 BAMF 310 LiD Fragenkatalog" data-en="🇩🇪 BAMF 310 LiD Test Bank" data-tr="🇩🇪 BAMF 310 LiD Soru Havuzu" data-ar="🇩🇪 بنك أسئلة 310 LiD" data-uk="🇩🇪 Банк тестів 310 LiD">🇩🇪 BAMF 310 LiD Test Bank</span>
       </span>
       <span class="trust-badge" style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:700; background:rgba(59,130,246,0.12); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); padding:4px 12px; border-radius:20px;">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-        <span data-en="⚡ PWA 100% Offline" data-tr="⚡ %100 Çevrimdışı PWA" data-ar="⚡ يعمل بدون إنترنت 100%" data-uk="⚡ 100% офлайн PWA">⚡ PWA 100% Offline</span>
+        <span data-de="⚡ PWA 100 % offline" data-en="⚡ PWA 100% Offline" data-tr="⚡ %100 Çevrimdışı PWA" data-ar="⚡ يعمل بدون إنترنت 100%" data-uk="⚡ 100% офлайн PWA">⚡ PWA 100% Offline</span>
       </span>
     </div>
     
@@ -239,33 +233,33 @@
       <div class="hero-goal-info">
         <span class="hero-goal-icon" id="hero-goal-strip-icon">🎯</span>
         <div>
-          <strong id="hero-goal-strip-title" data-en="Active Track: telc B1 Certification" data-tr="Aktif Program: telc B1 Sınavı" data-ar="المسار النشط: شهادة telc B1" data-uk="Активний курс: сертифікація telc B1">Active Track: telc B1 Certification</strong>
-          <div style="font-size: 12px; color: var(--text-muted);" id="hero-goal-strip-hint" data-en="Focusing on 30-day curriculum, mock exams & B1 vocabulary" data-tr="30 günlük program, deneme sınavları ve B1 kelimelerine odaklanıyor" data-ar="التركيز على خطة الـ 30 يوماً، الامتحانات التجريبية ومفردات B1" data-uk="Фокус на 30-денній програмі, пробних іспитах та лексиці B1">Focusing on 30-day curriculum, mock exams & B1 vocabulary</div>
+          <strong data-de="Aktiver Kurs: telc B1 Zertifikat" id="hero-goal-strip-title" data-en="Active Track: telc B1 Certification" data-tr="Aktif Program: telc B1 Sınavı" data-ar="المسار النشط: شهادة telc B1" data-uk="Активний курс: сертифікація telc B1">Active Track: telc B1 Certification</strong>
+          <div data-de="Schwerpunkt auf 30-Tage-Lehrplan, Modellprüfungen & B1-Wortschatz" style="font-size: 12px; color: var(--text-muted);" id="hero-goal-strip-hint" data-en="Focusing on 30-day curriculum, mock exams & B1 vocabulary" data-tr="30 günlük program, deneme sınavları ve B1 kelimelerine odaklanıyor" data-ar="التركيز على خطة الـ 30 يوماً، الامتحانات التجريبية ومفردات B1" data-uk="Фокус на 30-денній програмі, пробних іспитах та лексиці B1">Focusing on 30-day curriculum, mock exams & B1 vocabulary</div>
         </div>
       </div>
       <div class="hero-goal-actions">
         <a href="dashboard.html" class="btn-sm-trainer" id="hero-goal-dashboard-link" style="background: linear-gradient(135deg, var(--accent-gold), #d97706); border-color: rgba(245, 158, 11, 0.8); color: #000; font-weight: 800; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);">
-          <span data-en="🚀 Launch Student Dashboard →" data-tr="🚀 Öğrenci Panelini Başlat →" data-ar="🚀 فتح لوحة تحكم الطالب ←" data-uk="🚀 Відкрити панель студента →">🚀 Launch Student Dashboard →</span>
+          <span data-de="🚀 Lernbereich öffnen →" data-en="🚀 Launch Student Dashboard →" data-tr="🚀 Öğrenci Panelini Başlat →" data-ar="🚀 فتح لوحة تحكم الطالب ←" data-uk="🚀 Відкрити панель студента →">🚀 Launch Student Dashboard →</span>
         </a>
         <button class="btn-sm-goal" onclick="openGoalModal()">
-          <span data-en="Switch Goal / Level" data-tr="Hedef / Seviye Değiştir" data-ar="تغيير الهدف / المستوى" data-uk="Змінити ціль / рівень">Switch Goal / Level</span>
+          <span data-de="Ziel / Niveau wechseln" data-en="Switch Goal / Level" data-tr="Hedef / Seviye Değiştir" data-ar="تغيير الهدف / المستوى" data-uk="Змінити ціль / рівень">Switch Goal / Level</span>
         </button>
         <a href="sprechen.html" class="btn-sm-trainer" id="hero-goal-sprechen-link" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); border-color: rgba(96, 165, 250, 0.6); color: #fff;">
-          <span data-en="🎙️ Oral Exam Studio →" data-tr="🎙️ Sesli Sınav Stüdyosu →" data-ar="🎙️ استوديو الامتحان الشفوي ←" data-uk="🎙️ Студія усного іспиту →">🎙️ Oral Exam Studio →</span>
+          <span data-de="🎙️ Sprechstudio →" data-en="🎙️ Oral Exam Studio →" data-tr="🎙️ Sesli Sınav Stüdyosu →" data-ar="🎙️ استوديو الامتحان الشفوي ←" data-uk="🎙️ Студія усного іспиту →">🎙️ Oral Exam Studio →</span>
         </a>
         <a href="lesen.html" class="btn-sm-trainer" id="hero-goal-lesen-link" style="background: linear-gradient(135deg, #059669, #10b981); border-color: rgba(52, 211, 153, 0.6); color: #fff;">
-          <span data-en="📖 Reading Studio →" data-tr="📖 Okuma Stüdyosu →" data-ar="📖 استوديو القراءة ←" data-uk="📖 Студія читання →">📖 Reading Studio →</span>
+          <span data-de="📖 Lesestudio →" data-en="📖 Reading Studio →" data-tr="📖 Okuma Stüdyosu →" data-ar="📖 استوديو القراءة ←" data-uk="📖 Студія читання →">📖 Reading Studio →</span>
         </a>
         <a href="trainer.html" class="btn-sm-trainer" id="hero-goal-trainer-link">
-          <span data-en="⚡ Start Vocab Drill →" data-tr="⚡ Kelime Antrenmanı →" data-ar="⚡ بدء تدريب المفردات ←" data-uk="⚡ Почати тренування слів →">⚡ Start Vocab Drill →</span>
+          <span data-de="⚡ Vokabeldrill starten →" data-en="⚡ Start Vocab Drill →" data-tr="⚡ Kelime Antrenmanı →" data-ar="⚡ بدء تدريب المفردات ←" data-uk="⚡ Почати тренування слів →">⚡ Start Vocab Drill →</span>
         </a>
       </div>
     </div>
     <div class="hero-stats" id="hero-stats">
-      <div class="hero-stat"><div class="val">10</div><div class="label" data-en="Study Modules" data-tr="Modül" data-ar="وحدات دراسية" data-uk="Навчальні модулі">Study Modules</div></div>
-      <div class="hero-stat"><div class="val">30</div><div class="label" data-en="Day Plan" data-tr="Günlük Plan" data-ar="خطة الأيام" data-uk="Денний план">Day Plan</div></div>
-      <div class="hero-stat"><div class="val">2000+</div><div class="label" data-en="Vocab Words" data-tr="Kelime" data-ar="كلمات" data-uk="Слів">Vocab Words</div></div>
-      <div class="hero-stat"><div class="val">180 / 300</div><div class="label" data-en="Pass Threshold" data-tr="Geçme Barajı" data-ar="نسبة النجاح" data-uk="Прохідний бал">Pass Threshold</div></div>
+      <div class="hero-stat"><div class="val">10</div><div data-de="Lernmodule" class="label" data-en="Study Modules" data-tr="Modül" data-ar="وحدات دراسية" data-uk="Навчальні модулі">Study Modules</div></div>
+      <div class="hero-stat"><div class="val">30</div><div data-de="Tages-Plan" class="label" data-en="Day Plan" data-tr="Günlük Plan" data-ar="خطة الأيام" data-uk="Денний план">Day Plan</div></div>
+      <div class="hero-stat"><div class="val">2000+</div><div data-de="Vokabeln" class="label" data-en="Vocab Words" data-tr="Kelime" data-ar="كلمات" data-uk="Слів">Vocab Words</div></div>
+      <div class="hero-stat"><div class="val">180 / 300</div><div data-de="Bestehensgrenze" class="label" data-en="Pass Threshold" data-tr="Geçme Barajı" data-ar="نسبة النجاح" data-uk="Прохідний бал">Pass Threshold</div></div>
     </div>
   </header>
 
@@ -277,18 +271,18 @@
         <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px; margin-bottom:18px;">
           <div style="max-width: 720px;">
             <div style="display:inline-flex; align-items:center; gap:6px; background:rgba(245, 158, 11, 0.15); border:1px solid rgba(245, 158, 11, 0.4); color:var(--accent-gold); font-size:11px; font-weight:800; padding:3px 10px; border-radius:12px; margin-bottom:10px; text-transform:uppercase;">
-              <span>⚡ <span data-en="LIVE INTERACTIVE DEMO &bull; TELC B1 RUBRIC" data-tr="CANLI İNTERAKTİF DEMO &bull; TELC B1 KRİTERLERİ" data-ar="عرض تفاعلي مباشر &bull; معايير TELC B1" data-uk="ЖИВА ІНТЕРАКТИВНА ДЕМОНСТРАЦІЯ &bull; КРИТЕРІЇ TELC B1">LIVE INTERACTIVE DEMO &bull; TELC B1 RUBRIC</span></span>
+              <span>⚡ <span data-de="LIVE INTERAKTIVE DEMO &bull; TELC B1 BEWERTUNGSRANGE" data-en="LIVE INTERACTIVE DEMO &bull; TELC B1 RUBRIC" data-tr="CANLI İNTERAKTİF DEMO &bull; TELC B1 KRİTERLERİ" data-ar="عرض تفاعلي مباشر &bull; معايير TELC B1" data-uk="ЖИВА ІНТЕРАКТИВНА ДЕМОНСТРАЦІЯ &bull; КРИТЕРІЇ TELC B1">LIVE INTERACTIVE DEMO &bull; TELC B1 RUBRIC</span></span>
             </div>
-            <h2 style="font-size: 22px; color: #ffffff; margin-bottom: 8px;" data-en="Try the AI Examiner: Real Student Letter Diagnostic" data-tr="Yapay Zeka Değerlendiricisini Deneyin: Gerçek Öğrenci Mektubu Analizi" data-ar="جرب مصحح الذكاء الاصطناعي: تحليل لرسالة طالب حقيقية" data-uk="Спробуйте ШІ-оцінювача: діагностика реального листа">
+            <h2 data-de="KI-Prüfer testen: Echte Schülerbrief-Diagnose" style="font-size: 22px; color: #ffffff; margin-bottom: 8px;" data-en="Try the AI Examiner: Real Student Letter Diagnostic" data-tr="Yapay Zeka Değerlendiricisini Deneyin: Gerçek Öğrenci Mektubu Analizi" data-ar="جرب مصحح الذكاء الاصطناعي: تحليل لرسالة طالب حقيقية" data-uk="Спробуйте ШІ-оцінювача: діагностика реального листа">
               Try the AI Examiner: Real Student Letter Diagnostic
             </h2>
-            <p style="font-size: 13px; color: #cbd5e1; line-height: 1.6;" data-en="Click below to see how our AI evaluates a B1 complaint letter against the official 45-point telc rubric with error diffs and Leitpunkte tracking." data-tr="Yapay zekanın B1 şikayet mektubunu 45 puanlık resmi telc kriterlerine, Leitpunkt kontrolüne ve hata düzeltmelerine göre nasıl değerlendirdiğini görmek için tıklayın." data-ar="انقر أدناه لترى كيف يصحح الذكاء الاصطناعي رسالة شكوى B1 وفق المعايير الرسمية لـ 45 نقطة مع كشف الأخطاء." data-uk="Натисніть нижче, щоб побачити, як ШІ оцінює лист-скаргу B1 за офіційною 45-бальною шкалою telc з виправленнями.">
+            <p data-de="Klicken Sie unten, um zu sehen, wie unsere KI einen B1-Beschwerdebrief nach dem offiziellen 45-Punkte-Raster mit Fehlerkorrekturen und Leitpunkte-Prüfung bewertet." style="font-size: 13px; color: #cbd5e1; line-height: 1.6;" data-en="Click below to see how our AI evaluates a B1 complaint letter against the official 45-point telc rubric with error diffs and Leitpunkte tracking." data-tr="Yapay zekanın B1 şikayet mektubunu 45 puanlık resmi telc kriterlerine, Leitpunkt kontrolüne ve hata düzeltmelerine göre nasıl değerlendirdiğini görmek için tıklayın." data-ar="انقر أدناه لترى كيف يصحح الذكاء الاصطناعي رسالة شكوى B1 وفق المعايير الرسمية لـ 45 نقطة مع كشف الأخطاء." data-uk="Натисніть нижче, щоб побачити, як ШІ оцінює лист-скаргу B1 за офіційною 45-бальною шкалою telc з виправленнями.">
               Click below to see how our AI evaluates a B1 complaint letter against the official 45-point telc rubric with error diffs and Leitpunkte tracking.
             </p>
           </div>
           <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
             <a href="dashboard.html" class="dash-btn-primary" style="text-decoration:none; padding:9px 16px; font-size:12px;">
-              <span>🚀 <span data-en="Open Full Student Workspace →" data-tr="Tam Öğrenci Çalışma Alanını Aç →" data-ar="فتح مساحة عمل الطالب الكاملة ←" data-uk="Відкрити повний робочий простір →">Open Full Student Workspace →</span></span>
+              <span>🚀 <span data-de="Vollständigen Lernbereich öffnen →" data-en="Open Full Student Workspace →" data-tr="Tam Öğrenci Çalışma Alanını Aç →" data-ar="فتح مساحة عمل الطالب الكاملة ←" data-uk="Відкрити повний робочий простір →">Open Full Student Workspace →</span></span>
             </a>
           </div>
         </div>
@@ -308,9 +302,9 @@
           </div>
           <div style="margin-top: 14px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
             <button type="button" class="dash-btn-primary" onclick="toggleTeaserDiagnosticResult()" id="btn-run-teaser" style="font-size:13px; padding:9px 18px;">
-              <span>⚡ <span data-en="Evaluate Letter Now (34/45 Preview) ↓" data-tr="Mektubu Hemen Değerlendir (34/45 Önizleme) ↓" data-ar="تقييم الرسالة الآن (معاينة 34/45) ↓" data-uk="Оцінити лист зараз (попередній перегляд 34/45) ↓">Evaluate Letter Now (34/45 Preview) ↓</span></span>
+              <span>⚡ <span data-de="Brief jetzt bewerten (33/45 Vorschau) ↓" data-en="Evaluate Letter Now (33/45 Preview) ↓" data-tr="Mektubu Hemen Değerlendir (33/45 Önizleme) ↓" data-ar="تقييم الرسالة الآن (معاينة 33/45) ↓" data-uk="Оцінити лист зараз (попередній перегляд 33/45) ↓">Evaluate Letter Now (33/45 Preview) ↓</span></span>
             </button>
-            <span style="font-size:12px; color:#94a3b8;" data-en="✓ 0 Tokens required for preview" data-tr="✓ Önizleme için kredi gerekmez" data-ar="✓ لا يتطلب رصيداً للمعاينة" data-uk="✓ Не потребує кредитів для перегляду">✓ 0 Tokens required for preview</span>
+            <span style="font-size:12px; color:#94a3b8;" data-de="✓ 0 Token für die Vorschau erforderlich" data-en="✓ 0 Tokens required for preview" data-tr="✓ Önizleme için kredi gerekmez" data-ar="✓ لا يتطلب رصيداً للمعاينة" data-uk="✓ Не потребує кредитів для перегляду">✓ 0 Tokens required for preview</span>
           </div>
         </div>
 
@@ -319,16 +313,16 @@
           <div style="background:var(--bg-card); border:1px solid rgba(34,197,94,0.3); border-radius:12px; padding:20px;">
             <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:14px;">
               <div style="display:flex; align-items:center; gap:12px;">
-                <div style="font-size:26px; font-weight:800; color:#22c55e;">34 / 45 Pts</div>
+                <div style="font-size:26px; font-weight:800; color:#22c55e;">33 / 45 Pts (73%)</div>
                 <div>
-                  <div style="font-size:12px; font-weight:800; color:#22c55e; text-transform:uppercase;">✓ Bestanden (Passed • 75%)</div>
+                  <div style="font-size:12px; font-weight:800; color:#22c55e; text-transform:uppercase;">✓ Bestanden (Passed • 73%)</div>
                   <div style="font-size:11px; color:var(--text-muted);">telc B1 Passing Bar: 27/45 Pts</div>
                 </div>
               </div>
               <div style="display:flex; gap:8px;">
-                <span style="font-size:11px; background:rgba(34,197,94,0.12); color:#22c55e; border:1px solid rgba(34,197,94,0.3); padding:4px 10px; border-radius:8px; font-weight:700;">Crit. I: 4/5</span>
-                <span style="font-size:11px; background:rgba(59,130,246,0.12); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); padding:4px 10px; border-radius:8px; font-weight:700;">Crit. II: 3.5/5</span>
-                <span style="font-size:11px; background:rgba(245,158,11,0.12); color:#fbbf24; border:1px solid rgba(245,158,11,0.3); padding:4px 10px; border-radius:8px; font-weight:700;">Crit. III: 3.8/5</span>
+                <span style="font-size:11px; background:rgba(34,197,94,0.12); color:#22c55e; border:1px solid rgba(34,197,94,0.3); padding:4px 10px; border-radius:8px; font-weight:700;">Crit. I: 5/5 (Note A • 15 Pts)</span>
+                <span style="font-size:11px; background:rgba(59,130,246,0.12); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); padding:4px 10px; border-radius:8px; font-weight:700;">Crit. II: 3/5 (Note B • 9 Pts)</span>
+                <span style="font-size:11px; background:rgba(245,158,11,0.12); color:#fbbf24; border:1px solid rgba(245,158,11,0.3); padding:4px 10px; border-radius:8px; font-weight:700;">Crit. III: 3/5 (Note B • 9 Pts)</span>
               </div>
             </div>
 
@@ -352,10 +346,10 @@
                 <div style="font-size:13px; font-weight:800; color:var(--accent-gold); margin-bottom:6px;">🔒 Unlock Full 45/45 Model Rewrite & In-Depth Coaching</div>
                 <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:center;">
                   <button type="button" class="dash-btn-primary" onclick="if(window.openLemonSqueezyCheckout){openLemonSqueezyCheckout('pass-30');}else{selectProPlan('standard');}" style="padding:8px 16px; font-size:12px;">
-                    <span>👑 <span data-en="Get 30-Day Pass (24€)" data-tr="30 Günlük Kart Al (24€)" data-ar="احصل على اشتراك 30 يوماً (24€)" data-uk="Отримати абонемент на 30 днів (24€)">Get 30-Day Pass (24€)</span></span>
+                    <span>👑 <span data-de="30-Tage-Pass sichern (24 €)" data-en="Get 30-Day Pass (24€)" data-tr="30 Günlük Kart Al (24€)" data-ar="احصل على اشتراك 30 يوماً (24€)" data-uk="Отримати абонемент на 30 днів (24€)">Get 30-Day Pass (24€)</span></span>
                   </button>
                   <a href="dashboard.html#section-examiner" class="dash-btn-secondary" style="text-decoration:none; padding:8px 14px; font-size:12px;">
-                    <span>✍️ <span data-en="Try in Dashboard →" data-tr="Panoda Dene →" data-ar="جرب في لوحة التحكم ←" data-uk="Спробувати в панелі →">Try in Dashboard →</span></span>
+                    <span>✍️ <span data-de="Im Dashboard ausprobieren →" data-en="Try in Dashboard →" data-tr="Panoda Dene →" data-ar="جرب في لوحة التحكم ←" data-uk="Спробувати в панелі →">Try in Dashboard →</span></span>
                   </a>
                 </div>
               </div>
@@ -369,15 +363,15 @@
     <div class="track-switcher-bar" id="track-switcher-bar" role="tablist">
       <button class="track-tab-btn active" id="tab-track-b1" onclick="switchTrack('b1')" role="tab" aria-selected="true">
         <span class="tab-icon">📚</span>
-        <span data-en="telc B1 Exam Track" data-tr="telc B1 Sınav Programı" data-ar="مسار امتحان telc B1" data-uk="Курс іспиту telc B1">telc B1 Exam Track</span>
+        <span data-de="telc B1 Prüfungs-Track" data-en="telc B1 Exam Track" data-tr="telc B1 Sınav Programı" data-ar="مسار امتحان telc B1" data-uk="Курс іспиту telc B1">telc B1 Exam Track</span>
       </button>
       <button class="track-tab-btn" id="tab-track-lid" onclick="switchTrack('lid')" role="tab" aria-selected="false">
         <span class="tab-icon">🇩🇪</span>
-        <span data-en="Leben in Deutschland (LiD)" data-tr="Leben in Deutschland (LiD)" data-ar="الحياة في ألمانيا (LiD)" data-uk="Життя в Німеччині (LiD)">Leben in Deutschland (LiD)</span>
+        <span data-de="Leben in Deutschland (LiD)" data-en="Leben in Deutschland (LiD)" data-tr="Leben in Deutschland (LiD)" data-ar="الحياة في ألمانيا (LiD)" data-uk="Життя в Німеччині (LiD)">Leben in Deutschland (LiD)</span>
       </button>
       <button class="track-tab-btn" id="tab-track-vocab" onclick="switchTrack('vocab')" role="tab" aria-selected="false">
         <span class="tab-icon">⚡</span>
-        <span data-en="Vocab Trainer (2,000+)" data-tr="Kelime Antrenörü (2.000+)" data-ar="مدرب المفردات (2,000+)" data-uk="Тренажер слів (2000+)">Vocab Trainer (2,000+)</span>
+        <span data-de="Vokabeltrainer (2.000+)" data-en="Vocab Trainer (2,000+)" data-tr="Kelime Antrenörü (2.000+)" data-ar="مدرب المفردات (2,000+)" data-uk="Тренажер слів (2000+)">Vocab Trainer (2,000+)</span>
       </button>
     </div>
 
@@ -390,22 +384,22 @@
             <div style="display:inline-flex; align-items:center; gap:6px; background:var(--pastel-butter-bg); border: 1px solid var(--pastel-butter-border); color:var(--pastel-butter-text); font-size:11px; font-weight:800; padding:3px 10px; border-radius:12px; margin-bottom:12px; text-transform:uppercase; letter-spacing:0.05em;">
               ⚡ NEW &bull; INTERACTIVE DRILL
             </div>
-            <h2 style="font-size: 24px; margin-bottom: 8px; color: var(--text-primary);" data-en="2,000+ German Words Vocabulary Trainer" data-tr="2.000+ Almanca Kelime Antrenörü" data-ar="مدرب مفردات اللغة الألمانية بأكثر من 2,000 كلمة" data-uk="Тренажер німецьких слів на 2000+ слів">
+            <h2 data-de="2.000+ deutsche Wörter Vokabeltrainer" style="font-size: 24px; margin-bottom: 8px; color: var(--text-primary);" data-en="2,000+ German Words Vocabulary Trainer" data-tr="2.000+ Almanca Kelime Antrenörü" data-ar="مدرب مفردات اللغة الألمانية بأكثر من 2,000 كلمة" data-uk="Тренажер німецьких слів на 2000+ слів">
               2,000+ German Words Vocabulary Trainer
             </h2>
-            <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 14px;" data-en="Drill essential A1–B1 vocabulary and Advanced B2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes." data-tr="Temel A1–B1 ve İleri B2 kelimelerini çalışın. Akıllı tekrar algoritması, hata tekrar havuzu, sesli telaffuz, günlük seri takibi ve 5 farklı test modu içerir." data-ar="تدرب على مفردات A1–B1 الأساسية ومجموعات B2 المتقدمة. يشمل تكراراً ذكياً لمنع التكرار، قائمة مراجعة الأخطاء، نطقاً صوتياً، متابعة السلسلة و5 أوضاع اختبار." data-uk="Вивчайте базові слова A1–B1 та просунуту колоду B2. Розумна ротація без повторів, черга помилок, аудіовимова, відстеження серії днів та 5 режимів тестів.">
+            <p data-de="Trainieren Sie den Kernwortschatz A1–B1 und fortgeschrittene B2-Decks mit intelligentem Wiederholungsschutz, Fehler-Wiederholungsbox, nativer Sprachausgabe, Streak-Tracking und 5 Quiz-Modi." style="font-size: 14px; color: var(--text-secondary); margin-bottom: 14px;" data-en="Drill essential A1–B1 vocabulary and Advanced B2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes." data-tr="Temel A1–B1 ve İleri B2 kelimelerini çalışın. Akıllı tekrar algoritması, hata tekrar havuzu, sesli telaffuz, günlük seri takibi ve 5 farklı test modu içerir." data-ar="تدرب على مفردات A1–B1 الأساسية ومجموعات B2 المتقدمة. يشمل تكراراً ذكياً لمنع التكرار، قائمة مراجعة الأخطاء، نطقاً صوتياً، متابعة السلسلة و5 أوضاع اختبار." data-uk="Вивчайте базові слова A1–B1 та просунуту колоду B2. Розумна ротація без повторів, черга помилок, аудіовимова, відстеження серії днів та 5 режимів тестів.">
               Drill essential A1–B1 vocabulary and Advanced B2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes.
             </p>
             <div style="display:flex; gap:16px; font-size:12px; color:var(--text-muted); font-weight:600; flex-wrap:wrap;">
-              <span data-en="🎯 5 Quiz Modes" data-tr="🎯 5 Test Modu" data-ar="🎯 5 أوضاع اختبار" data-uk="🎯 5 режимів тестів">🎯 5 Quiz Modes</span>
-              <span data-en="🔊 Native TTS Audio" data-tr="🔊 Sesli Telaffuz" data-ar="🔊 نطق صوتي أصلي" data-uk="🔊 Озвучення слів">🔊 Native TTS Audio</span>
-              <span data-en="🔥 Daily Streaks" data-tr="🔥 Günlük Seri" data-ar="🔥 سلسلة أيام يومية" data-uk="🔥 Щоденні серії">🔥 Daily Streaks</span>
-              <span data-en="🔒 100% Private (Local)" data-tr="🔒 %100 Cihaz İçi Gizlilik" data-ar="🔒 خصوصية 100% (محلي)" data-uk="🔒 100% конфіденційно (локально)">🔒 100% Private (Local)</span>
+              <span data-de="🎯 5 Quizmodi" data-en="🎯 5 Quiz Modes" data-tr="🎯 5 Test Modu" data-ar="🎯 5 أوضاع اختبار" data-uk="🎯 5 режимів тестів">🎯 5 Quiz Modes</span>
+              <span data-de="🔊 Native Sprachausgabe" data-en="🔊 Native TTS Audio" data-tr="🔊 Sesli Telaffuz" data-ar="🔊 نطق صوتي أصلي" data-uk="🔊 Озвучення слів">🔊 Native TTS Audio</span>
+              <span data-de="🔥 Tägliche Streaks" data-en="🔥 Daily Streaks" data-tr="🔥 Günlük Seri" data-ar="🔥 سلسلة أيام يومية" data-uk="🔥 Щоденні серії">🔥 Daily Streaks</span>
+              <span data-de="🔒 100 % privat (lokal)" data-en="🔒 100% Private (Local)" data-tr="🔒 %100 Cihaz İçi Gizlilik" data-ar="🔒 خصوصية 100% (محلي)" data-uk="🔒 100% конфіденційно (локально)">🔒 100% Private (Local)</span>
             </div>
           </div>
           <div>
             <a href="trainer.html" class="card-link primary" style="padding: 13px 26px; font-size: 14px; font-weight: 700; border-radius: 9px; display: inline-flex; align-items: center; gap: 8px; text-decoration:none; background:var(--pastel-butter-bg); border: 1px solid var(--pastel-butter-border); color:var(--pastel-butter-text);">
-              <span data-en="🚀 Launch Vocabulary Trainer →" data-tr="🚀 Kelime Antrenörünü Başlat →" data-ar="🚀 تشغيل مدرب المفردات ←" data-uk="🚀 Запустити тренажер слів →">🚀 Launch Vocabulary Trainer →</span>
+              <span data-de="🚀 Vokabeltrainer starten →" data-en="🚀 Launch Vocabulary Trainer →" data-tr="🚀 Kelime Antrenörünü Başlat →" data-ar="🚀 تشغيل مدرب المفردات ←" data-uk="🚀 Запустити тренажер слів →">🚀 Launch Vocabulary Trainer →</span>
             </a>
           </div>
         </div>
@@ -413,32 +407,32 @@
 
       <!-- Quick Deck Launcher Grid -->
       <div class="section" style="margin-bottom: 30px;">
-        <div class="section-label" data-en="📦 Select Your Word Deck" data-tr="📦 Kelime Destenizi Seçin" data-ar="📦 اختر مجموعة الكلمات" data-uk="📦 Оберіть колоду слів">📦 Select Your Word Deck</div>
-        <h3 style="font-size:20px; margin-bottom:14px; color:var(--text-primary);" data-en="Start Directly With a Specific CEFR Deck" data-tr="Doğrudan Belirli Bir CEFR Destesiyle Başlayın" data-ar="ابدأ مباشرة مع مجموعة مستويات CEFR المحددة" data-uk="Почніть безпосередньо з потрібної колоди CEFR">Start Directly With a Specific CEFR Deck</h3>
+        <div data-de="📦 Wählen Sie Ihr Wort-Deck" class="section-label" data-en="📦 Select Your Word Deck" data-tr="📦 Kelime Destenizi Seçin" data-ar="📦 اختر مجموعة الكلمات" data-uk="📦 Оберіть колоду слів">📦 Select Your Word Deck</div>
+        <h3 data-de="Direkt mit einem bestimmten GER-Deck starten" style="font-size:20px; margin-bottom:14px; color:var(--text-primary);" data-en="Start Directly With a Specific CEFR Deck" data-tr="Doğrudan Belirli Bir CEFR Destesiyle Başlayın" data-ar="ابدأ مباشرة مع مجموعة مستويات CEFR المحددة" data-uk="Почніть безпосередньо з потрібної колоди CEFR">Start Directly With a Specific CEFR Deck</h3>
         <div class="vocab-deck-cards" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); gap:16px;">
           <a href="trainer.html?deck=core" class="vocab-deck-card" style="display:block; text-decoration:none; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:20px; transition:all 0.2s ease;">
             <div style="font-size:24px; margin-bottom:8px;">📦</div>
-            <h4 style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="Core 2,000 (A1–B1)" data-tr="Temel 2.000 (A1–B1)" data-ar="الأساسية 2000 (A1–B1)" data-uk="Базова 2000 (A1–B1)">Core 2,000 (A1–B1)</h4>
-            <p style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Foundational everyday vocabulary essential for the telc B1 exam." data-tr="telc B1 sınavı ve günlük yaşam için en gerekli temel kelimeler." data-ar="مفردات الحياة اليومية الأساسية لامتحان telc B1." data-uk="Базова лексика щоденного вжитку для іспиту telc B1.">Foundational everyday vocabulary essential for the telc B1 exam.</p>
-            <span style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
+            <h4 data-de="Kernwortschatz 2.000 (A1–B1)" style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="Core 2,000 (A1–B1)" data-tr="Temel 2.000 (A1–B1)" data-ar="الأساسية 2000 (A1–B1)" data-uk="Базова 2000 (A1–B1)">Core 2,000 (A1–B1)</h4>
+            <p data-de="Wichtiger Alltagsgrundwortschatz für die telc B1 Prüfung." style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Foundational everyday vocabulary essential for the telc B1 exam." data-tr="telc B1 sınavı ve günlük yaşam için en gerekli temel kelimeler." data-ar="مفردات الحياة اليومية الأساسية لامتحان telc B1." data-uk="Базова лексика щоденного вжитку для іспиту telc B1.">Foundational everyday vocabulary essential for the telc B1 exam.</p>
+            <span data-de="Deck üben →" style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
           </a>
           <a href="trainer.html?deck=b2" class="vocab-deck-card" style="display:block; text-decoration:none; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:20px; transition:all 0.2s ease;">
             <div style="font-size:24px; margin-bottom:8px;">💼</div>
-            <h4 style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="Advanced B2 Deck" data-tr="İleri B2 Destesi" data-ar="مجموعة B2 المتقدمة" data-uk="Просунута колода B2">Advanced B2 Deck</h4>
-            <p style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Professional expressions, complex sentence connectors & workplace terms." data-tr="İş yeri iletişimi, profesyonel kalıplar ve karmaşık bağlaçlar." data-ar="تعبيرات احترافية، أدوات ربط معقدة ومصطلحات بيئة العمل." data-uk="Професійні вирази, складні сполучники та терміни для роботи.">Professional expressions, complex sentence connectors & workplace terms.</p>
-            <span style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
+            <h4 data-de="Fortgeschrittenes B2-Deck" style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="Advanced B2 Deck" data-tr="İleri B2 Destesi" data-ar="مجموعة B2 المتقدمة" data-uk="Просунута колода B2">Advanced B2 Deck</h4>
+            <p data-de="Berufliche Redemittel, anspruchsvolle Konnektoren und Fachbegriffe." style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Professional expressions, complex sentence connectors & workplace terms." data-tr="İş yeri iletişimi, profesyonel kalıplar ve karmaşık bağlaçlar." data-ar="تعبيرات احترافية، أدوات ربط معقدة ومصطلحات بيئة العمل." data-uk="Професійні вирази, складні сполучники та терміни для роботи.">Professional expressions, complex sentence connectors & workplace terms.</p>
+            <span data-de="Deck üben →" style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
           </a>
           <a href="trainer.html?deck=c1" class="vocab-deck-card" style="display:block; text-decoration:none; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:20px; transition:all 0.2s ease;">
             <div style="font-size:24px; margin-bottom:8px;">🎓</div>
-            <h4 style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="Academic C1 Deck" data-tr="Akademik C1 Destesi" data-ar="مجموعة C1 الأكاديمية" data-uk="Академічна колода C1">Academic C1 Deck</h4>
-            <p style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Scientific literature, academic writing, and university level terminology." data-tr="Üniversite eğitimi, akademik makaleler ve bilimsel terminoloji." data-ar="مصطلحات علمية، كتابة أكاديمية ومفردات الدراسة الجامعية." data-uk="Наукова література, академічне письмо та університетська термінологія.">Scientific literature, academic writing, and university level terminology.</p>
-            <span style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
+            <h4 data-de="Akademisches C1-Deck" style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="Academic C1 Deck" data-tr="Akademik C1 Destesi" data-ar="مجموعة C1 الأكاديمية" data-uk="Академічна колода C1">Academic C1 Deck</h4>
+            <p data-de="Wissenschaftliche Texte, akademisches Schreiben und Hochschulterminologie." style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Scientific literature, academic writing, and university level terminology." data-tr="Üniversite eğitimi, akademik makaleler ve bilimsel terminoloji." data-ar="مصطلحات علمية، كتابة أكاديمية ومفردات الدراسة الجامعية." data-uk="Наукова література, академічне письмо та університетська термінологія.">Scientific literature, academic writing, and university level terminology.</p>
+            <span data-de="Deck üben →" style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
           </a>
           <a href="trainer.html?deck=all" class="vocab-deck-card" style="display:block; text-decoration:none; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:20px; transition:all 0.2s ease;">
             <div style="font-size:24px; margin-bottom:8px;">🌐</div>
-            <h4 style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="All Combined" data-tr="Tümü Bir Arada" data-ar="الكل مجتمعاً" data-uk="Усі разом">All Combined</h4>
-            <p style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Complete 2,000+ words across all levels with randomized anti-repetition." data-tr="Tüm seviyelerdeki 2.000+ kelime ile kapsamlı hız ve tekrar antrenmanı." data-ar="أكثر من 2000 كلمة عبر جميع المستويات مع تكرار عشوائي ذكي." data-uk="Повні 2000+ слів усіх рівнів з розумним алгоритмом без повторів.">Complete 2,000+ words across all levels with randomized anti-repetition.</p>
-            <span style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
+            <h4 data-de="Alle kombiniert" style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="All Combined" data-tr="Tümü Bir Arada" data-ar="الكل مجتمعاً" data-uk="Усі разом">All Combined</h4>
+            <p data-de="Über 2.000 Wörter aller Niveaus mit intelligenter Wiederholungs-Sperre lernen." style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Complete 2,000+ words across all levels with randomized anti-repetition." data-tr="Tüm seviyelerdeki 2.000+ kelime ile kapsamlı hız ve tekrar antrenmanı." data-ar="أكثر من 2000 كلمة عبر جميع المستويات مع تكرار عشوائي ذكي." data-uk="Повні 2000+ слів усіх рівнів з розумним алгоритмом без повторів.">Complete 2,000+ words across all levels with randomized anti-repetition.</p>
+            <span data-de="Deck üben →" style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
           </a>
         </div>
       </div>
@@ -580,13 +574,13 @@
 
       <!-- 5 Quiz Modes Interactive Action Strip -->
       <div class="section" style="margin-bottom: 40px;">
-        <div class="section-label" data-en="🎯 Interactive Quiz Modes" data-tr="🎯 İnteraktif Test Modları" data-ar="🎯 أوضاع الاختبار التفاعلية" data-uk="🎯 Інтерактивні режими тестів">🎯 Interactive Quiz Modes</div>
+        <div data-de="🎯 Interaktive Quizmodi" class="section-label" data-en="🎯 Interactive Quiz Modes" data-tr="🎯 İnteraktif Test Modları" data-ar="🎯 أوضاع الاختبار التفاعلية" data-uk="🎯 Інтерактивні режими тестів">🎯 Interactive Quiz Modes</div>
         <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:10px;">
-          <a href="trainer.html?mode=mcq" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="🎯 Multiple Choice" data-tr="🎯 Çoktan Seçmeli" data-ar="🎯 الاختيار من متعدد" data-uk="🎯 Тести з вибором">🎯 Multiple Choice</a>
-          <a href="trainer.html?mode=flashcards" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="🃏 Spaced Flashcards" data-tr="🃏 Hafıza Kartları" data-ar="🃏 البطاقات التعليمية" data-uk="🃏 Картки для запам'ятовування">🃏 Spaced Flashcards</a>
-          <a href="trainer.html?mode=reverse" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="🔄 Reverse Meaning Drill" data-tr="🔄 Ters Çeviri Testi" data-ar="🔄 تدريب الترجمة العكسية" data-uk="🔄 Зворотний переклад">🔄 Reverse Meaning Drill</a>
-          <a href="trainer.html?mode=typein" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="⌨️ Spelling Type-In" data-tr="⌨️ Yazma & Yazım Testi" data-ar="⌨️ كتابة الكلمة وإملائها" data-uk="⌨️ Введення слова">⌨️ Spelling Type-In</a>
-          <a href="trainer.html?mode=sprint" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="⏱️ 2-Min Exam Sprint" data-tr="⏱️ 2 Dakikalık Hız Sprinti" data-ar="⏱️ سباق الدقيقتين" data-uk="⏱️ 2-хвилинний спринт">⏱️ 2-Min Exam Sprint</a>
+          <a data-de="🎯 Multiple-Choice" href="trainer.html?mode=mcq" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="🎯 Multiple Choice" data-tr="🎯 Çoktan Seçmeli" data-ar="🎯 الاختيار من متعدد" data-uk="🎯 Тести з вибором">🎯 Multiple Choice</a>
+          <a data-de="🃏 Spaced-Flashcards" href="trainer.html?mode=flashcards" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="🃏 Spaced Flashcards" data-tr="🃏 Hafıza Kartları" data-ar="🃏 البطاقات التعليمية" data-uk="🃏 Картки для запам'ятовування">🃏 Spaced Flashcards</a>
+          <a data-de="🔄 Bedeutungs-Umkehr-Drill" href="trainer.html?mode=reverse" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="🔄 Reverse Meaning Drill" data-tr="🔄 Ters Çeviri Testi" data-ar="🔄 تدريب الترجمة العكسية" data-uk="🔄 Зворотний переклад">🔄 Reverse Meaning Drill</a>
+          <a data-de="⌨️ Rechtschreib-Eingabe" href="trainer.html?mode=typein" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="⌨️ Spelling Type-In" data-tr="⌨️ Yazma & Yazım Testi" data-ar="⌨️ كتابة الكلمة وإملائها" data-uk="⌨️ Введення слова">⌨️ Spelling Type-In</a>
+          <a data-de="⏱️ 2-Minuten-Prüfungssprint" href="trainer.html?mode=sprint" class="cta-btn-primary" style="padding:10px 18px; font-size:13px; text-decoration:none; font-weight:600; background:var(--bg-card); color:var(--text-primary); border:1px solid var(--border);" data-en="⏱️ 2-Min Exam Sprint" data-tr="⏱️ 2 Dakikalık Hız Sprinti" data-ar="⏱️ سباق الدقيقتين" data-uk="⏱️ 2-хвилинний спринт">⏱️ 2-Min Exam Sprint</a>
         </div>
       </div>
     </div>
@@ -596,23 +590,23 @@
 
       <!-- Quick Anchor Pills to navigate sections without infinite scroll -->
       <div class="quick-jump-strip">
-        <a href="#materials" class="jump-pill" data-en="📚 Modules" data-tr="📚 Modüller" data-ar="📚 الوحدات" data-uk="📚 Модулі">📚 Modules</a>
-        <a href="#diagnostic" class="jump-pill" data-en="🔍 Quiz" data-tr="🔍 Test" data-ar="🔍 اختبار" data-uk="🔍 Тест">🔍 Quiz</a>
-        <a href="#flashcards" class="jump-pill" data-en="🗂️ Flashcards" data-tr="🗂️ Kartlar" data-ar="🗂️ بطاقات" data-uk="🗂️ Картки">🗂️ Flashcards</a>
-        <a href="#fehlerheft-section" class="jump-pill" data-en="📓 Fehlerheft" data-tr="📓 Hata Defteri" data-ar="📓 دفتر الأخطاء" data-uk="📓 Зошит помилок">📓 Fehlerheft</a>
-        <a href="#schreiben-showcase-section" class="jump-pill" data-en="✍️ Examiner Suite" data-tr="✍️ Değerlendirme" data-ar="✍️ باقة التقييم" data-uk="✍️ Комплекс оцінювання">✍️ Examiner Suite</a>
-        <a href="#telc-b1-calculator-section" class="jump-pill" data-en="🎯 Pass Predictor" data-tr="🎯 Not Hesaplayıcı" data-ar="🎯 حاسبة الاجتياز" data-uk="🎯 Калькулятор балів">🎯 Pass Predictor</a>
-        <a href="#pricing-section" class="jump-pill" data-en="👑 Pricing & Passes" data-tr="👑 Fiyatlar & Paketler" data-ar="👑 الأسعار والباقات" data-uk="👑 Тарифи та абонементи">👑 Pricing & Passes</a>
-        <a href="#student-testimonials-section" class="jump-pill" data-en="⭐ Reviews" data-tr="⭐ Yorumlar" data-ar="⭐ التقييمات" data-uk="⭐ Відгуки">⭐ Reviews</a>
-        <a href="#faq-section" class="jump-pill" data-en="❓ FAQ" data-tr="❓ SSS" data-ar="❓ أسئلة شائعة" data-uk="❓ Часті питання">❓ FAQ</a>
+        <a data-de="📚 Module" href="#materials" class="jump-pill" data-en="📚 Modules" data-tr="📚 Modüller" data-ar="📚 الوحدات" data-uk="📚 Модулі">📚 Modules</a>
+        <a data-de="🔍 Quiz" href="#diagnostic" class="jump-pill" data-en="🔍 Quiz" data-tr="🔍 Test" data-ar="🔍 اختبار" data-uk="🔍 Тест">🔍 Quiz</a>
+        <a data-de="🗂️ Karteikarten" href="#flashcards" class="jump-pill" data-en="🗂️ Flashcards" data-tr="🗂️ Kartlar" data-ar="🗂️ بطاقات" data-uk="🗂️ Картки">🗂️ Flashcards</a>
+        <a data-de="📓 Fehlerheft" href="#fehlerheft-section" class="jump-pill" data-en="📓 Fehlerheft" data-tr="📓 Hata Defteri" data-ar="📓 دفتر الأخطاء" data-uk="📓 Зошит помилок">📓 Fehlerheft</a>
+        <a data-de="✍️ Prüfersuite" href="#schreiben-showcase-section" class="jump-pill" data-en="✍️ Examiner Suite" data-tr="✍️ Değerlendirme" data-ar="✍️ باقة التقييم" data-uk="✍️ Комплекс оцінювання">✍️ Examiner Suite</a>
+        <a data-de="🎯 Bestehensrechner" href="#telc-b1-calculator-section" class="jump-pill" data-en="🎯 Pass Predictor" data-tr="🎯 Not Hesaplayıcı" data-ar="🎯 حاسبة الاجتياز" data-uk="🎯 Калькулятор балів">🎯 Pass Predictor</a>
+        <a data-de="👑 Preise & Pässe" href="#pricing-section" class="jump-pill" data-en="👑 Pricing & Passes" data-tr="👑 Fiyatlar & Paketler" data-ar="👑 الأسعار والباقات" data-uk="👑 Тарифи та абонементи">👑 Pricing & Passes</a>
+        <a data-de="⭐ Bewertungen" href="#student-testimonials-section" class="jump-pill" data-en="⭐ Reviews" data-tr="⭐ Yorumlar" data-ar="⭐ التقييمات" data-uk="⭐ Відгуки">⭐ Reviews</a>
+        <a data-de="❓ FAQ" href="#faq-section" class="jump-pill" data-en="❓ FAQ" data-tr="❓ SSS" data-ar="❓ أسئلة شائعة" data-uk="❓ Часті питання">❓ FAQ</a>
       </div>
 
     <!-- Unified Study Materials & 5-Step Guided Roadmap -->
     <div class="section" id="materials" style="animation-delay:0.05s">
       <div id="quickstart" style="position:relative; top:-20px;"></div>
-      <div class="section-label" data-en="🚀 5-Step Roadmap & Modules" data-tr="🚀 5 Adımlık Yol Haritası & Modüller" data-ar="🚀 خارطة الطريق والوحدات (5 خطوات)" data-uk="🚀 5 кроків плану та модулі">🚀 5-Step Roadmap & Modules</div>
-      <h2 data-en="Study Materials & Guided Roadmap" data-tr="Çalışma Materyalleri ve Sınav Yol Haritası" data-ar="المواد الدراسية وخارطة الطريق" data-uk="Навчальні матеріали та план підготовки">Study Materials & Guided Roadmap</h2>
-      <p data-en="Follow the 5 recommended milestones below in order, or click any module card to start directly." data-tr="Aşağıdaki 5 temel adımı sırayla takip edin veya dilediğiniz modül kartına tıklayarak doğrudan çalışmaya başlayın." data-ar="اتبع المراحل الـ 5 الرئيسية أدناه بالترتيب، أو انقر على أي بطاقة وحدة للبدء مباشرة." data-uk="Дотримуйтесь 5 ключових етапів нижче по черзі або натисніть на картку будь-якого модуля, щоб почати.">Follow the 5 recommended milestones below in order, or click any module card to start directly.</p>
+      <div data-de="🚀 5-Schritte-Lernpfad & Module" class="section-label" data-en="🚀 5-Step Roadmap & Modules" data-tr="🚀 5 Adımlık Yol Haritası & Modüller" data-ar="🚀 خارطة الطريق والوحدات (5 خطوات)" data-uk="🚀 5 кроків плану та модулі">🚀 5-Step Roadmap & Modules</div>
+      <h2 data-de="Lernmaterialien & geführter Lernpfad" data-en="Study Materials & Guided Roadmap" data-tr="Çalışma Materyalleri ve Sınav Yol Haritası" data-ar="المواد الدراسية وخارطة الطريق" data-uk="Навчальні матеріали та план підготовки">Study Materials & Guided Roadmap</h2>
+      <p data-de="Befolgen Sie die folgenden 5 Meilensteine der Reihe nach oder klicken Sie auf eine Modulkarte, um direkt zu starten." data-en="Follow the 5 recommended milestones below in order, or click any module card to start directly." data-tr="Aşağıdaki 5 temel adımı sırayla takip edin veya dilediğiniz modül kartına tıklayarak doğrudan çalışmaya başlayın." data-ar="اتبع المراحل الـ 5 الرئيسية أدناه بالترتيب، أو انقر على أي بطاقة وحدة للبدء مباشرة." data-uk="Дотримуйтесь 5 ключових етапів нижче по черзі або натисніть на картку будь-якого модуля, щоб почати.">Follow the 5 recommended milestones below in order, or click any module card to start directly.</p>
       
       <!-- 5-Step Milestone Roadmap Strip -->
       <div class="steps-roadmap">
@@ -621,40 +615,40 @@
             <span class="step-milestone-num">1</span>
             <span class="step-milestone-arrow">→</span>
           </div>
-          <h4 data-en="Exam Guide" data-tr="Sınav Rehberi" data-ar="دليل الامتحان" data-uk="Посібник до іспиту">Exam Guide</h4>
-          <p data-en="Scoring & B1 requirements" data-tr="Puanlama & B1 kuralları" data-ar="نظام الدرجات والمتطلبات" data-uk="Оцінювання та вимоги">Scoring & B1 requirements</p>
+          <h4 data-de="Prüfungsleitfaden" data-en="Exam Guide" data-tr="Sınav Rehberi" data-ar="دليل الامتحان" data-uk="Посібник до іспиту">Exam Guide</h4>
+          <p data-de="Bewertung & B1-Anforderungen" data-en="Scoring & B1 requirements" data-tr="Puanlama & B1 kuralları" data-ar="نظام الدرجات والمتطلبات" data-uk="Оцінювання та вимоги">Scoring & B1 requirements</p>
         </div>
         <div class="step-milestone" onclick="openMaterial(5)" title="Step 2: Diagnostic Exam" tabindex="0" role="button">
           <div class="step-milestone-header">
             <span class="step-milestone-num">2</span>
             <span class="step-milestone-arrow">→</span>
           </div>
-          <h4 data-en="Diagnostic Test" data-tr="Tanılama Sınavı" data-ar="الامتحان التشخيصي" data-uk="Діагностичний тест">Diagnostic Test</h4>
-          <p data-en="Find Day 1 weak areas" data-tr="İlk gün eksiklerini gör" data-ar="حدد نقاط ضعفك في البداية" data-uk="Визначте прогалини в 1-й день">Find Day 1 weak areas</p>
+          <h4 data-de="Diagnosetest" data-en="Diagnostic Test" data-tr="Tanılama Sınavı" data-ar="الامتحان التشخيصي" data-uk="Діагностичний тест">Diagnostic Test</h4>
+          <p data-de="Tag-1-Schwachstellen identifizieren" data-en="Find Day 1 weak areas" data-tr="İlk gün eksiklerini gör" data-ar="حدد نقاط ضعفك في البداية" data-uk="Визначте прогалини в 1-й день">Find Day 1 weak areas</p>
         </div>
         <div class="step-milestone" onclick="openMaterial(1)" title="Step 3: 1-Month Plan" tabindex="0" role="button">
           <div class="step-milestone-header">
             <span class="step-milestone-num">3</span>
             <span class="step-milestone-arrow">→</span>
           </div>
-          <h4 data-en="1-Month Plan" data-tr="1 Aylık Plan" data-ar="خطة الشهر الواحد" data-uk="План на 1 місяць">1-Month Plan</h4>
-          <p data-en="Daily structured 4-skill path" data-tr="4 yetenek gün gün planı" data-ar="خطة يومية للمهارات الـ 4" data-uk="Щоденний план 4 навичок">Daily structured 4-skill path</p>
+          <h4 data-de="1-Monats-Lernplan" data-en="1-Month Plan" data-tr="1 Aylık Plan" data-ar="خطة الشهر الواحد" data-uk="План на 1 місяць">1-Month Plan</h4>
+          <p data-de="Täglicher strukturierter 4-Fertigkeiten-Pfad" data-en="Daily structured 4-skill path" data-tr="4 yetenek gün gün planı" data-ar="خطة يومية للمهارات الـ 4" data-uk="Щоденний план 4 навичок">Daily structured 4-skill path</p>
         </div>
         <div class="step-milestone" onclick="openMaterial(2)" title="Step 4: Top 10 Grammar" tabindex="0" role="button">
           <div class="step-milestone-header">
             <span class="step-milestone-num">4</span>
             <span class="step-milestone-arrow">→</span>
           </div>
-          <h4 data-en="Grammar & Drills" data-tr="Dilbilgisi & Tekrar" data-ar="القواعد والتمارين" data-uk="Граматика та вправи">Grammar & Drills</h4>
-          <p data-en="High-yield B1 topics" data-tr="En kritik 10 B1 konusu" data-ar="أهم مواضيع قواعد B1" data-uk="Топ-10 найважливіших тем">High-yield B1 topics</p>
+          <h4 data-de="Grammatik & Übungen" data-en="Grammar & Drills" data-tr="Dilbilgisi & Tekrar" data-ar="القواعد والتمارين" data-uk="Граматика та вправи">Grammar & Drills</h4>
+          <p data-de="Prüfungsrelevante B1-Themen" data-en="High-yield B1 topics" data-tr="En kritik 10 B1 konusu" data-ar="أهم مواضيع قواعد B1" data-uk="Топ-10 найважливіших тем">High-yield B1 topics</p>
         </div>
         <div class="step-milestone" onclick="openMaterial(6)" title="Step 5: Final Mock Exam" tabindex="0" role="button">
           <div class="step-milestone-header">
             <span class="step-milestone-num">5</span>
             <span class="step-milestone-arrow">→</span>
           </div>
-          <h4 data-en="Final Mock Exam" data-tr="Final Deneme" data-ar="الامتحان التجريبي" data-uk="Фінальний іспит">Final Mock Exam</h4>
-          <p data-en="Realistic test simulation" data-tr="Gerçek sınav simülasyonu" data-ar="محاكاة حقيقية للامتحان" data-uk="Повна симуляція іспиту">Realistic test simulation</p>
+          <h4 data-de="Abschlusssimulation" data-en="Final Mock Exam" data-tr="Final Deneme" data-ar="الامتحان التجريبي" data-uk="Фінальний іспит">Final Mock Exam</h4>
+          <p data-de="Realitätsnahe Prüfungssimulation" data-en="Realistic test simulation" data-tr="Gerçek sınav simülasyonu" data-ar="محاكاة حقيقية للامتحان" data-uk="Повна симуляція іспиту">Realistic test simulation</p>
         </div>
       </div>
 
@@ -666,15 +660,15 @@
 
     <!-- Quick Practice: Interactive Sprachbausteine Diagnostic Quiz -->
     <div class="section" id="diagnostic" style="animation-delay:0.2s">
-      <div class="section-label" data-en="🔍 Quick Practice" data-tr="🔍 Hızlı Pratik" data-ar="🔍 تدريب سريع" data-uk="🔍 Швидка практика">🔍 Quick Practice</div>
-      <h2 data-en="Sprachbausteine Quiz" data-tr="Dil Yapıları Testi" data-ar="اختبار تراكيب اللغة (Sprachbausteine)" data-uk="Тест мовних структур (Sprachbausteine)">Sprachbausteine Quiz</h2>
-      <p data-en="Test yourself with 8 key telc B1 grammar questions — click the correct option to test your knowledge!" data-tr="8 kritik telc B1 dilbilgisi sorusuyla bilginizi ölçün — doğru seçeneğe tıklayın!" data-ar="اختبر نفسك مع 8 أسئلة مهمة في قواعد telc B1 — انقر على الخيار الصحيح!" data-uk="Перевірте себе на 8 ключових граматичних питаннях telc B1 — натисніть правильну відповідь!">Test yourself with 8 key telc B1 grammar questions — click the correct option to test your knowledge!</p>
+      <div data-de="🔍 Schnelle Übung" class="section-label" data-en="🔍 Quick Practice" data-tr="🔍 Hızlı Pratik" data-ar="🔍 تدريب سريع" data-uk="🔍 Швидка практика">🔍 Quick Practice</div>
+      <h2 data-de="Sprachbausteine-Quiz" data-en="Sprachbausteine Quiz" data-tr="Dil Yapıları Testi" data-ar="اختبار تراكيب اللغة (Sprachbausteine)" data-uk="Тест мовних структур (Sprachbausteine)">Sprachbausteine Quiz</h2>
+      <p data-de="Testen Sie sich mit 8 zentralen telc B1 Grammatikfragen — wählen Sie die richtige Antwort!" data-en="Test yourself with 8 key telc B1 grammar questions — click the correct option to test your knowledge!" data-tr="8 kritik telc B1 dilbilgisi sorusuyla bilginizi ölçün — doğru seçeneğe tıklayın!" data-ar="اختبر نفسك مع 8 أسئلة مهمة في قواعد telc B1 — انقر على الخيار الصحيح!" data-uk="Перевірте себе на 8 ключових граматичних питаннях telc B1 — натисніть правильну відповідь!">Test yourself with 8 key telc B1 grammar questions — click the correct option to test your knowledge!</p>
 
       <div class="quiz-score">
-        <div><div class="score-text" data-en="Your Score" data-tr="Puanınız" data-ar="نتيجتك" data-uk="Ваш результат">Your Score</div></div>
+        <div><div data-de="Ihr Ergebnis" class="score-text" data-en="Your Score" data-tr="Puanınız" data-ar="نتيجتك" data-uk="Ваш результат">Your Score</div></div>
         <div style="display:flex;align-items:center;gap:12px">
           <div class="score-num" id="quiz-score-display">0/8</div>
-          <button class="reset-btn" onclick="resetQuiz()" data-en="Reset" data-tr="Sıfırla" data-ar="إعادة ضبط" data-uk="Скинути">Reset</button>
+          <button data-de="Zurücksetzen" class="reset-btn" onclick="resetQuiz()" data-en="Reset" data-tr="Sıfırla" data-ar="إعادة ضبط" data-uk="Скинути">Reset</button>
         </div>
       </div>
       <div id="quiz-container">
@@ -684,25 +678,25 @@
 
     <!-- Quick Vocab Practice: Interactive Flashcards Widget -->
     <div class="section" id="flashcards" style="animation-delay:0.25s">
-      <div class="section-label" data-en="🗂️ Interactive Drill" data-tr="🗂️ İnteraktif Çalışma" data-ar="🗂️ تدريب تفاعلي" data-uk="🗂️ Інтерактивне тренування">🗂️ Interactive Drill</div>
-      <h2 data-en="Quick Vocab Practice" data-tr="Hızlı Kelime Pratiği" data-ar="ممارسة سريعة للمفردات" data-uk="Швидка практика слів">Quick Vocab Practice</h2>
-      <p data-en="Test your memory with 20 essential B1 verbs. Click the card to flip and check translation!" data-tr="20 temel B1 fiiliyle hafızanızı test edin. Çevirisini görmek için karta tıklayın!" data-ar="اختبر ذاكرتك مع 20 فعلاً أساسياً لمستوى B1. انقر على البطاقة لقلبها!" data-uk="Перевірте свою пам'ять на 20 важливих дієсловах B1. Натисніть на картку, щоб перевернути!">Test your memory with 20 essential B1 verbs. Click the card to flip and check translation!</p>
+      <div data-de="🗂️ Interaktives Training" class="section-label" data-en="🗂️ Interactive Drill" data-tr="🗂️ İnteraktif Çalışma" data-ar="🗂️ تدريب تفاعلي" data-uk="🗂️ Інтерактивне тренування">🗂️ Interactive Drill</div>
+      <h2 data-de="Schnelles Vokabeltraining" data-en="Quick Vocab Practice" data-tr="Hızlı Kelime Pratiği" data-ar="ممارسة سريعة للمفردات" data-uk="Швидка практика слів">Quick Vocab Practice</h2>
+      <p data-de="Prüfen Sie Ihr Gedächtnis mit 20 wichtigen B1-Verben. Klicken Sie zum Umdrehen und Übersetzungscheck!" data-en="Test your memory with 20 essential B1 verbs. Click the card to flip and check translation!" data-tr="20 temel B1 fiiliyle hafızanızı test edin. Çevirisini görmek için karta tıklayın!" data-ar="اختبر ذاكرتك مع 20 فعلاً أساسياً لمستوى B1. انقر على البطاقة لقلبها!" data-uk="Перевірте свою пам'ять на 20 важливих дієсловах B1. Натисніть на картку, щоб перевернути!">Test your memory with 20 essential B1 verbs. Click the card to flip and check translation!</p>
 
       <div class="flashcard-container">
         <div class="flashcard" id="flashcard" onclick="flipCard()" tabindex="0" role="button" aria-label="Flashcard - press enter or space to flip" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();flipCard();}">
           <div class="fc-face fc-front">
-            <div class="fc-hint" data-en="German" data-tr="Almanca" data-ar="الألمانية" data-uk="Німецька">German</div>
+            <div data-de="Deutsch" class="fc-hint" data-en="German" data-tr="Almanca" data-ar="الألمانية" data-uk="Німецька">German</div>
             <div class="fc-word" id="fc-de">arbeiten</div>
-            <div style="font-size:11px; color:var(--text-muted); position:absolute; bottom:16px;" data-en="(Click to flip)" data-tr="(Çevirmek için tıklayın)" data-ar="(انقر للقلب)" data-uk="(Натисніть, щоб перевернути)">(Click to flip)</div>
+            <div data-de="(Zum Umdrehen klicken)" style="font-size:11px; color:var(--text-muted); position:absolute; bottom:16px;" data-en="(Click to flip)" data-tr="(Çevirmek için tıklayın)" data-ar="(انقر للقلب)" data-uk="(Натисніть, щоб перевернути)">(Click to flip)</div>
           </div>
           <div class="fc-face fc-back">
-            <div class="fc-hint" data-en="Translation" data-tr="Çeviri" data-ar="الترجمة" data-uk="Переклад">Translation</div>
-            <div class="fc-word" id="fc-tr" data-en="to work" data-tr="çalışmak" data-ar="يعمل" data-uk="працювати">to work</div>
+            <div data-de="Übersetzung" class="fc-hint" data-en="Translation" data-tr="Çeviri" data-ar="الترجمة" data-uk="Переклад">Translation</div>
+            <div data-de="arbeiten" class="fc-word" id="fc-tr" data-en="to work" data-tr="çalışmak" data-ar="يعمل" data-uk="працювати">to work</div>
             <div class="fc-example" id="fc-ex">Ich arbeite jeden Tag von 8 bis 17 Uhr.</div>
           </div>
         </div>
         <div class="fc-controls" style="align-items: center;">
-          <button class="card-link" onclick="prevCard()">&larr; <span data-en="Prev" data-tr="Önceki" data-ar="السابق" data-uk="Попередня">Prev</span></button>
+          <button class="card-link" onclick="prevCard()">&larr; <span data-de="Zurück" data-en="Prev" data-tr="Önceki" data-ar="السابق" data-uk="Попередня">Prev</span></button>
           <div style="display:flex; gap:6px; margin:0 8px; flex-wrap:wrap; justify-content:center;">
             <button class="card-link" id="fc-btn-de" onclick="setLang('de')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/de.png" width="14" alt="DE" style="border-radius:2px;"> DE</button>
             <button class="card-link" id="fc-btn-en" onclick="setLang('en')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/us.png" width="14" alt="US" style="border-radius:2px;"> EN</button>
@@ -710,7 +704,7 @@
             <button class="card-link" id="fc-btn-ar" onclick="setLang('ar')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/sa.png" width="14" alt="AR" style="border-radius:2px;"> AR</button>
             <button class="card-link" id="fc-btn-uk" onclick="setLang('uk')" style="padding:6px 10px; font-size:12px; display:flex; align-items:center; gap:4px;"><img src="https://flagcdn.com/w20/ua.png" width="14" alt="UK" style="border-radius:2px;"> UK</button>
           </div>
-          <button class="card-link primary" onclick="nextCard()"><span data-en="Next Word →" data-tr="Sonraki Kelime →" data-ar="الكلمة التالية ←" data-uk="Наступне слово →">Next Word →</span></button>
+          <button class="card-link primary" onclick="nextCard()"><span data-de="Nächstes Wort →" data-en="Next Word →" data-tr="Sonraki Kelime →" data-ar="الكلمة التالية ←" data-uk="Наступне слово →">Next Word →</span></button>
         </div>
         <div style="margin-top:12px; font-size:12px; color:var(--text-muted); font-weight: 600;" id="fc-count">1 / 20</div>
       </div>
@@ -723,18 +717,18 @@
 
     <!-- Personalized Schreiben & Sprechen Suite (Sample Report, Live Grader & Simulator) -->
     <div class="section" id="schreiben-showcase-section" style="animation-delay:0.35s; margin-bottom: 40px;">
-      <div class="section-label" data-en="✍️ telc B1 Examiner Suite" data-tr="✍️ telc B1 Değerlendirme Paketi" data-ar="✍️ باقة فاحص telc B1" data-uk="✍️ Комплекс екзаменатора telc B1">✍️ telc B1 Examiner Suite</div>
+      <div data-de="✍️ telc B1 Prüfersuite" class="section-label" data-en="✍️ telc B1 Examiner Suite" data-tr="✍️ telc B1 Değerlendirme Paketi" data-ar="✍️ باقة فاحص telc B1" data-uk="✍️ Комплекс екзаменатора telc B1">✍️ telc B1 Examiner Suite</div>
       <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom:12px;">
         <div style="max-width: 640px;">
-          <h2 data-en="Writing & Speaking Examiner Suite" data-tr="Yazma ve Konuşma Değerlendirme Paketi" data-ar="باقة تقييم الكتابة والمحادثة" data-uk="Комплекс оцінювання письма та мовлення">Writing & Speaking Examiner Suite</h2>
-          <p data-en="Review official examiner report with rubrics, grade practice letters with AI, or simulate the Teil 3 oral exam." data-tr="Kriterli resmi sınav değerlendirme raporunu inceleyin, mektuplarınızı yapay zeka ile puanlayın veya Teil 3 sözlü sınav simülasyonunu deneyin." data-ar="راجع تقرير الفاحص الرسمي مع معايير التقييم، أو قم بتصحيح رسائلك بالذكاء الاصطناعي، أو حاكِ الامتحان الشفوي." data-uk="Перегляньте офіційний звіт екзаменатора з критеріями, оцінюйте листи за допомогою ШІ або тренуйте усний іспит.">Review official examiner report with rubrics, grade practice letters with AI, or simulate the Teil 3 oral exam.</p>
+          <h2 data-de="Schreib- & Sprechprüfer-Suite" data-en="Writing & Speaking Examiner Suite" data-tr="Yazma ve Konuşma Değerlendirme Paketi" data-ar="باقة تقييم الكتابة والمحادثة" data-uk="Комплекс оцінювання письма та мовлення">Writing & Speaking Examiner Suite</h2>
+          <p data-de="Prüfungsraster einsehen, Übungsbriefe mit KI bewerten oder die mündliche Prüfung simulieren." data-en="Review official examiner report with rubrics, grade practice letters with AI, or simulate the Teil 3 oral exam." data-tr="Kriterli resmi sınav değerlendirme raporunu inceleyin, mektuplarınızı yapay zeka ile puanlayın veya Teil 3 sözlü sınav simülasyonunu deneyin." data-ar="راجع تقرير الفاحص الرسمي مع معايير التقييم، أو قم بتصحيح رسائلك بالذكاء الاصطناعي، أو حاكِ الامتحان الشفوي." data-uk="Перегляньте офіційний звіт екзаменатора з критеріями, оцінюйте листи за допомогою ШІ або тренуйте усний іспит.">Review official examiner report with rubrics, grade practice letters with AI, or simulate the Teil 3 oral exam.</p>
         </div>
         <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
           <a href="sprechen.html" class="card-link" style="padding:10px 18px; font-size:14px; font-weight:700; border-radius:10px; display:inline-flex; align-items:center; gap:8px; text-decoration:none; background:linear-gradient(135deg,#2563eb,#1d4ed8); color:#fff; border:1px solid rgba(96,165,250,0.4); box-shadow:0 4px 14px rgba(37,99,235,0.3);">
-            <span>🎙️ <span data-en="Launch Voice Studio ↗" data-tr="Sesli Sınav Stüdyosu ↗" data-ar="فتح استوديو الصوت ↗" data-uk="Запустити голосову студію ↗">Launch Voice Studio ↗</span></span>
+            <span>🎙️ <span data-de="Sprechstudio öffnen ↗" data-en="Launch Voice Studio ↗" data-tr="Sesli Sınav Stüdyosu ↗" data-ar="فتح استوديو الصوت ↗" data-uk="Запустити голосову студію ↗">Launch Voice Studio ↗</span></span>
           </a>
           <button class="card-link primary" id="btn-toggle-showcase" onclick="toggleSchreibenShowcase()" style="padding:10px 20px; font-size:14px; font-weight:700; border-radius:10px; display:inline-flex; align-items:center; gap:8px;">
-            <span id="showcase-toggle-text" data-en="📝 Open Examiner Suite ▼" data-tr="📝 Değerlendirme Paketini Aç ▼" data-ar="📝 فتح باقة التقييم ▼" data-uk="📝 Відкрити комплекс оцінювання ▼">📝 Open Examiner Suite ▼</span>
+            <span data-de="📝 Prüfersuite öffnen ▼" id="showcase-toggle-text" data-en="📝 Open Examiner Suite ▼" data-tr="📝 Değerlendirme Paketini Aç ▼" data-ar="📝 فتح باقة التقييم ▼" data-uk="📝 Відкрити комплекс оцінювання ▼">📝 Open Examiner Suite ▼</span>
           </button>
         </div>
       </div>
@@ -747,7 +741,7 @@
 
     <!-- Personalized telc B1 Pass Predictor & Composite Score Calculator -->
     <div class="section" id="telc-b1-calculator-section" style="animation-delay:0.38s; margin-bottom: 40px;">
-      <div class="section-label" data-en="🎯 Exam Pass Predictor" data-tr="🎯 Sınav Not Hesaplayıcı" data-ar="🎯 حاسبة اجتياز الامتحان" data-uk="🎯 Калькулятор складання іспиту">🎯 Exam Pass Predictor</div>
+      <div data-de="🎯 Prüfungsprognose-Rechner" class="section-label" data-en="🎯 Exam Pass Predictor" data-tr="🎯 Sınav Not Hesaplayıcı" data-ar="🎯 حاسبة اجتياز الامتحان" data-uk="🎯 Калькулятор складання іспиту">🎯 Exam Pass Predictor</div>
       <div id="telc-calculator-container"></div>
     </div>
   </div><!-- End #track-view-b1 -->
@@ -821,16 +815,16 @@
 
     <!-- Dedicated On-Page Pricing & Exam Passes Section -->
     <div class="section" id="pricing-section" style="animation-delay:0.38s; margin-bottom: 40px;">
-      <div class="section-label" data-en="👑 Transparent, One-Time Investment" data-tr="👑 Şeffaf, Tek Seferlik Yatırım" data-ar="👑 استثمار شفاف لمرة واحدة" data-uk="👑 Прозора одноразова інвестиція">👑 Transparent, One-Time Investment</div>
+      <div data-de="👑 Transparente einmalige Investition" class="section-label" data-en="👑 Transparent, One-Time Investment" data-tr="👑 Şeffaf, Tek Seferlik Yatırım" data-ar="👑 استثمار شفاف لمرة واحدة" data-uk="👑 Прозора одноразова інвестиція">👑 Transparent, One-Time Investment</div>
       <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:16px;">
         <div style="max-width:680px;">
-          <h2 data-en="Exam Preparation Passes & AI Letter Grader" data-tr="Sınav Hazırlık Paketleri & Yapay Zeka Mektup Puanlama" data-ar="باقات التحضير للامتحان ومصحح الرسائل الذكي" data-uk="Абонементи підготовки до іспиту та оцінювання листів ШІ">Exam Preparation Passes & AI Letter Grader</h2>
-          <p data-en="No recurring subscriptions. No hidden charges. 30-day money-back guarantee with authentic telc B1 & BAMF naturalization preparation." data-tr="Otomatik yenilenen abonelik yok. Gizli ücret yok. Resmi telc B1 ve BAMF vatandaşlık hazırlığı için 30 günlük para iade garantisi." data-ar="بدون اشتراكات شهرية متكررة. بدون رسوم خفية. ضمان استرداد الأموال لمدة 30 يوماً مع تحضير رسمي لامتحانات telc B1 و BAMF." data-uk="Жодних щомісячних автоподовжень. Без прихованих платежів. 30-денна гарантія повернення коштів для підготовки до telc B1 та BAMF.">No recurring subscriptions. No hidden charges. 30-day money-back guarantee with authentic telc B1 & BAMF naturalization preparation.</p>
+          <h2 data-de="Prüfungspässe & KI-Briefkorrektur" data-en="Exam Preparation Passes & AI Letter Grader" data-tr="Sınav Hazırlık Paketleri & Yapay Zeka Mektup Puanlama" data-ar="باقات التحضير للامتحان ومصحح الرسائل الذكي" data-uk="Абонементи підготовки до іспиту та оцінювання листів ШІ">Exam Preparation Passes & AI Letter Grader</h2>
+          <p data-de="Keine Abonnements. Keine versteckten Kosten. 30-Tage-Geld-zurück-Garantie mit authentischer telc B1 & BAMF Vorbereitung." data-en="No recurring subscriptions. No hidden charges. 30-day money-back guarantee with authentic telc B1 & BAMF naturalization preparation." data-tr="Otomatik yenilenen abonelik yok. Gizli ücret yok. Resmi telc B1 ve BAMF vatandaşlık hazırlığı için 30 günlük para iade garantisi." data-ar="بدون اشتراكات شهرية متكررة. بدون رسوم خفية. ضمان استرداد الأموال لمدة 30 يوماً مع تحضير رسمي لامتحانات telc B1 و BAMF." data-uk="Жодних щомісячних автоподовжень. Без прихованих платежів. 30-денна гарантія повернення коштів для підготовки до telc B1 та BAMF.">No recurring subscriptions. No hidden charges. 30-day money-back guarantee with authentic telc B1 & BAMF naturalization preparation.</p>
         </div>
         <div class="voucher-input-bar" style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
           <input type="text" id="onpage-voucher-input" class="search-box" placeholder="Voucher / License Code (e.g. PRO2026)" style="max-width:240px; padding:8px 12px; font-size:12px; text-transform:uppercase;">
           <button type="button" class="btn-sm-goal" onclick="redeemAccessCode(document.getElementById('onpage-voucher-input').value)" style="padding:8px 14px; font-size:12px; font-weight:700; background:var(--accent-gold); color:#000; border:none; border-radius:8px; cursor:pointer;">
-            🎟️ <span data-en="Redeem Code" data-tr="Kuponu Kullan" data-ar="تفعيل الرمز" data-uk="Активувати код">Redeem Code</span>
+            🎟️ <span data-de="Code einlösen" data-en="Redeem Code" data-tr="Kuponu Kullan" data-ar="تفعيل الرمز" data-uk="Активувати код">Redeem Code</span>
           </button>
         </div>
       </div>
@@ -839,85 +833,85 @@
       <div class="pricing-tiers-grid">
         <!-- Tier 1: 100% Free Einbürgerungstest & Public Study -->
         <div class="pricing-tier-card free-tier">
-          <div class="tier-badge free-badge" data-en="100% Free Forever" data-tr="%100 Ücretsiz" data-ar="مجاني 100% دائماً" data-uk="100% Безкоштовно">100% Free Forever</div>
-          <h3 class="tier-name" data-en="BAMF Einbürgerungstest (LiD)" data-tr="BAMF Vatandaşlık Sınavı (LiD)" data-ar="امتحان التجنيس الألماني (LiD)" data-uk="Тест на громадянство (LiD)">BAMF Einbürgerungstest (LiD)</h3>
+          <div data-de="100 % dauerhaft kostenlos" class="tier-badge free-badge" data-en="100% Free Forever" data-tr="%100 Ücretsiz" data-ar="مجاني 100% دائماً" data-uk="100% Безкоштовно">100% Free Forever</div>
+          <h3 data-de="BAMF-Einbürgerungstest (LiD)" class="tier-name" data-en="BAMF Einbürgerungstest (LiD)" data-tr="BAMF Vatandaşlık Sınavı (LiD)" data-ar="امتحان التجنيس الألماني (LiD)" data-uk="Тест на громадянство (LiD)">BAMF Einbürgerungstest (LiD)</h3>
           <div class="tier-price">
             <span class="amount">€0</span>
-            <span class="period" data-en="/ Free Public Access" data-tr="/ Sınırsız Ücretsiz Erişim" data-ar="/ وصول مجاني دائم" data-uk="/ Безкоштовний доступ">/ Free Public Access</span>
+            <span data-de="/ Kostenloser öffentlicher Zugang" class="period" data-en="/ Free Public Access" data-tr="/ Sınırsız Ücretsiz Erişim" data-ar="/ وصول مجاني دائم" data-uk="/ Безкоштовний доступ">/ Free Public Access</span>
           </div>
-          <div class="tier-credits free-credits">⚡ <span data-en="All 310 BAMF Questions Included" data-tr="310 BAMF Sorusu Dahil" data-ar="جميع أسئلة BAMF الـ 310 مشمولة" data-uk="Усі 310 питань BAMF включено">All 310 BAMF Questions Included</span></div>
+          <div class="tier-credits free-credits">⚡ <span data-de="Alle 310 BAMF-Fragen enthalten" data-en="All 310 BAMF Questions Included" data-tr="310 BAMF Sorusu Dahil" data-ar="جميع أسئلة BAMF الـ 310 مشمولة" data-uk="Усі 310 питань BAMF включено">All 310 BAMF Questions Included</span></div>
           <ul class="tier-features">
-            <li data-en="✓ Official 300 General + 160 State Questions" data-tr="✓ Resmi 300 Genel + 160 Eyalet Sorusu" data-ar="✓ الأسئلة الرسمية 300 عامة + 160 لكل الولايات" data-uk="✓ Офіційні 300 загальних + 160 земельних питань">✓ Official 300 General + 160 State Questions</li>
-            <li data-en="✓ Authentic 33-Question Exam Simulator (60 min)" data-tr="✓ Resmi 33 Soruluk Sınav Simülatörü (60 dk)" data-ar="✓ محاكي الامتحان الرسمي 33 سؤالاً (60 دقيقة)" data-uk="✓ Офіційний симулятор іспиту на 33 питання">✓ Authentic 33-Question Exam Simulator (60 min)</li>
-            <li data-en="✓ Quad-Lingual Translations (DE, EN, TR, AR, UK)" data-tr="✓ 4 Dilde Anında Çeviriler (DE, EN, TR, AR, UK)" data-ar="✓ ترجمة بـ 4 لغات (DE, EN, TR, AR, UK)" data-uk="✓ 4-мовні переклади (DE, EN, TR, AR, UK)">✓ Quad-Lingual Translations (DE, EN, TR, AR, UK)</li>
-            <li data-en="✓ Audio Pronunciation & Offline PWA Mode" data-tr="✓ Sesli Okuma ve Çevrimdışı PWA Desteği" data-ar="✓ نطق صوتي ودعم التشغيل دون اتصال PWA" data-uk="✓ Озвучення та робота офлайн через PWA">✓ Audio Pronunciation & Offline PWA Mode</li>
-            <li data-en="✓ Fehlerheft Weak-Spot Review Deck" data-tr="✓ Kişisel Hata Defteri (Fehlerheft) Takibi" data-ar="✓ دفتر الأخطاء الشخصي (Fehlerheft)" data-uk="✓ Зошит помилок (Fehlerheft)">✓ Fehlerheft Weak-Spot Review Deck</li>
-            <li data-en="✓ 100% Free Forever — No Card Required" data-tr="✓ %100 Ücretsiz — Kredi Kartı Gerekmez" data-ar="✓ مجاني 100% للأبد — بدون أي بطاقة بنكية" data-uk="✓ 100% безкоштовно — без введення карти">✓ 100% Free Forever — No Card Required</li>
+            <li data-de="✓ Offizielle 300 allgemeine + 160 Bundeslandfragen" data-en="✓ Official 300 General + 160 State Questions" data-tr="✓ Resmi 300 Genel + 160 Eyalet Sorusu" data-ar="✓ الأسئلة الرسمية 300 عامة + 160 لكل الولايات" data-uk="✓ Офіційні 300 загальних + 160 земельних питань">✓ Official 300 General + 160 State Questions</li>
+            <li data-de="✓ Authentische 33-Fragen-Prüfungssimulation (60 Min.)" data-en="✓ Authentic 33-Question Exam Simulator (60 min)" data-tr="✓ Resmi 33 Soruluk Sınav Simülatörü (60 dk)" data-ar="✓ محاكي الامتحان الرسمي 33 سؤالاً (60 دقيقة)" data-uk="✓ Офіційний симулятор іспиту на 33 питання">✓ Authentic 33-Question Exam Simulator (60 min)</li>
+            <li data-de="✓ Viersprachige Übersetzungen (DE, EN, TR, AR, UK)" data-en="✓ Quad-Lingual Translations (DE, EN, TR, AR, UK)" data-tr="✓ 4 Dilde Anında Çeviriler (DE, EN, TR, AR, UK)" data-ar="✓ ترجمة بـ 4 لغات (DE, EN, TR, AR, UK)" data-uk="✓ 4-мовні переклади (DE, EN, TR, AR, UK)">✓ Quad-Lingual Translations (DE, EN, TR, AR, UK)</li>
+            <li data-de="✓ Sprachausgabe & Offline-PWA-Modus" data-en="✓ Audio Pronunciation & Offline PWA Mode" data-tr="✓ Sesli Okuma ve Çevrimdışı PWA Desteği" data-ar="✓ نطق صوتي ودعم التشغيل دون اتصال PWA" data-uk="✓ Озвучення та робота офлайн через PWA">✓ Audio Pronunciation & Offline PWA Mode</li>
+            <li data-de="✓ Fehlerheft-Wiederholungsdeck" data-en="✓ Fehlerheft Weak-Spot Review Deck" data-tr="✓ Kişisel Hata Defteri (Fehlerheft) Takibi" data-ar="✓ دفتر الأخطاء الشخصي (Fehlerheft)" data-uk="✓ Зошит помилок (Fehlerheft)">✓ Fehlerheft Weak-Spot Review Deck</li>
+            <li data-de="✓ 100 % dauerhaft kostenlos — keine Kreditkarte nötig" data-en="✓ 100% Free Forever — No Card Required" data-tr="✓ %100 Ücretsiz — Kredi Kartı Gerekmez" data-ar="✓ مجاني 100% للأبد — بدون أي بطاقة بنكية" data-uk="✓ 100% безкоштовно — без введення карти">✓ 100% Free Forever — No Card Required</li>
           </ul>
           <button class="tier-cta-btn free-cta-btn" onclick="navigateToSection('lid-trainer-section', 'lid')">
-            <span data-en="Practice Free Now →" data-tr="Hemen Ücretsiz Başla →" data-ar="ابدأ التدريب مجاناً الآن ←" data-uk="Почати безкоштовно →">Practice Free Now →</span>
+            <span data-de="Jetzt kostenlos üben →" data-en="Practice Free Now →" data-tr="Hemen Ücretsiz Başla →" data-ar="ابدأ التدريب مجاناً الآن ←" data-uk="Почати безкоштовно →">Practice Free Now →</span>
           </button>
         </div>
 
         <!-- Tier 2: Quick Diagnostic -->
         <div class="pricing-tier-card">
-          <div class="tier-badge" data-en="Low-Risk Trial" data-tr="Başlangıç" data-ar="تجربة سريعة" data-uk="Пробний старт">Low-Risk Trial</div>
-          <h3 class="tier-name" data-en="Quick Diagnostic" data-tr="Hızlı Teşhis Paketi" data-ar="باقة التقييم السريع" data-uk="Швидка діагностика">Quick Diagnostic</h3>
+          <div data-de="Risikoarmer Test" class="tier-badge" data-en="Low-Risk Trial" data-tr="Başlangıç" data-ar="تجربة سريعة" data-uk="Пробний старт">Low-Risk Trial</div>
+          <h3 data-de="Quick Diagnostic" class="tier-name" data-en="Quick Diagnostic" data-tr="Hızlı Teşhis Paketi" data-ar="باقة التقييم السريع" data-uk="Швидка діагностика">Quick Diagnostic</h3>
           <div class="tier-price">
             <span class="amount">€4.99</span>
-            <span class="period" data-en="/ Diagnostic Sprint" data-tr="/ Hızlı Deneme Paketi" data-ar="/ تجربة تقييم سريعة" data-uk="/ Швидкий пробний пакет">/ Diagnostic Sprint</span>
+            <span data-de="/ Diagnosesprint" class="period" data-en="/ Diagnostic Sprint" data-tr="/ Hızlı Deneme Paketi" data-ar="/ تجربة تقييم سريعة" data-uk="/ Швидкий пробний пакет">/ Diagnostic Sprint</span>
           </div>
-          <div class="tier-credits">⚡ <span data-en="3 AI Letter Grading Credits" data-tr="3 Yapay Zeka Mektup Puanlama Kredisi" data-ar="3 أرصدة لتقييم الرسائل بالذكاء الاصطناعي" data-uk="3 кредити оцінювання листів ШІ">3 AI Letter Grading Credits</span></div>
+          <div class="tier-credits">⚡ <span data-de="3 KI-Briefkorrektur-Guthaben" data-en="3 AI Letter Grading Credits" data-tr="3 Yapay Zeka Mektup Puanlama Kredisi" data-ar="3 أرصدة لتقييم الرسائل بالذكاء الاصطناعي" data-uk="3 кредити оцінювання листів ШІ">3 AI Letter Grading Credits</span></div>
           <ul class="tier-features">
-            <li data-en="✓ 3 Full AI Practice Letter Evaluations" data-tr="✓ 3 Tam Yapay Zeka Mektup Değerlendirmesi" data-ar="✓ 3 تقييمات كاملة للرسائل بالذكاء الاصطناعي" data-uk="✓ 3 повні перевірки листів штучним інтелектом">✓ 3 Full AI Practice Letter Evaluations</li>
-            <li data-en="✓ Official telc B1 (I + II + III × 3) Formula" data-tr="✓ Resmi telc B1 (I + II + III × 3) Formülü" data-ar="✓ معادلة telc B1 الرسمية (I + II + III × 3)" data-uk="✓ Офіційна формула telc B1 (I + II + III × 3)">✓ Official telc B1 (I + II + III × 3) Formula</li>
-            <li data-en="✓ 4 Leitpunkte Completion Check" data-tr="✓ 4 Leitpunkt Tamamlanma Kontrolü" data-ar="✓ التحقق من النقاط الإرشادية الأربع" data-uk="✓ Перевірка виконання 4 опорних пунктів">✓ 4 Leitpunkte Completion Check</li>
-            <li data-en="✓ Syntax & Word Order Breakdown" data-tr="✓ Sözdizimi ve Cümle Yapısı Analizi" data-ar="✓ تحليل بناء الجملة والترتيب النحوي" data-uk="✓ Аналіз порядку слів та синтаксису">✓ Syntax & Word Order Breakdown</li>
+            <li data-de="✓ 3 vollständige KI-Übungsbrief-Bewertungen" data-en="✓ 3 Full AI Practice Letter Evaluations" data-tr="✓ 3 Tam Yapay Zeka Mektup Değerlendirmesi" data-ar="✓ 3 تقييمات كاملة للرسائل بالذكاء الاصطناعي" data-uk="✓ 3 повні перевірки листів штучним інтелектом">✓ 3 Full AI Practice Letter Evaluations</li>
+            <li data-de="✓ Offizielle telc B1 (I + II + III × 3) Formel" data-en="✓ Official telc B1 (I + II + III × 3) Formula" data-tr="✓ Resmi telc B1 (I + II + III × 3) Formülü" data-ar="✓ معادلة telc B1 الرسمية (I + II + III × 3)" data-uk="✓ Офіційна формула telc B1 (I + II + III × 3)">✓ Official telc B1 (I + II + III × 3) Formula</li>
+            <li data-de="✓ Prüfung der 4 Leitpunkte" data-en="✓ 4 Leitpunkte Completion Check" data-tr="✓ 4 Leitpunkt Tamamlanma Kontrolü" data-ar="✓ التحقق من النقاط الإرشادية الأربع" data-uk="✓ Перевірка виконання 4 опорних пунктів">✓ 4 Leitpunkte Completion Check</li>
+            <li data-de="✓ Analyse von Syntax & Wortstellung" data-en="✓ Syntax & Word Order Breakdown" data-tr="✓ Sözdizimi ve Cümle Yapısı Analizi" data-ar="✓ تحليل بناء الجملة والترتيب النحوي" data-uk="✓ Аналіз порядку слів та синтаксису">✓ Syntax & Word Order Breakdown</li>
           </ul>
           <button class="tier-cta-btn" onclick="selectProPlan('diagnostic')">
-            <span data-en="Get 3 Letters for €4.99" data-tr="3 Mektup Al (€4.99)" data-ar="احصل على 3 رسائل بـ 4.99€" data-uk="Отримати 3 листи за €4.99">Get 3 Letters for €4.99</span>
+            <span data-de="3 Briefe für 4,99 € sichern" data-en="Get 3 Letters for €4.99" data-tr="3 Mektup Al (€4.99)" data-ar="احصل على 3 رسائل بـ 4.99€" data-uk="Отримати 3 листи за €4.99">Get 3 Letters for €4.99</span>
           </button>
         </div>
 
         <!-- Tier 3: 30-Day Exam Pass (Most Popular) -->
         <div class="pricing-tier-card featured">
-          <div class="tier-badge" data-en="Most Popular" data-tr="En Popüler" data-ar="الأكثر طلباً" data-uk="Найпопулярніший">Most Popular</div>
-          <h3 class="tier-name" data-en="30-Day Exam Pass" data-tr="30 Günlük Sınav Kartı" data-ar="اشتراك الامتحان 30 يوماً" data-uk="30-денний абонемент">30-Day Exam Pass</h3>
+          <div data-de="Am beliebtesten" class="tier-badge" data-en="Most Popular" data-tr="En Popüler" data-ar="الأكثر طلباً" data-uk="Найпопулярніший">Most Popular</div>
+          <h3 data-de="30-Tage Exam Pass" class="tier-name" data-en="30-Day Exam Pass" data-tr="30 Günlük Sınav Kartı" data-ar="اشتراك الامتحان 30 يوماً" data-uk="30-денний абонемент">30-Day Exam Pass</h3>
           <div class="tier-price">
             <span class="amount">€24</span>
-            <span class="period" data-en="/ 30-Day Intensive Pass" data-tr="/ 30 Günlük Yoğun Hazırlık" data-ar="/ اشتراك مكثف لمدة 30 يوماً" data-uk="/ Інтенсив на 30 днів">/ 30-Day Intensive Pass</span>
+            <span data-de="/ 30-Tage Intensivpass" class="period" data-en="/ 30-Day Intensive Pass" data-tr="/ 30 Günlük Yoğun Hazırlık" data-ar="/ اشتراك مكثف لمدة 30 يوماً" data-uk="/ Інтенсив на 30 днів">/ 30-Day Intensive Pass</span>
           </div>
-          <div class="tier-credits">⚡ <span data-en="Unlimited AI Letter Evaluations" data-tr="Sınırsız Yapay Zeka Mektup Değerlendirmesi" data-ar="تقييم رسائل غير محدود بالذكاء الاصطناعي" data-uk="Необмежені перевірки листів ШІ">Unlimited AI Letter Evaluations</span></div>
+          <div class="tier-credits">⚡ <span data-de="Unbegrenzte KI-Briefbewertungen" data-en="Unlimited AI Letter Evaluations" data-tr="Sınırsız Yapay Zeka Mektup Değerlendirmesi" data-ar="تقييم رسائل غير محدود بالذكاء الاصطناعي" data-uk="Необмежені перевірки листів ШІ">Unlimited AI Letter Evaluations</span></div>
           <ul class="tier-features">
-            <li data-en="✓ Official telc B1 (I + II + III × 3) Scoring" data-tr="✓ Resmi telc B1 (I + II + III × 3) Puanlama Sistemi" data-ar="✓ تقييم telc B1 الرسمي بمعادلة (I + II + III × 3)" data-uk="✓ Офіційна система оцінювання telc B1 (I + II + III × 3)">✓ Official telc B1 (I + II + III × 3) Scoring</li>
-            <li data-en="✓ Full 45/45 Model Letter Rewrites" data-tr="✓ 45/45 Tam Puanlık Model Mektup Yeniden Yazımı" data-ar="✓ إعادة صياغة نموذجية للرسالة بدرجة 45/45" data-uk="✓ Зразковий перепис листа на 45/45 балів">✓ Full 45/45 Model Letter Rewrites</li>
-            <li data-en="✓ 4 Leitpunkte Fulfillment Verification" data-tr="✓ 4 Leitpunkt Eksiksizlik Doğrulaması" data-ar="✓ التحقق من تغطية النقاط الإرشادية الأربع" data-uk="✓ Перевірка виконання wszystkich 4 опорних пунктів">✓ 4 Leitpunkte Fulfillment Verification</li>
-            <li data-en="✓ Line-by-line syntax & grammar breakdown" data-tr="✓ Satır satır cümle yapısı ve dilbilgisi analizi" data-ar="✓ تحليل تفصيلي سطر بسطر للقواعد وبناء الجملة" data-uk="✓ Порядковий розбір синтаксису та граматики">✓ Line-by-line syntax & grammar breakdown</li>
-            <li data-en="✓ Sprechen Oral Simulator & Fehlerheft Export" data-tr="✓ Konuşma Simülatörü ve Hata Defteri Dışa Aktarma" data-ar="✓ محاكي الشفوي وتصدير دفتر الأخطاء" data-uk="✓ Симулятор усного мовлення та експорт помилок">✓ Sprechen Oral Simulator & Fehlerheft Export</li>
+            <li data-de="✓ Offizielle telc B1 (I + II + III × 3) Bewertung" data-en="✓ Official telc B1 (I + II + III × 3) Scoring" data-tr="✓ Resmi telc B1 (I + II + III × 3) Puanlama Sistemi" data-ar="✓ تقييم telc B1 الرسمي بمعادلة (I + II + III × 3)" data-uk="✓ Офіційна система оцінювання telc B1 (I + II + III × 3)">✓ Official telc B1 (I + II + III × 3) Scoring</li>
+            <li data-de="✓ Vollständige 45/45 Modellbrief-Korrekturen" data-en="✓ Full 45/45 Model Letter Rewrites" data-tr="✓ 45/45 Tam Puanlık Model Mektup Yeniden Yazımı" data-ar="✓ إعادة صياغة نموذجية للرسالة بدرجة 45/45" data-uk="✓ Зразковий перепис листа на 45/45 балів">✓ Full 45/45 Model Letter Rewrites</li>
+            <li data-de="✓ Verifikation der 4 Leitpunkte" data-en="✓ 4 Leitpunkte Fulfillment Verification" data-tr="✓ 4 Leitpunkt Eksiksizlik Doğrulaması" data-ar="✓ التحقق من تغطية النقاط الإرشادية الأربع" data-uk="✓ Перевірка виконання wszystkich 4 опорних пунктів">✓ 4 Leitpunkte Fulfillment Verification</li>
+            <li data-de="✓ Zeile-für-Zeile Syntax- & Grammatikanalyse" data-en="✓ Line-by-line syntax & grammar breakdown" data-tr="✓ Satır satır cümle yapısı ve dilbilgisi analizi" data-ar="✓ تحليل تفصيلي سطر بسطر للقواعد وبناء الجملة" data-uk="✓ Порядковий розбір синтаксису та граматики">✓ Line-by-line syntax & grammar breakdown</li>
+            <li data-de="✓ Mündlicher Simulator & Fehlerheft-Export" data-en="✓ Sprechen Oral Simulator & Fehlerheft Export" data-tr="✓ Konuşma Simülatörü ve Hata Defteri Dışa Aktarma" data-ar="✓ محاكي الشفوي وتصدير دفتر الأخطاء" data-uk="✓ Симулятор усного мовлення та експорт помилок">✓ Sprechen Oral Simulator & Fehlerheft Export</li>
           </ul>
           <button class="tier-cta-btn featured" onclick="if(window.openLemonSqueezyCheckout){openLemonSqueezyCheckout('pass-30');}else{selectProPlan('standard');}">
-            <span data-en="Get 30-Day Pass (€24)" data-tr="30 Günlük Kartı Al (€24)" data-ar="احصل على اشتراك 30 يوماً (24€)" data-uk="Отримати абонемент на 30 днів (€24)">Get 30-Day Pass (€24)</span>
+            <span data-de="30-Tage-Pass sichern (24 €)" data-en="Get 30-Day Pass (€24)" data-tr="30 Günlük Kartı Al (€24)" data-ar="احصل على اشتراك 30 يوماً (24€)" data-uk="Отримати абонемент на 30 днів (€24)">Get 30-Day Pass (€24)</span>
           </button>
         </div>
 
         <!-- Tier 4: 90-Day All-Access Pass -->
         <div class="pricing-tier-card">
-          <div class="tier-badge" data-en="Best Value" data-tr="En Avantajlı" data-ar="أفضل قيمة" data-uk="Найкраща ціна">Best Value</div>
-          <h3 class="tier-name" data-en="90-Day Full Pass" data-tr="90 Günlük Tam Paket" data-ar="الباقة الشاملة 90 يوماً" data-uk="Повний абонемент 90 днів">90-Day Full Pass</h3>
+          <div data-de="Bester Wert" class="tier-badge" data-en="Best Value" data-tr="En Avantajlı" data-ar="أفضل قيمة" data-uk="Найкраща ціна">Best Value</div>
+          <h3 data-de="90-Tage Full Pass" class="tier-name" data-en="90-Day Full Pass" data-tr="90 Günlük Tam Paket" data-ar="الباقة الشاملة 90 يوماً" data-uk="Повний абонемент 90 днів">90-Day Full Pass</h3>
           <div class="tier-price">
             <span class="amount">€39</span>
-            <span class="period" data-en="/ 3-Month Full Access" data-tr="/ 3 Ay Boyunca Tam Erişim" data-ar="/ وصول كامل لمدة 3 أشهر" data-uk="/ Повний доступ на 3 місяці">/ 3-Month Full Access</span>
+            <span data-de="/ 3 Monate Vollzugriff" class="period" data-en="/ 3-Month Full Access" data-tr="/ 3 Ay Boyunca Tam Erişim" data-ar="/ وصول كامل لمدة 3 أشهر" data-uk="/ Повний доступ на 3 місяці">/ 3-Month Full Access</span>
           </div>
-          <div class="tier-credits">⚡ <span data-en="Unlimited Evaluations & Priority Queue" data-tr="Sınırsız Değerlendirme & Öncelikli Sıra" data-ar="تقييمات غير محدودة ومعالجة فورية" data-uk="Необмежені оцінки та пріоритетна черга">Unlimited Evaluations & Priority Queue</span></div>
+          <div class="tier-credits">⚡ <span data-de="Unbegrenzte Bewertungen & Prioritäts-Warteschlange" data-en="Unlimited Evaluations & Priority Queue" data-tr="Sınırsız Değerlendirme & Öncelikli Sıra" data-ar="تقييمات غير محدودة ومعالجة فورية" data-uk="Необмежені оцінки та пріоритетна черга">Unlimited Evaluations & Priority Queue</span></div>
           <ul class="tier-features">
-            <li data-en="✓ Everything in 30-Day Exam Pass" data-tr="✓ 30 Günlük Sınav Kartındaki her şey" data-ar="✓ جميع مزايا باقة الـ 30 يوماً" data-uk="✓ Усе, що в 30-денному абонементі">✓ Everything in 30-Day Exam Pass</li>
-            <li data-en="✓ 90 Days Unlimited AI Letter Grading" data-tr="✓ 90 Gün Boyunca Sınırsız AI Mektup Puanlama" data-ar="✓ 90 يوماً تصحيح رسائل غير محدود بالذكاء الاصطناعي" data-uk="✓ 90 днів безлімітної перевірки листів ШІ">✓ 90 Days Unlimited AI Letter Grading</li>
-            <li data-en="✓ B2 & C1 Decks Full Access" data-tr="✓ B2 ve C1 Destelerine Tam Erişim" data-ar="✓ وصول كامل لمجموعات B2 و C1" data-uk="✓ Повний доступ до колод B2 та C1">✓ B2 & C1 Decks Full Access</li>
-            <li data-en="✓ Multi-Scenario Exam Simulations" data-tr="✓ Çok Senaryolu Sınav Simülasyonları" data-ar="✓ محاكاة امتحانات بسيناريوهات متعددة" data-uk="✓ Багатосценарні симуляції іспиту">✓ Multi-Scenario Exam Simulations</li>
-            <li data-en="✓ Priority AI Processing Queue" data-tr="✓ Öncelikli Yapay Zeka Sırası" data-ar="✓ معالجة سريعة ذات أولوية بالذكاء الاصطناعي" data-uk="✓ Пріоритетна черга обробки запитів">✓ Priority AI Processing Queue</li>
+            <li data-de="✓ Alles aus dem 30-Tage Exam Pass" data-en="✓ Everything in 30-Day Exam Pass" data-tr="✓ 30 Günlük Sınav Kartındaki her şey" data-ar="✓ جميع مزايا باقة الـ 30 يوماً" data-uk="✓ Усе, що в 30-денному абонементі">✓ Everything in 30-Day Exam Pass</li>
+            <li data-de="✓ 90 Tage unbegrenzte KI-Briefkorrektur" data-en="✓ 90 Days Unlimited AI Letter Grading" data-tr="✓ 90 Gün Boyunca Sınırsız AI Mektup Puanlama" data-ar="✓ 90 يوماً تصحيح رسائل غير محدود بالذكاء الاصطناعي" data-uk="✓ 90 днів безлімітної перевірки листів ШІ">✓ 90 Days Unlimited AI Letter Grading</li>
+            <li data-de="✓ Vollzugriff auf B2- & C1-Decks" data-en="✓ B2 & C1 Decks Full Access" data-tr="✓ B2 ve C1 Destelerine Tam Erişim" data-ar="✓ وصول كامل لمجموعات B2 و C1" data-uk="✓ Повний доступ до колод B2 та C1">✓ B2 & C1 Decks Full Access</li>
+            <li data-de="✓ Mehrere Prüfungsszenarien" data-en="✓ Multi-Scenario Exam Simulations" data-tr="✓ Çok Senaryolu Sınav Simülasyonları" data-ar="✓ محاكاة امتحانات بسيناريوهات متعددة" data-uk="✓ Багатосценарні симуляції іспиту">✓ Multi-Scenario Exam Simulations</li>
+            <li data-de="✓ Prioritäre KI-Bearbeitungsschlange" data-en="✓ Priority AI Processing Queue" data-tr="✓ Öncelikli Yapay Zeka Sırası" data-ar="✓ معالجة سريعة ذات أولوية بالذكاء الاصطناعي" data-uk="✓ Пріоритетна черга обробки запитів">✓ Priority AI Processing Queue</li>
           </ul>
           <button class="tier-cta-btn" onclick="if(window.openLemonSqueezyCheckout){openLemonSqueezyCheckout('pass-90');}else{selectProPlan('extended');}">
-            <span data-en="Get 90-Day Pass (€39)" data-tr="90 Günlük Paketi Al (€39)" data-ar="احصل على اشتراك 90 يوماً (39€)" data-uk="Отримати абонемент на 90 днів (€39)">Get 90-Day Pass (€39)</span>
+            <span data-de="90-Tage-Pass sichern (39 €)" data-en="Get 90-Day Pass (€39)" data-tr="90 Günlük Paketi Al (€39)" data-ar="احصل على اشتراك 90 يوماً (39€)" data-uk="Отримати абонемент на 90 днів (€39)">Get 90-Day Pass (€39)</span>
           </button>
         </div>
       </div>
@@ -946,9 +940,9 @@
 
     <!-- Social Proof & Verified Student Results -->
     <div class="section" id="student-testimonials-section" style="animation-delay:0.4s; margin-bottom: 40px;">
-      <div class="section-label" data-en="🌟 Student Success Stories" data-tr="🌟 Başarı Hikayeleri" data-ar="🌟 تجارب وقصص نجاح الطلاب" data-uk="🌟 Історії успіху студентів">🌟 Student Success Stories</div>
-      <h2 data-en="Proven telc B1 & BAMF Test Results" data-tr="Kanıtlanmış telc B1 ve BAMF Sınav Sonuçları" data-ar="نتائج مثبتة في امتحانات telc B1 و BAMF" data-uk="Підтверджені результати telc B1 та BAMF">Proven telc B1 & BAMF Test Results</h2>
-      <p data-en="Hear from learners who passed their German B1 certification and naturalization tests with DeutschLernen." data-tr="DeutschLernen ile Almanca B1 sertifikasını ve vatandaşlık sınavını geçen öğrencilerin deneyimlerini okuyun." data-ar="اقرأ تجارب المتعلمين الذين اجتازوا شهادة B1 واختبارات الجنسية الألمانية عبر DeutschLernen." data-uk="Дізнайтеся відгуки студентів, які успішно склали іспити B1 та тест на громадянство з DeutschLernen.">Hear from learners who passed their German B1 certification and naturalization tests with DeutschLernen.</p>
+      <div data-de="🌟 Erfolgsberichte unserer Lerner" class="section-label" data-en="🌟 Student Success Stories" data-tr="🌟 Başarı Hikayeleri" data-ar="🌟 تجارب وقصص نجاح الطلاب" data-uk="🌟 Історії успіху студентів">🌟 Student Success Stories</div>
+      <h2 data-de="Nachgewiesene telc B1 & BAMF Prüfungserfolge" data-en="Proven telc B1 & BAMF Test Results" data-tr="Kanıtlanmış telc B1 ve BAMF Sınav Sonuçları" data-ar="نتائج مثبتة في امتحانات telc B1 و BAMF" data-uk="Підтверджені результати telc B1 та BAMF">Proven telc B1 & BAMF Test Results</h2>
+      <p data-de="Erfahren Sie von Lernenden, die ihr B1-Zertifikat und den Einbürgerungstest mit DeutschLernen bestanden haben." data-en="Hear from learners who passed their German B1 certification and naturalization tests with DeutschLernen." data-tr="DeutschLernen ile Almanca B1 sertifikasını ve vatandaşlık sınavını geçen öğrencilerin deneyimlerini okuyun." data-ar="اقرأ تجارب المتعلمين الذين اجتازوا شهادة B1 واختبارات الجنسية الألمانية عبر DeutschLernen." data-uk="Дізнайтеся відгуки студентів, які успішно склали іспити B1 та тест на громадянство з DeutschLernen.">Hear from learners who passed their German B1 certification and naturalization tests with DeutschLernen.</p>
 
       <div class="testimonials-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px; margin-top:20px;">
         <div class="testimonial-card" style="background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:22px; display:flex; flex-direction:column; justify-content:space-between;">
@@ -957,7 +951,7 @@
               <span style="font-size:14px; font-weight:800; color:var(--text-primary);">Aylin K.</span>
               <span style="background:rgba(34,197,94,0.15); color:#22c55e; font-size:11px; font-weight:800; padding:2px 8px; border-radius:8px;">282 / 300 pts</span>
             </div>
-            <p style="font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;" data-en="&ldquo;Writing was my biggest fear. The AI letter evaluator caught my inversion and connector errors immediately. Got 42/45 in Schreiben!&rdquo;" data-tr="&ldquo;Yazma bölümü en çok korktuğum kısımdı. Yapay zeka mektup analizcisi fiil sıralaması ve bağlaç hatalarımı anında yakaladı. Yazmadan 42/45 aldım!&rdquo;" data-ar="&ldquo;كانت الكتابة أكبر مخاوفي. التقييم الفوري كشف أخطاء ترتيب الأفعال والروابط فوراً. حصلت على 42/45 في جزء التعبير الكتابي!&rdquo;" data-uk="&ldquo;Лист був моїм найбільшим страхом. ШІ-оцінювач одразу помітив мої помилки в порядку слів і сполучниках. Отримала 42/45 за письмо!&rdquo;">&ldquo;Writing was my biggest fear. The AI letter evaluator caught my inversion and connector errors immediately. Got 42/45 in Schreiben!&rdquo;</p>
+            <p data-de="&ldquo;Schreiben war meine größte Sorge. Der KI-Briefkorrektor hat meine Inversions- und Konnektorenfehler sofort erkannt. 42/45 im Prüfungsteil Schreiben erreicht!&rdquo;" style="font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;" data-en="&ldquo;Writing was my biggest fear. The AI letter evaluator caught my inversion and connector errors immediately. Got 42/45 in Schreiben!&rdquo;" data-tr="&ldquo;Yazma bölümü en çok korktuğum kısımdı. Yapay zeka mektup analizcisi fiil sıralaması ve bağlaç hatalarımı anında yakaladı. Yazmadan 42/45 aldım!&rdquo;" data-ar="&ldquo;كانت الكتابة أكبر مخاوفي. التقييم الفوري كشف أخطاء ترتيب الأفعال والروابط فوراً. حصلت على 42/45 في جزء التعبير الكتابي!&rdquo;" data-uk="&ldquo;Лист був моїм найбільшим страхом. ШІ-оцінювач одразу помітив мої помилки в порядку слів і сполучниках. Отримала 42/45 за письмо!&rdquo;">&ldquo;Writing was my biggest fear. The AI letter evaluator caught my inversion and connector errors immediately. Got 42/45 in Schreiben!&rdquo;</p>
           </div>
           <div style="font-size:11px; color:var(--text-muted); display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border); padding-top:10px;">
             <span>📍 Frankfurt a.M. &bull; telc B1</span>
@@ -971,7 +965,7 @@
               <span style="font-size:14px; font-weight:800; color:var(--text-primary);">Mohammad A.</span>
               <span style="background:rgba(34,197,94,0.15); color:#22c55e; font-size:11px; font-weight:800; padding:2px 8px; border-radius:8px;">33 / 33 (100%)</span>
             </div>
-            <p style="font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;" data-en="&ldquo;Studied all 310 BAMF LiD citizenship questions with Arabic explanations. Passed on my first attempt with full score!&rdquo;" data-tr="&ldquo;310 resmi BAMF vatandaşlık sorusunun tamamını çalıştım. İlk girişimde 33'te 33 tam puanla sınavı geçtim!&rdquo;" data-ar="&ldquo;تدربت على جميع أسئلة BAMF الـ 310 مع الشرح العربي. اجتزت امتحان التجنيس من المرة الأولى بنتيجة كاملة 33 من 33!&rdquo;" data-uk="&ldquo;Опрацював усі 310 офіційних питань BAMF. Склав тест на громадянство з першої спроби з результатом 33 із 33!&rdquo;">&ldquo;Studied all 310 BAMF LiD citizenship questions with Arabic explanations. Passed on my first attempt with full score!&rdquo;</p>
+            <p data-de="&ldquo;Habe alle 310 BAMF LiD-Einbürgerungsfragen mit arabischen Erklärungen gelernt. Beim ersten Versuch mit voller Punktzahl bestanden!&rdquo;" style="font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;" data-en="&ldquo;Studied all 310 BAMF LiD citizenship questions with Arabic explanations. Passed on my first attempt with full score!&rdquo;" data-tr="&ldquo;310 resmi BAMF vatandaşlık sorusunun tamamını çalıştım. İlk girişimde 33'te 33 tam puanla sınavı geçtim!&rdquo;" data-ar="&ldquo;تدربت على جميع أسئلة BAMF الـ 310 مع الشرح العربي. اجتزت امتحان التجنيس من المرة الأولى بنتيجة كاملة 33 من 33!&rdquo;" data-uk="&ldquo;Опрацював усі 310 офіційних питань BAMF. Склав тест на громадянство з першої спроби з результатом 33 із 33!&rdquo;">&ldquo;Studied all 310 BAMF LiD citizenship questions with Arabic explanations. Passed on my first attempt with full score!&rdquo;</p>
           </div>
           <div style="font-size:11px; color:var(--text-muted); display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border); padding-top:10px;">
             <span>📍 Berlin &bull; LiD Citizenship</span>
@@ -985,7 +979,7 @@
               <span style="font-size:14px; font-weight:800; color:var(--text-primary);">Olena S.</span>
               <span style="background:rgba(34,197,94,0.15); color:#22c55e; font-size:11px; font-weight:800; padding:2px 8px; border-radius:8px;">265 / 300 pts</span>
             </div>
-            <p style="font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;" data-en="&ldquo;The bilingual Ukrainian-German vocabulary trainer and 30-day curriculum gave me structure. Practiced on the S-Bahn every morning offline.&rdquo;" data-tr="&ldquo;Ukraynaca-Almanca kelime antrenörü ve 30 günlük çalışma planı bana müthiş bir disiplin sağladı. Her sabah metroda çevrimdışı çalıştım.&rdquo;" data-ar="&ldquo;مدرب المفردات والمنهج المنظم لخطة الـ 30 يوماً وفرا لي خطة واضحة وممتازة. كنت أتدرب بدون إنترنت في القطار يومياً.&rdquo;" data-uk="&ldquo;Двомовний тренажер слів та 30-денний план дали чітку систему. Тренувалася в транспорті щоранку повністю офлайн.&rdquo;">&ldquo;The bilingual Ukrainian-German vocabulary trainer and 30-day curriculum gave me structure. Practiced on the S-Bahn every morning offline.&rdquo;</p>
+            <p data-de="&ldquo;Der zweisprachige Ukrainisch-Deutsch-Vokabeltrainer und der 30-Tage-Lehrplan gaben mir Struktur. Jeden Morgen offline in der S-Bahn geübt.&rdquo;" style="font-size:13px; color:var(--text-secondary); line-height:1.6; margin-bottom:14px;" data-en="&ldquo;The bilingual Ukrainian-German vocabulary trainer and 30-day curriculum gave me structure. Practiced on the S-Bahn every morning offline.&rdquo;" data-tr="&ldquo;Ukraynaca-Almanca kelime antrenörü ve 30 günlük çalışma planı bana müthiş bir disiplin sağladı. Her sabah metroda çevrimdışı çalıştım.&rdquo;" data-ar="&ldquo;مدرب المفردات والمنهج المنظم لخطة الـ 30 يوماً وفرا لي خطة واضحة وممتازة. كنت أتدرب بدون إنترنت في القطار يومياً.&rdquo;" data-uk="&ldquo;Двомовний тренажер слів та 30-денний план дали чітку систему. Тренувалася в транспорті щоранку повністю офлайн.&rdquo;">&ldquo;The bilingual Ukrainian-German vocabulary trainer and 30-day curriculum gave me structure. Practiced on the S-Bahn every morning offline.&rdquo;</p>
           </div>
           <div style="font-size:11px; color:var(--text-muted); display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border); padding-top:10px;">
             <span>📍 München &bull; telc B1</span>
@@ -997,58 +991,58 @@
 
     <!-- Frequently Asked Questions (FAQ) Section -->
     <div class="section" id="faq-section" style="animation-delay:0.45s; margin-bottom: 40px;">
-      <div class="section-label" data-en="❓ Common Questions" data-tr="❓ Sıkça Sorulanlar" data-ar="❓ الأسئلة الشائعة" data-uk="❓ Поширені запитання">❓ Common Questions</div>
-      <h2 data-en="Frequently Asked Questions" data-tr="Sıkça Sorulan Sorular" data-ar="الأسئلة الأكثر شيوعاً" data-uk="Поширені запитання">Frequently Asked Questions</h2>
-      <p data-en="Everything you need to know about our exam sprint curriculum, AI letter grader, pricing, and offline access." data-tr="Sınav hazırlık müfredatı, yapay zeka mektup değerlendiricisi, paketler ve çevrimdışı erişim hakkında tüm merak edilenler." data-ar="كل ما تحتاج معرفته حول خطة الامتحان، مصحح الرسائل الذكي، الباقات والاستخدام بدون إنترنت." data-uk="Усе, що вам потрібно знати про підготовку, оцінювання листів ШІ, тарифи та офлайн-доступ.">Everything you need to know about our exam sprint curriculum, AI letter grader, pricing, and offline access.</p>
+      <div data-de="❓ Häufige Fragen" class="section-label" data-en="❓ Common Questions" data-tr="❓ Sıkça Sorulanlar" data-ar="❓ الأسئلة الشائعة" data-uk="❓ Поширені запитання">❓ Common Questions</div>
+      <h2 data-de="Häufig gestellte Fragen" data-en="Frequently Asked Questions" data-tr="Sıkça Sorulan Sorular" data-ar="الأسئلة الأكثر شيوعاً" data-uk="Поширені запитання">Frequently Asked Questions</h2>
+      <p data-de="Alles, was Sie über unseren Prüfungssprint-Lehrplan, die KI-Briefkorrektur, Preise und den Offline-Zugang wissen müssen." data-en="Everything you need to know about our exam sprint curriculum, AI letter grader, pricing, and offline access." data-tr="Sınav hazırlık müfredatı, yapay zeka mektup değerlendiricisi, paketler ve çevrimdışı erişim hakkında tüm merak edilenler." data-ar="كل ما تحتاج معرفته حول خطة الامتحان، مصحح الرسائل الذكي، الباقات والاستخدام بدون إنترنت." data-uk="Усе, що вам потрібно знати про підготовку, оцінювання листів ШІ, тарифи та офлайн-доступ.">Everything you need to know about our exam sprint curriculum, AI letter grader, pricing, and offline access.</p>
 
       <div class="faq-accordion" style="display:flex; flex-direction:column; gap:12px; margin-top:20px;">
         <details class="faq-item" style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:16px 20px;">
           <summary class="faq-summary" style="font-weight:700; font-size:15px; color:var(--text-primary); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
-            <span data-en="Is DeutschLernen officially affiliated with telc gGmbH or BAMF?" data-tr="DeutschLernen resmi olarak telc gGmbH veya BAMF ile bağlantılı mı?" data-ar="هل منصة DeutschLernen تابعة رسمياً لـ telc gGmbH أو BAMF؟" data-uk="Чи пов'язана DeutschLernen офіційно з telc gGmbH або BAMF?">Is DeutschLernen officially affiliated with telc gGmbH or BAMF?</span>
+            <span data-de="Ist DeutschLernen offiziell mit der telc gGmbH oder dem BAMF verbunden?" data-en="Is DeutschLernen officially affiliated with telc gGmbH or BAMF?" data-tr="DeutschLernen resmi olarak telc gGmbH veya BAMF ile bağlantılı mı?" data-ar="هل منصة DeutschLernen تابعة رسمياً لـ telc gGmbH أو BAMF؟" data-uk="Чи пов'язана DeutschLernen офіційно з telc gGmbH або BAMF?">Is DeutschLernen officially affiliated with telc gGmbH or BAMF?</span>
             <span class="faq-chevron" style="color:var(--accent-gold); font-size:18px;">+</span>
           </summary>
           <div class="faq-answer" style="margin-top:12px; font-size:13px; color:var(--text-secondary); line-height:1.7;">
-            <p data-en="DeutschLernen is an independent exam preparation platform. We strictly adhere to the official telc Deutsch B1 certification blueprint (180/300 passing threshold, 3-criteria letter rubric) and the official 310 BAMF question catalogue for Leben in Deutschland (LiD / Einbürgerungstest). We are not endorsed by or affiliated with telc gGmbH or Goethe-Institut." data-tr="DeutschLernen bağımsız bir sınav hazırlık platformudur. Resmi telc Deutsch B1 sınav yönergesine (180/300 geçme barajı, 3 kriterli mektup puanlaması) ve Leben in Deutschland (LiD) sınavı için resmi 310 BAMF soru kataloğuna birebir sadık kalınarak geliştirilmiştir. telc gGmbH veya Goethe-Institut ile resmi bir ortaklığı yoktur." data-ar="DeutschLernen هي منصة مستقلة للتحضير للامتحانات. نلتزم بدقة بالمعايير الرسمية لامتحان telc Deutsch B1 (درجة النجاح 180/300، تقييم الرسائل بالمعايير الثلاثة) ودليل أسئلة BAMF الـ 310 الرسمي لاختبار الحياة في ألمانيا (LiD). المنصة غير تابعة لـ telc gGmbH أو معهد جوته." data-uk="DeutschLernen — це незалежна навчальна платформа. Ми суворо дотримуємося офіційного регламенту telc Deutsch B1 (поріг 180/300, 3 критерії оцінювання листів) та офіційного каталогу з 310 питань BAMF для тесту Leben in Deutschland (LiD). Ми не афілійовані з telc gGmbH чи Goethe-Institut.">DeutschLernen is an independent exam preparation platform. We strictly adhere to the official telc Deutsch B1 certification blueprint (180/300 passing threshold, 3-criteria letter rubric) and the official 310 BAMF question catalogue for Leben in Deutschland (LiD / Einbürgerungstest). We are not endorsed by or affiliated with telc gGmbH or Goethe-Institut.</p>
+            <p data-de="DeutschLernen ist eine unabhängige Prüfungsvorbereitungsplattform. Wir orientieren uns streng an den offiziellen Richtlinien für telc Deutsch B1 (180/300 Punkte Bestehensgrenze, 3-Kriterien-Briefbewertung) und dem offiziellen 310-Fragen-Katalog des BAMF für Leben in Deutschland (LiD / Einbürgerungstest). Es besteht keine Verbindung zu telc gGmbH oder dem Goethe-Institut." data-en="DeutschLernen is an independent exam preparation platform. We strictly adhere to the official telc Deutsch B1 certification blueprint (180/300 passing threshold, 3-criteria letter rubric) and the official 310 BAMF question catalogue for Leben in Deutschland (LiD / Einbürgerungstest). We are not endorsed by or affiliated with telc gGmbH or Goethe-Institut." data-tr="DeutschLernen bağımsız bir sınav hazırlık platformudur. Resmi telc Deutsch B1 sınav yönergesine (180/300 geçme barajı, 3 kriterli mektup puanlaması) ve Leben in Deutschland (LiD) sınavı için resmi 310 BAMF soru kataloğuna birebir sadık kalınarak geliştirilmiştir. telc gGmbH veya Goethe-Institut ile resmi bir ortaklığı yoktur." data-ar="DeutschLernen هي منصة مستقلة للتحضير للامتحانات. نلتزم بدقة بالمعايير الرسمية لامتحان telc Deutsch B1 (درجة النجاح 180/300، تقييم الرسائل بالمعايير الثلاثة) ودليل أسئلة BAMF الـ 310 الرسمي لاختبار الحياة في ألمانيا (LiD). المنصة غير تابعة لـ telc gGmbH أو معهد جوته." data-uk="DeutschLernen — це незалежна навчальна платформа. Ми суворо дотримуємося офіційного регламенту telc Deutsch B1 (поріг 180/300, 3 критерії оцінювання листів) та офіційного каталогу з 310 питань BAMF для тесту Leben in Deutschland (LiD). Ми не афілійовані з telc gGmbH чи Goethe-Institut.">DeutschLernen is an independent exam preparation platform. We strictly adhere to the official telc Deutsch B1 certification blueprint (180/300 passing threshold, 3-criteria letter rubric) and the official 310 BAMF question catalogue for Leben in Deutschland (LiD / Einbürgerungstest). We are not endorsed by or affiliated with telc gGmbH or Goethe-Institut.</p>
           </div>
         </details>
 
         <details class="faq-item" style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:16px 20px;">
           <summary class="faq-summary" style="font-weight:700; font-size:15px; color:var(--text-primary); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
-            <span data-en="How does the AI Letter Grader score practice submissions?" data-tr="Yapay Zeka Mektup Değerlendiricisi deneme mektuplarını nasıl puanlar?" data-ar="كيف يقوم مصحح الرسائل بالذكاء الاصطناعي بتقييم رسائل التدريب؟" data-uk="Як ШІ-оцінювач оцінює тренувальні листи?">How does the AI Letter Grader score practice submissions?</span>
+            <span data-de="Wie bewertet der KI-Briefkorrektor eingereichte Übungsbriefe?" data-en="How does the AI Letter Grader score practice submissions?" data-tr="Yapay Zeka Mektup Değerlendiricisi deneme mektuplarını nasıl puanlar?" data-ar="كيف يقوم مصحح الرسائل بالذكاء الاصطناعي بتقييم رسائل التدريب؟" data-uk="Як ШІ-оцінювач оцінює тренувальні листи?">How does the AI Letter Grader score practice submissions?</span>
             <span class="faq-chevron" style="color:var(--accent-gold); font-size:18px;">+</span>
           </summary>
           <div class="faq-answer" style="margin-top:12px; font-size:13px; color:var(--text-secondary); line-height:1.7;">
-            <p data-en="The evaluator calculates scores using the authentic telc B1 formula: (Criterion I: Task Content + Criterion II: Communicative Register + Criterion III: Formal Grammar/Syntax) × 3 = Final Score / 45 points. It verifies fulfillment of all 4 required Leitpunkte and honors telc's 'Primat der Verständlichkeit' (Priority of Comprehensibility)." data-tr="Değerlendirici, resmi telc B1 formülünü kullanır: (Kriter I: Görev İçeriği + Kriter II: İletişimsel Yapı + Kriter III: Dilbilgisi ve Sözdizimi) × 3 = Toplam Puan / 45. Zorunlu 4 Leitpunkt'un tamamlanmasını denetler ve telc'in 'Anlaşılabilirlik Önceliği' ilkesine göre puanlama yapar." data-ar="يقوم المصحح بحساب الدرجات وفق معادلة telc B1 المعتمدة: (المعيار الأول: استيفاء المهمة + المعيار الثاني: الأسلوب والروابط + المعيار الثالث: القواعد اللغوية) × 3 = النتيجة من 45 نقطة. كما يتحقق من النقاط الإرشادية الأربع ومبدأ 'أولوية الفهم'." data-uk="Оцінювач розраховує бали за офіційною формулою telc B1: (Критерій I: Зміст + Критерій II: Стиль та зв'язність + Критерій III: Граматика) × 3 = Підсумковий бал із 45. Перевіряє всі 4 обов'язкові опорні пункти (Leitpunkte).">The evaluator calculates scores using the authentic telc B1 formula: (Criterion I: Task Content + Criterion II: Communicative Register + Criterion III: Formal Grammar/Syntax) × 3 = Final Score / 45 points. It verifies fulfillment of all 4 required Leitpunkte and honors telc's 'Primat der Verständlichkeit' (Priority of Comprehensibility).</p>
+            <p data-de="Der Bewerter berechnet die Punktzahl nach der offiziellen telc B1 Formel: (Kriterium I: Aufgabenbewältigung + Kriterium II: Kommunikative Gestaltung + Kriterium III: Formale Richtigkeit) × 3 = Gesamtergebnis / 45 Punkte. Es wird die Erfüllung aller 4 Leitpunkte und das 'Primat der Verständlichkeit' berücksichtigt." data-en="The evaluator calculates scores using the authentic telc B1 formula: (Criterion I: Task Content + Criterion II: Communicative Register + Criterion III: Formal Grammar/Syntax) × 3 = Final Score / 45 points. It verifies fulfillment of all 4 required Leitpunkte and honors telc's 'Primat der Verständlichkeit' (Priority of Comprehensibility)." data-tr="Değerlendirici, resmi telc B1 formülünü kullanır: (Kriter I: Görev İçeriği + Kriter II: İletişimsel Yapı + Kriter III: Dilbilgisi ve Sözdizimi) × 3 = Toplam Puan / 45. Zorunlu 4 Leitpunkt'un tamamlanmasını denetler ve telc'in 'Anlaşılabilirlik Önceliği' ilkesine göre puanlama yapar." data-ar="يقوم المصحح بحساب الدرجات وفق معادلة telc B1 المعتمدة: (المعيار الأول: استيفاء المهمة + المعيار الثاني: الأسلوب والروابط + المعيار الثالث: القواعد اللغوية) × 3 = النتيجة من 45 نقطة. كما يتحقق من النقاط الإرشادية الأربع ومبدأ 'أولوية الفهم'." data-uk="Оцінювач розраховує бали за офіційною формулою telc B1: (Критерій I: Зміст + Критерій II: Стиль та зв'язність + Критерій III: Граматика) × 3 = Підсумковий бал із 45. Перевіряє всі 4 обов'язкові опорні пункти (Leitpunkte).">The evaluator calculates scores using the authentic telc B1 formula: (Criterion I: Task Content + Criterion II: Communicative Register + Criterion III: Formal Grammar/Syntax) × 3 = Final Score / 45 points. It verifies fulfillment of all 4 required Leitpunkte and honors telc's 'Primat der Verständlichkeit' (Priority of Comprehensibility).</p>
           </div>
         </details>
 
         <details class="faq-item" style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:16px 20px;">
           <summary class="faq-summary" style="font-weight:700; font-size:15px; color:var(--text-primary); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
-            <span data-en="Are purchases recurring subscriptions with monthly automatic rebilling?" data-tr="Satın alımlar her ay otomatik çekilen abonelikler midir?" data-ar="هل عمليات الشراء عبارة عن اشتراكات شهرية متجددة تلقائياً؟" data-uk="Чи є покупки щомісячними автоподовжуваними підписками?">Are purchases recurring subscriptions with monthly automatic rebilling?</span>
+            <span data-de="Handelt es sich bei den Käufen um wiederkehrende Abonnements mit automatischer Verlängerung?" data-en="Are purchases recurring subscriptions with monthly automatic rebilling?" data-tr="Satın alımlar her ay otomatik çekilen abonelikler midir?" data-ar="هل عمليات الشراء عبارة عن اشتراكات شهرية متجددة تلقائياً؟" data-uk="Чи є покупки щомісячними автоподовжуваними підписками?">Are purchases recurring subscriptions with monthly automatic rebilling?</span>
             <span class="faq-chevron" style="color:var(--accent-gold); font-size:18px;">+</span>
           </summary>
           <div class="faq-answer" style="margin-top:12px; font-size:13px; color:var(--text-secondary); line-height:1.7;">
-            <p data-en="No! The BAMF Einbürgerungstest (LiD 310) is 100% free forever for all users with no payment required. All telc B1 writing grading passes (Quick Diagnostic €4.99, Standard €29, Intensive €49) are single, one-time payments. We do not automatically renew or charge your payment method after your exam preparation period ends." data-tr="Hayır! BAMF Vatandaşlık Sınavı (LiD 310) tüm kullanıcılar için tamamen ve süresiz olarak %100 ücretsizdir, hiçbir ödeme gerekmez. Tüm telc B1 yazma değerlendirme paketlerimiz (€4.99 Hızlı Teşhis, €29 Standart, €49 Kapsamlı Paket) tek seferlik ödemelerdir. Asla otomatik abonelik yenilemesi veya gizli çekim yapılmaz." data-ar="لا على الإطلاق! امتحان التجنيس BAMF LiD مجاني 100% دائماً لجميع المستخدمين بدون أي بطاقة بنكية. جميع باقات تقييم الكتابة لامتحان telc B1 (التشخيصية 4.99€، القياسية 29€، المكثفة 49€) هي دفعات لمرة واحدة فقط وبدون أي اشتراكات متكررة." data-uk="Ні! Тест на громадянство BAMF (LiD 310) на 100% безкоштовний для всіх назавжди. Усі абонементи оцінювання листів telc B1 (€4.99, €29, €49) — це разові платежі без жодних щомісячних автоподовжень чи прихованих списань.">No! The BAMF Einbürgerungstest (LiD 310) is 100% free forever for all users with no payment required. All telc B1 writing grading passes (Quick Diagnostic €4.99, Standard €29, Intensive €49) are single, one-time payments. We do not automatically renew or charge your payment method after your exam preparation period ends.</p>
+            <p data-de="Nein! Der BAMF-Einbürgerungstest (LiD 310) ist für alle Nutzer dauerhaft zu 100 % kostenlos und erfordert keine Zahlung. Alle telc B1 Schreib-Bewertungspässe (Quick Diagnostic 4,99 €, 30-Tage Exam Pass 24 €, 90-Tage Full Pass 39 €) sind einmalige Zahlungen. Wir verlängern oder belasten Ihre Zahlungsmethode nach Ablauf Ihres Vorbereitungszeitraums nicht automatisch." data-en="No! The BAMF Einbürgerungstest (LiD 310) is 100% free forever for all users with no payment required. All telc B1 writing grading passes (Quick Diagnostic €4.99, 30-Day Exam Pass €24, 90-Day Full Pass €39) are single, one-time payments. We do not automatically renew or charge your payment method after your exam preparation period ends." data-tr="Hayır! BAMF Vatandaşlık Sınavı (LiD 310) tüm kullanıcılar için tamamen ve süresiz olarak %100 ücretsizdir, hiçbir ödeme gerekmez. Tüm telc B1 yazma değerlendirme paketlerimiz (Hızlı Teşhis 4,99 €, 30 Günlük Sınav Kartı 24 €, 90 Günlük Tam Kart 39 €) tek seferlik ödemelerdir. Asla otomatik abonelik yenilemesi veya gizli çekim yapılmaz." data-ar="لا على الإطلاق! امتحان التجنيس BAMF LiD مجاني 100% دائماً لجميع المستخدمين بدون أي بطاقة بنكية. جميع باقات تقييم الكتابة لامتحان telc B1 (التشخيص السريع 4.99€، باقة 30 يوماً 24€، الباقة الشاملة 90 يوماً 39€) هي دفعات لمرة واحدة فقط وبدون أي اشتراكات متكررة." data-uk="Ні! Тест на громадянство BAMF (LiD 310) на 100% безкоштовний для всіх назавжди. Усі абонементи оцінювання листів telc B1 (Швидка діагностика €4.99, Абонемент на 30 днів €24, Повний абонемент на 90 днів €39) — це разові платежі без жодних щомісячних автоподовжень чи прихованих списань.">No! The BAMF Einbürgerungstest (LiD 310) is 100% free forever for all users with no payment required. All telc B1 writing grading passes (Quick Diagnostic €4.99, 30-Day Exam Pass €24, 90-Day Full Pass €39) are single, one-time payments. We do not automatically renew or charge your payment method after your exam preparation period ends.</p>
           </div>
         </details>
 
         <details class="faq-item" style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:16px 20px;">
           <summary class="faq-summary" style="font-weight:700; font-size:15px; color:var(--text-primary); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
-            <span data-en="Can I study completely offline without an internet connection?" data-tr="İnternet bağlantısı olmadan tamamen çevrimdışı çalışabilir miyim?" data-ar="هل يمكنني الدراسة والتدرب بدون اتصال بالإنترنت؟" data-uk="Чи можу я вчитися повністю офлайн без інтернету?">Can I study completely offline without an internet connection?</span>
+            <span data-de="Kann ich komplett offline ohne Internetverbindung lernen?" data-en="Can I study completely offline without an internet connection?" data-tr="İnternet bağlantısı olmadan tamamen çevrimdışı çalışabilir miyim?" data-ar="هل يمكنني الدراسة والتدرب بدون اتصال بالإنترنت؟" data-uk="Чи можу я вчитися повністю офлайн без інтернету?">Can I study completely offline without an internet connection?</span>
             <span class="faq-chevron" style="color:var(--accent-gold); font-size:18px;">+</span>
           </summary>
           <div class="faq-answer" style="margin-top:12px; font-size:13px; color:var(--text-secondary); line-height:1.7;">
-            <p data-en="Yes. DeutschLernen is a Progressive Web App (PWA). All 2,000+ vocabulary words, audio pronunciation synthesis, grammar lessons, and 310 BAMF LiD questions are cached directly in your browser. You can install it on your iOS, Android, or desktop device and practice anywhere." data-tr="Evet. DeutschLernen bir Progresif Web Uygulamasıdır (PWA). 2.000'den fazla kelime, telaffuz sesleri, dilbilgisi modülleri ve 310 BAMF vatandaşlık sorusu doğrudan tarayıcınıza önbelleğe alınır. Telefonunuza veya bilgisayarınıza yükleyip internet olmadan dilediğiniz yerde çalışabilirsiniz." data-ar="نعم. DeutschLernen يعمل كتطبيق ويب تقدمي (PWA). جميع المفردات الـ 2000+، نطق الكلمات، شروحات القواعد و310 سؤال تجنيس يتم حفظها في متصفحك لتعمل بدون إنترنت على الهاتف أو الحاسوب." data-uk="Так. DeutschLernen працює як PWA (Progressive Web App). Усі 2000+ слів, вимова, граматика та 310 питань BAMF кешуються у вашому браузері і працюють без підключення до мережі.">Yes. DeutschLernen is a Progressive Web App (PWA). All 2,000+ vocabulary words, audio pronunciation synthesis, grammar lessons, and 310 BAMF LiD questions are cached directly in your browser. You can install it on your iOS, Android, or desktop device and practice anywhere.</p>
+            <p data-de="Ja. DeutschLernen ist eine Progressive Web App (PWA). Alle 2.000+ Vokabeln, Sprachausgabe, Grammatiklektionen und 310 BAMF LiD-Fragen werden direkt in Ihrem Browser zwischengespeichert und funktionieren vollständig offline." data-en="Yes. DeutschLernen is a Progressive Web App (PWA). All 2,000+ vocabulary words, audio pronunciation synthesis, grammar lessons, and 310 BAMF LiD questions are cached directly in your browser. You can install it on your iOS, Android, or desktop device and practice anywhere." data-tr="Evet. DeutschLernen bir Progresif Web Uygulamasıdır (PWA). 2.000'den fazla kelime, telaffuz sesleri, dilbilgisi modülleri ve 310 BAMF vatandaşlık sorusu doğrudan tarayıcınıza önbelleğe alınır. Telefonunuza veya bilgisayarınıza yükleyip internet olmadan dilediğiniz yerde çalışabilirsiniz." data-ar="نعم. DeutschLernen يعمل كتطبيق ويب تقدمي (PWA). جميع المفردات الـ 2000+، نطق الكلمات، شروحات القواعد و310 سؤال تجنيس يتم حفظها في متصفحك لتعمل بدون إنترنت على الهاتف أو الحاسوب." data-uk="Так. DeutschLernen працює як PWA (Progressive Web App). Усі 2000+ слів, вимова, граматика та 310 питань BAMF кешуються у вашому браузері і працюють без підключення до мережі.">Yes. DeutschLernen is a Progressive Web App (PWA). All 2,000+ vocabulary words, audio pronunciation synthesis, grammar lessons, and 310 BAMF LiD questions are cached directly in your browser. You can install it on your iOS, Android, or desktop device and practice anywhere.</p>
           </div>
         </details>
 
         <details class="faq-item" style="background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:16px 20px;">
           <summary class="faq-summary" style="font-weight:700; font-size:15px; color:var(--text-primary); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
-            <span data-en="How does the 30-Day Money-Back & Exam Pass Guarantee work?" data-tr="30 Günlük Para İadesi ve Sınavı Geçme Garantisi nasıl işler?" data-ar="كيف يعمل ضمان استرداد الأموال واجتياز الامتحان لمدة 30 يوماً؟" data-uk="Як діє 30-денна гарантія повернення коштів та успіху на іспиті?">How does the 30-Day Money-Back & Exam Pass Guarantee work?</span>
+            <span data-de="Wie funktioniert die 30-Tage-Geld-zurück- und Bestehensgarantie?" data-en="How does the 30-Day Money-Back & Exam Pass Guarantee work?" data-tr="30 Günlük Para İadesi ve Sınavı Geçme Garantisi nasıl işler?" data-ar="كيف يعمل ضمان استرداد الأموال واجتياز الامتحان لمدة 30 يوماً؟" data-uk="Як діє 30-денна гарантія повернення коштів та успіху на іспиті?">How does the 30-Day Money-Back & Exam Pass Guarantee work?</span>
             <span class="faq-chevron" style="color:var(--accent-gold); font-size:18px;">+</span>
           </summary>
           <div class="faq-answer" style="margin-top:12px; font-size:13px; color:var(--text-secondary); line-height:1.7;">
-            <p data-en="If you practice with our 30-day curriculum and evaluate your practice letters, but are not 100% satisfied with your preparation, simply send a message via our Feedback modal or email within 30 days of purchase for a prompt, no-questions-asked refund." data-tr="30 günlük programımızı takip edip mektuplarınızı değerlendirir ve hazırlığınızdan %100 memnun kalmazsanız, satın alımdan itibaren 30 gün içinde Geri Bildirim formu veya e-posta yoluyla bize ulaşarak tam para iadenizi anında alabilirsiniz." data-ar="إذا أتممت خطة الـ 30 يوماً وتدربت على كتابة الرسائل ولم تكن راضياً بنسبة 100% عن مستواك، ما عليك سوى مراسلتنا خلال 30 يوماً من الشراء لاسترداد كامل المبلغ دون أي شروط معقدة." data-uk="Якщо ви тренувалися за 30-денним планом, але не задоволені результатами підготовки, зв'яжіться з нами протягом 30 днів після покупки для повного повернення коштів.">If you practice with our 30-day curriculum and evaluate your practice letters, but are not 100% satisfied with your preparation, simply send a message via our Feedback modal or email within 30 days of purchase for a prompt, no-questions-asked refund.</p>
+            <p data-de="Wenn Sie mit unserem 30-Tage-Lehrplan üben und Ihre Briefe bewerten lassen, aber nicht zu 100 % zufrieden sind, senden Sie uns einfach innerhalb von 30 Tagen eine Nachricht für eine unkomplizierte Rückerstattung." data-en="If you practice with our 30-day curriculum and evaluate your practice letters, but are not 100% satisfied with your preparation, simply send a message via our Feedback modal or email within 30 days of purchase for a prompt, no-questions-asked refund." data-tr="30 günlük programımızı takip edip mektuplarınızı değerlendirir ve hazırlığınızdan %100 memnun kalmazsanız, satın alımdan itibaren 30 gün içinde Geri Bildirim formu veya e-posta yoluyla bize ulaşarak tam para iadenizi anında alabilirsiniz." data-ar="إذا أتممت خطة الـ 30 يوماً وتدربت على كتابة الرسائل ولم تكن راضياً بنسبة 100% عن مستواك، ما عليك سوى مراسلتنا خلال 30 يوماً من الشراء لاسترداد كامل المبلغ دون أي شروط معقدة." data-uk="Якщо ви тренувалися за 30-денним планом, але не задоволені результатами підготовки, зв'яжіться з нами протягом 30 днів після покупки для повного повернення коштів.">If you practice with our 30-day curriculum and evaluate your practice letters, but are not 100% satisfied with your preparation, simply send a message via our Feedback modal or email within 30 days of purchase for a prompt, no-questions-asked refund.</p>
           </div>
         </details>
       </div>
@@ -1057,19 +1051,19 @@
     <!-- Commercial & Legal Footer -->
     <footer style="text-align:center;padding:40px 20px 30px;border-top:1px solid var(--border);margin-top:40px">
       <p style="font-size:28px;margin-bottom:8px">🎓</p>
-      <p style="font-size:15px;font-weight:700;color:var(--text-primary)" data-en="DeutschLernen — Comprehensive telc Deutsch B1 Study Portal & Vocab 2000" data-tr="DeutschLernen — Kapsamlı telc Deutsch B1 Çalışma Portalı ve Kelime 2000" data-ar="DeutschLernen — بوابة دراسية شاملة لامتحان telc Deutsch B1 والمفردات 2000" data-uk="DeutschLernen — Комплексний навчальний портал telc Deutsch B1 та Словник 2000">DeutschLernen — Comprehensive telc Deutsch B1 Study Portal & Vocab 2000</p>
-      <p style="font-size:13px;color:var(--text-muted);margin-top:4px" data-en="Good luck with your exam preparation!" data-tr="Sınav hazırlığınızda başarılar dileriz!" data-ar="نتمنى لك التوفيق في تحضيرك للامتحان!" data-uk="Успіхів у підготовці до іспиту!">Good luck with your exam preparation!</p>
+      <p data-de="DeutschLernen — Umfassendes telc Deutsch B1 Lernportal & Wortschatz 2000" style="font-size:15px;font-weight:700;color:var(--text-primary)" data-en="DeutschLernen — Comprehensive telc Deutsch B1 Study Portal & Vocab 2000" data-tr="DeutschLernen — Kapsamlı telc Deutsch B1 Çalışma Portalı ve Kelime 2000" data-ar="DeutschLernen — بوابة دراسية شاملة لامتحان telc Deutsch B1 والمفردات 2000" data-uk="DeutschLernen — Комплексний навчальний портал telc Deutsch B1 та Словник 2000">DeutschLernen — Comprehensive telc Deutsch B1 Study Portal & Vocab 2000</p>
+      <p data-de="Viel Erfolg bei Ihrer Prüfungsvorbereitung!" style="font-size:13px;color:var(--text-muted);margin-top:4px" data-en="Good luck with your exam preparation!" data-tr="Sınav hazırlığınızda başarılar dileriz!" data-ar="نتمنى لك التوفيق في تحضيرك للامتحان!" data-uk="Успіхів у підготовці до іспиту!">Good luck with your exam preparation!</p>
 
       <!-- Legal & Commercial Navigation Links -->
       <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap; margin:24px 0 16px;">
-        <a href="javascript:void(0)" onclick="openProPricingModal()" style="font-size:13px; font-weight:700; color:var(--accent-gold);"><span data-en="👑 Pro Plans" data-tr="👑 Pro Paketler" data-ar="👑 الباقات الاحترافية" data-uk="👑 Pro плани">👑 Pro Plans</span></a>
-        <a href="trainer.html" style="font-size:13px; font-weight:600; color:var(--accent-gold);"><span data-en="⚡ Wortschatz Trainer" data-tr="⚡ Kelime Antrenörü" data-ar="⚡ مدرب المفردات" data-uk="⚡ Тренажер слів">⚡ Wortschatz Trainer</span></a>
-        <a href="javascript:void(0)" onclick="switchTrack('lid')" style="font-size:13px; font-weight:600; color:var(--text-primary);"><span data-en="🇩🇪 Leben in Deutschland" data-tr="🇩🇪 Leben in Deutschland" data-ar="🇩🇪 الحياة في ألمانيا" data-uk="🇩🇪 Життя в Німеччині">🇩🇪 Leben in Deutschland</span></a>
-        <a href="javascript:void(0)" onclick="switchTrack('b1')" style="font-size:13px; color:var(--text-secondary);"><span data-en="📚 telc B1 Study Portal" data-tr="📚 telc B1 Çalışma Portalı" data-ar="📚 بوابة دراسة telc B1" data-uk="📚 Портал telc B1">📚 telc B1 Study Portal</span></a>
-        <a href="legal.html" style="font-size:13px; color:var(--text-secondary);"><span data-en="🇩🇪 Impressum (§ 5 DDG)" data-tr="🇩🇪 Yasal Künye (§ 5 DDG)" data-ar="🇩🇪 بيانات الناشر (§ 5 DDG)" data-uk="🇩🇪 Вихідні дані (§ 5 DDG)">🇩🇪 Impressum (§ 5 DDG)</span></a>
-        <a href="legal.html#tab-datenschutz" style="font-size:13px; color:var(--text-secondary);"><span data-en="🔒 Privacy Policy (GDPR)" data-tr="🔒 Gizlilik Politikası (KVKK/GDPR)" data-ar="🔒 سياسة الخصوصية (GDPR)" data-uk="🔒 Політика конфіденційності (GDPR)">🔒 Privacy Policy (GDPR)</span></a>
-        <a href="legal.html#tab-terms" style="font-size:13px; color:var(--text-secondary);"><span data-en="📜 Terms & Trademarks" data-tr="📜 Kullanım Şartları ve Markalar" data-ar="📜 الشروط والعلامات التجارية" data-uk="📜 Умови та торговельні марки">📜 Terms & Trademarks</span></a>
-        <a href="javascript:void(0)" onclick="openFeedbackModal()" style="font-size:13px; color:var(--text-secondary);"><span data-en="💬 Feedback" data-tr="💬 Geri Bildirim" data-ar="💬 ملاحظات" data-uk="💬 Відгук">💬 Feedback</span></a>
+        <a href="javascript:void(0)" onclick="openProPricingModal()" style="font-size:13px; font-weight:700; color:var(--accent-gold);"><span data-de="👑 Pro-Pläne" data-en="👑 Pro Plans" data-tr="👑 Pro Paketler" data-ar="👑 الباقات الاحترافية" data-uk="👑 Pro плани">👑 Pro Plans</span></a>
+        <a href="trainer.html" style="font-size:13px; font-weight:600; color:var(--accent-gold);"><span data-de="⚡ Wortschatz-Trainer" data-en="⚡ Wortschatz Trainer" data-tr="⚡ Kelime Antrenörü" data-ar="⚡ مدرب المفردات" data-uk="⚡ Тренажер слів">⚡ Wortschatz Trainer</span></a>
+        <a href="javascript:void(0)" onclick="switchTrack('lid')" style="font-size:13px; font-weight:600; color:var(--text-primary);"><span data-de="🇩🇪 Leben in Deutschland" data-en="🇩🇪 Leben in Deutschland" data-tr="🇩🇪 Leben in Deutschland" data-ar="🇩🇪 الحياة في ألمانيا" data-uk="🇩🇪 Життя в Німеччині">🇩🇪 Leben in Deutschland</span></a>
+        <a href="javascript:void(0)" onclick="switchTrack('b1')" style="font-size:13px; color:var(--text-secondary);"><span data-de="📚 telc B1 Lernportal" data-en="📚 telc B1 Study Portal" data-tr="📚 telc B1 Çalışma Portalı" data-ar="📚 بوابة دراسة telc B1" data-uk="📚 Портал telc B1">📚 telc B1 Study Portal</span></a>
+        <a href="legal.html" style="font-size:13px; color:var(--text-secondary);"><span data-de="🇩🇪 Impressum (§ 5 DDG)" data-en="🇩🇪 Impressum (§ 5 DDG)" data-tr="🇩🇪 Yasal Künye (§ 5 DDG)" data-ar="🇩🇪 بيانات الناشر (§ 5 DDG)" data-uk="🇩🇪 Вихідні дані (§ 5 DDG)">🇩🇪 Impressum (§ 5 DDG)</span></a>
+        <a href="legal.html#tab-datenschutz" style="font-size:13px; color:var(--text-secondary);"><span data-de="🔒 Datenschutzerklärung (DSGVO)" data-en="🔒 Privacy Policy (GDPR)" data-tr="🔒 Gizlilik Politikası (KVKK/GDPR)" data-ar="🔒 سياسة الخصوصية (GDPR)" data-uk="🔒 Політика конфіденційності (GDPR)">🔒 Privacy Policy (GDPR)</span></a>
+        <a href="legal.html#tab-terms" style="font-size:13px; color:var(--text-secondary);"><span data-de="📜 Nutzungsbedingungen & Marken" data-en="📜 Terms & Trademarks" data-tr="📜 Kullanım Şartları ve Markalar" data-ar="📜 الشروط والعلامات التجارية" data-uk="📜 Умови та торговельні марки">📜 Terms & Trademarks</span></a>
+        <a href="javascript:void(0)" onclick="openFeedbackModal()" style="font-size:13px; color:var(--text-secondary);"><span data-de="💬 Feedback" data-en="💬 Feedback" data-tr="💬 Geri Bildirim" data-ar="💬 ملاحظات" data-uk="💬 Відгук">💬 Feedback</span></a>
         <a href="https://github.com/egeengin/DeutschLernen" target="_blank" rel="noopener noreferrer" style="font-size:13px; color:var(--text-secondary);">GitHub Source</a>
       </div>
       
@@ -1081,13 +1075,13 @@
           <strong>Trademark Disclaimer:</strong> <em>telc®</em> is a registered trademark of telc gGmbH (Frankfurt am Main). <em>Goethe-Zertifikat®</em> is a registered trademark of Goethe-Institut e.V. (Munich). This portal is an independent study tool and is not affiliated with, endorsed by, or sponsored by telc gGmbH or Goethe-Institut e.V.
         </p>
         <p style="margin-bottom: 8px;">
-          <strong data-en="Privacy Guarantee:" data-tr="Gizlilik Güvencesi:" data-ar="ضمان الخصوصية:" data-uk="Гарантія конфіденційності:">Privacy Guarantee:</strong>
-          <span data-en="100% Client-Side Privacy. No cookies, no external user tracking. Your study progress and streak are saved strictly in your device's browser." data-tr="%100 Cihaz İçi Gizlilik. Çerez veya harici kullanıcı takibi yoktur. Çalışma ilerlemeniz ve seriniz yalnızca cihazınızın tarayıcısında saklanır." data-ar="خصوصية 100% على جانب العميل. لا ملفات تعريف ارتباط ولا تتبع خارجي. يُحفظ تقدمك وسلسلتك حصرياً في متصفح جهازك." data-uk="100% конфіденційність на стороні клієнта. Жодних файлів cookie чи зовнішнього відстеження. Ваш прогрес зберігається лише у вашому браузері.">100% Client-Side Privacy. No cookies, no external user tracking. Your study progress and streak are saved strictly in your device's browser.</span>
+          <strong data-de="Datenschutz-Garantie:" data-en="Privacy Guarantee:" data-tr="Gizlilik Güvencesi:" data-ar="ضمان الخصوصية:" data-uk="Гарантія конфіденційності:">Privacy Guarantee:</strong>
+          <span data-de="100 % clientseitige Privatsphäre. Keine Cookies, kein externes Nutzertracking. Ihr Lernfortschritt und Ihre Streak werden ausschließlich im Browser Ihres Geräts gespeichert." data-en="100% Client-Side Privacy. No cookies, no external user tracking. Your study progress and streak are saved strictly in your device's browser." data-tr="%100 Cihaz İçi Gizlilik. Çerez veya harici kullanıcı takibi yoktur. Çalışma ilerlemeniz ve seriniz yalnızca cihazınızın tarayıcısında saklanır." data-ar="خصوصية 100% على جانب العميل. لا ملفات تعريف ارتباط ولا تتبع خارجي. يُحفظ تقدمك وسلسلتك حصرياً في متصفح جهازك." data-uk="100% конфіденційність на стороні клієнта. Жодних файлів cookie чи зовнішнього відстеження. Ваш прогрес зберігається лише у вашому браузері.">100% Client-Side Privacy. No cookies, no external user tracking. Your study progress and streak are saved strictly in your device's browser.</span>
         </p>
         <p>
-          <strong data-en="Created by" data-tr="Geliştirici:" data-ar="تم الإنشاء بواسطة" data-uk="Створено">Created by</strong> 
+          <strong data-de="Entwickelt von" data-en="Created by" data-tr="Geliştirici:" data-ar="تم الإنشاء بواسطة" data-uk="Створено">Created by</strong> 
           <a href="https://www.linkedin.com/in/egeengin/" target="_blank" rel="noopener noreferrer" style="color:var(--text-primary); text-decoration:underline;">Ege Engin</a>. 
-          <span data-en="Open-source educational suite licensed under the MIT License." data-tr="MIT Lisansı altında lisanslanmış açık kaynaklı eğitim paketi." data-ar="حزمة تعليمية مفتوحة المصدر مرخصة بموجب رخصة MIT." data-uk="Освітній комплекс із відкритим кодом під ліцензією MIT.">Open-source educational suite licensed under the MIT License.</span>
+          <span data-de="Open-Source-Bildungssuite, lizenziert unter der MIT-Lizenz." data-en="Open-source educational suite licensed under the MIT License." data-tr="MIT Lisansı altında lisanslanmış açık kaynaklı eğitim paketi." data-ar="حزمة تعليمية مفتوحة المصدر مرخصة بموجب رخصة MIT." data-uk="Освітній комплекс із відкритим кодом під ліцензією MIT.">Open-source educational suite licensed under the MIT License.</span>
         </p>
       </div>
     </footer>
@@ -1099,7 +1093,7 @@
 <div class="markdown-view" id="md-view">
   <div class="md-header">
     <button class="back-btn" onclick="goBackOrClose()">
-      <span style="font-size:18px">&larr;</span> <span data-en="Back to Dashboard" data-tr="Panoya Dön" data-ar="العودة للوحة التحكم" data-uk="Назад до панелі">Back to Dashboard</span>
+      <span style="font-size:18px">&larr;</span> <span data-de="Zurück zum Dashboard" data-en="Back to Dashboard" data-tr="Panoya Dön" data-ar="العودة للوحة التحكم" data-uk="Назад до панелі">Back to Dashboard</span>
     </button>
   </div>
   <div class="md-content" id="md-content">
@@ -1109,14 +1103,14 @@
 
 <!-- Floating Feedback Button -->
 <button class="btn-floating-feedback" id="btn-floating-feedback" title="Give Feedback / Geri Bildirim" onclick="openFeedbackModal()">
-  💬 <span data-en="Feedback" data-tr="Geri Bildirim" data-ar="ملاحظات" data-uk="Відгук">Feedback</span>
+  💬 <span data-de="Feedback" data-en="Feedback" data-tr="Geri Bildirim" data-ar="ملاحظات" data-uk="Відгук">Feedback</span>
 </button>
 
 <!-- Community Feedback Modal Dialog -->
 <div class="modal-backdrop hidden" id="feedback-modal" role="dialog" aria-modal="true" aria-labelledby="feedback-modal-title">
   <div class="modal-dialog" style="max-width: 480px;">
     <div class="modal-header">
-      <h2 id="feedback-modal-title">💬 <span data-en="Send Feedback & Suggestions" data-tr="Geri Bildirim ve Öneriler" data-ar="إرسال الملاحظات والاقتراحات" data-uk="Надіслати відгук та пропозиції">Send Feedback & Suggestions</span></h2>
+      <h2 id="feedback-modal-title">💬 <span data-de="Feedback & Vorschläge senden" data-en="Send Feedback & Suggestions" data-tr="Geri Bildirim ve Öneriler" data-ar="إرسال الملاحظات والاقتراحات" data-uk="Надіслати відгук та пропозиції">Send Feedback & Suggestions</span></h2>
       <button class="modal-close-btn" onclick="closeFeedbackModal()" aria-label="Close modal">&times;</button>
     </div>
     <div class="modal-scroll-area">
@@ -1124,28 +1118,28 @@
       
       <form id="feedback-form" onsubmit="return false;">
         <div class="auth-form-group">
-          <label for="feedback-username" data-en="Name / Nickname" data-tr="İsim / Takma Ad" data-ar="الاسم / اللقب" data-uk="Ім'я / Псевдонім">Name / Nickname</label>
-          <input type="text" id="feedback-username" class="auth-input-field" placeholder="Anonymous or your name" data-en="Anonymous or your name" data-tr="Anonim veya isminiz" data-ar="مجهول أو اسمك" data-uk="Анонімно або ваше ім'я">
+          <label data-de="Name / Spitzname" for="feedback-username" data-en="Name / Nickname" data-tr="İsim / Takma Ad" data-ar="الاسم / اللقب" data-uk="Ім'я / Псевдонім">Name / Nickname</label>
+          <input data-de="Anonym oder Ihr Name" type="text" id="feedback-username" class="auth-input-field" placeholder="Anonymous or your name" data-en="Anonymous or your name" data-tr="Anonim veya isminiz" data-ar="مجهول أو اسمك" data-uk="Анонімно або ваше ім'я">
         </div>
 
         <div class="auth-form-group">
-          <label for="feedback-location" data-en="Location (Auto-detected)" data-tr="Konum (Otomatik Tespit)" data-ar="الموقع (تلقائي)" data-uk="Місцезнаходження (авто)">Location (Auto-detected)</label>
-          <input type="text" id="feedback-location" class="auth-input-field" placeholder="Detecting location..." data-en="Detecting location..." data-tr="Konum tespit ediliyor..." data-ar="جاري تحديد الموقع..." data-uk="Визначення місця..." readonly>
+          <label data-de="Standort (automatisch erkannt)" for="feedback-location" data-en="Location (Auto-detected)" data-tr="Konum (Otomatik Tespit)" data-ar="الموقع (تلقائي)" data-uk="Місцезнаходження (авто)">Location (Auto-detected)</label>
+          <input data-de="Standort wird ermittelt..." type="text" id="feedback-location" class="auth-input-field" placeholder="Detecting location..." data-en="Detecting location..." data-tr="Konum tespit ediliyor..." data-ar="جاري تحديد الموقع..." data-uk="Визначення місця..." readonly>
         </div>
 
         <div class="auth-form-group">
-          <label for="feedback-category" data-en="Category" data-tr="Kategori" data-ar="الفئة" data-uk="Категорія">Category</label>
+          <label data-de="Kategorie" for="feedback-category" data-en="Category" data-tr="Kategori" data-ar="الفئة" data-uk="Категорія">Category</label>
           <select id="feedback-category" class="feedback-select-field">
-            <option value="General" data-en="💡 General Feedback / Suggestion" data-tr="💡 Genel Geri Bildirim / Öneri" data-ar="💡 ملاحظات / اقتراحات عامة" data-uk="💡 Загальний відгук / пропозиція">💡 General Feedback / Suggestion</option>
-            <option value="VocabCorrection" data-en="📝 Vocabulary / Translation Correction" data-tr="📝 Kelime / Çeviri Düzeltmesi" data-ar="📝 تصحيح مفردات / ترجمة" data-uk="📝 Виправлення слова / перекладу">📝 Vocabulary / Translation Correction</option>
-            <option value="FeatureRequest" data-en="✨ Feature Request" data-tr="✨ Yeni Özellik İsteği" data-ar="✨ طلب ميزة جديدة" data-uk="✨ Запит на нову функцію">✨ Feature Request</option>
-            <option value="BugReport" data-en="🐛 Bug Report" data-tr="🐛 Hata Bildirimi" data-ar="🐛 إبلاغ عن خطأ" data-uk="🐛 Звіт про помилку">🐛 Bug Report</option>
+            <option data-de="💡 Allgemeines Feedback / Vorschlag" value="General" data-en="💡 General Feedback / Suggestion" data-tr="💡 Genel Geri Bildirim / Öneri" data-ar="💡 ملاحظات / اقتراحات عامة" data-uk="💡 Загальний відгук / пропозиція">💡 General Feedback / Suggestion</option>
+            <option data-de="📝 Vokabel- / Übersetzungskorrektur" value="VocabCorrection" data-en="📝 Vocabulary / Translation Correction" data-tr="📝 Kelime / Çeviri Düzeltmesi" data-ar="📝 تصحيح مفردات / ترجمة" data-uk="📝 Виправлення слова / перекладу">📝 Vocabulary / Translation Correction</option>
+            <option data-de="✨ Funktionsanfrage" value="FeatureRequest" data-en="✨ Feature Request" data-tr="✨ Yeni Özellik İsteği" data-ar="✨ طلب ميزة جديدة" data-uk="✨ Запит на нову функцію">✨ Feature Request</option>
+            <option data-de="🐛 Fehlerbericht" value="BugReport" data-en="🐛 Bug Report" data-tr="🐛 Hata Bildirimi" data-ar="🐛 إبلاغ عن خطأ" data-uk="🐛 Звіт про помилку">🐛 Bug Report</option>
           </select>
         </div>
 
         <div class="auth-form-group">
           <div style="display: flex; justify-content: space-between; align-items: center;">
-            <label data-en="Your Rating" data-tr="Puanınız" data-ar="تقييمك" data-uk="Ваша оцінка">Your Rating</label>
+            <label data-de="Ihre Bewertung" data-en="Your Rating" data-tr="Puanınız" data-ar="تقييمك" data-uk="Ваша оцінка">Your Rating</label>
             <span id="feedback-rating-text" style="font-size: 13px; font-weight: 700; color: var(--accent-gold);">5/5 — Excellent</span>
           </div>
           <div class="star-rating-wrap" id="feedback-stars" data-rating="5" role="radiogroup" aria-label="Rating">
@@ -1158,12 +1152,12 @@
         </div>
 
         <div class="auth-form-group">
-          <label for="feedback-message" data-en="Your Message" data-tr="Mesajınız" data-ar="رسالتك" data-uk="Ваше повідомлення">Your Message</label>
-          <textarea id="feedback-message" class="feedback-textarea" rows="4" placeholder="Tell us what we can improve or report an issue..." data-en="Tell us what we can improve or report an issue..." data-tr="Neleri geliştirebileceğimizi bize iletin veya bir hata bildirin..." data-ar="أخبرنا بما يمكننا تحسينه أو أبلغ عن مشكلة..." data-uk="Розкажіть, що можна покращити, або повідомте про проблему..." required></textarea>
+          <label data-de="Ihre Nachricht" for="feedback-message" data-en="Your Message" data-tr="Mesajınız" data-ar="رسالتك" data-uk="Ваше повідомлення">Your Message</label>
+          <textarea data-de="Teilen Sie uns mit, was wir verbessern können, oder melden Sie ein Problem..." id="feedback-message" class="feedback-textarea" rows="4" placeholder="Tell us what we can improve or report an issue..." data-en="Tell us what we can improve or report an issue..." data-tr="Neleri geliştirebileceğimizi bize iletin veya bir hata bildirin..." data-ar="أخبرنا بما يمكننا تحسينه أو أبلغ عن مشكلة..." data-uk="Розкажіть, що можна покращити, або повідомте про проблему..." required></textarea>
         </div>
 
         <button type="submit" class="btn-feedback-submit" id="btn-submit-feedback">
-          🚀 <span data-en="Submit Feedback" data-tr="Geri Bildirimi Gönder" data-ar="إرسال الملاحظات" data-uk="Надіслати відгук">Submit Feedback</span>
+          🚀 <span data-de="Feedback absenden" data-en="Submit Feedback" data-tr="Geri Bildirimi Gönder" data-ar="إرسال الملاحظات" data-uk="Надіслати відгук">Submit Feedback</span>
         </button>
       </form>
     </div>
@@ -1174,9 +1168,9 @@
 <div id="entrance-modal" class="entrance-modal-overlay" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="entrance-title">
   <div class="entrance-modal-card">
     <div class="entrance-header">
-      <div class="entrance-badge" data-en="✨ WELCOME TO DEUTSCHLERNEN" data-tr="✨ DEUTSCHLERNEN'E HOŞ GELDİNİZ" data-ar="✨ مرحباً بك في DEUTSCHLERNEN" data-uk="✨ ЛАСКАВО ПРОСИМО ДО DEUTSCHLERNEN">✨ WELCOME TO DEUTSCHLERNEN</div>
-      <h2 id="entrance-title" data-en="What is your learning goal?" data-tr="Almanca öğrenme hedefiniz nedir?" data-ar="ما هو هدفك في تعلم الألمانية؟" data-uk="Яка ваша мета у вивченні німецької?">What is your learning goal?</h2>
-      <p class="entrance-subtitle" data-en="Choose your path below so we can tailor the study modules, practice drills, and vocabulary decks for you." data-tr="Çalışma modüllerini, alıştırmaları ve kelime destelerini size özel uyarlayabilmemiz için hedefinizi seçin." data-ar="اختر مسارك أدناه حتى نتمكن من تخصيص الوحدات الدراسية، التدريبات ومجموعات المفردات لك." data-uk="Оберіть свій шлях нижче, щоб ми адаптували навчальні модулі, практичні вправи та словникові колоди для вас.">Choose your path below so we can tailor the study modules, practice drills, and vocabulary decks for you.</p>
+      <div data-de="✨ WILLKOMMEN BEI DEUTSCHLERNEN" class="entrance-badge" data-en="✨ WELCOME TO DEUTSCHLERNEN" data-tr="✨ DEUTSCHLERNEN'E HOŞ GELDİNİZ" data-ar="✨ مرحباً بك في DEUTSCHLERNEN" data-uk="✨ ЛАСКАВО ПРОСИМО ДО DEUTSCHLERNEN">✨ WELCOME TO DEUTSCHLERNEN</div>
+      <h2 data-de="Was ist Ihr Lernziel?" id="entrance-title" data-en="What is your learning goal?" data-tr="Almanca öğrenme hedefiniz nedir?" data-ar="ما هو هدفك في تعلم الألمانية؟" data-uk="Яка ваша мета у вивченні німецької?">What is your learning goal?</h2>
+      <p data-de="Wählen Sie unten Ihren Pfad, damit wir die Lernmodule, Übungen und Vokabeldecks optimal für Sie anpassen können." class="entrance-subtitle" data-en="Choose your path below so we can tailor the study modules, practice drills, and vocabulary decks for you." data-tr="Çalışma modüllerini, alıştırmaları ve kelime destelerini size özel uyarlayabilmemiz için hedefinizi seçin." data-ar="اختر مسارك أدناه حتى نتمكن من تخصيص الوحدات الدراسية، التدريبات ومجموعات المفردات لك." data-uk="Оберіть свій шлях нижче, щоб ми адаптували навчальні модулі, практичні вправи та словникові колоди для вас.">Choose your path below so we can tailor the study modules, practice drills, and vocabulary decks for you.</p>
     </div>
 
     <!-- 4 Goal Cards Grid ("Wishes") -->
@@ -1187,11 +1181,11 @@
           <span class="goal-icon">🌱</span>
           <span class="goal-cefr-badge badge-a1">A1 – A2</span>
         </div>
-        <h3 data-en="Beginner Fundamentals" data-tr="Temel Başlangıç" data-ar="الأساسيات للمبتدئين" data-uk="Базові основи">Beginner Fundamentals</h3>
-        <p data-en="Start from scratch or solidify basics: daily life vocabulary, high-frequency verbs, and foundational grammar." data-tr="Sıfırdan başlayın veya temelleri pekiştirin: günlük kelimeler, temel fiiller ve çekimler." data-ar="ابدأ من الصفر أو ثبت الأساسيات: مفردات الحياة اليومية، الأفعال المتكررة، والقواعد الأساسية." data-uk="Почніть з нуля або закріпіть базу: щоденна лексика, найуживаніші дієслова та базова граматика.">Start from scratch or solidify basics: daily life vocabulary, high-frequency verbs, and foundational grammar.</p>
+        <h3 data-de="Grundlagen für Einsteiger" data-en="Beginner Fundamentals" data-tr="Temel Başlangıç" data-ar="الأساسيات للمبتدئين" data-uk="Базові основи">Beginner Fundamentals</h3>
+        <p data-de="Von Grund auf beginnen oder Grundlagen festigen: Alltagswortschatz, wichtige Verben und Basisgrammatik." data-en="Start from scratch or solidify basics: daily life vocabulary, high-frequency verbs, and foundational grammar." data-tr="Sıfırdan başlayın veya temelleri pekiştirin: günlük kelimeler, temel fiiller ve çekimler." data-ar="ابدأ من الصفر أو ثبت الأساسيات: مفردات الحياة اليومية، الأفعال المتكررة، والقواعد الأساسية." data-uk="Почніть з нуля або закріпіть базу: щоденна лексика, найуживаніші дієслова та базова граматика.">Start from scratch or solidify basics: daily life vocabulary, high-frequency verbs, and foundational grammar.</p>
         <div class="goal-perks">
-          <span data-en="✓ ~1,000 Everyday Words" data-tr="✓ ~1.000 Günlük Kelime" data-ar="✓ ~1,000 كلمة يومية" data-uk="✓ ~1 000 повсякденних слів">✓ ~1,000 Everyday Words</span>
-          <span data-en="✓ Core Sentence Structure" data-tr="✓ Temel Cümle Yapıları" data-ar="✓ بنية الجملة الأساسية" data-uk="✓ Базова структура речення">✓ Core Sentence Structure</span>
+          <span data-de="✓ ~1.000 Alltagswörter" data-en="✓ ~1,000 Everyday Words" data-tr="✓ ~1.000 Günlük Kelime" data-ar="✓ ~1,000 كلمة يومية" data-uk="✓ ~1 000 повсякденних слів">✓ ~1,000 Everyday Words</span>
+          <span data-de="✓ Grundlegende Satzstruktur" data-en="✓ Core Sentence Structure" data-tr="✓ Temel Cümle Yapıları" data-ar="✓ بنية الجملة الأساسية" data-uk="✓ Базова структура речення">✓ Core Sentence Structure</span>
         </div>
       </div>
 
@@ -1201,11 +1195,11 @@
           <span class="goal-icon">🏆</span>
           <span class="goal-cefr-badge badge-b1">B1 TELC / Goethe</span>
         </div>
-        <h3 data-en="telc B1 Certification" data-tr="telc B1 Sınav Hazırlığı" data-ar="شهادة telc B1" data-uk="Сертифікація telc B1">telc B1 Certification</h3>
-        <p data-en="Pass your official B1 exam (180/300 pass score): 30-day plan, diagnostic & final mock tests, and letter templates." data-tr="Resmi B1 sınavını geçin (180/300 barajı): 30 günlük plan, deneme sınavları ve mektup şablonları." data-ar="اجتز امتحان B1 الرسمي (درجة النجاح 180/300): خطة 30 يوماً، اختبارات تشخيصية ونهائية، ونماذج رسائل." data-uk="Складіть офіційний іспит B1 (прохідний бал 180/300): 30-денний план, діагностичні та фінальні тести, шаблони листів.">Pass your official B1 exam (180/300 pass score): 30-day plan, diagnostic & final mock tests, and letter templates.</p>
+        <h3 data-de="telc B1 Zertifikat" data-en="telc B1 Certification" data-tr="telc B1 Sınav Hazırlığı" data-ar="شهادة telc B1" data-uk="Сертифікація telc B1">telc B1 Certification</h3>
+        <p data-de="Bestehen Sie Ihre B1-Prüfung (180/300 Bestehensgrenze): 30-Tage-Plan, Diagnosetest, Modellprüfungen und Briefvorlagen." data-en="Pass your official B1 exam (180/300 pass score): 30-day plan, diagnostic & final mock tests, and letter templates." data-tr="Resmi B1 sınavını geçin (180/300 barajı): 30 günlük plan, deneme sınavları ve mektup şablonları." data-ar="اجتز امتحان B1 الرسمي (درجة النجاح 180/300): خطة 30 يوماً، اختبارات تشخيصية ونهائية، ونماذج رسائل." data-uk="Складіть офіційний іспит B1 (прохідний бал 180/300): 30-денний план, діагностичні та фінальні тести, шаблони листів.">Pass your official B1 exam (180/300 pass score): 30-day plan, diagnostic & final mock tests, and letter templates.</p>
         <div class="goal-perks">
-          <span data-en="✓ 30-Day Step-by-Step Plan" data-tr="✓ 30 Günlük Adım Adım Plan" data-ar="✓ خطة خطوة بخطوة لمدة 30 يوماً" data-uk="✓ 30-денний покроковий план">✓ 30-Day Step-by-Step Plan</span>
-          <span data-en="✓ 2 Full Mock Simulations" data-tr="✓ 2 Tam Deneme Sınavı" data-ar="✓ محاكاتان كاملتان للامتحان" data-uk="✓ 2 повні симуляції іспиту">✓ 2 Full Mock Simulations</span>
+          <span data-de="✓ 30-Tage Schritt-für-Schritt-Plan" data-en="✓ 30-Day Step-by-Step Plan" data-tr="✓ 30 Günlük Adım Adım Plan" data-ar="✓ خطة خطوة بخطوة لمدة 30 يوماً" data-uk="✓ 30-денний покроковий план">✓ 30-Day Step-by-Step Plan</span>
+          <span data-de="✓ 2 vollständige Prüfungssimulationen" data-en="✓ 2 Full Mock Simulations" data-tr="✓ 2 Tam Deneme Sınavı" data-ar="✓ محاكاتان كاملتان للامتحان" data-uk="✓ 2 повні симуляції іспиту">✓ 2 Full Mock Simulations</span>
         </div>
       </div>
 
@@ -1215,11 +1209,11 @@
           <span class="goal-icon">💼</span>
           <span class="goal-cefr-badge badge-b2">B2 Professional</span>
         </div>
-        <h3 data-en="Advanced & Workplace" data-tr="İleri Düzey & İş Almancası" data-ar="المتقدم وبيئة العمل" data-uk="Просунутий та бізнес-рівень">Advanced & Workplace</h3>
-        <p data-en="Excel in workplace German and academic contexts: advanced vocabulary, complex connectors, and formal writing." data-tr="İş hayatında ve akademik ortamda öne çıkın: ileri düzey kelimeler, karmaşık bağlaçlar ve resmi yazım." data-ar="تميز في الألمانية لبيئة العمل والسياقات الأكاديمية: مفردات متقدمة، أدوات ربط مركبة، وكتابة رسمية." data-uk="Вдосконалюйте німецьку для роботи та академічних цілей: просунута лексика, складні сполучники та офіційне письмо.">Excel in workplace German and academic contexts: advanced vocabulary, complex connectors, and formal writing.</p>
+        <h3 data-de="Fortgeschritten & Beruf" data-en="Advanced & Workplace" data-tr="İleri Düzey & İş Almancası" data-ar="المتقدم وبيئة العمل" data-uk="Просунутий та бізнес-рівень">Advanced & Workplace</h3>
+        <p data-de="Hervorragend im Berufsdeutsch und in akademischen Kontexten: fortgeschrittener Wortschatz, komplexe Konnektoren und formelles Schreiben." data-en="Excel in workplace German and academic contexts: advanced vocabulary, complex connectors, and formal writing." data-tr="İş hayatında ve akademik ortamda öne çıkın: ileri düzey kelimeler, karmaşık bağlaçlar ve resmi yazım." data-ar="تميز في الألمانية لبيئة العمل والسياقات الأكاديمية: مفردات متقدمة، أدوات ربط مركبة، وكتابة رسمية." data-uk="Вдосконалюйте німецьку для роботи та академічних цілей: просунута лексика, складні сполучники та офіційне письмо.">Excel in workplace German and academic contexts: advanced vocabulary, complex connectors, and formal writing.</p>
         <div class="goal-perks">
-          <span data-en="✓ Advanced B2 Study Deck" data-tr="✓ İleri Seviye B2 Destesi" data-ar="✓ مجموعة B2 المتقدمة للدراسة" data-uk="✓ Просунута навчальна колода B2">✓ Advanced B2 Study Deck</span>
-          <span data-en="✓ Complex Connectors & C-Test" data-tr="✓ Karmaşık Bağlaçlar & C-Test" data-ar="✓ أدوات ربط معقدة واختبار C-Test" data-uk="✓ Складні сполучники та C-Test">✓ Complex Connectors & C-Test</span>
+          <span data-de="✓ Fortgeschrittenes B2-Lerndeck" data-en="✓ Advanced B2 Study Deck" data-tr="✓ İleri Seviye B2 Destesi" data-ar="✓ مجموعة B2 المتقدمة للدراسة" data-uk="✓ Просунута навчальна колода B2">✓ Advanced B2 Study Deck</span>
+          <span data-de="✓ Komplexe Konnektoren & C-Test" data-en="✓ Complex Connectors & C-Test" data-tr="✓ Karmaşık Bağlaçlar & C-Test" data-ar="✓ أدوات ربط معقدة واختبار C-Test" data-uk="✓ Складні сполучники та C-Test">✓ Complex Connectors & C-Test</span>
         </div>
       </div>
 
@@ -1229,11 +1223,11 @@
           <span class="goal-icon">🎓</span>
           <span class="goal-cefr-badge badge-c1">C1 Academic</span>
         </div>
-        <h3 data-en="C1 Hochschule & Mastery" data-tr="C1 Üniversite & Uzmanlık" data-ar="C1 للجامعة والاحتراف" data-uk="C1 для університету та майстерність">C1 Hochschule & Mastery</h3>
-        <p data-en="Master academic German for university studies, research papers, and professional settings. High-frequency C1 terminology and complex sentence structures." data-tr="Üniversite eğitimi, akademik makaleler ve profesyonel ortamlar için akademik Almancayı ustalaşın. Yüksek frekanslı C1 terimleri ve karmaşık cümle yapıları." data-ar="أتقن الألمانية الأكاديمية للدراسات الجامعية، الأوراق البحثية، والبيئات الاحترافية. مصطلحات C1 شائعة وتراكيب جمل معقدة." data-uk="Опануйте академічну німецьку для університету, наукових робіт та професійного середовища. Термінологія C1 та складні структури речень.">Master academic German for university studies, research papers, and professional settings. High-frequency C1 terminology and complex sentence structures.</p>
+        <h3 data-de="C1 Hochschule & Meisterschaft" data-en="C1 Hochschule & Mastery" data-tr="C1 Üniversite & Uzmanlık" data-ar="C1 للجامعة والاحتراف" data-uk="C1 для університету та майстерність">C1 Hochschule & Mastery</h3>
+        <p data-de="Akademisches Deutsch für Studium, wissenschaftliche Arbeiten und professionelle Kontexte beherrschen. C1-Fachterminologie und komplexe Syntax." data-en="Master academic German for university studies, research papers, and professional settings. High-frequency C1 terminology and complex sentence structures." data-tr="Üniversite eğitimi, akademik makaleler ve profesyonel ortamlar için akademik Almancayı ustalaşın. Yüksek frekanslı C1 terimleri ve karmaşık cümle yapıları." data-ar="أتقن الألمانية الأكاديمية للدراسات الجامعية، الأوراق البحثية، والبيئات الاحترافية. مصطلحات C1 شائعة وتراكيب جمل معقدة." data-uk="Опануйте академічну німецьку для університету, наукових робіт та професійного середовища. Термінологія C1 та складні структури речень.">Master academic German for university studies, research papers, and professional settings. High-frequency C1 terminology and complex sentence structures.</p>
         <div class="goal-perks">
-          <span data-en="✓ Academic C1 Study Deck" data-tr="✓ Akademik C1 Destesi" data-ar="✓ مجموعة C1 الأكاديمية للدراسة" data-uk="✓ Академічна колода C1">✓ Academic C1 Study Deck</span>
-          <span data-en="✓ University & Research Vocab" data-tr="✓ Üniversite & Araştırma Kelimeleri" data-ar="✓ مفردات الجامعة والبحث العلمي" data-uk="✓ Лексика для університету та досліджень">✓ University & Research Vocab</span>
+          <span data-de="✓ Akademisches C1-Lerndeck" data-en="✓ Academic C1 Study Deck" data-tr="✓ Akademik C1 Destesi" data-ar="✓ مجموعة C1 الأكاديمية للدراسة" data-uk="✓ Академічна колода C1">✓ Academic C1 Study Deck</span>
+          <span data-de="✓ Universitäts- & Forschungswortschatz" data-en="✓ University & Research Vocab" data-tr="✓ Üniversite & Araştırma Kelimeleri" data-ar="✓ مفردات الجامعة والبحث العلمي" data-uk="✓ Лексика для університету та досліджень">✓ University & Research Vocab</span>
         </div>
       </div>
 
@@ -1243,11 +1237,11 @@
           <span class="goal-icon">⚡</span>
           <span class="goal-cefr-badge badge-all">All Levels</span>
         </div>
-        <h3 data-en="Rapid Vocab Trainer" data-tr="Hızlı Kelime Antrenmanı" data-ar="مدرب المفردات السريع" data-uk="Швидкий тренажер слів">Rapid Vocab Trainer</h3>
-        <p data-en="Jump directly into high-speed flashcards, 5 quiz modes, native audio speech, and daily streak tracking." data-tr="Hızlı kelime kartlarına, 5 test moduna, sesli telaffuza ve seri takibine doğrudan atlayın." data-ar="انتقل مباشرة إلى بطاقات المفردات السريعة، 5 أوضاع اختبار، نطق صوتي أصلي، ومتابعة السلسلة اليومية." data-uk="Переходьте одразу до швидких карток, 5 режимів тестів, озвучення та відстеження щоденних серій.">Jump directly into high-speed flashcards, 5 quiz modes, native audio speech, and daily streak tracking.</p>
+        <h3 data-de="Schnell-Vokabeltrainer" data-en="Rapid Vocab Trainer" data-tr="Hızlı Kelime Antrenmanı" data-ar="مدرب المفردات السريع" data-uk="Швидкий тренажер слів">Rapid Vocab Trainer</h3>
+        <p data-de="Starten Sie direkt mit schnellen Karteikarten, 5 Quizmodi, nativer Sprachausgabe und täglicher Streak-Verfolgung." data-en="Jump directly into high-speed flashcards, 5 quiz modes, native audio speech, and daily streak tracking." data-tr="Hızlı kelime kartlarına, 5 test moduna, sesli telaffuza ve seri takibine doğrudan atlayın." data-ar="انتقل مباشرة إلى بطاقات المفردات السريعة، 5 أوضاع اختبار، نطق صوتي أصلي، ومتابعة السلسلة اليومية." data-uk="Переходьте одразу до швидких карток, 5 режимів тестів, озвучення та відстеження щоденних серій.">Jump directly into high-speed flashcards, 5 quiz modes, native audio speech, and daily streak tracking.</p>
         <div class="goal-perks">
-          <span data-en="✓ 2,000+ Words Offline" data-tr="✓ 2.000+ Kelime Çevrimdışı" data-ar="✓ أكثر من 2,000 كلمة بدون إنترنت" data-uk="✓ 2 000+ слів офлайн">✓ 2,000+ Words Offline</span>
-          <span data-en="✓ Native Audio & Spaced Drills" data-tr="✓ Sesli Tekrar & Akıllı Algoritma" data-ar="✓ نطق صوتي وتدريبات ذكية متباعدة" data-uk="✓ Озвучення та інтервальні тренування">✓ Native Audio & Spaced Drills</span>
+          <span data-de="✓ 2.000+ Wörter offline" data-en="✓ 2,000+ Words Offline" data-tr="✓ 2.000+ Kelime Çevrimdışı" data-ar="✓ أكثر من 2,000 كلمة بدون إنترنت" data-uk="✓ 2 000+ слів офлайн">✓ 2,000+ Words Offline</span>
+          <span data-de="✓ Native Sprachausgabe & Spaced Drills" data-en="✓ Native Audio & Spaced Drills" data-tr="✓ Sesli Tekrar & Akıllı Algoritma" data-ar="✓ نطق صوتي وتدريبات ذكية متباعدة" data-uk="✓ Озвучення та інтервальні тренування">✓ Native Audio & Spaced Drills</span>
         </div>
       </div>
 
@@ -1257,11 +1251,11 @@
           <span class="goal-icon">🇩🇪</span>
           <span class="goal-cefr-badge badge-b1">BAMF LiD 310</span>
         </div>
-        <h3 data-en="Leben in Deutschland" data-tr="Leben in Deutschland" data-ar="الحياة في ألمانيا (LiD)" data-uk="Життя в Німеччині (LiD)">Leben in Deutschland</h3>
-        <p data-en="Pass the official German citizenship test (Einbürgerungstest): 300 general questions + 160 state questions with images, quad-lingual translations, and mock test simulation." data-tr="Resmi Alman vatandaşlık sınavını (Einbürgerungstest) geçin: 300 genel soru + 16 eyalet sorusu, görsel sorular, 4 dilli çeviriler ve sınav simülasyonu." data-ar="اجتز امتحان الجنسية الألمانية الرسمي: 300 سؤال عام + 160 سؤال للولايات مع صور، ترجمة بـ 4 لغات، ومحاكاة للامتحان." data-uk="Складіть офіційний тест на громадянство Німеччини: 300 загальних питань + 160 питань земель з ілюстраціями, 4-мовними перекладами та симуляцією.">Pass the official German citizenship test (Einbürgerungstest): 300 general questions + 160 state questions with images, quad-lingual translations, and mock test simulation.</p>
+        <h3 data-de="Leben in Deutschland" data-en="Leben in Deutschland" data-tr="Leben in Deutschland" data-ar="الحياة في ألمانيا (LiD)" data-uk="Життя в Німеччині (LiD)">Leben in Deutschland</h3>
+        <p data-de="Bestehen Sie den Einbürgerungstest: 300 allgemeine und 160 Bundeslandfragen mit Bildern, viersprachigen Übersetzungen und Prüfungssimulation." data-en="Pass the official German citizenship test (Einbürgerungstest): 300 general questions + 160 state questions with images, quad-lingual translations, and mock test simulation." data-tr="Resmi Alman vatandaşlık sınavını (Einbürgerungstest) geçin: 300 genel soru + 16 eyalet sorusu, görsel sorular, 4 dilli çeviriler ve sınav simülasyonu." data-ar="اجتز امتحان الجنسية الألمانية الرسمي: 300 سؤال عام + 160 سؤال للولايات مع صور، ترجمة بـ 4 لغات، ومحاكاة للامتحان." data-uk="Складіть офіційний тест на громадянство Німеччини: 300 загальних питань + 160 питань земель з ілюстраціями, 4-мовними перекладами та симуляцією.">Pass the official German citizenship test (Einbürgerungstest): 300 general questions + 160 state questions with images, quad-lingual translations, and mock test simulation.</p>
         <div class="goal-perks">
-          <span data-en="✓ All 300 BAMF + 160 State Questions" data-tr="✓ 300 BAMF + 160 Eyalet Sorusu" data-ar="✓ 300 سؤال عام + 160 سؤال ولايات" data-uk="✓ 300 загальних + 160 питань земель">✓ All 300 BAMF + 160 State Questions</span>
-          <span data-en="✓ Real 33-Question Simulation" data-tr="✓ Gerçek 33 Soruluk Simülasyon" data-ar="✓ محاكاة حقيقية من 33 سؤالاً" data-uk="✓ Реальна симуляція на 33 питання">✓ Real 33-Question Simulation</span>
+          <span data-de="✓ Alle 300 BAMF- + 160 Bundeslandfragen" data-en="✓ All 300 BAMF + 160 State Questions" data-tr="✓ 300 BAMF + 160 Eyalet Sorusu" data-ar="✓ 300 سؤال عام + 160 سؤال ولايات" data-uk="✓ 300 загальних + 160 питань земель">✓ All 300 BAMF + 160 State Questions</span>
+          <span data-de="✓ Echte 33-Fragen-Simulation" data-en="✓ Real 33-Question Simulation" data-tr="✓ Gerçek 33 Soruluk Simülasyon" data-ar="✓ محاكاة حقيقية من 33 سؤالاً" data-uk="✓ Реальна симуляція на 33 питання">✓ Real 33-Question Simulation</span>
         </div>
       </div>
     </div>
@@ -1269,18 +1263,18 @@
     <!-- Fine-tune Level & Language Controls -->
     <div class="entrance-controls-row">
       <div class="entrance-control-group">
-        <label for="entrance-level-select" data-en="Target CEFR Level:" data-tr="Hedef CEFR Seviyeniz:" data-ar="المستوى المستهدف حسب الإطار الأوروبي:" data-uk="Цільовий рівень CEFR:">Target CEFR Level:</label>
+        <label data-de="Ziel-GER-Niveau:" for="entrance-level-select" data-en="Target CEFR Level:" data-tr="Hedef CEFR Seviyeniz:" data-ar="المستوى المستهدف حسب الإطار الأوروبي:" data-uk="Цільовий рівень CEFR:">Target CEFR Level:</label>
         <select id="entrance-level-select" class="styled-select" onchange="onEntranceLevelChange(this.value)">
-          <option value="A1" data-en="A1 – Beginner (Anfänger)" data-tr="A1 – Başlangıç (Anfänger)" data-ar="A1 – مبتدئ (Anfänger)" data-uk="A1 – Початковий (Anfänger)">A1 – Beginner (Anfänger)</option>
-          <option value="A2" data-en="A2 – Elementary (Grundstufe)" data-tr="A2 – Temel (Grundstufe)" data-ar="A2 – أساسي (Grundstufe)" data-uk="A2 – Базовий (Grundstufe)">A2 – Elementary (Grundstufe)</option>
-          <option value="B1" selected data-en="B1 – Intermediate (telc / Goethe)" data-tr="B1 – Orta Seviye (telc / Goethe)" data-ar="B1 – متوسط (telc / Goethe)" data-uk="B1 – Середній (telc / Goethe)">B1 – Intermediate (telc / Goethe)</option>
-          <option value="B2" data-en="B2 – Upper Intermediate (Fortgeschritten)" data-tr="B2 – İleri Orta (Fortgeschritten)" data-ar="B2 – فوق المتوسط (Fortgeschritten)" data-uk="B2 – Вище середнього (Fortgeschritten)">B2 – Upper Intermediate (Fortgeschritten)</option>
-          <option value="C1" data-en="C1 – Advanced Academic (Hochschule)" data-tr="C1 – İleri Akademik (Hochschule)" data-ar="C1 – أكاديمي متقدم (Hochschule)" data-uk="C1 – Просунутий академічний (Hochschule)">C1 – Advanced Academic (Hochschule)</option>
-          <option value="ALL" data-en="All Levels Combined (A1–C1)" data-tr="Tüm Seviyeler Bir Arada (A1–C1)" data-ar="جميع المستويات مجتمعة (A1–C1)" data-uk="Усі рівні разом (A1–C1)">All Levels Combined (A1–C1)</option>
+          <option data-de="A1 – Anfänger" value="A1" data-en="A1 – Beginner (Anfänger)" data-tr="A1 – Başlangıç (Anfänger)" data-ar="A1 – مبتدئ (Anfänger)" data-uk="A1 – Початковий (Anfänger)">A1 – Beginner (Anfänger)</option>
+          <option data-de="A2 – Grundstufe" value="A2" data-en="A2 – Elementary (Grundstufe)" data-tr="A2 – Temel (Grundstufe)" data-ar="A2 – أساسي (Grundstufe)" data-uk="A2 – Базовий (Grundstufe)">A2 – Elementary (Grundstufe)</option>
+          <option data-de="B1 – Mittelstufe (telc / Goethe)" value="B1" selected data-en="B1 – Intermediate (telc / Goethe)" data-tr="B1 – Orta Seviye (telc / Goethe)" data-ar="B1 – متوسط (telc / Goethe)" data-uk="B1 – Середній (telc / Goethe)">B1 – Intermediate (telc / Goethe)</option>
+          <option data-de="B2 – Obere Mittelstufe (Fortgeschritten)" value="B2" data-en="B2 – Upper Intermediate (Fortgeschritten)" data-tr="B2 – İleri Orta (Fortgeschritten)" data-ar="B2 – فوق المتوسط (Fortgeschritten)" data-uk="B2 – Вище середнього (Fortgeschritten)">B2 – Upper Intermediate (Fortgeschritten)</option>
+          <option data-de="C1 – Fortgeschritten Akademisch (Hochschule)" value="C1" data-en="C1 – Advanced Academic (Hochschule)" data-tr="C1 – İleri Akademik (Hochschule)" data-ar="C1 – أكاديمي متقدم (Hochschule)" data-uk="C1 – Просунутий академічний (Hochschule)">C1 – Advanced Academic (Hochschule)</option>
+          <option data-de="Alle Niveaus kombiniert (A1–C1)" value="ALL" data-en="All Levels Combined (A1–C1)" data-tr="Tüm Seviyeler Bir Arada (A1–C1)" data-ar="جميع المستويات مجتمعة (A1–C1)" data-uk="Усі рівні разом (A1–C1)">All Levels Combined (A1–C1)</option>
         </select>
       </div>
       <div class="entrance-control-group">
-        <label for="entrance-lang-select" data-en="Learning from language:" data-tr="Açıklama / Hedef diliniz:" data-ar="لغة الشرح والتعلم منها:" data-uk="Мова навчання та підказок:">Learning from language:</label>
+        <label data-de="Ausgangssprache:" for="entrance-lang-select" data-en="Learning from language:" data-tr="Açıklama / Hedef diliniz:" data-ar="لغة الشرح والتعلم منها:" data-uk="Мова навчання та підказок:">Learning from language:</label>
         <select id="entrance-lang-select" class="styled-select" onchange="setLang(this.value)">
           <option value="de">🇩🇪 Deutsch</option>
           <option value="en">🇬🇧 English</option>
@@ -1294,10 +1288,10 @@
     <!-- Modal Footer Actions -->
     <div class="entrance-footer">
       <button class="btn-primary entrance-confirm-btn" id="btn-confirm-goal" onclick="applyGoalSelection()">
-        <span data-en="Start Learning →" data-tr="Öğrenmeye Başla →" data-ar="ابدأ التعلم ←" data-uk="Почати навчання →">Start Learning →</span>
+        <span data-de="Lernen starten →" data-en="Start Learning →" data-tr="Öğrenmeye Başla →" data-ar="ابدأ التعلم ←" data-uk="Почати навчання →">Start Learning →</span>
       </button>
       <button class="btn-secondary entrance-dismiss-btn" id="btn-dismiss-goal" onclick="closeGoalModal()">
-        <span data-en="Explore All Materials" data-tr="Tüm Materyalleri İncele" data-ar="استكشاف جميع المواد" data-uk="Переглянути всі матеріали">Explore All Materials</span>
+        <span data-de="Alle Materialien erkunden" data-en="Explore All Materials" data-tr="Tüm Materyalleri İncele" data-ar="استكشاف جميع المواد" data-uk="Переглянути всі матеріали">Explore All Materials</span>
       </button>
     </div>
   </div>
@@ -1308,7 +1302,7 @@
   <div class="privacy-consent-content">
     <div class="privacy-consent-text">
       <span class="privacy-icon">🔒</span>
-      <span data-en="Zero-Tracking Privacy: DeutschLernen saves all study progress locally on your device in compliance with DSGVO / GDPR. No advertising or profiling cookies used."
+      <span data-de="Zero-Tracking-Datenschutz: DeutschLernen speichert alle Lernfortschritte DSGVO-konform lokal auf Ihrem Gerät. Keine Werbe- oder Profiling-Cookies." data-en="Zero-Tracking Privacy: DeutschLernen saves all study progress locally on your device in compliance with DSGVO / GDPR. No advertising or profiling cookies used."
             data-tr="Sıfır Takip Gizliliği: DeutschLernen, tüm çalışma ilerlemenizi KVKK / DSGVO uyumlu olarak yalnızca cihazınızda saklar. Reklam veya takip çerezi kullanılmaz."
             data-ar="خصوصية بدون تعقب: يحفظ DeutschLernen تقدمك في الدراسة محلياً على جهازك وفقاً لقانون حماية البيانات الأوروبي (GDPR). لا توجد ملفات تعريف ارتباط للإعلانات."
             data-uk="Повна конфіденційність: DeutschLernen зберігає прогрес виключно на вашому пристрої відповідно до норм GDPR. Жодних рекламних файлів cookie.">
@@ -1316,9 +1310,9 @@
       </span>
     </div>
     <div class="privacy-consent-actions">
-      <a href="legal.html#datenschutz" class="privacy-link" target="_blank"
+      <a data-de="Datenschutzerklärung" href="legal.html#datenschutz" class="privacy-link" target="_blank"
          data-en="Privacy Policy" data-tr="Gizlilik Politikası" data-ar="سياسة الخصوصية" data-uk="Політика конфіденційності">Privacy Policy</a>
-      <button type="button" class="btn-privacy-accept" onclick="dismissPrivacyBanner()"
+      <button data-de="✓ Verstanden" type="button" class="btn-privacy-accept" onclick="dismissPrivacyBanner()"
               data-en="✓ Got it" data-tr="✓ Anladım" data-ar="✓ حسناً" data-uk="✓ Зрозуміло">✓ Got it</button>
     </div>
   </div>
