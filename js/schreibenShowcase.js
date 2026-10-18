@@ -2412,6 +2412,8 @@ function openLemonSqueezyCheckout(tierId = 'pass-30') {
   const url = checkoutUrls[tierId] || checkoutUrls['pass-30'];
   if (typeof window !== 'undefined' && window.LemonSqueezy && typeof window.LemonSqueezy.Url?.Open === 'function') {
     window.LemonSqueezy.Url.Open(url);
+  } else if (typeof selectProPlan === 'function') {
+    selectProPlan(tierId);
   } else if (typeof window !== 'undefined') {
     window.open(url, '_blank');
   }
@@ -3264,6 +3266,10 @@ function confirmInstantDemoOrder(tierId, explicitMethod) {
         inst.renderScorecard(refreshedEval, inst.lastLetterText);
       }
     }
+  }
+
+  if (typeof window !== 'undefined' && typeof window.updateDashboardMetrics === 'function') {
+    window.updateDashboardMetrics();
   }
 
   const emailInput = document.getElementById('checkout-email');

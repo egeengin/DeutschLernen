@@ -305,14 +305,18 @@
       this.timerRunning = false;
       this.lastEvaluation = null;
       SchreibenExaminer.instance = this;
+      if (this.mountEl) {
+        this.render();
+      }
     }
 
     detectLanguage() {
+      if (typeof localStorage !== 'undefined') {
+        const stored = localStorage.getItem('deutschlernen_lang') || localStorage.getItem('site_lang') || localStorage.getItem('telc_lang');
+        if (stored && I18N[stored]) return stored;
+      }
       if (typeof StorageService !== 'undefined') {
         return StorageService.getLanguage();
-      }
-      if (typeof localStorage !== 'undefined') {
-        return localStorage.getItem('deutschlernen_lang') || 'en';
       }
       return 'en';
     }
@@ -800,6 +804,9 @@
             StorageService.setLicenseKey(trimmed);
           } else {
             localStorage.setItem('deutschlernen_pro_license', trimmed);
+          }
+          if (typeof window !== 'undefined' && typeof window.updateDashboardMetrics === 'function') {
+            window.updateDashboardMetrics();
           }
           alert('✅ Pro Exam Pass License activated!');
           this.submitEvaluation();

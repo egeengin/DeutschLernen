@@ -472,18 +472,21 @@ function renderSidebar() {
   if (header) {
     const headers = {
       b1: {
+        de: 'B1 LERNMODULE',
         en: 'B1 STUDY MODULES',
         tr: 'B1 ÇALIŞMA MODÜLLERİ',
         ar: 'الوحدات الدراسية B1',
         uk: 'НАВЧАЛЬНІ МОДУЛІ B1'
       },
       vocab: {
+        de: 'WORTSCHATZ-TRAINER BEREICHE',
         en: 'VOCAB TRAINER SECTIONS',
         tr: 'KELİME ANTRENÖRÜ BÖLÜMLERİ',
         ar: 'أقسام مدرب المفردات',
         uk: 'РОЗДІЛИ ТРЕНАЖЕРА СЛІВ'
       },
       lid: {
+        de: 'LEBEN IN DEUTSCHLAND',
         en: 'LEBEN IN DEUTSCHLAND',
         tr: 'LEBEN IN DEUTSCHLAND BÖLÜMLERİ',
         ar: 'أقسام الحياة في ألمانيا',
@@ -491,6 +494,7 @@ function renderSidebar() {
       }
     };
     const h = headers[track] || headers.b1;
+    header.setAttribute('data-de', h.de);
     header.setAttribute('data-en', h.en);
     header.setAttribute('data-tr', h.tr);
     header.setAttribute('data-ar', h.ar);
@@ -502,6 +506,7 @@ function renderSidebar() {
     const vocabLinks = [
       {
         icon: '⚡',
+        de: '2.000+ Wörter Training',
         en: '2,000+ Words Drill',
         tr: '2.000+ Kelime Antrenmanı',
         ar: 'تدريب أكثر من 2000 كلمة',
@@ -510,6 +515,7 @@ function renderSidebar() {
       },
       {
         icon: '📦',
+        de: 'Grundwortschatz 2.000 (A1–B1)',
         en: 'Core 2,000 (A1–B1)',
         tr: 'Temel 2.000 (A1–B1)',
         ar: 'الأساسية 2000 (A1–B1)',
@@ -518,6 +524,7 @@ function renderSidebar() {
       },
       {
         icon: '💼',
+        de: 'Fortgeschrittenes B2-Deck',
         en: 'Advanced B2 Deck',
         tr: 'İleri B2 Destesi',
         ar: 'مجموعة B2 المتقدمة',
@@ -526,6 +533,7 @@ function renderSidebar() {
       },
       {
         icon: '🎓',
+        de: 'Akademisches C1-Deck',
         en: 'Academic C1 Deck',
         tr: 'Akademik C1 Destesi',
         ar: 'مجموعة C1 الأكاديمية',
@@ -534,6 +542,7 @@ function renderSidebar() {
       },
       {
         icon: '🎯',
+        de: '5 Quiz-Modi',
         en: '5 Quiz Modes',
         tr: '5 Test Modu',
         ar: '5 أوضاع اختبار',
@@ -542,6 +551,7 @@ function renderSidebar() {
       },
       {
         icon: '🚀',
+        de: 'Vollbild-Trainer starten ↗',
         en: 'Launch Full Trainer ↗',
         tr: 'Tam Ekran Antrenör ↗',
         ar: 'تشغيل المدرب الكامل ↗',
@@ -554,12 +564,12 @@ function renderSidebar() {
     vocabLinks.forEach((item) => {
       const title = item[currentLang] || item.en;
       if (item.href) {
-        nav.innerHTML += `<a href="${item.href}" class="sidebar-nav-item ${item.highlight ? 'highlight-pill' : ''}" data-en="${item.en}" data-tr="${item.tr}" data-ar="${item.ar}" data-uk="${item.uk}">
+        nav.innerHTML += `<a href="${item.href}" class="sidebar-nav-item ${item.highlight ? 'highlight-pill' : ''}" data-de="${item.de}" data-en="${item.en}" data-tr="${item.tr}" data-ar="${item.ar}" data-uk="${item.uk}">
           <span class="icon">${item.icon}</span>
           <span>${title}</span>
         </a>`;
       } else {
-        nav.innerHTML += `<a href="javascript:void(0)" class="sidebar-nav-item" onclick="${item.action}" data-en="${item.en}" data-tr="${item.tr}" data-ar="${item.ar}" data-uk="${item.uk}">
+        nav.innerHTML += `<a href="javascript:void(0)" class="sidebar-nav-item" onclick="${item.action}" data-de="${item.de}" data-en="${item.en}" data-tr="${item.tr}" data-ar="${item.ar}" data-uk="${item.uk}">
           <span class="icon">${item.icon}</span>
           <span>${title}</span>
         </a>`;
@@ -570,6 +580,7 @@ function renderSidebar() {
     const lidLinks = [
       {
         icon: '🇩🇪',
+        de: '300 BAMF-Fragen',
         en: '300 BAMF Questions',
         tr: '300 Genel Soru',
         ar: '300 سؤال عام',
@@ -578,6 +589,7 @@ function renderSidebar() {
       },
       {
         icon: '🏛️',
+        de: '160 Bundeslandfragen',
         en: '160 State Questions',
         tr: '160 Eyalet Sorusu',
         ar: '160 سؤال للولايات',
@@ -586,6 +598,7 @@ function renderSidebar() {
       },
       {
         icon: '⏱️',
+        de: '33-Fragen-Probeprüfung',
         en: '33-Question Mock Exam',
         tr: '33 Soruluk Deneme',
         ar: 'محاكاة الامتحان (33 سؤالاً)',
@@ -594,6 +607,7 @@ function renderSidebar() {
       },
       {
         icon: '📋',
+        de: 'Prüfungs-Checkliste',
         en: 'High-Yield Checklist',
         tr: 'Sınav Kontrol Listesi',
         ar: 'قائمة مراجعة الامتحان',
@@ -604,7 +618,7 @@ function renderSidebar() {
 
     lidLinks.forEach((item) => {
       const title = item[currentLang] || item.en;
-      nav.innerHTML += `<a href="javascript:void(0)" class="sidebar-nav-item" onclick="${item.action}" data-en="${item.en}" data-tr="${item.tr}" data-ar="${item.ar}" data-uk="${item.uk}">
+      nav.innerHTML += `<a href="javascript:void(0)" class="sidebar-nav-item" onclick="${item.action}" data-de="${item.de}" data-en="${item.en}" data-tr="${item.tr}" data-ar="${item.ar}" data-uk="${item.uk}">
         <span class="icon">${item.icon}</span>
         <span>${title}</span>
       </a>`;
@@ -615,7 +629,7 @@ function renderSidebar() {
     materials.forEach((m, i) => {
       const id = navIds[i];
       const title = getMaterialField(m, 'title');
-      nav.innerHTML += `<a href="javascript:void(0)" class="sidebar-nav-item" onclick="openB1Module(${i}); showSection('${id}')" data-en="${m.title}" data-tr="${m.titleTr}" data-ar="${m.titleAr || ''}" data-uk="${m.titleUk || ''}">
+      nav.innerHTML += `<a href="javascript:void(0)" class="sidebar-nav-item" onclick="openB1Module(${i}); showSection('${id}')" data-de="${m.titleDe || m.title}" data-en="${m.title}" data-tr="${m.titleTr}" data-ar="${m.titleAr || ''}" data-uk="${m.titleUk || ''}">
         <span class="icon">${m.icon}</span>
         <span>${title}</span>
         <span class="num">${i+1}</span>
@@ -625,6 +639,7 @@ function renderSidebar() {
     const b1Tools = [
       {
         icon: '🔍',
+        de: 'Sprachbausteine-Quiz',
         en: 'Sprachbausteine Quiz',
         tr: 'Dil Yapıları Testi',
         ar: 'اختبار تراكيب اللغة',
@@ -633,6 +648,7 @@ function renderSidebar() {
       },
       {
         icon: '🗂️',
+        de: 'Schnelles Vokabeltraining',
         en: 'Quick Vocab Drill',
         tr: 'Hızlı Kelime Pratiği',
         ar: 'تدريب سريع للمفردات',
@@ -641,6 +657,7 @@ function renderSidebar() {
       },
       {
         icon: '✍️',
+        de: 'Prüfersuite',
         en: 'Examiner Suite',
         tr: 'Değerlendirme Paketi',
         ar: 'باقة التقييم',
@@ -649,6 +666,7 @@ function renderSidebar() {
       },
       {
         icon: '📝',
+        de: 'Fehlerheft',
         en: 'Weak-Spot Notebook',
         tr: 'Hata Defteri (Fehlerheft)',
         ar: 'دفتر معالجة الأخطاء',
@@ -660,7 +678,7 @@ function renderSidebar() {
     nav.innerHTML += `<div class="sidebar-sub-divider"></div>`;
     b1Tools.forEach((tool) => {
       const title = tool[currentLang] || tool.en;
-      nav.innerHTML += `<a href="javascript:void(0)" class="sidebar-nav-item tool-link" onclick="${tool.action}" data-en="${tool.en}" data-tr="${tool.tr}" data-ar="${tool.ar}" data-uk="${tool.uk}">
+      nav.innerHTML += `<a href="javascript:void(0)" class="sidebar-nav-item tool-link" onclick="${tool.action}" data-de="${tool.de}" data-en="${tool.en}" data-tr="${tool.tr}" data-ar="${tool.ar}" data-uk="${tool.uk}">
         <span class="icon">${tool.icon}</span>
         <span>${title}</span>
       </a>`;
@@ -689,12 +707,14 @@ function renderCards() {
   const targetLevels = activeGoal.levels || [currentGoalLevel];
 
   const btnTexts = {
+    de: '📄 Modul öffnen &rarr;',
     en: '📄 Open Module &rarr;',
     tr: '📄 Modülü Aç &rarr;',
     ar: '📄 فتح الوحدة &larr;',
     uk: '📄 Відкрити модуль &rarr;'
   };
   const recBadges = {
+    de: '⭐ Empfohlen',
     en: '⭐ Recommended',
     tr: '⭐ Önerilen',
     ar: '⭐ موصى به',
@@ -708,17 +728,17 @@ function renderCards() {
     const isRecommended = m.levels && m.levels.some(lvl => targetLevels.includes(lvl));
     const recText = recBadges[currentLang] || recBadges.en;
     const recBadge = isRecommended 
-      ? `<span class="card-badge-recommended" data-en="⭐ Recommended" data-tr="⭐ Önerilen" data-ar="⭐ موصى به" data-uk="⭐ Рекомендовано">${recText}</span>` 
+      ? `<span class="card-badge-recommended" data-de="⭐ Empfohlen" data-en="⭐ Recommended" data-tr="⭐ Önerilen" data-ar="⭐ موصى به" data-uk="⭐ Рекомендовано">${recText}</span>` 
       : '';
 
     cardsEl.innerHTML += `<div class="card ${isRecommended ? 'recommended' : ''}" onclick="openMaterial(${i})">
       ${recBadge}
       <div class="card-icon">${m.icon}</div>
-      <h3 data-en="${m.title}" data-tr="${m.titleTr}" data-ar="${m.titleAr || ''}" data-uk="${m.titleUk || ''}">${title}</h3>
-      <p data-en="${m.desc}" data-tr="${m.descTr}" data-ar="${m.descAr || ''}" data-uk="${m.descUk || ''}">${desc}</p>
+      <h3 data-de="${m.titleDe || m.title}" data-en="${m.title}" data-tr="${m.titleTr}" data-ar="${m.titleAr || ''}" data-uk="${m.titleUk || ''}">${title}</h3>
+      <p data-de="${m.descDe || m.desc}" data-en="${m.desc}" data-tr="${m.descTr}" data-ar="${m.descAr || ''}" data-uk="${m.descUk || ''}">${desc}</p>
       <div class="card-links">
         <button class="card-link primary" onclick="event.stopPropagation(); openMaterial(${i});">
-          <span data-en="📄 Open Module &rarr;" data-tr="📄 Modülü Aç &rarr;" data-ar="📄 فتح الوحدة &larr;" data-uk="📄 Відкрити модуль &rarr;">${btnText}</span>
+          <span data-de="📄 Modul öffnen &rarr;" data-en="📄 Open Module &rarr;" data-tr="📄 Modülü Aç &rarr;" data-ar="📄 فتح الوحدة &larr;" data-uk="📄 Відкрити модуль &rarr;">${btnText}</span>
         </button>
       </div>
     </div>`;
@@ -1029,6 +1049,7 @@ function openMarkdown(url, skipHistory = false) {
   document.body.style.overflow = 'hidden'; // prevent background scrolling
   
   const loaderText = {
+    de: 'Inhalt wird geladen...',
     en: 'Loading content...',
     tr: 'İçerik yükleniyor...',
     ar: 'جاري تحميل المحتوى...',
@@ -1200,7 +1221,8 @@ window.checkMdQuiz = function(qId, selectedIdx, correctIdx) {
 };
 
 function closeMarkdown(skipHistory = false) {
-  document.getElementById('md-view').classList.remove('open');
+  const mdView = document.getElementById('md-view');
+  if (mdView) mdView.classList.remove('open');
   document.body.style.overflow = '';
   if (!skipHistory && history.state && history.state.mdOpen) {
     history.pushState({ mdOpen: false }, '', window.location.pathname);
@@ -1217,12 +1239,14 @@ function toggleTheme() {
   updateThemeIcon();
   
   // Re-render markdown to fix Mermaid diagram themes dynamically
-  if (document.getElementById('md-view').classList.contains('open') && currentMdUrl) {
+  const mdView = document.getElementById('md-view');
+  if (mdView && mdView.classList.contains('open') && currentMdUrl) {
     openMarkdown(currentMdUrl);
   }
 }
 function updateThemeIcon() {
-  document.getElementById('theme-btn').textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+  const themeBtn = document.getElementById('theme-btn');
+  if (themeBtn) themeBtn.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
 }
 updateThemeIcon();
 
@@ -1263,7 +1287,8 @@ function updateDayTracker() {
   const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
   const curDay = Math.min(diffDays, 30);
   let dayText = `Day ${curDay} of 30`;
-  if (currentLang === 'tr') dayText = `30'un ${curDay}. Günü`;
+  if (currentLang === 'de') dayText = `Tag ${curDay} von 30`;
+  else if (currentLang === 'tr') dayText = `30'un ${curDay}. Günü`;
   else if (currentLang === 'ar') dayText = `اليوم ${curDay} من 30`;
   else if (currentLang === 'uk') dayText = `День ${curDay} з 30`;
   const dayEl = document.getElementById('day-counter');
@@ -1535,13 +1560,12 @@ function switchTrack(trackId) {
     if (rect.top < 0 || window.scrollY > 200) {
       switcher.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+    try {
+      if (window.location.hash !== `#${trackId}`) {
+        history.replaceState(null, '', `#${trackId}`);
+      }
+    } catch (e) {}
   }
-
-  try {
-    if (window.location.hash !== `#${trackId}`) {
-      history.replaceState(null, '', `#${trackId}`);
-    }
-  } catch (e) {}
 
   const sidebar = document.querySelector('.sidebar');
   if (sidebar) sidebar.classList.remove('open');
@@ -1711,6 +1735,7 @@ function initFeedbackForm() {
           statusMsg.style.display = 'block';
           statusMsg.className = 'auth-notice-msg success';
           const successMsgs = {
+            de: "Vielen Dank! Ihr Feedback wurde erfolgreich gesendet.",
             en: "Thank you! Your feedback has been received.",
             tr: "Teşekkür ederiz! Geri bildiriminiz başarıyla iletildi.",
             ar: "شكراً لك! تم استلام ملاحظاتك بنجاح.",
@@ -1733,6 +1758,7 @@ function initFeedbackForm() {
           statusMsg.style.display = 'block';
           statusMsg.className = 'auth-notice-msg error';
           const failMsgs = {
+            de: "Senden fehlgeschlagen",
             en: "Submission failed",
             tr: "Gönderim başarısız oldu",
             ar: "فشل إرسال الملاحظات",
@@ -1970,7 +1996,7 @@ function initEntranceGoal() {
 
   switchTrack(targetTrack);
 
-  if (!storedGoal && !hash) {
+  if (!storedGoal && !hash && document.getElementById('entrance-modal')) {
     // Show entrance modal on first visit
     setTimeout(() => {
       openGoalModal();
@@ -2061,7 +2087,7 @@ function initUrlParamsAndCheckoutReturn() {
     let cleaned = false;
 
     if (checkoutStatus === 'success' || checkoutStatus === 'completed') {
-      const tierId = tier || 'standard';
+      const tierId = tier || 'pass-30';
       if (typeof window.confirmInstantDemoOrder === 'function') {
         window.confirmInstantDemoOrder(tierId);
       } else if (typeof window.grantLetterCredits === 'function') {

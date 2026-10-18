@@ -575,6 +575,33 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertEqual(result.returncode, 0, f"Portal DOM tests failed:\n{result.stderr}\n{result.stdout}")
         self.assertIn("All Portal DOM unit tests passed successfully", result.stdout)
 
+    def test_dashboard_workspace_headless_passes(self):
+        """Execute node tests/test_dashboard_workspace.js and verify exit code 0."""
+        import subprocess
+        script_path = os.path.join(ROOT_DIR, "tests", "test_dashboard_workspace.js")
+        self.assertTrue(os.path.exists(script_path), "test_dashboard_workspace.js must exist.")
+        result = subprocess.run(["node", script_path], capture_output=True, text=True, cwd=ROOT_DIR)
+        self.assertEqual(result.returncode, 0, f"Dashboard Workspace tests failed:\n{result.stderr}\n{result.stdout}")
+        self.assertIn("All Student App Workspace (dashboard.html) tests passed successfully", result.stdout)
+
+    def test_schreiben_ui_component_headless_passes(self):
+        """Execute node tests/test_schreiben_ui_component.js and verify exit code 0."""
+        import subprocess
+        script_path = os.path.join(ROOT_DIR, "tests", "test_schreiben_ui_component.js")
+        self.assertTrue(os.path.exists(script_path), "test_schreiben_ui_component.js must exist.")
+        result = subprocess.run(["node", script_path], capture_output=True, text=True, cwd=ROOT_DIR)
+        self.assertEqual(result.returncode, 0, f"Schreiben UI Component tests failed:\n{result.stderr}\n{result.stdout}")
+        self.assertIn("All SchreibenExaminer UI Component Tests Passed Successfully", result.stdout)
+
+    def test_worker_schreiben_evaluator_headless_passes(self):
+        """Execute node tests/test_worker_schreiben_evaluator.js and verify exit code 0."""
+        import subprocess
+        script_path = os.path.join(ROOT_DIR, "tests", "test_worker_schreiben_evaluator.js")
+        self.assertTrue(os.path.exists(script_path), "test_worker_schreiben_evaluator.js must exist.")
+        result = subprocess.run(["node", script_path], capture_output=True, text=True, cwd=ROOT_DIR)
+        self.assertEqual(result.returncode, 0, f"Worker Schreiben Evaluator tests failed:\n{result.stderr}\n{result.stdout}")
+        self.assertIn("All Cloudflare Worker Backend Tests Passed Successfully", result.stdout)
+
 
 if __name__ == "__main__":
     unittest.main()
