@@ -297,11 +297,11 @@ assert.strictEqual(comparisonContainer.style.display, 'block', 'Comparison conta
 console.log('✅ Option B Side-by-Side Calibration & Comparison Matrix Verified.');
 
 // 9. Test Interactive Checkout & Payment Method Switching
-selectProPlan('standard');
+selectProPlan('pass-30');
 const modal = domElementsById['pro-pricing-modal'] || document.getElementById('pro-pricing-modal');
 assert.ok(modal, 'Pricing modal should exist');
 assert.ok(modal.innerHTML.includes('Complete Your Enrollment'), 'Modal should display enrollment header');
-assert.ok(modal.innerHTML.includes('Standard Pro Pass'), 'Modal should display selected plan');
+assert.ok(modal.innerHTML.includes('30-Day Exam Pass'), 'Modal should display selected plan');
 assert.ok(modal.innerHTML.includes('panel-card'), 'Modal should contain Card payment panel');
 assert.ok(modal.innerHTML.includes('panel-sepa'), 'Modal should contain SEPA payment panel');
 assert.ok(modal.innerHTML.includes('panel-paypal'), 'Modal should contain PayPal payment panel');
@@ -313,7 +313,7 @@ console.log('✅ Checkout & Dynamic Payment Panel Switching Verified.');
 
 // 10. Test Order Confirmation & Digital Invoice Generation
 const creditsBefore = getLetterCredits();
-confirmInstantDemoOrder('standard');
+confirmInstantDemoOrder('pass-30');
 assert.ok(modal.innerHTML.includes('ENROLLMENT CONFIRMED'), 'Confirmation screen should show enrolled banner');
 assert.ok(modal.innerHTML.includes('DL-2026-'), 'Invoice should have unique DL-2026 reference number');
 assert.ok(modal.innerHTML.includes('§ 19 UStG'), 'Invoice must include § 19 UStG Kleinunternehmer tax notice');
@@ -322,7 +322,7 @@ assert.strictEqual(getLetterCredits(), creditsBefore + 30, 'Standard pass should
 
 const storedInvoices = JSON.parse(localStorage.getItem('deutschlernen_invoices') || '[]');
 assert.ok(storedInvoices.length > 0, 'Completed invoice should be persisted in localStorage');
-assert.strictEqual(storedInvoices[0].tierId, 'standard', 'Persisted invoice should match tier ID');
+assert.strictEqual(storedInvoices[0].tierId, 'pass-30', 'Persisted invoice should match tier ID');
 console.log('✅ Digital EU-Compliant Invoice & Accounting Persistence Verified.');
 
 // 11. Test Cloudflare Worker AI Examiner Payload & Freemium Paywall Rendering

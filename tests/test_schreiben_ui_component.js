@@ -216,6 +216,56 @@ async function runTests() {
   assert.strictEqual(cachedEval && cachedEval.meta && cachedEval.meta.total_score, 42, 'Cached evaluation in StorageService should match 42');
   console.log('✅ Test 6 Passed: StorageService.isPro() alias and telc_letter_score persistence verified.');
 
+  // Test 7: Fallback Evaluation telc B1 Rubric Math Validation
+  const validTelcRawScores = [5, 3, 1, 0];
+  const shortLetter = "Liebe Marianne, ich bin krank und kann nicht kommen. Es tut mir leid.";
+  const fallbackShort = examiner.generateLocalFallbackEvaluation(shortLetter, null, false);
+  assert.strictEqual(fallbackShort.meta.total_score, 21, 'Short text fallback score should be 21');
+  const shortCrit = fallbackShort.free_preview.criteria_breakdown;
+  for (const critKey of ['aufgabenbewaeltigung', 'kommunikative_gestaltung', 'formale_richtigkeit']) {
+    const c = shortCrit[critKey];
+    assert.ok(validTelcRawScores.includes(c.raw_points), `Raw points for ${critKey} must be in [5, 3, 1, 0], got ${c.raw_points}`);
+    assert.strictEqual(c.weighted_points, c.raw_points * 3, `Weighted points must equal raw_points * 3 for ${critKey}`);
+  }
+  const sumShort = shortCrit.aufgabenbewaeltigung.weighted_points +
+                   shortCrit.kommunikative_gestaltung.weighted_points +
+                   shortCrit.formale_richtigkeit.weighted_points;
+  assert.strictEqual(sumShort, 21, 'Criteria weighted points must sum exactly to total_score (21)');
+
+  const standardLetter = "Liebe Marianne, vielen Dank für deine Einladung zu deinem Geburtstag am kommenden Samstag. Ich habe mich wirklich sehr darüber gefreut und wollte unbedingt kommen! Leider muss ich dir jedoch heute mitteilen, dass ich am Wochenende beruflich nach München reisen muss, weil mein Chef eine wichtige Besprechung angesetzt hat. Das tut mir furchtbar leid, denn ich hatte mich schon so lange auf dein Fest gefreut. Wie wäre es, wenn wir uns stattdessen nächste Woche auf einen Kaffee treffen? Dann bringe ich dir auch dein Geburtstagsgeschenk persönlich vorbei. Bitte sag mir kurz Bescheid, ob du am Dienstag oder Donnerstag Zeit hast. Herzliche Grüße und eine tolle Feier!";
+  const fallbackStandard = examiner.generateLocalFallbackEvaluation(standardLetter, null, false);
+  assert.strictEqual(fallbackStandard.meta.total_score, 33, 'Standard text fallback score should be 33');
+  const stdCrit = fallbackStandard.free_preview.criteria_breakdown;
+  for (const critKey of ['aufgabenbewaeltigung', 'kommunikative_gestaltung', 'formale_richtigkeit']) {
+    const c = stdCrit[critKey];
+    assert.ok(validTelcRawScores.includes(c.raw_points), `Raw points for ${critKey} must be in [5, 3, 1, 0], got ${c.raw_points}`);
+    assert.strictEqual(c.weighted_points, c.raw_points * 3, `Weighted points must equal raw_points * 3 for ${critKey}`);
+  }
+  const sumStd = stdCrit.aufgabenbewaeltigung.weighted_points +
+                 stdCrit.kommunikative_gestaltung.weighted_points +
+                 stdCrit.formale_richtigkeit.weighted_points;
+  assert.strictEqual(sumStd, 33, 'Criteria weighted points must sum exactly to total_score (33)');
+  console.log('✅ Test 7 Passed: generateLocalFallbackEvaluation telc B1 rubric math verified (21 and 33 points).');
+
+  // Test 8: Canonical Pricing Tiers in SAMPLE_B1_EVALUATION
+  const { SAMPLE_B1_EVALUATION } = require('../js/sampleEvaluationData.js');
+  const tierIds = SAMPLE_B1_EVALUATION.pricingTiers.map(t => t.id);
+  assert.deepStrictEqual(tierIds, ['free', 'diagnostic', 'pass-30', 'pass-90'], 'pricingTiers must contain only free, diagnostic, pass-30, and pass-90');
+  console.log('✅ Test 8 Passed: SAMPLE_B1_EVALUATION.pricingTiers contains only canonical 4 tiers.');
+
+  // Test 9: CALC_I18N.de, SHOWCASE_I18N.de, and fehlerheft.js de labels
+  const TelcCalculator = require('../js/telcCalculator.js');
+  assert.ok(TelcCalculator.CALC_I18N && TelcCalculator.CALC_I18N.de, 'CALC_I18N.de must exist');
+  assert.ok(TelcCalculator.CALC_I18N.de.title.includes('telc B1'), 'CALC_I18N.de.title must include telc B1');
+
+  const { SHOWCASE_I18N } = require('../js/schreibenShowcase.js');
+  assert.ok(SHOWCASE_I18N && SHOWCASE_I18N.de, 'SHOWCASE_I18N.de must exist');
+  assert.ok(SHOWCASE_I18N.de.ctaBtn.includes('24€'), 'SHOWCASE_I18N.de.ctaBtn must reference canonical 24€ pricing');
+
+  const fehlerheftCode = require('fs').readFileSync(path.join(__dirname, '../js/fehlerheft.js'), 'utf8');
+  assert.ok(fehlerheftCode.includes('de: "🧠 Persönliches Fehlerheft"'), 'fehlerheft.js must include German translations');
+  console.log('✅ Test 9 Passed: CALC_I18N.de, SHOWCASE_I18N.de, and fehlerheft.js de labels verified.');
+
   console.log('🎉 All SchreibenExaminer UI Component Tests Passed Successfully!');
 }
 

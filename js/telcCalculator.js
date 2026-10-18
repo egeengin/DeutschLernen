@@ -15,6 +15,44 @@
 }(typeof self !== 'undefined' ? self : this, function() {
 
   const CALC_I18N = {
+    de: {
+      title: "🎯 Offizieller telc B1 Prüfungsrechner & Bestehensprognose",
+      subtitle: "Simuliere deine Prüfungsergebnisse in allen 5 offiziellen Prüfungsteilen gemäß telc B1 Prüfungsordnung (300 Punkte gesamt, 60% Bestehensgrenze).",
+      writtenSectionTitle: "📝 Schriftliche Prüfung (Max. 225 Pkt., Min. 135 Pkt. / 60%)",
+      oralSectionTitle: "🗣️ Mündliche Prüfung (Max. 75 Pkt., Min. 45 Pkt. / 60%)",
+      lesenLabel: "Leseverstehen:",
+      lesenSub: "20 Aufgaben × 3,75 Pkt.",
+      sprachLabel: "Sprachbausteine:",
+      sprachSub: "20 Aufgaben × 1,5 Pkt.",
+      hoerenLabel: "Hörverstehen:",
+      hoerenSub: "20 Aufgaben × 3,75 Pkt.",
+      schreibenLabel: "Schreiben (Brief):",
+      schreibenSub: "Kriterien I+II+III × 3",
+      sprechenLabel: "Mündliche Prüfung:",
+      sprechenSub: "Teil 1 (15) + Teil 2 (30) + Teil 3 (30)",
+      presetMinimal: "🎯 Minimales Bestehen (60%)",
+      presetGut: "⭐ Ziel: Gut (80%)",
+      presetSehrGut: "🏆 Ziel: Sehr Gut (90%)",
+      presetLoadReal: "⚡ Aus meinen Studio-Übungen laden",
+      scoresLoadedMsg: "✅ Punktzahlen aus deinen Übungseinheiten geladen!",
+      noScoresFoundMsg: "ℹ️ Noch keine Übungsergebnisse gespeichert. Probiere ein Studio aus oder passe die Regler manuell an.",
+      resultTitle: "📊 Simuliertes telc B1 Prüfungsergebnis",
+      overallScoreLabel: "Gesamtpunktzahl:",
+      ptsLabel: "Pkt.",
+      writtenStatusLabel: "Schriftliche Prüfung:",
+      oralStatusLabel: "Mündliche Prüfung:",
+      passStatusLabel: "Offizieller telc Status:",
+      gradeLabel: "Note:",
+      passedBadge: "🎉 BESTANDEN",
+      failedBadge: "⚠️ NICHT BESTANDEN",
+      partialBadge: "⚠️ TEILERGEBNIS",
+      telcRuleWarning: "💡 Offizielle telc Regel: Du musst sowohl in der Schriftlichen Prüfung (≥135 Pkt.) ALS AUCH in der Mündlichen Prüfung (≥45 Pkt.) mindestens 60% erreichen, um insgesamt zu bestehen.",
+      tacticalAdviceTitle: "🎯 Taktische Verbesserungsempfehlung:",
+      weakestSectionLabel: "Schwachstelle mit niedrigster Punktzahl:",
+      pointsToNextGradeLabel: "Fehlende Punkte für die nächste Notenstufe:",
+      targetNextLabel: "Ziel:",
+      practiceNowBtn: "Diesen Prüfungsteil jetzt üben →"
+    },
     en: {
       title: "🎯 Official telc B1 Pass Predictor & Score Calculator",
       subtitle: "Simulate your exam scores across all 5 official components according to telc B1 regulations (300 points total, 60% passing mark).",
@@ -239,11 +277,12 @@
     }
 
     // Component Percentage breakdown to find weakest link
+    const schreibenTarget = (typeof document !== 'undefined' && document.getElementById('section-examiner')) ? '#section-examiner' : '#schreiben-showcase-section';
     const components = [
       { id: 'lesen', name: 'Leseverstehen', pts: lesen, max: 75, pct: Math.round((lesen / 75) * 100), link: 'lesen.html?track=lesen' },
       { id: 'sprachbausteine', name: 'Sprachbausteine', pts: sprachbausteine, max: 30, pct: Math.round((sprachbausteine / 30) * 100), link: 'lesen.html?track=sprachbausteine' },
       { id: 'hoeren', name: 'Hörverstehen', pts: hoeren, max: 75, pct: Math.round((hoeren / 75) * 100), link: 'hoeren.html' },
-      { id: 'schreiben', name: 'Schreiben', pts: schreiben, max: 45, pct: Math.round((schreiben / 45) * 100), link: '#schreiben-showcase-section' },
+      { id: 'schreiben', name: 'Schreiben', pts: schreiben, max: 45, pct: Math.round((schreiben / 45) * 100), link: schreibenTarget },
       { id: 'sprechen', name: 'Mündliche Prüfung', pts: sprechen, max: 75, pct: Math.round((sprechen / 75) * 100), link: 'sprechen.html' }
     ];
 

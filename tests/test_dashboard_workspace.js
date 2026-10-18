@@ -89,4 +89,24 @@ assert.strictEqual(StorageService.isPro(), false);
 assert.strictEqual(StorageService.isPro(), StorageService.isProUser());
 console.log('✅ Test 6 Passed: StorageService.isPro() alias works identically to StorageService.isProUser().');
 
+// 8. Verify cross-studio header navbars link to dashboard.html
+const studioPages = ['lesen.html', 'hoeren.html', 'sprechen.html', 'trainer.html'];
+for (const page of studioPages) {
+  const content = fs.readFileSync(path.join(ROOT_DIR, page), 'utf8');
+  assert.ok(content.includes('dashboard.html'), `${page} must contain a navigation link to dashboard.html`);
+}
+console.log('✅ Test 7 Passed: Cross-studio header navbars in lesen, hoeren, sprechen, and trainer link to dashboard.html.');
+
+// 9. Verify CALC_I18N.de and dynamic target resolution
+const TelcCalculator = require('../js/telcCalculator.js');
+assert.ok(TelcCalculator.CALC_I18N && TelcCalculator.CALC_I18N.de, 'TelcCalculator.CALC_I18N.de must exist');
+assert.strictEqual(TelcCalculator.CALC_I18N.de.schreibenLabel, 'Schreiben (Brief):');
+assert.strictEqual(TelcCalculator.CALC_I18N.de.lesenLabel, 'Leseverstehen:');
+
+// 10. Verify canonical pricing tiers in SAMPLE_B1_EVALUATION
+const { SAMPLE_B1_EVALUATION } = require('../js/sampleEvaluationData.js');
+const canonicalIds = SAMPLE_B1_EVALUATION.pricingTiers.map(t => t.id);
+assert.deepStrictEqual(canonicalIds, ['free', 'diagnostic', 'pass-30', 'pass-90'], 'pricingTiers must contain only canonical 4 tiers');
+console.log('✅ Test 8 Passed: CALC_I18N.de and canonical pricing tiers verified.');
+
 console.log('🎉 All Student App Workspace (dashboard.html) tests passed successfully!');

@@ -7,6 +7,118 @@
 let currentShowcaseTab = 'showcase';
 
 const SHOWCASE_I18N = {
+  de: {
+    tabSample: "✨ Vorberechneter Musterbericht",
+    tabLive: "⚡ Live-KI-Briefkorrektur (Pro)",
+    tabModels: "📚 Musterbriefe (45/45)",
+    tabSpeaking: "🗣️ Sprechen Teil 3 Simulator",
+    badgeOfficial: "✨ Offizielle telc B1 Musterbewertung",
+    titleReport: "📝 telc Deutsch B1 Schreiben — Interaktiver Prüferbericht",
+    descReport: "Dieser Bericht demonstriert, wie der <strong>Profi-KI-Prüfer</strong> Teilnehmerbriefe Zeile für Zeile nach dem offiziellen <strong>telc B1 3-Kriterien-Bewertungssystem</strong> (Max. 45 Punkte) bewertet.",
+    fromLabel: "Von:",
+    subjectLabel: "Betreff:",
+    leitpunkteHeader: "📋 telc B1 Leitpunkte-Prüfung (4 Inhaltspunkte erforderlich):",
+    pointLabel: "Punkt",
+    annotatedHeader: "📜 Korrigierter B1-Teilnehmerbrief",
+    annotatedHint: "Fahre über markierten Text oder tippe darauf, um Prüferkorrekturen und Regelhinweise zu sehen",
+    legendSyntax: "Satzstellung / Inversion",
+    legendSpelling: "Rechtschreibung / Eszett",
+    legendGrammar: "Kasus / Grammatik",
+    rubricHeader: "📊 Offizielles telc B1 Bewertungsschema & Berechnung",
+    rubricFormulaHint: "Formel: (Kriterium I + II + III) × 3 = Endpunktzahl / 45",
+    ptsMax: "/ 45 Pkt.",
+    passThresholdLabel: "Bestehensgrenze erreicht (≥27 Pkt.)",
+    scoreLabel: "Punktzahl",
+    ptsRaw: "Rohpunkte",
+    finalPts: "Pkt.",
+    telcRuleNote: "💡 <strong>telc B1-Regel (Primat der Verständlichkeit):</strong> Grammatikfehler, die das Verständnis nicht beeinträchtigen, erhalten die Note B (3 Pkt.). Die Bestnote A (5 Pkt.) erfordert keine systematischen Syntaxfehler und ein natürliches B1-Register.",
+    upgradesHeader: "💡 B1-Satzverbesserungen der Prüfer",
+    upgradesSub: "Umwandlung einfacher Formulierungen in punktstarke formelle B1-Strukturen:",
+    upgradeOriginal: "Ursprüngliche Formulierung:",
+    upgradeRecommended: "✨ Prüfer-Empfehlung:",
+    upgradeWhy: "💡 Warum dies besser bewertet wird:",
+    ctaKicker: "🚀 KI-PRÜFER FREISCHALTEN",
+    ctaTitle: "Möchtest du sofortiges Zeile-für-Zeile-Feedback zu deinen EIGENEN Briefen?",
+    ctaDesc: "Erhalte echte telc B1 Rubrik-Bewertungen, Syntax-Korrekturen und persönliche Schwachstellenanalyse in 15 Sekunden.",
+    ctaBadge1: "⚡ Sofortiges 15-Sekunden-Feedback",
+    ctaBadge2: "🎯 Offizielle telc B1 Kriterien (I + II + III × 3)",
+    ctaBadge3: "🔒 100% sicher & vertraulich",
+    ctaBtn: "⚡ KI-Prüfer freischalten — ab 24€",
+    ctaGuarantee: "30-Tage-Pass • Kein monatliches Abo",
+    liveTitle: "⚡ Live telc B1 KI-Briefkorrektur",
+    liveDesc: "Füge deinen Übungsbrief unten ein oder tippe ihn ab, um ihn sofort nach offiziellen telc B1-Kriterien bewerten zu lassen.",
+    livePromptSelectLabel: "Prüfungsaufgabe wählen:",
+    livePromptMarianne: "Aufgabe 1 (Informell): E-Mail an Marianne (Besuch in Deutschland)",
+    livePromptHotel: "Aufgabe 2 (Formell): Beschwerdebrief an Hotel Meeresblick",
+    livePromptVhs: "Aufgabe 3 (Halbformell): Anfrage an die Volkshochschule (VHS)",
+    livePromptBewerbung: "Aufgabe 4 (Formell): Bewerbung um Praktikum / Stelle",
+    livePromptWohnung: "Aufgabe 5 (Formell): Wohnungsbesichtigung & Heizungsdefekt",
+    livePromptTermin: "Aufgabe 6 (Halbformell): Terminabsage / Entschuldigung beim Arzt",
+    livePromptCustom: "Eigene Aufgabe (Individuelle Situation & Leitpunkte eingeben)",
+    loadModelBtn: "⚡ In Live-Prüfer laden",
+    modelsSectionTitle: "📚 telc Deutsch B1 Gold-Standard Musterbriefe (45/45 Pkt.)",
+    modelsSectionSub: "Studiere offizielle Note-A-Musterbriefe zu den 6 häufigsten Prüfungsthemen mit Prüfer-Annotationen.",
+    connectorsPaletteLabel: "⚡ B1-Konnektoren Schnell-Einfügen:",
+    connectorsUsedLabel: "Verwendete B1-Konnektoren:",
+    liveTextareaLabel: "Dein Übungsbrief (Mindestens 20 Wörter):",
+    liveTextareaPlaceholder: "Liebe Marianne, ich habe mich sehr über deine E-Mail gefreut! Es ist wirklich schön, dass du mich bald in Deutschland besuchen möchtest...",
+    liveWordCount: "Wörter:",
+    liveCharCount: "Zeichen:",
+    liveSubmitBtn: "⚡ Meinen Brief mit KI bewerten (/45)",
+    speakingBadge: "🗣️ telc B1 Mündliche Prüfung",
+    speakingTitle: "Teil 3: Gemeinsam etwas planen (Partnerarbeit)",
+    speakingDesc: "Simuliere die Planungsaufgabe der mündlichen Prüfung mit Prüfungsthemen, Checklisten und B1-Redemitteln.",
+    speakingTaskTitle: "Aufgabe: Abschiedsparty planen",
+    speakingTaskDesc: "Sie haben zwei Wochen Urlaub gemacht und einige nette Deutsche kennengelernt. Vor dem Ende des Urlaubs möchten Sie eine Abschiedsparty feiern. Planen Sie das Fest gemeinsam mit Ihrem Partner.",
+    speakingChecklistHeader: "📋 Checkliste & Punkte zur Vereinbarung:",
+    spWhen: "Wann? (Datum, Wochentag & Uhrzeit)",
+    spWhere: "Wo? (Ort, Raum, Garten oder Restaurant)",
+    spFood: "Essen & Trinken? (Kuchen, Snacks, Getränke)",
+    spBudget: "Wer bezahlt wofür? (Kostenaufteilung & Budget)",
+    redemittelHeader: "💡 Wichtige telc B1 Redemittel für das Gespräch:",
+    rmPropose: "Vorschläge machen",
+    rmAgree: "Zustimmen",
+    rmDisagree: "Höflich widersprechen",
+    rmDecide: "Entscheiden & Vereinbaren",
+    speakingDialogueTitle: "🎭 Prüfungsdialog-Simulation",
+    speakingDialogueDesc: "Erlebe, wie Partner A und Partner B im Gespräch abwechselnd Vorschläge machen und sich einigen:",
+    speakingTipHeader: "💡 Prüfer-Tipp: Monologe vermeiden & den Ball zuspielen!",
+    speakingTipDesc: "Der häufigste Grund für Punktabzug in Teil 3 ist zu langes monologisches Sprechen ohne Rückfragen an den Partner. Frage immer nach: 'Was meinst du dazu?', 'Passt dir das?', 'Wer übernimmt das?'.",
+    partnerALabel: "Partner A (Vorschlagen / Lösen)",
+    partnerBLabel: "Partner B (Entgegnen / Vertiefen)",
+    modalKicker: "TELC B1 PRÜFUNG BESTEHEN",
+    modalTitle: "Wähle deinen Prüfungspass",
+    modalDesc: "Schalte die KI-Briefkorrektur, Fehleranalyse und Prüfungssimulation frei.",
+    fixLabel: "Korrektur:",
+    liveInstantEvalTitle: "📊 telc B1 Live-Bewertungskarte",
+    liveDirectAiBtn: "⚙️ Direkte KI verbinden (OpenAI / Gemini)",
+    liveEvaluating: "⏳ Analysiere Brief nach offiziellen telc B1-Kriterien...",
+    livePassBadge: "🎉 BESTANDEN (Entspricht telc B1-Standard)",
+    liveFailBadge: "⚠️ NICHT BESTANDEN (Benötigt ≥27/45 Pkt.)",
+    aiSettingsTitle: "⚙️ Direkte KI-Modelleinstellungen",
+    aiProviderLabel: "KI-Anbieter:",
+    aiApiKeyLabel: "API-Schlüssel (OpenAI / Gemini):",
+    aiKeyHelp: "Wird ausschließlich lokal im Browser (localStorage) gespeichert und niemals weitergegeben.",
+    aiModelRunBtn: "🚀 Erweiterte LLM-Prüfung starten",
+    aiKeySaveBtn: "Einstellungen speichern",
+    aiKeySavedMsg: "✅ KI-Einstellungen erfolgreich gespeichert!",
+    aiKeyClearBtn: "Schlüssel löschen",
+    aiKeyClearedMsg: "🗑️ API-Schlüssel entfernt.",
+    aiCompareNote: "💡 Regelwerk vs. LLM: Der clientseitige Vorprüfer bewertet Wortanzahl, Register, B1-Konnektoren und Syntax in Echtzeit. Das LLM verifiziert das nuancierte Sprachverständnis.",
+    verifyWithAiTitle: "Diesen Brief mit erweitertem KI-Modell prüfen (Option B)",
+    verifyWithAiDesc: "Option A hat Syntax und Wortanzahl lokal kostenlos geprüft. Starte jetzt Option B für eine detaillierte semantische Analyse mit GPT-4o / Gemini.",
+    runAiVerifyBtn: "🤖 Anschließend mit KI prüfen",
+    comparisonTitle: "⚖️ Option A vs. Option B Kalibrierung & Vergleich",
+    ruleEngineLabel: "Option A (Regel-Engine)",
+    deepAiLabel: "Option B (Erweitertes LLM)",
+    scoreDeltaLabel: "Punktzahl-Übereinstimmung:",
+    liveSyntaxGuardTitle: "⚡ telc B1 Echtzeit-Syntax- und Stilwächter",
+    liveSyntaxGuardClean: "✨ Perfekt! Keine V2-Inversions- oder Nebensatzfehler erkannt.",
+    liveSyntaxGuardAlert: "⚠️ Satzstruktur überprüfen:",
+    liveV2RuleHint: "V2-Wortstellung: Das finite Verb muss nach Adverbien/Zeitangaben an Position 2 stehen.",
+    liveNebensatzRuleHint: "Nebensatz: Nach weil/dass/obwohl/wenn muss das konjugierte Verb ans Satzende.",
+    liveRegisterMismatchHint: "Register: Anrede und Grußformel müssen stilistisch übereinstimmen (beide formell oder beide informell)."
+  },
   en: {
     tabSample: "✨ Pre-Computed Sample Report",
     tabLive: "⚡ Live AI Letter Grader (Pro)",
@@ -43,7 +155,7 @@ const SHOWCASE_I18N = {
     ctaBadge1: "⚡ Instant 15s Feedback",
     ctaBadge2: "🎯 Official telc B1 Criteria (I + II + III × 3)",
     ctaBadge3: "🔒 100% Secure & Private",
-    ctaBtn: "⚡ Unlock AI Exam Grader — from €29",
+    ctaBtn: "⚡ Unlock AI Exam Grader — from €24",
     ctaGuarantee: "30-Day Pass • No recurring monthly subscription",
     liveTitle: "⚡ Live telc B1 AI Exam Grader",
     liveDesc: "Paste or type your practice letter below to evaluate it instantly against official telc B1 criteria.",
@@ -155,7 +267,7 @@ const SHOWCASE_I18N = {
     ctaBadge1: "⚡ 15 Saniyede Anında Geri Bildirim",
     ctaBadge2: "🎯 Resmi telc B1 Kriterleri (I + II + III × 3)",
     ctaBadge3: "🔒 %100 Güvenli ve Gizli",
-    ctaBtn: "⚡ Yapay Zeka Puanlayıcıyı Aç — 29€'dan başlayan",
+    ctaBtn: "⚡ Yapay Zeka Puanlayıcıyı Aç — 24€'dan başlayan",
     ctaGuarantee: "30 Günlük Geçiş • Tekrarlayan abonelik yok",
     liveTitle: "⚡ Canlı telc B1 Yapay Zeka Mektup Puanlayıcı",
     liveDesc: "Mektubunuzu aşağıya yapıştırın veya yazın; resmi telc B1 kriterlerine göre anında puanlansın.",
@@ -267,7 +379,7 @@ const SHOWCASE_I18N = {
     ctaBadge1: "⚡ تقييم فوري خلال 15 ثانية",
     ctaBadge2: "🎯 معايير telc B1 الرسمية (I + II + III × 3)",
     ctaBadge3: "🔒 خصوصية وأمان تام 100%",
-    ctaBtn: "⚡ فتح مصحح الامتحانات — ابتداءً من 29€",
+    ctaBtn: "⚡ فتح مصحح الامتحانات — ابتداءً من 24€",
     ctaGuarantee: "اشتراك لمدة 30 يوماً • بدون تجديد تلقائي",
     liveTitle: "⚡ المصحح الفوري لرسائل telc B1",
     liveDesc: "الصق أو اكتب رسالتك التدريبية أدناه لتقييمها فوراً وفقاً للمعايير الرسمية.",
@@ -379,7 +491,7 @@ const SHOWCASE_I18N = {
     ctaBadge1: "⚡ Миттєвий аналіз за 15 секунд",
     ctaBadge2: "🎯 Офіційні критерії telc B1 (I + II + III × 3)",
     ctaBadge3: "🔒 100% безпечно та конфіденційно",
-    ctaBtn: "⚡ Розблокувати перевірку ШІ — від €29",
+    ctaBtn: "⚡ Розблокувати перевірку ШІ — від €24",
     ctaGuarantee: "Доступ на 30 днів • Без щомісячних списань",
     liveTitle: "⚡ Онлайн-оцінювач листів telc B1 від ШІ",
     liveDesc: "Вставте або напишіть свій тренувальний лист нижче для миттєвої перевірки.",
@@ -458,8 +570,11 @@ const SHOWCASE_I18N = {
 };
 
 function getActiveLanguage() {
-  if (typeof currentLang !== 'undefined' && ['en', 'tr', 'ar', 'uk'].includes(currentLang)) {
-    return currentLang;
+  const lang = (typeof currentLang !== 'undefined' && currentLang) ||
+               (typeof localStorage !== 'undefined' && (localStorage.getItem('site_lang') || localStorage.getItem('telc_lang'))) ||
+               'en';
+  if (['de', 'en', 'tr', 'ar', 'uk'].includes(lang)) {
+    return lang;
   }
   return 'en';
 }
@@ -2694,11 +2809,11 @@ function openProPricingModal() {
           const credits = tier['credits' + langKey] || tier.creditsEn;
           const features = tier['features' + langKey] || tier.featuresEn;
           const ctaText = tier['ctaText' + langKey] || tier.ctaTextEn;
-          const isFeatured = tier.id === 'standard';
-          const isFree = tier.isFree || tier.id === 'free_lid';
+          const isFeatured = tier.id === 'pass-30' || tier.popular;
+          const isFree = tier.isFree || tier.id === 'free' || tier.id === 'free_lid';
 
           return `
-            <div class="pricing-tier-card ${tier.id === 'standard' ? 'featured' : ''} ${isFree ? 'free-tier' : ''}">
+            <div class="pricing-tier-card ${isFeatured ? 'featured' : ''} ${isFree ? 'free-tier' : ''}">
               ${badge ? `<div class="tier-badge ${isFree ? 'free-badge' : ''}">${badge}</div>` : ''}
               <h3 class="tier-name">${name}</h3>
               <div class="tier-price">
@@ -2776,9 +2891,9 @@ function switchPaymentMethod(method) {
 
   const submitBtn = modal.querySelector('#checkout-submit-btn');
   if (submitBtn) {
-    const tierId = window._currentCheckoutTierId || 'standard';
+    const tierId = window._currentCheckoutTierId || 'pass-30';
     const tiers = SAMPLE_B1_EVALUATION.pricingTiers;
-    const tier = tiers.find(t => t.id === tierId) || { price: '€29' };
+    const tier = tiers.find(t => t.id === tierId) || { price: '€24' };
     const labels = {
       card: `🔒 Mit Karte zahlen (${tier.price}) →`,
       paypal: `🅿️ Mit PayPal abschließen (${tier.price}) →`,
@@ -2827,7 +2942,7 @@ function selectProPlan(planId) {
   }
 
   // Handle Free LiD tier directly
-  if (planId === 'free_lid') {
+  if (planId === 'free' || planId === 'free_lid') {
     closeProPricingModal();
     if (typeof navigateToSection === 'function') {
       navigateToSection('lid-trainer-section', 'lid');
@@ -2841,7 +2956,7 @@ function selectProPlan(planId) {
   // Match tier or fallback
   let tier = tiers.find(t => t.id === planId);
   if (!tier) {
-    tier = tiers.find(t => t.id === 'standard') || tiers[1] || tiers[0];
+    tier = tiers.find(t => t.id === 'pass-30') || tiers[1] || tiers[0];
   }
   const lang = getActiveLanguage();
   const langKey = lang.charAt(0).toUpperCase() + lang.slice(1);
@@ -3121,12 +3236,35 @@ function selectProPlan(planId) {
 function confirmInstantDemoOrder(tierId, explicitMethod) {
   const creditsMap = {
     diagnostic: 3,
+    'pass-30': 30,
+    'pass-90': 100,
     standard: 30,
     citizenship: 40,
     extended: 100
   };
   const creditsToAdd = creditsMap[tierId] || 30;
   grantLetterCredits(creditsToAdd, tierId);
+
+  // Set Pro license key in StorageService if available
+  if (typeof StorageService !== 'undefined' && typeof StorageService.setLicenseKey === 'function') {
+    StorageService.setLicenseKey('PRO-' + String(tierId).toUpperCase() + '-DEMO', tierId);
+  } else if (typeof window !== 'undefined' && window.StorageService && typeof window.StorageService.setLicenseKey === 'function') {
+    window.StorageService.setLicenseKey('PRO-' + String(tierId).toUpperCase() + '-DEMO', tierId);
+  }
+
+  // Trigger re-render of SchreibenExaminer.instance if results are currently displayed
+  if (typeof SchreibenExaminer !== 'undefined' && SchreibenExaminer.instance) {
+    const inst = SchreibenExaminer.instance;
+    const resContainer = document.getElementById('sch-results-container');
+    if (resContainer && resContainer.innerHTML.trim() && inst.lastLetterText) {
+      const refreshedEval = (typeof inst.generateLocalFallbackEvaluation === 'function')
+        ? inst.generateLocalFallbackEvaluation(inst.lastLetterText, null, true)
+        : (inst.lastEvaluationData || null);
+      if (refreshedEval && typeof inst.renderScorecard === 'function') {
+        inst.renderScorecard(refreshedEval, inst.lastLetterText);
+      }
+    }
+  }
 
   const emailInput = document.getElementById('checkout-email');
   const userEmail = emailInput && emailInput.value.trim() ? emailInput.value.trim() : 'student@deutschlernen.de';

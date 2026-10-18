@@ -52,7 +52,7 @@
     GOAL: 'deutschlernen_goal',
     LANG: 'deutschlernen_lang',
     VOCAB_PROGRESS: 'deutschlernen_vocab_progress',
-    FEHLERHEFT: 'fehlerheft_items',
+    FEHLERHEFT: 'deutschlernen_fehlerheft_items',
     CREDITS: 'deutschlernen_letter_credits',
     LICENSE_KEY: 'deutschlernen_pro_license',
     LICENSE_PLAN: 'deutschlernen_pro_plan',
@@ -160,22 +160,66 @@
     // --- Fehlerheft (Mistake Notebook) ---
     static getFehlerheft() {
       try {
-        const raw = safeStorage.getItem(KEYS.FEHLERHEFT);
-        return raw ? JSON.parse(raw) : [];
+        let raw = safeStorage.getItem(KEYS.FEHLERHEFT);
+        let list = raw ? JSON.parse(raw) : [];
+        if (!Array.isArray(list)) list = [];
+
+        // Seamless migration from legacy fehlerheft_items if present
+        const legacyRaw = safeStorage.getItem('fehlerheft_items');
+        if (legacyRaw) {
+          try {
+            const legacyList = JSON.parse(legacyRaw);
+            if (Array.isArray(legacyList) && legacyList.length > 0) {
+              legacyList.forEach(legItem => {
+                const word = (legItem.word || legItem.original_snippet || '').trim();
+                if (word && !list.some(i => (i.word || '').toLowerCase() === word.toLowerCase())) {
+                  list.push({
+                    word: word,
+                    meaning: legItem.meaning || legItem.corrected_snippet || '',
+                    example: legItem.example || legItem.explanation || '',
+                    mistakeType: legItem.mistakeType || 'grammar',
+                    reviewCount: legItem.reviewCount || 1,
+                    lastReviewed: legItem.lastReviewed || Date.now(),
+                    timestamp: legItem.timestamp || Date.now()
+                  });
+                }
+              });
+              safeStorage.removeItem('fehlerheft_items');
+              safeStorage.setItem(KEYS.FEHLERHEFT, JSON.stringify(list.slice(0, 100)));
+            }
+          } catch (_) {}
+        }
+        return list;
       } catch (e) {
         return [];
       }
     }
 
     static addFehlerItem(item) {
+      if (!item) return [];
       const list = this.getFehlerheft();
-      list.unshift({
-        id: 'err-' + Date.now() + '-' + Math.random().toString(36).substr(2, 5),
-        timestamp: new Date().toISOString(),
-        ...item
-      });
-      safeStorage.setItem(KEYS.FEHLERHEFT, JSON.stringify(list.slice(0, 100))); // keep latest 100
-      return list;
+      const word = (item.word || item.original_snippet || '').trim();
+      const existing = list.find(i => (i.word || '').toLowerCase() === word.toLowerCase());
+      if (existing) {
+        existing.reviewCount = (existing.reviewCount || 1) + 1;
+        existing.lastReviewed = Date.now();
+        if (item.meaning) existing.meaning = item.meaning;
+        if (item.example) existing.example = item.example;
+      } else {
+        list.unshift({
+          id: item.id || ('err-' + Date.now() + '-' + Math.random().toString(36).substr(2, 5)),
+          word: word || 'Grammatikfehler',
+          meaning: item.meaning || item.corrected_snippet || '',
+          example: item.example || item.explanation || '',
+          mistakeType: item.mistakeType || 'grammar',
+          reviewCount: 1,
+          lastReviewed: Date.now(),
+          timestamp: item.timestamp || Date.now()
+        });
+      }
+      const trimmed = list.slice(0, 100);
+      safeStorage.setItem(KEYS.FEHLERHEFT, JSON.stringify(trimmed));
+      return trimmed;
     }
 
     // --- Invoices ---

@@ -2022,12 +2022,14 @@ function toggleSchreibenShowcase(forceOpen = null) {
 
   const lang = typeof currentLang !== 'undefined' ? currentLang : 'en';
   const openLabels = {
+    de: "✕ Prüfersuite schließen ▲",
     en: "✕ Close Examiner Suite ▲",
     tr: "✕ Değerlendirme Paketini Kapat ▲",
     ar: "✕ إغلاق باقة التقييم ▲",
     uk: "✕ Закрити комплекс ▲"
   };
   const closedLabels = {
+    de: "📝 Prüfersuite öffnen ▼",
     en: "📝 Open Examiner Suite ▼",
     tr: "📝 Değerlendirme Paketini Aç ▼",
     ar: "📝 فتح باقة التقييم ▼",

@@ -6,8 +6,11 @@
 const FEHLERHEFT_STORAGE_KEY = 'deutschlernen_fehlerheft_items';
 
 function getFehlerheftItems() {
+  if (typeof StorageService !== 'undefined' && typeof StorageService.getFehlerheft === 'function') {
+    return StorageService.getFehlerheft();
+  }
   try {
-    const raw = localStorage.getItem(FEHLERHEFT_STORAGE_KEY);
+    const raw = localStorage.getItem(FEHLERHEFT_STORAGE_KEY) || localStorage.getItem('fehlerheft_items');
     return raw ? JSON.parse(raw) : [];
   } catch (e) {
     return [];
@@ -15,22 +18,29 @@ function getFehlerheftItems() {
 }
 
 function recordFehlerheftItem(item) {
+  if (typeof StorageService !== 'undefined' && typeof StorageService.addFehlerItem === 'function') {
+    return StorageService.addFehlerItem(item);
+  }
   // item structure: { word: string, meaning: string, example: string, mistakeType: 'vocab'|'grammar'|'syntax', timestamp: number }
   const items = getFehlerheftItems();
-  const existing = items.find(i => i.word.toLowerCase() === item.word.toLowerCase());
+  const word = (item.word || item.original_snippet || '').trim();
+  const existing = items.find(i => (i.word || '').toLowerCase() === word.toLowerCase());
   
   if (!existing) {
-    items.push({
+    items.unshift({
       ...item,
+      word: word || 'Grammatikfehler',
       reviewCount: 1,
       lastReviewed: Date.now()
     });
   } else {
-    existing.reviewCount += 1;
+    existing.reviewCount = (existing.reviewCount || 1) + 1;
     existing.lastReviewed = Date.now();
+    if (item.meaning) existing.meaning = item.meaning;
+    if (item.example) existing.example = item.example;
   }
 
-  localStorage.setItem(FEHLERHEFT_STORAGE_KEY, JSON.stringify(items));
+  localStorage.setItem(FEHLERHEFT_STORAGE_KEY, JSON.stringify(items.slice(0, 100)));
 }
 
 function renderFehlerheftDashboard(containerId) {
@@ -43,44 +53,50 @@ function renderFehlerheftDashboard(containerId) {
 
   const t = {
     badge: {
+      de: "🧠 Persönliches Fehlerheft",
       en: "🧠 Personalized Mistake Deck",
       tr: "🧠 Kişiselleştirilmiş Hata Defteri",
       ar: "🧠 دفتر الأخطاء الشخصي",
       uk: "🧠 Персональний зошит помилок"
     },
     emptyTitle: {
+      de: "Dein Fehlerheft ist leer.",
       en: "Your mistake notebook is empty.",
       tr: "Hata defteriniz boş.",
       ar: "دفتر أخطائك فارغ.",
       uk: "Ваш зошит помилок порожній."
     },
     emptyDesc: {
+      de: "Wenn du im Wortschatz-Trainer, bei Grammatikübungen oder BAMF-Fragen Fehler machst, werden sie hier für gezieltes Wiederholen gesammelt.",
       en: "As you take Vocabulary Trainer quizzes, grammar exercises, or BAMF citizenship questions, your mistakes will automatically collect here for targeted review.",
       tr: "Kelime Antrenörü, dilbilgisi alıştırmaları veya BAMF vatandaşlık testlerinde hata yaptıkça, yanlışlarınız hedefe yönelik tekrar için otomatik olarak burada toplanacaktır.",
       ar: "أثناء تدريبك على المفردات، أو حل تدريبات القواعد أو أسئلة التجنيس BAMF، سيتم حفظ أخطائك هنا تلقائياً لمراجعتها بتركيز.",
       uk: "Коли ви робите помилки у тренажері слів, граматиці або тесті на громадянство BAMF, вони автоматично з'являтимуться тут для цілеспрямованого повторення."
     },
     title: {
+      de: `Persönliches Fehlerheft (${items.length} Schwachstellen)`,
       en: `Personal Mistake Notebook (${items.length} Weak Spots)`,
       tr: `Kişisel Hata Defteriniz (${items.length} Zayıf Nokta)`,
       ar: `دفتر الأخطاء الرقمي (${items.length} أخطاء مسجلة)`,
       uk: `Цифровий зошит помилок (${items.length} слабких місць)`
     },
     desc: {
+      de: "Überprüfe deine gesammelten Fehler. Beherrschte Punkte verschwinden nach erfolgreichem Training.",
       en: "Review your personal mistake queue. Items drop off as you master them in practice drills.",
       tr: "Kişisel hata havuzunuzu gözden geçirin. Alıştırmalarda ustalaştıkça maddeler listeden kalkar.",
       ar: "راجع قائمة أخطائك المسجلة. يمكنك إزالة أي عنصر بمجرد إتقانه وحفظه.",
       uk: "Перегляньте свій список помилок. Елементи видаляються, коли ви їх засвоїте."
     },
-    missed: { en: "Missed", tr: "Hata sayısı", ar: "مرات الخطأ", uk: "Помилок" },
-    mastered: { en: "Mark Mastered ✓", tr: "Öğrenildi Olarak İşaretle ✓", ar: "تم الحفظ والإتقان ✓", uk: "Засвоєно ✓" },
-    clearAll: { en: "Clear All Mistakes", tr: "Tüm Hataları Temizle", ar: "مسح جميع الأخطاء", uk: "Очистити всі помилки" }
+    missed: { de: "Fehler", en: "Missed", tr: "Hata sayısı", ar: "مرات الخطأ", uk: "Помилок" },
+    mastered: { de: "Gelernt ✓", en: "Mark Mastered ✓", tr: "Öğrenildi Olarak İşaretle ✓", ar: "تم الحفظ والإتقان ✓", uk: "Засвоєно ✓" },
+    clearAll: { de: "Alle Fehler löschen", en: "Clear All Mistakes", tr: "Tüm Hataları Temizle", ar: "مسح جميع الأخطاء", uk: "Очистити всі помилки" }
   };
 
   const getT = (key) => t[key]?.[lang] || t[key]?.en || '';
 
   if (items.length === 0) {
     const actionLabel = {
+      de: "⚡ 10-Wörter-Quiz starten, um Lücken zu erkennen →",
       en: "⚡ Start 10-Word Quiz to Detect Weak Spots →",
       tr: "⚡ Eksikleri Belirlemek İçin 10 Kelimelik Teste Başla →",
       ar: "⚡ ابدأ اختباراً من 10 كلمات لاكتشاف نقاط ضعفك ←",
@@ -88,6 +104,7 @@ function renderFehlerheftDashboard(containerId) {
     }[lang] || "⚡ Start 10-Word Quiz to Detect Weak Spots →";
 
     const guideLabel = {
+      de: "Was hier automatisch erfasst wird:",
       en: "What gets automatically recorded here:",
       tr: "Burada otomatik olarak kaydedilenler:",
       ar: "ما يتم تسجيله وحفظه هنا تلقائياً:",
@@ -164,4 +181,15 @@ if (typeof window !== 'undefined') {
   window.renderFehlerheftDashboard = renderFehlerheftDashboard;
   window.removeFehlerheftItem = removeFehlerheftItem;
   window.clearAllFehlerheftItems = clearAllFehlerheftItems;
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    getFehlerheftItems,
+    recordFehlerheftItem,
+    renderFehlerheftDashboard,
+    removeFehlerheftItem,
+    clearAllFehlerheftItems,
+    FEHLERHEFT_STORAGE_KEY
+  };
 }

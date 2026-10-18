@@ -571,11 +571,16 @@
           recordFehlerheftItem(item);
         } else if (typeof window !== 'undefined' && typeof window.recordFehlerheftItem === 'function') {
           window.recordFehlerheftItem(item);
-        }
-        if (typeof StorageService !== 'undefined' && typeof StorageService.addFehlerItem === 'function') {
+        } else if (typeof StorageService !== 'undefined' && typeof StorageService.addFehlerItem === 'function') {
           StorageService.addFehlerItem(item);
         }
       });
+
+      if (typeof window !== 'undefined' && typeof window.renderFehlerheftDashboard === 'function' && document.getElementById('fehlerheft-container')) {
+        window.renderFehlerheftDashboard('fehlerheft-container');
+      } else if (typeof renderFehlerheftDashboard === 'function' && typeof document !== 'undefined' && document.getElementById('fehlerheft-container')) {
+        renderFehlerheftDashboard('fehlerheft-container');
+      }
 
       if (typeof updateDashboardMetrics === 'function') {
         updateDashboardMetrics();
@@ -585,6 +590,8 @@
     }
 
     renderScorecard(data, originalText) {
+      this.lastEvaluationData = data;
+      this.lastLetterText = originalText;
       const container = document.getElementById('sch-results-container');
       if (!container) return;
 
@@ -809,10 +816,10 @@
       }
     }
 
-    generateLocalFallbackEvaluation(text) {
-      const isPro = typeof StorageService !== 'undefined' ? StorageService.isProUser() : false;
-      const words = text.trim().split(/\s+/).filter(Boolean).length;
-      const score = words >= 80 ? 36 : 21;
+    generateLocalFallbackEvaluation(text, promptObj, isProParam) {
+      const isPro = typeof isProParam === 'boolean' ? isProParam : (typeof StorageService !== 'undefined' ? StorageService.isProUser() : false);
+      const words = (text || '').trim().split(/\s+/).filter(Boolean).length;
+      const score = words >= 80 ? 33 : 21;
       const finalScore = isPro ? 45 : score;
 
       const sampleErrors = [
@@ -830,9 +837,24 @@
             ? "Erfolgreich bestanden. Gute inhaltliche Bearbeitung mit kleinen formalen Schwächen."
             : "Nicht bestanden. Wortanzahl und Grammatikstrukturen erfüllen noch nicht den B1-Standard.",
           criteria_breakdown: {
-            aufgabenbewaeltigung: { grade: finalScore >= 27 ? 'A' : 'C', raw_points: finalScore >= 27 ? 5 : 2, weighted_points: finalScore >= 27 ? 15 : 6, reason: 'Leitpunkte wurden bearbeitet.' },
-            kommunikative_gestaltung: { grade: isPro ? 'A' : 'B', raw_points: isPro ? 5 : 3, weighted_points: isPro ? 15 : 9, reason: 'B1 Konnektoren angewendet.' },
-            formale_richtigkeit: { grade: isPro ? 'A' : (finalScore >= 27 ? 'B' : 'D'), raw_points: isPro ? 5 : (finalScore >= 27 ? 3 : 1), weighted_points: isPro ? 15 : (finalScore >= 27 ? 9 : 3), reason: 'Verbposition und Satzstellung.' }
+            aufgabenbewaeltigung: {
+              grade: isPro ? 'A' : (finalScore >= 27 ? 'A' : 'B'),
+              raw_points: isPro ? 5 : (finalScore >= 27 ? 5 : 3),
+              weighted_points: isPro ? 15 : (finalScore >= 27 ? 15 : 9),
+              reason: 'Leitpunkte wurden bearbeitet.'
+            },
+            kommunikative_gestaltung: {
+              grade: isPro ? 'A' : 'B',
+              raw_points: isPro ? 5 : 3,
+              weighted_points: isPro ? 15 : 9,
+              reason: 'B1 Konnektoren angewendet.'
+            },
+            formale_richtigkeit: {
+              grade: isPro ? 'A' : (finalScore >= 27 ? 'B' : 'C'),
+              raw_points: isPro ? 5 : (finalScore >= 27 ? 3 : 1),
+              weighted_points: isPro ? 15 : (finalScore >= 27 ? 9 : 3),
+              reason: 'Verbposition und Satzstellung.'
+            }
           },
           visible_errors_sample: sampleErrors.slice(0, 2),
           hidden_errors_count: isPro ? 0 : 2
