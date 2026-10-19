@@ -90,11 +90,93 @@
     });
   }
 
-  // 5. On DOM Ready
+  // 5. Export / Import Progress (JSON)
+  window.exportUserProgressJSON = function () {
+    try {
+      const dataStr = typeof StorageEngine !== 'undefined'
+        ? StorageEngine.exportJSON()
+        : JSON.stringify(localStorage, null, 2);
+
+      const blob = new Blob([dataStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      const dateStr = new Date().toISOString().slice(0, 10);
+      a.href = url;
+      a.download = `deutschlernen_b1_progress_${dateStr}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error('[Dashboard] Export failed:', err);
+      alert('Could not export backup: ' + err.message);
+    }
+  };
+
+  window.importUserProgressJSON = function (event) {
+    const file = event.target?.files?.[0];
+    if (!file) return;
+
+    const statusMsg = document.getElementById('backup-status-msg');
+    const showStatus = (text, isSuccess) => {
+      if (!statusMsg) return;
+      statusMsg.style.display = 'block';
+      statusMsg.style.color = isSuccess ? '#10b981' : '#ef4444';
+      statusMsg.textContent = text;
+    };
+
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      try {
+        const text = e.target.result;
+        let res;
+        if (typeof StorageEngine !== 'undefined') {
+          res = StorageEngine.importJSON(text);
+        } else {
+          const parsed = JSON.parse(text);
+          Object.keys(parsed).forEach(k => {
+            if (typeof parsed[k] === 'string') localStorage.setItem(k, parsed[k]);
+            else localStorage.setItem(k, JSON.stringify(parsed[k]));
+          });
+          res = { success: true };
+        }
+
+        if (res.success) {
+          showStatus('✅ Fortschritt erfolgreich importiert! Aktualisiere Cockpit...', true);
+          updateDashboardMetrics();
+          if (typeof window.renderFehlerheftDashboard === 'function' && document.getElementById('fehlerheft-container')) {
+            window.renderFehlerheftDashboard('fehlerheft-container');
+          }
+          if (typeof TelcCalculator !== 'undefined' && typeof TelcCalculator.loadFromStorage === 'function') {
+            TelcCalculator.loadFromStorage();
+          }
+          setTimeout(() => {
+            showStatus('', false);
+            if (statusMsg) statusMsg.style.display = 'none';
+          }, 3500);
+        } else {
+          showStatus('❌ Ungültige Sicherungsdatei: ' + (res.error || 'Formatfehler'), false);
+        }
+      } catch (err) {
+        showStatus('❌ Fehler beim Lesen der Datei: ' + err.message, false);
+      }
+    };
+    reader.readAsText(file);
+    // Reset file input
+    event.target.value = '';
+  };
+
+  // 6. On DOM Ready
   document.addEventListener('DOMContentLoaded', function () {
     updateDashboardMetrics();
     initEmbeddedExaminer();
     initTabNav();
+
+    if (typeof StorageEngine !== 'undefined') {
+      StorageEngine.onStateChange(() => {
+        updateDashboardMetrics();
+      });
+    }
 
     // Render Fehlerheft if container present
     if (typeof window.renderFehlerheftDashboard === 'function' && document.getElementById('fehlerheft-container')) {

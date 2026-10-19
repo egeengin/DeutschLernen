@@ -17,6 +17,7 @@ ROOT_DIR = os.path.abspath(os.path.join(BASE_DIR, ".."))
 VOCAB2000_PATH = os.path.join(ROOT_DIR, "data", "vocab2000.js")
 VOCAB_B2_PATH = os.path.join(ROOT_DIR, "data", "vocab_b2.js")
 VOCAB_C1_PATH = os.path.join(ROOT_DIR, "data", "vocab_c1.js")
+VOCAB_C2_PATH = os.path.join(ROOT_DIR, "data", "vocab_c2.js")
 
 def load_js_vocab(file_path, var_name):
     if not os.path.exists(file_path):
@@ -34,6 +35,7 @@ class TestVocabQuality(unittest.TestCase):
         cls.vocab2000 = load_js_vocab(VOCAB2000_PATH, "window.VOCAB_2000")
         cls.vocab_b2 = load_js_vocab(VOCAB_B2_PATH, "window.VOCAB_B2")
         cls.vocab_c1 = load_js_vocab(VOCAB_C1_PATH, "window.VOCAB_C1")
+        cls.vocab_c2 = load_js_vocab(VOCAB_C2_PATH, "window.VOCAB_C2")
 
     def test_vocab2000_total_count(self):
         """Verify exactly 2000 entries exist in Core dataset."""
@@ -46,6 +48,10 @@ class TestVocabQuality(unittest.TestCase):
     def test_vocab_c1_count(self):
         """Verify C1 Academic study deck has valid entries."""
         self.assertEqual(len(self.vocab_c1), 100, f"Expected exactly 100 C1 entries, found {len(self.vocab_c1)}")
+
+    def test_vocab_c2_count(self):
+        """Verify C2 Mastery study deck has valid entries."""
+        self.assertEqual(len(self.vocab_c2), 100, f"Expected exactly 100 C2 entries, found {len(self.vocab_c2)}")
 
     def test_bilingual_parity_and_schema(self):
         """Verify 100% bilingual parity (TR & EN) and complete schema for every single item."""
@@ -127,6 +133,21 @@ class TestVocabQuality(unittest.TestCase):
             self.assertTrue(item.get("example_ar"), f"Missing example_ar in C1: {item.get('de')}")
             self.assertTrue(item.get("example_uk"), f"Missing example_uk in C1: {item.get('de')}")
             self.assertEqual(item.get("level"), "C1")
+
+    def test_c2_deck_schema(self):
+        """Verify C2 Mastery study deck items adhere to quality schema and 5-language parity."""
+        for item in self.vocab_c2:
+            self.assertTrue(item.get("de"))
+            self.assertTrue(item.get("tr"), f"Missing tr in C2: {item.get('de')}")
+            self.assertTrue(item.get("en"), f"Missing en in C2: {item.get('de')}")
+            self.assertTrue(item.get("ar"), f"Missing ar in C2: {item.get('de')}")
+            self.assertTrue(item.get("uk"), f"Missing uk in C2: {item.get('de')}")
+            self.assertTrue(item.get("example"), f"Missing example in C2: {item.get('de')}")
+            self.assertTrue(item.get("example_tr"), f"Missing example_tr in C2: {item.get('de')}")
+            self.assertTrue(item.get("example_en"), f"Missing example_en in C2: {item.get('de')}")
+            self.assertTrue(item.get("example_ar"), f"Missing example_ar in C2: {item.get('de')}")
+            self.assertTrue(item.get("example_uk"), f"Missing example_uk in C2: {item.get('de')}")
+            self.assertEqual(item.get("level"), "C2")
 
     def test_distractor_pool_coverage(self):
         """Ensure adequate word pools exist per level & POS for 4-choice quiz distractors."""

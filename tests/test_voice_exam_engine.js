@@ -35,6 +35,15 @@ assert(labels.some(l => l.includes('Meiner Meinung nach')), 'Should detect opini
 assert(labels.some(l => l.includes('obwohl')), 'Should detect obwohl');
 assert(labels.some(l => l.includes('weil')), 'Should detect weil');
 
+// Test 2b: Advanced C1 & C2 Redemittel detection
+const advancedSpeech = `
+In Anbetracht der Tatsache, dass sich die Lage geändert hat, sollten wir diese Option in Betracht ziehen.
+Nichtsdestotrotz steht außer Zweifel, dass dieser Faktor den Ausschlag gibt.
+`;
+const detectedAdv = VoiceExamEngine.detectRedemittel(advancedSpeech);
+assert(detectedAdv.some(r => r.level === 'C1'), 'Should detect C1 formula');
+assert(detectedAdv.some(r => r.level === 'C2'), 'Should detect C2 formula');
+
 // Test 3: Full Evaluation against Teil 3 (Abschiedsparty)
 const topicT3 = SPEAKING_EXAM_TOPICS.teil3[0];
 const fullSpeech = `

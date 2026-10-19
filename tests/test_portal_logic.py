@@ -127,14 +127,20 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn('card-goal-a1-a2', index_html)
         self.assertIn('card-goal-b1', index_html)
         self.assertIn('card-goal-b2', index_html)
+        self.assertIn('card-goal-c1', index_html)
+        self.assertIn('card-goal-c2', index_html)
         self.assertIn('card-goal-vocab', index_html)
         self.assertIn('card-goal-lid', index_html)
+        self.assertIn('value="C2"', index_html)
+        self.assertIn('Alle Niveaus kombiniert (A1–C2)', index_html)
 
         # Check portal.js goal config & persistence
         self.assertIn("const GOAL_CONFIG = {", self.portal_js)
         self.assertIn("'goal-a1-a2':", self.portal_js)
         self.assertIn("'goal-b1':", self.portal_js)
         self.assertIn("'goal-b2':", self.portal_js)
+        self.assertIn("'goal-c1':", self.portal_js)
+        self.assertIn("'goal-c2':", self.portal_js)
         self.assertIn("'goal-vocab':", self.portal_js)
         self.assertIn("'goal-lid':", self.portal_js)
         self.assertIn("deutschlernen_goal", self.portal_js)
@@ -151,11 +157,19 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn('value="A2"', trainer_html)
         self.assertIn('value="B1"', trainer_html)
         self.assertIn('value="B2"', trainer_html)
+        self.assertIn('value="C1"', trainer_html)
+        self.assertIn('value="C2"', trainer_html)
         self.assertIn('data-i18n="levelB2"', trainer_html)
+        self.assertIn('data-i18n="levelC1"', trainer_html)
+        self.assertIn('data-i18n="levelC2"', trainer_html)
 
         # Check vocabTrainer.js I18N support
         self.assertIn('levelB2: "B2 Level"', self.trainer_js)
         self.assertIn('levelB2: "B2 Seviyesi"', self.trainer_js)
+        self.assertIn('levelC1: "C1 Level"', self.trainer_js)
+        self.assertIn('levelC1: "C1 Seviyesi"', self.trainer_js)
+        self.assertIn('levelC2: "C2 Level"', self.trainer_js)
+        self.assertIn('levelC2: "C2 Seviyesi"', self.trainer_js)
         # Check URL parameter parsing
         self.assertIn("params.get('level')", self.trainer_js)
 
@@ -272,7 +286,7 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn("if (currentLang === 'uk') return m[field + 'Uk']", self.portal_js)
 
         # Verify GOAL_CONFIG has full 4-language parity for all goals
-        goal_ids = ['goal-a1-a2', 'goal-b1', 'goal-b2', 'goal-c1', 'goal-vocab', 'goal-lid']
+        goal_ids = ['goal-a1-a2', 'goal-b1', 'goal-b2', 'goal-c1', 'goal-c2', 'goal-vocab', 'goal-lid']
         for gid in goal_ids:
             self.assertIn(f"'{gid}':", self.portal_js)
             for lang_suffix in ['En', 'Tr', 'Ar', 'Uk']:
@@ -494,6 +508,7 @@ class TestPortalLogicAndContracts(unittest.TestCase):
         self.assertIn("Core 2,000 (A1–B1)", self.portal_js)
         self.assertIn("Advanced B2 Deck", self.portal_js)
         self.assertIn("Academic C1 Deck", self.portal_js)
+        self.assertIn("Mastery C2 Deck", self.portal_js)
 
         # Check applyGoalSelection switches tracks cleanly on portal
         apply_goal_match = re.search(r"function applyGoalSelection\(\)\s*\{(.*?)\n\}", self.portal_js, re.DOTALL)

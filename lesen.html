@@ -26,7 +26,7 @@
   </script>
 
   <!-- Lesen Studio Styles -->
-  <link rel="stylesheet" href="css/lesen.css?v=39">
+  <link rel="stylesheet" href="css/lesen.css?v=40">
 </head>
 <body class="ls-body">
 
@@ -81,6 +81,15 @@
         </button>
         <button type="button" class="ls-track-pill" id="btn-track-sprachbausteine">
           <span>🧩</span> <span data-i18n="trackSprachbausteine">Sprachbausteine (Teile 1–2 • 30 Pkt)</span>
+        </button>
+      </div>
+      <!-- Mode Switcher: Interactive / Mobile-optimized Word Dock vs Classic Exam View -->
+      <div class="ls-sb-mode-toggle" id="sb-mode-toggle" style="display:none;" role="group" aria-label="Ansichtsmodus">
+        <button type="button" class="ls-mode-btn active" id="btn-sb-mode-practice" title="Interaktiver Modus: Schwebende Wortleiste & Tap-to-Fill">
+          <span>⚡</span> <span data-i18n="sbModePractice">Interaktiv</span>
+        </button>
+        <button type="button" class="ls-mode-btn" id="btn-sb-mode-exam" title="Klassischer Prüfungsmodus">
+          <span>📄</span> <span data-i18n="sbModeExam">Prüfung</span>
         </button>
       </div>
       <div class="ls-track-meta">
@@ -218,7 +227,7 @@
 
     <div class="ls-lookup-actions">
       <button type="button" class="ls-btn-save-vocab" id="btn-save-vocab">
-        <span data-i18n="addWordBtn">⭐ Add to Vocabulary</span>
+        <span data-i18n="addWordBtn">➕ Add to SM-2 Trainer & Fehlerheft</span>
       </button>
       <button type="button" class="ls-btn-pronounce" id="btn-pronounce-word" title="Aussprache anhören">
         🔊
@@ -226,14 +235,42 @@
     </div>
   </div>
 
+  <!-- Floating Mobile Word Dock & Quick Tray (Sprachbausteine) -->
+  <aside class="sb-floating-dock" id="sb-floating-dock" aria-label="Interaktive Wortleiste" style="display:none;">
+    <div class="sb-dock-inner">
+      <div class="sb-dock-header">
+        <div class="sb-dock-target">
+          <span class="sb-dock-gap-badge" id="sb-dock-gap-badge">Lücke 21</span>
+          <span class="sb-dock-curr-word" id="sb-dock-curr-word">[ ____ ]</span>
+        </div>
+        <div class="sb-dock-nav">
+          <button type="button" class="sb-dock-icon-btn" id="sb-dock-prev" title="Vorherige Lücke" aria-label="Vorherige Lücke">◀</button>
+          <button type="button" class="sb-dock-icon-btn" id="sb-dock-next" title="Nächste Lücke" aria-label="Nächste Lücke">▶</button>
+        </div>
+        <div class="sb-dock-actions">
+          <button type="button" class="sb-dock-btn-clear" id="sb-dock-clear" title="Lücke leeren">
+            <span>✕</span> <span data-i18n="sbClearGap">Leeren</span>
+          </button>
+          <button type="button" class="sb-dock-icon-btn" id="sb-dock-toggle-collapse" title="Minimieren / Erweitern" aria-label="Einklappen">
+            ▾
+          </button>
+        </div>
+      </div>
+      <div class="sb-dock-body" id="sb-dock-body">
+        <!-- Rendered options dynamically (Teil 1: a, b, c pills / Teil 2: word chips) -->
+      </div>
+    </div>
+  </aside>
+
   <!-- Core Data & Application Scripts -->
-  <script src="data/vocab2000.js?v=39"></script>
-  <script src="data/vocab_b2.js?v=39"></script>
-  <script src="data/vocab_c1.js?v=39"></script>
-  <script src="data/readingLexicon.js?v=39"></script>
-  <script src="data/readingData.js?v=39"></script>
-  <script src="data/sprachbausteineData.js?v=39"></script>
-  <script src="js/lesenApp.js?v=39"></script>
+  <script src="js/storage-engine.js"></script>
+  <script src="data/vocab2000.js?v=40"></script>
+  <script src="data/vocab_b2.js?v=40"></script>
+  <script src="data/vocab_c1.js?v=40"></script>
+  <script src="data/readingLexicon.js?v=40"></script>
+  <script src="data/readingData.js?v=40"></script>
+  <script src="data/sprachbausteineData.js?v=40"></script>
+  <script src="js/lesenApp.js?v=40"></script>
 
   <!-- PWA Service Worker Registration -->
   <script>

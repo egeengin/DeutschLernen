@@ -6,6 +6,9 @@
 const FEHLERHEFT_STORAGE_KEY = 'deutschlernen_fehlerheft_items';
 
 function getFehlerheftItems() {
+  if (typeof StorageEngine !== 'undefined') {
+    return StorageEngine.getFehlerheft();
+  }
   if (typeof StorageService !== 'undefined' && typeof StorageService.getFehlerheft === 'function') {
     return StorageService.getFehlerheft();
   }
@@ -18,6 +21,9 @@ function getFehlerheftItems() {
 }
 
 function recordFehlerheftItem(item) {
+  if (typeof StorageEngine !== 'undefined') {
+    return StorageEngine.addFehlerItem(item);
+  }
   if (typeof StorageService !== 'undefined' && typeof StorageService.addFehlerItem === 'function') {
     return StorageService.addFehlerItem(item);
   }
@@ -165,12 +171,20 @@ function renderFehlerheftDashboard(containerId) {
 
 function removeFehlerheftItem(index) {
   const items = getFehlerheftItems();
-  items.splice(index, 1);
-  localStorage.setItem(FEHLERHEFT_STORAGE_KEY, JSON.stringify(items));
+  const target = items[index];
+  if (target && typeof StorageEngine !== 'undefined') {
+    StorageEngine.removeFehlerItem(target.id || target.word);
+  } else {
+    items.splice(index, 1);
+    localStorage.setItem(FEHLERHEFT_STORAGE_KEY, JSON.stringify(items));
+  }
   renderFehlerheftDashboard('fehlerheft-container');
 }
 
 function clearAllFehlerheftItems() {
+  if (typeof StorageEngine !== 'undefined') {
+    StorageEngine.clearFehlerheft();
+  }
   localStorage.removeItem(FEHLERHEFT_STORAGE_KEY);
   renderFehlerheftDashboard('fehlerheft-container');
 }

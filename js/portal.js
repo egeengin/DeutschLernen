@@ -238,6 +238,48 @@ const GOAL_CONFIG = {
     hintUk: 'Фокус на академічній лексиці, університетській термінології та мові досліджень',
     trainerUrl: 'trainer.html?level=C1&deck=c1'
   },
+  'goal-c2': {
+    id: 'goal-c2',
+    icon: '👑',
+    nameDe: 'C2 Meisterschaft & Muttersprachlich',
+    nameEn: 'C2 Mastery & Native Fluency',
+    nameTr: 'C2 Ustalık & Ana Dil Seviyesi',
+    nameAr: 'C2 الإتقان والطلاقة شبه الأم',
+    nameUk: 'C2 Майстерність та рівень носія',
+    portalTitleDe: '👑 C2 Meisterschaftsportal',
+    portalTitleEn: '👑 C2 Mastery Portal',
+    portalTitleTr: '👑 C2 Ustalık Portalı',
+    portalTitleAr: '👑 بوابة C2 للإتقان التام',
+    portalTitleUk: '👑 Портал майстерності C2',
+    planLabelDe: 'C2 Meisterschafts-Lernplan',
+    planLabelEn: 'C2 Mastery Study Plan',
+    planLabelTr: 'C2 Ustalık Çalışma Planı',
+    planLabelAr: 'خطة الدراسة لإتقان C2',
+    planLabelUk: 'План майстерності C2',
+    level: 'C2',
+    levels: ['C2'],
+    badgeDe: '👑 Ziel: C2 GDS & muttersprachliche Beherrschung',
+    badgeEn: '👑 Goal: C2 GDS & Native-Level Mastery',
+    badgeTr: '👑 Hedef: C2 GDS & Ana Dil Düzeyinde Hakimiyet',
+    badgeAr: '👑 الهدف: C2 دبلوم GDS والإتقان شبه الأصلي',
+    badgeUk: '👑 Ціль: C2 GDS та володіння на рівні носія',
+    titleDe: 'C2 Höchste sprachliche Meisterschaft',
+    titleEn: 'Achieve C2 Near-Native German Mastery',
+    titleTr: 'C2 Ana Dil Seviyesinde Almanca Ustalığı',
+    titleAr: 'حقق أعلى درجات الإتقان اللغوي بمستوى C2',
+    titleUk: 'Досягніть найвищої мовної майстерності C2',
+    descDe: 'Höchstes muttersprachliches Niveau (Goethe C2 GDS / telc C2). Meisterhafte Nuancen, gehobene Stilistik, idiomatischer Feinschliff und philosophisch-literarischer Diskurs.',
+    descEn: 'Highest near-native competence (Goethe C2 GDS / telc C2). Masterful nuances, elevated style, idiomatic perfection, and philosophical-literary discourse.',
+    descTr: 'En yüksek ana dil yetkinliği (Goethe C2 GDS / telc C2). Üstün anlam nüansları, seçkin üslup, deyimsel ustalık ve edebi-felsefi tartışma dili.',
+    descAr: 'أعلى مستويات الكفاءة اللغوية شبه الأم (Goethe C2 GDS / telc C2). دقة بالغة في الفروق الدلالية، أسلوب بياني رفيع، وبلاغة اصطلاحية وأدبية.',
+    descUk: 'Найвищий рівень володіння мовою, наближений до носія (Goethe C2 GDS / telc C2). Майстерні нюанси, вишукана стилістика, ідіоматична довершеність та філософсько-літературний дискурс.',
+    hintDe: 'Schwerpunkt auf Meisterschafts-Deck, gehobenen Redemitteln & stilistischer Perfektion',
+    hintEn: 'Focusing on mastery deck, elevated idiomatic expressions & stylistic nuance',
+    hintTr: 'Ustalık destesi, ileri düzey deyimler ve üslup mükemmeliyetine odaklanıyor',
+    hintAr: 'التركيز على مجموعة الإتقان، التعبيرات البلاغية الرفيعة والدقة الأسلوبية',
+    hintUk: 'Фокус на колоді майстерності, вишуканих виразах та стилістичній довершеності',
+    trainerUrl: 'trainer.html?level=C2&deck=c2'
+  },
   'goal-vocab': {
     id: 'goal-vocab',
     icon: '⚡',
@@ -251,13 +293,13 @@ const GOAL_CONFIG = {
     portalTitleTr: '⚡ Kelime Antrenörü',
     portalTitleAr: '⚡ مدرب المفردات',
     portalTitleUk: '⚡ Тренажер слів',
-    planLabelDe: 'A1–C1 Drill aller Stufen',
-    planLabelEn: 'A1–C1 All Levels Drill',
-    planLabelTr: 'A1–C1 Tüm Seviye Antrenmanı',
-    planLabelAr: 'تدريب شامل A1–C1',
-    planLabelUk: 'Тренування A1–C1 всіх рівнів',
+    planLabelDe: 'A1–C2 Drill aller Stufen',
+    planLabelEn: 'A1–C2 All Levels Drill',
+    planLabelTr: 'A1–C2 Tüm Seviye Antrenmanı',
+    planLabelAr: 'تدريب شامل A1–C2',
+    planLabelUk: 'Тренування A1–C2 всіх рівнів',
     level: 'ALL',
-    levels: ['A1', 'A2', 'B1', 'B2', 'C1'],
+    levels: ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'],
     badgeDe: '⚡ Interaktiver Wortschatz-Geschwindigkeitstrainer',
     badgeEn: '⚡ Interactive Wortschatz Speed Trainer',
     badgeTr: '⚡ İnteraktif Kelime Hız Antrenörü',
@@ -268,11 +310,11 @@ const GOAL_CONFIG = {
     titleTr: 'Almanca Kelime Dağarcığınızı Güçlendirin',
     titleAr: 'عزز حصيلتك من مفردات اللغة الألمانية',
     titleUk: 'Прокачайте свій словниковий запас німецької',
-    descDe: 'Über 2.000 Vokabeln auf den GER-Niveaus A1–C1 mit nativer Sprachausgabe, 5 Quizmodi, intelligenter Wiederholung und Streak-Tracking.',
-    descEn: '2,000+ words across A1–C1 CEFR levels with native speech audio, 5 quiz modes, anti-repetition rotation, and streak tracking.',
-    descTr: 'A1–C1 CEFR seviyelerinde 2.000+ kelime, sesli telaffuz, 5 test modu, akıllı tekrar algoritması ve seri takibi.',
-    descAr: 'أكثر من 2000 كلمة عبر مستويات A1–C1 مع نطق صوتي أصلي، 5 أوضاع اختبار، تكرار ذكي ومتابعة السلسلة اليومية.',
-    descUk: '2000+ слів на рівнях A1–C1 із природним озвученням, 5 режимами тестів, розумною ротацією та серіями днів.',
+    descDe: 'Über 2.300 Vokabeln auf den GER-Niveaus A1–C2 mit nativer Sprachausgabe, 5 Quizmodi, intelligenter Wiederholung und Streak-Tracking.',
+    descEn: '2,300+ words across A1–C2 CEFR levels with native speech audio, 5 quiz modes, anti-repetition rotation, and streak tracking.',
+    descTr: 'A1–C2 CEFR seviyelerinde 2.300+ kelime, sesli telaffuz, 5 test modu, akıllı tekrar algoritması ve seri takibi.',
+    descAr: 'أكثر من 2300 كلمة عبر مستويات A1–C2 مع نطق صوتي أصلي، 5 أوضاع اختبار، تكرار ذكي ومتابعة السلسلة اليومية.',
+    descUk: '2300+ слів на рівнях A1–C2 із природним озвученням, 5 режимами тестів, розумною ротацією та серіями днів.',
     hintDe: 'Direkter Sprint-Trainingsmodus mit nativer Sprachausgabe & Spaced Repetition',
     hintEn: 'Direct speed drill mode with native TTS audio & spaced repetition',
     hintTr: 'Sesli telaffuz ve akıllı algoritma ile doğrudan hızlı test modu',
@@ -345,7 +387,7 @@ const HERO_STATS_CONFIG = {
   vocab: [
     { val: '2,000+', de: 'Vokabeln', en: 'Vocab Words', tr: 'Kelime', ar: 'كلمة', uk: 'Слів' },
     { val: '5', de: 'Quiz-Modi', en: 'Quiz Modes', tr: 'Test Modu', ar: 'أوضاع اختبار', uk: 'Режимів тестів' },
-    { val: 'A1–C1', de: '4 GER-Stufen', en: '4 CEFR Decks', tr: '4 Deste Seviyesi', ar: '4 مستويات', uk: '4 колоди рівнів' },
+    { val: 'A1–C2', de: '5 GER-Stufen', en: '5 CEFR Decks', tr: '5 Deste Seviyesi', ar: '5 مستويات', uk: '5 колод рівнів' },
     { val: '100%', de: 'Lokal & Privat', en: 'Local & Private', tr: 'Cihaz İçi & Gizli', ar: 'محلي وخاص', uk: 'Локально і приватно' }
   ],
   lid: [
@@ -539,6 +581,15 @@ function renderSidebar() {
         ar: 'مجموعة C1 الأكاديمية',
         uk: 'Академічна колода C1',
         href: 'trainer.html?deck=c1'
+      },
+      {
+        icon: '👑',
+        de: 'Meisterschafts-C2-Deck',
+        en: 'Mastery C2 Deck',
+        tr: 'Ustalık C2 Destesi',
+        ar: 'مجموعة C2 المتقنة',
+        uk: 'Колода майстерності C2',
+        href: 'trainer.html?deck=c2'
       },
       {
         icon: '🎯',
@@ -1885,11 +1936,11 @@ function updateGoalDisplays() {
   const pActiveTrack = prefixes.activeTrack[currentLang] || prefixes.activeTrack.en;
 
   const allLevelLabels = {
-    de: 'Alle Niveaus (A1–C1)',
-    en: 'All Levels (A1–C1)',
-    tr: 'Tüm Seviyeler (A1–C1)',
-    ar: 'جميع المستويات (A1–C1)',
-    uk: 'Усі рівні (A1–C1)'
+    de: 'Alle Niveaus (A1–C2)',
+    en: 'All Levels (A1–C2)',
+    tr: 'Tüm Seviyeler (A1–C2)',
+    ar: 'جميع المستويات (A1–C2)',
+    uk: 'Усі рівні (A1–C2)'
   };
   const levelDisplay = currentGoalLevel === 'ALL' 
     ? (allLevelLabels[currentLang] || allLevelLabels.en) 
@@ -2140,9 +2191,67 @@ function toggleTeaserDiagnosticResult() {
   }
 }
 
+// Clean Tab Switching: Study Portal View vs Landing / Marketing View
+function setIndexView(view) {
+  const btnPortal = document.getElementById('btn-view-portal');
+  const btnMarketing = document.getElementById('btn-view-marketing');
+  const hint = document.getElementById('index-view-hint');
+  const marketingTeaser = document.getElementById('interactive-demo-teaser');
+  const trustBadges = document.querySelector('.hero-trust-badges');
+
+  const isPortal = view === 'portal';
+  try {
+    localStorage.setItem('deutschlernen_index_view', view);
+  } catch (e) {}
+
+  if (btnPortal && btnMarketing) {
+    if (isPortal) {
+      btnPortal.classList.add('active');
+      btnPortal.style.background = 'var(--accent-gold)';
+      btnPortal.style.color = '#000';
+      btnMarketing.classList.remove('active');
+      btnMarketing.style.background = 'transparent';
+      btnMarketing.style.color = 'var(--text-secondary)';
+      if (hint) hint.textContent = '⚡ Aktive Lerneinheit • Direkter Fokus auf Lehrplan, Module & Prüfung';
+      if (marketingTeaser) marketingTeaser.style.display = 'none';
+      if (trustBadges) trustBadges.style.display = 'none';
+    } else {
+      btnMarketing.classList.add('active');
+      btnMarketing.style.background = 'var(--accent-gold)';
+      btnMarketing.style.color = '#000';
+      btnPortal.classList.remove('active');
+      btnPortal.style.background = 'transparent';
+      btnPortal.style.color = 'var(--text-secondary)';
+      if (hint) hint.textContent = '🌐 Kursübersicht, telc-Vorteile & Preisstufen';
+      if (marketingTeaser) marketingTeaser.style.display = 'block';
+      if (trustBadges) trustBadges.style.display = 'flex';
+    }
+  }
+}
+
+function initIndexView() {
+  let saved = null;
+  try {
+    saved = localStorage.getItem('deutschlernen_index_view');
+  } catch (e) {}
+
+  // If returning learner with streak or saved preference, default to focused portal view
+  if (saved) {
+    setIndexView(saved);
+  } else {
+    const streak = parseInt(localStorage.getItem('deutschlernen_streak') || '0', 10);
+    if (streak > 0 || window.location.hash) {
+      setIndexView('portal');
+    } else {
+      setIndexView('marketing');
+    }
+  }
+}
+
 // Run checkout return & URL parameter handler on startup
 initUrlParamsAndCheckoutReturn();
 initPrivacyBanner();
+initIndexView();
 
 if (typeof window !== 'undefined') {
   window.toggleSchreibenShowcase = toggleSchreibenShowcase;
@@ -2150,6 +2259,7 @@ if (typeof window !== 'undefined') {
   window.initUrlParamsAndCheckoutReturn = initUrlParamsAndCheckoutReturn;
   window.dismissPrivacyBanner = dismissPrivacyBanner;
   window.initPrivacyBanner = initPrivacyBanner;
+  window.setIndexView = setIndexView;
 }
 
 

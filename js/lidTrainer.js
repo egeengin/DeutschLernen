@@ -11,10 +11,17 @@ const LID_STATE_STORAGE_KEY = 'deutschlernen_lid_state';
 
 function getStoredLiDState() {
   try {
-    if (typeof localStorage === 'undefined') return '';
-    return localStorage.getItem(LID_STATE_STORAGE_KEY) || '';
+    if (typeof StorageEngine !== 'undefined') {
+      const b = StorageEngine.getUserProfile().bundesland;
+      if (b) {
+        if (b === 'NRW' || b === 'Nordrhein-Westfalen') return 'NW';
+        if (b.length === 2) return b;
+      }
+    }
+    if (typeof localStorage === 'undefined') return 'NW';
+    return localStorage.getItem(LID_STATE_STORAGE_KEY) || 'NW';
   } catch (e) {
-    return '';
+    return 'NW';
   }
 }
 
@@ -588,6 +595,10 @@ function checkLiDAnswer(selectedIdx, correctIdx, btnEl) {
     if (isLiDExamMode) {
       lidExamAnswers[currentLiDIndex] = true;
       lidExamSelected[currentLiDIndex] = selectedIdx;
+    } else {
+      if (typeof StorageEngine !== 'undefined') {
+        StorageEngine.addXP(2);
+      }
     }
   } else {
     btnEl.classList.add('wrong');
@@ -600,13 +611,20 @@ function checkLiDAnswer(selectedIdx, correctIdx, btnEl) {
     // Automatically capture mistake into personal Fehlerheft review deck
     const pool = getActiveLiDQuestionsPool();
     const currentQ = pool[currentLiDIndex];
-    if (currentQ && typeof recordFehlerheftItem === 'function') {
-      recordFehlerheftItem({
-        word: currentQ.questionDe,
-        meaning: currentQ.explanationDe || currentQ.explanationEn || '',
-        example: `Correct: ${currentQ.optionsDe[correctIdx]}`,
-        mistakeType: 'syntax'
-      });
+    if (currentQ) {
+      const item = {
+        word: `BAMF Q#${currentQ.id}: ${currentQ.questionDe}`,
+        meaning: currentQ.optionsDe ? currentQ.optionsDe[correctIdx] : '',
+        example: currentQ.explanationDe || currentQ.explanationEn || 'Leben in Deutschland Frage',
+        mistakeType: 'lid',
+        timestamp: Date.now()
+      };
+      if (typeof StorageEngine !== 'undefined') {
+        StorageEngine.addFehlerItem(item);
+      }
+      if (typeof recordFehlerheftItem === 'function') {
+        recordFehlerheftItem(item);
+      }
       if (typeof renderFehlerheftDashboard === 'function') {
         renderFehlerheftDashboard('fehlerheft-container');
       }
@@ -650,6 +668,9 @@ function changeLiDState(stateCode) {
   try {
     if (typeof localStorage !== 'undefined') {
       localStorage.setItem(LID_STATE_STORAGE_KEY, stateCode);
+    }
+    if (typeof StorageEngine !== 'undefined') {
+      StorageEngine.updateUserProfile({ bundesland: stateCode });
     }
   } catch (e) {}
   currentLiDIndex = 0;
@@ -758,9 +779,16 @@ function updateLiDView() {
  * 60 minutes countdown
  */
 function startLiDExamSimulation() {
+  if (typeof StorageEngine !== 'undefined') {
+    const b = StorageEngine.getUserProfile().bundesland;
+    if (b) {
+      if (b === 'NRW' || b === 'Nordrhein-Westfalen') selectedLiDState = 'NW';
+      else if (b.length === 2) selectedLiDState = b;
+    }
+  }
   const general = typeof LID_QUESTIONS !== 'undefined' ? [...LID_QUESTIONS] : [];
   const stateMap = typeof LID_STATE_QUESTIONS !== 'undefined' ? LID_STATE_QUESTIONS : {};
-  const stateSpecific = stateMap[selectedLiDState] ? [...stateMap[selectedLiDState]] : [];
+  const stateSpecific = stateMap[selectedLiDState] ? [...stateMap[selectedLiDState]] : (stateMap['NW'] ? [...stateMap['NW']] : []);
 
   // Shuffle helper
   const shuffle = (arr) => arr.slice().sort(() => Math.random() - 0.5);
@@ -814,24 +842,65 @@ function finishLiDExam() {
 
   const correctCount = Object.values(lidExamAnswers).filter(v => v === true).length;
   const totalCount = lidExamQuestions.length || 33;
-  const passed = correctCount >= 17; // BAMF Einbürgerung pass threshold is 17/33
+  const passedNaturalization = correctCount >= 17; // § 10 StAG: >= 17/33
+  const passedIntegration = correctCount >= 15; // B1 Integration course benchmark: >= 15/33
   const timeSpentMin = Math.floor((3600 - lidExamSecondsLeft) / 60);
+
+  // Sync to StorageEngine
+  if (typeof StorageEngine !== 'undefined') {
+    StorageEngine.setExamScore('lid', correctCount);
+    StorageEngine.addXP(correctCount * 3);
+  }
+
+  // Route missed questions to Fehlerheft
+  lidExamQuestions.forEach((q, idx) => {
+    if (lidExamAnswers[idx] === false) {
+      const item = {
+        word: `BAMF Q#${q.id}: ${q.questionDe}`,
+        meaning: q.optionsDe ? q.optionsDe[q.correctIndex] : '',
+        example: q.explanationDe || q.explanationEn || 'BAMF Leben in Deutschland Prüfungsfrage',
+        mistakeType: 'lid',
+        timestamp: Date.now()
+      };
+      if (typeof StorageEngine !== 'undefined') {
+        StorageEngine.addFehlerItem(item);
+      }
+      if (typeof recordFehlerheftItem === 'function') {
+        recordFehlerheftItem(item);
+      }
+    }
+  });
+
+  if (typeof renderFehlerheftDashboard === 'function') {
+    renderFehlerheftDashboard('fehlerheft-container');
+  }
 
   const card = document.getElementById('lid-active-question-card');
   if (card) {
     card.innerHTML = `
       <div class="lid-exam-result-card" style="text-align:center; padding:30px 20px;">
-        <div style="font-size:52px; margin-bottom:12px;">${passed ? '🎉' : '⚠️'}</div>
-        <div class="showcase-badge" style="background:${passed ? 'rgba(34,197,94,0.15)' : 'rgba(239,68,68,0.15)'}; color:${passed ? '#22c55e' : '#ef4444'};">
-          ${passed ? 'BESTANDEN (Passed BAMF Einbürgerung)' : 'NICHT BESTANDEN (Need 17/33)'}
+        <div style="font-size:52px; margin-bottom:12px;">${passedNaturalization ? '🎉' : (passedIntegration ? '📜' : '⚠️')}</div>
+        <div class="showcase-badge" style="background:${passedNaturalization ? 'rgba(34,197,94,0.15)' : (passedIntegration ? 'rgba(56,189,248,0.15)' : 'rgba(239,68,68,0.15)')}; color:${passedNaturalization ? '#22c55e' : (passedIntegration ? '#38bdf8' : '#ef4444')};">
+          ${passedNaturalization ? 'BESTANDEN (Einbürgerung nach § 10 StAG: ≥17 Pkt.)' : (passedIntegration ? 'BESTANDEN (B1-Integrationskurs: ≥15 Pkt.)' : 'NICHT BESTANDEN (<15 Pkt.)')}
         </div>
         <h2 style="margin:16px 0 8px 0; font-size:28px;">
-          Your Score: <span style="color:${passed ? 'var(--accent-gold)' : '#ef4444'};">${correctCount} / ${totalCount}</span> (${Math.round((correctCount/totalCount)*100)}%)
+          Ergebnis: <span style="color:${passedNaturalization ? 'var(--accent-gold)' : (passedIntegration ? '#38bdf8' : '#ef4444')};">${correctCount} / ${totalCount}</span> (${Math.round((correctCount/totalCount)*100)}%)
         </h2>
+        <div style="display:flex; justify-content:center; gap:16px; margin-bottom:16px; flex-wrap:wrap;">
+          <div style="background:rgba(30,41,59,0.5); padding:10px 16px; border-radius:8px; border:1px solid ${passedNaturalization ? '#22c55e' : '#64748b'};">
+            <strong>Einbürgerung (§ 10 StAG):</strong> ${passedNaturalization ? '✅ Bestanden (≥17/33)' : '❌ Nicht bestanden (Ziel: ≥17)'}
+          </div>
+          <div style="background:rgba(30,41,59,0.5); padding:10px 16px; border-radius:8px; border:1px solid ${passedIntegration ? '#38bdf8' : '#64748b'};">
+            <strong>B1-Integrationskurs:</strong> ${passedIntegration ? '✅ Bestanden (≥15/33)' : '❌ Nicht bestanden (Ziel: ≥15)'}
+          </div>
+        </div>
         <p style="color:var(--text-muted); font-size:15px; max-width:550px; margin:0 auto 24px auto;">
-          ${passed 
-            ? `Herzlichen Glückwunsch! You met the official requirements for German Naturalization according to § 10 StAG (minimum 17 points required). Time taken: ${timeSpentMin} minutes.`
-            : `You scored ${correctCount} points. Naturalization (§ 10 StAG) requires at least 17 correct answers. Your missed questions have been automatically added to your Fehlerheft review deck below.`
+          ${passedNaturalization 
+            ? `Herzlichen Glückwunsch! Sie haben alle gesetzlichen Vorgaben für die deutsche Einbürgerung (§ 10 StAG) und den Integrationskurs erfüllt. Benötigte Prüfungszeit: ${timeSpentMin} Minuten.`
+            : (passedIntegration
+                ? `Sie haben ${correctCount} Punkte erreicht. Das reicht für das B1-Integrationskurs-Zertifikat (mind. 15 Punkte), aber für die Einbürgerung nach § 10 StAG fehlen noch ${17 - correctCount} Punkte (mind. 17 Punkte erforderlich). Die falschen Fragen sind im Fehlerheft gespeichert.`
+                : `Sie haben ${correctCount} von 33 Punkten erreicht. Für den Integrationskurs sind mindestens 15 Punkte, für die Einbürgerung mindestens 17 Punkte nötig. Alle verpassten Fragen wurden in Ihr persönliches Fehlerheft aufgenommen.`
+              )
           }
         </p>
 

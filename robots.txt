@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://egeengin.github.io/DeutschLernen/sitemap.xml

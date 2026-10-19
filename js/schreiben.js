@@ -115,6 +115,39 @@
     }
   };
 
+  const SCENARIO_LEITPUNKTE_REGEX = {
+    einladung: [
+      /\b(dank|danke|bedanke|gefreut|einladung|eingeladen)\b/i,
+      /\b(leider|kann nicht|nicht kommen|familienfeier|am wochenende|verhindert|krank|keine zeit|termin)\b/i,
+      /\b(entschuldig|leid|tut mir leid|geschenk|mitbringen|schenken|vorbeibringen)\b/i,
+      /\b(treffen|sehen|kaffee|nächste woche|wie wäre es|hast du zeit|wann|wiedersehen)\b/i
+    ],
+    beschwerde: [
+      /\b(bestell|bestellung|bestellnummer|gekauft|laptop|gerät|onlineshop|auftragsnummer|artikel)\b/i,
+      /\b(beschädigt|schaden|kaputt|funktioniert nicht|schaltet|defekt|paket|display)\b/i,
+      /\b(frist|tage|ersatz|erstatten|erstattung|geld zurück|neues gerät|bis zum|woche)\b/i,
+      /\b(anwalt|verbraucherschutz|rechtlich|schritte|klage|anwaltlich|melden)\b/i
+    ],
+    nachbarschaft: [
+      /\b(besserung|gute besserung|erhol|hoffe|gesund|verstaucht|fuß)\b/i,
+      /\b(einkauf|einkaufen|helfen|hilfe|supermarkt|lebensmittel|besorgen|erledigen)\b/i,
+      /\b(zeit|liste|zettel|wann|nachmittag|morgen|schreiben sie|notieren)\b/i,
+      /\b(telefon|nummer|anrufen|handy|01|erreichen|klingeln)\b/i
+    ],
+    wohnung: [
+      /\b(interesse|anzeige|gesehen|3-zimmer|wohnung|mieten|inserat)\b/i,
+      /\b(arbeite|beruf|angestellt|einkommen|gehalt|monatlich|verdiene|stelle|vollzeit)\b/i,
+      /\b(besichtigung|termin|wann|zeit|wäre|möglich|samstag|uhr|wochenende)\b/i,
+      /\b(unterlagen|schufa|gehaltsnachweis|dokumente|benötigen|brauchen|nachweise)\b/i
+    ],
+    kursabsage: [
+      /\b(fehlen|nicht kommen|dienstreise|geschäftlich|verhindert|krank|arbeit|reise)\b/i,
+      /\b(zwei wochen|woche|tage|von|bis|dauer|zeitraum|abwesend)\b/i,
+      /\b(hausaufgabe|aufgabe|material|skript|unterlagen|mail|e-mail|schicken|senden)\b/i,
+      /\b(zurück|wieder da|entschuldig|tut mir leid|nach meiner rückkehr|ab dem)\b/i
+    ]
+  };
+
   // 2. Multilingual UI Dictionary (DE, EN, TR, AR, UK)
   const I18N = {
     de: {
@@ -358,7 +391,13 @@
               <ul class="sch-leitpunkte-list">
                 ${scenario.leitpunkte.map((lp, idx) => {
                   const lpText = lp['text' + langKey] || lp.textEn;
-                  return `<li class="sch-leitpunkt-item"><span>📌</span> <strong>Punkt ${idx + 1}:</strong> ${lpText}</li>`;
+                  return `
+                    <li class="sch-leitpunkt-item" id="sch-lp-${idx}">
+                      <span class="sch-lp-icon" id="sch-lp-icon-${idx}">📌</span>
+                      <strong>Punkt ${idx + 1}:</strong> ${lpText}
+                      <span class="sch-lp-tag" id="sch-lp-tag-${idx}" style="font-size:11px; margin-left:auto; opacity:0.9; font-weight:700;"></span>
+                    </li>
+                  `;
                 }).join('')}
               </ul>
             </div>
@@ -429,8 +468,35 @@
       this.onTextInput(textarea);
     }
 
+    checkLeitpunkte(text) {
+      const regexes = SCENARIO_LEITPUNKTE_REGEX[this.currentScenarioId] || SCENARIO_LEITPUNKTE_REGEX.einladung;
+      const results = [];
+      regexes.forEach((rx, idx) => {
+        const isCovered = rx.test(text);
+        results.push(isCovered);
+        const itemEl = document.getElementById(`sch-lp-${idx}`);
+        const iconEl = document.getElementById(`sch-lp-icon-${idx}`);
+        const tagEl = document.getElementById(`sch-lp-tag-${idx}`);
+        if (itemEl && iconEl && tagEl) {
+          if (isCovered) {
+            itemEl.classList.add('sch-lp-covered');
+            iconEl.textContent = '✅';
+            tagEl.textContent = 'Erkannt';
+            tagEl.style.color = '#22c55e';
+          } else {
+            itemEl.classList.remove('sch-lp-covered');
+            iconEl.textContent = '📌';
+            tagEl.textContent = text.length > 20 ? 'Ausstehend' : '';
+            tagEl.style.color = '#94a3b8';
+          }
+        }
+      });
+      return results;
+    }
+
     onTextInput(textarea) {
-      const words = textarea.value.trim().split(/\s+/).filter(Boolean).length;
+      const text = textarea.value;
+      const words = text.trim().split(/\s+/).filter(Boolean).length;
       const badge = document.getElementById('sch-word-badge');
       if (badge) {
         badge.textContent = `${this.t('wordCountLabel')} ${words} / 80–120`;
@@ -441,6 +507,7 @@
           badge.classList.add('warning');
         }
       }
+      this.checkLeitpunkte(text);
     }
 
     toggleTimer() {
@@ -553,6 +620,10 @@
       if (typeof localStorage !== 'undefined' && data.meta.total_score !== undefined) {
         localStorage.setItem('telc_letter_score', String(data.meta.total_score));
       }
+      if (typeof StorageEngine !== 'undefined') {
+        StorageEngine.setExamScore('schreiben', data.meta.total_score);
+        StorageEngine.addXP(Math.round(data.meta.total_score * 2));
+      }
       if (typeof StorageService !== 'undefined' && typeof StorageService.saveLastEvaluation === 'function') {
         StorageService.saveLastEvaluation(data);
       }
@@ -568,9 +639,12 @@
           word: err.original_snippet || 'Grammatikfehler',
           meaning: err.corrected_snippet || '',
           example: err.explanation || '',
-          mistakeType: (err.rule_category || 'grammar').toLowerCase(),
+          mistakeType: (err.rule_category || 'schreiben').toLowerCase(),
           timestamp: Date.now()
         };
+        if (typeof StorageEngine !== 'undefined') {
+          StorageEngine.addFehlerItem(item);
+        }
         if (typeof recordFehlerheftItem === 'function') {
           recordFehlerheftItem(item);
         } else if (typeof window !== 'undefined' && typeof window.recordFehlerheftItem === 'function') {
@@ -825,9 +899,59 @@
 
     generateLocalFallbackEvaluation(text, promptObj, isProParam) {
       const isPro = typeof isProParam === 'boolean' ? isProParam : (typeof StorageService !== 'undefined' ? StorageService.isProUser() : false);
-      const words = (text || '').trim().split(/\s+/).filter(Boolean).length;
+      const rawText = text || '';
+      const words = rawText.trim().split(/\s+/).filter(Boolean).length;
       const score = words >= 80 ? 33 : 21;
       const finalScore = isPro ? 45 : score;
+
+      const detectedErrors = [];
+
+      // 1. Inversion / V2 violations
+      const inversionMatch = rawText.match(/(Wenn\s+[^,]+,\s*|Gestern\s+|Heute\s+|Leider\s+|Deshalb\s+|Morgen\s+)(wir|ich|du|er|sie|es|ihr|Sie)\s+(können|müssen|wollen|sollen|haben|gehen|fahren|sehen|sind|habe|bin|ist|werde|kann|muss)/i);
+      if (inversionMatch) {
+        detectedErrors.push({
+          original_snippet: inversionMatch[0],
+          corrected_snippet: `${inversionMatch[1]}${inversionMatch[3]} ${inversionMatch[2]}`,
+          rule_category: "Inversion",
+          explanation: "Verb an Position 2 (Inversion nach Adverbial/Nebensatz)."
+        });
+      }
+
+      // 2. Subordinate clause verb-final word order
+      const nebensatzMatch = rawText.match(/\b(weil|dass|obwohl|wenn)\s+(ich|du|er|sie|es|wir|ihr|Sie)\s+(bin|habe|kann|muss|will|möchte|werde|ist|hat|sind|haben|können|müssen)\s+([a-zäöüA-ZÄÖÜß]+(?:\s+[a-zäöüA-ZÄÖÜß]+){0,3})/i);
+      if (nebensatzMatch) {
+        detectedErrors.push({
+          original_snippet: nebensatzMatch[0],
+          corrected_snippet: `${nebensatzMatch[1]} ${nebensatzMatch[2]} ${nebensatzMatch[4]} ${nebensatzMatch[3]}`,
+          rule_category: "Nebensatz",
+          explanation: `Subjunktion '${nebensatzMatch[1]}' verlangt das konjugierte Verb am Satzende.`
+        });
+      }
+
+      // 3. Register consistency
+      const hasFormalSal = /Sehr geehrte(r)?\s+(Damen und Herren|Frau|Herr)/i.test(rawText);
+      const hasInformalSal = /(Liebe[r]?|Hallo)\s+[A-ZÄÖÜa-zäöü]+/i.test(rawText);
+      const hasFormalClose = /Mit freundlichen Grüßen/i.test(rawText);
+      const hasInformalClose = /(Viele Grüße|Liebe Grüße|Herzliche Grüße|Dein[e]?\b)/i.test(rawText);
+      if ((hasFormalSal && hasInformalClose) || (hasInformalSal && hasFormalClose)) {
+        detectedErrors.push({
+          original_snippet: hasFormalSal ? "Sehr geehrte... + Informelle Grußformel" : "Liebe... + Formelle Grußformel",
+          corrected_snippet: hasFormalSal ? "Mit freundlichen Grüßen" : "Liebe Grüße / Viele Grüße",
+          rule_category: "Register",
+          explanation: "Anrede und Grußformel müssen im selben Register (formell vs. informell) sein."
+        });
+      }
+
+      // 4. Missing comma before subclause
+      const missingCommaMatch = rawText.match(/([a-zA-Z0-9äöüÄÖÜ])\s+(dass|weil|obwohl|damit)\b/);
+      if (missingCommaMatch && !missingCommaMatch[0].startsWith(',')) {
+        detectedErrors.push({
+          original_snippet: missingCommaMatch[0],
+          corrected_snippet: `${missingCommaMatch[1]}, ${missingCommaMatch[2]}`,
+          rule_category: "Kommasetzung",
+          explanation: "Vor unterordnenden Nebensätzen (dass, weil, obwohl, damit) steht im Deutschen zwingend ein Komma."
+        });
+      }
 
       const sampleErrors = [
         { original_snippet: "Gestern ich habe", corrected_snippet: "Gestern habe ich", rule_category: "Inversion", explanation: "Verb an Position 2." },
@@ -835,6 +959,8 @@
         { original_snippet: "Ich hoffe dass du kommst", corrected_snippet: "Ich hoffe, dass du kommst", rule_category: "Kommasetzung", explanation: "Komma vor der Subjunktion 'dass'." },
         { original_snippet: "wegen dem schlechten Wetter", corrected_snippet: "wegen des schlechten Wetters", rule_category: "Genitiv", explanation: "Präposition 'wegen' verlangt den Genitiv." }
       ];
+
+      const allErrors = detectedErrors.length >= 2 ? detectedErrors : [...detectedErrors, ...sampleErrors.slice(detectedErrors.length)];
 
       return {
         meta: { word_count: words, total_score: finalScore, passed: finalScore >= 27 },
@@ -863,8 +989,8 @@
               reason: 'Verbposition und Satzstellung.'
             }
           },
-          visible_errors_sample: sampleErrors.slice(0, 2),
-          hidden_errors_count: isPro ? 0 : 2
+          visible_errors_sample: allErrors.slice(0, 2),
+          hidden_errors_count: isPro ? 0 : Math.max(2, allErrors.length - 2)
         },
         pro_locked_content: {
           locked: !isPro,
@@ -878,7 +1004,7 @@
           b1_power_phrases_to_memorize: isPro
             ? ["Ich habe mich riesig über deine Einladung gefreut.", "Lass uns unbedingt bald wiedersehen!"]
             : undefined,
-          all_remaining_errors: isPro ? sampleErrors.slice(2) : []
+          all_remaining_errors: isPro ? allErrors.slice(2) : []
         }
       };
     }

@@ -63,7 +63,7 @@ class TestDatasetAndGenerators(unittest.TestCase):
         self.assertIn("Teil 2", gen_ws.en_content)
 
     def test_build_datasets_function_output(self):
-        """Verify build_datasets successfully writes valid VOCAB_2000, VOCAB_B2, and VOCAB_C1 files."""
+        """Verify build_datasets successfully writes valid VOCAB_2000, VOCAB_B2, VOCAB_C1, and VOCAB_C2 files."""
         import tempfile
         from scripts.build_2000_dataset import build_datasets
 
@@ -71,14 +71,23 @@ class TestDatasetAndGenerators(unittest.TestCase):
             tmp_vocab2000 = os.path.join(tmpdir, "vocab2000.js")
             tmp_vocab_b2 = os.path.join(tmpdir, "vocab_b2.js")
             tmp_vocab_c1 = os.path.join(tmpdir, "vocab_c1.js")
+            tmp_vocab_c2 = os.path.join(tmpdir, "vocab_c2.js")
+            tmp_vocab_nvv = os.path.join(tmpdir, "vocab_nvv.js")
 
-            count_core, count_b2 = build_datasets(tmp_vocab2000, tmp_vocab_b2, tmp_vocab_c1)
+            count_core, count_b2, count_c1, count_c2, count_nvv = build_datasets(
+                tmp_vocab2000, tmp_vocab_b2, tmp_vocab_c1, tmp_vocab_c2, tmp_vocab_nvv
+            )
 
             self.assertEqual(count_core, 2000)
             self.assertGreater(count_b2, 50)
+            self.assertEqual(count_c1, 100)
+            self.assertEqual(count_c2, 100)
+            self.assertEqual(count_nvv, 60)
             self.assertTrue(os.path.exists(tmp_vocab2000))
             self.assertTrue(os.path.exists(tmp_vocab_b2))
             self.assertTrue(os.path.exists(tmp_vocab_c1))
+            self.assertTrue(os.path.exists(tmp_vocab_c2))
+            self.assertTrue(os.path.exists(tmp_vocab_nvv))
 
             with open(tmp_vocab2000, "r", encoding="utf-8") as f:
                 core_content = f.read()
@@ -91,6 +100,14 @@ class TestDatasetAndGenerators(unittest.TestCase):
             with open(tmp_vocab_c1, "r", encoding="utf-8") as f:
                 c1_content = f.read()
             self.assertIn("window.VOCAB_C1 =", c1_content)
+
+            with open(tmp_vocab_c2, "r", encoding="utf-8") as f:
+                c2_content = f.read()
+            self.assertIn("window.VOCAB_C2 =", c2_content)
+
+            with open(tmp_vocab_nvv, "r", encoding="utf-8") as f:
+                nvv_content = f.read()
+            self.assertIn("window.VOCAB_NVV =", nvv_content)
 
     def test_markdown_study_material_generators_execution(self):
         """Verify generator routines produce valid markdown guides with quizzes in temp directory."""

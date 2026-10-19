@@ -22,12 +22,17 @@
       coreDeck: "Core 2,000 (A1–B1)",
       b2Deck: "Advanced B2 Deck",
       c1Deck: "Academic C1 Deck",
+      c2Deck: "Mastery C2 Deck",
+      nvvDeck: "Nomen-Verb-Verbindungen (B2–C2)",
       allDeck: "All Words Combined",
       sessionLabel: "Session",
       streakLabel: "Day Streak",
       reviewQueue: "Mistakes Queue",
       mode_de_meaning: "German ➔ Meaning",
       mode_meaning_de: "Meaning ➔ German",
+      mode_flashcards: "Flashcards (SM-2)",
+      mode_typein: "Type-In Drill",
+      mode_artikel: "Artikel-Trainer (der/die/das)",
       mode_synonyms: "Synonyms (DE ➔ DE)",
       mode_antonyms: "Antonyms (Opposites)",
       mode_mistakes: "Review Mistakes",
@@ -50,7 +55,7 @@
       inReview: "In Review",
       audioOn: "Audio On",
       audioOff: "Audio Off",
-      searchPlaceholder: "Search 2,000+ words in German, Turkish, English...",
+      searchPlaceholder: "Search 2,350+ words in German, Turkish, English...",
       emptyReview: "Great job! No mistakes in your review queue right now.",
       browserTitle: "Vocabulary Dictionary",
       exportData: "Export Progress",
@@ -67,6 +72,7 @@
       synonymsLabel: "Synonyms",
       antonymsLabel: "Antonyms",
       arenaSubhint: "Choose the correct meaning below or press keys 1–4",
+      artikelSubhint: "Select the correct German definite article or press keys 1, 2, or 3",
       cardLabel: "Card",
       restartDeck: "Restart Drill",
       resetProgressBtn: "Reset Progress",
@@ -75,6 +81,7 @@
       levelB1: "B1 Level",
       levelB2: "B2 Level",
       levelC1: "C1 Level",
+      levelC2: "C2 Level",
       langSwitchBtn: "🇹🇷 Türkçe",
       impressumLink: "🇩🇪 Impressum (§ 5 DDG)",
       privacyLink: "🔒 Privacy Policy (GDPR)",
@@ -128,12 +135,17 @@
       coreDeck: "Temel 2.000 (A1–B1)",
       b2Deck: "İleri B2 Destesi",
       c1Deck: "Akademik C1 Destesi",
+      c2Deck: "Ustalık C2 Destesi",
+      nvvDeck: "İsim-Fiil Bağlantıları (B2–C2)",
       allDeck: "Tüm Kelimeler (Birleşik)",
       sessionLabel: "Oturum",
       streakLabel: "Günlük Seri",
       reviewQueue: "Hata Tekrar Havuzu",
       mode_de_meaning: "Almanca ➔ Anlam",
       mode_meaning_de: "Anlam ➔ Almanca",
+      mode_flashcards: "Kartlar (SM-2)",
+      mode_typein: "Yazarak Çalış",
+      mode_artikel: "Artikel Antrenörü (der/die/das)",
       mode_synonyms: "Eş Anlamlılar (DE ➔ DE)",
       mode_antonyms: "Zıt Anlamlılar (Karşıt)",
       mode_mistakes: "Hataları Tekrar Et",
@@ -156,7 +168,7 @@
       inReview: "Tekrarda",
       audioOn: "Ses Açık",
       audioOff: "Ses Kapalı",
-      searchPlaceholder: "Almanca, Türkçe veya İngilizce 2000+ kelime ara...",
+      searchPlaceholder: "Almanca, Türkçe veya İngilizce 2.350+ kelime ara...",
       emptyReview: "Harika! Şu an hata tekrar havuzunuzda bekleyen kelime yok.",
       browserTitle: "Kelime Sözlüğü & Arama",
       exportData: "İlerlemeyi Dışa Aktar",
@@ -173,6 +185,7 @@
       synonymsLabel: "Eş Anlamlılar",
       antonymsLabel: "Zıt Anlamlılar",
       arenaSubhint: "Aşağıdan doğru anlamı seçin veya 1–4 tuşlarına basın",
+      artikelSubhint: "Doğru artikeli seçin veya 1, 2, 3 tuşlarına basın",
       cardLabel: "Kart",
       restartDeck: "Antrenmanı Yeniden Başlat",
       resetProgressBtn: "İlerlemeyi Sıfırla",
@@ -181,6 +194,7 @@
       levelB1: "B1 Seviyesi",
       levelB2: "B2 Seviyesi",
       levelC1: "C1 Seviyesi",
+      levelC2: "C2 Seviyesi",
       langSwitchBtn: "🇬🇧 English",
       impressumLink: "🇩🇪 Yasal Künye (§ 5 DDG)",
       privacyLink: "🔒 Gizlilik Politikası (KVKK/GDPR)",
@@ -234,12 +248,17 @@
       coreDeck: "المفردات الأساسية 2,000 (A1–B1)",
       b2Deck: "مجموعة B2 المتقدمة",
       c1Deck: "مجموعة C1 الأكاديمية",
+      c2Deck: "مجموعة C2 المتقنة",
+      nvvDeck: "تراكيب الاسم والفعل (B2–C2)",
       allDeck: "جميع الكلمات مدمجة",
       sessionLabel: "الجلسة",
       streakLabel: "سلسلة الأيام",
       reviewQueue: "قائمة مراجعة الأخطاء",
       mode_de_meaning: "الألمانية ➔ المعنى",
       mode_meaning_de: "المعنى ➔ الألمانية",
+      mode_flashcards: "بطاقات تعليمية (SM-2)",
+      mode_typein: "تدريب الكتابة",
+      mode_artikel: "مدرب أدوات التعريف (der/die/das)",
       mode_synonyms: "المرادفات (DE ➔ DE)",
       mode_antonyms: "الأضداد (المعاكسات)",
       mode_mistakes: "مراجعة الأخطاء",
@@ -262,7 +281,7 @@
       inReview: "قيد المراجعة",
       audioOn: "الصوت مشغل",
       audioOff: "الصوت متوقف",
-      searchPlaceholder: "ابحث في أكثر من 2000 كلمة بالألمانية، العربية، الإنجليزية...",
+      searchPlaceholder: "ابحث في أكثر من 2,350 كلمة بالألمانية، العربية، الإنجليزية...",
       emptyReview: "عمل رائع! لا توجد أخطاء في قائمة المراجعة حالياً.",
       browserTitle: "قاموس المفردات والبحث",
       exportData: "تصدير التقدم",
@@ -279,6 +298,7 @@
       synonymsLabel: "المرادفات",
       antonymsLabel: "الأضداد",
       arenaSubhint: "اختر المعنى الصحيح أدناه أو اضغط على المفاتيح 1–4",
+      artikelSubhint: "اختر أداة التعريف الصحيحة أو اضغط على 1 أو 2 أو 3",
       cardLabel: "بطاقة",
       restartDeck: "إعادة بدء التدريب",
       resetProgressBtn: "إعادة ضبط التقدم",
@@ -287,6 +307,7 @@
       levelB1: "المستوى B1",
       levelB2: "المستوى B2",
       levelC1: "المستوى C1",
+      levelC2: "المستوى C2",
       langSwitchBtn: "🇸🇦 العربية",
       impressumLink: "🇩🇪 معلومات الناشر (§ 5 DDG)",
       privacyLink: "🔒 سياسة الخصوصية (GDPR)",
@@ -340,12 +361,125 @@
       coreDeck: "Базові 2 000 (A1–B1)",
       b2Deck: "Поглиблена колода B2",
       c1Deck: "Академічна колода C1",
+      c2Deck: "Колода майстерності C2",
+      nvvDeck: "Дієслівно-іменні сполучення (B2–C2)",
       allDeck: "Усі слова разом",
       sessionLabel: "Сесія",
       streakLabel: "Серія днів",
       reviewQueue: "Черга помилок",
       mode_de_meaning: "Німецька ➔ Значення",
       mode_meaning_de: "Значення ➔ Німецька",
+      mode_artikel: "Тренер артиклів (der/die/das)",
+      mode_synonyms: "Синоніми (DE ➔ DE)",
+      mode_antonyms: "Антоніми (Протилежності)",
+      mode_mistakes: "Повторення помилок",
+      mode_sprint: "Спринт на час (2 хв)",
+      timerLabel: "Час",
+      sprintSummaryTitle: "اكتمل تحدي السرعة!",
+      sprintSummaryDesc: "إليك أداؤك تحت ضغط العد التنازلي للامتحان:",
+      sprintCardsAnswered: "تمت الإجابة",
+      sprintWpm: "بطاقات / دقيقة",
+      sprintTryAgain: "حاول مرة أخرى",
+      levelAll: "جميع المستويات",
+      deckSize: "البطاقات:",
+      startQuiz: "بدء التدريب",
+      nextWord: "الكلمة التالية (Enter)",
+      finishDeck: "اكتملت المجموعة!",
+      accuracy: "الدقة",
+      mastered: "متقنة",
+      learning: "قيد التعلم",
+      unseen: "غير مرئية",
+      inReview: "قيد المراجعة",
+      audioOn: "الصوت مشغل",
+      audioOff: "الصوت متوقف",
+      searchPlaceholder: "ابحث في أكثر من 2,350 كلمة بالألمانية، العربية، الإنجليزية...",
+      emptyReview: "عمل رائع! لا توجد أخطاء في قائمة المراجعة حالياً.",
+      browserTitle: "قاموس المفردات والبحث",
+      exportData: "تصدير التقدم",
+      importData: "استيراد التقدم",
+      dataManagement: "النسخ الاحتياطي واستعادة البيانات (JSON)",
+      autoAudioPref: "نطق الأسئلة تلقائياً",
+      autoAudioDesc: "تشغيل النطق الصوتي الألماني تلقائياً عند ظهور كلمة جديدة",
+      resetConfirm: "هل أنت متأكد من رغبتك في إعادة تعيين تقدمك في المفردات؟",
+      correctToast: "صحيح! تذكر ممتاز.",
+      wrongToast: "غير صحيح! تمت الإضافة إلى قائمة مراجعة الأخطاء.",
+      disclaimer: "أداة إعداد تعليمية مستقلة. telc هي علامة تجارية مسجلة لشركة telc gGmbH.",
+      privacyNotice: "خصوصية 100% على جهازك. تُحفظ بيانات دراستك محلياً فقط.",
+      exampleUsage: "مثال للاستخدام",
+      synonymsLabel: "المرادفات",
+      antonymsLabel: "الأضداد",
+      arenaSubhint: "اختر المعنى الصحيح أدناه أو اضغط على المفاتيح 1–4",
+      cardLabel: "بطاقة",
+      restartDeck: "إعادة بدء التدريب",
+      resetProgressBtn: "إعادة ضبط التقدم",
+      levelA1: "المستوى A1",
+      levelA2: "المستوى A2",
+      levelB1: "المستوى B1",
+      levelB2: "المستوى B2",
+      levelC1: "المستوى C1",
+      levelC2: "المستوى C2",
+      langSwitchBtn: "🇸🇦 العربية",
+      impressumLink: "🇩🇪 معلومات الناشر (§ 5 DDG)",
+      privacyLink: "🔒 سياسة الخصوصية (GDPR)",
+      termsLink: "📜 الشروط والعلامات التجارية",
+      accountTitle: "الحساب والمزامنة السحابية",
+      accountBtn: "الحساب",
+      loggedInAs: "مسجل الدخول كـ:",
+      syncActiveDesc: "يتم مزامنة تقدمك وسلسلتك ومراجعة الأخطاء تلقائياً عبر Cloud Firestore على جميع أجهزتك.",
+      syncNowBtn: "مزامنة الآن",
+      signOutBtn: "تسجيل الخروج",
+      tabLogin: "تسجيل الدخول",
+      tabRegister: "إنشاء حساب",
+      labelName: "الاسم الكامل / اللقب",
+      labelEmail: "البريد الإلكتروني",
+      labelPassword: "كلمة المرور",
+      signInAction: "تسجيل الدخول",
+      signUpAction: "إنشاء حساب",
+      orDivider: "أو",
+      googleSignIn: "المتابعة باستخدام Google",
+      googleSignInRedirect: "تعذر فتح النافذة؟ الدخول عبر إعادة التوجيه ←",
+      authRedirecting: "جاري إعادة التوجيه إلى Google...",
+      feedbackBtn: "ملاحظات",
+      feedbackTitle: "إرسال الملاحظات والاقتراحات",
+      feedbackUsername: "الاسم / اللقب",
+      feedbackLocation: "الموقع (تلقائي)",
+      feedbackCategory: "الفئة",
+      catGeneral: "💡 ملاحظات / اقتراحات عامة",
+      catVocab: "📝 تصحيح مفردات / ترجمة",
+      catFeature: "✨ طلب ميزة جديدة",
+      catBug: "🐛 الإبلاغ عن خطأ",
+      feedbackRating: "تقييمك",
+      feedbackMessage: "رسالتك",
+      submitFeedbackBtn: "إرسال الملاحظات",
+      feedbackSuccess: "شكراً لك! تم استلام ملاحظاتك بنجاح.",
+      feedbackError: "فشل إرسال الملاحظات. يرجى المحاولة مرة أخرى.",
+      feedbackUserPlaceholder: "اسمك أو مجهول",
+      feedbackLocPlaceholder: "جاري تحديد الموقع...",
+      feedbackMsgPlaceholder: "أخبرنا بما يمكننا تحسينه أو أبلغ عن مشكلة...",
+      ratingExcellent: "5/5 — ممتاز",
+      ratingVeryGood: "4/5 — جيد جداً",
+      ratingGood: "3/5 — جيد",
+      ratingNeedsImprovement: "2/5 — يحتاج تحسين",
+      ratingPoor: "1/5 — ضعيف",
+      authSuccess: "تم تسجيل الدخول بنجاح!",
+      authLoggedOut: "تم تسجيل الخروج. أنت في وضع الضيف.",
+      syncSuccess: "تمت مزامنة التقدم مع السحابة!"
+    },
+    uk: {
+      portalBack: "← Назад до порталу",
+      appTitle: "Тренажер слів",
+      coreDeck: "Базові 2 000 (A1–B1)",
+      b2Deck: "Поглиблена колода B2",
+      c1Deck: "Академічна колода C1",
+      c2Deck: "Колода майстерності C2",
+      allDeck: "Усі слова разом",
+      sessionLabel: "Сесія",
+      streakLabel: "Серія днів",
+      reviewQueue: "Черга помилок",
+      mode_de_meaning: "Німецька ➔ Значення",
+      mode_meaning_de: "Значення ➔ Німецька",
+      mode_flashcards: "Картки (SM-2)",
+      mode_typein: "Введення тексту",
       mode_synonyms: "Синоніми (DE ➔ DE)",
       mode_antonyms: "Антоніми (Протилежності)",
       mode_mistakes: "Повторення помилок",
@@ -368,7 +502,7 @@
       inReview: "На повторенні",
       audioOn: "Звук увімкнено",
       audioOff: "Звук вимкнено",
-      searchPlaceholder: "Пошук 2000+ слів німецькою, українською, англійською...",
+      searchPlaceholder: "Пошук 2 350+ слів німецькою, українською, англійською...",
       emptyReview: "Чудова робота! Зараз у черзі помилок нічого немає.",
       browserTitle: "Словник та пошук",
       exportData: "Експорт прогресу",
@@ -385,6 +519,7 @@
       synonymsLabel: "Синоніми",
       antonymsLabel: "Антоніми",
       arenaSubhint: "Виберіть правильне значення нижче або натисніть клавіші 1–4",
+      artikelSubhint: "Виберіть правильний означений артикль або натисніть 1, 2, 3",
       cardLabel: "Картка",
       restartDeck: "Почати тренування спочатку",
       resetProgressBtn: "Скинути прогрес",
@@ -393,6 +528,7 @@
       levelB1: "Рівень B1",
       levelB2: "Рівень B2",
       levelC1: "Рівень C1",
+      levelC2: "Рівень C2",
       langSwitchBtn: "🇺🇦 Українська",
       impressumLink: "🇩🇪 Вихідні дані (§ 5 DDG)",
       privacyLink: "🔒 Політика конфіденційності (GDPR)",
@@ -669,6 +805,11 @@
         pool = pool.filter(w => w.synonyms && w.synonyms.length > 0);
       } else if (mode === 'antonyms') {
         pool = pool.filter(w => w.antonyms && w.antonyms.length > 0);
+      } else if (mode === 'artikel') {
+        pool = pool.filter(w => w.de && /^(der|die|das)\s/i.test(w.de));
+        if (pool.length === 0) {
+          pool = allWords.filter(w => w.de && /^(der|die|das)\s/i.test(w.de));
+        }
       }
 
       // Partition into Buckets with SRS due dates
@@ -771,17 +912,23 @@
         if (typeof window !== 'undefined' && window.location && window.location.search) {
           const params = new URLSearchParams(window.location.search);
           const urlLevel = params.get('level');
-          if (urlLevel && ['ALL', 'A1', 'A2', 'B1', 'B2', 'C1'].includes(urlLevel.toUpperCase())) {
+          if (urlLevel && ['ALL', 'A1', 'A2', 'B1', 'B2', 'C1', 'C2'].includes(urlLevel.toUpperCase())) {
             this.settings.level = urlLevel.toUpperCase();
             if (this.settings.level === 'B2') {
               this.settings.deck = 'b2';
             } else if (this.settings.level === 'C1') {
               this.settings.deck = 'c1';
+            } else if (this.settings.level === 'C2') {
+              this.settings.deck = 'c2';
             }
           }
           const urlDeck = params.get('deck');
-          if (urlDeck && ['core', 'b2', 'c1', 'all'].includes(urlDeck.toLowerCase())) {
+          if (urlDeck && ['core', 'b2', 'c1', 'c2', 'nvv', 'all'].includes(urlDeck.toLowerCase())) {
             this.settings.deck = urlDeck.toLowerCase();
+            if (this.settings.deck === 'b2') this.settings.level = 'B2';
+            else if (this.settings.deck === 'c1') this.settings.level = 'C1';
+            else if (this.settings.deck === 'c2') this.settings.level = 'C2';
+            else if (this.settings.deck === 'nvv') this.settings.level = 'ALL';
           }
         }
       } catch (e) {
@@ -824,6 +971,8 @@
         reviewBadge: document.getElementById('review-queue-badge'),
         reviewQueuePill: document.getElementById('review-queue-pill'),
         // Arena
+        mainPromptCard: document.getElementById('main-prompt-card'),
+        arenaVerbFormsContainer: document.getElementById('arena-verb-forms-container'),
         cardCounter: document.getElementById('card-counter'),
         accuracyCounter: document.getElementById('accuracy-counter'),
         progressBar: document.getElementById('quiz-progress-bar'),
@@ -833,6 +982,22 @@
         arenaLevelBadge: document.getElementById('arena-level-badge'),
         arenaAudioPlay: document.getElementById('btn-play-audio'),
         optionsGrid: document.getElementById('options-grid'),
+        // Flashcard & SM-2 Mode Elements
+        flashcardContainer: document.getElementById('flashcard-arena-container'),
+        flashcardElement: document.getElementById('flashcard-card-element'),
+        fcFrontWord: document.getElementById('fc-front-word'),
+        fcBackMeaning: document.getElementById('fc-back-meaning'),
+        fcBackDetails: document.getElementById('fc-back-details'),
+        fcBackExample: document.getElementById('fc-back-example'),
+        fcSm2Ratings: document.getElementById('fc-sm2-ratings'),
+        // Type-In Mode Elements
+        typeinContainer: document.getElementById('typein-container'),
+        typeinForm: document.getElementById('typein-form'),
+        typeinInput: document.getElementById('typein-input'),
+        btnTypeinSubmit: document.getElementById('btn-typein-submit'),
+        typeinFeedback: document.getElementById('typein-feedback'),
+        smartUmlautToggle: document.getElementById('smart-umlaut-toggle'),
+        umlautToolbar: document.getElementById('umlaut-toolbar'),
         explanationCard: document.getElementById('explanation-card'),
         explainExampleDe: document.getElementById('explain-example-de'),
         explainExampleTrans: document.getElementById('explain-example-trans'),
@@ -908,6 +1073,8 @@
       const core = window.VOCAB_2000 || [];
       const b2Raw = window.VOCAB_B2 || [];
       const c1Raw = window.VOCAB_C1 || [];
+      const c2Raw = window.VOCAB_C2 || [];
+      const nvvRaw = window.VOCAB_NVV || [];
       const b2 = b2Raw.map(w => ({
         ...w,
         id: (typeof w.id === 'number' && w.id < 10000) ? 10000 + w.id : w.id
@@ -916,9 +1083,19 @@
         ...w,
         id: (typeof w.id === 'number' && w.id < 20000) ? 20000 + w.id : w.id
       }));
+      const c2 = c2Raw.map(w => ({
+        ...w,
+        id: (typeof w.id === 'number' && w.id < 30000) ? 30000 + w.id : w.id
+      }));
+      const nvv = nvvRaw.map(w => ({
+        ...w,
+        id: (typeof w.id === 'number' && w.id < 40000) ? 40000 + w.id : w.id
+      }));
+      if (this.settings.deck === 'nvv') return nvv;
+      if (this.settings.level === 'C2' || this.settings.deck === 'c2') return c2;
       if (this.settings.level === 'C1' || this.settings.deck === 'c1') return c1;
       if (this.settings.level === 'B2' || this.settings.deck === 'b2') return b2;
-      if (this.settings.level === 'ALL' || this.settings.deck === 'all') return [...core, ...b2, ...c1];
+      if (this.settings.level === 'ALL' || this.settings.deck === 'all') return [...core, ...b2, ...c1, ...c2, ...nvv];
       return core;
     }
 
@@ -983,6 +1160,12 @@
         } else if (this.settings.deck === 'c1') {
           this.settings.level = 'C1';
           if (this.dom.levelSelector) this.dom.levelSelector.value = 'C1';
+        } else if (this.settings.deck === 'c2') {
+          this.settings.level = 'C2';
+          if (this.dom.levelSelector) this.dom.levelSelector.value = 'C2';
+        } else if (this.settings.deck === 'nvv') {
+          this.settings.level = 'ALL';
+          if (this.dom.levelSelector) this.dom.levelSelector.value = 'ALL';
         } else if (this.settings.deck === 'all') {
           this.settings.level = 'ALL';
           if (this.dom.levelSelector) this.dom.levelSelector.value = 'ALL';
@@ -1000,6 +1183,9 @@
         } else if (this.settings.level === 'C1') {
           this.settings.deck = 'c1';
           if (this.dom.deckSelector) this.dom.deckSelector.value = 'c1';
+        } else if (this.settings.level === 'C2') {
+          this.settings.deck = 'c2';
+          if (this.dom.deckSelector) this.dom.deckSelector.value = 'c2';
         } else if (this.settings.level === 'ALL') {
           this.settings.deck = 'all';
           if (this.dom.deckSelector) this.dom.deckSelector.value = 'all';
@@ -1066,7 +1252,47 @@
         this.nextCard();
       });
 
-      // Keyboard navigation (1-4, Space, Enter, Escape)
+      // Flashcard click to flip
+      if (this.dom.flashcardElement) {
+        this.dom.flashcardElement.addEventListener('click', () => this.flipFlashcard());
+      }
+
+      // SM-2 Spaced Repetition Rating Buttons
+      if (this.dom.fcSm2Ratings) {
+        this.dom.fcSm2Ratings.querySelectorAll('.btn-sm2').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const rating = parseInt(btn.dataset.rating, 10);
+            this.rateSM2Card(rating);
+          });
+        });
+      }
+
+      // Type-In Form Submit
+      if (this.dom.typeinForm) {
+        this.dom.typeinForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          this.handleTypeinSubmit();
+        });
+      }
+
+      // Smart Umlaut Normalization (ae->ä, oe->ö, ue->ü, ss->ß)
+      if (this.dom.typeinInput) {
+        this.dom.typeinInput.addEventListener('input', (e) => {
+          this.applySmartUmlauts(e.target);
+        });
+      }
+
+      // On-Screen Clickable Umlaut Buttons
+      if (this.dom.umlautToolbar) {
+        this.dom.umlautToolbar.querySelectorAll('.umlaut-key-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const ch = btn.getAttribute('data-char');
+            if (ch) this.insertUmlautChar(ch);
+          });
+        });
+      }
+
+      // Keyboard navigation (1-4, Space, Enter, R, Escape)
       window.addEventListener('keydown', (e) => {
         // Modal Dismissal with Escape key
         if (e.key === 'Escape') {
@@ -1088,8 +1314,16 @@
           }
         }
 
-        // Never intercept keyboard shortcuts when typing in an input, textarea, or editable field
+        // When typing in an input/textarea, only intercept Enter (for typein) and Escape
         if (e.target && (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName) || e.target.isContentEditable)) {
+          if (e.key === 'Enter' && e.target === this.dom.typeinInput) {
+            e.preventDefault();
+            if (!this.hasAnswered) {
+              this.handleTypeinSubmit();
+            } else {
+              this.nextCard();
+            }
+          }
           return;
         }
 
@@ -1102,9 +1336,11 @@
           }
         }
 
-        // Quick shortcut to jump directly to mistakes review mode [R]
+        // Native German Speech Synthesis Hotkey & Mistakes Review [R]
         if (e.key === 'r' || e.key === 'R') {
           e.preventDefault();
+          const item = this.currentDeck[this.currentIndex];
+          if (item) this.playSpeech(item.de);
           this.switchMode('mistakes');
           return;
         }
@@ -1113,21 +1349,35 @@
         const isAnyModalOpen = (this.dom.searchModal && !this.dom.searchModal.classList.contains('hidden')) ||
                                (this.dom.authModal && !this.dom.authModal.classList.contains('hidden')) ||
                                (this.dom.feedbackModal && !this.dom.feedbackModal.classList.contains('hidden')) ||
-          (this.dom.sprintModal && !this.dom.sprintModal.classList.contains('hidden'));
+                               (this.dom.sprintModal && !this.dom.sprintModal.classList.contains('hidden'));
         if (isAnyModalOpen) {
           return;
         }
 
         if (e.key >= '1' && e.key <= '4') {
           const idx = parseInt(e.key, 10) - 1;
-          const btns = this.dom.optionsGrid.querySelectorAll('.quiz-option-btn');
-          if (btns[idx] && !this.hasAnswered) {
-            btns[idx].click();
+          if (this.settings.mode === 'flashcards') {
+            if (this.isFlashcardFlipped) {
+              e.preventDefault();
+              const sm2Btns = this.dom.fcSm2Ratings ? this.dom.fcSm2Ratings.querySelectorAll('.btn-sm2') : [];
+              if (sm2Btns[idx]) sm2Btns[idx].click();
+            }
+          } else if (this.settings.mode !== 'typein') {
+            const btns = this.dom.optionsGrid.querySelectorAll('.quiz-option-btn');
+            if (btns[idx] && !this.hasAnswered) {
+              btns[idx].click();
+            }
           }
         } else if (e.key === ' ' || e.code === 'Space') {
           e.preventDefault();
-          const item = this.currentDeck[this.currentIndex];
-          if (item) this.playSpeech(item.de);
+          if (this.settings.mode === 'flashcards') {
+            this.flipFlashcard();
+          } else if (this.hasAnswered) {
+            this.nextCard();
+          } else {
+            const item = this.currentDeck[this.currentIndex];
+            if (item) this.playSpeech(item.de);
+          }
         } else if (e.key === 'Enter') {
           e.preventDefault();
           e.stopPropagation();
@@ -1289,7 +1539,7 @@
 
       const item = this.currentDeck[this.currentIndex];
       const total = this.currentDeck.length;
-      const texts = I18N[this.settings.lang];
+      const texts = I18N[this.settings.lang] || I18N.en;
 
       // Progress bar & counters
       this.dom.cardCounter.textContent = `${texts.cardLabel || 'Card'} ${this.currentIndex + 1} / ${total}`;
@@ -1304,12 +1554,22 @@
       this.dom.arenaLevelBadge.textContent = item.level || 'B1';
       this.dom.arenaLevelBadge.className = 'badge-level badge-' + (item.level ? item.level.toLowerCase() : 'b1');
 
-      // German Noun Gender Color Indicators (der=Blue, die=Pink/Red, das=Green)
+      // Linguistic Metadata 1: German Noun Gender Color Indicators (der=Blue #2563eb, die=Red #dc2626, das=Green #16a34a) + Plural
+      let nounMeta = null;
       let gender = null;
       if (item.pos === 'noun' || (item.de && /^(der|die|das)\s/i.test(item.de))) {
-        const gMatch = item.de.match(/^(der|die|das)\b/i);
-        if (gMatch) gender = gMatch[1].toLowerCase();
+        const m = item.de.match(/^(der|die|das)\s+([^,]+)(?:,\s*(.+))?$/i);
+        if (m) {
+          gender = m[1].toLowerCase();
+          nounMeta = {
+            art: gender,
+            artDisplay: m[1],
+            base: m[2].trim(),
+            plural: m[3] ? m[3].trim() : ''
+          };
+        }
       }
+
       if (this.dom.arenaGenderBadge) {
         if (gender) {
           const genderLabels = {
@@ -1325,29 +1585,165 @@
         }
       }
 
+      // Linguistic Metadata 2: Verb auxiliary + Partizip II (e.g. "gehen -> ist gegangen", "arbeiten -> hat gearbeitet")
+      let verbMeta = null;
+      if (item.pos === 'verb' || (item.de && /\([^)]+\)/.test(item.de))) {
+        const vm = item.de.match(/^([^(]+)(?:\s*\(([^)]+)\))?/);
+        if (vm) {
+          const inf = vm[1].trim();
+          let erForm = '', praet = '', aux = '', partizip = '';
+          if (vm[2]) {
+            const parts = vm[2].split(',').map(s => s.trim());
+            if (parts.length >= 3) {
+              erForm = parts[0];
+              praet = parts[1];
+              const perf = parts[2];
+              const auxM = perf.match(/^(ist|hat)\s+(.+)$/i);
+              aux = auxM ? auxM[1] : '';
+              partizip = auxM ? auxM[2] : perf;
+            }
+          }
+          verbMeta = { inf, erForm, praet, aux, partizip };
+        }
+      }
+
+      // Render verb forms container if auxiliary is present
+      if (this.dom.arenaVerbFormsContainer) {
+        if (verbMeta && verbMeta.aux && (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint')) {
+          this.dom.arenaVerbFormsContainer.innerHTML = `<div class="verb-forms-badge"><span>Verbformen:</span> <strong>${verbMeta.erForm}</strong>, <strong>${verbMeta.praet}</strong>, <span class="verb-aux-highlight">${verbMeta.aux}</span> <strong>${verbMeta.partizip}</strong></div>`;
+          this.dom.arenaVerbFormsContainer.style.display = 'block';
+        } else {
+          this.dom.arenaVerbFormsContainer.innerHTML = '';
+          this.dom.arenaVerbFormsContainer.style.display = 'none';
+        }
+      }
+
+      // MODE 1: Flashcards Mode with SM-2 Spaced Repetition Ratings
+      if (this.settings.mode === 'flashcards') {
+        if (this.dom.mainPromptCard) this.dom.mainPromptCard.classList.add('hidden');
+        if (this.dom.optionsGrid) this.dom.optionsGrid.classList.add('hidden');
+        if (this.dom.typeinContainer) this.dom.typeinContainer.classList.add('hidden');
+        if (this.dom.flashcardContainer) this.dom.flashcardContainer.classList.remove('hidden');
+
+        this.isFlashcardFlipped = false;
+        if (this.dom.flashcardElement) this.dom.flashcardElement.classList.remove('flipped');
+        if (this.dom.fcSm2Ratings) this.dom.fcSm2Ratings.classList.add('hidden');
+
+        // Populate Front of Flashcard
+        if (this.dom.fcFrontWord) {
+          if (nounMeta) {
+            this.dom.fcFrontWord.innerHTML = `<span class="gender-art ${nounMeta.art}">${nounMeta.artDisplay}</span> <span class="word-base">${nounMeta.base}</span>` +
+              (nounMeta.plural ? ` <span class="word-plural-tag">Pl: ${nounMeta.plural}</span>` : '');
+          } else if (verbMeta && verbMeta.aux) {
+            this.dom.fcFrontWord.innerHTML = `<span class="word-base">${verbMeta.inf}</span><div class="verb-forms-badge" style="margin-top:8px;"><span>${verbMeta.erForm}, ${verbMeta.praet}, </span><span class="verb-aux-highlight">${verbMeta.aux}</span> <strong>${verbMeta.partizip}</strong></div>`;
+          } else {
+            this.dom.fcFrontWord.textContent = item.de;
+          }
+        }
+
+        // Populate Back of Flashcard
+        if (this.dom.fcBackMeaning) {
+          this.dom.fcBackMeaning.textContent = this.getMeaning(item);
+        }
+        if (this.dom.fcBackDetails) {
+          let detailsHtml = '';
+          if (nounMeta) {
+            const genderNames = { der: 'Maskulin (der • Blau)', die: 'Feminin (die • Rot)', das: 'Neutral (das • Grün)' };
+            detailsHtml += `<span class="badge-gender ${nounMeta.art}">${genderNames[nounMeta.art] || nounMeta.art}</span>`;
+            if (nounMeta.plural) detailsHtml += ` &bull; <strong>Plural:</strong> ${nounMeta.plural}`;
+          } else if (verbMeta && verbMeta.aux) {
+            detailsHtml += `<span style="color:var(--accent-gold); font-weight:700;">Perfekt: ${verbMeta.aux} ${verbMeta.partizip}</span> &bull; Präteritum: ${verbMeta.praet}`;
+          }
+          this.dom.fcBackDetails.innerHTML = detailsHtml;
+        }
+        if (this.dom.fcBackExample) {
+          this.dom.fcBackExample.innerHTML = `"${item.example}"<br><span style="color:var(--text-secondary); font-size:12px;">${this.getExample(item)}</span>`;
+        }
+
+        // Auto TTS
+        if (!this.isInitialLoad && this.settings.audio) {
+          this.playSpeech(item.de);
+        }
+        this.isInitialLoad = false;
+        return;
+      }
+
+      // MODE 2: Type-In Active Recall Mode with On-Screen Clickable Umlaut Toolbar
+      if (this.settings.mode === 'typein') {
+        if (this.dom.mainPromptCard) this.dom.mainPromptCard.classList.remove('hidden');
+        if (this.dom.optionsGrid) this.dom.optionsGrid.classList.add('hidden');
+        if (this.dom.flashcardContainer) this.dom.flashcardContainer.classList.add('hidden');
+        if (this.dom.typeinContainer) this.dom.typeinContainer.classList.remove('hidden');
+
+        this.dom.arenaWordDe.textContent = this.getMeaning(item);
+        this.dom.arenaWordDe.setAttribute('dir', (this.settings.lang === 'ar') ? 'rtl' : 'ltr');
+        if (subhintEl) subhintEl.textContent = "Geben Sie das deutsche Wort ein (ä, ö, ü, ß Tastatur verfügbar):";
+
+        if (this.dom.typeinInput) {
+          this.dom.typeinInput.value = '';
+          this.dom.typeinInput.className = 'typein-input-field';
+          this.dom.typeinInput.disabled = false;
+          setTimeout(() => {
+            try { this.dom.typeinInput.focus(); } catch (e) {}
+          }, 60);
+        }
+        if (this.dom.typeinFeedback) this.dom.typeinFeedback.innerHTML = '';
+        this.isInitialLoad = false;
+        return;
+      }
+
+      // ALL OTHER MODES: Standard MCQ Arena (de_meaning, meaning_de, artikel, synonyms, antonyms, mistakes, sprint)
+      if (this.dom.mainPromptCard) this.dom.mainPromptCard.classList.remove('hidden');
+      if (this.dom.optionsGrid) this.dom.optionsGrid.classList.remove('hidden');
+      if (this.dom.flashcardContainer) this.dom.flashcardContainer.classList.add('hidden');
+      if (this.dom.typeinContainer) this.dom.typeinContainer.classList.add('hidden');
+
       // Render Question prompt according to selected Mode
       let promptTitle = "";
       let correctAnswerText = "";
 
-      if (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint') {
-        promptTitle = item.de;
+      if (this.settings.mode === 'artikel') {
+        const match = item.de.match(/^(der|die|das)\b/i);
+        const correctArticle = match ? match[1].toLowerCase() : 'der';
+        const cleanNoun = item.de.replace(/^(der|die|das)\s+/i, '');
+        promptTitle = `___ ${cleanNoun}`;
+        correctAnswerText = correctArticle;
+        if (this.dom.arenaGenderBadge) {
+          this.dom.arenaGenderBadge.style.display = 'none';
+        }
+        this.dom.arenaWordDe.textContent = promptTitle;
+      } else if (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint') {
         correctAnswerText = this.getMeaning(item);
+        if (nounMeta) {
+          this.dom.arenaWordDe.innerHTML = `<span class="gender-art ${nounMeta.art}">${nounMeta.artDisplay}</span> <span class="word-base">${nounMeta.base}</span>` +
+            (nounMeta.plural ? ` <span class="word-plural-tag">Pl: ${nounMeta.plural}</span>` : '');
+        } else if (verbMeta && verbMeta.aux) {
+          this.dom.arenaWordDe.textContent = verbMeta.inf;
+        } else {
+          this.dom.arenaWordDe.textContent = item.de;
+        }
       } else if (this.settings.mode === 'meaning_de') {
         promptTitle = this.getMeaning(item);
         correctAnswerText = item.de;
+        this.dom.arenaWordDe.textContent = promptTitle;
       } else if (this.settings.mode === 'synonyms') {
         promptTitle = item.de;
         correctAnswerText = (item.synonyms && item.synonyms.length > 0) ? item.synonyms[0] : this.getMeaning(item);
+        this.dom.arenaWordDe.textContent = promptTitle;
       } else if (this.settings.mode === 'antonyms') {
         promptTitle = item.de;
         correctAnswerText = (item.antonyms && item.antonyms.length > 0) ? item.antonyms[0] : this.getMeaning(item);
+        this.dom.arenaWordDe.textContent = promptTitle;
       }
 
-      this.dom.arenaWordDe.textContent = promptTitle;
       this.dom.arenaWordDe.setAttribute('dir', (this.settings.lang === 'ar' && this.settings.mode === 'meaning_de') ? 'rtl' : 'ltr');
 
-      // Auto TTS if audio is on and prompt is German (skipped on initial entry to prevent robotic speech before user interaction)
-      if (!this.isInitialLoad && this.settings.audio && (this.settings.mode === 'de_meaning' || this.settings.mode === 'synonyms' || this.settings.mode === 'antonyms' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint')) {
+      if (subhintEl) {
+        subhintEl.textContent = this.settings.mode === 'artikel' ? (texts.artikelSubhint || texts.arenaSubhint) : texts.arenaSubhint;
+      }
+
+      // Auto TTS if audio is on and prompt is German
+      if (!this.isInitialLoad && this.settings.audio && (this.settings.mode === 'de_meaning' || this.settings.mode === 'artikel' || this.settings.mode === 'synonyms' || this.settings.mode === 'antonyms' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint')) {
         try {
           this.playSpeech(item.de);
         } catch (e) {
@@ -1356,22 +1752,43 @@
       }
       this.isInitialLoad = false;
 
-      // Generate 4 Distractor Options
-      const options = this.generateOptions(item, correctAnswerText);
+      // Render Options Grid
       this.dom.optionsGrid.innerHTML = '';
-      const isMeaningArabic = this.settings.lang === 'ar' && (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint');
+      if (this.settings.mode === 'artikel') {
+        this.dom.optionsGrid.classList.add('artikel-grid');
+        const artikelChoices = [
+          { key: '1', art: 'der', gender: 'Maskulin', emoji: '🔵', cls: 'btn-gender-der' },
+          { key: '2', art: 'die', gender: 'Feminin', emoji: '🔴', cls: 'btn-gender-die' },
+          { key: '3', art: 'das', gender: 'Neutral', emoji: '🟢', cls: 'btn-gender-das' }
+        ];
+        artikelChoices.forEach(opt => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = `quiz-option-btn ${opt.cls}`;
+          btn.setAttribute('tabindex', '0');
+          btn.setAttribute('data-article', opt.art);
+          btn.setAttribute('aria-label', `${opt.art} • ${opt.gender}`);
+          btn.innerHTML = `<span class="opt-key">${opt.key}</span><span class="opt-text">${opt.emoji} <strong>${opt.art}</strong> <small style="opacity:0.75;font-size:12px;margin-left:6px;">(${opt.gender})</small></span>`;
+          btn.addEventListener('click', () => this.handleAnswer(btn, opt.art, correctAnswerText, item));
+          this.dom.optionsGrid.appendChild(btn);
+        });
+      } else {
+        this.dom.optionsGrid.classList.remove('artikel-grid');
+        const options = this.generateOptions(item, correctAnswerText);
+        const isMeaningArabic = this.settings.lang === 'ar' && (this.settings.mode === 'de_meaning' || this.settings.mode === 'mistakes' || this.settings.mode === 'sprint');
 
-      options.forEach((optText, i) => {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'quiz-option-btn';
-        btn.setAttribute('tabindex', '0');
-        btn.setAttribute('aria-label', `Option ${i + 1}: ${optText}`);
-        if (isMeaningArabic) btn.setAttribute('dir', 'rtl');
-        btn.innerHTML = `<span class="opt-key">${i + 1}</span><span class="opt-text">${optText}</span>`;
-        btn.addEventListener('click', () => this.handleAnswer(btn, optText, correctAnswerText, item));
-        this.dom.optionsGrid.appendChild(btn);
-      });
+        options.forEach((optText, i) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'quiz-option-btn';
+          btn.setAttribute('tabindex', '0');
+          btn.setAttribute('aria-label', `Option ${i + 1}: ${optText}`);
+          if (isMeaningArabic) btn.setAttribute('dir', 'rtl');
+          btn.innerHTML = `<span class="opt-key">${i + 1}</span><span class="opt-text">${optText}</span>`;
+          btn.addEventListener('click', () => this.handleAnswer(btn, optText, correctAnswerText, item));
+          this.dom.optionsGrid.appendChild(btn);
+        });
+      }
     }
 
     generateOptions(currentItem, correctAnswer) {
@@ -1448,8 +1865,9 @@
       const allBtns = this.dom.optionsGrid.querySelectorAll('.quiz-option-btn');
 
       allBtns.forEach(b => {
-        const labelEl = b.querySelector('.opt-text') || b.querySelector('.opt-label');
-        const label = labelEl ? labelEl.textContent.trim() : b.textContent.trim();
+        const btnArticle = b.getAttribute('data-article');
+        const labelEl = b.querySelector('.opt-text strong') || b.querySelector('.opt-text') || b.querySelector('.opt-label');
+        const label = btnArticle || (labelEl ? labelEl.textContent.trim() : b.textContent.trim());
         if (label.toLowerCase() === correct.trim().toLowerCase()) {
           b.classList.add('correct');
         }
@@ -1466,6 +1884,25 @@
         this.sessionWrong++;
       }
 
+      // Restore word title & gender badge if artikel mode
+      if (this.settings.mode === 'artikel') {
+        this.dom.arenaWordDe.textContent = item.de;
+        if (this.dom.arenaGenderBadge) {
+          const gMatch = item.de.match(/^(der|die|das)\b/i);
+          if (gMatch) {
+            const gender = gMatch[1].toLowerCase();
+            const genderLabels = {
+              der: 'der • Maskulin',
+              die: 'die • Feminin',
+              das: 'das • Neutral'
+            };
+            this.dom.arenaGenderBadge.textContent = genderLabels[gender] || gender;
+            this.dom.arenaGenderBadge.className = `badge-gender ${gender}`;
+            this.dom.arenaGenderBadge.style.display = 'inline-block';
+          }
+        }
+      }
+
 
       // Update Accuracy Counter in live UI
       const totalAnswered = this.sessionCorrect + this.sessionWrong;
@@ -1475,8 +1912,20 @@
         this.dom.accuracyCounter.innerHTML = `<span data-i18n="accuracy">${texts.accuracy || 'Accuracy'}</span>: ${accPct}%`;
       }
 
-      // Record in Session Manager
+      // Record in Session Manager and Unified StorageEngine
       this.sessionManager.recordResult(item.id, isCorrect);
+      if (window.StorageEngine) {
+        const quality = isCorrect ? 4 : 1;
+        window.StorageEngine.recordSM2Review(item.id, quality);
+        if (!isCorrect) {
+          window.StorageEngine.addFehlerItem({
+            word: item.de,
+            meaning: this.getMeaning(item) || '',
+            example: item.example || '',
+            mistakeType: 'vocab'
+          });
+        }
+      }
       if (!isCorrect && typeof window !== 'undefined' && typeof window.recordFehlerheftItem === 'function') {
         window.recordFehlerheftItem({
           word: item.de,
@@ -1492,12 +1941,30 @@
       this.refreshHeaderStats();
 
       // Show Rich Explanation Card
+      this.showExplanationCard(item);
+    }
+
+    showExplanationCard(item) {
       const texts = I18N[this.settings.lang] || I18N.en;
       this.dom.explainExampleDe.textContent = item.example;
       this.dom.explainExampleTrans.textContent = this.getExample(item);
       this.dom.explainExampleTrans.setAttribute('dir', this.settings.lang === 'ar' ? 'rtl' : 'ltr');
 
       let synAntHtml = "";
+      if (this.settings.mode === 'artikel') {
+        const cleanNoun = item.de.toLowerCase().replace(/,.*/, '').trim();
+        let ruleHint = null;
+        if (/(ung|heit|keit|schaft|tion|tät|enz|ie|ik|ur)$/i.test(cleanNoun)) {
+          ruleHint = "💡 Regel: Nomen auf -ung, -heit, -keit, -schaft, -tion, -tät sind immer FEMININ (die).";
+        } else if (/(chen|lein|ment|um|tum|ma)$/i.test(cleanNoun)) {
+          ruleHint = "💡 Regel: Verkleinerungsformen (-chen, -lein) sowie Fremdwörter auf -ment, -um sind immer NEUTRAL (das).";
+        } else if (/(ling|or|ist|ismus|ant)$/i.test(cleanNoun)) {
+          ruleHint = "💡 Regel: Nomen auf -ling, -or, -ist, -ismus sind MASKULIN (der).";
+        }
+        if (ruleHint) {
+          synAntHtml += `<div class="tag-row" style="margin-top:4px;color:var(--accent-gold);font-size:12px;line-height:1.4;">${ruleHint}</div>`;
+        }
+      }
       if (item.synonyms && item.synonyms.length > 0) {
         synAntHtml += `<div class="tag-row"><strong>${texts.synonymsLabel}:</strong> ${item.synonyms.map(s => `<span class="word-tag syn">${s}</span>`).join(' ')}</div>`;
       }
@@ -1509,10 +1976,140 @@
       this.dom.explanationCard.classList.remove('hidden');
       this.dom.nextButton.classList.remove('hidden');
       this.dom.nextButton.disabled = false;
-      // NOT: focus() kasıtlı olarak kaldırıldı.
-      // focus() bazı tarayıcılarda preventScroll:true olsa bile
-      // next button viewport dışındaysa sayfayı aşağı kaydırıyor.
-      // Bunun yerine CSS ile dikkat çekiyoruz.
+    }
+
+    flipFlashcard() {
+      if (this.settings.mode !== 'flashcards') return;
+      this.isFlashcardFlipped = !this.isFlashcardFlipped;
+      if (this.dom.flashcardElement) {
+        this.dom.flashcardElement.classList.toggle('flipped', this.isFlashcardFlipped);
+      }
+      if (this.dom.fcSm2Ratings) {
+        this.dom.fcSm2Ratings.classList.toggle('hidden', !this.isFlashcardFlipped);
+      }
+      if (this.isFlashcardFlipped && this.settings.audio) {
+        const item = this.currentDeck[this.currentIndex];
+        if (item) this.playSpeech(item.de);
+      }
+    }
+
+    rateSM2Card(quality) {
+      const item = this.currentDeck[this.currentIndex];
+      if (!item) return;
+
+      const isCorrect = quality >= 3;
+      if (isCorrect) {
+        this.sessionCorrect++;
+      } else {
+        this.sessionWrong++;
+      }
+
+      // Record to centralized Unified StorageEngine SM-2 engine
+      if (window.StorageEngine) {
+        window.StorageEngine.recordSM2Review(item.id, quality);
+        if (!isCorrect) {
+          window.StorageEngine.addFehlerItem({
+            word: item.de,
+            meaning: this.getMeaning(item) || '',
+            example: item.example || '',
+            mistakeType: 'vocab'
+          });
+        }
+      }
+      this.sessionManager.recordResult(item.id, isCorrect);
+      this.refreshHeaderStats();
+      this.nextCard();
+    }
+
+    handleTypeinSubmit() {
+      if (this.hasAnswered) return;
+      const item = this.currentDeck[this.currentIndex];
+      if (!item || !this.dom.typeinInput) return;
+
+      const rawInput = (this.dom.typeinInput.value || '').trim();
+      if (!rawInput) return;
+
+      this.hasAnswered = true;
+      this.dom.typeinInput.disabled = true;
+
+      // Smart normalization: check exact or match without grammatical article
+      const cleanTarget = item.de.toLowerCase().split('(')[0].split(',')[0].trim();
+      const cleanTargetNoArt = cleanTarget.replace(/^(der|die|das)\s+/i, '').trim();
+      const cleanUser = rawInput.toLowerCase().replace(/^(der|die|das)\s+/i, '').trim();
+
+      const isMatch = (cleanUser === cleanTargetNoArt || rawInput.toLowerCase() === cleanTarget);
+
+      if (isMatch) {
+        this.sessionCorrect++;
+        this.dom.typeinInput.classList.add('correct-input');
+        if (this.dom.typeinFeedback) {
+          this.dom.typeinFeedback.innerHTML = `<span style="color:var(--accent-green);">✓ Richtig! (${item.de})</span>`;
+        }
+      } else {
+        this.sessionWrong++;
+        this.dom.typeinInput.classList.add('wrong-input');
+        if (this.dom.typeinFeedback) {
+          this.dom.typeinFeedback.innerHTML = `<span style="color:var(--accent-red);">✗ Falsch! Richtig: <strong>${item.de}</strong></span>`;
+        }
+      }
+
+      // Update Accuracy Counter in live UI
+      const totalAnswered = this.sessionCorrect + this.sessionWrong;
+      const accPct = totalAnswered > 0 ? Math.round((this.sessionCorrect / totalAnswered) * 100) : 100;
+      if (this.dom.accuracyCounter) {
+        const texts = I18N[this.settings.lang] || I18N.en;
+        this.dom.accuracyCounter.innerHTML = `<span data-i18n="accuracy">${texts.accuracy || 'Accuracy'}</span>: ${accPct}%`;
+      }
+
+      // Record in Session Manager and Unified StorageEngine
+      this.sessionManager.recordResult(item.id, isMatch);
+      if (window.StorageEngine) {
+        const quality = isMatch ? 4 : 1;
+        window.StorageEngine.recordSM2Review(item.id, quality);
+        if (!isMatch) {
+          window.StorageEngine.addFehlerItem({
+            word: item.de,
+            meaning: this.getMeaning(item) || '',
+            example: item.example || '',
+            mistakeType: 'vocab'
+          });
+        }
+      }
+      this.refreshHeaderStats();
+      this.showExplanationCard(item);
+    }
+
+    applySmartUmlauts(inputEl) {
+      if (!this.dom.smartUmlautToggle || !this.dom.smartUmlautToggle.checked || !inputEl) return;
+      const val = inputEl.value;
+      const start = inputEl.selectionStart;
+      const end = inputEl.selectionEnd;
+
+      const replaced = val
+        .replace(/ae/g, 'ä')
+        .replace(/oe/g, 'ö')
+        .replace(/ue/g, 'ü')
+        .replace(/ss/g, 'ß')
+        .replace(/Ae/g, 'Ä')
+        .replace(/Oe/g, 'Ö')
+        .replace(/Ue/g, 'Ü');
+
+      if (replaced !== val) {
+        inputEl.value = replaced;
+        const diff = val.length - replaced.length;
+        inputEl.setSelectionRange(Math.max(0, start - diff), Math.max(0, end - diff));
+      }
+    }
+
+    insertUmlautChar(char) {
+      if (!this.dom.typeinInput) return;
+      const input = this.dom.typeinInput;
+      const start = input.selectionStart || 0;
+      const end = input.selectionEnd || 0;
+      const val = input.value;
+      input.value = val.substring(0, start) + char + val.substring(end);
+      input.focus();
+      input.setSelectionRange(start + char.length, start + char.length);
     }
 
     nextCard() {
@@ -1782,7 +2379,8 @@
       const core = window.VOCAB_2000 || [];
       const b2 = window.VOCAB_B2 || [];
       const c1 = window.VOCAB_C1 || [];
-      const allWords = [...core, ...b2, ...c1];
+      const c2 = window.VOCAB_C2 || [];
+      const allWords = [...core, ...b2, ...c1, ...c2];
       const q = query.trim().toLowerCase();
       const filtered = q === '' 
         ? allWords.slice(0, 50) 

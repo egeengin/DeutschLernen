@@ -73,6 +73,21 @@
       </div>
     </div>
 
+    <!-- Exam Simulator Mode Toggle: Strict Exam vs Study Mode -->
+    <div class="hr-mode-bar" id="hr-mode-bar" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; background:var(--hr-bg-input); padding:10px 16px; border-radius:var(--hr-radius-md); border:1px solid var(--hr-border-card);">
+      <div class="hr-mode-group" style="display:flex; gap:8px;">
+        <button type="button" class="hr-mode-btn active" id="btn-mode-exam" style="padding:6px 14px; font-size:12.5px; border-radius:var(--hr-radius-sm); border:1px solid var(--hr-border-card); background:linear-gradient(135deg, #8b5cf6, #6d28d9); color:#fff; font-weight:700; cursor:pointer;">
+          <span>📋</span> <span data-i18n="modeStrictExam">Prüfungsmodus (Offiziell)</span>
+        </button>
+        <button type="button" class="hr-mode-btn" id="btn-mode-study" style="padding:6px 14px; font-size:12.5px; border-radius:var(--hr-radius-sm); border:1px solid var(--hr-border-card); background:transparent; color:var(--hr-text-muted); font-weight:700; cursor:pointer;">
+          <span>💡</span> <span data-i18n="modeStudy">Lernmodus (Interaktiv & Tempo)</span>
+        </button>
+      </div>
+      <div id="hr-mode-info" style="font-size:12px; color:var(--hr-text-muted);">
+        🔒 Offizielle telc Regeln: Teil 1 1x • Teil 2 2x • Teil 3 1x • Scrubbing gesperrt
+      </div>
+    </div>
+
     <!-- Part Tabs -->
     <nav class="hr-part-tabs" id="hr-part-tabs" aria-label="Listening exam parts navigation">
       <!-- Injected dynamically by js/hoerenApp.js -->
@@ -102,28 +117,47 @@
                 <div class="hr-eq-bar"></div>
               </div>
             </div>
-            <div style="display:flex; align-items:center; gap:8px;">
+            <div id="hr-speed-control-group" style="display:flex; align-items:center; gap:8px;">
               <label for="hr-speed-select" style="font-size:12px; color:var(--hr-text-muted);" data-i18n="speedLabel">Tempo:</label>
               <select id="hr-speed-select" class="hr-speed-select">
-                <option value="0.85">0.85x (Langsamer)</option>
+                <option value="0.75">0.75x (Langsamer)</option>
+                <option value="0.9">0.9x (Leicht gedrosselt)</option>
                 <option value="1.0" selected>1.0x (Standard)</option>
-                <option value="1.15">1.15x (Schneller)</option>
+                <option value="1.25">1.25x (Schneller)</option>
               </select>
             </div>
           </div>
 
-          <div class="hr-player-controls">
+          <div class="hr-player-controls" style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
             <button type="button" class="hr-btn-play" id="btn-play-audio">
               <span>▶</span> <span data-i18n="btnPlay">Audio abspielen</span>
+            </button>
+            <button type="button" class="hr-opt-btn" id="btn-rewind-5s" title="5 Sekunden zurückspringen" style="display:none;">
+              <span>⏪</span> <span>-5s</span>
             </button>
             <button type="button" class="hr-opt-btn" id="btn-stop-audio">
               <span>⏹</span> <span data-i18n="btnStopAudio">Stopp</span>
             </button>
           </div>
+
+          <!-- Timed Reading Pause Alert (Strict Mode) -->
+          <div id="hr-reading-pause-alert" style="display:none; margin-top:12px; padding:10px 14px; border-radius:var(--hr-radius-sm); background:rgba(245, 158, 11, 0.15); border:1px solid var(--hr-accent-warning); color:var(--hr-text-gold); font-size:13px; font-weight:700;">
+            ⏳ Lesen Sie nun die Aufgaben. Das Audio startet in <span id="hr-pause-countdown">10</span>s...
+          </div>
+        </div>
+
+        <!-- Study Mode Transcript Panel -->
+        <div id="hr-study-transcript-panel" style="display:none; margin-top:16px; background:var(--hr-bg-input); border:1px solid var(--hr-border-card); border-radius:var(--hr-radius-md); padding:16px;">
+          <div style="font-weight:800; font-size:13.5px; color:var(--hr-text-gold); margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">
+            <span>📜 Interaktives Transkript (Klicken zum Anhören)</span>
+            <span style="font-size:11px; font-weight:normal; color:var(--hr-text-muted);">Lernmodus</span>
+          </div>
+          <div id="hr-study-transcript-content" style="font-size:13.5px; line-height:1.7;">
+          </div>
         </div>
 
         <!-- Examination Timer & Regulation Info -->
-        <div style="background:var(--hr-bg-input); border:1px solid var(--hr-border-card); border-radius:var(--hr-radius-md); padding:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+        <div style="margin-top:16px; background:var(--hr-bg-input); border:1px solid var(--hr-border-card); border-radius:var(--hr-radius-md); padding:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
           <div style="display:flex; align-items:center; gap:8px;">
             <span>⏱️</span>
             <span style="font-weight:700; font-size:13px;" data-i18n="timerLabel">Prüfungstimer:</span>
@@ -169,6 +203,7 @@
   </div>
 
   <!-- Scripts -->
+  <script src="js/storage-engine.js"></script>
   <script src="data/hoerenData.js?v=42"></script>
   <script src="js/hoerenApp.js?v=42"></script>
 

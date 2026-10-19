@@ -106,6 +106,7 @@
     <a href="#section-quiz" class="dash-tab-link">🔍 <span data-de="Grammatik-Quiz" data-en="Grammar Quiz" data-tr="Dilbilgisi Testi" data-ar="اختبار القواعد" data-uk="Тест з граматики">Grammar Quiz</span></a>
     <a href="#section-fehlerheft" class="dash-tab-link">📓 <span data-de="Fehlerheft" data-en="Fehlerheft" data-tr="Hata Defteri" data-ar="دفتر الأخطاء" data-uk="Зошит помилок">Fehlerheft</span></a>
     <a href="#section-calculator" class="dash-tab-link">🎯 <span data-de="Bestehensrechner (180/300)" data-en="Pass Predictor (180/300)" data-tr="Not Hesaplayıcı (180/300)" data-ar="حاسبة الدرجات (180/300)" data-uk="Калькулятор балів (180/300)">Pass Predictor (180/300)</span></a>
+    <a href="#section-backup" class="dash-tab-link">💾 <span data-de="Datensicherung (JSON)" data-en="Backup & Data (JSON)" data-tr="Yedekleme & Veri (JSON)" data-ar="النسخ الاحتياطي والبيانات" data-uk="Резервна копія (JSON)">Backup & Data (JSON)</span></a>
   </nav>
 
   <!-- Section 1: 5-Step telc B1 Master Roadmap -->
@@ -345,6 +346,51 @@
     <div id="telc-calculator-container"></div>
   </section>
 
+  <!-- Section 8: Datensicherung & Progress Sync (JSON) -->
+  <section class="dash-section" id="section-backup">
+    <div class="dash-section-header">
+      <div class="dash-section-title-wrap">
+        <div data-de="100% Offline-Sicherheit & Datenschutz" class="dash-section-kicker" data-en="100% Offline Privacy & Safety" data-tr="100% Çevrimdışı Güvenlik & Gizlilik" data-ar="خصوصية وأمان 100% بدون إنترنت" data-uk="100% офлайн-безпека та приватність">100% Offline Privacy & Safety</div>
+        <h2 data-de="Lernfortschritt sichern & übertragen (JSON)" class="dash-section-title" data-en="Backup & Restore Learning Progress (JSON)" data-tr="İlerlemenizi Yedekleyin & Geri Yükleyin (JSON)" data-ar="حفظ واستعادة التقدم (JSON)" data-uk="Збереження та відновлення прогресу (JSON)">Backup & Restore Learning Progress (JSON)</h2>
+        <p data-de="Ihre Daten bleiben vollständig auf Ihrem Gerät. Exportieren Sie eine verschlüsselte Sicherungsdatei oder stellen Sie Ihren Fortschritt auf einem neuen Gerät wieder her." class="dash-section-sub" data-en="Your data stays strictly on your device. Export an offline backup JSON file or restore your study streak, Fehlerheft, and SM-2 deck on another device." data-tr="Verileriniz tamamen cihazınızda saklanır. Çevrimdışı JSON yedeğinizi indirin veya başka bir cihazda kelimelerinizi ve puanlarınızı geri yükleyin." data-ar="بياناتك تبقى بالكامل على جهازك. قم بتنزيل ملف النسخ الاحتياطي JSON أو استعد تقدمك على جهاز آخر." data-uk="Ваші дані зберігаються виключно на пристрої. Завантажте резервну копію або відновіть дані на іншому пристрої.">Your data stays strictly on your device. Export an offline backup JSON file or restore your study streak, Fehlerheft, and SM-2 deck on another device.</p>
+      </div>
+    </div>
+
+    <div class="dash-card" style="background:var(--bg-card); border:1px solid var(--border); border-radius:16px; padding:28px; box-shadow:0 4px 24px rgba(0,0,0,0.04);">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px; align-items:stretch;">
+        
+        <!-- Export Box -->
+        <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="font-size:24px; margin-bottom:8px;">📤</div>
+            <h3 style="font-size:16px; font-weight:700; color:var(--text-primary); margin:0 0 6px 0;" data-de="Fortschritt exportieren" data-en="Export Progress" data-tr="İlerlemeyi İndir" data-ar="تصدير التقدم" data-uk="Експортувати прогрес">Export Progress</h3>
+            <p style="font-size:13px; color:var(--text-secondary); line-height:1.5; margin:0 0 16px 0;" data-de="Lädt ein JSON-Backup mit Ihren SM-2-Wörtern, Fehlerheft-Einträgen, täglichen Streaks und Prüfungsergebnissen herunter." data-en="Downloads a complete JSON backup of your SM-2 cards, mistake notebook, daily streaks, and practice scores." data-tr="SM-2 kelime durumunuzu, hata defterinizi, serinizi ve deneme puanlarınızı içeren tam bir JSON yedeği indirir." data-ar="تنزيل نسخة احتياطية كاملة تتضمن كلماتك، دفتر الأخطاء، الأيام المتتالية ونتائج الاختبارات." data-uk="Завантажує повний бекап карток SM-2, зошита помилок та результатів тестів.">Downloads a complete JSON backup of your SM-2 cards, mistake notebook, daily streaks, and practice scores.</p>
+          </div>
+          <button type="button" class="dash-btn-primary" id="btn-export-progress-json" onclick="exportUserProgressJSON()" style="width:100%; justify-content:center;">
+            <span>📥 <span data-de="Backup herunterladen (JSON)" data-en="Download Backup (JSON)" data-tr="Yedeği İndir (JSON)" data-ar="تنزيل ملف النسخ (JSON)" data-uk="Завантажити бекап (JSON)">Download Backup (JSON)</span></span>
+          </button>
+        </div>
+
+        <!-- Import Box -->
+        <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="font-size:24px; margin-bottom:8px;">📥</div>
+            <h3 style="font-size:16px; font-weight:700; color:var(--text-primary); margin:0 0 6px 0;" data-de="Fortschritt importieren" data-en="Restore / Import Progress" data-tr="Yedekten Geri Yükle" data-ar="استعادة من نسخة احتياطية" data-uk="Відновити з бекапу">Restore / Import Progress</h3>
+            <p style="font-size:13px; color:var(--text-secondary); line-height:1.5; margin:0 0 16px 0;" data-de="Laden Sie eine zuvor exportierte JSON-Datei hoch, um Ihren Lernstand nahtlos wiederherzustellen." data-en="Upload a previously saved JSON backup file to merge or restore your exact learning state." data-tr="Daha önce indirdiğiniz JSON dosyasını yükleyerek öğrenme durumunuzu anında geri yükleyin." data-ar="ارفع ملف النسخة الاحتياطية JSON لاستعادة تقدمك بدقة وفوراً." data-uk="Завантажте збережений JSON файл, щоб відновити стан навчання.">Upload a previously saved JSON backup file to merge or restore your exact learning state.</p>
+          </div>
+          <div>
+            <input type="file" id="import-progress-file-input" accept=".json" style="display:none;" onchange="importUserProgressJSON(event)">
+            <button type="button" class="dash-btn-secondary" onclick="document.getElementById('import-progress-file-input').click()" style="width:100%; justify-content:center;">
+              <span>📂 <span data-de="JSON-Datei auswählen..." data-en="Select JSON File..." data-tr="JSON Dosyası Seç..." data-ar="اختيار ملف JSON..." data-uk="Вибрати файл JSON...">Select JSON File...</span></span>
+            </button>
+            <div id="backup-status-msg" style="display:none; margin-top:8px; font-size:12px; font-weight:600; text-align:center;"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Legal & Commercial Footer -->
   <footer style="text-align:center;padding:40px 20px 30px;border-top:1px solid var(--border);margin-top:40px">
     <p style="font-size:28px;margin-bottom:8px">🎓</p>
@@ -444,6 +490,7 @@
 </div>
 
 <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+<script src="js/storage-engine.js"></script>
 <script src="js/storageService.js"></script>
 <script src="js/firebaseConfig.js"></script>
 <script src="js/firebaseService.js"></script>

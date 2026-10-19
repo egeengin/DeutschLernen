@@ -13,6 +13,10 @@ An open-source, zero-dependency, high-yield study portal and interactive vocabul
 
 > 🌐 **Live Web Application:** [https://egeengin.github.io/DeutschLernen/](https://egeengin.github.io/DeutschLernen/)  
 > ⚡ **Interactive Wortschatz Trainer:** [https://egeengin.github.io/DeutschLernen/trainer.html](https://egeengin.github.io/DeutschLernen/trainer.html)  
+> 🎯 **telc B1 Punkte-Rechner:** [https://egeengin.github.io/DeutschLernen/telc-b1-punkte-rechner.html](https://egeengin.github.io/DeutschLernen/telc-b1-punkte-rechner.html)  
+> ✍️ **telc B1 Beschwerdebrief Örnekleri:** [https://egeengin.github.io/DeutschLernen/telc-b1-beschwerdebrief-beispiel.html](https://egeengin.github.io/DeutschLernen/telc-b1-beschwerdebrief-beispiel.html)  
+> ✉️ **telc B1 Einladung Schreiben:** [https://egeengin.github.io/DeutschLernen/telc-b1-einladung-schreiben.html](https://egeengin.github.io/DeutschLernen/telc-b1-einladung-schreiben.html)  
+> 🏛️ **BAMF LiD NRW Soruları:** [https://egeengin.github.io/DeutschLernen/leben-in-deutschland-nrw-fragen.html](https://egeengin.github.io/DeutschLernen/leben-in-deutschland-nrw-fragen.html)  
 > ⚖️ **Legal Impressum & Privacy Policy:** [https://egeengin.github.io/DeutschLernen/legal.html](https://egeengin.github.io/DeutschLernen/legal.html)
 
 ---

@@ -54,6 +54,17 @@
       panelTask: document.getElementById('view-task-panel'),
       panelModel: document.getElementById('view-model-panel'),
       panelPhrases: document.getElementById('view-phrases-panel'),
+      pillPartner: document.getElementById('pill-view-partner'),
+      panelPartner: document.getElementById('view-partner-panel'),
+      simTimer: document.getElementById('partner-sim-timer'),
+      btnRestartSim: document.getElementById('btn-restart-sim'),
+      simTurnLabel: document.getElementById('sim-turn-label'),
+      simPartnerText: document.getElementById('sim-partner-text'),
+      btnPartnerSpeak: document.getElementById('btn-partner-speak'),
+      simOptionsGrid: document.getElementById('sim-options-grid'),
+      simCheckProp: document.getElementById('sim-check-prop'),
+      simCheckDisagree: document.getElementById('sim-check-disagree'),
+      simCheckAgree: document.getElementById('sim-check-agree'),
 
       // Model Answer Controls
       btnTtsPlay: document.getElementById('btn-model-tts-play'),
@@ -217,6 +228,11 @@
       `).join('');
     }
 
+    // Show/hide Partner Simulator pill for Teil 3
+    if (dom.pillPartner) {
+      dom.pillPartner.style.display = (partKey === 'teil3') ? 'inline-block' : 'none';
+    }
+
     // Render Model Answer, Phrases and Vocab
     renderModelAnswer();
     renderPhrasesAndVocab();
@@ -226,7 +242,7 @@
     if (dom.evalCard) dom.evalCard.style.display = 'none';
   }
 
-  // --- SUBVIEW SWITCHING (Task, Model Answer, Phrases) ---
+  // --- SUBVIEW SWITCHING (Task, Model Answer, Phrases, Partner Simulator) ---
   function switchPromptView(viewName) {
     state.activeView = viewName;
     if (dom.pills) {
@@ -238,10 +254,211 @@
     if (dom.panelTask) dom.panelTask.style.display = (viewName === 'task') ? 'block' : 'none';
     if (dom.panelModel) dom.panelModel.style.display = (viewName === 'model') ? 'block' : 'none';
     if (dom.panelPhrases) dom.panelPhrases.style.display = (viewName === 'phrases') ? 'block' : 'none';
+    if (dom.panelPartner) dom.panelPartner.style.display = (viewName === 'partner') ? 'block' : 'none';
 
-    if (viewName !== 'model' && state.isSpeakingTTS) {
+    if (viewName === 'partner') {
+      startPartnerSimulator();
+    } else if (partnerSimState.interval) {
+      clearInterval(partnerSimState.interval);
+      partnerSimState.interval = null;
+    }
+
+    if (viewName !== 'model' && viewName !== 'partner' && state.isSpeakingTTS) {
       stopModelAnswerTTS();
     }
+  }
+
+  // --- INTERACTIVE PARTNER SIMULATOR (TEIL 3) ---
+  const partnerSimData = [
+    {
+      turnLabel: "Runde 1: Vorschlag von Anna",
+      partnerSpeech: "Hallo! Schön, dass wir zusammen planen. Ich habe mir schon Gedanken gemacht: Ich schlage vor, dass wir uns am Samstagabend um 19 Uhr in einem Restaurant in der Innenstadt treffen. Was hältst du davon?",
+      options: [
+        {
+          type: "einwand",
+          redemittelKey: "einwand",
+          text: "Das ist ein schöner Vorschlag, aber ein Restaurant ist vielleicht für manche zu teuer. Wie wäre es, wenn wir stattdessen bei mir zu Hause feiern?",
+          badge: "✋ Höflicher Einwand & Gegenvorschlag"
+        },
+        {
+          type: "termin",
+          redemittelKey: "einwand",
+          text: "Samstagabend passt mir leider gar nicht, da ich Spätschicht habe. Könnten wir das Treffen vielleicht auf Sonntagnachmittag verschieben?",
+          badge: "⏰ Terminverschiebung"
+        },
+        {
+          type: "zustimmung",
+          redemittelKey: "vorschlag",
+          text: "Einverstanden, das ist eine prima Idee! Ich schlage vor, dass wir vorher reservieren, damit wir sicher einen Tisch bekommen.",
+          badge: "💡 Zustimmung & Initiative"
+        }
+      ]
+    },
+    {
+      turnLabel: "Runde 2: Annas Reaktion & Aufgabenverteilung",
+      partnerSpeech: "Guter Punkt! Das klingt absolut vernünftig. Wir sollten auch überlegen, was wir vorbereiten müssen: Wer besorgt die Getränke und die Dekoration, und was machen wir mit der Musik?",
+      options: [
+        {
+          type: "aufgabe",
+          redemittelKey: "vorschlag",
+          text: "Ich könnte mich um die Musik-Playlist und die Dekoration kümmern. Kannst du dafür die Getränke und ein paar Snacks einkaufen?",
+          badge: "💡 Aufgabenverteilung vorschlagen"
+        },
+        {
+          type: "einwand",
+          redemittelKey: "einwand",
+          text: "Musik ist wichtig, aber wir müssen vorher die Nachbarn informieren, damit es keinen Ärger wegen Ruhestörung gibt.",
+          badge: "✋ Bedenken äußern"
+        },
+        {
+          type: "kompromiss",
+          redemittelKey: "kompromiss",
+          text: "Wir könnten eine gemeinsame Liste erstellen und die Kosten durch alle teilen. Ich übernehme gerne die Abrechnung.",
+          badge: "🤝 Finanzieller Kompromiss"
+        }
+      ]
+    },
+    {
+      turnLabel: "Runde 3: Annas Bestätigung & Abschluss",
+      partnerSpeech: "Perfekt! Das ist ein fairer Plan. Ich erstelle heute noch eine Nachricht für alle und kaufe die Getränke ein. Dann treffen wir uns eine Stunde vor Beginn zur Vorbereitung, einverstanden?",
+      options: [
+        {
+          type: "abschluss",
+          redemittelKey: "kompromiss",
+          text: "Super, abgemacht! Ich bringe die Dekoration und die Musik mit. Wir telefonieren am Freitag noch einmal kurz zur Bestätigung. Bis dann!",
+          badge: "🤝 Kompromiss besiegelt"
+        },
+        {
+          type: "hilfe",
+          redemittelKey: "vorschlag",
+          text: "Klasse! Eine Stunde vorher reicht völlig. Wenn du noch Hilfe beim Tragen brauchst, sag mir einfach Bescheid. Bis Samstag!",
+          badge: "💡 Hilfsangebot & Abschluss"
+        }
+      ]
+    }
+  ];
+
+  let partnerSimState = {
+    step: 0,
+    timer: 180,
+    interval: null,
+    used: { vorschlag: false, einwand: false, kompromiss: false }
+  };
+
+  function startPartnerSimulator() {
+    partnerSimState.step = 0;
+    partnerSimState.timer = 180;
+    partnerSimState.used = { vorschlag: false, einwand: false, kompromiss: false };
+    updateSimChecklist();
+
+    if (partnerSimState.interval) clearInterval(partnerSimState.interval);
+    partnerSimState.interval = setInterval(() => {
+      if (partnerSimState.timer > 0) {
+        partnerSimState.timer--;
+        const m = Math.floor(partnerSimState.timer / 60);
+        const s = String(partnerSimState.timer % 60).padStart(2, '0');
+        if (dom.simTimer) dom.simTimer.textContent = `${m}:${s}`;
+      } else {
+        clearInterval(partnerSimState.interval);
+        partnerSimState.interval = null;
+      }
+    }, 1000);
+
+    renderPartnerStep();
+  }
+
+  function restartPartnerSimulator() {
+    startPartnerSimulator();
+  }
+
+  function renderPartnerStep() {
+    if (partnerSimState.step >= partnerSimData.length) {
+      if (dom.simTurnLabel) dom.simTurnLabel.textContent = "🏆 Prüfungssimulation abgeschlossen";
+      if (dom.simPartnerText) {
+        dom.simPartnerText.innerHTML = "<strong>Vielen Dank!</strong> Sie haben alle 3 Phasen der gemeinsamen Planung erfolgreich durchlaufen. Sie haben Vorschläge gemacht, auf Einwände reagiert und einen fairen Kompromiss erzielt.";
+      }
+      if (dom.simOptionsGrid) {
+        dom.simOptionsGrid.innerHTML = `
+          <div style="background:rgba(16,185,129,0.15); border:1px solid #10b981; border-radius:8px; padding:12px; color:#34d399; font-weight:700; text-align:center;">
+            🎉 Teil 3 telc B1 Partner-Dialog mit Erfolg simuliert! Überprüfen Sie Ihre Redezeit und prüfen Sie Ihre Antwort mit dem Bewertungsknopf unten.
+          </div>
+        `;
+      }
+      return;
+    }
+
+    const currentTurn = partnerSimData[partnerSimState.step];
+    if (dom.simTurnLabel) dom.simTurnLabel.textContent = currentTurn.turnLabel;
+    if (dom.simPartnerText) dom.simPartnerText.textContent = currentTurn.partnerSpeech;
+
+    speakPartnerSpeech(currentTurn.partnerSpeech);
+
+    if (dom.simOptionsGrid) {
+      dom.simOptionsGrid.innerHTML = currentTurn.options.map((opt, oIdx) => `
+        <button type="button" class="btn-sim-option" data-opt-idx="${oIdx}" style="text-align:left; background:rgba(255,255,255,0.04); border:1px solid var(--sp-border, #334155); border-radius:8px; padding:12px 14px; cursor:pointer; transition:var(--sp-transition); color:#f8fafc; display:flex; flex-direction:column; gap:4px;">
+          <span style="font-size:11px; font-weight:800; color:#fbbf24;">${opt.badge}</span>
+          <span style="font-size:13.5px; line-height:1.5;">"${escapeHtml(opt.text)}"</span>
+        </button>
+      `).join('');
+
+      dom.simOptionsGrid.querySelectorAll('.btn-sim-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const idx = parseInt(btn.getAttribute('data-opt-idx'), 10);
+          chooseSimOption(idx);
+        });
+      });
+    }
+  }
+
+  function chooseSimOption(optIdx) {
+    const currentTurn = partnerSimData[partnerSimState.step];
+    const chosen = currentTurn.options[optIdx];
+    if (!chosen) return;
+
+    if (chosen.redemittelKey && partnerSimState.used[chosen.redemittelKey] !== undefined) {
+      partnerSimState.used[chosen.redemittelKey] = true;
+      updateSimChecklist();
+    }
+
+    // Append to transcript
+    if (dom.transcriptInput) {
+      const currentVal = dom.transcriptInput.value.trim();
+      const addition = `Ich: ${chosen.text}`;
+      dom.transcriptInput.value = currentVal ? `${currentVal}\n\n${addition}` : addition;
+      checkRealtimeLeitpunkte(dom.transcriptInput.value);
+    }
+
+    partnerSimState.step++;
+    setTimeout(() => {
+      renderPartnerStep();
+    }, 400);
+  }
+
+  function updateSimChecklist() {
+    if (dom.simCheckProp) {
+      dom.simCheckProp.style.background = partnerSimState.used.vorschlag ? 'rgba(16,185,129,0.2)' : '';
+      dom.simCheckProp.style.color = partnerSimState.used.vorschlag ? '#34d399' : '';
+    }
+    if (dom.simCheckDisagree) {
+      dom.simCheckDisagree.style.background = partnerSimState.used.einwand ? 'rgba(16,185,129,0.2)' : '';
+      dom.simCheckDisagree.style.color = partnerSimState.used.einwand ? '#34d399' : '';
+    }
+    if (dom.simCheckAgree) {
+      dom.simCheckAgree.style.background = partnerSimState.used.kompromiss ? 'rgba(16,185,129,0.2)' : '';
+      dom.simCheckAgree.style.color = partnerSimState.used.kompromiss ? '#34d399' : '';
+    }
+  }
+
+  function speakPartnerSpeech(text) {
+    if (!('speechSynthesis' in window) || !text) return;
+    window.speechSynthesis.cancel();
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.lang = 'de-DE';
+    utter.rate = 0.95;
+    const voices = window.speechSynthesis.getVoices();
+    const deVoice = voices.find(v => v.lang.startsWith('de') && (v.name.includes('Female') || v.name.includes('Hedda') || v.name.includes('Katja') || v.name.includes('Natural') || v.name.includes('Google'))) || voices.find(v => v.lang.startsWith('de'));
+    if (deVoice) utter.voice = deVoice;
+    window.speechSynthesis.speak(utter);
   }
 
   // --- RENDER MODEL ANSWER (MUSTERANTWORT) ---
@@ -538,6 +755,11 @@
           if (dom.btnDownloadAudio) {
             dom.btnDownloadAudio.href = state.recordedAudioUrl;
             dom.btnDownloadAudio.download = `telc_b1_sprechen_${Date.now()}.webm`;
+          }
+
+          // Persist recording to StorageEngine IndexedDB
+          if (typeof StorageEngine !== 'undefined' && state.recordedBlob) {
+            StorageEngine.saveAudioBlob(`oral_${state.currentPart}_${Date.now()}`, state.recordedBlob).catch(() => {});
           }
         }
       };
@@ -883,6 +1105,25 @@
     try {
       const scaledSprechen = Math.round((report.scores.total / 100) * 75 * 10) / 10;
       localStorage.setItem('telc_voice_score', scaledSprechen);
+      if (typeof StorageEngine !== 'undefined') {
+        StorageEngine.setExamScore('sprechen', scaledSprechen);
+        StorageEngine.addXP(Math.round(scaledSprechen));
+
+        // Add missed Leitpunkte to Fehlerheft
+        if (report.missedLeitpunkte && report.missedLeitpunkte.length > 0) {
+          report.missedLeitpunkte.forEach(lp => {
+            StorageEngine.addFehlerItem({
+              id: `oral_lp_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
+              type: 'exam_question',
+              source: `sprechen.html (${state.currentPart})`,
+              title: `Mündlich: Leitpunkt ausgelassen`,
+              detail: `${state.activeTopic.title}: ${lp.label}`,
+              expected: 'Leitpunkt im Vortrag behandeln',
+              actual: 'Nicht erwähnt'
+            });
+          });
+        }
+      }
     } catch (e) {
       console.warn('Could not save telc_voice_score:', e);
     }
@@ -1073,6 +1314,18 @@
           renderModelAnswer();
           renderPhrasesAndVocab();
         });
+      });
+    }
+
+    // Partner Simulator Controls
+    if (dom.btnRestartSim) {
+      dom.btnRestartSim.addEventListener('click', restartPartnerSimulator);
+    }
+    if (dom.btnPartnerSpeak) {
+      dom.btnPartnerSpeak.addEventListener('click', () => {
+        if (partnerSimState.step < partnerSimData.length) {
+          speakPartnerSpeech(partnerSimData[partnerSimState.step].partnerSpeech);
+        }
       });
     }
 

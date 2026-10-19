@@ -38,6 +38,11 @@ jobs:
         run: |
           python -m unittest discover -s tests -v
 
+      - name: Build Programmatic SEO Static Pages & Verify
+        run: |
+          python scripts/build_seo_pages.py
+          python tests/test_seo_pages.py
+
       - name: Run Automated Zero-Dependency Coverage Report
         run: |
           python scripts/run_coverage.py

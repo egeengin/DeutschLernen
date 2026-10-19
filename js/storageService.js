@@ -16,6 +16,14 @@
 
   const safeStorage = {
     getItem(key) {
+      if (typeof StorageEngine !== 'undefined') {
+        if (key === KEYS.FEHLERHEFT) return JSON.stringify(StorageEngine.getFehlerheft());
+        if (key === KEYS.LANG) return StorageEngine.getUserProfile().lang;
+        if (key === KEYS.THEME) return StorageEngine.getUserProfile().theme;
+        if (key === KEYS.LICENSE_KEY) return StorageEngine.getUserProfile().licenseKey;
+        if (key === KEYS.LICENSE_PLAN) return StorageEngine.getUserProfile().licensePlan;
+        if (key === KEYS.CREDITS) return String(StorageEngine.getUserProfile().credits);
+      }
       try {
         if (typeof localStorage !== 'undefined') {
           return localStorage.getItem(key);
@@ -26,6 +34,13 @@
       return memoryStore[key] || null;
     },
     setItem(key, value) {
+      if (typeof StorageEngine !== 'undefined') {
+        if (key === KEYS.LANG) StorageEngine.updateUserProfile({ lang: String(value) });
+        if (key === KEYS.THEME) StorageEngine.updateUserProfile({ theme: String(value) });
+        if (key === KEYS.LICENSE_KEY) StorageEngine.updateUserProfile({ licenseKey: String(value) });
+        if (key === KEYS.LICENSE_PLAN) StorageEngine.updateUserProfile({ licensePlan: String(value) });
+        if (key === KEYS.CREDITS) StorageEngine.updateUserProfile({ credits: parseInt(value, 10) || 0 });
+      }
       try {
         if (typeof localStorage !== 'undefined') {
           localStorage.setItem(key, String(value));
@@ -159,36 +174,13 @@
 
     // --- Fehlerheft (Mistake Notebook) ---
     static getFehlerheft() {
+      if (typeof StorageEngine !== 'undefined') {
+        return StorageEngine.getFehlerheft();
+      }
       try {
         let raw = safeStorage.getItem(KEYS.FEHLERHEFT);
         let list = raw ? JSON.parse(raw) : [];
         if (!Array.isArray(list)) list = [];
-
-        // Seamless migration from legacy fehlerheft_items if present
-        const legacyRaw = safeStorage.getItem('fehlerheft_items');
-        if (legacyRaw) {
-          try {
-            const legacyList = JSON.parse(legacyRaw);
-            if (Array.isArray(legacyList) && legacyList.length > 0) {
-              legacyList.forEach(legItem => {
-                const word = (legItem.word || legItem.original_snippet || '').trim();
-                if (word && !list.some(i => (i.word || '').toLowerCase() === word.toLowerCase())) {
-                  list.push({
-                    word: word,
-                    meaning: legItem.meaning || legItem.corrected_snippet || '',
-                    example: legItem.example || legItem.explanation || '',
-                    mistakeType: legItem.mistakeType || 'grammar',
-                    reviewCount: legItem.reviewCount || 1,
-                    lastReviewed: legItem.lastReviewed || Date.now(),
-                    timestamp: legItem.timestamp || Date.now()
-                  });
-                }
-              });
-              safeStorage.removeItem('fehlerheft_items');
-              safeStorage.setItem(KEYS.FEHLERHEFT, JSON.stringify(list.slice(0, 100)));
-            }
-          } catch (_) {}
-        }
         return list;
       } catch (e) {
         return [];
@@ -196,6 +188,9 @@
     }
 
     static addFehlerItem(item) {
+      if (typeof StorageEngine !== 'undefined') {
+        return StorageEngine.addFehlerItem(item);
+      }
       if (!item) return [];
       const list = this.getFehlerheft();
       const word = (item.word || item.original_snippet || '').trim();

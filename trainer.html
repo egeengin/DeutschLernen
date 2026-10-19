@@ -68,7 +68,7 @@
         <button class="btn-auth-trigger stat-pill sync-status" id="btn-user-account" title="Account & Cloud Sync" style="cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
           <span id="sync-status-pill">👤 <span data-i18n="accountBtn">Account</span></span>
         </button>
-        <button class="btn-icon" id="btn-open-search" title="Search all 2,000+ words">
+        <button class="btn-icon" id="btn-open-search" title="Search all 2,350+ words (A1–C2)">
           🔍 <span data-i18n="browserTitle">Dictionary</span>
         </button>
         <button class="btn-icon" id="btn-theme-toggle" title="Toggle Light / Dark mode">
@@ -104,6 +104,8 @@
               <option value="core" data-i18n="coreDeck">Core 2,000 (A1–B1)</option>
               <option value="b2" data-i18n="b2Deck">Advanced B2 Deck</option>
               <option value="c1" data-i18n="c1Deck">Academic C1 Deck</option>
+              <option value="c2" data-i18n="c2Deck">Mastery C2 Deck</option>
+              <option value="nvv" data-i18n="nvvDeck">Nomen-Verb-Verbindungen (B2–C2)</option>
               <option value="all" data-i18n="allDeck">All Words Combined</option>
             </select>
           </div>
@@ -118,6 +120,7 @@
               <option value="B1" data-i18n="levelB1">B1 Level</option>
               <option value="B2" data-i18n="levelB2">B2 Level</option>
               <option value="C1" data-i18n="levelC1">C1 Level</option>
+              <option value="C2" data-i18n="levelC2">C2 Level</option>
             </select>
           </div>
 
@@ -141,6 +144,15 @@
         </button>
         <button class="mode-chip" data-mode="meaning_de" role="tab" aria-selected="false">
           🌐 ➔ 🇩🇪 <span data-i18n="mode_meaning_de">Meaning ➔ German</span>
+        </button>
+        <button class="mode-chip" data-mode="flashcards" role="tab" aria-selected="false" title="Spaced Repetition Flashcards with SM-2 Ratings">
+          🃏 <span data-i18n="mode_flashcards">Flashcards (SM-2)</span>
+        </button>
+        <button class="mode-chip" data-mode="typein" role="tab" aria-selected="false" title="Active Recall Type-In Drill with On-Screen Umlauts">
+          ✍️ <span data-i18n="mode_typein">Type-In (Eingabe)</span>
+        </button>
+        <button class="mode-chip artikel-mode" data-mode="artikel" role="tab" aria-selected="false" title="Artikel-Trainer: der, die, das">
+          🔵🔴🟢 <span data-i18n="mode_artikel">Artikel-Trainer (der/die/das)</span>
         </button>
         <button class="mode-chip" data-mode="synonyms" role="tab" aria-selected="false">
           🔗 <span data-i18n="mode_synonyms">Synonyms (DE ➔ DE)</span>
@@ -172,7 +184,7 @@
       </div>
 
       <!-- Prompt Question Card -->
-      <div class="prompt-card">
+      <div class="prompt-card" id="main-prompt-card">
         <div class="prompt-meta">
           <span class="badge-level" id="arena-level-badge">B1</span>
           <span class="badge-pos" id="arena-pos-badge">Verb</span>
@@ -181,12 +193,94 @@
 
         <div class="prompt-word-container">
           <h1 class="prompt-word" id="arena-word-de">...</h1>
-          <button class="audio-btn-play" id="btn-play-audio" title="Listen to German pronunciation (Spacebar)" aria-label="Pronounce word">
+          <button class="audio-btn-play" id="btn-play-audio" title="Listen to German pronunciation (Hotkey: R)" aria-label="Pronounce word">
             🔊
           </button>
         </div>
 
+        <!-- Linguistic Verb auxiliary / Partizip II container -->
+        <div id="arena-verb-forms-container" style="display:none;"></div>
+
         <p class="prompt-subhint" id="arena-subhint" data-i18n="arenaSubhint">Choose the correct meaning below or press keys 1–4</p>
+      </div>
+
+      <!-- Flashcard Arena Mode (Hidden unless mode === 'flashcards') -->
+      <div class="flashcard-arena-container hidden" id="flashcard-arena-container">
+        <div class="flashcard-flip-card" id="flashcard-card-element" role="button" tabindex="0" title="Click or press Space to Flip Card">
+          <div class="flashcard-inner">
+            <div class="flashcard-front">
+              <div style="font-size:13px; color:var(--text-muted); text-transform:uppercase; font-weight:700;">Question Prompt</div>
+              <h2 id="fc-front-word" style="font-size:28px; margin:10px 0; color:var(--text-primary);">...</h2>
+              <p style="color:var(--text-secondary); font-size:14px;">Press <kbd style="background:var(--bg-secondary); border:1px solid var(--border); padding:2px 8px; border-radius:4px; font-weight:700;">Space</kbd> or click to reveal answer</p>
+            </div>
+            <div class="flashcard-back">
+              <div style="font-size:13px; color:var(--accent-gold); text-transform:uppercase; font-weight:700;">Answer & Linguistic Details</div>
+              <h2 id="fc-back-meaning" style="font-size:26px; margin:8px 0; color:var(--text-primary);">...</h2>
+              <div id="fc-back-details" style="font-size:14px; color:var(--text-secondary); line-height:1.5;"></div>
+              <div id="fc-back-example" style="font-style:italic; margin-top:8px; color:var(--text-muted); font-size:13px;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SM-2 Spaced Repetition Ratings Grid -->
+        <div class="sm2-ratings-grid hidden" id="fc-sm2-ratings" role="group" aria-label="SM-2 Confidence Ratings">
+          <button type="button" class="btn-sm2 rating-again" data-rating="1" title="Again (Complete blackout)">
+            <span class="btn-sm2-key">1</span>
+            <span>Again</span>
+            <small style="font-size:10px; opacity:0.8;">&lt; 1 day</small>
+          </button>
+          <button type="button" class="btn-sm2 rating-hard" data-rating="2" title="Hard (Recall with difficulty)">
+            <span class="btn-sm2-key">2</span>
+            <span>Hard</span>
+            <small style="font-size:10px; opacity:0.8;">1–2 days</small>
+          </button>
+          <button type="button" class="btn-sm2 rating-good" data-rating="3" title="Good (Normal successful recall)">
+            <span class="btn-sm2-key">3</span>
+            <span>Good</span>
+            <small style="font-size:10px; opacity:0.8;">3–7 days</small>
+          </button>
+          <button type="button" class="btn-sm2 rating-easy" data-rating="4" title="Easy (Instant effortless recall)">
+            <span class="btn-sm2-key">4</span>
+            <span>Easy</span>
+            <small style="font-size:10px; opacity:0.8;">7–14 days</small>
+          </button>
+        </div>
+      </div>
+
+      <!-- Type-In Arena Mode (Hidden unless mode === 'typein') -->
+      <div class="typein-box hidden" id="typein-container">
+        <!-- On-Screen Clickable Umlaut Toolbar -->
+        <div class="umlaut-toolbar" id="umlaut-toolbar" aria-label="German Characters">
+          <button type="button" class="umlaut-key-btn" data-char="ä">ä</button>
+          <button type="button" class="umlaut-key-btn" data-char="ö">ö</button>
+          <button type="button" class="umlaut-key-btn" data-char="ü">ü</button>
+          <button type="button" class="umlaut-key-btn" data-char="ß">ß</button>
+          <button type="button" class="umlaut-key-btn" data-char="Ä">Ä</button>
+          <button type="button" class="umlaut-key-btn" data-char="Ö">Ö</button>
+          <button type="button" class="umlaut-key-btn" data-char="Ü">Ü</button>
+        </div>
+
+        <form id="typein-form" onsubmit="return false;" class="typein-input-row">
+          <input 
+            type="text" 
+            id="typein-input" 
+            class="typein-input-field" 
+            placeholder="Type German word here..."
+            autocomplete="off" 
+            autocorrect="off" 
+            autocapitalize="none" 
+            spellcheck="false"
+          >
+          <button type="submit" class="btn-typein-submit" id="btn-typein-submit">Check</button>
+        </form>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+          <label class="smart-umlaut-toggle-label" title="Automatically transform ae->ä, oe->ö, ue->ü, ss->ß as you type">
+            <input type="checkbox" id="smart-umlaut-toggle" checked style="accent-color:var(--accent-gold);">
+            <span>⚡ Smart Umlaut Normalization (ae ➔ ä, oe ➔ ö, ue ➔ ü, ss ➔ ß)</span>
+          </label>
+          <div id="typein-feedback" style="font-size:13px; font-weight:700;"></div>
+        </div>
       </div>
 
       <!-- 4 Multiple Choice Options Grid -->
@@ -234,7 +328,7 @@
           type="text" 
           id="vocab-search-input" 
           class="search-input-field" 
-          placeholder="Search 2,000+ words in German, Turkish, English..."
+          placeholder="Search 2,350+ words in German, Turkish, English..."
           data-i18n-placeholder="searchPlaceholder"
           autocomplete="off"
         >
@@ -481,18 +575,21 @@
     </div>
   </footer>
 
-  <!-- Scripts: Firebase, Datasets followed by Trainer Logic -->
+  <!-- Scripts: Storage Engine, Firebase, Datasets followed by Trainer Logic -->
   <script>
     try {
       localStorage.setItem('deutschlernen_track', 'vocab');
     } catch(e) {}
   </script>
+  <script src="js/storage-engine.js"></script>
   <script src="js/firebaseConfig.js"></script>
   <script src="js/firebaseService.js"></script>
   <script src="js/fehlerheft.js"></script>
   <script src="data/vocab2000.js"></script>
   <script src="data/vocab_b2.js"></script>
   <script src="data/vocab_c1.js"></script>
+  <script src="data/vocab_c2.js"></script>
+  <script src="data/vocab_nvv.js"></script>
   <script src="js/vocabTrainer.js"></script>
   <script>
     if ('serviceWorker' in navigator) {

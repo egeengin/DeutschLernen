@@ -48,7 +48,11 @@
       sbScorePassed: "Passed! (telc B1 Standard >= 60%)",
       sbScoreFail: "Review Needed (< 60%). Study the grammar explanations!",
       sbWordBankHeading: "Word Bank (a–o): Select matching word for each gap",
-      sbSelectPlaceholder: "-- Select word --"
+      sbSelectPlaceholder: "-- Select word --",
+      sbModePractice: "⚡ Interactive",
+      sbModeExam: "📄 Exam View",
+      sbDockGap: "Gap",
+      sbClearGap: "Clear"
     },
     tr: {
       brandTitle: "Okuma Stüdyosu & Sınav Okuyucu",
@@ -89,7 +93,11 @@
       sbScorePassed: "Tebrikler! telc B1 Barajı Geçildi (>= %60)",
       sbScoreFail: "Barajın Altında (< %60). Dilbilgisi açıklamalarını inceleyiniz!",
       sbWordBankHeading: "Kelime Kutusu (a–o): Her boşluk için uygun kelimeyi seçiniz",
-      sbSelectPlaceholder: "-- Kelime seçiniz --"
+      sbSelectPlaceholder: "-- Kelime seçiniz --",
+      sbModePractice: "⚡ İnteraktif",
+      sbModeExam: "📄 Sınav Görünümü",
+      sbDockGap: "Boşluk",
+      sbClearGap: "Temizle"
     },
     ar: {
       brandTitle: "استوديو القراءة وقارئ الامتحان",
@@ -130,7 +138,11 @@
       sbScorePassed: "ناجح! (معيار telc B1 >= 60%)",
       sbScoreFail: "بحاجة للمراجعة (< 60%). ادرس الشروحات النحوية!",
       sbWordBankHeading: "صندوق الكلمات (a–o): اختر الكلمة المناسبة لكل فراغ",
-      sbSelectPlaceholder: "-- اختر الكلمة --"
+      sbSelectPlaceholder: "-- اختر الكلمة --",
+      sbModePractice: "⚡ تفاعلي",
+      sbModeExam: "📄 وضع الامتحان",
+      sbDockGap: "فراغ",
+      sbClearGap: "إفراغ"
     },
     uk: {
       brandTitle: "Студія читання та екзаменаційний рідер",
@@ -171,7 +183,11 @@
       sbScorePassed: "Складено! (Стандарт telc B1 >= 60%)",
       sbScoreFail: "Потрібно повторити (< 60%). Опрацюйте пояснення!",
       sbWordBankHeading: "Банк слів (a–o): Оберіть відповідне слово для кожного пропуску",
-      sbSelectPlaceholder: "-- Оберіть слово --"
+      sbSelectPlaceholder: "-- Оберіть слово --",
+      sbModePractice: "⚡ Інтерактивно",
+      sbModeExam: "📄 Режим іспиту",
+      sbDockGap: "Пропуск",
+      sbClearGap: "Очистити"
     }
   };
 
@@ -201,6 +217,9 @@
       this.currentSbSubpart = 'teil1'; // 'teil1' or 'teil2'
       this.sbAnswers = {}; // { [itemId]: selectedKey }
       this.sbChecked = false;
+      this.sbMode = (typeof localStorage !== 'undefined' && localStorage.getItem('sb_interactivity_mode')) || 'practice'; // 'practice' or 'exam'
+      this.activeSbGap = 21;
+      this.isDockCollapsed = false;
 
       // Timer state
       this.timerSeconds = 12 * 60; // 12 min default
@@ -230,6 +249,17 @@
       this.dom = {
         btnTrackLesen: document.getElementById('btn-track-lesen'),
         btnTrackSprachbausteine: document.getElementById('btn-track-sprachbausteine'),
+        sbModeToggle: document.getElementById('sb-mode-toggle'),
+        btnSbModePractice: document.getElementById('btn-sb-mode-practice'),
+        btnSbModeExam: document.getElementById('btn-sb-mode-exam'),
+        sbFloatingDock: document.getElementById('sb-floating-dock'),
+        sbDockGapBadge: document.getElementById('sb-dock-gap-badge'),
+        sbDockCurrWord: document.getElementById('sb-dock-curr-word'),
+        sbDockPrev: document.getElementById('sb-dock-prev'),
+        sbDockNext: document.getElementById('sb-dock-next'),
+        sbDockClear: document.getElementById('sb-dock-clear'),
+        sbDockToggleCollapse: document.getElementById('sb-dock-toggle-collapse'),
+        sbDockBody: document.getElementById('sb-dock-body'),
         partTabs: document.getElementById('part-tabs'),
         articleTitle: document.getElementById('article-title'),
         articleSummary: document.getElementById('article-summary'),
@@ -275,6 +305,28 @@
       }
       if (this.dom.btnTrackSprachbausteine) {
         this.dom.btnTrackSprachbausteine.addEventListener('click', () => this.switchTrack('sprachbausteine'));
+      }
+
+      // Sprachbausteine Mode Switcher
+      if (this.dom.btnSbModePractice) {
+        this.dom.btnSbModePractice.addEventListener('click', () => this.setSbMode('practice'));
+      }
+      if (this.dom.btnSbModeExam) {
+        this.dom.btnSbModeExam.addEventListener('click', () => this.setSbMode('exam'));
+      }
+
+      // Floating Word Dock Controls
+      if (this.dom.sbDockPrev) {
+        this.dom.sbDockPrev.addEventListener('click', () => this.navigateSbGap(-1));
+      }
+      if (this.dom.sbDockNext) {
+        this.dom.sbDockNext.addEventListener('click', () => this.navigateSbGap(1));
+      }
+      if (this.dom.sbDockClear) {
+        this.dom.sbDockClear.addEventListener('click', () => this.clearCurrentSbGap());
+      }
+      if (this.dom.sbDockToggleCollapse) {
+        this.dom.sbDockToggleCollapse.addEventListener('click', () => this.toggleSbDockCollapse());
       }
 
       // Audio full text toggle
@@ -1275,6 +1327,23 @@
       expBox.style.display = 'block';
       expBox.innerHTML = `<strong>${texts.explanationLabel}</strong><br>${expText}`;
 
+      // Check error for Fehlerheft
+      if (typeof StorageEngine !== 'undefined') {
+        if (selectedIndex !== question.correct) {
+          const expectedOpt = question.options[question.correct];
+          const actualOpt = question.options[selectedIndex];
+          StorageEngine.addFehlerItem({
+            id: `lesen_q_${question.id}`,
+            type: 'exam_question',
+            source: 'lesen.html (Leseverstehen)',
+            title: `Lesen Frage #${question.id}`,
+            detail: question.prompt ? (question.prompt.de || question.prompt) : `Frage ${question.id}`,
+            expected: expectedOpt ? (expectedOpt.de || expectedOpt) : String(question.correct),
+            actual: actualOpt ? (actualOpt.de || actualOpt) : String(selectedIndex)
+          });
+        }
+      }
+
       this.updateScoreUI();
     }
 
@@ -1312,6 +1381,10 @@
         try {
           const scaledLesen = Math.round((correctCount / total) * 75 * 10) / 10;
           localStorage.setItem('telc_lesen_score', scaledLesen);
+          if (typeof StorageEngine !== 'undefined') {
+            StorageEngine.setExamScore('lesen', scaledLesen);
+            StorageEngine.addXP(correctCount * 5);
+          }
         } catch (e) {}
       }
 
@@ -1357,7 +1430,7 @@
       if (idx > -1) {
         this.savedWords.splice(idx, 1);
       } else {
-        this.savedWords.unshift({
+        const savedItem = {
           de: wordObj.de,
           article: wordObj.article,
           pos: wordObj.pos,
@@ -1366,7 +1439,25 @@
           ar: wordObj.ar,
           uk: wordObj.uk,
           date: new Date().toISOString()
-        });
+        };
+        this.savedWords.unshift(savedItem);
+
+        // Direct Integration to SM-2 & Fehlerheft
+        if (typeof StorageEngine !== 'undefined') {
+          const cleanDe = (wordObj.de || '').trim();
+          const vocabId = 'vocab_' + cleanDe.toLowerCase().replace(/[^a-z0-9äöüß]/gi, '_');
+          StorageEngine.recordSM2Review(vocabId, 2);
+          StorageEngine.addFehlerItem({
+            id: vocabId,
+            type: 'vocab',
+            source: 'lesen.html (Readlang Reader)',
+            title: (wordObj.article ? wordObj.article + ' ' : '') + cleanDe,
+            detail: wordObj[this.lang] || wordObj.en || wordObj.tr || cleanDe,
+            de: cleanDe,
+            article: wordObj.article || '',
+            pos: wordObj.pos || ''
+          });
+        }
       }
 
       this.saveSavedWords();
@@ -1456,17 +1547,48 @@
       }
 
       if (track === 'sprachbausteine') {
+        if (this.dom.sbModeToggle) {
+          this.dom.sbModeToggle.style.display = 'inline-flex';
+        }
         this.timerSeconds = 20 * 60;
         this.timerInitial = 20 * 60;
         this.updateTimerDisplay();
         this.renderSbTabs();
         this.loadSbSet(this.currentSbSetIndex || 0, this.currentSbSubpart || 'teil1');
       } else {
+        if (this.dom.sbModeToggle) {
+          this.dom.sbModeToggle.style.display = 'none';
+        }
+        if (this.dom.sbFloatingDock) {
+          this.dom.sbFloatingDock.style.display = 'none';
+        }
+        document.body.classList.remove('sb-dock-active');
         this.timerSeconds = 12 * 60;
         this.timerInitial = 12 * 60;
         this.updateTimerDisplay();
         this.renderPartTabs();
         this.loadUnit(this.currentUnitIndex || 0);
+      }
+    }
+
+    setSbMode(mode) {
+      if (mode !== 'practice' && mode !== 'exam') return;
+      this.sbMode = mode;
+      try {
+        localStorage.setItem('sb_interactivity_mode', mode);
+      } catch (e) {}
+
+      if (this.dom.btnSbModePractice) {
+        this.dom.btnSbModePractice.classList.toggle('active', mode === 'practice');
+      }
+      if (this.dom.btnSbModeExam) {
+        this.dom.btnSbModeExam.classList.toggle('active', mode === 'exam');
+      }
+
+      const set = this.sbDataset[this.currentSbSetIndex];
+      if (set && set[this.currentSbSubpart]) {
+        const task = set[this.currentSbSubpart];
+        this.updateSbFloatingDock(task);
       }
     }
 
@@ -1505,6 +1627,7 @@
       this.currentSbSubpart = subpart || 'teil1';
       this.sbAnswers = {};
       this.sbChecked = false;
+      this.activeSbGap = this.currentSbSubpart === 'teil1' ? 21 : 31;
 
       if (this.dom.scoreBanner) {
         this.dom.scoreBanner.style.display = 'none';
@@ -1541,6 +1664,7 @@
 
       this.renderSbArticleBody(task);
       this.renderSbQuestions(task);
+      this.updateSbFloatingDock(task);
     }
 
     renderSbArticleBody(task) {
@@ -1578,17 +1702,22 @@
             }
 
             const pill = document.createElement('span');
-            pill.className = `sb-gap-pill ${chosenKey ? 'filled' : ''}`;
+            const isActive = gapId === this.activeSbGap;
+            pill.className = `sb-gap-pill ${chosenKey ? 'filled' : ''} ${isActive ? 'active-gap' : ''}`;
             pill.id = `sb-gap-${gapId}`;
             pill.setAttribute('data-gap', gapId);
             pill.innerHTML = `[ <strong>${gapId}:</strong> <span class="gap-text">${displayText}</span> ]`;
 
             pill.addEventListener('click', () => {
-              const targetCard = document.getElementById(`sb-item-card-${gapId}`);
-              if (targetCard) {
-                targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                targetCard.classList.add('active-focus');
-                setTimeout(() => targetCard.classList.remove('active-focus'), 1600);
+              if (this.sbMode === 'practice') {
+                this.setActiveSbGap(gapId);
+              } else {
+                const targetCard = document.getElementById(`sb-item-card-${gapId}`);
+                if (targetCard) {
+                  targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  targetCard.classList.add('active-focus');
+                  setTimeout(() => targetCard.classList.remove('active-focus'), 1600);
+                }
               }
             });
 
@@ -1618,6 +1747,145 @@
       });
     }
 
+    setActiveSbGap(gapId) {
+      this.activeSbGap = gapId;
+      const set = this.sbDataset[this.currentSbSetIndex];
+      const task = set && set[this.currentSbSubpart];
+      if (!task) return;
+
+      if (this.dom.articleBody) {
+        this.dom.articleBody.querySelectorAll('.sb-gap-pill').forEach(p => {
+          const gId = parseInt(p.getAttribute('data-gap'), 10);
+          p.classList.toggle('active-gap', gId === gapId);
+        });
+      }
+
+      this.updateSbFloatingDock(task);
+
+      if (this.isDockCollapsed) {
+        this.isDockCollapsed = false;
+        if (this.dom.sbFloatingDock) {
+          this.dom.sbFloatingDock.classList.remove('dock-collapsed');
+        }
+        if (this.dom.sbDockToggleCollapse) {
+          this.dom.sbDockToggleCollapse.textContent = '▾';
+        }
+      }
+    }
+
+    updateSbFloatingDock(task) {
+      if (!this.dom.sbFloatingDock || this.activeTrack !== 'sprachbausteine') {
+        if (this.dom.sbFloatingDock) this.dom.sbFloatingDock.style.display = 'none';
+        document.body.classList.remove('sb-dock-active');
+        return;
+      }
+
+      if (this.sbMode !== 'practice') {
+        this.dom.sbFloatingDock.style.display = 'none';
+        document.body.classList.remove('sb-dock-active');
+        return;
+      }
+
+      this.dom.sbFloatingDock.style.display = 'block';
+      document.body.classList.add('sb-dock-active');
+
+      const texts = I18N[this.lang] || I18N.en;
+      const currentGap = this.activeSbGap || (task.items && task.items[0] && task.items[0].id) || 21;
+      this.activeSbGap = currentGap;
+
+      if (this.dom.sbDockGapBadge) {
+        this.dom.sbDockGapBadge.textContent = `${texts.sbDockGap || 'Lücke'} ${currentGap}`;
+      }
+
+      const chosenKey = this.sbAnswers[currentGap];
+      let currWordText = '[ ____ ]';
+      if (chosenKey) {
+        if (task.wordBank) {
+          const wObj = task.wordBank.find(w => w.key === chosenKey);
+          if (wObj) currWordText = `[ ${wObj.key.toUpperCase()}: ${wObj.word} ]`;
+        } else if (task.items) {
+          const it = task.items.find(i => i.id === currentGap);
+          if (it) {
+            const opt = it.options.find(o => o.key === chosenKey);
+            if (opt) currWordText = `[ ${opt.key.toUpperCase()}: ${opt.text} ]`;
+          }
+        }
+      }
+      if (this.dom.sbDockCurrWord) {
+        this.dom.sbDockCurrWord.textContent = currWordText;
+      }
+
+      if (!this.dom.sbDockBody) return;
+      this.dom.sbDockBody.innerHTML = '';
+
+      if (task.items && !task.wordBank) {
+        // Teil 1: 3 Option Pills (a, b, c)
+        const it = task.items.find(i => i.id === currentGap);
+        if (it && it.options) {
+          it.options.forEach(opt => {
+            const isSel = chosenKey === opt.key;
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = `sb-dock-opt-btn ${isSel ? 'selected' : ''}`;
+            btn.innerHTML = `<strong>${opt.key.toUpperCase()})</strong> ${opt.text}`;
+            btn.addEventListener('click', (e) => {
+              e.stopPropagation();
+              this.selectSbAnswer(currentGap, opt.key);
+            });
+            this.dom.sbDockBody.appendChild(btn);
+          });
+        }
+      } else if (task.wordBank) {
+        // Teil 2: 15 Word Chips
+        task.wordBank.forEach(wObj => {
+          const isSel = chosenKey === wObj.key;
+          const isUsedByOther = Object.entries(this.sbAnswers).some(([gId, k]) => parseInt(gId, 10) !== currentGap && k === wObj.key);
+          const chip = document.createElement('button');
+          chip.type = 'button';
+          chip.className = `sb-dock-chip ${isSel ? 'selected' : ''} ${isUsedByOther ? 'used' : ''}`;
+          chip.innerHTML = `<span class="chip-key">${wObj.key.toUpperCase()}</span> <span>${wObj.word}</span>`;
+          chip.title = `${wObj.key.toUpperCase()}: ${wObj.word}`;
+          chip.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.selectSbAnswer(currentGap, isSel ? null : wObj.key);
+          });
+          this.dom.sbDockBody.appendChild(chip);
+        });
+      }
+    }
+
+    navigateSbGap(delta) {
+      const set = this.sbDataset[this.currentSbSetIndex];
+      const task = set && set[this.currentSbSubpart];
+      if (!task || !task.items || task.items.length === 0) return;
+
+      const ids = task.items.map(i => i.id);
+      let idx = ids.indexOf(this.activeSbGap);
+      if (idx === -1) idx = 0;
+      idx = (idx + delta + ids.length) % ids.length;
+      this.setActiveSbGap(ids[idx]);
+
+      const pill = document.getElementById(`sb-gap-${ids[idx]}`);
+      if (pill) {
+        pill.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    clearCurrentSbGap() {
+      if (!this.activeSbGap) return;
+      this.selectSbAnswer(this.activeSbGap, null);
+    }
+
+    toggleSbDockCollapse() {
+      this.isDockCollapsed = !this.isDockCollapsed;
+      if (this.dom.sbFloatingDock) {
+        this.dom.sbFloatingDock.classList.toggle('dock-collapsed', this.isDockCollapsed);
+      }
+      if (this.dom.sbDockToggleCollapse) {
+        this.dom.sbDockToggleCollapse.textContent = this.isDockCollapsed ? '▴' : '▾';
+      }
+    }
+
     renderSbQuestions(task) {
       if (!this.dom.questionsContainer || !task) return;
       this.dom.questionsContainer.innerHTML = '';
@@ -1637,9 +1905,16 @@
 
         task.wordBank.forEach(wObj => {
           const isUsed = Object.values(this.sbAnswers).includes(wObj.key);
+          const isCurrent = this.activeSbGap && this.sbAnswers[this.activeSbGap] === wObj.key;
           const chip = document.createElement('span');
-          chip.className = `sb-word-chip ${isUsed ? 'used' : ''}`;
+          chip.className = `sb-word-chip ${isUsed ? 'used' : ''} ${isCurrent ? 'selected' : ''}`;
           chip.innerHTML = `<span class="chip-key">${wObj.key.toUpperCase()}</span> <span>${wObj.word}</span>`;
+          chip.title = `${wObj.key.toUpperCase()}: ${wObj.word}`;
+          chip.style.cursor = 'pointer';
+          chip.addEventListener('click', () => {
+            const targetGap = this.activeSbGap || (task.items && task.items[0] && task.items[0].id) || 31;
+            this.selectSbAnswer(targetGap, this.sbAnswers[targetGap] === wObj.key ? null : wObj.key);
+          });
           wbCard.appendChild(chip);
         });
 
@@ -1785,6 +2060,26 @@
         }
       }
 
+      // In interactive practice mode: auto-advance to next unfilled gap
+      if (this.sbMode === 'practice') {
+        if (key && task.items) {
+          const unfilled = task.items.find(it => it.id !== itemId && !this.sbAnswers[it.id]);
+          if (unfilled) {
+            this.activeSbGap = unfilled.id;
+            const nextPill = document.getElementById(`sb-gap-${unfilled.id}`);
+            if (nextPill) {
+              if (this.dom.articleBody) {
+                this.dom.articleBody.querySelectorAll('.sb-gap-pill').forEach(p => {
+                  p.classList.toggle('active-gap', parseInt(p.getAttribute('data-gap'), 10) === unfilled.id);
+                });
+              }
+              nextPill.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+          }
+        }
+        this.updateSbFloatingDock(task);
+      }
+
       // Re-render questions to update wordBank chips & selected states
       this.renderSbQuestions(task);
     }
@@ -1822,6 +2117,34 @@
       this.renderSbQuestions(task);
       this.updateSbScoreBanner();
 
+      // Log errors to Fehlerheft
+      if (typeof StorageEngine !== 'undefined') {
+        task.items.forEach(item => {
+          const chosen = this.sbAnswers[item.id];
+          if (chosen !== item.correct) {
+            let correctWord = item.correctWord || '';
+            if (!correctWord && item.options) {
+              const o = item.options.find(opt => opt.key === item.correct);
+              if (o) correctWord = o.text;
+            }
+            let chosenWord = chosen || 'keine Auswahl';
+            if (task.wordBank && chosen) {
+              const wb = task.wordBank.find(w => w.key === chosen);
+              if (wb) chosenWord = `${chosen} (${wb.word})`;
+            }
+            StorageEngine.addFehlerItem({
+              id: `sb_gap_${item.id}`,
+              type: 'grammar_rule',
+              source: `lesen.html (Sprachbausteine ${this.currentSbSubpart})`,
+              title: `Sprachbausteine Lücke #${item.id}`,
+              detail: item.explanation ? (item.explanation[this.lang] || item.explanation.de || item.explanation) : `Lücke ${item.id}`,
+              expected: correctWord,
+              actual: chosenWord
+            });
+          }
+        });
+      }
+
       const banner = document.getElementById('sb-score-banner');
       if (banner) {
         banner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -1849,6 +2172,10 @@
       try {
         const scaledSb = Math.round((pointsEarned / maxPoints) * 30 * 10) / 10;
         localStorage.setItem('telc_sprachbausteine_score', scaledSb);
+        if (typeof StorageEngine !== 'undefined') {
+          StorageEngine.setExamScore('sprachbausteine', scaledSb);
+          StorageEngine.addXP(correctCount * 5);
+        }
       } catch (e) {}
 
       banner.style.display = 'block';

@@ -54,7 +54,20 @@
     { id: 'subord_weil', pattern: /weil /i, label: 'Nebensatz mit "weil"', level: 'A2', weight: 0.8 },
     { id: 'subord_obwohl', pattern: /obwohl /i, label: 'Konzessivsatz mit "obwohl"', level: 'B1', weight: 1.4 },
     { id: 'subord_damit', pattern: /damit /i, label: 'Finalsatz mit "damit"', level: 'B1', weight: 1.3 },
-    { id: 'subord_deshalb', pattern: /deshalb|deswegen|aus diesem grund/i, label: 'Kausale Konnektoren (deshalb / aus diesem Grund)', level: 'B1', weight: 1.1 }
+    { id: 'subord_deshalb', pattern: /deshalb|deswegen|aus diesem grund/i, label: 'Kausale Konnektoren (deshalb / aus diesem Grund)', level: 'B1', weight: 1.1 },
+
+    // Advanced C1 Redemittel & Academic Discourse
+    { id: 'c1_in_anbetracht', pattern: /in anbetracht (der tatsache|dessen)|angesichts/i, label: 'In Anbetracht der Tatsache / Angesichts...', level: 'C1', weight: 1.7 },
+    { id: 'c1_ungeachtet', pattern: /ungeachtet dessen|nichtsdestotrotz|nichtsdestoweniger/i, label: 'Ungeachtet dessen / Nichtsdestotrotz...', level: 'C1', weight: 1.7 },
+    { id: 'c1_in_betracht', pattern: /in betracht (zieh|zog)|in erw(ä|ae)gung (zieh|zog)|zieht.*in (betracht|erw(ä|ae)gung)/i, label: 'In Betracht / Erwägung ziehen...', level: 'C1', weight: 1.6 },
+    { id: 'c1_zu_bedenken', pattern: /zu bedenken (geb|gib|gab)|gibt.*zu bedenken/i, label: 'Zu bedenken geben / Berücksichtigen...', level: 'C1', weight: 1.6 },
+    { id: 'c1_zum_ausdruck', pattern: /zum ausdruck (bring|brach)|bringt.*zum ausdruck/i, label: 'Zum Ausdruck bringen...', level: 'C1', weight: 1.5 },
+
+    // Mastery C2 Elevated Idiomatic Formulas & Stylistics
+    { id: 'c2_im_lichte', pattern: /im lichte (dieser|der)|unter diesem blickwinkel/i, label: 'Im Lichte dieser Erwägungen...', level: 'C2', weight: 2.0 },
+    { id: 'c2_in_abrede', pattern: /in abrede stell|au(ß|ss)er zweifel steh|steht.*au(ß|ss)er zweifel/i, label: 'In Abrede stellen / Außer Zweifel stehen...', level: 'C2', weight: 2.0 },
+    { id: 'c2_den_ausschlag', pattern: /den ausschlag (geb|gib|gab)|gibt.*den ausschlag|ins gewicht (fall|f(ä|ae)ll|fiel)/i, label: 'Den Ausschlag geben / Ins Gewicht fallen...', level: 'C2', weight: 1.9 },
+    { id: 'c2_massgebend', pattern: /ma(ß|ss)gebend daf(ü|ue)r ist|ausschlaggebend ist/i, label: 'Maßgebend / Ausschlaggebend ist...', level: 'C2', weight: 1.9 }
   ];
 
   // Official Speaking Examination Tasks Catalog (telc Deutsch B1 Format)

@@ -1778,8 +1778,23 @@ function renderLiveGradingResults(evalData, isLLM = false) {
 
   try {
     localStorage.setItem('telc_letter_score', evalData.totalScore);
+    if (typeof StorageEngine !== 'undefined') {
+      StorageEngine.setExamScore('schreiben', evalData.totalScore);
+      StorageEngine.addXP(Math.round(evalData.totalScore * 2));
+      if (Array.isArray(evalData.annotations)) {
+        evalData.annotations.forEach(ann => {
+          StorageEngine.addFehlerItem({
+            word: ann.targetText,
+            meaning: ann.correctedText,
+            example: ann.explanationEn || ann.ruleEn || '',
+            mistakeType: 'schreiben',
+            timestamp: Date.now()
+          });
+        });
+      }
+    }
   } catch (e) {
-    console.warn('Could not save telc_letter_score:', e);
+    console.warn('Could not save telc_letter_score to StorageEngine:', e);
   }
 
   const lang = getActiveLanguage();

@@ -99,6 +99,10 @@
     <span class="goal-chip-text" id="current-goal-text">Goal: B1 Exam</span>
     <span class="goal-chip-action" data-de="Ändern" data-en="Change" data-tr="Değiştir" data-ar="تغيير" data-uk="Змінити">Change</span>
   </button>
+  <button class="goal-chip-btn placement-top-chip" id="top-placement-test-btn" onclick="openPlacementTestModal()" title="Take 3-minute Adaptive CEFR Placement Test" style="background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.4); color: var(--accent-gold);">
+    <span class="goal-chip-icon">🎯</span>
+    <span class="goal-chip-text" data-de="Einstufungstest" data-en="Placement Test" data-tr="Seviye Testi" data-ar="تحديد المستوى" data-uk="Тест рівня">Placement Test</span>
+  </button>
   <div class="global-lang-toggle">
     <button class="lang-btn" onclick="setLang('de')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/de.png" width="16" alt="DE" style="border-radius:2px;"> DE</button>
     <button class="lang-btn active" onclick="setLang('en')" style="display:flex;align-items:center;gap:4px;"><img src="https://flagcdn.com/w20/us.png" width="16" alt="US" style="border-radius:2px;"> EN</button>
@@ -153,7 +157,7 @@
     </a>
 
     <!-- Pillar 2: Interactive 2,000 Vocab Trainer -->
-    <a href="javascript:void(0)" class="sidebar-pillar-link pillar-vocab" onclick="switchTrack('vocab');">
+    <a href="trainer.html" class="sidebar-pillar-link pillar-vocab" style="text-decoration:none;">
       <span class="sidebar-pillar-icon">⚡</span>
       <div>
         <div data-de="Vokabeltrainer" class="sidebar-pillar-title" data-en="Vocab Trainer" data-tr="Kelime Antrenörü" data-ar="مدرب المفردات" data-uk="Тренажер слів">Vocab Trainer</div>
@@ -162,7 +166,7 @@
     </a>
 
     <!-- Pillar 3: Leben in Deutschland 310 -->
-    <a href="javascript:void(0)" class="sidebar-pillar-link pillar-lid" onclick="switchTrack('lid');">
+    <a href="dashboard.html#section-studios" class="sidebar-pillar-link pillar-lid" style="text-decoration:none;">
       <span class="sidebar-pillar-icon">🇩🇪</span>
       <div>
         <div data-de="Leben in Deutschland" class="sidebar-pillar-title" data-en="Leben in Deutschland" data-tr="Leben in Deutschland" data-ar="الحياة في ألمانيا" data-uk="Життя в Німеччині">Leben in Deutschland</div>
@@ -197,7 +201,7 @@
   <div class="sidebar-footer">
     <div style="font-size: 11px; color: var(--text-muted); opacity: 0.7; padding: 16px 20px;">
       <div>DeutschLernen Suite v2.0</div>
-      <div style="margin-top:4px;"><a data-de="👑 Pro-Upgrade & Preise" href="javascript:void(0)" onclick="openProPricingModal()" style="color:var(--accent-gold); font-weight:700; text-decoration:none;" data-en="👑 Pro Upgrade & Pricing" data-tr="👑 Pro Üyelik & Fiyatlar" data-ar="👑 ترقية Pro والأسعار" data-uk="👑 Оновлення до Pro та ціни">👑 Pro Upgrade & Pricing</a></div>
+      <div style="margin-top:4px;"><a data-de="👑 Pro-Upgrade & Preise" href="#pricing-section" onclick="openProPricingModal()" style="color:var(--accent-gold); font-weight:700; text-decoration:none;" data-en="👑 Pro Upgrade & Pricing" data-tr="👑 Pro Üyelik & Fiyatlar" data-ar="👑 ترقية Pro والأسعار" data-uk="👑 Оновлення до Pro та ціни">👑 Pro Upgrade & Pricing</a></div>
       <div style="margin-top:4px;"><a data-de="Impressum & Datenschutz" href="legal.html" style="color:var(--text-muted); text-decoration:underline;" data-en="Impressum & Privacy" data-tr="Yasal Künye ve Gizlilik" data-ar="معلومات الناشر والخصوصية" data-uk="Вихідні дані та конфіденційність">Impressum & Privacy</a></div>
     </div>
   </div>
@@ -205,6 +209,21 @@
 
 <!-- Main Content -->
 <div class="main">
+
+  <!-- Clean Tab Switching: Study Portal View vs Landing / Marketing View -->
+  <div class="index-view-switcher" id="index-view-switcher" style="padding: 12px 24px 8px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; border-bottom:1px solid var(--border); background:rgba(0,0,0,0.15);">
+    <div style="display:inline-flex; background:var(--bg-secondary); padding:4px; border-radius:10px; border:1px solid var(--border);">
+      <button type="button" class="view-switch-btn active" id="btn-view-portal" onclick="setIndexView('portal')" style="padding:6px 14px; font-size:12px; font-weight:700; border-radius:8px; border:none; background:var(--accent-gold); color:#000; cursor:pointer;">
+        📚 <span data-de="Studienportal (Fokus)" data-en="Study Portal (Focus)" data-tr="Ders Çalışma Portalı" data-ar="بوابة الدراسة (تركيز)" data-uk="Навчальний портал (фокус)">Study Portal (Focus)</span>
+      </button>
+      <button type="button" class="view-switch-btn" id="btn-view-marketing" onclick="setIndexView('marketing')" style="padding:6px 14px; font-size:12px; font-weight:700; border-radius:8px; border:none; background:transparent; color:var(--text-secondary); cursor:pointer;">
+        🌐 <span data-de="Überblick & Kursinfo" data-en="Overview & Guide" data-tr="Genel Bakış & Rehber" data-ar="نظرة عامة ودليل" data-uk="Огляд та курс">Overview & Guide</span>
+      </button>
+    </div>
+    <div style="font-size:11.5px; color:var(--text-muted);">
+      <span id="index-view-hint">⚡ Aktive Lerneinheit &bull; Direkter Zugriff auf Lehrplan & Rechner</span>
+    </div>
+  </div>
 
   <!-- Hero -->
   <header class="hero" id="home">
@@ -387,8 +406,8 @@
             <h2 data-de="2.000+ deutsche Wörter Vokabeltrainer" style="font-size: 24px; margin-bottom: 8px; color: var(--text-primary);" data-en="2,000+ German Words Vocabulary Trainer" data-tr="2.000+ Almanca Kelime Antrenörü" data-ar="مدرب مفردات اللغة الألمانية بأكثر من 2,000 كلمة" data-uk="Тренажер німецьких слів на 2000+ слів">
               2,000+ German Words Vocabulary Trainer
             </h2>
-            <p data-de="Trainieren Sie den Kernwortschatz A1–B1 und fortgeschrittene B2-Decks mit intelligentem Wiederholungsschutz, Fehler-Wiederholungsbox, nativer Sprachausgabe, Streak-Tracking und 5 Quiz-Modi." style="font-size: 14px; color: var(--text-secondary); margin-bottom: 14px;" data-en="Drill essential A1–B1 vocabulary and Advanced B2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes." data-tr="Temel A1–B1 ve İleri B2 kelimelerini çalışın. Akıllı tekrar algoritması, hata tekrar havuzu, sesli telaffuz, günlük seri takibi ve 5 farklı test modu içerir." data-ar="تدرب على مفردات A1–B1 الأساسية ومجموعات B2 المتقدمة. يشمل تكراراً ذكياً لمنع التكرار، قائمة مراجعة الأخطاء، نطقاً صوتياً، متابعة السلسلة و5 أوضاع اختبار." data-uk="Вивчайте базові слова A1–B1 та просунуту колоду B2. Розумна ротація без повторів, черга помилок, аудіовимова, відстеження серії днів та 5 режимів тестів.">
-              Drill essential A1–B1 vocabulary and Advanced B2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes.
+            <p data-de="Trainieren Sie den Kernwortschatz A1–B1 sowie spezialisierte B2-, C1- und C2-Decks mit intelligentem Wiederholungsschutz, Fehler-Wiederholungsbox, nativer Sprachausgabe, Streak-Tracking und 5 Quiz-Modi." style="font-size: 14px; color: var(--text-secondary); margin-bottom: 14px;" data-en="Drill essential A1–B1 vocabulary as well as specialized B2, C1, and C2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes." data-tr="Temel A1–B1 kelimelerinin yanı sıra özel B2, C1 ve C2 destelerini çalışın. Akıllı tekrar algoritması, hata tekrar havuzu, sesli telaffuz, günlük seri takibi ve 5 farklı test modu içerir." data-ar="تدرب على مفردات A1–B1 الأساسية بالإضافة إلى مجموعات B2 و C1 و C2 المتخصصة. يشمل تكراراً ذكياً لمنع التكرار، قائمة مراجعة الأخطاء، نطقاً صوتياً، متابعة السلسلة و5 أوضاع اختبار." data-uk="Вивчайте базові слова A1–B1, а також спеціальні колоди B2, C1 та C2. Розумна ротація без повторів, черга помилок, аудіовимова, відстеження серії днів та 5 режимів тестів.">
+              Drill essential A1–B1 vocabulary as well as specialized B2, C1, and C2 decks. Features smart anti-repetition rotation, mistake review queue, audio speech synthesis, streak tracking, and 5 quiz modes.
             </p>
             <div style="display:flex; gap:16px; font-size:12px; color:var(--text-muted); font-weight:600; flex-wrap:wrap;">
               <span data-de="🎯 5 Quizmodi" data-en="🎯 5 Quiz Modes" data-tr="🎯 5 Test Modu" data-ar="🎯 5 أوضاع اختبار" data-uk="🎯 5 режимів тестів">🎯 5 Quiz Modes</span>
@@ -428,10 +447,16 @@
             <p data-de="Wissenschaftliche Texte, akademisches Schreiben und Hochschulterminologie." style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Scientific literature, academic writing, and university level terminology." data-tr="Üniversite eğitimi, akademik makaleler ve bilimsel terminoloji." data-ar="مصطلحات علمية، كتابة أكاديمية ومفردات الدراسة الجامعية." data-uk="Наукова література, академічне письмо та університетська термінологія.">Scientific literature, academic writing, and university level terminology.</p>
             <span data-de="Deck üben →" style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
           </a>
+          <a href="trainer.html?deck=c2" class="vocab-deck-card" style="display:block; text-decoration:none; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:20px; transition:all 0.2s ease;">
+            <div style="font-size:24px; margin-bottom:8px;">👑</div>
+            <h4 data-de="Meisterschafts-C2-Deck" style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="Mastery C2 Deck" data-tr="Ustalık C2 Destesi" data-ar="مجموعة C2 المتقنة" data-uk="Колода майстерності C2">Mastery C2 Deck</h4>
+            <p data-de="Muttersprachliche Nuancen, gehobene Stilistik und idiomatische Perfektion." style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Near-native nuances, elevated stylistics, and idiomatic perfection." data-tr="Ana dil yetkinliği, seçkin üslup, deyimsel ustalık ve edebi tartışma dili." data-ar="دقة في الفروق الدلالية، أسلوب بياني رفيع، وبلاغة اصطلاحية شبه أصلية." data-uk="Рівень носія, вишукана стилістика та ідіоматична довершеність.">Near-native nuances, elevated stylistics, and idiomatic perfection.</p>
+            <span data-de="Deck üben →" style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
+          </a>
           <a href="trainer.html?deck=all" class="vocab-deck-card" style="display:block; text-decoration:none; background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:20px; transition:all 0.2s ease;">
             <div style="font-size:24px; margin-bottom:8px;">🌐</div>
-            <h4 data-de="Alle kombiniert" style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="All Combined" data-tr="Tümü Bir Arada" data-ar="الكل مجتمعاً" data-uk="Усі разом">All Combined</h4>
-            <p data-de="Über 2.000 Wörter aller Niveaus mit intelligenter Wiederholungs-Sperre lernen." style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Complete 2,000+ words across all levels with randomized anti-repetition." data-tr="Tüm seviyelerdeki 2.000+ kelime ile kapsamlı hız ve tekrar antrenmanı." data-ar="أكثر من 2000 كلمة عبر جميع المستويات مع تكرار عشوائي ذكي." data-uk="Повні 2000+ слів усіх рівнів з розумним алгоритмом без повторів.">Complete 2,000+ words across all levels with randomized anti-repetition.</p>
+            <h4 data-de="Alle kombiniert (A1–C2)" style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:6px;" data-en="All Combined (A1–C2)" data-tr="Tümü Bir Arada (A1–C2)" data-ar="الكل مجتمعاً (A1–C2)" data-uk="Усі разом (A1–C2)">All Combined (A1–C2)</h4>
+            <p data-de="Über 2.300 Wörter aller Niveaus (A1 bis C2) mit intelligenter Wiederholungs-Sperre lernen." style="font-size:13px; color:var(--text-muted); line-height:1.5; margin-bottom:12px;" data-en="Complete 2,300+ words across all levels (A1 to C2) with randomized anti-repetition." data-tr="A1'den C2'ye tüm seviyelerdeki 2.300+ kelime ile kapsamlı hız ve tekrar antrenmanı." data-ar="أكثر من 2300 كلمة عبر جميع المستويات (A1 إلى C2) مع تكرار عشوائي ذكي." data-uk="Повні 2300+ слів усіх рівнів (від A1 до C2) з розумним алгоритмом без повторів.">Complete 2,300+ words across all levels (A1 to C2) with randomized anti-repetition.</p>
             <span data-de="Deck üben →" style="font-size:12px; font-weight:700; color:var(--accent-gold);" data-en="Practice Deck →" data-tr="Desteyi Çalış →" data-ar="تدرب على المجموعة ←" data-uk="Тренувати колоду →">Practice Deck →</span>
           </a>
         </div>
@@ -1055,7 +1080,7 @@
       <p data-de="Viel Erfolg bei Ihrer Prüfungsvorbereitung!" style="font-size:13px;color:var(--text-muted);margin-top:4px" data-en="Good luck with your exam preparation!" data-tr="Sınav hazırlığınızda başarılar dileriz!" data-ar="نتمنى لك التوفيق في تحضيرك للامتحان!" data-uk="Успіхів у підготовці до іспиту!">Good luck with your exam preparation!</p>
 
       <!-- Legal & Commercial Navigation Links -->
-      <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap; margin:24px 0 16px;">
+      <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap; margin:24px 0 12px;">
         <a href="javascript:void(0)" onclick="openProPricingModal()" style="font-size:13px; font-weight:700; color:var(--accent-gold);"><span data-de="👑 Pro-Pläne" data-en="👑 Pro Plans" data-tr="👑 Pro Paketler" data-ar="👑 الباقات الاحترافية" data-uk="👑 Pro плани">👑 Pro Plans</span></a>
         <a href="trainer.html" style="font-size:13px; font-weight:600; color:var(--accent-gold);"><span data-de="⚡ Wortschatz-Trainer" data-en="⚡ Wortschatz Trainer" data-tr="⚡ Kelime Antrenörü" data-ar="⚡ مدرب المفردات" data-uk="⚡ Тренажер слів">⚡ Wortschatz Trainer</span></a>
         <a href="javascript:void(0)" onclick="switchTrack('lid')" style="font-size:13px; font-weight:600; color:var(--text-primary);"><span data-de="🇩🇪 Leben in Deutschland" data-en="🇩🇪 Leben in Deutschland" data-tr="🇩🇪 Leben in Deutschland" data-ar="🇩🇪 الحياة في ألمانيا" data-uk="🇩🇪 Життя в Німеччині">🇩🇪 Leben in Deutschland</span></a>
@@ -1065,6 +1090,15 @@
         <a href="legal.html#tab-terms" style="font-size:13px; color:var(--text-secondary);"><span data-de="📜 Nutzungsbedingungen & Marken" data-en="📜 Terms & Trademarks" data-tr="📜 Kullanım Şartları ve Markalar" data-ar="📜 الشروط والعلامات التجارية" data-uk="📜 Умови та торговельні марки">📜 Terms & Trademarks</span></a>
         <a href="javascript:void(0)" onclick="openFeedbackModal()" style="font-size:13px; color:var(--text-secondary);"><span data-de="💬 Feedback" data-en="💬 Feedback" data-tr="💬 Geri Bildirim" data-ar="💬 ملاحظات" data-uk="💬 Відгук">💬 Feedback</span></a>
         <a href="https://github.com/egeengin/DeutschLernen" target="_blank" rel="noopener noreferrer" style="font-size:13px; color:var(--text-secondary);">GitHub Source</a>
+      </div>
+
+      <!-- Programmatic SEO & Practice Hubs -->
+      <div style="display:flex; justify-content:center; align-items:center; gap:16px; flex-wrap:wrap; margin:12px 0 16px; padding-top:12px; border-top:1px dashed var(--border);">
+        <span style="font-size:12px; color:var(--text-muted); font-weight:600;">Sınav Araçları & Rehberler:</span>
+        <a href="telc-b1-punkte-rechner.html" style="font-size:12px; font-weight:600; color:var(--accent-gold);" title="telc B1 Puan Hesaplama Aracı">🧮 telc B1 Puan Hesaplama</a>
+        <a href="telc-b1-beschwerdebrief-beispiel.html" style="font-size:12px; color:var(--text-secondary);" title="telc B1 Beschwerdebrief Örnekleri">✍️ B1 Beschwerdebrief Örnekleri</a>
+        <a href="telc-b1-einladung-schreiben.html" style="font-size:12px; color:var(--text-secondary);" title="telc B1 Einladung Schreiben Örnekleri">✉️ B1 Einladung Örnekleri</a>
+        <a href="leben-in-deutschland-nrw-fragen.html" style="font-size:12px; color:var(--text-secondary);" title="Leben in Deutschland NRW Soruları">🇩🇪 LiD NRW Soruları (310)</a>
       </div>
       
       <div style="margin-top: 24px; font-size: 12px; color: var(--text-muted); opacity: 0.85; line-height: 1.6; max-width: 680px; margin-left: auto; margin-right: auto; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; text-align: left;">
@@ -1231,6 +1265,20 @@
         </div>
       </div>
 
+      <!-- Goal 5: C2 Mastery -->
+      <div class="goal-card" id="card-goal-c2" data-goal-id="goal-c2" data-default-level="C2" onclick="selectGoalCard('goal-c2', 'C2')" tabindex="0" role="radio" aria-checked="false">
+        <div class="goal-card-top">
+          <span class="goal-icon">👑</span>
+          <span class="goal-cefr-badge badge-c2">C2 Mastery</span>
+        </div>
+        <h3 data-de="C2 Meisterschaft & Muttersprachlich" data-en="C2 Mastery & Native Fluency" data-tr="C2 Ustalık & Ana Dil Seviyesi" data-ar="C2 الإتقان والطلاقة شبه الأم" data-uk="C2 Майстерність та рівень носія">C2 Mastery & Native Fluency</h3>
+        <p data-de="Höchste sprachliche Kompetenz (Goethe C2 GDS / telc C2). Gehobene Redemittel, stilistischer Feinschliff und philosophisch-literarischer Diskurs." data-en="Highest linguistic competence (Goethe C2 GDS / telc C2). Elevated idioms, stylistic polish, and philosophical-literary discourse." data-tr="En yüksek dil yetkinliği (Goethe C2 GDS / telc C2). İleri düzey deyimler, üslup incelikleri ve edebi-felsefi tartışma dili." data-ar="أعلى مستويات الكفاءة اللغوية (Goethe C2 GDS / telc C2). تعبيرات بلاغية رفيعة ودقة أسلوبية ونقاش أدبي فلسفي." data-uk="Найвища мовна компетентність (Goethe C2 GDS / telc C2). Вишукані ідіоми, стилістична довершеність та філософсько-літературний дискурс.">Highest linguistic competence (Goethe C2 GDS / telc C2). Elevated idioms, stylistic polish, and philosophical-literary discourse.</p>
+        <div class="goal-perks">
+          <span data-de="✓ Meisterschafts-C2-Lerndeck" data-en="✓ Mastery C2 Study Deck" data-tr="✓ Ustalık C2 Çalışma Destesi" data-ar="✓ مجموعة C2 المتقنة للدراسة" data-uk="✓ Навчальна колода майстерності C2">✓ Mastery C2 Study Deck</span>
+          <span data-de="✓ Gehobene Redemittel & Stilistik" data-en="✓ Elevated Idioms & Stylistics" data-tr="✓ İleri Düzey Deyimler & Üslup" data-ar="✓ تعبيرات بلاغية رفيعة وأسلوب راقٍ" data-uk="✓ Вишукані вирази та стилістика">✓ Elevated Idioms & Stylistics</span>
+        </div>
+      </div>
+
       <!-- Goal 5: Rapid Vocab Trainer -->
       <div class="goal-card" id="card-goal-vocab" data-goal-id="goal-vocab" data-default-level="ALL" onclick="selectGoalCard('goal-vocab', 'ALL')" tabindex="0" role="radio" aria-checked="false">
         <div class="goal-card-top">
@@ -1270,7 +1318,8 @@
           <option data-de="B1 – Mittelstufe (telc / Goethe)" value="B1" selected data-en="B1 – Intermediate (telc / Goethe)" data-tr="B1 – Orta Seviye (telc / Goethe)" data-ar="B1 – متوسط (telc / Goethe)" data-uk="B1 – Середній (telc / Goethe)">B1 – Intermediate (telc / Goethe)</option>
           <option data-de="B2 – Obere Mittelstufe (Fortgeschritten)" value="B2" data-en="B2 – Upper Intermediate (Fortgeschritten)" data-tr="B2 – İleri Orta (Fortgeschritten)" data-ar="B2 – فوق المتوسط (Fortgeschritten)" data-uk="B2 – Вище середнього (Fortgeschritten)">B2 – Upper Intermediate (Fortgeschritten)</option>
           <option data-de="C1 – Fortgeschritten Akademisch (Hochschule)" value="C1" data-en="C1 – Advanced Academic (Hochschule)" data-tr="C1 – İleri Akademik (Hochschule)" data-ar="C1 – أكاديمي متقدم (Hochschule)" data-uk="C1 – Просунутий академічний (Hochschule)">C1 – Advanced Academic (Hochschule)</option>
-          <option data-de="Alle Niveaus kombiniert (A1–C1)" value="ALL" data-en="All Levels Combined (A1–C1)" data-tr="Tüm Seviyeler Bir Arada (A1–C1)" data-ar="جميع المستويات مجتمعة (A1–C1)" data-uk="Усі рівні разом (A1–C1)">All Levels Combined (A1–C1)</option>
+          <option data-de="C2 – Meisterschaft &amp; Muttersprachlich (Goethe / telc C2)" value="C2" data-en="C2 – Mastery &amp; Native Fluency (Goethe / telc C2)" data-tr="C2 – Ustalık &amp; Ana Dil Seviyesi (Goethe / telc C2)" data-ar="C2 – الإتقان والطلاقة شبه الأم (Goethe / telc C2)" data-uk="C2 – Майстерність та рівень носія (Goethe / telc C2)">C2 – Mastery &amp; Native Fluency (Goethe / telc C2)</option>
+          <option data-de="Alle Niveaus kombiniert (A1–C2)" value="ALL" data-en="All Levels Combined (A1–C2)" data-tr="Tüm Seviyeler Bir Arada (A1–C2)" data-ar="جميع المستويات مجتمعة (A1–C2)" data-uk="Усі рівні разом (A1–C2)">All Levels Combined (A1–C2)</option>
         </select>
       </div>
       <div class="entrance-control-group">
@@ -1283,6 +1332,20 @@
           <option value="uk">🇺🇦 Українська (Ukrainian)</option>
         </select>
       </div>
+    </div>
+
+    <!-- Placement Test Quick Trigger -->
+    <div class="entrance-placement-trigger-row" style="text-align:center; margin: 16px 0 8px;">
+      <button type="button" class="btn-placement-test-trigger" id="btn-entrance-placement-test" onclick="closeGoalModal(); openPlacementTestModal();" style="background: rgba(245, 158, 11, 0.12); border: 1px dashed var(--accent-gold); color: var(--accent-gold); padding: 9px 20px; border-radius: 20px; font-weight: 700; font-size: 13px; cursor: pointer; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 8px;">
+        <span>🎯</span>
+        <span data-de="Unsicher über Ihr Niveau? 3-Minuten-Einstufungstest starten →"
+              data-en="Unsure about your level? Take the 3-minute Placement Test →"
+              data-tr="Seviyenizden emin değil misiniz? 3 dakikalık Seviye Tespit Sınavını Yapın →"
+              data-ar="لست متأكداً من مستواك؟ ابدأ اختبار تحديد المستوى السريع (3 دقائق) ←"
+              data-uk="Не впевнені у своєму рівні? Пройдіть швидкий 3-хвилинний тест →">
+          Unsure about your level? Take the 3-minute Placement Test →
+        </span>
+      </button>
     </div>
 
     <!-- Modal Footer Actions -->
@@ -1319,6 +1382,7 @@
 </div>
 
 <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+<script src="js/storage-engine.js"></script>
 <script src="js/storageService.js"></script>
 <script src="js/firebaseConfig.js"></script>
 <script src="js/firebaseService.js"></script>
@@ -1330,6 +1394,7 @@
 <script src="js/sampleEvaluationData.js"></script>
 <script src="js/schreibenShowcase.js"></script>
 <script src="js/telcCalculator.js"></script>
+<script src="js/placementTest.js"></script>
 <script src="js/portal.js?v=2.5"></script>
 </body>
 </html>

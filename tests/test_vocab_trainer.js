@@ -178,6 +178,24 @@ global.VOCAB_C1.forEach(item => {
   assert(item.example_tr && item.example_en && item.example_ar && item.example_uk, `Missing example translation in C1 item: ${item.de}`);
 });
 
+console.log('▶ Evaluating data/vocab_c2.js...');
+eval(fs.readFileSync(path.join(ROOT_DIR, 'data', 'vocab_c2.js'), 'utf8'));
+assert(Array.isArray(global.VOCAB_C2), 'VOCAB_C2 must be an array');
+assert.strictEqual(global.VOCAB_C2.length, 100, 'VOCAB_C2 must contain exactly 100 items');
+global.VOCAB_C2.forEach(item => {
+  assert(item.tr && item.en && item.ar && item.uk, `Missing translation in C2 item: ${item.de}`);
+  assert(item.example_tr && item.example_en && item.example_ar && item.example_uk, `Missing example translation in C2 item: ${item.de}`);
+});
+
+console.log('▶ Evaluating data/vocab_nvv.js...');
+eval(fs.readFileSync(path.join(ROOT_DIR, 'data', 'vocab_nvv.js'), 'utf8'));
+assert(Array.isArray(global.VOCAB_NVV), 'VOCAB_NVV must be an array');
+assert.strictEqual(global.VOCAB_NVV.length, 60, 'VOCAB_NVV must contain exactly 60 items');
+global.VOCAB_NVV.forEach(item => {
+  assert(item.tr && item.en && item.ar && item.uk, `Missing translation in NVV item: ${item.de}`);
+  assert(item.example_tr && item.example_en && item.example_ar && item.example_uk, `Missing example translation in NVV item: ${item.de}`);
+});
+
 console.log('▶ Evaluating js/vocabTrainer.js...');
 eval(fs.readFileSync(path.join(ROOT_DIR, 'js', 'vocabTrainer.js'), 'utf8'));
 assert(global.VocabApp, 'VocabApp must be instantiated globally');
@@ -351,11 +369,21 @@ c1Deck.forEach(card => {
   assert.strictEqual(card.level, 'C1', `Deck card level must be C1, got ${card.level}`);
 });
 
-// 6c. Test 'all' deck includes C1 words
+// 6c. Test C2 level filtering
+global.VocabApp.settings.level = 'C2';
+const c2Pool = global.VocabApp.getAllWordsPool();
+assert(c2Pool.length >= 40, 'C2 pool must contain >= 40 words when level is C2');
+const c2Deck = global.VocabApp.deckGenerator.generateDeck(c2Pool, { level: 'C2', deckSize: 10 });
+assert(c2Deck.length > 0, 'Must generate a non-empty deck for C2 level');
+c2Deck.forEach(card => {
+  assert.strictEqual(card.level, 'C2', `Deck card level must be C2, got ${card.level}`);
+});
+
+// 6d. Test 'all' deck includes C1 and C2 words
 global.VocabApp.settings.level = 'ALL';
 global.VocabApp.settings.deck = 'all';
 const allPool = global.VocabApp.getAllWordsPool();
-assert(allPool.length > 2050, `'all' deck pool must include core + B2 + C1 words, got ${allPool.length}`);
+assert(allPool.length >= 2350, `'all' deck pool must include core + B2 + C1 + C2 words, got ${allPool.length}`);
 
 // 7. Test Multilingual Support (Arabic & Ukrainian)
 console.log('▶ Testing multilingual I18N and helper methods (AR & UK)...');
@@ -485,6 +513,10 @@ assert.doesNotThrow(() => {
   global.VocabApp.filterSearchResults('implizieren');
   assert(global.VocabApp.dom.searchResults.innerHTML.includes('implizieren'), 'Search for "implizieren" should return results');
 
+  // Query for C2 mastery words
+  global.VocabApp.filterSearchResults('oszillieren');
+  assert(global.VocabApp.dom.searchResults.innerHTML.includes('oszillieren'), 'Search for "oszillieren" should return C2 results');
+
   // Search across languages
   global.VocabApp.filterSearchResults('kitap');
   global.VocabApp.filterSearchResults('book');
@@ -506,6 +538,58 @@ assert.doesNotThrow(() => {
   assert(exportData.progress.hasOwnProperty(String(testWordId)), 'Export data must contain recorded test word');
   assert(exportData.sessions.totalSessions >= 1, 'Export data must include session history');
 }, 'Export data structure must be complete and valid');
+
+// 15. Test NVV Mastery Deck & Artikel-Trainer Mode
+console.log('▶ Testing NVV Mastery Deck integration and Artikel-Trainer mode...');
+assert.doesNotThrow(() => {
+  // Test NVV deck selection
+  global.VocabApp.settings.deck = 'nvv';
+  const nvvPool = global.VocabApp.getAllWordsPool();
+  assert.strictEqual(nvvPool.length, 60, 'NVV pool should contain exactly 60 items');
+  assert(nvvPool[0].id >= 40000, 'NVV word IDs should have 40000+ offset');
+  assert(nvvPool.some(w => w.de.includes('zur Verfügung')), 'NVV pool must include zur Verfügung');
+
+  // Test Artikel-Trainer Mode
+  global.VocabApp.settings.mode = 'artikel';
+  global.VocabApp.settings.deck = 'core';
+  const artikelDeck = global.VocabApp.deckGenerator.generateDeck(global.VocabApp.getAllWordsPool(), {
+    mode: 'artikel',
+    deckSize: 10
+  });
+  assert(artikelDeck.length > 0, 'Artikel deck should generate noun items');
+  artikelDeck.forEach(w => {
+    assert(/^(der|die|das)\s/i.test(w.de), `Artikel mode word must have leading article: ${w.de}`);
+  });
+
+  // Test rendering in artikel mode
+  global.VocabApp.currentDeck = [{
+    id: 1,
+    de: 'der Tisch, -e',
+    pos: 'noun',
+    level: 'A1',
+    tr: 'masa',
+    en: 'table',
+    ar: 'طاولة',
+    uk: 'стіл',
+    example: 'Das Buch liegt auf dem Tisch.'
+  }];
+  global.VocabApp.currentIndex = 0;
+  global.VocabApp.renderCurrentQuestion();
+
+  assert.strictEqual(global.VocabApp.dom.arenaWordDe.textContent, '___ Tisch, -e', 'Artikel prompt must omit leading article');
+  assert(global.VocabApp.dom.optionsGrid.classList.contains('artikel-grid'), 'Grid should have artikel-grid class');
+  
+  // Option buttons should be der, die, das
+  const btns = global.VocabApp.dom.optionsGrid.children;
+  assert.strictEqual(btns.length, 3, 'Artikel trainer must present 3 options: der, die, das');
+  
+  // Simulate clicking 'der'
+  const derBtn = btns.find(b => b.getAttribute('data-article') === 'der');
+  assert(derBtn, 'Must have a "der" button');
+  derBtn.click();
+  assert(derBtn.classList.contains('correct'), 'Clicking der for der Tisch should be correct');
+  assert.strictEqual(global.VocabApp.dom.arenaWordDe.textContent, 'der Tisch, -e', 'Full word must be revealed after answer');
+}, 'NVV and Artikel Trainer should operate flawlessly');
 
 console.log('✅ All Headless Frontend JS Unit Tests Passed successfully!');
 

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>telc B1 Punkte Rechner — Puan Hesaplama ve Not Barajı Simülatörü | DeutschLernen</title>
+  <meta name="description" content="Resmi telc Deutsch B1 sınav puanı hesaplama aracı. Leseverstehen, Sprachbausteine, Hörverstehen, Schreiben ve Sprechen puanlarınızı girin, geçme barajını ve notunuzu anında hesaplayın.">
+  <meta name="keywords" content="telc b1 punkterechner, telc b1 puan hesaplama, telc b1 baraj puanı, telc b1 kaç puanla geçilir, telc b1 bestehensrechner, telc b1 not skalası, telc b1 not hesaplama">
+  <link rel="canonical" href="https://egeengin.github.io/DeutschLernen/telc-b1-punkte-rechner.html">
+
+  <!-- OpenGraph & Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="telc B1 Punkte Rechner — Puan Hesaplama ve Not Barajı Simülatörü | DeutschLernen">
+  <meta property="og:description" content="Resmi telc Deutsch B1 sınav puanı hesaplama aracı. Leseverstehen, Sprachbausteine, Hörverstehen, Schreiben ve Sprechen puanlarınızı girin, geçme barajını ve notunuzu anında hesaplayın.">
+  <meta property="og:url" content="https://egeengin.github.io/DeutschLernen/telc-b1-punkte-rechner.html">
+  <meta property="og:image" content="https://egeengin.github.io/DeutschLernen/assets/icons/icon-512.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="telc B1 Punkte Rechner — Puan Hesaplama ve Not Barajı Simülatörü | DeutschLernen">
+  <meta name="twitter:description" content="Resmi telc Deutsch B1 sınav puanı hesaplama aracı. Leseverstehen, Sprachbausteine, Hörverstehen, Schreiben ve Sprechen puanlarınızı girin, geçme barajını ve notunuzu anında hesaplayın.">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/portal.css">
+  <link rel="stylesheet" href="css/seo.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "telc Deutsch B1 sınavından geçmek için kaç puan almak gerekir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "telc Deutsch B1 sınavını geçmek için toplam 300 puan üzerinden en az 180 puan (%60) almanız gerekir. Ancak kritik bir kural vardır: Hem Yazılı Sınavdan (225 puan üzerinden en az 135 puan / %60) HEM DE Sözlü Sınavdan (75 puan üzerinden en az 45 puan / %60) ayrı ayrı barajı aşmanız şarttır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yazılı sınavı geçip sözlüden kalırsam (veya tam tersi) ne olur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "telc sınav yönetmeliğine göre Teilprüfung (kısmi başarı) hakkınız oluşur. Sadece kaldığınız bölümü (örneğin yalnızca sözlü sınavı) bir sonraki takvim yılının sonuna kadar tekrar alabilirsiniz. Geçtiğiniz bölümün puanı saklanır ve tüm sınavı baştan almak zorunda kalmazsınız."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "telc B1 not skalası nasıl hesaplanır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "270 - 300 Puan: Sehr gut (1 - Pekiyi) | 240 - 269.5 Puan: Gut (2 - İyi) | 210 - 239.5 Puan: Befriedigend (3 - Orta) | 180 - 209.5 Puan: Ausreichend (4 - Yeterli / Geçti) | 0 - 179.5 Puan veya bir alt bölümden kalma: Nicht bestanden (Başarısız)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sprachbausteine bölümü tek başına geçme barajını etkiler mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sprachbausteine (Dil Yapıları) tek başına ayrı bir baraja sahip değildir; Leseverstehen (75 Pkt), Sprachbausteine (30 Pkt), Hörverstehen (75 Pkt) ve Schreiben (45 Pkt) birlikte 'Schriftliche Prüfung' (Yazılı Sınav) toplamını oluşturur. Bu dört bölümün toplamının en az 135 puan olması yeterlidir."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "telc B1 Punkte Rechner",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "All",
+  "url": "https://egeengin.github.io/DeutschLernen/telc-b1-punkte-rechner.html",
+  "description": "Resmi telc Deutsch B1 sınav puanı hesaplama aracı. Leseverstehen, Sprachbausteine, Hörverstehen, Schreiben ve Sprechen puanlarınızı girin, geçme barajını ve notunuzu anında hesaplayın.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Ana Sayfa",
+      "item": "https://egeengin.github.io/DeutschLernen/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "telc B1 Punkte Rechner",
+      "item": "https://egeengin.github.io/DeutschLernen/telc-b1-punkte-rechner.html"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+  <header class="seo-header">
+    <div class="seo-container seo-header-content">
+      <a href="index.html" class="seo-brand">
+        <span class="seo-brand-logo">🇩🇪</span>
+        <div class="seo-brand-text">
+          <span class="seo-brand-name">DeutschLernen</span>
+          <span class="seo-brand-badge">telc B1 & BAMF 310 Hub</span>
+        </div>
+      </a>
+      <nav class="seo-nav">
+        <a href="index.html" class="">🏠 Portal</a>
+        <a href="telc-b1-punkte-rechner.html" class="active">🎯 Punkterechner</a>
+        <a href="telc-b1-beschwerdebrief-beispiel.html" class="">✍️ Beschwerdebrief</a>
+        <a href="telc-b1-einladung-schreiben.html" class="">✉️ Einladung</a>
+        <a href="leben-in-deutschland-nrw-fragen.html" class="">🏛️ LiD Fragen</a>
+        <a href="trainer.html" class="seo-cta-btn">⚡ Wortschatz Trainer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="seo-container">
+    <!-- Breadcrumbs -->
+    <nav class="seo-breadcrumbs" aria-label="Breadcrumb">
+      <a href="index.html">Ana Sayfa</a>
+      <span>/</span>
+      <a href="dashboard.html">Araçlar</a>
+      <span>/</span>
+      <span style="color:var(--text-primary);">telc B1 Punkte Rechner</span>
+    </nav>
+
+    <!-- Hero -->
+    <section class="seo-hero">
+      <div class="seo-pill-tag">🎯 Resmi telc Sınav Simülatörü</div>
+      <h1 class="seo-title">telc B1 Punkte Rechner (Puan Hesaplama Aracı)</h1>
+      <p class="seo-lead">Resmi telc Deutsch B1 sınav yönetmeliğine uygun interaktif puan hesaplayıcı. 5 resmi sınav bölümündeki puanlarınızı veya doğru soru sayılarınızı girin; geçme durumunuzu, notunuzu (1-4) ve eksik puanlarınızı anında hesaplayın.</p>
+      
+      <div class="seo-meta-badges">
+        <span class="seo-meta-item">🏆 Toplam Puan: 300 Pkt.</span>
+        <span class="seo-meta-item">⚖️ Yazılı Barajı: 135 Pkt. (%60)</span>
+        <span class="seo-meta-item">🗣️ Sözlü Barajı: 45 Pkt. (%60)</span>
+        <span class="seo-meta-item">⭐ Geçme Barajı: 180 Pkt.</span>
+      </div>
+    </section>
+
+    <!-- Embedded Interactive TelcCalculator Widget Container -->
+    <section class="seo-section" style="margin-top: 10px;">
+      <div id="telc-calculator-container" style="background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-md); padding:28px; box-shadow:var(--shadow-card);">
+        <p style="text-align:center; color:var(--text-muted); padding:30px;">⏳ telc B1 Puan Hesaplayıcı yükleniyor...</p>
+      </div>
+    </section>
+
+    <!-- Official Scoring Rules & Table -->
+    <section class="seo-section">
+      <h2 class="seo-section-title">📊 telc Deutsch B1 Puanlama ve Not Dağılım Tablosu</h2>
+      <div class="seo-prose">
+        <p>telc Deutsch B1 sınavında başarılı sayılabilmek için adayın <strong>hem yazılı hem de sözlü sınavdan ayrı ayrı en az %60 başarı</strong> elde etmesi şarttır. İki bölümden birinden kalınması durumunda genel puan 180'in üzerinde olsa dahi sınav 'Nicht bestanden' (Başarısız) sayılır.</p>
+      </div>
+
+      <div class="seo-table-container">
+        <table class="seo-table">
+          <thead>
+            <tr>
+              <th>Sınav Bölümü</th>
+              <th>Soru / Görev</th>
+              <th>Maksimum Puan</th>
+              <th>Geçme Barajı</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Leseverstehen (Okuma)</strong></td>
+              <td>20 Soru (Teil 1, 2, 3)</td>
+              <td>75 Pkt. (Her soru 3.75 Pkt)</td>
+              <td rowspan="4" style="vertical-align:middle; background:rgba(59,130,246,0.06); font-weight:700; color:#60a5fa;">
+                Yazılı Toplam:<br>≥ 135 Pkt. (%60)
+              </td>
+            </tr>
+            <tr>
+              <td><strong>2. Sprachbausteine (Dil Yapıları)</strong></td>
+              <td>20 Soru (Gramer & Kelime)</td>
+              <td>30 Pkt. (Her soru 1.5 Pkt)</td>
+            </tr>
+            <tr>
+              <td><strong>3. Hörverstehen (Dinleme)</strong></td>
+              <td>20 Soru (Teil 1, 2, 3)</td>
+              <td>75 Pkt. (Her soru 3.75 Pkt)</td>
+            </tr>
+            <tr>
+              <td><strong>4. Schreiben (Yazma / Mektup)</strong></td>
+              <td>1 Mektup (3 Kriter × 3)</td>
+              <td>45 Pkt. (Kriter I, II, III)</td>
+            </tr>
+            <tr style="background:rgba(245,158,11,0.05); font-weight:700;">
+              <td><strong>Schriftliche Prüfung Toplamı</strong></td>
+              <td>Yazılı 4 Bölüm</td>
+              <td>225 Pkt.</td>
+              <td>≥ 135 Pkt. (%60)</td>
+            </tr>
+            <tr>
+              <td><strong>5. Sprechen (Sözlü Sınav)</strong></td>
+              <td>Teil 1 (15) + Teil 2 (30) + Teil 3 (30)</td>
+              <td>75 Pkt.</td>
+              <td style="background:rgba(16,185,129,0.06); font-weight:700; color:#34d399;">
+                Sözlü Toplam:<br>≥ 45 Pkt. (%60)
+              </td>
+            </tr>
+            <tr style="background:rgba(245,158,11,0.12); font-weight:800; font-size:15px;">
+              <td><strong>GENEL TOPLAM</strong></td>
+              <td>Tüm Sınav</td>
+              <td>300 Pkt.</td>
+              <td>≥ 180 Pkt. (%60)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Grade Brackets Table -->
+    <section class="seo-section">
+      <h2 class="seo-section-title">🏆 Resmi telc B1 Not Skalası (Noten)</h2>
+      <div class="seo-table-container">
+        <table class="seo-table">
+          <thead>
+            <tr>
+              <th>Puan Aralığı</th>
+              <th>Almanca Not</th>
+              <th>Türkçe Karşılığı</th>
+              <th>Derece</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>270,0 – 300,0 Pkt.</strong></td>
+              <td><span style="color:#10b981; font-weight:700;">Sehr gut</span></td>
+              <td>Pekiyi</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><strong>240,0 – 269,5 Pkt.</strong></td>
+              <td><span style="color:#3b82f6; font-weight:700;">Gut</span></td>
+              <td>İyi</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><strong>210,0 – 239,5 Pkt.</strong></td>
+              <td><span style="color:#f59e0b; font-weight:700;">Befriedigend</span></td>
+              <td>Orta</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><strong>180,0 – 209,5 Pkt.</strong></td>
+              <td><span style="color:#94a3b8; font-weight:700;">Ausreichend</span></td>
+              <td>Geçer / Yeterli</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td><strong>0 – 179,5 Pkt.</strong> (veya alt baraj altı)</td>
+              <td><span style="color:#ef4444; font-weight:700;">Nicht bestanden</span></td>
+              <td>Başarısız</td>
+              <td>–</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Retake Regulations Box -->
+    <section class="seo-highlight-card">
+      <div class="seo-highlight-title">💡 Tekrar Sınavı Kuralları (Teilprüfung Wiederholen)</div>
+      <div class="seo-prose" style="color:var(--text-secondary); font-size:14px;">
+        <p>Sınavda yalnızca yazılı bölümden geçip sözlüden kalırsanız veya tam tersi olursa tüm sınava tekrar girmenize gerek yoktur!</p>
+        <p><strong>Resmi telc Kuralı:</strong> Başarılı olduğunuz bölümün puanı <em>sınava girdiğiniz takvim yılını takip eden yılın sonuna kadar</em> geçerliliğini korur. Bu süre içinde yalnızca başarısız olduğunuz kısmi sınava (Teilprüfung) girerek sertifikanızı tamamlayabilirsiniz.</p>
+      </div>
+    </section>
+
+    <!-- Hub Practice Links -->
+    <section class="seo-section">
+      <h2 class="seo-section-title">🚀 Puanınızı Artırmak İçin Hemen Çalışmaya Başlayın</h2>
+      <div class="seo-highlight-grid">
+        <a href="trainer.html" class="seo-stat-item" style="text-decoration:none;">
+          <div class="seo-stat-label">Wortschatz</div>
+          <div class="seo-stat-value" style="font-size:17px; color:var(--accent-gold);">⚡ 2000+ Kelime Trainer</div>
+          <p style="font-size:12px; color:var(--text-secondary); margin-top:6px;">B1 kelime dağarcığınızı aralıklı tekrar sistemiyle güçlendirin.</p>
+        </a>
+        <a href="sprechen.html" class="seo-stat-item" style="text-decoration:none;">
+          <div class="seo-stat-label">Sprechen (75 Pkt)</div>
+          <div class="seo-stat-value" style="font-size:17px; color:#34d399;">🎙️ Konuşma Studio</div>
+          <p style="font-size:12px; color:var(--text-secondary); margin-top:6px;">Teil 1, 2 ve 3 için sesli kayıt yapın, AI geri bildirimi alın.</p>
+        </a>
+        <a href="lesen.html" class="seo-stat-item" style="text-decoration:none;">
+          <div class="seo-stat-label">Lesen (75 Pkt)</div>
+          <div class="seo-stat-value" style="font-size:17px; color:#60a5fa;">📖 Okuma Studio</div>
+          <p style="font-size:12px; color:var(--text-secondary); margin-top:6px;">Metin okuma, anlık sözlük ve soru çözme antrenmanı yapın.</p>
+        </a>
+        <a href="hoeren.html" class="seo-stat-item" style="text-decoration:none;">
+          <div class="seo-stat-label">Hören (75 Pkt)</div>
+          <div class="seo-stat-value" style="font-size:17px; color:#a855f7;">🎧 Dinleme Studio</div>
+          <p style="font-size:12px; color:var(--text-secondary); margin-top:6px;">Gerçek sınav ses kayıtlarıyla dinleme hızınızı geliştirin.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="seo-section">
+      <h2 class="seo-section-title">❓ Sıkça Sorulan Sorular</h2>
+      <details class="seo-faq-item">
+        <summary class="seo-faq-question">telc Deutsch B1 sınavından geçmek için kaç puan almak gerekir?</summary>
+        <div class="seo-faq-answer">telc Deutsch B1 sınavını geçmek için toplam 300 puan üzerinden en az 180 puan (%60) almanız gerekir. Ancak kritik bir kural vardır: Hem Yazılı Sınavdan (225 puan üzerinden en az 135 puan / %60) HEM DE Sözlü Sınavdan (75 puan üzerinden en az 45 puan / %60) ayrı ayrı barajı aşmanız şarttır.</div>
+      </details>
+      <details class="seo-faq-item">
+        <summary class="seo-faq-question">Yazılı sınavı geçip sözlüden kalırsam (veya tam tersi) ne olur?</summary>
+        <div class="seo-faq-answer">telc sınav yönetmeliğine göre Teilprüfung (kısmi başarı) hakkınız oluşur. Sadece kaldığınız bölümü (örneğin yalnızca sözlü sınavı) bir sonraki takvim yılının sonuna kadar tekrar alabilirsiniz. Geçtiğiniz bölümün puanı saklanır ve tüm sınavı baştan almak zorunda kalmazsınız.</div>
+      </details>
+      <details class="seo-faq-item">
+        <summary class="seo-faq-question">telc B1 not skalası nasıl hesaplanır?</summary>
+        <div class="seo-faq-answer">270 - 300 Puan: Sehr gut (1 - Pekiyi) | 240 - 269.5 Puan: Gut (2 - İyi) | 210 - 239.5 Puan: Befriedigend (3 - Orta) | 180 - 209.5 Puan: Ausreichend (4 - Yeterli / Geçti) | 0 - 179.5 Puan veya bir alt bölümden kalma: Nicht bestanden (Başarısız).</div>
+      </details>
+      <details class="seo-faq-item">
+        <summary class="seo-faq-question">Sprachbausteine bölümü tek başına geçme barajını etkiler mi?</summary>
+        <div class="seo-faq-answer">Sprachbausteine (Dil Yapıları) tek başına ayrı bir baraja sahip değildir; Leseverstehen (75 Pkt), Sprachbausteine (30 Pkt), Hörverstehen (75 Pkt) ve Schreiben (45 Pkt) birlikte 'Schriftliche Prüfung' (Yazılı Sınav) toplamını oluşturur. Bu dört bölümün toplamının en az 135 puan olması yeterlidir.</div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="seo-footer">
+    <div class="seo-container">
+      <div class="seo-footer-grid">
+        <div class="seo-footer-col">
+          <h4>📚 telc B1 Sınav Rehberleri</h4>
+          <ul>
+            <li><a href="telc-b1-beschwerdebrief-beispiel.html">telc B1 Beschwerdebrief Örnekleri</a></li>
+            <li><a href="telc-b1-einladung-schreiben.html">telc B1 Einladung Schreiben Rehberi</a></li>
+            <li><a href="telc-b1-punkte-rechner.html">telc B1 Puan Hesaplama Aracı</a></li>
+            <li><a href="sprechen.html">B1 Mündliche Prüfung Studio</a></li>
+            <li><a href="lesen.html">B1 Leseverstehen Studio</a></li>
+            <li><a href="hoeren.html">B1 Hörverstehen Studio</a></li>
+          </ul>
+        </div>
+        <div class="seo-footer-col">
+          <h4>🏛️ Leben in Deutschland (LiD)</h4>
+          <ul>
+            <li><a href="leben-in-deutschland-nrw-fragen.html">Kuzey Ren-Vestfalya (NRW) Soruları</a></li><li><a href="leben-in-deutschland-bayern-fragen.html">Bavyera (Bayern) Soruları</a></li><li><a href="leben-in-deutschland-berlin-fragen.html">Berlin Soruları</a></li><li><a href="leben-in-deutschland-baden-wuerttemberg-fragen.html">Baden-Württemberg Soruları</a></li><li><a href="leben-in-deutschland-brandenburg-fragen.html">Brandenburg Soruları</a></li><li><a href="leben-in-deutschland-bremen-fragen.html">Bremen Soruları</a></li><li><a href="leben-in-deutschland-hamburg-fragen.html">Hamburg Soruları</
+          </ul>
+        </div>
+        <div class="seo-footer-col">
+          <h4>⚡ İnteraktif Çalışma Araçları</h4>
+          <ul>
+            <li><a href="trainer.html">2.000+ Kelime Wortschatz Trainer</a></li>
+            <li><a href="dashboard.html">Kişisel İlerleme Dashboard'u</a></li>
+            <li><a href="index.html#schreiben-showcase-section">Yapay Zeka Mektup Değerlendirici</a></li>
+            <li><a href="legal.html">Yasal Bilgiler & Impressum</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="seo-footer-disclaimer">
+        <p>© 2026 DeutschLernen. Tüm hakları saklıdır. Çevrimdışı ve gizlilik öncelikli Almanca sınav hazırlık platformu.</p>
+        <p style="margin-top: 6px;">Yasal Uyarı: telc, telc gGmbH şirketinin tescilli ticari markasıdır. BAMF, Almanya Federal Göç ve Mülteciler Dairesi'nin kısaltmasıdır. DeutschLernen bağımsız bir eğitim platformu olup, telc gGmbH veya BAMF ile resmi bir ortaklığı veya yetkilendirmesi bulunmamaktadır.</p>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/telcCalculator.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof TelcCalculator !== 'undefined' && typeof TelcCalculator.renderTelcCalculator === 'function') {
+      TelcCalculator.renderTelcCalculator('telc-calculator-container');
+    }
+  });
+</script>
+</body>
+</html>

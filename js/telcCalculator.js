@@ -535,6 +535,14 @@
     if (elSchreiben) elSchreiben.textContent = vals.schreiben;
     if (elSprechen) elSprechen.textContent = vals.sprechen;
 
+    if (typeof StorageEngine !== 'undefined') {
+      StorageEngine.setExamScore('lesen', vals.lesen);
+      StorageEngine.setExamScore('sprachbausteine', vals.sprachbausteine);
+      StorageEngine.setExamScore('hoeren', vals.hoeren);
+      StorageEngine.setExamScore('schreiben', vals.schreiben);
+      StorageEngine.setExamScore('sprechen', vals.sprechen);
+    }
+
     updateScorecardDOM();
   }
 
@@ -563,9 +571,26 @@
         <span style="font-size:20px; font-weight:700; color:rgba(255,255,255,0.6);">/ 300 ${t('ptsLabel')} (${res.overall.percentage}%)</span>
       </div>
 
-      <div style="font-size:14px; font-weight:700; color:${badgeColor}; margin-bottom:20px;">
+      <div style="font-size:14px; font-weight:700; color:${badgeColor}; margin-bottom:14px;">
         ${t('gradeLabel')} ${res.overall.gradeName}
       </div>
+
+      ${res.overall.total >= 180 && !res.overall.passed ? `
+      <!-- Sub-threshold Critical Warning -->
+      <div class="telc-threshold-warning" style="background:rgba(239,68,68,0.18); border:2px solid #ef4444; border-radius:10px; padding:12px 14px; margin-bottom:18px; color:#fee2e2; font-size:12.5px; line-height:1.5;">
+        <div style="display:flex; align-items:center; gap:8px; font-weight:800; font-size:13.5px; color:#fca5a5; margin-bottom:4px;">
+          <span>⚠️</span> <span>NICHT BESTANDEN trotz ≥ 180 Punkten (60%)!</span>
+        </div>
+        <div>
+          Ihre Gesamtpunktzahl liegt zwar bei <strong>${res.overall.total} / 300 Punkten</strong>, die Prüfung gilt jedoch als <strong>nicht bestanden</strong>.
+          Nach offizieller telc-Prüfungsordnung müssen <strong>sowohl</strong> der schriftliche Teil (mindestens 135 Pkt.) <strong>als auch</strong> der mündliche Teil (mindestens 45 Pkt.) unabhängig voneinander bestanden werden:
+          <ul style="margin:6px 0 0 18px; padding:0;">
+            ${!res.schriftlich.passed ? `<li style="color:#fca5a5; font-weight:700;">❌ Schriftlicher Teil: ${res.schriftlich.total} / 225 Pkt. (Fehlen: ${Math.round((135 - res.schriftlich.total)*10)/10} Pkt.)</li>` : `<li style="color:#86efac;">✅ Schriftlicher Teil: ${res.schriftlich.total} / 225 Pkt. (≥ 135 Pkt. erreicht)</li>`}
+            ${!res.muendlich.passed ? `<li style="color:#fca5a5; font-weight:700;">❌ Mündlicher Teil: ${res.muendlich.total} / 75 Pkt. (Fehlen: ${Math.round((45 - res.muendlich.total)*10)/10} Pkt.)</li>` : `<li style="color:#86efac;">✅ Mündlicher Teil: ${res.muendlich.total} / 75 Pkt. (≥ 45 Pkt. erreicht)</li>`}
+          </ul>
+        </div>
+      </div>
+      ` : ''}
 
       <!-- Bars for Written vs Oral sub-exams -->
       <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:20px;">
@@ -650,12 +675,20 @@
     const banner = document.getElementById('calc-alert-banner');
 
     try {
-      // Check saved practice scores
-      const sLesen = localStorage.getItem('telc_lesen_score');
-      const sSprach = localStorage.getItem('telc_sprachbausteine_score');
-      const sHoeren = localStorage.getItem('telc_hoeren_score');
-      const sSchreiben = localStorage.getItem('telc_letter_score');
-      const sSprechen = localStorage.getItem('telc_voice_score');
+      let sLesen = localStorage.getItem('telc_lesen_score');
+      let sSprach = localStorage.getItem('telc_sprachbausteine_score');
+      let sHoeren = localStorage.getItem('telc_hoeren_score');
+      let sSchreiben = localStorage.getItem('telc_letter_score');
+      let sSprechen = localStorage.getItem('telc_voice_score');
+
+      if (typeof StorageEngine !== 'undefined') {
+        const scores = StorageEngine.getExamScores();
+        if (scores.lesen) sLesen = scores.lesen;
+        if (scores.sprachbausteine) sSprach = scores.sprachbausteine;
+        if (scores.hoeren) sHoeren = scores.hoeren;
+        if (scores.schreiben) sSchreiben = scores.schreiben;
+        if (scores.sprechen) sSprechen = scores.sprechen;
+      }
 
       let foundAny = false;
       const current = getSliderValues();
