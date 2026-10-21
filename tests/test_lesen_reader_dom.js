@@ -301,4 +301,32 @@ assert.strictEqual(app.activeTrack, 'lesen', 'Active track must switch back to l
 assert.strictEqual(app.timerSeconds, 12 * 60, 'Lesen timer must return to 12 minutes');
 console.log('✅ Sprachbausteine track switching, gap selection, and timer transitions verified.');
 
-console.log('🎉 All 7 Lesen Studio & Sprachbausteine headless JS unit tests passed successfully!');
+// 8. Test Question Answer Locking & Single-Choice Immutability
+app.userAnswers = {};
+const mockQuestion = { id: 101, correct: 0, options: [{ de: 'Richtig' }, { de: 'Falsch' }], explanation: { en: 'Test' } };
+const mockButtons = [
+  { className: 'ls-opt-btn', classList: { add(c) { this[c] = true; }, remove(c) { delete this[c]; } }, disabled: false, querySelector() { return null; } },
+  { className: 'ls-opt-btn', classList: { add(c) { this[c] = true; }, remove(c) { delete this[c]; } }, disabled: false, querySelector() { return null; } }
+];
+const mockCard = {
+  querySelector(sel) {
+    if (sel.startsWith('#opt-grid-')) return { querySelectorAll() { return mockButtons; } };
+    if (sel.startsWith('#exp-')) return { style: {}, innerHTML: '' };
+    return null;
+  }
+};
+
+// First click: select Richtig (0)
+app.handleAnswer(mockQuestion, 0, mockCard);
+assert.strictEqual(app.userAnswers[101], 0, 'Answer 0 must be recorded');
+assert.strictEqual(mockButtons[0].classList['selected-correct'], true, 'Button 0 must be selected-correct');
+assert.strictEqual(mockButtons[0].disabled, true, 'Buttons must be disabled after answer');
+assert.strictEqual(mockButtons[1].disabled, true, 'Buttons must be disabled after answer');
+
+// Second click: user tries to click Falsch (1)
+app.handleAnswer(mockQuestion, 1, mockCard);
+assert.strictEqual(app.userAnswers[101], 0, 'Answer must remain 0 and not be overwritten');
+assert.strictEqual(mockButtons[1].classList['selected-wrong'], undefined, 'Button 1 must not be marked selected-wrong on subsequent click');
+console.log('✅ Question answer locking and single-choice immutability verified.');
+
+console.log('🎉 All 8 Lesen Studio & Sprachbausteine headless JS unit tests passed successfully!');

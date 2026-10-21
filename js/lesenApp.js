@@ -1294,6 +1294,9 @@
     }
 
     handleAnswer(question, selectedIndex, qCard) {
+      if (this.userAnswers[question.id] !== undefined) {
+        return; // Guard: once answered, ignore any subsequent clicks
+      }
       this.userAnswers[question.id] = selectedIndex;
 
       const optGrid = qCard.querySelector(`#opt-grid-${question.id}`);
@@ -1302,6 +1305,7 @@
 
       buttons.forEach((btn, idx) => {
         btn.classList.add('locked');
+        btn.disabled = true;
         if (idx === question.correct) {
           btn.classList.add('selected-correct');
         } else if (idx === selectedIndex) {

@@ -613,6 +613,12 @@ body.ls-body {
   transform: translateX(2px);
 }
 
+.ls-opt-btn.locked,
+.ls-opt-btn:disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
 .ls-opt-btn.selected-correct {
   background: rgba(16, 185, 129, 0.15) !important;
   border-color: var(--ls-accent-success) !important;

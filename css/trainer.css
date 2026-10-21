@@ -78,6 +78,78 @@ body {
   outline-offset: 3px;
 }
 
+/* Universal Visibility Utility */
+.hidden {
+  display: none !important;
+}
+
+/* Completion & Empty State Celebration Cards */
+.completion-card, .empty-state-card {
+  grid-column: 1 / -1;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  animation: fadeInScale 0.35s ease-out;
+}
+
+.completion-emoji, .empty-state-emoji {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.completion-card h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.accuracy-score {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+.accuracy-score strong {
+  color: var(--accent-green);
+  font-size: 18px;
+}
+
+.completion-btn {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #000;
+  font-weight: 800;
+  font-size: 15px;
+  padding: 12px 28px;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.3);
+}
+
+.completion-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(245, 158, 11, 0.45);
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /* App Header */
 .app-header {
   position: sticky;
@@ -1694,6 +1766,16 @@ body {
 .btn-typein-submit:hover {
   filter: brightness(1.1);
   transform: translateY(-1px);
+}
+
+.btn-typein-submit.btn-typein-next {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+}
+
+.btn-typein-submit.btn-typein-next:hover {
+  background: linear-gradient(135deg, #059669, #047857);
 }
 
 .btn-typein-dontknow {

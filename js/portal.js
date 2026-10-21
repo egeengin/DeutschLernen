@@ -1360,6 +1360,9 @@ function filterCards() {
 }
 
 function setLang(lang) {
+  if (!['en', 'tr', 'ar', 'uk'].includes(lang)) {
+    lang = 'en';
+  }
   currentLang = lang;
   localStorage.setItem('site_lang', lang);
   localStorage.setItem('telc_lang', lang);
@@ -1375,7 +1378,7 @@ function setLang(lang) {
                     document.querySelector(`.lang-btn:${lang === 'en' ? 'first-child' : 'last-child'}`);
   if (activeBtn) activeBtn.classList.add('active');
   
-  ['de', 'en', 'tr', 'ar', 'uk'].forEach(l => {
+  ['en', 'tr', 'ar', 'uk'].forEach(l => {
     const btn = document.getElementById(`fc-btn-${l}`);
     if (btn) {
       if (l === lang) btn.classList.add('primary');

@@ -1368,7 +1368,11 @@
       if (this.dom.typeinForm) {
         this.dom.typeinForm.addEventListener('submit', (e) => {
           e.preventDefault();
-          this.handleTypeinSubmit();
+          if (this.hasAnswered) {
+            this.nextCard();
+          } else {
+            this.handleTypeinSubmit();
+          }
         });
       }
 
@@ -1815,6 +1819,11 @@
           setTimeout(() => {
             try { this.dom.typeinInput.focus(); } catch (e) {}
           }, 60);
+        }
+        if (this.dom.btnTypeinSubmit) {
+          this.dom.btnTypeinSubmit.textContent = texts.checkBtn || 'Check';
+          this.dom.btnTypeinSubmit.classList.remove('btn-typein-next');
+          this.dom.btnTypeinSubmit.disabled = false;
         }
         if (this.dom.btnTypeinDontKnow) {
           this.dom.btnTypeinDontKnow.disabled = false;
@@ -2279,6 +2288,14 @@
       this.dom.typeinInput.disabled = true;
       if (this.dom.btnTypeinDontKnow) this.dom.btnTypeinDontKnow.disabled = true;
 
+      const texts = I18N[this.settings.lang] || I18N.en;
+      if (this.dom.btnTypeinSubmit) {
+        this.dom.btnTypeinSubmit.innerHTML = `<span>${texts.nextWord || 'Sıradaki Kelime'}</span> ➔`;
+        this.dom.btnTypeinSubmit.classList.add('btn-typein-next');
+        this.dom.btnTypeinSubmit.disabled = false;
+        try { this.dom.btnTypeinSubmit.focus(); } catch (e) {}
+      }
+
       // Smart normalization: check exact or match without grammatical article
       const normalize = (str) => {
         return (str || '')
@@ -2294,8 +2311,6 @@
       const targetClean = normalize(item.de);
       const targetVariants = (item.de || '').split(/[\/,;]/).map(v => normalize(v)).filter(Boolean);
       const isMatch = (userClean === targetClean || targetVariants.includes(userClean) || rawInput.trim().toLowerCase() === item.de.trim().toLowerCase());
-
-      const texts = I18N[this.settings.lang] || I18N.en;
 
       if (isMatch) {
         this.sessionCorrect++;
@@ -2360,6 +2375,13 @@
       }
 
       const texts = I18N[this.settings.lang] || I18N.en;
+      if (this.dom.btnTypeinSubmit) {
+        this.dom.btnTypeinSubmit.innerHTML = `<span>${texts.nextWord || 'Sıradaki Kelime'}</span> ➔`;
+        this.dom.btnTypeinSubmit.classList.add('btn-typein-next');
+        this.dom.btnTypeinSubmit.disabled = false;
+        try { this.dom.btnTypeinSubmit.focus(); } catch (e) {}
+      }
+
       if (this.dom.typeinFeedback) {
         this.dom.typeinFeedback.innerHTML = `<span style="color:var(--accent-gold);">💡 ${texts.typeinRevealed || 'Doğru Cevap'}: <strong>${item.de}</strong></span>`;
       }
@@ -2464,21 +2486,37 @@
     }
 
     renderDeckCompletion() {
-      const texts = I18N[this.settings.lang];
+      const texts = I18N[this.settings.lang] || I18N.en;
       const total = this.sessionCorrect + this.sessionWrong;
       const pct = total > 0 ? Math.round((this.sessionCorrect / total) * 100) : 100;
 
       this.dom.progressBar.style.width = '100%';
+      if (this.dom.cardCounter) {
+        this.dom.cardCounter.textContent = `🎉 ${texts.finishDeck || 'Deste Tamamlandı!'}`;
+      }
+
+      // Hide question prompt card and other mode containers so no stale question or badges are displayed
+      if (this.dom.mainPromptCard) this.dom.mainPromptCard.classList.add('hidden');
+      if (this.dom.flashcardContainer) this.dom.flashcardContainer.classList.add('hidden');
+      if (this.dom.typeinContainer) this.dom.typeinContainer.classList.add('hidden');
+      if (this.dom.dontknowContainer) this.dom.dontknowContainer.classList.add('hidden');
+      if (this.dom.explanationCard) this.dom.explanationCard.classList.add('hidden');
+      if (this.dom.nextButton) this.dom.nextButton.classList.add('hidden');
+
+      if (this.dom.arenaGenderBadge) this.dom.arenaGenderBadge.style.display = 'none';
+      if (this.dom.arenaVerbFormsContainer) this.dom.arenaVerbFormsContainer.style.display = 'none';
+
+      // Cleanly show completion card in optionsGrid
+      this.dom.optionsGrid.classList.remove('hidden');
+      this.dom.optionsGrid.classList.remove('artikel-grid');
       this.dom.optionsGrid.innerHTML = `
         <div class="completion-card">
-          <h2>🎉 ${texts.finishDeck}</h2>
-          <p class="accuracy-score">${texts.accuracy}: <strong>${pct}%</strong> (${this.sessionCorrect}/${total})</p>
-          <button id="btn-restart-deck" class="primary-btn">${texts.startQuiz}</button>
+          <div class="completion-emoji">🎉</div>
+          <h2>${texts.finishDeck || 'Deste Tamamlandı!'}</h2>
+          <p class="accuracy-score">${texts.accuracy || 'Doğruluk Oranı'}: <strong>${pct}%</strong> (${this.sessionCorrect}/${total})</p>
+          <button id="btn-restart-deck" class="completion-btn">${texts.startQuiz || 'Yeni Teste Başla'}</button>
         </div>
       `;
-      this.dom.arenaWordDe.textContent = "Fertig!";
-      this.dom.explanationCard.classList.add('hidden');
-      this.dom.nextButton.classList.add('hidden');
 
       document.getElementById('btn-restart-deck')?.addEventListener('click', () => {
         this.startNewDeck();
@@ -2486,14 +2524,23 @@
     }
 
     renderEmptyState() {
-      const texts = I18N[this.settings.lang];
+      const texts = I18N[this.settings.lang] || I18N.en;
+      if (this.dom.mainPromptCard) this.dom.mainPromptCard.classList.add('hidden');
+      if (this.dom.flashcardContainer) this.dom.flashcardContainer.classList.add('hidden');
+      if (this.dom.typeinContainer) this.dom.typeinContainer.classList.add('hidden');
+      if (this.dom.dontknowContainer) this.dom.dontknowContainer.classList.add('hidden');
+      if (this.dom.explanationCard) this.dom.explanationCard.classList.add('hidden');
+      if (this.dom.nextButton) this.dom.nextButton.classList.add('hidden');
+
+      this.dom.optionsGrid.classList.remove('hidden');
+      this.dom.optionsGrid.classList.remove('artikel-grid');
       this.dom.optionsGrid.innerHTML = `
         <div class="empty-state-card">
-          <p>${texts.emptyReview}</p>
-          <button id="btn-switch-core" class="primary-btn">${texts.coreDeck}</button>
+          <div class="empty-state-emoji">🌟</div>
+          <p>${texts.emptyReview || 'Tekrar edilecek hatalı kelimeniz bulunmuyor!'}</p>
+          <button id="btn-switch-core" class="completion-btn">${texts.coreDeck || 'Ana Kelime Listesine Dön'}</button>
         </div>
       `;
-      this.dom.arenaWordDe.textContent = "Super!";
       document.getElementById('btn-switch-core')?.addEventListener('click', () => {
         if (this.dom.modeChips && this.dom.modeChips[0]) {
           this.dom.modeChips[0].click();
