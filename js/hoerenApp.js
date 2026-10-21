@@ -43,7 +43,11 @@
       testLabel: "Practice Test",
       modeStrictExam: "Official Exam Mode",
       modeStudy: "Interactive Study Mode",
-      listenEvidenceBtn: "Listen to Evidence"
+      listenEvidenceBtn: "Listen to Evidence",
+      btnTransToggle: "Translation",
+      btnTranscriptToggle: "Transcript",
+      btnToggleAllTrans: "All Translations",
+      btnToggleAllTranscripts: "All Transcripts"
     },
     tr: {
       brandTitle: "Dinleme Stüdyosu & Sesli Sınav",
@@ -76,7 +80,11 @@
       testLabel: "Deneme Sınavı",
       modeStrictExam: "Resmi Sınav Modu",
       modeStudy: "İnteraktif Çalışma Modu",
-      listenEvidenceBtn: "Kanıt Cümlesini Dinle"
+      listenEvidenceBtn: "Kanıt Cümlesini Dinle",
+      btnTransToggle: "Çeviri",
+      btnTranscriptToggle: "Ses Metni",
+      btnToggleAllTrans: "Tüm Çeviriler",
+      btnToggleAllTranscripts: "Tüm Ses Metinleri"
     },
     ar: {
       brandTitle: "استوديو الاستماع والامتحان الصوتي",
@@ -109,7 +117,11 @@
       testLabel: "الاختبار التدريبي",
       modeStrictExam: "وضع الامتحان الرسمي",
       modeStudy: "وضع الدراسة التفاعلي",
-      listenEvidenceBtn: "الاستماع لجملة الدليل"
+      listenEvidenceBtn: "الاستماع لجملة الدليل",
+      btnTransToggle: "الترجمة",
+      btnTranscriptToggle: "النص الصوتي",
+      btnToggleAllTrans: "كافة الترجمات",
+      btnToggleAllTranscripts: "كافة النصوص"
     },
     uk: {
       brandTitle: "Студія аудіювання та звуковий іспит",
@@ -142,7 +154,11 @@
       testLabel: "Тренувальний тест",
       modeStrictExam: "Офіційний режим іспиту",
       modeStudy: "Інтерактивний навчальний режим",
-      listenEvidenceBtn: "Слухати цитату-доказ"
+      listenEvidenceBtn: "Слухати цитату-доказ",
+      btnTransToggle: "Переклад",
+      btnTranscriptToggle: "Транскрипт",
+      btnToggleAllTrans: "Усі переклади",
+      btnToggleAllTranscripts: "Усі транскрипти"
     }
   };
 
@@ -157,6 +173,11 @@
       if (!['en', 'tr', 'ar', 'uk'].includes(this.lang)) {
         this.lang = 'en';
       }
+
+      // Translation and transcript display states
+      this.showTranslations = {}; // { [itemId]: boolean }
+      this.showTranscripts = {};   // { [itemId]: boolean }
+      this.allTranslationsVisible = false;
 
       // Simulator mode ('exam' | 'study')
       this.mode = 'exam';
@@ -489,7 +510,14 @@
         this.dom.testTitle.textContent = `${test.title[this.lang] || test.title.de} — ${pName}`;
       }
       if (this.dom.partInstruction) {
-        this.dom.partInstruction.textContent = (partData.instruction && partData.instruction[this.lang]) || partData.instruction.de;
+        const deInstr = partData.instruction.de || '';
+        const transInstr = (this.lang !== 'de' && partData.instruction[this.lang]) ? partData.instruction[this.lang] : '';
+        this.dom.partInstruction.innerHTML = `
+          <div class="hr-instruction-box">
+            <div class="hr-instruction-main">${deInstr}</div>
+            ${transInstr ? `<div class="hr-instruction-trans"><span class="hr-trans-badge">${this.lang.toUpperCase()}</span> ${transInstr}</div>` : ''}
+          </div>
+        `;
       }
 
       this.updatePlayerControls(partData);
@@ -664,12 +692,23 @@
       // Item selection bar for Teil 1 & Teil 3
       if (this.currentPart !== 'teil2' && partData.items.length > 1) {
         const itemBar = document.createElement('div');
-        itemBar.style.cssText = 'display:flex; gap:6px; margin-bottom:16px; flex-wrap:wrap;';
+        itemBar.style.cssText = 'display:flex; gap:6px; margin-bottom:12px; flex-wrap:wrap; align-items:center;';
 
         partData.items.forEach((item, idx) => {
           const btn = document.createElement('button');
-          btn.className = `hr-opt-btn ${idx === this.activeItemIndex ? 'selected' : ''}`;
-          btn.innerHTML = `<strong>Aufgabe ${item.id}</strong>`;
+          const isSel = idx === this.activeItemIndex;
+          let extraClass = '';
+          let indicator = '';
+
+          if (this.isGraded) {
+            const chosen = this.userAnswers[item.id];
+            const isCor = chosen === item.correct;
+            extraClass = isCor ? 'has-correct' : 'has-wrong';
+            indicator = isCor ? ' ✓' : ' ✗';
+          }
+
+          btn.className = `hr-opt-btn ${isSel ? 'selected' : ''} ${extraClass}`;
+          btn.innerHTML = `<strong>Aufgabe ${item.id}</strong>${indicator}`;
           btn.addEventListener('click', () => {
             this.stopAudio();
             this.activeItemIndex = idx;
@@ -680,6 +719,45 @@
         });
 
         this.dom.questionsContainer.appendChild(itemBar);
+      }
+
+      // Quick toolbar: Toggle all translations & transcripts
+      const toolbarDiv = document.createElement('div');
+      toolbarDiv.style.cssText = 'display:flex; justify-content:flex-end; gap:8px; margin-bottom:12px; flex-wrap:wrap;';
+      const canShowTranscripts = (this.isGraded || this.mode === 'study');
+
+      toolbarDiv.innerHTML = `
+        <button type="button" class="hr-btn-trans-toggle" id="btn-toggle-all-trans">
+          🌐 <span>${this.allTranslationsVisible ? (texts.btnToggleAllTrans + ' ✕') : texts.btnToggleAllTrans}</span>
+        </button>
+        ${canShowTranscripts ? `
+          <button type="button" class="hr-btn-transcript-toggle" id="btn-toggle-all-transcripts">
+            📜 <span>${texts.btnToggleAllTranscripts}</span>
+          </button>
+        ` : ''}
+      `;
+      this.dom.questionsContainer.appendChild(toolbarDiv);
+
+      const btnAllTrans = toolbarDiv.querySelector('#btn-toggle-all-trans');
+      if (btnAllTrans) {
+        btnAllTrans.addEventListener('click', () => {
+          this.allTranslationsVisible = !this.allTranslationsVisible;
+          partData.items.forEach(it => {
+            this.showTranslations[it.id] = this.allTranslationsVisible;
+          });
+          this.renderQuestions(partData);
+        });
+      }
+
+      const btnAllTranscripts = toolbarDiv.querySelector('#btn-toggle-all-transcripts');
+      if (btnAllTranscripts) {
+        btnAllTranscripts.addEventListener('click', () => {
+          const anyHidden = partData.items.some(it => !this.showTranscripts[it.id]);
+          partData.items.forEach(it => {
+            this.showTranscripts[it.id] = anyHidden;
+          });
+          this.renderQuestions(partData);
+        });
       }
 
       // Render Item Cards
@@ -693,13 +771,25 @@
         const chosen = this.userAnswers[item.id];
         const isCorrect = chosen === item.correct;
 
+        // German-first statement or question, with optional translation
+        let deQuestionOrStatement = '';
+        let transQuestionOrStatement = '';
         let optionsHTML = '';
 
         if (this.currentPart === 'teil3') {
           // A / B / C options
-          const qText = (item.question && item.question[this.lang]) || item.question.de;
-          optionsHTML = `<div style="font-weight:700; margin-bottom:10px; font-size:14px;">${qText}</div>`;
-          optionsHTML += `<div style="display:flex; flex-direction:column; gap:8px;">`;
+          deQuestionOrStatement = (item.question && item.question.de) || '';
+          transQuestionOrStatement = (this.lang !== 'de' && item.question && item.question[this.lang]) ? item.question[this.lang] : '';
+
+          optionsHTML = `
+            <div class="hr-statement-de">${deQuestionOrStatement}</div>
+            ${transQuestionOrStatement ? `
+              <div class="hr-statement-trans hr-trans-${item.id}" style="display:${this.showTranslations[item.id] ? 'block' : 'none'};">
+                <span class="hr-trans-badge">${this.lang.toUpperCase()}</span> ${transQuestionOrStatement}
+              </div>
+            ` : ''}
+            <div style="display:flex; flex-direction:column; gap:8px;">
+          `;
 
           item.options.forEach(opt => {
             const isSel = chosen === opt.key;
@@ -709,17 +799,26 @@
               else if (isSel && !isCorrect) statusClass = 'opt-wrong';
             }
             optionsHTML += `
-              <button type="button" class="hr-opt-btn ${isSel ? 'selected' : ''} ${statusClass}" data-key="${opt.key}" style="text-align:left;">
+              <button type="button" class="hr-opt-btn ${isSel ? 'selected' : ''} ${statusClass}" data-key="${opt.key}" style="text-align:left; min-height:44px;">
                 <strong>${opt.key.toUpperCase()})</strong> ${opt.text}
               </button>
             `;
           });
           optionsHTML += `</div>`;
         } else {
-          // Richtig / Falsch buttons
-          const stmtText = (item.statement && item.statement[this.lang]) || item.statement.de;
-          optionsHTML = `<div style="font-weight:700; margin-bottom:10px; font-size:14px;">${stmtText}</div>`;
-          optionsHTML += `<div class="hr-options-group">`;
+          // Teil 1 & Teil 2: Richtig / Falsch buttons
+          deQuestionOrStatement = item.statement.de;
+          transQuestionOrStatement = (this.lang !== 'de' && item.statement && item.statement[this.lang]) ? item.statement[this.lang] : '';
+
+          optionsHTML = `
+            <div class="hr-statement-de">${deQuestionOrStatement}</div>
+            ${transQuestionOrStatement ? `
+              <div class="hr-statement-trans hr-trans-${item.id}" style="display:${this.showTranslations[item.id] ? 'block' : 'none'};">
+                <span class="hr-trans-badge">${this.lang.toUpperCase()}</span> ${transQuestionOrStatement}
+              </div>
+            ` : ''}
+            <div class="hr-options-group">
+          `;
 
           ['richtig', 'falsch'].forEach(choice => {
             const isSel = chosen === choice;
@@ -728,19 +827,23 @@
               if (choice === item.correct) statusClass = 'opt-correct';
               else if (isSel && !isCorrect) statusClass = 'opt-wrong';
             }
-            const label = choice === 'richtig' ? texts.rightChoice : texts.wrongChoice;
+            const labelMain = choice === 'richtig' ? 'Richtig' : 'Falsch';
+            const subLabel = this.lang !== 'de' ? (choice === 'richtig' ? (texts.rightChoice.replace(/^Richtig\s*/, '')) : (texts.wrongChoice.replace(/^Falsch\s*/, ''))) : '';
             optionsHTML += `
-              <button type="button" class="hr-opt-btn ${isSel ? 'selected' : ''} ${statusClass}" data-key="${choice}">
-                ${label}
+              <button type="button" class="hr-opt-btn ${isSel ? 'selected' : ''} ${statusClass}" data-key="${choice}" style="flex:1; min-height:44px;">
+                <span>${labelMain}</span>
+                ${subLabel ? `<small style="display:inline-block; margin-left:4px; opacity:0.8; font-weight:normal;">${subLabel}</small>` : ''}
               </button>
             `;
           });
           optionsHTML += `</div>`;
         }
 
-        // Transcript and explanation (revealed after grading)
+        // Transcript and explanation (revealed in study mode or after grading)
         let transcriptHTML = '';
-        if (this.isGraded) {
+        const shouldShowTranscript = (this.isGraded && this.showTranscripts[item.id] !== false) || (this.mode === 'study' && this.showTranscripts[item.id]);
+
+        if (shouldShowTranscript) {
           const ruleText = (item.explanation && item.explanation[this.lang]) || (item.explanation && item.explanation.de) || '';
           const fullAudio = item.audioText || partData.audioText || '';
           const evidenceText = item.evidence || '';
@@ -754,33 +857,57 @@
 
           transcriptHTML = `
             <div class="hr-transcript-box" data-question-id="${item.id}">
-              <div style="font-weight:800; color:var(--hr-text-gold); margin-bottom:6px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+              <div style="font-weight:800; color:var(--hr-text-gold); margin-bottom:8px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
                 <span>📜 ${texts.tabTranscript} & ${texts.evidenceLabel}</span>
-                <button type="button" class="hr-btn-evidence-play" data-speak="${encodeURIComponent(evidenceText || fullAudio)}" style="padding:4px 10px; font-size:11.5px; background:rgba(251,191,36,0.2); border:1px solid var(--hr-accent-warning); color:var(--hr-text-gold); border-radius:4px; cursor:pointer; font-weight:700;">
-                  🔊 ${texts.listenEvidenceBtn || 'Beweissatz anhören'}
-                </button>
+                <div style="display:flex; gap:6px;">
+                  <button type="button" class="hr-btn-evidence-play" data-speak="${encodeURIComponent(evidenceText || fullAudio)}" style="padding:4px 10px; font-size:11.5px; background:rgba(251,191,36,0.2); border:1px solid var(--hr-accent-warning); color:var(--hr-text-gold); border-radius:4px; cursor:pointer; font-weight:700;">
+                    🔊 ${texts.listenEvidenceBtn || 'Beweissatz anhören'}
+                  </button>
+                  <button type="button" class="hr-btn-full-audio-play" data-speak="${encodeURIComponent(fullAudio)}" style="padding:4px 10px; font-size:11.5px; background:rgba(139,92,246,0.2); border:1px solid rgba(139,92,246,0.4); color:var(--hr-accent-purple); border-radius:4px; cursor:pointer; font-weight:700;">
+                    ▶ ${texts.btnPlay}
+                  </button>
+                </div>
               </div>
-              <div style="margin-bottom:8px; line-height:1.6;">
+              <div style="margin-bottom:8px; line-height:1.65; font-size:13.5px; color:var(--hr-text-main);">
                 "${highlightedAudio}"
               </div>
-              <div style="font-weight:700; color:${isCorrect ? 'var(--hr-accent-success)' : 'var(--hr-accent-danger)'};">
-                ${isCorrect ? '✅ ' + texts.correctLabel : '❌ ' + texts.correctLabel + ': ' + item.correct.toUpperCase()}
-              </div>
-              <div style="margin-top:6px; font-size:12.5px;">${ruleText}</div>
+              ${this.isGraded ? `
+                <div style="font-weight:700; margin-top:8px; color:${isCorrect ? 'var(--hr-accent-success)' : 'var(--hr-accent-danger)'};">
+                  ${isCorrect ? '✅ ' + texts.correctLabel : '❌ ' + texts.correctLabel + ': ' + item.correct.toUpperCase()}
+                </div>
+                ${ruleText ? `<div style="margin-top:6px; font-size:12.5px; color:var(--hr-text-muted); line-height:1.5;">💡 ${ruleText}</div>` : ''}
+              ` : ''}
             </div>
           `;
         }
 
+        const showTranscriptBtn = (this.isGraded || this.mode === 'study');
+
         card.innerHTML = `
-          <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:12.5px; font-weight:800; color:var(--hr-text-gold);">
-            <span>Aufgabe ${item.id}</span>
-            <span>3.75 Pkt</span>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:8px;">
+            <div style="font-size:13px; font-weight:800; color:var(--hr-text-gold); display:flex; align-items:center; gap:8px;">
+              <span>Aufgabe ${item.id}</span>
+              <span style="font-size:11px; background:rgba(251,191,36,0.15); padding:2px 6px; border-radius:4px;">3.75 Pkt</span>
+              ${this.isGraded ? (isCorrect ? '<span style="color:var(--hr-accent-success); font-weight:bold;">✓ Richtig</span>' : '<span style="color:var(--hr-accent-danger); font-weight:bold;">✗ Falsch</span>') : ''}
+            </div>
+            <div style="display:flex; gap:6px; align-items:center;">
+              ${transQuestionOrStatement ? `
+                <button type="button" class="hr-btn-trans-toggle btn-card-trans" data-qid="${item.id}" title="${texts.btnTransToggle}">
+                  🌐 <span>${this.showTranslations[item.id] ? (this.lang.toUpperCase() + ' Gizle') : (this.lang.toUpperCase() + ' Çeviri')}</span>
+                </button>
+              ` : ''}
+              ${showTranscriptBtn ? `
+                <button type="button" class="hr-btn-transcript-toggle btn-card-transcript" data-qid="${item.id}" title="${texts.btnTranscriptToggle}">
+                  📜 <span>${shouldShowTranscript ? (texts.tabTranscript + ' ✕') : texts.tabTranscript}</span>
+                </button>
+              ` : ''}
+            </div>
           </div>
           ${optionsHTML}
           ${transcriptHTML}
         `;
 
-        // Bind clicks
+        // Bind clicks on option buttons
         card.querySelectorAll('.hr-opt-btn').forEach(btn => {
           btn.addEventListener('click', () => {
             const k = btn.getAttribute('data-key');
@@ -789,8 +916,38 @@
           });
         });
 
+        // Bind translation toggle button
+        const transBtn = card.querySelector('.btn-card-trans');
+        if (transBtn) {
+          transBtn.addEventListener('click', () => {
+            this.showTranslations[item.id] = !this.showTranslations[item.id];
+            this.renderQuestions(partData);
+          });
+        }
+
+        // Bind transcript toggle button
+        const transcriptBtn = card.querySelector('.btn-card-transcript');
+        if (transcriptBtn) {
+          transcriptBtn.addEventListener('click', () => {
+            if (this.isGraded) {
+              this.showTranscripts[item.id] = !(this.showTranscripts[item.id] !== false);
+            } else {
+              this.showTranscripts[item.id] = !this.showTranscripts[item.id];
+            }
+            this.renderQuestions(partData);
+          });
+        }
+
         // Bind evidence speech click
         card.querySelectorAll('.hr-btn-evidence-play').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const speakText = decodeURIComponent(btn.getAttribute('data-speak') || '');
+            this.speakSnippet(speakText);
+          });
+        });
+
+        // Bind full audio speech click
+        card.querySelectorAll('.hr-btn-full-audio-play').forEach(btn => {
           btn.addEventListener('click', () => {
             const speakText = decodeURIComponent(btn.getAttribute('data-speak') || '');
             this.speakSnippet(speakText);
@@ -825,6 +982,16 @@
     gradeExam() {
       this.isGraded = true;
       const test = this.dataset[this.currentTestIndex];
+
+      // Auto-open transcripts for all items so learner can study answers
+      ['teil1', 'teil2', 'teil3'].forEach(pKey => {
+        const part = test[pKey];
+        if (part && part.items) {
+          part.items.forEach(it => {
+            this.showTranscripts[it.id] = true;
+          });
+        }
+      });
 
       // Route missed questions to Fehlerheft
       if (typeof StorageEngine !== 'undefined') {

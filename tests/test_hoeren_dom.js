@@ -165,5 +165,13 @@ app.loadPart('teil3');
 assert.strictEqual(app.currentPart, 'teil3');
 console.log('✅ Part navigation and transitions verified.');
 
+// 6. Test Translation and Transcript State Machine
+assert(typeof app.showTranslations === 'object', 'app.showTranslations must exist');
+assert(typeof app.showTranscripts === 'object', 'app.showTranscripts must exist');
+app.gradeExam();
+assert.strictEqual(app.showTranscripts[41], true, 'Transcripts must auto-open upon grading for item 41');
+assert.strictEqual(app.showTranscripts[56], true, 'Transcripts must auto-open upon grading for item 56');
+console.log('✅ Grading transcript auto-reveal and translation state verified.');
+
 console.log('🎉 All Hörverstehen Studio unit tests passed successfully!');
 process.exit(0);
