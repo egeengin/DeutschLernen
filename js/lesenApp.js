@@ -52,7 +52,9 @@
       sbModePractice: "⚡ Interactive",
       sbModeExam: "📄 Exam View",
       sbDockGap: "Gap",
-      sbClearGap: "Clear"
+      sbClearGap: "Clear",
+      btnToggleTrans: "Translation",
+      btnAllTrans: "All Translations"
     },
     tr: {
       brandTitle: "Okuma Stüdyosu & Sınav Okuyucu",
@@ -97,7 +99,9 @@
       sbModePractice: "⚡ İnteraktif",
       sbModeExam: "📄 Sınav Görünümü",
       sbDockGap: "Boşluk",
-      sbClearGap: "Temizle"
+      sbClearGap: "Temizle",
+      btnToggleTrans: "Çeviri",
+      btnAllTrans: "Tüm Çeviriler"
     },
     ar: {
       brandTitle: "استوديو القراءة وقارئ الامتحان",
@@ -136,13 +140,15 @@
       sbCheckBtn: "✓ التحقق من الإجابات",
       sbResetBtn: "↺ إعادة ضبط",
       sbScorePassed: "ناجح! (معيار telc B1 >= 60%)",
-      sbScoreFail: "بحاجة للمراجعة (< 60%). ادرس الشروحات النحوية!",
+      sbScoreFail: "بحاجة للمراجعة (< 60%). ادرس الشроحات النحوية!",
       sbWordBankHeading: "صندوق الكلمات (a–o): اختر الكلمة المناسبة لكل فراغ",
       sbSelectPlaceholder: "-- اختر الكلمة --",
       sbModePractice: "⚡ تفاعلي",
       sbModeExam: "📄 وضع الامتحان",
       sbDockGap: "فراغ",
-      sbClearGap: "إفراغ"
+      sbClearGap: "إفراغ",
+      btnToggleTrans: "الترجمة",
+      btnAllTrans: "كافة الترجمات"
     },
     uk: {
       brandTitle: "Студія читання та екзаменаційний рідер",
@@ -187,7 +193,9 @@
       sbModePractice: "⚡ Інтерактивно",
       sbModeExam: "📄 Режим іспиту",
       sbDockGap: "Пропуск",
-      sbClearGap: "Очистити"
+      sbClearGap: "Очистити",
+      btnToggleTrans: "Переклад",
+      btnAllTrans: "Усі переклади"
     }
   };
 
@@ -209,6 +217,8 @@
 
       // Quiz state (Leseverstehen)
       this.userAnswers = {}; // { questionId: selectedIndex }
+      this.showQuestionTranslations = {}; // { questionId: boolean }
+      this.allQuestionTranslationsVisible = false;
 
       // Sprachbausteine state
       this.activeTrack = 'lesen'; // 'lesen' or 'sprachbausteine'
@@ -1232,30 +1242,68 @@
       const langFlags = { tr: '🇹🇷', en: '🇬🇧', ar: '🇸🇦', uk: '🇺🇦' };
       const flag = langFlags[this.lang] || '🌐';
 
+      // Toolbar for questions: Toggle all translations
+      if (unit.questions && unit.questions.length > 0) {
+        const topBar = document.createElement('div');
+        topBar.style.cssText = 'display:flex; justify-content:flex-end; gap:8px; margin-bottom:12px;';
+        topBar.innerHTML = `
+          <button type="button" class="ls-btn-trans-toggle" id="btn-ls-toggle-all-trans">
+            🌐 <span>${this.allQuestionTranslationsVisible ? (texts.btnAllTrans + ' ✕') : texts.btnAllTrans}</span>
+          </button>
+        `;
+        this.dom.questionsContainer.appendChild(topBar);
+
+        topBar.querySelector('#btn-ls-toggle-all-trans').addEventListener('click', () => {
+          this.allQuestionTranslationsVisible = !this.allQuestionTranslationsVisible;
+          unit.questions.forEach(q => {
+            this.showQuestionTranslations[q.id] = this.allQuestionTranslationsVisible;
+          });
+          this.renderQuestions();
+        });
+      }
+
       unit.questions.forEach((q, qIndex) => {
         const qCard = document.createElement('div');
         qCard.className = 'ls-q-card';
         qCard.id = `q-card-${q.id}`;
 
         const germanPrompt = q.prompt.de;
-        const transPrompt = (this.lang !== 'de' && q.prompt[this.lang] && q.prompt[this.lang] !== germanPrompt)
-          ? `<div class="ls-q-prompt-sub">${flag} ${q.prompt[this.lang]}</div>`
-          : '';
+        const hasTranslation = (this.lang !== 'de' && q.prompt[this.lang] && q.prompt[this.lang] !== germanPrompt);
+        const isTransVisible = !!this.showQuestionTranslations[q.id];
 
         qCard.innerHTML = `
           <div class="ls-q-header">
             <span class="ls-q-number">Aufgabe ${qIndex + 1}</span>
-            <button class="ls-btn-locate" data-para="${q.paragraphRef}">
-              ${texts.locateBtn}
-            </button>
+            <div style="display:flex; gap:6px; align-items:center;">
+              ${hasTranslation ? `
+                <button type="button" class="ls-btn-trans-toggle btn-card-qtrans" data-qid="${q.id}">
+                  🌐 <span>${isTransVisible ? (this.lang.toUpperCase() + ' Gizle') : (this.lang.toUpperCase() + ' Çeviri')}</span>
+                </button>
+              ` : ''}
+              <button type="button" class="ls-btn-locate" data-para="${q.paragraphRef}">
+                ${texts.locateBtn}
+              </button>
+            </div>
           </div>
           <div class="ls-q-prompt">
             <div class="ls-q-prompt-de">${germanPrompt}</div>
-            ${transPrompt}
+            ${hasTranslation ? `
+              <div class="ls-q-prompt-sub" style="display:${isTransVisible ? 'block' : 'none'};">
+                ${flag} <strong style="color:var(--ls-accent-primary);">${this.lang.toUpperCase()}:</strong> ${q.prompt[this.lang]}
+              </div>
+            ` : ''}
           </div>
           <div class="ls-options-grid" id="opt-grid-${q.id}"></div>
           <div class="ls-explanation-box" id="exp-${q.id}" style="display:none;"></div>
         `;
+
+        const qTransBtn = qCard.querySelector('.btn-card-qtrans');
+        if (qTransBtn) {
+          qTransBtn.addEventListener('click', () => {
+            this.showQuestionTranslations[q.id] = !this.showQuestionTranslations[q.id];
+            this.renderQuestions();
+          });
+        }
 
         const optGrid = qCard.querySelector(`#opt-grid-${q.id}`);
         const letters = ['A', 'B', 'C', 'D'];

@@ -577,11 +577,50 @@ body.ls-body {
   margin-bottom: 12px;
 }
 
+.ls-q-prompt-de {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--ls-text-main);
+}
+
 .ls-q-prompt-sub {
-  font-size: 12.5px;
+  font-size: 13px;
   color: var(--ls-text-muted);
-  margin-top: 4px;
+  margin-top: 8px;
   font-weight: 500;
+  background: rgba(59, 130, 246, 0.08);
+  border-left: 3px solid var(--ls-accent-primary);
+  border-radius: var(--ls-radius-sm);
+  padding: 6px 10px;
+  line-height: 1.5;
+  animation: lsFadeIn 0.2s ease-in-out;
+}
+
+.ls-btn-trans-toggle {
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: #60a5fa;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: var(--ls-transition);
+}
+
+.ls-btn-trans-toggle:hover {
+  background: rgba(59, 130, 246, 0.25);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+@keyframes lsFadeIn {
+  from { opacity: 0; transform: translateY(-3px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .ls-options-grid {
