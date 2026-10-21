@@ -337,6 +337,26 @@ assert.ok(storedInvoices.length > 0, 'Completed invoice should be persisted in l
 assert.strictEqual(storedInvoices[0].tierId, 'pass-30', 'Persisted invoice should match tier ID');
 console.log('✅ Digital EU-Compliant Invoice & Accounting Persistence Verified.');
 
+// 10b. Test Fair Pricing Promo Coupons & 100% VIP Grants (§ 11 PAngV / § 5 UWG)
+selectProPlan('pass-30', 40, 'PRUEFUNG2026');
+assert.ok(modal.innerHTML.includes('PRUEFUNG2026'), 'Coupon input should display applied promo code');
+assert.strictEqual(global.window._activeCheckoutCoupon.discountPercent, 40, 'Promo coupon should apply 40% discount');
+assert.strictEqual(domElementsById['checkout-total-price'].textContent, '14,40 €', 'Discounted total should equal 14,40 €');
+
+// Test 100% VIP Voucher Checkout
+applyCheckoutCoupon('pass-30', 'VIPFREE');
+assert.strictEqual(global.window._activeCheckoutCoupon.isFree, true, 'VIP coupon should set isFree to true');
+assert.strictEqual(domElementsById['checkout-total-price'].textContent, '0,00 €', 'VIP total price must be 0,00 €');
+
+const creditsBeforeVip = getLetterCredits();
+if (domElementsById['bgb-waiver-checkbox']) domElementsById['bgb-waiver-checkbox'].checked = true;
+confirmInstantDemoOrder('pass-30');
+assert.strictEqual(getLetterCredits(), creditsBeforeVip + 50, 'VIP grant should add 50 AI letter credits');
+const updatedInvoices = JSON.parse(localStorage.getItem('deutschlernen_invoices') || '[]');
+assert.strictEqual(updatedInvoices[0].price, '0,00 €', 'VIP invoice price must reflect 0,00 €');
+console.log('✅ German Fair Pricing Promo Coupons & 100% VIP Grants (§ 11 PAngV) Verified.');
+
+
 // 11. Test Cloudflare Worker AI Examiner Payload & Freemium Paywall Rendering
 const mockWorkerFreePayload = {
   rawText: "Liebe Marianne,\n\nGestern ich habe einen Brief geschrieben weil ich bin krank.\n\nViele Grüße,\nAli",

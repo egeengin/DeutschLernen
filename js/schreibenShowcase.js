@@ -2434,20 +2434,36 @@ function openLemonSqueezyCheckout(tierId = 'pass-30') {
   }
 }
 
-function openLicenseActivationModal() {
+async function openLicenseActivationModal() {
   const currentKey = (typeof StorageService !== 'undefined') ? StorageService.getLicenseKey() : (localStorage.getItem('deutschlernen_pro_license') || '');
-  const key = prompt('Enter your LemonSqueezy License Key from your purchase confirmation email:', currentKey);
+  const key = prompt('LemonSqueezy Lizenzschlüssel eingeben (aus der Kaufbestätigungs-E-Mail):', currentKey);
   if (key !== null) {
     const trimmed = key.trim();
     if (trimmed) {
+      if (typeof StorageEngine !== 'undefined' && typeof StorageEngine.activateRemoteLicense === 'function') {
+        try {
+          const res = await StorageEngine.activateRemoteLicense(trimmed);
+          if (res && !res.success) {
+            if (res.error === 'MAX_DEVICES_EXCEEDED') {
+              alert('⚠️ Gerätelimit erreicht: Maximal 2 aktive Geräte / Browser-Instanzen gleichzeitig zulässig (§ Lizenzbestimmungen). Bitte deaktiviere ein anderes Gerät.');
+              return;
+            } else if (res.error === 'INVALID_LICENSE') {
+              alert('❌ Ungültiger Lizenzschlüssel. Bitte prüfe den Schlüssel aus deiner Bestätigungs-E-Mail.');
+              return;
+            }
+          }
+        } catch (e) {
+          console.warn('Remote license verification failed, proceeding with local activation:', e);
+        }
+      }
       if (typeof StorageService !== 'undefined') {
         StorageService.setLicenseKey(trimmed);
       } else {
         localStorage.setItem('deutschlernen_pro_license', trimmed);
       }
-      alert('✅ Pro Exam Pass License activated! Your evaluations are now fully unlocked.');
+      alert('✅ Pro Exam Pass Lizenz aktiviert! 7-Tage-Offline-Gültigkeit und KI-Evaluationen sind jetzt freigeschaltet.');
       const textarea = document.getElementById('student-letter-textarea');
-      if (textarea && textarea.value.trim().length > 20) {
+      if (textarea && textarea.value.trim().length > 20 && typeof submitDirectAiGrading === 'function') {
         submitDirectAiGrading();
       }
     } else {
@@ -2456,10 +2472,11 @@ function openLicenseActivationModal() {
       } else {
         localStorage.removeItem('deutschlernen_pro_license');
       }
-      alert('License removed.');
+      alert('Lizenz entfernt.');
     }
   }
 }
+
 
 function renderPaywallExhaustedModal(errJson) {
   let modal = document.getElementById('pro-pricing-modal');
@@ -2770,8 +2787,38 @@ function redeemAccessCode(rawCode) {
   const code = (rawCode || '').trim().toUpperCase();
   const lang = getActiveLanguage();
   if (!code) {
-    const msg = { en: "Please enter a voucher or access code.", tr: "Lütfen bir kupon veya erişim kodu girin.", ar: "يرجى إدخال رمز قسيمة صالح.", uk: "Будь ласка, введіть код доступу або ваучер." };
-    alert(msg[lang] || msg.en);
+    const msg = {
+      de: "Bitte gib einen Gutschein- oder Zugangscode ein.",
+      en: "Please enter a voucher or access code.",
+      tr: "Lütfen bir kupon veya erişim kodu girin.",
+      ar: "يرجى إدخال رمز قسيمة صالح.",
+      uk: "Будь ласка, введіть код доступу або ваучер."
+    };
+    alert(msg[lang] || msg.de || msg.en);
+    return;
+  }
+
+  // 100% Free VIP Educational Grants
+  if (code === 'VIPFREE' || code === 'FRIENDSVIP') {
+    grantLetterCredits(50, 'voucher_' + code);
+    if (typeof StorageService !== 'undefined' && typeof StorageService.setLicenseKey === 'function') {
+      StorageService.setLicenseKey('VIP-' + code, 'pass-90');
+    }
+    const msgs = {
+      de: `🎉 100% VIP-Bildungsgutschein "${code}" eingelöst! 50 KI-Credits und Pro-Status freigeschaltet.`,
+      en: `🎉 100% VIP Educational Voucher "${code}" redeemed! 50 AI Letter Grading Credits added & Pro unlocked.`,
+      tr: `🎉 100% VIP Eğitim Kuponu "${code}" etkinleştirildi! 50 Yapay Zeka Kredisi tanımlandı.`,
+      ar: `🎉 تم تفعيل قسيمة كبار الشخصيات المجانية "${code}" بنجاح! تمت إضافة 50 رصيداً.`,
+      uk: `🎉 100% VIP-ваучер "${code}" активовано! 50 кредитів додано до вашого рахунку.`
+    };
+    alert(msgs[lang] || msgs.de || msgs.en);
+    closeProPricingModal();
+    return;
+  }
+
+  // 40% Promotional Discount Codes (§ 11 PAngV)
+  if (code === 'PRUEFUNG2026' || code === 'HERBST40') {
+    selectProPlan('pass-30', 40, code);
     return;
   }
 
@@ -2783,21 +2830,23 @@ function redeemAccessCode(rawCode) {
   if (isTutor || code === 'PRO2026' || code === 'TELCB1' || code === 'B1PASS' || code === 'CITIZEN2026' || code.length >= 6) {
     grantLetterCredits(creditsToAdd, 'voucher_' + code);
     const msgs = {
+      de: `🎉 Zugangscode "${code}" erfolgreich eingelöst! ${creditsToAdd} KI-Credits wurden deinem Konto gutgeschrieben.`,
       en: `🎉 Access code "${code}" redeemed successfully! ${creditsToAdd} AI Letter Grading Credits added to your account.`,
       tr: `🎉 "${code}" erişim kodu başarıyla etkinleştirildi! Hesabınıza ${creditsToAdd} Yapay Zeka Mektup Puanlama Kredisi tanımlandı.`,
       ar: `🎉 تم تفعيل الرمز "${code}" بنجاح! تمت إضافة ${creditsToAdd} رصيداً لتقييم الرسائل إلى حسابك.`,
       uk: `🎉 Код "${code}" успішно активовано! ${creditsToAdd} кредитів оцінювання листів додано до вашого рахунку.`
     };
-    alert(msgs[lang] || msgs.en);
+    alert(msgs[lang] || msgs.de || msgs.en);
     closeProPricingModal();
   } else {
     const errMsg = {
+      de: "Ungültiger Zugangscode. Bitte prüfe deinen Code oder wähle ein Paket unten.",
       en: "Invalid access code. Please check your voucher code or choose a plan below.",
       tr: "Geçersiz erişim kodu. Lütfen kodunuzu kontrol edin veya aşağıdaki paketlerden birini seçin.",
       ar: "رمز غير صالح. يرجى التحقق من الرمز أو اختيار باقة أدناه.",
       uk: "Недійсний код. Перевірте ваучер або оберіть тариф нижче."
     };
-    alert(errMsg[lang] || errMsg.en);
+    alert(errMsg[lang] || errMsg.de || errMsg.en);
   }
 }
 
@@ -2975,7 +3024,7 @@ function formatExpiryInput(input) {
 /**
  * Interactive Checkout & Payment Drawer
  */
-function selectProPlan(planId) {
+function selectProPlan(planId, initialDiscountPercent, initialCouponCode) {
   let modal = document.getElementById('pro-pricing-modal');
   if (!modal) {
     modal = document.createElement('div');
@@ -3011,6 +3060,7 @@ function selectProPlan(planId) {
 
   window._currentCheckoutTierId = tier.id;
   window._selectedPaymentMethod = 'card';
+  window._activeCheckoutCoupon = null;
 
   modal.innerHTML = `
     <div class="modal-card pricing-modal-card checkout-modal-card" ${isAr ? 'dir="rtl"' : 'dir="ltr"'}>
@@ -3057,8 +3107,22 @@ function selectProPlan(planId) {
             </div>
             <div style="display:flex; justify-content:space-between; margin-top:6px; font-weight:800; font-size:14px; color:var(--text-primary);">
               <span>Gesamtbetrag / Total:</span>
-              <span style="color:var(--accent-gold);">${tier.price}</span>
+              <span id="checkout-total-price" style="color:var(--accent-gold);">${tier.price}</span>
             </div>
+          </div>
+
+          <!-- German Fair Pricing Coupon Code Input (§ 11 PAngV / § 5 UWG) -->
+          <div class="checkout-coupon-box" style="margin-bottom:14px; padding:10px 12px; background:rgba(255,255,255,0.03); border:1px dashed var(--border); border-radius:8px;">
+            <div style="font-size:11px; font-weight:700; color:var(--text-muted); margin-bottom:6px; text-transform:uppercase;">
+              🎟️ Gutscheincode / Rabattcode (§ 11 PAngV)
+            </div>
+            <div style="display:flex; gap:6px;">
+              <input type="text" id="checkout-coupon-input" value="${initialCouponCode || ''}" placeholder="z.B. PRUEFUNG2026" style="flex:1; padding:7px 10px; font-size:12px; font-family:monospace; text-transform:uppercase; border:1px solid var(--border); border-radius:6px; background:var(--bg-primary); color:var(--text-primary);">
+              <button type="button" id="checkout-apply-coupon-btn" onclick="applyCheckoutCoupon('${tier.id}')" style="background:var(--accent-gold); color:#000; font-size:12px; font-weight:700; border:none; border-radius:6px; padding:7px 12px; cursor:pointer;">
+                Einlösen
+              </button>
+            </div>
+            <div id="checkout-coupon-msg" style="margin-top:6px; font-size:11px; display:none; color:#10b981;"></div>
           </div>
 
           <ul class="checkout-guarantees-list" style="list-style:none; padding:0; margin:0 0 16px 0; font-size:12px; color:var(--text-secondary); line-height:1.9;">
@@ -3285,6 +3349,64 @@ function selectProPlan(planId) {
   `;
 
   modal.classList.add('open');
+
+  if (initialCouponCode) {
+    applyCheckoutCoupon(tier.id, initialCouponCode);
+  }
+}
+
+function applyCheckoutCoupon(tierId, forcedCode) {
+  const input = typeof document !== 'undefined' && document.getElementById ? document.getElementById('checkout-coupon-input') : null;
+  const code = (forcedCode || (input ? input.value : '')).trim().toUpperCase();
+  if (input && forcedCode) input.value = code;
+  const msgEl = typeof document !== 'undefined' && document.getElementById ? document.getElementById('checkout-coupon-msg') : null;
+  const tiers = SAMPLE_B1_EVALUATION.pricingTiers;
+  const tier = tiers.find(t => t.id === tierId) || tiers[1] || tiers[0];
+  const submitBtn = typeof document !== 'undefined' && document.getElementById ? document.getElementById('checkout-submit-btn') : null;
+  const totalEl = typeof document !== 'undefined' && document.getElementById ? document.getElementById('checkout-total-price') : null;
+
+  if (!code) {
+    if (msgEl) {
+      msgEl.style.display = 'block';
+      msgEl.style.color = '#ef4444';
+      msgEl.textContent = 'Bitte gib einen Gutscheincode ein.';
+    }
+    return;
+  }
+
+  if (code === 'VIPFREE' || code === 'FRIENDSVIP') {
+    window._activeCheckoutCoupon = { code, discountPercent: 100, isFree: true };
+    if (msgEl) {
+      msgEl.style.display = 'block';
+      msgEl.style.color = '#10b981';
+      msgEl.textContent = `🎉 100% VIP-Gutschein "${code}" aktiv! Gesamtbetrag: 0,00 € (50 KI-Credits inklusive).`;
+    }
+    if (totalEl) totalEl.textContent = '0,00 €';
+    if (submitBtn) {
+      submitBtn.textContent = '🎉 Jetzt kostenlos freischalten (0,00 €) →';
+      submitBtn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+    }
+  } else if (code === 'PRUEFUNG2026' || code === 'HERBST40') {
+    window._activeCheckoutCoupon = { code, discountPercent: 40, isFree: false };
+    const num = parseFloat(tier.price.replace(/[^\d.]/g, '') || 24);
+    const discounted = Math.round(num * 0.6 * 100) / 100;
+    const discountedStr = discounted.toFixed(2).replace('.', ',') + ' €';
+    if (msgEl) {
+      msgEl.style.display = 'block';
+      msgEl.style.color = '#10b981';
+      msgEl.textContent = `✅ 40% Prüfungsrabatt "${code}" aktiv! Statt ${tier.price} nur ${discountedStr} (§ 11 PAngV).`;
+    }
+    if (totalEl) totalEl.textContent = discountedStr;
+    if (submitBtn) {
+      submitBtn.textContent = `🔒 Jetzt sicher bestellen (${discountedStr}) →`;
+    }
+  } else {
+    if (msgEl) {
+      msgEl.style.display = 'block';
+      msgEl.style.color = '#ef4444';
+      msgEl.textContent = '❌ Ungültiger Aktionscode gem. § 11 PAngV / § 5 UWG.';
+    }
+  }
 }
 
 function confirmInstantDemoOrder(tierId, explicitMethod) {
@@ -3295,6 +3417,9 @@ function confirmInstantDemoOrder(tierId, explicitMethod) {
     return;
   }
 
+  const activeCoupon = (typeof window !== 'undefined' && window._activeCheckoutCoupon) || null;
+  const isVipFree = activeCoupon && activeCoupon.isFree;
+
   const creditsMap = {
     diagnostic: 3,
     'pass-30': 30,
@@ -3303,14 +3428,15 @@ function confirmInstantDemoOrder(tierId, explicitMethod) {
     citizenship: 40,
     extended: 100
   };
-  const creditsToAdd = creditsMap[tierId] || 30;
-  grantLetterCredits(creditsToAdd, tierId);
+  const creditsToAdd = isVipFree ? 50 : (creditsMap[tierId] || 30);
+  grantLetterCredits(creditsToAdd, isVipFree ? 'coupon_' + activeCoupon.code : tierId);
 
   // Set Pro license key in StorageService if available
+  const licenseKeyToSet = isVipFree ? 'VIP-' + activeCoupon.code : ('PRO-' + String(tierId).toUpperCase() + '-DEMO');
   if (typeof StorageService !== 'undefined' && typeof StorageService.setLicenseKey === 'function') {
-    StorageService.setLicenseKey('PRO-' + String(tierId).toUpperCase() + '-DEMO', tierId);
+    StorageService.setLicenseKey(licenseKeyToSet, tierId);
   } else if (typeof window !== 'undefined' && window.StorageService && typeof window.StorageService.setLicenseKey === 'function') {
-    window.StorageService.setLicenseKey('PRO-' + String(tierId).toUpperCase() + '-DEMO', tierId);
+    window.StorageService.setLicenseKey(licenseKeyToSet, tierId);
   }
 
   // Trigger re-render of SchreibenExaminer.instance if results are currently displayed
@@ -3346,7 +3472,16 @@ function confirmInstantDemoOrder(tierId, explicitMethod) {
     sepa: 'SEPA-Lastschrift',
     instant: 'Sofort-Aktivierung'
   };
-  const methodUsed = explicitMethod || methodNames[window._selectedPaymentMethod] || 'Kreditkarte (Visa / Mastercard)';
+  const methodUsed = isVipFree ? 'VIP-Freischaltcode (100% Bildungsgutschein)' : (explicitMethod || methodNames[window._selectedPaymentMethod] || 'Kreditkarte (Visa / Mastercard)');
+
+  // Calculate final effective price
+  let effectivePrice = tier.price;
+  if (isVipFree) {
+    effectivePrice = '0,00 €';
+  } else if (activeCoupon && activeCoupon.discountPercent === 40) {
+    const num = parseFloat(tier.price.replace(/[^\d.]/g, '') || 24);
+    effectivePrice = (Math.round(num * 0.6 * 100) / 100).toFixed(2).replace('.', ',') + ' €';
+  }
 
   // Persist invoice in localStorage for accounting/reprint
   try {
@@ -3354,8 +3489,8 @@ function confirmInstantDemoOrder(tierId, explicitMethod) {
     existingInvoices.unshift({
       orderRef,
       tierId,
-      tierName: tier.nameEn,
-      price: tier.price,
+      tierName: tier.nameEn + (activeCoupon ? ` [${activeCoupon.code} -${activeCoupon.discountPercent}%]` : ''),
+      price: effectivePrice,
       credits: creditsToAdd,
       paymentMethod: methodUsed,
       email: userEmail,
@@ -3407,7 +3542,7 @@ function confirmInstantDemoOrder(tierId, explicitMethod) {
                 <span style="font-size:11px; color:var(--text-muted);">${tier.periodEn} &bull; ${creditsToAdd} AI Letter Credits</span>
               </td>
               <td style="text-align:center;">1</td>
-              <td style="text-align:right; font-weight:700;">${tier.price}</td>
+              <td style="text-align:right; font-weight:700;">${effectivePrice}</td>
             </tr>
             <tr>
               <td style="color:var(--text-muted);">Zahlungsmethode / Payment Method:</td>
@@ -3422,7 +3557,7 @@ function confirmInstantDemoOrder(tierId, explicitMethod) {
             <tr style="border-top:2px solid var(--border);">
               <td style="font-weight:800; font-size:14px;">Gesamtbetrag / Total Paid</td>
               <td></td>
-              <td style="text-align:right; font-weight:800; font-size:16px; color:var(--text-primary);">${tier.price}</td>
+              <td style="text-align:right; font-weight:800; font-size:16px; color:var(--text-primary);">${effectivePrice}</td>
             </tr>
           </tbody>
         </table>
@@ -3491,6 +3626,7 @@ if (typeof window !== 'undefined') {
   window.openProPricingModal = openProPricingModal;
   window.closeProPricingModal = closeProPricingModal;
   window.selectProPlan = selectProPlan;
+  window.applyCheckoutCoupon = applyCheckoutCoupon;
   window.confirmInstantDemoOrder = confirmInstantDemoOrder;
   window.redeemAccessCode = redeemAccessCode;
   window.getLetterCredits = getLetterCredits;
@@ -3531,6 +3667,7 @@ if (typeof module !== 'undefined' && module.exports) {
     switchSchreibenTab,
     switchPaymentMethod,
     selectProPlan,
+    applyCheckoutCoupon,
     confirmInstantDemoOrder,
     redeemAccessCode,
     loadModelLetterIntoGrader,

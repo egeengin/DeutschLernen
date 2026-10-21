@@ -4025,6 +4025,24 @@ td strong, td b { color: var(--text-primary); }
   color: #ffffff;
 }
 
+@media (max-width: 768px), (pointer: coarse) {
+  .promo-discount-bar {
+    padding: 10px 14px;
+  }
+  .promo-copy-btn {
+    min-height: 44px;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+  .promo-redeem-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 6px 12px;
+  }
+}
+
 
 
 

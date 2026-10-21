@@ -2319,13 +2319,17 @@
         try { this.dom.btnTypeinSubmit.focus(); } catch (e) {}
       }
 
-      // Smart normalization: check exact or match without grammatical article
+      // Smart normalization: check exact or match without grammatical article and normalize digraphs (ae->ä, oe->ö, ue->ü, ss->ß)
       const normalize = (str) => {
         return (str || '')
           .toLowerCase()
           .replace(/\([^)]*\)/g, '')
           .replace(/[.,\/#!$%\^&\*;:{}=\-_`~?]/g, ' ')
           .replace(/^(der|die|das)\s+/i, '')
+          .replace(/ae/g, 'ä')
+          .replace(/oe/g, 'ö')
+          .replace(/ue/g, 'ü')
+          .replace(/ss/g, 'ß')
           .replace(/\s+/g, ' ')
           .trim();
       };
