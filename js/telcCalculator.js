@@ -51,7 +51,11 @@
       weakestSectionLabel: "Schwachstelle mit niedrigster Punktzahl:",
       pointsToNextGradeLabel: "Fehlende Punkte für die nächste Notenstufe:",
       targetNextLabel: "Ziel:",
-      practiceNowBtn: "Diesen Prüfungsteil jetzt üben →"
+      practiceNowBtn: "Diesen Prüfungsteil jetzt üben →",
+      novemberRuleBadge: "📅 1. Nov. 2026 Prüfungsreform aktiv",
+      schreibenMinReq: "Neu ab 1. Nov: Min. 15 Pkt. (A2)",
+      novemberRuleWarning: "⚠️ Wichtige Änderung ab 1. November 2026: Nach der neuen Prüfungsverordnung muss im Prüfungsteil Schreiben mindestens das A2-Niveau (≥ 15 Punkte) erreicht werden! Das Schreiben darf nicht mehr leer abgegeben werden, selbst wenn die schriftliche Gesamtpunktzahl 135 Punkte übersteigt.",
+      novemberRulePassedInfo: "✅ Mindestanforderung Schreiben ab 1. Nov. 2026 erfüllt (≥ 15 Pkt. / A2-Niveau)."
     },
     en: {
       title: "🎯 Official telc B1 Pass Predictor & Score Calculator",
@@ -89,7 +93,11 @@
       weakestSectionLabel: "Lowest scoring section:",
       pointsToNextGradeLabel: "Points needed for next grade:",
       targetNextLabel: "Target:",
-      practiceNowBtn: "Practice this Section Now →"
+      practiceNowBtn: "Practice this Section Now →",
+      novemberRuleBadge: "📅 Nov 1, 2026 Exam Reform Active",
+      schreibenMinReq: "New from Nov 1: Min 15 pts (A2)",
+      novemberRuleWarning: "⚠️ Important Change from November 1, 2026: Under the revised examination regulations, you MUST achieve at least A2 level (≥ 15 points) in the Writing section! Writing can no longer be left blank or scored below A2, even if your total written score exceeds 135 points.",
+      novemberRulePassedInfo: "✅ Nov 1, 2026 Writing minimum requirement met (≥ 15 pts / A2 level)."
     },
     tr: {
       title: "🎯 Resmi telc B1 Sınav Geçme ve Not Hesaplayıcı",
@@ -127,7 +135,11 @@
       weakestSectionLabel: "En zayıf kalınan bölüm:",
       pointsToNextGradeLabel: "Bir üst nota ulaşmak için gereken puan:",
       targetNextLabel: "Hedef Not:",
-      practiceNowBtn: "Bu Bölümü Hemen Çalış →"
+      practiceNowBtn: "Bu Bölümü Hemen Çalış →",
+      novemberRuleBadge: "📅 1 Kasım 2026 Sınav Reformu Aktif",
+      schreibenMinReq: "1 Kasım'dan İtibaren: Min. 15 Puan (A2)",
+      novemberRuleWarning: "⚠️ 1 Kasım 2026 İtibarıyla Kritik Değişiklik: Yeni sınav yönetmeliğine göre, Yazma (Schreiben / Mektup) bölümünden en az A2 seviyesinde (≥ 15 puan) başarı gösterilmesi zorunludur! Yazılı toplamınız 135 puanı geçse dahi mektubu boş bırakarak sınavı geçme taktiği artık geçersizdir.",
+      novemberRulePassedInfo: "✅ 1 Kasım 2026 Mektup asgari barajı sağlandı (≥ 15 puan / A2 seviyesi)."
     },
     ar: {
       title: "🎯 حاسبة اجتياز امتحان telc B1 وتوقع الدرجات الرسمية",
@@ -165,7 +177,11 @@
       weakestSectionLabel: "أضعف الأقسام أداءً:",
       pointsToNextGradeLabel: "النقاط المطلوبة للترقية للتقدير الأعلى:",
       targetNextLabel: "التقدير المستهدف:",
-      practiceNowBtn: "تدرب على هذا القسم الآن ←"
+      practiceNowBtn: "تدرب على هذا القسم الآن ←",
+      novemberRuleBadge: "📅 تعديلات 1 نوفمبر 2026 مفعلة",
+      schreibenMinReq: "جديد من 1 نوفمبر: 15 نقطة كحد أدنى (A2)",
+      novemberRuleWarning: "⚠️ تنبيه هام اعتباراً من 1 نوفمبر 2026: وفقاً للائحة الامتحانات المحدثة، يجب الحصول على مستوى A2 على الأقل (≥ 15 نقطة) في قسم كتابة الرسالة (Schreiben)! لم يعد مسموحاً ترك الرسالة فارغة حتى لو تجاوز مجموع الامتحان الكتابي 135 نقطة.",
+      novemberRulePassedInfo: "✅ تم استيفاء شرط الكتابة الأدنى للائحة 1 نوفمبر 2026 (≥ 15 نقطة / مستوى A2)."
     },
     uk: {
       title: "🎯 Офіційний калькулятор проходження та оцінок telc B1",
@@ -203,7 +219,11 @@
       weakestSectionLabel: "Найслабша частина:",
       pointsToNextGradeLabel: "Балів до наступної оцінки:",
       targetNextLabel: "Цільова оцінка:",
-      practiceNowBtn: "Тренувати цю частину зараз →"
+      practiceNowBtn: "Тренувати цю частину зараз →",
+      novemberRuleBadge: "📅 Реформа іспиту від 1 лист. 2026 активна",
+      schreibenMinReq: "Нове з 1 лист.: мін. 15 балів (A2)",
+      novemberRuleWarning: "⚠️ Важлива зміна з 1 листопада 2026 року: За новим регламентом іспиту, у частині «Письмо» (Schreiben) обов'язково необхідно набрати щонайменше рівень A2 (≥ 15 балів)! Не можна залишати лист пустим, навіть якщо сумарний бал за письмовий іспит перевищує 135 балів.",
+      novemberRulePassedInfo: "✅ Мінімальну вимогу до частини письма від 1 лист. 2026 виконано (≥ 15 балів / рівень A2)."
     }
   };
 
@@ -322,6 +342,15 @@
       }
     }
 
+    // 1. November 2026 Examination Reform:
+    // Minimum competency requirement in the 3rd skill area (Schreiben):
+    // Must reach at least A2 level (15 out of 45 pts, 33.3%). Cannot be 0 or sub-A2.
+    const schreibenA2Threshold = 15;
+    const schreibenA2Passed = schreiben >= schreibenA2Threshold;
+    const novemberRuleActive = true;
+    const novemberRuleWarning = overallPassed && !schreibenA2Passed;
+    const schreibenDeficit = schreibenA2Passed ? 0 : Math.round((schreibenA2Threshold - schreiben) * 10) / 10;
+
     return {
       scores: { lesen, sprachbausteine, hoeren, schreiben, sprechen },
       schriftlich: {
@@ -348,6 +377,14 @@
         gradeCode,
         gradeName
       },
+      regulation: {
+        novemberRuleActive,
+        effectiveDate: '2026-11-01',
+        schreibenA2Threshold,
+        schreibenA2Passed,
+        novemberRuleWarning,
+        schreibenDeficit
+      },
       analysis: {
         weakest,
         components,
@@ -360,6 +397,9 @@
   function getLang() {
     if (typeof currentLang !== 'undefined' && CALC_I18N[currentLang]) {
       return currentLang;
+    }
+    if (typeof document !== 'undefined' && document.documentElement && document.documentElement.lang && CALC_I18N[document.documentElement.lang]) {
+      return document.documentElement.lang;
     }
     return 'en';
   }
@@ -384,8 +424,13 @@
         <!-- Header -->
         <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px; margin-bottom:24px;">
           <div>
-            <div style="display:inline-flex; align-items:center; gap:6px; background:rgba(245,158,11,0.12); border:1px solid rgba(245,158,11,0.3); color:var(--accent-gold); font-size:11px; font-weight:800; padding:3px 10px; border-radius:12px; margin-bottom:8px; text-transform:uppercase;">
-              🏆 Official telc B1 Scoring Engine
+            <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+              <span style="display:inline-flex; align-items:center; gap:6px; background:rgba(245,158,11,0.12); border:1px solid rgba(245,158,11,0.3); color:var(--accent-gold); font-size:11px; font-weight:800; padding:3px 10px; border-radius:12px; text-transform:uppercase;">
+                🏆 Official telc B1 Scoring Engine
+              </span>
+              <span style="display:inline-flex; align-items:center; gap:6px; background:rgba(59,130,246,0.12); border:1px solid rgba(59,130,246,0.3); color:#60a5fa; font-size:11px; font-weight:800; padding:3px 10px; border-radius:12px; text-transform:uppercase;">
+                ${t('novemberRuleBadge')}
+              </span>
             </div>
             <h3 style="margin:0 0 6px 0; font-size:22px; color:var(--text-primary); font-weight:800;">
               ${t('title')}
@@ -465,7 +510,7 @@
               <!-- 4. Schreiben -->
               <div class="calc-slider-row">
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px; font-size:13px;">
-                  <span style="font-weight:700; color:var(--text-primary);">${t('schreibenLabel')}</span>
+                  <span style="font-weight:700; color:var(--text-primary);">${t('schreibenLabel')} <span style="font-size:11px; font-weight:700; color:#f59e0b; margin-left:4px;">(${t('schreibenMinReq')})</span></span>
                   <span style="font-weight:800; color:var(--accent-gold); font-size:14px;"><span id="calc-val-schreiben">33</span> / 45 pts</span>
                 </div>
                 <div style="display:flex; align-items:center; gap:10px;">
@@ -574,6 +619,25 @@
       <div style="font-size:14px; font-weight:700; color:${badgeColor}; margin-bottom:14px;">
         ${t('gradeLabel')} ${res.overall.gradeName}
       </div>
+
+      ${res.regulation.novemberRuleWarning ? `
+      <!-- 1. November 2026 Writing Threshold Warning -->
+      <div class="telc-november-warning" style="background:rgba(239,68,68,0.2); border:2px solid #ef4444; border-radius:10px; padding:12px 14px; margin-bottom:18px; color:#fee2e2; font-size:12.5px; line-height:1.5;">
+        <div style="display:flex; align-items:center; gap:8px; font-weight:800; font-size:13.5px; color:#fca5a5; margin-bottom:6px;">
+          <span>⚠️</span> <span>1. November 2026 Reform-Warnung: Schreiben unter A2!</span>
+        </div>
+        <div>
+          ${t('novemberRuleWarning')}
+          <div style="margin-top:8px; padding:8px 10px; background:rgba(0,0,0,0.25); border-radius:6px; font-weight:700; color:#fecaca;">
+            Aktuell: <strong>${res.scores.schreiben} / 45 Pkt.</strong> (Mindestens erforderlich: <strong>${res.regulation.schreibenA2Threshold} Pkt.</strong> — Es fehlen: <strong>+${res.regulation.schreibenDeficit} Pkt.</strong>)
+          </div>
+        </div>
+      </div>
+      ` : (res.overall.passed ? `
+      <div style="display:inline-flex; align-items:center; gap:6px; font-size:11.5px; color:#86efac; background:rgba(16,185,129,0.12); border:1px solid rgba(16,185,129,0.3); border-radius:8px; padding:4px 10px; margin-bottom:14px;">
+        <span>✅</span> <span>${t('novemberRulePassedInfo')}</span>
+      </div>
+      ` : '')}
 
       ${res.overall.total >= 180 && !res.overall.passed ? `
       <!-- Sub-threshold Critical Warning -->

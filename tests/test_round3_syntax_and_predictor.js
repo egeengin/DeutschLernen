@@ -157,4 +157,44 @@ assert.strictEqual(loadedResult.overall.total, 222.8);
 assert.strictEqual(loadedResult.overall.gradeCode, 'befriedigend');
 console.log('✅ End-to-end Studio Practice to Pass Predictor LocalStorage pipeline verified.');
 
+// 8. 1. November 2026 Exam Regulation & Schreiben Minimum Competency Guard
+// Scenario A: Candidate achieves written pass (140 pts) via Lesen + Sprach + Hoeren alone, but leaves Schreiben blank (0 pts).
+const zeroWritingAttempt = calculateTelcB1ExamResult({
+  lesen: 60,
+  sprachbausteine: 20,
+  hoeren: 60,
+  schreiben: 0, // Zero / sub-A2 writing!
+  sprechen: 50
+});
+assert.strictEqual(zeroWritingAttempt.schriftlich.passed, true, 'Written total 140 >= 135');
+assert.strictEqual(zeroWritingAttempt.muendlich.passed, true, 'Oral total 50 >= 45');
+assert.strictEqual(zeroWritingAttempt.overall.passed, true, 'Classical composite passes');
+assert.strictEqual(zeroWritingAttempt.regulation.novemberRuleActive, true);
+assert.strictEqual(zeroWritingAttempt.regulation.schreibenA2Threshold, 15);
+assert.strictEqual(zeroWritingAttempt.regulation.schreibenA2Passed, false, 'Writing < 15 must fail A2 requirement');
+assert.strictEqual(zeroWritingAttempt.regulation.novemberRuleWarning, true, 'Must trigger 1. November regulation warning');
+assert.strictEqual(zeroWritingAttempt.regulation.schreibenDeficit, 15, 'Deficit must be 15 pts');
+
+// Scenario B: Candidate meets Schreiben A2 threshold (15 pts).
+const validWritingAttempt = calculateTelcB1ExamResult({
+  lesen: 50,
+  sprachbausteine: 15,
+  hoeren: 55,
+  schreiben: 15, // Exact A2 minimum threshold
+  sprechen: 45
+});
+assert.strictEqual(validWritingAttempt.regulation.schreibenA2Passed, true, 'Writing >= 15 passes A2 requirement');
+assert.strictEqual(validWritingAttempt.regulation.novemberRuleWarning, false, 'No warning when writing >= 15');
+assert.strictEqual(validWritingAttempt.regulation.schreibenDeficit, 0);
+
+// Scenario C: German (DE) and 4 foreign languages include all new regulation keys
+['de', 'en', 'tr', 'ar', 'uk'].forEach(lang => {
+  assert.ok(CALC_I18N[lang].novemberRuleBadge, `novemberRuleBadge must exist in ${lang}`);
+  assert.ok(CALC_I18N[lang].schreibenMinReq, `schreibenMinReq must exist in ${lang}`);
+  assert.ok(CALC_I18N[lang].novemberRuleWarning, `novemberRuleWarning must exist in ${lang}`);
+  assert.ok(CALC_I18N[lang].novemberRulePassedInfo, `novemberRulePassedInfo must exist in ${lang}`);
+});
+console.log('✅ 1. November 2026 Examination Reform logic & writing guard strictly validated.');
+
 console.log('🎉 All Round 3 Syntax Guard & Pass Predictor tests passed successfully!');
+
