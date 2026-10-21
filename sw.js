@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deutschlernen-v53';
+const CACHE_NAME = 'deutschlernen-v54';
 const ASSETS = [
   './',
   './index.html',
@@ -15,6 +15,7 @@ const ASSETS = [
   './telc-b1-punkte-rechner.html',
   './leben-in-deutschland-nrw-fragen.html',
   './css/portal.css',
+  './css/nav-drawer.css',
   './css/seo.css',
   './css/trainer.css',
   './css/grammatik.css',
@@ -25,6 +26,7 @@ const ASSETS = [
   './css/schreiben.css',
   './css/dashboard.css',
   './js/storage-engine.js',
+  './js/navDrawer.js',
   './js/portal.js',
   './js/grammarApp.js',
   './js/notifications.js',

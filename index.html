@@ -73,6 +73,12 @@
   (function() {
     const savedTheme = localStorage.getItem('deutschlernen_theme') || localStorage.getItem('telc_theme') || localStorage.getItem('site_theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
+    try {
+      const prefs = JSON.parse(localStorage.getItem('deutschlernen_prefs') || '{}');
+      if (prefs.sidebarCollapsed && window.innerWidth >= 1024) {
+        document.documentElement.classList.add('sidebar-collapsed');
+      }
+    } catch (e) {}
   })();
 
   // Initialize mermaid
@@ -81,8 +87,34 @@
   }
 </script>
 <link rel="stylesheet" href="css/portal.css?v=2.5">
+<link rel="stylesheet" href="css/nav-drawer.css?v=2.5">
 </head>
 <body>
+
+<!-- Compact Sticky Context Bar (Mobile & Header Navigation) -->
+<div class="compact-context-bar" id="compact-context-bar">
+  <div class="context-bar-left">
+    <button class="context-drawer-toggle" id="context-drawer-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" title="Menu (Navigation & Study Controls)">☰</button>
+    <a href="index.html" class="context-brand" title="DeutschLernen Portal">
+      <span class="context-brand-icon">🏆</span>
+      <span class="context-brand-text">DeutschLernen</span>
+    </a>
+  </div>
+  <div class="context-bar-right">
+    <button class="context-chip context-chip-goal" id="context-chip-goal" title="Click to change target exam goal">
+      <span class="chip-icon">🎯</span>
+      <span class="chip-text">telc B1</span>
+    </button>
+    <button class="context-chip context-chip-mode" id="context-chip-mode" title="Click to switch study mode">
+      <span class="chip-icon">🃏</span>
+      <span class="chip-text">Flashcards</span>
+    </button>
+    <button class="context-settings-btn" id="context-settings-btn" title="Open Navigation & Settings Drawer" aria-label="Settings">⚙️</button>
+  </div>
+</div>
+
+<!-- Slide-Over Drawer Backdrop -->
+<div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
 
 <!-- Global Top Controls: Goal Selector, Pro Plans & Language Toggle -->
 <div class="global-top-bar">
@@ -114,11 +146,12 @@
 <!-- Mobile Menu Toggle -->
 <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="Toggle menu">☰</button>
 
-<!-- Sidebar -->
-<nav class="sidebar" id="sidebar">
+<!-- Sidebar & Slide-Over Drawer Panel -->
+<nav class="sidebar" id="sidebar" role="dialog" aria-modal="true" aria-label="Curriculum & Navigation">
   <div class="sidebar-header">
-    <div class="top-row" style="justify-content: flex-end;">
+    <div class="top-row" style="justify-content: flex-end; align-items: center; gap: 8px;">
       <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn" aria-label="Toggle dark mode">☀️</button>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close menu" title="Close (Esc)">✕</button>
     </div>
     <h2 id="sidebar-portal-title">🏆 telc B1 Study Portal</h2>
     <p data-de="Lehrplan & Praxis" id="sidebar-plan-label" data-en="Curriculum & Practice" data-tr="Müfredat ve Pratik" data-ar="المنهج والتدريب" data-uk="Програма та практика">Curriculum & Practice</p>
@@ -138,7 +171,7 @@
   <!-- Primary Navigation Pillars (3 Main Tracks + Student Workspace) -->
   <div class="sidebar-pillars">
     <!-- Pillar 0: Student Workspace -->
-    <a href="dashboard.html" class="sidebar-pillar-link pillar-dash" style="text-decoration:none; border-color:rgba(59,130,246,0.35);">
+    <a href="dashboard.html" class="sidebar-pillar-link pillar-dash" data-tooltip="Student Workspace" style="text-decoration:none; border-color:rgba(59,130,246,0.35);">
       <span class="sidebar-pillar-icon">🚀</span>
       <div>
         <div data-de="Lernbereich" class="sidebar-pillar-title" data-en="Student Workspace" data-tr="Öğrenci Çalışma Alanı" data-ar="مساحة عمل الطالب" data-uk="Робочий простір студента">Student Workspace</div>
@@ -147,7 +180,7 @@
     </a>
 
     <!-- Pillar 1: telc B1 Study Portal & Modules -->
-    <a href="javascript:void(0)" class="sidebar-pillar-link pillar-b1 active" onclick="switchTrack('b1');">
+    <a href="javascript:void(0)" class="sidebar-pillar-link pillar-b1 active" data-tooltip="B1 Study Portal" onclick="switchTrack('b1');">
       <span class="sidebar-pillar-icon">📚</span>
       <div>
         <div data-de="B1-Lernportal" class="sidebar-pillar-title" data-en="B1 Study Portal" data-tr="B1 Sınav Portalı" data-ar="بوابة دراسة B1" data-uk="Портал навчання B1">B1 Study Portal</div>
@@ -156,7 +189,7 @@
     </a>
 
     <!-- Pillar 2: Interactive 2,000 Vocab Trainer -->
-    <a href="trainer.html" class="sidebar-pillar-link pillar-vocab" style="text-decoration:none;">
+    <a href="trainer.html" class="sidebar-pillar-link pillar-vocab" data-tooltip="Vocab Trainer (2,000+ Words)" style="text-decoration:none;">
       <span class="sidebar-pillar-icon">⚡</span>
       <div>
         <div data-de="Vokabeltrainer" class="sidebar-pillar-title" data-en="Vocab Trainer" data-tr="Kelime Antrenörü" data-ar="مدرب المفردات" data-uk="Тренажер слів">Vocab Trainer</div>
@@ -165,7 +198,7 @@
     </a>
 
     <!-- Pillar 2.5: Interactive Grammatik Studio (A1–B2) -->
-    <a href="grammatik.html" class="sidebar-pillar-link pillar-grammatik" style="text-decoration:none;">
+    <a href="grammatik.html" class="sidebar-pillar-link pillar-grammatik" data-tooltip="Grammar Studio (A1–B2)" style="text-decoration:none;">
       <span class="sidebar-pillar-icon">📝</span>
       <div>
         <div data-de="Grammatik Studio" class="sidebar-pillar-title" data-en="Grammar Studio" data-tr="Grammatik Stüdyosu" data-ar="استوديو القواعد" data-uk="Граматична Студія">Grammar Studio</div>
@@ -174,7 +207,7 @@
     </a>
 
     <!-- Pillar 3: Leben in Deutschland 310 -->
-    <a href="dashboard.html#section-studios" class="sidebar-pillar-link pillar-lid" style="text-decoration:none;">
+    <a href="dashboard.html#section-studios" class="sidebar-pillar-link pillar-lid" data-tooltip="Leben in Deutschland (LiD 310)" style="text-decoration:none;">
       <span class="sidebar-pillar-icon">🇩🇪</span>
       <div>
         <div data-de="Leben in Deutschland" class="sidebar-pillar-title" data-en="Leben in Deutschland" data-tr="Leben in Deutschland" data-ar="الحياة في ألمانيا" data-uk="Життя в Німеччині">Leben in Deutschland</div>
@@ -183,7 +216,7 @@
     </a>
 
     <!-- Pillar 4: Interaktives Lesen Studio -->
-    <a href="lesen.html" class="sidebar-pillar-link pillar-lesen" style="text-decoration:none;">
+    <a href="lesen.html" class="sidebar-pillar-link pillar-lesen" data-tooltip="Reading Studio & Exam Reader" style="text-decoration:none;">
       <span class="sidebar-pillar-icon">📖</span>
       <div>
         <div data-de="Lesestudio" class="sidebar-pillar-title" data-en="Reading Studio" data-tr="Okuma Stüdyosu" data-ar="استوديو القراءة" data-uk="Студія читання">Reading Studio</div>
@@ -192,7 +225,7 @@
     </a>
 
     <!-- Pillar 5: Interaktives Hören Studio -->
-    <a href="hoeren.html" class="sidebar-pillar-link pillar-hoeren" style="text-decoration:none;">
+    <a href="hoeren.html" class="sidebar-pillar-link pillar-hoeren" data-tooltip="Listening Studio (75 Pts)" style="text-decoration:none;">
       <span class="sidebar-pillar-icon">🎧</span>
       <div>
         <div data-de="Hörstudio" class="sidebar-pillar-title" data-en="Listening Studio" data-tr="Dinleme Stüdyosu" data-ar="استوديو الاستماع" data-uk="Студія аудіювання">Listening Studio</div>
@@ -201,7 +234,7 @@
     </a>
 
     <!-- Pillar 6: telc B1 Final Mock Exam Simulation -->
-    <a href="simulation.html" class="sidebar-pillar-link pillar-sim" style="text-decoration:none; border-color:rgba(245,158,11,0.4);">
+    <a href="simulation.html" class="sidebar-pillar-link pillar-sim" data-tooltip="Final Mock Exam Simulation" style="text-decoration:none; border-color:rgba(245,158,11,0.4);">
       <span class="sidebar-pillar-icon">🏁</span>
       <div>
         <div data-de="Abschlusssimulation" class="sidebar-pillar-title" data-en="Final Mock Exam" data-tr="Final Deneme Sınavı" data-ar="المحاكاة النهائية" data-uk="Фінальний іспит">Final Mock Exam</div>
@@ -210,13 +243,17 @@
     </a>
   </div>
 
-  <div data-de="LERNMODULE" class="sidebar-nav-header" id="sidebar-nav-header" data-en="STUDY MODULES" data-tr="ÇALIŞMA MODÜLLERİ" data-ar="الوحدات الدراسية" data-uk="НАВЧАЛЬНІ МОДУЛІ">STUDY MODULES</div>
+  <div data-de="LERNMODULE" class="sidebar-nav-header" id="sidebar-nav-header" data-en="STUDY MODULES" data-tr="ÇALIŞMA MODÜLLERİ" data-ar="الوحدات الدراسية" data-uk="НАВCHАЛЬНІ МОДУЛІ">STUDY MODULES</div>
 
   <div class="sidebar-nav" id="sidebar-nav">
     <!-- Links generated by JS -->
   </div>
   <div class="sidebar-footer">
-    <div style="font-size: 11px; color: var(--text-muted); opacity: 0.7; padding: 16px 20px;">
+    <button class="desktop-collapse-btn" id="desktop-sidebar-toggle" title="Collapse sidebar to icon rail (Hotkey: [ )" aria-label="Collapse sidebar">
+      <span class="collapse-icon">«</span>
+      <span class="collapse-text">Collapse Sidebar</span>
+    </button>
+    <div style="font-size: 11px; color: var(--text-muted); opacity: 0.7; padding: 12px 20px;">
       <div>DeutschLernen Suite v2.0</div>
       <div style="margin-top:4px;"><a data-de="👑 Pro-Upgrade & Preise" href="#pricing-section" onclick="openProPricingModal()" style="color:var(--accent-gold); font-weight:700; text-decoration:none;" data-en="👑 Pro Upgrade & Pricing" data-tr="👑 Pro Üyelik & Fiyatlar" data-ar="👑 ترقية Pro والأسعار" data-uk="👑 Оновлення до Pro та ціни">👑 Pro Upgrade & Pricing</a></div>
       <div style="margin-top:4px;"><a data-de="Impressum & Datenschutz" href="legal.html" style="color:var(--text-muted); text-decoration:underline;" data-en="Impressum & Privacy" data-tr="Yasal Künye ve Gizlilik" data-ar="معلومات الناشر والخصوصية" data-uk="Вихідні дані та конфіденційність">Impressum & Privacy</a></div>
@@ -1473,5 +1510,6 @@
 <script src="js/telcCalculator.js"></script>
 <script src="js/placementTest.js"></script>
 <script src="js/portal.js?v=2.5"></script>
+<script src="js/navDrawer.js"></script>
 </body>
 </html>

@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/trainer.css">
+  <link rel="stylesheet" href="css/nav-drawer.css">
   <script>
     (function() {
       const theme = localStorage.getItem('deutschlernen_theme') || localStorage.getItem('site_theme') || localStorage.getItem('telc_theme');
@@ -28,10 +29,289 @@
         document.documentElement.classList.add('light-mode');
         document.documentElement.setAttribute('data-theme', 'light');
       }
+      try {
+        const prefs = JSON.parse(localStorage.getItem('deutschlernen_prefs') || '{}');
+        if (prefs.sidebarCollapsed && window.innerWidth >= 1024) {
+          document.documentElement.classList.add('sidebar-collapsed');
+        }
+      } catch (e) {}
     })();
   </script>
 </head>
 <body>
+
+  <!-- Compact Sticky Context Bar (Mobile & Header Navigation) -->
+  <div class="compact-context-bar" id="compact-context-bar">
+    <div class="context-bar-left">
+      <button class="context-drawer-toggle" id="context-drawer-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" title="Menu (Navigation & Study Controls)">☰</button>
+      <a href="trainer.html" class="context-brand" title="Wortschatz Trainer">
+        <span class="context-brand-icon">⚡</span>
+        <span class="context-brand-text" data-i18n="appTitle">Wortschatz Trainer</span>
+      </a>
+    </div>
+    <div class="context-bar-right">
+      <button class="context-chip context-chip-deck" id="context-chip-deck" title="Current Deck: Click to change">
+        <span class="chip-icon" id="context-chip-deck-icon">📦</span>
+        <span class="chip-text" id="context-chip-deck-text">B1 Core</span>
+      </button>
+      <button class="context-chip context-chip-mode" id="context-chip-mode" title="Current Quiz Mode: Click to change">
+        <span class="chip-icon" id="context-chip-mode-icon">🃏</span>
+        <span class="chip-text" id="context-chip-mode-text">Flashcards</span>
+      </button>
+      <button class="context-settings-btn" id="context-settings-btn" title="Open Navigation & Settings Drawer" aria-label="Settings">⚙️</button>
+    </div>
+  </div>
+
+  <!-- Slide-Over Drawer Backdrop -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+
+  <!-- Slide-Over Drawer (Off-Canvas Menu) -->
+  <aside class="drawer-panel" id="drawer-panel" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Trainer Navigation and Deck Controls">
+    
+    <!-- Drawer Header -->
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <span class="drawer-brand-icon">⚡</span>
+        <div>
+          <div class="drawer-brand-title">Wortschatz Trainer</div>
+          <div class="drawer-brand-sub">telc B1 & CEFR A1–C2</div>
+        </div>
+      </div>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close menu" title="Close (Esc)">✕</button>
+    </div>
+
+    <!-- Drawer Body -->
+    <div class="drawer-body">
+
+      <!-- Section 1: Target Level / Active Goal -->
+      <div class="drawer-section">
+        <div class="drawer-section-header">
+          <span class="drawer-section-title">🎯 Target Level & Goal</span>
+        </div>
+        <div class="drawer-goal-grid" role="radiogroup" aria-label="Target Level Filter">
+          <button class="drawer-goal-chip active" data-drawer-goal="goal-b1" role="radio" aria-checked="true">
+            <span class="chip-emoji">🏆</span>
+            <span class="chip-label">telc B1</span>
+          </button>
+          <button class="drawer-goal-chip" data-drawer-goal="goal-lid" role="radio" aria-checked="false">
+            <span class="chip-emoji">🇩🇪</span>
+            <span class="chip-label">LiD 310</span>
+          </button>
+          <button class="drawer-goal-chip" data-drawer-goal="goal-a1-a2" role="radio" aria-checked="false">
+            <span class="chip-emoji">🌱</span>
+            <span class="chip-label">A1–A2 Basics</span>
+          </button>
+          <button class="drawer-goal-chip" data-drawer-goal="goal-b2" role="radio" aria-checked="false">
+            <span class="chip-emoji">🚀</span>
+            <span class="chip-label">B2 Advanced</span>
+          </button>
+          <button class="drawer-goal-chip" data-drawer-goal="goal-c1" role="radio" aria-checked="false">
+            <span class="chip-emoji">🎓</span>
+            <span class="chip-label">C1 Academic</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Section 2: Deck / Module Selector -->
+      <div class="drawer-section">
+        <div class="drawer-section-header">
+          <span class="drawer-section-title">📦 Deck / Module Selector</span>
+        </div>
+        <div class="drawer-deck-list" role="radiogroup" aria-label="Word Deck">
+          <button class="drawer-item-btn active" data-drawer-deck="core" role="radio" aria-checked="true">
+            <span class="item-icon">📦</span>
+            <div class="item-info">
+              <div class="item-name">Core 2,000 (A1–B1)</div>
+              <div class="item-desc">High-frequency telc B1 exam words</div>
+            </div>
+            <span class="item-badge">2,350+</span>
+          </button>
+          <button class="drawer-item-btn" data-drawer-deck="b2" role="radio" aria-checked="false">
+            <span class="item-icon">📘</span>
+            <div class="item-info">
+              <div class="item-name">Advanced B2 Deck</div>
+              <div class="item-desc">Idioms, abstract nouns, prefixes</div>
+            </div>
+            <span class="item-badge">1,000+</span>
+          </button>
+          <button class="drawer-item-btn" data-drawer-deck="c1" role="radio" aria-checked="false">
+            <span class="item-icon">📙</span>
+            <div class="item-info">
+              <div class="item-name">Academic C1 Deck</div>
+              <div class="item-desc">Nuances, academic discourse</div>
+            </div>
+            <span class="item-badge">800+</span>
+          </button>
+          <button class="drawer-item-btn" data-drawer-deck="c2" role="radio" aria-checked="false">
+            <span class="item-icon">📕</span>
+            <div class="item-info">
+              <div class="item-name">Mastery C2 Deck</div>
+              <div class="item-desc">Native-level idiomatic mastery</div>
+            </div>
+            <span class="item-badge">500+</span>
+          </button>
+          <button class="drawer-item-btn" data-drawer-deck="nvv" role="radio" aria-checked="false">
+            <span class="item-icon">🔗</span>
+            <div class="item-info">
+              <div class="item-name">Nomen-Verb-Verbindungen</div>
+              <div class="item-desc">B2–C2 collocations</div>
+            </div>
+            <span class="item-badge">120+</span>
+          </button>
+          <button class="drawer-item-btn" data-drawer-deck="all" role="radio" aria-checked="false">
+            <span class="item-icon">📚</span>
+            <div class="item-info">
+              <div class="item-name">All Words Combined</div>
+              <div class="item-desc">Master vocabulary bank</div>
+            </div>
+            <span class="item-badge">All</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Section 3: Quiz & Study Modes -->
+      <div class="drawer-section">
+        <div class="drawer-section-header">
+          <span class="drawer-section-title">🃏 Quiz & Study Modes</span>
+        </div>
+        <div class="drawer-mode-grid" role="radiogroup" aria-label="Quiz Modes">
+          <button class="drawer-mode-card active" data-drawer-mode="flashcards" role="radio" aria-checked="true">
+            <span class="mode-icon">🃏</span>
+            <div class="mode-text">
+              <span class="mode-title">Flashcards</span>
+              <span class="mode-sub">SM-2 Spaced Drill</span>
+            </div>
+          </button>
+          <button class="drawer-mode-card" data-drawer-mode="de_meaning" role="radio" aria-checked="false">
+            <span class="mode-icon">🇩🇪➔🌐</span>
+            <div class="mode-text">
+              <span class="mode-title">DE ➔ Meaning</span>
+              <span class="mode-sub">4-Option MCQ</span>
+            </div>
+          </button>
+          <button class="drawer-mode-card" data-drawer-mode="meaning_de" role="radio" aria-checked="false">
+            <span class="mode-icon">🌐➔🇩🇪</span>
+            <div class="mode-text">
+              <span class="mode-title">Meaning ➔ DE</span>
+              <span class="mode-sub">Reverse MCQ</span>
+            </div>
+          </button>
+          <button class="drawer-mode-card" data-drawer-mode="typein" role="radio" aria-checked="false">
+            <span class="mode-icon">✍️</span>
+            <div class="mode-text">
+              <span class="mode-title">Type-In</span>
+              <span class="mode-sub">Active Recall</span>
+            </div>
+          </button>
+          <button class="drawer-mode-card" data-drawer-mode="artikel" role="radio" aria-checked="false">
+            <span class="mode-icon">🔵🔴🟢</span>
+            <div class="mode-text">
+              <span class="mode-title">Artikel-Trainer</span>
+              <span class="mode-sub">der, die, das</span>
+            </div>
+          </button>
+          <button class="drawer-mode-card" data-drawer-mode="sprint" role="radio" aria-checked="false">
+            <span class="mode-icon">⏱️</span>
+            <div class="mode-text">
+              <span class="mode-title">Timed Sprint</span>
+              <span class="mode-sub">2-Min Blitz</span>
+            </div>
+          </button>
+          <button class="drawer-mode-card" data-drawer-mode="mistakes" role="radio" aria-checked="false">
+            <span class="mode-icon">⚠️</span>
+            <div class="mode-text">
+              <span class="mode-title">Mistakes</span>
+              <span class="mode-sub">Review Queue</span>
+            </div>
+          </button>
+          <button class="drawer-mode-card" data-drawer-mode="synonyms" role="radio" aria-checked="false">
+            <span class="mode-icon">🔗</span>
+            <div class="mode-text">
+              <span class="mode-title">Synonyms</span>
+              <span class="mode-sub">DE ➔ DE</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Section 4: Direct Page Links -->
+      <div class="drawer-section">
+        <div class="drawer-section-header">
+          <span class="drawer-section-title">🧭 Direct Page Navigation</span>
+        </div>
+        <div class="drawer-nav-list">
+          <a href="index.html#vocab" class="drawer-nav-item" data-drawer-link="portal">
+            <span class="nav-item-icon">🏠</span>
+            <div class="nav-item-body">
+              <span class="nav-item-title">Portal Overview</span>
+              <span class="nav-item-sub">Curriculum & Study Modules</span>
+            </div>
+          </a>
+          <a href="dashboard.html" class="drawer-nav-item" data-drawer-link="dashboard">
+            <span class="nav-item-icon">🚀</span>
+            <div class="nav-item-body">
+              <span class="nav-item-title">Student Workspace</span>
+              <span class="nav-item-sub">Distraction-Free App</span>
+            </div>
+          </a>
+          <a href="grammatik.html" class="drawer-nav-item" data-drawer-link="grammatik">
+            <span class="nav-item-icon">📝</span>
+            <div class="nav-item-body">
+              <span class="nav-item-title">Grammatik Studio</span>
+              <span class="nav-item-sub">A1–B2 Rules & Exercises</span>
+            </div>
+          </a>
+          <a href="lesen.html" class="drawer-nav-item" data-drawer-link="lesen">
+            <span class="nav-item-icon">📖</span>
+            <div class="nav-item-body">
+              <span class="nav-item-title">Lesen Studio</span>
+              <span class="nav-item-sub">Exam Reader & Word Lookup</span>
+            </div>
+          </a>
+          <a href="hoeren.html" class="drawer-nav-item" data-drawer-link="hoeren">
+            <span class="nav-item-icon">🎧</span>
+            <div class="nav-item-body">
+              <span class="nav-item-title">Hören Studio</span>
+              <span class="nav-item-sub">Audio Simulator & 75 Pts</span>
+            </div>
+          </a>
+          <a href="simulation.html" class="drawer-nav-item" data-drawer-link="simulation">
+            <span class="nav-item-icon">🏁</span>
+            <div class="nav-item-body">
+              <span class="nav-item-title">Final Mock Exam</span>
+              <span class="nav-item-sub">telc B1 Complete Simulation</span>
+            </div>
+          </a>
+          <a href="index.html#lid" class="drawer-nav-item" data-drawer-link="lid">
+            <span class="nav-item-icon">🇩🇪</span>
+            <div class="nav-item-body">
+              <span class="nav-item-title">Leben in Deutschland</span>
+              <span class="nav-item-sub">310 BAMF Citizenship Questions</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="drawer-footer">
+      <button class="desktop-collapse-btn" id="desktop-sidebar-toggle" title="Collapse sidebar to icon rail (Hotkey: [ )" aria-label="Collapse sidebar">
+        <span class="collapse-icon">«</span>
+        <span class="collapse-text">Collapse Sidebar</span>
+      </button>
+      <div class="drawer-footer-actions">
+        <button class="drawer-theme-toggle" id="drawer-theme-btn" aria-label="Toggle Dark/Light Mode">☀️ Theme</button>
+        <div class="drawer-lang-chips">
+          <button class="drawer-lang-btn active" data-lang="en">EN</button>
+          <button class="drawer-lang-btn" data-lang="tr">TR</button>
+          <button class="drawer-lang-btn" data-lang="ar">AR</button>
+          <button class="drawer-lang-btn" data-lang="uk">UK</button>
+        </div>
+      </div>
+    </div>
+
+  </aside>
 
   <!-- Top App Navigation Header -->
   <header class="app-header">
@@ -97,7 +377,7 @@
   <main class="main-wrapper">
 
     <!-- Configuration & Mode Switcher Panel -->
-    <section class="controls-panel" aria-label="Deck and Mode Configuration">
+    <section class="controls-panel mobile-drawer-tucked" aria-label="Deck and Mode Configuration">
       <div class="controls-row-top">
         <div class="selectors-group">
           <!-- Deck Selection -->
@@ -610,6 +890,7 @@
   <script src="data/vocab_c1.js"></script>
   <script src="data/vocab_c2.js"></script>
   <script src="data/vocab_nvv.js"></script>
+  <script src="js/navDrawer.js"></script>
   <script src="js/vocabTrainer.js"></script>
   <script>
     if ('serviceWorker' in navigator) {

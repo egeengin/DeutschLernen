@@ -681,7 +681,10 @@
       };
       try {
         const saved = JSON.parse(localStorage.getItem(this.STORAGE_KEY_SETTINGS) || '{}');
+        const prefs = JSON.parse(localStorage.getItem('deutschlernen_prefs') || '{}');
         const settings = { ...def, ...saved };
+        if (prefs.activeDeck) settings.deck = prefs.activeDeck;
+        if (prefs.activeMode) settings.mode = prefs.activeMode;
         if (siteLang) {
           settings.lang = siteLang;
         }
@@ -1254,6 +1257,16 @@
           if (this.dom.levelSelector) this.dom.levelSelector.value = 'ALL';
         }
         this.sessionManager.saveSettings(this.settings);
+        try {
+          const p = JSON.parse(localStorage.getItem('deutschlernen_prefs') || '{}');
+          p.activeDeck = this.settings.deck;
+          localStorage.setItem('deutschlernen_prefs', JSON.stringify(p));
+          if (window.navDrawerManager) {
+            window.navDrawerManager.prefs.activeDeck = this.settings.deck;
+            window.navDrawerManager.syncActiveBadges();
+            window.navDrawerManager.syncContextBarLabels();
+          }
+        } catch (e) {}
         this.refreshHeaderStats();
         this.startNewDeck();
       });
@@ -1527,6 +1540,16 @@
       });
       this.settings.mode = mode;
       this.sessionManager.saveSettings(this.settings);
+      try {
+        const p = JSON.parse(localStorage.getItem('deutschlernen_prefs') || '{}');
+        p.activeMode = mode;
+        localStorage.setItem('deutschlernen_prefs', JSON.stringify(p));
+        if (window.navDrawerManager) {
+          window.navDrawerManager.prefs.activeMode = mode;
+          window.navDrawerManager.syncActiveBadges();
+          window.navDrawerManager.syncContextBarLabels();
+        }
+      } catch (e) {}
       if (mode === 'sprint') {
         this.startSprintMode();
       } else {

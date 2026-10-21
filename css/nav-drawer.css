@@ -1,0 +1,937 @@
+/**
+ * DeutschLernen - Modern Navigation & Control Interface
+ * Styles for:
+ * 1. Compact Context Bar (Sticky Top Header, max 48px height)
+ * 2. Slide-Over Drawer (Off-Canvas Menu with 100dvh, smooth bezier transition)
+ * 3. Desktop Collapsible Sidebar Rail (280px -> 64px with CSS tooltips)
+ */
+
+:root {
+  --compact-bar-h: 48px;
+  --sidebar-w: 280px;
+  --sidebar-rail-w: 64px;
+  --drawer-max-w: 340px;
+  --drawer-transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --rail-transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1), margin-left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Collapsed Desktop Sidebar CSS Variable Override */
+html.sidebar-collapsed,
+body.sidebar-collapsed {
+  --sidebar-w: 64px;
+}
+
+/* ==========================================================================
+   1. Compact Context Bar (Sticky Top Header)
+   ========================================================================== */
+.compact-context-bar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--compact-bar-h);
+  max-height: var(--compact-bar-h);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  gap: 8px;
+  background: rgba(13, 17, 23, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  box-sizing: border-box;
+  transition: background-color var(--transition, 0.2s ease), border-color var(--transition, 0.2s ease);
+}
+
+[data-theme="light"] .compact-context-bar {
+  background: rgba(251, 251, 254, 0.92);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Left Group */
+.context-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+/* Hamburger Toggle Button (Minimum 44x44px Tap Target) */
+.context-drawer-toggle {
+  min-width: 44px;
+  min-height: 44px;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.context-drawer-toggle:hover {
+  background: var(--bg-card);
+  border-color: var(--border);
+  color: var(--accent-gold);
+}
+
+.context-drawer-toggle:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+
+/* Brand Link / Name in Context Bar */
+.context-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+}
+
+.context-brand-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.context-brand-text {
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Right Group: Status Badges / Chips & Settings Button */
+.context-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+/* Status Badges / Chips */
+.context-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 34px;
+  min-height: 34px;
+  padding: 0 10px;
+  border-radius: 17px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-size: 11.5px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.context-chip:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  transform: translateY(-1px);
+}
+
+.context-chip:active {
+  transform: translateY(0);
+}
+
+.context-chip:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+
+.context-chip .chip-icon {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.context-chip .chip-text {
+  max-width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .context-chip .chip-text {
+    max-width: 80px;
+  }
+  .context-brand-text {
+    display: none;
+  }
+}
+
+/* Settings / Filter Toggle Button */
+.context-settings-btn {
+  min-width: 44px;
+  min-height: 44px;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.context-settings-btn:hover {
+  background: var(--bg-card);
+  border-color: var(--border);
+  color: var(--text-primary);
+}
+
+.context-settings-btn:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+
+
+/* ==========================================================================
+   2. Slide-Over Drawer (Off-Canvas Panel & Backdrop)
+   ========================================================================== */
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.drawer-backdrop.is-open,
+body.drawer-open .drawer-backdrop {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Drawer Container */
+.drawer-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  height: 100dvh;
+  width: min(320px, 85vw);
+  max-width: 360px;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 10px 0 35px rgba(0, 0, 0, 0.45);
+  transform: translateX(-100%);
+  transition: var(--drawer-transition);
+}
+
+.drawer-panel.is-open,
+.drawer-panel.open {
+  transform: translateX(0);
+}
+
+/* Prevent body scrolling when drawer is active */
+body.drawer-open {
+  overflow: hidden !important;
+  touch-action: none;
+}
+
+/* Drawer Header */
+.drawer-header {
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+}
+
+.drawer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.drawer-brand-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.drawer-brand-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.drawer-brand-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.drawer-close-btn {
+  min-width: 44px;
+  min-height: 44px;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.drawer-close-btn:hover {
+  background: var(--bg-card);
+  border-color: var(--border);
+  color: var(--text-primary);
+}
+
+/* Drawer Scrollable Body */
+.drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Custom Scrollbar for Drawer Body */
+.drawer-body::-webkit-scrollbar {
+  width: 5px;
+}
+.drawer-body::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+/* Drawer Sections */
+.drawer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.drawer-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+.drawer-section-title {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.drawer-section-edit {
+  background: transparent;
+  border: none;
+  color: var(--accent-gold);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.drawer-section-edit:hover {
+  background: rgba(245, 158, 11, 0.12);
+}
+
+/* Target Level / Goal Chips Grid */
+.drawer-goal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.drawer-goal-chip {
+  min-height: 44px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.drawer-goal-chip:hover {
+  border-color: var(--accent-gold);
+  background: var(--bg-card-hover, rgba(255, 255, 255, 0.05));
+}
+
+.drawer-goal-chip.active {
+  background: rgba(245, 158, 11, 0.14);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  box-shadow: 0 0 0 1px var(--accent-gold);
+}
+
+.drawer-goal-chip .chip-emoji {
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.drawer-goal-chip .chip-label {
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Deck / Module Selector List */
+.drawer-deck-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.drawer-item-btn {
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.drawer-item-btn:hover {
+  border-color: var(--accent-gold);
+  background: var(--bg-card-hover, rgba(255, 255, 255, 0.04));
+}
+
+.drawer-item-btn.active {
+  background: rgba(59, 130, 246, 0.12);
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 1px var(--accent-blue);
+}
+
+.drawer-item-btn .item-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.drawer-item-btn .item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.drawer-item-btn .item-name {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.drawer-item-btn .item-desc {
+  font-size: 10.5px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.drawer-item-btn .item-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+/* Quiz Modes Grid */
+.drawer-mode-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.drawer-mode-card {
+  min-height: 48px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.drawer-mode-card:hover {
+  border-color: var(--accent-gold);
+  background: var(--bg-card-hover, rgba(255, 255, 255, 0.04));
+}
+
+.drawer-mode-card.active {
+  background: rgba(245, 158, 11, 0.14);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  box-shadow: 0 0 0 1px var(--accent-gold);
+}
+
+.drawer-mode-card .mode-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.drawer-mode-card .mode-text {
+  min-width: 0;
+  flex: 1;
+}
+
+.drawer-mode-card .mode-title {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+.drawer-mode-card .mode-sub {
+  display: block;
+  font-size: 10px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Direct Navigation Links */
+.drawer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.drawer-nav-item {
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-secondary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.drawer-nav-item:hover,
+.drawer-nav-item.active {
+  background: var(--bg-card);
+  color: var(--accent-gold);
+  border: 1px solid var(--border);
+}
+
+.drawer-nav-item .nav-item-icon {
+  font-size: 18px;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 24px;
+  text-align: center;
+}
+
+.drawer-nav-item .nav-item-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.drawer-nav-item .nav-item-title {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.drawer-nav-item .nav-item-sub {
+  display: block;
+  font-size: 10.5px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Drawer Footer */
+.drawer-footer {
+  padding: 12px 14px;
+  border-top: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Desktop Sidebar Collapse Toggle Button */
+.desktop-collapse-btn {
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.desktop-collapse-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.desktop-collapse-btn:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+
+.desktop-collapse-btn .collapse-icon {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.drawer-footer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.drawer-theme-toggle {
+  min-height: 38px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.drawer-theme-toggle:hover {
+  border-color: var(--accent-gold);
+}
+
+.drawer-lang-chips {
+  display: flex;
+  gap: 4px;
+}
+
+.drawer-lang-btn {
+  min-height: 38px;
+  min-width: 38px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.drawer-lang-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--text-primary);
+}
+
+.drawer-lang-btn.active {
+  background: var(--accent-gold);
+  color: #000;
+  border-color: var(--accent-gold);
+}
+
+
+/* ==========================================================================
+   3. Desktop Sidebar Collapse (Viewports >= 1024px)
+   ========================================================================== */
+@media (min-width: 1024px) {
+  /* On Desktop, drawer-panel or .sidebar acts as the persistent sidebar */
+  .sidebar,
+  .drawer-panel.desktop-docked {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-w);
+    height: 100vh;
+    transform: none !important;
+    transition: var(--rail-transition);
+    z-index: 100;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* When desktop is docked, backdrop is not needed */
+  .drawer-panel.desktop-docked + .drawer-backdrop,
+  .drawer-backdrop {
+    display: none;
+  }
+
+  /* Main content adjusts left margin smoothly */
+  .main,
+  .main-wrapper {
+    transition: margin-left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Collapsed Rail (64px width) */
+  html.sidebar-collapsed .sidebar,
+  body.sidebar-collapsed .sidebar,
+  html.sidebar-collapsed .drawer-panel.desktop-docked,
+  body.sidebar-collapsed .drawer-panel.desktop-docked {
+    width: var(--sidebar-rail-w, 64px) !important;
+    overflow-x: hidden;
+  }
+
+  html.sidebar-collapsed .main,
+  body.sidebar-collapsed .main {
+    margin-left: var(--sidebar-rail-w, 64px) !important;
+  }
+
+  html.sidebar-collapsed .markdown-view,
+  body.sidebar-collapsed .markdown-view {
+    left: var(--sidebar-rail-w, 64px) !important;
+  }
+
+  /* Elements hidden in collapsed mode */
+  html.sidebar-collapsed .hide-on-collapse,
+  body.sidebar-collapsed .hide-on-collapse,
+  html.sidebar-collapsed .sidebar-header h2,
+  body.sidebar-collapsed .sidebar-header h2,
+  html.sidebar-collapsed .sidebar-header p,
+  body.sidebar-collapsed .sidebar-header p,
+  html.sidebar-collapsed .search-box,
+  body.sidebar-collapsed .search-box,
+  html.sidebar-collapsed .sidebar-goal-badge,
+  body.sidebar-collapsed .sidebar-goal-badge,
+  html.sidebar-collapsed .sidebar-nav-header,
+  body.sidebar-collapsed .sidebar-nav-header,
+  html.sidebar-collapsed .sidebar-pillar-title,
+  body.sidebar-collapsed .sidebar-pillar-title,
+  html.sidebar-collapsed .sidebar-pillar-sub,
+  body.sidebar-collapsed .sidebar-pillar-sub,
+  html.sidebar-collapsed .sidebar-nav-item span:not(.icon),
+  body.sidebar-collapsed .sidebar-nav-item span:not(.icon),
+  html.sidebar-collapsed .sidebar-footer > div,
+  body.sidebar-collapsed .sidebar-footer > div,
+  html.sidebar-collapsed .drawer-brand-title,
+  body.sidebar-collapsed .drawer-brand-title,
+  html.sidebar-collapsed .drawer-brand-sub,
+  body.sidebar-collapsed .drawer-brand-sub,
+  html.sidebar-collapsed .drawer-section-title,
+  body.sidebar-collapsed .drawer-section-title,
+  html.sidebar-collapsed .drawer-section-edit,
+  body.sidebar-collapsed .drawer-section-edit,
+  html.sidebar-collapsed .item-info,
+  body.sidebar-collapsed .item-info,
+  html.sidebar-collapsed .item-badge,
+  body.sidebar-collapsed .item-badge,
+  html.sidebar-collapsed .mode-text,
+  body.sidebar-collapsed .mode-text,
+  html.sidebar-collapsed .nav-item-body,
+  body.sidebar-collapsed .nav-item-body,
+  html.sidebar-collapsed .collapse-text,
+  body.sidebar-collapsed .collapse-text,
+  html.sidebar-collapsed .drawer-footer-actions,
+  body.sidebar-collapsed .drawer-footer-actions {
+    display: none !important;
+  }
+
+  /* Center icons in collapsed rail */
+  html.sidebar-collapsed .sidebar-pillar-link,
+  body.sidebar-collapsed .sidebar-pillar-link,
+  html.sidebar-collapsed .sidebar-nav-item,
+  body.sidebar-collapsed .sidebar-nav-item,
+  html.sidebar-collapsed .drawer-item-btn,
+  body.sidebar-collapsed .drawer-item-btn,
+  html.sidebar-collapsed .drawer-nav-item,
+  body.sidebar-collapsed .drawer-nav-item {
+    justify-content: center !important;
+    padding: 10px 0 !important;
+    text-align: center;
+  }
+
+  html.sidebar-collapsed .drawer-mode-grid,
+  body.sidebar-collapsed .drawer-mode-grid {
+    grid-template-columns: 1fr;
+  }
+
+  html.sidebar-collapsed .drawer-mode-card,
+  body.sidebar-collapsed .drawer-mode-card {
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  html.sidebar-collapsed .sidebar-pillar-icon,
+  body.sidebar-collapsed .sidebar-pillar-icon,
+  html.sidebar-collapsed .sidebar-nav-item .icon,
+  body.sidebar-collapsed .sidebar-nav-item .icon,
+  html.sidebar-collapsed .item-icon,
+  body.sidebar-collapsed .item-icon,
+  html.sidebar-collapsed .mode-icon,
+  body.sidebar-collapsed .mode-icon,
+  html.sidebar-collapsed .nav-item-icon,
+  body.sidebar-collapsed .nav-item-icon {
+    font-size: 22px !important;
+    margin: 0 !important;
+  }
+
+  /* CSS Tooltips on Hover when Sidebar is Collapsed */
+  html.sidebar-collapsed [data-tooltip],
+  body.sidebar-collapsed [data-tooltip] {
+    position: relative;
+  }
+
+  html.sidebar-collapsed [data-tooltip]:hover::after,
+  body.sidebar-collapsed [data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: calc(var(--sidebar-rail-w, 64px) + 8px);
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    z-index: 10000;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    opacity: 0;
+    animation: tooltipFadeIn 0.15s ease-out forwards;
+  }
+
+  @keyframes tooltipFadeIn {
+    from { opacity: 0; transform: translateY(-50%) translateX(-4px); }
+    to { opacity: 1; transform: translateY(-50%) translateX(0); }
+  }
+}
+
+/* ==========================================================================
+   4. Mobile Responsive Rules (< 1024px)
+   ========================================================================== */
+@media (max-width: 1023px) {
+  /* Show backdrop on mobile when drawer is active */
+  .drawer-backdrop {
+    display: block;
+  }
+
+  /* Bulky top bars are hidden on mobile in favor of the Compact Context Bar */
+  .global-top-bar {
+    display: none !important;
+  }
+
+  /* The old floating menu toggle button is replaced by the header button */
+  .menu-toggle {
+    display: none !important;
+  }
+
+  /* Hide bulky controls panel in trainer on mobile - controls are inside the Drawer */
+  .controls-panel.mobile-drawer-tucked {
+    display: none !important;
+  }
+
+  /* Ensure main container starts cleanly under the 48px sticky bar */
+  .main {
+    margin-left: 0 !important;
+  }
+  .main-wrapper {
+    margin-left: 0 !important;
+    padding-top: 8px !important;
+  }
+}
