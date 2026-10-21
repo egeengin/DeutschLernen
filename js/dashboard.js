@@ -166,11 +166,96 @@
     event.target.value = '';
   };
 
-  // 6. On DOM Ready
+  // 6. Notification UI & Handlers
+  function initNotificationUI() {
+    if (typeof NotificationService === 'undefined') return;
+
+    const notifBtn = document.getElementById('btn-toggle-notifications');
+    const notifBtnText = document.getElementById('btn-toggle-notifications-text');
+    const notifTimePicker = document.getElementById('notif-time-picker');
+    const notifDesc = document.getElementById('notif-status-desc');
+    const notifMsg = document.getElementById('notif-feedback-msg');
+
+    const perm = NotificationService.getPermission();
+    const settings = NotificationService.settings;
+    const strings = NotificationService.getStrings();
+
+    if (notifTimePicker) {
+      notifTimePicker.value = settings.time || '19:00';
+      notifTimePicker.addEventListener('change', () => {
+        NotificationService.saveSettings({ time: notifTimePicker.value });
+        if (notifMsg) {
+          notifMsg.style.display = 'block';
+          notifMsg.style.background = 'rgba(16, 185, 129, 0.15)';
+          notifMsg.style.color = 'var(--accent-green)';
+          notifMsg.textContent = `✅ ${strings.savedToast} (${notifTimePicker.value})`;
+          setTimeout(() => { notifMsg.style.display = 'none'; }, 3000);
+        }
+      });
+    }
+
+    if (perm === 'granted' && settings.enabled) {
+      if (notifBtnText) notifBtnText.textContent = strings.enabledBtn;
+      if (notifBtn) {
+        notifBtn.style.background = 'var(--accent-green)';
+        notifBtn.style.color = '#fff';
+      }
+    } else if (perm === 'denied') {
+      if (notifBtnText) notifBtnText.textContent = strings.blockedBtn;
+      if (notifBtn) {
+        notifBtn.style.background = 'var(--accent-red)';
+        notifBtn.style.color = '#fff';
+      }
+    }
+
+    window.handleNotificationToggle = async function () {
+      if (NotificationService.getPermission() === 'denied') {
+        alert(strings.permissionDeniedAlert);
+        return;
+      }
+      const res = await NotificationService.requestPermission();
+      if (res === 'granted') {
+        NotificationService.saveSettings({ enabled: true });
+        if (notifBtnText) notifBtnText.textContent = strings.enabledBtn;
+        if (notifBtn) {
+          notifBtn.style.background = 'var(--accent-green)';
+          notifBtn.style.color = '#fff';
+        }
+        await NotificationService.sendTestNotification();
+        if (notifMsg) {
+          notifMsg.style.display = 'block';
+          notifMsg.style.background = 'rgba(16, 185, 129, 0.15)';
+          notifMsg.style.color = 'var(--accent-green)';
+          notifMsg.textContent = `✅ ${strings.testBody}`;
+          setTimeout(() => { notifMsg.style.display = 'none'; }, 5000);
+        }
+      } else {
+        if (notifBtnText) notifBtnText.textContent = strings.blockedBtn;
+      }
+    };
+
+    window.handleTestNotification = async function () {
+      if (NotificationService.getPermission() !== 'granted') {
+        await window.handleNotificationToggle();
+      } else {
+        const sent = await NotificationService.sendTestNotification();
+        if (notifMsg) {
+          notifMsg.style.display = 'block';
+          notifMsg.style.background = sent ? 'rgba(16, 185, 129, 0.15)' : 'rgba(239, 68, 68, 0.15)';
+          notifMsg.style.color = sent ? 'var(--accent-green)' : 'var(--accent-red)';
+          notifMsg.textContent = sent ? `🔔 ${strings.testBody}` : `⚠️ ${strings.permissionDeniedAlert}`;
+          setTimeout(() => { notifMsg.style.display = 'none'; }, 4000);
+        }
+      }
+    };
+  }
+
+  // 7. On DOM Ready
   document.addEventListener('DOMContentLoaded', function () {
     updateDashboardMetrics();
     initEmbeddedExaminer();
     initTabNav();
+    initNotificationUI();
 
     if (typeof StorageEngine !== 'undefined') {
       StorageEngine.onStateChange(() => {
@@ -196,4 +281,5 @@
 
   // Global hooks
   window.updateDashboardMetrics = updateDashboardMetrics;
+  window.initNotificationUI = initNotificationUI;
 })();

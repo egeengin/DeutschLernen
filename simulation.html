@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>telc Deutsch B1 Abschlusssimulation — DeutschLernen</title>
+  <meta name="description" content="Interaktive telc Deutsch B1 Prüfungssimulation (225 Punkte): Leseverstehen, Sprachbausteine, Hörverstehen mit Audio und schriftlicher Ausdruck mit automatischer Auswertung.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="telc Deutsch B1 Abschlusssimulation — DeutschLernen">
+  <meta property="og:description" content="Interaktive telc Deutsch B1 Prüfungssimulation (225 Punkte) mit Audio, Timer und offiziellem Notenbericht.">
+  <meta property="og:image" content="assets/icons/icon-512.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="telc Deutsch B1 Abschlusssimulation — DeutschLernen">
+  <meta name="twitter:description" content="Interaktive telc Deutsch B1 Prüfungssimulation (225 Punkte) mit Audio, Timer und offiziellem Notenbericht.">
+  <meta name="twitter:image" content="assets/icons/icon-512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#f59e0b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/simulation.css">
+  <script>
+    (function() {
+      const theme = localStorage.getItem('deutschlernen_theme') || localStorage.getItem('site_theme') || localStorage.getItem('telc_theme');
+      if (theme === 'light') {
+        document.documentElement.classList.add('light-mode');
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+      const lang = localStorage.getItem('deutschlernen_lang') || localStorage.getItem('site_lang') || localStorage.getItem('telc_lang') || 'en';
+      if (lang === 'ar') {
+        document.documentElement.setAttribute('dir', 'rtl');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Sticky Exam Header -->
+  <header class="exam-header">
+    <div class="exam-header-inner">
+      <div class="exam-brand">
+        <a href="dashboard.html" style="color:var(--text-secondary); text-decoration:none; font-size:13px; font-weight:700;">← Dashboard</a>
+        <span class="exam-pill-badge" data-i18n="officialBadge">Offizieller telc-B1-Standard • 225 Punkte</span>
+      </div>
+
+      <!-- Section Navigation Chips -->
+      <nav class="exam-section-nav" aria-label="Prüfungsabschnitte">
+        <button class="section-chip active" data-section="lesen" data-i18n="navLesen">📖 1. Leseverstehen</button>
+        <button class="section-chip" data-section="sprachbausteine" data-i18n="navSprachbausteine">🧩 2. Sprachbausteine</button>
+        <button class="section-chip" data-section="hoeren" data-i18n="navHoeren">🎧 3. Hörverstehen</button>
+        <button class="section-chip" data-section="schreiben" data-i18n="navSchreiben">✍️ 4. Schreiben</button>
+      </nav>
+
+      <!-- Timer & Actions -->
+      <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+        <div class="exam-timer-box" id="exam-timer-box" title="Verbleibende Prüfungszeit">
+          <span>⏱️</span>
+          <span id="exam-countdown-timer">02:30:00</span>
+        </div>
+
+        <button class="btn-submit-exam" id="btn-submit-exam" data-i18n="submitExamBtn">
+          Prüfung abgeben & Auswerten 🏁
+        </button>
+
+        <button class="btn-umlaut" id="theme-toggle-btn" title="Toggle Light / Dark mode" aria-label="Toggle Theme">
+          ☀️
+        </button>
+
+        <div class="umlaut-buttons-row" role="group" aria-label="Language Selector">
+          <button class="btn-umlaut lang-btn" data-lang="de">DE</button>
+          <button class="btn-umlaut lang-btn" data-lang="en">EN</button>
+          <button class="btn-umlaut lang-btn" data-lang="tr">TR</button>
+          <button class="btn-umlaut lang-btn" data-lang="ar">AR</button>
+          <button class="btn-umlaut lang-btn" data-lang="uk">UK</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Exam Content Container -->
+  <main class="exam-container">
+    <div id="exam-module-container"></div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="data/readingData.js"></script>
+  <script src="data/sprachbausteineData.js"></script>
+  <script src="data/hoerenData.js"></script>
+  <script src="js/storage-engine.js"></script>
+  <script src="js/notifications.js"></script>
+  <script src="js/simulationApp.js"></script>
+
+</body>
+</html>

@@ -1,10 +1,11 @@
-const CACHE_NAME = 'deutschlernen-v52';
+const CACHE_NAME = 'deutschlernen-v53';
 const ASSETS = [
   './',
   './index.html',
   './dashboard.html',
   './trainer.html',
   './grammatik.html',
+  './simulation.html',
   './legal.html',
   './sprechen.html',
   './lesen.html',
@@ -17,6 +18,7 @@ const ASSETS = [
   './css/seo.css',
   './css/trainer.css',
   './css/grammatik.css',
+  './css/simulation.css',
   './css/sprechen.css',
   './css/lesen.css',
   './css/hoeren.css',
@@ -25,6 +27,8 @@ const ASSETS = [
   './js/storage-engine.js',
   './js/portal.js',
   './js/grammarApp.js',
+  './js/notifications.js',
+  './js/simulationApp.js',
   './data/grammar_data.js',
   './js/dashboard.js',
   './js/voiceExamEngine.js',
@@ -233,4 +237,48 @@ self.addEventListener('fetch', event => {
       return cached || fetchPromise;
     })
   );
+});
+
+// ==========================================
+// PWA Web Notifications & Streak Reminder
+// ==========================================
+self.addEventListener('notificationclick', event => {
+  event.notification.close();
+  const targetUrl = (event.notification.data && event.notification.data.url) || './index.html';
+
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then(windowClients => {
+      // Focus if tab already open
+      for (let client of windowClients) {
+        if (client.url.includes(self.location.origin) && 'focus' in client) {
+          return client.focus();
+        }
+      }
+      // Open new window if not open
+      if (clients.openWindow) {
+        return clients.openWindow(targetUrl);
+      }
+    })
+  );
+});
+
+self.addEventListener('push', event => {
+  let data = { title: 'DeutschLernen', body: 'Deine tägliche Deutsch-Einheit wartet auf dich! 🔥' };
+  if (event.data) {
+    try {
+      data = event.data.json();
+    } catch (e) {
+      data.body = event.data.text();
+    }
+  }
+
+  const options = {
+    body: data.body,
+    icon: './assets/icons/icon-192.png',
+    badge: './assets/icons/favicon-32.png',
+    tag: 'deutschlernen-push',
+    data: { url: data.url || './index.html' }
+  };
+
+  event.waitUntil(self.registration.showNotification(data.title, options));
 });
