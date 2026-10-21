@@ -72,8 +72,28 @@
       synonymsLabel: "Synonyms",
       antonymsLabel: "Antonyms",
       arenaSubhint: "Choose the correct meaning below or press keys 1–4",
+      arenaSubhintMobile: "Choose the correct meaning below:",
       artikelSubhint: "Select the correct German definite article or press keys 1, 2, or 3",
+      artikelSubhintMobile: "Select the correct definite article:",
       cardLabel: "Card",
+      sm2_again: "Again",
+      sm2_again_interval: "< 1 day",
+      sm2_hard: "Hard",
+      sm2_hard_interval: "1–2 days",
+      sm2_good: "Good",
+      sm2_good_interval: "3–7 days",
+      sm2_easy: "Easy",
+      sm2_easy_interval: "7–14 days",
+      dontKnowBtn: "🤷 Don't Know (Show Answer)",
+      dontKnowShort: "🤷 Pass",
+      typeinTitle: "Active Recall & Spelling",
+      typeinHelp: "Type from memory",
+      typeinPlaceholder: "Type German word here...",
+      checkBtn: "Check",
+      smartUmlautLabel: "⚡ Smart Umlauts (ae ➔ ä, oe ➔ ö, ue ➔ ü, ss ➔ ß)",
+      typeinSubhint: "Type the German word and press Check:",
+      typeinEmptyWarning: "Please type a word or tap 'Don't Know' to reveal.",
+      typeinRevealed: "Correct word",
       restartDeck: "Restart Drill",
       resetProgressBtn: "Reset Progress",
       levelA1: "A1 Level",
@@ -185,8 +205,28 @@
       synonymsLabel: "Eş Anlamlılar",
       antonymsLabel: "Zıt Anlamlılar",
       arenaSubhint: "Aşağıdan doğru anlamı seçin veya 1–4 tuşlarına basın",
+      arenaSubhintMobile: "Aşağıdan doğru anlamı seçin:",
       artikelSubhint: "Doğru artikeli seçin veya 1, 2, 3 tuşlarına basın",
+      artikelSubhintMobile: "Doğru artikeli seçin:",
       cardLabel: "Kart",
+      sm2_again: "Tekrar",
+      sm2_again_interval: "< 1 gün",
+      sm2_hard: "Zor",
+      sm2_hard_interval: "1–2 gün",
+      sm2_good: "İyi",
+      sm2_good_interval: "3–7 gün",
+      sm2_easy: "Kolay",
+      sm2_easy_interval: "7–14 gün",
+      dontKnowBtn: "🤷 Bilmiyorum (Cevabı Göster)",
+      dontKnowShort: "🤷 Pas",
+      typeinTitle: "Yazarak Çalışma (Aktif Hatırlama)",
+      typeinHelp: "Hafızadan yazın",
+      typeinPlaceholder: "Almanca kelimeyi buraya yazın...",
+      checkBtn: "Kontrol Et",
+      smartUmlautLabel: "⚡ Akıllı Harf (ae ➔ ä, oe ➔ ö, ue ➔ ü, ss ➔ ß)",
+      typeinSubhint: "Kelimenin Almancasını yazın ve Kontrol Et'e basın:",
+      typeinEmptyWarning: "Lütfen bir kelime yazın veya 'Bilmiyorum' butonuna basın.",
+      typeinRevealed: "Doğru Cevap",
       restartDeck: "Antrenmanı Yeniden Başlat",
       resetProgressBtn: "İlerlemeyi Sıfırla",
       levelA1: "A1 Seviyesi",
@@ -298,8 +338,28 @@
       synonymsLabel: "المرادفات",
       antonymsLabel: "الأضداد",
       arenaSubhint: "اختر المعنى الصحيح أدناه أو اضغط على المفاتيح 1–4",
+      arenaSubhintMobile: "اختر المعنى الصحيح أدناه:",
       artikelSubhint: "اختر أداة التعريف الصحيحة أو اضغط على 1 أو 2 أو 3",
+      artikelSubhintMobile: "اختر أداة التعريف الصحيحة:",
       cardLabel: "بطاقة",
+      sm2_again: "مجدداً",
+      sm2_again_interval: "< 1 يوم",
+      sm2_hard: "صعب",
+      sm2_hard_interval: "1–2 يوم",
+      sm2_good: "جيد",
+      sm2_good_interval: "3–7 أيام",
+      sm2_easy: "سهل",
+      sm2_easy_interval: "7–14 يوماً",
+      dontKnowBtn: "🤷 لا أعرف (إظهار الإجابة)",
+      dontKnowShort: "🤷 تخطي",
+      typeinTitle: "التدريب على الكتابة والإملاء",
+      typeinHelp: "اكتب من الذاكرة",
+      typeinPlaceholder: "اكتب الكلمة الألمانية هنا...",
+      checkBtn: "تحقق",
+      smartUmlautLabel: "⚡ تحويل الحروف الذكي (ae ➔ ä...)",
+      typeinSubhint: "اكتب الكلمة بالألمانية ثم اضغط تحقق:",
+      typeinEmptyWarning: "يرجى كتابة كلمة أو الضغط على 'لا أعرف'.",
+      typeinRevealed: "الإجابة الصحيحة",
       restartDeck: "إعادة بدء التدريب",
       resetProgressBtn: "إعادة ضبط التقدم",
       levelA1: "المستوى A1",
@@ -519,8 +579,28 @@
       synonymsLabel: "Синоніми",
       antonymsLabel: "Антоніми",
       arenaSubhint: "Виберіть правильне значення нижче або натисніть клавіші 1–4",
+      arenaSubhintMobile: "Виберіть правильне значення нижче:",
       artikelSubhint: "Виберіть правильний означений артикль або натисніть 1, 2, 3",
+      artikelSubhintMobile: "Виберіть правильний означений артикль:",
       cardLabel: "Картка",
+      sm2_again: "Знову",
+      sm2_again_interval: "< 1 дн.",
+      sm2_hard: "Важко",
+      sm2_hard_interval: "1–2 дн.",
+      sm2_good: "Добре",
+      sm2_good_interval: "3–7 дн.",
+      sm2_easy: "Легко",
+      sm2_easy_interval: "7–14 дн.",
+      dontKnowBtn: "🤷 Не знаю (Показати відповідь)",
+      dontKnowShort: "🤷 Пропуск",
+      typeinTitle: "Активне пригадування та правопис",
+      typeinHelp: "Введіть з пам'яті",
+      typeinPlaceholder: "Введіть німецьке слово тут...",
+      checkBtn: "Перевірити",
+      smartUmlautLabel: "⚡ Розумні умлаути (ae ➔ ä...)",
+      typeinSubhint: "Введіть слово німецькою та натисніть Перевірити:",
+      typeinEmptyWarning: "Будь ласка, введіть слово або натисніть 'Не знаю'.",
+      typeinRevealed: "Правильне слово",
       restartDeck: "Почати тренування спочатку",
       resetProgressBtn: "Скинути прогрес",
       levelA1: "Рівень A1",
@@ -982,6 +1062,8 @@
         arenaLevelBadge: document.getElementById('arena-level-badge'),
         arenaAudioPlay: document.getElementById('btn-play-audio'),
         optionsGrid: document.getElementById('options-grid'),
+        dontknowContainer: document.getElementById('dontknow-container'),
+        btnDontKnow: document.getElementById('btn-dont-know'),
         // Flashcard & SM-2 Mode Elements
         flashcardContainer: document.getElementById('flashcard-arena-container'),
         flashcardElement: document.getElementById('flashcard-card-element'),
@@ -995,6 +1077,7 @@
         typeinForm: document.getElementById('typein-form'),
         typeinInput: document.getElementById('typein-input'),
         btnTypeinSubmit: document.getElementById('btn-typein-submit'),
+        btnTypeinDontKnow: document.getElementById('btn-typein-dontknow'),
         typeinFeedback: document.getElementById('typein-feedback'),
         smartUmlautToggle: document.getElementById('smart-umlaut-toggle'),
         umlautToolbar: document.getElementById('umlaut-toolbar'),
@@ -1267,6 +1350,20 @@
         });
       }
 
+      // Don't Know button in Multiple Choice / Artikel modes
+      if (this.dom.btnDontKnow) {
+        this.dom.btnDontKnow.addEventListener('click', () => {
+          this.handleDontKnow();
+        });
+      }
+
+      // Don't Know / Pass button in Type-In mode
+      if (this.dom.btnTypeinDontKnow) {
+        this.dom.btnTypeinDontKnow.addEventListener('click', () => {
+          this.handleTypeinDontKnow();
+        });
+      }
+
       // Type-In Form Submit
       if (this.dom.typeinForm) {
         this.dom.typeinForm.addEventListener('submit', (e) => {
@@ -1367,6 +1464,13 @@
             if (btns[idx] && !this.hasAnswered) {
               btns[idx].click();
             }
+          }
+        } else if ((e.key === '?' || e.key === '0') && !this.hasAnswered) {
+          e.preventDefault();
+          if (this.settings.mode === 'typein') {
+            this.handleTypeinDontKnow();
+          } else if (this.settings.mode !== 'flashcards') {
+            this.handleDontKnow();
           }
         } else if (e.key === ' ' || e.code === 'Space') {
           e.preventDefault();
@@ -1550,7 +1654,31 @@
       if (subhintEl) subhintEl.textContent = texts.arenaSubhint;
 
       // Word & Badges
-      this.dom.arenaPosBadge.textContent = item.pos ? item.pos.toUpperCase() : '';
+      if (this.dom.arenaPosBadge) {
+        const posRaw = (item.pos || '').toLowerCase();
+        const posMap = {
+          noun: { en: 'NOUN', tr: 'İSİM', de: 'NOMEN', ar: 'اسم', uk: 'ІМЕННИК' },
+          verb: { en: 'VERB', tr: 'FİİL', de: 'VERB', ar: 'فعل', uk: 'ДІЄСЛОВО' },
+          adj: { en: 'ADJ', tr: 'SIFAT', de: 'ADJEKTIV', ar: 'صفة', uk: 'ПРИКМЕТНИК' },
+          adjective: { en: 'ADJ', tr: 'SIFAT', de: 'ADJEKTIV', ar: 'صفة', uk: 'ПРИКМЕТНИК' },
+          adv: { en: 'ADV', tr: 'ZARF', de: 'ADVERB', ar: 'ظرف', uk: 'ПРИСЛІВНИК' },
+          adverb: { en: 'ADV', tr: 'ZARF', de: 'ADVERB', ar: 'ظرف', uk: 'ПРИСЛІВНИК' },
+          phrase: { en: 'PHRASE', tr: 'KALIP / İFADE', de: 'WENDUNG', ar: 'عبارة', uk: 'ВИРАЗ' },
+          pronoun: { en: 'PRONOUN', tr: 'ZAMİR', de: 'PRONOMEN', ar: 'ضمير', uk: 'ЗАЙМЕННИК' },
+          preposition: { en: 'PREP', tr: 'EDAT', de: 'PRÄPOSITION', ar: 'حرف جر', uk: 'ПРИЙМЕННИК' }
+        };
+        const curLang = this.settings.lang || 'en';
+        const localizedPos = (posMap[posRaw] && posMap[posRaw][curLang]) || (posMap[posRaw] && posMap[posRaw].en) || (item.pos ? item.pos.toUpperCase() : '');
+        this.dom.arenaPosBadge.textContent = localizedPos;
+        const posTitleMap = {
+          en: 'Word Type (Part of Speech)',
+          tr: 'Kelime Türü (Sözcük Grubu)',
+          de: 'Wortart',
+          ar: 'نوع الكلمة (أقسام الكلام)',
+          uk: 'Частина мови'
+        };
+        this.dom.arenaPosBadge.title = `${posTitleMap[curLang] || 'Word Type'}: ${localizedPos}`;
+      }
       this.dom.arenaLevelBadge.textContent = item.level || 'B1';
       this.dom.arenaLevelBadge.className = 'badge-level badge-' + (item.level ? item.level.toLowerCase() : 'b1');
 
@@ -1672,12 +1800,13 @@
       if (this.settings.mode === 'typein') {
         if (this.dom.mainPromptCard) this.dom.mainPromptCard.classList.remove('hidden');
         if (this.dom.optionsGrid) this.dom.optionsGrid.classList.add('hidden');
+        if (this.dom.dontknowContainer) this.dom.dontknowContainer.classList.add('hidden');
         if (this.dom.flashcardContainer) this.dom.flashcardContainer.classList.add('hidden');
         if (this.dom.typeinContainer) this.dom.typeinContainer.classList.remove('hidden');
 
         this.dom.arenaWordDe.textContent = this.getMeaning(item);
         this.dom.arenaWordDe.setAttribute('dir', (this.settings.lang === 'ar') ? 'rtl' : 'ltr');
-        if (subhintEl) subhintEl.textContent = "Geben Sie das deutsche Wort ein (ä, ö, ü, ß Tastatur verfügbar):";
+        if (subhintEl) subhintEl.textContent = texts.typeinSubhint || "Kelimenin Almancasını yazın ve Kontrol Et'e basın:";
 
         if (this.dom.typeinInput) {
           this.dom.typeinInput.value = '';
@@ -1687,6 +1816,9 @@
             try { this.dom.typeinInput.focus(); } catch (e) {}
           }, 60);
         }
+        if (this.dom.btnTypeinDontKnow) {
+          this.dom.btnTypeinDontKnow.disabled = false;
+        }
         if (this.dom.typeinFeedback) this.dom.typeinFeedback.innerHTML = '';
         this.isInitialLoad = false;
         return;
@@ -1695,8 +1827,14 @@
       // ALL OTHER MODES: Standard MCQ Arena (de_meaning, meaning_de, artikel, synonyms, antonyms, mistakes, sprint)
       if (this.dom.mainPromptCard) this.dom.mainPromptCard.classList.remove('hidden');
       if (this.dom.optionsGrid) this.dom.optionsGrid.classList.remove('hidden');
+      if (this.dom.dontknowContainer) this.dom.dontknowContainer.classList.remove('hidden');
       if (this.dom.flashcardContainer) this.dom.flashcardContainer.classList.add('hidden');
       if (this.dom.typeinContainer) this.dom.typeinContainer.classList.add('hidden');
+
+      if (this.dom.btnDontKnow) {
+        this.dom.btnDontKnow.disabled = false;
+        this.dom.btnDontKnow.classList.remove('active-revealed', 'disabled');
+      }
 
       // Render Question prompt according to selected Mode
       let promptTitle = "";
@@ -1738,8 +1876,13 @@
 
       this.dom.arenaWordDe.setAttribute('dir', (this.settings.lang === 'ar' && this.settings.mode === 'meaning_de') ? 'rtl' : 'ltr');
 
+      const isMobile = (typeof window !== 'undefined' && (window.innerWidth <= 640 || ('ontouchstart' in window)));
       if (subhintEl) {
-        subhintEl.textContent = this.settings.mode === 'artikel' ? (texts.artikelSubhint || texts.arenaSubhint) : texts.arenaSubhint;
+        if (this.settings.mode === 'artikel') {
+          subhintEl.textContent = isMobile ? (texts.artikelSubhintMobile || "Doğru artikeli seçin:") : (texts.artikelSubhint || "Doğru artikeli seçin veya 1, 2, 3 tuşlarına basın");
+        } else {
+          subhintEl.textContent = isMobile ? (texts.arenaSubhintMobile || "Aşağıdan doğru anlamı seçin:") : (texts.arenaSubhint || "Aşağıdan doğru anlamı seçin veya 1–4 tuşlarına basın");
+        }
       }
 
       // Auto TTS if audio is on and prompt is German
@@ -1944,6 +2087,102 @@
       this.showExplanationCard(item);
     }
 
+    handleDontKnow() {
+      if (this.hasAnswered) return;
+      const item = this.currentDeck[this.currentIndex];
+      if (!item) return;
+
+      this.hasAnswered = true;
+
+      let correctText = "";
+      if (this.settings.mode === 'artikel') {
+        const m = item.de.match(/^(der|die|das)\b/i);
+        correctText = m ? m[1].toLowerCase() : 'der';
+      } else if (this.settings.mode === 'meaning_de') {
+        correctText = item.de;
+      } else if (this.settings.mode === 'synonyms') {
+        correctText = (item.synonyms && item.synonyms.length > 0) ? item.synonyms[0] : item.de;
+      } else if (this.settings.mode === 'antonyms') {
+        correctText = (item.antonyms && item.antonyms.length > 0) ? item.antonyms[0] : item.de;
+      } else {
+        correctText = this.getMeaning(item);
+      }
+
+      const allBtns = this.dom.optionsGrid.querySelectorAll('.quiz-option-btn');
+      allBtns.forEach(b => {
+        const btnArticle = b.getAttribute('data-article');
+        const labelEl = b.querySelector('.opt-text strong') || b.querySelector('.opt-text') || b.querySelector('.opt-label');
+        const label = btnArticle || (labelEl ? labelEl.textContent.trim() : b.textContent.trim());
+        if (label.toLowerCase() === correctText.trim().toLowerCase()) {
+          b.classList.add('correct');
+        }
+        b.classList.add('disabled');
+        b.disabled = true;
+        if (typeof b.blur === 'function') b.blur();
+      });
+
+      if (this.dom.btnDontKnow) {
+        this.dom.btnDontKnow.classList.add('active-revealed', 'disabled');
+        this.dom.btnDontKnow.disabled = true;
+      }
+
+      this.sessionWrong++;
+
+      // Restore word title & gender badge if artikel mode
+      if (this.settings.mode === 'artikel') {
+        this.dom.arenaWordDe.textContent = item.de;
+        if (this.dom.arenaGenderBadge) {
+          const gMatch = item.de.match(/^(der|die|das)\b/i);
+          if (gMatch) {
+            const gender = gMatch[1].toLowerCase();
+            const genderLabels = {
+              der: 'der • Maskulin',
+              die: 'die • Feminin',
+              das: 'das • Neutral'
+            };
+            this.dom.arenaGenderBadge.textContent = genderLabels[gender] || gender;
+            this.dom.arenaGenderBadge.className = `badge-gender ${gender}`;
+            this.dom.arenaGenderBadge.style.display = 'inline-block';
+          }
+        }
+      }
+
+      // Update Accuracy Counter in live UI
+      const totalAnswered = this.sessionCorrect + this.sessionWrong;
+      const accPct = totalAnswered > 0 ? Math.round((this.sessionCorrect / totalAnswered) * 100) : 100;
+      if (this.dom.accuracyCounter) {
+        const texts = I18N[this.settings.lang] || I18N.en;
+        this.dom.accuracyCounter.innerHTML = `<span data-i18n="accuracy">${texts.accuracy || 'Accuracy'}</span>: ${accPct}%`;
+      }
+
+      // Record in Session Manager and Unified StorageEngine as mistake
+      this.sessionManager.recordResult(item.id, false);
+      if (window.StorageEngine) {
+        window.StorageEngine.recordSM2Review(item.id, 1);
+        window.StorageEngine.addFehlerItem({
+          word: item.de,
+          meaning: this.getMeaning(item) || '',
+          example: item.example || '',
+          mistakeType: 'vocab'
+        });
+      }
+      if (typeof window !== 'undefined' && typeof window.recordFehlerheftItem === 'function') {
+        window.recordFehlerheftItem({
+          word: item.de,
+          meaning: this.getMeaning(item) || '',
+          example: item.example || '',
+          mistakeType: 'vocab'
+        });
+      }
+      if (this.settings.mode === 'sprint') {
+        this.sprintCardsAnswered++;
+      }
+      this.refreshHeaderStats();
+
+      // Show Rich Explanation Card
+      this.showExplanationCard(item);
+    }
+
     showExplanationCard(item) {
       const texts = I18N[this.settings.lang] || I18N.en;
       this.dom.explainExampleDe.textContent = item.example;
@@ -2027,29 +2266,48 @@
       if (!item || !this.dom.typeinInput) return;
 
       const rawInput = (this.dom.typeinInput.value || '').trim();
-      if (!rawInput) return;
+      if (!rawInput) {
+        if (this.dom.typeinFeedback) {
+          const texts = I18N[this.settings.lang] || I18N.en;
+          this.dom.typeinFeedback.innerHTML = `<span style="color:var(--accent-gold); font-size:12px;">⚠️ ${texts.typeinEmptyWarning || "Lütfen bir kelime yazın veya 'Bilmiyorum' butonuna basın."}</span>`;
+          if (this.dom.typeinInput) this.dom.typeinInput.focus();
+        }
+        return;
+      }
 
       this.hasAnswered = true;
       this.dom.typeinInput.disabled = true;
+      if (this.dom.btnTypeinDontKnow) this.dom.btnTypeinDontKnow.disabled = true;
 
       // Smart normalization: check exact or match without grammatical article
-      const cleanTarget = item.de.toLowerCase().split('(')[0].split(',')[0].trim();
-      const cleanTargetNoArt = cleanTarget.replace(/^(der|die|das)\s+/i, '').trim();
-      const cleanUser = rawInput.toLowerCase().replace(/^(der|die|das)\s+/i, '').trim();
+      const normalize = (str) => {
+        return (str || '')
+          .toLowerCase()
+          .replace(/\([^)]*\)/g, '')
+          .replace(/[.,\/#!$%\^&\*;:{}=\-_`~?]/g, ' ')
+          .replace(/^(der|die|das)\s+/i, '')
+          .replace(/\s+/g, ' ')
+          .trim();
+      };
 
-      const isMatch = (cleanUser === cleanTargetNoArt || rawInput.toLowerCase() === cleanTarget);
+      const userClean = normalize(rawInput);
+      const targetClean = normalize(item.de);
+      const targetVariants = (item.de || '').split(/[\/,;]/).map(v => normalize(v)).filter(Boolean);
+      const isMatch = (userClean === targetClean || targetVariants.includes(userClean) || rawInput.trim().toLowerCase() === item.de.trim().toLowerCase());
+
+      const texts = I18N[this.settings.lang] || I18N.en;
 
       if (isMatch) {
         this.sessionCorrect++;
         this.dom.typeinInput.classList.add('correct-input');
         if (this.dom.typeinFeedback) {
-          this.dom.typeinFeedback.innerHTML = `<span style="color:var(--accent-green);">✓ Richtig! (${item.de})</span>`;
+          this.dom.typeinFeedback.innerHTML = `<span style="color:var(--accent-green);">✓ ${texts.correctToast || 'Richtig!'} (${item.de})</span>`;
         }
       } else {
         this.sessionWrong++;
         this.dom.typeinInput.classList.add('wrong-input');
         if (this.dom.typeinFeedback) {
-          this.dom.typeinFeedback.innerHTML = `<span style="color:var(--accent-red);">✗ Falsch! Richtig: <strong>${item.de}</strong></span>`;
+          this.dom.typeinFeedback.innerHTML = `<span style="color:var(--accent-red);">✗ ${texts.typeinRevealed || 'Falsch! Richtig'}: <strong>${item.de}</strong></span>`;
         }
       }
 
@@ -2057,7 +2315,6 @@
       const totalAnswered = this.sessionCorrect + this.sessionWrong;
       const accPct = totalAnswered > 0 ? Math.round((this.sessionCorrect / totalAnswered) * 100) : 100;
       if (this.dom.accuracyCounter) {
-        const texts = I18N[this.settings.lang] || I18N.en;
         this.dom.accuracyCounter.innerHTML = `<span data-i18n="accuracy">${texts.accuracy || 'Accuracy'}</span>: ${accPct}%`;
       }
 
@@ -2074,6 +2331,63 @@
             mistakeType: 'vocab'
           });
         }
+      }
+      if (!isMatch && typeof window !== 'undefined' && typeof window.recordFehlerheftItem === 'function') {
+        window.recordFehlerheftItem({
+          word: item.de,
+          meaning: this.getMeaning(item) || '',
+          example: item.example || '',
+          mistakeType: 'vocab'
+        });
+      }
+      this.refreshHeaderStats();
+      this.showExplanationCard(item);
+    }
+
+    handleTypeinDontKnow() {
+      if (this.hasAnswered) return;
+      const item = this.currentDeck[this.currentIndex];
+      if (!item) return;
+
+      this.hasAnswered = true;
+      if (this.dom.typeinInput) {
+        this.dom.typeinInput.value = item.de;
+        this.dom.typeinInput.disabled = true;
+        this.dom.typeinInput.classList.add('wrong-input');
+      }
+      if (this.dom.btnTypeinDontKnow) {
+        this.dom.btnTypeinDontKnow.disabled = true;
+      }
+
+      const texts = I18N[this.settings.lang] || I18N.en;
+      if (this.dom.typeinFeedback) {
+        this.dom.typeinFeedback.innerHTML = `<span style="color:var(--accent-gold);">💡 ${texts.typeinRevealed || 'Doğru Cevap'}: <strong>${item.de}</strong></span>`;
+      }
+
+      this.sessionWrong++;
+      const totalAnswered = this.sessionCorrect + this.sessionWrong;
+      const accPct = totalAnswered > 0 ? Math.round((this.sessionCorrect / totalAnswered) * 100) : 100;
+      if (this.dom.accuracyCounter) {
+        this.dom.accuracyCounter.innerHTML = `<span data-i18n="accuracy">${texts.accuracy || 'Accuracy'}</span>: ${accPct}%`;
+      }
+
+      this.sessionManager.recordResult(item.id, false);
+      if (window.StorageEngine) {
+        window.StorageEngine.recordSM2Review(item.id, 1);
+        window.StorageEngine.addFehlerItem({
+          word: item.de,
+          meaning: this.getMeaning(item) || '',
+          example: item.example || '',
+          mistakeType: 'vocab'
+        });
+      }
+      if (typeof window !== 'undefined' && typeof window.recordFehlerheftItem === 'function') {
+        window.recordFehlerheftItem({
+          word: item.de,
+          meaning: this.getMeaning(item) || '',
+          example: item.example || '',
+          mistakeType: 'vocab'
+        });
       }
       this.refreshHeaderStats();
       this.showExplanationCard(item);

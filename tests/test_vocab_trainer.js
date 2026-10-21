@@ -591,6 +591,56 @@ assert.doesNotThrow(() => {
   assert.strictEqual(global.VocabApp.dom.arenaWordDe.textContent, 'der Tisch, -e', 'Full word must be revealed after answer');
 }, 'NVV and Artikel Trainer should operate flawlessly');
 
+// 15. Test SM-2 Localization, Part of Speech Localization, Don't Know & Type-In Flow
+console.log('▶ Testing SM-2 localization, POS localization, Don\'t Know & Type-In enhancements...');
+assert.doesNotThrow(() => {
+  // Test SM-2 i18n keys exist
+  global.VocabApp.setLanguage('tr');
+  assert.strictEqual(global.VocabApp.dom.optionsGrid !== undefined, true);
+  
+  // Test POS localization in Turkish
+  const testNoun = { id: 9999, de: 'die Politik, (nur Sg.)', pos: 'noun', level: 'B1', tr: 'siyaset, politika', en: 'politics' };
+  global.VocabApp.currentDeck = [testNoun];
+  global.VocabApp.currentIndex = 0;
+  global.VocabApp.renderCurrentQuestion();
+  assert.strictEqual(global.VocabApp.dom.arenaPosBadge.textContent, 'İSİM', 'POS noun in Turkish must display İSİM');
+  
+  global.VocabApp.setLanguage('en');
+  global.VocabApp.renderCurrentQuestion();
+  assert.strictEqual(global.VocabApp.dom.arenaPosBadge.textContent, 'NOUN', 'POS noun in English must display NOUN');
+
+  // Test Don't Know functionality
+  global.VocabApp.setLanguage('tr');
+  global.VocabApp.settings.mode = 'de_meaning';
+  global.VocabApp.currentDeck = [testNoun];
+  global.VocabApp.currentIndex = 0;
+  global.VocabApp.hasAnswered = false;
+  global.VocabApp.renderCurrentQuestion();
+
+  const prevWrong = global.VocabApp.sessionWrong;
+  global.VocabApp.handleDontKnow();
+  assert.strictEqual(global.VocabApp.hasAnswered, true, 'handleDontKnow must set hasAnswered to true');
+  assert.strictEqual(global.VocabApp.sessionWrong, prevWrong + 1, 'handleDontKnow must increment sessionWrong');
+  assert.strictEqual(global.VocabApp.dom.nextButton.disabled, false, 'Next button must be enabled after Don\'t Know');
+
+  // Test Type-In empty input handling and Don't Know in Type-In
+  global.VocabApp.settings.mode = 'typein';
+  global.VocabApp.currentDeck = [testNoun];
+  global.VocabApp.currentIndex = 0;
+  global.VocabApp.hasAnswered = false;
+  global.VocabApp.renderCurrentQuestion();
+
+  global.VocabApp.dom.typeinInput.value = '';
+  global.VocabApp.handleTypeinSubmit();
+  assert.strictEqual(global.VocabApp.hasAnswered, false, 'Empty input submit must not mark card as answered');
+  assert(global.VocabApp.dom.typeinFeedback.innerHTML.includes('Lütfen') || global.VocabApp.dom.typeinFeedback.innerHTML.includes('Please'), 'Empty input must display a warning');
+
+  // Test Type-In Don't Know
+  global.VocabApp.handleTypeinDontKnow();
+  assert.strictEqual(global.VocabApp.hasAnswered, true, 'handleTypeinDontKnow must mark card as answered');
+  assert.strictEqual(global.VocabApp.dom.typeinInput.value, testNoun.de, 'handleTypeinDontKnow must fill in the correct word');
+}, 'SM-2 and Don\'t Know flows must execute cleanly');
+
 console.log('✅ All Headless Frontend JS Unit Tests Passed successfully!');
 
 

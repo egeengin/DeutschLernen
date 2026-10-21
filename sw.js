@@ -1,9 +1,10 @@
-const CACHE_NAME = 'deutschlernen-v51';
+const CACHE_NAME = 'deutschlernen-v52';
 const ASSETS = [
   './',
   './index.html',
   './dashboard.html',
   './trainer.html',
+  './grammatik.html',
   './legal.html',
   './sprechen.html',
   './lesen.html',
@@ -15,6 +16,7 @@ const ASSETS = [
   './css/portal.css',
   './css/seo.css',
   './css/trainer.css',
+  './css/grammatik.css',
   './css/sprechen.css',
   './css/lesen.css',
   './css/hoeren.css',
@@ -22,6 +24,8 @@ const ASSETS = [
   './css/dashboard.css',
   './js/storage-engine.js',
   './js/portal.js',
+  './js/grammarApp.js',
+  './data/grammar_data.js',
   './js/dashboard.js',
   './js/voiceExamEngine.js',
   './js/sprechenApp.js',

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grammatik Studio (A1–B2) — DeutschLernen</title>
+  <meta name="description" content="Interaktives Grammatik Studio für Deutsch A1, A2, B1 und B2. Klare Regeln, Prüfungstipps für telc & Goethe, Beispielsätze mit Audio und interaktive Übungen in 5 Sprachen (DE, EN, TR, AR, UK).">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Grammatik Studio (A1–B2) — DeutschLernen">
+  <meta property="og:description" content="Interaktives Grammatik Studio für Deutsch A1, A2, B1 und B2. Regeln, Prüfungstipps & Übungen in 5 Sprachen.">
+  <meta property="og:image" content="assets/icons/icon-512.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Grammatik Studio (A1–B2) — DeutschLernen">
+  <meta name="twitter:description" content="Interaktives Grammatik Studio für Deutsch A1, A2, B1 und B2. Regeln, Prüfungstipps & Übungen in 5 Sprachen.">
+  <meta name="twitter:image" content="assets/icons/icon-512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#f59e0b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/grammatik.css">
+  <script>
+    (function() {
+      const theme = localStorage.getItem('deutschlernen_theme') || localStorage.getItem('site_theme') || localStorage.getItem('telc_theme');
+      if (theme === 'light') {
+        document.documentElement.classList.add('light-mode');
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+      const lang = localStorage.getItem('deutschlernen_lang') || localStorage.getItem('site_lang') || localStorage.getItem('telc_lang') || 'en';
+      if (lang === 'ar') {
+        document.documentElement.setAttribute('dir', 'rtl');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="header-left">
+        <a href="index.html" class="back-link" data-i18n="portalBack">← Hauptportal</a>
+        <a href="dashboard.html" class="back-link" data-i18n="dashboardBack">📊 Dashboard</a>
+        <div class="brand-title">
+          <span>⚡</span>
+          <span data-i18n="appTitle">Grammatik Studio</span>
+        </div>
+      </div>
+
+      <!-- Controls: Theme & Multi-Language Switcher (DE, EN, TR, AR, UK) -->
+      <div class="header-controls">
+        <a href="trainer.html" class="btn-icon" data-i18n="trainerLink">⚡ Wortschatz</a>
+        <a href="lesen.html" class="btn-icon" data-i18n="lesenLink">📖 Lesen</a>
+        <a href="hoeren.html" class="btn-icon" data-i18n="hoerenLink">🎧 Hören</a>
+        
+        <button class="btn-icon" id="theme-toggle-btn" title="Toggle Light / Dark mode" aria-label="Toggle Theme">
+          ☀️
+        </button>
+
+        <!-- 5-Language Switcher Group -->
+        <div class="lang-selector-group" role="group" aria-label="Language Selector">
+          <button class="lang-btn" data-lang="de" title="Deutsch">DE</button>
+          <button class="lang-btn" data-lang="en" title="English">EN</button>
+          <button class="lang-btn" data-lang="tr" title="Türkçe">TR</button>
+          <button class="lang-btn" data-lang="ar" title="العربية">AR</button>
+          <button class="lang-btn" data-lang="uk" title="Українська">UK</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="grammatik-container">
+    
+    <!-- Hero Banner with Global Progress -->
+    <section class="grammatik-hero">
+      <div class="hero-text">
+        <h1 data-i18n="appTitle">Grammatik Studio</h1>
+        <p data-i18n="subtitle">Regeln, Prüfungstricks & interaktive Übungen (A1–B2)</p>
+      </div>
+
+      <div class="hero-progress-box">
+        <div class="hero-progress-header">
+          <span data-i18n="progressLabel">Grammatik-Fortschritt</span>
+          <span id="overall-progress-percent">0% (0/11)</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="overall-progress-bar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workspace: Sidebar (Topics) & Arena (Rules / Drills) -->
+    <div class="grammatik-workspace" id="grammar-workspace">
+      
+      <!-- Topics Sidebar -->
+      <aside class="topics-sidebar">
+        <!-- Search -->
+        <div class="search-box">
+          <input type="text" id="grammar-search-input" class="search-input" placeholder="Thema suchen (z.B. Akkusativ, Passiv)..." autocomplete="off">
+        </div>
+
+        <!-- Level Filter Chips -->
+        <div class="level-chips-container">
+          <button class="level-chip active" data-level="ALL" data-i18n="levelAll">Alle Stufen</button>
+          <button class="level-chip" data-level="A1">A1</button>
+          <button class="level-chip" data-level="A2">A2</button>
+          <button class="level-chip" data-level="B1">B1</button>
+          <button class="level-chip" data-level="B2">B2</button>
+        </div>
+
+        <!-- Topic List -->
+        <nav class="topic-list" id="topic-list" aria-label="Grammatikthemen"></nav>
+      </aside>
+
+      <!-- Main Topic Arena -->
+      <section class="topic-arena" id="topic-arena">
+        
+        <!-- Mobile Back Row (Shown only on small screens when viewing a topic) -->
+        <div class="mobile-back-row">
+          <button class="btn-mobile-back" id="mobile-back-to-list" data-i18n="backToTopics">
+            ← Themenliste
+          </button>
+        </div>
+
+        <!-- Arena Header: Title, Level, Description & Mode Tabs -->
+        <div class="arena-header">
+          <div class="arena-title-group">
+            <div class="arena-badges">
+              <span id="active-topic-level" class="active-level-pill badge-level-a1">A1</span>
+              <span class="topic-level-badge" style="background:rgba(245, 158, 11, 0.1); color:var(--accent-gold); border:1px solid rgba(245, 158, 11, 0.3);" data-i18n="examRelevance">telc / Goethe Prüfungsrelevant</span>
+            </div>
+            <h2 class="arena-title" id="active-topic-title">Bestimmte & Unbestimmte Artikel</h2>
+            <p class="arena-desc" id="active-topic-desc">Maskulin (der), Feminin (die) und Neutral (das) sicher erkennen.</p>
+          </div>
+
+          <!-- Mode Tabs (Rules vs Drills) -->
+          <div class="arena-tabs">
+            <button class="tab-btn active" id="tab-btn-rules" data-i18n="rulesTab">
+              📖 Regeln & Beispiele
+            </button>
+            <button class="tab-btn" id="tab-btn-drills" data-i18n="drillsTab">
+              ⚡ Übungen & Quiz
+            </button>
+          </div>
+        </div>
+
+        <!-- TAB 1: Rules & Examples View -->
+        <div class="rules-content" id="rules-section">
+          
+          <!-- Rule Summary Card -->
+          <article class="rule-card">
+            <div class="rule-summary-text" id="rule-summary-text"></div>
+          </article>
+
+          <!-- Pro Tip / telc Exam Trap Card -->
+          <article class="protip-card">
+            <div class="protip-header">
+              <span data-i18n="proTipHeader">💡 Prüfungstipp & telc-Falle</span>
+            </div>
+            <div class="protip-text" id="rule-protip-text"></div>
+          </article>
+
+          <!-- Audio-Enabled Examples Section -->
+          <div class="examples-section">
+            <h3 class="examples-header" data-i18n="examplesHeader">🗣️ Beispielsätze (mit Audio)</h3>
+            <div class="examples-grid" id="examples-list"></div>
+          </div>
+
+          <!-- CTA to Practice -->
+          <div class="rules-footer">
+            <button class="btn-cta-primary" id="btn-start-drill">
+              <span data-i18n="startDrill">Übung starten</span> ⚡
+            </button>
+          </div>
+        </div>
+
+        <!-- TAB 2: Interactive Drills / Quiz View -->
+        <div class="drills-content" id="drills-section">
+          
+          <!-- Active Drill Card -->
+          <div class="drill-active-card" id="drill-active-card">
+            <div class="drill-top-bar">
+              <span class="drill-counter-pill" id="drill-counter">1 / 2</span>
+              <div class="progress-track" style="flex:1; max-width:260px;">
+                <div class="progress-fill" id="drill-progress-bar"></div>
+              </div>
+            </div>
+
+            <!-- Question Prompt Box -->
+            <div class="drill-prompt-box">
+              <div id="drill-prompt">Wo liegt ___ Zeitung von heute?</div>
+            </div>
+
+            <!-- Multiple Choice Options -->
+            <div class="drill-options-grid" id="drill-options-container"></div>
+
+            <!-- Feedback & In-Depth Explanation Box -->
+            <div class="drill-feedback-box" id="drill-feedback-box"></div>
+
+            <!-- Actions Row: Don't Know & Next Button -->
+            <div class="drill-actions-row">
+              <button class="btn-dont-know" id="btn-dont-know" data-i18n="dontKnowBtn">
+                🤷 Ich weiß nicht (Erklärung anzeigen)
+              </button>
+              <button class="btn-next-drill" id="btn-next-drill" data-i18n="nextQuestion">
+                Nächste Frage →
+              </button>
+            </div>
+          </div>
+
+          <!-- Drill Results Summary Card -->
+          <div class="drill-results-card" id="drill-results-card">
+            <div class="results-icon">🏆</div>
+            <h3 class="results-title" data-i18n="scoreTitle">Übung abgeschlossen!</h3>
+            <p class="results-subtitle" data-i18n="scoreSubtitle">Dein Ergebnis für dieses Thema:</p>
+
+            <div class="results-score-box">
+              <span class="score-number" id="drill-score-number">2 / 2</span>
+              <span class="score-badge badge-pass" id="drill-score-percent">100%</span>
+            </div>
+
+            <div class="results-actions">
+              <button class="btn-secondary" id="btn-back-to-list" data-i18n="backToTopics">
+                ← Regeln ansehen
+              </button>
+              <button class="btn-cta-primary" id="btn-retry-drill" data-i18n="retryDrill">
+                🔄 Noch einmal üben
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="data/grammar_data.js"></script>
+  <script src="js/storage-engine.js"></script>
+  <script src="js/grammarApp.js"></script>
+
+</body>
+</html>

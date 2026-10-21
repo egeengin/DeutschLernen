@@ -743,6 +743,52 @@ body {
   opacity: 0.7;
 }
 
+/* Don't Know / Skip Action Button */
+.dontknow-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.dontknow-container.hidden {
+  display: none !important;
+}
+
+.btn-dont-know {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  padding: 10px 20px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+  width: 100%;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.btn-dont-know:hover:not(:disabled) {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.btn-dont-know.active-revealed {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  background: rgba(245, 158, 11, 0.12);
+}
+
+.btn-dont-know:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
   20%, 60% { transform: translateX(-6px); }
@@ -1650,6 +1696,29 @@ body {
   transform: translateY(-1px);
 }
 
+.btn-typein-dontknow {
+  background: var(--bg-card);
+  border: 1.5px dashed var(--border);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 16px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-typein-dontknow:hover:not(:disabled) {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.btn-typein-dontknow:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
 .smart-umlaut-toggle-label {
   display: inline-flex;
   align-items: center;
@@ -1658,5 +1727,177 @@ body {
   color: var(--text-secondary);
   cursor: pointer;
   user-select: none;
+}
+
+/* ==========================================================================
+   Mobile Responsive Optimizations (Screens <= 768px)
+   Eliminates huge sticky header overlap, compacts controls,
+   and ensures the prompt card and answers fit comfortably on screen.
+   ========================================================================== */
+@media (max-width: 768px) {
+  .app-header {
+    position: relative !important;
+    top: auto;
+    padding: 8px 12px;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .header-container {
+    gap: 8px;
+  }
+
+  .header-left {
+    gap: 8px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-left .back-link {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .brand-title {
+    font-size: 15px;
+  }
+
+  .header-stats {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .stat-pill {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .header-controls {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .header-controls .header-secondary-link {
+    display: none !important;
+  }
+
+  .btn-icon {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  .main-wrapper {
+    padding: 6px 10px 24px;
+    gap: 8px;
+  }
+
+  .controls-panel {
+    padding: 8px 10px;
+    gap: 6px;
+  }
+
+  .selectors-group {
+    gap: 6px;
+  }
+
+  .select-wrapper {
+    font-size: 12px;
+  }
+
+  .styled-select {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .modes-strip {
+    gap: 6px;
+    padding-bottom: 4px;
+  }
+
+  .mode-chip {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .arena-progress-card {
+    padding: 6px 12px;
+    gap: 4px;
+  }
+
+  .progress-header {
+    font-size: 12px;
+  }
+
+  .prompt-card {
+    padding: 10px 14px;
+    border-radius: var(--radius-md);
+  }
+
+  .prompt-meta {
+    gap: 6px;
+    margin-bottom: 4px;
+  }
+
+  .prompt-word {
+    font-size: 23px;
+  }
+
+  .prompt-subhint {
+    font-size: 12px;
+    margin-top: 2px;
+  }
+
+  .audio-btn-play {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .options-grid {
+    gap: 6px;
+  }
+
+  .quiz-option-btn {
+    padding: 9px 12px;
+    min-height: 42px;
+    font-size: 13.5px;
+    gap: 10px;
+  }
+
+  .opt-key {
+    width: 24px;
+    height: 24px;
+    font-size: 11px;
+  }
+
+  .btn-dont-know {
+    padding: 8px 14px;
+    font-size: 12.5px;
+  }
+
+  .sm2-ratings-grid {
+    gap: 6px;
+  }
+
+  .btn-sm2 {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+
+  .typein-box {
+    padding: 12px 14px;
+    gap: 8px;
+  }
+
+  .typein-input-field {
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+
+  .btn-typein-submit,
+  .btn-typein-dontknow {
+    padding: 0 14px;
+    font-size: 13px;
+  }
 }
 

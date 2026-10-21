@@ -62,7 +62,7 @@
 
       <!-- Header Controls: Theme, Language, Dictionary, Pro & Unified Account Sync -->
       <div class="header-controls">
-        <a href="index.html#schreiben" class="btn-icon" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:12px; font-weight:700; color:var(--accent-gold); padding:6px 10px; border:1px solid var(--accent-gold); border-radius:10px;" title="Pro Plans & AI Letter Grader Passes">
+        <a href="index.html#schreiben" class="btn-icon header-secondary-link" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:12px; font-weight:700; color:var(--accent-gold); padding:6px 10px; border:1px solid var(--accent-gold); border-radius:10px;" title="Pro Plans & AI Letter Grader Passes">
           👑 Pro
         </a>
         <button class="btn-auth-trigger stat-pill sync-status" id="btn-user-account" title="Account & Cloud Sync" style="cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
@@ -77,13 +77,16 @@
         <button class="btn-icon" id="btn-lang-toggle" title="Switch UI language (EN / TR / AR / UK)">
           🌐 EN
         </button>
-        <a href="lesen.html" class="btn-icon" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:12px; font-weight:600; padding:6px 10px;" title="Lesen Studio & Exam Reader">
+        <a href="grammatik.html" class="btn-icon header-secondary-link" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:12px; font-weight:600; padding:6px 10px;" title="Grammatik Studio (A1–B2)">
+          ⚡ Grammatik
+        </a>
+        <a href="lesen.html" class="btn-icon header-secondary-link" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:12px; font-weight:600; padding:6px 10px;" title="Lesen Studio & Exam Reader">
           📖 Lesen
         </a>
-        <a href="hoeren.html" class="btn-icon" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:12px; font-weight:600; padding:6px 10px;" title="Hören Studio & Audio Exam">
+        <a href="hoeren.html" class="btn-icon header-secondary-link" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:12px; font-weight:600; padding:6px 10px;" title="Hören Studio & Audio Exam">
           🎧 Hören
         </a>
-        <a href="index.html#lid" class="btn-icon" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:12px; font-weight:600; padding:6px 10px;" title="Leben in Deutschland (LiD 310)">
+        <a href="index.html#lid" class="btn-icon header-secondary-link" style="text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-size:12px; font-weight:600; padding:6px 10px;" title="Leben in Deutschland (LiD 310)">
           🇩🇪 LiD
         </a>
       </div>
@@ -226,29 +229,36 @@
         <div class="sm2-ratings-grid hidden" id="fc-sm2-ratings" role="group" aria-label="SM-2 Confidence Ratings">
           <button type="button" class="btn-sm2 rating-again" data-rating="1" title="Again (Complete blackout)">
             <span class="btn-sm2-key">1</span>
-            <span>Again</span>
-            <small style="font-size:10px; opacity:0.8;">&lt; 1 day</small>
+            <span data-i18n="sm2_again">Again</span>
+            <small style="font-size:10px; opacity:0.8;" data-i18n="sm2_again_interval">&lt; 1 day</small>
           </button>
           <button type="button" class="btn-sm2 rating-hard" data-rating="2" title="Hard (Recall with difficulty)">
             <span class="btn-sm2-key">2</span>
-            <span>Hard</span>
-            <small style="font-size:10px; opacity:0.8;">1–2 days</small>
+            <span data-i18n="sm2_hard">Hard</span>
+            <small style="font-size:10px; opacity:0.8;" data-i18n="sm2_hard_interval">1–2 days</small>
           </button>
           <button type="button" class="btn-sm2 rating-good" data-rating="3" title="Good (Normal successful recall)">
             <span class="btn-sm2-key">3</span>
-            <span>Good</span>
-            <small style="font-size:10px; opacity:0.8;">3–7 days</small>
+            <span data-i18n="sm2_good">Good</span>
+            <small style="font-size:10px; opacity:0.8;" data-i18n="sm2_good_interval">3–7 days</small>
           </button>
           <button type="button" class="btn-sm2 rating-easy" data-rating="4" title="Easy (Instant effortless recall)">
             <span class="btn-sm2-key">4</span>
-            <span>Easy</span>
-            <small style="font-size:10px; opacity:0.8;">7–14 days</small>
+            <span data-i18n="sm2_easy">Easy</span>
+            <small style="font-size:10px; opacity:0.8;" data-i18n="sm2_easy_interval">7–14 days</small>
           </button>
         </div>
       </div>
 
       <!-- Type-In Arena Mode (Hidden unless mode === 'typein') -->
       <div class="typein-box hidden" id="typein-container">
+        <div class="typein-header" style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
+          <span style="font-size:13px; font-weight:700; color:var(--accent-gold); display:inline-flex; align-items:center; gap:6px;">
+            ✍️ <span data-i18n="typeinTitle">Active Recall & Spelling</span>
+          </span>
+          <span style="font-size:11px; color:var(--text-muted);" data-i18n="typeinHelp">Type from memory</span>
+        </div>
+
         <!-- On-Screen Clickable Umlaut Toolbar -->
         <div class="umlaut-toolbar" id="umlaut-toolbar" aria-label="German Characters">
           <button type="button" class="umlaut-key-btn" data-char="ä">ä</button>
@@ -266,18 +276,20 @@
             id="typein-input" 
             class="typein-input-field" 
             placeholder="Type German word here..."
+            data-i18n-placeholder="typeinPlaceholder"
             autocomplete="off" 
             autocorrect="off" 
             autocapitalize="none" 
             spellcheck="false"
           >
-          <button type="submit" class="btn-typein-submit" id="btn-typein-submit">Check</button>
+          <button type="submit" class="btn-typein-submit" id="btn-typein-submit" data-i18n="checkBtn">Check</button>
+          <button type="button" class="btn-typein-dontknow" id="btn-typein-dontknow" data-i18n="dontKnowShort" title="Reveal Answer and Add to Mistakes Queue">🤷 Pass</button>
         </form>
 
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
           <label class="smart-umlaut-toggle-label" title="Automatically transform ae->ä, oe->ö, ue->ü, ss->ß as you type">
             <input type="checkbox" id="smart-umlaut-toggle" checked style="accent-color:var(--accent-gold);">
-            <span>⚡ Smart Umlaut Normalization (ae ➔ ä, oe ➔ ö, ue ➔ ü, ss ➔ ß)</span>
+            <span data-i18n="smartUmlautLabel">⚡ Smart Umlauts (ae ➔ ä, oe ➔ ö, ue ➔ ü, ss ➔ ß)</span>
           </label>
           <div id="typein-feedback" style="font-size:13px; font-weight:700;"></div>
         </div>
@@ -286,6 +298,14 @@
       <!-- 4 Multiple Choice Options Grid -->
       <div class="options-grid" id="options-grid" role="group" aria-label="Answer Choices">
         <!-- Injected dynamically by VocabTrainerApp -->
+      </div>
+
+      <!-- Don't Know / Skip Action Button -->
+      <div class="dontknow-container" id="dontknow-container">
+        <button type="button" class="btn-dont-know" id="btn-dont-know" aria-label="Reveal answer and add to mistakes queue">
+          <span class="dont-know-icon">🤷</span>
+          <span class="dont-know-text" data-i18n="dontKnowBtn">Bilmiyorum (Cevabı Göster)</span>
+        </button>
       </div>
 
       <!-- Dynamic Post-Answer Explanation Card -->
