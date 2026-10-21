@@ -373,6 +373,11 @@
       const langKey = this.currentLang.charAt(0).toUpperCase() + this.currentLang.slice(1);
 
       const sitText = scenario['situation' + langKey] || scenario.situationEn || scenario.situationDe;
+      const creditsCount = (typeof getLetterCredits === 'function')
+        ? getLetterCredits()
+        : ((typeof StorageEngine !== 'undefined' && StorageEngine.getLicense)
+            ? StorageEngine.getLicense().remainingCredits
+            : parseInt((typeof localStorage !== 'undefined' ? localStorage.getItem('deutschlernen_letter_credits') : '1') || '1', 10));
 
       this.mountEl.innerHTML = `
         <div class="schreiben-examiner-container" ${isRtl ? 'dir="rtl"' : 'dir="ltr"'}>
@@ -437,9 +442,14 @@
 
           <!-- Submit Button Row -->
           <div class="sch-submit-row">
-            <span style="font-size:12px; color:var(--sch-text-muted);">
-              💡 ${this.t('wordTarget')} • Offizieller 3-Kriterien-Maßstab
-            </span>
+            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+              <span style="font-size:12px; color:var(--sch-text-muted);">
+                💡 ${this.t('wordTarget')} • Offizieller 3-Kriterien-Maßstab
+              </span>
+              <span id="ai-credits-status-text" class="ai-credits-status-label" style="font-size:12px; font-weight:700; color:var(--sch-accent-gold, #f59e0b); background:rgba(245,158,11,0.12); border:1px solid rgba(245,158,11,0.3); padding:2px 8px; border-radius:12px;">
+                🪙 ${creditsCount} Credits übrig
+              </span>
+            </div>
             <button type="button" class="sch-submit-btn" id="sch-submit-btn" onclick="SchreibenExaminer.instance.submitEvaluation()">
               ${this.t('submitBtn')}
             </button>
@@ -658,6 +668,23 @@
         window.renderFehlerheftDashboard('fehlerheft-container');
       } else if (typeof renderFehlerheftDashboard === 'function' && typeof document !== 'undefined' && document.getElementById('fehlerheft-container')) {
         renderFehlerheftDashboard('fehlerheft-container');
+      }
+
+      if (data && typeof data.remainingCredits === 'number') {
+        if (typeof StorageEngine !== 'undefined' && typeof StorageEngine.updateLicense === 'function') {
+          StorageEngine.updateLicense({ remainingCredits: data.remainingCredits });
+        }
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('deutschlernen_letter_credits', String(data.remainingCredits));
+        }
+      } else if (typeof useLetterCredit === 'function') {
+        useLetterCredit();
+      }
+
+      if (typeof updateCreditsDisplay === 'function') {
+        updateCreditsDisplay();
+      } else if (typeof window !== 'undefined' && typeof window.updateCreditsDisplay === 'function') {
+        window.updateCreditsDisplay();
       }
 
       if (typeof updateDashboardMetrics === 'function') {

@@ -6,6 +6,26 @@ let currentMdUrl = null;
 let currentActiveMaterial = null;
 let currentTrack = localStorage.getItem('deutschlernen_track') || 'b1';
 
+function copyPromoCode(code, btn) {
+  const targetCode = code || 'PRUEFUNG2026';
+  if (navigator && navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+    navigator.clipboard.writeText(targetCode).then(() => {
+      if (btn) {
+        const orig = btn.innerHTML;
+        btn.innerHTML = '<span>✅ Code kopiert (-40%)!</span>';
+        setTimeout(() => { btn.innerHTML = orig; }, 3000);
+      }
+    }).catch(() => {
+      prompt('Gutscheincode kopieren:', targetCode);
+    });
+  } else {
+    prompt('Gutscheincode kopieren:', targetCode);
+  }
+}
+if (typeof window !== 'undefined') {
+  window.copyPromoCode = copyPromoCode;
+}
+
 // --- Community Feedback Rating Labels & Display ---
 const ratingLabels = {
   de: {

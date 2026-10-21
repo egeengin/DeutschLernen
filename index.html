@@ -64,8 +64,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>
@@ -90,6 +89,22 @@
 <link rel="stylesheet" href="css/nav-drawer.css?v=2.5">
 </head>
 <body>
+
+<!-- German Fair Pricing Promo Bar (§ 11 PAngV & § 5 UWG compliant: No fake countdowns, real transparent discount) -->
+<div class="promo-discount-bar" id="promo-discount-bar" role="region" aria-label="Aktionsangebot">
+  <div class="promo-bar-content">
+    <span class="promo-badge">🎉 AKTION</span>
+    <span class="promo-text">
+      <strong>telc B1 Komplettpaket</strong> (Regulärer Gesamtpreis: 59&nbsp;€):
+      Nutze den Gutscheincode für 40% Sofortrabatt!
+    </span>
+    <button class="promo-copy-btn" id="promo-copy-btn" onclick="copyPromoCode('PRUEFUNG2026', this)" title="Gutscheincode kopieren">
+      <span class="promo-code">PRUEFUNG2026</span>
+      <span class="promo-btn-label">📋 Code kopieren (-40%)</span>
+    </button>
+    <a href="javascript:void(0)" onclick="openProPricingModal()" class="promo-redeem-link">Jetzt einlösen →</a>
+  </div>
+</div>
 
 <!-- Compact Sticky Context Bar (Mobile & Header Navigation) -->
 <div class="compact-context-bar" id="compact-context-bar">

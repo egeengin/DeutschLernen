@@ -282,4 +282,23 @@
   // Global hooks
   window.updateDashboardMetrics = updateDashboardMetrics;
   window.initNotificationUI = initNotificationUI;
+  if (typeof window.copyPromoCode !== 'function') {
+    window.copyPromoCode = function (code, btn) {
+      const targetCode = code || 'PRUEFUNG2026';
+      if (navigator && navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+        navigator.clipboard.writeText(targetCode).then(() => {
+          if (btn) {
+            const orig = btn.innerHTML;
+            btn.innerHTML = '<span>✅ Code kopiert (-40%)!</span>';
+            setTimeout(() => { btn.innerHTML = orig; }, 3000);
+          }
+        }).catch(() => {
+          prompt('Gutscheincode kopieren:', targetCode);
+        });
+      } else {
+        prompt('Gutscheincode kopieren:', targetCode);
+      }
+    };
+  }
 })();
+

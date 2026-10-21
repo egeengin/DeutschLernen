@@ -306,13 +306,25 @@ assert.ok(modal.innerHTML.includes('panel-card'), 'Modal should contain Card pay
 assert.ok(modal.innerHTML.includes('panel-sepa'), 'Modal should contain SEPA payment panel');
 assert.ok(modal.innerHTML.includes('panel-paypal'), 'Modal should contain PayPal payment panel');
 
+assert.ok(modal.innerHTML.includes('bgb-waiver-checkbox'), 'Modal should contain § 356 Abs. 5 BGB statutory waiver checkbox');
+assert.ok(modal.innerHTML.includes('§ 356 Abs. 5 BGB'), 'Modal should include statutory waiver legal text');
+
 switchPaymentMethod('sepa');
 const sepaPanel = modal.querySelector('#panel-sepa');
 assert.ok(sepaPanel && sepaPanel.classList.contains('active'), 'SEPA panel should become active on switch');
 console.log('✅ Checkout & Dynamic Payment Panel Switching Verified.');
 
-// 10. Test Order Confirmation & Digital Invoice Generation
+// 10. Test Order Confirmation & Digital Invoice Generation (§ 356 Abs. 5 BGB compliance)
 const creditsBefore = getLetterCredits();
+const waiverCheckbox = domElementsById['bgb-waiver-checkbox'];
+
+// Verify waiver check blocks order when unchecked
+if (waiverCheckbox) waiverCheckbox.checked = false;
+confirmInstantDemoOrder('pass-30');
+assert.strictEqual(getLetterCredits(), creditsBefore, 'Order should NOT process without § 356 Abs. 5 BGB consent');
+
+// Now check and confirm order
+if (waiverCheckbox) waiverCheckbox.checked = true;
 confirmInstantDemoOrder('pass-30');
 assert.ok(modal.innerHTML.includes('ENROLLMENT CONFIRMED'), 'Confirmation screen should show enrolled banner');
 assert.ok(modal.innerHTML.includes('DL-2026-'), 'Invoice should have unique DL-2026 reference number');

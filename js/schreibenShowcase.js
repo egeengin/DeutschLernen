@@ -2682,14 +2682,25 @@ function renderAnnotatedText(rawText, annotations, lang) {
  * Letter Credits & Pro Entitlement Management
  */
 function getLetterCredits() {
-  const isPro = localStorage.getItem('deutschlernen_is_pro') === 'true';
-  const savedCredits = localStorage.getItem('deutschlernen_letter_credits');
+  const isPro = (typeof localStorage !== 'undefined' && localStorage.getItem('deutschlernen_is_pro') === 'true');
+  const savedCredits = (typeof localStorage !== 'undefined') ? localStorage.getItem('deutschlernen_letter_credits') : null;
   if (savedCredits !== null) {
     return parseInt(savedCredits, 10);
   }
+  if (typeof StorageEngine !== 'undefined' && typeof StorageEngine.getLicense === 'function') {
+    const lic = StorageEngine.getLicense();
+    if (lic && typeof lic.remainingCredits === 'number') {
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('deutschlernen_letter_credits', String(lic.remainingCredits));
+      }
+      return lic.remainingCredits;
+    }
+  }
   // New user starts with 1 free diagnostic trial credit
   const defaultCredits = isPro ? 30 : 1;
-  localStorage.setItem('deutschlernen_letter_credits', defaultCredits.toString());
+  if (typeof localStorage !== 'undefined') {
+    localStorage.setItem('deutschlernen_letter_credits', defaultCredits.toString());
+  }
   return defaultCredits;
 }
 
@@ -2701,7 +2712,12 @@ function useLetterCredit() {
   const current = getLetterCredits();
   if (current > 0) {
     const next = current - 1;
-    localStorage.setItem('deutschlernen_letter_credits', next.toString());
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('deutschlernen_letter_credits', next.toString());
+    }
+    if (typeof StorageEngine !== 'undefined' && typeof StorageEngine.consumeAiCredit === 'function') {
+      StorageEngine.consumeAiCredit();
+    }
     updateCreditsDisplay();
     return true;
   }
@@ -2711,9 +2727,14 @@ function useLetterCredit() {
 function grantLetterCredits(amount, planId) {
   const current = getLetterCredits();
   const next = current + amount;
-  localStorage.setItem('deutschlernen_letter_credits', next.toString());
-  localStorage.setItem('deutschlernen_is_pro', 'true');
-  if (planId) localStorage.setItem('deutschlernen_pro_plan', planId);
+  if (typeof localStorage !== 'undefined') {
+    localStorage.setItem('deutschlernen_letter_credits', next.toString());
+    localStorage.setItem('deutschlernen_is_pro', 'true');
+    if (planId) localStorage.setItem('deutschlernen_pro_plan', planId);
+  }
+  if (typeof StorageEngine !== 'undefined' && typeof StorageEngine.updateLicense === 'function') {
+    StorageEngine.updateLicense({ isPro: true, remainingCredits: next });
+  }
   updateCreditsDisplay();
   return next;
 }
@@ -2721,8 +2742,13 @@ function grantLetterCredits(amount, planId) {
 function updateCreditsDisplay() {
   const count = getLetterCredits();
   const pro = isUserPro();
-  const countEls = document.querySelectorAll('#user-credits-count, #schreiben-credits-count, .user-credits-val');
+  const countEls = document.querySelectorAll('#user-credits-count, #schreiben-credits-count, .user-credits-val, #ai-remaining-credits-pill');
   countEls.forEach(el => { el.textContent = count; });
+
+  const labelEls = document.querySelectorAll('#ai-credits-status-text, .ai-credits-status-label');
+  labelEls.forEach(el => {
+    el.textContent = `🪙 ${count} Credits übrig`;
+  });
 
   const badgeEls = document.querySelectorAll('#user-tier-badge, .user-tier-badge');
   badgeEls.forEach(el => {
@@ -3235,6 +3261,17 @@ function selectProPlan(planId) {
           </div>
 
           <div>
+            <!-- Digital Waiver for 14-Day Refund Right (§ 356 Abs. 5 BGB) -->
+            <div class="bgb-waiver-container" style="margin-bottom:14px; padding:12px; background:rgba(245, 158, 11, 0.08); border:1px solid rgba(245, 158, 11, 0.3); border-radius:8px; font-size:12px; line-height:1.5;">
+              <label style="display:flex; align-items:flex-start; gap:8px; cursor:pointer; color:var(--text-secondary);">
+                <input type="checkbox" id="bgb-waiver-checkbox" style="margin-top:2px; cursor:pointer;" onchange="const btn = document.getElementById('checkout-submit-btn'); if(btn) { btn.style.opacity = this.checked ? '1' : '0.6'; }">
+                <span>
+                  <strong>Gesetzliche Zustimmung zum vorzeitigen Erlöschen des Widerrufsrechts (§ 356 Abs. 5 BGB):</strong><br>
+                  Ich stimme ausdrücklich zu, dass der Anbieter vor Ablauf der Widerrufsfrist mit der Ausführung des Vertrages (Bereitstellung des Pro-Zugangs / Lizenzschlüssels / KI-Credits) beginnt. Mir ist bekannt, dass ich durch diese Zustimmung mit Beginn der Vertragsausführung mein Widerrufsrecht verliere.
+                </span>
+              </label>
+            </div>
+
             <button id="checkout-submit-btn" class="tier-cta-btn featured" onclick="confirmInstantDemoOrder('${tier.id}')" style="padding:14px; font-size:15px; font-weight:800; margin-bottom:10px; cursor:pointer; width:100%; border-radius:10px; background:linear-gradient(135deg, #10b981 0%, #059669 100%); color:#ffffff; border:none; box-shadow:0 4px 14px rgba(16, 185, 129, 0.4);">
               🔒 Jetzt sicher bestellen (${tier.price}) →
             </button>
@@ -3251,6 +3288,13 @@ function selectProPlan(planId) {
 }
 
 function confirmInstantDemoOrder(tierId, explicitMethod) {
+  const waiverCheckbox = typeof document !== 'undefined' && document.getElementById ? document.getElementById('bgb-waiver-checkbox') : null;
+  if (waiverCheckbox && !waiverCheckbox.checked) {
+    alert('Bitte stimmen Sie der vorzeitigen Vertragsausführung und dem Erlöschen des Widerrufsrechts (§ 356 Abs. 5 BGB) zu.');
+    waiverCheckbox.focus();
+    return;
+  }
+
   const creditsMap = {
     diagnostic: 3,
     'pass-30': 30,

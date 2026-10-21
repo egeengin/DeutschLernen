@@ -53,6 +53,16 @@
       lidScore: 0,
       lastUpdated: null
     },
+    license: {
+      activeKey: '',
+      plan: 'free',
+      leaseToken: '',
+      leaseExpiresAt: 0,
+      lastHandshake: 0,
+      remainingCredits: 1,
+      instanceId: '',
+      deviceFingerprint: ''
+    },
     sm2DeckState: {
       // wordId -> { easeFactor, interval, repetitions, nextReviewDate, mistakeCount, lastReviewed }
     },
@@ -126,6 +136,7 @@
         ...defaultState,
         ...loaded,
         userProfile: { ...defaultState.userProfile, ...(loaded?.userProfile || {}) },
+        license: { ...defaultState.license, ...(loaded?.license || {}) },
         examScores: { ...defaultState.examScores, ...(loaded?.examScores || {}) },
         sm2DeckState: { ...(loaded?.sm2DeckState || {}) },
         fehlerheft: Array.isArray(loaded?.fehlerheft) ? loaded.fehlerheft : [],
@@ -163,14 +174,32 @@
         state.userProfile.bundesland = rawBL === 'NW' ? 'NRW' : rawBL;
       }
 
-      // Pro Status & Credits
+      // Pro Status, Credits & Offline Lease
       const rawLic = safeLS.get('deutschlernen_pro_license');
       if (rawLic) {
         state.userProfile.licenseKey = rawLic;
         state.userProfile.licensePlan = safeLS.get('deutschlernen_pro_plan') || 'pass-30';
+        state.license.activeKey = rawLic;
+        state.license.plan = state.userProfile.licensePlan;
       }
       const rawCreds = safeLS.get('deutschlernen_letter_credits');
-      if (rawCreds !== null) state.userProfile.credits = parseInt(rawCreds, 10) || 0;
+      if (rawCreds !== null) {
+        const c = parseInt(rawCreds, 10) || 0;
+        state.userProfile.credits = c;
+        state.license.remainingCredits = c;
+      }
+      const rawLease = safeLS.get('deutschlernen_lease_expires');
+      if (rawLease) {
+        state.license.leaseExpiresAt = parseInt(rawLease, 10) || 0;
+      }
+      const rawToken = safeLS.get('deutschlernen_lease_token');
+      if (rawToken) {
+        state.license.leaseToken = rawToken;
+      }
+      const rawInst = safeLS.get('deutschlernen_instance_id');
+      if (rawInst) {
+        state.license.instanceId = rawInst;
+      }
 
       // Fehlerheft
       const rawFehler = safeLS.get('deutschlernen_fehlerheft_items') || safeLS.get('fehlerheft_items');
@@ -249,6 +278,13 @@
         safeLS.set('deutschlernen_fehlerheft_items', JSON.stringify(this.state.fehlerheft.slice(0, 100)));
         safeLS.set('deutschlernen_lid_state', this.state.lidState.selectedBundesland || 'NW');
         
+        // Mirror license & offline lease
+        if (this.state.license) {
+          safeLS.set('deutschlernen_lease_expires', String(this.state.license.leaseExpiresAt || 0));
+          if (this.state.license.leaseToken) safeLS.set('deutschlernen_lease_token', this.state.license.leaseToken);
+          if (this.state.license.instanceId) safeLS.set('deutschlernen_instance_id', this.state.license.instanceId);
+        }
+
         // Mirror exam scores
         if (this.state.examScores.lesen) safeLS.set('telc_lesen_score', String(this.state.examScores.lesen));
         if (this.state.examScores.sprachbausteine) safeLS.set('telc_sprachbausteine_score', String(this.state.examScores.sprachbausteine));
@@ -345,6 +381,138 @@
       state.userProfile.xp = (state.userProfile.xp || 0) + Number(points || 0);
       this._persist(state);
       return state.userProfile.xp;
+    }
+
+    /* ----------------------------------------------------
+     * 2.1 License, Device Limits & Offline Lease Engine
+     * ---------------------------------------------------- */
+    getDeviceFingerprint() {
+      let fp = safeLS.get('deutschlernen_device_fp');
+      if (!fp) {
+        fp = 'fp-' + Math.random().toString(36).substring(2, 10) + '-' + Date.now().toString(36);
+        safeLS.set('deutschlernen_device_fp', fp);
+      }
+      return fp;
+    }
+
+    getLicense() {
+      const state = this.getState();
+      const lic = state.license || { ...defaultState.license };
+      const now = Date.now();
+      const hasKey = Boolean(lic.activeKey || state.userProfile?.licenseKey);
+      const isPro = hasKey && (lic.plan !== 'free' || state.userProfile?.licensePlan !== 'free');
+      const offlineLeaseValid = isPro && (lic.leaseExpiresAt ? lic.leaseExpiresAt > now : true);
+
+      return {
+        ...lic,
+        activeKey: lic.activeKey || state.userProfile?.licenseKey || '',
+        plan: lic.plan || state.userProfile?.licensePlan || 'free',
+        remainingCredits: typeof lic.remainingCredits === 'number' ? lic.remainingCredits : (state.userProfile?.credits || 0),
+        isPro,
+        offlineLeaseValid
+      };
+    }
+
+    saveLicenseLease(leaseData = {}) {
+      const state = this.getState();
+      const now = Date.now();
+      const key = leaseData.licenseKey || leaseData.key || state.license?.activeKey || state.userProfile?.licenseKey || '';
+      const plan = leaseData.plan || 'pass-30';
+      const credits = typeof leaseData.remainingCredits === 'number' ? leaseData.remainingCredits : (typeof leaseData.credits === 'number' ? leaseData.credits : 50);
+      const expiresAt = leaseData.leaseExpiresAt || (now + 7 * 24 * 60 * 60 * 1000);
+
+      state.license = {
+        ...state.license,
+        activeKey: key,
+        plan,
+        leaseToken: leaseData.leaseToken || state.license?.leaseToken || '',
+        leaseExpiresAt: expiresAt,
+        lastHandshake: now,
+        remainingCredits: credits,
+        instanceId: leaseData.instanceId || state.license?.instanceId || '',
+        deviceFingerprint: this.getDeviceFingerprint()
+      };
+
+      state.userProfile.licenseKey = key;
+      state.userProfile.licensePlan = plan;
+      state.userProfile.credits = credits;
+
+      this._persist(state);
+      return this.getLicense();
+    }
+
+    checkOfflineLease() {
+      const lic = this.getLicense();
+      if (!lic.isPro) {
+        return { isPro: false, valid: false, daysRemaining: 0, needsHandshake: false };
+      }
+      const now = Date.now();
+      if (!lic.leaseExpiresAt) {
+        this.saveLicenseLease({ ...lic, leaseExpiresAt: now + 7 * 24 * 60 * 60 * 1000 });
+        return { isPro: true, valid: true, daysRemaining: 7, needsHandshake: false };
+      }
+      const msRemaining = lic.leaseExpiresAt - now;
+      const daysRemaining = Math.max(0, Math.ceil(msRemaining / (1000 * 60 * 60 * 24)));
+      const valid = msRemaining > 0;
+      return {
+        isPro: true,
+        valid,
+        daysRemaining,
+        needsHandshake: !valid
+      };
+    }
+
+    consumeAiCredit() {
+      const state = this.getState();
+      const current = typeof state.license?.remainingCredits === 'number' ? state.license.remainingCredits : (state.userProfile?.credits || 0);
+      if (current > 0) {
+        const next = current - 1;
+        state.license = { ...state.license, remainingCredits: next };
+        state.userProfile.credits = next;
+        this._persist(state);
+        return next;
+      }
+      return 0;
+    }
+
+    async activateRemoteLicense(licenseKey, instanceName = 'Web Browser', endpoint = '/api/license/activate') {
+      const cleanKey = (licenseKey || '').trim();
+      if (!cleanKey) return { success: false, error: 'MISSING_KEY' };
+
+      const fingerprint = this.getDeviceFingerprint();
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            licenseKey: cleanKey,
+            instanceName,
+            clientFingerprint: fingerprint
+          })
+        });
+
+        const data = await res.json();
+        if (res.ok && data.success) {
+          const updated = this.saveLicenseLease({
+            licenseKey: cleanKey,
+            plan: data.plan || 'pro',
+            leaseToken: data.leaseToken,
+            leaseExpiresAt: data.leaseExpiresAt,
+            remainingCredits: data.remainingCredits,
+            instanceId: data.instanceId
+          });
+          return { success: true, license: updated, data };
+        } else {
+          return { success: false, error: data.error || 'ACTIVATION_FAILED', message: data.message };
+        }
+      } catch (err) {
+        console.warn('[StorageEngine] Remote activation network offline, falling back to local lease:', err);
+        const currentLic = this.getLicense();
+        if (currentLic.activeKey === cleanKey && currentLic.offlineLeaseValid) {
+          return { success: true, offline: true, license: currentLic };
+        }
+        return { success: false, error: 'NETWORK_ERROR', message: err.message };
+      }
     }
 
     /* ----------------------------------------------------
@@ -581,6 +749,7 @@
         exportedAt: new Date().toISOString(),
         version: state.version,
         userProfile: state.userProfile,
+        license: state.license,
         examScores: state.examScores,
         sm2DeckState: state.sm2DeckState,
         fehlerheft: state.fehlerheft,
@@ -598,6 +767,7 @@
 
         const state = this.getState();
         if (data.userProfile) state.userProfile = { ...state.userProfile, ...data.userProfile };
+        if (data.license) state.license = { ...state.license, ...data.license };
         if (data.examScores) state.examScores = { ...state.examScores, ...data.examScores };
         if (data.sm2DeckState) state.sm2DeckState = { ...state.sm2DeckState, ...data.sm2DeckState };
         if (Array.isArray(data.fehlerheft)) {

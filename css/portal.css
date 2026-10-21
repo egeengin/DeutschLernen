@@ -3937,6 +3937,95 @@ td strong, td b { color: var(--text-primary); }
   color: var(--text-primary);
 }
 
+/* ==========================================================================
+   German Fair Pricing & Promotional Bar (§ 11 PAngV & § 5 UWG Compliant)
+   Transparent real list price (59 €) + real 40% discount with copyable code
+   No deceptive fake countdowns or Mondpreise.
+   ========================================================================== */
+.promo-discount-bar {
+  background: linear-gradient(90deg, #1e1b4b 0%, #312e81 50%, #1e1b4b 100%);
+  border-bottom: 1px solid rgba(165, 180, 252, 0.25);
+  color: #e0e7ff;
+  font-size: 13px;
+  line-height: 1.4;
+  padding: 8px 16px;
+  position: relative;
+  z-index: 101;
+}
+
+.promo-bar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.promo-badge {
+  background: #f59e0b;
+  color: #0f172a;
+  font-weight: 800;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.promo-text {
+  font-size: 13px;
+  color: #f8fafc;
+}
+
+.promo-text strong {
+  color: #fbbf24;
+}
+
+.promo-copy-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px dashed #fbbf24;
+  color: #fbbf24;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.promo-copy-btn:hover {
+  background: #fbbf24;
+  color: #0f172a;
+  border-style: solid;
+}
+
+.promo-code {
+  font-family: monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+}
+
+.promo-redeem-link {
+  color: #a5b4fc;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 12px;
+  transition: color 0.2s ease;
+}
+
+.promo-redeem-link:hover {
+  color: #ffffff;
+}
+
+
 
 
 

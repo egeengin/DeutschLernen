@@ -92,10 +92,8 @@ def get_html_header(title, desc, canonical_url, keywords):
   <meta property="og:site_name" content="DeutschLernen">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Google Fonts: Inter & Outfit -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- Local Typography (DSGVO-compliant) -->
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
 
   <link rel="stylesheet" href="css/seo-pages.css?v=40">
   <script>
